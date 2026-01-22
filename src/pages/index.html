@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SOS Permesso - Guida completa ai permessi di soggiorno in Italia">
+  <title>SOS Permesso - Completo, aggiornato, nella tua lingua</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="shortcut icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="apple-touch-icon" href="../../images/Favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/animations.css">
+  <link rel="stylesheet" href="../styles/mobile.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="#home" class="logo">
+          <img src="../../images/Logo.png" alt="SOS Permesso" class="logo-image">
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          ☰
+        </button>
+
+        <!-- Navigation Menu & Language Switcher -->
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#guide" class="nav-link">Guide</a></li>
+            <li><a href="database.html" class="nav-link">Database</a></li>
+            <li><a href="#test" class="nav-link">Test</a></li>
+            <li><a href="#about" class="nav-link">Chi siamo</a></li>
+          </ul>
+
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">IT 🇮🇹</span>
+              <span>▾</span>
+            </button>
+            <div class="language-dropdown" id="language-dropdown">
+              <div class="language-option" data-lang="it">
+                <span>🇮🇹</span>
+                <span>Italiano</span>
+              </div>
+              <div class="language-option" data-lang="en">
+                <span>🇬🇧</span>
+                <span>English</span>
+              </div>
+              <div class="language-option" data-lang="fr">
+                <span>🇫🇷</span>
+                <span>Français</span>
+              </div>
+              <div class="language-option" data-lang="es">
+                <span>🇪🇸</span>
+                <span>Español</span>
+              </div>
+              <div class="language-option" data-lang="zh">
+                <span>🇨🇳</span>
+                <span>中文</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="hero-title">
+        <span class="hero-highlight">💛</span> Completo, aggiornato, nella tua lingua
+      </h1>
+
+      <!-- Lighthouse Hero -->
+      <div id="lighthouse-hero"></div>
+
+      <!-- Update Notice Alert -->
+      <div class="alert alert-info">
+        <span class="alert-icon">🔔</span>
+        <div>
+          <strong>SOS Permesso è aggiornato</strong> alla
+          <a href="https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2025-05-23&atto.codiceRedazionale=25G00083&elenco30giorni=false" target="_blank" rel="noopener">Legge n. 75/2025</a>,
+          in vigore dal 24/05/2025
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTS SECTION -->
+  <section class="section bg-off-white" id="test">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">I NOSTRI TEST 🎯</h2>
+        <p class="section-subtitle">Scopri se puoi ottenere, convertire o rinnovare il tuo permesso di soggiorno</p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Test Card 1 -->
+        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤞</span>
+          <h3 class="card-title">Posso AVERE un permesso?</h3>
+          <p class="card-description">Verifica se hai i requisiti per ottenere un permesso di soggiorno in Italia</p>
+          <button class="btn btn-primary">INIZIA IL TEST →</button>
+        </a>
+
+        <!-- Test Card 2 -->
+        <a href="https://form.typeform.com/to/oc9jhdkJ" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">👉</span>
+          <h3 class="card-title">Posso CONVERTIRE?</h3>
+          <p class="card-description">Scopri se puoi convertire il tuo permesso di soggiorno attuale</p>
+          <button class="btn btn-primary">INIZIA IL TEST →</button>
+        </a>
+
+        <!-- Test Card 3 -->
+        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤙</span>
+          <h3 class="card-title">Posso RINNOVARE?</h3>
+          <p class="card-description">Controlla se puoi rinnovare il tuo permesso di soggiorno</p>
+          <button class="btn btn-primary">INIZIA IL TEST →</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDES SECTION -->
+  <section class="section" id="guide">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">LE NOSTRE GUIDE 📖</h2>
+        <p class="section-subtitle">Tutte le informazioni che ti servono, spiegate in modo semplice</p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Guide Cards -->
+        <a href="database.html" class="card card-link">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Database permessi</h3>
+          <p class="card-description">Tutti i tipi di permesso disponibili in Italia</p>
+        </a>
+
+        <a href="documenti-questura.html" class="card card-link">
+          <span class="card-icon">📌</span>
+          <h3 class="card-title">Documenti Questura</h3>
+          <p class="card-description">Lista completa dei documenti necessari</p>
+        </a>
+
+        <a href="protezione-internazionale.html" class="card card-link">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">Protezione internazionale</h3>
+          <p class="card-description">Informazioni su asilo e protezione</p>
+        </a>
+
+        <a href="ricongiungimento-familiare.html" class="card card-link">
+          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <h3 class="card-title">Ricongiungimento familiare</h3>
+          <p class="card-description">Come richiedere il ricongiungimento</p>
+        </a>
+
+        <a href="dizionario.html" class="card card-link">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">Dizionario</h3>
+          <p class="card-description">Termini burocratici spiegati semplicemente</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USEFUL LINKS SECTION -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">LINK UTILI 🔗</h2>
+        <p class="section-subtitle">Strumenti e risorse per aiutarti</p>
+      </div>
+
+      <div class="grid grid-3">
+        <a href="kit-postale.html" class="card card-link card-compact">
+          <span class="card-icon">📩</span>
+          <h3 class="card-title">Kit postale</h3>
+          <p class="card-description">Scarica i moduli necessari</p>
+        </a>
+
+        <a href="controlla-permesso.html" class="card card-link card-compact">
+          <span class="card-icon">👀</span>
+          <h3 class="card-title">Controlla permesso</h3>
+          <p class="card-description">Verifica lo stato del tuo permesso</p>
+        </a>
+
+        <a href="aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Aiuto legale</h3>
+          <p class="card-description">Trova assistenza legale gratuita</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="alert alert-info" style="max-width: 600px; margin: 0 auto;">
+        <span class="alert-icon">💡</span>
+        <div>
+          Non hai trovato la risposta che cercavi?
+          <a href="https://sospermesso.typeform.com/contatti" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="margin-left: 1rem;">
+            Scrivici
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
+        <a href="database.html" class="footer-link">Database</a>
+        <a href="https://sospermesso.typeform.com/contatti" class="footer-link">Contatti</a>
+      </div>
+      <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../scripts/app.js"></script>
+  <script src="../scripts/mobile.js"></script>
+  <script>
+    // Load lighthouse component
+    fetch('../components/lighthouse.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('lighthouse-hero').innerHTML = html;
+      });
+  </script>
+</body>
+</html>

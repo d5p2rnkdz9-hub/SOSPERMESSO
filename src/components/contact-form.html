@@ -1,0 +1,531 @@
+<!-- Contact Form Component -->
+<div class="contact-modal" id="contact-modal">
+  <div class="contact-modal-backdrop" id="contact-backdrop"></div>
+  <div class="contact-modal-content">
+    <button class="contact-modal-close" id="contact-close" aria-label="Chiudi">✕</button>
+
+    <div class="contact-header">
+      <span class="contact-icon">✉️</span>
+      <h2 class="contact-title">Scrivici</h2>
+      <p class="contact-subtitle">Hai domande? Siamo qui per aiutarti</p>
+    </div>
+
+    <form class="contact-form" id="contact-form">
+      <!-- Name -->
+      <div class="form-group">
+        <label for="contact-name" class="form-label">
+          Nome <span class="required">*</span>
+        </label>
+        <input
+          type="text"
+          id="contact-name"
+          name="name"
+          class="form-input"
+          required
+          placeholder="Il tuo nome"
+          autocomplete="name"
+        >
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="contact-email" class="form-label">
+          Email <span class="required">*</span>
+        </label>
+        <input
+          type="email"
+          id="contact-email"
+          name="email"
+          class="form-input"
+          required
+          placeholder="tua.email@esempio.com"
+          autocomplete="email"
+        >
+      </div>
+
+      <!-- Subject -->
+      <div class="form-group">
+        <label for="contact-subject" class="form-label">
+          Oggetto <span class="required">*</span>
+        </label>
+        <select id="contact-subject" name="subject" class="form-select" required>
+          <option value="">Seleziona un argomento</option>
+          <option value="permesso">Domanda su permesso di soggiorno</option>
+          <option value="documenti">Documenti necessari</option>
+          <option value="rinnovo">Rinnovo permesso</option>
+          <option value="conversione">Conversione permesso</option>
+          <option value="protezione">Protezione internazionale</option>
+          <option value="ricongiungimento">Ricongiungimento familiare</option>
+          <option value="altro">Altro</option>
+        </select>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="contact-message" class="form-label">
+          Messaggio <span class="required">*</span>
+        </label>
+        <textarea
+          id="contact-message"
+          name="message"
+          class="form-textarea"
+          rows="5"
+          required
+          placeholder="Scrivi qui la tua domanda o richiesta..."
+        ></textarea>
+        <span class="form-hint">Minimo 20 caratteri</span>
+      </div>
+
+      <!-- Privacy -->
+      <div class="form-group">
+        <label class="form-checkbox-label">
+          <input
+            type="checkbox"
+            id="contact-privacy"
+            name="privacy"
+            required
+            class="form-checkbox"
+          >
+          <span>
+            Ho letto e accetto la <a href="/privacy" target="_blank">Privacy Policy</a> <span class="required">*</span>
+          </span>
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-lg" id="contact-submit">
+          <span class="btn-text">Invia Messaggio</span>
+          <span class="btn-loader" style="display: none;">
+            <span class="loader"></span> Invio...
+          </span>
+        </button>
+      </div>
+
+      <!-- Response Messages -->
+      <div class="form-response" id="form-response" style="display: none;"></div>
+    </form>
+  </div>
+</div>
+
+<style>
+/* ===============================================
+   CONTACT MODAL STYLES
+   =============================================== */
+
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.contact-modal.active {
+  display: flex;
+}
+
+.contact-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease;
+}
+
+.contact-modal-content {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  animation: slideUp 0.3s ease;
+  z-index: 1;
+}
+
+.contact-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--gray-light);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  color: var(--gray-dark);
+  z-index: 2;
+}
+
+.contact-modal-close:hover {
+  background: var(--lighthouse-red);
+  color: var(--white);
+  transform: rotate(90deg);
+}
+
+/* ===============================================
+   CONTACT HEADER
+   =============================================== */
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+.contact-subtitle {
+  color: var(--gray-medium);
+  font-size: 1rem;
+}
+
+/* ===============================================
+   FORM STYLES
+   =============================================== */
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+  font-size: 0.9375rem;
+}
+
+.required {
+  color: var(--lighthouse-red);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--gray-light);
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  transition: all var(--transition-fast);
+  background-color: var(--white);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--taxi-yellow);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--gray-medium);
+  opacity: 0.7;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-hint {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--gray-medium);
+  margin-top: 0.25rem;
+}
+
+/* Checkbox */
+.form-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9375rem;
+}
+
+.form-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.form-checkbox-label a {
+  color: var(--taxi-yellow-dark);
+  text-decoration: underline;
+}
+
+/* Form Actions */
+.form-actions {
+  margin-top: 2rem;
+}
+
+.btn-loader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--white);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* Form Response */
+.form-response {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.form-response.success {
+  background-color: #E8F5E9;
+  color: #1B5E20;
+  border: 2px solid #4CAF50;
+}
+
+.form-response.error {
+  background-color: #FFEBEE;
+  color: #B71C1C;
+  border: 2px solid #F44336;
+}
+
+/* ===============================================
+   ANIMATIONS
+   =============================================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===============================================
+   MOBILE RESPONSIVE
+   =============================================== */
+
+@media (max-width: 768px) {
+  .contact-modal {
+    padding: 0.5rem;
+  }
+
+  .contact-modal-content {
+    padding: 1.5rem;
+    max-height: 95vh;
+    border-radius: var(--radius-md);
+  }
+
+  .contact-icon {
+    font-size: 2.5rem;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-modal-content {
+    padding: 1.25rem;
+  }
+
+  .contact-header {
+    margin-bottom: 1.5rem;
+  }
+}
+</style>
+
+<script>
+// ===============================================
+// CONTACT FORM FUNCTIONALITY
+// ===============================================
+
+(function() {
+  const modal = document.getElementById('contact-modal');
+  const backdrop = document.getElementById('contact-backdrop');
+  const closeBtn = document.getElementById('contact-close');
+  const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('contact-submit');
+  const response = document.getElementById('form-response');
+
+  // Open modal function (called from external buttons)
+  window.openContactModal = function() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Close modal
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener('click', closeModal);
+  }
+
+  // Close on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Form submission
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
+
+      // Validation
+      if (data.message.length < 20) {
+        showResponse('Il messaggio deve essere di almeno 20 caratteri.', 'error');
+        return;
+      }
+
+      if (!data.privacy) {
+        showResponse('Devi accettare la Privacy Policy.', 'error');
+        return;
+      }
+
+      // Show loading
+      submitBtn.disabled = true;
+      submitBtn.querySelector('.btn-text').style.display = 'none';
+      submitBtn.querySelector('.btn-loader').style.display = 'flex';
+
+      try {
+        // OPTION 1: Send to Typeform webhook
+        const typeformUrl = 'https://sospermesso.typeform.com/contatti';
+
+        // OPTION 2: Send to your backend API
+        // const response = await fetch('/api/contact', {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify(data)
+        // });
+
+        // For now, simulate success (replace with actual API call)
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
+        showResponse('✅ Messaggio inviato con successo! Ti risponderemo al più presto.', 'success');
+        form.reset();
+
+        // Close modal after 3 seconds
+        setTimeout(() => {
+          closeModal();
+          response.style.display = 'none';
+        }, 3000);
+
+      } catch (error) {
+        showResponse('❌ Errore durante l\'invio. Riprova più tardi.', 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.querySelector('.btn-text').style.display = 'inline';
+        submitBtn.querySelector('.btn-loader').style.display = 'none';
+      }
+    });
+  }
+
+  function showResponse(message, type) {
+    response.textContent = message;
+    response.className = `form-response ${type}`;
+    response.style.display = 'block';
+  }
+})();
+</script>

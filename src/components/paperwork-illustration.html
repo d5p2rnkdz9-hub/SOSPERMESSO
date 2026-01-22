@@ -1,0 +1,372 @@
+<!-- Cartoonish Paperwork Illustrations Component -->
+
+<style>
+.illustration-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.illustration-svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Animations for illustrations */
+@keyframes float-paper {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes wave-hand {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+@keyframes bob-head {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+
+.floating-paper {
+  animation: float-paper 3s ease-in-out infinite;
+}
+
+.waving-hand {
+  transform-origin: bottom center;
+  animation: wave-hand 2s ease-in-out infinite;
+}
+
+.bobbing-head {
+  animation: bob-head 2.5s ease-in-out infinite;
+}
+</style>
+
+<!-- ILLUSTRATION 1: Person confused with papers -->
+<div class="illustration-container" id="illustration-confused">
+  <svg class="illustration-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#FAFAFA"/>
+
+    <!-- Desk -->
+    <rect x="50" y="180" width="300" height="15" rx="7" fill="#FFB74D"/>
+    <rect x="60" y="195" width="280" height="80" rx="10" fill="#FF9800"/>
+
+    <!-- Scattered Papers (floating) -->
+    <g class="floating-paper" style="animation-delay: 0s;">
+      <rect x="80" y="120" width="60" height="80" rx="5" fill="#FFFFFF" stroke="#42A5F5" stroke-width="2"/>
+      <line x1="90" y1="135" x2="130" y2="135" stroke="#757575" stroke-width="2"/>
+      <line x1="90" y1="145" x2="125" y2="145" stroke="#757575" stroke-width="2"/>
+      <line x1="90" y1="155" x2="130" y2="155" stroke="#757575" stroke-width="2"/>
+    </g>
+
+    <g class="floating-paper" style="animation-delay: 0.5s;">
+      <rect x="260" y="100" width="60" height="80" rx="5" fill="#FFFFFF" stroke="#EC407A" stroke-width="2"/>
+      <line x1="270" y1="115" x2="310" y2="115" stroke="#757575" stroke-width="2"/>
+      <line x1="270" y1="125" x2="305" y2="125" stroke="#757575" stroke-width="2"/>
+      <line x1="270" y1="135" x2="310" y2="135" stroke="#757575" stroke-width="2"/>
+    </g>
+
+    <!-- Person Body -->
+    <ellipse cx="200" cy="200" rx="50" ry="60" fill="#64B5F6"/>
+
+    <!-- Arms -->
+    <ellipse cx="160" cy="180" rx="15" ry="40" fill="#42A5F5" transform="rotate(-30 160 180)"/>
+    <ellipse cx="240" cy="180" rx="15" ry="40" fill="#42A5F5" transform="rotate(30 240 180)"/>
+
+    <!-- Hands holding paper -->
+    <circle cx="155" cy="150" r="12" fill="#FFE0B2"/>
+    <circle cx="245" cy="150" r="12" fill="#FFE0B2"/>
+
+    <!-- Paper in hands -->
+    <rect x="170" y="130" width="60" height="80" rx="5" fill="#FFFFFF" stroke="#FFD700" stroke-width="3"/>
+    <line x1="180" y1="145" x2="220" y2="145" stroke="#757575" stroke-width="2"/>
+    <line x1="180" y1="155" x2="215" y2="155" stroke="#757575" stroke-width="2"/>
+    <line x1="180" y1="165" x2="220" y2="165" stroke="#757575" stroke-width="2"/>
+    <circle cx="185" cy="190" r="4" fill="#EF5350"/>
+    <circle cx="200" cy="190" r="4" fill="#EF5350"/>
+    <circle cx="215" cy="190" r="4" fill="#EF5350"/>
+
+    <!-- Head -->
+    <g class="bobbing-head">
+      <circle cx="200" cy="120" r="35" fill="#FFE0B2"/>
+
+      <!-- Hair -->
+      <path d="M 165 110 Q 165 80 200 85 Q 235 80 235 110" fill="#3E2723"/>
+
+      <!-- Eyes (confused) -->
+      <circle cx="185" cy="115" r="4" fill="#1A1A1A"/>
+      <circle cx="215" cy="115" r="4" fill="#1A1A1A"/>
+      <line x1="180" y1="105" x2="190" y2="108" stroke="#3E2723" stroke-width="2" stroke-linecap="round"/>
+      <line x1="210" y1="108" x2="220" y2="105" stroke="#3E2723" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Mouth (confused) -->
+      <path d="M 185 130 Q 200 128 215 130" stroke="#1A1A1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- Sweat drops -->
+      <ellipse cx="170" cy="125" rx="4" ry="6" fill="#64B5F6" opacity="0.7"/>
+      <ellipse cx="230" cy="125" rx="4" ry="6" fill="#64B5F6" opacity="0.7"/>
+    </g>
+
+    <!-- Question marks floating -->
+    <text x="250" y="60" font-size="40" fill="#EC407A" font-weight="bold">?</text>
+    <text x="120" y="70" font-size="30" fill="#42A5F5" font-weight="bold">?</text>
+  </svg>
+</div>
+
+<!-- ILLUSTRATION 2: Person happy with checklist -->
+<div class="illustration-container" id="illustration-success">
+  <svg class="illustration-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with confetti -->
+    <rect width="400" height="300" fill="#FAFAFA"/>
+
+    <!-- Confetti -->
+    <circle cx="80" cy="40" r="5" fill="#FFD700"/>
+    <circle cx="320" cy="60" r="5" fill="#EC407A"/>
+    <rect x="150" y="30" width="8" height="8" fill="#42A5F5" transform="rotate(45 154 34)"/>
+    <rect x="280" y="50" width="8" height="8" fill="#66BB6A" transform="rotate(30 284 54)"/>
+    <circle cx="100" cy="80" r="4" fill="#FF9800"/>
+    <circle cx="340" cy="90" r="4" fill="#AB47BC"/>
+
+    <!-- Person Body -->
+    <ellipse cx="200" cy="220" rx="55" ry="65" fill="#81C784"/>
+
+    <!-- Arms (one raised in celebration) -->
+    <g class="waving-hand">
+      <ellipse cx="160" cy="200" rx="15" ry="45" fill="#66BB6A" transform="rotate(-45 160 200)"/>
+      <circle cx="145" cy="165" r="13" fill="#FFE0B2"/>
+    </g>
+
+    <ellipse cx="240" cy="210" rx="15" ry="40" fill="#66BB6A" transform="rotate(20 240 210)"/>
+    <circle cx="250" cy="185" r="13" fill="#FFE0B2"/>
+
+    <!-- Head -->
+    <circle cx="200" cy="150" r="40" fill="#FFE0B2"/>
+
+    <!-- Hair -->
+    <path d="M 160 140 Q 160 105 200 110 Q 240 105 240 140" fill="#795548"/>
+
+    <!-- Eyes (happy) -->
+    <path d="M 178 145 Q 185 150 192 145" stroke="#1A1A1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 208 145 Q 215 150 222 145" stroke="#1A1A1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Big smile -->
+    <path d="M 180 160 Q 200 175 220 160" stroke="#1A1A1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Blush -->
+    <circle cx="170" cy="155" r="8" fill="#F06292" opacity="0.4"/>
+    <circle cx="230" cy="155" r="8" fill="#F06292" opacity="0.4"/>
+
+    <!-- Checklist document -->
+    <rect x="250" y="170" width="80" height="100" rx="5" fill="#FFFFFF" stroke="#FFD700" stroke-width="3"/>
+
+    <!-- Checklist items with green checkmarks -->
+    <g>
+      <circle cx="265" cy="190" r="6" fill="#66BB6A"/>
+      <path d="M 263 190 L 266 193 L 270 186" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <line x1="275" y1="190" x2="315" y2="190" stroke="#757575" stroke-width="2"/>
+    </g>
+
+    <g>
+      <circle cx="265" cy="210" r="6" fill="#66BB6A"/>
+      <path d="M 263 210 L 266 213 L 270 206" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <line x1="275" y1="210" x2="315" y2="210" stroke="#757575" stroke-width="2"/>
+    </g>
+
+    <g>
+      <circle cx="265" cy="230" r="6" fill="#66BB6A"/>
+      <path d="M 263 230 L 266 233 L 270 226" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <line x1="275" y1="230" x2="315" y2="230" stroke="#757575" stroke-width="2"/>
+    </g>
+
+    <g>
+      <circle cx="265" cy="250" r="6" fill="#66BB6A"/>
+      <path d="M 263 250 L 266 253 L 270 246" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <line x1="275" y1="250" x2="315" y2="250" stroke="#757575" stroke-width="2"/>
+    </g>
+
+    <!-- Stars around person -->
+    <text x="120" y="130" font-size="30" fill="#FFD700">★</text>
+    <text x="260" y="120" font-size="25" fill="#FFD700">★</text>
+    <text x="140" y="180" font-size="20" fill="#FFB74D">★</text>
+  </svg>
+</div>
+
+<!-- ILLUSTRATION 3: Person searching documents -->
+<div class="illustration-container" id="illustration-searching">
+  <svg class="illustration-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#FAFAFA"/>
+
+    <!-- Desk -->
+    <rect x="30" y="200" width="340" height="80" rx="10" fill="#FF9800"/>
+    <rect x="40" y="185" width="320" height="15" rx="7" fill="#FFB74D"/>
+
+    <!-- Person sitting -->
+    <ellipse cx="150" cy="190" rx="45" ry="55" fill="#BA68C8"/>
+
+    <!-- Head leaning forward -->
+    <g style="transform: translateX(0px) translateY(10px);">
+      <circle cx="150" cy="135" r="35" fill="#FFE0B2"/>
+
+      <!-- Hair -->
+      <ellipse cx="150" cy="115" rx="38" ry="25" fill="#212121"/>
+
+      <!-- Eyes looking down -->
+      <ellipse cx="140" cy="135" rx="3" ry="5" fill="#1A1A1A"/>
+      <ellipse cx="160" cy="135" rx="3" ry="5" fill="#1A1A1A"/>
+
+      <!-- Concentrated expression -->
+      <path d="M 140 148 Q 150 150 160 148" stroke="#1A1A1A" stroke-width="2" fill="none"/>
+
+      <!-- Eyebrows (focused) -->
+      <line x1="135" y1="128" x2="145" y2="130" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+      <line x1="155" y1="130" x2="165" y2="128" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Arms on desk -->
+    <ellipse cx="120" cy="170" rx="12" ry="35" fill="#AB47BC"/>
+    <ellipse cx="180" cy="170" rx="12" ry="35" fill="#AB47BC"/>
+
+    <!-- Hands -->
+    <circle cx="115" cy="195" r="11" fill="#FFE0B2"/>
+    <circle cx="185" cy="195" r="11" fill="#FFE0B2"/>
+
+    <!-- Giant magnifying glass -->
+    <g style="transform: rotate(-15deg); transform-origin: 280px 150px;">
+      <circle cx="280" cy="140" r="45" fill="none" stroke="#FFC107" stroke-width="6"/>
+      <circle cx="280" cy="140" r="40" fill="#E3F2FD" opacity="0.3"/>
+      <rect x="305" y="165" width="12" height="60" rx="6" fill="#FFC107"/>
+      <ellipse cx="311" cy="225" rx="8" ry="6" fill="#FF9800"/>
+    </g>
+
+    <!-- Stack of papers on desk -->
+    <g>
+      <rect x="240" y="190" width="70" height="3" fill="#E0E0E0"/>
+      <rect x="240" y="193" width="70" height="90" rx="4" fill="#FFFFFF" stroke="#42A5F5" stroke-width="2"/>
+      <rect x="235" y="187" width="70" height="3" fill="#BDBDBD"/>
+      <rect x="230" y="184" width="70" height="3" fill="#9E9E9E"/>
+    </g>
+
+    <!-- Document with stamp -->
+    <g>
+      <rect x="60" y="200" width="60" height="75" rx="4" fill="#FFFFFF" stroke="#EC407A" stroke-width="2"/>
+      <line x1="70" y1="215" x2="110" y2="215" stroke="#757575" stroke-width="1.5"/>
+      <line x1="70" y1="225" x2="105" y2="225" stroke="#757575" stroke-width="1.5"/>
+      <line x1="70" y1="235" x2="110" y2="235" stroke="#757575" stroke-width="1.5"/>
+
+      <!-- Red stamp -->
+      <circle cx="90" cy="255" r="15" fill="none" stroke="#EF5350" stroke-width="2.5"/>
+      <text x="80" y="260" font-size="12" fill="#EF5350" font-weight="bold">OK</text>
+    </g>
+
+    <!-- Floating papers in background -->
+    <g opacity="0.4" class="floating-paper">
+      <rect x="320" y="80" width="50" height="65" rx="3" fill="#FFFFFF" stroke="#757575" stroke-width="1"/>
+    </g>
+  </svg>
+</div>
+
+<!-- ILLUSTRATION 4: Person with stack of papers (overwhelmed but determined) -->
+<div class="illustration-container" id="illustration-stack">
+  <svg class="illustration-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#FAFAFA"/>
+
+    <!-- Person body -->
+    <ellipse cx="200" cy="220" rx="50" ry="60" fill="#4DB6AC"/>
+
+    <!-- Arms carrying papers -->
+    <ellipse cx="150" cy="180" rx="18" ry="45" fill="#26A69A" transform="rotate(-20 150 180)"/>
+    <ellipse cx="250" cy="180" rx="18" ry="45" fill="#26A69A" transform="rotate(20 250 180)"/>
+
+    <!-- Hands -->
+    <circle cx="140" cy="145" r="14" fill="#FFE0B2"/>
+    <circle cx="260" cy="145" r="14" fill="#FFE0B2"/>
+
+    <!-- GIANT stack of papers -->
+    <g>
+      <!-- Bottom papers -->
+      <rect x="160" y="140" width="80" height="4" fill="#BDBDBD"/>
+      <rect x="155" y="135" width="80" height="4" fill="#9E9E9E"/>
+      <rect x="150" y="130" width="80" height="4" fill="#757575"/>
+
+      <!-- Main stack -->
+      <rect x="145" y="50" width="90" height="80" rx="5" fill="#FFFFFF" stroke="#42A5F5" stroke-width="3"/>
+      <line x1="155" y1="65" x2="225" y2="65" stroke="#757575" stroke-width="2"/>
+      <line x1="155" y1="75" x2="220" y2="75" stroke="#757575" stroke-width="2"/>
+      <line x1="155" y1="85" x2="225" y2="85" stroke="#757575" stroke-width="2"/>
+      <line x1="155" y1="95" x2="218" y2="95" stroke="#757575" stroke-width="2"/>
+      <line x1="155" y1="105" x2="225" y2="105" stroke="#757575" stroke-width="2"/>
+      <line x1="155" y1="115" x2="222" y2="115" stroke="#757575" stroke-width="2"/>
+
+      <!-- Top visible papers -->
+      <rect x="140" y="40" width="90" height="4" fill="#E0E0E0"/>
+      <rect x="135" y="35" width="90" height="4" fill="#BDBDBD"/>
+      <rect x="130" y="30" width="90" height="4" fill="#9E9E9E"/>
+    </g>
+
+    <!-- Head peeking from side -->
+    <g style="transform: translateX(-30px);">
+      <circle cx="130" cy="110" r="32" fill="#FFE0B2"/>
+
+      <!-- Hair -->
+      <path d="M 100 105 Q 100 75 130 78 Q 155 75 158 100" fill="#6D4C41"/>
+
+      <!-- Determined eyes -->
+      <circle cx="120" cy="108" r="4" fill="#1A1A1A"/>
+      <circle cx="138" cy="108" r="4" fill="#1A1A1A"/>
+
+      <!-- Eyebrows (determined) -->
+      <line x1="115" y1="102" x2="125" y2="103" stroke="#6D4C41" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="133" y1="103" x2="143" y2="102" stroke="#6D4C41" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Small smile (determined) -->
+      <path d="M 120 118 Q 129 122 138 118" stroke="#1A1A1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Sweat drop -->
+    <ellipse cx="105" cy="120" rx="4" ry="7" fill="#64B5F6" opacity="0.7"/>
+
+    <!-- Exclamation mark (effort) -->
+    <g>
+      <rect x="290" y="90" width="8" height="30" rx="4" fill="#FFD700"/>
+      <circle cx="294" cy="128" r="5" fill="#FFD700"/>
+    </g>
+  </svg>
+</div>
+
+<script>
+// Export functions to show specific illustrations
+window.showIllustration = function(type) {
+  const illustrations = {
+    'confused': 'illustration-confused',
+    'success': 'illustration-success',
+    'searching': 'illustration-searching',
+    'stack': 'illustration-stack'
+  };
+
+  // Hide all
+  Object.values(illustrations).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
+
+  // Show selected
+  const selectedId = illustrations[type];
+  if (selectedId) {
+    const el = document.getElementById(selectedId);
+    if (el) el.style.display = 'block';
+  }
+};
+
+// Show only one by default
+document.addEventListener('DOMContentLoaded', function() {
+  // By default, hide all except the first one
+  const containers = document.querySelectorAll('.illustration-container');
+  containers.forEach((container, index) => {
+    if (index > 0) container.style.display = 'none';
+  });
+});
+</script>

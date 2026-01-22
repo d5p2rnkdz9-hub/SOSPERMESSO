@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controlla se il tuo permesso è pronto - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="shortcut icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="apple-touch-icon" href="../../images/Favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/animations.css">
+  <link rel="stylesheet" href="../styles/mobile.css">
+  <link rel="stylesheet" href="../styles/mobile-fix.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../index.html" class="logo">
+          <img src="../../images/Logo.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="database.html" class="nav-link">Database</a></li>
+          <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <span>Controlla Permesso</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">👀</span>
+        <h1 class="page-title">Controlla se il tuo permesso di soggiorno è pronto</h1>
+        <p class="section-subtitle">Verifica online lo stato della tua pratica</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+
+      <!-- METODO 1 -->
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
+        <h2>1) Controlla con la ricevuta del kit postale</h2>
+        <p>Se hai inviato la domanda con il <strong>kit postale</strong>, puoi controllare lo stato del tuo permesso sul sito del Portale Immigrazione.</p>
+        <p>Ti servirà:</p>
+        <ul>
+          <li>Il <strong>numero della pratica</strong> (lo trovi sulla ricevuta)</li>
+          <li>Il tuo <strong>codice fiscale</strong></li>
+        </ul>
+        <div class="alert alert-info" style="margin-top: 1rem;">
+          <span class="alert-icon">🔗</span>
+          <div>
+            <a href="https://www.portaleimmigrazione.it/ELI2ImmigrazioneWEB/Pagine/StartPage.aspx" target="_blank" class="btn btn-primary">
+              Vai al Portale Immigrazione
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- METODO 2 -->
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
+        <h2>2) Controlla con il numero di pratica</h2>
+        <p>Puoi anche usare direttamente il <strong>numero di pratica</strong> che trovi sulla ricevuta del kit postale.</p>
+        <p>Il numero è composto da:</p>
+        <ul>
+          <li><strong>Sigla della provincia</strong> (es. MI per Milano, RM per Roma)</li>
+          <li><strong>Codice numerico</strong></li>
+        </ul>
+      </div>
+
+      <!-- COSA SIGNIFICANO GLI STATI -->
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>📊 Cosa significano i vari stati?</h2>
+        <ul>
+          <li><strong>In lavorazione:</strong> La tua pratica è ancora in corso di esame</li>
+          <li><strong>Convocazione in Questura:</strong> Devi presentarti in Questura per un appuntamento</li>
+          <li><strong>Pronto per il ritiro:</strong> Il tuo permesso è pronto! Vai in Questura a ritirarlo</li>
+          <li><strong>Spedito:</strong> Il permesso è stato spedito al tuo indirizzo</li>
+        </ul>
+      </div>
+
+      <!-- CONSIGLI -->
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
+        <h2>💡 Consigli utili</h2>
+        <ul>
+          <li><strong>Controlla regolarmente:</strong> Lo stato può cambiare in qualsiasi momento</li>
+          <li><strong>Conserva la ricevuta:</strong> È il documento che prova che hai fatto la richiesta</li>
+          <li><strong>Non perdere gli appuntamenti:</strong> Se ti convocano in Questura, vai alla data indicata</li>
+          <li><strong>Porta sempre con te la ricevuta:</strong> Fino a quando non hai il nuovo permesso, la ricevuta dimostra che sei in regola</li>
+        </ul>
+      </div>
+
+      <div class="alert alert-warning" style="margin-bottom: 2rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Attenzione:</strong> Se la tua pratica risulta "in lavorazione" da molto tempo, contatta la Questura o un'associazione di aiuto per verificare che non ci siano problemi.
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        <span class="alert-icon">❓</span>
+        <div>
+          Hai problemi a controllare la tua pratica?
+          <a href="https://sospermesso.typeform.com/contatti" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Scrivici
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
+      <div class="grid grid-3">
+        <a href="kit-postale.html" class="card card-link card-compact">
+          <span class="card-icon">📩</span>
+          <h3 class="card-title">Kit postale</h3>
+        </a>
+        <a href="documenti-questura.html" class="card card-link card-compact">
+          <span class="card-icon">📌</span>
+          <h3 class="card-title">Documenti Questura</h3>
+        </a>
+        <a href="aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Aiuto legale</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
+        <a href="database.html" class="footer-link">Database</a>
+        <a href="https://sospermesso.typeform.com/contatti" class="footer-link">Contatti</a>
+      </div>
+      <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/app.js"></script>
+</body>
+</html>

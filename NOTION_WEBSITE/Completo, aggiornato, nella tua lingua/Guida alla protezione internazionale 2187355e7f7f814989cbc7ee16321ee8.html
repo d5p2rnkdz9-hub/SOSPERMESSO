@@ -1,0 +1,715 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Guida alla protezione internazionale</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2187355e-7f7f-8149-89cb-c7ee16321ee8" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🛡️</span></div><h1 class="page-title" dir="auto"><strong>Guida alla protezione internazionale</strong></h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><ol type="1" id="2187355e-7f7f-8135-a5c1-e0a965147011" class="numbered-list" start="1"><li><a href="Guida%20alla%20protezione%20internazionale%202187355e7f7f814989cbc7ee16321ee8.html">Fare la domanda</a></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2967355e-7f7f-8034-a8b2-d9764a33e8a1" class="numbered-list" start="2"><li><a href="Guida%20alla%20protezione%20internazionale%202187355e7f7f814989cbc7ee16321ee8.html">Prendere un permesso di soggiorno provvisorio</a></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2967355e-7f7f-809b-9014-e104dab0a188" class="numbered-list" start="3"><li><a href="Guida%20alla%20protezione%20internazionale%202187355e7f7f814989cbc7ee16321ee8.html">Il Colloquio in Commissione</a></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2967355e-7f7f-804d-9025-f538cda14d05" class="numbered-list" start="4"><li><a href="Guida%20alla%20protezione%20internazionale%202187355e7f7f814989cbc7ee16321ee8.html">La decisione</a></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2967355e-7f7f-80c2-939b-e184bd303b9b" class="numbered-list" start="5"><li><a href="Guida%20alla%20protezione%20internazionale%202187355e7f7f814989cbc7ee16321ee8.html">Il ricorso</a></li></ol></div><div style="display:contents" dir="auto"><p id="2967355e-7f7f-8016-b544-fe45050d3a85" class="">
+</p></div><div style="display:contents" dir="auto"><div id="2187355e-7f7f-8196-8b39-d38e97a389ec" class="column-list"><div style="display:contents" dir="auto"><div id="2187355e-7f7f-8149-bf2c-fcbcf83c9d46" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815a-b317-ff2e3700a1e2" class="">Ecco qui alcune semplici informazioni sulla <strong>protezione internazionale</strong> in Italia!</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-819b-8457-e5072f452302" class="">Può sembrare una strada lunga e complicata, ma la vediamo passo per passo.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-817a-8e16-feb3608b7a7d" class="">Ti possiamo dare solo qualche informazione generale: è importante che tu chieda <strong>aiuto legale qualificato</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8175-8c1e-c87c9b08ffc3" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2187355e-7f7f-81c1-94db-dc3323832df2" style="width:112.5%" class="column"><div style="display:contents" dir="ltr"><figure id="2187355e-7f7f-819c-a9bb-e599243f3ad4"><div class="source"><a href="https://drive.google.com/file/d/1cdE0ELUS37qt3EZYPVjLlBHStPFj007d/view?usp=share_link">https://drive.google.com/file/d/1cdE0ELUS37qt3EZYPVjLlBHStPFj007d/view?usp=share_link</a></div></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-81e4-baec-fbde0306ab18"/></div><div style="display:contents" dir="auto"><h3 id="2187355e-7f7f-818c-8755-f21d75803c3b" class=""><strong>1) Presentare la domanda </strong></h3></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81b3-ad99-fb1eceb4f4ba" class="">La prima cosa che devi fare è <strong>presentare la tua domanda di persona alla Questura</strong>, cioè l’ufficio di polizia.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81bc-91cb-fa6c2eeba6c2" class="">Ti prenderanno le <strong>impronte digitali</strong> e ti faranno alcune <strong>domande generali</strong> su di te, la tua famiglia e il viaggio che hai fatto.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815b-8910-f183d07052ed" class="">Niente di difficile!</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8127-aad4-cbe6a618d72a" class="">Il modulo che compileranno si chiama <strong>C3</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8105-bb87-e49a1f7422b4" class="">Se hai un <strong>passaporto</strong>, ti chiederanno di consegnarlo e lo terranno <strong>per tutta la durata della procedura</strong>.</p></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-8147-9f0d-f1f30faf0a40"/></div><div style="display:contents" dir="auto"><h3 id="2187355e-7f7f-81fe-b223-c15c2f9ada13" class=""><strong>2) Prendere il permesso di soggiorno provvisorio</strong></h3></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818a-b70a-ce9d33126598" class="">Dopo aver ricevuto la tua richiesta, ti verrà dato un <strong>permesso di soggiorno per richiesta d’asilo</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8154-90c1-d8e4b10bf2d8" class="">È un vero e proprio <strong>permesso di soggiorno</strong> che ti permette di restare in Italia mentre la tua domanda è in esame.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8116-8132-e95e62f27916" class="">Con questo permesso puoi:</p></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81b9-80b6-fa2e4b2df9f4" class="bulleted-list"><li style="list-style-type:disc">lavorare 👷</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-8195-9649-dbc0f5331990" class="bulleted-list"><li style="list-style-type:disc">studiare 📚</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81d2-83a8-f9d9a8867f6f" class="bulleted-list"><li style="list-style-type:disc">iscriverti all’anagrafe 🏠</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-8172-ae6b-fcd21cfe232d" class="bulleted-list"><li style="list-style-type:disc">avere un medico di base 🩺</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-8119-bde2-f4b32d7f2e8e" class="bulleted-list"><li style="list-style-type:disc">prendere la patente di guida 🚗</li></ul></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-811c-bb5e-d2f4fdb94580" class="">❗ <strong>Non puoi viaggiare fuori dall’Italia</strong> fino alla fine della procedura,</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a5-a50c-c8e294b7fc6c" class="">e non puoi <strong>convertire questo permesso in permesso per lavoro</strong>.</p></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-81af-aa2e-c7dfcd74e4ff"/></div><div style="display:contents" dir="auto"><h3 id="2187355e-7f7f-81b8-8d72-cca5bdcae5aa" class=""><strong>3) Il colloquio in Commissione</strong></h3></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81df-8e36-c3cdd5ad3704" class="">Il prossimo passo è l’<strong>audizione in Commissione Territoriale</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-811d-b42c-e05740ee9583" class="">È il momento in cui puoi <strong>raccontare la tua storia</strong>, spiegare cosa ti è successo e perché <strong>non puoi tornare nel tuo Paese</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8124-9848-e990ed19284a" class="">Ti faranno molte domande per capire bene la tua situazione.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8135-b467-d0a1ee170c0b" class="">Non è un interrogatorio, ma una conversazione. Cerca di essere <strong>chiaro e onesto</strong>.</p></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-814b-82e2-e2c2734f0c91"/></div><div style="display:contents" dir="auto"><h3 id="2187355e-7f7f-8168-b806-d002ae84324e" class=""><strong>4) La decisione</strong></h3></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8186-9fe5-c9e2bfb699c0" class="">Dopo l’audizione, riceverai <strong>la risposta della Commissione</strong>. Se sei in un centro di accoglienza sarà il responsabile del centro a comunicarti la decisione della Commissione. Altrimenti la riceverai all’indirizzo di domicilio che hai comunicato alla Questura quando hai fatto la domanda di asilo.</p></div><div style="display:contents" dir="auto"><p id="2967355e-7f7f-802b-b429-fa174806b194" class="">Ricordati quindi di comunicare sempre alla Questura i tuoi eventuali cambi di domicilio, o rischi di avere dei problemi!</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81b8-9da6-efba67fabf1a" class="">Qui saprai se avrai <strong>un permesso di soggiorno</strong> oppure no.</p></div><div style="display:contents" dir="auto"><p id="2967355e-7f7f-808d-b989-c3b7155f68d0" class="">Le possibili decisioni <strong>positive </strong>della Commissione sono:</p></div><div style="display:contents" dir="auto"><ul id="2967355e-7f7f-8063-b2db-e283f6e2f782" class="bulleted-list"><li style="list-style-type:disc"><a href="Database%20di%20permessi%20di%20soggiorno/Permesso%20di%20soggiorno%20per%20asilo%20politico%20(status%20d%202187355e7f7f81e2b221fbe9e9936ebd.html">Status di rifugiato</a> (anche chiamato “asilo politico”)</li></ul></div><div style="display:contents" dir="auto"><ul id="2967355e-7f7f-8065-b8e5-f53814a3ac7c" class="bulleted-list"><li style="list-style-type:disc"><a href="Database%20di%20permessi%20di%20soggiorno/Permesso%20di%20soggiorno%20per%20protezione%20sussidiaria%202187355e7f7f811a9a7ffca9eb44f2f7.html">Protezione sussidiaria</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2967355e-7f7f-806f-a518-c0d67e5c61ef" class="bulleted-list"><li style="list-style-type:disc"><a href="Database%20di%20permessi%20di%20soggiorno/Permesso%20di%20soggiorno%20per%20protezione%20speciale%202187355e7f7f81809bd5fc2aa9489d6b.html">Protezione speciale</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2967355e-7f7f-80b5-9c64-e643c935a42e" class="bulleted-list"><li style="list-style-type:disc"><a href="Database%20di%20permessi%20di%20soggiorno/Persona%20gravemente%20malata%20che%20si%20trova%20gi%C3%A0%20in%20Ital%202187355e7f7f81198cd1c609d77bd25b.html">Cure mediche</a></li></ul></div><div style="display:contents" dir="auto"><p id="2967355e-7f7f-8058-b974-c603588b17b3" class="">Se secondo la Commissione non hai diritto a nessuna di queste protezioni, ti verrà data una <strong>risposta negativa</strong>.</p></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-81ff-b631-f69a0e42e2d6"/></div><div style="display:contents" dir="auto"><h3 id="2187355e-7f7f-81ee-b13b-f538d70c2f74" class=""><strong>5) Fare ricorso se la tua domanda viene rifiutata</strong></h3></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8178-bcc6-d08eb30a0b26" class="">❌ Se il risultato <strong>non è positivo</strong>, <strong>puoi fare ricorso in tribunale</strong>. È come chiedere <strong>una seconda opinione</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8174-a02b-fe8a1773a303" class="">📌 Non puoi fare ricorso da solo: ha bisogno di un <strong>avvocato</strong>.</p></div><div style="display:contents" dir="auto"><p id="2967355e-7f7f-808d-a40b-dbd02bc2edb4" class="">⏰ Dal momento in cui ti viene comunicata la decisione negativa hai molto poco tempo per fare il ricorso, contatta un avvocato il <strong>prima possibile</strong>!</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-814c-b24c-e687fbd4de94" class="">💸 Se guadagni <strong>meno di 13.700 euro all’anno</strong>, puoi chiedere al tuo avvocato <strong>l’assistenza legale gratuita</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a9-b20a-c530b6311083" class="">⏳ Ricorda: <strong>la procedura può durare mesi o anche anni</strong>.</p></div><div style="display:contents" dir="auto"><p id="2967355e-7f7f-808b-a2cd-e1bdcfda307d" class="">Le possibili risposte del Tribunale sono le stesse che può dare la Commissione:</p></div><div style="display:contents" dir="auto"><ul id="2967355e-7f7f-8056-a9cf-d1e808c61e62" class="bulleted-list"><li style="list-style-type:disc">positiva: status di rifugiato, protezione sussidiaria, protezione speciale, cure mediche;</li></ul></div><div style="display:contents" dir="auto"><ul id="2967355e-7f7f-807b-8aac-e75b82d2c5c7" class="bulleted-list"><li style="list-style-type:disc">negativa: in questo caso il Tribunale conferma che non hai diritto a nessuna delle protezioni internazionali o sociali previste dalla legge italiana.</li></ul></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-812d-87cd-e500bb6e1285"/></div><div style="display:contents" dir="auto"><h2 id="2187355e-7f7f-8145-ab8f-d4d8c715860d" class=""><strong>⚠️ ATTENZIONE: Paesi considerati “sicuri”</strong></h2></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a4-8b8b-ef3df46966c0" class="">Se vieni da un <strong>Paese che l’Italia considera sicuro</strong>, la tua domanda verrà <strong>esaminata più velocemente</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-814e-964c-eb270a570763" class="">Al momento questi Paesi sono:</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818f-8a02-cd09328fd19d" class="">🇦🇱 Albania</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815a-900f-c7fcbfb2f0f6" class="">🇩🇿 Algeria</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8172-a4d0-ed65aa3bd273" class="">🇧🇩 Bangladesh</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81aa-91a6-f8ae319673aa" class="">🇧🇦 Bosnia-Erzegovina</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ff-b5ae-f9f07c3a646c" class="">🇨🇻 Capo Verde</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81b9-81f5-f7633267311e" class="">🇨🇮 Costa d’Avorio</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8149-ba31-e77ebbb5a899" class="">🇪🇬 Egitto</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ba-b60b-eb4edf7abb99" class="">🇬🇲 Gambia</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f4-a17d-ca10b3d0aef7" class="">🇬🇪 Georgia</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81c0-a331-f2e04202b45d" class="">🇬🇭 Ghana</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81d2-9720-e68646941a92" class="">🇽🇰 Kosovo</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81c1-a27f-e7ddaf692b79" class="">🇲🇰 Macedonia del Nord</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8135-bfcd-da140e59c312" class="">🇲🇦 Marocco</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8140-9080-fec47436f01d" class="">🇲🇪 Montenegro</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8182-bc53-db3e38b7f9a1" class="">🇵🇪 Perù</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8158-b5bf-e7e9066d6017" class="">🇸🇳 Senegal</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ab-a94b-eb2409912d1d" class="">🇷🇸 Serbia</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8116-b868-d9fb6be0299c" class="">🇱🇰 Sri Lanka</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818f-b010-fceaa0f69f7a" class="">🇹🇳 Tunisia</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8180-961c-cf0a84c7eaf4" class="">Se però <strong>nella tua situazione personale</strong> ci sono pericoli <strong>gravi e specifici</strong>, <strong>devi spiegarlo bene</strong> fin dall’inizio.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81d3-85d2-ce03b390a576" class="">Esempi:</p></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81b8-921d-f2259aa71886" class="bulleted-list"><li style="list-style-type:disc">rischi la vita o la libertà 🆘</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81bb-9080-c5caca0f91f7" class="bulleted-list"><li style="list-style-type:disc">sei perseguitato per le tue idee, la religione o l’orientamento sessuale</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-8150-b245-cb2ee5287b59" class="bulleted-list"><li style="list-style-type:disc">vieni da una zona con guerra o violenze</li></ul></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81d6-8f91-c93532c4d478" class="">📎 Porta <strong>tutti i documenti e le prove</strong> che puoi trovare.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8196-b968-e95d50d12bb8" class="">Se ti servono aiuto o consigli, parlane con un <strong>operatore legale</strong>.</p></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-81e2-98ba-d9be225916e1"/></div><div style="display:contents" dir="auto"><h2 id="2187355e-7f7f-8118-a668-ff7b1666c3b4" class=""><strong>❤️ Situazioni particolari</strong></h2></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8105-92cd-ecb02e81b3bd" class="">Se sei:</p></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-810a-ba4b-f57bb6ced9d9" class="bulleted-list"><li style="list-style-type:disc">minorenne 👶</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81f6-863c-c281b512ff79" class="bulleted-list"><li style="list-style-type:disc">donna 👩🏽</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-8192-af82-c4c7fd02ab42" class="bulleted-list"><li style="list-style-type:disc">con disabilità ♿</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-8130-ae8d-d952cd04cbcb" class="bulleted-list"><li style="list-style-type:disc">con problemi di salute mentale 🧠</li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81a9-a4b5-d0187e8b8049" class="bulleted-list"><li style="list-style-type:disc">vittima di violenza, tratta o mutilazioni genitali 🚫</li></ul></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81d4-b45a-d87f5b1fada5" class="">… allora la tua domanda <strong>sarà valutata con particolare attenzione</strong>, anche se vieni da un Paese “sicuro”.</p></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-8130-af15-d9aac0ea5716"/></div><div style="display:contents" dir="auto"><h3 id="29a7355e-7f7f-8063-a3ef-e3e9f432ebe1" class="">🌍 Se hai fatto domanda di asilo in un altro Paese (Regolamento Dublino)</h3></div><div style="display:contents" dir="auto"><p id="29a7355e-7f7f-8060-b50e-f7b709fd8b81" class="">Se hai <strong>già chiesto asilo in un altro Paese europeo</strong>, oppure <strong>hai lasciato le impronte digitali</strong> lì, è possibile che <strong>l’Italia non sia il Paese responsabile</strong> per esaminare la tua domanda.</p></div><div style="display:contents" dir="auto"><p id="29a7355e-7f7f-8084-bb04-f66e27bbc2da" class="">In questi casi, la tua richiesta può essere <strong>trasferita all’altro Paese</strong>.<br/><br/>👉 <strong>Cosa fare:</strong> se ti trovi in questa situazione, è molto importante <strong>chiedere subito aiuto a un avvocato o a un operatore esperto</strong> in diritto dell’asilo. Ti potrà spiegare i tuoi diritti e cosa puoi fare per restare in Italia o per gestire il trasferimento.</p></div><div style="display:contents" dir="auto"><h3 id="2187355e-7f7f-8131-9299-c0c920e65a42" class=""><strong>⏱️ Se la tua richiesta viene respinta perché ritenuta infondata</strong></h3></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ab-8c71-cc43825b99a6" class="">Potresti avere <strong>solo 15 giorni per fare ricorso</strong>.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815f-a9db-ef8735e5bb8c" class="">Per <strong>restare in Italia</strong> durante l’attesa della decisione del giudice, il tuo avvocato dovrà <strong>chiedere un permesso speciale</strong>.</p></div><div style="display:contents" dir="auto"><hr id="2187355e-7f7f-8179-a8c9-ffb572df1e31"/></div><div style="display:contents" dir="auto"><h2 id="29a7355e-7f7f-80e1-97ab-fcb177f04f21" class="">🏡 Diritto all’accoglienza per chi chiede asilo</h2></div><div style="display:contents" dir="auto"><p id="29a7355e-7f7f-80dc-b04a-d78880c646ed" class="">In Italia, le persone che chiedono asilo e <strong>non hanno abbastanza soldi per mantenersi</strong> hanno diritto a un posto in un <strong>centro di accoglienza</strong>.</p></div><div style="display:contents" dir="auto"><p id="29a7355e-7f7f-808a-a1e2-c66cc37c8b19" class="">⏱ <strong>Il diritto all’accoglienza vale:</strong></p></div><div style="display:contents" dir="auto"><ul id="29a7355e-7f7f-8021-b14e-f617f2ed4797" class="bulleted-list"><li style="list-style-type:disc">dal momento in cui la persona <strong>dice di voler chiedere asilo</strong>,</li></ul></div><div style="display:contents" dir="auto"><ul id="29a7355e-7f7f-8058-8a4a-f3ddd3b44004" class="bulleted-list"><li style="list-style-type:disc">fino a quando alla <strong>fine della procedura, </strong>cioè quando la domanda viene <strong>accettata</strong>, <strong>rifiutata definitivamente</strong>, oppure <strong>ritirata</strong>.<div style="display:contents" dir="auto"><p id="29a7355e-7f7f-8063-a08c-c9224160b915" class=""> ⚠️ L’accoglienza può anche essere tolta in altri casi, ad esempio se si <strong>abbandona il centro</strong>, o se la persona <strong>non è più considerata priva di mezzi</strong>, cioè ha abbastanza soldi o risorse per mantenersi da sola.</p></div></li></ul></div><div style="display:contents" dir="auto"><h3 id="29a7355e-7f7f-80bd-a757-e7de17cc69f7" class=""><strong>🔚 Un ultimo consiglio</strong></h3></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8187-a6b6-ff04019a47f4" class=""><strong>La tua storia è unica.</strong></p></div><div style="display:contents" dir="auto"><p id="29a7355e-7f7f-8039-ad2c-e89123bce38f" class="">Non è uguale a quella dei tuoi amici o parenti.</p></div><div style="display:contents" dir="auto"><p id="29a7355e-7f7f-8095-bace-df6badd9bcc0" class="">📜 Le <strong>leggi cambiano spesso</strong>, quindi cerca <strong>sempre un aiuto legale aggiornato</strong>.</p></div><div style="display:contents" dir="auto"><p id="29a7355e-7f7f-8004-b42c-e0544115adfd" class="">Qui trovi un elenco di <strong><a href="Aiuto%20legale%20gratis%20vicino%20a%20te%202187355e7f7f81e99a9fe39b1b1ffc62.html">centri di aiuto legale gratuiti</a></strong> nella tua zona. 🗺️</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

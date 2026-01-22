@@ -1,0 +1,328 @@
+/* ===============================================
+   SOS PERMESSO - MAIN APPLICATION SCRIPT
+   =============================================== */
+
+// ===============================================
+// MOBILE MENU TOGGLE
+// ===============================================
+
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const navWrapper = navMenu?.parentElement;
+
+if (menuToggle && navWrapper) {
+  menuToggle.addEventListener('click', () => {
+    navWrapper.classList.toggle('active');
+    menuToggle.textContent = navWrapper.classList.contains('active') ? '✕' : '☰';
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menuToggle.contains(e.target) && !navWrapper.contains(e.target)) {
+      navWrapper.classList.remove('active');
+      menuToggle.textContent = '☰';
+    }
+  });
+
+  // Close menu when clicking a nav link
+  navWrapper.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navWrapper.classList.remove('active');
+      menuToggle.textContent = '☰';
+    });
+  });
+}
+
+// ===============================================
+// LANGUAGE SWITCHER
+// ===============================================
+
+const languageOptions = document.querySelectorAll('.language-option');
+const currentLanguageDisplay = document.getElementById('current-language');
+
+// Language configuration
+const languageConfig = {
+  'it': { label: 'IT 🇮🇹', path: '/it/' },
+  'en': { label: 'EN 🇬🇧', path: '/en/' },
+  'fr': { label: 'FR 🇫🇷', path: '/fr/' },
+  'es': { label: 'ES 🇪🇸', path: '/es/' },
+  'zh': { label: 'ZH 🇨🇳', path: '/zh/' }
+};
+
+// Get current language from localStorage or default to 'it'
+let currentLanguage = localStorage.getItem('sospermesso-lang') || 'it';
+
+// Update display
+if (currentLanguageDisplay) {
+  currentLanguageDisplay.textContent = languageConfig[currentLanguage].label;
+}
+
+// Handle language selection
+languageOptions.forEach(option => {
+  option.addEventListener('click', function() {
+    const selectedLang = this.getAttribute('data-lang');
+
+    if (selectedLang !== currentLanguage) {
+      // Save to localStorage
+      localStorage.setItem('sospermesso-lang', selectedLang);
+
+      // Update display
+      currentLanguageDisplay.textContent = languageConfig[selectedLang].label;
+
+      // Redirect to language-specific version
+      // In production, this would navigate to /en/, /fr/, etc.
+      // For now, we'll just reload with a lang parameter
+      const url = new URL(window.location);
+      url.searchParams.set('lang', selectedLang);
+      window.location.href = url.toString();
+    }
+  });
+});
+
+// ===============================================
+// SCROLL ANIMATIONS (Intersection Observer)
+// ===============================================
+
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const animateOnScroll = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('slide-up');
+      animateOnScroll.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observe all cards and sections
+document.addEventListener('DOMContentLoaded', () => {
+  const elementsToAnimate = document.querySelectorAll('.card, .section-header, .alert');
+
+  elementsToAnimate.forEach((element, index) => {
+    element.style.opacity = '0';
+    element.classList.add(`stagger-${Math.min(index % 6 + 1, 6)}`);
+    animateOnScroll.observe(element);
+  });
+});
+
+// ===============================================
+// ADD ANIMATION CLASSES TO BUTTONS
+// ===============================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.btn');
+
+  buttons.forEach(button => {
+    // Add squeeze effect on click
+    button.classList.add('squeeze-click');
+
+    // Add hover bounce to primary buttons
+    if (button.classList.contains('btn-primary')) {
+      button.closest('.card')?.classList.add('hover-lift');
+    }
+  });
+});
+
+// ===============================================
+// SMOOTH SCROLL FOR ANCHOR LINKS
+// ===============================================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+
+    // Only prevent default for internal anchors
+    if (href !== '#' && href.startsWith('#')) {
+      e.preventDefault();
+
+      const target = document.querySelector(href);
+      if (target) {
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+  });
+});
+
+// ===============================================
+// STICKY HEADER ON SCROLL
+// ===============================================
+
+let lastScroll = 0;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > 100) {
+    header.style.boxShadow = 'var(--shadow-md)';
+  } else {
+    header.style.boxShadow = 'var(--shadow-sm)';
+  }
+
+  lastScroll = currentScroll;
+});
+
+// ===============================================
+// CARD HOVER EFFECTS
+// ===============================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    // Add icon animation on hover
+    card.addEventListener('mouseenter', () => {
+      const icon = card.querySelector('.card-icon');
+      if (icon) {
+        icon.classList.add('emoji-bounce');
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      const icon = card.querySelector('.card-icon');
+      if (icon) {
+        icon.classList.remove('emoji-bounce');
+      }
+    });
+  });
+});
+
+// ===============================================
+// LOAD CONTENT FROM JSON (for multilingual support)
+// ===============================================
+
+async function loadContent(lang = 'it') {
+  try {
+    const response = await fetch(`../data/content-${lang}.json`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const content = await response.json();
+    return content;
+  } catch (error) {
+    console.error('Error loading content:', error);
+    // Fallback to Italian if there's an error
+    if (lang !== 'it') {
+      return loadContent('it');
+    }
+    return null;
+  }
+}
+
+// ===============================================
+// ANALYTICS & TRACKING (placeholder)
+// ===============================================
+
+function trackEvent(eventName, eventData = {}) {
+  // Placeholder for analytics tracking
+  console.log('Track Event:', eventName, eventData);
+
+  // Example: Google Analytics
+  // if (typeof gtag !== 'undefined') {
+  //   gtag('event', eventName, eventData);
+  // }
+}
+
+// Track CTA clicks
+document.addEventListener('DOMContentLoaded', () => {
+  const ctaButtons = document.querySelectorAll('a[href*="typeform"]');
+
+  ctaButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      const buttonText = button.textContent.trim();
+      trackEvent('cta_click', {
+        button_text: buttonText,
+        destination: button.href
+      });
+    });
+  });
+});
+
+// ===============================================
+// UTILITY FUNCTIONS
+// ===============================================
+
+// Debounce function for scroll events
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+// Check if element is in viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// ===============================================
+// ACCESSIBILITY ENHANCEMENTS
+// ===============================================
+
+// Add focus visible class for keyboard navigation
+document.addEventListener('DOMContentLoaded', () => {
+  let isUsingKeyboard = false;
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      isUsingKeyboard = true;
+      document.body.classList.add('keyboard-navigation');
+    }
+  });
+
+  document.addEventListener('mousedown', () => {
+    isUsingKeyboard = false;
+    document.body.classList.remove('keyboard-navigation');
+  });
+});
+
+// ===============================================
+// CONSOLE MESSAGE
+// ===============================================
+
+console.log(
+  '%c🏮 SOS Permesso',
+  'font-size: 24px; font-weight: bold; color: #FFD700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'
+);
+console.log(
+  '%cCompleto, aggiornato, nella tua lingua',
+  'font-size: 14px; color: #666;'
+);
+console.log(
+  '%c💛 Made with care for the immigrant community in Italy',
+  'font-size: 12px; color: #FF3B3B;'
+);
+
+// ===============================================
+// EXPORT FOR MODULE USE (if needed)
+// ===============================================
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    loadContent,
+    trackEvent,
+    debounce,
+    isInViewport
+  };
+}

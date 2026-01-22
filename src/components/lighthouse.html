@@ -1,0 +1,238 @@
+<!-- Adorable Lighthouse Hero Component -->
+<div class="lighthouse-container">
+  <svg id="lighthouse-svg" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Waves -->
+    <g id="waves" class="waves-group">
+      <path class="wave wave-1" d="M0,350 Q75,340 150,350 T300,350 L300,400 L0,400 Z" fill="#4A90E2" opacity="0.3"/>
+      <path class="wave wave-2" d="M0,360 Q75,355 150,360 T300,360 L300,400 L0,400 Z" fill="#3A7BC8" opacity="0.4"/>
+      <path class="wave wave-3" d="M0,370 Q75,365 150,370 T300,370 L300,400 L0,400 Z" fill="#2E6AB4" opacity="0.5"/>
+    </g>
+
+    <!-- Lighthouse Base -->
+    <g id="lighthouse-base">
+      <!-- Bottom platform -->
+      <ellipse cx="150" cy="330" rx="70" ry="15" fill="#2D2D2D"/>
+      <rect x="80" y="300" width="140" height="30" fill="#3D3D3D"/>
+
+      <!-- Windows on base -->
+      <circle cx="120" cy="315" r="8" fill="#FFD700" opacity="0.9" class="window-light"/>
+      <circle cx="180" cy="315" r="8" fill="#FFD700" opacity="0.9" class="window-light"/>
+
+      <!-- Door -->
+      <rect x="135" y="305" width="30" height="25" rx="15" fill="#1A1A1A"/>
+      <circle cx="160" cy="317" r="2" fill="#FFD700"/>
+    </g>
+
+    <!-- Lighthouse Tower -->
+    <g id="lighthouse-tower">
+      <!-- Main tower body with stripes -->
+      <defs>
+        <linearGradient id="tower-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#E0E0E0;stop-opacity:1" />
+          <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#E0E0E0;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+
+      <!-- Tower shape (trapezoid) -->
+      <path d="M120,300 L180,300 L170,120 L130,120 Z" fill="url(#tower-gradient)" stroke="#CCCCCC" stroke-width="2"/>
+
+      <!-- Red stripes -->
+      <rect x="120" y="260" width="60" height="30" fill="#FF3B3B"/>
+      <rect x="122" y="200" width="56" height="30" fill="#FF3B3B"/>
+      <rect x="125" y="140" width="50" height="30" fill="#FF3B3B"/>
+
+      <!-- Small windows on tower -->
+      <circle cx="150" cy="245" r="4" fill="#FFD700" opacity="0.8" class="tower-window"/>
+      <circle cx="150" cy="185" r="4" fill="#FFD700" opacity="0.8" class="tower-window"/>
+    </g>
+
+    <!-- Lighthouse Top (Cupola) -->
+    <g id="lighthouse-cupola">
+      <!-- Cupola dome -->
+      <ellipse cx="150" cy="120" rx="35" ry="12" fill="#1A1A1A"/>
+      <path d="M115,120 Q115,95 150,90 Q185,95 185,120 Z" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="2"/>
+
+      <!-- Glass/light room -->
+      <rect x="125" y="120" width="50" height="25" fill="#FFD700" opacity="0.6" class="light-room"/>
+      <rect x="127" y="122" width="46" height="21" fill="#FFF" opacity="0.3"/>
+
+      <!-- Cute face on cupola -->
+      <g id="lighthouse-face">
+        <!-- Eyes -->
+        <ellipse cx="140" cy="105" rx="4" ry="5" fill="#1A1A1A" class="eye eye-left"/>
+        <ellipse cx="160" cy="105" rx="4" ry="5" fill="#1A1A1A" class="eye eye-right"/>
+
+        <!-- Eye highlights (make it cute) -->
+        <circle cx="141" cy="104" r="1.5" fill="#FFFFFF"/>
+        <circle cx="161" cy="104" r="1.5" fill="#FFFFFF"/>
+
+        <!-- Rosy cheeks -->
+        <circle cx="130" cy="108" r="5" fill="#FF6B6B" opacity="0.4"/>
+        <circle cx="170" cy="108" r="5" fill="#FF6B6B" opacity="0.4"/>
+
+        <!-- Smile -->
+        <path d="M140,112 Q150,117 160,112" stroke="#1A1A1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Top star -->
+    <g id="star-top">
+      <polygon points="150,75 152,82 160,82 154,87 156,95 150,90 144,95 146,87 140,82 148,82" fill="#FFD700" class="blinking-star"/>
+      <circle cx="150" cy="85" r="8" fill="#FFD700" opacity="0.3" class="star-glow"/>
+    </g>
+
+    <!-- Light beam (rotating) -->
+    <g id="light-beam" class="rotating-beam">
+      <defs>
+        <radialGradient id="beam-gradient">
+          <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8" />
+          <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0" />
+        </radialGradient>
+      </defs>
+      <path d="M150,120 L200,50 L210,60 L150,135 Z" fill="url(#beam-gradient)" opacity="0.6"/>
+      <path d="M150,120 L100,50 L90,60 L150,135 Z" fill="url(#beam-gradient)" opacity="0.4"/>
+    </g>
+  </svg>
+</div>
+
+<style>
+.lighthouse-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#lighthouse-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+/* Waves Animation */
+.wave {
+  animation: wave-float 3s ease-in-out infinite;
+}
+
+.wave-1 {
+  animation-delay: 0s;
+  animation-duration: 4s;
+}
+
+.wave-2 {
+  animation-delay: 0.3s;
+  animation-duration: 5s;
+}
+
+.wave-3 {
+  animation-delay: 0.6s;
+  animation-duration: 6s;
+}
+
+@keyframes wave-float {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(-5px) translateY(-2px); }
+  50% { transform: translateX(-10px) translateY(0); }
+  75% { transform: translateX(-5px) translateY(2px); }
+}
+
+/* Light Beam Rotation */
+.rotating-beam {
+  transform-origin: 150px 120px;
+  animation: rotate-beam 4s linear infinite;
+}
+
+@keyframes rotate-beam {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Blinking Star */
+.blinking-star {
+  animation: blink 2s ease-in-out infinite;
+}
+
+.star-glow {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+/* Window lights pulsing */
+.window-light, .tower-window {
+  animation: light-pulse 3s ease-in-out infinite;
+}
+
+.tower-window {
+  animation-delay: 0.5s;
+}
+
+@keyframes light-pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+/* Light room glow */
+.light-room {
+  animation: room-glow 2s ease-in-out infinite;
+}
+
+@keyframes room-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
+}
+
+/* Eye blink animation */
+.eye {
+  animation: eye-blink 4s ease-in-out infinite;
+}
+
+.eye-right {
+  animation-delay: 0.1s;
+}
+
+@keyframes eye-blink {
+  0%, 96%, 100% { transform: scaleY(1); }
+  98% { transform: scaleY(0.1); }
+}
+
+/* Hover interaction - lighthouse sways */
+.lighthouse-container:hover #lighthouse-tower,
+.lighthouse-container:hover #lighthouse-cupola,
+.lighthouse-container:hover #star-top {
+  animation: sway 1s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lighthouse-container {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lighthouse-container {
+    max-width: 250px;
+  }
+}
+</style>

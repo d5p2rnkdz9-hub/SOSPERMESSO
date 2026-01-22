@@ -1,0 +1,727 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Permesso per cure dopo visto di ingresso</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2187355e-7f7f-81a3-a444-f6c6bd8a13ae" class="page sans"><header><h1 class="page-title" dir="auto">Permesso per cure dopo visto di ingresso</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8197-9197-fe1869a7d3ba" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815b-a1a0-ca34297b493f" class=""><strong>Che cos’è?</strong></p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a7-8bfb-fb74e661703e" class="">Il permesso di soggiorno per cure mediche consente la permanenza in Italia per potersi sottoporre a visite mediche specialistiche e ricevere le cure necessarie.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81b8-a25c-ebac835ec2ba" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f6-a34e-dedfc12f436f" class=""><strong>Chi lo può chiedere?</strong></p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8137-a396-faa0ce992465" class="">Chi è in possesso di un visto per motivi di “cure mediche”, cioè un visto che autorizza ad entrare in Italia e soggiornarvi per un periodo limitato per ricevere cure in una struttura sanitaria italiana, oppure a chi fa ingresso in Italia nell’ambito di programmi umanitari.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a1-bf5b-f96604b12ab1" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-812e-8130-fb932ead4bdf" class=""><strong>Quanto dura?</strong></p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8112-b0ce-d1ef8a4f2641" class="">La durata del visto per cure mediche dipende dalla durata presunta delle cure a cui dovrai sottoporti in Italia.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f3-8ad6-fe246ce5207e" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8152-9369-ebefbb79bfed" class=""><strong>Cosa mi consente di fare? </strong></p></div><div style="display:contents" dir="auto"><ol type="1" id="2187355e-7f7f-810e-afa3-d7a25328da48" class="numbered-list" start="1"><li>Lavoro - il permesso di soggiorno per “cure mediche” autorizza a lavorare in Italia. Lo prevede espressamente l’articolo 36, comma 3 del D.Lgs. n. 286/1998. Non è possibile però, alla scadenza, chiedere la conversione in un permesso di soggiorno per motivi di lavoro.</li></ol></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8160-a068-f090860ecb45" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8162-8aa0-f96876d9e3b7" class=""><strong>Con il permesso di soggiorno rilasciato a seguito d’ingresso con visto per “cure mediche”, posso iscrivermi al Servizio Sanitario Nazionale italiano?</strong></p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8169-8ad4-e130f08300c4" class="">No. Se sei entrato con visto, non hai diritto all’iscrizione al sistema sanitario. Questo vuol dire che il costo delle visite mediche e delle cure che riceverai in Italia è interamente a tuo carico.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81c5-a8fc-d297d4505d62" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8186-bcda-f03ba632fe10" class=""><strong>Come richiedo il visto?</strong></p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818f-bda2-fc13e2627937" class="">Devi rivolgerti all’ambasciata o al consolato italiano presente nel tuo Paese di origine.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8179-b596-c672606257a4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-812e-bfac-dd5e7ba5b663" class=""><strong>Quali sono i documenti necessari per ottenere il rilascio di un visto d’ingresso in Italia per “cure mediche”?</strong></p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8141-96dc-c25db699dde9" class="">Per poter ottenere il visto devi:</p></div><div style="display:contents" dir="auto"><ol type="1" id="2187355e-7f7f-8144-864d-e3c2905f9664" class="numbered-list" start="1"><li>avere il passaporto: l’ambasciata o il consolato italiano di solito chiede che la data di scadenza del passaporto sia superiore di almeno 3 mesi rispetto a quella del visto.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2187355e-7f7f-8121-8fd0-d2d038ef1a03" class="numbered-list" start="2"><li>presentare certificazione medica sulla patologia sofferta, rilasciata da una struttura sanitaria italiana (pubblica o privata convenzionata con il sistema sanitario) oppure estera. Se i certificati medici sono fatti all’estero, dovranno essere tradotti in italiano.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2187355e-7f7f-81f3-a256-c6cafe84f45d" class="numbered-list" start="3"><li>presentare una dichiarazione della struttura sanitaria italiana presso la quale sarai in cura. Nella dichiarazione devono essere indicati il tipo di cura, la data di inizio e la durata presunta del trattamento sanitario.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2187355e-7f7f-810c-8c3a-f84c830ee222" class="numbered-list" start="4"><li>versare alla struttura sanitaria una somma pari al 30% di quello che presumibilmente sarà il costo delle cure da eseguire in Italia. L’ambasciata o il consolato italiano nel tuo Paese ti chiederà di esibire la ricevuta dell’avvenuto versamento di questa somma.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2187355e-7f7f-81ca-b831-f6d5925c663c" class="numbered-list" start="5"><li>dimostrare di avere risorse economiche sufficienti in Italia per pagare le cure a cui dovrai sottoporti; provvedere a vitto e alloggio per tutta la durata del soggiorno in Italia per te stesso e, eventualmente, per la persona che ti accompagna; provvedere, infine, alle spese del viaggio per andare in Italia e poi tornare nel tuo Paese. Con ogni probabilità l’ambasciata o il consolato italiano ti chiederà di esibire la prenotazione del viaggio o i biglietti aerei oppure, in alternativa, dimostrare di avere un mezzo di trasporto personale.</li></ol></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8103-8abb-e674d54716d8" class="">Sarà necessario pagare una tassa per le spese amministrative di rilascio del visto.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8113-ad7d-f9cd17ceb493" class="">Per informazioni più dettagliate sui moduli da compilare, sui documenti da esibire in ambasciata o consolato e sulle spese di rilascio del visto, ti consigliamo di rivolgerti direttamente all’ambasciata o al consolato italiano presente nel tuo Paese.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81fc-a9d3-f4344e8f22e6" class=""><strong>Che cosa succede in seguito all’ingresso in Italia?</strong></p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ee-abd2-dd9c2781923f" class="">Devi rivolgerti <strong>entro 8 giorni</strong> alla Questura del luogo dove hai il domicilio per chiedere il rilascio del permesso di soggiorno per “cure mediche”. La stessa cosa dovrà fare il tuo eventuale accompagnatore.</p></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-814c-a71b-f68e00e2fe8e" class="bulleted-list"><li style="list-style-type:disc"><strong>RINNOVO</strong></li></ul></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8109-bb0d-d29ad2108ec7" class="">Alla scadenza, il permesso per “cure mediche” può essere rinnovato: i requisiti sono gli stessi del primo rilascio. Attenzione! Anche il giorno dell’appuntamento per il rinnovo devi portare in Questura un certificato rilasciato da una struttura pubblica o da un medico convenzionato con il servizio sanitario nazionale che definisce la tua patologia e le cure di cui hai bisogno.</p></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81aa-949e-ee27e7f046e5" class="bulleted-list"><li style="list-style-type:disc"><strong>CONVERSIONE</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81a9-876e-c9753e8ed794" class="bulleted-list"><li style="list-style-type:disc"><strong>COSTO</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81ec-99cb-c3e4aec072fe" class="bulleted-list"><li style="list-style-type:disc"><strong>MODULISTICA</strong></li></ul></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8164-93b1-d55cfb9c86b8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ee-906b-cd5450ac5911" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f0-ac6c-d67d1656da99" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-811a-8c3e-eebe849c0433" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8180-a360-e6b6d61ae211" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f6-b718-d832c8003e84" class="">Un permesso di soggiorno per motivi di “cure mediche” può essere rilasciato solo a chi entra in Italia con visto d’ingresso?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81fc-ad7c-c00a37cf977b" class="">No, questo tipo di permesso può essere rilasciato anche a chi si trova già in Italia e ha bisogno di cure: ad esempio, a chi si trova in Italia senza titolo di soggiorno; oppure a chi è in possesso di un permesso di soggiorno per altri motivi, ma viene a trovarsi in una situazione di irregolarità perché non soddisfa più i requisiti per rinnovarlo.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-816b-9a74-c86035286170" class="">Devi sapere che in Italia il diritto alla salute è un diritto inviolabile, garantito dalla Costituzione italiana per tutti i/le cittadini/e, italiani/e e stranieri/e. Infatti, la persona che soffre di una patologia grave, che non può essere adeguatamente curata nel Paese di origine, non può essere espulsa e ha diritto a ricevere cure in Italia. In questi casi, lo Stato</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815f-9943-e4c3483c9ab8" class="">italiano ha un obbligo, previsto dal diritto internazionale, di non respingimento (art. 19, comma 2, lettera d-bis, D.Lgs. n. 286/1998).</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81df-b693-f8c85a446750" class="">Quando deve essere rispettato il divieto di respingimento?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8176-9dac-dd5a3c6daad1" class="">Il divieto di respingimento deve essere rispettato nel caso in cui tu abbia una patologia, fisica o psichica, la cui gravità è riconosciuta dal sistema sanitario italiano e alla condizione in cui nel tuo Paese d’origine questa patologia non sia curabile in modo adeguato. Quindi, nella condizione in cui un eventuale ritorno nel tuo Paese d’origine possa comportare un danno per la tua salute.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81fb-a6b7-cc89af0ece16" class="">Ti trovi in Italia senza permesso di soggiorno e ti è stata diagnosticata una patologia grave per cui non potresti ricevere cure adeguate nel tuo Paese di origine. Che cosa puoi fare?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f8-a3b9-ccb90cd127ac" class="">Puoi rivolgerti alla Questura del luogo dove hai il domicilio per chiedere il rilascio di un permesso di soggiorno per “cure mediche”.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8189-b816-c220155e0614" class="">Come si prenota un appuntamento in Questura?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a9-b88f-e5aa73de1669" class="">Le Questure in Italia hanno sistemi diversi di prenotazione degli appuntamenti. Alcune Questure utilizzano il portale &quot;Prenotafacile&quot; a cui ci si iscrive fornendo alcuni dati quali: cognome, nome, data di nascita, sesso, documento, indirizzo e CAP di residenza , indirizzo e-mail valido e numero di telefono. Altre Questure, invece, chiedono di prendere appuntamento inviando una PEC (Posta Elettronica Certificata) oppure andando di persona in Questura nei giorni prefissati. Ti consigliamo di informarti presso la tua Questura di riferimento.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-817f-89ff-fe10a7f17242" class="">Ricordati che il giorno dell&#x27;appuntamento in Questura devi essere presente e ti verranno prese le impronte.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-816c-bea7-ed28fb9efc45" class="">Quali documenti devi presentare in Questura?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ca-aa43-f52db6e4c311" class="">Il giorno dell&#x27;appuntamento in Questura devi portare i documenti che dimostrano la tua situazione di salute. Questo significa che devi portare un certificato medico che definisce quale è la tua patologia. Il certificato deve essere rilasciato da una struttura italiana di sanità pubblica o da un medico convenzionato con il servizio sanitario nazionale.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-810f-a4d3-e1775f13ed7d" class="">Ricorda che il giorno dell’appuntamento devi portare anche:</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81df-89f5-d1d0fc8fdbcb" class="">● il tuo passaporto (controlla che non sia scaduto);</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8127-a0be-d387853c75db" class="">● 4 fototessere;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8183-ae01-d47b091ce695" class="">● una marca da bollo di 16,00 euro;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8185-bceb-f803790b52dc" class="">● la dichiarazione di ospitalità.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8139-b1f4-c2088c556ac2" class="">Come fai a farti rilasciare un certificato medico se non hai nessun permesso di soggiorno?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81bd-929e-e0112f3f6011" class="">In Italia l’accesso alle cure mediche è garantito per tutti/e a prescindere dalla situazione giuridica. Quindi, anche senza permesso di soggiorno, puoi recarti presso il Pronto Soccorso della tua città ed essere visitato/a da un/a medico/a, il/la quale potrà certificare la tua patologia. In questo caso, come primo documento, ti verrà rilasciato un codice “STP”, ovvero verrai iscritto/a al servizio sanitario in qualità di “Straniero/a Temporaneamente Presente” sul territorio nazionale.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8183-91ed-c47a68c7b738" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8155-bb8e-c5ebb5047d08" class="">Qual è la durata del permesso di soggiorno per “cure mediche”?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8179-a0f9-c235c00a7778" class="">Il permesso di soggiorno per “cure mediche” rilasciato dal Questore avrà la stessa durata del certificato rilasciato dal medico e comunque non superiore ad 1 anno. Si tratta di un permesso di soggiorno cartaceo (non elettronico).</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818f-bc59-c6010d8a99f4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815b-99e8-cb91123d74dd" class="">Se hai una patologia, è automatico che ti venga rilasciato un permesso di soggiorno per “cure mediche”?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81e6-a992-dff45d3315de" class="">No, come definito chiaramente dalla normativa, il rilascio del permesso per “cure mediche” è subordinato a due condizioni. La prima è che la patologia sia considerata di particolare</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81dd-8ed7-e7ed01cb73d1" class="">gravità. La seconda è che il tuo paese di origine non garantisca cure adeguate. La valutazione viene fatta dal Questore.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f1-bfcf-ff32dff1d638" class="">Che cosa vuol dire che la tua patologia non può essere adeguatamente curata nel tuo Paese di origine?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-819f-8c81-f192ce65db4c" class="">Vuol dire che nel tuo Paese non esistono cure per la tua patologia oppure le cure sono difficilmente accessibili. Ti consigliamo di portare in Questura qualsiasi documento che aiuti a dimostrare l’impossibilità o la difficoltà, in caso di ritorno nel tuo Paese, a ricevere cure adeguate per la tua patologia (ad esempio, informazioni ufficiali o report internazionali sul tuo Paese di origine).</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8114-ac8e-f1466f3114f4" class="">Se hai richiesto il rilascio o il rinnovo di un permesso di soggiorno per “cure mediche” ma hai ricevuto un rifiuto da parte della Questura, che cosa puoi fare?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8104-894a-eb78ee0484a9" class="">Se hai ricevuto un rifiuto, puoi fare ricorso contro la decisione della Questura, cioè chiedere che un/una Giudice riesamini il tuo caso. In questo caso devi contattare un/una avvocato/a che presenterà il ricorso per te. Ricorda che il ricorso deve essere presentato entro 30 giorni dal momento in cui ti è stata consegnata la decisione negativa.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81d2-9303-f67819ae9059" class="">Con il permesso di soggiorno per “cure mediche” ti puoi iscrivere all’anagrafe?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81cb-b544-ff58239593ce" class="">Sì, hai diritto a prendere la residenza nel Comune dove vivi. Inoltre, ti viene rilasciata una carta d’identità cartacea (non elettronica).</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8183-a3d5-dbf9a8717723" class="">Con il permesso di soggiorno per “cure mediche” hai diritto ad iscriverti al servizio sanitario nazionale?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f6-8d24-f0b5597c5851" class="">Sì, con il permesso per “cure mediche” hai diritto ad iscriverti al servizio sanitario nazionale Questo vuol dire che hai diritto a ricevere cure alle stesse condizioni dei/delle cittadini/e italiani/e: puoi scegliere un medico di base e, se il tuo reddito è molto basso, hai delle agevolazioni nell’accesso alle visite mediche e nell’acquisto di medicinali. Hai diritto al rilascio di una tessera sanitaria, che avrà la stessa data di scadenza del tuo permesso di soggiorno.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818c-8d4f-ef99d17aefd8" class="">Con il permesso di soggiorno per “cure mediche” puoi viaggiare al di fuori dell’Italia?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-819f-b72b-c7aa065c414a" class="">No, questo permesso di soggiorno è valido solo all’interno del territorio nazionale italiano.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-811e-8324-caf8cea23615" class="">Il permesso di soggiorno per “cure mediche” ti autorizza a lavorare in Italia?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8115-ac2b-db2eebe91d00" class="">In nessun punto la legge prevede che con un permesso di soggiorno per “cure mediche” non si possa lavorare. Quindi, se hai un permesso per “cure mediche” e non trovi nessun datore di lavoro disposto ad assumerti, prova a rivolgerti ad un/a avvocato/a oppure ad associazioni o sportelli di orientamento per persone migranti, se presenti nel tuo territorio. Devi, comunque, sapere che il 6 maggio 2023 è entrata in vigore una nuova legge in Italia</p></div><div style="display:contents" dir="auto"><ul id="2187355e-7f7f-81c9-abc4-c5c47ae70ddb" class="bulleted-list"><li style="list-style-type:disc">la legge n. 50/2023 - che ha eliminato la possibilità di convertire il permesso di soggiorno per “cure mediche” in un permesso di soggiorno per motivi di lavoro o attesa occupazione. In questo momento, le Questure in Italia non accettano nessuna richiesta di conversione da permesso per “cure mediche” a permesso per lavoro o attesa occupazione che sia stata presentata successivamente al 6 maggio.</li></ul></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8149-bdec-cd146d7da793" class="">Tuttavia, se al momento dell’entrata in vigore della legge - il 6 maggio - eri già in possesso di un permesso per “cure mediche” ma non hai fatto in tempo a presentare domanda di conversione, se lo desideri puoi rivolgerti ad un/a avvocato/a per valutare se la nuova legge si applica anche al tuo caso. Lo stesso vale nel caso in cui hai presentato richiesta in Questura di permesso “per cure” mediche oppure richiesta di protezione internazionale prima del 6 maggio, ma la decisione della Questura o della Commissione territoriale è arrivata solamente dopo questa data.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8173-b50e-f0ebe1d081ff" class="">Hai presentato domanda di protezione internazionale in Italia?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81e2-bf83-e8dfb9055bfa" class="">Se hai presentato domanda di protezione internazionale in Italia, la Commissione Territoriale - cioè l’organo che decide sulla tua domanda - deve valutare anche la possibilità di rilascio di un permesso per “cure mediche”.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81dc-8053-ed255d38ce9c" class="">Nel caso in cui non sia possibile riconoscere una forma di protezione maggiore e più tutelante (asilo, protezione sussidiaria o protezione speciale), la Commissione, prima di emettere un diniego, deve valutare se un eventuale ritorno nel tuo Paese di origine possa causare un danno alla tua salute.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8197-b2ac-d9608ec2fd95" class="">Attenzione, quindi: nel momento in cui prepari i documenti da consegnare alla Commissione Territoriale il giorno della tua audizione, non dimenticare di portare anche tutta la documentazione medica in tuo possesso. Così aiuterai la Commissione a valutare se, nella tua situazione di salute, ci sono i requisiti per il rilascio di un permesso di soggiorno per “cure mediche”.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ce-a50d-d54a94d98c1d" class="">In questo caso, la Commissione Territoriale trasmetterà gli atti al Questore per il rilascio di un permesso di soggiorno per “cure mediche”.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-814b-9911-e33f9fba335a" class="">Se la Commissione Territoriale ha riconosciuto il tuo diritto ad un permesso di soggiorno per “cure mediche”, che cosa devi fare?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8110-a926-d83c91520b5e" class="">Devi prenotare un appuntamento nella Questura del luogo dove hai il domicilio. Il giorno dell&#x27;appuntamento per le impronte, devi portare con te la decisione della Commissione territoriale in cui è scritto che la Questura deve rilasciare un permesso di soggiorno per “cure mediche”.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-817f-8ad8-ffdecb868cee" class="">Oltre alla decisione della Commissione, devi portare:</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8139-8cfa-de02a9d2b1b8" class="">● 4 fototessere;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8176-8181-ef68a1aff644" class="">● una marca da bollo da 16,00 euro;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-816b-93d4-fd77d6d8fa90" class="">● la dichiarazione di ospitalità.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818f-b136-e31bc3022159" class="">Attenzione! Quando è la Commissione che riconosce il tuo diritto a ricevere un permesso di soggiorno per “cure mediche”, la Questura non può chiederti di mostrare il passaporto come requisito per il rilascio. Potrebbe, invece, chiedertelo al momento del rinnovo.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-817d-a62b-ca82659e2403" class="">Hai richiesto il rilascio o il rinnovo di una tipologia di permesso di soggiorno diversa dal “cure mediche” (ad esempio, lavoro, famiglia ecc.). La Questura, però, ritiene che tu non abbia i requisiti per quella tipologia di permesso di soggiorno e rifiuta la tua richiesta. Cosa devi sapere in questo caso?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81da-a24a-df6824f4c4fd" class="">Devi sapere che la Questura ha sempre l’obbligo di valutare se nel tuo caso individuale ci sono cause di inespellibilità, cioè motivi per cui tu non puoi essere espulso/a dall’Italia. Come già spiegato, la presenza di problemi di salute gravi per i quali non potresti ricevere sufficienti cure nel tuo Paese di origine, costituisce una causa di inespellibilità a prescindere dal tipo di permesso di soggiorno di cui potresti aver fatto richiesta. Quindi, se la Questura si rifiuta di rilasciare o rinnovare la tipologia di permesso di soggiorno da te inizialmente richiesta, ricordati che puoi sempre chiedere, in alternativa, un permesso per cure mediche: in questo caso dovrai presentare la documentazione medica relativa alla tua patologia e dimostrare che, in caso di ritorno nel tuo Paese, non potresti ricevere cure adeguate.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81d9-8dfb-ebcafdc7e634" class="">Il permesso di soggiorno per “cure mediche” può essere richiesto anche in caso di gravidanza?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8107-b36b-e6c392b9a530" class="">Sì, se sei in stato di gravidanza e non hai un titolo di soggiorno, non puoi essere espulsa dall’Italia. Puoi richiedere il rilascio di un permesso di soggiorno per “cure mediche”, prenotando un appuntamento nella Questura del luogo dove hai il domicilio. Con questo permesso di soggiorno hai diritto all’iscrizione al servizio sanitario nazionale e a ricevere l’assistenza necessaria durante la gravidanza e il parto. In caso di interruzione volontaria di gravidanza, il permesso viene revocato.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-818d-a6b0-d18275481f92" class="">Quali documenti devi portare il giorno dell’appuntamento in Questura?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8140-ac66-d69b299dc364" class="">Devi portare:</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a2-8b85-d8b11d4cdd4b" class="">● certificazione medica rilasciata da una struttura pubblica oppure da un medico convenzionato con il sistema sanitario, che attesti lo stato di gravidanza e la data presunta del parto;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-816c-9b64-d1b51000cff5" class="">● il passaporto;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-810c-8dfd-d065891cd890" class="">● 4 fototessere;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8106-bb17-c2a0fb7aeaf9" class="">● una marca da bollo da 16,00 euro;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81a6-9565-e1afcd859e77" class="">● la dichiarazione di ospitalità.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81c6-8e51-d2f8f11645da" class="">Qual è la durata di questo permesso di soggiorno?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-816b-9231-ce02e26839ab" class="">Questo permesso di soggiorno può essere rilasciato dal momento in cui viene certificato lo stato di gravidanza e può essere rinnovato per i 6 mesi successivi al parto. Il giorno dell’appuntamento in Questura per il rinnovo devi portare il certificato di nascita.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-815b-8785-c033d7e51da7" class="">Scaduto il periodo di 6 mesi successivi al parto, il permesso non potrà essere ulteriormente rinnovato, né potrà essere convertito in un permesso di soggiorno per motivi di lavoro o attesa occupazione. Può, però, essere convertito in un permesso di soggiorno per motivi di famiglia, in presenza dei requisiti previsti dalla legge italiana per il ricongiungimento familiare.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8146-a593-d48b401b1edf" class="">Quali sono i requisiti per chiedere la conversione in un permesso di soggiorno per motivi di famiglia?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81be-9958-e47b2ca4c1f5" class="">Puoi chiedere la conversione se:</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81b8-bb82-ddb436095d2a" class="">● hai un permesso di soggiorno per “cure mediche” non scaduto da più di un anno; convivi con il tuo/a coniuge che soggiorna regolarmente in Italia;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81f3-833d-dc5711cfa7a7" class="">● dimostri di avere un alloggio “idoneo”, cioè che soddisfi i requisiti igienico-sanitari previsti dalla normativa italiana e che sia abbastanza grande per il numero di familiari che vivono al suo interno: dovrai portare in Questura il “certificato di idoneità dell’alloggio” rilasciato dal tuo Comune;</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81b9-a03a-d5380a0d51f3" class="">● dimostri di avere risorse economiche sufficienti: il reddito minimo richiesto viene calcolato prendendo in considerazione l’importo annuo dell’assegno sociale (6.947,33 € per il 2024), aumentato della metà per ogni familiare. Se è il/la tuo/a coniuge che provvede al sostentamento della famiglia, dovrai dimostrare, attraverso buste paga, CUD o dichiarazione dei redditi, che il suo reddito rispetta i requisiti minimi previsti dalla legge.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81fd-996c-e54e0be07aba" class="">A chi bisogna rivolgersi per ottenere il certificato di idoneità dell’alloggio?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ad-88ee-f981c7d866e2" class="">Bisogna rivolgersi al Comune. Il certificato di idoneità dell’alloggio può essere richiesto dal/dalla proprietario/a di casa o dal/dalla titolare del contratto di affitto oppure dalla persona che ha l’ospitalità nell’alloggio. Per quanto riguarda le modalità di invio della domanda e i moduli da compilare, informati presso il tuo Comune. Quasi sempre si tratta</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81d0-897f-c40b97bb19ce" class="">di una procedura online: se hai bisogno di supporto, puoi rivolgerti ad un patronato. Alla domanda è necessario allegare la planimetria catastale dell’alloggio, cioè la mappa della casa.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-814e-8bdb-e185dbc4bce4" class="">Il permesso di soggiorno per “cure mediche” può essere richiesto anche dal padre del/della nascituro/a?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8116-a8a5-ceefb5755504" class="">Sì, il permesso di soggiorno può essere richiesto per la stessa durata anche dal marito convivente della donna in stato di gravidanza.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81fe-9ff5-d4e526b3a5a0" class="">Se tua moglie si trova in stato di gravidanza e siete conviventi in Italia, puoi chiedere il rilascio di un permesso di soggiorno per “cure mediche”, dimostrando il legame matrimoniale. Il giorno dell’appuntamento in Questura dovrai, infatti, portare la documentazione relativa al matrimonio, tradotta in italiano e legalizzata.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8178-b45d-ff103b852a9d" class="">Se, invece, non sei sposato, ma convivi con la madre di tuo/a figlio/a, potrai richiedere un permesso di soggiorno per “cure mediche” solo dopo la nascita e per la durata di 6 mesi. Il giorno dell’appuntamento in Questura dovrai portare il certificato di nascita che dimostra la paternità.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8195-b902-eb31a7800e31" class="">Con questo permesso di soggiorno puoi lavorare in Italia?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-81ee-aa74-cf3bc2a15c42" class="">No, questo permesso di soggiorno non consente di svolgere attività lavorativa in Italia.</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8160-9722-fc72071505a7" class="">Quali sono i diritti del/della neonato/a?</p></div><div style="display:contents" dir="auto"><p id="2187355e-7f7f-8165-9121-f53209c469c6" class="">Il/la neonato/a ha gli stessi diritti dei genitori. Ha, quindi, diritto all’iscrizione anagrafica e all’iscrizione al servizio sanitario nazionale: in questo modo è possibile scegliere un/a pediatra.</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

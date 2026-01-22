@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aiuto Legale Gratis - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="shortcut icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="apple-touch-icon" href="../../images/Favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/animations.css">
+  <link rel="stylesheet" href="../styles/mobile.css">
+  <link rel="stylesheet" href="../styles/mobile-fix.css">
+  <style>
+    .legal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .legal-table th, .legal-table td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    .legal-table th {
+      background-color: var(--off-white);
+      font-weight: 600;
+      color: var(--black);
+    }
+    .legal-table tr:hover {
+      background-color: rgba(255, 215, 0, 0.1);
+    }
+    .city-section {
+      margin-bottom: 2rem;
+    }
+    .city-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent-purple);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-purple);
+    }
+    @media (max-width: 768px) {
+      .legal-table, .legal-table tbody, .legal-table tr, .legal-table td {
+        display: block;
+      }
+      .legal-table thead {
+        display: none;
+      }
+      .legal-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+      .legal-table td {
+        border: none;
+        padding: 0.25rem 0;
+      }
+      .legal-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.25rem;
+        color: var(--gray-medium);
+        font-size: 0.875rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../index.html" class="logo">
+          <img src="../../images/Logo.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="database.html" class="nav-link">Database</a></li>
+          <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <span>Aiuto Legale</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">⚖️</span>
+        <h1 class="page-title">Aiuto legale gratis vicino a te</h1>
+        <p class="section-subtitle">Trova assistenza legale gratuita nella tua città</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 1100px;">
+
+      <!-- BOLOGNA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Bologna</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Associazione</th>
+              <th>Indirizzo</th>
+              <th>Orari</th>
+              <th>Contatto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Associazione">Help Desk Migrante</td>
+              <td data-label="Indirizzo">Via Stalingrado 12 / Via Serlio 25/2</td>
+              <td data-label="Orari">Martedì 15:00-18:00 su appuntamento</td>
+              <td data-label="Contatto">legale@arcacoop.com</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Associazione Xenia</td>
+              <td data-label="Indirizzo">Via Marco Polo, 21/23</td>
+              <td data-label="Orari">Su appuntamento</td>
+              <td data-label="Contatto">info@xeniabo.org - 0516350774</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Associazione Universo APS</td>
+              <td data-label="Indirizzo">Piazza XX Settembre, 7</td>
+              <td data-label="Orari">Su appuntamento</td>
+              <td data-label="Contatto">helpdesk@universointerculturale.it - 051 8556042</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Attivist* Tpo e Labàs</td>
+              <td data-label="Indirizzo">Vicolo Bolognetti,4 / Via Casarini 17/4</td>
+              <td data-label="Orari">Scrivere su WhatsApp</td>
+              <td data-label="Contatto">sportellomigrantitpo@gmail.com - 3534076384</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Ya Basta!</td>
+              <td data-label="Indirizzo">Via Casarini 17/4</td>
+              <td data-label="Orari">Mercoledì 18:00-20:00</td>
+              <td data-label="Contatto">yabasta.bologna@gmail.com - 0510935901</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BRESCIA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Brescia</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Associazione</th>
+              <th>Indirizzo</th>
+              <th>Orari</th>
+              <th>Contatto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Associazione">Sportello Richiedenti Asilo e Rifugiati</td>
+              <td data-label="Indirizzo">Via Repubblica Argentina, 90</td>
+              <td data-label="Orari">Lun 9-13, Mar-Mer 14-17</td>
+              <td data-label="Contatto">sportello.brescia@rifugiati.eu - 3371488628</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Centro Migranti ONLUS</td>
+              <td data-label="Indirizzo">Via Antiche Mura, 3</td>
+              <td data-label="Orari">Lun-Mer-Ven 13:30-17:30, Mar-Gio 8:30-12:30</td>
+              <td data-label="Contatto">centromigranti@diocesi.brescia.it - 030.42467</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MILANO -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Milano</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Associazione</th>
+              <th>Indirizzo</th>
+              <th>Orari</th>
+              <th>Contatto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Associazione">Naga</td>
+              <td data-label="Indirizzo">Via Zamenhof, 7A</td>
+              <td data-label="Orari">Lun-Ven 9-12/14-17, Mar-Mer 9-12/14-19, Gio 9-12</td>
+              <td data-label="Contatto">0258102599</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- NAPOLI -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Napoli</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Associazione</th>
+              <th>Indirizzo</th>
+              <th>Orari</th>
+              <th>Contatto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Associazione">Ex OPG - Je So' Pazzo</td>
+              <td data-label="Indirizzo">Via Matteo Renato Imbriani, 218</td>
+              <td data-label="Orari">Giovedì 14:00-20:00</td>
+              <td data-label="Contatto">info@jesopazz.org</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PADOVA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Padova</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Associazione</th>
+              <th>Indirizzo</th>
+              <th>Orari</th>
+              <th>Contatto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Associazione">Sportello RAR</td>
+              <td data-label="Indirizzo">Vicolo Ponte Molino, 7</td>
+              <td data-label="Orari">Lun-Gio 9-12 e su appuntamento</td>
+              <td data-label="Contatto">sportellorar@comune.padova.it - 0498205997</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Open Gates APS</td>
+              <td data-label="Indirizzo">Piazza Gasparotto 4 / Via Diego Valeri 9</td>
+              <td data-label="Orari">Lun-Mer-Ven 9:30-12:30, Mar-Gio 15-18</td>
+              <td data-label="Contatto">351 291 3479</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ROMA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Roma</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Associazione</th>
+              <th>Indirizzo</th>
+              <th>Orari</th>
+              <th>Contatto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Associazione">Casa dei Diritti Sociali</td>
+              <td data-label="Indirizzo">Via Giovanni Giolitti 225, 00185</td>
+              <td data-label="Orari">Lun-Mer-Ven 10-13/14:30-16:30, Mar-Gio 14-18:30</td>
+              <td data-label="Contatto">net@dirittisociali.org - 06/4461162 - 06/4464676</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Sportello Migranti USB (Unione Sindacale di Base)</td>
+              <td data-label="Indirizzo">Via Giovanni Giolitti 231, 00175 (primo piano)</td>
+              <td data-label="Orari">Mar 14-18, Gio 11:30-13/14-18:30 (solo su appuntamento)</td>
+              <td data-label="Contatto">migranti@usb.it - 340/9651049 - 06/4462030</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Sportello ESC Infomigrante (Centro sociale ESC Atelier)</td>
+              <td data-label="Indirizzo">Via dei Volsci 159, 00185</td>
+              <td data-label="Orari">Martedì 18-20 (su appuntamento via email)</td>
+              <td data-label="Contatto">sportello.infomigrante@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">A Buon Diritto Onlus</td>
+              <td data-label="Indirizzo">Via dei Pisoni 57/59, 00175</td>
+              <td data-label="Orari">Solo su appuntamento</td>
+              <td data-label="Contatto">sportelli@abuondiritto.it - 06/85356796</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Progetto diritti</td>
+              <td data-label="Indirizzo">Via Ettore Giovenale 79, 00176</td>
+              <td data-label="Orari">Lun-Ven 16:30-19, mattina su appuntamento</td>
+              <td data-label="Contatto">segreteria@progettodiritti.it - 06/298777</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">ARCI - Sportelli Legali</td>
+              <td data-label="Indirizzo">Viale Giuseppe Stefanini 15, 00158</td>
+              <td data-label="Orari">Orientamento: Mar 15-17:30 / Migranti: Mar-Ven 15-17:30 / Casa: Ven 10-13</td>
+              <td data-label="Contatto">inforoma@arci.it - sportellisociali.immigrazione@arciroma.it - 06/41734712</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Arcigay Roma - Sportello Intercultura</td>
+              <td data-label="Indirizzo">Via Nicola Zabaglia 14, 00153</td>
+              <td data-label="Orari">Gay Help Line: Lun-Sab 16-20 / Sportello: Mar 17-20 su appuntamento</td>
+              <td data-label="Contatto">intercultura@gayhelpline.it - 800713713 (numero verde)</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Medici per i Diritti Umani (MEDU) - Clinica Mobile</td>
+              <td data-label="Indirizzo">Piazzale della Stazione Tiburtina, 00162 (Welcome Center)</td>
+              <td data-label="Orari">Due volte al mese, giovedì alterni 19-22</td>
+              <td data-label="Contatto">06/97844892 - 335/1853360</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Centro Psychè "Francesca Uneddu" - MEDU (Salute Mentale)</td>
+              <td data-label="Indirizzo">Via Trebbia 3, interno I, 00198</td>
+              <td data-label="Orari">Lun-Gio 10-13/15-19, Mer 15-19</td>
+              <td data-label="Contatto">psyche@mediciperidirittiumani.org - 06/8419556</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Sportello "Roxanne ed Oltre" (Vittime di tratta)</td>
+              <td data-label="Indirizzo">Via Galilei 15, 00185</td>
+              <td data-label="Orari">Lun-Ven 10-16 (telefonare per accedere)</td>
+              <td data-label="Contatto">roxanne.dipsociale@comune.roma.it - 06/77072404 - 338/4931100</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Cooperativa Parsec (Prostituzione e tratta)</td>
+              <td data-label="Indirizzo">Via Catania 89, 00161</td>
+              <td data-label="Orari">Lun-Ven 10-15</td>
+              <td data-label="Contatto">parsec.rightjob@gmail.com - 348/9945653</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">DISCOL - Dinieghi Scolastici (Rete Scuole Migranti)</td>
+              <td data-label="Indirizzo">Via Liberiana 17, 00187</td>
+              <td data-label="Orari">Lun-Ven 10-13</td>
+              <td data-label="Contatto">info@scuolemigranti.org - 327/2804675 (anche WhatsApp)</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Sportello Yalla - Right To Study</td>
+              <td data-label="Indirizzo">Online</td>
+              <td data-label="Orari">Contatto via email</td>
+              <td data-label="Contatto">studyyalla@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Community Center Diaconia Valdese-CSD (Centocelle)</td>
+              <td data-label="Indirizzo">Via Ceccano 10C, 00175</td>
+              <td data-label="Orari">Lun-Mar-Ven 9-13, Mer 9-13/14-17:30, Gio 9:30-13/14-17:30</td>
+              <td data-label="Contatto">3451133670 (solo su appuntamento)</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Community Center Diaconia Valdese-CSD (Centro)</td>
+              <td data-label="Indirizzo">Via IV Novembre 107, 00187</td>
+              <td data-label="Orari">Lun 14-18:30, Mar 9:30-13:30/14:30-18, Mer 9:30-13:30, Gio 9:30-13:30/14:30-17:30</td>
+              <td data-label="Contatto">3451133670 (solo su appuntamento)</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Clinica del diritto dell'immigrazione e della cittadinanza (Uniroma3)</td>
+              <td data-label="Indirizzo">Via Ostiense 139, 00154</td>
+              <td data-label="Orari">Giovedì 15-19 senza appuntamento</td>
+              <td data-label="Contatto">lawclinic@uniroma3.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- TORINO -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Torino</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Associazione</th>
+              <th>Indirizzo</th>
+              <th>Orari</th>
+              <th>Contatto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Associazione">CSOA Gabrio</td>
+              <td data-label="Indirizzo">Via Millio, 42</td>
+              <td data-label="Orari">Lunedì 18:30-20:00</td>
+              <td data-label="Contatto">3509007929</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Avvocato di strada</td>
+              <td data-label="Indirizzo">Via Giovanni Camerana, 10</td>
+              <td data-label="Orari">Primo giovedì del mese 14:00</td>
+              <td data-label="Contatto">011 534854</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Diaconia Valdese</td>
+              <td data-label="Indirizzo">Via Nomaglio, 6</td>
+              <td data-label="Orari">Mar-Gio 9-13/14-17</td>
+              <td data-label="Contatto">3440214043</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">Cecchi Point</td>
+              <td data-label="Indirizzo">Via Cecchi, 17</td>
+              <td data-label="Orari">Mar 17-19, Ven 14:30-16:30</td>
+              <td data-label="Contatto">011 19714416</td>
+            </tr>
+            <tr>
+              <td data-label="Associazione">UPM - Ufficio Pastorale Migranti</td>
+              <td data-label="Indirizzo">Via Cottolengo, 22</td>
+              <td data-label="Orari">Lun-Gio 9-13 accesso libero</td>
+              <td data-label="Contatto">0112462092</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">📍</span>
+        <div>
+          Non trovi la tua città? Conosci un'associazione che manca?
+          <a href="https://sospermesso.typeform.com/contatti" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Segnalacela
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
+      <div class="grid grid-3">
+        <a href="protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">Protezione internazionale</h3>
+        </a>
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Database permessi</h3>
+        </a>
+        <a href="dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">Dizionario</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
+        <a href="database.html" class="footer-link">Database</a>
+        <a href="https://sospermesso.typeform.com/contatti" class="footer-link">Contatti</a>
+      </div>
+      <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/app.js"></script>
+</body>
+</html>

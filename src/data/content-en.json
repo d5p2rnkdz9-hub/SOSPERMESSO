@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "SOS Permesso - Complete, Updated, In Your Language",
+    "description": "Complete guide to residence permits in Italy"
+  },
+  "header": {
+    "logo": "🏮 SOS PERMESSO",
+    "nav": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Guides", "href": "#guide" },
+      { "label": "Tests", "href": "#test" },
+      { "label": "About Us", "href": "#about" }
+    ]
+  },
+  "hero": {
+    "title": "Complete, Updated, In Your Language",
+    "subtitle": "Your complete guide to residence permits in Italy",
+    "updateNotice": {
+      "icon": "🔔",
+      "text": "SOS Permesso is updated to Law No. 75/2025, effective from 24/05/2025"
+    }
+  },
+  "languages": {
+    "current": "EN 🇬🇧",
+    "options": [
+      { "code": "it", "label": "🇮🇹 Italiano", "flag": "🇮🇹" },
+      { "code": "en", "label": "🇬🇧 English", "flag": "🇬🇧" },
+      { "code": "fr", "label": "🇫🇷 Français", "flag": "🇫🇷" },
+      { "code": "es", "label": "🇪🇸 Español", "flag": "🇪🇸" },
+      { "code": "zh", "label": "🇨🇳 中文", "flag": "🇨🇳" }
+    ]
+  },
+  "tests": {
+    "title": "OUR TESTS",
+    "subtitle": "Find out if you can obtain, convert, or renew your residence permit",
+    "items": [
+      {
+        "id": "test-avere",
+        "icon": "🤞",
+        "title": "Can I GET a residence permit?",
+        "description": "Check if you meet the requirements to obtain a residence permit in Italy",
+        "url": "https://form.typeform.com/to/kt7P9Ejk",
+        "cta": "START TEST →"
+      },
+      {
+        "id": "test-convertire",
+        "icon": "👉",
+        "title": "Can I CONVERT my permit?",
+        "description": "Find out if you can convert your current residence permit",
+        "url": "https://form.typeform.com/to/oc9jhdkJ",
+        "cta": "START TEST →"
+      },
+      {
+        "id": "test-rinnovare",
+        "icon": "🤙",
+        "title": "Can I RENEW my permit?",
+        "description": "Check if you can renew your residence permit",
+        "url": "https://sospermesso.typeform.com/rinnovo",
+        "cta": "START TEST →"
+      }
+    ]
+  },
+  "guides": {
+    "title": "OUR GUIDES",
+    "subtitle": "All the information you need, explained simply",
+    "items": [
+      {
+        "id": "database-permessi",
+        "icon": "📚",
+        "title": "Permits Database",
+        "description": "All types of permits available in Italy",
+        "link": "/database"
+      },
+      {
+        "id": "documenti-questura",
+        "icon": "📌",
+        "title": "Police Office Documents",
+        "description": "Complete list of required documents",
+        "link": "/documenti"
+      },
+      {
+        "id": "protezione-internazionale",
+        "icon": "🛡️",
+        "title": "International Protection",
+        "description": "Information on asylum and protection",
+        "link": "/protezione"
+      },
+      {
+        "id": "ricongiungimento",
+        "icon": "🧑‍🤝‍🧑",
+        "title": "Family Reunification",
+        "description": "How to apply for family reunification",
+        "link": "/ricongiungimento"
+      },
+      {
+        "id": "dizionario",
+        "icon": "🔤",
+        "title": "Dictionary",
+        "description": "Bureaucratic terms explained simply",
+        "link": "/dizionario"
+      }
+    ]
+  },
+  "links": {
+    "title": "USEFUL LINKS",
+    "subtitle": "Tools and resources to help you",
+    "items": [
+      {
+        "id": "kit-postale",
+        "icon": "📩",
+        "title": "Postal Kit",
+        "description": "Download necessary forms",
+        "link": "/kit-postale"
+      },
+      {
+        "id": "controlla-permesso",
+        "icon": "👀",
+        "title": "Check Permit Status",
+        "description": "Verify your permit status",
+        "link": "/controlla"
+      },
+      {
+        "id": "aiuto-legale",
+        "icon": "⚖️",
+        "title": "Legal Aid",
+        "description": "Find free legal assistance",
+        "link": "/aiuto-legale"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Didn't find the answer you were looking for?",
+    "buttonText": "Contact Us",
+    "buttonUrl": "https://sospermesso.typeform.com/contatti"
+  },
+  "footer": {
+    "links": [
+      { "label": "About Us", "href": "/chi-siamo" },
+      { "label": "The Project", "href": "/progetto" },
+      { "label": "Collaborate", "href": "/collabora" },
+      { "label": "Contact", "href": "/contatti" }
+    ],
+    "copyright": "© 2025 SOS Permesso. All rights reserved."
+  }
+}

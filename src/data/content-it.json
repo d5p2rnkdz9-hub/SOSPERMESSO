@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "lang": "it",
+    "title": "SOS Permesso - Completo, aggiornato, nella tua lingua",
+    "description": "Guida completa ai permessi di soggiorno in Italia"
+  },
+  "header": {
+    "logo": "🏮 SOS PERMESSO",
+    "nav": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Guide", "href": "#guide" },
+      { "label": "Test", "href": "#test" },
+      { "label": "Chi siamo", "href": "#about" }
+    ]
+  },
+  "hero": {
+    "title": "Completo, aggiornato, nella tua lingua",
+    "subtitle": "La tua guida completa ai permessi di soggiorno in Italia",
+    "updateNotice": {
+      "icon": "🔔",
+      "text": "SOS Permesso è aggiornato alla Legge n. 75/2025, in vigore dal 24/05/2025"
+    }
+  },
+  "languages": {
+    "current": "IT 🇮🇹",
+    "options": [
+      { "code": "it", "label": "🇮🇹 Italiano", "flag": "🇮🇹" },
+      { "code": "en", "label": "🇬🇧 English", "flag": "🇬🇧" },
+      { "code": "fr", "label": "🇫🇷 Français", "flag": "🇫🇷" },
+      { "code": "es", "label": "🇪🇸 Español", "flag": "🇪🇸" },
+      { "code": "zh", "label": "🇨🇳 中文", "flag": "🇨🇳" }
+    ]
+  },
+  "tests": {
+    "title": "I NOSTRI TEST",
+    "subtitle": "Scopri se puoi ottenere, convertire o rinnovare il tuo permesso di soggiorno",
+    "items": [
+      {
+        "id": "test-avere",
+        "icon": "🤞",
+        "title": "Posso AVERE un permesso di soggiorno?",
+        "description": "Verifica se hai i requisiti per ottenere un permesso di soggiorno in Italia",
+        "url": "https://form.typeform.com/to/kt7P9Ejk",
+        "cta": "INIZIA IL TEST →"
+      },
+      {
+        "id": "test-convertire",
+        "icon": "👉",
+        "title": "Posso CONVERTIRE il mio permesso?",
+        "description": "Scopri se puoi convertire il tuo permesso di soggiorno attuale",
+        "url": "https://form.typeform.com/to/oc9jhdkJ",
+        "cta": "INIZIA IL TEST →"
+      },
+      {
+        "id": "test-rinnovare",
+        "icon": "🤙",
+        "title": "Posso RINNOVARE il mio permesso?",
+        "description": "Controlla se puoi rinnovare il tuo permesso di soggiorno",
+        "url": "https://sospermesso.typeform.com/rinnovo",
+        "cta": "INIZIA IL TEST →"
+      }
+    ]
+  },
+  "guides": {
+    "title": "LE NOSTRE GUIDE",
+    "subtitle": "Tutte le informazioni che ti servono, spiegate in modo semplice",
+    "items": [
+      {
+        "id": "database-permessi",
+        "icon": "📚",
+        "title": "Database di permessi di soggiorno",
+        "description": "Tutti i tipi di permesso disponibili in Italia",
+        "link": "/database"
+      },
+      {
+        "id": "documenti-questura",
+        "icon": "📌",
+        "title": "Che documenti porto in Questura?",
+        "description": "Lista completa dei documenti necessari",
+        "link": "/documenti"
+      },
+      {
+        "id": "protezione-internazionale",
+        "icon": "🛡️",
+        "title": "Guida alla protezione internazionale",
+        "description": "Informazioni su asilo e protezione",
+        "link": "/protezione"
+      },
+      {
+        "id": "ricongiungimento",
+        "icon": "🧑‍🤝‍🧑",
+        "title": "Guida al ricongiungimento familiare",
+        "description": "Come richiedere il ricongiungimento",
+        "link": "/ricongiungimento"
+      },
+      {
+        "id": "dizionario",
+        "icon": "🔤",
+        "title": "Dizionario di parole difficili",
+        "description": "Termini burocratici spiegati semplicemente",
+        "link": "/dizionario"
+      }
+    ]
+  },
+  "links": {
+    "title": "LINK UTILI",
+    "subtitle": "Strumenti e risorse per aiutarti",
+    "items": [
+      {
+        "id": "kit-postale",
+        "icon": "📩",
+        "title": "Kit postale e altri moduli",
+        "description": "Scarica i moduli necessari",
+        "link": "/kit-postale"
+      },
+      {
+        "id": "controlla-permesso",
+        "icon": "👀",
+        "title": "Controlla se il tuo permesso è pronto",
+        "description": "Verifica lo stato del tuo permesso",
+        "link": "/controlla"
+      },
+      {
+        "id": "aiuto-legale",
+        "icon": "⚖️",
+        "title": "Aiuto legale gratis vicino a te",
+        "description": "Trova assistenza legale gratuita",
+        "link": "/aiuto-legale"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Non hai trovato la risposta che cercavi?",
+    "buttonText": "Scrivici",
+    "buttonUrl": "https://sospermesso.typeform.com/contatti"
+  },
+  "footer": {
+    "links": [
+      { "label": "Chi siamo", "href": "/chi-siamo" },
+      { "label": "Il progetto", "href": "/progetto" },
+      { "label": "Collabora", "href": "/collabora" },
+      { "label": "Contatti", "href": "/contatti" }
+    ],
+    "copyright": "© 2025 SOS Permesso. Tutti i diritti riservati."
+  }
+}
