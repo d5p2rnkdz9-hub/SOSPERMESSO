@@ -11,10 +11,10 @@
 
 ## Current Position
 
-**Phase:** 1 of 3 — Page Foundation
-**Plan:** 1 of 1 complete
-**Status:** Phase 1 complete
-**Last activity:** 2026-01-25 — Completed 01-01-PLAN.md
+**Phase:** 2 of 3 — Document Templates
+**Plan:** 0 of 2 complete
+**Status:** Phase 2 planned, ready for execution
+**Last activity:** 2026-01-25 — Created 02-01-PLAN.md and 02-02-PLAN.md
 
 ```
 Progress: [██████░░░░░░░░░░░░░░] 50% (6/12 requirements)
@@ -66,21 +66,25 @@ Phase 3: Complete Coverage         [Pending]  ░░░░░░░░░░ 0/3
 
 ### Technical Notes
 
-- Pure HTML/CSS/JS static site (no build process, no npm)
+- Pure HTML/CSS/JS static site — Phase 2 adds Node.js build process
 - All pages go in `src/pages/`
 - CSS design system with variables in `src/styles/main.css`
 - Mobile-first responsive design already established
 - 39+ HTML pages already exist as reference
+- Phase 2 introduces: package.json, @notionhq/client, dotenv, netlify.toml
 
 ### Current TODOs
 
 - [x] ~~Run `/gsd:plan-phase 1` to create execution plan~~ ✓ Completed
 - [x] ~~Identify exact permit list and categories from database.html~~ ✓ 23 permits in 4 categories
 - [x] ~~Design badge component styling (CSS)~~ ✓ Blue/orange gradients implemented
-- [x] ~~Decide document page content structure (what sections to include)~~ → Phase 2
-- [ ] Run `/gsd:plan-phase 2` to create document template plan
+- [x] ~~Decide document page content structure (what sections to include)~~ ✓ Defined in 02-CONTEXT.md
+- [x] ~~Run `/gsd:plan-phase 2` to create document template plan~~ ✓ Created 02-01 and 02-02
+- [ ] Run `/gsd:execute-phase 2` to create Node.js build infrastructure
+- [ ] Set up Notion API integration
 - [ ] Create primo rilascio template
 - [ ] Create rinnovo template
+- [ ] Verify generated pages work correctly
 
 ### Known Blockers
 
@@ -99,15 +103,16 @@ None currently.
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md, 01-01-SUMMARY.md
-2. **Where we are:** Phase 1 complete, ready to plan Phase 2
-3. **What to do next:** Run `/gsd:plan-phase 2` to create document template plans
+1. **Context to load:** This STATE.md, ROADMAP.md, 02-CONTEXT.md, 02-RESEARCH.md
+2. **Where we are:** Phase 2 planned, ready for execution
+3. **What to do next:** Run `/gsd:execute-phase 2` to create build infrastructure and templates
 4. **Key files to reference:**
-   - `src/pages/documenti-questura.html` — newly restructured page with 46 badge links
-   - `src/pages/permesso-*.html` — existing permit detail pages as template reference
-   - `.planning/phases/01-page-foundation/01-01-SUMMARY.md` — badge URL pattern and decisions
+   - `.planning/phases/02-document-templates/02-01-PLAN.md` — Node.js + Notion infrastructure
+   - `.planning/phases/02-document-templates/02-02-PLAN.md` — Templates with checklist
+   - `src/pages/documenti-questura.html` — restructured page with 46 badge links
+   - `src/pages/permesso-studio.html` — existing template reference
 
-**Quick Start Command:** `/gsd:plan-phase 2`
+**Quick Start Command:** `/gsd:execute-phase 2`
 
 ---
 
