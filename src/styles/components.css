@@ -241,6 +241,55 @@
   filter: drop-shadow(2px 2px 6px rgba(255, 215, 0, 0.4));
 }
 
+/* New Logo Styles (Phase 5) */
+.logo-new {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+}
+
+.logo-icon-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-right: -12px; /* Creates 10-15% overlap with text */
+}
+
+.logo-icon-img {
+  height: 64px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.logo-text {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-left: 8px;
+}
+
+.logo-sos {
+  height: 28px;
+  width: auto;
+}
+
+.logo-permesso {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.logo-new:hover .logo-icon-img {
+  filter: drop-shadow(2px 2px 6px rgba(255, 215, 0, 0.4));
+}
+
+.logo-new:hover .logo-permesso {
+  color: var(--taxi-yellow-bright);
+}
+
 .nav-wrapper {
   display: flex;
   align-items: center;

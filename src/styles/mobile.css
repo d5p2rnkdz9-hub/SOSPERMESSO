@@ -66,6 +66,19 @@
     height: 55px;
   }
 
+  /* Mobile Logo - Icon only (Phase 5) */
+  .logo-text {
+    display: none;
+  }
+
+  .logo-icon-wrapper {
+    margin-right: 0;
+  }
+
+  .logo-icon-img {
+    height: 44px;
+  }
+
   /* Improved mobile menu */
   .nav-menu {
     position: fixed;
