@@ -1,57 +1,10 @@
-/**
- * Template for primo rilascio (first release) document pages
- * Generates static HTML with interactive checklist
- */
-
-const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml } = require('./helpers.js');
-
-/**
- * Generate a primo rilascio document page
- * @param {Object} permit - Permit data from Notion
- * @param {string} permit.tipo - Permit type name (e.g., "Studio")
- * @param {string} permit.slug - URL slug (e.g., "studio")
- * @param {Array<string>} permit.primoDocuments - List of required documents
- * @param {string} permit.primoMethod - Submission method ("KIT" or "Questura")
- * @returns {string} Complete HTML page
- */
-function generatePrimoPage(permit) {
-  const { tipo, slug, primoDocuments, primoMethod } = permit;
-
-  // Determine submission callout
-  const isKit = primoMethod && primoMethod.toLowerCase().includes('kit');
-  const calloutClass = isKit ? 'callout-kit' : 'callout-questura';
-  const calloutIcon = isKit ? '📮' : '🏛️';
-  const calloutText = isKit
-    ? 'Invia tramite KIT alle Poste (non devi andare in Questura)'
-    : 'Porta i documenti in Questura (non puoi usare il KIT postale)';
-
-  // Generate checklist items with dizionario links and disputed styling
-  const checklistHtml = primoDocuments.map((doc, index) => {
-    const docClass = getDocumentClass(doc);
-    const docLabel = linkToDizionario(doc);
-    const disputedNote = isDisputed(doc)
-      ? '<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>'
-      : '';
-
-    return `
-          <div class="${docClass}">
-            <input type="checkbox"
-                   class="doc-checkbox"
-                   id="doc-${slug}-primo-${index}"
-                   data-doc="${escapeHtml(doc)}">
-            <span class="doc-label">${docLabel}${disputedNote}</span>
-          </div>`;
-  }).join('');
-
-  const escapedTipo = escapeHtml(tipo);
-
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Documenti necessari per il primo rilascio del permesso per ${escapedTipo}">
-  <title>Documenti ${escapedTipo} - Primo Rilascio - SOS Permesso</title>
+  <meta name="description" content="Documenti necessari per il primo rilascio del permesso per Famiglia (motivi familiari - art. 30) SENZA nullaosta (”coesione”)">
+  <title>Documenti Famiglia (motivi familiari - art. 30) SENZA nullaosta (”coesione”) - Primo Rilascio - SOS Permesso</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
@@ -96,7 +49,7 @@ function generatePrimoPage(permit) {
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
         <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
         <a href="documenti-questura.html" style="color: var(--taxi-yellow-dark);">Documenti Questura</a> →
-        <span>${escapedTipo} - Primo Rilascio</span>
+        <span>Famiglia (motivi familiari - art. 30) SENZA nullaosta (”coesione”) - Primo Rilascio</span>
       </div>
     </div>
   </section>
@@ -105,9 +58,9 @@ function generatePrimoPage(permit) {
   <section class="section bg-off-white" style="padding: 1.5rem 0;">
     <div class="container">
       <div class="page-header text-center">
-        <h1 class="page-title" style="margin-bottom: 0.25rem;">${escapedTipo}</h1>
+        <h1 class="page-title" style="margin-bottom: 0.25rem;">Famiglia (motivi familiari - art. 30) SENZA nullaosta (”coesione”)</h1>
         <p class="section-subtitle" style="margin-bottom: 0.5rem;">Documenti per il <strong>Primo Rilascio</strong></p>
-        <a href="documenti-${slug}-rinnovo.html" class="quick-switch-link">
+        <a href="documenti-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-rinnovo.html" class="quick-switch-link">
           Vedi anche: Rinnovo →
         </a>
       </div>
@@ -117,9 +70,9 @@ function generatePrimoPage(permit) {
   <!-- SUBMISSION METHOD CALLOUT -->
   <section class="section" style="padding: 1rem 0;">
     <div class="container" style="max-width: 700px;">
-      <div class="submission-callout ${calloutClass}">
-        <span class="callout-icon">${calloutIcon}</span>
-        <div class="callout-text">${calloutText}</div>
+      <div class="submission-callout callout-kit">
+        <span class="callout-icon">📮</span>
+        <div class="callout-text">Invia tramite KIT alle Poste (non devi andare in Questura)</div>
       </div>
     </div>
   </section>
@@ -131,12 +84,47 @@ function generatePrimoPage(permit) {
         <h2>📋 Documenti necessari</h2>
         <p class="checklist-intro">Spunta i documenti che hai già preparato. I tuoi progressi vengono salvati automaticamente.</p>
 
-        <div class="doc-checklist" data-permit="${slug}-primo">
-${checklistHtml}
+        <div class="doc-checklist" data-permit="famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo">
+
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo-0"
+                   data-doc="passaporto">
+            <span class="doc-label">passaporto</span>
+          </div>
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo-1"
+                   data-doc="Documento che dimostri il legame di parentela">
+            <span class="doc-label">Documento che dimostri il legame di parentela</span>
+          </div>
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo-2"
+                   data-doc="Permesso di soggiorno del familiare straniero">
+            <span class="doc-label"><a href="dizionario.html#permesso-di-soggiorno" class="doc-link">Permesso di soggiorno</a> del familiare straniero</span>
+          </div>
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo-3"
+                   data-doc="Certificato idoneità alloggiativa">
+            <span class="doc-label"><a href="dizionario.html#idoneita-alloggiativa" class="doc-link">Certificato idoneità alloggiativa</a></span>
+          </div>
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo-4"
+                   data-doc="Dichiarazione dei redditi del familiare straniero">
+            <span class="doc-label">Dichiarazione dei redditi del familiare straniero</span>
+          </div>
         </div>
 
         <div class="checklist-progress">
-          <span class="progress-text">Completati: <span id="progress-count">0</span>/${primoDocuments.length}</span>
+          <span class="progress-text">Completati: <span id="progress-count">0</span>/5</span>
           <div class="progress-bar">
             <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
           </div>
@@ -168,7 +156,7 @@ ${checklistHtml}
   <script>
     // Checklist persistence with localStorage
     (function() {
-      const permitKey = '${slug}-primo';
+      const permitKey = 'famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo';
       const checkboxes = document.querySelectorAll('.doc-checkbox');
       const progressCount = document.getElementById('progress-count');
       const progressFill = document.getElementById('progress-fill');
@@ -218,7 +206,4 @@ ${checklistHtml}
     })();
   </script>
 </body>
-</html>`;
-}
-
-module.exports = { generatePrimoPage };
+</html>

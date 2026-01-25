@@ -18,6 +18,30 @@
 }
 
 /* -----------------------------------------------
+   PAGE HEADER STYLING
+   ----------------------------------------------- */
+
+.page-primo .page-title,
+.page-rinnovo .page-title {
+  color: var(--gray-dark);
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.page-primo .section-subtitle,
+.page-rinnovo .section-subtitle {
+  color: var(--gray-medium);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.page-primo .section-subtitle strong,
+.page-rinnovo .section-subtitle strong {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* -----------------------------------------------
    QUICK SWITCH LINK
    ----------------------------------------------- */
 
@@ -50,11 +74,11 @@
 .submission-callout {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-md) var(--spacing-lg);
-  border-radius: var(--radius-lg);
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
   background: var(--gray-light);
-  border-left: 5px solid var(--gray-medium);
+  border-left: 4px solid var(--gray-medium);
 }
 
 .submission-callout.callout-kit {
@@ -68,15 +92,15 @@
 }
 
 .submission-callout .callout-icon {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   flex-shrink: 0;
 }
 
 .submission-callout .callout-text {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   font-weight: 600;
-  color: var(--black);
-  line-height: 1.4;
+  color: var(--gray-dark);
+  line-height: 1.3;
 }
 
 /* -----------------------------------------------
@@ -171,15 +195,11 @@
 
 .doc-label {
   flex: 1;
-  cursor: pointer;
   font-size: var(--font-size-base);
   line-height: 1.4;
-  color: var(--black);
-  transition: color var(--transition-fast);
-}
-
-.doc-label:hover {
   color: var(--gray-dark);
+  pointer-events: auto;
+  user-select: text;
 }
 
 /* Document link within label */
@@ -238,18 +258,16 @@
 
 @media (max-width: 768px) {
   .submission-callout {
-    flex-direction: column;
-    text-align: center;
-    padding: var(--spacing-md);
-    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    gap: var(--spacing-xs);
   }
 
   .submission-callout .callout-icon {
-    font-size: 3rem;
+    font-size: 1.25rem;
   }
 
   .submission-callout .callout-text {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
   }
 
   .doc-item {

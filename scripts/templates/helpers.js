@@ -14,18 +14,68 @@ const DISPUTED_DOCUMENTS = [
 ];
 
 /**
- * Wrap document name in link to dizionario if term exists
+ * Find dizionario terms within text and wrap them in links
+ * Searches for partial matches (terms contained within the document name)
  * @param {string} documentName - Document name from Notion
- * @returns {string} HTML string, either linked or plain text
+ * @returns {string} HTML string with terms linked to dizionario
  */
 function linkToDizionario(documentName) {
   if (!documentName) return '';
 
-  const anchorId = dizionarioMap[documentName];
-  if (anchorId) {
-    return `<a href="dizionario.html#${anchorId}" class="doc-link">${escapeHtml(documentName)}</a>`;
+  // Sort terms by length (longest first) to match longer phrases before shorter ones
+  const terms = Object.keys(dizionarioMap).sort((a, b) => b.length - a.length);
+
+  let result = documentName;
+  const replacements = [];
+
+  // Find all matching terms and their positions
+  for (const term of terms) {
+    // Case-insensitive search
+    const regex = new RegExp(`(${escapeRegex(term)})`, 'gi');
+    let match;
+    while ((match = regex.exec(documentName)) !== null) {
+      // Check if this position overlaps with an existing replacement
+      const start = match.index;
+      const end = start + match[1].length;
+      const overlaps = replacements.some(r =>
+        (start >= r.start && start < r.end) || (end > r.start && end <= r.end)
+      );
+      if (!overlaps) {
+        replacements.push({
+          start,
+          end,
+          original: match[1],
+          anchorId: dizionarioMap[term]
+        });
+      }
+    }
   }
-  return escapeHtml(documentName);
+
+  // Sort replacements by position (reverse order for safe replacement)
+  replacements.sort((a, b) => b.start - a.start);
+
+  // Apply replacements
+  for (const r of replacements) {
+    const before = result.slice(0, r.start);
+    const after = result.slice(r.end);
+    const link = `<a href="dizionario.html#${r.anchorId}" class="doc-link">${escapeHtml(r.original)}</a>`;
+    result = before + link + after;
+  }
+
+  // Escape any remaining unlinked text
+  // We need to be careful not to double-escape the HTML we just added
+  if (replacements.length === 0) {
+    return escapeHtml(documentName);
+  }
+
+  return result;
+}
+
+/**
+ * Escape special regex characters
+ */
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 /**

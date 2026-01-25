@@ -39,7 +39,7 @@ function generateRinnovoPage(permit) {
                    class="doc-checkbox"
                    id="doc-${slug}-rinnovo-${index}"
                    data-doc="${escapeHtml(doc)}">
-            <label class="doc-label" for="doc-${slug}-rinnovo-${index}">${docLabel}${disputedNote}</label>
+            <span class="doc-label">${docLabel}${disputedNote}</span>
           </div>`;
   }).join('');
 
@@ -102,12 +102,11 @@ function generateRinnovoPage(permit) {
   </section>
 
   <!-- PAGE HEADER -->
-  <section class="section bg-off-white">
+  <section class="section bg-off-white" style="padding: 1.5rem 0;">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 3rem;">🔄</span>
-        <h1 class="page-title">${escapedTipo}</h1>
-        <p class="section-subtitle">Documenti per il <strong>Rinnovo</strong></p>
+        <h1 class="page-title" style="margin-bottom: 0.25rem;">${escapedTipo}</h1>
+        <p class="section-subtitle" style="margin-bottom: 0.5rem;">Documenti per il <strong>Rinnovo</strong></p>
         <a href="documenti-${slug}-primo.html" class="quick-switch-link">
           Vedi anche: Primo Rilascio →
         </a>
@@ -116,7 +115,7 @@ function generateRinnovoPage(permit) {
   </section>
 
   <!-- SUBMISSION METHOD CALLOUT -->
-  <section class="section">
+  <section class="section" style="padding: 1rem 0;">
     <div class="container" style="max-width: 700px;">
       <div class="submission-callout ${calloutClass}">
         <span class="callout-icon">${calloutIcon}</span>
@@ -144,24 +143,18 @@ ${checklistHtml}
         </div>
       </div>
 
-      <div class="alert alert-warning" style="margin-top: 1.5rem;">
+      <div class="alert alert-warning" style="margin-top: 1rem;">
         <span class="alert-icon">⚠️</span>
         <div>
           <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. Contatta sempre la tua Questura per confermare la lista esatta.
         </div>
       </div>
 
-      <div class="alert alert-info" style="margin-top: 1rem;">
+      <div class="alert alert-info" style="margin-top: 0.75rem;">
         <span class="alert-icon">📅</span>
         <div>
           <strong>Ricorda:</strong> Il rinnovo va richiesto almeno 60 giorni prima della scadenza del permesso attuale.
         </div>
-      </div>
-
-      <!-- Related permit info link -->
-      <div class="card" style="margin-top: 1.5rem; text-align: center;">
-        <p>Vuoi sapere di più su questo permesso?</p>
-        <a href="permesso-${slug}.html" class="btn btn-primary">Informazioni sul permesso</a>
       </div>
     </div>
   </section>

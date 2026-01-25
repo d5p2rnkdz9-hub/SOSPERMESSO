@@ -1,57 +1,10 @@
-/**
- * Template for primo rilascio (first release) document pages
- * Generates static HTML with interactive checklist
- */
-
-const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml } = require('./helpers.js');
-
-/**
- * Generate a primo rilascio document page
- * @param {Object} permit - Permit data from Notion
- * @param {string} permit.tipo - Permit type name (e.g., "Studio")
- * @param {string} permit.slug - URL slug (e.g., "studio")
- * @param {Array<string>} permit.primoDocuments - List of required documents
- * @param {string} permit.primoMethod - Submission method ("KIT" or "Questura")
- * @returns {string} Complete HTML page
- */
-function generatePrimoPage(permit) {
-  const { tipo, slug, primoDocuments, primoMethod } = permit;
-
-  // Determine submission callout
-  const isKit = primoMethod && primoMethod.toLowerCase().includes('kit');
-  const calloutClass = isKit ? 'callout-kit' : 'callout-questura';
-  const calloutIcon = isKit ? '📮' : '🏛️';
-  const calloutText = isKit
-    ? 'Invia tramite KIT alle Poste (non devi andare in Questura)'
-    : 'Porta i documenti in Questura (non puoi usare il KIT postale)';
-
-  // Generate checklist items with dizionario links and disputed styling
-  const checklistHtml = primoDocuments.map((doc, index) => {
-    const docClass = getDocumentClass(doc);
-    const docLabel = linkToDizionario(doc);
-    const disputedNote = isDisputed(doc)
-      ? '<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>'
-      : '';
-
-    return `
-          <div class="${docClass}">
-            <input type="checkbox"
-                   class="doc-checkbox"
-                   id="doc-${slug}-primo-${index}"
-                   data-doc="${escapeHtml(doc)}">
-            <span class="doc-label">${docLabel}${disputedNote}</span>
-          </div>`;
-  }).join('');
-
-  const escapedTipo = escapeHtml(tipo);
-
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Documenti necessari per il primo rilascio del permesso per ${escapedTipo}">
-  <title>Documenti ${escapedTipo} - Primo Rilascio - SOS Permesso</title>
+  <meta name="description" content="Documenti necessari per il rinnovo del permesso per Genitore di cittadino italiano">
+  <title>Documenti Genitore di cittadino italiano - Rinnovo - SOS Permesso</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
@@ -71,7 +24,7 @@ function generatePrimoPage(permit) {
   <link rel="stylesheet" href="../styles/mobile-fix.css">
   <link rel="stylesheet" href="../styles/document-page.css">
 </head>
-<body class="page-primo">
+<body class="page-rinnovo">
 
   <!-- HEADER -->
   <header class="header">
@@ -96,7 +49,7 @@ function generatePrimoPage(permit) {
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
         <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
         <a href="documenti-questura.html" style="color: var(--taxi-yellow-dark);">Documenti Questura</a> →
-        <span>${escapedTipo} - Primo Rilascio</span>
+        <span>Genitore di cittadino italiano - Rinnovo</span>
       </div>
     </div>
   </section>
@@ -105,10 +58,10 @@ function generatePrimoPage(permit) {
   <section class="section bg-off-white" style="padding: 1.5rem 0;">
     <div class="container">
       <div class="page-header text-center">
-        <h1 class="page-title" style="margin-bottom: 0.25rem;">${escapedTipo}</h1>
-        <p class="section-subtitle" style="margin-bottom: 0.5rem;">Documenti per il <strong>Primo Rilascio</strong></p>
-        <a href="documenti-${slug}-rinnovo.html" class="quick-switch-link">
-          Vedi anche: Rinnovo →
+        <h1 class="page-title" style="margin-bottom: 0.25rem;">Genitore di cittadino italiano</h1>
+        <p class="section-subtitle" style="margin-bottom: 0.5rem;">Documenti per il <strong>Rinnovo</strong></p>
+        <a href="documenti-genitore-di-cittadino-italiano-primo.html" class="quick-switch-link">
+          Vedi anche: Primo Rilascio →
         </a>
       </div>
     </div>
@@ -117,9 +70,9 @@ function generatePrimoPage(permit) {
   <!-- SUBMISSION METHOD CALLOUT -->
   <section class="section" style="padding: 1rem 0;">
     <div class="container" style="max-width: 700px;">
-      <div class="submission-callout ${calloutClass}">
-        <span class="callout-icon">${calloutIcon}</span>
-        <div class="callout-text">${calloutText}</div>
+      <div class="submission-callout callout-questura">
+        <span class="callout-icon">🏛️</span>
+        <div class="callout-text">Porta i documenti in Questura (non puoi usare il KIT postale)</div>
       </div>
     </div>
   </section>
@@ -131,12 +84,40 @@ function generatePrimoPage(permit) {
         <h2>📋 Documenti necessari</h2>
         <p class="checklist-intro">Spunta i documenti che hai già preparato. I tuoi progressi vengono salvati automaticamente.</p>
 
-        <div class="doc-checklist" data-permit="${slug}-primo">
-${checklistHtml}
+        <div class="doc-checklist" data-permit="genitore-di-cittadino-italiano-rinnovo">
+
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-genitore-di-cittadino-italiano-rinnovo-0"
+                   data-doc="Permesso in scadenza">
+            <span class="doc-label">Permesso in scadenza</span>
+          </div>
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-genitore-di-cittadino-italiano-rinnovo-1"
+                   data-doc="marca da 16€">
+            <span class="doc-label">marca da 16€</span>
+          </div>
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-genitore-di-cittadino-italiano-rinnovo-2"
+                   data-doc="4fototessere">
+            <span class="doc-label">4fototessere</span>
+          </div>
+          <div class="doc-item">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-genitore-di-cittadino-italiano-rinnovo-3"
+                   data-doc="Documento fam italiano">
+            <span class="doc-label">Documento fam italiano</span>
+          </div>
         </div>
 
         <div class="checklist-progress">
-          <span class="progress-text">Completati: <span id="progress-count">0</span>/${primoDocuments.length}</span>
+          <span class="progress-text">Completati: <span id="progress-count">0</span>/4</span>
           <div class="progress-bar">
             <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
           </div>
@@ -147,6 +128,13 @@ ${checklistHtml}
         <span class="alert-icon">⚠️</span>
         <div>
           <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. Contatta sempre la tua Questura per confermare la lista esatta.
+        </div>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 0.75rem;">
+        <span class="alert-icon">📅</span>
+        <div>
+          <strong>Ricorda:</strong> Il rinnovo va richiesto almeno 60 giorni prima della scadenza del permesso attuale.
         </div>
       </div>
     </div>
@@ -168,7 +156,7 @@ ${checklistHtml}
   <script>
     // Checklist persistence with localStorage
     (function() {
-      const permitKey = '${slug}-primo';
+      const permitKey = 'genitore-di-cittadino-italiano-rinnovo';
       const checkboxes = document.querySelectorAll('.doc-checkbox');
       const progressCount = document.getElementById('progress-count');
       const progressFill = document.getElementById('progress-fill');
@@ -218,7 +206,4 @@ ${checklistHtml}
     })();
   </script>
 </body>
-</html>`;
-}
-
-module.exports = { generatePrimoPage };
+</html>
