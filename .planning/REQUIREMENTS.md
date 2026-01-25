@@ -9,14 +9,14 @@ Requirements for visual refresh. Each maps to roadmap phases.
 
 ### Text
 
-- [ ] **TEXT-01**: Hero displays "Facile" instead of "Amichevole"
+- [x] **TEXT-01**: Hero displays "Facile" instead of "Amichevole"
 
 ### Color Palette
 
-- [ ] **COLOR-01**: Header uses teal gradient instead of purple
-- [ ] **COLOR-02**: Section backgrounds use warm palette (no purple)
-- [ ] **COLOR-03**: CSS variables updated for consistent warm palette
-- [ ] **COLOR-04**: Accent colors coordinated (coral, teal, warm orange)
+- [x] **COLOR-01**: Header uses teal gradient instead of purple
+- [x] **COLOR-02**: Section backgrounds use warm palette (no purple)
+- [x] **COLOR-03**: CSS variables updated for consistent warm palette
+- [x] **COLOR-04**: Accent colors coordinated (coral, teal, warm orange)
 
 ### Logo/Mascot
 
@@ -69,11 +69,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TEXT-01 | Phase 4 | Pending |
-| COLOR-01 | Phase 4 | Pending |
-| COLOR-02 | Phase 4 | Pending |
-| COLOR-03 | Phase 4 | Pending |
-| COLOR-04 | Phase 4 | Pending |
+| TEXT-01 | Phase 4 | Complete |
+| COLOR-01 | Phase 4 | Complete |
+| COLOR-02 | Phase 4 | Complete |
+| COLOR-03 | Phase 4 | Complete |
+| COLOR-04 | Phase 4 | Complete |
 | LOGO-01 | Phase 5 | Pending |
 | LOGO-02 | Phase 5 | Pending |
 | LOGO-03 | Phase 5 | Pending |
@@ -92,4 +92,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-25*
-*Last updated: 2026-01-25 after initial definition*
+*Last updated: 2026-01-25 after Phase 4 completion*
