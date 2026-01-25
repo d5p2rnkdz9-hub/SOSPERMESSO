@@ -4,6 +4,16 @@
 
 A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Now includes a comprehensive document requirements system powered by Notion for content management.
 
+## Current Milestone: v1.2 Visual Refresh
+
+**Goal:** Modernize the visual appearance with a warm, welcoming color palette and improved homepage structure.
+
+**Target features:**
+- Teal-based header replacing purple
+- Simple lighthouse icon + text logo
+- Homepage sections: Database, Guide, Aiuto legale
+- Mobile-optimized compact layouts
+
 ## Core Value
 
 Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
@@ -35,7 +45,11 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-(None — define in next milestone)
+**v1.2 Visual Refresh:**
+- [ ] Warm color palette (teal header, no purple)
+- [ ] Simple lighthouse icon + text logo in header
+- [ ] Homepage restructured: Database section, Guide section, Aiuto legale section
+- [ ] Mobile-optimized compact layouts
 
 ### Out of Scope
 
@@ -83,4 +97,4 @@ Users can quickly find accurate, understandable information about their specific
 | Partial dizionario matching | Better term linking coverage | ⚠️ Revisit — coverage incomplete |
 
 ---
-*Last updated: 2026-01-25 after v1.1 milestone*
+*Last updated: 2026-01-25 after v1.2 milestone start*
