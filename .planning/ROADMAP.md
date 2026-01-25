@@ -62,9 +62,14 @@ Plans:
 ---
 
 ### Phase 3: Complete Coverage
-**Goal:** All 23 permit types have dedicated primo and rinnovo document pages (46 pages total).
+**Goal:** All 23 permit types have working primo and rinnovo document pages (no 404s when clicking badges).
 
 **Dependencies:** Phase 2 (templates must exist)
+
+**Plans:** 1 plan
+
+Plans:
+- [ ] 03-01-PLAN.md — Create slug mapping and redirect pages for complete URL coverage
 
 **Requirements:**
 - DOC-03: Each permit gets 2 document pages (primo + rinnovo) — 46 pages total
@@ -85,7 +90,7 @@ Plans:
 |-------|--------|--------------|------------------|-------|
 | 1 - Page Foundation | ✓ Complete | 6/6 | 5/5 | Verified 2026-01-25 |
 | 2 - Document Templates | ✓ Complete | 3/3 | 4/4 | Verified 2026-01-25, 63 pages generated |
-| 3 - Complete Coverage | Pending | 0/3 | 0/4 | Ready when needed |
+| 3 - Complete Coverage | Planned | 0/3 | 0/4 | 1 plan ready for execution |
 
 **Overall:** 9/12 requirements complete, 9/13 success criteria met
 
@@ -97,9 +102,10 @@ Plans:
 2. ~~Run `/gsd:execute-phase 1` to restructure documenti-questura page~~
 3. ~~Run `/gsd:plan-phase 2` for template creation~~
 4. ~~Run `/gsd:execute-phase 2` to create templates and build system~~
-5. (Optional) Run `/gsd:plan-phase 3` for full page generation when ready
+5. ~~Run `/gsd:plan-phase 3` for slug mapping and redirect pages~~
+6. Run `/gsd:execute-phase 3` to complete URL coverage
 
 ---
 
 *Last updated: 2026-01-25*
-*Phase 2 verified: 63 document pages generated with Notion integration*
+*Phase 3 planned: Slug mapping and redirect pages for 19 missing URL aliases*
