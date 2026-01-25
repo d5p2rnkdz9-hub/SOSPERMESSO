@@ -67,12 +67,16 @@ Plans:
 5. Mobile logo is compact (icon only or smaller text)
 
 **Key Files:**
-- `IMAGES/` — New logo assets
+- `images/` — New logo assets (logo-icon.svg, sos-text.svg)
 - `src/styles/components.css` — Logo styles
 - `src/styles/mobile.css` — Mobile logo styles
 - `index.html`, `src/pages/*.html` — Logo markup
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Create logo assets, update index.html, add CSS styles
+- [ ] 05-02-PLAN.md — Propagate logo to all pages in src/pages/
 
 **Dependencies:** Phase 4 (need final header color)
 
