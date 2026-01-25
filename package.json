@@ -1,0 +1,26 @@
+{
+  "name": "sito_nuovo",
+  "version": "1.0.0",
+  "description": "Sito web moderno, multilingue e facilmente aggiornabile per informazioni sui permessi di soggiorno in Italia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:docs": "node scripts/build-documents.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d5p2rnkdz9-hub/SOSPERMESSO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/d5p2rnkdz9-hub/SOSPERMESSO/issues"
+  },
+  "homepage": "https://github.com/d5p2rnkdz9-hub/SOSPERMESSO#readme",
+  "dependencies": {
+    "@notionhq/client": "^5.8.0",
+    "dotenv": "^17.2.3"
+  }
+}
