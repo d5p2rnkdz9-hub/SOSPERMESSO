@@ -1,0 +1,467 @@
+/* ===============================================
+   DOCUMENT PAGE STYLES
+   Interactive checklist pages for permit documents
+   =============================================== */
+
+/* -----------------------------------------------
+   PAGE COLOR ACCENTS
+   ----------------------------------------------- */
+
+.page-primo {
+  --accent-color: var(--accent-blue);
+  --accent-color-light: var(--accent-blue-bright);
+}
+
+.page-rinnovo {
+  --accent-color: var(--accent-orange);
+  --accent-color-light: var(--accent-orange-bright);
+}
+
+/* -----------------------------------------------
+   QUICK SWITCH LINK
+   ----------------------------------------------- */
+
+.quick-switch-link {
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--accent-color);
+  background: rgba(66, 165, 245, 0.1);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.page-rinnovo .quick-switch-link {
+  background: rgba(255, 152, 0, 0.1);
+}
+
+.quick-switch-link:hover {
+  background: var(--accent-color-light);
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+/* -----------------------------------------------
+   SUBMISSION METHOD CALLOUT
+   ----------------------------------------------- */
+
+.submission-callout {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  background: var(--gray-light);
+  border-left: 5px solid var(--gray-medium);
+}
+
+.submission-callout.callout-kit {
+  background: linear-gradient(135deg, rgba(66, 165, 245, 0.1) 0%, rgba(100, 181, 246, 0.15) 100%);
+  border-left-color: var(--accent-blue);
+}
+
+.submission-callout.callout-questura {
+  background: linear-gradient(135deg, rgba(255, 152, 0, 0.1) 0%, rgba(255, 183, 77, 0.15) 100%);
+  border-left-color: var(--accent-orange);
+}
+
+.submission-callout .callout-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.submission-callout .callout-text {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--black);
+  line-height: 1.4;
+}
+
+/* -----------------------------------------------
+   DOCUMENT CHECKLIST
+   ----------------------------------------------- */
+
+.checklist-intro {
+  font-size: var(--font-size-sm);
+  color: var(--gray-medium);
+  margin-bottom: var(--spacing-md);
+}
+
+.doc-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.doc-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  transition: all var(--transition-fast);
+}
+
+.doc-item:hover {
+  background: var(--off-white);
+  border-color: var(--accent-color-light);
+}
+
+/* Disputed document styling */
+.doc-item.doc-disputed {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 241, 118, 0.12) 100%);
+  border-color: var(--taxi-yellow);
+}
+
+.doc-item.doc-disputed:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 241, 118, 0.2) 100%);
+}
+
+.disputed-note {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--warning);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* Custom checkbox styling */
+.doc-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border: 2px solid var(--gray-medium);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.doc-checkbox:hover {
+  border-color: var(--accent-color);
+}
+
+.doc-checkbox:checked {
+  background: var(--success);
+  border-color: var(--success);
+}
+
+.doc-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.doc-checkbox:focus {
+  outline: 2px solid var(--accent-color-light);
+  outline-offset: 2px;
+}
+
+.doc-label {
+  flex: 1;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  line-height: 1.4;
+  color: var(--black);
+  transition: color var(--transition-fast);
+}
+
+.doc-label:hover {
+  color: var(--gray-dark);
+}
+
+/* Document link within label */
+.doc-link {
+  color: var(--accent-purple);
+  text-decoration: underline;
+  text-decoration-color: rgba(171, 71, 188, 0.3);
+  text-underline-offset: 2px;
+}
+
+.doc-link:hover {
+  color: var(--accent-purple-bright);
+  text-decoration-color: var(--accent-purple);
+}
+
+/* Checked item state */
+.doc-item:has(.doc-checkbox:checked) .doc-label {
+  color: var(--gray-medium);
+}
+
+/* -----------------------------------------------
+   PROGRESS BAR
+   ----------------------------------------------- */
+
+.checklist-progress {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--gray-light);
+}
+
+.progress-text {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--gray-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--gray-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--success) 0%, var(--success-bright) 100%);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-base);
+}
+
+/* -----------------------------------------------
+   MOBILE RESPONSIVE - Touch-friendly targets
+   ----------------------------------------------- */
+
+@media (max-width: 768px) {
+  .submission-callout {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-md);
+    gap: var(--spacing-sm);
+  }
+
+  .submission-callout .callout-icon {
+    font-size: 3rem;
+  }
+
+  .submission-callout .callout-text {
+    font-size: var(--font-size-base);
+  }
+
+  .doc-item {
+    padding: var(--spacing-sm) var(--spacing-xs);
+  }
+
+  /* Ensure 44x44px touch target for checkboxes */
+  .doc-checkbox {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .doc-checkbox:checked::after {
+    font-size: 20px;
+  }
+
+  .doc-label {
+    font-size: var(--font-size-base);
+    padding: var(--spacing-xs) 0;
+  }
+
+  .quick-switch-link {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* -----------------------------------------------
+   PRINT STYLES
+   ----------------------------------------------- */
+
+@media print {
+  /* Hide non-essential elements */
+  .header,
+  .footer,
+  .menu-toggle,
+  .nav-menu,
+  .quick-switch-link,
+  .alert,
+  .btn,
+  .progress-bar,
+  .progress-fill {
+    display: none !important;
+  }
+
+  /* Reset page styling */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  .page-primo,
+  .page-rinnovo {
+    --accent-color: #333;
+  }
+
+  /* Breadcrumb shows URL */
+  .section:first-of-type::after {
+    content: "URL: " attr(data-url);
+    display: block;
+    font-size: 9pt;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+
+  /* Page header compact */
+  .page-header {
+    margin-bottom: 1rem !important;
+  }
+
+  .page-icon {
+    font-size: 2rem !important;
+  }
+
+  .page-title {
+    font-size: 16pt !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .section-subtitle {
+    font-size: 11pt !important;
+  }
+
+  /* Submission callout */
+  .submission-callout {
+    border: 2px solid #333 !important;
+    background: #f5f5f5 !important;
+    padding: 0.5rem !important;
+    margin-bottom: 1rem !important;
+    page-break-inside: avoid;
+  }
+
+  .callout-icon {
+    font-size: 1.5rem !important;
+  }
+
+  .callout-text {
+    font-size: 10pt !important;
+  }
+
+  /* Card styling */
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    padding: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    page-break-inside: avoid;
+  }
+
+  /* Checklist */
+  .checklist-intro {
+    display: none !important;
+  }
+
+  .doc-checklist {
+    gap: 0 !important;
+  }
+
+  .doc-item {
+    border: none !important;
+    border-bottom: 1px dotted #ccc !important;
+    border-radius: 0 !important;
+    padding: 0.25rem 0 !important;
+    background: transparent !important;
+    page-break-inside: avoid;
+  }
+
+  .doc-item:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Hide actual checkbox, show print checkbox */
+  .doc-checkbox {
+    display: none !important;
+  }
+
+  .doc-item::before {
+    content: '□';
+    font-size: 14pt;
+    margin-right: 0.5rem;
+    color: #333;
+  }
+
+  .doc-item:has(.doc-checkbox:checked)::before {
+    content: '☑';
+  }
+
+  .doc-label {
+    font-size: 10pt !important;
+    color: black !important;
+  }
+
+  /* Disputed items */
+  .doc-item.doc-disputed {
+    background: transparent !important;
+    border-left: 2px solid #999 !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .disputed-note {
+    font-size: 8pt !important;
+    color: #666 !important;
+  }
+
+  /* Links in print */
+  .doc-link {
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  .doc-link::after {
+    content: " [vedi dizionario]";
+    font-size: 8pt;
+    color: #666;
+  }
+
+  /* Progress section */
+  .checklist-progress {
+    margin-top: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+
+  .progress-text {
+    font-size: 9pt !important;
+  }
+
+  /* Sections */
+  .section {
+    padding: 0.5rem 0 !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Add print title */
+  body::before {
+    content: "SOS Permesso - Lista Documenti";
+    display: block;
+    font-size: 8pt;
+    color: #666;
+    text-align: right;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 1.5cm;
+    size: A4;
+  }
+}
