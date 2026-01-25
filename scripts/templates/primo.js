@@ -1,0 +1,231 @@
+/**
+ * Template for primo rilascio (first release) document pages
+ * Generates static HTML with interactive checklist
+ */
+
+const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml } = require('./helpers.js');
+
+/**
+ * Generate a primo rilascio document page
+ * @param {Object} permit - Permit data from Notion
+ * @param {string} permit.tipo - Permit type name (e.g., "Studio")
+ * @param {string} permit.slug - URL slug (e.g., "studio")
+ * @param {Array<string>} permit.primoDocuments - List of required documents
+ * @param {string} permit.primoMethod - Submission method ("KIT" or "Questura")
+ * @returns {string} Complete HTML page
+ */
+function generatePrimoPage(permit) {
+  const { tipo, slug, primoDocuments, primoMethod } = permit;
+
+  // Determine submission callout
+  const isKit = primoMethod && primoMethod.toLowerCase().includes('kit');
+  const calloutClass = isKit ? 'callout-kit' : 'callout-questura';
+  const calloutIcon = isKit ? '📮' : '🏛️';
+  const calloutText = isKit
+    ? 'Invia tramite KIT alle Poste (non devi andare in Questura)'
+    : 'Porta i documenti in Questura (non puoi usare il KIT postale)';
+
+  // Generate checklist items with dizionario links and disputed styling
+  const checklistHtml = primoDocuments.map((doc, index) => {
+    const docClass = getDocumentClass(doc);
+    const docLabel = linkToDizionario(doc);
+    const disputedNote = isDisputed(doc)
+      ? '<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>'
+      : '';
+
+    return `
+          <div class="${docClass}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-${slug}-primo-${index}"
+                   data-doc="${escapeHtml(doc)}">
+            <label class="doc-label" for="doc-${slug}-primo-${index}">${docLabel}${disputedNote}</label>
+          </div>`;
+  }).join('');
+
+  const escapedTipo = escapeHtml(tipo);
+
+  return `<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documenti necessari per il primo rilascio del permesso per ${escapedTipo}">
+  <title>Documenti ${escapedTipo} - Primo Rilascio - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="shortcut icon" type="image/svg+xml" href="../../images/Favicon.svg">
+  <link rel="apple-touch-icon" href="../../images/Favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/animations.css">
+  <link rel="stylesheet" href="../styles/mobile.css">
+  <link rel="stylesheet" href="../styles/mobile-fix.css">
+  <link rel="stylesheet" href="../styles/document-page.css">
+</head>
+<body class="page-primo">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../index.html" class="logo">
+          <img src="../../images/Logo.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="database.html" class="nav-link">Database</a></li>
+          <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <a href="documenti-questura.html" style="color: var(--taxi-yellow-dark);">Documenti Questura</a> →
+        <span>${escapedTipo} - Primo Rilascio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 3rem;">📄</span>
+        <h1 class="page-title">${escapedTipo}</h1>
+        <p class="section-subtitle">Documenti per il <strong>Primo Rilascio</strong></p>
+        <a href="documenti-${slug}-rinnovo.html" class="quick-switch-link">
+          Vedi anche: Rinnovo →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMISSION METHOD CALLOUT -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div class="submission-callout ${calloutClass}">
+        <span class="callout-icon">${calloutIcon}</span>
+        <div class="callout-text">${calloutText}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENT CHECKLIST -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div class="card">
+        <h2>📋 Documenti necessari</h2>
+        <p class="checklist-intro">Spunta i documenti che hai già preparato. I tuoi progressi vengono salvati automaticamente.</p>
+
+        <div class="doc-checklist" data-permit="${slug}-primo">
+${checklistHtml}
+        </div>
+
+        <div class="checklist-progress">
+          <span class="progress-text">Completati: <span id="progress-count">0</span>/${primoDocuments.length}</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" style="margin-top: 1.5rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. Contatta sempre la tua Questura per confermare la lista esatta.
+        </div>
+      </div>
+
+      <!-- Related permit info link -->
+      <div class="card" style="margin-top: 1.5rem; text-align: center;">
+        <p>Vuoi sapere di più su questo permesso?</p>
+        <a href="permesso-${slug}.html" class="btn btn-primary">Informazioni sul permesso</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
+        <a href="../../index.html" class="footer-link">Home</a>
+        <a href="https://sospermesso.typeform.com/contatti" class="footer-link">Contatti</a>
+      </div>
+      <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/app.js"></script>
+  <script>
+    // Checklist persistence with localStorage
+    (function() {
+      const permitKey = '${slug}-primo';
+      const checkboxes = document.querySelectorAll('.doc-checkbox');
+      const progressCount = document.getElementById('progress-count');
+      const progressFill = document.getElementById('progress-fill');
+
+      // Load saved state
+      function loadState() {
+        const saved = localStorage.getItem('checklist-' + permitKey);
+        if (saved) {
+          try {
+            const state = JSON.parse(saved);
+            state.forEach(function(item) {
+              const checkbox = document.getElementById(item.id);
+              if (checkbox) checkbox.checked = item.checked;
+            });
+          } catch (e) {
+            console.warn('Failed to load checklist state:', e);
+          }
+        }
+        updateProgress();
+      }
+
+      // Save state
+      function saveState() {
+        const state = Array.from(checkboxes).map(function(cb) {
+          return {
+            id: cb.id,
+            checked: cb.checked
+          };
+        });
+        localStorage.setItem('checklist-' + permitKey, JSON.stringify(state));
+        updateProgress();
+      }
+
+      // Update progress bar
+      function updateProgress() {
+        const total = checkboxes.length;
+        const checked = Array.from(checkboxes).filter(function(cb) { return cb.checked; }).length;
+        progressCount.textContent = checked;
+        progressFill.style.width = (total > 0 ? (checked / total) * 100 : 0) + '%';
+      }
+
+      // Attach event listeners
+      checkboxes.forEach(function(cb) { cb.addEventListener('change', saveState); });
+
+      // Initialize
+      document.addEventListener('DOMContentLoaded', loadState);
+    })();
+  </script>
+</body>
+</html>`;
+}
+
+module.exports = { generatePrimoPage };
