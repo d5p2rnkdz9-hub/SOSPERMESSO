@@ -13,25 +13,25 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 
 ## Current Position
 
-**Phase:** 5 of 6 (Logo Redesign)
-**Plan:** 2 of 2 complete
-**Status:** Phase 5 complete
-**Last activity:** 2026-01-26 — Completed 05-01-PLAN.md and 05-02-PLAN.md
+**Phase:** 6 of 6 (Homepage Structure)
+**Plan:** 1 of 2 complete
+**Status:** In progress
+**Last activity:** 2026-01-26 — Completed 06-01-PLAN.md
 
 ```
 v1.2 Visual Refresh: IN PROGRESS
 
 Phase 4: Color Palette             [Complete] ##########
 Phase 5: Logo Redesign             [Complete] ##########
-Phase 6: Homepage Structure        [Pending]  ░░░░░░░░░░
+Phase 6: Homepage Structure        [Progress] █████░░░░░
 ```
 
 ## Performance Metrics
 
 **v1.2 Milestone:**
-- Requirements: 9/14 complete (TEXT-01, COLOR-01-04, LOGO-01-04)
+- Requirements: 12/14 complete (TEXT-01, COLOR-01-04, LOGO-01-04, STRUCT-01-04, MOBILE-01-02)
 - Phases: 2/3 complete
-- Plans: 3/5 complete
+- Plans: 4/5 complete
 
 **v1.1 Milestone (archived):**
 - Requirements: 12/12 complete
@@ -50,6 +50,9 @@ Phase 6: Homepage Structure        [Pending]  ░░░░░░░░░░
 | Use PNG logo instead of SVG | Phase 5 logo redesign | ChatGPT-generated logo looked better |
 | Absolute positioning for logo | Phase 5 logo redesign | Enables slim header with overflowing logo |
 | Disabled scroll reveal animation | Phase 5 bug fix | Was hiding content until scroll |
+| Separate databases from guides | Phase 6 homepage structure | Clearer content hierarchy for users |
+| Standalone Aiuto legale section | Phase 6 homepage structure | High visibility for critical legal help service |
+| Section gradient color coding | Phase 6 homepage structure | Visual differentiation aids navigation |
 
 See PROJECT.md Key Decisions table for full list with outcomes.
 
@@ -66,6 +69,8 @@ See PROJECT.md Key Decisions table for full list with outcomes.
 - **Print styles:** Hide header/footer, show checkbox symbols
 - **Color scheme:** Teal header (#80CBC4), yellow hero gradient
 - **Logo:** Absolute positioned, 250px desktop, 100px mobile
+- **Prominent CTA cards:** Centered, max-width 500px, larger icon/title, distinct border
+- **Section gradients:** Color-coordinated backgrounds (teal for database, warm yellow for guides, coral for legal)
 
 ### Color Palette Reference (v1.2)
 
@@ -82,20 +87,20 @@ See PROJECT.md Key Decisions table for full list with outcomes.
 ## Session Continuity
 
 **Last session:** 2026-01-26
-**Stopped at:** Completed Phase 5 (Logo Redesign)
+**Stopped at:** Completed 06-01-PLAN.md (Homepage Structure - plan 1 of 2)
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, PROJECT.md, ROADMAP.md
-2. **Where we are:** Phase 5 complete, ready for Phase 6
-3. **What to do next:** `/gsd:plan-phase 6` or `/gsd:execute-phase 6`
+2. **Where we are:** Phase 6 plan 1 complete (homepage reorganization), plan 2 pending
+3. **What to do next:** Continue with Phase 6 plan 2 or review homepage changes
 4. **Key files:**
-   - `.planning/phases/05-logo-redesign/05-01-SUMMARY.md` — Phase 5 results
+   - `.planning/phases/06-homepage-structure/06-01-SUMMARY.md` — Plan 1 results
+   - `index.html` — Reorganized homepage sections
    - `.planning/REQUIREMENTS.md` — v1.2 requirements
-   - `.planning/ROADMAP.md` — v1.2 roadmap
 
-**Quick Start Command:** `/gsd:plan-phase 6`
+**Quick Start Command:** Review homepage at `index.html` or continue Phase 6
 
 ---
 
