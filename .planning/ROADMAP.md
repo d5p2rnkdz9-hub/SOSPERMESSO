@@ -45,8 +45,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Initialize Node.js build infrastructure with Notion API client
-- [ ] 02-02-PLAN.md — Create primo/rinnovo templates with checklist, print CSS, localStorage
+- [x] 02-01-PLAN.md — Initialize Node.js build infrastructure with Notion API client
+- [x] 02-02-PLAN.md — Create primo/rinnovo templates with checklist, print CSS, localStorage
 
 **Requirements:**
 - DOC-01: Create document page template for first release (primo rilascio)
@@ -84,10 +84,10 @@ Plans:
 | Phase | Status | Requirements | Success Criteria | Notes |
 |-------|--------|--------------|------------------|-------|
 | 1 - Page Foundation | ✓ Complete | 6/6 | 5/5 | Verified 2026-01-25 |
-| 2 - Document Templates | Planned | 0/3 | 0/4 | 2 plans in 2 waves |
-| 3 - Complete Coverage | Pending | 0/3 | 0/4 | Generate 46 document pages |
+| 2 - Document Templates | ✓ Complete | 3/3 | 4/4 | Verified 2026-01-25, 63 pages generated |
+| 3 - Complete Coverage | Pending | 0/3 | 0/4 | Ready when needed |
 
-**Overall:** 6/12 requirements complete, 5/13 success criteria met
+**Overall:** 9/12 requirements complete, 9/13 success criteria met
 
 ---
 
@@ -96,10 +96,10 @@ Plans:
 1. ~~Run `/gsd:plan-phase 1` to create execution plan for page restructuring~~
 2. ~~Run `/gsd:execute-phase 1` to restructure documenti-questura page~~
 3. ~~Run `/gsd:plan-phase 2` for template creation~~
-4. Run `/gsd:execute-phase 2` to create templates and build system
-5. After Phase 2 complete, run `/gsd:plan-phase 3` for full page generation
+4. ~~Run `/gsd:execute-phase 2` to create templates and build system~~
+5. (Optional) Run `/gsd:plan-phase 3` for full page generation when ready
 
 ---
 
 *Last updated: 2026-01-25*
-*Coverage validated: 12/12 v1 requirements mapped*
+*Phase 2 verified: 63 document pages generated with Notion integration*
