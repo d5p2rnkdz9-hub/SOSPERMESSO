@@ -8,7 +8,7 @@
 
 | Phase | Name | Goal | Requirements | Status |
 |-------|------|------|--------------|--------|
-| 4 | Color Palette | Replace purple with warm teal-based palette | TEXT-01, COLOR-01-04 | Pending |
+| 4 | Color Palette | Replace purple with warm teal-based palette | TEXT-01, COLOR-01-04 | Planned |
 | 5 | Logo Redesign | Simple lighthouse icon + text replacing complex image | LOGO-01-04 | Pending |
 | 6 | Homepage Structure | Reorganize sections for better content hierarchy | STRUCT-01-04, MOBILE-01-02 | Pending |
 
@@ -40,6 +40,11 @@
 - `index.html` — Hero text, section backgrounds
 - `src/pages/index.html` — Hero text
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 04-01-PLAN.md — Update CSS and HTML for teal palette
+
 **Dependencies:** None
 
 ---
@@ -66,6 +71,8 @@
 - `src/styles/components.css` — Logo styles
 - `src/styles/mobile.css` — Mobile logo styles
 - `index.html`, `src/pages/*.html` — Logo markup
+
+**Plans:** (created by /gsd:plan-phase)
 
 **Dependencies:** Phase 4 (need final header color)
 
@@ -96,6 +103,8 @@
 - `src/pages/index.html` — Source homepage
 - `src/styles/components.css` — Section styles
 - `src/styles/mobile.css` — Mobile responsiveness
+
+**Plans:** (created by /gsd:plan-phase)
 
 **Dependencies:** Phase 4 (section colors), Phase 5 (consistent header)
 
