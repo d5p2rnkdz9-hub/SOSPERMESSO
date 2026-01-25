@@ -186,6 +186,26 @@
   }
 }
 
+/* Aiuto Legale Card - Mobile */
+@media (max-width: 768px) {
+  .aiuto-legale-card {
+    max-width: 100%;
+    padding: var(--spacing-lg);
+  }
+
+  .aiuto-legale-card .card-icon {
+    font-size: 3rem;
+  }
+
+  .aiuto-legale-card .card-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .aiuto-legale-card .card-description {
+    font-size: var(--font-size-base);
+  }
+}
+
 /* ===============================================
    MOBILE TYPOGRAPHY
    =============================================== */
