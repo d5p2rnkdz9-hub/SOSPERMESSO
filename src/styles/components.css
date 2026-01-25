@@ -177,6 +177,40 @@
   font-size: var(--font-size-lg);
 }
 
+/* Aiuto Legale Section - Prominent Card */
+.aiuto-legale-section {
+  text-align: center;
+}
+
+.aiuto-legale-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF5F5 100%);
+  border: 2px solid #FFCDD2;
+}
+
+.aiuto-legale-card .card-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.aiuto-legale-card .card-title {
+  font-size: var(--font-size-2xl);
+  color: var(--lighthouse-red);
+  margin-bottom: var(--spacing-sm);
+}
+
+.aiuto-legale-card .card-description {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.aiuto-legale-card:hover {
+  border-color: var(--lighthouse-red);
+  box-shadow: 0 12px 40px rgba(255, 82, 82, 0.2);
+}
+
 /* ===============================================
    HEADER / NAVIGATION
    =============================================== */
