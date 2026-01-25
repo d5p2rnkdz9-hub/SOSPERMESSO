@@ -37,6 +37,12 @@
   --accent-green: #66BB6A;
   --accent-green-bright: #81C784;
 
+  /* Warm Palette Additions */
+  --accent-teal-light: #80CBC4;
+  --accent-coral: #FF7F7F;
+  --accent-coral-light: #FFA5A5;
+  --accent-mint: #A5D6A7;
+
   /* Semantic Colors - BRIGHTER */
   --success: #66BB6A;
   --success-bright: #81C784;
