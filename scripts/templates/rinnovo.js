@@ -17,6 +17,13 @@ const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml } = require('
 function generateRinnovoPage(permit) {
   const { tipo, slug, rinnovoDocuments, rinnovoMethod } = permit;
 
+  // Check if this is attesa-occupazione (disputed renewal)
+  const isAttesaOccupazione = slug && slug.includes('attesa-occupazione');
+
+  // Add common document "Copia permesso precedente" to all rinnovo pages
+  const commonDoc = 'Copia permesso precedente (o denuncia smarrimento)';
+  const allDocuments = [commonDoc, ...rinnovoDocuments.filter(d => d !== commonDoc)];
+
   // Determine submission callout
   const isKit = rinnovoMethod && rinnovoMethod.toLowerCase().includes('kit');
   const calloutClass = isKit ? 'callout-kit' : 'callout-questura';
@@ -26,7 +33,7 @@ function generateRinnovoPage(permit) {
     : 'Porta i documenti in Questura (non puoi usare il KIT postale)';
 
   // Generate checklist items with dizionario links and disputed styling
-  const checklistHtml = rinnovoDocuments.map((doc, index) => {
+  const checklistHtml = allDocuments.map((doc, index) => {
     const docClass = getDocumentClass(doc);
     const docLabel = linkToDizionario(doc);
     const disputedNote = isDisputed(doc)
@@ -123,7 +130,21 @@ function generateRinnovoPage(permit) {
       </div>
     </div>
   </section>
-
+${isAttesaOccupazione ? `
+  <!-- DISPUTED RENEWAL WARNING -->
+  <section class="section" style="padding: 0.5rem 0;">
+    <div class="container" style="max-width: 700px;">
+      <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Attenzione:</strong> Il rinnovo del permesso per attesa occupazione è controverso. Alcune Questure lo negano. Ti consigliamo di rivolgerti a un avvocato o sportello legale prima di procedere.
+          <br><br>
+          <a href="aiuto-legale.html" style="color: #E53935; font-weight: 600;">→ Trova aiuto legale nella tua zona</a>
+        </div>
+      </div>
+    </div>
+  </section>
+` : ''}
   <!-- DOCUMENT CHECKLIST -->
   <section class="section">
     <div class="container" style="max-width: 700px;">
@@ -136,7 +157,7 @@ ${checklistHtml}
         </div>
 
         <div class="checklist-progress">
-          <span class="progress-text">Completati: <span id="progress-count">0</span>/${rinnovoDocuments.length}</span>
+          <span class="progress-text">Completati: <span id="progress-count">0</span>/${allDocuments.length}</span>
           <div class="progress-bar">
             <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
           </div>
