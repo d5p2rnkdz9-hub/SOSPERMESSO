@@ -11,6 +11,119 @@ const { generateRinnovoPage } = require('./templates/rinnovo.js');
 const OUTPUT_DIR = path.join(__dirname, '../src/pages');
 
 /**
+ * Generate redirect page HTML
+ * Creates meta refresh redirect from display slug to canonical slug
+ */
+function generateRedirectPage(displaySlug, canonicalSlug, type) {
+  const targetFile = `documenti-${canonicalSlug}-${type}.html`;
+  return `<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=${targetFile}">
+  <link rel="canonical" href="${targetFile}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Reindirizzamento in corso...</p>
+  <script>window.location.replace("${targetFile}");</script>
+</body>
+</html>`;
+}
+
+/**
+ * Generate alias/redirect pages for display slugs
+ * Loads slug-map.json and creates redirect pages for simplified URLs
+ */
+async function generateAliasPages() {
+  console.log('\n🔗 Generating alias redirect pages...\n');
+
+  const slugMapPath = path.join(__dirname, 'slug-map.json');
+  let slugMap;
+
+  try {
+    const mapContent = await fs.readFile(slugMapPath, 'utf-8');
+    slugMap = JSON.parse(mapContent);
+  } catch (err) {
+    console.log('   ℹ️  No slug-map.json found, skipping alias generation');
+    return { redirectCount: 0, skipped: [] };
+  }
+
+  let redirectCount = 0;
+  const skipped = [];
+
+  for (const [displaySlug, canonicalSlug] of Object.entries(slugMap.mappings)) {
+    // Check if canonical primo exists (required)
+    const canonicalPrimoFile = path.join(OUTPUT_DIR, `documenti-${canonicalSlug}-primo.html`);
+    const canonicalRinnovoFile = path.join(OUTPUT_DIR, `documenti-${canonicalSlug}-rinnovo.html`);
+
+    try {
+      await fs.access(canonicalPrimoFile);
+    } catch {
+      console.log(`   ⚠️  Skipping ${displaySlug}: canonical primo not found (${canonicalSlug})`);
+      skipped.push({ displaySlug, reason: 'Canonical primo not found' });
+      continue;
+    }
+
+    // Generate primo redirect (always)
+    const primoRedirectPath = path.join(OUTPUT_DIR, `documenti-${displaySlug}-primo.html`);
+
+    // Check if display slug file already exists (don't overwrite canonical pages)
+    try {
+      const existingStat = await fs.stat(primoRedirectPath);
+      const existingContent = await fs.readFile(primoRedirectPath, 'utf-8');
+
+      // If it's already a redirect or doesn't contain full document structure, it's safe to overwrite
+      if (!existingContent.includes('meta http-equiv="refresh"') && existingContent.length > 1000) {
+        console.log(`   ⚠️  Skipping ${displaySlug}-primo: canonical page exists, won't overwrite`);
+        skipped.push({ displaySlug: displaySlug + '-primo', reason: 'Canonical page exists' });
+        continue;
+      }
+    } catch {
+      // File doesn't exist, safe to create
+    }
+
+    const primoHtml = generateRedirectPage(displaySlug, canonicalSlug, 'primo');
+    await fs.writeFile(primoRedirectPath, primoHtml, 'utf-8');
+    console.log(`   ✓ documenti-${displaySlug}-primo.html -> documenti-${canonicalSlug}-primo.html`);
+    redirectCount++;
+
+    // Generate rinnovo redirect if canonical rinnovo exists
+    try {
+      await fs.access(canonicalRinnovoFile);
+
+      const rinnovoRedirectPath = path.join(OUTPUT_DIR, `documenti-${displaySlug}-rinnovo.html`);
+
+      // Same check for rinnovo
+      try {
+        const existingStat = await fs.stat(rinnovoRedirectPath);
+        const existingContent = await fs.readFile(rinnovoRedirectPath, 'utf-8');
+
+        if (!existingContent.includes('meta http-equiv="refresh"') && existingContent.length > 1000) {
+          console.log(`   ⚠️  Skipping ${displaySlug}-rinnovo: canonical page exists, won't overwrite`);
+          skipped.push({ displaySlug: displaySlug + '-rinnovo', reason: 'Canonical page exists' });
+          continue;
+        }
+      } catch {
+        // File doesn't exist, safe to create
+      }
+
+      const rinnovoHtml = generateRedirectPage(displaySlug, canonicalSlug, 'rinnovo');
+      await fs.writeFile(rinnovoRedirectPath, rinnovoHtml, 'utf-8');
+      console.log(`   ✓ documenti-${displaySlug}-rinnovo.html -> documenti-${canonicalSlug}-rinnovo.html`);
+      redirectCount++;
+    } catch {
+      // Canonical rinnovo doesn't exist, skip rinnovo redirect
+      console.log(`   ℹ️  No rinnovo redirect for ${displaySlug} (canonical rinnovo not found)`);
+    }
+  }
+
+  console.log(`\n   Generated ${redirectCount} redirect pages for URL aliasing`);
+
+  return { redirectCount, skipped };
+}
+
+/**
  * Main build function
  * Fetches permit data from Notion and generates HTML pages
  */
@@ -90,11 +203,15 @@ async function build() {
     }
   }
 
+  // Generate alias/redirect pages
+  const aliasResult = await generateAliasPages();
+
   // Summary
   console.log('\n========================================');
   console.log(`✅ Generated ${primoCount + rinnovoCount} document pages`);
   console.log(`   - ${primoCount} primo rilascio pages`);
   console.log(`   - ${rinnovoCount} rinnovo pages`);
+  console.log(`   - ${aliasResult.redirectCount} redirect pages for URL aliasing`);
 
   if (skipped.length > 0) {
     console.log(`\n⚠️  Skipped ${skipped.length} items:`);
@@ -113,7 +230,7 @@ async function build() {
   console.log('\n📁 Output directory: ' + OUTPUT_DIR);
   console.log('');
 
-  return { generated, skipped, primoCount, rinnovoCount };
+  return { generated, skipped, primoCount, rinnovoCount, redirectCount: aliasResult.redirectCount };
 }
 
 // Run build
