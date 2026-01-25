@@ -9,15 +9,15 @@ Requirements for documenti-questura overhaul. Each maps to roadmap phases.
 
 ### Page Structure
 
-- [ ] **PAGE-01**: Documenti-questura uses database.html's category section layout (`.category-section`, `.permit-list`)
-- [ ] **PAGE-02**: Page displays 4 color-coded categories matching database.html (purple, orange, blue, teal)
-- [ ] **PAGE-03**: Each permit row shows: icon + title + [Primo] + [Rinnovo] badges on single line
+- [x] **PAGE-01**: Documenti-questura uses database.html's category section layout (`.category-section`, `.permit-list`)
+- [x] **PAGE-02**: Page displays 4 color-coded categories matching database.html (purple, orange, blue, teal)
+- [x] **PAGE-03**: Each permit row shows: icon + title + [Primo] + [Rinnovo] badges on single line
 
 ### Badge Component
 
-- [ ] **BADGE-01**: Primo/Rinnovo badges are clickable, link to respective document pages
-- [ ] **BADGE-02**: Badges have distinct styling (compact, visible but not dominant)
-- [ ] **BADGE-03**: Badges indicate which document types are available for each permit
+- [x] **BADGE-01**: Primo/Rinnovo badges are clickable, link to respective document pages
+- [x] **BADGE-02**: Badges have distinct styling (compact, visible but not dominant)
+- [x] **BADGE-03**: Badges indicate which document types are available for each permit
 
 ### Document Pages
 
@@ -62,12 +62,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PAGE-01 | Phase 1 | Pending |
-| PAGE-02 | Phase 1 | Pending |
-| PAGE-03 | Phase 1 | Pending |
-| BADGE-01 | Phase 1 | Pending |
-| BADGE-02 | Phase 1 | Pending |
-| BADGE-03 | Phase 1 | Pending |
+| PAGE-01 | Phase 1 | Complete |
+| PAGE-02 | Phase 1 | Complete |
+| PAGE-03 | Phase 1 | Complete |
+| BADGE-01 | Phase 1 | Complete |
+| BADGE-02 | Phase 1 | Complete |
+| BADGE-03 | Phase 1 | Complete |
 | DOC-01 | Phase 2 | Pending |
 | DOC-02 | Phase 2 | Pending |
 | DOC-04 | Phase 2 | Pending |
@@ -82,4 +82,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-25*
-*Last updated: 2026-01-25 after roadmap creation*
+*Last updated: 2026-01-25 after Phase 1 completion*
