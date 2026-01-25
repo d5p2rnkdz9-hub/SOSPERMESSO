@@ -1,0 +1,22 @@
+# Netlify build configuration for SOS Permesso
+# Generates document pages from Notion at build time
+
+[build]
+  command = "npm run build:docs"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Headers for static assets
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+# Redirect for clean URLs (optional)
+[[redirects]]
+  from = "/documenti/*"
+  to = "/src/pages/documenti-:splat.html"
+  status = 200
