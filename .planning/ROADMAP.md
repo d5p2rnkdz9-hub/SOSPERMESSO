@@ -108,7 +108,10 @@ Plans:
 - `src/styles/components.css` — Section styles
 - `src/styles/mobile.css` — Mobile responsiveness
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 1 plan
+
+Plans:
+- [ ] 06-01-PLAN.md — Reorganize homepage sections and add Aiuto legale styling
 
 **Dependencies:** Phase 4 (section colors), Phase 5 (consistent header)
 
