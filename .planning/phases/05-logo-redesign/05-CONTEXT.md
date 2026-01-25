@@ -24,9 +24,10 @@ Replace complex AI-generated logo with simple SVG lighthouse icon + text. Logo m
 
 ### Text treatment
 - Two-part text: "S.O.S." and "Permesso" with different styling
-- **S.O.S.**: Big and bold font, alternating colors: S (red) O (white) S (red) — matches lighthouse stripe colors
-- **Permesso**: Friendly rounded font (Quicksand or similar), white color
-- Both words on same line
+- **S.O.S.**: SVG paths with brushstroke texture (not a font), alternating colors: S (red) O (white) S (red) — matches lighthouse stripe colors. Rough, hand-painted look.
+- **Permesso**: Friendly rounded font (Quicksand) via CSS, white color
+- Text in HTML/CSS (not embedded in SVG) for simpler responsive handling
+- Both words on same line on desktop
 - Periods in S.O.S. (not SOS)
 
 ### Layout arrangement

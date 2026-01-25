@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-01-25
-**Status:** v1.2 Visual Refresh — Phase 4 complete
+**Last Updated:** 2026-01-26
+**Status:** v1.2 Visual Refresh — Phase 5 complete
 
 ## Project Reference
 
@@ -13,25 +13,25 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 
 ## Current Position
 
-**Phase:** 4 of 6 (Color Palette)
-**Plan:** 1 of 1 complete
-**Status:** Phase 4 complete
-**Last activity:** 2026-01-25 — Completed 04-01-PLAN.md
+**Phase:** 5 of 6 (Logo Redesign)
+**Plan:** 2 of 2 complete
+**Status:** Phase 5 complete
+**Last activity:** 2026-01-26 — Completed 05-01-PLAN.md and 05-02-PLAN.md
 
 ```
 v1.2 Visual Refresh: IN PROGRESS
 
 Phase 4: Color Palette             [Complete] ##########
-Phase 5: Logo Redesign             [Pending]  ░░░░░░░░░░
+Phase 5: Logo Redesign             [Complete] ##########
 Phase 6: Homepage Structure        [Pending]  ░░░░░░░░░░
 ```
 
 ## Performance Metrics
 
 **v1.2 Milestone:**
-- Requirements: 5/14 complete (TEXT-01, COLOR-01-04)
-- Phases: 1/3 complete
-- Plans: 1/3 complete
+- Requirements: 9/14 complete (TEXT-01, COLOR-01-04, LOGO-01-04)
+- Phases: 2/3 complete
+- Plans: 3/5 complete
 
 **v1.1 Milestone (archived):**
 - Requirements: 12/12 complete
@@ -47,6 +47,9 @@ Phase 6: Homepage Structure        [Pending]  ░░░░░░░░░░
 | Preserve rainbow card border | Phase 4 color update | Keeps playful purple in decorative element |
 | Keep yellow primary buttons | Phase 4 color update | Maintains brand consistency |
 | Use #26A69A as base teal | Phase 4 color update | Warmer, friendlier than previous purple |
+| Use PNG logo instead of SVG | Phase 5 logo redesign | ChatGPT-generated logo looked better |
+| Absolute positioning for logo | Phase 5 logo redesign | Enables slim header with overflowing logo |
+| Disabled scroll reveal animation | Phase 5 bug fix | Was hiding content until scroll |
 
 See PROJECT.md Key Decisions table for full list with outcomes.
 
@@ -61,35 +64,38 @@ See PROJECT.md Key Decisions table for full list with outcomes.
 - **Badges:** Inline with permit name, blue/orange gradient styling
 - **Document pages:** Generated from Notion via `npm run build:docs`
 - **Print styles:** Hide header/footer, show checkbox symbols
-- **Color scheme:** Teal header/hero (#4DB6AC), warm section backgrounds
+- **Color scheme:** Teal header (#80CBC4), yellow hero gradient
+- **Logo:** Absolute positioned, 250px desktop, 100px mobile
 
 ### Color Palette Reference (v1.2)
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Base teal | #26A69A | highlight-text, btn-hero end |
-| Bright teal | #4DB6AC | header start, btn-hero start |
-| Light teal | #80CBC4 | header end |
-| Very light teal | #E0F2F1 | guide section bg start |
-| Light mint | #B2DFDB | guide section bg end |
+| Header teal start | #80CBC4 | header gradient start |
+| Header teal end | #B2DFDB | header gradient end |
+| Hero yellow start | #FFD54F | hero gradient start |
+| Hero yellow mid | #FFC107 | hero gradient middle |
+| Hero yellow end | #FFB300 | hero gradient end |
+| Menu text | #1A6B5F | dark teal for nav links |
+| Menu hover | #FFD700 | yellow for nav hover |
 
 ## Session Continuity
 
-**Last session:** 2026-01-25
-**Stopped at:** Completed 04-01-PLAN.md
+**Last session:** 2026-01-26
+**Stopped at:** Completed Phase 5 (Logo Redesign)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, PROJECT.md, 04-01-SUMMARY.md
-2. **Where we are:** Phase 4 complete, ready for Phase 5
-3. **What to do next:** `/gsd:plan-phase 5` or `/gsd:execute-phase 5`
+1. **Context to load:** This STATE.md, PROJECT.md, ROADMAP.md
+2. **Where we are:** Phase 5 complete, ready for Phase 6
+3. **What to do next:** `/gsd:plan-phase 6` or `/gsd:execute-phase 6`
 4. **Key files:**
-   - `.planning/phases/04-color-palette/04-01-SUMMARY.md` — Phase 4 results
+   - `.planning/phases/05-logo-redesign/05-01-SUMMARY.md` — Phase 5 results
    - `.planning/REQUIREMENTS.md` — v1.2 requirements
    - `.planning/ROADMAP.md` — v1.2 roadmap
 
-**Quick Start Command:** `/gsd:plan-phase 5`
+**Quick Start Command:** `/gsd:plan-phase 6`
 
 ---
 
