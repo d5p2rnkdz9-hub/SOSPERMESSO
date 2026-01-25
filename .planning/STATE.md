@@ -1,47 +1,47 @@
 # Project State: SOS Permesso — Documenti Questura
 
 **Last Updated:** 2026-01-25
-**Status:** Phase 2 Complete
+**Status:** Milestone Complete
 
 ## Project Reference
 
 **Core Value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current Focus:** Phase 2 complete. 63 document pages generated from Notion. Consolidating results before Phase 3.
+**Current Focus:** All phases complete. 100% URL coverage achieved. Ready for milestone audit.
 
 ## Current Position
 
-**Phase:** 2 of 3 — Document Templates
-**Plan:** 2 of 2 complete
-**Status:** Phase 2 complete, ready for Phase 3
-**Last activity:** 2026-01-25 — Completed 02-02-PLAN.md (templates and page generation)
+**Phase:** 3 of 3 — Complete Coverage
+**Plan:** 1 of 1 complete
+**Status:** All phases complete
+**Last activity:** 2026-01-25 — Completed 03-01-PLAN.md (slug mapping, redirects, gap closure)
 
 ```
-Progress: [████████████████░░░░] 83% (10/12 requirements)
+Progress: [████████████████████] 100% (12/12 requirements)
 
 Phase 1: Page Foundation           [Complete] ██████████ 6/6 requirements
 Phase 2: Document Templates        [Complete] ██████████ 3/3 requirements
-Phase 3: Complete Coverage         [Pending]  ░░░░░░░░░░ 0/3 requirements
+Phase 3: Complete Coverage         [Complete] ██████████ 3/3 requirements
 ```
 
 ## Performance Metrics
 
 **Requirements:**
 - Total v1: 12
-- Complete: 10
+- Complete: 12
 - In Progress: 0
 - Blocked: 0
 
 **Phases:**
 - Total: 3
-- Complete: 2
-- Current: 3 (Complete Coverage)
-- Remaining: 1
+- Complete: 3
+- Current: None (milestone complete)
+- Remaining: 0
 
 **Success Criteria:**
 - Total: 13 observable behaviors
-- Met: 10 (Phase 1 + Phase 2)
-- Pending: 3
+- Met: 13 (all phases)
+- Pending: 0
 
 ## Accumulated Context
 
@@ -62,6 +62,12 @@ Phase 3: Complete Coverage         [Pending]  ░░░░░░░░░░ 0/3
 | 2026-01-25 | Checkbox only triggers on checkbox click, not label text | Using <span> instead of <label> for document names |
 | 2026-01-25 | Removed non-existent permit info links from templates | Only include links to pages that exist |
 | 2026-01-25 | Compact layout for document pages | Smaller callout, tighter spacing, softer title styling |
+| 2026-01-25 | Slug mapping via JSON config file | Centralized, auditable, version-controlled mappings |
+| 2026-01-25 | Meta refresh redirects (0-second delay) | SEO-friendly, works without JS |
+| 2026-01-25 | Common doc "Copia permesso precedente" on all rinnovo | Added via template, not Notion |
+| 2026-01-25 | Attesa occupazione disputed warning in template | Hardcoded special case, not new Notion field |
+| 2026-01-25 | UE lungo periodo dedicated aggiornamento page | Manual page with 10-year expiry explanation |
+| 2026-01-25 | Minori stranieri affidati → famiglia redirect | Rinnovo redirects to motivi familiari art. 30 |
 
 ### Design Patterns to Follow
 
@@ -98,7 +104,9 @@ Phase 3: Complete Coverage         [Pending]  ░░░░░░░░░░ 0/3
 - [x] ~~Set up Notion API integration~~ Configured and working
 - [x] ~~Execute plan 02-02 to create primo/rinnovo templates~~ Complete
 - [x] ~~Verify generated pages work correctly~~ User verified at checkpoint
-- [ ] Run `/gsd:plan-phase 3` if additional features needed (Phase 3: Complete Coverage)
+- [x] ~~Run `/gsd:plan-phase 3`~~ Slug mapping and redirects planned
+- [x] ~~Run `/gsd:execute-phase 3`~~ 100% URL coverage achieved
+- [ ] Run `/gsd:audit-milestone` to finalize milestone
 
 ### Known Blockers
 
@@ -110,23 +118,24 @@ None currently - all design decisions resolved.
 
 ## Session Continuity
 
-**Last session:** 2026-01-25 14:XX:XXZ
-**Stopped at:** Completed 02-02-PLAN.md (templates and page generation)
+**Last session:** 2026-01-25
+**Stopped at:** Completed 03-01-PLAN.md (slug mapping, redirects, 100% coverage)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, 02-02-SUMMARY.md
-2. **Where we are:** Phase 2 complete, 63 document pages generated and verified
+1. **Context to load:** This STATE.md, ROADMAP.md
+2. **Where we are:** All 3 phases complete, milestone ready for audit
 3. **What to do next:**
-   - Review if Phase 3 (Complete Coverage) is needed
-   - Consider: any missing permit types, additional features, polish
+   - Run `/gsd:audit-milestone` to verify milestone completion
+   - Or `/gsd:complete-milestone` to archive
 4. **Key files to reference:**
-   - `.planning/phases/02-document-templates/02-02-SUMMARY.md` — Completed template work
-   - `scripts/build-documents.js` — Build script for regenerating pages
-   - `src/pages/documenti-*.html` — 63 generated document pages
+   - `.planning/phases/03-complete-coverage/03-01-SUMMARY.md` — Slug mapping work
+   - `scripts/slug-map.json` — Display-to-canonical slug mappings
+   - `scripts/build-documents.js` — Build script with redirect generation
+   - `src/pages/documenti-*.html` — 100+ document pages (63 canonical + 38 redirects)
 
-**Quick Start Command:** `/gsd:plan-phase 3` (if additional work needed)
+**Quick Start Command:** `/gsd:audit-milestone`
 
 ---
 
