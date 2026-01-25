@@ -55,15 +55,13 @@
 
   /* Logo smaller on mobile */
   .logo {
-    font-size: var(--font-size-lg);
-  }
-
-  .logo-icon {
-    font-size: var(--font-size-2xl);
+    position: absolute;
+    top: 5px;
+    left: 10px;
   }
 
   .logo-image {
-    height: 55px;
+    height: 100px;
   }
 
   /* Mobile Logo - Icon only (Phase 5) */

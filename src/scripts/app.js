@@ -83,30 +83,30 @@ languageOptions.forEach(option => {
 // SCROLL ANIMATIONS (Intersection Observer)
 // ===============================================
 
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
-const animateOnScroll = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('slide-up');
-      animateOnScroll.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-
-// Observe all cards and sections
-document.addEventListener('DOMContentLoaded', () => {
-  const elementsToAnimate = document.querySelectorAll('.card, .section-header, .alert');
-
-  elementsToAnimate.forEach((element, index) => {
-    element.style.opacity = '0';
-    element.classList.add(`stagger-${Math.min(index % 6 + 1, 6)}`);
-    animateOnScroll.observe(element);
-  });
-});
+// SCROLL REVEAL ANIMATION - DISABLED
+// Was causing elements to be hidden until scrolled into view
+// const observerOptions = {
+//   threshold: 0.1,
+//   rootMargin: '0px 0px -50px 0px'
+// };
+//
+// const animateOnScroll = new IntersectionObserver((entries) => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('slide-up');
+//       animateOnScroll.unobserve(entry.target);
+//     }
+//   });
+// }, observerOptions);
+//
+// document.addEventListener('DOMContentLoaded', () => {
+//   const elementsToAnimate = document.querySelectorAll('.card, .section-header, .alert');
+//   elementsToAnimate.forEach((element, index) => {
+//     element.style.opacity = '0';
+//     element.classList.add(`stagger-${Math.min(index % 6 + 1, 6)}`);
+//     animateOnScroll.observe(element);
+//   });
+// });
 
 // ===============================================
 // ADD ANIMATION CLASSES TO BUTTONS
