@@ -15,6 +15,11 @@ Transform documenti-questura page into a comprehensive, scannable resource for a
 
 **Dependencies:** None (uses existing site infrastructure)
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Restructure documenti-questura page with category sections and badge navigation
+
 **Requirements:**
 - PAGE-01: Documenti-questura uses database.html's category section layout
 - PAGE-02: Page displays 4 color-coded categories matching database.html
@@ -72,7 +77,7 @@ Transform documenti-questura page into a comprehensive, scannable resource for a
 
 | Phase | Status | Requirements | Success Criteria | Notes |
 |-------|--------|--------------|------------------|-------|
-| 1 - Page Foundation | Pending | 6/6 | 0/5 | Restructure page + badge system |
+| 1 - Page Foundation | Planned | 6/6 | 0/5 | 1 plan created, ready for execution |
 | 2 - Document Templates | Pending | 3/3 | 0/4 | Create 2 reusable templates |
 | 3 - Complete Coverage | Pending | 3/3 | 0/4 | Generate 46 document pages |
 
@@ -82,9 +87,10 @@ Transform documenti-questura page into a comprehensive, scannable resource for a
 
 ## Next Steps
 
-1. Run `/gsd:plan-phase 1` to create execution plan for page restructuring
-2. After Phase 1 complete, run `/gsd:plan-phase 2` for template creation
-3. After Phase 2 complete, run `/gsd:plan-phase 3` for full page generation
+1. ~~Run `/gsd:plan-phase 1` to create execution plan for page restructuring~~
+2. Run `/gsd:execute-phase 1` to restructure documenti-questura page
+3. After Phase 1 complete, run `/gsd:plan-phase 2` for template creation
+4. After Phase 2 complete, run `/gsd:plan-phase 3` for full page generation
 
 ---
 
