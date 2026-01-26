@@ -9,28 +9,23 @@ A multilingual information website helping immigrants in Italy understand reside
 **Latest milestone:** v1.2 Visual Refresh (shipped 2026-01-26)
 **Current milestone:** v1.3 Header & Navigation Fix
 
-## Current Milestone: v1.3 Header & Navigation Fix
+## Current Milestone: v1.4 Error Reporting + Dropdown Navigation
 
-**Goal:** Fix header layout issues on desktop and mobile.
-
-**Issues documented:**
-
-*Desktop:*
-- Menu items and language dropdown NOT on same line
-- Language appears below menu — should be: Logo | Menu | Language in one row
-
-*Mobile:*
-- Mysterious white block below header (persists even with language hidden)
-- Hamburger menu button doesn't work — tapping does nothing
-
-## Backlog: v1.4 Contact Form & Feedback
-
-**Goal:** Implement contact form and "segnala un errore" feedback system.
+**Goal:** Let users report content/technical errors from any page, and improve navigation with dropdown menus.
 
 **Target features:**
-- Contact form for user inquiries
-- "Segnala un errore" (report an error) feedback mechanism
-- Allow users to flag incorrect or outdated information
+
+*Error Reporting:*
+- "Segnala errore" button on all content pages (top-right, opposite breadcrumbs)
+- Redirects to Typeform with page URL as parameter
+- Error types: Informazione errata, Informazione mancante, Info obsoleta, Link rotto, Problema di visualizzazione
+
+*Dropdown Navigation:*
+- Database dropdown: Database di permessi, Che documenti porto in Questura
+- Guide dropdown: Protezione internazionale, Ricongiungimento familiare, Dizionario
+- Test dropdown: Posso AVERE un permesso?, Posso RINNOVARE il permesso?
+- Desktop: hover to open
+- Mobile: flat list (no dropdowns)
 
 ---
 
@@ -50,6 +45,17 @@ A multilingual information website helping immigrants in Italy understand reside
 **Goal:** Fix desktop header alignment - language switcher appears slightly below menu items.
 
 **Issue:** Menu items and language switcher (IT 🇮🇹) are not on the same horizontal baseline. Needs CSS investigation.
+
+---
+
+## Shipped: v1.3 Header & Navigation Fix (2026-01-26)
+
+**Delivered:** Mobile header/navigation fixes.
+
+- Hamburger menu working (CSS responds to navWrapper.active)
+- White block removed (fixed transform override)
+- Header sticks to top when scrolling
+- Desktop alignment deferred to v1.6
 
 ## Core Value
 
@@ -87,7 +93,10 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-(None - v1.3 mobile fixes shipped)
+- [ ] Error reporting button on all content pages
+- [ ] Typeform integration for error submissions
+- [ ] Dropdown navigation menus (Database, Guide, Test)
+- [ ] Desktop hover dropdowns, mobile flat list
 
 ### Out of Scope
 
@@ -146,4 +155,4 @@ Users can quickly find accurate, understandable information about their specific
 | Display flex on header | Fixes CSS height inheritance for reliable centering | ✓ Good — solved alignment issues |
 
 ---
-*Last updated: 2026-01-26 after v1.3 milestone started*
+*Last updated: 2026-01-26 after v1.4 milestone started*

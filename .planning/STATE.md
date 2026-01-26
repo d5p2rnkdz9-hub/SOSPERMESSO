@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-26
-**Status:** v1.3 Header & Navigation Fix — MOBILE SHIPPED
+**Status:** v1.4 Error Reporting + Dropdown Navigation — DEFINING REQUIREMENTS
 
 ## Project Reference
 
@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-01-26)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v1.3 Header & Navigation Fix
+**Current focus:** v1.4 Error Reporting + Dropdown Navigation
 
 ## Current Position
 
-**Phase:** Active
-**Plan:** Fix header/language switcher layout
-**Status:** Identified issue - language dropdown is huge block causing misalignment
-**Last activity:** 2026-01-26 — Mobile fixes applied, language issue identified
+**Phase:** Not started (defining requirements)
+**Plan:** —
+**Status:** Defining requirements
+**Last activity:** 2026-01-26 — Milestone v1.4 started
 
 ```
 Milestones:
@@ -24,27 +24,24 @@ Milestones:
 v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ########## (mobile only)
-v1.4 Contact & Feedback    [Backlog]            ----------
+v1.4 Error + Dropdowns     [Active]             ◆---------
 v1.5 Document Dedup        [Backlog]            ----------
 v1.6 Desktop Header Align  [Backlog]            ----------
 ```
 
-## Current Milestone: v1.3 (Mobile Shipped)
+## Current Milestone: v1.4
 
-**Goal:** Fix header layout - language switcher causes misalignment on desktop and interferes with mobile menu.
+**Goal:** Let users report content/technical errors from any page, and improve navigation with dropdown menus.
 
-**Mobile fixes (SHIPPED 2026-01-26):**
-- ✓ Hamburger menu now works (CSS responds to navWrapper.active)
-- ✓ White block removed (fixed transform: translateX override)
-- ✓ Header sticks to top when scrolling (fixed overflow-x: clip)
-- ✓ Menu text size reduced
-- ✓ "Aggiornato alla Legge" notice smaller
-
-**Desktop (DEFERRED to v1.4):**
-- Language switcher slightly misaligned with menu items
-- Needs deeper CSS investigation
+**Features:**
+1. Error reporting — "Segnala errore" button on content pages → Typeform
+2. Dropdown navigation — Database, Guide, Test menus with hover dropdowns (desktop)
 
 ## Shipped Milestones
+
+**v1.3 Header/Nav Fix (2026-01-26):**
+- Mobile-only fixes
+- Key: Hamburger menu working, white block removed, header sticks on scroll
 
 **v1.2 Visual Refresh (2026-01-26):**
 - 6 phases, 7 plans
@@ -72,18 +69,18 @@ v1.6 Desktop Header Align  [Backlog]            ----------
 ## Session Continuity
 
 **Last session:** 2026-01-26
-**Stopped at:** Language switcher issue identified
+**Stopped at:** Defining requirements for v1.4
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, PROJECT.md
-2. **Where we are:** v1.3 in progress - fixing header/language layout
-3. **What to do next:** Fix language-switcher CSS to be compact dropdown
+1. **Context to load:** This STATE.md, PROJECT.md, REQUIREMENTS.md, ROADMAP.md
+2. **Where we are:** v1.4 requirements defined, roadmap creation in progress
+3. **What to do next:** Run `/gsd:plan-phase [N]` to plan first phase
 4. **Key files:**
-   - `src/styles/components.css` — Language switcher styles (lines 431-492)
-   - `src/styles/mobile-fix.css` — Mobile overrides
-   - `index.html` — Header HTML structure
+   - `index.html` — Header HTML structure (for dropdowns)
+   - `src/styles/components.css` — Component styles
+   - Content pages — For "Segnala errore" button placement
 
 ---
 
