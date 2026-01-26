@@ -1,5 +1,34 @@
 # Project Milestones: SOS Permesso
 
+## v1.4 Error Reporting + Dropdown Navigation (Shipped: 2026-01-27)
+
+**Delivered:** User error reporting via Typeform integration and dropdown navigation menus with desktop hover and mobile flat list behavior.
+
+**Phases completed:** 10-11 (3 plans total)
+
+**Key accomplishments:**
+
+- Added "Segnala errore" button to 86 content pages with Typeform redirect
+- Page URL passed as parameter for error context tracking
+- Implemented dropdown navigation for Database, Guide, Test menus
+- Desktop: smooth hover dropdowns with 250ms animation
+- Mobile: flat list navigation (40% faster per NN/G research)
+- Full ARIA accessibility support (aria-expanded, role="menu", role="menuitem")
+
+**Stats:**
+
+- 155 files modified
+- +9,678 / -1,089 lines of code
+- 2 phases, 3 plans
+- 22 commits from milestone start to ship
+- 1 day (2026-01-26 → 2026-01-27)
+
+**Git range:** `98fb97e` → `8a3a3a0`
+
+**What's next:** v1.5 Document Deduplication or v1.6 Desktop Header Alignment
+
+---
+
 ## v1.2 Visual Refresh (Shipped: 2026-01-26)
 
 **Delivered:** Modern visual design with warm teal color palette, clean white header, new lighthouse logo, and reorganized homepage structure.

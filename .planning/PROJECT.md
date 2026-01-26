@@ -6,28 +6,8 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current State
 
-**Latest milestone:** v1.2 Visual Refresh (shipped 2026-01-26)
-**Current milestone:** v1.3 Header & Navigation Fix
-
-## Current Milestone: v1.4 Error Reporting + Dropdown Navigation
-
-**Goal:** Let users report content/technical errors from any page, and improve navigation with dropdown menus.
-
-**Target features:**
-
-*Error Reporting:*
-- "Segnala errore" button on all content pages (top-right, opposite breadcrumbs)
-- Redirects to Typeform with page URL as parameter
-- Error types: Informazione errata, Informazione mancante, Info obsoleta, Link rotto, Problema di visualizzazione
-
-*Dropdown Navigation:*
-- Database dropdown: Database di permessi, Che documenti porto in Questura
-- Guide dropdown: Protezione internazionale, Ricongiungimento familiare, Dizionario
-- Test dropdown: Posso AVERE un permesso?, Posso RINNOVARE il permesso?
-- Desktop: hover to open
-- Mobile: flat list (no dropdowns)
-
----
+**Latest milestone:** v1.4 Error Reporting + Dropdown Navigation (shipped 2026-01-27)
+**Next milestone:** TBD — run `/gsd:new-milestone` to define
 
 ## Backlog: v1.5 Document Deduplication
 
@@ -47,6 +27,16 @@ A multilingual information website helping immigrants in Italy understand reside
 **Issue:** Menu items and language switcher (IT 🇮🇹) are not on the same horizontal baseline. Needs CSS investigation.
 
 ---
+
+## Shipped: v1.4 Error Reporting + Dropdown Navigation (2026-01-27)
+
+**Delivered:** User error reporting and dropdown navigation.
+
+- "Segnala errore" button on 86 content pages with Typeform integration
+- Dropdown menus for Database, Guide, Test navigation items
+- Desktop hover dropdowns with smooth animations
+- Mobile flat list navigation (no nested dropdowns)
+- Full ARIA accessibility support
 
 ## Shipped: v1.3 Header & Navigation Fix (2026-01-26)
 
@@ -88,15 +78,16 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Homepage sections: Database, Guide, Aiuto legale — v1.2
 - ✓ Clean white header with centered navigation — v1.2
 - ✓ Mobile-optimized compact layouts — v1.2
+- ✓ Error reporting button on all content pages — v1.4
+- ✓ Typeform integration for error submissions — v1.4
+- ✓ Dropdown navigation menus (Database, Guide, Test) — v1.4
+- ✓ Desktop hover dropdowns, mobile flat list — v1.4
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Error reporting button on all content pages
-- [ ] Typeform integration for error submissions
-- [ ] Dropdown navigation menus (Database, Guide, Test)
-- [ ] Desktop hover dropdowns, mobile flat list
+(None — run `/gsd:new-milestone` to define next scope)
 
 ### Out of Scope
 
@@ -107,15 +98,17 @@ Users can quickly find accurate, understandable information about their specific
 
 ## Context
 
-**Current state (after v1.2):**
+**Current state (after v1.4):**
 - Pure HTML/CSS/JavaScript static site with Node.js build process for document generation
 - CSS design system with variables in `src/styles/main.css`
 - 192+ HTML pages in `src/pages/` (39 original + 63 generated + 38 redirects + others)
 - Build infrastructure: package.json, @notionhq/client, dotenv, netlify.toml
 - Notion database powers document page content
 - Warm teal/coral color palette (replaced purple scheme in v1.2)
-- Clean white header with 60px height, centered navigation
+- Clean white header with 60px height, centered navigation with dropdown menus
 - Lighthouse PNG logo (ChatGPT-generated)
+- Error reporting button on all content pages (Typeform integration)
+- Dropdown navigation: Database, Guide, Test menus with hover (desktop) / flat list (mobile)
 
 **Design patterns established:**
 - Database list style (`.permit-list`, `.category-section`)
@@ -125,6 +118,8 @@ Users can quickly find accurate, understandable information about their specific
 - Homepage sections: Tests → Database → Guide → Aiuto legale → Link utili
 - Prominent CTA cards: centered, max-width 500px, larger icon/title
 - Header: white background (#FFFFFF), dark teal menu text (#1A6B5F), yellow hover
+- Dropdown navigation: CSS :hover + :focus-within triggers, mobile flat list override
+- Error button: teal outline style, absolute (desktop) / static (mobile) positioning
 
 **Technical debt:**
 - Dizionario links need revision (partial matching works but coverage incomplete)
@@ -153,6 +148,10 @@ Users can quickly find accurate, understandable information about their specific
 | Separate databases from guides | Clearer content hierarchy on homepage | ✓ Good — improved navigation |
 | Standalone Aiuto legale section | High visibility for critical legal help service | ✓ Good — prominent CTA |
 | Display flex on header | Fixes CSS height inheritance for reliable centering | ✓ Good — solved alignment issues |
+| Teal outline button for error reporting | Subtle, non-intrusive design matching header nav | ✓ Good — v1.4 |
+| Absolute/static positioning for error button | Desktop top-right, mobile centered below breadcrumb | ✓ Good — v1.4 |
+| Pure CSS for dropdown visibility | Progressive enhancement, works without JS | ✓ Good — v1.4 |
+| Mobile flat list navigation | 40% faster task completion per NN/G research | ✓ Good — v1.4 |
 
 ---
-*Last updated: 2026-01-26 after v1.4 milestone started*
+*Last updated: 2026-01-27 after v1.4 milestone shipped*
