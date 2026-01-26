@@ -24,8 +24,9 @@ Milestones:
 v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ########## (mobile only)
-v1.4 Desktop Header Align  [Backlog]            ----------
+v1.4 Contact & Feedback    [Backlog]            ----------
 v1.5 Document Dedup        [Backlog]            ----------
+v1.6 Desktop Header Align  [Backlog]            ----------
 ```
 
 ## Current Milestone: v1.3 (Mobile Shipped)

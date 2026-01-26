@@ -23,11 +23,14 @@ A multilingual information website helping immigrants in Italy understand reside
 - Mysterious white block below header (persists even with language hidden)
 - Hamburger menu button doesn't work — tapping does nothing
 
-## Backlog: v1.4 Desktop Header Alignment
+## Backlog: v1.4 Contact Form & Feedback
 
-**Goal:** Fix desktop header alignment - language switcher appears slightly below menu items.
+**Goal:** Implement contact form and "segnala un errore" feedback system.
 
-**Issue:** Menu items and language switcher (IT 🇮🇹) are not on the same horizontal baseline. Needs CSS investigation.
+**Target features:**
+- Contact form for user inquiries
+- "Segnala un errore" (report an error) feedback mechanism
+- Allow users to flag incorrect or outdated information
 
 ---
 
@@ -39,6 +42,14 @@ A multilingual information website helping immigrants in Italy understand reside
 - Remove/replace "Che documenti porto in Questura" sections from permit pages
 - Link permit pages directly to corresponding documenti-questura pages
 - Single source of truth for document requirements (Notion-powered pages)
+
+---
+
+## Backlog: v1.6 Desktop Header Alignment
+
+**Goal:** Fix desktop header alignment - language switcher appears slightly below menu items.
+
+**Issue:** Menu items and language switcher (IT 🇮🇹) are not on the same horizontal baseline. Needs CSS investigation.
 
 ## Core Value
 
