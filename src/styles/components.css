@@ -243,7 +243,7 @@
   z-index: 100;
   text-decoration: none;
   transition: all var(--transition-base);
-  align-self: flex-end;
+  flex-shrink: 0;
 }
 
 .logo:hover {
@@ -332,6 +332,7 @@
 
 .nav-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   gap: var(--spacing-lg);
@@ -430,9 +431,9 @@
 
 .language-switcher {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin-top: -5px;
+  flex-shrink: 0;
 }
 
 .language-button {
