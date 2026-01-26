@@ -13,10 +13,10 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 
 ## Current Position
 
-**Phase:** 7 of 8 (Header Redesign) — complete
-**Plan:** 07-01 complete
-**Status:** Gap closure in progress
-**Last activity:** 2026-01-26 — Completed 07-01-PLAN.md
+**Phase:** 8 of 9 (Homepage Consolidation) — needs planning
+**Plan:** None yet
+**Status:** Phase 9 complete, Phase 8 pending
+**Last activity:** 2026-01-26 — Completed Phase 9 (Header Height Fix)
 
 ```
 v1.2 Visual Refresh: Gap Closure In Progress
@@ -26,14 +26,15 @@ Phase 5: Logo Redesign             [Complete] ##########
 Phase 6: Homepage Structure        [Complete] ##########
 Phase 7: Header Redesign           [Complete] ##########
 Phase 8: Homepage Consolidation    [Pending]  ----------
+Phase 9: Header Height Fix         [Complete] ##########
 ```
 
 ## Performance Metrics
 
 **v1.2 Milestone:**
-- Requirements: 17/17 complete (TEXT-01, COLOR-01-04, LOGO-01-04, STRUCT-01-04, MOBILE-01-02, HEADER-01-03)
-- Phases: 4/5 complete (gap closure)
-- Plans: 5/6 complete
+- Requirements: 18/18 complete (TEXT-01, COLOR-01-04, LOGO-01-04, STRUCT-01-04, MOBILE-01-02, HEADER-01-03, HEIGHT-01)
+- Phases: 5/6 complete (gap closure)
+- Plans: 6/7 complete
 
 **v1.1 Milestone (archived):**
 - Requirements: 12/12 complete
@@ -59,6 +60,7 @@ Phase 8: Homepage Consolidation    [Pending]  ----------
 | Vertical center logo with transform | Phase 7 header redesign | Reliable centering across contexts |
 | Logo size reduction (250px→80px) | Phase 7 header redesign | Prevents breadcrumb overlap |
 | Yellow tint hover for menu | Phase 7 header redesign | Maintains brand on white background |
+| Display flex on header | Phase 9 height fix | Fixes height inheritance chain for reliable centering |
 
 See PROJECT.md Key Decisions table for full list with outcomes.
 
@@ -98,18 +100,18 @@ See PROJECT.md Key Decisions table for full list with outcomes.
 ## Session Continuity
 
 **Last session:** 2026-01-26
-**Stopped at:** Completed 07-01-PLAN.md (Header Redesign)
+**Stopped at:** Completed Phase 9 (Header Height Fix)
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, PROJECT.md, v1.2-MILESTONE-AUDIT.md
-2. **Where we are:** Phase 7 complete, Phase 8 needs planning
+2. **Where we are:** Phases 7 & 9 complete, Phase 8 needs planning
 3. **What to do next:** `/gsd:plan-phase 8`
 4. **Key files:**
    - `.planning/v1.2-MILESTONE-AUDIT.md` — Audit with gap details
-   - `.planning/ROADMAP.md` — Phases 7-8 added
-   - `.planning/phases/07-header-redesign/07-01-SUMMARY.md` — Header redesign complete
+   - `.planning/ROADMAP.md` — Phases 7-9 added
+   - `.planning/phases/09-header-height-fix/09-01-SUMMARY.md` — Height fix complete
    - `.planning/phases/08-homepage-consolidation/` — Phase 8 directory (empty)
 
 **Quick Start Command:** `/gsd:plan-phase 8`

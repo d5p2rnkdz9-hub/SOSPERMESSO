@@ -14,8 +14,9 @@
 
 | 7 | Header Redesign | Clean white header with better menu/logo layout | GAP-HEADER-01-03 | Complete |
 | 8 | Homepage Consolidation | Sync dual homepages, fix navigation | GAP-NAV-01-02 | Pending |
+| 9 | Header Height Fix | Fix CSS height inheritance chain for proper centering | GAP-HEIGHT-01 | Complete |
 
-**Total:** 5 phases | 14 requirements + 5 gap closures | 80% complete
+**Total:** 6 phases | 14 requirements + 6 gap closures | 83% complete
 
 ---
 
@@ -177,6 +178,37 @@ Plans:
 **Plans:** TBD
 
 **Dependencies:** Phase 7 (header changes need to be in place first)
+
+---
+
+## Phase 9: Header Height Fix
+
+**Goal:** Fix broken CSS height inheritance chain so menu items and logo properly center vertically.
+
+**Gap Closure:**
+- GAP-HEIGHT-01: Fix height inheritance from .header through .container to .navbar
+
+**Root Cause:**
+The height chain breaks because `.header > .container` is a block element with `height: 100%` inside a sticky-positioned parent. Block elements don't reliably pass percentage heights to flex children.
+
+**The Fix:**
+Add `display: flex` to `.header` — this makes height inheritance reliable through the flex container chain.
+
+**Success Criteria:**
+1. `.header` has `display: flex` property
+2. Menu items visually centered vertically in header
+3. Logo visually centered vertically in header
+4. Height inheritance chain: `.header` (60px) → `.container` (100%) → `.navbar` (100%) works correctly
+
+**Key Files:**
+- `src/styles/components.css` — Header styles
+
+**Plans:** 1 plan
+
+Plans:
+- [x] 09-01-PLAN.md — Add display: flex to .header for reliable height inheritance
+
+**Dependencies:** Phase 7 (built on top of Phase 7 header styles)
 
 ---
 
