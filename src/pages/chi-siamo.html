@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/components.css">
   <link rel="stylesheet" href="../styles/animations.css">
+  <link rel="stylesheet" href="../styles/mobile.css">
+  <link rel="stylesheet" href="../styles/mobile-fix.css">
 </head>
 <body>
   <header class="header">
@@ -21,13 +23,24 @@
         <a href="../../index.html" class="logo">
           <img src="../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
         </a>
+
         <button class="menu-toggle" id="menu-toggle">☰</button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="../../index.html" class="nav-link">Home</a></li>
-          <li><a href="database.html" class="nav-link">Database</a></li>
-          <li><a href="../../index.html#test" class="nav-link">Test</a></li>
-          <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
-        </ul>
+
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="database.html" class="nav-link">Database</a></li>
+            <li><a href="../../index.html#guide" class="nav-link">Guide</a></li>
+            <li><a href="../../index.html#test" class="nav-link">Test</a></li>
+            <li><a href="chi-siamo.html" class="nav-link">Il progetto</a></li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">IT 🇮🇹</span>
+              <span>▾</span>
+            </button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -36,7 +49,7 @@
     <div class="container">
       <div class="text-center mb-xl">
         <span class="page-icon" style="font-size: 4rem;">👥</span>
-        <h1 class="page-title">Chi Siamo</h1>
+        <h1 class="page-title">Il Progetto</h1>
       </div>
 
       <div class="card" style="max-width: 800px; margin: 0 auto;">
@@ -106,7 +119,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
-        <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
+        <a href="chi-siamo.html" class="footer-link">Il progetto</a>
         <a href="#" class="footer-link">Il progetto</a>
         <a href="#" class="footer-link">Collabora</a>
         <a href="https://sospermesso.typeform.com/contatti" class="footer-link">Contatti</a>
