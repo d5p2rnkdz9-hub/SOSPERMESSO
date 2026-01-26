@@ -7,17 +7,26 @@ A multilingual information website helping immigrants in Italy understand reside
 ## Current State
 
 **Latest milestone:** v1.2 Visual Refresh (shipped 2026-01-26)
-**Current milestone:** v1.3 Document Deduplication
+**Current milestone:** v1.3 Header & Navigation Fix
 
-## Current Milestone: v1.3 Document Deduplication
+## Current Milestone: v1.3 Header & Navigation Fix
 
-**Goal:** Remove duplicate document information between permit detail pages ("Che documenti porto in Questura" sections) and dedicated documenti-questura database pages.
+**Goal:** Fix header layout issues - language switcher causes misalignment on desktop and interferes with mobile menu.
+
+**Target features:**
+- Fix language dropdown (currently opens as huge block, should be compact)
+- Proper header alignment on desktop (logo, menu, language in line)
+- Mobile: language switcher integrated properly, not overlapping content
+- Hamburger menu works correctly on mobile
+
+## Backlog: v1.4 Document Deduplication
+
+**Goal:** Remove duplicate document information between permit detail pages and documenti-questura database pages.
 
 **Target features:**
 - Remove/replace "Che documenti porto in Questura" sections from permit pages
 - Link permit pages directly to corresponding documenti-questura pages
 - Single source of truth for document requirements (Notion-powered pages)
-- Cleaner permit pages focused on permit info, not document lists
 
 ## Core Value
 
@@ -55,10 +64,10 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Remove duplicate document lists from permit detail pages
-- [ ] Replace with links to dedicated documenti-questura pages
-- [ ] Ensure all permit pages link to correct primo/rinnovo document pages
-- [ ] Single source of truth: Notion database for all document requirements
+- [ ] Fix language dropdown to be compact, not full-width block
+- [ ] Desktop: header alignment (logo | menu | language) in single row
+- [ ] Mobile: language switcher in header, not overlapping hero
+- [ ] Mobile: hamburger menu opens/closes correctly
 
 ### Out of Scope
 
