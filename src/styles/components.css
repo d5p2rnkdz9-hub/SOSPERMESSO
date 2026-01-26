@@ -610,6 +610,11 @@
   z-index: var(--z-dropdown);
 }
 
+/* Remove list markers from dropdown items */
+.nav-dropdown li {
+  list-style: none;
+}
+
 /* Show on hover AND focus-within (accessibility) */
 .has-dropdown:hover .nav-dropdown,
 .has-dropdown:focus-within .nav-dropdown {
