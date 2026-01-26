@@ -216,8 +216,9 @@
    =============================================== */
 
 .header {
-  background: linear-gradient(135deg, #80CBC4 0%, #B2DFDB 100%);
-  box-shadow: 0 4px 20px rgba(77, 182, 172, 0.3);
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   position: sticky;
   top: 0;
   z-index: var(--z-sticky);
@@ -240,7 +241,8 @@
 
 .logo {
   position: absolute;
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   z-index: 100;
   text-decoration: none;
@@ -262,7 +264,7 @@
 }
 
 .logo-image {
-  height: 250px;
+  height: 80px;
   width: auto;
   display: block;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
@@ -336,6 +338,7 @@
   align-items: center;
   gap: var(--spacing-lg);
   margin-left: auto;
+  height: 100%;
 }
 
 .nav-menu {
@@ -350,7 +353,7 @@
 .nav-link {
   color: #1A6B5F;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.375rem;
   transition: all var(--transition-fast);
   padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: var(--radius-md);
@@ -361,7 +364,7 @@
 
 .nav-link:hover {
   color: #FFD700;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 215, 0, 0.15);
 }
 
 /* Mobile Menu Toggle */

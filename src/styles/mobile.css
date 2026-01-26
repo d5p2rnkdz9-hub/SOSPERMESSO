@@ -56,12 +56,13 @@
   /* Logo smaller on mobile */
   .logo {
     position: absolute;
-    top: 5px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 10px;
   }
 
   .logo-image {
-    height: 100px;
+    height: 60px;
   }
 
   /* Mobile Logo - Icon only (Phase 5) */
