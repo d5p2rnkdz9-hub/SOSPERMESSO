@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-27
-**Status:** v1.4 Error Reporting + Dropdown Navigation — IN PROGRESS
+**Status:** v1.4 Error Reporting + Dropdown Navigation — COMPLETE
 
 ## Project Reference
 
@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-01-26)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v1.4 Error Reporting + Dropdown Navigation
+**Current focus:** v1.4 Complete — Ready for milestone audit
 
 ## Current Position
 
-**Phase:** 11 of 2 (Dropdown Navigation)
-**Plan:** 01 of 2
-**Status:** Plan 11-01 complete
-**Last activity:** 2026-01-27 — Completed 11-01-PLAN.md
+**Milestone:** v1.4 (Complete)
+**Phases:** 10, 11 (both complete)
+**Status:** Milestone complete, ready for audit/archive
+**Last activity:** 2026-01-27 — Completed Phase 11 (Dropdown Navigation)
 
 ```
 Milestones:
@@ -24,26 +24,31 @@ Milestones:
 v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ########## (mobile only)
-v1.4 Error + Dropdowns     [Active]             ########--
+v1.4 Error + Dropdowns     [Complete]           ##########
 v1.5 Document Dedup        [Backlog]            ----------
 v1.6 Desktop Header Align  [Backlog]            ----------
 ```
 
-## Current Milestone: v1.4
+## Completed Milestone: v1.4
 
 **Goal:** Let users report content/technical errors from any page, and improve navigation with dropdown menus.
 
 **Phases:**
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 10 | Error Reporting | ERR-01 to ERR-05 | ✅ Complete (2026-01-26) |
-| 11 | Dropdown Navigation | NAV-01 to NAV-06 | Plan 01 complete (2026-01-27) |
+| 10 | Error Reporting | ERR-01 to ERR-05 | Complete (2026-01-26) |
+| 11 | Dropdown Navigation | NAV-01 to NAV-06 | Complete (2026-01-27) |
 
-**Features:**
-1. ✅ Error reporting — "Segnala errore" button on content pages redirects to Typeform
-2. ✅ Dropdown navigation (template ready) — Database, Guide, Test menus with hover dropdowns (desktop) / flat list (mobile)
+**Features delivered:**
+1. Error reporting — "Segnala errore" button on 98 content pages redirects to Typeform
+2. Dropdown navigation — Database, Guide, Test menus with hover dropdowns (desktop) / flat list (mobile)
 
 ## Shipped Milestones
+
+**v1.4 Error + Dropdowns (2026-01-27):**
+- 2 phases, 4 plans
+- 99+ files modified
+- Key: Error reporting button, dropdown navigation site-wide
 
 **v1.3 Header/Nav Fix (2026-01-26):**
 - Mobile-only fixes
@@ -71,6 +76,7 @@ v1.6 Desktop Header Align  [Backlog]            ----------
 - **Logo:** 180px desktop, 100px mobile
 - **Homepage sections:** Database → Guide → Test → Aiuto legale → Link utili
 - **Content links:** Teal (#1A6B5F) with subtle underline
+- **Navigation dropdowns:** CSS :hover + :focus-within, flat list on mobile
 
 ## Decisions Made
 
@@ -84,23 +90,25 @@ v1.6 Desktop Header Align  [Backlog]            ----------
 | D11-01-01 | 11-01 | Pure CSS for dropdowns, JS for ARIA only | Better performance, progressive enhancement | 2026-01-27 |
 | D11-01-02 | 11-01 | Mobile flat list instead of nested dropdowns | 40% faster task completion per NN/G research | 2026-01-27 |
 | D11-01-03 | 11-01 | Dropdown links close mobile menu on click | Consistent with existing nav-link behavior | 2026-01-27 |
+| D11-02-01 | 11-02 | Skip redirect pages (40 files) | Only content pages need nav update | 2026-01-27 |
+| D11-02-02 | 11-02 | Use peer-relative paths in src/pages/ | Simpler path structure | 2026-01-27 |
 
 ## Session Continuity
 
 **Last session:** 2026-01-27
-**Stopped at:** Completed 11-01-PLAN.md (Core Dropdown Navigation)
+**Stopped at:** Completed Milestone v1.4
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, PROJECT.md, v1.4-REQUIREMENTS.md, 11-01-SUMMARY.md
-2. **Where we are:** Phase 11 Plan 01 complete, Plan 02 (header propagation) ready to execute
-3. **What to do next:** Execute 11-02-PLAN.md to propagate dropdown header to all pages
+1. **Context to load:** This STATE.md, PROJECT.md, MILESTONES.md
+2. **Where we are:** v1.4 complete, ready for milestone audit or archive
+3. **What to do next:** Run `/gsd:audit-milestone` to verify milestone or `/gsd:complete-milestone` to archive
 4. **Key files:**
-   - `index.html` — Template header with dropdown structure (ready to propagate)
-   - `src/styles/components.css` — Dropdown styles (.nav-dropdown, .has-dropdown)
-   - `src/scripts/app.js` — ARIA state management (initDropdownAria function)
-   - All content pages in `src/pages/` — Need header update
+   - `index.html` — Header with dropdown navigation
+   - `src/styles/components.css` — Dropdown CSS + error button
+   - `src/styles/mobile.css` — Mobile overrides for dropdowns
+   - `src/scripts/app.js` — ARIA state management
 
 ---
 
