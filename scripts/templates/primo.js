@@ -92,12 +92,21 @@ function generatePrimoPage(permit) {
 
   <!-- BREADCRUMB -->
   <section class="section" style="padding: 1rem 0;">
-    <div class="container">
+    <div class="container" style="position: relative;">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
         <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
         <a href="documenti-questura.html" style="color: var(--taxi-yellow-dark);">Documenti Questura</a> →
         <span>${escapedTipo} - Primo Rilascio</span>
       </div>
+
+      <!-- ERROR BUTTON -->
+      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/documenti-' + slug + '-primo.html')}"
+         class="error-report-btn"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Segnala un errore in questa pagina">
+        🚨 Segnala errore
+      </a>
     </div>
   </section>
 
