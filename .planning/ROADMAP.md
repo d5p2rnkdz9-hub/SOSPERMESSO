@@ -175,7 +175,10 @@ Plans:
 - `src/pages/chi-siamo.html` — Fix navigation link
 - Other src/pages/*.html — Audit navigation links
 
-**Plans:** TBD
+**Plans:** 1 plan
+
+Plans:
+- [ ] 08-01-PLAN.md — Sync nested homepage and fix chi-siamo navigation
 
 **Dependencies:** Phase 7 (header changes need to be in place first)
 
