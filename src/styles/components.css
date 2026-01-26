@@ -216,6 +216,7 @@
    =============================================== */
 
 .header {
+  display: flex;
   background: #FFFFFF;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -250,7 +251,7 @@
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: translateY(-50%) scale(1.05);
   color: var(--taxi-yellow-bright);
 }
 
