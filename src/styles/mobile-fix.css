@@ -129,16 +129,9 @@
     display: none !important;
   }
 
-  /* Language switcher compact */
+  /* Language switcher - hide on mobile for now (not functional yet) */
   .language-switcher {
-    order: 2;
-    margin-left: auto;
-  }
-
-  .language-button {
-    padding: 0.5rem;
-    font-size: 0.875rem;
-    white-space: nowrap;
+    display: none !important;
   }
 
   /* ===============================================
