@@ -169,6 +169,27 @@ a:hover {
   color: var(--taxi-yellow-dark);
 }
 
+/* Content links - visible teal color with underline */
+.card a:not(.card-link):not(.btn),
+.alert a,
+p a,
+li a,
+.content a {
+  color: #1A6B5F;
+  text-decoration: underline;
+  text-decoration-color: rgba(26, 107, 95, 0.3);
+  text-underline-offset: 2px;
+}
+
+.card a:not(.card-link):not(.btn):hover,
+.alert a:hover,
+p a:hover,
+li a:hover,
+.content a:hover {
+  color: var(--taxi-yellow-dark);
+  text-decoration-color: var(--taxi-yellow-dark);
+}
+
 strong {
   font-weight: 700;
 }
