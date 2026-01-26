@@ -561,6 +561,81 @@
 }
 
 /* ===============================================
+   NAVIGATION DROPDOWNS
+   =============================================== */
+
+/* Parent item needs relative positioning */
+.nav-item {
+  position: relative;
+}
+
+.has-dropdown .nav-link {
+  position: relative;
+  padding-right: 1.75rem; /* Space for arrow */
+}
+
+/* Arrow indicator */
+.has-dropdown .nav-link::after {
+  content: '\25BE'; /* Down arrow */
+  position: absolute;
+  right: 0.25rem;
+  font-size: 0.75rem;
+  transition: transform var(--transition-base);
+}
+
+.has-dropdown:hover .nav-link::after,
+.has-dropdown:focus-within .nav-link::after {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu container */
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 240px;
+  padding: 0.5rem 0;
+  margin-top: 0.25rem;
+  list-style: none;
+
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-base);
+  z-index: var(--z-dropdown);
+}
+
+/* Show on hover AND focus-within (accessibility) */
+.has-dropdown:hover .nav-dropdown,
+.has-dropdown:focus-within .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown links */
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #1A6B5F;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.dropdown-link:hover,
+.dropdown-link:focus {
+  background-color: rgba(255, 215, 0, 0.15);
+  color: var(--taxi-yellow-dark);
+}
+
+/* ===============================================
    HERO SECTION
    =============================================== */
 
