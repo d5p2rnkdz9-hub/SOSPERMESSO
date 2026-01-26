@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-26
-**Status:** v1.2 Visual Refresh — COMPLETE
+**Status:** v1.2 Visual Refresh — Gap Closure In Progress
 
 ## Project Reference
 
@@ -9,29 +9,31 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v1.2 Visual Refresh — COMPLETE
+**Current focus:** v1.2 Visual Refresh — Gap Closure
 
 ## Current Position
 
-**Phase:** 6 of 6 (Homepage Structure)
-**Plan:** 1 of 1 complete
-**Status:** Milestone complete
-**Last activity:** 2026-01-26 — Completed 06-01-PLAN.md, verification passed
+**Phase:** 7 of 8 (Header Redesign) — complete
+**Plan:** 07-01 complete
+**Status:** Gap closure in progress
+**Last activity:** 2026-01-26 — Completed 07-01-PLAN.md
 
 ```
-v1.2 Visual Refresh: COMPLETE
+v1.2 Visual Refresh: Gap Closure In Progress
 
 Phase 4: Color Palette             [Complete] ##########
 Phase 5: Logo Redesign             [Complete] ##########
 Phase 6: Homepage Structure        [Complete] ##########
+Phase 7: Header Redesign           [Complete] ##########
+Phase 8: Homepage Consolidation    [Pending]  ----------
 ```
 
 ## Performance Metrics
 
 **v1.2 Milestone:**
-- Requirements: 14/14 complete (TEXT-01, COLOR-01-04, LOGO-01-04, STRUCT-01-04, MOBILE-01-02)
-- Phases: 3/3 complete
-- Plans: 4/4 complete
+- Requirements: 17/17 complete (TEXT-01, COLOR-01-04, LOGO-01-04, STRUCT-01-04, MOBILE-01-02, HEADER-01-03)
+- Phases: 4/5 complete (gap closure)
+- Plans: 5/6 complete
 
 **v1.1 Milestone (archived):**
 - Requirements: 12/12 complete
@@ -53,6 +55,10 @@ Phase 6: Homepage Structure        [Complete] ##########
 | Separate databases from guides | Phase 6 homepage structure | Clearer content hierarchy for users |
 | Standalone Aiuto legale section | Phase 6 homepage structure | High visibility for critical legal help service |
 | Section gradient color coding | Phase 6 homepage structure | Visual differentiation aids navigation |
+| White header background | Phase 7 header redesign | Cleaner, more professional appearance |
+| Vertical center logo with transform | Phase 7 header redesign | Reliable centering across contexts |
+| Logo size reduction (250px→80px) | Phase 7 header redesign | Prevents breadcrumb overlap |
+| Yellow tint hover for menu | Phase 7 header redesign | Maintains brand on white background |
 
 See PROJECT.md Key Decisions table for full list with outcomes.
 
@@ -67,8 +73,8 @@ See PROJECT.md Key Decisions table for full list with outcomes.
 - **Badges:** Inline with permit name, blue/orange gradient styling
 - **Document pages:** Generated from Notion via `npm run build:docs`
 - **Print styles:** Hide header/footer, show checkbox symbols
-- **Color scheme:** Teal header (#80CBC4), yellow hero gradient
-- **Logo:** Absolute positioned, 250px desktop, 100px mobile
+- **Color scheme:** White header (#FFFFFF), teal menu text (#1A6B5F), yellow hero gradient
+- **Logo:** Absolute positioned, vertically centered, 80px desktop, 60px mobile
 - **Prominent CTA cards:** Centered, max-width 500px, larger icon/title, distinct border
 - **Section gradients:** Color-coordinated backgrounds (teal for database, warm yellow for guides, coral for legal)
 - **Homepage sections:** Tests → Database → Guide → Aiuto legale → Link utili
@@ -77,13 +83,14 @@ See PROJECT.md Key Decisions table for full list with outcomes.
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Header teal start | #80CBC4 | header gradient start |
-| Header teal end | #B2DFDB | header gradient end |
+| Header background | #FFFFFF | white header (Phase 7 redesign) |
+| Header shadow | rgba(0,0,0,0.08) | subtle shadow for white header |
 | Hero yellow start | #FFD54F | hero gradient start |
 | Hero yellow mid | #FFC107 | hero gradient middle |
 | Hero yellow end | #FFB300 | hero gradient end |
 | Menu text | #1A6B5F | dark teal for nav links |
-| Menu hover | #FFD700 | yellow for nav hover |
+| Menu hover bg | rgba(255,215,0,0.15) | yellow tint for nav hover |
+| Menu hover text | #FFD700 | yellow for nav hover text |
 | Database section | #E0F2F1 → #B2DFDB | teal/mint gradient |
 | Guides section | #FFF9E6 → #FFE0B2 | warm yellow gradient |
 | Aiuto legale section | #FFEBEE → #FFCDD2 | coral/red gradient |
@@ -91,21 +98,21 @@ See PROJECT.md Key Decisions table for full list with outcomes.
 ## Session Continuity
 
 **Last session:** 2026-01-26
-**Stopped at:** Completed v1.2 Milestone
+**Stopped at:** Completed 07-01-PLAN.md (Header Redesign)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, PROJECT.md
-2. **Where we are:** v1.2 Milestone complete
-3. **What to do next:** `/gsd:audit-milestone` or `/gsd:complete-milestone`
+1. **Context to load:** This STATE.md, PROJECT.md, v1.2-MILESTONE-AUDIT.md
+2. **Where we are:** Phase 7 complete, Phase 8 needs planning
+3. **What to do next:** `/gsd:plan-phase 8`
 4. **Key files:**
-   - `.planning/phases/06-homepage-structure/06-01-SUMMARY.md` — Phase 6 results
-   - `.planning/phases/06-homepage-structure/06-VERIFICATION.md` — Phase 6 verification
-   - `.planning/REQUIREMENTS.md` — v1.2 requirements (14/14 complete)
-   - `.planning/ROADMAP.md` — v1.2 roadmap (100% complete)
+   - `.planning/v1.2-MILESTONE-AUDIT.md` — Audit with gap details
+   - `.planning/ROADMAP.md` — Phases 7-8 added
+   - `.planning/phases/07-header-redesign/07-01-SUMMARY.md` — Header redesign complete
+   - `.planning/phases/08-homepage-consolidation/` — Phase 8 directory (empty)
 
-**Quick Start Command:** `/gsd:audit-milestone`
+**Quick Start Command:** `/gsd:plan-phase 8`
 
 ---
 
