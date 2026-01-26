@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-26
-**Status:** v1.3 Header & Navigation Fix — IN PROGRESS
+**Status:** v1.3 Header & Navigation Fix — NEEDS INVESTIGATION
 
 ## Project Reference
 
@@ -32,10 +32,15 @@ v1.4 Document Dedup        [Backlog]            ----------
 **Goal:** Fix header layout - language switcher causes misalignment on desktop and interferes with mobile menu.
 
 **Issues to fix:**
-1. Language dropdown opens as huge white block (should be compact)
-2. Desktop header misaligned
-3. Mobile: language block overlaps hero content
-4. Mobile: hamburger menu functionality
+1. Language dropdown opens as huge white block (should be compact) — PARTIALLY FIXED
+2. Desktop header misaligned — NEEDS INVESTIGATION
+3. Mobile: layout issues persist — NEEDS INVESTIGATION
+4. Mobile: hamburger menu functionality — NEEDS INVESTIGATION
+
+**Attempted fixes:**
+- Hidden language switcher on mobile (display: none)
+- Constrained dropdown width on desktop (max-width: 180px)
+- Still having issues — need deeper investigation
 
 ## Shipped Milestones
 
