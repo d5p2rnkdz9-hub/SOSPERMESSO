@@ -11,13 +11,17 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current Milestone: v1.3 Header & Navigation Fix
 
-**Goal:** Fix header layout issues - language switcher causes misalignment on desktop and interferes with mobile menu.
+**Goal:** Fix header layout issues on desktop and mobile.
 
-**Target features:**
-- Fix language dropdown (currently opens as huge block, should be compact)
-- Proper header alignment on desktop (logo, menu, language in line)
-- Mobile: language switcher integrated properly, not overlapping content
-- Hamburger menu works correctly on mobile
+**Issues documented:**
+
+*Desktop:*
+- Menu items and language dropdown NOT on same line
+- Language appears below menu — should be: Logo | Menu | Language in one row
+
+*Mobile:*
+- Mysterious white block below header (persists even with language hidden)
+- Hamburger menu button doesn't work — tapping does nothing
 
 ## Backlog: v1.4 Document Deduplication
 
@@ -64,10 +68,9 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Fix language dropdown to be compact, not full-width block
-- [ ] Desktop: header alignment (logo | menu | language) in single row
-- [ ] Mobile: language switcher in header, not overlapping hero
-- [ ] Mobile: hamburger menu opens/closes correctly
+- [ ] Desktop: menu items + language on same line (currently language is below)
+- [ ] Mobile: remove mysterious white block below header
+- [ ] Mobile: fix hamburger menu (currently doesn't respond to taps)
 
 ### Out of Scope
 

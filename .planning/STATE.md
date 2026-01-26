@@ -31,16 +31,23 @@ v1.4 Document Dedup        [Backlog]            ----------
 
 **Goal:** Fix header layout - language switcher causes misalignment on desktop and interferes with mobile menu.
 
-**Issues to fix:**
-1. Language dropdown opens as huge white block (should be compact) — PARTIALLY FIXED
-2. Desktop header misaligned — NEEDS INVESTIGATION
-3. Mobile: layout issues persist — NEEDS INVESTIGATION
-4. Mobile: hamburger menu functionality — NEEDS INVESTIGATION
+**Issues (documented 2026-01-26):**
 
-**Attempted fixes:**
-- Hidden language switcher on mobile (display: none)
-- Constrained dropdown width on desktop (max-width: 180px)
-- Still having issues — need deeper investigation
+**Desktop:**
+- Menu items and language dropdown NOT on same line
+- Language switcher appears on row below menu items
+- Should be: Logo | Menu items | Language — all in one row
+
+**Mobile:**
+- White block still appearing below header (unknown source)
+- Hamburger menu button visible but NOT WORKING
+- Tapping hamburger does nothing — menu doesn't open
+
+**Attempted fixes (unsuccessful):**
+- Hidden language switcher on mobile (display: none) — white block persists
+- Constrained dropdown width on desktop (max-width: 180px) — didn't fix alignment
+
+**Root cause:** Unknown — needs deep CSS/JS investigation
 
 ## Shipped Milestones
 
