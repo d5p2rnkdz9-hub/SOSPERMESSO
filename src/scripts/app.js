@@ -24,14 +24,61 @@ if (menuToggle && navWrapper) {
     }
   });
 
-  // Close menu when clicking a nav link
-  navWrapper.querySelectorAll('.nav-link').forEach(link => {
+  // Close menu when clicking any link (nav-link OR dropdown-link)
+  navWrapper.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
     link.addEventListener('click', () => {
       navWrapper.classList.remove('active');
       menuToggle.textContent = '☰';
     });
   });
 }
+
+// ===============================================
+// DROPDOWN ARIA STATE MANAGEMENT
+// ===============================================
+
+// Update aria-expanded on hover (desktop only)
+function initDropdownAria() {
+  if (window.innerWidth > 768) {
+    const dropdownParents = document.querySelectorAll('.has-dropdown');
+
+    dropdownParents.forEach(parent => {
+      const link = parent.querySelector('.nav-link');
+      if (!link) return;
+
+      // Mouse events
+      parent.addEventListener('mouseenter', () => {
+        link.setAttribute('aria-expanded', 'true');
+      });
+
+      parent.addEventListener('mouseleave', () => {
+        link.setAttribute('aria-expanded', 'false');
+      });
+
+      // Keyboard support - focus within dropdown
+      parent.addEventListener('focusin', () => {
+        link.setAttribute('aria-expanded', 'true');
+      });
+
+      parent.addEventListener('focusout', (e) => {
+        // Only close if focus leaves the entire dropdown parent
+        if (!parent.contains(e.relatedTarget)) {
+          link.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+}
+
+// Initialize on DOM ready
+document.addEventListener('DOMContentLoaded', initDropdownAria);
+
+// Re-initialize on resize (in case viewport crosses 768px threshold)
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(initDropdownAria, 250);
+});
 
 // ===============================================
 // LANGUAGE SWITCHER
