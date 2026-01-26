@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-26
-**Status:** v1.3 Header & Navigation Fix — NEEDS INVESTIGATION
+**Status:** v1.3 Header & Navigation Fix — MOBILE SHIPPED
 
 ## Project Reference
 
@@ -23,31 +23,25 @@ Milestones:
 
 v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
-v1.3 Header/Nav Fix        [In Progress]        ◆◆--------
-v1.4 Document Dedup        [Backlog]            ----------
+v1.3 Header/Nav Fix        [Shipped 2026-01-26] ########## (mobile only)
+v1.4 Desktop Header Align  [Backlog]            ----------
+v1.5 Document Dedup        [Backlog]            ----------
 ```
 
-## Current Milestone: v1.3
+## Current Milestone: v1.3 (Mobile Shipped)
 
 **Goal:** Fix header layout - language switcher causes misalignment on desktop and interferes with mobile menu.
 
-**Issues (documented 2026-01-26):**
+**Mobile fixes (SHIPPED 2026-01-26):**
+- ✓ Hamburger menu now works (CSS responds to navWrapper.active)
+- ✓ White block removed (fixed transform: translateX override)
+- ✓ Header sticks to top when scrolling (fixed overflow-x: clip)
+- ✓ Menu text size reduced
+- ✓ "Aggiornato alla Legge" notice smaller
 
-**Desktop:**
-- Menu items and language dropdown NOT on same line
-- Language switcher appears on row below menu items
-- Should be: Logo | Menu items | Language — all in one row
-
-**Mobile:**
-- White block still appearing below header (unknown source)
-- Hamburger menu button visible but NOT WORKING
-- Tapping hamburger does nothing — menu doesn't open
-
-**Attempted fixes (unsuccessful):**
-- Hidden language switcher on mobile (display: none) — white block persists
-- Constrained dropdown width on desktop (max-width: 180px) — didn't fix alignment
-
-**Root cause:** Unknown — needs deep CSS/JS investigation
+**Desktop (DEFERRED to v1.4):**
+- Language switcher slightly misaligned with menu items
+- Needs deeper CSS investigation
 
 ## Shipped Milestones
 

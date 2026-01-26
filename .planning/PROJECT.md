@@ -23,7 +23,15 @@ A multilingual information website helping immigrants in Italy understand reside
 - Mysterious white block below header (persists even with language hidden)
 - Hamburger menu button doesn't work — tapping does nothing
 
-## Backlog: v1.4 Document Deduplication
+## Backlog: v1.4 Desktop Header Alignment
+
+**Goal:** Fix desktop header alignment - language switcher appears slightly below menu items.
+
+**Issue:** Menu items and language switcher (IT 🇮🇹) are not on the same horizontal baseline. Needs CSS investigation.
+
+---
+
+## Backlog: v1.5 Document Deduplication
 
 **Goal:** Remove duplicate document information between permit detail pages and documenti-questura database pages.
 
@@ -68,9 +76,7 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Desktop: menu items + language on same line (currently language is below)
-- [ ] Mobile: remove mysterious white block below header
-- [ ] Mobile: fix hamburger menu (currently doesn't respond to taps)
+(None - v1.3 mobile fixes shipped)
 
 ### Out of Scope
 
