@@ -80,6 +80,72 @@
 }
 
 /* ===============================================
+   ERROR REPORT BUTTON
+   =============================================== */
+
+.error-report-btn {
+  /* Positioning - absolute within breadcrumb container */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+
+  /* Visual style - subtle teal outline */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+
+  /* Colors - matching header nav links teal (#1A6B5F) */
+  color: #1A6B5F;
+  background: transparent;
+  border: 1px solid #26A69A;
+  border-radius: var(--radius-full);
+
+  /* Typography */
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+
+  /* Transitions */
+  transition: all var(--transition-base);
+}
+
+.error-report-btn:hover {
+  color: #1A6B5F;
+  background: rgba(38, 166, 154, 0.1);
+  border-color: #1A6B5F;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(26, 107, 95, 0.15);
+}
+
+.error-report-btn:active {
+  transform: translateY(0);
+}
+
+/* Mobile responsive - shift to normal flow */
+@media (max-width: 768px) {
+  .error-report-btn {
+    position: static;
+    display: block;
+    width: fit-content;
+    margin: 0.75rem auto 0;
+    text-align: center;
+  }
+}
+
+/* Landscape mobile - keep absolute but smaller */
+@media (max-width: 768px) and (orientation: landscape) {
+  .error-report-btn {
+    position: absolute;
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+}
+
+/* ===============================================
    CARDS
    =============================================== */
 
