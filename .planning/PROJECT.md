@@ -7,7 +7,17 @@ A multilingual information website helping immigrants in Italy understand reside
 ## Current State
 
 **Latest milestone:** v1.2 Visual Refresh (shipped 2026-01-26)
-**Next milestone:** TBD — run `/gsd:new-milestone` to define goals
+**Current milestone:** v1.3 Document Deduplication
+
+## Current Milestone: v1.3 Document Deduplication
+
+**Goal:** Remove duplicate document information between permit detail pages ("Che documenti porto in Questura" sections) and dedicated documenti-questura database pages.
+
+**Target features:**
+- Remove/replace "Che documenti porto in Questura" sections from permit pages
+- Link permit pages directly to corresponding documenti-questura pages
+- Single source of truth for document requirements (Notion-powered pages)
+- Cleaner permit pages focused on permit info, not document lists
 
 ## Core Value
 
@@ -45,7 +55,10 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-(None — run `/gsd:new-milestone` to define next goals)
+- [ ] Remove duplicate document lists from permit detail pages
+- [ ] Replace with links to dedicated documenti-questura pages
+- [ ] Ensure all permit pages link to correct primo/rinnovo document pages
+- [ ] Single source of truth: Notion database for all document requirements
 
 ### Out of Scope
 
@@ -104,4 +117,4 @@ Users can quickly find accurate, understandable information about their specific
 | Display flex on header | Fixes CSS height inheritance for reliable centering | ✓ Good — solved alignment issues |
 
 ---
-*Last updated: 2026-01-26 after v1.2 milestone completion*
+*Last updated: 2026-01-26 after v1.3 milestone started*
