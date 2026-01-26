@@ -85,19 +85,48 @@
     font-size: 1.75rem;
   }
 
+  /* Logo image larger on mobile */
+  .logo-image {
+    height: 100px !important;
+  }
+
   /* Menu toggle always visible */
   .menu-toggle {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
+    font-size: 1.75rem;
+    background: rgba(26, 107, 95, 0.1);
+    border: 2px solid #1A6B5F;
+    border-radius: 8px;
+    color: #1A6B5F;
     cursor: pointer;
     z-index: 1050;
     order: 3;
+  }
+
+  /* Nav wrapper layout for mobile */
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Hide nav menu by default, show when active */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  /* Hide hero decorations on mobile - they overlap with text */
+  .hero-decorations,
+  .decoration {
+    display: none !important;
   }
 
   /* Language switcher compact */
