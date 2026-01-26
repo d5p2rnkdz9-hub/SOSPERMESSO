@@ -20,22 +20,22 @@ Requirements for visual refresh. Each maps to roadmap phases.
 
 ### Logo/Mascot
 
-- [ ] **LOGO-01**: Header displays simple lighthouse icon + "SOS Permesso" text
-- [ ] **LOGO-02**: Lighthouse icon retains red/white stripe colors
-- [ ] **LOGO-03**: Icon blends visually with teal header gradient
-- [ ] **LOGO-04**: Logo scales properly and stays compact on mobile
+- [x] **LOGO-01**: Header displays simple lighthouse icon + "SOS Permesso" text
+- [x] **LOGO-02**: Lighthouse icon retains red/white stripe colors
+- [x] **LOGO-03**: Icon blends visually with teal header gradient
+- [x] **LOGO-04**: Logo scales properly and stays compact on mobile
 
 ### Homepage Structure
 
-- [ ] **STRUCT-01**: "I nostri database" section contains Database permessi + Documenti Questura
-- [ ] **STRUCT-02**: "Le nostre guide" section contains Protezione, Ricongiungimento, Dizionario
-- [ ] **STRUCT-03**: "Aiuto legale" section links prominently to existing page
-- [ ] **STRUCT-04**: Section order: Tests → Database → Guide → Aiuto legale → Link utili
+- [x] **STRUCT-01**: "I nostri database" section contains Database permessi + Documenti Questura
+- [x] **STRUCT-02**: "Le nostre guide" section contains Protezione, Ricongiungimento, Dizionario
+- [x] **STRUCT-03**: "Aiuto legale" section links prominently to existing page
+- [x] **STRUCT-04**: Section order: Tests → Database → Guide → Aiuto legale → Link utili
 
 ### Mobile
 
-- [ ] **MOBILE-01**: Database section displays compactly on mobile
-- [ ] **MOBILE-02**: All sections maintain good spacing and readability on small screens
+- [x] **MOBILE-01**: Database section displays compactly on mobile
+- [x] **MOBILE-02**: All sections maintain good spacing and readability on small screens
 
 ## Future Requirements
 
@@ -74,16 +74,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | COLOR-02 | Phase 4 | Complete |
 | COLOR-03 | Phase 4 | Complete |
 | COLOR-04 | Phase 4 | Complete |
-| LOGO-01 | Phase 5 | Pending |
-| LOGO-02 | Phase 5 | Pending |
-| LOGO-03 | Phase 5 | Pending |
-| LOGO-04 | Phase 5 | Pending |
-| STRUCT-01 | Phase 6 | Pending |
-| STRUCT-02 | Phase 6 | Pending |
-| STRUCT-03 | Phase 6 | Pending |
-| STRUCT-04 | Phase 6 | Pending |
-| MOBILE-01 | Phase 6 | Pending |
-| MOBILE-02 | Phase 6 | Pending |
+| LOGO-01 | Phase 5 | Complete |
+| LOGO-02 | Phase 5 | Complete |
+| LOGO-03 | Phase 5 | Complete |
+| LOGO-04 | Phase 5 | Complete |
+| STRUCT-01 | Phase 6 | Complete |
+| STRUCT-02 | Phase 6 | Complete |
+| STRUCT-03 | Phase 6 | Complete |
+| STRUCT-04 | Phase 6 | Complete |
+| MOBILE-01 | Phase 6 | Complete |
+| MOBILE-02 | Phase 6 | Complete |
 
 **Coverage:**
 - v1.2 requirements: 14 total
@@ -92,4 +92,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-25*
-*Last updated: 2026-01-25 after Phase 4 completion*
+*Last updated: 2026-01-26 after Phase 6 completion*

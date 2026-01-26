@@ -10,9 +10,9 @@
 |-------|------|------|--------------|--------|
 | 4 | Color Palette | Replace purple with warm teal-based palette | TEXT-01, COLOR-01-04 | Complete |
 | 5 | Logo Redesign | Simple lighthouse icon + text replacing complex image | LOGO-01-04 | Complete |
-| 6 | Homepage Structure | Reorganize sections for better content hierarchy | STRUCT-01-04, MOBILE-01-02 | Pending |
+| 6 | Homepage Structure | Reorganize sections for better content hierarchy | STRUCT-01-04, MOBILE-01-02 | Complete |
 
-**Total:** 3 phases | 14 requirements | 67% complete
+**Total:** 3 phases | 14 requirements | 100% complete
 
 ---
 
@@ -111,7 +111,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 06-01-PLAN.md — Reorganize homepage sections and add Aiuto legale styling
+- [x] 06-01-PLAN.md — Reorganize homepage sections and add Aiuto legale styling
 
 **Dependencies:** Phase 4 (section colors), Phase 5 (consistent header)
 
