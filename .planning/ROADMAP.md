@@ -12,10 +12,10 @@
 | 5 | Logo Redesign | Simple lighthouse icon + text replacing complex image | LOGO-01-04 | Complete |
 | 6 | Homepage Structure | Reorganize sections for better content hierarchy | STRUCT-01-04, MOBILE-01-02 | Complete |
 
-| 7 | Header Redesign | Clean white header with better menu/logo layout | GAP-HEADER-01-03 | Pending |
+| 7 | Header Redesign | Clean white header with better menu/logo layout | GAP-HEADER-01-03 | Complete |
 | 8 | Homepage Consolidation | Sync dual homepages, fix navigation | GAP-NAV-01-02 | Pending |
 
-**Total:** 5 phases | 14 requirements + 5 gap closures | 60% complete
+**Total:** 5 phases | 14 requirements + 5 gap closures | 80% complete
 
 ---
 
@@ -146,7 +146,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 07-01-PLAN.md — Update header styles (white background, centered menu, reduced logo)
+- [x] 07-01-PLAN.md — Update header styles (white background, centered menu, reduced logo)
 
 **Dependencies:** None
 
