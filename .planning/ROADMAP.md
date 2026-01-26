@@ -13,10 +13,10 @@
 | 6 | Homepage Structure | Reorganize sections for better content hierarchy | STRUCT-01-04, MOBILE-01-02 | Complete |
 
 | 7 | Header Redesign | Clean white header with better menu/logo layout | GAP-HEADER-01-03 | Complete |
-| 8 | Homepage Consolidation | Sync dual homepages, fix navigation | GAP-NAV-01-02 | Pending |
+| 8 | Homepage Consolidation | Sync dual homepages, fix navigation | GAP-NAV-01-02 | Complete |
 | 9 | Header Height Fix | Fix CSS height inheritance chain for proper centering | GAP-HEIGHT-01 | Complete |
 
-**Total:** 6 phases | 14 requirements + 6 gap closures | 83% complete
+**Total:** 6 phases | 14 requirements + 6 gap closures | 100% complete
 
 ---
 
@@ -178,7 +178,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 08-01-PLAN.md — Sync nested homepage and fix chi-siamo navigation
+- [x] 08-01-PLAN.md — Sync nested homepage and fix chi-siamo navigation
 
 **Dependencies:** Phase 7 (header changes need to be in place first)
 
