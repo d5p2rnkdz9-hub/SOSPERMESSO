@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-26
-**Status:** v1.4 Error Reporting + Dropdown Navigation — READY FOR PLANNING
+**Status:** v1.4 Error Reporting + Dropdown Navigation — IN PROGRESS
 
 ## Project Reference
 
@@ -13,10 +13,10 @@ See: .planning/PROJECT.md (updated 2026-01-26)
 
 ## Current Position
 
-**Phase:** 10
-**Plan:** —
-**Status:** Ready for planning
-**Last activity:** 2026-01-26 — Roadmap created
+**Phase:** 10 of 2 (Error Reporting)
+**Plan:** 01 of 1
+**Status:** Phase 10 complete
+**Last activity:** 2026-01-26 — Completed 10-01-PLAN.md
 
 ```
 Milestones:
@@ -24,7 +24,7 @@ Milestones:
 v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ########## (mobile only)
-v1.4 Error + Dropdowns     [Active]             #---------
+v1.4 Error + Dropdowns     [Active]             #####-----
 v1.5 Document Dedup        [Backlog]            ----------
 v1.6 Desktop Header Align  [Backlog]            ----------
 ```
@@ -36,11 +36,11 @@ v1.6 Desktop Header Align  [Backlog]            ----------
 **Phases:**
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 10 | Error Reporting | ERR-01 to ERR-05 | Ready for planning |
+| 10 | Error Reporting | ERR-01 to ERR-05 | ✅ Complete (2026-01-26) |
 | 11 | Dropdown Navigation | NAV-01 to NAV-06 | Pending |
 
 **Features:**
-1. Error reporting — "Segnala errore" button on content pages redirects to Typeform
+1. ✅ Error reporting — "Segnala errore" button on content pages redirects to Typeform
 2. Dropdown navigation — Database, Guide, Test menus with hover dropdowns (desktop) / flat list (mobile)
 
 ## Shipped Milestones
@@ -72,21 +72,30 @@ v1.6 Desktop Header Align  [Backlog]            ----------
 - **Homepage sections:** Database → Guide → Test → Aiuto legale → Link utili
 - **Content links:** Teal (#1A6B5F) with subtle underline
 
+## Decisions Made
+
+| ID | Phase | Decision | Impact | Date |
+|----|-------|----------|--------|------|
+| D10-01-01 | 10-01 | Use teal outline button style for error button | Consistent with header nav links, non-intrusive | 2026-01-26 |
+| D10-01-02 | 10-01 | Absolute positioning (desktop), static (mobile) | Optimal layout on both screen sizes | 2026-01-26 |
+| D10-01-03 | 10-01 | Use actual Typeform URL (FsqvzdXI) | No placeholder replacement needed | 2026-01-26 |
+| D10-01-04 | 10-01 | Pass full page URL as encoded parameter | Typeform receives exact page context | 2026-01-26 |
+
 ## Session Continuity
 
 **Last session:** 2026-01-26
-**Stopped at:** Roadmap created for v1.4
+**Stopped at:** Completed Phase 10 (Error Reporting)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, PROJECT.md, v1.4-REQUIREMENTS.md, v1.4-ROADMAP.md
-2. **Where we are:** Phase 10 ready for planning
-3. **What to do next:** Run `/gsd:plan-phase 10` to plan Error Reporting
+1. **Context to load:** This STATE.md, PROJECT.md, v1.4-REQUIREMENTS.md, v1.4-ROADMAP.md, 10-01-SUMMARY.md
+2. **Where we are:** Phase 10 complete, Phase 11 ready to plan
+3. **What to do next:** Run `/gsd:plan-phase 11` to plan Dropdown Navigation
 4. **Key files:**
    - `index.html` — Header HTML structure (for dropdowns in Phase 11)
-   - `src/styles/components.css` — Component styles
-   - Content pages in `src/pages/` — For "Segnala errore" button placement
+   - `src/styles/components.css` — Component styles (already includes error button)
+   - `.error-report-btn` — New component on 72 content pages
 
 ---
 
