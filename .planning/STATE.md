@@ -80,6 +80,7 @@ v1.6 Desktop Header Align  [Backlog]            ----------
 | D10-01-02 | 10-01 | Absolute positioning (desktop), static (mobile) | Optimal layout on both screen sizes | 2026-01-26 |
 | D10-01-03 | 10-01 | Use actual Typeform URL (FsqvzdXI) | No placeholder replacement needed | 2026-01-26 |
 | D10-01-04 | 10-01 | Pass full page URL as encoded parameter | Typeform receives exact page context | 2026-01-26 |
+| D10-01-05 | 10 | Gap closure: add button to 14 missing pages | Full coverage on 86 content pages | 2026-01-26 |
 
 ## Session Continuity
 
@@ -91,11 +92,11 @@ v1.6 Desktop Header Align  [Backlog]            ----------
 
 1. **Context to load:** This STATE.md, PROJECT.md, v1.4-REQUIREMENTS.md, v1.4-ROADMAP.md, 10-01-SUMMARY.md
 2. **Where we are:** Phase 10 complete, Phase 11 ready to plan
-3. **What to do next:** Run `/gsd:plan-phase 11` to plan Dropdown Navigation
+3. **What to do next:** Run `/gsd:discuss-phase 11` or `/gsd:plan-phase 11` to plan Dropdown Navigation
 4. **Key files:**
    - `index.html` — Header HTML structure (for dropdowns in Phase 11)
    - `src/styles/components.css` — Component styles (already includes error button)
-   - `.error-report-btn` — New component on 72 content pages
+   - `.error-report-btn` — New component on 86 content pages (gap closure added 14 more)
 
 ---
 
