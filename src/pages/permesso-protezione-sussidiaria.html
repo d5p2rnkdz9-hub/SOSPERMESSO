@@ -27,10 +27,36 @@
 
         <div class="nav-wrapper">
           <ul class="nav-menu" id="nav-menu">
-            <li><a href="../../index.html#database" class="nav-link">Database</a></li>
-            <li><a href="../../index.html#guide" class="nav-link">Guide</a></li>
-            <li><a href="../../index.html#test" class="nav-link">Test</a></li>
-            <li><a href="chi-siamo.html" class="nav-link">Il progetto</a></li>
+            <!-- Database with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
+              </ul>
+            </li>
+
+            <!-- Guide with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#guide" class="nav-link" aria-haspopup="true" aria-expanded="false">Guide</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">Protezione internazionale</a></li>
+                <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Ricongiungimento familiare</a></li>
+                <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dizionario</a></li>
+              </ul>
+            </li>
+
+            <!-- Test with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#test" class="nav-link" aria-haspopup="true" aria-expanded="false">Test</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Posso AVERE un permesso?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Posso RINNOVARE il permesso?</a></li>
+              </ul>
+            </li>
+
+            <!-- Il progetto - no dropdown -->
+            <li class="nav-item"><a href="chi-siamo.html" class="nav-link">Il progetto</a></li>
           </ul>
 
           <div class="language-switcher">
