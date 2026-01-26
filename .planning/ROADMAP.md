@@ -143,7 +143,10 @@ Plans:
 - `index.html` — Header markup (if needed)
 - `src/pages/*.html` — All page headers
 
-**Plans:** TBD
+**Plans:** 1 plan
+
+Plans:
+- [ ] 07-01-PLAN.md — Update header styles (white background, centered menu, reduced logo)
 
 **Dependencies:** None
 
