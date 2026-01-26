@@ -1,5 +1,34 @@
 # Project Milestones: SOS Permesso
 
+## v1.2 Visual Refresh (Shipped: 2026-01-26)
+
+**Delivered:** Modern visual design with warm teal color palette, clean white header, new lighthouse logo, and reorganized homepage structure.
+
+**Phases completed:** 4-9 (7 plans total)
+
+**Key accomplishments:**
+
+- Replaced purple color scheme with warm teal/coral/mint palette across all pages
+- Created new lighthouse logo (ChatGPT-generated PNG) propagated to 97+ pages
+- Reorganized homepage into distinct sections (Database, Guide, Aiuto legale)
+- Redesigned header with white background, larger menu (1.375rem), proper centering
+- Synced dual homepages and fixed all navigation paths
+- Resolved all tech debt (corrupted pages, missing CSS includes)
+
+**Stats:**
+
+- 131 files created/modified
+- +4,635 / -524 lines of code
+- 6 phases, 7 plans
+- 31 commits from milestone start to ship
+- 2 days (2026-01-25 → 2026-01-26)
+
+**Git range:** `51e3f84` → `7581038`
+
+**What's next:** TBD — run `/gsd:new-milestone` to define next goals
+
+---
+
 ## v1.1 Documenti Questura (Shipped: 2026-01-25)
 
 **Delivered:** Comprehensive document requirements system for all permit types with Notion-powered content management.

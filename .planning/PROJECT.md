@@ -4,15 +4,10 @@
 
 A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Now includes a comprehensive document requirements system powered by Notion for content management.
 
-## Current Milestone: v1.2 Visual Refresh
+## Current State
 
-**Goal:** Modernize the visual appearance with a warm, welcoming color palette and improved homepage structure.
-
-**Target features:**
-- Teal-based header replacing purple
-- Simple lighthouse icon + text logo
-- Homepage sections: Database, Guide, Aiuto legale
-- Mobile-optimized compact layouts
+**Latest milestone:** v1.2 Visual Refresh (shipped 2026-01-26)
+**Next milestone:** TBD — run `/gsd:new-milestone` to define goals
 
 ## Core Value
 
@@ -40,16 +35,17 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Interactive checklists with localStorage persistence — v1.1
 - ✓ Print-friendly document pages — v1.1
 - ✓ Notion API integration for content management — v1.1
+- ✓ Warm color palette (teal accents, no purple in main UI) — v1.2
+- ✓ Simple lighthouse logo (PNG) in header — v1.2
+- ✓ Homepage sections: Database, Guide, Aiuto legale — v1.2
+- ✓ Clean white header with centered navigation — v1.2
+- ✓ Mobile-optimized compact layouts — v1.2
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-**v1.2 Visual Refresh:**
-- [ ] Warm color palette (teal header, no purple)
-- [ ] Simple lighthouse icon + text logo in header
-- [ ] Homepage restructured: Database section, Guide section, Aiuto legale section
-- [ ] Mobile-optimized compact layouts
+(None — run `/gsd:new-milestone` to define next goals)
 
 ### Out of Scope
 
@@ -60,18 +56,24 @@ Users can quickly find accurate, understandable information about their specific
 
 ## Context
 
-**Current state (after v1.1):**
+**Current state (after v1.2):**
 - Pure HTML/CSS/JavaScript static site with Node.js build process for document generation
 - CSS design system with variables in `src/styles/main.css`
-- 192 HTML pages in `src/pages/` (39 original + 63 generated + 38 redirects + others)
+- 192+ HTML pages in `src/pages/` (39 original + 63 generated + 38 redirects + others)
 - Build infrastructure: package.json, @notionhq/client, dotenv, netlify.toml
 - Notion database powers document page content
+- Warm teal/coral color palette (replaced purple scheme in v1.2)
+- Clean white header with 60px height, centered navigation
+- Lighthouse PNG logo (ChatGPT-generated)
 
 **Design patterns established:**
 - Database list style (`.permit-list`, `.category-section`)
-- Color-coded categories: purple (studio/lavoro), orange (protezione), blue (cure mediche), teal (familiari)
+- Color-coded categories: teal (familiari), orange (protezione), warm colors throughout
 - Badge component with gradient styling
 - Document page template with checklist, callout, print styles
+- Homepage sections: Tests → Database → Guide → Aiuto legale → Link utili
+- Prominent CTA cards: centered, max-width 500px, larger icon/title
+- Header: white background (#FFFFFF), dark teal menu text (#1A6B5F), yellow hover
 
 **Technical debt:**
 - Dizionario links need revision (partial matching works but coverage incomplete)
@@ -95,6 +97,11 @@ Users can quickly find accurate, understandable information about their specific
 | Slug mapping via JSON | Centralized URL aliasing | ✓ Good — 38 redirects work |
 | Meta refresh redirects | SEO-friendly, no JS required | ✓ Good — instant redirects |
 | Partial dizionario matching | Better term linking coverage | ⚠️ Revisit — coverage incomplete |
+| PNG logo over SVG | ChatGPT-generated PNG looked better than hand-drawn SVG | ✓ Good — friendly, recognizable |
+| White header background | Cleaner, more professional than teal gradient | ✓ Good — reduces visual clutter |
+| Separate databases from guides | Clearer content hierarchy on homepage | ✓ Good — improved navigation |
+| Standalone Aiuto legale section | High visibility for critical legal help service | ✓ Good — prominent CTA |
+| Display flex on header | Fixes CSS height inheritance for reliable centering | ✓ Good — solved alignment issues |
 
 ---
-*Last updated: 2026-01-25 after v1.2 milestone start*
+*Last updated: 2026-01-26 after v1.2 milestone completion*
