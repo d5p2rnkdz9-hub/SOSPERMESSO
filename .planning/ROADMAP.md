@@ -12,7 +12,10 @@
 | 5 | Logo Redesign | Simple lighthouse icon + text replacing complex image | LOGO-01-04 | Complete |
 | 6 | Homepage Structure | Reorganize sections for better content hierarchy | STRUCT-01-04, MOBILE-01-02 | Complete |
 
-**Total:** 3 phases | 14 requirements | 100% complete
+| 7 | Header Redesign | Clean white header with better menu/logo layout | GAP-HEADER-01-03 | Pending |
+| 8 | Homepage Consolidation | Sync dual homepages, fix navigation | GAP-NAV-01-02 | Pending |
+
+**Total:** 5 phases | 14 requirements + 5 gap closures | 60% complete
 
 ---
 
@@ -114,6 +117,63 @@ Plans:
 - [x] 06-01-PLAN.md — Reorganize homepage sections and add Aiuto legale styling
 
 **Dependencies:** Phase 4 (section colors), Phase 5 (consistent header)
+
+---
+
+## Phase 7: Header Redesign
+
+**Goal:** Create a clean, uncluttered header with white background, properly aligned menu, and logo that doesn't block content.
+
+**Gap Closure:**
+- GAP-HEADER-01: Header background → white/clean (not teal gradient)
+- GAP-HEADER-02: Menu items vertically centered and larger font
+- GAP-HEADER-03: Logo repositioned so breadcrumbs are visible
+
+**Success Criteria:**
+1. Header has white/light background instead of teal gradient
+2. Menu items are vertically centered within header
+3. Menu text is larger and easier to read/click
+4. Logo does not overlap or block breadcrumb navigation
+5. Clean, minimal visual appearance
+6. Mobile header maintains usability
+
+**Key Files:**
+- `src/styles/components.css` — Header and nav styles
+- `src/styles/mobile.css` — Mobile header styles
+- `index.html` — Header markup (if needed)
+- `src/pages/*.html` — All page headers
+
+**Plans:** TBD
+
+**Dependencies:** None
+
+---
+
+## Phase 8: Homepage Consolidation
+
+**Goal:** Resolve dual homepage architecture by syncing content and fixing navigation paths.
+
+**Gap Closure:**
+- GAP-NAV-01: Sync src/pages/index.html with root index.html Phase 6 changes
+- GAP-NAV-02: Fix chi-siamo → Homepage navigation (broken flow)
+
+**Success Criteria:**
+1. src/pages/index.html has same sections as root index.html
+2. "I NOSTRI DATABASE" section present in both homepages
+3. "AIUTO LEGALE" section present in both homepages
+4. Navigation from chi-siamo.html leads to correct homepage
+5. All internal navigation paths consistent
+6. No content divergence between homepages
+
+**Key Files:**
+- `src/pages/index.html` — Nested homepage (needs update)
+- `index.html` — Root homepage (source of truth)
+- `src/pages/chi-siamo.html` — Fix navigation link
+- Other src/pages/*.html — Audit navigation links
+
+**Plans:** TBD
+
+**Dependencies:** Phase 7 (header changes need to be in place first)
 
 ---
 
