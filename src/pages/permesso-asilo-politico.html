@@ -6,9 +6,9 @@
   <title>Asilo Politico (Status di Rifugiato) - SOS Permesso</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
-  <link rel="shortcut icon" type="image/svg+xml" href="../../images/Favicon.svg">
-  <link rel="apple-touch-icon" href="../../images/Favicon.svg">
+  <link rel="icon" type="image/gif" href="../../IMAGES/ezgif.com-optimize.gif">
+  <link rel="shortcut icon" type="image/gif" href="../../IMAGES/ezgif.com-optimize.gif">
+  <link rel="apple-touch-icon" href="../../IMAGES/ezgif.com-optimize.gif">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/components.css">
@@ -25,11 +25,22 @@
           <img src="../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
         </a>
         <button class="menu-toggle" id="menu-toggle">☰</button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="../../index.html" class="nav-link">Home</a></li>
-          <li><a href="database.html" class="nav-link">Database</a></li>
-          <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
-        </ul>
+
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="database.html" class="nav-link">Database</a></li>
+            <li><a href="../../index.html#guide" class="nav-link">Guide</a></li>
+            <li><a href="../../index.html#test" class="nav-link">Test</a></li>
+            <li><a href="chi-siamo.html" class="nav-link">Il progetto</a></li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">IT 🇮🇹</span>
+              <span>▾</span>
+            </button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -161,7 +172,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
-        <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
+        <a href="chi-siamo.html" class="footer-link">Il progetto</a>
         <a href="database.html" class="footer-link">Database</a>
         <a href="https://sospermesso.typeform.com/contatti" class="footer-link">Contatti</a>
       </div>
