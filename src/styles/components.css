@@ -745,9 +745,9 @@
    =============================================== */
 
 .footer {
-  background-color: var(--black);
-  color: var(--white);
-  padding: var(--spacing-xl) 0 var(--spacing-md);
+  background-color: var(--taxi-yellow);
+  color: var(--black);
+  padding: var(--spacing-lg) 0;
   text-align: center;
 }
 
@@ -768,9 +768,22 @@
   color: var(--taxi-yellow);
 }
 
+.footer-project-link {
+  display: inline-block;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer-project-link:hover {
+  color: var(--gray-dark);
+}
+
 .footer-copyright {
   font-size: var(--font-size-sm);
-  color: var(--gray-medium);
+  color: var(--black);
+  opacity: 0.8;
 }
 
 /* ===============================================
