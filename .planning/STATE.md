@@ -9,15 +9,15 @@ See: .planning/PROJECT.md (updated 2026-01-27)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Phase 13 - Collabora Dropdown
+**Current focus:** Phase 14 - Propagation
 
 ## Current Position
 
 **Milestone:** v1.5 Footer + Collabora Navigation
-**Phase:** 12 of 14 (Footer Redesign) - COMPLETE
+**Phase:** 13 of 14 (Collabora Dropdown) - COMPLETE
 **Plan:** 1 of 1 in current phase
-**Status:** Phase 12 complete, ready for Phase 13
-**Last activity:** 2026-01-27 — Completed 12-01-PLAN.md (footer redesign)
+**Status:** Phase 13 complete, ready for Phase 14
+**Last activity:** 2026-01-27 — Completed 13-01-PLAN.md (Collabora dropdown)
 
 ```
 Milestones:
@@ -26,28 +26,29 @@ v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
-v1.5 Footer + Collabora    [Active]             ###-------
+v1.5 Footer + Collabora    [Active]             #####-----
     Phase 12: Footer       [Complete]           ##
-    Phase 13: Collabora    [Not started]        -
+    Phase 13: Collabora    [Complete]           ##
     Phase 14: Propagation  [Not started]        -
 v1.6 Document Dedup        [Backlog]            ----------
 v1.7 Desktop Header Align  [Backlog]            ----------
 ```
 
-Progress: [##░░░░░░░░] 25% (1/4 plans)
+Progress: [#####░░░░░] 50% (2/4 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1 (this milestone)
-- Average duration: 2min
-- Total execution time: 2min
+- Total plans completed: 2 (this milestone)
+- Average duration: 3min
+- Total execution time: 6min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 12-footer-redesign | 1 | 2min | 2min |
+| 13-collabora-dropdown | 1 | 4min | 4min |
 
 *Updated after each plan completion*
 
@@ -78,7 +79,8 @@ Progress: [##░░░░░░░░] 25% (1/4 plans)
 
 - **Footer (IMPLEMENTED):** Yellow background (#FFD700), centered, copyright + "Il Progetto" link only
 - **Navigation dropdowns:** CSS :hover + :focus-within, flat list on mobile
-- **Collabora dropdown (new):** Trigger only (not clickable link), three items
+- **Collabora dropdown (IMPLEMENTED):** Trigger only (href=#collabora), three items: Segnala un errore, Dai una mano, Il progetto
+- **Typeform URLs:** form.typeform.com/to/[form_id] pattern
 - **Layout:** Use `.category-section` and `.permit-list` structure
 - **Color palette:** White header (#FFFFFF), teal menu text (#1A6B5F), warm gradients
 
@@ -89,6 +91,9 @@ Progress: [##░░░░░░░░] 25% (1/4 plans)
 Recent decisions affecting current work:
 - Keep old footer-links CSS for backward compatibility during propagation (12-01)
 - Use 0.8 opacity on footer copyright for subtle visual hierarchy (12-01)
+- Collabora dropdown follows existing Database/Guide/Test pattern (13-01)
+- href=#collabora makes trigger non-navigating (13-01)
+- External Typeform links use target=_blank (13-01)
 
 ### Pending Todos
 
@@ -101,14 +106,14 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 **Last session:** 2026-01-27
-**Stopped at:** Completed 12-01-PLAN.md (footer redesign)
+**Stopped at:** Completed 13-01-PLAN.md (Collabora dropdown)
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, ROADMAP.md
-2. **Where we are:** Phase 12 complete, ready for Phase 13
-3. **What to do next:** `/gsd:plan-phase 13` to create Collabora dropdown plan
+2. **Where we are:** Phase 13 complete, ready for Phase 14
+3. **What to do next:** `/gsd:plan-phase 14` or `/gsd:execute-phase 14` to propagate Collabora dropdown to all pages
 
 ---
 
