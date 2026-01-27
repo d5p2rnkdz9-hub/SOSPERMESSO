@@ -268,7 +268,7 @@ All permit detail pages follow a consistent structure:
 1. **Typeform** - Test/Quiz forms
    - "Posso AVERE un permesso?" - https://form.typeform.com/to/kt7P9Ejk
    - "Posso RINNOVARE il permesso?" - https://form.typeform.com/to/R7HY8nBp
-   - Contact form - https://sospermesso.typeform.com/contatti
+   - Contact/Dai una mano - https://form.typeform.com/to/USx16QN3
 
 2. **Google Fonts**
    - Inter: 400, 500, 600, 700
