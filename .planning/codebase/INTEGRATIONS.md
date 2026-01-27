@@ -9,24 +9,31 @@
 - Purpose: Qualification tests and contact form submission
 - Type: Embedded iframe forms (no backend needed)
 
+**Typeform URL Pattern:** `form.typeform.com/to/[form_id]`
+
 **Test Forms:**
 1. "Posso AVERE un permesso?" - https://form.typeform.com/to/kt7P9Ejk
    - Tests eligibility for residence permits
-   - Located: `index.html` (home page)
+   - Located: `index.html` (home page), navigation dropdown
    - Also in: `src/data/content-it.json` and `src/data/content-en.json`
 
 2. "Posso CONVERTIRE il mio permesso?" - https://form.typeform.com/to/oc9jhdkJ
    - Tests permit conversion options
    - Located: `index.html`
 
-3. "Posso RINNOVARE il permesso?" - https://sospermesso.typeform.com/rinnovo
+3. "Posso RINNOVARE il permesso?" - https://form.typeform.com/to/R7HY8nBp
    - Tests permit renewal eligibility
-   - Located: `index.html`, content JSON files
+   - Located: `index.html` navigation dropdown, content JSON files
 
-**Contact Form:**
-- URL: https://sospermesso.typeform.com/contatti
-- Located: `index.html` footer link, `src/components/contact-form.html`
-- Credentials: No SDK/API key needed (embedded form)
+**Collabora Dropdown Forms:**
+4. "Segnala un errore" - https://form.typeform.com/to/FsqvzdXI
+   - Report errors or issues on the website
+   - Located: Navigation Collabora dropdown (all pages)
+
+5. "Dai una mano" (Contact) - https://form.typeform.com/to/USx16QN3
+   - General contact and help form
+   - Located: Navigation Collabora dropdown (all pages), index.html footer
+   - Credentials: No SDK/API key needed (embedded form)
 
 ---
 
@@ -204,10 +211,11 @@
 ## Third-Party Service URLs
 
 **Typeform Forms:**
-- https://form.typeform.com/to/kt7P9Ejk (Test eligibility)
-- https://form.typeform.com/to/oc9jhdkJ (Test conversion)
-- https://sospermesso.typeform.com/rinnovo (Test renewal)
-- https://sospermesso.typeform.com/contatti (Contact form)
+- https://form.typeform.com/to/kt7P9Ejk (Test eligibility - "Posso AVERE")
+- https://form.typeform.com/to/oc9jhdkJ (Test conversion - "Posso CONVERTIRE")
+- https://form.typeform.com/to/R7HY8nBp (Test renewal - "Posso RINNOVARE")
+- https://form.typeform.com/to/FsqvzdXI (Segnala un errore)
+- https://form.typeform.com/to/USx16QN3 (Dai una mano / Contact)
 
 **Google Fonts:**
 - https://fonts.googleapis.com (Font CSS delivery)
