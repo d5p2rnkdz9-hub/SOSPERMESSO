@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-27
-**Status:** v1.5 Footer + Collabora Navigation — READY TO PLAN
+**Status:** v1.5 Footer + Collabora Navigation — IN PROGRESS
 
 ## Project Reference
 
@@ -9,15 +9,15 @@ See: .planning/PROJECT.md (updated 2026-01-27)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Phase 12 - Footer Redesign
+**Current focus:** Phase 13 - Collabora Dropdown
 
 ## Current Position
 
 **Milestone:** v1.5 Footer + Collabora Navigation
-**Phase:** 12 of 14 (Footer Redesign)
-**Plan:** 0 of 1 in current phase
-**Status:** Ready to plan
-**Last activity:** 2026-01-27 — Roadmap created for v1.5
+**Phase:** 12 of 14 (Footer Redesign) - COMPLETE
+**Plan:** 1 of 1 in current phase
+**Status:** Phase 12 complete, ready for Phase 13
+**Last activity:** 2026-01-27 — Completed 12-01-PLAN.md (footer redesign)
 
 ```
 Milestones:
@@ -26,28 +26,28 @@ v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
-v1.5 Footer + Collabora    [Active]             ----------
-    Phase 12: Footer       [Ready to plan]      ◆
+v1.5 Footer + Collabora    [Active]             ###-------
+    Phase 12: Footer       [Complete]           ##
     Phase 13: Collabora    [Not started]        -
     Phase 14: Propagation  [Not started]        -
 v1.6 Document Dedup        [Backlog]            ----------
 v1.7 Desktop Header Align  [Backlog]            ----------
 ```
 
-Progress: [░░░░░░░░░░] 0% (0/4 plans)
+Progress: [##░░░░░░░░] 25% (1/4 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0 (this milestone)
-- Average duration: -
-- Total execution time: 0 hours
+- Total plans completed: 1 (this milestone)
+- Average duration: 2min
+- Total execution time: 2min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 12-footer-redesign | 1 | 2min | 2min |
 
 *Updated after each plan completion*
 
@@ -76,7 +76,7 @@ Progress: [░░░░░░░░░░] 0% (0/4 plans)
 
 ## Design Patterns to Follow
 
-- **Footer (new):** Yellow background (#FFD700), centered, copyright + "Il Progetto" link only
+- **Footer (IMPLEMENTED):** Yellow background (#FFD700), centered, copyright + "Il Progetto" link only
 - **Navigation dropdowns:** CSS :hover + :focus-within, flat list on mobile
 - **Collabora dropdown (new):** Trigger only (not clickable link), three items
 - **Layout:** Use `.category-section` and `.permit-list` structure
@@ -87,7 +87,8 @@ Progress: [░░░░░░░░░░] 0% (0/4 plans)
 ### Decisions
 
 Recent decisions affecting current work:
-- None yet for v1.5
+- Keep old footer-links CSS for backward compatibility during propagation (12-01)
+- Use 0.8 opacity on footer copyright for subtle visual hierarchy (12-01)
 
 ### Pending Todos
 
@@ -100,14 +101,14 @@ None yet.
 ## Session Continuity
 
 **Last session:** 2026-01-27
-**Stopped at:** Roadmap created, ready to plan Phase 12
+**Stopped at:** Completed 12-01-PLAN.md (footer redesign)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md, REQUIREMENTS.md
-2. **Where we are:** Phase 12 ready to plan
-3. **What to do next:** `/gsd:plan-phase 12` to create footer redesign plan
+1. **Context to load:** This STATE.md, ROADMAP.md
+2. **Where we are:** Phase 12 complete, ready for Phase 13
+3. **What to do next:** `/gsd:plan-phase 13` to create Collabora dropdown plan
 
 ---
 
