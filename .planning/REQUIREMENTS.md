@@ -16,15 +16,15 @@ Requirements for Footer + Collabora Navigation milestone.
 
 ### Navigation
 
-- [ ] **NAV-01**: Replace "Il progetto" nav item with "Collabora" dropdown
-- [ ] **NAV-02**: "Collabora" is dropdown trigger only (not clickable link)
-- [ ] **NAV-03**: Dropdown contains "Segnala un errore" → https://form.typeform.com/to/FsqvzdXI
-- [ ] **NAV-04**: Dropdown contains "Dai una mano" → https://form.typeform.com/to/USx16QN3
-- [ ] **NAV-05**: Dropdown contains "Il progetto" → chi-siamo.html
+- [x] **NAV-01**: Replace "Il progetto" nav item with "Collabora" dropdown ✓
+- [x] **NAV-02**: "Collabora" is dropdown trigger only (not clickable link) ✓
+- [x] **NAV-03**: Dropdown contains "Segnala un errore" → https://form.typeform.com/to/FsqvzdXI ✓
+- [x] **NAV-04**: Dropdown contains "Dai una mano" → https://form.typeform.com/to/USx16QN3 ✓
+- [x] **NAV-05**: Dropdown contains "Il progetto" → chi-siamo.html ✓
 
 ### Cleanup
 
-- [ ] **CLEAN-01**: Remove/replace broken sospermesso.typeform.com/contatti URL from codebase
+- [x] **CLEAN-01**: Remove/replace broken sospermesso.typeform.com/contatti URL from codebase ✓
 
 ### Propagation
 
@@ -62,12 +62,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOOT-02 | Phase 12 | Complete |
 | FOOT-03 | Phase 12 | Complete |
 | FOOT-04 | Phase 12 | Complete |
-| NAV-01 | Phase 13 | Pending |
-| NAV-02 | Phase 13 | Pending |
-| NAV-03 | Phase 13 | Pending |
-| NAV-04 | Phase 13 | Pending |
-| NAV-05 | Phase 13 | Pending |
-| CLEAN-01 | Phase 13 | Pending |
+| NAV-01 | Phase 13 | Complete |
+| NAV-02 | Phase 13 | Complete |
+| NAV-03 | Phase 13 | Complete |
+| NAV-04 | Phase 13 | Complete |
+| NAV-05 | Phase 13 | Complete |
+| CLEAN-01 | Phase 13 | Complete |
 | PROP-01 | Phase 14 | Pending |
 | PROP-02 | Phase 14 | Pending |
 

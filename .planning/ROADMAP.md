@@ -19,7 +19,7 @@ This milestone redesigns the footer with a yellow background and introduces a "C
 - Phases 12-14 cover v1.5 scope
 
 - [x] **Phase 12: Footer Redesign** - Yellow footer with centered layout ✓
-- [ ] **Phase 13: Collabora Dropdown** - Replace "Il progetto" with Collabora dropdown
+- [x] **Phase 13: Collabora Dropdown** - Replace "Il progetto" with Collabora dropdown ✓
 - [ ] **Phase 14: Propagation** - Apply changes to all pages
 
 ## Phase Details
@@ -53,7 +53,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 13-01-PLAN.md — Collabora dropdown in index.html + URL cleanup
+- [x] 13-01-PLAN.md — Collabora dropdown in index.html + URL cleanup ✓
 
 ### Phase 14: Propagation
 **Goal**: All pages have consistent header (Collabora dropdown) and footer (yellow centered)
@@ -77,7 +77,7 @@ Plans:
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 12. Footer Redesign | v1.5 | 1/1 | Complete | 2026-01-27 |
-| 13. Collabora Dropdown | v1.5 | 0/1 | Not started | - |
+| 13. Collabora Dropdown | v1.5 | 1/1 | Complete | 2026-01-27 |
 | 14. Propagation | v1.5 | 0/2 | Not started | - |
 
 ---
