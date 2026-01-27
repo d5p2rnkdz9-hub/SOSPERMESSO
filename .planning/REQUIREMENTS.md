@@ -9,10 +9,10 @@ Requirements for Footer + Collabora Navigation milestone.
 
 ### Footer
 
-- [ ] **FOOT-01**: Footer has yellow background
-- [ ] **FOOT-02**: Footer contains "Il Progetto" link (to chi-siamo.html)
-- [ ] **FOOT-03**: Footer layout is centered
-- [ ] **FOOT-04**: Footer displays copyright only (remove Database, Contatti, Chi siamo links)
+- [x] **FOOT-01**: Footer has yellow background ✓
+- [x] **FOOT-02**: Footer contains "Il Progetto" link (to chi-siamo.html) ✓
+- [x] **FOOT-03**: Footer layout is centered ✓
+- [x] **FOOT-04**: Footer displays copyright only (remove Database, Contatti, Chi siamo links) ✓
 
 ### Navigation
 
@@ -58,10 +58,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOOT-01 | Phase 12 | Pending |
-| FOOT-02 | Phase 12 | Pending |
-| FOOT-03 | Phase 12 | Pending |
-| FOOT-04 | Phase 12 | Pending |
+| FOOT-01 | Phase 12 | Complete |
+| FOOT-02 | Phase 12 | Complete |
+| FOOT-03 | Phase 12 | Complete |
+| FOOT-04 | Phase 12 | Complete |
 | NAV-01 | Phase 13 | Pending |
 | NAV-02 | Phase 13 | Pending |
 | NAV-03 | Phase 13 | Pending |
