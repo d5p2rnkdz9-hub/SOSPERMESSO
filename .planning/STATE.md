@@ -92,11 +92,11 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-None yet.
+- **Footer vertical alignment bug** — Content appears at bottom of yellow footer despite CSS showing correct centering. Needs deep investigation with Opus 4.5. Add to Phase 13 or create separate fix phase.
 
 ### Blockers/Concerns
 
-None yet.
+- Footer alignment issue is visual bug but not blocking progress.
 
 ## Session Continuity
 
