@@ -50,10 +50,10 @@ Plans:
   5. "Dai una mano" link opens https://form.typeform.com/to/USx16QN3
   6. "Il progetto" link in dropdown navigates to chi-siamo.html
   7. No references to sospermesso.typeform.com/contatti remain in codebase
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 13-01: Collabora dropdown implementation and URL cleanup
+- [ ] 13-01-PLAN.md — Collabora dropdown in index.html + URL cleanup
 
 ### Phase 14: Propagation
 **Goal**: All pages have consistent header (Collabora dropdown) and footer (yellow centered)
