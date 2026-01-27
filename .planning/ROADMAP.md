@@ -33,10 +33,10 @@ This milestone redesigns the footer with a yellow background and introduces a "C
   2. Footer contains a clickable "Il Progetto" link that navigates to chi-siamo.html
   3. Footer content is horizontally centered
   4. Footer shows copyright text only (no Database, Contatti, Chi siamo links)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 12-01: Footer styling and template update
+- [ ] 12-01-PLAN.md — Update footer CSS styling and template HTML
 
 ### Phase 13: Collabora Dropdown
 **Goal**: Header navigation includes "Collabora" dropdown with error reporting and contribution links
@@ -76,7 +76,7 @@ Plans:
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 12. Footer Redesign | v1.5 | 0/1 | Not started | - |
+| 12. Footer Redesign | v1.5 | 0/1 | Planned | - |
 | 13. Collabora Dropdown | v1.5 | 0/1 | Not started | - |
 | 14. Propagation | v1.5 | 0/2 | Not started | - |
 
