@@ -4,12 +4,24 @@
 
 A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Now includes a comprehensive document requirements system powered by Notion for content management.
 
-## Current State
+## Current Milestone: v1.5 Footer + Collabora Navigation
 
-**Latest milestone:** v1.4 Error Reporting + Dropdown Navigation (shipped 2026-01-27)
-**Next milestone:** TBD — run `/gsd:new-milestone` to define
+**Goal:** Redesign footer with yellow background and add Collabora dropdown replacing Il progetto in header.
 
-## Backlog: v1.5 Document Deduplication
+**Target features:**
+- Yellow footer with centered "Chi Siamo" and "Il Progetto" links
+- Replace "Il progetto" header item with "Collabora" dropdown (trigger only, not clickable)
+- Collabora dropdown: "Segnala un errore" + "Dai una mano" (Typeform links)
+- Remove broken contact URL, standardize to new Typeform URLs
+- Propagate changes to all pages
+
+**Typeform URLs:**
+- Contacts/Dai una mano: https://form.typeform.com/to/USx16QN3
+- Error reporting: https://form.typeform.com/to/FsqvzdXI
+
+---
+
+## Backlog: v1.6 Document Deduplication
 
 **Goal:** Remove duplicate document information between permit detail pages and documenti-questura database pages.
 
@@ -20,7 +32,7 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ---
 
-## Backlog: v1.6 Desktop Header Alignment
+## Backlog: v1.7 Desktop Header Alignment
 
 **Goal:** Fix desktop header alignment - language switcher appears slightly below menu items.
 
@@ -87,7 +99,13 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-(None — run `/gsd:new-milestone` to define next scope)
+- [ ] Yellow footer background with centered layout
+- [ ] Footer contains "Chi Siamo" and "Il Progetto" links only (+ copyright)
+- [ ] Replace "Il progetto" header nav item with "Collabora" dropdown
+- [ ] Collabora dropdown: "Segnala un errore" → Typeform error form
+- [ ] Collabora dropdown: "Dai una mano" → Typeform contact form
+- [ ] Remove broken sospermesso.typeform.com/contatti URL from codebase
+- [ ] Propagate new header/footer to all pages
 
 ### Out of Scope
 
