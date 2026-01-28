@@ -23,24 +23,20 @@
 
 ---
 
-### Phase 17: Content Migration & Visual Polish
+### Phase 17: Content Migration & Visual Polish ✓
 
 **Goal:** Generate all permit pages, ensure visual consistency.
 
 **Requirements:** MIGR-01, VIS-01, VIS-02, VIS-03
 
-**Success Criteria:**
-1. All 29+ permits with Notion content have generated pages
-2. Separate pages exist for permit variants (e.g., Lavoro subordinato types)
-3. Consistent bullet styling (no mixed bullets + checkmarks)
-4. Proper list indentation and spacing throughout
+**Completed:** 2026-01-28
 
-**Plans:** 3 plans
+**Plans:**
+- [x] 17-01-PLAN.md — Triangle bullet CSS styling (Wave 1)
+- [x] 17-02-PLAN.md — Placeholder pages + change detection (Wave 1)
+- [x] 17-03-PLAN.md — Variant detection & generation with user approval (Wave 2)
 
-Plans:
-- [ ] 17-01-PLAN.md — Triangle bullet CSS styling (Wave 1)
-- [ ] 17-02-PLAN.md — Placeholder pages + change detection (Wave 1)
-- [ ] 17-03-PLAN.md — Variant detection & generation with user approval (Wave 2)
+**Results:** 61 permit pages (56 content + 4 variants + 1 redirect), blue triangle bullets, placeholder pages for 18 empty permits, manifest-based change detection
 
 ---
 
