@@ -35,9 +35,12 @@
 3. Consistent bullet styling (no mixed bullets + checkmarks)
 4. Proper list indentation and spacing throughout
 
-**Plans:**
-- 17-01: Run build for all permits, create TODO list for empty ones
-- 17-02: Visual consistency audit and CSS fixes
+**Plans:** 3 plans
+
+Plans:
+- [ ] 17-01-PLAN.md — Triangle bullet CSS styling (Wave 1)
+- [ ] 17-02-PLAN.md — Placeholder pages + change detection (Wave 1)
+- [ ] 17-03-PLAN.md — Variant detection & generation with user approval (Wave 2)
 
 ---
 
