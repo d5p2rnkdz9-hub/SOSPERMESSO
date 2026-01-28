@@ -5,7 +5,7 @@
 const fs = require('fs/promises');
 const path = require('path');
 const { fetchPermitData, fetchPageBlocks, testConnection } = require('./notion-client.js');
-const { generatePermessoPage } = require('./templates/permesso.js');
+const { generatePermessoPage, generatePlaceholderPage } = require('./templates/permesso.js');
 const { escapeHtml } = require('./templates/helpers.js');
 
 const OUTPUT_DIR = path.join(__dirname, '../src/pages');
@@ -410,6 +410,7 @@ async function build() {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
   let generatedCount = 0;
+  let placeholderCount = 0;
   let skippedCount = 0;
   const generated = [];
   const emptyPermits = [];
@@ -442,12 +443,36 @@ async function build() {
       const blocks = await fetchPageBlocks(permit.id);
 
       if (!blocks || blocks.length === 0) {
+        // Generate placeholder page instead of skipping
+        const permitData = {
+          tipo: permit.tipo,
+          slug: permit.slug,
+          emoji: getEmojiForPermit(permit.tipo)
+        };
+
+        const html = generatePlaceholderPage(permitData);
+        const filename = `permesso-${permit.slug}.html`;
+        await fs.writeFile(path.join(OUTPUT_DIR, filename), html, 'utf-8');
+
+        console.log(`   ⚠️  ${filename} (placeholder - needs content)`);
+        placeholderCount++;
+
+        // Update manifest for placeholder
+        manifest[permit.id] = {
+          tipo: permit.tipo,
+          slug: permit.slug,
+          lastEdited: permit.last_edited_time || new Date().toISOString(),
+          lastBuilt: new Date().toISOString(),
+          placeholder: true
+        };
+
+        // Still track for TODO but mark as placeholder
         emptyPermits.push({
           tipo: permit.tipo,
           id: permit.id,
-          reason: 'No blocks (empty page)'
+          reason: 'No blocks (empty page)',
+          hasPlaceholder: true
         });
-        console.log(`   ⚠️  ${permit.tipo}: No content blocks`);
         continue;
       }
 
@@ -455,12 +480,36 @@ async function build() {
       const sections = parseQASections(blocks);
 
       if (sections.length === 0) {
+        // Generate placeholder page instead of skipping
+        const permitData = {
+          tipo: permit.tipo,
+          slug: permit.slug,
+          emoji: getEmojiForPermit(permit.tipo)
+        };
+
+        const html = generatePlaceholderPage(permitData);
+        const filename = `permesso-${permit.slug}.html`;
+        await fs.writeFile(path.join(OUTPUT_DIR, filename), html, 'utf-8');
+
+        console.log(`   ⚠️  ${filename} (placeholder - needs content)`);
+        placeholderCount++;
+
+        // Update manifest for placeholder
+        manifest[permit.id] = {
+          tipo: permit.tipo,
+          slug: permit.slug,
+          lastEdited: permit.last_edited_time || new Date().toISOString(),
+          lastBuilt: new Date().toISOString(),
+          placeholder: true
+        };
+
+        // Still track for TODO but mark as placeholder
         emptyPermits.push({
           tipo: permit.tipo,
           id: permit.id,
-          reason: 'No Q&A sections found'
+          reason: 'No Q&A sections found',
+          hasPlaceholder: true
         });
-        console.log(`   ⚠️  ${permit.tipo}: No Q&A sections detected`);
         continue;
       }
 
@@ -507,6 +556,9 @@ async function build() {
   // Summary
   console.log('\n=====================================');
   console.log(`✅ Generated ${generatedCount} permit pages`);
+  if (placeholderCount > 0) {
+    console.log(`⚠️  Generated ${placeholderCount} placeholder pages (need content)`);
+  }
   if (skippedCount > 0) {
     console.log(`⏭️  Skipped ${skippedCount} unchanged pages`);
   }
