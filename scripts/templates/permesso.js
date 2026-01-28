@@ -293,7 +293,210 @@ ${sectionsHtml}
 </html>`;
 }
 
-module.exports = { generatePermessoPage };
+/**
+ * Generate a placeholder page for permits without Notion content
+ * @param {Object} permit - Permit data
+ * @param {string} permit.tipo - Permit type name
+ * @param {string} permit.slug - URL slug
+ * @param {string} permit.emoji - Emoji icon (optional)
+ * @returns {string} Complete HTML page
+ */
+function generatePlaceholderPage(permit) {
+  const { tipo, slug, emoji } = permit;
+  const escapedTipo = escapeHtml(tipo || 'questo permesso');
+  const pageEmoji = emoji || '📄';
+
+  return `<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Permesso di soggiorno per ${escapedTipo} - pagina in costruzione">
+  <title>Permesso per ${escapedTipo} - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../images/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="../../images/logo-full.png">
+  <link rel="apple-touch-icon" href="../../images/logo-full.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/animations.css">
+  <link rel="stylesheet" href="../styles/mobile.css">
+  <link rel="stylesheet" href="../styles/mobile-fix.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../index.html" class="logo">
+          <img src="../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <!-- Database with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
+              </ul>
+            </li>
+
+            <!-- Guide with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#guide" class="nav-link" aria-haspopup="true" aria-expanded="false">Guide</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">Protezione internazionale</a></li>
+                <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Ricongiungimento familiare</a></li>
+                <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dizionario</a></li>
+              </ul>
+            </li>
+
+            <!-- Test with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#test" class="nav-link" aria-haspopup="true" aria-expanded="false">Test</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Posso AVERE un permesso?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Posso CONVERTIRE?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Posso RINNOVARE il permesso?</a></li>
+              </ul>
+            </li>
+
+            <!-- Collabora with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#collabora" class="nav-link" aria-haspopup="true" aria-expanded="false">Collabora</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Segnala un errore</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Dai una mano</a></li>
+                <li role="none"><a href="chi-siamo.html" class="dropdown-link" role="menuitem">Il progetto</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">IT</span>
+              <span>▾</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container" style="position: relative;">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <a href="database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
+        <span>Permesso per ${escapedTipo}</span>
+      </div>
+
+      <!-- ERROR BUTTON -->
+      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + slug + '.html')}"
+         class="error-report-btn"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Segnala un errore in questa pagina">
+        🚨 Segnala errore
+      </a>
+    </div>
+  </section>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">${pageEmoji}</span>
+        <h1 class="page-title">Permesso per ${escapedTipo}</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLACEHOLDER CONTENT -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card text-center" style="padding: 3rem;">
+        <span style="font-size: 4rem;">${pageEmoji}</span>
+        <h2 style="margin: 1rem 0;">Contenuto in arrivo</h2>
+        <p style="color: var(--gray-medium); max-width: 500px; margin: 0 auto 1.5rem;">
+          Stiamo ancora lavorando per completare le informazioni
+          su questo permesso di soggiorno.
+        </p>
+        <a href="https://form.typeform.com/to/USx16QN3"
+           class="btn btn-primary"
+           target="_blank"
+           rel="noopener noreferrer">
+          Dai una mano
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
+      <div class="grid grid-3">
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Tutti i permessi</h3>
+        </a>
+        <a href="documenti-questura.html" class="card card-link card-compact">
+          <span class="card-icon">📋</span>
+          <h3 class="card-title">Documenti Questura</h3>
+        </a>
+        <a href="dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">📖</span>
+          <h3 class="card-title">Dizionario</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="chi-siamo.html" class="footer-project-link">Il Progetto</a>
+        <span class="footer-separator">|</span>
+        <a href="https://form.typeform.com/to/USx16QN3" class="footer-project-link" target="_blank">Contatti</a>
+        <span class="footer-separator">|</span>
+        <p class="footer-copyright">© 2025 SOS Permesso</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Form Container -->
+  <div id="contact-form-container"></div>
+
+  <script src="../scripts/app.js"></script>
+  <script src="../scripts/mobile.js"></script>
+  <script>
+    // Load contact form
+    fetch('../components/contact-form.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('contact-form-container').innerHTML = html;
+      });
+  </script>
+</body>
+</html>`;
+}
+
+module.exports = { generatePermessoPage, generatePlaceholderPage };
 
 // Self-test when run directly
 if (require.main === module) {
