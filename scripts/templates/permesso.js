@@ -56,13 +56,15 @@ function getSectionBorderColor(index, question) {
  */
 function renderSection(section, index) {
   const { question, content } = section;
-  const borderColor = getSectionBorderColor(index, question);
+  // Fix common typo: "mi da" should be "mi dà" (with accent)
+  const fixedQuestion = question.replace(/\bmi da\b/gi, 'mi dà');
+  const borderColor = getSectionBorderColor(index, fixedQuestion);
   const borderStyle = borderColor ? `border-left: 4px solid ${borderColor};` : '';
 
   return `
-      <!-- Section ${index + 1}: ${escapeHtml(question)} -->
+      <!-- Section ${index + 1}: ${escapeHtml(fixedQuestion)} -->
       <div class="card" style="margin-bottom: 2rem;${borderStyle ? ' ' + borderStyle : ''}">
-        <h2>${escapeHtml(question)}</h2>
+        <h2>${escapeHtml(fixedQuestion)}</h2>
         ${content}
       </div>`;
 }

@@ -70,7 +70,8 @@ function needsRebuild(permit, manifest) {
  */
 function extractPlainText(richText) {
   if (!richText || !Array.isArray(richText)) return '';
-  return richText.map(segment => segment.plain_text || '').join('');
+  // Strip checkmark characters that appear as bullets in Notion content
+  return richText.map(segment => (segment.plain_text || '').replace(/[✓✔☑]/g, '')).join('').trim();
 }
 
 /**
@@ -84,6 +85,10 @@ function richTextToHtml(richTextArray) {
 
   return richTextArray.map(segment => {
     let text = escapeHtml(segment.plain_text || '');
+    // Strip checkmark characters that appear as bullets in Notion content
+    text = text.replace(/[✓✔☑]/g, '').trim();
+    // Fix common typo: "mi da" should be "mi dà" (with accent)
+    text = text.replace(/\bmi da\b/gi, 'mi dà');
     const annotations = segment.annotations || {};
 
     // Apply formatting in order
