@@ -14,9 +14,9 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 **Milestone:** v1.7 Database Content Reviewed
-**Phase:** 16 (complete), 17 (not started)
-**Status:** Phase 16 complete, Phase 17 ready for planning
-**Last activity:** 2026-01-28 — Phase 16 Permit Build System verified
+**Phase:** 17 of 17 (Phase 17 in progress)
+**Status:** Plan 17-02 complete
+**Last activity:** 2026-01-28 — Completed 17-02-PLAN.md
 
 ```
 Milestones:
@@ -27,19 +27,19 @@ v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
-v1.7 Permit Redesign       [Active]             #####-----
+v1.7 Permit Redesign       [Active]             ########--
 ```
 
-Progress: [#####-----] 50% (1/2 phases)
+Progress: [########--] 80% (4/5 plans: 16-01, 16-02, 17-01, 17-02)
 
-**Phase 16 Results:** Created build infrastructure. 24 permit pages generated from Notion, 20 tracked for content additions.
+**Phase 17 Progress:** Placeholder pages + incremental builds ready. 42 permit pages total (24 with content, 18 placeholders).
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4 (this milestone)
-- Average duration: 2.6min
-- Total execution time: 10.2min
+- Total plans completed: 6 (this milestone)
+- Average duration: 3.6min
+- Total execution time: 21.8min
 
 **By Phase:**
 
@@ -47,6 +47,7 @@ Progress: [#####-----] 50% (1/2 phases)
 |-------|-------|-------|----------|
 | 15-document-deduplication | 2 | 4.6min | 2.3min |
 | 16-permit-build-system | 2 | 5.6min | 2.8min |
+| 17-content-migration-visual-polish | 2 | 11.6min | 5.8min |
 
 *Updated after each plan completion*
 
@@ -120,6 +121,10 @@ Recent decisions affecting current work:
 - Three-pattern Q&A detection: heading_3, bold paragraph, inline bold (16-02)
 - Keyword-based emoji selection with fallback (16-02)
 - 350ms rate limiting between Notion API calls (16-02)
+- Generate placeholder pages instead of skipping empty permits (17-02)
+- Use Notion last_edited_time for change detection (17-02)
+- Mark placeholders in manifest with placeholder: true flag (17-02)
+- --force flag to override change detection and rebuild all (17-02)
 
 ### Pending Todos
 
@@ -132,14 +137,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Phase 16 complete
+**Stopped at:** Completed 17-02-PLAN.md
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md
-2. **Where we are:** v1.7 Phase 16 complete, Phase 17 ready
-3. **What to do next:** Run `/gsd:discuss-phase 17` or `/gsd:plan-phase 17`
+1. **Context to load:** This STATE.md, ROADMAP.md, 17-02-SUMMARY.md
+2. **Where we are:** v1.7 Phase 17 in progress (2/3 plans complete)
+3. **What to do next:** Continue with plan 17-03 (database.html visual polish) or wrap up milestone
 
 ---
 
