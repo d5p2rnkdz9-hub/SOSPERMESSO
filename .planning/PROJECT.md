@@ -4,31 +4,27 @@
 
 A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Now includes a comprehensive document requirements system powered by Notion for content management.
 
-## Current Milestone: v1.5 Footer + Collabora Navigation
+## Current Milestone: v1.6 Document Deduplication
 
-**Goal:** Redesign footer with yellow background and add Collabora dropdown replacing Il progetto in header.
+**Goal:** Remove duplicate document sections from permit pages and replace with direct links to documenti-questura pages.
 
 **Target features:**
-- Yellow footer with centered "Chi Siamo" and "Il Progetto" links
-- Replace "Il progetto" header item with "Collabora" dropdown (trigger only, not clickable)
-- Collabora dropdown: "Segnala un errore" + "Dai una mano" (Typeform links)
-- Remove broken contact URL, standardize to new Typeform URLs
-- Propagate changes to all pages
-
-**Typeform URLs:**
-- Contacts/Dai una mano: https://form.typeform.com/to/USx16QN3
-- Error reporting: https://form.typeform.com/to/FsqvzdXI
+- Remove inline document sections from all permit pages
+- Add two CTA buttons after page header (before content):
+  - "Documenti per il primo rilascio" → documenti-[permit]-primo.html
+  - "Documenti per il rinnovo" → documenti-[permit]-rinnovo.html
+- Single source of truth for document requirements (Notion-powered pages)
 
 ---
 
-## Backlog: v1.6 Document Deduplication
+## Shipped: v1.5 Footer + Collabora Navigation (2026-01-28)
 
-**Goal:** Remove duplicate document information between permit detail pages and documenti-questura database pages.
+**Delivered:** Yellow footer redesign and Collabora dropdown navigation.
 
-**Target features:**
-- Remove/replace "Che documenti porto in Questura" sections from permit pages
-- Link permit pages directly to corresponding documenti-questura pages
-- Single source of truth for document requirements (Notion-powered pages)
+- Yellow footer with centered layout, "Il Progetto" link
+- Collabora dropdown: Segnala un errore, Posso convertire, Dai una mano, Il progetto
+- Fixed broken Typeform URLs across codebase
+- Propagated to all 98 pages
 
 ---
 

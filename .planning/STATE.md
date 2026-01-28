@@ -1,23 +1,23 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-28
-**Status:** v1.5 Footer + Collabora Navigation — COMPLETE
+**Status:** v1.6 Document Deduplication — STARTING
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-01-27)
+See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Milestone v1.5 complete
+**Current focus:** Milestone v1.6 — Remove duplicate docs, add CTA buttons
 
 ## Current Position
 
-**Milestone:** v1.5 Footer + Collabora Navigation - COMPLETE
-**Phase:** 14 of 14 (Propagation) - COMPLETE
-**Plan:** 2 of 2 in current phase
-**Status:** All phases complete
-**Last activity:** 2026-01-28 — Completed 14-02-PLAN.md (Collabora dropdown propagation to all pages)
+**Milestone:** v1.6 Document Deduplication
+**Phase:** 15 (Document Deduplication)
+**Plan:** 0 of 2
+**Status:** Ready to plan
+**Last activity:** 2026-01-28 — Milestone v1.6 initialized
 
 ```
 Milestones:
@@ -26,15 +26,13 @@ v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
-v1.5 Footer + Collabora    [SHIPPED 2026-01-28] ##########
-    Phase 12: Footer       [Complete]           ##
-    Phase 13: Collabora    [Complete]           ##
-    Phase 14: Propagation  [Complete]           ####
-v1.6 Document Dedup        [Backlog]            ----------
+v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
+v1.6 Document Dedup        [ACTIVE]             ----------
+    Phase 15: Deduplication [Ready]             --
 v1.7 Desktop Header Align  [Backlog]            ----------
 ```
 
-Progress: [##########] 100% (4/4 plans)
+Progress: [----------] 0% (0/2 plans)
 
 ## Performance Metrics
 

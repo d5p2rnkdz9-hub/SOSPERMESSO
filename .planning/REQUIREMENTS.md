@@ -1,97 +1,78 @@
-# Requirements: SOS Permesso
+# Requirements: SOS Permesso v1.6
 
-**Defined:** 2026-01-27
+**Defined:** 2026-01-28
 **Core Value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-## v1.5 Requirements
+## v1.6 Requirements
 
-Requirements for Footer + Collabora Navigation milestone.
+Requirements for Document Deduplication milestone.
 
-### Footer
+### Document Section Removal
 
-- [x] **FOOT-01**: Footer has yellow background ✓
-- [x] **FOOT-02**: Footer contains "Il Progetto" link (to chi-siamo.html) ✓
-- [x] **FOOT-03**: Footer layout is centered ✓
-- [x] **FOOT-04**: Footer displays copyright only (remove Database, Contatti, Chi siamo links) ✓
+- [ ] **DEDUP-01**: Remove inline document sections from all 21 permit pages
+- [ ] **DEDUP-02**: No duplicate document lists remain in permit pages
 
-### Navigation
+### CTA Buttons
 
-- [x] **NAV-01**: Replace "Il progetto" nav item with "Collabora" dropdown ✓
-- [x] **NAV-02**: "Collabora" is dropdown trigger only (not clickable link) ✓
-- [x] **NAV-03**: Dropdown contains "Segnala un errore" → https://form.typeform.com/to/FsqvzdXI ✓
-- [x] **NAV-03b**: Dropdown contains "Posso convertire" → https://form.typeform.com/to/oc9jhdkJ ✓
-- [x] **NAV-04**: Dropdown contains "Dai una mano" → https://form.typeform.com/to/USx16QN3 ✓
-- [x] **NAV-05**: Dropdown contains "Il progetto" → chi-siamo.html ✓
+- [ ] **CTA-01**: Each permit page has "Documenti per il primo rilascio" button after header
+- [ ] **CTA-02**: Each permit page has "Documenti per il rinnovo" button after header
+- [ ] **CTA-03**: Buttons link to correct documenti-[permit]-primo.html and documenti-[permit]-rinnovo.html pages
+- [ ] **CTA-04**: Button styling consistent with existing site design
 
-### Cleanup
+### Coverage
 
-- [x] **CLEAN-01**: Remove/replace broken sospermesso.typeform.com/contatti URL from codebase ✓
+- [ ] **COV-01**: All 21 permit pages updated (excluding redirect pages)
 
-### Propagation
+## Affected Pages
 
-- [x] **PROP-01**: All pages have consistent header with Collabora dropdown ✓
-- [x] **PROP-02**: All pages have consistent yellow footer ✓
-
-## Future Requirements
-
-Deferred to later milestones.
-
-### Document Deduplication (v1.6)
-
-- **DEDUP-01**: Remove "Che documenti porto in Questura" sections from permit pages
-- **DEDUP-02**: Link permit pages directly to corresponding documenti-questura pages
-
-### Header Alignment (v1.7)
-
-- **ALIGN-01**: Fix desktop header alignment (language switcher baseline)
-
-### Navigation & Anchors (TBD)
-
-- **NAV-ANCHOR-01**: Fix page anchor functioning - links currently don't scroll to precise section on page
-- **NAV-LANG-01**: Investigate feasibility of moving language toggle into main navigation menu
-
-### Dictionary Improvements (TBD)
-
-- **DICT-01**: Break dictionary entries into individual blocks to enable direct hyperlinking to specific terms
-
-### Visual Consistency (TBD)
-
-- **VISUAL-01**: Review "documenti questura" text display - ensure proper capitalization and spacing
-- **VISUAL-02**: Ensure consistent spacing and indentation of bullet points across all pages
+| Permit Page | Primo Link | Rinnovo Link |
+|-------------|------------|--------------|
+| permesso-asilo-politico | documenti-asilo-politico-primo | documenti-asilo-politico-rinnovo |
+| permesso-assistenza-minore | documenti-assistenza-minore-primo | documenti-assistenza-minore-rinnovo |
+| permesso-attesa-occupazione | documenti-attesa-occupazione-primo | documenti-attesa-occupazione-rinnovo |
+| permesso-calamita-naturale | documenti-calamita-naturale-primo | documenti-calamita-naturale-rinnovo |
+| permesso-coesione-familiare | documenti-coesione-familiare-primo | documenti-coesione-familiare-rinnovo |
+| permesso-conviventi-familiari-italiani | documenti-conviventi-familiari-italiani-primo | documenti-conviventi-familiari-italiani-rinnovo |
+| permesso-cure-mediche | documenti-cure-mediche-primo | documenti-cure-mediche-rinnovo |
+| permesso-genitore-minore-italiano | documenti-genitore-minore-italiano-primo | documenti-genitore-minore-italiano-rinnovo |
+| permesso-gravi-motivi-salute | documenti-gravi-motivi-salute-primo | documenti-gravi-motivi-salute-rinnovo |
+| permesso-gravidanza | documenti-gravidanza-primo | documenti-gravidanza-rinnovo |
+| permesso-lavoro-autonomo | documenti-lavoro-autonomo-primo | documenti-lavoro-autonomo-rinnovo |
+| permesso-lavoro-subordinato | documenti-lavoro-subordinato-primo | documenti-lavoro-subordinato-rinnovo |
+| permesso-minore-eta | documenti-minore-eta-primo | documenti-minore-eta-rinnovo |
+| permesso-minori-stranieri-affidati | documenti-minori-stranieri-affidati-primo | documenti-minori-stranieri-affidati-rinnovo |
+| permesso-prosieguo-amministrativo | documenti-prosieguo-amministrativo-primo | documenti-prosieguo-amministrativo-rinnovo |
+| permesso-protezione-speciale | documenti-protezione-speciale-primo | documenti-protezione-speciale-rinnovo |
+| permesso-protezione-sussidiaria | documenti-protezione-sussidiaria-primo | documenti-protezione-sussidiaria-rinnovo |
+| permesso-richiesta-asilo | documenti-richiesta-asilo-primo | documenti-richiesta-asilo-rinnovo |
+| permesso-ricongiungimento-familiare | documenti-ricongiungimento-familiare-primo | documenti-ricongiungimento-familiare-rinnovo |
+| permesso-studio | documenti-studio-primo | documenti-studio-rinnovo |
+| permesso-ue-lungo-periodo | documenti-ue-lungo-periodo-primo | documenti-ue-lungo-periodo-rinnovo |
 
 ## Out of Scope
 
 | Feature | Reason |
 |---------|--------|
-| Multiple footer layouts | Single centered design per user spec |
-| Collabora as clickable link | User specified dropdown trigger only |
-| New "Il Progetto" page | Use existing chi-siamo.html |
+| Modifying documenti-*.html pages | Already correct, Notion-powered |
+| Redirect pages (permesso-asilo.html) | Not real content pages |
+| Guide pages | Not affected by this change |
 
 ## Traceability
 
-Which phases cover which requirements. Updated during roadmap creation.
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOOT-01 | Phase 12 | Complete |
-| FOOT-02 | Phase 12 | Complete |
-| FOOT-03 | Phase 12 | Complete |
-| FOOT-04 | Phase 12 | Complete |
-| NAV-01 | Phase 13 | Complete |
-| NAV-02 | Phase 13 | Complete |
-| NAV-03 | Phase 13 | Complete |
-| NAV-03b | Phase 14 | Complete |
-| NAV-04 | Phase 13 | Complete |
-| NAV-05 | Phase 13 | Complete |
-| CLEAN-01 | Phase 13 | Complete |
-| PROP-01 | Phase 14 | Complete |
-| PROP-02 | Phase 14 | Complete |
+| DEDUP-01 | Phase 15 | Pending |
+| DEDUP-02 | Phase 15 | Pending |
+| CTA-01 | Phase 15 | Pending |
+| CTA-02 | Phase 15 | Pending |
+| CTA-03 | Phase 15 | Pending |
+| CTA-04 | Phase 15 | Pending |
+| COV-01 | Phase 15 | Pending |
 
 **Coverage:**
-- v1.5 requirements: 13 total
-- Mapped to phases: 13
+- v1.6 requirements: 7 total
+- Mapped to phases: 7
 - Unmapped: 0
 
 ---
-*Requirements defined: 2026-01-27*
-*Traceability updated: 2026-01-27 after roadmap creation*
+*Requirements defined: 2026-01-28*
