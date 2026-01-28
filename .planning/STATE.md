@@ -15,8 +15,8 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Milestone:** v1.7 Database Content Reviewed
 **Phase:** 17 of 17 (Phase 17 in progress)
-**Status:** Plan 17-02 complete
-**Last activity:** 2026-01-28 — Completed 17-02-PLAN.md
+**Status:** Plan 17-01 complete
+**Last activity:** 2026-01-28 — Completed 17-01-PLAN.md
 
 ```
 Milestones:
@@ -32,14 +32,14 @@ v1.7 Permit Redesign       [Active]             ########--
 
 Progress: [########--] 80% (4/5 plans: 16-01, 16-02, 17-01, 17-02)
 
-**Phase 17 Progress:** Placeholder pages + incremental builds ready. 42 permit pages total (24 with content, 18 placeholders).
+**Phase 17 Progress:** Triangle bullet CSS complete. Placeholder pages + incremental builds ready. 42 permit pages total (24 with content, 18 placeholders).
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6 (this milestone)
-- Average duration: 3.6min
-- Total execution time: 21.8min
+- Total plans completed: 7 (this milestone)
+- Average duration: 4.7min
+- Total execution time: 33.4min
 
 **By Phase:**
 
@@ -47,7 +47,7 @@ Progress: [########--] 80% (4/5 plans: 16-01, 16-02, 17-01, 17-02)
 |-------|-------|-------|----------|
 | 15-document-deduplication | 2 | 4.6min | 2.3min |
 | 16-permit-build-system | 2 | 5.6min | 2.8min |
-| 17-content-migration-visual-polish | 2 | 11.6min | 5.8min |
+| 17-content-migration-visual-polish | 3 | 23.2min | 7.7min |
 
 *Updated after each plan completion*
 
@@ -125,6 +125,8 @@ Recent decisions affecting current work:
 - Use Notion last_edited_time for change detection (17-02)
 - Mark placeholders in manifest with placeholder: true flag (17-02)
 - --force flag to override change detection and rebuild all (17-02)
+- Blue triangle bullets for better visibility on white backgrounds (17-01)
+- Triangle size 0.85rem for primary bullets, 0.75rem for nested (17-01)
 
 ### Pending Todos
 
@@ -137,14 +139,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Completed 17-02-PLAN.md
+**Stopped at:** Completed 17-01-PLAN.md
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md, 17-02-SUMMARY.md
-2. **Where we are:** v1.7 Phase 17 in progress (2/3 plans complete)
-3. **What to do next:** Continue with plan 17-03 (database.html visual polish) or wrap up milestone
+1. **Context to load:** This STATE.md, ROADMAP.md, 17-01-SUMMARY.md
+2. **Where we are:** v1.7 Phase 17 in progress (3/3 plans complete)
+3. **What to do next:** Review milestone completion or begin next milestone
 
 ---
 
