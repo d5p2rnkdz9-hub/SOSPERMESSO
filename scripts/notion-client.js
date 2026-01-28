@@ -64,6 +64,8 @@ async function fetchPermitData() {
       // Mod fields are multi_select, get first value
       primoMethod: page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null,
       rinnovoMethod: page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null,
+      // Include last_edited_time for change detection
+      last_edited_time: page.last_edited_time || null,
     };
   });
 }

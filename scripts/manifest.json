@@ -1,0 +1,146 @@
+{
+  "2ef7355e-7f7f-80c9-abcd-ddb94f90d05c": {
+    "tipo": "Famiglia (motivi familiari - art. 30) SENZA nullaosta (”coesione”)",
+    "slug": "famiglia-motivi-familiari-art-30-senza-nullaosta-coesione",
+    "lastEdited": "2026-01-28T16:05:00.000Z",
+    "lastBuilt": "2026-01-28T17:29:52.959Z"
+  },
+  "2ef7355e-7f7f-80fb-8eb4-c91ec07e594f": {
+    "tipo": "Prosieguo amministravo",
+    "slug": "prosieguo-amministravo",
+    "lastEdited": "2026-01-28T16:05:00.000Z",
+    "lastBuilt": "2026-01-28T17:29:53.689Z"
+  },
+  "2ef7355e-7f7f-8070-9ac0-e62c33b23175": {
+    "tipo": "Sfruttamento lavorativo (18ter)",
+    "slug": "sfruttamento-lavorativo-18ter",
+    "lastEdited": "2026-01-28T16:04:00.000Z",
+    "lastBuilt": "2026-01-28T17:29:58.303Z"
+  },
+  "1ad7355e-7f7f-8095-8a06-e3c6a39fe0fa": {
+    "tipo": "Studio (art. 39)",
+    "slug": "studio-art-39",
+    "lastEdited": "2026-01-28T16:04:00.000Z",
+    "lastBuilt": "2026-01-28T17:29:59.166Z"
+  },
+  "1ad7355e-7f7f-800c-8d97-de55e2dc8b40": {
+    "tipo": "CARTA DI SOGGIORNO PSUELP (art.9)",
+    "slug": "carta-di-soggiorno-psuelp-art-9",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:00.938Z"
+  },
+  "1ad7355e-7f7f-8039-93ca-c3e08f7b8279": {
+    "tipo": "Lavoro subordinato a seguito di conversione da altro permesso",
+    "slug": "lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:04.145Z"
+  },
+  "1ad7355e-7f7f-8082-92d9-e90292bdccde": {
+    "tipo": "Calamità naturale (art. 20 bis)",
+    "slug": "calamita-naturale-art-20-bis",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:07.266Z"
+  },
+  "1ad7355e-7f7f-80c7-b0f2-ff573167513c": {
+    "tipo": "Protezione sociale vittime di tratta (Art. 18) ",
+    "slug": "protezione-sociale-vittime-di-tratta-art-18",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:13.366Z"
+  },
+  "1b27355e-7f7f-8088-98c6-f3c65c6e7724": {
+    "tipo": "Attesa occupazione (art.22)",
+    "slug": "attesa-occupazione-art-22",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:20.733Z"
+  },
+  "1b97355e-7f7f-8062-8e0b-d99beaa946e3": {
+    "tipo": "FAMIT per familiari di cittidini “statici”",
+    "slug": "famit-per-familiari-di-cittidini-statici",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:21.788Z"
+  },
+  "2ef7355e-7f7f-8046-a722-c4f78cc64742": {
+    "tipo": "Persona gravemente malata che si trova già in Italia (",
+    "slug": "persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:25.043Z"
+  },
+  "2ef7355e-7f7f-808d-b33b-f09b75fe881a": {
+    "tipo": "Donna in stato di gravidanza e padre del bambino",
+    "slug": "donna-in-stato-di-gravidanza-e-padre-del-bambino",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:35.048Z"
+  },
+  "2ef7355e-7f7f-80fa-b9e9-f27d740afec5": {
+    "tipo": "Genitore di cittadino italiano",
+    "slug": "genitore-di-cittadino-italiano",
+    "lastEdited": "2026-01-28T16:02:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:39.483Z"
+  },
+  "2ef7355e-7f7f-8057-9aba-ef36d6b01e50": {
+    "tipo": "Richiesta Asilo",
+    "slug": "richiesta-asilo",
+    "lastEdited": "2026-01-28T15:19:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:41.318Z"
+  },
+  "1ad7355e-7f7f-803d-8a1b-f0c4fb12b5dc": {
+    "tipo": "Protezione speciale (art.32 d.lgs 25/2008)",
+    "slug": "protezione-speciale-art-32-d-lgs-25-2008",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:42.346Z"
+  },
+  "1ad7355e-7f7f-8041-aad5-e2dbfe6ed65b": {
+    "tipo": "Asilo (status rifugiato)",
+    "slug": "asilo-status-rifugiato",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:44.493Z"
+  },
+  "1ad7355e-7f7f-80b7-b9a4-d0873f68af82": {
+    "tipo": "Familiari di cittadini UE (Carta UE)",
+    "slug": "familiari-di-cittadini-ue-carta-ue",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:45.310Z"
+  },
+  "1ad7355e-7f7f-80d1-9488-ef9e5c19dcab": {
+    "tipo": "Protezione sussidiaria",
+    "slug": "protezione-sussidiaria",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:46.813Z"
+  },
+  "1ad7355e-7f7f-80d2-adb1-d99b52c9b836": {
+    "tipo": "Assistenza minore (Art. 31)",
+    "slug": "assistenza-minore-art-31",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:47.811Z"
+  },
+  "1ad7355e-7f7f-80e0-a182-e179b81a8f0f": {
+    "tipo": "Minore età",
+    "slug": "minore-eta",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:51.782Z"
+  },
+  "1b97355e-7f7f-8030-bca0-e191b477d1a4": {
+    "tipo": "Famiglia - motivi famigliari (art. 19)",
+    "slug": "famiglia-motivi-famigliari-art-19",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:30:59.124Z"
+  },
+  "2ef7355e-7f7f-8098-8408-d8ab6aff341e": {
+    "tipo": "Familiari di italiani “dinamici” (Carta UE)",
+    "slug": "familiari-di-italiani-dinamici-carta-ue",
+    "lastEdited": "2026-01-28T15:14:00.000Z",
+    "lastBuilt": "2026-01-28T17:31:03.987Z"
+  },
+  "1ad7355e-7f7f-80fe-a6b1-e15522f7cf5a": {
+    "tipo": "Famiglia (motivi famigliari - art. 30) dopo ingresso con nullaosta",
+    "slug": "famiglia-motivi-famigliari-art-30-dopo-ingresso-con-nullaosta",
+    "lastEdited": "2026-01-26T11:27:00.000Z",
+    "lastBuilt": "2026-01-28T17:31:05.026Z"
+  },
+  "2ef7355e-7f7f-809f-bb45-f5d2ea24698b": {
+    "tipo": "Affidamento a familiari entro il quarto grado",
+    "slug": "affidamento-a-familiari-entro-il-quarto-grado",
+    "lastEdited": "2026-01-23T09:22:00.000Z",
+    "lastBuilt": "2026-01-28T17:31:05.994Z"
+  }
+}

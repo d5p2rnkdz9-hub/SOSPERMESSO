@@ -10,6 +10,7 @@ const { escapeHtml } = require('./templates/helpers.js');
 
 const OUTPUT_DIR = path.join(__dirname, '../src/pages');
 const TODO_PATH = path.join(__dirname, '../.planning/TODO-permits.md');
+const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
 
 /**
  * Delay helper for rate limiting
@@ -17,6 +18,43 @@ const TODO_PATH = path.join(__dirname, '../.planning/TODO-permits.md');
  */
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/**
+ * Load build manifest from disk
+ * @returns {Promise<Object>} Manifest data or empty object
+ */
+async function loadManifest() {
+  try {
+    const data = await fs.readFile(MANIFEST_PATH, 'utf-8');
+    return JSON.parse(data);
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * Save build manifest to disk
+ * @param {Object} manifest - Manifest data
+ */
+async function saveManifest(manifest) {
+  await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2), 'utf-8');
+}
+
+/**
+ * Check if permit needs rebuild based on Notion timestamp
+ * @param {Object} permit - Permit with last_edited_time
+ * @param {Object} manifest - Current manifest
+ * @returns {boolean} True if needs rebuild
+ */
+function needsRebuild(permit, manifest) {
+  const entry = manifest[permit.id];
+  if (!entry) return true; // Never built
+
+  const lastBuilt = new Date(entry.lastEdited);
+  const lastEdited = new Date(permit.last_edited_time || 0);
+
+  return lastEdited > lastBuilt;
 }
 
 /**
@@ -339,6 +377,12 @@ async function build() {
   console.log('📄 SOS Permesso - Permit Page Builder');
   console.log('=====================================\n');
 
+  // Check for --force flag
+  const forceRebuild = process.argv.includes('--force');
+  if (forceRebuild) {
+    console.log('🔄 Force rebuild mode: regenerating all pages\n');
+  }
+
   // Test connection
   const connected = await testConnection();
   if (!connected) {
@@ -348,8 +392,12 @@ async function build() {
     process.exit(0);
   }
 
+  // Load manifest
+  const manifest = await loadManifest();
+  console.log(`📋 Loaded manifest (${Object.keys(manifest).length} entries)\n`);
+
   // Fetch permit data
-  console.log('\n📥 Fetching permit data from Notion...');
+  console.log('📥 Fetching permit data from Notion...');
   const permits = await fetchPermitData();
   console.log(`   Found ${permits.length} permit types\n`);
 
@@ -362,6 +410,7 @@ async function build() {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
   let generatedCount = 0;
+  let skippedCount = 0;
   const generated = [];
   const emptyPermits = [];
   const errors = [];
@@ -375,6 +424,13 @@ async function build() {
         id: permit.id,
         reason: 'No slug or tipo defined'
       });
+      continue;
+    }
+
+    // Check if rebuild needed (skip if unchanged and not forced)
+    if (!forceRebuild && !needsRebuild(permit, manifest)) {
+      console.log(`   ⏭️  ${permit.tipo}: skipped (unchanged)`);
+      skippedCount++;
       continue;
     }
 
@@ -428,11 +484,22 @@ async function build() {
       generated.push(filename);
       generatedCount++;
 
+      // Update manifest
+      manifest[permit.id] = {
+        tipo: permit.tipo,
+        slug: permit.slug,
+        lastEdited: permit.last_edited_time || new Date().toISOString(),
+        lastBuilt: new Date().toISOString()
+      };
+
     } catch (err) {
       console.error(`   ✗ Error processing ${permit.tipo}: ${err.message}`);
       errors.push({ tipo: permit.tipo, error: err.message });
     }
   }
+
+  // Save manifest
+  await saveManifest(manifest);
 
   // Generate TODO-permits.md
   await writeTodoFile(emptyPermits, errors);
@@ -440,6 +507,9 @@ async function build() {
   // Summary
   console.log('\n=====================================');
   console.log(`✅ Generated ${generatedCount} permit pages`);
+  if (skippedCount > 0) {
+    console.log(`⏭️  Skipped ${skippedCount} unchanged pages`);
+  }
 
   if (emptyPermits.length > 0) {
     console.log(`\n⚠️  ${emptyPermits.length} permits need content:`);
