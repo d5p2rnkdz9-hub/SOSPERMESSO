@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-28
-**Status:** v1.6 Document Deduplication — COMPLETE
+**Status:** v1.7 Permit Page Redesign + Homepage Cleanup — IN PROGRESS
 
 ## Project Reference
 
@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Planning next milestone (v1.7)
+**Current focus:** Phase 16 — Permit Page Cleanup
 
 ## Current Position
 
-**Milestone:** v1.6 Document Deduplication — SHIPPED
-**Phase:** 15 complete
-**Status:** Ready for next milestone
-**Last activity:** 2026-01-28 — v1.6 milestone archived
+**Milestone:** v1.7 Permit Page Redesign + Homepage Cleanup
+**Phase:** 16 (not started)
+**Status:** Planning complete, ready for execution
+**Last activity:** 2026-01-28 — v1.7 roadmap created
 
 ```
 Milestones:
@@ -27,10 +27,10 @@ v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
-v1.7 Permit Redesign       [Backlog]            ----------
+v1.7 Permit Redesign       [Active]             ----------
 ```
 
-Progress: [##########] 100% (2/2 plans)
+Progress: [----------] 0% (0/3 plans)
 
 ## Performance Metrics
 
@@ -127,9 +127,9 @@ None.
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, BACKLOG.md
-2. **Where we are:** v1.6 shipped, v1.7 in backlog
-3. **What to do next:** Run `/gsd:new-milestone` to start v1.7 Permit Page Redesign + Homepage Cleanup
+1. **Context to load:** This STATE.md, ROADMAP.md
+2. **Where we are:** v1.7 started, Phase 16 ready for planning
+3. **What to do next:** Run `/gsd:plan-phase 16` to plan Permit Page Cleanup
 
 ---
 
