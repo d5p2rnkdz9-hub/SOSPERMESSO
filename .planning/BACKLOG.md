@@ -14,8 +14,21 @@
 | DEDUP-01 | Remove "Che documenti porto in Questura" sections from permit pages | 7 permit detail pages affected |
 | DEDUP-02 | Link permit pages directly to corresponding documenti-questura pages | Single source of truth |
 
-### v1.7 Desktop Header Alignment
+### v1.7 Permit Page Redesign + Homepage Cleanup
 **Priority:** After v1.6
+**Goal:** Redesign permit page template, move costs to document pages, clean up homepage sections.
+
+| ID | Requirement | Notes |
+|----|-------------|-------|
+| PERMIT-01 | Redesign permit page template | Cleaner layout for all 21 permit pages |
+| PERMIT-02 | Move "Costi" section from permit pages to documenti-questura subpages | Costs belong with document checklists |
+| HOME-01 | Remove subtitles under each section on homepage | Cleaner look |
+| HOME-02 | Rename "Aiuto legale" → "Aiuto legale gratis" | Clearer messaging |
+| HOME-03 | Change badge header to "Trova assistenza legale gratuita vicino a te" | More descriptive |
+| HOME-04 | Remove red button from Aiuto legale section | UI cleanup |
+
+### v1.8 Desktop Header Alignment
+**Priority:** After v1.7
 **Goal:** Fix desktop header alignment - language switcher appears slightly below menu items.
 
 | ID | Requirement | Notes |
