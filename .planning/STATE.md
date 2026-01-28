@@ -9,15 +9,14 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Milestone v1.6 — Remove duplicate docs, add CTA buttons
+**Current focus:** Planning next milestone (v1.7)
 
 ## Current Position
 
-**Milestone:** v1.6 Document Deduplication
-**Phase:** 15 (Document Deduplication)
-**Plan:** 2 of 2 (COMPLETE)
-**Status:** Phase complete
-**Last activity:** 2026-01-28 — Completed 15-02-PLAN.md (CTA propagation)
+**Milestone:** v1.6 Document Deduplication — SHIPPED
+**Phase:** 15 complete
+**Status:** Ready for next milestone
+**Last activity:** 2026-01-28 — v1.6 milestone archived
 
 ```
 Milestones:
@@ -28,7 +27,7 @@ v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
-v1.7 Desktop Header Align  [Backlog]            ----------
+v1.7 Permit Redesign       [Backlog]            ----------
 ```
 
 Progress: [##########] 100% (2/2 plans)
@@ -123,14 +122,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Completed 15-02-PLAN.md (v1.6 milestone complete)
+**Stopped at:** v1.6 milestone archived
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, BACKLOG.md
-2. **Where we are:** v1.6 shipped, ready for next milestone
-3. **What to do next:** Review BACKLOG.md for next milestone to execute
+2. **Where we are:** v1.6 shipped, v1.7 in backlog
+3. **What to do next:** Run `/gsd:new-milestone` to start v1.7 Permit Page Redesign + Homepage Cleanup
 
 ---
 

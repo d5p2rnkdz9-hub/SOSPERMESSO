@@ -1,5 +1,33 @@
 # Project Milestones: SOS Permesso
 
+## v1.6 Document Deduplication (Shipped: 2026-01-28)
+
+**Delivered:** CTA buttons on all 21 permit pages linking to dedicated document pages, removing inline document duplication.
+
+**Phases completed:** 15 (2 plans total)
+
+**Key accomplishments:**
+
+- Added two CTA buttons to all 21 permit pages (primo rilascio + rinnovo)
+- Removed ~150 lines of inline document sections across all permit pages
+- Created Python automation for bulk HTML processing (reusable pattern)
+- Established single source of truth for document requirements
+- Mobile-responsive button layout with primary/secondary visual hierarchy
+
+**Stats:**
+
+- 34 files changed
+- +2,486 / -635 lines of code
+- 1 phase, 2 plans
+- 12 commits from milestone start to ship
+- 1 day (2026-01-28)
+
+**Git range:** `6408407` → `f47b6c2`
+
+**What's next:** v1.7 Permit Page Redesign + Homepage Cleanup
+
+---
+
 ## v1.5 Footer + Collabora Navigation (Shipped: 2026-01-28)
 
 **Delivered:** Yellow footer redesign with centered layout, and Collabora dropdown replacing "Il progetto" navigation item.
