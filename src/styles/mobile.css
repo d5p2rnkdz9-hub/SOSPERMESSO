@@ -383,19 +383,8 @@
    =============================================== */
 
 @media (max-width: 768px) {
-  .footer-links {
-    flex-direction: column;
-    gap: var(--spacing-md);
-  }
-
-  .footer-link {
-    display: block;
-    padding: var(--spacing-sm);
-    font-size: var(--font-size-base);
-  }
-
-  .footer-copyright {
-    margin-top: var(--spacing-md);
+  .footer {
+    padding: 1rem 0;
   }
 }
 
