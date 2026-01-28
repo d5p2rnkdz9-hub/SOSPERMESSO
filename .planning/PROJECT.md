@@ -10,7 +10,16 @@ A multilingual information website helping immigrants in Italy understand reside
 
 **Target features:**
 - Build script: Notion → `permesso-*.html` generation (like documenti-questura)
-- Standard Q&A template with sections: Cos'è, Durata, Chi può chiedere, Come si chiede, Che diritti mi dà, Si può lavorare?, Conversione, Costi
+- Standard Q&A template:
+  1. Cos'è questo permesso?
+  2. Chi può chiederlo?
+  3. Come/dove si chiede?
+  4. Costi
+  5. Che diritti mi dà? (incl. lavorare)
+  6. Quanto dura?
+  7. Quando scade posso rinnovarlo?
+  8. Posso convertirlo in un altro permesso?
+  9. Additional Q&A as needed
 - 29+ permits from Notion (separate pages for variants)
 - Empty permits tracked in TODO list
 - Move "Costi" to document pages

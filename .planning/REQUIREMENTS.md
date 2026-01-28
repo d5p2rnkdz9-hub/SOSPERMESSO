@@ -14,7 +14,16 @@
 
 ### Template Standardization
 
-- [ ] **TMPL-01**: Standard template with sections: Cos'è, Durata, Chi può chiedere, Come si chiede, Che diritti mi dà, Si può lavorare?, Conversione, Costi (last)
+- [ ] **TMPL-01**: Standard template with sections:
+  1. Cos'è questo permesso?
+  2. Chi può chiederlo?
+  3. Come/dove si chiede?
+  4. Costi
+  5. Che diritti mi dà? (includes "posso lavorare")
+  6. Quanto dura?
+  7. Quando scade posso rinnovarlo?
+  8. Posso convertirlo in un altro permesso?
+  9. Additional Q&A as needed
 - [ ] **TMPL-02**: Support additional Q&A subsections for permit-specific content
 - [ ] **TMPL-03**: Parse Notion Q&A format (heading_3, bold paragraphs, inline bold)
 

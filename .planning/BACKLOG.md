@@ -14,7 +14,7 @@
 | BUILD-01 | Build script fetches permit content from Notion | Like documenti-questura system |
 | BUILD-02 | Generate `permesso-*.html` from Notion | Replaces manual HTML |
 | BUILD-03 | Track empty permits in TODO list | `.planning/TODO-permits.md` |
-| TMPL-01 | Standard sections: Cos'è, Durata, Chi può chiedere, Come si chiede, Che diritti mi dà, Si può lavorare?, Conversione, Costi | Costi last |
+| TMPL-01 | Standard sections: 1. Cos'è questo permesso? 2. Chi può chiederlo? 3. Come/dove si chiede? 4. Costi 5. Che diritti mi dà? (incl. lavorare) 6. Quanto dura? 7. Posso rinnovarlo? 8. Posso convertirlo? 9. Additional Q&A | 8 fixed + extras |
 | TMPL-02 | Support additional Q&A subsections | Permit-specific content |
 | TMPL-03 | Parse Notion Q&A format | heading_3, bold paragraphs, inline bold |
 | MIGR-01 | Separate pages for permit variants | e.g., 3 types of Lavoro subordinato |
