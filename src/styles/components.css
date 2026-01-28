@@ -42,10 +42,10 @@
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
-  color: #3E3300;
+  background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
+  color: #FFD700;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:active {
