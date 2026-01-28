@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-01-27
-**Status:** v1.5 Footer + Collabora Navigation — IN PROGRESS
+**Last Updated:** 2026-01-28
+**Status:** v1.5 Footer + Collabora Navigation — COMPLETE
 
 ## Project Reference
 
@@ -9,15 +9,15 @@ See: .planning/PROJECT.md (updated 2026-01-27)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Phase 14 - Propagation
+**Current focus:** Milestone v1.5 complete
 
 ## Current Position
 
-**Milestone:** v1.5 Footer + Collabora Navigation
-**Phase:** 13 of 14 (Collabora Dropdown) - COMPLETE
+**Milestone:** v1.5 Footer + Collabora Navigation - COMPLETE
+**Phase:** 14 of 14 (Propagation) - COMPLETE
 **Plan:** 1 of 1 in current phase
-**Status:** Phase 13 complete, ready for Phase 14
-**Last activity:** 2026-01-27 — Completed 13-01-PLAN.md (Collabora dropdown)
+**Status:** All phases complete
+**Last activity:** 2026-01-28 — Completed 14-01-PLAN.md (Footer propagation to all pages)
 
 ```
 Milestones:
@@ -26,22 +26,22 @@ v1.1 Documenti Questura    [Shipped 2026-01-25] ##########
 v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
-v1.5 Footer + Collabora    [Active]             #####-----
+v1.5 Footer + Collabora    [SHIPPED 2026-01-28] ##########
     Phase 12: Footer       [Complete]           ##
     Phase 13: Collabora    [Complete]           ##
-    Phase 14: Propagation  [Not started]        -
+    Phase 14: Propagation  [Complete]           ##
 v1.6 Document Dedup        [Backlog]            ----------
 v1.7 Desktop Header Align  [Backlog]            ----------
 ```
 
-Progress: [#####░░░░░] 50% (2/4 plans)
+Progress: [##########] 100% (3/3 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2 (this milestone)
+- Total plans completed: 3 (this milestone)
 - Average duration: 3min
-- Total execution time: 6min
+- Total execution time: 8min
 
 **By Phase:**
 
@@ -49,10 +49,15 @@ Progress: [#####░░░░░] 50% (2/4 plans)
 |-------|-------|-------|----------|
 | 12-footer-redesign | 1 | 2min | 2min |
 | 13-collabora-dropdown | 1 | 4min | 4min |
+| 14-propagation | 1 | 2min | 2min |
 
 *Updated after each plan completion*
 
 ## Shipped Milestones
+
+**v1.5 Footer + Collabora Navigation (2026-01-28):**
+- 3 phases, 3 plans
+- Key: Yellow footer with Il Progetto link (98 pages), Collabora dropdown (98 pages)
 
 **v1.4 Error + Dropdowns (2026-01-27):**
 - 1 phase, 3 plans
@@ -94,6 +99,8 @@ Recent decisions affecting current work:
 - Collabora dropdown follows existing Database/Guide/Test pattern (13-01)
 - href=#collabora makes trigger non-navigating (13-01)
 - External Typeform links use target=_blank (13-01)
+- Python regex for automated footer replacement ensures consistency (14-01)
+- Relative path strategy: all Il Progetto links use same-directory chi-siamo.html (14-01)
 
 ### Pending Todos
 
@@ -105,15 +112,15 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-**Last session:** 2026-01-27
-**Stopped at:** Completed 13-01-PLAN.md (Collabora dropdown)
+**Last session:** 2026-01-28
+**Stopped at:** Completed 14-01-PLAN.md (Footer propagation to all pages)
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, ROADMAP.md
-2. **Where we are:** Phase 13 complete, ready for Phase 14
-3. **What to do next:** `/gsd:plan-phase 14` or `/gsd:execute-phase 14` to propagate Collabora dropdown to all pages
+2. **Where we are:** v1.5 milestone complete (Footer + Collabora Navigation)
+3. **What to do next:** Review ROADMAP.md for next milestone (v1.6 Document Deduplication or v1.7 Desktop Header Alignment)
 
 ---
 
