@@ -101,16 +101,18 @@ Recent decisions affecting current work:
 - External Typeform links use target=_blank (13-01)
 - Python regex for automated footer replacement ensures consistency (14-01)
 - Relative path strategy: all Il Progetto links use same-directory chi-siamo.html (14-01)
-- Added Posso convertire as 4th Collabora dropdown item across all pages (14-02)
+- Posso CONVERTIRE added to Test dropdown (not Collabora) across all pages (14-02)
+- Collabora dropdown has 3 items: Segnala un errore, Dai una mano, Il progetto (14-02)
 - Single nav-menu structure for both desktop and mobile (14-02)
+- Footer simplified to block+text-align layout for proper centering (14-fix)
 
 ### Pending Todos
 
-- **Footer vertical alignment bug** — Content appears at bottom of yellow footer despite CSS showing correct centering. Needs deep investigation with Opus 4.5. Add to Phase 13 or create separate fix phase.
+None — all v1.5 issues resolved.
 
 ### Blockers/Concerns
 
-- Footer alignment issue is visual bug but not blocking progress.
+None.
 
 ## Session Continuity
 
