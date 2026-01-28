@@ -14,9 +14,10 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 **Milestone:** v1.7 Permit Page Redesign + Homepage Cleanup
-**Phase:** 16 (not started)
-**Status:** Planning complete, ready for execution
-**Last activity:** 2026-01-28 — v1.7 roadmap created
+**Phase:** 16 (in progress)
+**Plan:** 1 of 3 complete
+**Status:** Plan 01 complete, Plan 02 next
+**Last activity:** 2026-01-28 — Completed 16-01-PLAN.md
 
 ```
 Milestones:
@@ -27,23 +28,24 @@ v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
-v1.7 Permit Redesign       [Active]             ----------
+v1.7 Permit Redesign       [Active]             ###-------
 ```
 
-Progress: [----------] 0% (0/3 plans)
+Progress: [###-------] 33% (1/3 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2 (this milestone)
-- Average duration: 2.3min
-- Total execution time: 4.6min
+- Total plans completed: 3 (this milestone)
+- Average duration: 2.2min
+- Total execution time: 6.6min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 15-document-deduplication | 2 | 4.6min | 2.3min |
+| 16-permit-build-system | 1 | 2min | 2min |
 
 *Updated after each plan completion*
 
@@ -87,6 +89,7 @@ Progress: [----------] 0% (0/3 plans)
 - **Layout:** Use `.category-section` and `.permit-list` structure
 - **Color palette:** White header (#FFFFFF), teal menu text (#1A6B5F), warm gradients
 - **CTA buttons (IMPLEMENTED):** Section with primary + secondary buttons linking to dedicated document pages, placed after page header
+- **Permit template (NEW):** Use scripts/templates/permesso.js for generating permit pages
 
 ## Accumulated Context
 
@@ -110,6 +113,9 @@ Recent decisions affecting current work:
 - Python automation for bulk HTML processing ensures consistency (15-02)
 - Nested document subsections removed to avoid partial info contradicting CTA buttons (15-02)
 - Visa documents (embassy) vs permit documents (Questura) are different, kept distinct (15-02)
+- Border colors based on section keywords (cos'e=blue, requisiti=yellow, lavoro=red, conversione=teal) (16-01)
+- Self-test block writes to test-permesso-output.html for manual verification (16-01)
+- Template follows permesso-studio.html patterns (not primo.js simplified header) (16-01)
 
 ### Pending Todos
 
@@ -122,14 +128,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** v1.6 milestone archived
+**Stopped at:** Completed 16-01-PLAN.md
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, ROADMAP.md
-2. **Where we are:** v1.7 started, Phase 16 ready for planning
-3. **What to do next:** Run `/gsd:plan-phase 16` to plan Permit Page Cleanup
+2. **Where we are:** v1.7 Phase 16 Plan 01 complete
+3. **What to do next:** Run `/gsd:execute-phase 16` to continue with Plan 02 (build script)
 
 ---
 
