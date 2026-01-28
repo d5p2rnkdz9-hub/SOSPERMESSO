@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-28
-**Status:** v1.6 Document Deduplication — STARTING
+**Status:** v1.6 Document Deduplication — IN PROGRESS
 
 ## Project Reference
 
@@ -15,9 +15,9 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Milestone:** v1.6 Document Deduplication
 **Phase:** 15 (Document Deduplication)
-**Plan:** 0 of 2
-**Status:** Ready to plan
-**Last activity:** 2026-01-28 — Milestone v1.6 initialized
+**Plan:** 1 of 2
+**Status:** In progress
+**Last activity:** 2026-01-28 — Completed 15-01-PLAN.md (CTA pattern template)
 
 ```
 Milestones:
@@ -27,27 +27,25 @@ v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
-v1.6 Document Dedup        [ACTIVE]             ----------
-    Phase 15: Deduplication [Ready]             --
+v1.6 Document Dedup        [ACTIVE]             █████-----
+    Phase 15: Deduplication [In Progress]       █-
 v1.7 Desktop Header Align  [Backlog]            ----------
 ```
 
-Progress: [----------] 0% (0/2 plans)
+Progress: [█████-----] 50% (1/2 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4 (this milestone)
-- Average duration: 3min
-- Total execution time: 12min
+- Total plans completed: 1 (this milestone)
+- Average duration: 1min
+- Total execution time: 1min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 12-footer-redesign | 1 | 2min | 2min |
-| 13-collabora-dropdown | 1 | 4min | 4min |
-| 14-propagation | 2 | 6min | 3min |
+| 15-document-deduplication | 1 | 1min | 1min |
 
 *Updated after each plan completion*
 
@@ -86,6 +84,7 @@ Progress: [----------] 0% (0/2 plans)
 - **Typeform URLs:** form.typeform.com/to/[form_id] pattern
 - **Layout:** Use `.category-section` and `.permit-list` structure
 - **Color palette:** White header (#FFFFFF), teal menu text (#1A6B5F), warm gradients
+- **CTA buttons (IMPLEMENTED):** Section with primary + secondary buttons linking to dedicated document pages, placed after page header
 
 ## Accumulated Context
 
@@ -103,6 +102,9 @@ Recent decisions affecting current work:
 - Collabora dropdown has 3 items: Segnala un errore, Dai una mano, Il progetto (14-02)
 - Single nav-menu structure for both desktop and mobile (14-02)
 - Footer simplified to block+text-align layout for proper centering (14-fix)
+- CTA buttons placed after page header (before content) for high visibility (15-01)
+- Primary button for primo rilascio, secondary for rinnovo (15-01)
+- Redirect stubs (documenti-X-primo.html) allow clean URLs while maintaining full content pages (15-01)
 
 ### Pending Todos
 
@@ -115,14 +117,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Completed 14-02-PLAN.md (Collabora dropdown propagation to all pages)
+**Stopped at:** Completed 15-01-PLAN.md (CTA pattern template in permesso-studio.html)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md
-2. **Where we are:** v1.5 milestone COMPLETE (Footer + Collabora Navigation)
-3. **What to do next:** Review ROADMAP.md for next milestone (v1.6 Document Deduplication or v1.7 Desktop Header Alignment)
+1. **Context to load:** This STATE.md, 15-01-SUMMARY.md (contains CTA pattern for propagation)
+2. **Where we are:** v1.6 milestone IN PROGRESS (1/2 plans complete)
+3. **What to do next:** Execute 15-02-PLAN.md (propagate CTA pattern to remaining 20 permit pages)
 
 ---
 
