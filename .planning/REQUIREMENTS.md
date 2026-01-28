@@ -19,6 +19,7 @@ Requirements for Footer + Collabora Navigation milestone.
 - [x] **NAV-01**: Replace "Il progetto" nav item with "Collabora" dropdown ✓
 - [x] **NAV-02**: "Collabora" is dropdown trigger only (not clickable link) ✓
 - [x] **NAV-03**: Dropdown contains "Segnala un errore" → https://form.typeform.com/to/FsqvzdXI ✓
+- [x] **NAV-03b**: Dropdown contains "Posso convertire" → https://form.typeform.com/to/oc9jhdkJ ✓
 - [x] **NAV-04**: Dropdown contains "Dai una mano" → https://form.typeform.com/to/USx16QN3 ✓
 - [x] **NAV-05**: Dropdown contains "Il progetto" → chi-siamo.html ✓
 
@@ -28,8 +29,8 @@ Requirements for Footer + Collabora Navigation milestone.
 
 ### Propagation
 
-- [ ] **PROP-01**: All pages have consistent header with Collabora dropdown
-- [ ] **PROP-02**: All pages have consistent yellow footer
+- [x] **PROP-01**: All pages have consistent header with Collabora dropdown ✓
+- [x] **PROP-02**: All pages have consistent yellow footer ✓
 
 ## Future Requirements
 
@@ -43,6 +44,20 @@ Deferred to later milestones.
 ### Header Alignment (v1.7)
 
 - **ALIGN-01**: Fix desktop header alignment (language switcher baseline)
+
+### Navigation & Anchors (TBD)
+
+- **NAV-ANCHOR-01**: Fix page anchor functioning - links currently don't scroll to precise section on page
+- **NAV-LANG-01**: Investigate feasibility of moving language toggle into main navigation menu
+
+### Dictionary Improvements (TBD)
+
+- **DICT-01**: Break dictionary entries into individual blocks to enable direct hyperlinking to specific terms
+
+### Visual Consistency (TBD)
+
+- **VISUAL-01**: Review "documenti questura" text display - ensure proper capitalization and spacing
+- **VISUAL-02**: Ensure consistent spacing and indentation of bullet points across all pages
 
 ## Out of Scope
 
@@ -65,15 +80,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | NAV-01 | Phase 13 | Complete |
 | NAV-02 | Phase 13 | Complete |
 | NAV-03 | Phase 13 | Complete |
+| NAV-03b | Phase 14 | Complete |
 | NAV-04 | Phase 13 | Complete |
 | NAV-05 | Phase 13 | Complete |
 | CLEAN-01 | Phase 13 | Complete |
-| PROP-01 | Phase 14 | Pending |
-| PROP-02 | Phase 14 | Pending |
+| PROP-01 | Phase 14 | Complete |
+| PROP-02 | Phase 14 | Complete |
 
 **Coverage:**
-- v1.5 requirements: 12 total
-- Mapped to phases: 12
+- v1.5 requirements: 13 total
+- Mapped to phases: 13
 - Unmapped: 0
 
 ---

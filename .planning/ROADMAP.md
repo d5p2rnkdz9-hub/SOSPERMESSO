@@ -10,7 +10,7 @@ This milestone redesigns the footer with a yellow background and introduces a "C
 - v1.2 Visual Refresh (Phases 4-9) - Shipped 2026-01-26
 - v1.3 Header/Nav Fix (Phase 10) - Shipped 2026-01-26
 - v1.4 Error + Dropdowns (Phases 11) - Shipped 2026-01-27
-- **v1.5 Footer + Collabora (Phases 12-14)** - In Progress
+- **v1.5 Footer + Collabora (Phases 12-14)** - Shipped 2026-01-28
 
 ## Phases
 
@@ -20,7 +20,7 @@ This milestone redesigns the footer with a yellow background and introduces a "C
 
 - [x] **Phase 12: Footer Redesign** - Yellow footer with centered layout ✓
 - [x] **Phase 13: Collabora Dropdown** - Replace "Il progetto" with Collabora dropdown ✓
-- [ ] **Phase 14: Propagation** - Apply changes to all pages
+- [x] **Phase 14: Propagation** - Apply changes to all pages ✓
 
 ## Phase Details
 
@@ -56,19 +56,20 @@ Plans:
 - [x] 13-01-PLAN.md — Collabora dropdown in index.html + URL cleanup ✓
 
 ### Phase 14: Propagation
-**Goal**: All pages have consistent header (Collabora dropdown) and footer (yellow centered)
+**Goal**: All pages have consistent header (Collabora dropdown with 4 items) and footer (yellow centered)
 **Depends on**: Phase 12, Phase 13 (both templates ready)
-**Requirements**: PROP-01, PROP-02
+**Requirements**: PROP-01, PROP-02, NAV-03b
 **Success Criteria** (what must be TRUE):
   1. Every page in src/pages/ displays the yellow footer with "Il Progetto" link
-  2. Every page in src/pages/ displays the Collabora dropdown in header
-  3. Navigation works correctly from any page (relative paths handled)
-  4. Mobile navigation displays Collabora items in flat list format (matching existing pattern)
+  2. Every page in src/pages/ displays the Collabora dropdown with 4 items (Segnala un errore, Posso convertire, Dai una mano, Il progetto)
+  3. "Posso convertire" link opens https://form.typeform.com/to/oc9jhdkJ
+  4. Navigation works correctly from any page (relative paths handled)
+  5. Mobile navigation displays Collabora items in flat list format (matching existing pattern)
 **Plans**: 2 plans
 
 Plans:
-- [ ] 14-01-PLAN.md — Footer propagation to all 97 pages
-- [ ] 14-02-PLAN.md — Header propagation to all 97 pages (Collabora dropdown)
+- [x] 14-01-PLAN.md — Footer propagation to all 97 pages ✓
+- [x] 14-02-PLAN.md — Header propagation to all 97 pages (Collabora dropdown) ✓
 
 ## Progress
 
@@ -78,7 +79,7 @@ Plans:
 |-------|-----------|----------------|--------|-----------|
 | 12. Footer Redesign | v1.5 | 1/1 | Complete | 2026-01-27 |
 | 13. Collabora Dropdown | v1.5 | 1/1 | Complete | 2026-01-27 |
-| 14. Propagation | v1.5 | 0/2 | Not started | - |
+| 14. Propagation | v1.5 | 2/2 | Complete | 2026-01-28 |
 
 ---
 *Roadmap created: 2026-01-27*
