@@ -35,14 +35,15 @@
 
 /* Button Variants */
 .btn-primary {
-  background: linear-gradient(135deg, var(--taxi-yellow-bright) 0%, var(--taxi-yellow) 100%);
-  color: var(--black);
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  background: linear-gradient(135deg, #FFF9C4 0%, #FFF176 100%);
+  color: #5D4E00;
+  border: 1.5px solid #FFD700;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
 .btn-primary:hover {
   background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
-  color: var(--black);
+  color: #3E3300;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
 }
