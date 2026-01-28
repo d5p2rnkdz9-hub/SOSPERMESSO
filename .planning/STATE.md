@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-28
-**Status:** v1.7 Database Content Reviewed — IN PROGRESS
+**Status:** v1.7 Permit Build System — IN PROGRESS
 
 ## Project Reference
 
@@ -15,9 +15,9 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Milestone:** v1.7 Permit Page Redesign + Homepage Cleanup
 **Phase:** 16 (in progress)
-**Plan:** 1 of 3 complete
-**Status:** Plan 01 complete, Plan 02 next
-**Last activity:** 2026-01-28 — Completed 16-01-PLAN.md
+**Plan:** 2 of 3 complete
+**Status:** Plan 02 complete, Plan 03 next
+**Last activity:** 2026-01-28 — Completed 16-02-PLAN.md
 
 ```
 Milestones:
@@ -28,24 +28,26 @@ v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
-v1.7 Permit Redesign       [Active]             ###-------
+v1.7 Permit Redesign       [Active]             ######----
 ```
 
-Progress: [###-------] 33% (1/3 plans)
+Progress: [######----] 67% (2/3 plans)
+
+16-02 created scripts/build-permits.js (517 lines) which generates permesso-*.html pages from Notion Q&A content. 24 permit pages generated, 20 permits tracked in TODO-permits.md for needing content.
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3 (this milestone)
-- Average duration: 2.2min
-- Total execution time: 6.6min
+- Total plans completed: 4 (this milestone)
+- Average duration: 2.6min
+- Total execution time: 10.2min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 15-document-deduplication | 2 | 4.6min | 2.3min |
-| 16-permit-build-system | 1 | 2min | 2min |
+| 16-permit-build-system | 2 | 5.6min | 2.8min |
 
 *Updated after each plan completion*
 
@@ -116,6 +118,9 @@ Recent decisions affecting current work:
 - Border colors based on section keywords (cos'e=blue, requisiti=yellow, lavoro=red, conversione=teal) (16-01)
 - Self-test block writes to test-permesso-output.html for manual verification (16-01)
 - Template follows permesso-studio.html patterns (not primo.js simplified header) (16-01)
+- Three-pattern Q&A detection: heading_3, bold paragraph, inline bold (16-02)
+- Keyword-based emoji selection with fallback (16-02)
+- 350ms rate limiting between Notion API calls (16-02)
 
 ### Pending Todos
 
@@ -128,14 +133,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Completed 16-01-PLAN.md
+**Stopped at:** Completed 16-02-PLAN.md
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, ROADMAP.md
-2. **Where we are:** v1.7 Phase 16 Plan 01 complete
-3. **What to do next:** Run `/gsd:execute-phase 16` to continue with Plan 02 (build script)
+2. **Where we are:** v1.7 Phase 16 Plan 02 complete
+3. **What to do next:** Run `/gsd:execute-phase 16` to continue with Plan 03 (database.html update)
 
 ---
 
