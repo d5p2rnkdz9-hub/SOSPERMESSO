@@ -225,8 +225,14 @@ ul ul, ol ol, ul ol, ol ul {
   padding-left: var(--spacing-md);
 }
 
-/* List inside cards */
-.card ul, .card ol {
+/* List inside cards - Triangle bullets */
+.card ul {
+  list-style: none;
+  margin-top: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+}
+
+.card ol {
   margin-top: var(--spacing-sm);
   padding-left: var(--spacing-lg);
 }
@@ -234,6 +240,27 @@ ul ul, ol ol, ul ol, ol ul {
 .card li {
   margin-bottom: var(--spacing-xs);
   position: relative;
+  padding-left: 0;
+}
+
+.card ul li::before {
+  content: '\25B8';
+  position: absolute;
+  left: -1.25rem;
+  color: var(--taxi-yellow-dark);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Nested lists in cards */
+.card ul ul {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
+.card ul ul li::before {
+  content: '\25B9';
+  font-size: 0.75rem;
 }
 
 /* ===============================================
