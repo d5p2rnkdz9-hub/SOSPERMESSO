@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-28
-**Status:** v1.6 Document Deduplication — IN PROGRESS
+**Status:** v1.6 Document Deduplication — COMPLETE
 
 ## Project Reference
 
@@ -15,9 +15,9 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Milestone:** v1.6 Document Deduplication
 **Phase:** 15 (Document Deduplication)
-**Plan:** 1 of 2
-**Status:** In progress
-**Last activity:** 2026-01-28 — Completed 15-01-PLAN.md (CTA pattern template)
+**Plan:** 2 of 2 (COMPLETE)
+**Status:** Phase complete
+**Last activity:** 2026-01-28 — Completed 15-02-PLAN.md (CTA propagation)
 
 ```
 Milestones:
@@ -27,29 +27,32 @@ v1.2 Visual Refresh        [Shipped 2026-01-26] ##########
 v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
-v1.6 Document Dedup        [ACTIVE]             █████-----
-    Phase 15: Deduplication [In Progress]       █-
+v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Desktop Header Align  [Backlog]            ----------
 ```
 
-Progress: [█████-----] 50% (1/2 plans)
+Progress: [##########] 100% (2/2 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1 (this milestone)
-- Average duration: 1min
-- Total execution time: 1min
+- Total plans completed: 2 (this milestone)
+- Average duration: 2.3min
+- Total execution time: 4.6min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 15-document-deduplication | 1 | 1min | 1min |
+| 15-document-deduplication | 2 | 4.6min | 2.3min |
 
 *Updated after each plan completion*
 
 ## Shipped Milestones
+
+**v1.6 Document Deduplication (2026-01-28):**
+- 1 phase, 2 plans
+- Key: CTA buttons on all 21 permit pages, zero inline document sections, 100% centralized document info
 
 **v1.5 Footer + Collabora Navigation (2026-01-28):**
 - 3 phases, 4 plans
@@ -105,6 +108,9 @@ Recent decisions affecting current work:
 - CTA buttons placed after page header (before content) for high visibility (15-01)
 - Primary button for primo rilascio, secondary for rinnovo (15-01)
 - Redirect stubs (documenti-X-primo.html) allow clean URLs while maintaining full content pages (15-01)
+- Python automation for bulk HTML processing ensures consistency (15-02)
+- Nested document subsections removed to avoid partial info contradicting CTA buttons (15-02)
+- Visa documents (embassy) vs permit documents (Questura) are different, kept distinct (15-02)
 
 ### Pending Todos
 
@@ -117,14 +123,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Completed 15-01-PLAN.md (CTA pattern template in permesso-studio.html)
+**Stopped at:** Completed 15-02-PLAN.md (v1.6 milestone complete)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, 15-01-SUMMARY.md (contains CTA pattern for propagation)
-2. **Where we are:** v1.6 milestone IN PROGRESS (1/2 plans complete)
-3. **What to do next:** Execute 15-02-PLAN.md (propagate CTA pattern to remaining 20 permit pages)
+1. **Context to load:** This STATE.md, BACKLOG.md
+2. **Where we are:** v1.6 shipped, ready for next milestone
+3. **What to do next:** Review BACKLOG.md for next milestone to execute
 
 ---
 
