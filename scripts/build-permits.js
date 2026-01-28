@@ -5,7 +5,13 @@
 const fs = require('fs/promises');
 const path = require('path');
 const { fetchPermitData, fetchPageBlocks, testConnection } = require('./notion-client.js');
-const { generatePermessoPage, generatePlaceholderPage } = require('./templates/permesso.js');
+const {
+  generatePermessoPage,
+  generatePlaceholderPage,
+  generateVariantParentPage,
+  generateVariantChildPage,
+  generateVariantPlaceholderPage
+} = require('./templates/permesso.js');
 const { escapeHtml } = require('./templates/helpers.js');
 
 const OUTPUT_DIR = path.join(__dirname, '../src/pages');
@@ -745,10 +751,151 @@ async function detectAndProposeVariants() {
   console.log('  node scripts/build-permits.js --generate-variants\n');
 }
 
+/**
+ * Generate variant pages with parent/child structure
+ */
+async function generateVariantPages() {
+  console.log('📄 SOS Permesso - Variant Page Generator');
+  console.log('=========================================\n');
+
+  const connected = await testConnection();
+  if (!connected) {
+    console.log('⚠️  Cannot connect to Notion');
+    console.log('   Set NOTION_API_KEY in environment variables\n');
+    process.exit(1);
+  }
+
+  console.log('📥 Fetching permit data from Notion...');
+  const permits = await fetchPermitData();
+  console.log(`   Found ${permits.length} permit types\n`);
+
+  const { variantGroups } = detectVariants(permits);
+
+  if (variantGroups.length === 0) {
+    console.log('⚠️  No variant groups detected. Nothing to generate.\n');
+    process.exit(0);
+  }
+
+  console.log('📝 Generating variant pages...\n');
+
+  let generatedFolders = 0;
+  let generatedParents = 0;
+  let generatedChildren = 0;
+  let generatedPlaceholders = 0;
+
+  for (const group of variantGroups) {
+    console.log(`\n📁 ${group.baseName}`);
+
+    // Create subfolder
+    const folderPath = path.join(OUTPUT_DIR, `permesso-${group.baseSlug}`);
+    await fs.mkdir(folderPath, { recursive: true });
+    generatedFolders++;
+
+    // Generate parent page (with placeholder general content for now)
+    const parentHtml = generateVariantParentPage(group, []);
+    await fs.writeFile(path.join(folderPath, 'index.html'), parentHtml, 'utf-8');
+    console.log(`   ✓ index.html (parent page)`);
+    generatedParents++;
+
+    // Generate variant pages
+    for (const variant of group.variants) {
+      await delay(350); // Rate limiting
+
+      // Special handling for sanatoria - always placeholder
+      if (variant.variantSlug === 'sanatoria') {
+        const placeholderHtml = generateVariantPlaceholderPage({
+          ...variant,
+          emoji: getEmojiForPermit(variant.tipo)
+        });
+        await fs.writeFile(
+          path.join(folderPath, `${variant.variantSlug}.html`),
+          placeholderHtml,
+          'utf-8'
+        );
+        console.log(`   ⚠️  ${variant.variantSlug}.html (placeholder - per user request)`);
+        generatedPlaceholders++;
+        continue;
+      }
+
+      // Fetch content for other variants
+      console.log(`   Fetching content for: ${variant.variantName}...`);
+      const blocks = await fetchPageBlocks(variant.id);
+
+      if (!blocks || blocks.length === 0) {
+        // Generate placeholder if no content
+        const placeholderHtml = generateVariantPlaceholderPage({
+          ...variant,
+          emoji: getEmojiForPermit(variant.tipo)
+        });
+        await fs.writeFile(
+          path.join(folderPath, `${variant.variantSlug}.html`),
+          placeholderHtml,
+          'utf-8'
+        );
+        console.log(`   ⚠️  ${variant.variantSlug}.html (placeholder - no content)`);
+        generatedPlaceholders++;
+        continue;
+      }
+
+      // Parse Q&A sections
+      const sections = parseQASections(blocks);
+
+      if (sections.length === 0) {
+        // Generate placeholder if no sections
+        const placeholderHtml = generateVariantPlaceholderPage({
+          ...variant,
+          emoji: getEmojiForPermit(variant.tipo)
+        });
+        await fs.writeFile(
+          path.join(folderPath, `${variant.variantSlug}.html`),
+          placeholderHtml,
+          'utf-8'
+        );
+        console.log(`   ⚠️  ${variant.variantSlug}.html (placeholder - no sections)`);
+        generatedPlaceholders++;
+        continue;
+      }
+
+      // Generate full variant child page
+      const childHtml = generateVariantChildPage({
+        ...variant,
+        baseSlug: group.baseSlug,
+        emoji: getEmojiForPermit(variant.tipo),
+        sections
+      });
+
+      await fs.writeFile(
+        path.join(folderPath, `${variant.variantSlug}.html`),
+        childHtml,
+        'utf-8'
+      );
+
+      console.log(`   ✓ ${variant.variantSlug}.html (${sections.length} sections)`);
+      generatedChildren++;
+    }
+  }
+
+  // Summary
+  console.log('\n=========================================');
+  console.log(`✅ Generated ${generatedFolders} variant folders`);
+  console.log(`✅ Generated ${generatedParents} parent pages`);
+  console.log(`✅ Generated ${generatedChildren} variant child pages`);
+  if (generatedPlaceholders > 0) {
+    console.log(`⚠️  Generated ${generatedPlaceholders} placeholder variant pages (need content)`);
+  }
+  console.log('\n📁 Output: ' + OUTPUT_DIR);
+  console.log('');
+}
+
 // Check for special flags before running build
 if (process.argv.includes('--detect-variants')) {
   detectAndProposeVariants().catch(err => {
     console.error('\n❌ Detection failed:', err);
+    process.exit(1);
+  });
+} else if (process.argv.includes('--generate-variants')) {
+  generateVariantPages().catch(err => {
+    console.error('\n❌ Variant generation failed:', err);
     process.exit(1);
   });
 } else {
