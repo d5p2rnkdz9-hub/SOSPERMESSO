@@ -1,5 +1,34 @@
 # Project Milestones: SOS Permesso
 
+## v1.5 Footer + Collabora Navigation (Shipped: 2026-01-28)
+
+**Delivered:** Yellow footer redesign with centered layout, and Collabora dropdown replacing "Il progetto" navigation item.
+
+**Phases completed:** 12-14 (4 plans total)
+
+**Key accomplishments:**
+
+- Redesigned footer with yellow background (#FFD700), centered layout
+- Footer simplified to copyright + "Il Progetto" link only
+- Added "Collabora" dropdown with 4 items: Segnala un errore, Posso convertire, Dai una mano, Il progetto
+- Propagated header and footer changes to all 98 pages
+- Fixed broken Typeform URL (sospermesso.typeform.com → form.typeform.com)
+- Removed unused images and consolidated BACKLOG.md
+
+**Stats:**
+
+- 147 files changed
+- +5,724 / -61,081 lines of code (includes image cleanup)
+- 3 phases, 4 plans
+- 36 commits from milestone start to ship
+- 2 days (2026-01-27 → 2026-01-28)
+
+**Git range:** `8a3a3a0` → `e65ab63`
+
+**What's next:** v1.6 Document Deduplication
+
+---
+
 ## v1.4 Error Reporting + Dropdown Navigation (Shipped: 2026-01-27)
 
 **Delivered:** User error reporting via Typeform integration and dropdown navigation menus with desktop hover and mobile flat list behavior.
