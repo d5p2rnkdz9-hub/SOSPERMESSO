@@ -141,14 +141,18 @@ All permit detail pages follow a consistent structure:
 5. **Related links** section
 6. **Footer** with contact form integration
 
-### Completed Permit Pages
-1. **Permesso per Studio** - Study permit
-2. **Permesso per Lavoro Subordinato** - Employed work
-3. **Permesso per Lavoro Autonomo** - Self-employment
-4. **Permesso per Richiesta Asilo** - Asylum request
-5. **Permesso UE Lungo Periodo** - EU long-term residence
-6. **Permesso per Ricongiungimento Familiare** - Family reunification
-7. **Permesso per Protezione Sussidiaria** - Subsidiary protection
+### Permit Pages
+
+**22 permit pages exist** in `src/pages/permesso-*.html`:
+- 21 with unique content (various formats)
+- 1 redirect (asilo → richiesta-asilo)
+
+**Content formats (inconsistent):**
+- 6 pages use **Standard format** (Cos'è, Durata, Requisiti, Costi sections)
+- 15 pages use **Q&A format** (Che cos'è?, Come posso?, etc.)
+
+**Notion database has 29 permits with content** ready to be pulled via build script.
+Future milestone will standardize all permit pages using Notion as source of truth.
 
 ### Database Categories (database.html)
 - **📋 STUDIO/LAVORO** (Purple-Blue gradient)
