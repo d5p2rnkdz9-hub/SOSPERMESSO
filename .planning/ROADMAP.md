@@ -11,7 +11,7 @@ This milestone removes duplicate document sections from permit pages and replace
 - v1.3 Header/Nav Fix (Phase 10) - Shipped 2026-01-26
 - v1.4 Error + Dropdowns (Phase 11) - Shipped 2026-01-27
 - v1.5 Footer + Collabora (Phases 12-14) - Shipped 2026-01-28
-- **v1.6 Document Deduplication (Phase 15)** - Current
+- **v1.6 Document Deduplication (Phase 15)** - Shipped 2026-01-28
 
 ## Phases
 
@@ -19,7 +19,7 @@ This milestone removes duplicate document sections from permit pages and replace
 - Continues from v1.5 (Phase 14)
 - Phase 15 covers v1.6 scope
 
-- [ ] **Phase 15: Document Deduplication** - Remove doc sections, add CTA buttons
+- [x] **Phase 15: Document Deduplication** - Remove doc sections, add CTA buttons ✓
 
 ## Phase Details
 
@@ -37,8 +37,8 @@ This milestone removes duplicate document sections from permit pages and replace
 **Plans**: 2 plans
 
 Plans:
-- [ ] 15-01-PLAN.md — Design CTA button pattern, update permesso-studio.html as template
-- [ ] 15-02-PLAN.md — Propagate pattern to remaining 20 permit pages
+- [x] 15-01-PLAN.md — Design CTA button pattern, update permesso-studio.html as template ✓
+- [x] 15-02-PLAN.md — Propagate pattern to remaining 20 permit pages ✓
 
 ## Progress
 
@@ -46,7 +46,7 @@ Plans:
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 15. Document Deduplication | v1.6 | 0/2 | Pending | — |
+| 15. Document Deduplication | v1.6 | 2/2 | Complete | 2026-01-28 |
 
 ---
 *Roadmap created: 2026-01-28*

@@ -9,19 +9,19 @@ Requirements for Document Deduplication milestone.
 
 ### Document Section Removal
 
-- [ ] **DEDUP-01**: Remove inline document sections from all 21 permit pages
-- [ ] **DEDUP-02**: No duplicate document lists remain in permit pages
+- [x] **DEDUP-01**: Remove inline document sections from all 21 permit pages ✓
+- [x] **DEDUP-02**: No duplicate document lists remain in permit pages ✓
 
 ### CTA Buttons
 
-- [ ] **CTA-01**: Each permit page has "Documenti per il primo rilascio" button after header
-- [ ] **CTA-02**: Each permit page has "Documenti per il rinnovo" button after header
-- [ ] **CTA-03**: Buttons link to correct documenti-[permit]-primo.html and documenti-[permit]-rinnovo.html pages
-- [ ] **CTA-04**: Button styling consistent with existing site design
+- [x] **CTA-01**: Each permit page has "Documenti per il primo rilascio" button after header ✓
+- [x] **CTA-02**: Each permit page has "Documenti per il rinnovo" button after header ✓
+- [x] **CTA-03**: Buttons link to correct documenti-[permit]-primo.html and documenti-[permit]-rinnovo.html pages ✓
+- [x] **CTA-04**: Button styling consistent with existing site design ✓
 
 ### Coverage
 
-- [ ] **COV-01**: All 21 permit pages updated (excluding redirect pages)
+- [x] **COV-01**: All 21 permit pages updated (excluding redirect pages) ✓
 
 ## Affected Pages
 
@@ -61,13 +61,13 @@ Requirements for Document Deduplication milestone.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DEDUP-01 | Phase 15 | Pending |
-| DEDUP-02 | Phase 15 | Pending |
-| CTA-01 | Phase 15 | Pending |
-| CTA-02 | Phase 15 | Pending |
-| CTA-03 | Phase 15 | Pending |
-| CTA-04 | Phase 15 | Pending |
-| COV-01 | Phase 15 | Pending |
+| DEDUP-01 | Phase 15 | Complete |
+| DEDUP-02 | Phase 15 | Complete |
+| CTA-01 | Phase 15 | Complete |
+| CTA-02 | Phase 15 | Complete |
+| CTA-03 | Phase 15 | Complete |
+| CTA-04 | Phase 15 | Complete |
+| COV-01 | Phase 15 | Complete |
 
 **Coverage:**
 - v1.6 requirements: 7 total
