@@ -195,7 +195,7 @@ ${checklistHtml}
       <div class="footer-links">
         <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
         <a href="../../index.html" class="footer-link">Home</a>
-        <a href="https://sospermesso.typeform.com/contatti" class="footer-link">Contatti</a>
+        <a href="https://form.typeform.com/to/USx16QN3" class="footer-link">Contatti</a>
       </div>
       <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
     </div>
