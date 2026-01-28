@@ -330,6 +330,71 @@ function parseQASections(blocks) {
 }
 
 /**
+ * Simple slugify function for variant names
+ * @param {string} text - Text to slugify
+ * @returns {string} Slugified text
+ */
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+/**
+ * Detect permits that are variants of a base permit type
+ * Groups by base name when "a seguito di" pattern is found
+ * @param {Array} permits - Array of permit objects
+ * @returns {Object} { variantGroups: Array, standalone: Array }
+ */
+function detectVariants(permits) {
+  const groups = {};
+  const standalone = [];
+
+  for (const permit of permits) {
+    if (!permit.tipo) continue;
+
+    // Match "X a seguito di Y" pattern
+    const match = permit.tipo.match(/^(.+?)\s+a\s+seguito\s+di\s+(.+)$/i);
+
+    if (match) {
+      const baseName = match[1].trim();
+      const variantName = match[2].trim();
+
+      if (!groups[baseName]) {
+        groups[baseName] = [];
+      }
+      groups[baseName].push({
+        ...permit,
+        baseName,
+        variantName,
+        variantSlug: slugify(variantName)
+      });
+    } else {
+      standalone.push(permit);
+    }
+  }
+
+  // Only return groups with 2+ variants
+  const variantGroups = Object.entries(groups)
+    .filter(([_, permits]) => permits.length >= 2)
+    .map(([baseName, permits]) => ({
+      baseName,
+      baseSlug: slugify(baseName),
+      variants: permits
+    }));
+
+  // Add single-variant items back to standalone
+  Object.entries(groups)
+    .filter(([_, permits]) => permits.length === 1)
+    .forEach(([_, permits]) => standalone.push(permits[0]));
+
+  return { variantGroups, standalone };
+}
+
+/**
  * Get emoji based on permit type keywords
  * @param {string} tipo - Permit type name
  * @returns {string} Emoji
@@ -632,8 +697,64 @@ These permits failed to process:
   await fs.writeFile(TODO_PATH, content, 'utf-8');
 }
 
-// Run build
-build().catch(err => {
-  console.error('\n❌ Build failed:', err);
-  process.exit(1);
-});
+/**
+ * Detect and propose variant structure without generating pages
+ */
+async function detectAndProposeVariants() {
+  console.log('📄 SOS Permesso - Variant Detection');
+  console.log('====================================\n');
+
+  const connected = await testConnection();
+  if (!connected) {
+    console.log('⚠️  Cannot connect to Notion');
+    console.log('   Set NOTION_API_KEY in environment variables\n');
+    process.exit(1);
+  }
+
+  console.log('📥 Fetching permit data from Notion...');
+  const permits = await fetchPermitData();
+  console.log(`   Found ${permits.length} permit types\n`);
+
+  const { variantGroups, standalone } = detectVariants(permits);
+
+  console.log('===========================================');
+  console.log('PROPOSED VARIANT STRUCTURE');
+  console.log('===========================================\n');
+
+  if (variantGroups.length === 0) {
+    console.log('No variant groups detected.\n');
+    console.log('All permits are standalone (no "a seguito di" pattern found).\n');
+    return;
+  }
+
+  for (const group of variantGroups) {
+    console.log(`📁 ${group.baseName} (${group.variants.length} variants)`);
+    console.log(`   Folder: src/pages/permesso-${group.baseSlug}/`);
+    console.log('   Pages:');
+    console.log(`   - index.html (parent page with links)`);
+    for (const v of group.variants) {
+      console.log(`   - ${v.variantSlug}.html → "${v.tipo}"`);
+    }
+    console.log('');
+  }
+
+  console.log('-------------------------------------------');
+  console.log(`Standalone permits: ${standalone.length}`);
+  console.log('-------------------------------------------\n');
+  console.log('To generate, confirm this structure is correct and run:');
+  console.log('  node scripts/build-permits.js --generate-variants\n');
+}
+
+// Check for special flags before running build
+if (process.argv.includes('--detect-variants')) {
+  detectAndProposeVariants().catch(err => {
+    console.error('\n❌ Detection failed:', err);
+    process.exit(1);
+  });
+} else {
+  // Run build
+  build().catch(err => {
+    console.error('\n❌ Build failed:', err);
+    process.exit(1);
+  });
+}
