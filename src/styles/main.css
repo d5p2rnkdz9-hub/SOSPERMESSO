@@ -247,8 +247,8 @@ ul ul, ol ol, ul ol, ol ul {
   content: '\25B8';
   position: absolute;
   left: -1.25rem;
-  color: var(--taxi-yellow-dark);
-  font-size: 0.85rem;
+  color: var(--accent-blue);
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
