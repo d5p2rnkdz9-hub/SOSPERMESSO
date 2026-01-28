@@ -4,17 +4,17 @@
 
 A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Now includes a comprehensive document requirements system powered by Notion for content management.
 
-## Current Milestone: v1.7 Permit Page Redesign + Homepage Cleanup
+## Current Milestone: v1.7 Database Content Reviewed
 
-**Goal:** Clean up permit pages by moving costs to document pages, and simplify homepage sections.
+**Goal:** Generate permit pages from Notion database content with standardized template.
 
 **Target features:**
-- Move "Costi" section from permit pages to documenti-questura subpages
-- Redesign permit page template with cleaner layout
-- Remove subtitles under homepage sections
-- Rename "Aiuto legale" → "Aiuto legale gratis"
-- Update badge header to "Trova assistenza legale gratuita vicino a te"
-- Remove red button from Aiuto legale section
+- Build script: Notion → `permesso-*.html` generation (like documenti-questura)
+- Standard Q&A template with sections: Cos'è, Durata, Chi può chiedere, Come si chiede, Che diritti mi dà, Si può lavorare?, Conversione, Costi
+- 29+ permits from Notion (separate pages for variants)
+- Empty permits tracked in TODO list
+- Move "Costi" to document pages
+- Visual consistency (bullet styling, spacing, indentation)
 
 ---
 

@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-28
-**Status:** v1.7 Permit Page Redesign + Homepage Cleanup — IN PROGRESS
+**Status:** v1.7 Database Content Reviewed — IN PROGRESS
 
 ## Project Reference
 
@@ -9,7 +9,7 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Phase 16 — Permit Page Cleanup
+**Current focus:** Phase 16 — Permit Build System
 
 ## Current Position
 
