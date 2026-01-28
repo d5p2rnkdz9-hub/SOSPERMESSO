@@ -15,9 +15,9 @@ See: .planning/PROJECT.md (updated 2026-01-27)
 
 **Milestone:** v1.5 Footer + Collabora Navigation - COMPLETE
 **Phase:** 14 of 14 (Propagation) - COMPLETE
-**Plan:** 1 of 1 in current phase
+**Plan:** 2 of 2 in current phase
 **Status:** All phases complete
-**Last activity:** 2026-01-28 — Completed 14-01-PLAN.md (Footer propagation to all pages)
+**Last activity:** 2026-01-28 — Completed 14-02-PLAN.md (Collabora dropdown propagation to all pages)
 
 ```
 Milestones:
@@ -29,19 +29,19 @@ v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [SHIPPED 2026-01-28] ##########
     Phase 12: Footer       [Complete]           ##
     Phase 13: Collabora    [Complete]           ##
-    Phase 14: Propagation  [Complete]           ##
+    Phase 14: Propagation  [Complete]           ####
 v1.6 Document Dedup        [Backlog]            ----------
 v1.7 Desktop Header Align  [Backlog]            ----------
 ```
 
-Progress: [##########] 100% (3/3 plans)
+Progress: [##########] 100% (4/4 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3 (this milestone)
+- Total plans completed: 4 (this milestone)
 - Average duration: 3min
-- Total execution time: 8min
+- Total execution time: 12min
 
 **By Phase:**
 
@@ -49,15 +49,15 @@ Progress: [##########] 100% (3/3 plans)
 |-------|-------|-------|----------|
 | 12-footer-redesign | 1 | 2min | 2min |
 | 13-collabora-dropdown | 1 | 4min | 4min |
-| 14-propagation | 1 | 2min | 2min |
+| 14-propagation | 2 | 6min | 3min |
 
 *Updated after each plan completion*
 
 ## Shipped Milestones
 
 **v1.5 Footer + Collabora Navigation (2026-01-28):**
-- 3 phases, 3 plans
-- Key: Yellow footer with Il Progetto link (98 pages), Collabora dropdown (98 pages)
+- 3 phases, 4 plans
+- Key: Yellow footer with Il Progetto link (98 pages), Collabora dropdown with 4 items (98 pages)
 
 **v1.4 Error + Dropdowns (2026-01-27):**
 - 1 phase, 3 plans
@@ -84,7 +84,7 @@ Progress: [##########] 100% (3/3 plans)
 
 - **Footer (IMPLEMENTED):** Yellow background (#FFD700), centered, copyright + "Il Progetto" link only
 - **Navigation dropdowns:** CSS :hover + :focus-within, flat list on mobile
-- **Collabora dropdown (IMPLEMENTED):** Trigger only (href=#collabora), three items: Segnala un errore, Dai una mano, Il progetto
+- **Collabora dropdown (IMPLEMENTED):** Trigger only (href=#collabora), four items: Segnala un errore, Posso convertire, Dai una mano, Il progetto
 - **Typeform URLs:** form.typeform.com/to/[form_id] pattern
 - **Layout:** Use `.category-section` and `.permit-list` structure
 - **Color palette:** White header (#FFFFFF), teal menu text (#1A6B5F), warm gradients
@@ -101,6 +101,8 @@ Recent decisions affecting current work:
 - External Typeform links use target=_blank (13-01)
 - Python regex for automated footer replacement ensures consistency (14-01)
 - Relative path strategy: all Il Progetto links use same-directory chi-siamo.html (14-01)
+- Added Posso convertire as 4th Collabora dropdown item across all pages (14-02)
+- Single nav-menu structure for both desktop and mobile (14-02)
 
 ### Pending Todos
 
@@ -113,13 +115,13 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Completed 14-01-PLAN.md (Footer propagation to all pages)
+**Stopped at:** Completed 14-02-PLAN.md (Collabora dropdown propagation to all pages)
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, ROADMAP.md
-2. **Where we are:** v1.5 milestone complete (Footer + Collabora Navigation)
+2. **Where we are:** v1.5 milestone COMPLETE (Footer + Collabora Navigation)
 3. **What to do next:** Review ROADMAP.md for next milestone (v1.6 Document Deduplication or v1.7 Desktop Header Alignment)
 
 ---
