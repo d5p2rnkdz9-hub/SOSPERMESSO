@@ -43,24 +43,21 @@
 
 ```
 Sito_Nuovo/
-├── PREVIEW.html                 # Main demo/preview file
-├── claude.md                    # This documentation file
+├── index.html                   # MAIN HOME PAGE (in root, NOT in src/pages/)
+├── PREVIEW.html                 # Demo/preview file
+├── CLAUDE.md                    # This documentation file
 ├── src/
 │   ├── components/              # Reusable components
 │   │   ├── contact-form.html    # Contact modal form
 │   │   ├── lighthouse.html      # Lighthouse hero animation
 │   │   └── paperwork-illustration.html # Cartoon illustrations (4 variations)
-│   ├── pages/                   # Website pages
-│   │   ├── index.html           # Home page
+│   ├── pages/                   # Website subpages (NOT index.html!)
 │   │   ├── database.html        # Database landing page
 │   │   ├── chi-siamo.html       # About us page
-│   │   ├── permesso-studio.html
-│   │   ├── permesso-lavoro-subordinato.html
-│   │   ├── permesso-lavoro-autonomo.html
-│   │   ├── permesso-asilo.html
-│   │   ├── permesso-ue-lungo-periodo.html
-│   │   ├── permesso-ricongiungimento-familiare.html
-│   │   └── permesso-protezione-sussidiaria.html
+│   │   ├── documenti-questura.html
+│   │   ├── permesso-*.html      # Individual permit pages
+│   │   ├── documenti-*.html     # Document requirement pages
+│   │   └── ...                  # ~137 HTML files total
 │   ├── styles/                  # CSS files
 │   │   ├── main.css             # Base styles & color system
 │   │   ├── components.css       # Component-specific styles
@@ -73,6 +70,10 @@ Sito_Nuovo/
 │   └── data/                    # Content data
 │       ├── content-it.json      # Italian content
 │       └── content-en.json      # English content
+
+IMPORTANT: index.html lives in the ROOT directory, not in src/pages/!
+- Root index.html uses paths like: src/pages/chi-siamo.html, src/styles/main.css
+- Pages in src/pages/ use relative paths like: chi-siamo.html, ../styles/main.css
 ```
 
 ## Key Features
@@ -267,8 +268,17 @@ All permit detail pages follow a consistent structure:
 ### External Services
 1. **Typeform** - Test/Quiz forms
    - "Posso AVERE un permesso?" - https://form.typeform.com/to/kt7P9Ejk
+   - "Posso CONVERTIRE?" - https://form.typeform.com/to/oc9jhdkJ
    - "Posso RINNOVARE il permesso?" - https://form.typeform.com/to/R7HY8nBp
-   - Contact/Dai una mano - https://form.typeform.com/to/USx16QN3
+   - "Segnala un errore" - https://form.typeform.com/to/FsqvzdXI
+   - "Dai una mano" / Contatti - https://form.typeform.com/to/USx16QN3
+
+### Navigation Structure
+Header navigation includes 4 dropdowns:
+- **Database**: Database di permessi, Documenti Questura
+- **Guide**: Protezione internazionale, Ricongiungimento familiare, Dizionario
+- **Test**: Posso AVERE?, Posso CONVERTIRE?, Posso RINNOVARE?
+- **Collabora**: Segnala un errore, Dai una mano, Il progetto
 
 2. **Google Fonts**
    - Inter: 400, 500, 600, 700
