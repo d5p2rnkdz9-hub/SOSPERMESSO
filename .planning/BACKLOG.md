@@ -14,12 +14,10 @@
 | BUILD-01 | Build script fetches permit content from Notion | Like documenti-questura system |
 | BUILD-02 | Generate `permesso-*.html` from Notion | Replaces manual HTML |
 | BUILD-03 | Track empty permits in TODO list | `.planning/TODO-permits.md` |
-| TMPL-01 | Standard sections: 1. Cos'è questo permesso? 2. Chi può chiederlo? 3. Come/dove si chiede? 4. Costi 5. Che diritti mi dà? (incl. lavorare) 6. Quanto dura? 7. Posso rinnovarlo? 8. Posso convertirlo? 9. Additional Q&A | 8 fixed + extras |
+| TMPL-01 | Standard sections: 1. Cos'è? 2. Chi può chiederlo? 3. Come/dove si chiede? 4. Che diritti mi dà? 5. Quanto dura? 6. Posso rinnovarlo? 7. Posso convertirlo? + Additional Q&A | 7 fixed + extras (no Costi) |
 | TMPL-02 | Support additional Q&A subsections | Permit-specific content |
 | TMPL-03 | Parse Notion Q&A format | heading_3, bold paragraphs, inline bold |
 | MIGR-01 | Separate pages for permit variants | e.g., 3 types of Lavoro subordinato |
-| MIGR-02 | Move "Costi" to document pages | documenti-*-primo.html |
-| MIGR-03 | Remove Costi from permit template | Single source of truth |
 | VIS-01 | Consistent bullet styling | No mixed bullets + checkmarks |
 | VIS-02 | Proper list indentation/spacing | Visual polish |
 | VIS-03 | Uniform card/section styling | Across all generated pages |
@@ -35,6 +33,7 @@
 | HOME-03 | Badge header: "Trova assistenza legale gratuita vicino a te" | More descriptive |
 | HOME-04 | Remove red button from Aiuto legale section | UI cleanup |
 | VALID-01 | Peer review workflow for content accuracy | Process TBD |
+| COST-01 | Add Costi section to documenti-questura pages | Restructure document pages to include costs |
 
 ### v1.9 Desktop Header Alignment
 **Priority:** After v1.8

@@ -18,20 +18,18 @@
   1. Cos'è questo permesso?
   2. Chi può chiederlo?
   3. Come/dove si chiede?
-  4. Costi
-  5. Che diritti mi dà? (includes "posso lavorare")
-  6. Quanto dura?
-  7. Quando scade posso rinnovarlo?
-  8. Posso convertirlo in un altro permesso?
-  9. Additional Q&A as needed
+  4. Che diritti mi dà? (includes "posso lavorare")
+  5. Quanto dura?
+  6. Quando scade posso rinnovarlo?
+  7. Posso convertirlo in un altro permesso?
+  8. Additional Q&A as needed
+  *(Costi skipped — will be added to documenti-questura pages in future milestone)*
 - [ ] **TMPL-02**: Support additional Q&A subsections for permit-specific content
 - [ ] **TMPL-03**: Parse Notion Q&A format (heading_3, bold paragraphs, inline bold)
 
 ### Content Migration
 
 - [ ] **MIGR-01**: Generate separate pages for all permit variants (e.g., 3 types of Lavoro subordinato)
-- [ ] **MIGR-02**: Move "Costi" section content to corresponding documenti-*-primo.html pages
-- [ ] **MIGR-03**: Remove "Costi" from permit page template (costs live in document pages)
 
 ### Visual Consistency
 
@@ -68,8 +66,6 @@
 | TMPL-02 | 16 | TBD | Pending |
 | TMPL-03 | 16 | TBD | Pending |
 | MIGR-01 | 17 | TBD | Pending |
-| MIGR-02 | 17 | TBD | Pending |
-| MIGR-03 | 17 | TBD | Pending |
 | VIS-01 | 17 | TBD | Pending |
 | VIS-02 | 17 | TBD | Pending |
 | VIS-03 | 17 | TBD | Pending |

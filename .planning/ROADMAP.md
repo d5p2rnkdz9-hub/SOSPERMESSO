@@ -28,22 +28,19 @@
 
 ### Phase 17: Content Migration & Visual Polish
 
-**Goal:** Generate all permit pages, migrate costs, ensure visual consistency.
+**Goal:** Generate all permit pages, ensure visual consistency.
 
-**Requirements:** MIGR-01, MIGR-02, MIGR-03, VIS-01, VIS-02, VIS-03
+**Requirements:** MIGR-01, VIS-01, VIS-02, VIS-03
 
 **Success Criteria:**
 1. All 29+ permits with Notion content have generated pages
 2. Separate pages exist for permit variants (e.g., Lavoro subordinato types)
-3. "Costi" content moved to documenti-*-primo.html pages
-4. No permit pages contain "Costi" section
-5. Consistent bullet styling (no mixed bullets + checkmarks)
-6. Proper list indentation and spacing throughout
+3. Consistent bullet styling (no mixed bullets + checkmarks)
+4. Proper list indentation and spacing throughout
 
 **Plans:**
 - 17-01: Run build for all permits, create TODO list for empty ones
-- 17-02: Migrate costs to document pages and update permit template
-- 17-03: Visual consistency audit and CSS fixes
+- 17-02: Visual consistency audit and CSS fixes
 
 ---
 
