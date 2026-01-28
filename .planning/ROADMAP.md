@@ -20,9 +20,11 @@
 4. Empty permits logged to `.planning/TODO-permits.md`
 5. At least one permit page successfully generated as proof of concept
 
-**Plans:**
-- 16-01: Create permit build script with Notion fetching and Q&A parsing
-- 16-02: Create permit page HTML template with standard sections
+**Plans:** 2 plans
+
+Plans:
+- [ ] 16-01-PLAN.md — Create permit page HTML template (Wave 1)
+- [ ] 16-02-PLAN.md — Create build script with Notion fetching and Q&A parsing (Wave 2)
 
 ---
 
@@ -47,19 +49,19 @@
 ## Previous Milestones
 
 ### v1.6 Document Deduplication (Shipped 2026-01-28)
-→ See `.planning/milestones/v1.6-ROADMAP.md`
+> See `.planning/milestones/v1.6-ROADMAP.md`
 
 ### v1.5 Footer + Collabora (Shipped 2026-01-28)
-→ See `.planning/milestones/v1.5-ROADMAP.md`
+> See `.planning/milestones/v1.5-ROADMAP.md`
 
 ### v1.4 Error + Dropdowns (Shipped 2026-01-27)
-→ See `.planning/milestones/v1.4-ROADMAP.md`
+> See `.planning/milestones/v1.4-ROADMAP.md`
 
 ### v1.2 Visual Refresh (Shipped 2026-01-26)
-→ See `.planning/milestones/v1.2-ROADMAP.md`
+> See `.planning/milestones/v1.2-ROADMAP.md`
 
 ### v1.1 Documenti Questura (Shipped 2026-01-25)
-→ See `.planning/milestones/v1.1-ROADMAP.md`
+> See `.planning/milestones/v1.1-ROADMAP.md`
 
 ---
 
