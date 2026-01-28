@@ -15,8 +15,8 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Milestone:** v1.7 Database Content Reviewed
 **Phase:** 17 of 17 (Phase 17 in progress)
-**Status:** Plan 17-01 complete
-**Last activity:** 2026-01-28 — Completed 17-01-PLAN.md
+**Status:** Plan 17-03 complete
+**Last activity:** 2026-01-28 — Completed 17-03-PLAN.md
 
 ```
 Milestones:
@@ -27,19 +27,19 @@ v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
-v1.7 Permit Redesign       [Active]             ########--
+v1.7 Permit Redesign       [Active]             ##########
 ```
 
-Progress: [########--] 80% (4/5 plans: 16-01, 16-02, 17-01, 17-02)
+Progress: [##########] 100% (5/5 plans: 16-01, 16-02, 17-01, 17-02, 17-03)
 
-**Phase 17 Progress:** Triangle bullet CSS complete. Placeholder pages + incremental builds ready. 42 permit pages total (24 with content, 18 placeholders).
+**Phase 17 Progress:** Variant detection and generation complete. Parent/child page structure implemented. 1 variant folder generated (Lavoro subordinato with 3 variants). All plans complete.
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7 (this milestone)
-- Average duration: 4.7min
-- Total execution time: 33.4min
+- Total plans completed: 8 (this milestone)
+- Average duration: 7.3min
+- Total execution time: 58.6min
 
 **By Phase:**
 
@@ -47,7 +47,7 @@ Progress: [########--] 80% (4/5 plans: 16-01, 16-02, 17-01, 17-02)
 |-------|-------|-------|----------|
 | 15-document-deduplication | 2 | 4.6min | 2.3min |
 | 16-permit-build-system | 2 | 5.6min | 2.8min |
-| 17-content-migration-visual-polish | 3 | 23.2min | 7.7min |
+| 17-content-migration-visual-polish | 4 | 48.4min | 12.1min |
 
 *Updated after each plan completion*
 
@@ -127,6 +127,10 @@ Recent decisions affecting current work:
 - --force flag to override change detection and rebuild all (17-02)
 - Blue triangle bullets for better visibility on white backgrounds (17-01)
 - Triangle size 0.85rem for primary bullets, 0.75rem for nested (17-01)
+- Parent/child page structure for permit variants with subfolder URLs (17-03)
+- Parent pages include general info (cos'è, durata, diritti) to avoid duplication (17-03)
+- Alert boxes clarify that variant pages contain only specific differences (17-03)
+- Sanatoria variant hardcoded as placeholder per user request (17-03)
 
 ### Pending Todos
 
@@ -139,13 +143,13 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-28
-**Stopped at:** Completed 17-01-PLAN.md
+**Stopped at:** Completed 17-03-PLAN.md
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md, 17-01-SUMMARY.md
-2. **Where we are:** v1.7 Phase 17 in progress (3/3 plans complete)
+1. **Context to load:** This STATE.md, ROADMAP.md, 17-03-SUMMARY.md
+2. **Where we are:** v1.7 Phase 17 complete (4/4 plans: 17-01, 17-02, 17-03 done; 17-04 CSS independent)
 3. **What to do next:** Review milestone completion or begin next milestone
 
 ---
