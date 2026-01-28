@@ -41,9 +41,14 @@
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--taxi-yellow) 0%, var(--taxi-yellow-dark) 100%);
+  background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
   color: var(--black);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-secondary {
