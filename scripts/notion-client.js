@@ -69,6 +69,37 @@ async function fetchPermitData() {
 }
 
 /**
+ * Fetch all blocks (content) from a Notion page
+ * Handles pagination and nested children
+ * @param {string} pageId - Notion page ID
+ * @returns {Promise<Array>} Array of block objects
+ */
+async function fetchPageBlocks(pageId) {
+  const blocks = [];
+  let cursor = undefined;
+
+  do {
+    const response = await notion.blocks.children.list({
+      block_id: pageId,
+      start_cursor: cursor,
+      page_size: 100
+    });
+
+    blocks.push(...response.results);
+    cursor = response.has_more ? response.next_cursor : undefined;
+  } while (cursor);
+
+  // Recursively fetch children for blocks that have them
+  for (const block of blocks) {
+    if (block.has_children) {
+      block.children = await fetchPageBlocks(block.id);
+    }
+  }
+
+  return blocks;
+}
+
+/**
  * Test connection to Notion API
  * @returns {Promise<boolean>} True if connection successful
  */
@@ -93,4 +124,4 @@ async function testConnection() {
   }
 }
 
-module.exports = { fetchPermitData, testConnection, DATABASE_ID };
+module.exports = { fetchPermitData, fetchPageBlocks, testConnection, DATABASE_ID };
