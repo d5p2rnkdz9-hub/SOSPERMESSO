@@ -64,11 +64,11 @@ Plans:
   2. Every page in src/pages/ displays the Collabora dropdown in header
   3. Navigation works correctly from any page (relative paths handled)
   4. Mobile navigation displays Collabora items in flat list format (matching existing pattern)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 14-01: Header propagation to all pages
-- [ ] 14-02: Footer propagation to all pages
+- [ ] 14-01-PLAN.md — Footer propagation to all 97 pages
+- [ ] 14-02-PLAN.md — Header propagation to all 97 pages (Collabora dropdown)
 
 ## Progress
 
