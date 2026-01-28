@@ -7,24 +7,19 @@
 
 ## v1.7 Database Content Reviewed
 
-### Phase 16: Permit Build System
+### Phase 16: Permit Build System ✓
 
 **Goal:** Create build infrastructure to generate permit pages from Notion database content.
 
 **Requirements:** BUILD-01, BUILD-02, BUILD-03, TMPL-01, TMPL-02, TMPL-03
 
-**Success Criteria:**
-1. Build script fetches all permits from Notion database
-2. Script parses Q&A format (heading_3, bold paragraphs, inline bold)
-3. Standard template renders sections in correct order
-4. Empty permits logged to `.planning/TODO-permits.md`
-5. At least one permit page successfully generated as proof of concept
+**Completed:** 2026-01-28
 
-**Plans:** 2 plans
+**Plans:**
+- [x] 16-01-PLAN.md — Create permit page HTML template (Wave 1)
+- [x] 16-02-PLAN.md — Create build script with Notion fetching and Q&A parsing (Wave 2)
 
-Plans:
-- [ ] 16-01-PLAN.md — Create permit page HTML template (Wave 1)
-- [ ] 16-02-PLAN.md — Create build script with Notion fetching and Q&A parsing (Wave 2)
+**Results:** 24 permit pages generated, 20 tracked for content additions
 
 ---
 

@@ -8,13 +8,13 @@
 
 ### Build System
 
-- [ ] **BUILD-01**: Create build script that fetches permit content from Notion database
-- [ ] **BUILD-02**: Generate `permesso-*.html` pages from Notion content
-- [ ] **BUILD-03**: Track empty Notion permits in TODO list (`.planning/TODO-permits.md`)
+- [x] **BUILD-01**: Create build script that fetches permit content from Notion database
+- [x] **BUILD-02**: Generate `permesso-*.html` pages from Notion content
+- [x] **BUILD-03**: Track empty Notion permits in TODO list (`.planning/TODO-permits.md`)
 
 ### Template Standardization
 
-- [ ] **TMPL-01**: Standard template with sections:
+- [x] **TMPL-01**: Standard template with sections:
   1. Cos'è questo permesso?
   2. Chi può chiederlo?
   3. Come/dove si chiede?
@@ -24,8 +24,8 @@
   7. Posso convertirlo in un altro permesso?
   8. Additional Q&A as needed
   *(Costi skipped — will be added to documenti-questura pages in future milestone)*
-- [ ] **TMPL-02**: Support additional Q&A subsections for permit-specific content
-- [ ] **TMPL-03**: Parse Notion Q&A format (heading_3, bold paragraphs, inline bold)
+- [x] **TMPL-02**: Support additional Q&A subsections for permit-specific content
+- [x] **TMPL-03**: Parse Notion Q&A format (heading_3, bold paragraphs, inline bold)
 
 ### Content Migration
 
@@ -59,12 +59,12 @@
 
 | REQ-ID | Phase | Plan | Status |
 |--------|-------|------|--------|
-| BUILD-01 | 16 | TBD | Pending |
-| BUILD-02 | 16 | TBD | Pending |
-| BUILD-03 | 16 | TBD | Pending |
-| TMPL-01 | 16 | TBD | Pending |
-| TMPL-02 | 16 | TBD | Pending |
-| TMPL-03 | 16 | TBD | Pending |
+| BUILD-01 | 16 | 16-02 | Complete |
+| BUILD-02 | 16 | 16-02 | Complete |
+| BUILD-03 | 16 | 16-02 | Complete |
+| TMPL-01 | 16 | 16-01 | Complete |
+| TMPL-02 | 16 | 16-01 | Complete |
+| TMPL-03 | 16 | 16-02 | Complete |
 | MIGR-01 | 17 | TBD | Pending |
 | VIS-01 | 17 | TBD | Pending |
 | VIS-02 | 17 | TBD | Pending |
