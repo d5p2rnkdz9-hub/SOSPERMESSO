@@ -131,7 +131,7 @@ function generatePermessoPage(permit) {
           <ul class="nav-menu" id="nav-menu">
             <!-- Database with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
                 <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
@@ -140,7 +140,7 @@ function generatePermessoPage(permit) {
 
             <!-- Guide with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#guide" class="nav-link" aria-haspopup="true" aria-expanded="false">Guide</a>
+              <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guide</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">Protezione internazionale</a></li>
                 <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Ricongiungimento familiare</a></li>
@@ -150,7 +150,7 @@ function generatePermessoPage(permit) {
 
             <!-- Test with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#test" class="nav-link" aria-haspopup="true" aria-expanded="false">Test</a>
+              <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" aria-haspopup="true" aria-expanded="false" target="_blank">Test</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Posso AVERE un permesso?</a></li>
                 <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Posso CONVERTIRE?</a></li>
@@ -160,7 +160,7 @@ function generatePermessoPage(permit) {
 
             <!-- Collabora with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#collabora" class="nav-link" aria-haspopup="true" aria-expanded="false">Collabora</a>
+              <a href="chi-siamo.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Collabora</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Segnala un errore</a></li>
                 <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Dai una mano</a></li>
@@ -348,7 +348,7 @@ function generatePlaceholderPage(permit) {
           <ul class="nav-menu" id="nav-menu">
             <!-- Database with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
                 <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
@@ -357,7 +357,7 @@ function generatePlaceholderPage(permit) {
 
             <!-- Guide with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#guide" class="nav-link" aria-haspopup="true" aria-expanded="false">Guide</a>
+              <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guide</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">Protezione internazionale</a></li>
                 <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Ricongiungimento familiare</a></li>
@@ -367,7 +367,7 @@ function generatePlaceholderPage(permit) {
 
             <!-- Test with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#test" class="nav-link" aria-haspopup="true" aria-expanded="false">Test</a>
+              <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" aria-haspopup="true" aria-expanded="false" target="_blank">Test</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Posso AVERE un permesso?</a></li>
                 <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Posso CONVERTIRE?</a></li>
@@ -377,7 +377,7 @@ function generatePlaceholderPage(permit) {
 
             <!-- Collabora with dropdown -->
             <li class="nav-item has-dropdown">
-              <a href="#collabora" class="nav-link" aria-haspopup="true" aria-expanded="false">Collabora</a>
+              <a href="chi-siamo.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Collabora</a>
               <ul class="nav-dropdown" role="menu">
                 <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Segnala un errore</a></li>
                 <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Dai una mano</a></li>
