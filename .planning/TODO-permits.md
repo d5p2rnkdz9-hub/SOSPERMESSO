@@ -1,6 +1,6 @@
 # Permits Needing Notion Content
 
-**Generated:** 2026-01-28
+**Generated:** 2026-01-29
 **Source:** build-permits.js run
 
 ## Empty Permits
@@ -9,15 +9,14 @@ These permits have no Q&A content in Notion and need to be filled in:
 
 | Permit | Notion Page ID | Reason |
 |--------|----------------|--------|
-| Lavoro autonomo | 1ad7355e-7f7f-80d0-8eb7-eaf89571f818 | No blocks (empty page) |
 | Lavoro subordinato a seguito di ingresso per flussi | 1ad7355e-7f7f-807a-8378-d6163eb5742e | No Q&A sections found |
-| Attività sportiva (art.27) | 2dc7355e-7f7f-80d8-b0a5-c82c9b24043c | No blocks (empty page) |
-| Protezione sociale vittime di violenza domestica (art.18 bis) | 2ef7355e-7f7f-8000-9c13-cea8a7c0c0df | No Q&A sections found |
-|  Cure mediche (ex art. 19 comma 2 lett. D-bis) | 2f07355e-7f7f-8063-9b3a-f66c74224b28 | No Q&A sections found |
+| Lavoro autonomo | 1ad7355e-7f7f-80d0-8eb7-eaf89571f818 | No blocks (empty page) |
 | Cure mediche (art.36 d. lgs 286/1998) | 1b27355e-7f7f-8076-9826-ddcacea91bf7 | No Q&A sections found |
 | Apolidia (art.17 D.P.R. n. 572/93) | 2e77355e-7f7f-804d-91cb-d88e50daec05 | No blocks (empty page) |
-| Residenza elettiva | 2e77355e-7f7f-8058-beb5-cfcc98c6d2fe | No blocks (empty page) |
 | Motivi religiosi | 2e77355e-7f7f-80f7-897e-d212e47bf04b | No blocks (empty page) |
+| Protezione sociale vittime di violenza domestica (art.18 bis) | 2ef7355e-7f7f-8000-9c13-cea8a7c0c0df | No Q&A sections found |
+| Attività sportiva (art.27) | 2dc7355e-7f7f-80d8-b0a5-c82c9b24043c | No blocks (empty page) |
+| Residenza elettiva | 2e77355e-7f7f-8058-beb5-cfcc98c6d2fe | No blocks (empty page) |
 | Familiari di titolari di status di rifugiato o protezione sussidiaria | 2ef7355e-7f7f-801c-ba02-edc8ccf9e8bc | No Q&A sections found |
 | Ricerca scientifica (art.27ter) | 1ad7355e-7f7f-8067-ad48-ef7ac7a43a83 | No blocks (empty page) |
 | Acquisto cittadinanza o stato di apolide | 1ad7355e-7f7f-809b-b8fb-e9c19fb89c4d | No blocks (empty page) |
