@@ -71,6 +71,7 @@ function needsRebuild(permit, manifest) {
 function extractPlainText(richText) {
   if (!richText || !Array.isArray(richText)) return '';
   // Strip checkmark characters that appear as bullets in Notion content
+  // Trim the final result, not each segment (to preserve internal spacing)
   return richText.map(segment => (segment.plain_text || '').replace(/[✓✔☑]/g, '')).join('').trim();
 }
 
@@ -86,7 +87,8 @@ function richTextToHtml(richTextArray) {
   return richTextArray.map(segment => {
     let text = escapeHtml(segment.plain_text || '');
     // Strip checkmark characters that appear as bullets in Notion content
-    text = text.replace(/[✓✔☑]/g, '').trim();
+    // NOTE: Do NOT trim - whitespace is significant for spacing between formatted text
+    text = text.replace(/[✓✔☑]/g, '');
     // Fix common typo: "mi da" should be "mi dà" (with accent)
     text = text.replace(/\bmi da\b/gi, 'mi dà');
     const annotations = segment.annotations || {};
@@ -261,7 +263,9 @@ function groupAndRenderBlocks(blocks) {
         currentListType = null;
       }
 
-      const html = blockToHtml(block);
+      // Check if block should skip the question portion (to avoid duplication)
+      const skipQuestion = block._renderSkipQuestion === true;
+      const html = blockToHtml(block, skipQuestion);
       if (html) result.push(html);
     }
   }
@@ -292,7 +296,10 @@ function parseQASections(blocks) {
     if (questionInfo) {
       // Save previous section if exists
       if (currentQuestion) {
-        const contentHtml = groupAndRenderBlocks(currentContent);
+        // Map _skipQuestion to _renderSkipQuestion for blockToHtml
+        const contentHtml = groupAndRenderBlocks(
+          currentContent.map(b => b._skipQuestion ? { ...b, _renderSkipQuestion: true } : b)
+        );
         sections.push({
           question: currentQuestion,
           content: contentHtml
