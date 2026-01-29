@@ -140,7 +140,7 @@
     z-index: -1;
   }
 
-  /* Mobile dropdown - flat list instead of hover dropdown */
+  /* Mobile dropdown - hide dropdown items, show only categories */
   .nav-item {
     position: static; /* Remove relative positioning */
   }
@@ -149,29 +149,14 @@
     display: none; /* Hide arrow on mobile */
   }
 
+  /* Hide dropdown items completely on mobile - only show main categories */
   .nav-dropdown {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    min-width: unset;
+    display: none !important;
   }
 
-  .dropdown-link {
-    padding: 0.75rem 1rem 0.75rem 2rem; /* Indent sub-items */
-    font-size: 1rem;
-    color: #1A6B5F;
-  }
-
-  .dropdown-link::before {
-    content: '\2192 '; /* Arrow prefix */
-    color: var(--taxi-yellow);
-    font-weight: 600;
+  /* Make category links go to their main pages */
+  .has-dropdown .nav-link {
+    pointer-events: auto;
   }
 }
 
