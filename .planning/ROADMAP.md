@@ -1,46 +1,14 @@
 # Roadmap: SOS Permesso
 
-**Current Milestone:** v1.7 Database Content Reviewed
-**Phases:** 16-17 (continues from v1.6)
-
----
-
-## v1.7 Database Content Reviewed
-
-### Phase 16: Permit Build System ✓
-
-**Goal:** Create build infrastructure to generate permit pages from Notion database content.
-
-**Requirements:** BUILD-01, BUILD-02, BUILD-03, TMPL-01, TMPL-02, TMPL-03
-
-**Completed:** 2026-01-28
-
-**Plans:**
-- [x] 16-01-PLAN.md — Create permit page HTML template (Wave 1)
-- [x] 16-02-PLAN.md — Create build script with Notion fetching and Q&A parsing (Wave 2)
-
-**Results:** 24 permit pages generated, 20 tracked for content additions
-
----
-
-### Phase 17: Content Migration & Visual Polish ✓
-
-**Goal:** Generate all permit pages, ensure visual consistency.
-
-**Requirements:** MIGR-01, VIS-01, VIS-02, VIS-03
-
-**Completed:** 2026-01-28
-
-**Plans:**
-- [x] 17-01-PLAN.md — Triangle bullet CSS styling (Wave 1)
-- [x] 17-02-PLAN.md — Placeholder pages + change detection (Wave 1)
-- [x] 17-03-PLAN.md — Variant detection & generation with user approval (Wave 2)
-
-**Results:** 61 permit pages (56 content + 4 variants + 1 redirect), blue triangle bullets, placeholder pages for 18 empty permits, manifest-based change detection
+**Current Milestone:** Planning next milestone
+**Last Shipped:** v1.7 Database Content Reviewed (2026-01-30)
 
 ---
 
 ## Previous Milestones
+
+### v1.7 Database Content Reviewed (Shipped 2026-01-30)
+> See `.planning/milestones/v1.7-ROADMAP.md`
 
 ### v1.6 Document Deduplication (Shipped 2026-01-28)
 > See `.planning/milestones/v1.6-ROADMAP.md`
@@ -59,4 +27,4 @@
 
 ---
 
-*Last updated: 2026-01-28*
+*Last updated: 2026-01-30*

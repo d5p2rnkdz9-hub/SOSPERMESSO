@@ -1,22 +1,22 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-01-28
-**Status:** v1.7 Database Content Reviewed — COMPLETE (ready for audit)
+**Last Updated:** 2026-01-30
+**Status:** Ready for next milestone
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-01-28)
+See: .planning/PROJECT.md (updated 2026-01-30)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Milestone v1.7 complete — ready for audit
+**Current focus:** Planning next milestone
 
 ## Current Position
 
-**Milestone:** v1.7 Database Content Reviewed
-**Phase:** 17 of 17 (complete)
-**Status:** All phases complete, ready for milestone audit
-**Last activity:** 2026-01-28 — Phase 17 verified, all gaps closed
+**Milestone:** (Planning)
+**Phase:** —
+**Status:** Ready to plan next milestone
+**Last activity:** 2026-01-30 — v1.7 milestone complete
 
 ```
 Milestones:
@@ -27,114 +27,42 @@ v1.3 Header/Nav Fix        [Shipped 2026-01-26] ##########
 v1.4 Error + Dropdowns     [Shipped 2026-01-27] ##########
 v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
-v1.7 Permit Redesign       [Active]             ##########
+v1.7 Database Content      [Shipped 2026-01-30] ##########
+v1.8 (Next)                [Planning]           ----------
 ```
-
-Progress: [##########] 100% (5/5 plans: 16-01, 16-02, 17-01, 17-02, 17-03)
-
-**Phase 17 Progress:** Variant detection and generation complete. Parent/child page structure implemented. 1 variant folder generated (Lavoro subordinato with 3 variants). All plans complete.
-
-## Performance Metrics
-
-**Velocity:**
-- Total plans completed: 8 (this milestone)
-- Average duration: 7.3min
-- Total execution time: 58.6min
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 15-document-deduplication | 2 | 4.6min | 2.3min |
-| 16-permit-build-system | 2 | 5.6min | 2.8min |
-| 17-content-migration-visual-polish | 4 | 48.4min | 12.1min |
-
-*Updated after each plan completion*
-
-## Shipped Milestones
-
-**v1.6 Document Deduplication (2026-01-28):**
-- 1 phase, 2 plans
-- Key: CTA buttons on all 21 permit pages, zero inline document sections, 100% centralized document info
-
-**v1.5 Footer + Collabora Navigation (2026-01-28):**
-- 3 phases, 4 plans
-- Key: Yellow footer with Il Progetto link (98 pages), Collabora dropdown with 4 items (98 pages)
-
-**v1.4 Error + Dropdowns (2026-01-27):**
-- 1 phase, 3 plans
-- Key: Error reporting button (86 pages), dropdown navigation (98 pages)
-
-**v1.3 Header/Nav Fix (2026-01-26):**
-- Mobile-only fixes
-- Key: Hamburger menu working, white block removed, header sticks on scroll
-
-**v1.2 Visual Refresh (2026-01-26):**
-- 6 phases, 7 plans
-- Key: Warm teal palette, new logo, reorganized homepage, white header
-
-**v1.1 Documenti Questura (2026-01-25):**
-- 3 phases, 4 plans
-- Key: 63 document pages, Notion integration, interactive checklists
 
 ## Technical Debt
 
-- Dizionario links need revision (partial matching works but coverage incomplete)
-- Language switcher dropdown layout broken
+From TODO-permits.md:
+- 18 permits need Notion content (placeholder pages exist)
+
+From prior milestones:
+- Desktop header alignment (language switcher baseline)
+- Dizionario links revision (partial matching, coverage incomplete)
+- No npm script for build-permits.js (manual execution)
 
 ## Design Patterns to Follow
 
-- **Footer (IMPLEMENTED):** Yellow background (#FFD700), centered, copyright + "Il Progetto" link only
-- **Navigation dropdowns:** CSS :hover + :focus-within, flat list on mobile
-- **Collabora dropdown (IMPLEMENTED):** Trigger only (href=#collabora), four items: Segnala un errore, Posso convertire, Dai una mano, Il progetto
-- **Typeform URLs:** form.typeform.com/to/[form_id] pattern
+- **Footer:** Yellow background (#FFD700), centered, copyright + "Il Progetto" link
+- **Navigation dropdowns:** CSS :hover + :focus-within, categories only on mobile
+- **Collabora dropdown:** Segnala un errore, Dai una mano, Il progetto
+- **Typeform URLs:** form.typeform.com/to/[form_id]
 - **Layout:** Use `.category-section` and `.permit-list` structure
 - **Color palette:** White header (#FFFFFF), teal menu text (#1A6B5F), warm gradients
-- **CTA buttons (IMPLEMENTED):** Section with primary + secondary buttons linking to dedicated document pages, placed after page header
-- **Permit template (NEW):** Use scripts/templates/permesso.js for generating permit pages
+- **CTA buttons:** Section with primary + secondary buttons linking to document pages
+- **Permit template:** Use scripts/templates/permesso.js for generating permit pages
+- **Bullet styling:** Blue triangle bullets via CSS ::before pseudo-element
+- **Variant structure:** Parent/child pages in subfolders for multi-type permits
 
 ## Accumulated Context
 
 ### Decisions
 
-Recent decisions affecting current work:
-- Keep old footer-links CSS for backward compatibility during propagation (12-01)
-- Use 0.8 opacity on footer copyright for subtle visual hierarchy (12-01)
-- Collabora dropdown follows existing Database/Guide/Test pattern (13-01)
-- href=#collabora makes trigger non-navigating (13-01)
-- External Typeform links use target=_blank (13-01)
-- Python regex for automated footer replacement ensures consistency (14-01)
-- Relative path strategy: all Il Progetto links use same-directory chi-siamo.html (14-01)
-- Posso CONVERTIRE added to Test dropdown (not Collabora) across all pages (14-02)
-- Collabora dropdown has 3 items: Segnala un errore, Dai una mano, Il progetto (14-02)
-- Single nav-menu structure for both desktop and mobile (14-02)
-- Footer simplified to block+text-align layout for proper centering (14-fix)
-- CTA buttons placed after page header (before content) for high visibility (15-01)
-- Primary button for primo rilascio, secondary for rinnovo (15-01)
-- Redirect stubs (documenti-X-primo.html) allow clean URLs while maintaining full content pages (15-01)
-- Python automation for bulk HTML processing ensures consistency (15-02)
-- Nested document subsections removed to avoid partial info contradicting CTA buttons (15-02)
-- Visa documents (embassy) vs permit documents (Questura) are different, kept distinct (15-02)
-- Border colors based on section keywords (cos'e=blue, requisiti=yellow, lavoro=red, conversione=teal) (16-01)
-- Self-test block writes to test-permesso-output.html for manual verification (16-01)
-- Template follows permesso-studio.html patterns (not primo.js simplified header) (16-01)
-- Three-pattern Q&A detection: heading_3, bold paragraph, inline bold (16-02)
-- Keyword-based emoji selection with fallback (16-02)
-- 350ms rate limiting between Notion API calls (16-02)
-- Generate placeholder pages instead of skipping empty permits (17-02)
-- Use Notion last_edited_time for change detection (17-02)
-- Mark placeholders in manifest with placeholder: true flag (17-02)
-- --force flag to override change detection and rebuild all (17-02)
-- Blue triangle bullets for better visibility on white backgrounds (17-01)
-- Triangle size 0.85rem for primary bullets, 0.75rem for nested (17-01)
-- Parent/child page structure for permit variants with subfolder URLs (17-03)
-- Parent pages include general info (cos'è, durata, diritti) to avoid duplication (17-03)
-- Alert boxes clarify that variant pages contain only specific differences (17-03)
-- Sanatoria variant hardcoded as placeholder per user request (17-03)
+(Cleared for new milestone — see PROJECT.md Key Decisions table for history)
 
 ### Pending Todos
 
-None — all v1.5 issues resolved.
+None — cleared for new milestone.
 
 ### Blockers/Concerns
 
@@ -142,15 +70,15 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-01-28
-**Stopped at:** Completed 17-03-PLAN.md
+**Last session:** 2026-01-30
+**Stopped at:** Completed v1.7 milestone archival
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md, 17-03-SUMMARY.md
-2. **Where we are:** v1.7 Phase 17 complete (4/4 plans: 17-01, 17-02, 17-03 done; 17-04 CSS independent)
-3. **What to do next:** Review milestone completion or begin next milestone
+1. **Context to load:** This STATE.md, ROADMAP.md, PROJECT.md
+2. **Where we are:** Between milestones, ready for planning
+3. **What to do next:** Run `/gsd:new-milestone` to define v1.8 goals
 
 ---
 

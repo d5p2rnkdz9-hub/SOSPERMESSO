@@ -1,5 +1,34 @@
 # Project Milestones: SOS Permesso
 
+## v1.7 Database Content Reviewed (Shipped: 2026-01-30)
+
+**Delivered:** Permit page generation system from Notion database with standardized Q&A template, visual consistency, and variant page structure.
+
+**Phases completed:** 16-17 (5 plans total)
+
+**Key accomplishments:**
+
+- Built permit page generation system fetching content from Notion database
+- Created Q&A parsing for 3 Notion formats (heading_3, bold paragraph, inline bold)
+- Generated 67 permit pages (56 with content, 18 placeholders, 4 variants)
+- Added blue triangle bullet styling for visual consistency
+- Implemented manifest-based incremental builds for efficiency
+- Created variant detection and parent/child page structure for permits with multiple acquisition types
+
+**Stats:**
+
+- 75+ files created/modified
+- +8,500 / -300 lines of code
+- 2 phases, 5 plans
+- 30 commits from milestone start to ship
+- 2 days (2026-01-28 → 2026-01-30)
+
+**Git range:** `efd5de7` → `e623e48`
+
+**What's next:** v1.8 Homepage Cleanup + Content Validation
+
+---
+
 ## v1.6 Document Deduplication (Shipped: 2026-01-28)
 
 **Delivered:** CTA buttons on all 21 permit pages linking to dedicated document pages, removing inline document duplication.

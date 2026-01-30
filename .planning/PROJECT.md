@@ -2,68 +2,19 @@
 
 ## What This Is
 
-A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Now includes a comprehensive document requirements system powered by Notion for content management.
+A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Features a comprehensive document requirements system and permit page generation powered by Notion for content management.
 
-## Current Milestone: v1.7 Database Content Reviewed
+## Current State
 
-**Goal:** Generate permit pages from Notion database content with standardized template.
+**Last Shipped:** v1.7 Database Content Reviewed (2026-01-30)
 
-**Target features:**
-- Build script: Notion → `permesso-*.html` generation (like documenti-questura)
-- Standard Q&A template (7 sections + extras):
-  1. Cos'è questo permesso?
-  2. Chi può chiederlo?
-  3. Come/dove si chiede?
-  4. Che diritti mi dà? (incl. lavorare)
-  5. Quanto dura?
-  6. Quando scade posso rinnovarlo?
-  7. Posso convertirlo in un altro permesso?
-  + Additional Q&A as needed
-  *(Costi deferred to v1.8 documenti-questura restructure)*
-- 29+ permits from Notion (separate pages for variants)
-- Empty permits tracked in TODO list
-- Move "Costi" to document pages
-- Visual consistency (bullet styling, spacing, indentation)
-
----
-
-## Shipped: v1.5 Footer + Collabora Navigation (2026-01-28)
-
-**Delivered:** Yellow footer redesign and Collabora dropdown navigation.
-
-- Yellow footer with centered layout, "Il Progetto" link
-- Collabora dropdown: Segnala un errore, Posso convertire, Dai una mano, Il progetto
-- Fixed broken Typeform URLs across codebase
-- Propagated to all 98 pages
-
----
-
-## Backlog: v1.7 Desktop Header Alignment
-
-**Goal:** Fix desktop header alignment - language switcher appears slightly below menu items.
-
-**Issue:** Menu items and language switcher (IT 🇮🇹) are not on the same horizontal baseline. Needs CSS investigation.
-
----
-
-## Shipped: v1.4 Error Reporting + Dropdown Navigation (2026-01-27)
-
-**Delivered:** User error reporting and dropdown navigation.
-
-- "Segnala errore" button on 86 content pages with Typeform integration
-- Dropdown menus for Database, Guide, Test navigation items
-- Desktop hover dropdowns with smooth animations
-- Mobile flat list navigation (no nested dropdowns)
-- Full ARIA accessibility support
-
-## Shipped: v1.3 Header & Navigation Fix (2026-01-26)
-
-**Delivered:** Mobile header/navigation fixes.
-
-- Hamburger menu working (CSS responds to navWrapper.active)
-- White block removed (fixed transform override)
-- Header sticks to top when scrolling
-- Desktop alignment deferred to v1.6
+**What was delivered:**
+- Permit page generation system from Notion database (67 pages)
+- Standard Q&A template with 7+ sections
+- Blue triangle bullet styling for visual consistency
+- Variant detection with parent/child page structure
+- Manifest-based incremental builds
+- Simplified mobile hamburger menu (categories only)
 
 ## Core Value
 
@@ -77,7 +28,6 @@ Users can quickly find accurate, understandable information about their specific
 
 - ✓ Home page with hero section, tests, and guides — existing
 - ✓ Database page listing 23 permit types in 4 color-coded categories — existing
-- ✓ 7 permit detail pages with standardized template — existing
 - ✓ Responsive mobile-first design with CSS variable system — existing
 - ✓ Contact form modal integrated with Typeform — existing
 - ✓ Navigation with mobile hamburger menu — existing
@@ -100,18 +50,21 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Typeform integration for error submissions — v1.4
 - ✓ Dropdown navigation menus (Database, Guide, Test) — v1.4
 - ✓ Desktop hover dropdowns, mobile flat list — v1.4
+- ✓ Yellow footer with centered layout — v1.5
+- ✓ Collabora dropdown with error/contact forms — v1.5
+- ✓ CTA buttons linking permit pages to document pages — v1.6
+- ✓ Permit page generation from Notion Q&A content — v1.7
+- ✓ Standard Q&A template (7 sections + extras) — v1.7
+- ✓ 67 permit pages (56 content + 18 placeholder + 4 variant) — v1.7
+- ✓ Blue triangle bullet styling for list consistency — v1.7
+- ✓ Variant parent/child structure for multi-type permits — v1.7
+- ✓ Manifest-based incremental builds — v1.7
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] Yellow footer background with centered layout
-- [ ] Footer contains "Chi Siamo" and "Il Progetto" links only (+ copyright)
-- [ ] Replace "Il progetto" header nav item with "Collabora" dropdown
-- [ ] Collabora dropdown: "Segnala un errore" → Typeform error form
-- [ ] Collabora dropdown: "Dai una mano" → Typeform contact form
-- [ ] Remove broken sospermesso.typeform.com/contatti URL from codebase
-- [ ] Propagate new header/footer to all pages
+(Define with `/gsd:new-milestone`)
 
 ### Out of Scope
 
@@ -122,39 +75,41 @@ Users can quickly find accurate, understandable information about their specific
 
 ## Context
 
-**Current state (after v1.4):**
-- Pure HTML/CSS/JavaScript static site with Node.js build process for document generation
+**Current state (after v1.7):**
+- Pure HTML/CSS/JavaScript static site with Node.js build process for document and permit generation
 - CSS design system with variables in `src/styles/main.css`
-- 192+ HTML pages in `src/pages/` (39 original + 63 generated + 38 redirects + others)
+- 260+ HTML pages in `src/pages/` (original + 63 document + 67 permit + redirects)
 - Build infrastructure: package.json, @notionhq/client, dotenv, netlify.toml
-- Notion database powers document page content
-- Warm teal/coral color palette (replaced purple scheme in v1.2)
+- Notion database powers both document and permit page content
+- Build scripts: `scripts/build-documents.js`, `scripts/build-permits.js`
+- Warm teal/coral color palette with blue triangle bullets
 - Clean white header with 60px height, centered navigation with dropdown menus
-- Lighthouse PNG logo (ChatGPT-generated)
-- Error reporting button on all content pages (Typeform integration)
-- Dropdown navigation: Database, Guide, Test menus with hover (desktop) / flat list (mobile)
+- Yellow footer with centered layout
+- Mobile-optimized: simplified hamburger menu (categories only, no dropdowns)
 
 **Design patterns established:**
 - Database list style (`.permit-list`, `.category-section`)
 - Color-coded categories: teal (familiari), orange (protezione), warm colors throughout
 - Badge component with gradient styling
 - Document page template with checklist, callout, print styles
+- Permit page template with Q&A cards, semantic border colors
+- Variant structure with parent/child pages in subfolders
 - Homepage sections: Tests → Database → Guide → Aiuto legale → Link utili
-- Prominent CTA cards: centered, max-width 500px, larger icon/title
-- Header: white background (#FFFFFF), dark teal menu text (#1A6B5F), yellow hover
-- Dropdown navigation: CSS :hover + :focus-within triggers, mobile flat list override
-- Error button: teal outline style, absolute (desktop) / static (mobile) positioning
+- Mobile flat list navigation for faster task completion
 
 **Technical debt:**
 - Dizionario links need revision (partial matching works but coverage incomplete)
+- Desktop header alignment (language switcher baseline)
+- No npm script for build-permits.js (manual execution)
+- 18 permits still need Notion content (placeholder pages)
 
 ## Constraints
 
-- **Tech stack**: Pure HTML/CSS/JS frontend + Node.js build for document generation
+- **Tech stack**: Pure HTML/CSS/JS frontend + Node.js build for document/permit generation
 - **Design**: Must match existing design system (colors, typography, spacing from CSS variables)
 - **Structure**: Pages go in `src/pages/`, follow existing header/footer template
 - **Mobile**: All pages must work on mobile (existing responsive CSS applies)
-- **Content**: Document pages generated from Notion — edit content there, run build
+- **Content**: Document and permit pages generated from Notion — edit content there, run build
 
 ## Key Decisions
 
@@ -173,9 +128,13 @@ Users can quickly find accurate, understandable information about their specific
 | Standalone Aiuto legale section | High visibility for critical legal help service | ✓ Good — prominent CTA |
 | Display flex on header | Fixes CSS height inheritance for reliable centering | ✓ Good — solved alignment issues |
 | Teal outline button for error reporting | Subtle, non-intrusive design matching header nav | ✓ Good — v1.4 |
-| Absolute/static positioning for error button | Desktop top-right, mobile centered below breadcrumb | ✓ Good — v1.4 |
 | Pure CSS for dropdown visibility | Progressive enhancement, works without JS | ✓ Good — v1.4 |
 | Mobile flat list navigation | 40% faster task completion per NN/G research | ✓ Good — v1.4 |
+| Q&A parsing for 3 Notion formats | Notion content uses heading_3, bold paragraph, inline bold | ✓ Good — v1.7 |
+| Blue triangle bullets | Yellow not visible on white backgrounds | ✓ Good — v1.7 |
+| Manifest-based incremental builds | Skip unchanged pages, 3-5x faster | ✓ Good — v1.7 |
+| Variant parent/child structure | Users need common info + specific differences | ✓ Good — v1.7 |
+| Mobile hamburger shows categories only | Simpler navigation, faster task completion | ✓ Good — v1.7 |
 
 ---
-*Last updated: 2026-01-27 after v1.4 milestone shipped*
+*Last updated: 2026-01-30 after v1.7 milestone shipped*
