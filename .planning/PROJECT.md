@@ -66,6 +66,8 @@ Users can quickly find accurate, understandable information about their specific
 
 (Define with `/gsd:new-milestone`)
 
+**Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
+
 ### Out of Scope
 
 - Backend API integration — static site approach, Typeform handles form submissions
