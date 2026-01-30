@@ -20,13 +20,44 @@
       margin-bottom: 1.5rem;
       padding-bottom: 1.5rem;
       border-bottom: 1px solid #eee;
+      scroll-margin-top: 100px;
     }
     .dictionary-term:last-child {
       border-bottom: none;
     }
+    .dictionary-term:target {
+      background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-radius: var(--radius-md);
+      animation: highlight-fade 2s ease-out;
+    }
+    @keyframes highlight-fade {
+      0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+      100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+    }
     .dictionary-term h3 {
       color: var(--accent-purple);
       margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .dictionary-term h3 .anchor-link {
+      opacity: 0;
+      font-size: 0.875rem;
+      color: var(--gray-medium);
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    .dictionary-term:hover h3 .anchor-link {
+      opacity: 0.6;
+    }
+    .dictionary-term h3 .anchor-link:hover {
+      opacity: 1;
+      color: var(--taxi-yellow-dark);
     }
     .dictionary-term p {
       margin: 0;
@@ -39,6 +70,7 @@
       margin: 2rem 0 1rem;
       padding-bottom: 0.5rem;
       border-bottom: 3px solid var(--taxi-yellow);
+      scroll-margin-top: 100px;
     }
   </style>
 </head>
@@ -129,241 +161,241 @@
       <div class="card">
 
         <!-- A -->
-        <div class="dictionary-letter">A</div>
+        <div class="dictionary-letter" id="lettera-a">A</div>
 
-        <div class="dictionary-term">
-          <h3>Accoglienza</h3>
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza <a href="#accoglienza" class="anchor-link">#</a></h3>
           <p>Sistema di centri che ospitano persone che hanno fatto domanda di protezione internazionale.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>A carico</h3>
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico <a href="#a-carico" class="anchor-link">#</a></h3>
           <p>Persona che dipende economicamente da qualcun altro. Per esempio, un figlio che non lavora è "a carico" dei genitori perché loro pagano per il suo cibo, vestiti e altre spese.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Affidamento</h3>
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento <a href="#affidamento" class="anchor-link">#</a></h3>
           <p>Quando un minore (bambino o ragazzo sotto i 18 anni) viene dato alle cure di una persona, una famiglia o un'istituzione che non sono i suoi genitori naturali.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Asilo</h3>
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo <a href="#asilo" class="anchor-link">#</a></h3>
           <p>Tipo di protezione internazionale per chi non può tornare nel nel proprio paese perché ci sarebbe un rischio di essere perseguitato (ad esempio essere ucciso, torturato, gravemente discriminato). Vedi anche "Rifugiato".</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>ASL</h3>
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
           <p>Azienda Sanitaria Locale. Ufficio che gestisce i servizi medici e sanitari in una zona. Qui puoi iscriverti al Servizio Sanitario Nazionale e scegliere il medico di base.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Attestato nominativo</h3>
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
           <p>Primo permesso di soggiorno che la Questura dà quando fai domanda di asilo, nell'attesa di darti quello cartaceo giallo. Viene consegnato insieme al modulo C3. Non ha una data di scadenza: è valido fino alla fine dell'esame della domanda di asilo.</p>
         </div>
 
         <!-- C -->
-        <div class="dictionary-letter">C</div>
+        <div class="dictionary-letter" id="lettera-c">C</div>
 
-        <div class="dictionary-term">
-          <h3>C3</h3>
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
           <p>Modulo con cui puoi fare la domanda di asilo in Questura. Contiene le tue informazioni personali.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Carichi pendenti</h3>
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
           <p>Certificato che dice se ci sono processi penali contro una persona, che non sono ancora finiti con una sentenza definitiva.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Carta di soggiorno</h3>
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
           <p>Termine ambiguo che può indicare due permessi di soggiorno diversi: Permesso di soggiorno per soggiornanti di lungo periodo oppure Carta di soggiorno familiare cittadino UE.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Casellario giudiziale</h3>
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
           <p>Registro che contiene informazioni su condanne penali di una persona. Si chiede alla Procura.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Cessione di fabbricato</h3>
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
           <p>Documento che fai quando affitti casa o una stanza a qualcuno dietro pagamento. Devi presentarlo alla Polizia locale entro 48 ore.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Coesione familiare</h3>
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare <a href="#coesione-familiare" class="anchor-link">#</a></h3>
           <p>Processo che permette a chi è già in Italia di ottenere un permesso di soggiorno per stare con un familiare che vive già legalmente in Italia.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Codice Fiscale</h3>
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale <a href="#codice-fiscale" class="anchor-link">#</a></h3>
           <p>Codice personale, unico per ogni persona, che serve per essere riconosciuti in Italia e per fare cose come lavorare, andare dal medico o firmare documenti ufficiali.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Commissione Territoriale</h3>
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
           <p>Organizzazione del Governo italiano che decide chi può avere lo status di rifugiato, la protezione sussidiaria, la protezione speciale o un permesso per cure mediche.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Coniuge</h3>
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge <a href="#coniuge" class="anchor-link">#</a></h3>
           <p>Marito o moglie. Si riferisce alla persona con cui si è sposati (matrimonio) o uniti civilmente (unione civile).</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Conversione</h3>
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione <a href="#conversione" class="anchor-link">#</a></h3>
           <p>Cambiare un permesso di soggiorno in un altro (per esempio, da permesso di soggiorno per studio a permesso di soggiorno per lavoro), senza dover tornare nel paese d'origine.</p>
         </div>
 
         <!-- D -->
-        <div class="dictionary-letter">D</div>
+        <div class="dictionary-letter" id="lettera-d">D</div>
 
-        <div class="dictionary-term">
-          <h3>Decreto di espulsione</h3>
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
           <p>Decisione della Prefettura che dice che devi andare via dall'Italia. Insieme all'espulsione può anche essere dato un Divieto di rimpatrio.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Dichiarazione di ospitalità</h3>
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
           <p>Documento firmato dalla persona dove dichiara che ti ospita gratuitamente nella sua casa in Italia. Va portato alla polizia entro 48 ore.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Diniego</h3>
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego <a href="#diniego" class="anchor-link">#</a></h3>
           <p>Decisione negativa. Quando la tua richiesta viene rifiutata dalle autorità.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Domicilio</h3>
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio <a href="#domicilio" class="anchor-link">#</a></h3>
           <p>Indirizzo dove vivi, anche temporaneamente.</p>
         </div>
 
         <!-- I -->
-        <div class="dictionary-letter">I</div>
+        <div class="dictionary-letter" id="lettera-i">I</div>
 
-        <div class="dictionary-term">
-          <h3>Idoneità alloggiativa</h3>
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
           <p>Certificato che dimostra che una casa è adatta per essere abitata (ha abbastanza spazio, è sicura, ha i servizi necessari). Si deve chiedere al Comune dove la casa si trova.</p>
         </div>
 
         <!-- K -->
-        <div class="dictionary-letter">K</div>
+        <div class="dictionary-letter" id="lettera-k">K</div>
 
-        <div class="dictionary-term">
-          <h3>Kit postale</h3>
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale <a href="#kit-postale" class="anchor-link">#</a></h3>
           <p>Pacchetto di moduli che si prende all'ufficio postale per chiedere o rinnovare alcuni tipi di permesso di soggiorno.</p>
         </div>
 
         <!-- M -->
-        <div class="dictionary-letter">M</div>
+        <div class="dictionary-letter" id="lettera-m">M</div>
 
-        <div class="dictionary-term">
-          <h3>Minore</h3>
+        <div class="dictionary-term" id="minore">
+          <h3>Minore <a href="#minore" class="anchor-link">#</a></h3>
           <p>Persona con meno di 18 anni.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Minore straniero non accompagnato</h3>
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
           <p>Persona sotto i 18 anni che si trova in Italia senza genitori o altri adulti legalmente responsabili per lei.</p>
         </div>
 
         <!-- N -->
-        <div class="dictionary-letter">N</div>
+        <div class="dictionary-letter" id="lettera-n">N</div>
 
-        <div class="dictionary-term">
-          <h3>Nulla osta</h3>
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta <a href="#nulla-osta" class="anchor-link">#</a></h3>
           <p>Permesso ufficiale necessario per fare qualcosa. Per esempio, il "nulla osta al ricongiungimento familiare" è il documento che permette ai tuoi familiari di venire in Italia.</p>
         </div>
 
         <!-- P -->
-        <div class="dictionary-letter">P</div>
+        <div class="dictionary-letter" id="lettera-p">P</div>
 
-        <div class="dictionary-term">
-          <h3>Permesso di soggiorno</h3>
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
           <p>Documento che ti dà il diritto di vivere in Italia legalmente per un certo periodo di tempo.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Protezione internazionale</h3>
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
           <p>Protezione data dall'Italia a persone che non possono tornare nel loro paese perché sarebbero in pericolo. Include Asilo e Protezione sussidiaria.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Prosieguo amministrativo</h3>
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
           <p>Possibilità per un ragazzo straniero arrivato da minore in Italia di rimanere con supporto anche dopo aver compiuto 18 anni.</p>
         </div>
 
         <!-- R -->
-        <div class="dictionary-letter">R</div>
+        <div class="dictionary-letter" id="lettera-r">R</div>
 
-        <div class="dictionary-term">
-          <h3>Residenza</h3>
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza <a href="#residenza" class="anchor-link">#</a></h3>
           <p>Indirizzo dove vivi stabilmente e sei registrato all'anagrafe del Comune.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Ricongiungimento familiare</h3>
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
           <p>Procedura che permette a una persona straniera che vive già in Italia con un permesso di soggiorno valido di portare in Italia alcuni membri della propria famiglia.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Rifugiato</h3>
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato <a href="#rifugiato" class="anchor-link">#</a></h3>
           <p>Persona che scappa dal proprio paese perché perseguitata e che quindi in Italia può avere lo status di rifugiato.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Rinnovo</h3>
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo <a href="#rinnovo" class="anchor-link">#</a></h3>
           <p>Processo per estendere la validità del tuo permesso di soggiorno prima che scada.</p>
         </div>
 
         <!-- S -->
-        <div class="dictionary-letter">S</div>
+        <div class="dictionary-letter" id="lettera-s">S</div>
 
-        <div class="dictionary-term">
-          <h3>Servizi sociali</h3>
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali <a href="#servizi-sociali" class="anchor-link">#</a></h3>
           <p>Uffici del Comune che aiutano persone in difficoltà (famiglie, anziani, disabili, minori).</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Status di rifugiato</h3>
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
           <p>Decisione della Commissione o del Tribunale che riconosce una persona come rifugiato. Con lo status di rifugiato si può chiedere il permesso di soggiorno per asilo.</p>
         </div>
 
         <!-- T -->
-        <div class="dictionary-letter">T</div>
+        <div class="dictionary-letter" id="lettera-t">T</div>
 
-        <div class="dictionary-term">
-          <h3>Tribunale</h3>
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale <a href="#tribunale" class="anchor-link">#</a></h3>
           <p>Luogo dove i giudici prendono decisioni su questioni legali.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Tribunale per i minorenni</h3>
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
           <p>Tribunale speciale che si occupa di questioni legali che riguardano persone sotto i 18 anni.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Tutore</h3>
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore <a href="#tutore" class="anchor-link">#</a></h3>
           <p>Persona scelta dal giudice che aiuta e si prende cura di un ragazzo che ha meno di 18 anni quando i genitori non possono farlo.</p>
         </div>
 
         <!-- U -->
-        <div class="dictionary-letter">U</div>
+        <div class="dictionary-letter" id="lettera-u">U</div>
 
-        <div class="dictionary-term">
-          <h3>Udienza</h3>
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza <a href="#udienza" class="anchor-link">#</a></h3>
           <p>Appuntamento in Tribunale con un giudice. Nel 99% dei casi deve andare il tuo avvocato.</p>
         </div>
 
-        <div class="dictionary-term">
-          <h3>Unione civile</h3>
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile <a href="#unione-civile" class="anchor-link">#</a></h3>
           <p>Matrimonio tra persone dello stesso sesso in Italia.</p>
         </div>
 
         <!-- V -->
-        <div class="dictionary-letter">V</div>
+        <div class="dictionary-letter" id="lettera-v">V</div>
 
-        <div class="dictionary-term">
-          <h3>Vincolo di parentela</h3>
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
           <p>Relazione di famiglia tra due persone (genitori-figli, fratelli, nonni-nipoti, zii-nipoti).</p>
         </div>
 
