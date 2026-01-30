@@ -187,7 +187,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
       const target = document.querySelector(href);
       if (target) {
-        const headerOffset = 80;
+        const headerOffset = 200; // Must match header height (~190px logo + padding)
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
