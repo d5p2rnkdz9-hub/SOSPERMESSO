@@ -1,9 +1,9 @@
-# Requirements: SOS Permesso v1.8
+# Requirements: SOS Permesso v1.9
 
 **Defined:** 2026-01-31
 **Core Value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-## v1.8 Requirements
+## v1.9 Requirements
 
 Requirements for SEO Foundations milestone. Enable Google to discover and index all pages.
 
@@ -19,11 +19,6 @@ Requirements for SEO Foundations milestone. Enable Google to discover and index 
 - [ ] **SMAP-03**: Build script generates sitemap automatically from file system
 - [ ] **SMAP-04**: Sitemap excludes redirect pages (meta refresh)
 
-### Meta Descriptions
-
-- [ ] **META-01**: No page has "in costruzione" in meta description
-- [ ] **META-02**: All placeholder descriptions replaced with meaningful content
-
 ## Future Requirements
 
 Deferred to later milestones.
@@ -33,6 +28,10 @@ Deferred to later milestones.
 - **SEO-01**: Canonical URLs on all pages
 - **SEO-02**: Open Graph tags for social sharing
 - **SEO-03**: Structured data (Schema.org) for FAQ pages
+
+### Meta Descriptions (deferred)
+
+- **META-01**: Fix placeholder descriptions ("in costruzione")
 
 ## Out of Scope
 
@@ -44,7 +43,7 @@ Explicitly excluded from this milestone.
 | Canonical URLs | Deferred to future milestone |
 | Open Graph tags | Not critical for basic indexing |
 | Structured data | Enhancement, not foundation |
-| Performance optimization | Separate concern |
+| Fix "in costruzione" descriptions | Deferred per user request |
 
 ## Traceability
 
@@ -58,13 +57,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SMAP-02 | TBD | Pending |
 | SMAP-03 | TBD | Pending |
 | SMAP-04 | TBD | Pending |
-| META-01 | TBD | Pending |
-| META-02 | TBD | Pending |
 
 **Coverage:**
-- v1.8 requirements: 8 total
+- v1.9 requirements: 6 total
 - Mapped to phases: 0
-- Unmapped: 8 (pending roadmap)
+- Unmapped: 6 (pending roadmap)
 
 ---
 *Requirements defined: 2026-01-31*
