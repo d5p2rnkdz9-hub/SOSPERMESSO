@@ -21,6 +21,7 @@
   "homepage": "https://github.com/d5p2rnkdz9-hub/SOSPERMESSO#readme",
   "dependencies": {
     "@notionhq/client": "^5.8.0",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "xml": "^1.0.1"
   }
 }
