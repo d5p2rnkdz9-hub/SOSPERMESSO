@@ -1,0 +1,7 @@
+# robots.txt for sospermesso.it
+# Allow all search engines to crawl all content
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sospermesso.it/sitemap.xml
