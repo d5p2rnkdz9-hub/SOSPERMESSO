@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translation Comparison Tool - SOS Permesso</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .instructions {
+      background: #fff3e0;
+      border: 1px solid #ffcc80;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .instructions h3 { margin-bottom: 0.5rem; color: #ef6c00; }
+    .instructions code { background: #fff; padding: 2px 6px; border-radius: 3px; }
+
+    .controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .file-input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .file-input-group label {
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+
+    input[type="file"] {
+      padding: 0.5rem;
+      border: 2px dashed #ddd;
+      border-radius: 4px;
+      background: white;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #FFD700;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #FFC107;
+    }
+
+    .status {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .status.pass { background: #c8e6c9; color: #2e7d32; }
+    .status.warn { background: #fff3e0; color: #ef6c00; }
+    .status.fail { background: #ffcdd2; color: #c62828; }
+    .status.info { background: #e3f2fd; color: #1565c0; }
+
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      height: calc(100vh - 280px);
+      min-height: 400px;
+    }
+
+    .panel {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-header {
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .panel-header.it { background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%); }
+    .panel-header.en { background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%); }
+
+    .panel-content {
+      flex: 1;
+      overflow: auto;
+      padding: 1rem;
+    }
+
+    .text-view {
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .char-count {
+      font-size: 0.875rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .comparison {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+
+      .panel {
+        height: 40vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 Translation Comparison Tool</h1>
+
+  <div class="instructions">
+    <h3>📁 How to use:</h3>
+    <p>1. Select the <strong>Italian (IT)</strong> source file from <code>src/pages/</code></p>
+    <p>2. Select the <strong>English (EN)</strong> translated file from <code>en/src/pages/</code></p>
+    <p>3. Click <strong>Compare</strong> to see side-by-side text content</p>
+  </div>
+
+  <div class="controls">
+    <div class="file-input-group">
+      <label>🇮🇹 Italian Source</label>
+      <input type="file" id="it-file" accept=".html">
+    </div>
+
+    <div class="file-input-group">
+      <label>🇬🇧 English Translation</label>
+      <input type="file" id="en-file" accept=".html">
+    </div>
+
+    <button onclick="compareFiles()">Compare</button>
+
+    <span id="status" class="status info">Select files to compare</span>
+  </div>
+
+  <div class="comparison">
+    <div class="panel">
+      <div class="panel-header it">
+        🇮🇹 Italian (Original)
+        <span class="char-count" id="it-chars"></span>
+      </div>
+      <div class="panel-content" id="it-content">
+        <p style="color: #666; text-align: center; margin-top: 2rem;">Load Italian file...</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header en">
+        🇬🇧 English (Translation)
+        <span class="char-count" id="en-chars"></span>
+      </div>
+      <div class="panel-content" id="en-content">
+        <p style="color: #666; text-align: center; margin-top: 2rem;">Load English file...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function extractText(html) {
+      // Remove script and style
+      let text = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+      text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+      // Remove tags but keep structure hints
+      text = text.replace(/<\/?(h[1-6]|p|li|div|section)[^>]*>/gi, '\n');
+      text = text.replace(/<br\s*\/?>/gi, '\n');
+      text = text.replace(/<[^>]+>/g, ' ');
+      // Decode entities
+      text = text.replace(/&amp;/g, '&')
+                 .replace(/&lt;/g, '<')
+                 .replace(/&gt;/g, '>')
+                 .replace(/&#039;/g, "'")
+                 .replace(/&quot;/g, '"')
+                 .replace(/&nbsp;/g, ' ');
+      // Clean up whitespace
+      text = text.replace(/[ \t]+/g, ' ');
+      text = text.replace(/\n\s*\n/g, '\n\n');
+      return text.trim();
+    }
+
+    function escapeHtml(text) {
+      return text.replace(/&/g, '&amp;')
+                 .replace(/</g, '&lt;')
+                 .replace(/>/g, '&gt;');
+    }
+
+    function readFile(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = e => resolve(e.target.result);
+        reader.onerror = e => reject(e);
+        reader.readAsText(file);
+      });
+    }
+
+    async function compareFiles() {
+      const itFile = document.getElementById('it-file').files[0];
+      const enFile = document.getElementById('en-file').files[0];
+      const status = document.getElementById('status');
+
+      if (!itFile || !enFile) {
+        status.className = 'status warn';
+        status.textContent = '⚠️ Please select both files';
+        return;
+      }
+
+      try {
+        const [itHtml, enHtml] = await Promise.all([
+          readFile(itFile),
+          readFile(enFile)
+        ]);
+
+        // Extract text
+        const itText = extractText(itHtml);
+        const enText = extractText(enHtml);
+
+        // Display
+        document.getElementById('it-content').innerHTML =
+          `<div class="text-view">${escapeHtml(itText)}</div>`;
+        document.getElementById('en-content').innerHTML =
+          `<div class="text-view">${escapeHtml(enText)}</div>`;
+
+        // Stats
+        const itLen = itText.replace(/\s+/g, '').length;
+        const enLen = enText.replace(/\s+/g, '').length;
+        document.getElementById('it-chars').textContent = `${itLen} chars`;
+        document.getElementById('en-chars').textContent = `${enLen} chars`;
+
+        const ratio = (enLen / itLen).toFixed(2);
+
+        // Check issues
+        const issues = [];
+        if (enHtml.includes('lang="it"')) issues.push('lang still "it"');
+        if (ratio < 0.8) issues.push(`short (${ratio}x)`);
+        if (ratio > 1.4) issues.push(`long (${ratio}x)`);
+
+        if (issues.length > 0) {
+          status.className = 'status warn';
+          status.textContent = `⚠️ ${issues.join(', ')} | Ratio: ${ratio}x`;
+        } else {
+          status.className = 'status pass';
+          status.textContent = `✅ Looks good! Ratio: ${ratio}x`;
+        }
+
+      } catch (error) {
+        status.className = 'status fail';
+        status.textContent = '❌ Error reading files';
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>

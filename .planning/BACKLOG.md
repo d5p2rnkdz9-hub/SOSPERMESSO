@@ -24,4 +24,28 @@ All tasks, bugs, and feature requests are tracked in Notion.
 
 ---
 
-*Last synced: 2026-01-30*
+## Future Milestones (Backburner)
+
+### v2.0 Multilingual Support (English)
+
+**Priority:** High — crucial for non-Italian users
+**Status:** POC completed, awaiting activation
+**Roadmap:** `.planning/milestones/v2.0-LANGUAGES-ROADMAP.md`
+
+**Scope:**
+- Translator review interface (web-based, user-friendly)
+- Batch translation pipeline (AI + glossary enforcement)
+- Human review & corrections workflow
+- Language switching integration
+
+**POC Assets (2026-01-31):**
+- 4 sample translated pages in `en/src/pages/`
+- Verification script: `scripts/verify-translation.js`
+- Comparison tool: `scripts/compare-translations.html`
+- Glossary: `scripts/translation-glossary.json`
+
+**Activate with:** `/gsd:new-milestone` when ready to prioritize
+
+---
+
+*Last synced: 2026-01-31*
