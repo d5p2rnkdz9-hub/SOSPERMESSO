@@ -4,19 +4,17 @@
 
 A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Features a comprehensive document requirements system and permit page generation powered by Notion for content management.
 
-## Current Milestone: v1.9 SEO Foundations
-
-**Goal:** Make the site discoverable by Google through essential SEO infrastructure.
-
-**Target features:**
-- robots.txt allowing crawler access
-- Auto-generated XML sitemap for all 260+ pages
-
 ## Current State
 
-**Last Shipped:** v1.7 Database Content Reviewed (2026-01-30)
+**Last Shipped:** v1.9 SEO Foundations (2026-01-31)
 
-**What was delivered:**
+**What was delivered (v1.9):**
+- robots.txt allowing all search engines to crawl
+- sitemap.xml with 174 indexable pages (35 redirects auto-excluded)
+- Automated sitemap generation script with redirect detection
+- `npm run build:sitemap` command for regeneration
+
+**What was delivered (v1.7):**
 - Permit page generation system from Notion database (67 pages)
 - Standard Q&A template with 7+ sections
 - Blue triangle bullet styling for visual consistency
@@ -67,14 +65,15 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Blue triangle bullet styling for list consistency — v1.7
 - ✓ Variant parent/child structure for multi-type permits — v1.7
 - ✓ Manifest-based incremental builds — v1.7
+- ✓ robots.txt file allowing search engine crawling — v1.9
+- ✓ XML sitemap listing all pages with lastmod dates — v1.9
+- ✓ Build script to auto-generate sitemap from file system — v1.9
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] robots.txt file allowing search engine crawling
-- [ ] XML sitemap listing all pages with lastmod dates
-- [ ] Build script to auto-generate sitemap from file system
+(None — run `/gsd:new-milestone` to define next goals)
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
@@ -87,13 +86,14 @@ Users can quickly find accurate, understandable information about their specific
 
 ## Context
 
-**Current state (after v1.7):**
+**Current state (after v1.9):**
 - Pure HTML/CSS/JavaScript static site with Node.js build process for document and permit generation
 - CSS design system with variables in `src/styles/main.css`
 - 260+ HTML pages in `src/pages/` (original + 63 document + 67 permit + redirects)
 - Build infrastructure: package.json, @notionhq/client, dotenv, netlify.toml
 - Notion database powers both document and permit page content
-- Build scripts: `scripts/build-documents.js`, `scripts/build-permits.js`
+- Build scripts: `scripts/build-documents.js`, `scripts/build-permits.js`, `scripts/build-sitemap.js`
+- SEO infrastructure: robots.txt + sitemap.xml (174 pages, auto-regeneration)
 - Warm teal/coral color palette with blue triangle bullets
 - Clean white header with 60px height, centered navigation with dropdown menus
 - Yellow footer with centered layout
@@ -147,6 +147,8 @@ Users can quickly find accurate, understandable information about their specific
 | Manifest-based incremental builds | Skip unchanged pages, 3-5x faster | ✓ Good — v1.7 |
 | Variant parent/child structure | Users need common info + specific differences | ✓ Good — v1.7 |
 | Mobile hamburger shows categories only | Simpler navigation, faster task completion | ✓ Good — v1.7 |
+| Exclude redirect pages from sitemap | Prevents duplicate content issues | ✓ Good — v1.9 |
+| File modification time for lastmod | Simple, accurate, automatic updates | ✓ Good — v1.9 |
 
 ---
-*Last updated: 2026-01-31 after v1.8 milestone started*
+*Last updated: 2026-01-31 after v1.9 milestone complete*

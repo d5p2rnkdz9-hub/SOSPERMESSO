@@ -1,5 +1,32 @@
 # Project Milestones: SOS Permesso
 
+## v1.9 SEO Foundations (Shipped: 2026-01-31)
+
+**Delivered:** Search engine discovery infrastructure with robots.txt allowing all crawlers and sitemap.xml listing 174 indexable pages.
+
+**Phases completed:** 18 (1 plan total)
+
+**Key accomplishments:**
+
+- Created robots.txt allowing all search engines to crawl entire site
+- Generated sitemap.xml with 174 pages, automatically excluding 35 redirect pages
+- Built automated sitemap generation script with meta refresh detection
+- Added `npm run build:sitemap` command for easy regeneration
+
+**Stats:**
+
+- 4 files created/modified
+- 870 lines of code
+- 1 phase, 1 plan, 3 tasks
+- 7 commits from milestone start to ship
+- 1 day (2026-01-31)
+
+**Git range:** `950874f` → `354e0c1`
+
+**What's next:** TBD — run `/gsd:new-milestone` to define next goals
+
+---
+
 ## v1.7 Database Content Reviewed (Shipped: 2026-01-30)
 
 **Delivered:** Permit page generation system from Notion database with standardized Q&A template, visual consistency, and variant page structure.

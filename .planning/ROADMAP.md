@@ -1,35 +1,14 @@
 # Roadmap: SOS Permesso
 
-**Current Milestone:** v1.9 SEO Foundations
-**Last Shipped:** v1.7 Database Content Reviewed (2026-01-30)
-
----
-
-## v1.9 SEO Foundations
-
-**Milestone Goal:** Enable Google to discover and index all site pages through essential SEO infrastructure.
-
-### Phase 18: SEO Infrastructure
-
-**Goal:** Search engines can discover and crawl all pages on the site
-**Depends on:** Nothing (standalone milestone)
-**Requirements:** CRAWL-01, CRAWL-02, SMAP-01, SMAP-02, SMAP-03, SMAP-04
-
-**Success Criteria** (what must be TRUE):
-1. robots.txt exists at site root and allows Googlebot to crawl
-2. robots.txt includes Sitemap directive pointing to sitemap.xml
-3. sitemap.xml exists and lists all non-redirect HTML pages with lastmod dates
-4. Running `npm run build:sitemap` regenerates the sitemap from current files
-5. Redirect pages (meta refresh) are not included in sitemap.xml
-
-**Plans:** 1 plan
-
-Plans:
-- [x] 18-01-PLAN.md — Create robots.txt, sitemap build script, and npm integration
+**Current Milestone:** Planning next milestone
+**Last Shipped:** v1.9 SEO Foundations (2026-01-31)
 
 ---
 
 ## Previous Milestones
+
+### v1.9 SEO Foundations (Shipped 2026-01-31)
+> See `.planning/milestones/v1.9-ROADMAP.md`
 
 ### v1.7 Database Content Reviewed (Shipped 2026-01-30)
 > See `.planning/milestones/v1.7-ROADMAP.md`
@@ -55,8 +34,14 @@ Plans:
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 18. SEO Infrastructure | v1.9 | 1/1 | Complete | 2026-01-31 |
+| 1-3 | v1.1 | 4/4 | Complete | 2026-01-25 |
+| 4-9 | v1.2 | 7/7 | Complete | 2026-01-26 |
+| 10-11 | v1.4 | 4/4 | Complete | 2026-01-27 |
+| 12-14 | v1.5 | 4/4 | Complete | 2026-01-28 |
+| 15 | v1.6 | 2/2 | Complete | 2026-01-28 |
+| 16-17 | v1.7 | 5/5 | Complete | 2026-01-30 |
+| 18 | v1.9 | 1/1 | Complete | 2026-01-31 |
 
 ---
 
-*Last updated: 2026-01-31 — Phase 18 complete*
+*Last updated: 2026-01-31 — v1.9 milestone complete*

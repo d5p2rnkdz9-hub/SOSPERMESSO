@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-31
-**Status:** Milestone complete — verified
+**Status:** Ready for next milestone
 
 ## Project Reference
 
@@ -9,15 +9,14 @@ See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v1.9 SEO Foundations - Phase 18
+**Current focus:** Planning next milestone
 
 ## Current Position
 
-**Milestone:** v1.9 SEO Foundations
-**Phase:** 18 of 18 (SEO Infrastructure)
-**Plan:** 1 of 1 in current phase
-**Status:** Milestone complete — all plans executed, goal verified
-**Last activity:** 2026-01-31 - Phase 18 verified (5/5 must-haves passed)
+**Last Milestone:** v1.9 SEO Foundations (Shipped 2026-01-31)
+**Phase:** 18 phases complete across 7 milestones
+**Status:** Ready for next milestone
+**Last activity:** 2026-01-31 - v1.9 milestone complete
 
 ```
 Milestones:
@@ -55,20 +54,17 @@ From prior milestones:
 - **Permit template:** Use scripts/templates/permesso.js for generating permit pages
 - **Bullet styling:** Blue triangle bullets via CSS ::before pseudo-element
 - **Variant structure:** Parent/child pages in subfolders for multi-type permits
+- **Build scripts:** npm run build:* pattern (build:docs, build:sitemap)
 
 ## Accumulated Context
 
 ### Decisions
 
-| Phase | Decision | Rationale | Impact |
-|-------|----------|-----------|--------|
-| 18-01 | Exclude all redirect pages from sitemap via meta refresh detection | Redirect pages shouldn't be indexed to prevent duplicate content issues | 35 redirect pages automatically excluded from 174-page sitemap |
-| 18-01 | Use file modification time for sitemap lastmod dates | Simple, accurate, no manual maintenance needed | Sitemap dates auto-update when files change |
-| 18-01 | Include full URL paths in sitemap (src/pages/ structure) | Matches actual site structure without URL rewriting | URLs reflect true file locations |
+(Cleared for next milestone — see PROJECT.md Key Decisions table for history)
 
 ### Pending Todos
 
-None - cleared for new milestone.
+None — cleared for next milestone.
 
 ### Blockers/Concerns
 
@@ -77,14 +73,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-31
-**Stopped at:** Completed 18-01-PLAN.md (SEO Infrastructure)
+**Stopped at:** v1.9 milestone complete
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md, PROJECT.md
-2. **Where we are:** v1.9 milestone complete, SEO infrastructure ready for deployment
-3. **What to do next:** Deploy to production or start next milestone planning
+2. **Where we are:** Between milestones, v1.9 just shipped
+3. **What to do next:** `/gsd:new-milestone` to define next goals
 
 ---
 
