@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:docs": "node scripts/build-documents.js"
+    "build:docs": "node scripts/build-documents.js",
+    "build:sitemap": "node scripts/build-sitemap.js"
   },
   "repository": {
     "type": "git",
