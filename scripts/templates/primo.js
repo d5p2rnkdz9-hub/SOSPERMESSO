@@ -3,7 +3,7 @@
  * Generates static HTML with interactive checklist
  */
 
-const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml } = require('./helpers.js');
+const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml, normalizeDocumentName } = require('./helpers.js');
 
 /**
  * Generate a primo rilascio document page
@@ -27,9 +27,10 @@ function generatePrimoPage(permit) {
 
   // Generate checklist items with dizionario links and disputed styling
   const checklistHtml = primoDocuments.map((doc, index) => {
-    const docClass = getDocumentClass(doc);
-    const docLabel = linkToDizionario(doc);
-    const disputedNote = isDisputed(doc)
+    const normalizedDoc = normalizeDocumentName(doc);
+    const docClass = getDocumentClass(normalizedDoc);
+    const docLabel = linkToDizionario(normalizedDoc);
+    const disputedNote = isDisputed(normalizedDoc)
       ? '<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>'
       : '';
 
@@ -38,7 +39,7 @@ function generatePrimoPage(permit) {
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-${slug}-primo-${index}"
-                   data-doc="${escapeHtml(doc)}">
+                   data-doc="${escapeHtml(normalizedDoc)}">
             <span class="doc-label">${docLabel}${disputedNote}</span>
           </div>`;
   }).join('');

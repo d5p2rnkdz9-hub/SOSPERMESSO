@@ -30,8 +30,9 @@ function linkToDizionario(documentName) {
 
   // Find all matching terms and their positions
   for (const term of terms) {
-    // Case-insensitive search
-    const regex = new RegExp(`(${escapeRegex(term)})`, 'gi');
+    // Case-insensitive search with word boundaries to avoid partial matches
+    // e.g., "Minore" should not match inside "Minorenni"
+    const regex = new RegExp(`\\b(${escapeRegex(term)})\\b`, 'gi');
     let match;
     while ((match = regex.exec(documentName)) !== null) {
       // Check if this position overlaps with an existing replacement
@@ -114,10 +115,41 @@ function escapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
+/**
+ * Normalize document name: capitalize first letter, fix spacing issues
+ * Handles edge cases like "4fototessere" → "4 fototessere"
+ * @param {string} documentName - Raw document name from Notion
+ * @returns {string} Normalized document name
+ */
+function normalizeDocumentName(documentName) {
+  if (!documentName) return '';
+
+  let normalized = documentName.trim();
+
+  // Fix "4fototessere" → "4 fototessere" (number stuck to word)
+  normalized = normalized.replace(/^(\d+)([a-zA-Z])/, '$1 $2');
+
+  // Fix double spaces
+  normalized = normalized.replace(/\s+/g, ' ');
+
+  // Capitalize first letter (handle numbers at start)
+  normalized = normalized.replace(/^(\d*\s*)([a-z])/, (match, prefix, letter) => {
+    return prefix + letter.toUpperCase();
+  });
+
+  // If still starts with lowercase (no number prefix), capitalize
+  if (/^[a-z]/.test(normalized)) {
+    normalized = normalized.charAt(0).toUpperCase() + normalized.slice(1);
+  }
+
+  return normalized;
+}
+
 module.exports = {
   linkToDizionario,
   getDocumentClass,
   isDisputed,
   escapeHtml,
+  normalizeDocumentName,
   DISPUTED_DOCUMENTS
 };
