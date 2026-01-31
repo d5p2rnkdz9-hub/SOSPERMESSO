@@ -22,10 +22,10 @@
 4. Running `npm run build:sitemap` regenerates the sitemap from current files
 5. Redirect pages (meta refresh) are not included in sitemap.xml
 
-**Plans:** TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 18-01: Create robots.txt and sitemap build script
+- [ ] 18-01-PLAN.md — Create robots.txt, sitemap build script, and npm integration
 
 ---
 
@@ -55,7 +55,7 @@ Plans:
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 18. SEO Infrastructure | v1.9 | 0/1 | Not started | - |
+| 18. SEO Infrastructure | v1.9 | 0/1 | Planned | - |
 
 ---
 
