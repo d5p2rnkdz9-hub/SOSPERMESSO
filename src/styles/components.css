@@ -422,7 +422,7 @@
   flex-wrap: nowrap;
   align-items: center;
   gap: var(--spacing-lg);
-  margin-left: auto;
+  order: 2; /* After logo, before language-switcher */
 }
 
 .nav-menu {
@@ -520,27 +520,31 @@
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
+  order: 3; /* After nav-wrapper on desktop */
+  margin-left: auto;
 }
 
 .language-button {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  background-color: transparent;
-  border: none;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+  border: 2px solid #1A6B5F;
   border-radius: var(--radius-full);
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1rem;
   color: #1A6B5F;
   transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(26, 107, 95, 0.15);
 }
 
 .language-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: var(--taxi-yellow-bright);
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #C8E6C9 0%, #A5D6A7 100%);
+  border-color: #145A4E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 107, 95, 0.25);
 }
 
 .language-dropdown {

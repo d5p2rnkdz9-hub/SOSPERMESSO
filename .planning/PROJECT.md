@@ -4,6 +4,15 @@
 
 A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Features a comprehensive document requirements system and permit page generation powered by Notion for content management.
 
+## Current Milestone: v1.8 SEO Foundations
+
+**Goal:** Make the site discoverable by Google through essential SEO infrastructure.
+
+**Target features:**
+- robots.txt allowing crawler access
+- Auto-generated XML sitemap for all 260+ pages
+- Fix placeholder meta descriptions ("in costruzione")
+
 ## Current State
 
 **Last Shipped:** v1.7 Database Content Reviewed (2026-01-30)
@@ -64,7 +73,10 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-(Define with `/gsd:new-milestone`)
+- [ ] robots.txt file allowing search engine crawling
+- [ ] XML sitemap listing all pages with lastmod dates
+- [ ] Build script to auto-generate sitemap from file system
+- [ ] Fix meta descriptions that contain placeholder text
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
@@ -139,4 +151,4 @@ Users can quickly find accurate, understandable information about their specific
 | Mobile hamburger shows categories only | Simpler navigation, faster task completion | ✓ Good — v1.7 |
 
 ---
-*Last updated: 2026-01-30 after v1.7 milestone shipped*
+*Last updated: 2026-01-31 after v1.8 milestone started*

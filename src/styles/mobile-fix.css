@@ -145,9 +145,17 @@
     display: none !important;
   }
 
-  /* Language switcher - hide on mobile for now (not functional yet) */
+  /* Language switcher - visible on mobile, before hamburger menu */
   .language-switcher {
-    display: none !important;
+    display: inline-flex !important;
+    order: 2;
+    margin-left: auto;
+    margin-right: 0.75rem;
+  }
+
+  .language-button {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.875rem;
   }
 
   /* ===============================================

@@ -34,19 +34,49 @@
           <img src="images/logo-full.png" alt="SOS Permesso" class="logo-image">
         </a>
 
+        <!-- Language Switcher (standalone) -->
+        <div class="language-switcher">
+          <button class="language-button" id="language-toggle">
+            <span id="current-language">IT 🇮🇹</span>
+            <span>▾</span>
+          </button>
+          <div class="language-dropdown" id="language-dropdown">
+            <div class="language-option" data-lang="it">
+              <span>🇮🇹</span>
+              <span>Italiano</span>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span>🇬🇧</span>
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="fr">
+              <span>🇫🇷</span>
+              <span>Français</span>
+            </div>
+            <div class="language-option" data-lang="es">
+              <span>🇪🇸</span>
+              <span>Español</span>
+            </div>
+            <div class="language-option" data-lang="zh">
+              <span>🇨🇳</span>
+              <span>中文</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Mobile Menu Toggle -->
         <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
           ☰
         </button>
 
-        <!-- Navigation Menu & Language Switcher -->
+        <!-- Navigation Menu -->
         <div class="nav-wrapper">
           <ul class="nav-menu" id="nav-menu">
             <!-- Database with dropdown -->
             <li class="nav-item has-dropdown">
               <a href="src/pages/database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="src/pages/database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="src/pages/database.html" class="dropdown-link" role="menuitem">Tutti i permessi</a></li>
                 <li role="none"><a href="src/pages/documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
               </ul>
             </li>
@@ -81,36 +111,6 @@
               </ul>
             </li>
           </ul>
-
-          <!-- Language Switcher -->
-          <div class="language-switcher">
-            <button class="language-button" id="language-toggle">
-              <span id="current-language">IT 🇮🇹</span>
-              <span>▾</span>
-            </button>
-            <div class="language-dropdown" id="language-dropdown">
-              <div class="language-option" data-lang="it">
-                <span>🇮🇹</span>
-                <span>Italiano</span>
-              </div>
-              <div class="language-option" data-lang="en">
-                <span>🇬🇧</span>
-                <span>English</span>
-              </div>
-              <div class="language-option" data-lang="fr">
-                <span>🇫🇷</span>
-                <span>Français</span>
-              </div>
-              <div class="language-option" data-lang="es">
-                <span>🇪🇸</span>
-                <span>Español</span>
-              </div>
-              <div class="language-option" data-lang="zh">
-                <span>🇨🇳</span>
-                <span>中文</span>
-              </div>
-            </div>
-          </div>
         </div>
       </nav>
     </div>
@@ -214,7 +214,6 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title" style="color: var(--accent-green);">I NOSTRI TEST 🎯</h2>
-        <p class="section-subtitle">Scopri se puoi ottenere, convertire o rinnovare il tuo permesso di soggiorno</p>
       </div>
 
       <div class="grid grid-3">
@@ -247,20 +246,19 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title" style="color: var(--accent-teal);">I NOSTRI DATABASE 📚</h2>
-        <p class="section-subtitle">Trova rapidamente tutte le informazioni sui permessi</p>
       </div>
 
-      <div class="grid grid-2">
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
         <a href="src/pages/database.html" class="card card-link">
           <span class="card-icon">📚</span>
-          <h3 class="card-title">Database permessi</h3>
-          <p class="card-description">Tutti i tipi di permesso disponibili in Italia</p>
+          <h3 class="card-title">Tutti i permessi</h3>
+          <p class="card-description">Database con tutti (o quasi) i permessi di soggiorno in Italia</p>
         </a>
 
         <a href="src/pages/documenti-questura.html" class="card card-link">
           <span class="card-icon">📌</span>
-          <h3 class="card-title">Documenti Questura</h3>
-          <p class="card-description">Lista completa dei documenti necessari</p>
+          <h3 class="card-title">Che documenti porto in Questura</h3>
+          <p class="card-description">Checklist semplice di documenti da portare in Questura o mettere nel kit postale</p>
         </a>
       </div>
     </div>
@@ -271,66 +269,61 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title" style="color: var(--accent-orange);">LE NOSTRE GUIDE 📖</h2>
-        <p class="section-subtitle">Tutte le informazioni che ti servono, spiegate in modo semplice</p>
       </div>
 
-      <div class="grid grid-3">
+      <div class="grid grid-3" style="max-width: 900px; margin: 0 auto;">
         <a href="src/pages/protezione-internazionale.html" class="card card-link">
           <span class="card-icon">🛡️</span>
           <h3 class="card-title">Protezione internazionale</h3>
-          <p class="card-description">Informazioni su asilo e protezione</p>
+          <p class="card-description">Come chiedere asilo in Italia e come funziona la procedura</p>
         </a>
 
         <a href="src/pages/ricongiungimento-familiare.html" class="card card-link">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">👨‍👩‍👧</span>
           <h3 class="card-title">Ricongiungimento familiare</h3>
-          <p class="card-description">Come richiedere il ricongiungimento</p>
+          <p class="card-description">Come chiedere il nullaosta per portare familiari in Italia</p>
+        </a>
+
+        <a href="src/pages/decreto-flussi.html" class="card card-link" style="position: relative; overflow: hidden;">
+          <span style="position: absolute; top: 12px; right: -35px; background: var(--accent-orange); color: white; font-size: 0.65rem; font-weight: 600; padding: 4px 40px; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">In arrivo</span>
+          <span class="card-icon">💼</span>
+          <h3 class="card-title">Decreto flussi</h3>
+          <p class="card-description">Come funziona l'ingresso per lavoro</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USEFUL LINKS SECTION -->
+  <section class="section" style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--lighthouse-red);">LINK UTILI 🔗</h2>
+      </div>
+
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+        <a href="src/pages/aiuto-legale.html" class="card card-link">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Assistenza legale gratis vicino a te</h3>
+          <p class="card-description">Sportelli e associazioni che danno assistenza legale gratuita in Italia</p>
+        </a>
+
+        <a href="src/pages/kit-postale.html" class="card card-link">
+          <span class="card-icon">📩</span>
+          <h3 class="card-title">Moduli utili (kit postale e altri)</h3>
+          <p class="card-description">Guida pratica per compilare e spedire il kit postale</p>
+        </a>
+
+        <a href="src/pages/controlla-permesso.html" class="card card-link">
+          <span class="card-icon">👀</span>
+          <h3 class="card-title">Controlla permesso</h3>
+          <p class="card-description">Verifica lo stato del tuo permesso</p>
         </a>
 
         <a href="src/pages/dizionario.html" class="card card-link">
           <span class="card-icon">🔤</span>
           <h3 class="card-title">Dizionario</h3>
-          <p class="card-description">Termini burocratici spiegati semplicemente</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- AIUTO LEGALE SECTION -->
-  <section class="section aiuto-legale-section" style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--lighthouse-red);">AIUTO LEGALE ⚖️</h2>
-      </div>
-
-      <a href="src/pages/aiuto-legale.html" class="card card-link aiuto-legale-card">
-        <span class="card-icon">⚖️</span>
-        <h3 class="card-title">Trova assistenza legale gratuita</h3>
-        <p class="card-description">Sportelli e associazioni che offrono consulenza gratuita per questioni di immigrazione</p>
-        <button class="btn btn-secondary">TROVA AIUTO VICINO A TE →</button>
-      </a>
-    </div>
-  </section>
-
-  <!-- USEFUL LINKS SECTION -->
-  <section class="section" style="background: linear-gradient(135deg, #FFF3E0 0%, #FFE0E6 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--accent-orange);">LINK UTILI 🔗</h2>
-        <p class="section-subtitle">Strumenti e risorse per aiutarti</p>
-      </div>
-
-      <div class="grid grid-2">
-        <a href="src/pages/kit-postale.html" class="card card-link card-compact">
-          <span class="card-icon">📩</span>
-          <h3 class="card-title">Kit postale</h3>
-          <p class="card-description">Scarica i moduli necessari</p>
-        </a>
-
-        <a href="src/pages/controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
-          <h3 class="card-title">Controlla permesso</h3>
-          <p class="card-description">Verifica lo stato del tuo permesso</p>
+          <p class="card-description">Termini burocratici spiegati in modo semplice</p>
         </a>
       </div>
     </div>
