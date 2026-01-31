@@ -15,9 +15,9 @@ See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Milestone:** v1.9 SEO Foundations
 **Phase:** 18 of 18 (SEO Infrastructure)
-**Plan:** 0 of 1 in current phase
-**Status:** Ready to plan
-**Last activity:** 2026-01-31 - Roadmap created for v1.9
+**Plan:** 1 of 1 in current phase
+**Status:** Phase complete
+**Last activity:** 2026-01-31 - Completed 18-01-PLAN.md (SEO Infrastructure)
 
 ```
 Milestones:
@@ -30,7 +30,7 @@ v1.5 Footer + Collabora    [Shipped 2026-01-28] ##########
 v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
-v1.9 SEO Foundations       [In Progress]        ----------
+v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
 ```
 
 ## Technical Debt
@@ -60,7 +60,11 @@ From prior milestones:
 
 ### Decisions
 
-(Cleared for new milestone - see PROJECT.md Key Decisions table for history)
+| Phase | Decision | Rationale | Impact |
+|-------|----------|-----------|--------|
+| 18-01 | Exclude all redirect pages from sitemap via meta refresh detection | Redirect pages shouldn't be indexed to prevent duplicate content issues | 35 redirect pages automatically excluded from 174-page sitemap |
+| 18-01 | Use file modification time for sitemap lastmod dates | Simple, accurate, no manual maintenance needed | Sitemap dates auto-update when files change |
+| 18-01 | Include full URL paths in sitemap (src/pages/ structure) | Matches actual site structure without URL rewriting | URLs reflect true file locations |
 
 ### Pending Todos
 
@@ -73,14 +77,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-31
-**Stopped at:** Roadmap created, ready to plan Phase 18
+**Stopped at:** Completed 18-01-PLAN.md (SEO Infrastructure)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, ROADMAP.md, REQUIREMENTS.md
-2. **Where we are:** Phase 18 ready to plan
-3. **What to do next:** `/gsd:plan-phase 18`
+1. **Context to load:** This STATE.md, PROJECT.md
+2. **Where we are:** v1.9 milestone complete, SEO infrastructure ready for deployment
+3. **What to do next:** Deploy to production or start next milestone planning
 
 ---
 
