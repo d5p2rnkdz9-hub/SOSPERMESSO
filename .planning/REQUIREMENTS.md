@@ -9,15 +9,15 @@ Requirements for SEO Foundations milestone. Enable Google to discover and index 
 
 ### Crawler Access
 
-- [ ] **CRAWL-01**: robots.txt exists in site root allowing search engine crawling
-- [ ] **CRAWL-02**: robots.txt references sitemap location
+- [x] **CRAWL-01**: robots.txt exists in site root allowing search engine crawling
+- [x] **CRAWL-02**: robots.txt references sitemap location
 
 ### Sitemap
 
-- [ ] **SMAP-01**: XML sitemap exists listing all HTML pages
-- [ ] **SMAP-02**: Sitemap includes lastmod dates based on file modification time
-- [ ] **SMAP-03**: Build script generates sitemap automatically from file system
-- [ ] **SMAP-04**: Sitemap excludes redirect pages (meta refresh)
+- [x] **SMAP-01**: XML sitemap exists listing all HTML pages
+- [x] **SMAP-02**: Sitemap includes lastmod dates based on file modification time
+- [x] **SMAP-03**: Build script generates sitemap automatically from file system
+- [x] **SMAP-04**: Sitemap excludes redirect pages (meta refresh)
 
 ## Future Requirements
 
@@ -51,12 +51,12 @@ Which phases cover which requirements.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CRAWL-01 | Phase 18 | Pending |
-| CRAWL-02 | Phase 18 | Pending |
-| SMAP-01 | Phase 18 | Pending |
-| SMAP-02 | Phase 18 | Pending |
-| SMAP-03 | Phase 18 | Pending |
-| SMAP-04 | Phase 18 | Pending |
+| CRAWL-01 | Phase 18 | Complete |
+| CRAWL-02 | Phase 18 | Complete |
+| SMAP-01 | Phase 18 | Complete |
+| SMAP-02 | Phase 18 | Complete |
+| SMAP-03 | Phase 18 | Complete |
+| SMAP-04 | Phase 18 | Complete |
 
 **Coverage:**
 - v1.9 requirements: 6 total
@@ -65,4 +65,4 @@ Which phases cover which requirements.
 
 ---
 *Requirements defined: 2026-01-31*
-*Last updated: 2026-01-31 after roadmap creation*
+*Last updated: 2026-01-31 — All v1.9 requirements complete*
