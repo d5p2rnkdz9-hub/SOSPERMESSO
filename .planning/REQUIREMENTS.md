@@ -47,22 +47,22 @@ Explicitly excluded from this milestone.
 
 ## Traceability
 
-Which phases cover which requirements. Updated during roadmap creation.
+Which phases cover which requirements.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CRAWL-01 | TBD | Pending |
-| CRAWL-02 | TBD | Pending |
-| SMAP-01 | TBD | Pending |
-| SMAP-02 | TBD | Pending |
-| SMAP-03 | TBD | Pending |
-| SMAP-04 | TBD | Pending |
+| CRAWL-01 | Phase 18 | Pending |
+| CRAWL-02 | Phase 18 | Pending |
+| SMAP-01 | Phase 18 | Pending |
+| SMAP-02 | Phase 18 | Pending |
+| SMAP-03 | Phase 18 | Pending |
+| SMAP-04 | Phase 18 | Pending |
 
 **Coverage:**
 - v1.9 requirements: 6 total
-- Mapped to phases: 0
-- Unmapped: 6 (pending roadmap)
+- Mapped to phases: 6
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-31*
-*Last updated: 2026-01-31 after initial definition*
+*Last updated: 2026-01-31 after roadmap creation*
