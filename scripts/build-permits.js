@@ -12,7 +12,7 @@ const {
   generateVariantChildPage,
   generateVariantPlaceholderPage
 } = require('./templates/permesso.js');
-const { escapeHtml } = require('./templates/helpers.js');
+const { escapeHtml, linkToDizionario } = require('./templates/helpers.js');
 
 const OUTPUT_DIR = path.join(__dirname, '../src/pages');
 const TODO_PATH = path.join(__dirname, '../.planning/TODO-permits.md');
@@ -85,13 +85,23 @@ function richTextToHtml(richTextArray) {
   if (!richTextArray || !Array.isArray(richTextArray)) return '';
 
   return richTextArray.map(segment => {
-    let text = escapeHtml(segment.plain_text || '');
+    const annotations = segment.annotations || {};
+    let plainText = segment.plain_text || '';
+
     // Strip checkmark characters that appear as bullets in Notion content
     // NOTE: Do NOT trim - whitespace is significant for spacing between formatted text
-    text = text.replace(/[✓✔☑]/g, '');
+    plainText = plainText.replace(/[✓✔☑]/g, '');
     // Fix common typo: "mi da" should be "mi dà" (with accent)
-    text = text.replace(/\bmi da\b/gi, 'mi dà');
-    const annotations = segment.annotations || {};
+    plainText = plainText.replace(/\bmi da\b/gi, 'mi dà');
+
+    let text;
+    // For segments with Notion links or code formatting, use simple escape
+    // For plain text, apply dictionary linking (linkToDizionario handles escaping)
+    if (segment.href || annotations.code) {
+      text = escapeHtml(plainText);
+    } else {
+      text = linkToDizionario(plainText);
+    }
 
     // Apply formatting in order
     if (annotations.code) text = `<code>${text}</code>`;
@@ -100,7 +110,7 @@ function richTextToHtml(richTextArray) {
     if (annotations.underline) text = `<u>${text}</u>`;
     if (annotations.strikethrough) text = `<s>${text}</s>`;
 
-    // Handle links
+    // Handle Notion links
     if (segment.href) {
       text = `<a href="${escapeHtml(segment.href)}">${text}</a>`;
     }

@@ -51,6 +51,31 @@ v2.0 Multilingual + Tests  [Active]             ○○○○○○○○○○
 - Legal review: Not needed
 - Sequence: Translations first, then tests
 
+## Patch Releases
+
+### v1.9.1 (In Progress)
+
+**Mobile header fix:**
+- ✓ Fixed hamburger menu missing on mobile (language-switcher width: 100% removed)
+- ✓ Fixed language dropdown positioning (full-width bottom sheet)
+- ✓ Added JS toggle for language dropdown on mobile
+
+**Dictionary expansion:**
+- ✓ Added 8 new terms: Questura, Prefettura, Sportello Unico, Visto, Ricevuta, Marca da bollo, Copia conforme, Tessera sanitaria
+- ✓ Updated dizionario-map.json with terms + aliases
+- ✓ Integrated linkToDizionario into permit page builder
+
+**To complete v1.9.1:**
+```bash
+node scripts/build-permits.js   # Regenerate 67 permit pages with dictionary links
+```
+
+### v1.9.2 (Future)
+
+- [ ] Dictionary self-linking (terms in dizionario.html link to each other)
+- [ ] Permit cross-linking (permit names in content → link to permit pages)
+- [ ] Post-process script for static pages (dizionario.html, guides)
+
 ## Technical Debt
 
 From TODO-permits.md:
@@ -58,7 +83,7 @@ From TODO-permits.md:
 
 From prior milestones:
 - Desktop header alignment (language switcher baseline)
-- Dizionario links revision (partial matching, coverage incomplete)
+- ~~Dizionario links revision~~ → Addressed in v1.9.1 (8 new terms, permit page linking)
 - No npm script for build-permits.js (manual execution)
 
 ## Design Patterns to Follow
