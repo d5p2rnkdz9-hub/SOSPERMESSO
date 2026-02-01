@@ -499,10 +499,8 @@
     text-align: center;
   }
 
-  .language-switcher {
-    width: 100%;
-    justify-content: center;
-  }
+  /* Language switcher: DO NOT set width: 100% - breaks flex layout with hamburger */
+  /* See mobile-fix.css for proper mobile layout */
 
   .menu-toggle {
     display: flex;

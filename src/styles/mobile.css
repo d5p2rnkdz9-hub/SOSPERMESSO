@@ -346,14 +346,21 @@
     bottom: 0;
     left: 0;
     right: 0;
+    /* Override desktop constraints to enable full-width bottom sheet */
+    width: 100%;
+    max-width: none;
+    min-width: unset;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     max-height: 50vh;
     overflow-y: auto;
     transform: translateY(100%);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
   }
 
   .language-switcher.active .language-dropdown {
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .language-option {

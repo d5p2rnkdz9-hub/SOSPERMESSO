@@ -84,8 +84,25 @@ window.addEventListener('resize', () => {
 // LANGUAGE SWITCHER
 // ===============================================
 
+const languageSwitcher = document.querySelector('.language-switcher');
+const languageToggle = document.getElementById('language-toggle');
 const languageOptions = document.querySelectorAll('.language-option');
 const currentLanguageDisplay = document.getElementById('current-language');
+
+// Mobile: toggle dropdown on button click
+if (languageToggle && languageSwitcher) {
+  languageToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    languageSwitcher.classList.toggle('active');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!languageSwitcher.contains(e.target)) {
+      languageSwitcher.classList.remove('active');
+    }
+  });
+}
 
 // Language configuration
 const languageConfig = {
@@ -108,6 +125,11 @@ if (currentLanguageDisplay) {
 languageOptions.forEach(option => {
   option.addEventListener('click', function() {
     const selectedLang = this.getAttribute('data-lang');
+
+    // Close dropdown
+    if (languageSwitcher) {
+      languageSwitcher.classList.remove('active');
+    }
 
     if (selectedLang !== currentLanguage) {
       // Save to localStorage
