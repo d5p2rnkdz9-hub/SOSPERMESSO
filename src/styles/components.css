@@ -100,30 +100,60 @@
 }
 
 /* ===============================================
+   BREADCRUMB BAR - STICKY
+   =============================================== */
+
+.breadcrumb-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.breadcrumb-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-nav {
+  font-size: 0.875rem;
+  color: var(--gray-medium);
+}
+
+.breadcrumb-nav a {
+  color: var(--taxi-yellow-dark);
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================================
    ERROR REPORT BUTTON
    =============================================== */
 
 .error-report-btn {
-  /* Positioning - absolute within breadcrumb container */
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10;
-
-  /* Visual style - subtle teal outline */
+  /* Visual style - red outline */
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.75rem;
 
-  /* Colors - matching header nav links teal (#1A6B5F) */
-  color: #1A6B5F;
+  /* Colors - red for error reporting */
+  color: var(--lighthouse-red);
   background: transparent;
-  border: 1px solid #26A69A;
+  border: 1px solid var(--lighthouse-red);
   border-radius: var(--radius-full);
 
   /* Typography */
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
   text-decoration: none;
   line-height: 1;
@@ -134,34 +164,32 @@
 }
 
 .error-report-btn:hover {
-  color: #1A6B5F;
-  background: rgba(38, 166, 154, 0.1);
-  border-color: #1A6B5F;
+  color: white;
+  background: var(--lighthouse-red);
+  border-color: var(--lighthouse-red);
   transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(26, 107, 95, 0.15);
+  box-shadow: 0 2px 8px rgba(255, 82, 82, 0.3);
 }
 
 .error-report-btn:active {
   transform: translateY(0);
 }
 
-/* Mobile responsive - shift to normal flow */
+/* Mobile responsive */
 @media (max-width: 768px) {
-  .error-report-btn {
-    position: static;
-    display: block;
-    width: fit-content;
-    margin: 0.75rem auto 0;
-    text-align: center;
+  .breadcrumb-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
-}
 
-/* Landscape mobile - keep absolute but smaller */
-@media (max-width: 768px) and (orientation: landscape) {
+  .breadcrumb-nav {
+    font-size: 0.8rem;
+  }
+
   .error-report-btn {
-    position: absolute;
-    font-size: 0.75rem;
-    padding: 0.375rem 0.75rem;
+    font-size: 0.7rem;
+    padding: 0.35rem 0.6rem;
   }
 }
 

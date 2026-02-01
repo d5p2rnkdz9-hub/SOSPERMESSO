@@ -181,24 +181,21 @@ function generatePermessoPage(permit) {
   </header>
 
   <!-- BREADCRUMB -->
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container" style="position: relative;">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
-        <a href="database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
-        <span>Permesso per ${escapedTipo}</span>
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="../../index.html">Home</a> →
+          <a href="database.html">Database</a> →
+          <span>Permesso per ${escapedTipo}</span>
+        </div>
+        <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + slug + '.html')}"
+           class="error-report-btn" target="_blank" rel="noopener noreferrer">
+          🚨 Segnala errore
+        </a>
       </div>
-
-      <!-- ERROR BUTTON -->
-      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + slug + '.html')}"
-         class="error-report-btn"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Segnala un errore in questa pagina">
-        🚨 Segnala errore
-      </a>
     </div>
-  </section>
+  </div>
 
   <!-- PAGE HEADER -->
   <section class="section bg-off-white">
@@ -397,24 +394,21 @@ function generatePlaceholderPage(permit) {
   </header>
 
   <!-- BREADCRUMB -->
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container" style="position: relative;">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
-        <a href="database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
-        <span>Permesso per ${escapedTipo}</span>
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="../../index.html">Home</a> →
+          <a href="database.html">Database</a> →
+          <span>Permesso per ${escapedTipo}</span>
+        </div>
+        <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + slug + '.html')}"
+           class="error-report-btn" target="_blank" rel="noopener noreferrer">
+          🚨 Segnala errore
+        </a>
       </div>
-
-      <!-- ERROR BUTTON -->
-      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + slug + '.html')}"
-         class="error-report-btn"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Segnala un errore in questa pagina">
-        🚨 Segnala errore
-      </a>
     </div>
-  </section>
+  </div>
 
   <!-- PAGE HEADER -->
   <section class="section bg-off-white">
@@ -645,24 +639,21 @@ function generateVariantParentPage(group, generalSections = [], emoji = '📄') 
   </header>
 
   <!-- BREADCRUMB -->
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container" style="position: relative;">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="../../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
-        <a href="../database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
-        <span>Permesso per ${escapedBaseName}</span>
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="../../../index.html">Home</a> →
+          <a href="../database.html">Database</a> →
+          <span>Permesso per ${escapedBaseName}</span>
+        </div>
+        <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + baseSlug + '/index.html')}"
+           class="error-report-btn" target="_blank" rel="noopener noreferrer">
+          🚨 Segnala errore
+        </a>
       </div>
-
-      <!-- ERROR BUTTON -->
-      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + baseSlug + '/index.html')}"
-         class="error-report-btn"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Segnala un errore in questa pagina">
-        🚨 Segnala errore
-      </a>
     </div>
-  </section>
+  </div>
 
   <!-- PAGE HEADER -->
   <section class="section bg-off-white">
@@ -695,7 +686,7 @@ ${generalContentHtml}
   <!-- VARIANT LINKS -->
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">Tipologie specifiche</h2>
+      <h2 class="text-center mb-lg">Quale situazione ti interessa?</h2>
       <div class="grid grid-2" style="max-width: 800px; margin: 0 auto;">
 ${variantLinksHtml}
       </div>
@@ -869,25 +860,22 @@ function generateVariantChildPage(permit) {
   </header>
 
   <!-- BREADCRUMB -->
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container" style="position: relative;">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="../../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
-        <a href="../database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
-        <a href="index.html" style="color: var(--taxi-yellow-dark);">Permesso per ${escapedBaseName}</a> →
-        <span>${escapedVariantName}</span>
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="../../../index.html">Home</a> →
+          <a href="../database.html">Database</a> →
+          <a href="index.html">Permesso per ${escapedBaseName}</a> →
+          <span>${escapedVariantName}</span>
+        </div>
+        <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + baseSlug + '/' + variantSlug + '.html')}"
+           class="error-report-btn" target="_blank" rel="noopener noreferrer">
+          🚨 Segnala errore
+        </a>
       </div>
-
-      <!-- ERROR BUTTON -->
-      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=${encodeURIComponent('https://sospermesso.it/src/pages/permesso-' + baseSlug + '/' + variantSlug + '.html')}"
-         class="error-report-btn"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Segnala un errore in questa pagina">
-        🚨 Segnala errore
-      </a>
     </div>
-  </section>
+  </div>
 
   <!-- PAGE HEADER -->
   <section class="section bg-off-white">
@@ -1084,16 +1072,18 @@ function generateVariantPlaceholderPage(permit) {
   </header>
 
   <!-- BREADCRUMB -->
-  <section class="section" style="padding: 1rem 0;">
+  <div class="breadcrumb-bar">
     <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="../../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
-        <a href="../database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
-        <a href="index.html" style="color: var(--taxi-yellow-dark);">Permesso per ${escapedBaseName}</a> →
-        <span>${escapedVariantName}</span>
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="../../../index.html">Home</a> →
+          <a href="../database.html">Database</a> →
+          <a href="index.html">Permesso per ${escapedBaseName}</a> →
+          <span>${escapedVariantName}</span>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- PAGE HEADER -->
   <section class="section bg-off-white">
