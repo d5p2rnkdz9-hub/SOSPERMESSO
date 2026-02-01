@@ -896,9 +896,9 @@
 
 .highlight-text {
   display: inline;
-  color: #26A69A;
+  color: var(--white);
   font-size: inherit;
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {

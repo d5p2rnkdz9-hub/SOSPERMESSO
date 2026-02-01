@@ -391,8 +391,26 @@
     padding: 1rem 0;
   }
 
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem 0.5rem;
+  }
+
+  .footer-project-link {
+    font-size: 0.8rem;
+  }
+
+  .footer-separator {
+    display: none;
+  }
+
   .footer-copyright {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    width: 100%;
+    margin-top: 0.5rem !important;
   }
 
   /* ===============================================
