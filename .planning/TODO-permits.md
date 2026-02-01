@@ -1,6 +1,6 @@
 # Permits Needing Notion Content
 
-**Generated:** 2026-01-29
+**Generated:** 2026-02-01
 **Source:** build-permits.js run
 
 ## Empty Permits

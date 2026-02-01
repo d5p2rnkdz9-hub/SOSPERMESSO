@@ -445,25 +445,6 @@ function getEmojiForPermit(tipo) {
 }
 
 /**
- * Extract subtitle from first content paragraph or use default
- * @param {Array} sections - Q&A sections
- * @param {string} tipo - Permit type
- * @returns {string} Subtitle
- */
-function getSubtitle(sections, tipo) {
-  if (sections.length > 0) {
-    // Try to get first paragraph text from first section
-    const firstContent = sections[0].content || '';
-    // Extract text from first paragraph (remove tags, get plain text)
-    const match = firstContent.match(/<p>([^<]+)</);
-    if (match && match[1].length < 100) {
-      return match[1].trim();
-    }
-  }
-  return `Informazioni sul permesso di soggiorno per ${tipo || 'questo motivo'}`;
-}
-
-/**
  * Main build function
  */
 async function build() {
@@ -611,7 +592,6 @@ async function build() {
         tipo: permit.tipo,
         slug: permit.slug,
         emoji: getEmojiForPermit(permit.tipo),
-        subtitle: getSubtitle(sections, permit.tipo),
         sections: sections
       };
 
@@ -814,7 +794,7 @@ async function generateVariantPages() {
     generatedFolders++;
 
     // Generate parent page (with placeholder general content for now)
-    const parentHtml = generateVariantParentPage(group, []);
+    const parentHtml = generateVariantParentPage(group, [], getEmojiForPermit(group.baseName));
     await fs.writeFile(path.join(folderPath, 'index.html'), parentHtml, 'utf-8');
     console.log(`   ✓ index.html (parent page)`);
     generatedParents++;

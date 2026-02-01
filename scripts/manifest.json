@@ -3,263 +3,263 @@
     "tipo": "Permesso UE per soggiornanti di lungo periodo (o “Carta di soggiorno” - PSLP)",
     "slug": "permesso-ue-per-soggiornanti-di-lungo-periodo-o-carta-di-soggiorno-pslp",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:25.667Z"
+    "lastBuilt": "2026-02-01T18:39:57.971Z"
   },
   "1ad7355e-7f7f-8039-93ca-c3e08f7b8279": {
     "tipo": "Lavoro subordinato a seguito di conversione da altro permesso",
     "slug": "lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:28.802Z"
+    "lastBuilt": "2026-02-01T18:40:01.113Z"
   },
   "1ad7355e-7f7f-807a-8378-d6163eb5742e": {
     "tipo": "Lavoro subordinato a seguito di ingresso per flussi",
     "slug": "lavoro-subordinato-a-seguito-di-ingresso-per-flussi",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:29.477Z",
+    "lastBuilt": "2026-02-01T18:40:02.326Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-8082-92d9-e90292bdccde": {
     "tipo": "Calamità naturale (art. 20 bis)",
     "slug": "calamita-naturale-art-20-bis",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:31.402Z"
+    "lastBuilt": "2026-02-01T18:40:03.615Z"
   },
   "1ad7355e-7f7f-8095-8a06-e3c6a39fe0fa": {
     "tipo": "Studio",
     "slug": "studio",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:32.321Z"
+    "lastBuilt": "2026-02-01T18:40:04.427Z"
   },
   "1ad7355e-7f7f-80b7-b9a4-d0873f68af82": {
     "tipo": "Carta di soggiorno per familiari di cittadini UE (D. Lgs. 30/07)",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue-d-lgs-30-07",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:33.141Z"
+    "lastBuilt": "2026-02-01T18:40:05.477Z"
   },
   "1ad7355e-7f7f-80c7-b0f2-ff573167513c": {
     "tipo": "Protezione sociale vittime di tratta (Art. 18) ",
     "slug": "protezione-sociale-vittime-di-tratta-art-18",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:33.967Z"
+    "lastBuilt": "2026-02-01T18:40:06.394Z"
   },
   "1ad7355e-7f7f-80d0-8eb7-eaf89571f818": {
     "tipo": "Lavoro autonomo",
     "slug": "lavoro-autonomo",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:34.639Z",
+    "lastBuilt": "2026-02-01T18:40:07.045Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-80d1-9488-ef9e5c19dcab": {
     "tipo": "Protezione sussidiaria",
     "slug": "protezione-sussidiaria",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:35.821Z"
+    "lastBuilt": "2026-02-01T18:40:08.751Z"
   },
   "1ad7355e-7f7f-80d2-adb1-d99b52c9b836": {
     "tipo": "Assistenza minore (Art. 31)",
     "slug": "assistenza-minore-art-31",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:36.702Z"
+    "lastBuilt": "2026-02-01T18:40:09.759Z"
   },
   "1b27355e-7f7f-8076-9826-ddcacea91bf7": {
     "tipo": "Cure mediche (art.36 d. lgs 286/1998)",
     "slug": "cure-mediche-art-36-d-lgs-286-1998",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:37.487Z",
+    "lastBuilt": "2026-02-01T18:40:10.601Z",
     "placeholder": true
   },
   "1b97355e-7f7f-8030-bca0-e191b477d1a4": {
     "tipo": "Famiglia - motivi familiari (convivente con parente cittaadino italiano - art. 19)",
     "slug": "famiglia-motivi-familiari-convivente-con-parente-cittaadino-italiano-art-19",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:39.635Z"
+    "lastBuilt": "2026-02-01T18:40:11.932Z"
   },
   "2e77355e-7f7f-804d-91cb-d88e50daec05": {
     "tipo": "Apolidia (art.17 D.P.R. n. 572/93)",
     "slug": "apolidia-art-17-d-p-r-n-572-93",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:40.225Z",
+    "lastBuilt": "2026-02-01T18:40:12.521Z",
     "placeholder": true
   },
   "2e77355e-7f7f-80f7-897e-d212e47bf04b": {
     "tipo": "Motivi religiosi",
     "slug": "motivi-religiosi",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:40.857Z",
+    "lastBuilt": "2026-02-01T18:40:13.337Z",
     "placeholder": true
   },
   "2ef7355e-7f7f-8000-9c13-cea8a7c0c0df": {
     "tipo": "Protezione sociale vittime di violenza domestica (art.18 bis)",
     "slug": "protezione-sociale-vittime-di-violenza-domestica-art-18-bis",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:41.679Z",
+    "lastBuilt": "2026-02-01T18:40:14.164Z",
     "placeholder": true
   },
   "2ef7355e-7f7f-8046-a722-c4f78cc64742": {
     "tipo": "Cure mediche per persona gravemente malata che si trova già in Italia (",
     "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
-    "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:48.713Z"
+    "lastEdited": "2026-01-31T10:11:00.000Z",
+    "lastBuilt": "2026-02-01T18:39:55.070Z"
   },
   "2ef7355e-7f7f-8070-9ac0-e62c33b23175": {
     "tipo": "Sfruttamento lavorativo (18ter)",
     "slug": "sfruttamento-lavorativo-18ter",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:53.929Z"
+    "lastBuilt": "2026-02-01T18:40:15.861Z"
   },
   "2ef7355e-7f7f-808d-b33b-f09b75fe881a": {
     "tipo": "Cure mediche per donna in stato di gravidanza e padre del bambino (art. 19)",
     "slug": "cure-mediche-per-donna-in-stato-di-gravidanza-e-padre-del-bambino-art-19",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:54.900Z"
+    "lastBuilt": "2026-02-01T18:40:18.103Z"
   },
   "2ef7355e-7f7f-8098-8408-d8ab6aff341e": {
     "tipo": "Carta di soggiorno per familiari di italiani “dinamici” (D. Lgs. 30/07)",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici-d-lgs-30-07",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:56.013Z"
+    "lastBuilt": "2026-02-01T18:40:20.695Z"
   },
   "2ef7355e-7f7f-80c9-abcd-ddb94f90d05c": {
     "tipo": "Famiglia (o “motivi familiari”) SENZA nullaosta per ricongiungimento (”coesione”)",
     "slug": "famiglia-o-motivi-familiari-senza-nullaosta-per-ricongiungimento-coesione",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:57.056Z"
+    "lastBuilt": "2026-02-01T18:40:21.728Z"
   },
   "2ef7355e-7f7f-80fa-b9e9-f27d740afec5": {
     "tipo": "Famiglia per genitore di cittadino italiano (Art. 30)",
     "slug": "famiglia-per-genitore-di-cittadino-italiano-art-30",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:58.147Z"
+    "lastBuilt": "2026-02-01T18:40:22.558Z"
   },
   "1ad7355e-7f7f-80fe-a6b1-e15522f7cf5a": {
     "tipo": "Famiglia (motivi familiari - art. 30) dopo ingresso con nullaosta",
     "slug": "famiglia-motivi-familiari-art-30-dopo-ingresso-con-nullaosta",
     "lastEdited": "2026-01-29T15:45:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:59.159Z"
+    "lastBuilt": "2026-02-01T18:40:23.504Z"
   },
   "1b97355e-7f7f-8062-8e0b-d99beaa946e3": {
     "tipo": "FAMIT per familiari di cittadini italiani “statici”",
     "slug": "famit-per-familiari-di-cittadini-italiani-statici",
     "lastEdited": "2026-01-29T16:13:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:23.885Z"
+    "lastBuilt": "2026-02-01T18:39:56.203Z"
   },
   "2ef7355e-7f7f-80fb-8eb4-c91ec07e594f": {
     "tipo": "Prosieguo amministrativo",
     "slug": "prosieguo-amministrativo",
     "lastEdited": "2026-01-29T15:44:00.000Z",
-    "lastBuilt": "2026-01-29T16:47:59.822Z"
+    "lastBuilt": "2026-02-01T18:40:24.211Z"
   },
   "1b27355e-7f7f-8088-98c6-f3c65c6e7724": {
     "tipo": "Attesa occupazione (art.22)",
     "slug": "attesa-occupazione-art-22",
     "lastEdited": "2026-01-28T16:02:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:01.963Z"
+    "lastBuilt": "2026-02-01T18:40:25.271Z"
   },
   "2dc7355e-7f7f-80d8-b0a5-c82c9b24043c": {
     "tipo": "Attività sportiva (art.27)",
     "slug": "attivita-sportiva-art-27",
     "lastEdited": "2026-01-28T16:02:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:02.579Z",
+    "lastBuilt": "2026-02-01T18:40:25.924Z",
     "placeholder": true
   },
   "2ef7355e-7f7f-8057-9aba-ef36d6b01e50": {
     "tipo": "Richiesta Asilo",
     "slug": "richiesta-asilo",
-    "lastEdited": "2026-01-28T15:19:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:03.386Z"
+    "lastEdited": "2026-01-31T14:54:00.000Z",
+    "lastBuilt": "2026-02-01T18:39:50.975Z"
   },
   "1ad7355e-7f7f-803d-8a1b-f0c4fb12b5dc": {
     "tipo": "Protezione speciale (art.32 d.lgs 25/2008)",
     "slug": "protezione-speciale-art-32-d-lgs-25-2008",
     "lastEdited": "2026-01-28T15:14:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:04.481Z"
+    "lastBuilt": "2026-02-01T18:40:27.086Z"
   },
   "1ad7355e-7f7f-8041-aad5-e2dbfe6ed65b": {
     "tipo": "Asilo (status rifugiato)",
     "slug": "asilo-status-rifugiato",
     "lastEdited": "2026-01-28T15:14:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:05.849Z"
+    "lastBuilt": "2026-02-01T18:40:28.544Z"
   },
   "1ad7355e-7f7f-80e0-a182-e179b81a8f0f": {
     "tipo": "Minore età",
     "slug": "minore-eta",
     "lastEdited": "2026-01-28T15:14:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:06.745Z"
+    "lastBuilt": "2026-02-01T18:40:30.328Z"
   },
   "2e77355e-7f7f-8058-beb5-cfcc98c6d2fe": {
     "tipo": "Residenza elettiva",
     "slug": "residenza-elettiva",
     "lastEdited": "2026-01-28T15:14:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:07.996Z",
+    "lastBuilt": "2026-02-01T18:40:30.960Z",
     "placeholder": true
   },
   "2ef7355e-7f7f-801c-ba02-edc8ccf9e8bc": {
     "tipo": "Familiari di titolari di status di rifugiato o protezione sussidiaria",
     "slug": "familiari-di-titolari-di-status-di-rifugiato-o-protezione-sussidiaria",
     "lastEdited": "2026-01-28T15:14:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:08.662Z",
+    "lastBuilt": "2026-02-01T18:40:31.689Z",
     "placeholder": true
   },
   "2ef7355e-7f7f-809f-bb45-f5d2ea24698b": {
     "tipo": "Affidamento a familiari entro il quarto grado",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "lastEdited": "2026-01-23T09:22:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:11.197Z"
+    "lastBuilt": "2026-02-01T18:40:33.261Z"
   },
   "1ad7355e-7f7f-8067-ad48-ef7ac7a43a83": {
     "tipo": "Ricerca scientifica (art.27ter)",
     "slug": "ricerca-scientifica-art-27ter",
     "lastEdited": "2025-06-04T17:07:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:11.786Z",
+    "lastBuilt": "2026-02-01T18:40:33.855Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-809b-b8fb-e9c19fb89c4d": {
     "tipo": "Acquisto cittadinanza o stato di apolide",
     "slug": "acquisto-cittadinanza-o-stato-di-apolide",
     "lastEdited": "2025-03-18T11:13:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:12.370Z",
+    "lastBuilt": "2026-02-01T18:40:34.451Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-80c4-847b-f94b215df3e6": {
     "tipo": "Attività sportiva",
     "slug": "attivita-sportiva",
     "lastEdited": "2025-03-18T11:12:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:13.119Z",
+    "lastBuilt": "2026-02-01T18:40:35.506Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-805b-ba6b-dbff5529fc7f": {
     "tipo": "Lavoro artistico",
     "slug": "lavoro-artistico",
     "lastEdited": "2025-03-18T11:12:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:13.842Z",
+    "lastBuilt": "2026-02-01T18:40:36.114Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-8054-a4a1-e9f4a31686d4": {
     "tipo": "Lavoro subordinato a seguito di sanatoria",
     "slug": "lavoro-subordinato-a-seguito-di-sanatoria",
     "lastEdited": "2025-03-18T11:12:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:14.693Z",
+    "lastBuilt": "2026-02-01T18:40:36.736Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-80fb-aee6-da46ddbc7ac4": {
     "tipo": "Residenza elettiva",
     "slug": "residenza-elettiva",
     "lastEdited": "2025-03-18T11:12:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:15.282Z",
+    "lastBuilt": "2026-02-01T18:40:37.869Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-80b1-bf0e-ced1be3cd742": {
     "tipo": "Tirocinio",
     "slug": "tirocinio",
     "lastEdited": "2025-03-18T11:11:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:15.938Z",
+    "lastBuilt": "2026-02-01T18:40:38.503Z",
     "placeholder": true
   },
   "1ad7355e-7f7f-80a5-9738-cd59474a66a8": {
     "tipo": "Motivi religiosi",
     "slug": "motivi-religiosi",
     "lastEdited": "2025-03-18T11:11:00.000Z",
-    "lastBuilt": "2026-01-29T16:48:16.524Z",
+    "lastBuilt": "2026-02-01T18:40:39.080Z",
     "placeholder": true
   }
 }

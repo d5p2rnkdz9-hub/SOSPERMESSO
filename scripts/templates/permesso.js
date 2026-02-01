@@ -133,7 +133,7 @@ function generatePermessoPage(permit) {
             <li class="nav-item has-dropdown">
               <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Tutti i permessi</a></li>
                 <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
               </ul>
             </li>
@@ -206,7 +206,6 @@ function generatePermessoPage(permit) {
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">${pageEmoji}</span>
         <h1 class="page-title">Permesso per ${escapedTipo}</h1>
-        <p class="section-subtitle">${escapedSubtitle}</p>
       </div>
     </div>
   </section>
@@ -350,7 +349,7 @@ function generatePlaceholderPage(permit) {
             <li class="nav-item has-dropdown">
               <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Tutti i permessi</a></li>
                 <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
               </ul>
             </li>
@@ -508,10 +507,10 @@ function generatePlaceholderPage(permit) {
  * @param {Array<Object>} generalSections - Q&A sections for general parent content
  * @returns {string} Complete HTML page
  */
-function generateVariantParentPage(group, generalSections = []) {
+function generateVariantParentPage(group, generalSections = [], emoji = '📄') {
   const { baseName, baseSlug, variants } = group;
   const escapedBaseName = escapeHtml(baseName);
-  const pageEmoji = '📄'; // Could be dynamic based on permit type
+  const pageEmoji = emoji;
 
   // Generate general content sections (cos'è, durata, diritti, etc.)
   const generalContentHtml = generalSections.length > 0
@@ -598,7 +597,7 @@ function generateVariantParentPage(group, generalSections = []) {
             <li class="nav-item has-dropdown">
               <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="../database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="../database.html" class="dropdown-link" role="menuitem">Tutti i permessi</a></li>
                 <li role="none"><a href="../documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
               </ul>
             </li>
@@ -671,7 +670,6 @@ function generateVariantParentPage(group, generalSections = []) {
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">${pageEmoji}</span>
         <h1 class="page-title">Permesso per ${escapedBaseName}</h1>
-        <p class="section-subtitle">Informazioni generali e tipologie specifiche</p>
       </div>
     </div>
   </section>
@@ -823,7 +821,7 @@ function generateVariantChildPage(permit) {
             <li class="nav-item has-dropdown">
               <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="../database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="../database.html" class="dropdown-link" role="menuitem">Tutti i permessi</a></li>
                 <li role="none"><a href="../documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
               </ul>
             </li>
@@ -897,7 +895,6 @@ function generateVariantChildPage(permit) {
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">${pageEmoji}</span>
         <h1 class="page-title">${escapedTipo}</h1>
-        <p class="section-subtitle">Requisiti e procedure specifiche per ${escapedVariantName.toLowerCase()}</p>
       </div>
     </div>
   </section>
@@ -1045,7 +1042,7 @@ function generateVariantPlaceholderPage(permit) {
             <li class="nav-item has-dropdown">
               <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
               <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="../database.html" class="dropdown-link" role="menuitem">Database di permessi</a></li>
+                <li role="none"><a href="../database.html" class="dropdown-link" role="menuitem">Tutti i permessi</a></li>
                 <li role="none"><a href="../documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
               </ul>
             </li>
