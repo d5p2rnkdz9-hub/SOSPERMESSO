@@ -297,6 +297,52 @@
   }
 
   /* ===============================================
+     HOMEPAGE CARDS - COMPACT HORIZONTAL LAYOUT
+     =============================================== */
+
+  #test .card-link,
+  #database .card-link,
+  #guide .card-link,
+  #resources .card-link {
+    flex-direction: row !important;
+    align-items: center !important;
+    text-align: left !important;
+    padding: 1rem !important;
+    gap: 1rem;
+  }
+
+  #test .card-icon,
+  #database .card-icon,
+  #guide .card-icon,
+  #resources .card-icon {
+    font-size: 2rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  #test .card-title,
+  #database .card-title,
+  #guide .card-title,
+  #resources .card-title {
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  #test .card-description,
+  #database .card-description,
+  #guide .card-description,
+  #resources .card-description {
+    display: none !important;
+  }
+
+  #test .card .btn,
+  #test .card-link .btn,
+  #database .card .btn,
+  #guide .card .btn,
+  #resources .card .btn {
+    display: none !important;
+  }
+
+  /* ===============================================
      ALERT MOBILE FIX
      =============================================== */
 
