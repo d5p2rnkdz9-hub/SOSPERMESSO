@@ -145,11 +145,130 @@ function normalizeDocumentName(documentName) {
   return normalized;
 }
 
+/**
+ * Parse document notes from Notion into Q&A sections
+ * Notes format: Question?\n• bullet\n• bullet\n\nQuestion?\n...
+ * @param {string} notesText - Raw notes text from Notion
+ * @returns {Array<{question: string, content: string}>} Parsed sections
+ */
+function parseDocNotes(notesText) {
+  if (!notesText || typeof notesText !== 'string') return [];
+
+  const sections = [];
+
+  // First, extract questions that might be embedded in lines
+  // Look for pattern: "...text...Quali/Come/Devo/Posso...?"
+  // Note: "Ricorda" removed because it's typically a reminder statement, not a question
+  const questionPattern = /(Quali|Come|Devo|Posso|Cosa|Quanto)[^?]+\?/g;
+  const allQuestions = [];
+  let match;
+  while ((match = questionPattern.exec(notesText)) !== null) {
+    allQuestions.push({
+      question: match[0].trim(),
+      index: match.index
+    });
+  }
+
+  // For each question, extract content until the next question
+  for (let i = 0; i < allQuestions.length; i++) {
+    const q = allQuestions[i];
+    const nextQ = allQuestions[i + 1];
+
+    // Get content between this question and the next (or end of text)
+    const startIdx = q.index + q.question.length;
+    const endIdx = nextQ ? nextQ.index : notesText.length;
+    const contentText = notesText.substring(startIdx, endIdx).trim();
+
+    // Parse content lines
+    const contentLines = contentText.split('\n')
+      .map(l => l.trim())
+      .filter(l => l && !l.includes('blocks deleted') && !l.startsWith('Moved ') && !l.startsWith('Stesso database'));
+
+    if (contentLines.length > 0) {
+      sections.push({
+        question: q.question,
+        content: formatNotesContent(contentLines)
+      });
+    }
+  }
+
+  return sections;
+}
+
+/**
+ * Format notes content lines into HTML
+ * @param {Array<string>} lines - Content lines
+ * @returns {string} HTML formatted content
+ */
+function formatNotesContent(lines) {
+  if (!lines || lines.length === 0) return '';
+
+  const bulletLines = [];
+  const introText = [];  // Text before bullets (e.g., "Sì, devi:")
+  const afterText = [];  // Text after bullets (e.g., "Ricorda che...")
+
+  let foundFirstBullet = false;
+  let foundLastBullet = false;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+
+    // Check if it's a bullet point (starts with •, -, *, or similar)
+    if (/^[•\-\*]\s*/.test(trimmed)) {
+      const content = trimmed.replace(/^[•\-\*]\s*/, '').trim();
+      if (content) {
+        bulletLines.push(content);
+        foundFirstBullet = true;
+        foundLastBullet = true;
+      }
+    } else {
+      // It's a text line
+      if (!foundFirstBullet) {
+        // Text before any bullets - only keep if meaningful (starts with "Sì," or similar)
+        if (/^(Sì|Si|In Questura)/i.test(trimmed)) {
+          introText.push(trimmed);
+        }
+      } else if (foundLastBullet) {
+        // Text after bullets - keep important reminders
+        if (/^(Ricorda|Nota|Attenzione|Se passa)/i.test(trimmed)) {
+          afterText.push(trimmed);
+        }
+        foundLastBullet = false; // Reset to track if more bullets come
+      }
+    }
+  }
+
+  let html = '';
+
+  // Add intro text first (e.g., "Sì, devi:")
+  for (const text of introText) {
+    html += `<p>${escapeHtml(text)}</p>`;
+  }
+
+  // Add bullet list if any
+  if (bulletLines.length > 0) {
+    html += '<ul>';
+    for (const bullet of bulletLines) {
+      html += `<li>${linkToDizionario(bullet)}</li>`;
+    }
+    html += '</ul>';
+  }
+
+  // Add after-text (e.g., "Ricorda che...")
+  for (const text of afterText) {
+    html += `<p class="note-reminder"><em>${escapeHtml(text)}</em></p>`;
+  }
+
+  return html;
+}
+
 module.exports = {
   linkToDizionario,
   getDocumentClass,
   isDisputed,
   escapeHtml,
   normalizeDocumentName,
+  parseDocNotes,
   DISPUTED_DOCUMENTS
 };

@@ -6,7 +6,16 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current State
 
-**Last Shipped:** v1.9 SEO Foundations (2026-01-31)
+**Last Shipped:** v1.10 UI Polish & Document Notes (2026-02-01)
+
+**What was delivered (v1.10):**
+- Sticky breadcrumb bar that stays visible below header on scroll
+- Fixed 150+ pages with correct breadcrumb HTML structure
+- Document notes from Notion displayed as Q&A cards on PSLP pages
+- parseDocNotes function for extracting Q&A content from Notion
+- Test card titles updated ("Posso CONVERTIRE/RINNOVARE il mio permesso?")
+- Card titles prevent word-breaking (whole words only wrap)
+- Footer pages (chi-siamo, policy, etc.) left-aligned on mobile
 
 **What was delivered (v1.9):**
 - robots.txt allowing all search engines to crawl
@@ -68,6 +77,9 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ robots.txt file allowing search engine crawling — v1.9
 - ✓ XML sitemap listing all pages with lastmod dates — v1.9
 - ✓ Build script to auto-generate sitemap from file system — v1.9
+- ✓ Sticky breadcrumb bar visible on scroll — v1.10
+- ✓ Document notes from Notion as Q&A cards — v1.10
+- ✓ Mobile footer pages left-aligned text — v1.10
 
 ### Active
 
@@ -96,7 +108,7 @@ Users can quickly find accurate, understandable information about their specific
 
 ## Context
 
-**Current state (after v1.9):**
+**Current state (after v1.10):**
 - Pure HTML/CSS/JavaScript static site with Node.js build process for document and permit generation
 - CSS design system with variables in `src/styles/main.css`
 - 260+ HTML pages in `src/pages/` (original + 63 document + 67 permit + redirects)
@@ -165,4 +177,4 @@ Users can quickly find accurate, understandable information about their specific
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-01-31 after v2.0 milestone started*
+*Last updated: 2026-02-01 after v1.10 shipped*

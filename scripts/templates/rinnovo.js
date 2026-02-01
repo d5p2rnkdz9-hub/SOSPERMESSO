@@ -3,7 +3,7 @@
  * Generates static HTML with interactive checklist
  */
 
-const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml, normalizeDocumentName } = require('./helpers.js');
+const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml, normalizeDocumentName, parseDocNotes } = require('./helpers.js');
 
 /**
  * Generate a rinnovo document page
@@ -12,10 +12,14 @@ const { linkToDizionario, getDocumentClass, isDisputed, escapeHtml, normalizeDoc
  * @param {string} permit.slug - URL slug (e.g., "studio")
  * @param {Array<string>} permit.rinnovoDocuments - List of required documents
  * @param {string} permit.rinnovoMethod - Submission method ("KIT" or "Questura")
+ * @param {string} permit.docNotes - Additional notes about documents (optional)
  * @returns {string} Complete HTML page
  */
 function generateRinnovoPage(permit) {
-  const { tipo, slug, rinnovoDocuments, rinnovoMethod } = permit;
+  const { tipo, slug, rinnovoDocuments, rinnovoMethod, docNotes } = permit;
+
+  // Parse document notes into Q&A sections
+  const notesSections = parseDocNotes(docNotes);
 
   // Check if this is attesa-occupazione (disputed renewal)
   const isAttesaOccupazione = slug && slug.includes('attesa-occupazione');
@@ -86,7 +90,7 @@ function generateRinnovoPage(permit) {
     <div class="container">
       <nav class="navbar">
         <a href="../../index.html" class="logo">
-          <img src="../../images/Logo.png" alt="SOS Permesso" class="logo-image">
+          <img src="../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
         </a>
         <button class="menu-toggle" id="menu-toggle">☰</button>
         <ul class="nav-menu" id="nav-menu">
@@ -189,7 +193,19 @@ ${checklistHtml}
       </div>
     </div>
   </section>
-
+${notesSections.length > 0 ? `
+  <!-- DOCUMENT NOTES -->
+  <section class="section bg-off-white">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">📝 Informazioni aggiuntive sui documenti</h2>
+${notesSections.map((section, index) => `
+      <div class="card" style="margin-bottom: 1rem;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1rem;">${escapeHtml(section.question)}</h3>
+        ${section.content}
+      </div>`).join('')}
+    </div>
+  </section>
+` : ''}
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">

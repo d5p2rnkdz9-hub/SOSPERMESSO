@@ -55,6 +55,10 @@ async function fetchPermitData() {
     // Get permit name from title property "Nome permesso"
     const tipo = page.properties["Nome permesso"]?.title?.[0]?.plain_text || null;
 
+    // Get document notes from "Info extra su doc rilascio" field
+    const docNotesRichText = page.properties["Info extra su doc rilascio"]?.rich_text || [];
+    const docNotes = docNotesRichText.map(segment => segment.plain_text || '').join('');
+
     return {
       id: page.id,
       tipo,
@@ -64,6 +68,8 @@ async function fetchPermitData() {
       // Mod fields are multi_select, get first value
       primoMethod: page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null,
       rinnovoMethod: page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null,
+      // Document notes (extra info about documents)
+      docNotes: docNotes || null,
       // Include last_edited_time for change detection
       last_edited_time: page.last_edited_time || null,
     };

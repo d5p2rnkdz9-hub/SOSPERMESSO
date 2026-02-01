@@ -216,7 +216,6 @@
      CARD MOBILE FIX - VERTICAL STACKED LAYOUT
      =============================================== */
 
-  .card,
   .card.card-link,
   a.card-link {
     width: 100%;
@@ -228,6 +227,15 @@
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
+  }
+
+  /* Content cards (not card-links) should be left-aligned */
+  .card:not(.card-link):not(a) {
+    width: 100%;
+    padding: 1.25rem;
+    margin-bottom: 0.75rem;
+    box-sizing: border-box;
+    text-align: left;
   }
 
   .card-icon {

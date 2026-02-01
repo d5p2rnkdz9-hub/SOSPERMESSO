@@ -105,7 +105,7 @@
 
 .breadcrumb-bar {
   position: sticky;
-  top: 0;
+  top: 190px; /* Below header (180px logo + 10px padding) */
   z-index: 100;
   background: var(--white);
   padding: 0.5rem 0;
@@ -177,6 +177,10 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .breadcrumb-bar {
+    top: 110px; /* Below mobile header (100px logo + padding) */
+  }
+
   .breadcrumb-content {
     flex-direction: column;
     align-items: flex-start;
@@ -246,9 +250,9 @@
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
   color: var(--black);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  hyphens: none;
   line-height: 1.3;
 }
 
