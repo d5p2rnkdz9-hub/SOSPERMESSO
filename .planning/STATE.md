@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-01-31
-**Status:** Ready for next milestone
+**Status:** Milestone v2.0 active
 
 ## Project Reference
 
@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Planning next milestone
+**Current focus:** v2.0 Multilingual + Tests
 
 ## Current Position
 
-**Last Milestone:** v1.9 SEO Foundations (Shipped 2026-01-31)
-**Phase:** 18 phases complete across 7 milestones
-**Status:** Ready for next milestone
-**Last activity:** 2026-01-31 - v1.9 milestone complete
+**Current Milestone:** v2.0 Multilingual + Tests
+**Phase:** 20 - Batch Translation Pipeline
+**Status:** Ready for planning
+**Last activity:** 2026-01-31 — Roadmap created, starting Phase 20
 
 ```
 Milestones:
@@ -30,7 +30,26 @@ v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
+v2.0 Multilingual + Tests  [Active]             ○○○○○○○○○○
 ```
+
+## v2.0 Scope
+
+**Track 1: English Translations**
+- Translator review interface (web UI for volunteers)
+- Batch translation pipeline (208 pages)
+- Human review workflow
+- Language switching (IT ↔ EN)
+
+**Track 2: Proprietary Tests**
+- Replace 3 Typeform tests with in-house solution
+- Build for both IT + EN
+
+**Decisions:**
+- Hosting: `/en/` subfolder
+- Reviewers: Volunteers
+- Legal review: Not needed
+- Sequence: Translations first, then tests
 
 ## Technical Debt
 
@@ -60,11 +79,15 @@ From prior milestones:
 
 ### Decisions
 
-(Cleared for next milestone — see PROJECT.md Key Decisions table for history)
+- /en/ subfolder for English pages (not subdomain)
+- Volunteer translators (not paid)
+- No legal review needed for translations
+- Proprietary tests replace Typeform for both IT + EN
+- Translations first, then tests
 
 ### Pending Todos
 
-None — cleared for next milestone.
+None.
 
 ### Blockers/Concerns
 
@@ -73,14 +96,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-01-31
-**Stopped at:** v1.9 milestone complete
+**Stopped at:** Defining v2.0 roadmap
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, PROJECT.md
-2. **Where we are:** Between milestones, v1.9 just shipped
-3. **What to do next:** `/gsd:new-milestone` to define next goals
+1. **Context to load:** This STATE.md, PROJECT.md, ROADMAP.md
+2. **Where we are:** v2.0 milestone started, roadmap being created
+3. **What to do next:** Complete roadmap, then `/gsd:plan-phase 19`
 
 ---
 

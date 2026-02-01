@@ -73,16 +73,26 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-(None — run `/gsd:new-milestone` to define next goals)
+**Current Milestone: v2.0 Multilingual + Tests**
+
+**Goal:** English-speaking users can access the full site with quality translations, and all users get a proprietary test system replacing Typeform.
+
+**Target features:**
+- [ ] Translator review interface for volunteer corrections
+- [ ] Batch translation pipeline (208 pages IT → EN)
+- [ ] Human review workflow with volunteer translators
+- [ ] Language switching integration (IT ↔ EN)
+- [ ] Proprietary test system replacing 3 Typeform tests (IT + EN)
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
 ### Out of Scope
 
-- Backend API integration — static site approach, Typeform handles form submissions
+- Backend API integration — static site approach
 - Real-time permit status tracking — external service, just link to portale immigrazione
 - User accounts/authentication — information site, no personalization needed
-- Additional languages (EN, FR, ES, ZH) — infrastructure exists but content not priority
+- Additional languages (FR, ES, ZH) — pipeline built for EN, reuse later
+- Legal review for translations — volunteer review sufficient
 
 ## Context
 
@@ -149,6 +159,10 @@ Users can quickly find accurate, understandable information about their specific
 | Mobile hamburger shows categories only | Simpler navigation, faster task completion | ✓ Good — v1.7 |
 | Exclude redirect pages from sitemap | Prevents duplicate content issues | ✓ Good — v1.9 |
 | File modification time for lastmod | Simple, accurate, automatic updates | ✓ Good — v1.9 |
+| /en/ subfolder for English | Simpler than subdomain, same domain | — Pending |
+| Volunteer translators | Community-driven review process | — Pending |
+| No legal review for translations | AI + human review sufficient | — Pending |
+| Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-01-31 after v1.9 milestone complete*
+*Last updated: 2026-01-31 after v2.0 milestone started*
