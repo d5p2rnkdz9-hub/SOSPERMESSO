@@ -19,6 +19,7 @@
 
 const fs = require('fs/promises');
 const path = require('path');
+const cheerio = require('cheerio');
 
 const PAGES_DIR = path.join(__dirname, '../src/pages');
 const MANIFEST_PATH = path.join(__dirname, 'translation-manifest.json');
@@ -137,6 +138,89 @@ async function buildSystemPrompt() {
 }
 
 /**
+ * Extract translatable text segments from HTML
+ * @param {string} html - Source HTML content
+ * @returns {{ $: CheerioAPI, segments: Array, metadata: Object }}
+ */
+function extractSegments(html) {
+  const $ = cheerio.load(html, { decodeEntities: false });
+  const segments = [];
+  let segmentId = 0;
+
+  // Extract metadata first
+  const metadata = {
+    title: $('title').text(),
+    description: $('meta[name="description"]').attr('content') || ''
+  };
+
+  // Mark metadata elements for later update
+  $('title').attr('data-translate-id', 'title');
+  $('meta[name="description"]').attr('data-translate-id', 'description');
+
+  // Elements containing translatable text
+  const textSelectors = [
+    'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+    'p', 'li', 'td', 'th',
+    'span:not(.no-translate)',
+    'a:not([href^="http"]):not([href^="mailto"])',
+    'button', 'label',
+    '.alert', '.card-title', '.card-text',
+    '.breadcrumb-item'
+  ].join(', ');
+
+  $(textSelectors).each((i, el) => {
+    const $el = $(el);
+
+    // Skip if inside script, style, or already processed parent
+    if ($el.parents('script, style, noscript').length) return;
+    if ($el.attr('data-translate-id')) return;
+
+    // Skip empty or whitespace-only
+    const text = $el.html();
+    if (!text || !text.trim()) return;
+
+    // Skip if translate="no" attribute
+    if ($el.attr('translate') === 'no') return;
+
+    // Skip children that will be processed separately
+    if ($el.find(textSelectors).length > 0) {
+      // Has child text elements - skip, they'll be processed
+      return;
+    }
+
+    // Store segment with unique ID
+    const id = segmentId++;
+    $el.attr('data-translate-id', id.toString());
+
+    segments.push({
+      id,
+      text: text.trim(),
+      tagName: el.tagName.toLowerCase(),
+      selector: generateSelector($el)
+    });
+  });
+
+  return { $, segments, metadata };
+}
+
+/**
+ * Generate a unique selector for an element
+ */
+function generateSelector($el) {
+  const tag = $el[0].tagName.toLowerCase();
+  const id = $el.attr('id');
+  if (id) return `#${id}`;
+
+  const classes = $el.attr('class');
+  if (classes) {
+    const firstClass = classes.split(' ')[0];
+    return `${tag}.${firstClass}`;
+  }
+
+  return tag;
+}
+
+/**
  * Show help message
  */
 function showHelp() {
@@ -230,10 +314,26 @@ async function main() {
     return;
   }
 
-  // Handle test mode flags (reserved for Plan 02)
+  // Handle test mode flags
   if (options.testExtract) {
-    console.log('Test extract mode - will be implemented in Plan 02');
+    const html = await fs.readFile(options.testExtract, 'utf-8');
+    const { segments, metadata } = extractSegments(html);
+
+    console.log(`\n=== SEGMENT EXTRACTION TEST ===`);
     console.log(`File: ${options.testExtract}`);
+    console.log(`Title: ${metadata.title}`);
+    console.log(`Description: ${metadata.description.slice(0, 50)}...`);
+    console.log(`\nExtracted ${segments.length} segments:\n`);
+
+    segments.slice(0, 15).forEach(seg => {
+      const preview = seg.text.slice(0, 60).replace(/\n/g, ' ');
+      console.log(`  [${seg.id}] <${seg.tagName}> ${preview}${seg.text.length > 60 ? '...' : ''}`);
+    });
+
+    if (segments.length > 15) {
+      console.log(`  ... and ${segments.length - 15} more segments`);
+    }
+
     return;
   }
 
