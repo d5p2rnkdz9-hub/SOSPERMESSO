@@ -1113,6 +1113,11 @@
   color: var(--taxi-yellow-dark);
 }
 
+.hero-tagline {
+  font-style: italic;
+  color: var(--gray-dark);
+}
+
 .hero-description {
   font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--gray-medium);
