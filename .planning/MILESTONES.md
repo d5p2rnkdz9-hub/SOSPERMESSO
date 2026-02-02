@@ -24,12 +24,12 @@
 
 **Git range:** `033f7a0` → current
 
-**Deferred to v3.0:**
-- Human review of translations (volunteer workflow)
-- hreflang tags and EN sitemap (moved to v2.1 infrastructure)
-- Proprietary test system (quiz.js replacing Typeform)
+**Deferred:**
+- Human review of translations (volunteer workflow) → v3.0
+- hreflang tags and EN sitemap → v2.2 Localization Infrastructure
+- Proprietary test system (quiz.js replacing Typeform) → v3.0
 
-**What's next:** v2.1 Localization Infrastructure
+**What's next:** v2.1 Homepage CSS Redesign, then v2.2 Localization Infrastructure
 
 ---
 

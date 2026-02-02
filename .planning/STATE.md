@@ -30,8 +30,9 @@ v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
-v2.0 Translations          [Phase 20 done]      ##########
+v2.0 Translations          [Shipped 2026-02-02] ##########
 v2.1 Homepage Redesign     [Active]             ○○○○○○○○○○
+v2.2 Localization Infra    [Queued]             ..........
 v3.0 Human Review + Tests  [Queued]             ..........
 ```
 
@@ -59,6 +60,18 @@ v3.0 Human Review + Tests  [Queued]             ..........
 2. Playfair Display font loads without visible layout shift on page load
 3. CSS variables for the new color palette exist in main.css
 4. Fluid typography scales smoothly when browser window is resized
+
+## v2.2 Preview (Queued)
+
+**Goal:** Scalable infrastructure for 8-12 languages with paragraph-level change tracking.
+
+Key features planned:
+- Content extraction from Notion with paragraph-level IDs
+- Hash-based change detection + selective translation
+- Translation memory (store translations by content hash)
+- Multi-language HTML generation from single pipeline
+- hreflang in sitemaps, sitemap index architecture
+- RTL CSS preparation for Arabic
 
 ## v2.0 Status (Complete)
 
@@ -102,15 +115,23 @@ From prior milestones:
 | v2.1 | Skip feature badge row | Not essential for initial redesign |
 | 20 | Claude Code subagents for translation | User preferred existing subscription over API setup |
 | v2.0 | /en/ subfolder for English pages | Not subdomain |
+| v2.2 | Paragraph-level tracking | Enables selective re-translation, not full page |
+| v2.2 | hreflang in sitemaps, not HTML | Scales better for 8-12 languages |
+| v2.2 | RTL CSS with logical properties | Preparation for Arabic support |
 
 ### Research Completed
 
-v2.1 research in `.planning/research/`:
+**v2.1 research** in `.planning/research/`:
 - STACK-homepage-css.md — CSS techniques (clamp, Grid, SVG waves)
 - FEATURES.md — Table stakes, differentiators, anti-features
 - ARCHITECTURE-CSS-REDESIGN.md — File structure, propagation strategy
 - PITFALLS-homepage-css.md — Visual regression, contrast, mobile issues
 - SUMMARY.md — Synthesized findings
+
+**v2.2 research sources** (from 2026-02-02 discussion):
+- [W3C i18n guidelines](https://www.w3.org/International/i18n-drafts/nav/about)
+- [LinkGraph hreflang guide](https://www.linkgraph.com/blog/hreflang-implementation-guide/)
+- [GTECH sitemap best practices](https://www.gtechme.com/insights/best-practices-for-multi-language-and-multi-region-xml-sitemaps-hreflang-support/)
 
 ### Pending Todos
 

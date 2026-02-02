@@ -96,38 +96,43 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-**Current Milestone: v2.1 Localization Infrastructure**
+**Current Milestone: v2.1 Homepage CSS Redesign**
 
-**Goal:** Build scalable infrastructure for 8-12 languages with paragraph-level change tracking and diff-based re-translation.
+**Goal:** Modern "startup SaaS" aesthetic for homepage with updated header/footer styling.
 
 **Target features:**
-- [ ] Content extraction from Notion with paragraph-level IDs
-- [ ] Hash-based change detection for paragraphs
-- [ ] Diff engine to identify changed content
-- [ ] Selective translation (only changed paragraphs)
-- [ ] Translation memory (store translations keyed by content hash)
-- [ ] Multi-language HTML generation from single pipeline
-- [ ] hreflang tags in sitemaps (not HTML)
-- [ ] Sitemap index architecture for 8-12 languages
-- [ ] RTL CSS infrastructure preparation (for Arabic)
+- [ ] Split hero layout (text left, illustration right)
+- [ ] Organic wave divider below hero
+- [ ] Bold display typography with Playfair Display font
+- [ ] White/black/yellow color palette
+- [ ] Dark rounded CTA button
+- [ ] Minimal header redesign
+- [ ] Updated footer style
+- [ ] Scroll-triggered fade-in animations
 
-**Architecture goal:**
-```
-Notion (IT) → content extractor → paragraph hashes → diff engine
-                                        ↓
-                                changed paragraphs only
-                                        ↓
-                                translate to all languages
-                                        ↓
-                                generate IT/EN/FR/.../AR HTML
-```
+**Scope:** Homepage only. Header/footer propagation to all pages deferred.
+
+---
+
+**Upcoming: v2.2 Localization Infrastructure**
+
+**Goal:** Scalable infrastructure for 8-12 languages with paragraph-level change tracking.
+
+**Target features:**
+- Content extraction from Notion with paragraph-level IDs
+- Hash-based change detection for paragraphs
+- Diff engine + selective translation (only changed paragraphs)
+- Translation memory (store translations keyed by content hash)
+- Multi-language HTML generation from single pipeline
+- hreflang tags in sitemaps (not HTML)
+- Sitemap index architecture for 8-12 languages
+- RTL CSS infrastructure preparation (for Arabic)
 
 ---
 
 **Deferred to v3.0:**
 - Human review workflow with volunteer translators
 - Proprietary test system replacing 3 Typeform tests (IT + EN)
-- Homepage CSS redesign (modern SaaS aesthetic)
 
 **v2.0 Shipped:** All 209 pages translated to English. CSS paths fixed. Language switcher UI works.
 
@@ -220,11 +225,14 @@ Notion (IT) → content extractor → paragraph hashes → diff engine
 | Volunteer translators | Community-driven review process | — Pending |
 | No legal review for translations | AI + human review sufficient | — Pending |
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
-| Paragraph-level change tracking | Enables selective re-translation, not full page | — Pending |
-| hreflang in sitemaps, not HTML | Scales better for 8-12 languages | — Pending |
-| Sitemap index architecture | One master sitemap pointing to per-language sitemaps | — Pending |
-| Translation memory by content hash | Reuse translations for unchanged paragraphs | — Pending |
-| RTL CSS with logical properties | Preparation for Arabic, Hebrew support | — Pending |
+| Modern SaaS homepage aesthetic | Visual refresh, more professional feel | — Pending |
+| Playfair Display + Inter fonts | Serif display for hero, sans for body | — Pending |
+| Homepage-first, propagate later | Test design on homepage before full rollout | — Pending |
+| Paragraph-level change tracking | Enables selective re-translation, not full page | — Pending (v2.2) |
+| hreflang in sitemaps, not HTML | Scales better for 8-12 languages | — Pending (v2.2) |
+| Sitemap index architecture | One master sitemap pointing to per-language sitemaps | — Pending (v2.2) |
+| Translation memory by content hash | Reuse translations for unchanged paragraphs | — Pending (v2.2) |
+| RTL CSS with logical properties | Preparation for Arabic, Hebrew support | — Pending (v2.2) |
 
 ---
-*Last updated: 2026-02-02 after v2.1 Localization Infrastructure milestone started*
+*Last updated: 2026-02-02 after v2.1 Homepage CSS Redesign milestone started*
