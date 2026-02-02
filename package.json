@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:docs": "node scripts/build-documents.js",
-    "build:sitemap": "node scripts/build-sitemap.js"
+    "build:sitemap": "node scripts/build-sitemap.js",
+    "translate:en": "node scripts/translate-batch.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,12 @@
   },
   "homepage": "https://github.com/d5p2rnkdz9-hub/SOSPERMESSO#readme",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.72.1",
     "@notionhq/client": "^5.8.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cli-progress": "^3.12.0",
     "dotenv": "^17.2.3",
+    "p-limit": "^7.2.0",
     "xml": "^1.0.1"
   }
 }
