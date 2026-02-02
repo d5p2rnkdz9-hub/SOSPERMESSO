@@ -1,8 +1,845 @@
 {
   "meta": {
     "created": "2026-02-01",
-    "lastRun": null,
-    "totalTranslated": 0
+    "lastRun": "2026-02-02T16:28:34.476Z",
+    "totalTranslated": 209
   },
-  "pages": {}
+  "pages": {
+    "index.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "aiuto-legale.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "carta-soggiorno-familiare-italiano-dinamico.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "carta-soggiorno-familiare-ue.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "chi-siamo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "controlla-permesso.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "database.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "decreto-flussi.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "dizionario.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-affidamento-a-familiari-entro-il-quarto-grado-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-affidamento-a-familiari-entro-il-quarto-grado-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-apolidia-art-17-d-p-r-n-572-93-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-apolidia-art-17-d-p-r-n-572-93-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-asilo-politico-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-asilo-politico-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-asilo-status-rifugiato-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-asilo-status-rifugiato-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-assistenza-minore-art-31-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-assistenza-minore-art-31-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-assistenza-minore-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-assistenza-minore-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-attesa-occupazione-art-22-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-attesa-occupazione-art-22-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-attesa-occupazione-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-attesa-occupazione-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-attivita-sportiva-art-27-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-calamita-naturale-art-20-bis-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-calamita-naturale-art-20-bis-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-calamita-naturale-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-calamita-naturale-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-di-soggiorno-per-familiari-di-cittadini-ue-d-lgs-30-07-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-di-soggiorno-per-familiari-di-cittadini-ue-d-lgs-30-07-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-di-soggiorno-per-familiari-di-italiani-dinamici-d-lgs-30-07-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-di-soggiorno-per-familiari-di-italiani-dinamici-d-lgs-30-07-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-di-soggiorno-psuelp-art-9-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-di-soggiorno-psuelp-art-9-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-soggiorno-familiare-italiano-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-soggiorno-familiare-italiano-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-soggiorno-familiare-ue-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-carta-soggiorno-familiare-ue-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-coesione-familiare-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-coesione-familiare-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-conviventi-familiari-italiani-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-conviventi-familiari-italiani-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-art-36-d-lgs-286-1998-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-art-36-d-lgs-286-1998-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-ex-art-19-comma-2-lett-d-bis-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-ex-art-19-comma-2-lett-d-bis-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-per-donna-in-stato-di-gravidanza-e-padre-del-bambino-art-19-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-per-donna-in-stato-di-gravidanza-e-padre-del-bambino-art-19-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-cure-mediche-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-donna-in-stato-di-gravidanza-e-padre-del-bambino-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-donna-in-stato-di-gravidanza-e-padre-del-bambino-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-famigliari-art-19-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-famigliari-art-19-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-famigliari-art-30-dopo-ingresso-con-nullaosta-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-famigliari-art-30-dopo-ingresso-con-nullaosta-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-familiari-art-30-dopo-ingresso-con-nullaosta-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-familiari-art-30-dopo-ingresso-con-nullaosta-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-familiari-convivente-con-parente-cittaadino-italiano-art-19-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-motivi-familiari-convivente-con-parente-cittaadino-italiano-art-19-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-o-motivi-familiari-senza-nullaosta-per-ricongiungimento-coesione-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-o-motivi-familiari-senza-nullaosta-per-ricongiungimento-coesione-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-per-genitore-di-cittadino-italiano-art-30-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famiglia-per-genitore-di-cittadino-italiano-art-30-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-familiari-di-cittadini-ue-carta-ue-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-familiari-di-cittadini-ue-carta-ue-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-familiari-di-italiani-dinamici-carta-ue-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-familiari-di-italiani-dinamici-carta-ue-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-familiari-di-titolari-di-status-di-rifugiato-o-protezione-sussidiaria-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famit-per-familiari-di-cittadini-italiani-statici-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famit-per-familiari-di-cittadini-italiani-statici-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famit-per-familiari-di-cittidini-statici-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-famit-per-familiari-di-cittidini-statici-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-genitore-di-cittadino-italiano-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-genitore-di-cittadino-italiano-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-genitore-minore-italiano-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-genitore-minore-italiano-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-gravi-motivi-salute-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-gravi-motivi-salute-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-gravidanza-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-gravidanza-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-autonomo-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-autonomo-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-subordinato-a-seguito-di-ingresso-per-flussi-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-subordinato-a-seguito-di-ingresso-per-flussi-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-subordinato-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-lavoro-subordinato-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-minore-eta-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-minore-eta-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-minori-stranieri-affidati-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-minori-stranieri-affidati-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-motivi-religiosi-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-motivi-religiosi-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-permesso-ue-per-soggiornanti-di-lungo-periodo-o-carta-di-soggiorno-pslp-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-permesso-ue-per-soggiornanti-di-lungo-periodo-o-carta-di-soggiorno-pslp-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-persona-gravemente-malata-che-si-trova-gia-in-italia-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-persona-gravemente-malata-che-si-trova-gia-in-italia-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-prosieguo-amministrativo-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-prosieguo-amministrativo-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-prosieguo-amministravo-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-prosieguo-amministravo-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-sociale-vittime-di-tratta-art-18-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-sociale-vittime-di-tratta-art-18-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-sociale-vittime-di-violenza-domestica-art-18-bis-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-sociale-vittime-di-violenza-domestica-art-18-bis-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-speciale-art-32-d-lgs-25-2008-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-speciale-art-32-d-lgs-25-2008-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-speciale-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-speciale-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-sussidiaria-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-protezione-sussidiaria-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-questura.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-residenza-elettiva-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-richiesta-asilo-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-richiesta-asilo-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-ricongiungimento-familiare-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-ricongiungimento-familiare-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-sfruttamento-lavorativo-18ter-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-sfruttamento-lavorativo-18ter-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-studio-art-39-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-studio-art-39-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-studio-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-studio-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-tirocinio-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-ue-lungo-periodo-primo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "documenti-ue-lungo-periodo-rinnovo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "il-progetto.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "kit-postale.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-acquisto-cittadinanza-o-stato-di-apolide.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-affidamento-a-familiari-entro-il-quarto-grado.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-apolidia-art-17-d-p-r-n-572-93.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-asilo-politico.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-asilo-status-rifugiato.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-asilo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-assistenza-minore-art-31.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-assistenza-minore.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-attesa-occupazione-art-22.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-attesa-occupazione.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-attivita-sportiva-art-27.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-attivita-sportiva.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-calamita-naturale-art-20-bis.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-calamita-naturale.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue-d-lgs-30-07.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici-d-lgs-30-07.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-coesione-familiare.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-conviventi-familiari-italiani.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-cure-mediche-art-36-d-lgs-286-1998.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-cure-mediche-ex-art-19-comma-2-lett-d-bis.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-cure-mediche-per-donna-in-stato-di-gravidanza-e-padre-del-bambino-art-19.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-cure-mediche.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-donna-in-stato-di-gravidanza-e-padre-del-bambino.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famiglia-motivi-famigliari-art-19.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famiglia-motivi-famigliari-art-30-dopo-ingresso-con-nullaosta.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famiglia-motivi-familiari-art-30-dopo-ingresso-con-nullaosta.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famiglia-motivi-familiari-art-30-senza-nullaosta-coesione.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famiglia-motivi-familiari-convivente-con-parente-cittaadino-italiano-art-19.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famiglia-o-motivi-familiari-senza-nullaosta-per-ricongiungimento-coesione.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famiglia-per-genitore-di-cittadino-italiano-art-30.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-familiari-di-cittadini-ue-carta-ue.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-familiari-di-italiani-dinamici-carta-ue.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-familiari-di-titolari-di-status-di-rifugiato-o-protezione-sussidiaria.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famit-familiari-italiani-statici.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famit-per-familiari-di-cittadini-italiani-statici.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-famit-per-familiari-di-cittidini-statici.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-genitore-di-cittadino-italiano.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-genitore-minore-italiano.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-gravi-motivi-salute.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-gravidanza.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-artistico.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-autonomo.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato/conversione-da-altro-permesso.html": {
+      "translated": "2026-02-02T16:28:34.480Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato/index.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato/ingresso-per-flussi.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato/sanatoria.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato-a-seguito-di-ingresso-per-flussi.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato-a-seguito-di-sanatoria.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-lavoro-subordinato.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-minore-eta.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-minori-stranieri-affidati.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-motivi-religiosi.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-o-carta-di-soggiorno-pslp.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-persona-gravemente-malata-che-si-trova-gia-in-italia.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-prosieguo-amministrativo.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-prosieguo-amministravo.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-protezione-sociale-vittime-di-tratta-art-18.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-protezione-sociale-vittime-di-violenza-domestica-art-18-bis.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-protezione-speciale-art-32-d-lgs-25-2008.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-protezione-speciale.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-protezione-sussidiaria.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-residenza-elettiva.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-ricerca-scientifica-art-27ter.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-richiesta-asilo.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-ricongiungimento-familiare.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-sfruttamento-lavorativo-18ter.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-studio.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "permesso-tirocinio.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "privacy-policy.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "protezione-internazionale.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    },
+    "ricongiungimento-familiare.html": {
+      "translated": "2026-02-02T16:28:34.481Z",
+      "method": "claude-code-subagent"
+    }
+  }
 }

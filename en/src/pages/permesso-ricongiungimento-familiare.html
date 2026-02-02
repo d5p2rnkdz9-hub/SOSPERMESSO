@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Reunification - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="apple-touch-icon" href="../../../IMAGES/logo-full.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="../../styles/components.css">
+  <link rel="stylesheet" href="../../styles/animations.css">
+  <link rel="stylesheet" href="../../styles/mobile.css">
+  <link rel="stylesheet" href="../../styles/mobile-fix.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../../index.html" class="logo">
+          <img src="../../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <!-- Database with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">All permits</a></li>
+                <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Documents for Police Headquarters (Questura)</a></li>
+              </ul>
+            </li>
+
+            <!-- Guide with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guides</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">International protection</a></li>
+                <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Family reunification</a></li>
+                <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dictionary</a></li>
+              </ul>
+            </li>
+
+            <!-- Test with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Test</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Can I GET a permit?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Can I CONVERT?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Can I RENEW my permit?</a></li>
+              </ul>
+            </li>
+
+                        <!-- Collabora with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/USx16QN3" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Collaborate</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Lend a hand</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Report an error</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Give feedback</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">EN</span>
+              <span>▾</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container" style="position: relative;">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <a href="database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
+        <span>Family Reunification</span>
+      </div>
+
+      <!-- ERROR BUTTON -->
+      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https%3A%2F%2Fsospermesso.it%2Fen%2Fsrc%2Fpages%2Fpermesso-ricongiungimento-familiare.html"
+         class="error-report-btn"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Report an error on this page">
+        🚨 Report error
+      </a>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <h1 class="page-title">Permit for Family Reunification</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENT CTA -->
+  <section class="section" style="padding: 1.5rem 0;">
+    <div class="container" style="max-width: 900px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+        <a href="documenti-ricongiungimento-familiare-primo.html" class="btn btn-primary">
+          Documents for first issuance
+        </a>
+        <a href="documenti-ricongiungimento-familiare-rinnovo.html" class="btn btn-rinnovo">
+          Documents for renewal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>📝 What is it</h2>
+        <p><strong>Family reunification</strong> is the procedure that allows a foreigner legally residing in Italy to <strong>bring certain close family members from abroad</strong>.</p>
+        <p>The reunited family member receives a <strong>residence permit for family reasons</strong>.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
+        <h2>👨‍👩‍👧‍👦 Who you can reunite with</h2>
+
+        <h3>✅ Family members who can be reunited</h3>
+        <ul>
+          <li><strong>Spouse</strong> (not legally separated)</li>
+          <li><strong>Minor children</strong>:
+            <ul>
+              <li>Your own children (including adopted)</li>
+              <li>Spouse's children</li>
+              <li>Even if born outside marriage</li>
+            </ul>
+          </li>
+          <li><strong>Adult children</strong> who are dependent if:
+            <ul>
+              <li>Unable to provide for themselves</li>
+              <li>For serious health reasons</li>
+            </ul>
+          </li>
+          <li><strong>Parents</strong> who are dependent if:
+            <ul>
+              <li>They are over 65 years old</li>
+              <li>They have no other children in their country of origin</li>
+              <li>Or other children unable to support them</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3 class="mt-md">❌ You cannot reunite with</h3>
+        <ul>
+          <li>Brothers/sisters</li>
+          <li>Grandparents (except in exceptional cases)</li>
+          <li>Aunts/uncles/cousins</li>
+          <li>Unmarried partners (cohabitants)</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
+        <h2>✅ Applicant requirements</h2>
+        <p>To apply for reunification you must have:</p>
+
+        <h3>1️⃣ Valid residence permit</h3>
+        <ul>
+          <li>Remaining validity: at least 1 year</li>
+          <li>Eligible types:
+            <ul>
+              <li>Employed/self-employed work</li>
+              <li>Study (with limitations)</li>
+              <li>EU long-term resident permit</li>
+              <li>Asylum/protection</li>
+              <li>Religious reasons</li>
+            </ul>
+          </li>
+          <li>❌ Not valid with: seasonal permit, job seeking</li>
+        </ul>
+
+        <h3 class="mt-md">2️⃣ Sufficient income</h3>
+        <p><strong>Minimum annual amount (2024):</strong></p>
+        <ul>
+          <li><strong>€6,542.51</strong> (social allowance) for 1 family member</li>
+          <li><strong>€13,085.02</strong> (double) for 2 family members</li>
+          <li><strong>€19,627.53</strong> (triple) for 3 family members</li>
+          <li><strong>€26,170.04</strong> (quadruple) for 4+ family members</li>
+        </ul>
+        <p class="mt-sm"><em>Income must come from lawful sources (work, pension, income)</em></p>
+
+        <h3 class="mt-md">3️⃣ Suitable accommodation</h3>
+        <ul>
+          <li>Housing suitability certificate from the Municipality</li>
+          <li>Minimum dimensions according to local regulations</li>
+          <li>Adequate sanitary requirements</li>
+        </ul>
+
+        <h3 class="mt-md">4️⃣ Health insurance</h3>
+        <ul>
+          <li>For family members to be reunited</li>
+          <li>Coverage of at least €30,000</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
+        <h2>📋 Complete procedure</h2>
+
+        <div style="background: var(--gray-light); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1rem;">
+          <h3 style="margin-top: 0;">⏱️ Total duration: approximately 8-12 months</h3>
+        </div>
+
+        <h3>PHASE 1: Application for clearance certificate (nulla osta)</h3>
+        <p><strong>Where:</strong> Single Immigration Desk at the Prefecture</p>
+        <p><strong>Who:</strong> The applicant (person living in Italy)</p>
+        <p><strong>Documents:</strong></p>
+        <ul>
+          <li>Completed application form</li>
+          <li>16 euro revenue stamp</li>
+          <li>Copy of valid residence permit</li>
+          <li>Copy of passport</li>
+          <li>Housing suitability certificate</li>
+          <li>Tax return (CU/UNICO)</li>
+          <li>Documents proving family relationship:
+            <ul>
+              <li>Marriage certificate (for spouse)</li>
+              <li>Birth certificate (for children)</li>
+              <li>Translated, legalized, apostilled</li>
+            </ul>
+          </li>
+          <li>Health insurance</li>
+        </ul>
+
+        <h3 class="mt-md">PHASE 2: Waiting for clearance certificate (nulla osta)</h3>
+        <p><strong>Timing:</strong> 180 days (6 months) for response</p>
+        <p>The Single Desk verifies the requirements and issues the clearance certificate.</p>
+
+        <h3 class="mt-md">PHASE 3: Visa application</h3>
+        <p><strong>Where:</strong> Italian Embassy/Consulate in the country of origin</p>
+        <p><strong>Who:</strong> The family member to be reunited</p>
+        <p><strong>When:</strong> Within 6 months of clearance certificate issuance</p>
+        <p><strong>Documents:</strong></p>
+        <ul>
+          <li>Original clearance certificate</li>
+          <li>Valid passport</li>
+          <li>Passport photo</li>
+          <li>Family certificates</li>
+        </ul>
+
+        <h3 class="mt-md">PHASE 4: Entry into Italy</h3>
+        <p>The family member enters Italy with the entry visa.</p>
+
+        <h3 class="mt-md">PHASE 5: Residence permit</h3>
+        <p><strong>Where:</strong> Police Headquarters (Questura)</p>
+        <p><strong>When:</strong> Within 8 days of entry</p>
+        <p>The family member receives the <strong>permit for family reasons</strong>.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>⏱️ Duration of reunited family member's permit</h2>
+        <p><strong>First issuance:</strong> Same duration as applicant's permit (max 2 years)</p>
+        <p><strong>Renewal:</strong> 2 years</p>
+        <p><strong>Characteristics:</strong></p>
+        <ul>
+          <li>Allows working (employed and self-employed)</li>
+          <li>Allows studying</li>
+          <li>Renewable independently (without depending on applicant)</li>
+        </ul>
+      </div>
+
+      <div class="alert alert-warning" style="margin-bottom: 2rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>NOTE:</strong> If the family member is <strong>already in Italy</strong> with a valid permit, reunification is not needed but rather <strong>family cohesion</strong> (simpler procedure, directly at Police Headquarters (Questura))
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>💰 Costs</h2>
+        <p><strong>Estimated total: €400-600</strong></p>
+        <ul>
+          <li>Application revenue stamp: 16 euro</li>
+          <li>Single Desk contribution: ~80 euro</li>
+          <li>Housing suitability certificate: 20-50 euro</li>
+          <li>Health insurance: 150-300 euro</li>
+          <li>Entry visa: varies by country</li>
+          <li>Postal kit for permit: 116 euro</li>
+          <li>Translations and legalizations: 100-200 euro</li>
+        </ul>
+      </div>
+
+      <div class="alert alert-info">
+        <span class="alert-icon">❓</span>
+        <div>
+          Do you have questions about family reunification?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Write to us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">You might also be interested in</h2>
+      <div class="grid grid-3">
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">All permits</h3>
+        </a>
+        <a href="#" class="card card-link card-compact" onclick="alert('Page under construction'); return false;">
+          <span class="card-icon">💑</span>
+          <h3 class="card-title">Family cohesion</h3>
+        </a>
+        <a href="#" class="card card-link card-compact" onclick="alert('Page under construction'); return false;">
+          <span class="card-icon">🏠</span>
+          <h3 class="card-title">Housing suitability</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="il-progetto.html" class="footer-project-link">The Project</a>
+        <span class="footer-separator">|</span>
+        <a href="chi-siamo.html" class="footer-project-link">About Us</a>
+        <span class="footer-separator">|</span>
+        <a href="privacy-policy.html" class="footer-project-link">Privacy Policy</a>
+        <span class="footer-separator">|</span>
+        <a href="https://form.typeform.com/to/USx16QN3" class="footer-project-link" target="_blank">Contact</a>
+        <span class="footer-separator">|</span>
+        <p class="footer-copyright">© 2026 SOS Permesso</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="contact-form-container"></div>
+
+  <script src="../../scripts/app.js"></script>
+  <script src="../../scripts/mobile.js"></script>
+  <script>
+    fetch('../../components/contact-form.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('contact-form-container').innerHTML = html;
+      });
+  </script>
+</body>
+</html>

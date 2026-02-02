@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Cohesion - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="apple-touch-icon" href="../../../IMAGES/logo-full.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="../../styles/components.css">
+  <link rel="stylesheet" href="../../styles/animations.css">
+  <link rel="stylesheet" href="../../styles/mobile.css">
+  <link rel="stylesheet" href="../../styles/mobile-fix.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../../index.html" class="logo">
+          <img src="../../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <!-- Database with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">All permits</a></li>
+                <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">What documents to bring to the Police</a></li>
+              </ul>
+            </li>
+
+            <!-- Guide with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guides</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">International protection</a></li>
+                <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Family reunification</a></li>
+                <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dictionary</a></li>
+              </ul>
+            </li>
+
+            <!-- Test with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Tests</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Can I GET a permit?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Can I CONVERT?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Can I RENEW my permit?</a></li>
+              </ul>
+            </li>
+
+                        <!-- Collabora with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/USx16QN3" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Collaborate</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Help out</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Report an error</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Give feedback</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">EN</span>
+              <span>▾</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container" style="position: relative;">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <a href="database.html" style="color: var(--taxi-yellow-dark);">Database</a> →
+        <span>Family Cohesion</span>
+      </div>
+
+      <!-- ERROR BUTTON -->
+      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https%3A%2F%2Fsospermesso.it%2Fen%2Fsrc%2Fpages%2Fpermesso-coesione-familiare.html"
+         class="error-report-btn"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Report an error on this page">
+        🚨 Report error
+      </a>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">💑</span>
+        <h1 class="page-title">Family cohesion</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENT CTA -->
+  <section class="section" style="padding: 1.5rem 0;">
+    <div class="container" style="max-width: 900px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+        <a href="documenti-coesione-familiare-primo.html" class="btn btn-primary">
+          Documents for first issuance
+        </a>
+        <a href="documenti-coesione-familiare-rinnovo.html" class="btn btn-rinnovo">
+          Documents for renewal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>What is this permit?</h2>
+        <p>The residence permit for family cohesion is a type of reunification that you can apply for directly in Italy. It is for those who want to live together with their foreign family member who is already in Italy.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
+        <h2>What is the difference from family reunification?</h2>
+        <p>The family member applying for cohesion is already present in Italy and does not live abroad as in the case of family reunification, so it is not necessary to request the authorization for reunification from the Immigration Office of the Prefecture.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
+        <h2>How long does this permit last?</h2>
+        <p>It has the same duration as the residence permit of your family member already in Italy.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>What are the requirements to obtain it?</h2>
+        <p>To obtain this permit:</p>
+        <ul>
+          <li>Your foreign family member must have a valid residence permit of at least one year or an EU permit for long-term residents</li>
+          <li>You must already be in Italy with a regular stay (even with a tourist visa still valid) or with a permit expired for no more than 12 months</li>
+          <li>You must prove the family relationship</li>
+        </ul>
+
+        <p><strong>You can apply for family cohesion with:</strong></p>
+        <ul>
+          <li>Your husband or wife at least 18 years old (only if you are not legally separated)</li>
+          <li>Your children under 18 years old (at the time of the application)</li>
+          <li>Your adult children who are dependent, if they cannot support themselves due to serious health problems</li>
+          <li>Your parents over 65 years old, if they have no other children in their country or if these cannot help them</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>Where do I apply for this permit?</h2>
+        <p>You must submit the application via postal kit which you will then take to the post office. You can get help from a patronato or legal office to fill out the forms.</p>
+      </div>      </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
+        <h2>What can I do with this residence permit?</h2>
+        <p>With this permit you can:</p>
+        <ul>
+          <li>Get residence in the Municipality where you live</li>
+          <li>Work with a regular contract (self-employed or employed)</li>
+          <li>Register for free with the National Health Service (SSN) and have a family doctor</li>
+          <li>Travel in the Schengen area with your passport (for short stays up to 3 months)</li>
+          <li>Enroll in school, vocational training, or university</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>What happens when the permit expires?</h2>
+        <p>You can renew it if you continue to have the requirements.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2>Can I convert this permit?</h2>
+        <p>Yes, this permit can be converted to:</p>
+        <ul>
+          <li>Work permit (self-employed or employed)</li>
+          <li>Job seeking permit</li>
+          <li>Study permit</li>
+        </ul>
+      </div>
+
+      <div class="alert alert-info">
+        <span class="alert-icon">❓</span>
+        <div>
+          Do you have other questions about family cohesion?
+          <a href="https://form.typeform.com/to/USx16QN3" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Write to us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">You might also be interested in</h2>
+      <div class="grid grid-3">
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">All permits</h3>
+        </a>
+        <a href="permesso-ricongiungimento-familiare.html" class="card card-link card-compact">
+          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <h3 class="card-title">Family reunification</h3>
+        </a>
+        <a href="permesso-genitore-minore-italiano.html" class="card card-link card-compact">
+          <span class="card-icon">🇮🇹</span>
+          <h3 class="card-title">Parent of Italian minor</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="il-progetto.html" class="footer-project-link">The Project</a>
+        <span class="footer-separator">|</span>
+        <a href="chi-siamo.html" class="footer-project-link">About Us</a>
+        <span class="footer-separator">|</span>
+        <a href="privacy-policy.html" class="footer-project-link">Privacy Policy</a>
+        <span class="footer-separator">|</span>
+        <a href="https://form.typeform.com/to/USx16QN3" class="footer-project-link" target="_blank">Contact</a>
+        <span class="footer-separator">|</span>
+        <p class="footer-copyright">© 2026 SOS Permesso</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../scripts/app.js"></script>
+</body>
+</html>

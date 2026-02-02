@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Required documents to apply for or renew a residence permit at Police Headquarters (Questura)">
+ <title>What documents to bring to Police Headquarters (Questura) - SOS Permesso</title>
+
+ <!-- Favicon -->
+ <link rel="icon" type="image/png" href="../../../IMAGES/logo-full.png">
+ <link rel="shortcut icon" type="image/png" href="../../../IMAGES/logo-full.png">
+ <link rel="apple-touch-icon" href="../../../IMAGES/logo-full.png">
+
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+ <!-- Styles -->
+ <link rel="stylesheet" href="../../styles/main.css">
+ <link rel="stylesheet" href="../../styles/components.css">
+ <link rel="stylesheet" href="../../styles/animations.css">
+ <link rel="stylesheet" href="../../styles/mobile.css">
+ <link rel="stylesheet" href="../../styles/mobile-fix.css">
+
+ <style>
+  /* Compact list style like Notion (from database.html) */
+  .permit-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+  }
+
+  .permit-list li {
+   margin: 0;
+  }
+
+  .category-section {
+   margin-bottom: 2rem;
+  }
+
+  .category-title {
+   font-size: 0.875rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   padding: 0.5rem 1rem;
+   margin-bottom: 0.5rem;
+   border-bottom: 2px solid;
+  }
+
+  .category-purple .category-title {
+   color: var(--accent-purple);
+   border-color: var(--accent-purple);
+  }
+
+  .category-orange .category-title {
+   color: var(--accent-orange);
+   border-color: var(--accent-orange);
+  }
+
+  .category-blue .category-title {
+   color: var(--accent-blue);
+   border-color: var(--accent-blue);
+  }
+
+  .category-teal .category-title {
+   color: var(--accent-teal);
+   border-color: var(--accent-teal);
+  }
+
+  .database-container {
+   background: white;
+   border-radius: 12px;
+   padding: 1.5rem;
+   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+   max-width: 800px;
+   margin: 0 auto;
+  }
+
+  /* Badge component - compact pill style */
+  .doc-badge {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0.35rem 0.75rem;
+   font-size: 0.8rem;
+   font-weight: 600;
+   border-radius: 12px;
+   text-decoration: none;
+   transition: all 0.15s ease;
+   white-space: nowrap;
+  }
+
+  .badge-primo {
+   background: linear-gradient(135deg, #FFF9C4 0%, #FFD700 100%);
+   color: #5D4E00;
+   border: 1.5px solid #FFC107;
+  }
+
+  .badge-rinnovo {
+   background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+   color: #0D47A1;
+   border: 1.5px solid #64B5F6;
+  }
+
+  .doc-badge:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .doc-badge:active {
+   transform: translateY(0) scale(0.98);
+  }
+
+  /* Wrapper for permit row with badges */
+  .permit-link-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.75rem 1rem;
+   border-radius: 6px;
+   transition: background-color 0.15s ease;
+  }
+
+  .permit-link-wrapper:hover {
+   background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  .permit-info {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+  }
+
+  .permit-info .icon {
+   font-size: 1.25rem;
+   flex-shrink: 0;
+  }
+
+  .permit-info .title {
+   font-weight: 500;
+   color: var(--black);
+  }
+
+  .badge-group {
+   display: flex;
+   gap: 0.5rem;
+  }
+
+  /* Mobile: Ensure touch targets, allow wrapping */
+  @media (max-width: 768px) {
+   .permit-link-wrapper {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.875rem 0.75rem;
+   }
+
+   .permit-info .title {
+    font-size: 0.95rem;
+   }
+
+   .badge-group {
+    flex-basis: 100%;
+    justify-content: flex-start;
+   }
+
+   .doc-badge {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5rem 1rem;
+   }
+
+   .database-container {
+    padding: 1rem;
+    border-radius: 8px;
+   }
+  }
+ </style>
+</head>
+<body>
+
+ <!-- HEADER -->
+ <header class="header">
+  <div class="container">
+   <nav class="navbar">
+    <a href="../../../index.html" class="logo">
+     <img src="../../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <div class="nav-wrapper">
+     <ul class="nav-menu" id="nav-menu">
+      <!-- Database with dropdown -->
+      <li class="nav-item has-dropdown">
+       <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+       <ul class="nav-dropdown" role="menu">
+        <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">All permits</a></li>
+        <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">What documents to bring to Police Headquarters (Questura)</a></li>
+       </ul>
+      </li>
+
+      <!-- Guide with dropdown -->
+      <li class="nav-item has-dropdown">
+       <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guides</a>
+       <ul class="nav-dropdown" role="menu">
+        <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">International protection</a></li>
+        <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Family reunification</a></li>
+        <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dictionary</a></li>
+       </ul>
+      </li>
+
+      <!-- Test with dropdown -->
+      <li class="nav-item has-dropdown">
+       <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Test</a>
+       <ul class="nav-dropdown" role="menu">
+        <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Can I GET a permit?</a></li>
+        <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Can I CONVERT?</a></li>
+        <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Can I RENEW the permit?</a></li>
+       </ul>
+      </li>
+
+            <!-- Collabora with dropdown -->
+      <li class="nav-item has-dropdown">
+       <a href="https://form.typeform.com/to/USx16QN3" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Collaborate</a>
+       <ul class="nav-dropdown" role="menu">
+        <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Help out</a></li>
+        <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Report an error</a></li>
+        <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Give feedback</a></li>
+       </ul>
+      </li>
+     </ul>
+
+     <div class="language-switcher">
+      <button class="language-button" id="language-toggle">
+       <span id="current-language">EN 🇬🇧</span>
+       <span>▾</span>
+      </button>
+     </div>
+    </div>
+   </nav>
+  </div>
+ </header>
+
+ <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="../../../index.html">Home</a> →
+          <span>What documents to bring to Police Headquarters (Questura)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- PAGE HEADER -->
+ <section class="section bg-off-white">
+  <div class="container">
+   <div class="page-header text-center">
+    <span class="page-icon" style="font-size: 3rem;">📌</span>
+    <h1 class="page-title">What documents to bring to Police Headquarters (Questura)</h1>
+    <p class="section-subtitle">Click on First or Renewal to see the required documents</p>
+   </div>
+
+   <p style="max-width: 700px; margin: 0 auto 1.5rem; text-align: center; color: var(--gray-medium);">
+    Here you can find the list of documents you need to bring to Police Headquarters (Questura) or include in the postal kit.
+   </p>
+
+   <div class="alert alert-warning" style="max-width: 700px; margin: 0 auto 2rem;">
+    <span class="alert-icon">⚠️</span>
+    <div>
+     <strong>Note:</strong> Required documents may vary from one Police Headquarters (Questura) to another. Always contact your Police Headquarters (Questura) to confirm the exact list of required documents.
+    </div>
+   </div>
+
+   <div class="database-container">
+
+    <!-- STUDY/WORK -->
+    <div class="category-section category-purple">
+     <h2 class="category-title">📋 STUDY/WORK</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">📖</span>
+         <span class="title">Study permit</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-studio-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-studio-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💼</span>
+         <span class="title">Residence permit for employed work</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-lavoro-subordinato-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-lavoro-subordinato-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🏢</span>
+         <span class="title">Residence permit for self-employment</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-lavoro-autonomo-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-lavoro-autonomo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🇪🇺</span>
+         <span class="title">EU long-term residence permit ("Card")</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-ue-lungo-periodo-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-ue-lungo-periodo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🔍</span>
+         <span class="title">Residence permit for job seeking</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-attesa-occupazione-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-attesa-occupazione-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+    <!-- PROTECTION -->
+    <div class="category-section category-orange">
+     <h2 class="category-title">🛡️ PROTECTION (INTERNATIONAL OR SOCIAL)</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🟨</span>
+         <span class="title">Residence permit for asylum application ("yellow permit")</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-richiesta-asilo-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-richiesta-asilo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🏆</span>
+         <span class="title">Residence permit for political asylum (refugee status)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-asilo-politico-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-asilo-politico-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🔰</span>
+         <span class="title">Residence permit for subsidiary protection</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-protezione-sussidiaria-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-protezione-sussidiaria-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">⚡</span>
+         <span class="title">Residence permit for special protection</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-protezione-speciale-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-protezione-speciale-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👶</span>
+         <span class="title">Residence permit for minors</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-minore-eta-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-minore-eta-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🌋</span>
+         <span class="title">Residence permit for natural disaster</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-calamita-naturale-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-calamita-naturale-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">📄</span>
+         <span class="title">Residence permit for administrative continuation</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-prosieguo-amministrativo-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-prosieguo-amministrativo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+    <!-- MEDICAL TREATMENT -->
+    <div class="category-section category-blue">
+     <h2 class="category-title">🏥 MEDICAL TREATMENT</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🤰</span>
+         <span class="title">Pregnant woman and father of the child</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-gravidanza-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-gravidanza-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💊</span>
+         <span class="title">Medical treatment permit after entry visa</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-cure-mediche-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-cure-mediche-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🏥</span>
+         <span class="title">Seriously ill person already in Italy (art. 19 comma 2 letter d-bis)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-gravi-motivi-salute-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-gravi-motivi-salute-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+    <!-- FAMILY REASONS -->
+    <div class="category-section category-teal">
+     <h2 class="category-title">👨‍👩‍👧‍👦 FAMILY REASONS</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🧑‍🤝‍🧑</span>
+         <span class="title">Family reasons after authorization and visa for family reunification</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-ricongiungimento-familiare-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-ricongiungimento-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💑</span>
+         <span class="title">Family cohesion</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-coesione-familiare-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-coesione-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🇮🇹</span>
+         <span class="title">Parent of Italian minor child</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-genitore-minore-italiano-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-genitore-minore-italiano-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👵</span>
+         <span class="title">Cohabitants with Italian relatives up to second degree (Art. 19)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-conviventi-familiari-italiani-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-conviventi-familiari-italiani-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🧒</span>
+         <span class="title">Minor assistance permit (art. 31)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-assistenza-minore-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-assistenza-minore-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👦</span>
+         <span class="title">Family reasons permit for foreign minors in custody of relatives up to fourth degree</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-minori-stranieri-affidati-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-minori-stranieri-affidati-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🇪🇺</span>
+         <span class="title">Residence card for family member of EU citizen (D.Lgs. 30/07)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-carta-soggiorno-familiare-ue-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-carta-soggiorno-familiare-ue-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🚀</span>
+         <span class="title">Residence card for family member of "mobile" Italian citizen (D.Lgs. 30/07)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-carta-soggiorno-familiare-italiano-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-carta-soggiorno-familiare-italiano-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+   </div>
+  </div>
+ </section>
+
+ <!-- RELATED LINKS -->
+ <section class="section bg-off-white">
+  <div class="container">
+   <h2 class="text-center mb-lg">You might also be interested in</h2>
+   <div class="grid grid-3">
+    <a href="database.html" class="card card-link card-compact">
+     <span class="card-icon">📚</span>
+     <h3 class="card-title">All permits</h3>
+    </a>
+    <a href="kit-postale.html" class="card card-link card-compact">
+     <span class="card-icon">📩</span>
+     <h3 class="card-title">Postal kit</h3>
+    </a>
+    <a href="controlla-permesso.html" class="card card-link card-compact">
+     <span class="card-icon">👀</span>
+     <h3 class="card-title">Check permit status</h3>
+    </a>
+   </div>
+  </div>
+ </section>
+
+ <!-- FOOTER -->
+   <footer class="footer">
+  <div class="container">
+   <div class="footer-content">
+    <a href="il-progetto.html" class="footer-project-link">The Project</a>
+    <span class="footer-separator">|</span>
+    <a href="chi-siamo.html" class="footer-project-link">About Us</a>
+    <span class="footer-separator">|</span>
+    <a href="privacy-policy.html" class="footer-project-link">Privacy Policy</a>
+    <span class="footer-separator">|</span>
+    <a href="https://form.typeform.com/to/USx16QN3" class="footer-project-link" target="_blank">Contact</a>
+    <span class="footer-separator">|</span>
+    <p class="footer-copyright">© 2026 SOS Permesso</p>
+   </div>
+  </div>
+ </footer>
+
+ <script src="../../scripts/app.js"></script>
+</body>
+</html>

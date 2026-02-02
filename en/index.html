@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SOS Permesso - Complete guide to residence permits in Italy">
+  <title>S.O.S.Permesso - Your Easy Guide to Residence Permits in Italy</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../IMAGES/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="../IMAGES/logo-full.png">
+  <link rel="apple-touch-icon" href="../IMAGES/logo-full.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Permanent+Marker&family=Poppins:wght@600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../src/styles/main.css">
+  <link rel="stylesheet" href="../src/styles/components.css">
+  <link rel="stylesheet" href="../src/styles/animations.css">
+  <link rel="stylesheet" href="../src/styles/mobile.css">
+  <link rel="stylesheet" href="../src/styles/mobile-fix.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="#home" class="logo">
+          <img src="../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+        </a>
+
+        <!-- Language Switcher (standalone) -->
+        <div class="language-switcher">
+          <button class="language-button" id="language-toggle">
+            <span id="current-language">EN 🇬🇧</span>
+            <span>▾</span>
+          </button>
+          <div class="language-dropdown" id="language-dropdown">
+            <div class="language-option" data-lang="it">
+              <span>🇮🇹</span>
+              <span>Italiano</span>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span>🇬🇧</span>
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="fr">
+              <span>🇫🇷</span>
+              <span>Français</span>
+            </div>
+            <div class="language-option" data-lang="es">
+              <span>🇪🇸</span>
+              <span>Español</span>
+            </div>
+            <div class="language-option" data-lang="zh">
+              <span>🇨🇳</span>
+              <span>中文</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          ☰
+        </button>
+
+        <!-- Navigation Menu -->
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <!-- Database with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#database" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="src/pages/database.html" class="dropdown-link" role="menuitem">All permits</a></li>
+                <li role="none"><a href="src/pages/documenti-questura.html" class="dropdown-link" role="menuitem">What documents to bring to the Police</a></li>
+              </ul>
+            </li>
+
+            <!-- Guide with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#guide" class="nav-link" aria-haspopup="true" aria-expanded="false">Guides</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="src/pages/protezione-internazionale.html" class="dropdown-link" role="menuitem">International protection</a></li>
+                <li role="none"><a href="src/pages/permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Family reunification</a></li>
+                <li role="none"><a href="src/pages/dizionario.html" class="dropdown-link" role="menuitem">Dictionary</a></li>
+              </ul>
+            </li>
+
+            <!-- Test with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#test" class="nav-link" aria-haspopup="true" aria-expanded="false">Test</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Can I GET a permit?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Can I CONVERT?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Can I RENEW my permit?</a></li>
+              </ul>
+            </li>
+
+            <!-- Collabora with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/USx16QN3" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Collaborate</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Help out</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Report an error</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Give feedback</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-new" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <!-- Main Title -->
+        <h1 class="hero-main-title">
+          Your <span class="highlight-text">Easy</span> Guide<br>
+          to Residence Permits
+        </h1>
+
+        <p class="hero-subtitle">
+          Clear, up-to-date information (and soon in your language) to navigate Italian bureaucracy
+        </p>
+
+        <!-- Update Notice -->
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <span style="display: inline-block; background: #FFFFFF; color: #1A6B5F; font-weight: 600; font-size: 1.1rem; padding: 0.75rem 1.5rem; border-radius: 50px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            ✨ Updated to Law No. 75/2025
+          </span>
+        </div>
+      </div>
+
+      <!-- Decorative cartoon elements -->
+      <div class="hero-decorations">
+        <!-- Document with stamp -->
+        <div class="decoration deco-1" style="top: 10%; left: 5%;">
+          <svg width="80" height="100" viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="70" height="90" rx="4" fill="#FFFFFF" stroke="#42A5F5" stroke-width="3"/>
+            <line x1="15" y1="20" x2="65" y2="20" stroke="#757575" stroke-width="2"/>
+            <line x1="15" y1="30" x2="60" y2="30" stroke="#757575" stroke-width="2"/>
+            <line x1="15" y1="40" x2="65" y2="40" stroke="#757575" stroke-width="2"/>
+            <circle cx="40" cy="70" r="18" fill="none" stroke="#66BB6A" stroke-width="3"/>
+            <path d="M 32 70 L 38 76 L 48 64" stroke="#66BB6A" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- Passport -->
+        <div class="decoration deco-2" style="top: 15%; right: 8%;">
+          <svg width="70" height="90" viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="60" height="80" rx="3" fill="#EF5350"/>
+            <text x="35" y="25" font-size="20" text-anchor="middle" fill="#FFFFFF" font-weight="bold">🛂</text>
+            <rect x="15" y="35" width="40" height="2" fill="#FFFFFF" opacity="0.8"/>
+            <rect x="15" y="45" width="35" height="2" fill="#FFFFFF" opacity="0.8"/>
+            <rect x="15" y="55" width="40" height="2" fill="#FFFFFF" opacity="0.8"/>
+          </svg>
+        </div>
+
+        <!-- Calendar -->
+        <div class="decoration deco-3" style="bottom: 15%; left: 10%;">
+          <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="20" width="60" height="50" rx="4" fill="#FFFFFF" stroke="#FF9800" stroke-width="3"/>
+            <rect x="10" y="20" width="60" height="15" rx="4" fill="#FF9800"/>
+            <circle cx="25" cy="15" r="3" fill="#FF9800"/>
+            <circle cx="55" cy="15" r="3" fill="#FF9800"/>
+            <text x="40" y="52" font-size="28" text-anchor="middle" fill="#FF9800" font-weight="bold">15</text>
+          </svg>
+        </div>
+
+        <!-- Stack of papers -->
+        <div class="decoration deco-4" style="bottom: 20%; right: 5%;">
+          <svg width="70" height="90" viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="45" width="50" height="3" fill="#BDBDBD"/>
+            <rect x="10" y="40" width="50" height="3" fill="#9E9E9E"/>
+            <rect x="5" y="10" width="50" height="35" rx="3" fill="#FFFFFF" stroke="#AB47BC" stroke-width="2"/>
+            <line x1="12" y1="20" x2="48" y2="20" stroke="#757575" stroke-width="1.5"/>
+            <line x1="12" y1="27" x2="43" y2="27" stroke="#757575" stroke-width="1.5"/>
+            <line x1="12" y1="34" x2="48" y2="34" stroke="#757575" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <!-- Suitcase -->
+        <div class="decoration deco-5" style="top: 50%; right: 15%;">
+          <svg width="80" height="70" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="25" width="50" height="35" rx="4" fill="#FFD700" stroke="#FFC107" stroke-width="2"/>
+            <rect x="30" y="15" width="20" height="10" rx="2" fill="#FFC107"/>
+            <circle cx="40" cy="42" r="4" fill="#FF9800"/>
+            <rect x="20" y="38" width="5" height="15" rx="2" fill="#FFC107"/>
+            <rect x="55" y="38" width="5" height="15" rx="2" fill="#FFC107"/>
+          </svg>
+        </div>
+
+        <!-- Map pin -->
+        <div class="decoration deco-6" style="top: 45%; left: 15%;">
+          <svg width="60" height="80" viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 30 10 Q 10 10 10 30 Q 10 45 30 65 Q 50 45 50 30 Q 50 10 30 10 Z" fill="#EC407A"/>
+            <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+            <text x="30" y="36" font-size="16" text-anchor="middle" fill="#EC407A">🇮🇹</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTS SECTION -->
+  <section class="section" id="test" style="background: linear-gradient(135deg, #E8F5E9 0%, #FFF9E6 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--accent-green);">OUR TESTS</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤞</span>
+          <h3 class="card-title">Can I GET a permit?</h3>
+          <p class="card-description">Check if you meet the requirements to obtain a residence permit in Italy</p>
+          <button class="btn btn-primary">START THE TEST →</button>
+        </a>
+
+        <a href="https://form.typeform.com/to/oc9jhdkJ" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">👉</span>
+          <h3 class="card-title">Can I CONVERT my permit?</h3>
+          <p class="card-description">Find out if you can convert your current residence permit</p>
+          <button class="btn btn-primary">START THE TEST →</button>
+        </a>
+
+        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤙</span>
+          <h3 class="card-title">Can I RENEW my permit?</h3>
+          <p class="card-description">Check if you can renew your residence permit</p>
+          <button class="btn btn-primary">START THE TEST →</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATABASE SECTION -->
+  <section id="database" class="section" style="background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--accent-teal);">OUR DATABASES</h2>
+      </div>
+
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+        <a href="src/pages/database.html" class="card card-link">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">All permits</h3>
+          <p class="card-description">Database with all (or almost all) residence permits in Italy</p>
+        </a>
+
+        <a href="src/pages/documenti-questura.html" class="card card-link">
+          <span class="card-icon">📌</span>
+          <h3 class="card-title">What documents to bring to the Police</h3>
+          <p class="card-description">Simple checklist of documents to bring to the Police Headquarters (Questura) or include in the postal kit</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDES SECTION -->
+  <section class="section" id="guide" style="background: linear-gradient(135deg, #FFF9E6 0%, #FFE0B2 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--accent-orange);">OUR GUIDES</h2>
+      </div>
+
+      <div class="grid grid-3" style="max-width: 900px; margin: 0 auto;">
+        <a href="src/pages/protezione-internazionale.html" class="card card-link">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">International protection</h3>
+          <p class="card-description">How to apply for asylum in Italy and how the procedure works</p>
+        </a>
+
+        <a href="src/pages/ricongiungimento-familiare.html" class="card card-link">
+          <span class="card-icon">👨‍👩‍👧</span>
+          <h3 class="card-title">Family reunification</h3>
+          <p class="card-description">How to request authorization to bring family members to Italy</p>
+        </a>
+
+        <a href="src/pages/decreto-flussi.html" class="card card-link" style="position: relative; overflow: hidden;">
+          <span style="position: absolute; top: 12px; right: -35px; background: var(--accent-orange); color: white; font-size: 0.65rem; font-weight: 600; padding: 4px 40px; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">Coming soon</span>
+          <span class="card-icon">💼</span>
+          <h3 class="card-title">Annual immigration quota decree</h3>
+          <p class="card-description">How entry for work purposes works</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USEFUL LINKS SECTION -->
+  <section id="resources" class="section" style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--lighthouse-red);">USEFUL LINKS</h2>
+      </div>
+
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+        <a href="src/pages/aiuto-legale.html" class="card card-link">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Free legal assistance near you</h3>
+          <p class="card-description">Offices and organizations that provide free legal assistance in Italy</p>
+        </a>
+
+        <a href="src/pages/kit-postale.html" class="card card-link">
+          <span class="card-icon">📩</span>
+          <h3 class="card-title">Useful forms (postal kit and others)</h3>
+          <p class="card-description">Practical guide to filling out and sending the postal kit</p>
+        </a>
+
+        <a href="src/pages/controlla-permesso.html" class="card card-link">
+          <span class="card-icon">👀</span>
+          <h3 class="card-title">Check your permit</h3>
+          <p class="card-description">Check the status of your permit</p>
+        </a>
+
+        <a href="src/pages/dizionario.html" class="card card-link">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">Dictionary</h3>
+          <p class="card-description">Bureaucratic terms explained simply</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="alert alert-info" style="max-width: 600px; margin: 0 auto;">
+        <div>
+          Didn't find the answer you were looking for?
+          <a href="https://form.typeform.com/to/USx16QN3" class="btn btn-primary btn-sm" style="margin-left: 0;" target="_blank">
+            Contact us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM MODAL -->
+  <div id="contact-form-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="src/pages/il-progetto.html" class="footer-project-link">The Project</a>
+        <span class="footer-separator">|</span>
+        <a href="src/pages/chi-siamo.html" class="footer-project-link">About Us</a>
+        <span class="footer-separator">|</span>
+        <a href="src/pages/privacy-policy.html" class="footer-project-link">Privacy and more</a>
+        <span class="footer-separator">|</span>
+        <p class="footer-copyright">© 2026 SOS Permesso</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lighthouse animations CSS inline -->
+  <style>
+    .lighthouse-container {
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #lighthouse-svg {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+    }
+
+    .wave {
+      animation: wave-float 3s ease-in-out infinite;
+    }
+    .wave-1 { animation-delay: 0s; animation-duration: 4s; }
+    .wave-2 { animation-delay: 0.3s; animation-duration: 5s; }
+    .wave-3 { animation-delay: 0.6s; animation-duration: 6s; }
+
+    @keyframes wave-float {
+      0%, 100% { transform: translateX(0) translateY(0); }
+      25% { transform: translateX(-5px) translateY(-2px); }
+      50% { transform: translateX(-10px) translateY(0); }
+      75% { transform: translateX(-5px) translateY(2px); }
+    }
+
+    .rotating-beam {
+      transform-origin: 150px 120px;
+      animation: rotate-beam 4s linear infinite;
+    }
+
+    @keyframes rotate-beam {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .blinking-star {
+      animation: blink 2s ease-in-out infinite;
+    }
+
+    .star-glow {
+      animation: glow-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    @keyframes glow-pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.2); }
+    }
+
+    .window-light, .tower-window {
+      animation: light-pulse 3s ease-in-out infinite;
+    }
+
+    .tower-window {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes light-pulse {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+
+    .light-room {
+      animation: room-glow 2s ease-in-out infinite;
+    }
+
+    @keyframes room-glow {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 0.9; }
+    }
+
+    .eye {
+      animation: eye-blink 4s ease-in-out infinite;
+    }
+
+    .eye-right {
+      animation-delay: 0.1s;
+    }
+
+    @keyframes eye-blink {
+      0%, 96%, 100% { transform: scaleY(1); }
+      98% { transform: scaleY(0.1); }
+    }
+
+    .lighthouse-container:hover #lighthouse-tower,
+    .lighthouse-container:hover #lighthouse-cupola,
+    .lighthouse-container:hover #star-top {
+      animation: sway 1s ease-in-out infinite;
+    }
+
+    @keyframes sway {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(1deg); }
+      75% { transform: rotate(-1deg); }
+    }
+
+    @media (max-width: 768px) {
+      .lighthouse-container { max-width: 300px; }
+    }
+
+    @media (max-width: 480px) {
+      .lighthouse-container { max-width: 250px; }
+    }
+  </style>
+
+  <!-- Scripts -->
+  <script src="../src/scripts/app.js"></script>
+  <script src="../src/scripts/mobile.js"></script>
+  <script>
+    // Load contact form component
+    fetch('../src/components/contact-form.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('contact-form-container').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading contact form:', err));
+  </script>
+</body>
+</html>

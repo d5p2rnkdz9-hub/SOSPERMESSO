@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="apple-touch-icon" href="../../../IMAGES/logo-full.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="../../styles/components.css">
+  <link rel="stylesheet" href="../../styles/animations.css">
+  <link rel="stylesheet" href="../../styles/mobile.css">
+  <link rel="stylesheet" href="../../styles/mobile-fix.css">
+  <style>
+    .dictionary-term {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+      scroll-margin-top: 200px; /* Must match header height (~190px) */
+    }
+    .dictionary-term:last-child {
+      border-bottom: none;
+    }
+    .dictionary-term:target {
+      background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-radius: var(--radius-md);
+      animation: highlight-fade 2s ease-out;
+    }
+    @keyframes highlight-fade {
+      0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+      100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+    }
+    .dictionary-term h3 {
+      color: var(--accent-purple);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .dictionary-term h3 .anchor-link {
+      opacity: 0;
+      font-size: 0.875rem;
+      color: var(--gray-medium);
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    .dictionary-term:hover h3 .anchor-link {
+      opacity: 0.6;
+    }
+    .dictionary-term h3 .anchor-link:hover {
+      opacity: 1;
+      color: var(--taxi-yellow-dark);
+    }
+    .dictionary-term p {
+      margin: 0;
+      color: var(--gray-dark);
+    }
+    .dictionary-letter {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--taxi-yellow-dark);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid var(--taxi-yellow);
+      scroll-margin-top: 200px; /* Must match header height (~190px) */
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../../index.html" class="logo">
+          <img src="../../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <!-- Database with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">All permits</a></li>
+                <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Documents to bring to Police Headquarters</a></li>
+              </ul>
+            </li>
+
+            <!-- Guide with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guides</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">International protection</a></li>
+                <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Family reunification</a></li>
+                <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dictionary</a></li>
+              </ul>
+            </li>
+
+            <!-- Test with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Test</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Can I GET a permit?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Can I CONVERT?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Can I RENEW my permit?</a></li>
+              </ul>
+            </li>
+
+                        <!-- Collabora with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/USx16QN3" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Collaborate</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Lend a hand</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Report an error</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Give feedback</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">EN</span>
+              <span>▾</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <span>Dictionary</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">Dictionary of difficult words</h1>
+        <p class="section-subtitle">Bureaucratic terms explained simply</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="letter-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza (Reception) <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>System of centers that host people who have applied for international protection.</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico (Dependent) <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>A person who depends financially on someone else. For example, a child who doesn't work is "a carico" (dependent) of their parents because they pay for their food, clothes and other expenses.</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento (Foster care/Custody) <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>When a minor (child or young person under 18) is placed in the care of a person, family or institution other than their natural parents.</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo (Asylum) <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>A type of international protection for those who cannot return to their country because there would be a risk of being persecuted (for example being killed, tortured, seriously discriminated against). See also "Rifugiato" (Refugee).</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale (Local Health Authority). Office that manages medical and health services in an area. Here you can register with the National Health Service and choose a general practitioner.</p>
+        </div>
+
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo (Nominal certificate) <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
+          <p>First residence permit that the Police Headquarters (Questura) gives when you apply for asylum, while waiting to give you the yellow paper one. It is delivered together with the C3 form. It has no expiration date: it is valid until the end of the asylum application examination.</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="letter-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>Form with which you can apply for asylum at the Police Headquarters (Questura). It contains your personal information.</p>
+        </div>
+
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti (Pending charges) <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
+          <p>Certificate that says if there are criminal proceedings against a person that have not yet ended with a final judgment.</p>
+        </div>
+
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno (Residence card) <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>Ambiguous term that can indicate two different residence permits: Long-term resident permit or EU citizen family member residence card.</p>
+        </div>
+
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale (Criminal record) <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
+          <p>Register containing information about criminal convictions of a person. It is requested from the Public Prosecutor's Office.</p>
+        </div>
+
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato (Property transfer declaration) <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
+          <p>Document you make when you rent a house or room to someone for payment. You must submit it to the local police within 48 hours.</p>
+        </div>
+
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare (Family cohesion) <a href="#coesione-familiare" class="anchor-link">#</a></h3>
+          <p>Process that allows those already in Italy to obtain a residence permit to stay with a family member who already lives legally in Italy.</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale (Tax code) <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>Personal code, unique to each person, used to be identified in Italy and to do things like work, go to the doctor or sign official documents.</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale (Territorial Commission) <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>Italian government organization that decides who can have refugee status, subsidiary protection, special protection or a medical care permit.</p>
+        </div>
+
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge (Spouse) <a href="#coniuge" class="anchor-link">#</a></h3>
+          <p>Husband or wife. Refers to the person with whom one is married (marriage) or in a civil union.</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione (Conversion) <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>Changing a residence permit into another (for example, from study permit to work permit), without having to return to your country of origin.</p>
+        </div>
+
+        <div class="dictionary-term" id="copia-conforme">
+          <h3>Copia conforme (Certified copy) <a href="#copia-conforme" class="anchor-link">#</a></h3>
+          <p>Photocopy of a document with an official stamp certifying that it is identical to the original. It can be done at the Municipality, at the notary or in some cases at the post office.</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="letter-d">D</div>
+
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione (Expulsion order) <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
+          <p>Decision by the Prefecture saying you must leave Italy. Along with expulsion, a re-entry ban may also be issued.</p>
+        </div>
+
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità (Hospitality declaration) <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
+          <p>Document signed by the person declaring that they are hosting you free of charge in their home in Italy. It must be taken to the police within 48 hours.</p>
+        </div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego (Denial/Refusal) <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>Negative decision. When your request is refused by the authorities.</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio (Domicile) <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>Address where you live, even temporarily.</p>
+        </div>
+
+        <!-- I -->
+        <div class="dictionary-letter" id="letter-i">I</div>
+
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa (Housing suitability certificate) <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
+          <p>Certificate proving that a house is suitable for habitation (has enough space, is safe, has necessary services). It must be requested from the Municipality where the house is located.</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="letter-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale (Postal kit) <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>Package of forms that you get at the post office to apply for or renew certain types of residence permits.</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="letter-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo (Revenue stamp) <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>Tax stamp bought at a tobacco shop and attached to official documents like requests to the Police Headquarters (Questura). It costs 16 euros (most common value) and is used to pay a tax to the State.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore">
+          <h3>Minore (Minor) <a href="#minore" class="anchor-link">#</a></h3>
+          <p>Person under 18 years old.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato (Unaccompanied foreign minor) <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
+          <p>Person under 18 who is in Italy without parents or other legally responsible adults.</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="letter-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta (Authorization/Clearance) <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>Official permission needed to do something. For example, the "nulla osta al ricongiungimento familiare" (family reunification clearance) is the document that allows your family members to come to Italy.</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="letter-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno (Residence permit) <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>Document that gives you the right to live in Italy legally for a certain period of time.</p>
+        </div>
+
+        <div class="dictionary-term" id="prefettura">
+          <h3>Prefettura (Prefecture) <a href="#prefettura" class="anchor-link">#</a></h3>
+          <p>Italian State office present in every province. It deals with public order, security and some procedures for foreigners such as citizenship and family reunification.</p>
+        </div>
+
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale (International protection) <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
+          <p>Protection given by Italy to people who cannot return to their country because they would be in danger. Includes Asylum and Subsidiary protection.</p>
+        </div>
+
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo (Administrative continuation) <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
+          <p>Possibility for a foreign young person who arrived in Italy as a minor to remain with support even after turning 18.</p>
+        </div>
+
+        <!-- Q -->
+        <div class="dictionary-letter" id="letter-q">Q</div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura (Police Headquarters) <a href="#questura" class="anchor-link">#</a></h3>
+          <p>State Police office present in every provincial capital. It is the place where you apply for, collect and renew the residence permit. It has a counter called "Ufficio Immigrazione" (Immigration Office).</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="letter-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza (Residence) <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>Address where you live permanently and are registered in the Municipality's registry.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta (Receipt) <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>Document proving you made a request or payment. The Police Headquarters (Questura) receipt (cedolino) proves you applied for a residence permit and allows you to stay in Italy while you wait.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare (Family reunification) <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
+          <p>Procedure that allows a foreign person who already lives in Italy with a valid residence permit to bring some family members to Italy.</p>
+        </div>
+
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato (Refugee) <a href="#rifugiato" class="anchor-link">#</a></h3>
+          <p>Person who flees their country because of persecution and can therefore have refugee status in Italy.</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo (Renewal) <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>Process to extend the validity of your residence permit before it expires.</p>
+        </div>
+
+        <!-- S -->
+        <div class="dictionary-letter" id="letter-s">S</div>
+
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali (Social services) <a href="#servizi-sociali" class="anchor-link">#</a></h3>
+          <p>Municipal offices that help people in difficulty (families, elderly, disabled, minors).</p>
+        </div>
+
+        <div class="dictionary-term" id="sportello-unico">
+          <h3>Sportello Unico (Single Desk) <a href="#sportello-unico" class="anchor-link">#</a></h3>
+          <p>Sportello Unico per l'Immigrazione (SUI - Single Immigration Desk). Prefecture office that handles work procedures for foreigners (clearance, residence contract) and family reunification.</p>
+        </div>
+
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato (Refugee status) <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
+          <p>Decision by the Commission or Court recognizing a person as a refugee. With refugee status you can apply for an asylum residence permit.</p>
+        </div>
+
+        <!-- T -->
+        <div class="dictionary-letter" id="letter-t">T</div>
+
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale (Court) <a href="#tribunale" class="anchor-link">#</a></h3>
+          <p>Place where judges make decisions on legal matters.</p>
+        </div>
+
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni (Juvenile Court) <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
+          <p>Special court dealing with legal matters concerning persons under 18.</p>
+        </div>
+
+        <div class="dictionary-term" id="tessera-sanitaria">
+          <h3>Tessera sanitaria (Health card) <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
+          <p>Plastic card that allows you to use the National Health Service (general practitioner, emergency room, medicines). It is requested at the ASL after obtaining the residence permit and residence.</p>
+        </div>
+
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore (Guardian) <a href="#tutore" class="anchor-link">#</a></h3>
+          <p>Person chosen by the judge who helps and takes care of a young person under 18 when the parents cannot do so.</p>
+        </div>
+
+        <!-- U -->
+        <div class="dictionary-letter" id="letter-u">U</div>
+
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza (Hearing) <a href="#udienza" class="anchor-link">#</a></h3>
+          <p>Appointment in Court with a judge. In 99% of cases your lawyer must attend.</p>
+        </div>
+
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile (Civil union) <a href="#unione-civile" class="anchor-link">#</a></h3>
+          <p>Marriage between same-sex people in Italy.</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="letter-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto (Visa) <a href="#visto" class="anchor-link">#</a></h3>
+          <p>Authorization to enter Italy that is requested at the Italian Embassy or Consulate in your country before departure. There are different types: visa for tourism, study, work, family reunification.</p>
+        </div>
+
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela (Family relationship) <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
+          <p>Family relationship between two people (parents-children, siblings, grandparents-grandchildren, uncles/aunts-nieces/nephews).</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          Is there a word you'd like to understand that's missing?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Contact us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">You might also be interested in</h2>
+      <div class="grid grid-3">
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">All permits</h3>
+        </a>
+        <a href="protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">International protection</h3>
+        </a>
+        <a href="aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Legal help</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="il-progetto.html" class="footer-project-link">The Project</a>
+        <span class="footer-separator">|</span>
+        <a href="chi-siamo.html" class="footer-project-link">About Us</a>
+        <span class="footer-separator">|</span>
+        <a href="privacy-policy.html" class="footer-project-link">Privacy Policy</a>
+        <span class="footer-separator">|</span>
+        <a href="https://form.typeform.com/to/USx16QN3" class="footer-project-link" target="_blank">Contact</a>
+        <span class="footer-separator">|</span>
+        <p class="footer-copyright">© 2026 SOS Permesso</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../scripts/app.js"></script>
+</body>
+</html>

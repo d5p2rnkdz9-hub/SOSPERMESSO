@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Legal Help - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="../../../IMAGES/logo-full.png">
+  <link rel="apple-touch-icon" href="../../../IMAGES/logo-full.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="../../styles/components.css">
+  <link rel="stylesheet" href="../../styles/animations.css">
+  <link rel="stylesheet" href="../../styles/mobile.css">
+  <link rel="stylesheet" href="../../styles/mobile-fix.css">
+  <style>
+    .legal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .legal-table th, .legal-table td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    .legal-table th {
+      background-color: var(--off-white);
+      font-weight: 600;
+      color: var(--black);
+    }
+    .legal-table tr:hover {
+      background-color: rgba(255, 215, 0, 0.1);
+    }
+    .city-section {
+      margin-bottom: 2rem;
+    }
+    .city-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent-purple);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-purple);
+    }
+    @media (max-width: 768px) {
+      .legal-table, .legal-table tbody, .legal-table tr, .legal-table td {
+        display: block;
+      }
+      .legal-table thead {
+        display: none;
+      }
+      .legal-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+      .legal-table td {
+        border: none;
+        padding: 0.25rem 0;
+      }
+      .legal-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.25rem;
+        color: var(--gray-medium);
+        font-size: 0.875rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../../index.html" class="logo">
+          <img src="../../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <!-- Database with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">All permits</a></li>
+                <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Documents to bring to Police Headquarters</a></li>
+              </ul>
+            </li>
+
+            <!-- Guide with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guides</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">International protection</a></li>
+                <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Family reunification</a></li>
+                <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dictionary</a></li>
+              </ul>
+            </li>
+
+            <!-- Test with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Test</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Can I GET a permit?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Can I CONVERT?</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Can I RENEW my permit?</a></li>
+              </ul>
+            </li>
+
+                        <!-- Collabora with dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="https://form.typeform.com/to/USx16QN3" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Collaborate</a>
+              <ul class="nav-dropdown" role="menu">
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Lend a hand</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Report an error</a></li>
+                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Give feedback</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="language-button" id="language-toggle">
+              <span id="current-language">EN</span>
+              <span>▾</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="../../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <span>Legal Help</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">⚖️</span>
+        <h1 class="page-title">Free legal help near you</h1>
+        <p class="section-subtitle">Find free legal assistance in your city</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 1100px;">
+
+      <!-- BOLOGNA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Bologna</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Address</th>
+              <th>Hours</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organization">Help Desk Migrante</td>
+              <td data-label="Address">Via Stalingrado 12 / Via Serlio 25/2</td>
+              <td data-label="Hours">Tuesday 15:00-18:00 by appointment</td>
+              <td data-label="Contact">legale@arcacoop.com</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Associazione Xenia</td>
+              <td data-label="Address">Via Marco Polo, 21/23</td>
+              <td data-label="Hours">By appointment</td>
+              <td data-label="Contact">info@xeniabo.org - 0516350774</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Associazione Universo APS</td>
+              <td data-label="Address">Piazza XX Settembre, 7</td>
+              <td data-label="Hours">By appointment</td>
+              <td data-label="Contact">helpdesk@universointerculturale.it - 051 8556042</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Attivist* Tpo e Labàs</td>
+              <td data-label="Address">Vicolo Bolognetti,4 / Via Casarini 17/4</td>
+              <td data-label="Hours">Write on WhatsApp</td>
+              <td data-label="Contact">sportellomigrantitpo@gmail.com - 3534076384</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Ya Basta!</td>
+              <td data-label="Address">Via Casarini 17/4</td>
+              <td data-label="Hours">Wednesday 18:00-20:00</td>
+              <td data-label="Contact">yabasta.bologna@gmail.com - 0510935901</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BRESCIA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Brescia</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Address</th>
+              <th>Hours</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organization">Asylum Seekers and Refugees Help Desk</td>
+              <td data-label="Address">Via Repubblica Argentina, 90</td>
+              <td data-label="Hours">Mon 9-13, Tue-Wed 14-17</td>
+              <td data-label="Contact">sportello.brescia@rifugiati.eu - 3371488628</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Centro Migranti ONLUS</td>
+              <td data-label="Address">Via Antiche Mura, 3</td>
+              <td data-label="Hours">Mon-Wed-Fri 13:30-17:30, Tue-Thu 8:30-12:30</td>
+              <td data-label="Contact">centromigranti@diocesi.brescia.it - 030.42467</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MILANO -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Milan</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Address</th>
+              <th>Hours</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organization">Naga</td>
+              <td data-label="Address">Via Zamenhof, 7A</td>
+              <td data-label="Hours">Mon-Fri 9-12/14-17, Tue-Wed 9-12/14-19, Thu 9-12</td>
+              <td data-label="Contact">0258102599</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- NAPOLI -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Naples</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Address</th>
+              <th>Hours</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organization">Ex OPG - Je So' Pazzo</td>
+              <td data-label="Address">Via Matteo Renato Imbriani, 218</td>
+              <td data-label="Hours">Thursday 14:00-20:00</td>
+              <td data-label="Contact">info@jesopazz.org</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PADOVA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Padua</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Address</th>
+              <th>Hours</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organization">RAR Help Desk</td>
+              <td data-label="Address">Vicolo Ponte Molino, 7</td>
+              <td data-label="Hours">Mon-Thu 9-12 and by appointment</td>
+              <td data-label="Contact">sportellorar@comune.padova.it - 0498205997</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Open Gates APS</td>
+              <td data-label="Address">Piazza Gasparotto 4 / Via Diego Valeri 9</td>
+              <td data-label="Hours">Mon-Wed-Fri 9:30-12:30, Tue-Thu 15-18</td>
+              <td data-label="Contact">351 291 3479</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ROMA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Rome</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Address</th>
+              <th>Hours</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organization">Casa dei Diritti Sociali</td>
+              <td data-label="Address">Via Giovanni Giolitti 225, 00185</td>
+              <td data-label="Hours">Mon-Wed-Fri 10-13/14:30-16:30, Tue-Thu 14-18:30</td>
+              <td data-label="Contact">net@dirittisociali.org - 06/4461162 - 06/4464676</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Migrants Help Desk USB (Unione Sindacale di Base)</td>
+              <td data-label="Address">Via Giovanni Giolitti 231, 00175 (first floor)</td>
+              <td data-label="Hours">Tue 14-18, Thu 11:30-13/14-18:30 (by appointment only)</td>
+              <td data-label="Contact">migranti@usb.it - 340/9651049 - 06/4462030</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">ESC Infomigrante Help Desk (Centro sociale ESC Atelier)</td>
+              <td data-label="Address">Via dei Volsci 159, 00185</td>
+              <td data-label="Hours">Tuesday 18-20 (by email appointment)</td>
+              <td data-label="Contact">sportello.infomigrante@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">A Buon Diritto Onlus</td>
+              <td data-label="Address">Via dei Pisoni 57/59, 00175</td>
+              <td data-label="Hours">By appointment only</td>
+              <td data-label="Contact">sportelli@abuondiritto.it - 06/85356796</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Progetto diritti</td>
+              <td data-label="Address">Via Ettore Giovenale 79, 00176</td>
+              <td data-label="Hours">Mon-Fri 16:30-19, mornings by appointment</td>
+              <td data-label="Contact">segreteria@progettodiritti.it - 06/298777</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">ARCI - Legal Help Desks</td>
+              <td data-label="Address">Viale Giuseppe Stefanini 15, 00158</td>
+              <td data-label="Hours">Orientation: Tue 15-17:30 / Migrants: Tue-Fri 15-17:30 / Housing: Fri 10-13</td>
+              <td data-label="Contact">inforoma@arci.it - sportellisociali.immigrazione@arciroma.it - 06/41734712</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Arcigay Roma - Intercultural Help Desk</td>
+              <td data-label="Address">Via Nicola Zabaglia 14, 00153</td>
+              <td data-label="Hours">Gay Help Line: Mon-Sat 16-20 / Help Desk: Tue 17-20 by appointment</td>
+              <td data-label="Contact">intercultura@gayhelpline.it - 800713713 (toll-free)</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Doctors for Human Rights (MEDU) - Mobile Clinic</td>
+              <td data-label="Address">Piazzale della Stazione Tiburtina, 00162 (Welcome Center)</td>
+              <td data-label="Hours">Twice a month, alternate Thursdays 19-22</td>
+              <td data-label="Contact">06/97844892 - 335/1853360</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Psychè Center "Francesca Uneddu" - MEDU (Mental Health)</td>
+              <td data-label="Address">Via Trebbia 3, interno I, 00198</td>
+              <td data-label="Hours">Mon-Thu 10-13/15-19, Wed 15-19</td>
+              <td data-label="Contact">psyche@mediciperidirittiumani.org - 06/8419556</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">"Roxanne ed Oltre" Help Desk (Trafficking victims)</td>
+              <td data-label="Address">Via Galilei 15, 00185</td>
+              <td data-label="Hours">Mon-Fri 10-16 (call to access)</td>
+              <td data-label="Contact">roxanne.dipsociale@comune.roma.it - 06/77072404 - 338/4931100</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Cooperativa Parsec (Prostitution and trafficking)</td>
+              <td data-label="Address">Via Catania 89, 00161</td>
+              <td data-label="Hours">Mon-Fri 10-15</td>
+              <td data-label="Contact">parsec.rightjob@gmail.com - 348/9945653</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">DISCOL - School Denials (Migrant Schools Network)</td>
+              <td data-label="Address">Via Liberiana 17, 00187</td>
+              <td data-label="Hours">Mon-Fri 10-13</td>
+              <td data-label="Contact">info@scuolemigranti.org - 327/2804675 (also WhatsApp)</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Yalla Help Desk - Right To Study</td>
+              <td data-label="Address">Online</td>
+              <td data-label="Hours">Contact via email</td>
+              <td data-label="Contact">studyyalla@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Community Center Diaconia Valdese-CSD (Centocelle)</td>
+              <td data-label="Address">Via Ceccano 10C, 00175</td>
+              <td data-label="Hours">Mon-Tue-Fri 9-13, Wed 9-13/14-17:30, Thu 9:30-13/14-17:30</td>
+              <td data-label="Contact">3451133670 (by appointment only)</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Community Center Diaconia Valdese-CSD (Center)</td>
+              <td data-label="Address">Via IV Novembre 107, 00187</td>
+              <td data-label="Hours">Mon 14-18:30, Tue 9:30-13:30/14:30-18, Wed 9:30-13:30, Thu 9:30-13:30/14:30-17:30</td>
+              <td data-label="Contact">3451133670 (by appointment only)</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Immigration and Citizenship Law Clinic (Uniroma3)</td>
+              <td data-label="Address">Via Ostiense 139, 00154</td>
+              <td data-label="Hours">Thursday 15-19 without appointment</td>
+              <td data-label="Contact">lawclinic@uniroma3.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- TORINO -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Turin</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Address</th>
+              <th>Hours</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organization">CSOA Gabrio</td>
+              <td data-label="Address">Via Millio, 42</td>
+              <td data-label="Hours">Monday 18:30-20:00</td>
+              <td data-label="Contact">3509007929</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Street Lawyer</td>
+              <td data-label="Address">Via Giovanni Camerana, 10</td>
+              <td data-label="Hours">First Thursday of the month 14:00</td>
+              <td data-label="Contact">011 534854</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Diaconia Valdese</td>
+              <td data-label="Address">Via Nomaglio, 6</td>
+              <td data-label="Hours">Tue-Thu 9-13/14-17</td>
+              <td data-label="Contact">3440214043</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">Cecchi Point</td>
+              <td data-label="Address">Via Cecchi, 17</td>
+              <td data-label="Hours">Tue 17-19, Fri 14:30-16:30</td>
+              <td data-label="Contact">011 19714416</td>
+            </tr>
+            <tr>
+              <td data-label="Organization">UPM - Migrants Pastoral Office</td>
+              <td data-label="Address">Via Cottolengo, 22</td>
+              <td data-label="Hours">Mon-Thu 9-13 walk-in</td>
+              <td data-label="Contact">0112462092</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">📍</span>
+        <div>
+          Can't find your city? Know of an organization that's missing?
+          <a href="https://form.typeform.com/to/USx16QN3" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Let us know
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">You might also be interested in</h2>
+      <div class="grid grid-3">
+        <a href="protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">International protection</h3>
+        </a>
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">All permits</h3>
+        </a>
+        <a href="dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">Dictionary</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="il-progetto.html" class="footer-project-link">The Project</a>
+        <span class="footer-separator">|</span>
+        <a href="chi-siamo.html" class="footer-project-link">About Us</a>
+        <span class="footer-separator">|</span>
+        <a href="privacy-policy.html" class="footer-project-link">Privacy Policy</a>
+        <span class="footer-separator">|</span>
+        <a href="https://form.typeform.com/to/USx16QN3" class="footer-project-link" target="_blank">Contact</a>
+        <span class="footer-separator">|</span>
+        <p class="footer-copyright">© 2026 SOS Permesso</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../scripts/app.js"></script>
+</body>
+</html>
