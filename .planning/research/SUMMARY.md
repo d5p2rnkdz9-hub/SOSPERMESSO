@@ -1,219 +1,176 @@
 # Project Research Summary
 
-**Project:** SOS Permesso - Proprietary Test System
-**Domain:** Static-site quiz/decision tree for permit eligibility
-**Researched:** 2026-01-31
+**Project:** SOS Permesso - Homepage CSS Redesign (v2.1)
+**Domain:** Static-site visual redesign (CSS-focused)
+**Researched:** 2026-02-02
 **Confidence:** HIGH
 
 ## Executive Summary
 
-Building a proprietary quiz system to replace 3 Typeform tests is a straightforward project with well-established patterns. The approach is clear: vanilla JavaScript + JSON data files, matching the existing codebase exactly. No libraries needed. The 3 quizzes ("Posso AVERE?", "Posso CONVERTIRE?", "Posso RINNOVARE?") are simple branching decision trees that guide users to relevant permit pages.
+The homepage CSS redesign can achieve a modern "startup SaaS" aesthetic using pure CSS techniques already well-supported across browsers. The existing codebase provides excellent infrastructure: a comprehensive CSS variables system in `main.css`, established Node.js scripts for HTML propagation, and a modular CSS architecture. The recommended approach is to **modify existing CSS files** (not create new ones) to avoid updating 416 HTML pages with new link tags. Key changes include adding fluid typography with `clamp()`, implementing a CSS Grid split-hero layout, introducing a display serif font (Playfair Display) for the hero headline only, and shifting backgrounds from gradients to white.
 
-The recommended approach is a single `quiz.js` engine (~200 lines) that loads quiz definitions from JSON files and renders questions one at a time. This follows the project's existing patterns: static HTML pages in `src/pages/`, JSON content in `src/data/`, vanilla JavaScript in `src/scripts/`. The architecture supports multilingual content (IT + EN) using the same `content-{lang}.json` pattern already established.
+The primary risk is **visual regression across 260+ pages** when CSS changes propagate automatically via shared stylesheets. Pages have different DOM contexts (root vs subpages, IT vs EN), and header/footer changes could break unpredictably. Mitigation requires establishing a visual regression testing baseline before any changes and testing on a matrix of page types (homepage, permit pages, document pages, EN pages) for every CSS commit.
 
-The primary risks are scope creep and poor UX for stressed users. The team must resist building "a quiz builder" when only 3 specific tests are needed. For UX, the audience is immigrants navigating bureaucracy — calming design, clear progress indicators, and gentle error messages are essential, not nice-to-have.
+The audience context is critical: users are stressed immigrants navigating Italian bureaucracy. Design choices must prioritize calm over cleverness. White backgrounds reduce cognitive load, subtle hover states provide feedback without startling users, and all animations must respect `prefers-reduced-motion`. The current design has good foundations here; the redesign should preserve these accessibility patterns while simplifying the visual language.
 
 ## Key Findings
 
 ### Recommended Stack
 
-**Core:** Vanilla JavaScript ES2020+ with JSON quiz definitions. Zero external dependencies.
+Pure CSS approach with no new dependencies. All recommended techniques have 95%+ browser support.
 
 **Core technologies:**
-- **Vanilla JavaScript**: Quiz engine — matches existing codebase, full control, no bundle overhead
-- **JSON files**: Quiz definitions — human-readable, git-versioned, easy to translate
-- **localStorage**: State persistence — already used for checklists, enables resume capability
-- **CSS variables**: Quiz styling — extends existing design system in `main.css`
+- **CSS `clamp()`:** Fluid typography scaling from mobile (2.5rem) to desktop (4.5rem) without breakpoint jumps. Always combine `vw` with `rem` (e.g., `5vw + 1rem`) to ensure browser zoom accessibility.
+- **CSS Grid:** Split hero layout (text left, illustration right). Simple 2-column grid that collapses to single column on mobile.
+- **SVG inline waves:** Organic wave section dividers using inline SVG with CSS custom properties for colors. Better scaling than `clip-path`.
+- **Playfair Display (Google Fonts):** Display serif for hero h1 only, 700/800 weights. All other headings remain Poppins for site consistency.
+- **Existing CSS variables:** Extend `:root` system in `main.css` rather than creating new files.
 
-**Avoid:** SurveyJS (50KB+ overhead, licensing issues), npm dependencies (adds build complexity), TypeScript (existing codebase is JS).
+**Avoid:** CSS frameworks (Tailwind/Bootstrap would require rewriting 416 pages), animation libraries (CSS transitions sufficient), glassmorphism (Safari blur support concerns), parallax (causes motion sickness).
 
 ### Expected Features
 
 **Must have (table stakes):**
-- Step-by-step wizard flow (one question per screen)
-- Branching logic based on answers
-- Progress indicator (step counter: "2 of 5")
-- Back/Next navigation
-- Mobile-responsive design (reuse existing CSS)
-- Clear result display with links to permit pages
-- Calming visual design (anxious users)
-- No time limits
+- Clean white background with generous whitespace
+- Bold display typography for hero h1
+- Split hero layout (text left, visual right)
+- Single dark rounded CTA button
+- CSS-only hover interactions (transform + box-shadow, 0.2-0.3s)
+- Mobile-first responsive layout
+- Accessible color contrast (black on yellow: 9.29:1 OK, yellow on white: FAIL)
 
-**Should have (competitive):**
-- Multilingual from day one (IT + EN)
-- No response limits (Typeform caps at 10-100/month)
-- No Typeform branding
-- Direct links to relevant permit pages
-- Contextual help tooltips
-- Full keyboard navigation + screen reader support
+**Should have (differentiators):**
+- Organic wave/blob accent shape (single SVG)
+- Feature badge row (icon + short label) for quick scanning
+- Subtle scroll-triggered fade-ins (defer if time-constrained)
+- Trust signals ("Aggiornato 2025", "Gratuito")
+- Focus-visible states matching hover styles
 
 **Defer (v2+):**
-- Save/resume progress
-- Print/PDF export
-- Offline capability (PWA)
-- Visual answer cards with images
-- Additional languages (FR, ES, ZH)
-- Analytics dashboard
+- Custom illustration replacement (requires design work)
+- Glassmorphism effects (browser support concerns)
+- Scroll-triggered animations (requires IntersectionObserver JS)
+- Content decisions for feature badges
 
 ### Architecture Approach
 
-The quiz system integrates as a client-side JavaScript module. A single `quiz.js` file handles state management, navigation, and rendering. Quiz content lives in JSON files (`src/data/quizzes/test-{name}-{lang}.json`). HTML pages in `src/pages/test-{name}.html` serve as shells that load the quiz engine.
-
-**File structure:**
-```
-src/
-  data/quizzes/
-    test-avere-it.json
-    test-avere-en.json
-    test-convertire-it.json
-    test-convertire-en.json
-    test-rinnovare-it.json
-    test-rinnovare-en.json
-  pages/
-    test-avere.html
-    test-convertire.html
-    test-rinnovare.html
-  scripts/
-    quiz.js
-  styles/
-    quiz.css
-```
+Modify existing CSS files in place. The project's CSS architecture is well-organized and already uses variables extensively. Creating new CSS files would require updating link tags in 416 HTML files.
 
 **Major components:**
-1. **quiz.js** — Quiz engine: state machine, navigation, rendering
-2. **quiz-*.json** — Quiz definitions: questions, options, branching rules, results
-3. **test-*.html** — Page shells: header, footer, quiz container
-4. **quiz.css** — Quiz-specific styles extending design system
+1. **`main.css`** - Update `:root` variables (colors, spacing, fluid typography), this propagates everywhere automatically
+2. **`components.css`** - Update `.header`, `.footer`, `.hero-*` selectors for visual changes
+3. **`mobile.css` / `mobile-fix.css`** - Adjust mobile breakpoints after desktop designs finalize
+4. **Node.js scripts** - Use existing propagation pattern (`fix-all-footers.js`, `fix-header-structure.js`) only if HTML structure changes are needed
+
+**Key insight:** CSS-only changes propagate immediately via shared stylesheets. HTML changes require running propagation scripts on 416 files (IT pages, EN pages, both homepages with different relative paths).
 
 ### Critical Pitfalls
 
-1. **Scope creep** — Resist building a generic quiz builder; ship 3 specific tests. Lock scope with MoSCoW prioritization. Any "while we're at it" features go to v3.0 backlog.
+1. **Visual regression across 260+ pages** - CSS changes auto-propagate and can break pages not manually tested. **Prevention:** Implement BackstopJS visual regression testing before any changes; test on matrix of page types.
 
-2. **Confusing branching UX** — Users get lost in decision trees. Always show progress (step counter), enable back navigation, limit paths to 5-7 questions maximum.
+2. **Color contrast failures** - Yellow on white fails WCAG. **Prevention:** Test all color combinations with WebAIM Contrast Checker. Use yellow as accent/background only, never as text on light backgrounds.
 
-3. **iOS zoom disaster** — Font size < 16px on inputs triggers Safari auto-zoom that breaks layout. Use 16px minimum for all form elements. Test on actual iOS devices.
+3. **CSS specificity wars** - New selectors conflict with existing ones, leading to `!important` chains. **Prevention:** Audit existing selectors in DevTools first; preserve existing naming; use `:where()` for zero-specificity when needed.
 
-4. **Anxiety-inducing errors** — Target users are stressed. Use friendly messages ("Please select an option") not harsh ones ("ERROR: Required"). No premature validation.
+4. **Font loading layout shift (CLS)** - New display font causes text "jumping". **Prevention:** Use `font-display: swap`, preload font, match fallback font metrics with `size-adjust`.
 
-5. **Hardcoded Italian text** — Design for i18n from day 1. All user-facing strings in JSON files, not HTML/JS. Enables EN translation without refactoring.
+5. **Mobile breakpoint regressions** - Desktop-focused changes break mobile-first patterns. **Prevention:** Test on real devices (especially iOS Safari), verify touch targets remain 44x44px, test landscape orientation.
 
 ## Implications for Roadmap
 
 Based on research, suggested phase structure:
 
-### Phase 1: Foundation
-**Rationale:** Core architecture must exist before any features
-**Delivers:** quiz.js engine, JSON schema, one working quiz (test-avere) in Italian
-**Addresses:** Branching logic, question rendering, result display
-**Avoids:** Scope creep (by building minimal engine first)
+### Phase 1: Testing Infrastructure
+**Rationale:** Research unanimously identifies visual regression as the critical risk. Must establish baselines before any visual changes.
+**Delivers:** BackstopJS configuration, baseline screenshots for homepage + sample inner pages
+**Addresses:** Pitfall #1 (visual regression), Pitfall #4 (mobile breakpoint regression)
+**Avoids:** "Works on homepage, breaks everywhere else" syndrome
 
-Key tasks:
-- Define JSON schema for quiz data
-- Build quiz.js state machine (question navigation, back button)
-- Create test-avere.html page shell
-- Write test-avere-it.json content
-- Implement result display with links to permit pages
+### Phase 2: Foundation CSS (Variables)
+**Rationale:** CSS variables cascade to all dependent styles. Changing them first ensures downstream components use correct palette.
+**Delivers:** Updated `:root` in `main.css` (fluid typography, extended spacing, any new color aliases)
+**Uses:** `clamp()` fluid typography, existing variable naming conventions
+**Avoids:** Pitfall #7 (CSS variable migration gotchas) by preserving existing variable names
 
-### Phase 2: UX Polish
-**Rationale:** Core flow works; now make it usable for anxious users
-**Delivers:** Progress indicator, mobile optimization, calming design
-**Addresses:** Table stakes UX features from FEATURES.md
-**Avoids:** Confusing branching UX, iOS zoom, anxiety-inducing errors
+### Phase 3: Header CSS
+**Rationale:** Header appears on all 416 pages. Must be stable before hero work.
+**Delivers:** Updated header styling (cleaner, more minimal)
+**Implements:** CSS-only changes to `.header`, `.navbar`, `.nav-*` selectors
+**Avoids:** Pitfall #8 (z-index conflicts) by using existing z-index system
 
-Key tasks:
-- Add progress indicator (step counter)
-- Ensure 16px minimum font on all inputs
-- Test on iOS Safari
-- Design calming error states
-- Add "Start Over" button
-- Add contextual help tooltips
+### Phase 4: Footer CSS
+**Rationale:** Lower visual priority than header. Same propagation benefit.
+**Delivers:** Updated footer styling
+**Implements:** CSS-only changes to `.footer-*` selectors
 
-### Phase 3: Multilingual
-**Rationale:** i18n structure should be in place before adding more quizzes
-**Delivers:** English support for test-avere, i18n infrastructure
-**Addresses:** Multilingual differentiator
-**Implements:** Language-aware JSON loading
+### Phase 5: Homepage Hero
+**Rationale:** Isolated to 2 files (`index.html`, `en/index.html`). Can iterate without risk to other pages.
+**Delivers:** Split hero layout, display typography, wave divider, dark CTA button
+**Uses:** CSS Grid, Playfair Display font, inline SVG wave
+**Addresses:** All "must have" features from FEATURES.md
 
-Key tasks:
-- Write test-avere-en.json
-- Integrate with existing language switcher
-- Test language fallback (missing translation falls back to Italian)
+### Phase 6: Mobile Polish
+**Rationale:** Mobile styles override desktop via media queries. Finalize only after desktop is complete.
+**Delivers:** Verified mobile experience across breakpoints
+**Avoids:** Pitfall #6 (mobile breakpoint regressions), iOS Safari quirks
 
-### Phase 4: Remaining Quizzes
-**Rationale:** With architecture proven, replicate for other quizzes
-**Delivers:** test-convertire and test-rinnovare in both languages
-**Uses:** Established patterns from phases 1-3
-
-Key tasks:
-- Write test-convertire-it.json and test-convertire-en.json
-- Write test-rinnovare-it.json and test-rinnovare-en.json
-- Create test-convertire.html and test-rinnovare.html
-- Map results to appropriate permit pages
-
-### Phase 5: Integration
-**Rationale:** Quizzes work; now integrate with main site
-**Delivers:** Updated navigation, removed Typeform links
-
-Key tasks:
-- Update index.html test section with internal links
-- Update nav dropdown across all pages
-- Update sitemap.xml
-- Update content-it.json and content-en.json test URLs
-- Remove/archive Typeform references
+### Phase 7: QA and Deployment
+**Rationale:** Final visual regression pass, cache invalidation
+**Delivers:** Version-tagged CSS files, validated visual consistency
+**Addresses:** Pitfall #11 (browser cache serving stale CSS)
 
 ### Phase Ordering Rationale
 
-- **Foundation before polish:** Core engine must work before UX enhancements make sense
-- **Single quiz before replication:** Prove architecture with test-avere; replicate pattern for others
-- **i18n before quiz multiplication:** Better to establish translation pattern with 1 quiz than retrofit 3
-- **Integration last:** Only update site navigation when all quizzes are ready
+- **Testing first:** Research shows 79.1% of homepages fail contrast accessibility. Visual regression testing catches regressions before they ship.
+- **Variables before components:** CSS variables cascade. Changing them after component work could break everything.
+- **Header before hero:** Header affects all pages; hero affects 2. Stabilize global components first.
+- **Mobile last:** Mobile CSS contains `!important` overrides. Changes depend on final desktop styles.
 
 ### Research Flags
 
-Phases likely needing deeper research during planning:
-- **Phase 1:** Quiz branching logic implementation details — may need to validate JSON schema against actual Typeform quiz content
-- **Phase 2:** iOS Safari testing — need actual device, simulators may miss zoom issues
+**Phases with well-documented patterns (skip research-phase):**
+- **Phase 2 (Foundation CSS):** `clamp()` and CSS variables are thoroughly documented (MDN, Smashing Magazine)
+- **Phase 5 (Homepage Hero):** CSS Grid hero layouts have extensive tutorials and examples
 
-Phases with standard patterns (skip research-phase):
-- **Phase 3:** i18n — follows established content-{lang}.json pattern
-- **Phase 4:** Quiz content — straightforward replication
-- **Phase 5:** Integration — updating links across pages
+**Phases needing careful attention but not additional research:**
+- **Phase 3 (Header CSS):** May need HTML changes if CSS-only insufficient. Propagation scripts exist but need verification.
+- **Phase 6 (Mobile Polish):** iOS Safari has quirks (100vh bug, backdrop-filter). Test on real devices, not just DevTools.
 
 ## Confidence Assessment
 
 | Area | Confidence | Notes |
 |------|------------|-------|
-| Stack | HIGH | Vanilla JS + JSON is proven pattern; matches existing codebase |
-| Features | HIGH | Feature list derived from Typeform limitations + wizard UX best practices |
-| Architecture | HIGH | File structure mirrors existing conventions; JSON schema well-documented |
-| Pitfalls | MEDIUM-HIGH | Web-verified against NN/g, CSS-Tricks, Smashing Magazine; some domain-specific |
+| Stack | HIGH | Pure CSS, all techniques have 95%+ browser support, verified on MDN |
+| Features | HIGH | Multiple authoritative SaaS design sources agree on patterns |
+| Architecture | HIGH | Based entirely on reading existing codebase; no external dependencies |
+| Pitfalls | HIGH | Verified against project structure (260+ pages, existing CSS patterns) |
 
 **Overall confidence:** HIGH
 
-This is a well-scoped project with established patterns. The main risk is organizational (scope creep) not technical.
-
 ### Gaps to Address
 
-- **Actual Typeform quiz content:** Need to map existing Typeform questions to JSON schema — user or team must provide current quiz logic
-- **Permit page completeness:** Results link to permit pages; ensure target pages exist (check TODO-permits.md)
-- **Accessibility testing:** Patterns known but implementation should be verified with screen reader testing
+- **Visual regression tool setup:** Research recommends BackstopJS but does not provide specific configuration. May need trial setup in Phase 1.
+- **Font loading performance:** Exact `font-display` and preload strategy needs testing with real font files.
+- **HTML changes for header/footer:** Research assumes CSS-only is sufficient. If HTML structure changes are needed, existing scripts provide pattern but may need updates.
 
 ## Sources
 
 ### Primary (HIGH confidence)
-- [SurveyJS Architecture](https://surveyjs.io/documentation/surveyjs-architecture) — separation of concerns pattern
-- [CSS-Tricks iOS Form Zoom](https://css-tricks.com/16px-or-larger-text-prevents-ios-form-zoom/) — 16px font requirement
-- [NN/g Wizard Design](https://www.nngroup.com/articles/wizards/) — step-by-step UX best practices
-- [W3C WAI Form Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/) — accessibility checklist
+- **MDN Web Docs** - `clamp()`, CSS Grid, CSS Custom Properties, `prefers-reduced-motion`
+- **Project codebase** - `/src/styles/main.css`, `/src/styles/components.css`, `/scripts/*.js`
+- **Smashing Magazine** - Fluid typography with clamp(), CSS refactoring strategies
+- **WebAIM** - Contrast checker, WCAG requirements
 
 ### Secondary (MEDIUM confidence)
-- [Interact Help Center Branching Logic](https://help.tryinteract.com/en/articles/1193999-branching-logic-for-quizzes) — quiz-specific branching patterns
-- [UXmatters Designing Calm](https://www.uxmatters.com/mt/archives/2025/05/designing-calm-ux-principles-for-reducing-users-anxiety.php) — anxiety-reducing UX
-- [Topflight Apps Scope Creep](https://topflightapps.com/ideas/avoid-scope-creep/) — MVP scope management
+- **web.dev** - Baseline fluid typography, Core Web Vitals
+- **Josh W. Comeau** - CSS transitions, animation best practices
+- **Modern CSS (moderncss.dev)** - Hero layouts with CSS Grid
+- **DebugBear** - Font performance optimization
 
-### Tertiary (LOW confidence)
-- [question-tree-core npm](https://www.npmjs.com/package/question-tree-core) — decision tree patterns (not used, but informed JSON schema)
+### Tertiary (supporting context)
+- **SaaS design trend articles** - Webflow, Superside, SaaSFrame (design patterns, not technical specs)
+- **UX anxiety research** - UXmatters, Halo Lab (design principles for stressed users)
 
 ---
-*Research completed: 2026-01-31*
+*Research completed: 2026-02-02*
 *Ready for roadmap: yes*
