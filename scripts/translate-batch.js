@@ -310,6 +310,82 @@ function transformLinks($) {
 }
 
 /**
+ * Reassemble HTML with translated content
+ * @param {CheerioAPI} $ - Cheerio instance with data-translate-id markers
+ * @param {Array} translatedSegments - [{ id, text }] from Claude
+ * @param {{ title: string, description: string }} translatedMeta
+ * @returns {string} Complete translated HTML
+ */
+function reassembleHtml($, translatedSegments, translatedMeta) {
+  // Create lookup map for fast access
+  const translations = new Map(
+    translatedSegments.map(s => [s.id.toString(), s.text])
+  );
+
+  // Update title
+  if (translatedMeta.title) {
+    $('title').text(translatedMeta.title);
+  }
+
+  // Update meta description
+  if (translatedMeta.description) {
+    $('meta[name="description"]').attr('content', translatedMeta.description);
+  }
+
+  // Update all marked elements
+  $('[data-translate-id]').each((i, el) => {
+    const $el = $(el);
+    const id = $el.attr('data-translate-id');
+
+    // Skip title and description (handled above)
+    if (id === 'title' || id === 'description') return;
+
+    const translated = translations.get(id);
+    if (translated) {
+      // Use html() to preserve any inner HTML formatting
+      $el.html(translated);
+    }
+
+    // Remove the marker attribute
+    $el.removeAttr('data-translate-id');
+  });
+
+  // Clean up any remaining markers
+  $('[data-translate-id]').removeAttr('data-translate-id');
+
+  return $.html();
+}
+
+/**
+ * Apply glossary post-processing to translated text
+ * Ensures consistent terminology even if AI varied
+ */
+function applyGlossaryPostProcess(html) {
+  const glossary = require('./translation-glossary.json');
+  let result = html;
+
+  // Apply UI strings exactly (case-sensitive)
+  for (const [it, en] of Object.entries(glossary.uiStrings)) {
+    // Only replace if Italian string is found (shouldn't be, but safety check)
+    result = result.split(it).join(en);
+  }
+
+  // For terms, do case-insensitive check for Italian -> ensure English
+  // This catches any terms the AI might have missed
+  for (const [it, en] of Object.entries(glossary.terms)) {
+    const regex = new RegExp(`\\b${escapeRegex(it)}\\b`, 'gi');
+    // Replace Italian term with English equivalent
+    result = result.replace(regex, en);
+  }
+
+  return result;
+}
+
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
  * Show help message
  */
 function showHelp() {
@@ -466,8 +542,55 @@ async function main() {
   }
 
   if (options.testReassemble) {
-    console.log('Test reassemble mode - will be implemented in Plan 02');
+    const html = await fs.readFile(options.testReassemble, 'utf-8');
+
+    // Step 1: Extract segments
+    const { $, segments, metadata } = extractSegments(html);
+    console.log(`\n=== REASSEMBLY TEST ===`);
     console.log(`File: ${options.testReassemble}`);
+    console.log(`Extracted ${segments.length} segments`);
+
+    // Step 2: Create mock translations (UPPERCASE each segment as test)
+    const mockTranslations = segments.map(seg => ({
+      id: seg.id,
+      text: seg.text.toUpperCase()  // Mock translation = uppercase
+    }));
+
+    const mockMeta = {
+      title: metadata.title.toUpperCase(),
+      description: metadata.description.toUpperCase()
+    };
+
+    console.log(`\n--- MOCK TRANSLATIONS (uppercase as test) ---`);
+    mockTranslations.slice(0, 5).forEach(t => {
+      const preview = t.text.slice(0, 50);
+      console.log(`  [${t.id}] ${preview}...`);
+    });
+
+    // Step 3: Reassemble
+    const reassembled = reassembleHtml($, mockTranslations, mockMeta);
+
+    // Step 4: Verify structure preserved
+    const $result = cheerio.load(reassembled, { decodeEntities: false });
+
+    console.log(`\n--- REASSEMBLY RESULT ---`);
+    console.log(`Title: ${$result('title').text()}`);
+    console.log(`H1 count: ${$result('h1').length}`);
+    console.log(`H2 count: ${$result('h2').length}`);
+    console.log(`Paragraph count: ${$result('p').length}`);
+    console.log(`Link count: ${$result('a').length}`);
+
+    // Show a sample of transformed content
+    console.log(`\n--- SAMPLE OUTPUT ---`);
+    const firstH1 = $result('h1').first().text();
+    const firstP = $result('p').first().text();
+    console.log(`First H1: ${firstH1.slice(0, 60)}...`);
+    console.log(`First P: ${firstP.slice(0, 60)}...`);
+
+    // Check for data-translate-id cleanup
+    const remainingMarkers = $result('[data-translate-id]').length;
+    console.log(`\nRemaining data-translate-id markers: ${remainingMarkers} (should be 0)`);
+
     return;
   }
 
