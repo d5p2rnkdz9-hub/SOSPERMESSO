@@ -15,9 +15,8 @@ See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Current Milestone:** v2.0 Multilingual + Tests
 **Phase:** 20 - Batch Translation Pipeline
-**Plan:** 2 of 3 in current phase
-**Status:** In progress
-**Last activity:** 2026-02-02 — Completed 20-02-PLAN.md
+**Status:** Complete (with tech debt)
+**Last activity:** 2026-02-02 — All 209 pages translated to English
 
 ```
 Milestones:
@@ -31,16 +30,26 @@ v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
-v2.0 Multilingual + Tests  [Active]             ██○○○○○○○○
+v2.0 Multilingual + Tests  [Active]             ███○○○○○○○
 ```
+
+## Phase 20 Summary
+
+**Completed:** All 209 pages translated (208 + homepage)
+- Used Claude Code subagents (not Anthropic Batch API)
+- 8 batches, 4 parallel agents per wave
+- Glossary terms applied consistently
+- All pages have `lang="en"` attribute
+
+**Tech debt:** CSS/JS paths broken (see below)
 
 ## v2.0 Scope
 
 **Track 1: English Translations**
-- Translator review interface (web UI for volunteers)
-- Batch translation pipeline (208 pages)
-- Human review workflow
-- Language switching (IT ↔ EN)
+- ~~Batch translation pipeline (208 pages)~~ ✓ Done
+- [ ] Fix CSS/JS paths in EN pages (tech debt)
+- [ ] Human review workflow
+- [ ] Language switching (IT ↔ EN)
 
 **Track 2: Proprietary Tests**
 - Replace 3 Typeform tests with in-house solution
@@ -52,39 +61,46 @@ v2.0 Multilingual + Tests  [Active]             ██○○○○○○○○
 - Legal review: Not needed
 - Sequence: Translations first, then tests
 
-## Patch Releases
+## Technical Debt
 
-### v1.9.1 (In Progress)
+### Critical: EN Pages CSS/JS Paths (Phase 20)
 
-**Mobile header fix:**
-- ✓ Fixed hamburger menu missing on mobile (language-switcher width: 100% removed)
-- ✓ Fixed language dropdown positioning (full-width bottom sheet)
-- ✓ Added JS toggle for language dropdown on mobile
+**Problem:** All EN pages have incorrect asset paths - CSS/JS not loading.
 
-**Dictionary expansion:**
-- ✓ Added 8 new terms: Questura, Prefettura, Sportello Unico, Visto, Ricevuta, Marca da bollo, Copia conforme, Tessera sanitaria
-- ✓ Updated dizionario-map.json with terms + aliases
-- ✓ Integrated linkToDizionario into permit page builder
-
-**To complete v1.9.1:**
-```bash
-node scripts/build-permits.js   # Regenerate 67 permit pages with dictionary links
+**Current paths (wrong):**
+```html
+href="../../styles/main.css"
+src="../../scripts/app.js"
 ```
 
-### v1.9.2 (Future)
+**Correct paths:**
+```html
+href="../../../src/styles/main.css"
+src="../../../src/scripts/app.js"
+```
 
-- [ ] Dictionary self-linking (terms in dizionario.html link to each other)
-- [ ] Permit cross-linking (permit names in content → link to permit pages)
-- [ ] Post-process script for static pages (dizionario.html, guides)
+**Why:** EN pages at `en/src/pages/` are 3 levels deep, but paths set as if 2 levels.
 
-## Technical Debt
+**Fix scope:** 208 pages in `en/src/pages/` + `en/index.html`
+
+**Fix approach:**
+```bash
+# For en/src/pages/*.html:
+# ../../styles/ → ../../../src/styles/
+# ../../scripts/ → ../../../src/scripts/
+# ../../images/ → ../../../images/
+
+# For en/index.html (different structure):
+# Verify paths point to ../src/styles/, ../src/scripts/
+```
+
+### Other Tech Debt
 
 From TODO-permits.md:
 - 18 permits need Notion content (placeholder pages exist)
 
 From prior milestones:
 - Desktop header alignment (language switcher baseline)
-- ~~Dizionario links revision~~ → Addressed in v1.9.1 (8 new terms, permit page linking)
 - No npm script for build-permits.js (manual execution)
 
 ## Design Patterns to Follow
@@ -95,10 +111,6 @@ From prior milestones:
 - **Typeform URLs:** form.typeform.com/to/[form_id]
 - **Layout:** Use `.category-section` and `.permit-list` structure
 - **Color palette:** White header (#FFFFFF), teal menu text (#1A6B5F), warm gradients
-- **CTA buttons:** Section with primary + secondary buttons linking to document pages
-- **Permit template:** Use scripts/templates/permesso.js for generating permit pages
-- **Bullet styling:** Blue triangle bullets via CSS ::before pseudo-element
-- **Variant structure:** Parent/child pages in subfolders for multi-type permits
 - **Build scripts:** npm run build:* pattern (build:docs, build:sitemap)
 
 ## Accumulated Context
@@ -107,23 +119,17 @@ From prior milestones:
 
 | Phase | Decision | Rationale |
 |-------|----------|-----------|
-| 20-02 | Use cheerio with decodeEntities: false | Preserve HTML entities in source content |
-| 20-02 | Mark elements with data-translate-id | Enable precise reassembly matching |
-| 20-02 | Skip nested text elements | Process leaf nodes only to avoid duplicates |
-| 20-02 | Path depth adjustment for EN subfolder | Add one level for all relative paths |
-| 20-02 | Test modes with uppercase mock translations | Visual verification of structure preservation |
-| 20 | Cheerio version 1.0.0-rc.12 used | Avoided npm cache permission issue with latest version |
-| 20 | Manifest tracks by filename and source mtime | Efficient incremental translation detection |
-| 20 | Test mode flags reserved for Plan 02 | CLI defined but implementation deferred |
+| 20 | Claude Code subagents for translation | User preferred existing subscription over API setup |
+| 20 | 8 batches of ~26 pages | Balanced parallelization |
+| 20-02 | Use cheerio with decodeEntities: false | Preserve HTML entities |
+| 20-02 | Mark elements with data-translate-id | Enable precise reassembly |
 | v2.0 | /en/ subfolder for English pages | Not subdomain |
 | v2.0 | Volunteer translators | Not paid |
 | v2.0 | No legal review needed | For translations |
-| v2.0 | Proprietary tests replace Typeform | Both IT + EN |
-| v2.0 | Translations first, then tests | Sequence decision |
 
 ### Pending Todos
 
-None.
+- [ ] Fix EN pages CSS/JS paths (critical - before human review)
 
 ### Blockers/Concerns
 
@@ -131,15 +137,17 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-02 09:29 UTC
-**Stopped at:** Completed 20-02-PLAN.md
+**Last session:** 2026-02-02 17:30 UTC
+**Stopped at:** Phase 20 complete, tech debt identified
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, 20-01-SUMMARY.md, 20-02-SUMMARY.md
-2. **Where we are:** Phase 20 plan 2 complete (HTML transformation pipeline)
-3. **What to do next:** Execute 20-03-PLAN.md (Claude API batch integration)
+1. **Context to load:** This STATE.md, 20-03-SUMMARY.md
+2. **Where we are:** Phase 20 complete but EN pages have broken CSS paths
+3. **What to do next:**
+   - Fix CSS/JS paths in all EN pages (tech debt)
+   - Then proceed to Phase 21 (Human Review)
 
 ---
 
