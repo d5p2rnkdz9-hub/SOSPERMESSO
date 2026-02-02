@@ -645,5 +645,9 @@ module.exports = {
   saveManifest,
   needsTranslation,
   discoverPages,
-  buildSystemPrompt
+  buildSystemPrompt,
+  extractSegments,
+  transformLinks,
+  reassembleHtml,
+  applyGlossaryPostProcess
 };
