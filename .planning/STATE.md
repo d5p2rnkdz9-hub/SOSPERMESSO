@@ -41,13 +41,13 @@ v2.0 Multilingual + Tests  [Active]             ███○○○○○○○
 - Glossary terms applied consistently
 - All pages have `lang="en"` attribute
 
-**Tech debt:** CSS/JS paths broken (see below)
+**Tech debt:** ~~CSS/JS paths broken~~ ✓ Fixed 2026-02-02
 
 ## v2.0 Scope
 
 **Track 1: English Translations**
 - ~~Batch translation pipeline (208 pages)~~ ✓ Done
-- [ ] Fix CSS/JS paths in EN pages (tech debt)
+- ~~Fix CSS/JS paths in EN pages (tech debt)~~ ✓ Done
 - [ ] Human review workflow
 - [ ] Language switching (IT ↔ EN)
 
@@ -63,36 +63,13 @@ v2.0 Multilingual + Tests  [Active]             ███○○○○○○○
 
 ## Technical Debt
 
-### Critical: EN Pages CSS/JS Paths (Phase 20)
+### ✓ RESOLVED: EN Pages CSS/JS Paths (Phase 20)
 
-**Problem:** All EN pages have incorrect asset paths - CSS/JS not loading.
-
-**Current paths (wrong):**
-```html
-href="../../styles/main.css"
-src="../../scripts/app.js"
-```
-
-**Correct paths:**
-```html
-href="../../../src/styles/main.css"
-src="../../../src/scripts/app.js"
-```
-
-**Why:** EN pages at `en/src/pages/` are 3 levels deep, but paths set as if 2 levels.
-
-**Fix scope:** 208 pages in `en/src/pages/` + `en/index.html`
-
-**Fix approach:**
-```bash
-# For en/src/pages/*.html:
-# ../../styles/ → ../../../src/styles/
-# ../../scripts/ → ../../../src/scripts/
-# ../../images/ → ../../../images/
-
-# For en/index.html (different structure):
-# Verify paths point to ../src/styles/, ../src/scripts/
-```
+Fixed 2026-02-02 via `scripts/fix-en-paths.js`:
+- 174 files updated with correct relative paths
+- `en/src/pages/*.html`: `../../styles/` → `../../../src/styles/`
+- `en/src/pages/subdir/*.html`: `../../../styles/` → `../../../../src/styles/`
+- Image paths normalized to `IMAGES` (uppercase)
 
 ### Other Tech Debt
 
@@ -129,7 +106,7 @@ From prior milestones:
 
 ### Pending Todos
 
-- [ ] Fix EN pages CSS/JS paths (critical - before human review)
+- ~~Fix EN pages CSS/JS paths (critical - before human review)~~ ✓ Done
 
 ### Blockers/Concerns
 
@@ -143,11 +120,10 @@ None.
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, 20-03-SUMMARY.md
-2. **Where we are:** Phase 20 complete but EN pages have broken CSS paths
+1. **Context to load:** This STATE.md
+2. **Where we are:** Phase 20 complete, EN pages CSS paths fixed
 3. **What to do next:**
-   - Fix CSS/JS paths in all EN pages (tech debt)
-   - Then proceed to Phase 21 (Human Review)
+   - Proceed to Phase 21 (Human Review workflow)
 
 ---
 
