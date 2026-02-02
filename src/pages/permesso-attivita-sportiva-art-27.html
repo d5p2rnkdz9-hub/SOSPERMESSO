@@ -32,7 +32,41 @@
         <a href="../../index.html" class="logo">
           <img src="../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
         </a>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <!-- Language Switcher (standalone) -->
+        <div class="language-switcher">
+          <button class="language-button" id="language-toggle">
+            <span id="current-language">IT 🇮🇹</span>
+            <span>▾</span>
+          </button>
+          <div class="language-dropdown" id="language-dropdown">
+            <div class="language-option" data-lang="it">
+              <span>🇮🇹</span>
+              <span>Italiano</span>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span>🇬🇧</span>
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="fr">
+              <span>🇫🇷</span>
+              <span>Français</span>
+            </div>
+            <div class="language-option" data-lang="es">
+              <span>🇪🇸</span>
+              <span>Español</span>
+            </div>
+            <div class="language-option" data-lang="zh">
+              <span>🇨🇳</span>
+              <span>中文</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          ☰
+        </button>
 
         <div class="nav-wrapper">
           <ul class="nav-menu" id="nav-menu">
@@ -75,14 +109,7 @@
               </ul>
             </li>
           </ul>
-
-          <div class="language-switcher">
-            <button class="language-button" id="language-toggle">
-              <span id="current-language">IT</span>
-              <span>▾</span>
-            </button>
-          </div>
-        </div>
+                </div>
       </nav>
     </div>
   </header>

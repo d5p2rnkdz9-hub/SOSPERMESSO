@@ -113,8 +113,24 @@ const languageConfig = {
   'zh': { label: 'ZH 🇨🇳', path: '/zh/' }
 };
 
-// Get current language from localStorage or default to 'it'
-let currentLanguage = localStorage.getItem('sospermesso-lang') || 'it';
+// Detect current language from URL path (takes priority over localStorage)
+function detectLanguageFromPath() {
+  const path = window.location.pathname;
+  if (path.startsWith('/en/') || path === '/en') {
+    return 'en';
+  }
+  // Add more languages here when available:
+  // if (path.startsWith('/fr/') || path === '/fr') return 'fr';
+  // if (path.startsWith('/es/') || path === '/es') return 'es';
+  // if (path.startsWith('/zh/') || path === '/zh') return 'zh';
+  return 'it'; // Default to Italian
+}
+
+// Get current language from URL path
+let currentLanguage = detectLanguageFromPath();
+
+// Sync localStorage with detected language
+localStorage.setItem('sospermesso-lang', currentLanguage);
 
 // Update display
 if (currentLanguageDisplay) {
@@ -132,18 +148,48 @@ languageOptions.forEach(option => {
     }
 
     if (selectedLang !== currentLanguage) {
+      // Only IT and EN are available for now
+      if (selectedLang !== 'it' && selectedLang !== 'en') {
+        alert('This language is coming soon! / Questa lingua arriverà presto!');
+        return;
+      }
+
       // Save to localStorage
       localStorage.setItem('sospermesso-lang', selectedLang);
 
-      // Update display
-      currentLanguageDisplay.textContent = languageConfig[selectedLang].label;
+      // Get current path
+      const currentPath = window.location.pathname;
+      let newPath;
 
-      // Redirect to language-specific version
-      // In production, this would navigate to /en/, /fr/, etc.
-      // For now, we'll just reload with a lang parameter
-      const url = new URL(window.location);
-      url.searchParams.set('lang', selectedLang);
-      window.location.href = url.toString();
+      // Determine current language from path
+      const isCurrentlyEnglish = currentPath.startsWith('/en/') || currentPath === '/en';
+
+      if (selectedLang === 'en') {
+        // Switching TO English
+        if (isCurrentlyEnglish) {
+          return; // Already on English
+        }
+        // Add /en/ prefix
+        if (currentPath === '/' || currentPath === '/index.html') {
+          newPath = '/en/';
+        } else {
+          newPath = '/en' + currentPath;
+        }
+      } else if (selectedLang === 'it') {
+        // Switching TO Italian
+        if (!isCurrentlyEnglish) {
+          return; // Already on Italian
+        }
+        // Remove /en/ prefix
+        if (currentPath === '/en/' || currentPath === '/en' || currentPath === '/en/index.html') {
+          newPath = '/';
+        } else {
+          newPath = currentPath.replace(/^\/en/, '');
+        }
+      }
+
+      // Navigate to the new path
+      window.location.href = newPath;
     }
   });
 });
