@@ -76,25 +76,25 @@ Deferred from v2.0. Human review workflow and test system.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAYT-01 | TBD | Pending |
-| LAYT-02 | TBD | Pending |
-| TYPO-01 | TBD | Pending |
-| TYPO-02 | TBD | Pending |
-| TYPO-03 | TBD | Pending |
-| VISL-01 | TBD | Pending |
-| VISL-02 | TBD | Pending |
-| VISL-03 | TBD | Pending |
-| VISL-04 | TBD | Pending |
-| HEAD-01 | TBD | Pending |
-| HEAD-02 | TBD | Pending |
-| QUAL-01 | TBD | Pending |
-| QUAL-02 | TBD | Pending |
+| LAYT-01 | 29 | Pending |
+| LAYT-02 | 29 | Pending |
+| TYPO-01 | 29 | Pending |
+| TYPO-02 | 28 | Pending |
+| TYPO-03 | 28 | Pending |
+| VISL-01 | 28 | Pending |
+| VISL-02 | 29 | Pending |
+| VISL-03 | 31 | Pending |
+| VISL-04 | 31 | Pending |
+| HEAD-01 | 30 | Pending |
+| HEAD-02 | 30 | Pending |
+| QUAL-01 | 28 | Pending |
+| QUAL-02 | 31 | Pending |
 
 **Coverage:**
 - v2.1 requirements: 13 total
-- Mapped to phases: 0
-- Unmapped: 13 ⚠️
+- Mapped to phases: 13
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-02*
-*Last updated: 2026-02-02 after v2.1 milestone definition*
+*Last updated: 2026-02-02 — Phase assignments complete*

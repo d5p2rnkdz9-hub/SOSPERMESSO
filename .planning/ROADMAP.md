@@ -1,240 +1,189 @@
 # Roadmap: SOS Permesso
 
-**Current Milestone:** v2.0 Multilingual + Tests
-**Started:** 2026-01-31
+**Current Milestone:** v2.1 Homepage CSS Redesign
+**Started:** 2026-02-02
 
 ---
 
-## v2.0 Multilingual + Tests
+## v2.1 Homepage CSS Redesign
 
-> **Goal:** English-speaking users can access the full site with quality translations, and all users get a proprietary test system replacing Typeform.
+> **Goal:** Transform the homepage into a modern "startup SaaS" aesthetic with split hero layout, display typography, and cleaner white/black/yellow palette. Scope limited to homepage; header/footer changes propagate via shared CSS.
 
 ### Active Phase
 
-**Phase 20: Batch Translation Pipeline** — Translate all 208 pages IT → EN with glossary enforcement
+**Phase 28: Foundation** — Establish visual regression baseline and prepare CSS infrastructure
 
-**Plans:** 3 plans in 3 waves
+**Plans:** Not yet created
 
-Plans:
-- [x] 20-01-PLAN.md — Translation infrastructure (script skeleton, manifest, glossary integration) ✓ 2026-02-02
-- [ ] 20-02-PLAN.md — HTML segmentation and link transformation
-- [ ] 20-03-PLAN.md — Anthropic Batch API integration and full translation
-
-### Upcoming Phases
+### Phases
 
 | Phase | Name | Goal | Status |
 |-------|------|------|--------|
-| 20 | Batch Translation Pipeline | Translate 208 pages IT → EN with AI + glossary | ◆ Active |
-| 21 | Human Review & Corrections | Volunteers review all translated pages | ○ Queued |
-| 22 | Language Switching Integration | IT ↔ EN switching, hreflang, EN sitemap | ○ Queued |
-| 23 | Test Foundation | quiz.js engine + test-avere in Italian | ○ Queued |
-| 24 | Test UX Polish | Progress indicator, iOS fixes, calming design | ○ Queued |
-| 25 | Test Multilingual | English support for test-avere | ○ Queued |
-| 26 | Remaining Quizzes | test-convertire + test-rinnovare (IT + EN) | ○ Queued |
-| 27 | Test Integration | Update nav, remove Typeform links | ○ Queued |
-
-### Deferred
-
-| Phase | Name | Reason |
-|-------|------|--------|
-| 19 | Translator Review Interface | Can review manually; build if volunteer scale requires |
+| 28 | Foundation | Visual regression baseline, font loading, CSS variables | Pending |
+| 29 | Hero Section | Split hero layout, wave divider, display heading, dark CTA | Pending |
+| 30 | Header/Footer | Minimal header redesign, updated footer styling | Pending |
+| 31 | Polish | Hover effects, scroll fade-ins, mobile testing | Pending |
 
 ---
 
 ## Phase Details
 
-### Phase 20: Batch Translation Pipeline
+### Phase 28: Foundation
 
-**Goal:** All 208 pages translated using AI with glossary enforcement
+**Goal:** Establish visual regression baseline and prepare CSS infrastructure for redesign.
 
-**Deliverables:**
-- Node.js script to batch translate pages
-- Glossary term replacement post-processing
-- Structural preservation (HTML tags, links, attributes)
-- Automatic path updates (IT links → EN links)
-- Translation manifest tracking completed pages
+**Dependencies:** None (first phase)
+
+**Requirements:**
+- QUAL-01: Visual regression baseline established before changes
+- TYPO-02: Typography uses fluid sizing with `clamp()`
+- TYPO-03: Playfair Display font loaded for hero headings
+- VISL-01: Homepage uses white/black/yellow color palette
 
 **Success Criteria:**
-1. Running `npm run translate:en` generates all EN pages
-2. All pages pass verification script with no errors
-3. Internal links point to `/en/` versions
-4. `lang="en"` attribute set on all pages
-
-**POC Assets (reuse):**
-- 4 sample pages in `en/src/pages/`
-- `scripts/verify-translation.js`
-- `scripts/translation-glossary.json` (35+ terms)
+1. User can run a command that captures baseline screenshots of current homepage (IT and EN)
+2. Playfair Display font loads without visible layout shift on page load
+3. CSS variables for the new color palette exist in main.css (yellow primary, white background, black text)
+4. Fluid typography scales smoothly when browser window is resized (no jumps at breakpoints)
 
 ---
 
-### Phase 21: Human Review & Corrections
+### Phase 29: Hero Section
 
-**Goal:** All translations reviewed and corrected by volunteer translators
+**Goal:** Users see a modern split-layout hero with bold display heading and organic wave divider.
 
-**Deliverables:**
-- Prioritized review queue (high-traffic pages first)
-- Corrections applied manually or via simple workflow
-- Final verification pass
-- Sign-off checklist per page category
+**Dependencies:** Phase 28 (font and color variables must exist)
+
+**Requirements:**
+- LAYT-01: Homepage has split hero layout (text left, illustration right)
+- LAYT-02: Homepage has organic wave divider below hero section
+- TYPO-01: Hero section has bold display heading
+- VISL-02: Primary CTA is dark rounded button
 
 **Success Criteria:**
-1. 100% of permit pages reviewed
-2. 100% of document pages reviewed
-3. All glossary terms used consistently
-4. Legal/technical accuracy verified
+1. User sees hero text on left and lighthouse illustration on right on desktop widths
+2. User sees hero content stacked (text above, illustration below) on mobile widths
+3. User sees an organic wave shape separating hero from content below
+4. User sees a dark rounded button as the primary CTA that stands out clearly
 
 ---
 
-### Phase 22: Language Switching Integration
+### Phase 30: Header/Footer
 
-**Goal:** Users can switch between IT and EN versions seamlessly
+**Goal:** Header and footer match the cleaner, more minimal aesthetic of the redesigned homepage.
 
-**Deliverables:**
-- Language switcher points to correct EN pages
-- EN pages link back to IT equivalents
-- hreflang tags for SEO
-- EN sitemap.xml
-- 404 fallback handling
+**Dependencies:** Phase 29 (hero establishes visual baseline for new aesthetic)
+
+**Requirements:**
+- HEAD-01: Header has minimal, clean design
+- HEAD-02: Footer style updated to match new aesthetic
 
 **Success Criteria:**
-1. Clicking EN flag on any IT page goes to EN equivalent
-2. Clicking IT flag on any EN page goes to IT equivalent
-3. Google can discover EN pages via sitemap
-4. Missing EN pages show graceful fallback
+1. User sees a cleaner header with reduced visual weight (simpler background, less clutter)
+2. User sees footer styling that complements the white/black/yellow palette
+3. Navigation remains fully functional (dropdowns work, mobile hamburger works)
 
 ---
 
-### Phase 23: Test Foundation
+### Phase 31: Polish
 
-**Goal:** Core quiz engine working with one test in Italian
+**Goal:** Interactive elements feel responsive and content appears smoothly as user scrolls.
 
-**Deliverables:**
-- quiz.js engine (state machine, navigation, rendering)
-- JSON schema for quiz definitions
-- test-avere.html page shell
-- test-avere-it.json content
-- Result display with links to permit pages
+**Dependencies:** Phase 30 (all visual elements in place before polish)
+
+**Requirements:**
+- VISL-03: Interactive elements have CSS hover effects
+- VISL-04: Content sections fade in on scroll
+- QUAL-02: Design tested on mobile devices
 
 **Success Criteria:**
-1. User can complete test-avere quiz flow
-2. Branching logic works correctly
-3. Results link to appropriate permit pages
-4. Back button navigation works
+1. User sees visual feedback (scale, shadow, or color change) when hovering over buttons and cards
+2. User sees content sections fade in as they scroll down the page
+3. User can navigate the full homepage on a mobile device without horizontal scrolling or touch target issues
 
 ---
 
-### Phase 24: Test UX Polish
+## Coverage Validation
 
-**Goal:** Quiz UX optimized for stressed/anxious users
+| Requirement | Phase | Description |
+|-------------|-------|-------------|
+| LAYT-01 | 29 | Split hero layout |
+| LAYT-02 | 29 | Wave divider |
+| TYPO-01 | 29 | Bold display heading |
+| TYPO-02 | 28 | Fluid typography |
+| TYPO-03 | 28 | Playfair Display font |
+| VISL-01 | 28 | Color palette |
+| VISL-02 | 29 | Dark rounded CTA |
+| VISL-03 | 31 | Hover effects |
+| VISL-04 | 31 | Scroll fade-ins |
+| HEAD-01 | 30 | Minimal header |
+| HEAD-02 | 30 | Updated footer |
+| QUAL-01 | 28 | Visual regression baseline |
+| QUAL-02 | 31 | Mobile testing |
 
-**Deliverables:**
-- Progress indicator (step counter)
-- 16px minimum font on all inputs (iOS zoom fix)
-- Calming error states
-- "Start Over" button
-- Contextual help tooltips
-
-**Success Criteria:**
-1. Quiz works on iOS Safari without zoom issues
-2. Error messages are friendly, not harsh
-3. User always knows their progress
-4. Can restart quiz at any point
-
----
-
-### Phase 25: Test Multilingual
-
-**Goal:** English support for test-avere
-
-**Deliverables:**
-- test-avere-en.json
-- Language-aware JSON loading in quiz.js
-- Integration with existing language switcher
-- Language fallback (missing → Italian)
-
-**Success Criteria:**
-1. EN users see quiz in English
-2. IT users see quiz in Italian
-3. Language switch works mid-quiz
-4. Results link to correct language pages
+**Mapped:** 13/13 requirements
+**Orphaned:** 0
 
 ---
 
-### Phase 26: Remaining Quizzes
+## v2.0 Multilingual + Tests (Paused)
 
-**Goal:** Complete all 3 tests in both languages
+> **Status:** Phase 20 complete (all 209 pages translated). Remaining phases (21-27) moved to v3.0.
+>
+> See: `.planning/milestones/v2.0-ROADMAP.md` for full history.
 
-**Deliverables:**
-- test-convertire-it.json + test-convertire-en.json
-- test-rinnovare-it.json + test-rinnovare-en.json
-- test-convertire.html + test-rinnovare.html
-- Result mappings to permit pages
-
-**Success Criteria:**
-1. All 3 quizzes work in Italian
-2. All 3 quizzes work in English
-3. Results link to correct permit pages
-4. Consistent UX across all quizzes
-
----
-
-### Phase 27: Test Integration
-
-**Goal:** Quizzes integrated into main site, Typeform removed
-
-**Deliverables:**
-- Updated index.html test section with internal links
-- Updated nav dropdown across all pages
-- Updated sitemap.xml with test pages
-- Removed Typeform references
-- Updated content-it.json and content-en.json
-
-**Success Criteria:**
-1. Homepage links to internal tests
-2. Nav dropdown shows internal test links
-3. Typeform links completely removed
-4. Sitemap includes test pages
+| Phase | Name | Status |
+|-------|------|--------|
+| 20 | Batch Translation Pipeline | Complete |
+| 21-27 | Human Review, Tests, Integration | Deferred to v3.0 |
 
 ---
 
 ## Previous Milestones
 
-### v1.9 SEO Foundations (Shipped 2026-01-31)
-> See `.planning/milestones/v1.9-ROADMAP.md`
+### v1.10 UI Polish (Shipped 2026-02-01)
+> Sticky breadcrumb, document notes from Notion, test card titles
 
-### v1.7 Database Content Reviewed (Shipped 2026-01-30)
-> See `.planning/milestones/v1.7-ROADMAP.md`
+### v1.9 SEO Foundations (Shipped 2026-01-31)
+> robots.txt, sitemap.xml, automated generation
+
+### v1.7 Database Content (Shipped 2026-01-30)
+> 67 permit pages from Notion, Q&A template, variant structure
 
 ### v1.6 Document Deduplication (Shipped 2026-01-28)
-> See `.planning/milestones/v1.6-ROADMAP.md`
+> CTA buttons linking permits to documents
 
 ### v1.5 Footer + Collabora (Shipped 2026-01-28)
-> See `.planning/milestones/v1.5-ROADMAP.md`
+> Yellow footer, Collabora dropdown
 
 ### v1.4 Error + Dropdowns (Shipped 2026-01-27)
-> See `.planning/milestones/v1.4-ROADMAP.md`
+> Error reporting button, dropdown navigation
 
 ### v1.2 Visual Refresh (Shipped 2026-01-26)
-> See `.planning/milestones/v1.2-ROADMAP.md`
+> Warm color palette, PNG lighthouse logo, white header
 
 ### v1.1 Documenti Questura (Shipped 2026-01-25)
-> See `.planning/milestones/v1.1-ROADMAP.md`
+> 63 document pages, interactive checklists, Notion integration
 
 ---
 
 ## Progress
 
-| Phase | Milestone | Plans Complete | Status | Completed |
-|-------|-----------|----------------|--------|-----------|
-| 1-3 | v1.1 | 4/4 | Complete | 2026-01-25 |
-| 4-9 | v1.2 | 7/7 | Complete | 2026-01-26 |
-| 10-11 | v1.4 | 4/4 | Complete | 2026-01-27 |
-| 12-14 | v1.5 | 4/4 | Complete | 2026-01-28 |
-| 15 | v1.6 | 2/2 | Complete | 2026-01-28 |
-| 16-17 | v1.7 | 5/5 | Complete | 2026-01-30 |
-| 18 | v1.9 | 1/1 | Complete | 2026-01-31 |
-| 20 | v2.0 | 1/3 | Active | — |
+| Phase | Milestone | Status | Completed |
+|-------|-----------|--------|-----------|
+| 1-3 | v1.1 | Complete | 2026-01-25 |
+| 4-9 | v1.2 | Complete | 2026-01-26 |
+| 10-11 | v1.4 | Complete | 2026-01-27 |
+| 12-14 | v1.5 | Complete | 2026-01-28 |
+| 15 | v1.6 | Complete | 2026-01-28 |
+| 16-17 | v1.7 | Complete | 2026-01-30 |
+| 18 | v1.9 | Complete | 2026-01-31 |
+| 20 | v2.0 | Complete | 2026-02-02 |
+| 28 | v2.1 | Pending | — |
+| 29 | v2.1 | Pending | — |
+| 30 | v2.1 | Pending | — |
+| 31 | v2.1 | Pending | — |
 
 ---
 
-*Last updated: 2026-02-02 — Phase 20 plan 1 complete*
+*Last updated: 2026-02-02 — v2.1 roadmap created*
