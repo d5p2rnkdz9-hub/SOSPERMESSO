@@ -221,6 +221,95 @@ function generateSelector($el) {
 }
 
 /**
+ * Transform links and paths for EN version
+ * EN pages are in /en/src/pages/ - one level deeper than IT
+ * @param {CheerioAPI} $ - Cheerio instance
+ */
+function transformLinks($) {
+  // Update lang attribute
+  $('html').attr('lang', 'en');
+
+  // Transform internal page links
+  $('a[href]').each((i, el) => {
+    const $el = $(el);
+    const href = $el.attr('href');
+
+    // Skip external links, anchors, mailto, tel
+    if (!href) return;
+    if (href.startsWith('http') || href.startsWith('#') ||
+        href.startsWith('mailto:') || href.startsWith('tel:')) return;
+
+    // Transform relative paths
+    // IT: ../chi-siamo.html -> chi-siamo.html (same level in EN)
+    // IT: chi-siamo.html -> chi-siamo.html (already relative)
+    // Root: src/pages/x.html -> just use x.html for EN internal
+
+    // For links within src/pages, keep filename only
+    const filename = path.basename(href);
+    if (href.includes('.html') && !href.includes('..')) {
+      $el.attr('href', filename);
+    }
+  });
+
+  // Transform asset paths (CSS, JS, images)
+  // EN pages are in /en/src/pages/ - need to go up one more level
+  // IT: ../styles/main.css
+  // EN: ../../styles/main.css
+
+  $('link[href^="../styles"]').each((i, el) => {
+    const $el = $(el);
+    const href = $el.attr('href');
+    // ../styles -> ../../styles
+    $el.attr('href', href.replace('../styles', '../../styles'));
+  });
+
+  $('script[src^="../scripts"]').each((i, el) => {
+    const $el = $(el);
+    const src = $el.attr('src');
+    $el.attr('src', src.replace('../scripts', '../../scripts'));
+  });
+
+  // Images - adjust path depth
+  $('img[src]').each((i, el) => {
+    const $el = $(el);
+    const src = $el.attr('src');
+    if (src && src.startsWith('../')) {
+      // Add one more level up
+      $el.attr('src', '../' + src);
+    }
+  });
+
+  // Logo specifically - from ../../../images to ../../../../images
+  $('img[src*="images/logo"]').each((i, el) => {
+    const $el = $(el);
+    const src = $el.attr('src');
+    if (src.includes('../../../images')) {
+      $el.attr('src', src.replace('../../../images', '../../../../images'));
+    }
+  });
+
+  // Favicon links
+  $('link[href*="images/logo"]').each((i, el) => {
+    const $el = $(el);
+    const href = $el.attr('href');
+    if (href.includes('../../../images')) {
+      $el.attr('href', href.replace('../../../images', '../../../../images'));
+    }
+  });
+
+  // Home link (logo)
+  $('a[href="../../index.html"]').attr('href', '../../../en/index.html');
+  $('a.logo[href]').each((i, el) => {
+    const $el = $(el);
+    const href = $el.attr('href');
+    if (href && !href.includes('/en/')) {
+      // Point to EN homepage
+      $el.attr('href', '../../../en/index.html');
+    }
+  });
+}
+
+/**
  * Show help message
  */
 function showHelp() {
@@ -338,8 +427,41 @@ async function main() {
   }
 
   if (options.testLinks) {
-    console.log('Test links mode - will be implemented in Plan 02');
+    const html = await fs.readFile(options.testLinks, 'utf-8');
+    const $ = cheerio.load(html, { decodeEntities: false });
+
+    // Show BEFORE state
+    console.log(`\n=== LINK TRANSFORMATION TEST ===`);
     console.log(`File: ${options.testLinks}`);
+    console.log(`\n--- BEFORE ---`);
+    console.log(`lang: ${$('html').attr('lang') || '(not set)'}`);
+
+    const beforeLinks = [];
+    $('link[href]').slice(0, 5).each((i, el) => beforeLinks.push($(el).attr('href')));
+    $('a[href]').slice(0, 5).each((i, el) => beforeLinks.push($(el).attr('href')));
+    console.log(`Sample links: ${beforeLinks.slice(0, 5).join(', ')}`);
+
+    // Apply transformation
+    transformLinks($);
+
+    // Show AFTER state
+    console.log(`\n--- AFTER ---`);
+    console.log(`lang: ${$('html').attr('lang')}`);
+
+    const afterLinks = [];
+    $('link[href]').slice(0, 5).each((i, el) => afterLinks.push($(el).attr('href')));
+    $('a[href]').slice(0, 5).each((i, el) => afterLinks.push($(el).attr('href')));
+    console.log(`Sample links: ${afterLinks.slice(0, 5).join(', ')}`);
+
+    // Show specific transformations
+    console.log(`\n--- KEY TRANSFORMATIONS ---`);
+    $('link[href*="styles"]').slice(0, 2).each((i, el) => {
+      console.log(`  CSS: ${$(el).attr('href')}`);
+    });
+    $('a[href*=".html"]').slice(0, 3).each((i, el) => {
+      console.log(`  Link: ${$(el).attr('href')}`);
+    });
+
     return;
   }
 
