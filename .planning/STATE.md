@@ -15,9 +15,9 @@ See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Current Milestone:** v2.0 Multilingual + Tests
 **Phase:** 20 - Batch Translation Pipeline
-**Plan:** 1 of 3 in current phase
+**Plan:** 2 of 3 in current phase
 **Status:** In progress
-**Last activity:** 2026-02-02 — Completed 20-01-PLAN.md
+**Last activity:** 2026-02-02 — Completed 20-02-PLAN.md
 
 ```
 Milestones:
@@ -31,7 +31,7 @@ v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
-v2.0 Multilingual + Tests  [Active]             █○○○○○○○○○
+v2.0 Multilingual + Tests  [Active]             ██○○○○○○○○
 ```
 
 ## v2.0 Scope
@@ -107,6 +107,11 @@ From prior milestones:
 
 | Phase | Decision | Rationale |
 |-------|----------|-----------|
+| 20-02 | Use cheerio with decodeEntities: false | Preserve HTML entities in source content |
+| 20-02 | Mark elements with data-translate-id | Enable precise reassembly matching |
+| 20-02 | Skip nested text elements | Process leaf nodes only to avoid duplicates |
+| 20-02 | Path depth adjustment for EN subfolder | Add one level for all relative paths |
+| 20-02 | Test modes with uppercase mock translations | Visual verification of structure preservation |
 | 20 | Cheerio version 1.0.0-rc.12 used | Avoided npm cache permission issue with latest version |
 | 20 | Manifest tracks by filename and source mtime | Efficient incremental translation detection |
 | 20 | Test mode flags reserved for Plan 02 | CLI defined but implementation deferred |
@@ -126,15 +131,15 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-02 08:42 UTC
-**Stopped at:** Completed 20-01-PLAN.md
+**Last session:** 2026-02-02 09:29 UTC
+**Stopped at:** Completed 20-02-PLAN.md
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, 20-01-SUMMARY.md
-2. **Where we are:** Phase 20 plan 1 complete (translation infrastructure)
-3. **What to do next:** Execute 20-02-PLAN.md (translation core logic)
+1. **Context to load:** This STATE.md, 20-01-SUMMARY.md, 20-02-SUMMARY.md
+2. **Where we are:** Phase 20 plan 2 complete (HTML transformation pipeline)
+3. **What to do next:** Execute 20-03-PLAN.md (Claude API batch integration)
 
 ---
 
