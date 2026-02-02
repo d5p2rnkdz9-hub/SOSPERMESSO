@@ -1,5 +1,38 @@
 # Project Milestones: SOS Permesso
 
+## v2.0 Multilingual Foundation (Shipped: 2026-02-02)
+
+**Delivered:** Complete Italian-to-English translation of all 209 pages with working language switcher.
+
+**Phases completed:** 20 (3 plans total)
+
+**Key accomplishments:**
+
+- Translated all 209 pages (208 content + homepage) from Italian to English
+- Used Claude Code subagents for batch translation (8 batches, 4 parallel agents)
+- Applied translation glossary (35+ terms) consistently across all pages
+- Fixed CSS/JS paths in all EN pages via automated script
+- Language switcher UI functional for IT ↔ EN toggle
+- All EN pages have `lang="en"` attribute
+
+**Stats:**
+
+- 209 files created in `/en/` directory
+- 174 files with CSS/JS path fixes
+- 1 phase, 3 plans
+- Translation + path fix completed in 2 days
+
+**Git range:** `033f7a0` → current
+
+**Deferred to v3.0:**
+- Human review of translations (volunteer workflow)
+- hreflang tags and EN sitemap (moved to v2.1 infrastructure)
+- Proprietary test system (quiz.js replacing Typeform)
+
+**What's next:** v2.1 Localization Infrastructure
+
+---
+
 ## v1.9 SEO Foundations (Shipped: 2026-01-31)
 
 **Delivered:** Search engine discovery infrastructure with robots.txt allowing all crawlers and sitemap.xml listing 174 indexable pages.

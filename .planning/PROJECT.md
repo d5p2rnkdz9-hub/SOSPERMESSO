@@ -6,7 +6,15 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current State
 
-**Last Shipped:** v1.10 UI Polish & Document Notes (2026-02-01)
+**Last Shipped:** v2.0 Multilingual Foundation (2026-02-02)
+
+**What was delivered (v2.0):**
+- Translated all 209 pages (208 content + homepage) from Italian to English
+- Claude Code subagents for batch translation (8 batches, 4 parallel agents)
+- Translation glossary (35+ terms) applied consistently
+- CSS/JS paths fixed in all EN pages via automated script
+- Language switcher UI functional for IT ↔ EN toggle
+- All EN pages have `lang="en"` attribute
 
 **What was delivered (v1.10):**
 - Sticky breadcrumb bar that stays visible below header on scroll
@@ -80,39 +88,48 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Sticky breadcrumb bar visible on scroll — v1.10
 - ✓ Document notes from Notion as Q&A cards — v1.10
 - ✓ Mobile footer pages left-aligned text — v1.10
+- ✓ All 209 pages translated IT → EN with glossary — v2.0
+- ✓ Language switcher UI (IT ↔ EN toggle) — v2.0
+- ✓ EN pages in /en/ subfolder with correct CSS/JS paths — v2.0
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-**Current Milestone: v2.1 Homepage CSS Redesign**
+**Current Milestone: v2.1 Localization Infrastructure**
 
-**Goal:** Modern "startup SaaS" aesthetic for homepage with updated header/footer styling.
+**Goal:** Build scalable infrastructure for 8-12 languages with paragraph-level change tracking and diff-based re-translation.
 
 **Target features:**
-- [ ] Split hero layout (text left, illustration right)
-- [ ] Organic wave divider below hero
-- [ ] Bold display typography with Playfair Display font
-- [ ] White/black/yellow color palette
-- [ ] Dark rounded CTA button
-- [ ] Minimal header redesign
-- [ ] Updated footer style
-- [ ] Scroll-triggered fade-in animations
+- [ ] Content extraction from Notion with paragraph-level IDs
+- [ ] Hash-based change detection for paragraphs
+- [ ] Diff engine to identify changed content
+- [ ] Selective translation (only changed paragraphs)
+- [ ] Translation memory (store translations keyed by content hash)
+- [ ] Multi-language HTML generation from single pipeline
+- [ ] hreflang tags in sitemaps (not HTML)
+- [ ] Sitemap index architecture for 8-12 languages
+- [ ] RTL CSS infrastructure preparation (for Arabic)
 
-**Scope:** Homepage only. Header/footer propagation to all pages deferred.
+**Architecture goal:**
+```
+Notion (IT) → content extractor → paragraph hashes → diff engine
+                                        ↓
+                                changed paragraphs only
+                                        ↓
+                                translate to all languages
+                                        ↓
+                                generate IT/EN/FR/.../AR HTML
+```
 
 ---
 
-**Upcoming: v3.0 Human Review + Tests**
-
-**Goal:** Quality-assured English translations and proprietary test system.
-
-**Target features:**
+**Deferred to v3.0:**
 - Human review workflow with volunteer translators
-- Language switching integration (IT ↔ EN)
 - Proprietary test system replacing 3 Typeform tests (IT + EN)
+- Homepage CSS redesign (modern SaaS aesthetic)
 
-**v2.0 Progress:** Phase 20 complete — all 209 pages translated to English. CSS paths fixed.
+**v2.0 Shipped:** All 209 pages translated to English. CSS paths fixed. Language switcher UI works.
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
@@ -121,23 +138,33 @@ Users can quickly find accurate, understandable information about their specific
 - Backend API integration — static site approach
 - Real-time permit status tracking — external service, just link to portale immigrazione
 - User accounts/authentication — information site, no personalization needed
-- Additional languages (FR, ES, ZH) — pipeline built for EN, reuse later
 - Legal review for translations — volunteer review sufficient
+- Professional translation services — AI + volunteer review sufficient
 
 ## Context
 
-**Current state (after v1.10):**
+**Current state (after v2.0):**
 - Pure HTML/CSS/JavaScript static site with Node.js build process for document and permit generation
 - CSS design system with variables in `src/styles/main.css`
-- 260+ HTML pages in `src/pages/` (original + 63 document + 67 permit + redirects)
+- 260+ HTML pages in `src/pages/` (IT) + 209 pages in `/en/src/pages/` (EN)
 - Build infrastructure: package.json, @notionhq/client, dotenv, netlify.toml
 - Notion database powers both document and permit page content
 - Build scripts: `scripts/build-documents.js`, `scripts/build-permits.js`, `scripts/build-sitemap.js`
-- SEO infrastructure: robots.txt + sitemap.xml (174 pages, auto-regeneration)
+- SEO infrastructure: robots.txt + sitemap.xml (IT only, 174 pages) — EN sitemap missing
+- Translation glossary: `scripts/translation-glossary.json` (35+ terms)
+- Language switcher in header: IT ↔ EN functional, FR/ES/ZH show "coming soon"
 - Warm teal/coral color palette with blue triangle bullets
 - Clean white header with 60px height, centered navigation with dropdown menus
 - Yellow footer with centered layout
 - Mobile-optimized: simplified hamburger menu (categories only, no dropdowns)
+
+**Translation infrastructure (current, non-scalable):**
+- Batch translation via Claude Code subagents (manual process)
+- Full-page translation (no paragraph-level tracking)
+- No change detection — any IT edit requires full re-translation
+- No translation memory — unchanged paragraphs re-translated
+- Hardcoded `/en/` path detection in app.js
+- No hreflang tags — SEO treats IT/EN as duplicates
 
 **Design patterns established:**
 - Database list style (`.permit-list`, `.category-section`)
@@ -189,14 +216,15 @@ Users can quickly find accurate, understandable information about their specific
 | Mobile hamburger shows categories only | Simpler navigation, faster task completion | ✓ Good — v1.7 |
 | Exclude redirect pages from sitemap | Prevents duplicate content issues | ✓ Good — v1.9 |
 | File modification time for lastmod | Simple, accurate, automatic updates | ✓ Good — v1.9 |
-| /en/ subfolder for English | Simpler than subdomain, same domain | — Pending |
+| /en/ subfolder for English | Simpler than subdomain, same domain | ✓ Good — v2.0 |
 | Volunteer translators | Community-driven review process | — Pending |
 | No legal review for translations | AI + human review sufficient | — Pending |
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
-| Modern SaaS homepage aesthetic | Visual refresh, more professional feel | — Pending |
-| Playfair Display + Inter fonts | Serif display for hero, sans for body | — Pending |
-| White/black/yellow palette | Shift from teal/coral for cleaner look | — Pending |
-| Homepage-first, propagate later | Test design on homepage before 416-page rollout | — Pending |
+| Paragraph-level change tracking | Enables selective re-translation, not full page | — Pending |
+| hreflang in sitemaps, not HTML | Scales better for 8-12 languages | — Pending |
+| Sitemap index architecture | One master sitemap pointing to per-language sitemaps | — Pending |
+| Translation memory by content hash | Reuse translations for unchanged paragraphs | — Pending |
+| RTL CSS with logical properties | Preparation for Arabic, Hebrew support | — Pending |
 
 ---
-*Last updated: 2026-02-02 after v2.1 milestone definition*
+*Last updated: 2026-02-02 after v2.1 Localization Infrastructure milestone started*

@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-02
-**Status:** Milestone v2.1 active
+**Status:** Milestone v2.1 defining requirements
 
 ## Project Reference
 
@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-02-02)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v2.1 Homepage CSS Redesign
+**Current focus:** v2.1 Localization Infrastructure
 
 ## Current Position
 
-**Current Milestone:** v2.1 Homepage CSS Redesign
-**Phase:** Not started (defining roadmap)
-**Status:** Requirements defined, creating roadmap
-**Last activity:** 2026-02-02 — Milestone v2.1 initialized
+**Current Milestone:** v2.1 Localization Infrastructure
+**Phase:** Not started (defining requirements)
+**Status:** Gathering requirements
+**Last activity:** 2026-02-02 — Milestone v2.1 started, v2.0 shipped
 
 ```
 Milestones:
@@ -30,53 +30,32 @@ v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
-v2.0 Translations          [Phase 20 done]      ███░░░░░░░
-v2.1 Homepage Redesign     [Active]             ○○○○○○○○○○
-v3.0 Human Review + Tests  [Queued]             ..........
+v2.0 Multilingual Found.   [Shipped 2026-02-02] ##########
+v2.1 Localization Infra    [Active]             ○○○○○○○○○○
 ```
 
-## v2.1 Scope
+## v2.1 Goal
 
-**Goal:** Modern "startup SaaS" aesthetic for homepage with updated header/footer.
-
-**Requirements (13 total):**
-- LAYT-01, LAYT-02: Split hero layout, organic wave divider
-- TYPO-01, TYPO-02, TYPO-03: Bold display heading, fluid typography, Playfair Display
-- VISL-01, VISL-02, VISL-03, VISL-04: Color palette, dark CTA, hover effects, scroll fade-ins
-- HEAD-01, HEAD-02: Header redesign, footer update
-- QUAL-01, QUAL-02: Visual regression baseline, mobile testing
-
-**Out of scope:** Propagate to all 416 pages (do later if working well)
-
-## v2.0 Status (Paused)
-
-Phase 20 complete — all 209 pages translated to English.
-CSS/JS paths fixed.
-Remaining phases (21-27) moved to v3.0.
+Build scalable infrastructure for 8-12 languages with:
+- Paragraph-level change tracking (detect what changed in IT)
+- Diff-based re-translation (only translate changed content)
+- Translation memory (reuse unchanged translations)
+- Multi-language HTML generation from single pipeline
+- hreflang/sitemap index for SEO at scale
+- RTL CSS preparation for Arabic
 
 ## Technical Debt
 
-From prior milestones:
-- Dizionario links need revision (partial matching works but coverage incomplete)
+### From v2.0
+- EN sitemap missing (only IT sitemap exists)
+- No hreflang tags (Google treats IT/EN as duplicates)
+- Language detection hardcoded for `/en/` only
+
+### From Prior Milestones
+- 18 permits need Notion content (placeholder pages exist)
+- Dizionario links need revision (partial matching incomplete)
 - Desktop header alignment (language switcher baseline)
 - No npm script for build-permits.js (manual execution)
-- 18 permits still need Notion content (placeholder pages)
-
-## Design Patterns to Follow
-
-**v2.1 Target Aesthetic (from research):**
-- Clean white background with generous whitespace
-- Bold display typography (Playfair Display for hero)
-- Split hero layout (text left, illustration right)
-- Organic wave divider (SVG, yellow/orange)
-- Dark rounded CTA button
-- CSS-only hover interactions
-- Scroll-triggered fade-ins (IntersectionObserver)
-
-**Existing patterns to preserve:**
-- CSS variables system in main.css
-- Mobile-first responsive design
-- Dropdown navigation structure
 
 ## Accumulated Context
 
@@ -84,25 +63,17 @@ From prior milestones:
 
 | Phase | Decision | Rationale |
 |-------|----------|-----------|
-| v2.1 | Modern SaaS aesthetic | Visual refresh inspired by WeDu/Wix template |
-| v2.1 | Playfair Display + Inter | Serif display for contrast, keep Inter for body |
-| v2.1 | Homepage-first | Test design before 416-page rollout |
-| v2.1 | Skip feature badge row | Not essential for initial redesign |
-| 20 | Claude Code subagents for translation | User preferred existing subscription over API setup |
+| v2.0 | Claude Code subagents for translation | User preferred existing subscription over API setup |
 | v2.0 | /en/ subfolder for English pages | Not subdomain |
+| v2.1 | Paragraph-level tracking | Enables selective re-translation |
+| v2.1 | hreflang in sitemaps, not HTML | Scales better for 8-12 languages |
+| v2.1 | RTL CSS with logical properties | Preparation for Arabic support |
 
-### Research Completed
+### Research Sources
 
-v2.1 research in `.planning/research/`:
-- STACK-homepage-css.md — CSS techniques (clamp, Grid, SVG waves)
-- FEATURES.md — Table stakes, differentiators, anti-features
-- ARCHITECTURE-CSS-REDESIGN.md — File structure, propagation strategy
-- PITFALLS-homepage-css.md — Visual regression, contrast, mobile issues
-- SUMMARY.md — Synthesized findings
-
-### Pending Todos
-
-None.
+- [W3C i18n guidelines](https://www.w3.org/International/i18n-drafts/nav/about)
+- [LinkGraph hreflang guide](https://www.linkgraph.com/blog/hreflang-implementation-guide/)
+- [GTECH sitemap best practices](https://www.gtechme.com/insights/best-practices-for-multi-language-and-multi-region-xml-sitemaps-hreflang-support/)
 
 ### Blockers/Concerns
 
@@ -111,16 +82,14 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-02
-**Stopped at:** Requirements defined, creating roadmap
+**Stopped at:** Defining v2.1 requirements
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md
-2. **Where we are:** v2.1 requirements defined, roadmap being created
-3. **What to do next:**
-   - Complete roadmap creation
-   - Run `/gsd:plan-phase [N]` to start execution
+2. **Where we are:** v2.1 requirements being defined
+3. **What to do next:** Complete requirements → create roadmap
 
 ---
 
