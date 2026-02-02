@@ -1,22 +1,22 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-02
-**Status:** Milestone v2.0 active
+**Status:** Milestone v2.1 active
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-01-31)
+See: .planning/PROJECT.md (updated 2026-02-02)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v2.0 Multilingual + Tests
+**Current focus:** v2.1 Homepage CSS Redesign
 
 ## Current Position
 
-**Current Milestone:** v2.0 Multilingual + Tests
-**Phase:** 20 - Batch Translation Pipeline
-**Status:** Complete (with tech debt)
-**Last activity:** 2026-02-02 — All 209 pages translated to English
+**Current Milestone:** v2.1 Homepage CSS Redesign
+**Phase:** Not started (defining roadmap)
+**Status:** Requirements defined, creating roadmap
+**Last activity:** 2026-02-02 — Milestone v2.1 initialized
 
 ```
 Milestones:
@@ -30,65 +30,53 @@ v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
-v2.0 Multilingual + Tests  [Active]             ███○○○○○○○
+v2.0 Translations          [Phase 20 done]      ███░░░░░░░
+v2.1 Homepage Redesign     [Active]             ○○○○○○○○○○
+v3.0 Human Review + Tests  [Queued]             ..........
 ```
 
-## Phase 20 Summary
+## v2.1 Scope
 
-**Completed:** All 209 pages translated (208 + homepage)
-- Used Claude Code subagents (not Anthropic Batch API)
-- 8 batches, 4 parallel agents per wave
-- Glossary terms applied consistently
-- All pages have `lang="en"` attribute
+**Goal:** Modern "startup SaaS" aesthetic for homepage with updated header/footer.
 
-**Tech debt:** ~~CSS/JS paths broken~~ ✓ Fixed 2026-02-02
+**Requirements (13 total):**
+- LAYT-01, LAYT-02: Split hero layout, organic wave divider
+- TYPO-01, TYPO-02, TYPO-03: Bold display heading, fluid typography, Playfair Display
+- VISL-01, VISL-02, VISL-03, VISL-04: Color palette, dark CTA, hover effects, scroll fade-ins
+- HEAD-01, HEAD-02: Header redesign, footer update
+- QUAL-01, QUAL-02: Visual regression baseline, mobile testing
 
-## v2.0 Scope
+**Out of scope:** Propagate to all 416 pages (do later if working well)
 
-**Track 1: English Translations**
-- ~~Batch translation pipeline (208 pages)~~ ✓ Done
-- ~~Fix CSS/JS paths in EN pages (tech debt)~~ ✓ Done
-- [ ] Human review workflow
-- [ ] Language switching (IT ↔ EN)
+## v2.0 Status (Paused)
 
-**Track 2: Proprietary Tests**
-- Replace 3 Typeform tests with in-house solution
-- Build for both IT + EN
-
-**Decisions:**
-- Hosting: `/en/` subfolder
-- Reviewers: Volunteers
-- Legal review: Not needed
-- Sequence: Translations first, then tests
+Phase 20 complete — all 209 pages translated to English.
+CSS/JS paths fixed.
+Remaining phases (21-27) moved to v3.0.
 
 ## Technical Debt
 
-### ✓ RESOLVED: EN Pages CSS/JS Paths (Phase 20)
-
-Fixed 2026-02-02 via `scripts/fix-en-paths.js`:
-- 174 files updated with correct relative paths
-- `en/src/pages/*.html`: `../../styles/` → `../../../src/styles/`
-- `en/src/pages/subdir/*.html`: `../../../styles/` → `../../../../src/styles/`
-- Image paths normalized to `IMAGES` (uppercase)
-
-### Other Tech Debt
-
-From TODO-permits.md:
-- 18 permits need Notion content (placeholder pages exist)
-
 From prior milestones:
+- Dizionario links need revision (partial matching works but coverage incomplete)
 - Desktop header alignment (language switcher baseline)
 - No npm script for build-permits.js (manual execution)
+- 18 permits still need Notion content (placeholder pages)
 
 ## Design Patterns to Follow
 
-- **Footer:** Yellow background (#FFD700), centered, copyright + "Il Progetto" link
-- **Navigation dropdowns:** CSS :hover + :focus-within, categories only on mobile
-- **Collabora dropdown:** Segnala un errore, Dai una mano, Il progetto
-- **Typeform URLs:** form.typeform.com/to/[form_id]
-- **Layout:** Use `.category-section` and `.permit-list` structure
-- **Color palette:** White header (#FFFFFF), teal menu text (#1A6B5F), warm gradients
-- **Build scripts:** npm run build:* pattern (build:docs, build:sitemap)
+**v2.1 Target Aesthetic (from research):**
+- Clean white background with generous whitespace
+- Bold display typography (Playfair Display for hero)
+- Split hero layout (text left, illustration right)
+- Organic wave divider (SVG, yellow/orange)
+- Dark rounded CTA button
+- CSS-only hover interactions
+- Scroll-triggered fade-ins (IntersectionObserver)
+
+**Existing patterns to preserve:**
+- CSS variables system in main.css
+- Mobile-first responsive design
+- Dropdown navigation structure
 
 ## Accumulated Context
 
@@ -96,17 +84,25 @@ From prior milestones:
 
 | Phase | Decision | Rationale |
 |-------|----------|-----------|
+| v2.1 | Modern SaaS aesthetic | Visual refresh inspired by WeDu/Wix template |
+| v2.1 | Playfair Display + Inter | Serif display for contrast, keep Inter for body |
+| v2.1 | Homepage-first | Test design before 416-page rollout |
+| v2.1 | Skip feature badge row | Not essential for initial redesign |
 | 20 | Claude Code subagents for translation | User preferred existing subscription over API setup |
-| 20 | 8 batches of ~26 pages | Balanced parallelization |
-| 20-02 | Use cheerio with decodeEntities: false | Preserve HTML entities |
-| 20-02 | Mark elements with data-translate-id | Enable precise reassembly |
 | v2.0 | /en/ subfolder for English pages | Not subdomain |
-| v2.0 | Volunteer translators | Not paid |
-| v2.0 | No legal review needed | For translations |
+
+### Research Completed
+
+v2.1 research in `.planning/research/`:
+- STACK-homepage-css.md — CSS techniques (clamp, Grid, SVG waves)
+- FEATURES.md — Table stakes, differentiators, anti-features
+- ARCHITECTURE-CSS-REDESIGN.md — File structure, propagation strategy
+- PITFALLS-homepage-css.md — Visual regression, contrast, mobile issues
+- SUMMARY.md — Synthesized findings
 
 ### Pending Todos
 
-- ~~Fix EN pages CSS/JS paths (critical - before human review)~~ ✓ Done
+None.
 
 ### Blockers/Concerns
 
@@ -114,16 +110,17 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-02 17:30 UTC
-**Stopped at:** Phase 20 complete, tech debt identified
+**Last session:** 2026-02-02
+**Stopped at:** Requirements defined, creating roadmap
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md
-2. **Where we are:** Phase 20 complete, EN pages CSS paths fixed
+2. **Where we are:** v2.1 requirements defined, roadmap being created
 3. **What to do next:**
-   - Proceed to Phase 21 (Human Review workflow)
+   - Complete roadmap creation
+   - Run `/gsd:plan-phase [N]` to start execution
 
 ---
 

@@ -85,16 +85,34 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-**Current Milestone: v2.0 Multilingual + Tests**
+**Current Milestone: v2.1 Homepage CSS Redesign**
 
-**Goal:** English-speaking users can access the full site with quality translations, and all users get a proprietary test system replacing Typeform.
+**Goal:** Modern "startup SaaS" aesthetic for homepage with updated header/footer styling.
 
 **Target features:**
-- [ ] Translator review interface for volunteer corrections
-- [ ] Batch translation pipeline (208 pages IT → EN)
-- [ ] Human review workflow with volunteer translators
-- [ ] Language switching integration (IT ↔ EN)
-- [ ] Proprietary test system replacing 3 Typeform tests (IT + EN)
+- [ ] Split hero layout (text left, illustration right)
+- [ ] Organic wave divider below hero
+- [ ] Bold display typography with Playfair Display font
+- [ ] White/black/yellow color palette
+- [ ] Dark rounded CTA button
+- [ ] Minimal header redesign
+- [ ] Updated footer style
+- [ ] Scroll-triggered fade-in animations
+
+**Scope:** Homepage only. Header/footer propagation to all pages deferred.
+
+---
+
+**Upcoming: v3.0 Human Review + Tests**
+
+**Goal:** Quality-assured English translations and proprietary test system.
+
+**Target features:**
+- Human review workflow with volunteer translators
+- Language switching integration (IT ↔ EN)
+- Proprietary test system replacing 3 Typeform tests (IT + EN)
+
+**v2.0 Progress:** Phase 20 complete — all 209 pages translated to English. CSS paths fixed.
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
@@ -175,6 +193,10 @@ Users can quickly find accurate, understandable information about their specific
 | Volunteer translators | Community-driven review process | — Pending |
 | No legal review for translations | AI + human review sufficient | — Pending |
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
+| Modern SaaS homepage aesthetic | Visual refresh, more professional feel | — Pending |
+| Playfair Display + Inter fonts | Serif display for hero, sans for body | — Pending |
+| White/black/yellow palette | Shift from teal/coral for cleaner look | — Pending |
+| Homepage-first, propagate later | Test design on homepage before 416-page rollout | — Pending |
 
 ---
-*Last updated: 2026-02-01 after v1.10 shipped*
+*Last updated: 2026-02-02 after v2.1 milestone definition*
