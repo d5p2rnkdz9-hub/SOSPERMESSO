@@ -16,7 +16,7 @@
 **Plans:** 3 plans in 3 waves
 
 Plans:
-- [ ] 20-01-PLAN.md — Translation infrastructure (script skeleton, manifest, glossary integration)
+- [x] 20-01-PLAN.md — Translation infrastructure (script skeleton, manifest, glossary integration) ✓ 2026-02-02
 - [ ] 20-02-PLAN.md — HTML segmentation and link transformation
 - [ ] 20-03-PLAN.md — Anthropic Batch API integration and full translation
 
@@ -233,8 +233,8 @@ Plans:
 | 15 | v1.6 | 2/2 | Complete | 2026-01-28 |
 | 16-17 | v1.7 | 5/5 | Complete | 2026-01-30 |
 | 18 | v1.9 | 1/1 | Complete | 2026-01-31 |
-| 20 | v2.0 | 0/3 | Active | — |
+| 20 | v2.0 | 1/3 | Active | — |
 
 ---
 
-*Last updated: 2026-02-01 — Phase 20 planned (3 plans)*
+*Last updated: 2026-02-02 — Phase 20 plan 1 complete*

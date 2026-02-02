@@ -1,6 +1,6 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-01-31
+**Last Updated:** 2026-02-02
 **Status:** Milestone v2.0 active
 
 ## Project Reference
@@ -15,8 +15,9 @@ See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Current Milestone:** v2.0 Multilingual + Tests
 **Phase:** 20 - Batch Translation Pipeline
-**Status:** Ready for planning
-**Last activity:** 2026-01-31 — Roadmap created, starting Phase 20
+**Plan:** 1 of 3 in current phase
+**Status:** In progress
+**Last activity:** 2026-02-02 — Completed 20-01-PLAN.md
 
 ```
 Milestones:
@@ -30,7 +31,7 @@ v1.6 Document Dedup        [Shipped 2026-01-28] ##########
 v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
-v2.0 Multilingual + Tests  [Active]             ○○○○○○○○○○
+v2.0 Multilingual + Tests  [Active]             █○○○○○○○○○
 ```
 
 ## v2.0 Scope
@@ -104,11 +105,16 @@ From prior milestones:
 
 ### Decisions
 
-- /en/ subfolder for English pages (not subdomain)
-- Volunteer translators (not paid)
-- No legal review needed for translations
-- Proprietary tests replace Typeform for both IT + EN
-- Translations first, then tests
+| Phase | Decision | Rationale |
+|-------|----------|-----------|
+| 20 | Cheerio version 1.0.0-rc.12 used | Avoided npm cache permission issue with latest version |
+| 20 | Manifest tracks by filename and source mtime | Efficient incremental translation detection |
+| 20 | Test mode flags reserved for Plan 02 | CLI defined but implementation deferred |
+| v2.0 | /en/ subfolder for English pages | Not subdomain |
+| v2.0 | Volunteer translators | Not paid |
+| v2.0 | No legal review needed | For translations |
+| v2.0 | Proprietary tests replace Typeform | Both IT + EN |
+| v2.0 | Translations first, then tests | Sequence decision |
 
 ### Pending Todos
 
@@ -120,15 +126,15 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-01-31
-**Stopped at:** Defining v2.0 roadmap
+**Last session:** 2026-02-02 08:42 UTC
+**Stopped at:** Completed 20-01-PLAN.md
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md, PROJECT.md, ROADMAP.md
-2. **Where we are:** v2.0 milestone started, roadmap being created
-3. **What to do next:** Complete roadmap, then `/gsd:plan-phase 19`
+1. **Context to load:** This STATE.md, 20-01-SUMMARY.md
+2. **Where we are:** Phase 20 plan 1 complete (translation infrastructure)
+3. **What to do next:** Execute 20-02-PLAN.md (translation core logic)
 
 ---
 
