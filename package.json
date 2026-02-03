@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:docs": "node scripts/build-documents.js",
     "build:sitemap": "node scripts/build-sitemap.js",
-    "translate:en": "node scripts/translate-batch.js"
+    "translate:en": "node scripts/translate-batch.js",
+    "tm:stats": "node -e \"const tm = require('./scripts/translation-memory'); (async () => { const m = await tm.loadTranslationMemory('it', 'en'); console.log(tm.getMemoryStats(m)); })();\""
   },
   "repository": {
     "type": "git",

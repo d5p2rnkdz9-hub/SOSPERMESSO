@@ -4,6 +4,7 @@
  */
 const fs = require('fs/promises');
 const path = require('path');
+const crypto = require('crypto');
 const { fetchPermitData, fetchPageBlocks, testConnection } = require('./notion-client.js');
 const {
   generatePermessoPage,
@@ -24,6 +25,17 @@ const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
  */
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/**
+ * Hash page content for change detection
+ * Hash raw Notion blocks BEFORE HTML conversion to detect actual content changes
+ * @param {Array} blocks - Notion blocks
+ * @returns {string} MD5 hash
+ */
+function hashPageContent(blocks) {
+  const contentString = JSON.stringify(blocks);
+  return crypto.createHash('md5').update(contentString).digest('hex');
 }
 
 /**
@@ -516,6 +528,18 @@ async function build() {
 
       const blocks = await fetchPageBlocks(permit.id);
 
+      // Calculate content hash for change detection
+      const contentHash = blocks && blocks.length > 0 ? hashPageContent(blocks) : null;
+
+      // Check if content actually changed (timestamp changed but content identical)
+      if (!forceRebuild && contentHash && manifest[permit.id]?.contentHash === contentHash) {
+        console.log(`   ⏭️  ${permit.tipo}: timestamp changed but content identical`);
+        // Update timestamp in manifest to avoid re-checking
+        manifest[permit.id].lastEdited = permit.last_edited_time;
+        skippedCount++;
+        continue;
+      }
+
       if (!blocks || blocks.length === 0) {
         // Generate placeholder page instead of skipping
         const permitData = {
@@ -537,6 +561,7 @@ async function build() {
           slug: permit.slug,
           lastEdited: permit.last_edited_time || new Date().toISOString(),
           lastBuilt: new Date().toISOString(),
+          contentHash: null,
           placeholder: true
         };
 
@@ -574,6 +599,7 @@ async function build() {
           slug: permit.slug,
           lastEdited: permit.last_edited_time || new Date().toISOString(),
           lastBuilt: new Date().toISOString(),
+          contentHash: contentHash,
           placeholder: true
         };
 
@@ -611,7 +637,8 @@ async function build() {
         tipo: permit.tipo,
         slug: permit.slug,
         lastEdited: permit.last_edited_time || new Date().toISOString(),
-        lastBuilt: new Date().toISOString()
+        lastBuilt: new Date().toISOString(),
+        contentHash: contentHash
       };
 
     } catch (err) {

@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sospermesso.it/sitemap.xml
+Sitemap: https://www.sospermesso.it/sitemap-index.xml
