@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-02
-**Status:** Milestone v2.1 active
+**Last Updated:** 2026-02-03
+**Status:** Milestone v2.1 shipped
 
 ## Project Reference
 
@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-02-02)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v2.1 Homepage CSS Redesign
+**Current focus:** v2.1 Homepage CSS Redesign — SHIPPED
 
 ## Current Position
 
-**Current Milestone:** v2.1 Homepage CSS Redesign
-**Phase:** 28 - Foundation
-**Status:** Roadmap complete, ready for planning
-**Last activity:** 2026-02-02 — Roadmap created with 4 phases
+**Current Milestone:** v2.1 Homepage CSS Redesign — COMPLETE
+**Phase:** All phases complete (28-29), remaining deferred to v3.0
+**Status:** Shipped
+**Last activity:** 2026-02-03 — v2.1 shipped, Phases 30-31 deferred to v3.0
 
 ```
 Milestones:
@@ -31,35 +31,39 @@ v1.7 Database Content      [Shipped 2026-01-30] ##########
 v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
 v2.0 Translations          [Shipped 2026-02-02] ##########
-v2.1 Homepage Redesign     [Active]             ○○○○○○○○○○
+v2.1 Homepage Redesign     [Shipped 2026-02-03] ##########
 v2.2 Localization Infra    [Queued]             ..........
 v3.0 Human Review + Tests  [Queued]             ..........
 ```
 
-## v2.1 Phases
+## v2.1 Phases (SHIPPED)
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 28 | Foundation | QUAL-01, TYPO-02, TYPO-03, VISL-01 | Next |
-| 29 | Hero Section | LAYT-01, LAYT-02, TYPO-01, VISL-02 | Pending |
-| 30 | Header/Footer | HEAD-01, HEAD-02 | Pending |
-| 31 | Polish | VISL-03, VISL-04, QUAL-02 | Pending |
+| 28 | Foundation | QUAL-01, TYPO-02, TYPO-03, VISL-01 | **Complete** |
+| 29 | Hero Section | LAYT-01, LAYT-02, TYPO-01, VISL-02 | **Complete** |
+| 30 | Header/Footer | HEAD-01, HEAD-02 | Deferred to v3.0 |
+| 31 | Polish | VISL-03, VISL-04, QUAL-02 | Deferred to v3.0 |
 
-## Phase 28 Overview
+## v2.1 Summary
 
-**Goal:** Establish visual regression baseline and prepare CSS infrastructure for redesign.
+**Phase 28 delivered:**
+- DM Serif Display font for hero headings
+- White/black/yellow color palette in CSS
+- Clean minimal header with updated nav styling
+- Fluid typography using clamp() for hero title
+- Mobile hamburger menu scrolls to homepage sections (#test, #database, #guide)
 
-**Requirements:**
-- QUAL-01: Visual regression baseline established before changes
-- TYPO-02: Typography uses fluid sizing with `clamp()`
-- TYPO-03: Playfair Display font loaded for hero headings
-- VISL-01: Homepage uses white/black/yellow color palette
+**Phase 29 delivered:**
+- Split hero layout (text left, illustration right)
+- Organic wave divider below hero (yellow SVG)
+- Bold display heading with DM Serif Display
+- Dark rounded CTA button
+- Mobile stacked layout
 
-**Success Criteria:**
-1. User can run a command that captures baseline screenshots of current homepage (IT and EN)
-2. Playfair Display font loads without visible layout shift on page load
-3. CSS variables for the new color palette exist in main.css
-4. Fluid typography scales smoothly when browser window is resized
+**Deferred to v3.0:**
+- Phase 30: Header/Footer propagation to all pages
+- Phase 31: Hover effects, scroll fade-ins, mobile polish
 
 ## v2.2 Preview (Queued)
 
@@ -143,17 +147,17 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-02
-**Stopped at:** Roadmap created, ready for phase planning
+**Last session:** 2026-02-03
+**Stopped at:** v2.1 shipped
 **Resume file:** None
 
 **For next session:**
 
 1. **Context to load:** This STATE.md
-2. **Where we are:** v2.1 roadmap complete, Phase 28 ready for planning
+2. **Where we are:** v2.1 complete, ready for v2.2 or v3.0
 3. **What to do next:**
-   - Run `/gsd:plan-phase 28` to create executable plan
-   - Execute Phase 28: Foundation
+   - v2.2: Localization Infrastructure (paragraph-level tracking, translation memory)
+   - v3.0: Human review + tests + deferred polish (Phases 30-31)
 
 ---
 

@@ -11,18 +11,16 @@
 
 ### Active Phase
 
-**Phase 28: Foundation** — Establish visual regression baseline and prepare CSS infrastructure
-
-**Plans:** Not yet created
+**v2.1 Complete** — Homepage CSS redesign shipped
 
 ### Phases
 
 | Phase | Name | Goal | Status |
 |-------|------|------|--------|
-| 28 | Foundation | Visual regression baseline, font loading, CSS variables | Pending |
-| 29 | Hero Section | Split hero layout, wave divider, display heading, dark CTA | Pending |
-| 30 | Header/Footer | Minimal header redesign, updated footer styling | Pending |
-| 31 | Polish | Hover effects, scroll fade-ins, mobile testing | Pending |
+| 28 | Foundation | Visual regression baseline, font loading, CSS variables | **Complete** |
+| 29 | Hero Section | Split hero layout, wave divider, display heading, dark CTA | **Complete** |
+| 30 | Header/Footer | Minimal header redesign, updated footer styling | Deferred to v3.0 |
+| 31 | Polish | Hover effects, scroll fade-ins, mobile testing | Deferred to v3.0 |
 
 ---
 
@@ -179,11 +177,9 @@
 | 16-17 | v1.7 | Complete | 2026-01-30 |
 | 18 | v1.9 | Complete | 2026-01-31 |
 | 20 | v2.0 | Complete | 2026-02-02 |
-| 28 | v2.1 | Pending | — |
-| 29 | v2.1 | Pending | — |
-| 30 | v2.1 | Pending | — |
-| 31 | v2.1 | Pending | — |
+| 28-29 | v2.1 | Complete | 2026-02-03 |
+| 30-31 | v3.0 | Deferred | — |
 
 ---
 
-*Last updated: 2026-02-02 — v2.1 roadmap created*
+*Last updated: 2026-02-03 — v2.1 shipped, Phases 30-31 deferred to v3.0*

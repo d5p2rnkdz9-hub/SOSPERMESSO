@@ -3,6 +3,19 @@
    =============================================== */
 
 // ===============================================
+// UTILITY: DEVICE DETECTION
+// ===============================================
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+function isHomepage() {
+  const path = window.location.pathname;
+  return path === '/' || path === '/index.html' || path.endsWith('/Sito_Nuovo/') || path.endsWith('/Sito_Nuovo/index.html');
+}
+
+// ===============================================
 // MOBILE MENU TOGGLE
 // ===============================================
 
@@ -10,10 +23,21 @@ const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navWrapper = navMenu?.parentElement;
 
+// Mobile navigation mapping - on mobile, these should scroll to sections
+// instead of going to separate pages (except Collabora which stays external)
+const mobileNavMapping = {
+  'Database': '#database',
+  'Guide': '#guide',
+  'Test': '#test'
+  // Collabora stays as external typeform link
+};
+
 if (menuToggle && navWrapper) {
   menuToggle.addEventListener('click', () => {
     navWrapper.classList.toggle('active');
     menuToggle.textContent = navWrapper.classList.contains('active') ? '✕' : '☰';
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : '';
   });
 
   // Close menu when clicking outside
@@ -21,14 +45,53 @@ if (menuToggle && navWrapper) {
     if (!menuToggle.contains(e.target) && !navWrapper.contains(e.target)) {
       navWrapper.classList.remove('active');
       menuToggle.textContent = '☰';
+      document.body.style.overflow = '';
     }
   });
 
-  // Close menu when clicking any link (nav-link OR dropdown-link)
-  navWrapper.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
+  // Handle mobile navigation - redirect to sections on homepage
+  navWrapper.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const linkText = link.textContent.trim();
+      const sectionId = mobileNavMapping[linkText];
+
+      // On mobile, redirect to homepage sections (except Collabora)
+      if (isMobile() && sectionId) {
+        e.preventDefault();
+
+        // Close menu
+        navWrapper.classList.remove('active');
+        menuToggle.textContent = '☰';
+        document.body.style.overflow = '';
+
+        if (isHomepage()) {
+          // Already on homepage, just scroll to section
+          const target = document.querySelector(sectionId);
+          if (target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          }
+        } else {
+          // Navigate to homepage with anchor
+          window.location.href = '/' + sectionId;
+        }
+      } else {
+        // Desktop or Collabora - close menu and let default behavior happen
+        navWrapper.classList.remove('active');
+        menuToggle.textContent = '☰';
+        document.body.style.overflow = '';
+      }
+    });
+  });
+
+  // Close menu when clicking dropdown links
+  navWrapper.querySelectorAll('.dropdown-link').forEach(link => {
     link.addEventListener('click', () => {
       navWrapper.classList.remove('active');
       menuToggle.textContent = '☰';
+      document.body.style.overflow = '';
     });
   });
 }
@@ -255,7 +318,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
       const target = document.querySelector(href);
       if (target) {
-        const headerOffset = 200; // Must match header height (~190px logo + padding)
+        const headerOffset = isMobile() ? 80 : 140; // Smaller offset on mobile
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

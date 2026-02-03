@@ -117,16 +117,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Anchor offset for sticky header (~190px tall) */
+/* Anchor offset for sticky header (~130px tall) */
 :target {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 140px;
 }
 
 /* Specific sections that are anchor targets */
 section[id],
 .dictionary-term[id],
 .dictionary-letter[id] {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 140px;
 }
 
 body {
