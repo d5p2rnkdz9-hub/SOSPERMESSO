@@ -13,7 +13,7 @@
 
 | Phase | Name | Goal | Status |
 |-------|------|------|--------|
-| 35 | Setup | Install 11ty, configure passthrough, validate URLs | **Not started** |
+| 35 | Setup | Install 11ty, configure passthrough, validate URLs | **Planned** |
 | 36 | Components | Extract header, footer, nav, language switcher | **Not started** |
 | 37 | Pages | Convert all IT/EN pages to use layouts | **Not started** |
 | 38 | Deployment | Configure Netlify, deploy to production | **Not started** |
@@ -31,19 +31,19 @@
 **Requirements:**
 - SETUP-01: 11ty v3.x installed and configured with Liquid templates
 - SETUP-02: Passthrough copy configured for CSS, JS, and image assets
-- SETUP-03: All 469 existing URLs preserved (no broken links)
+- SETUP-03: All ~412 existing URLs preserved (no broken links)
 - SETUP-04: Build completes without errors
 
 **Success Criteria:**
 1. Developer can run `npm run build` and 11ty generates site to `_site/` directory
 2. All static assets (CSS, JS, images) copy to output without modification
 3. Build completes without errors or warnings
-4. All 469 existing URLs accessible at same paths (no 404s)
+4. All ~412 existing URLs accessible at same paths (no 404s)
 
-**Plans:** TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 35-01: [To be planned]
+- [ ] 35-01-PLAN.md — Install 11ty, configure passthrough copy, create directory data files for URL preservation
 
 ---
 
@@ -76,13 +76,13 @@ Plans:
 
 ### Phase 37: Pages
 
-**Goal:** All 469 pages converted to use shared layouts with multilingual output.
+**Goal:** All ~412 pages converted to use shared layouts with multilingual output.
 
 **Dependencies:** Phase 36
 
 **Requirements:**
-- PAGE-01: All IT pages (~260) converted to use shared layouts
-- PAGE-02: All EN pages (~209) converted to use shared layouts
+- PAGE-01: All IT pages (~207) converted to use shared layouts
+- PAGE-02: All EN pages (~205) converted to use shared layouts
 - PAGE-03: Front matter contains page metadata (title, lang, layout)
 - PAGE-04: Page content preserved exactly (no content changes)
 - I18N-01: IT pages output to root directory (/)
@@ -90,8 +90,8 @@ Plans:
 - I18N-03: HTML lang attribute correct for each language
 
 **Success Criteria:**
-1. All IT pages (~260) render with shared header/footer, content unchanged
-2. All EN pages (~209) render with shared header/footer, content unchanged
+1. All IT pages (~207) render with shared header/footer, content unchanged
+2. All EN pages (~205) render with shared header/footer, content unchanged
 3. Each page has correct metadata in front matter (title, lang, layout)
 4. IT pages output to root directory (e.g., `/permesso-studio.html`)
 5. EN pages output to `/en/` directory (e.g., `/en/permesso-studio.html`)
@@ -120,7 +120,7 @@ Plans:
 1. Netlify build command configured in netlify.toml
 2. Production deploy completes successfully with no errors
 3. Build completes in under 60 seconds
-4. All 469 pages accessible on production domain
+4. All ~412 pages accessible on production domain
 5. Notion build scripts continue to work (no integration broken)
 
 **Plans:** TBD
@@ -136,15 +136,15 @@ Plans:
 |-------------|-------|-------------|
 | SETUP-01 | 35 | 11ty v3.x with Liquid templates |
 | SETUP-02 | 35 | Passthrough copy for assets |
-| SETUP-03 | 35 | All 469 URLs preserved |
+| SETUP-03 | 35 | All ~412 URLs preserved |
 | SETUP-04 | 35 | Build completes without errors |
 | COMP-01 | 36 | Base layout template |
 | COMP-02 | 36 | Header as include |
 | COMP-03 | 36 | Footer as include |
 | COMP-04 | 36 | Navigation as include |
 | COMP-05 | 36 | Language switcher as include |
-| PAGE-01 | 37 | IT pages converted (~260) |
-| PAGE-02 | 37 | EN pages converted (~209) |
+| PAGE-01 | 37 | IT pages converted (~207) |
+| PAGE-02 | 37 | EN pages converted (~205) |
 | PAGE-03 | 37 | Front matter metadata |
 | PAGE-04 | 37 | Content preserved exactly |
 | I18N-01 | 37 | IT output to root |
@@ -378,11 +378,11 @@ Plans:
 | 33 | v2.2 | Complete | 2026-02-04 |
 | 34 | v2.2 | Complete | 2026-02-04 |
 | 34.1 | v2.2 | Ready to execute | — |
-| 35 | v3.0 | Not started | — |
+| 35 | v3.0 | Planned | — |
 | 36 | v3.0 | Not started | — |
 | 37 | v3.0 | Not started | — |
 | 38 | v3.0 | Not started | — |
 
 ---
 
-*Last updated: 2026-02-04 — Phase 34.1 planned*
+*Last updated: 2026-02-04 — Phase 35 planned*
