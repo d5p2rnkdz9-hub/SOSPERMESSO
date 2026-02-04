@@ -170,7 +170,7 @@ Plans:
 | 32 | Translation Workflow | Notion change detection, page hashing, translation memory, sitemaps | **Complete** |
 | 33 | RTL Infrastructure | CSS logical properties, direction support, Arabic fonts | **Complete** |
 | 34 | CJK Infrastructure | Chinese fonts, typography rules, word-break | **Complete** |
-| 34.1 | CSS Integration Fix | Link rtl.css/cjk.css to HTML, convert remaining logical properties | **Queued** |
+| 34.1 | CSS Integration Fix | Link rtl.css/cjk.css to HTML, activate RTL/CJK infrastructure | **Ready to execute** |
 
 ---
 
@@ -286,30 +286,23 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 **Gap Closure:** Closes gaps from v2.2 milestone audit
 
 **Requirements:**
-- RTL-01: CSS uses logical properties (complete remaining 3 conversions)
-- RTL-03: Navigation mirrors correctly in RTL mode (mobile nav)
 - Integration: rtl.css linked in all HTML pages
 - Integration: cjk.css linked in all HTML pages
 - Flow: RTL Layout Application works end-to-end
 - Flow: CJK Typography Application works end-to-end
 
+**Note:** Research confirmed that components.css lines 529, 530, 555 already use logical properties (text-align: start, padding-inline-end, margin-inline-start). No CSS conversions needed.
+
 **Success Criteria:**
-1. All HTML pages include `<link rel="stylesheet" href="src/styles/rtl.css">`
-2. All HTML pages include `<link rel="stylesheet" href="src/styles/cjk.css">`
-3. Adding `lang="ar"` to any page causes RTL layout to apply
+1. All HTML pages include `<link rel="stylesheet" href="...rtl.css">`
+2. All HTML pages include `<link rel="stylesheet" href="...cjk.css">`
+3. Adding `lang="ar" dir="rtl"` to any page causes RTL layout to apply
 4. Adding `lang="zh"` to any page causes CJK typography to apply
-5. Mobile navigation uses logical properties (no hardcoded left/right)
 
-**Files to change:**
-- index.html (add 2 link tags)
-- src/pages/*.html (all ~260 IT pages, via build script or manual)
-- en/src/pages/*.html (all ~209 EN pages, via build script or manual)
-- src/styles/components.css (convert 3 properties at lines 529, 530, 555)
-
-**Plans:** TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 34.1-01: [To be planned]
+- [ ] 34.1-01-PLAN.md — Create add-css-links.js script, link CSS to all 410 HTML pages
 
 ---
 
@@ -384,7 +377,7 @@ Plans:
 | 32 | v2.2 | Complete | 2026-02-04 |
 | 33 | v2.2 | Complete | 2026-02-04 |
 | 34 | v2.2 | Complete | 2026-02-04 |
-| 34.1 | v2.2 | Queued | — |
+| 34.1 | v2.2 | Ready to execute | — |
 | 35 | v3.0 | Not started | — |
 | 36 | v3.0 | Not started | — |
 | 37 | v3.0 | Not started | — |
@@ -392,4 +385,4 @@ Plans:
 
 ---
 
-*Last updated: 2026-02-04 — v3.0 11ty Migration milestone started*
+*Last updated: 2026-02-04 — Phase 34.1 planned*
