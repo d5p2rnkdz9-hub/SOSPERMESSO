@@ -13,7 +13,7 @@
 
 | Phase | Name | Goal | Status |
 |-------|------|------|--------|
-| 35 | Setup | Install 11ty, configure passthrough, validate URLs | **Planned** |
+| 35 | Setup | Install 11ty, configure passthrough, validate URLs | **Complete** |
 | 36 | Components | Extract header, footer, nav, language switcher | **Not started** |
 | 37 | Pages | Convert all IT/EN pages to use layouts | **Not started** |
 | 38 | Deployment | Configure Netlify, deploy to production | **Not started** |
@@ -378,11 +378,11 @@ Plans:
 | 33 | v2.2 | Complete | 2026-02-04 |
 | 34 | v2.2 | Complete | 2026-02-04 |
 | 34.1 | v2.2 | Ready to execute | — |
-| 35 | v3.0 | Planned | — |
+| 35 | v3.0 | Complete | 2026-02-04 |
 | 36 | v3.0 | Not started | — |
 | 37 | v3.0 | Not started | — |
 | 38 | v3.0 | Not started | — |
 
 ---
 
-*Last updated: 2026-02-04 — Phase 35 planned*
+*Last updated: 2026-02-04 — Phase 35 complete*

@@ -9,10 +9,10 @@ Requirements for 11ty Migration milestone. Structural migration only — same co
 
 ### Setup
 
-- [ ] **SETUP-01**: 11ty v3.x installed and configured with Liquid templates
-- [ ] **SETUP-02**: Passthrough copy configured for CSS, JS, and image assets
-- [ ] **SETUP-03**: All 469 existing URLs preserved (no broken links)
-- [ ] **SETUP-04**: Build completes without errors
+- [x] **SETUP-01**: 11ty v3.x installed and configured with Liquid templates
+- [x] **SETUP-02**: Passthrough copy configured for CSS, JS, and image assets
+- [x] **SETUP-03**: All 469 existing URLs preserved (no broken links)
+- [x] **SETUP-04**: Build completes without errors
 
 ### Components
 
@@ -77,10 +77,10 @@ Features deferred from v3.0 — can add after migration stable.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SETUP-01 | 35 | Pending |
-| SETUP-02 | 35 | Pending |
-| SETUP-03 | 35 | Pending |
-| SETUP-04 | 35 | Pending |
+| SETUP-01 | 35 | Complete |
+| SETUP-02 | 35 | Complete |
+| SETUP-03 | 35 | Complete |
+| SETUP-04 | 35 | Complete |
 | COMP-01 | 36 | Pending |
 | COMP-02 | 36 | Pending |
 | COMP-03 | 36 | Pending |
@@ -104,4 +104,4 @@ Features deferred from v3.0 — can add after migration stable.
 
 ---
 *Requirements defined: 2026-02-04*
-*Last updated: 2026-02-04 — Initial definition*
+*Last updated: 2026-02-04 — Phase 35 requirements complete*
