@@ -43,7 +43,7 @@
 **Plans:** 1 plan
 
 Plans:
-- [ ] 35-01-PLAN.md — Install 11ty, configure passthrough copy, create directory data files for URL preservation
+- [x] 35-01-PLAN.md — Install 11ty, configure passthrough copy, create directory data files for URL preservation
 
 ---
 
@@ -67,10 +67,11 @@ Plans:
 4. Navigation works identically to current implementation (desktop dropdowns, mobile hamburger)
 5. Language switcher shows IT/EN toggle with same behavior as current implementation
 
-**Plans:** TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 36-01: [To be planned]
+- [ ] 36-01-PLAN.md — Create data files (site, nav, footer) and base layout template
+- [ ] 36-02-PLAN.md — Extract component includes (header, nav, footer, language-switcher)
 
 ---
 
@@ -385,4 +386,4 @@ Plans:
 
 ---
 
-*Last updated: 2026-02-04 — Phase 35 complete*
+*Last updated: 2026-02-04 — Phase 36 planned*
