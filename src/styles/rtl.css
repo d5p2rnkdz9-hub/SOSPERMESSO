@@ -1,0 +1,127 @@
+/* ===============================================
+   SOS PERMESSO - RTL (Right-to-Left) Support
+   For Arabic, Hebrew, and other RTL languages
+   =============================================== */
+
+/* ===============================================
+   DIRECTION CONTROL
+   =============================================== */
+
+/* Set direction multiplier for RTL mode */
+[dir="rtl"] {
+  --text-x-direction: -1;
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+/* Ensure LTR is explicit default */
+[dir="ltr"],
+:root:not([dir="rtl"]) {
+  --text-x-direction: 1;
+  direction: ltr;
+}
+
+/* ===============================================
+   ARABIC FONT STACK
+   =============================================== */
+
+/* Arabic language-specific typography */
+[lang="ar"] {
+  font-family: "Geeza Pro", "Arabic Typesetting", "Tahoma", var(--font-primary);
+  line-height: 1.8; /* Extra space for diacritics */
+  letter-spacing: normal !important; /* NEVER add letter-spacing for Arabic */
+}
+
+/* Arabic headings */
+[lang="ar"] h1,
+[lang="ar"] h2,
+[lang="ar"] h3,
+[lang="ar"] h4,
+[lang="ar"] h5,
+[lang="ar"] h6 {
+  font-family: "Geeza Pro", "Arabic Typesetting", "Tahoma", var(--font-heading);
+  line-height: 1.5;
+}
+
+/* ===============================================
+   ICON MIRRORING
+   =============================================== */
+
+/* Directional icons that should mirror in RTL */
+[dir="rtl"] .icon-arrow,
+[dir="rtl"] .icon-chevron,
+[dir="rtl"] .icon-back,
+[dir="rtl"] .icon-forward,
+[dir="rtl"] .mirror-rtl {
+  transform: scaleX(var(--text-x-direction));
+}
+
+/* Navigation dropdown arrow - mirrors in RTL */
+[dir="rtl"] .has-dropdown .nav-link::after {
+  transform: scaleX(-1);
+}
+
+/* Breadcrumb arrows mirror in RTL */
+[dir="rtl"] .breadcrumb-nav span {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* ===============================================
+   LAYOUT ADJUSTMENTS
+   =============================================== */
+
+/* List bullets should stay on the start side (already handled by logical properties) */
+/* This is a fallback for any custom bullet positioning */
+[dir="rtl"] .card ul li::before {
+  left: auto;
+  right: auto;
+  inset-inline-start: -1.25rem;
+}
+
+/* Shadow direction adaptation */
+[dir="rtl"] .card:hover {
+  box-shadow: calc(-12px * 1) 40px rgba(255, 215, 0, 0.3);
+}
+
+/* ===============================================
+   FORM ELEMENTS
+   =============================================== */
+
+/* Input text alignment follows direction */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  text-align: inherit;
+}
+
+/* Placeholder alignment */
+[dir="rtl"] input::placeholder,
+[dir="rtl"] textarea::placeholder {
+  text-align: inherit;
+}
+
+/* ===============================================
+   HEBREW SUPPORT
+   =============================================== */
+
+[lang="he"] {
+  font-family: "Arial Hebrew", "Tahoma", var(--font-primary);
+  line-height: 1.7;
+}
+
+/* ===============================================
+   UTILITY CLASSES
+   =============================================== */
+
+/* Force LTR for specific content (numbers, code, URLs) */
+.ltr-content {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Force RTL for specific content */
+.rtl-content {
+  direction: rtl;
+  unicode-bidi: isolate;
+}
