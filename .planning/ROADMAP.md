@@ -1,11 +1,165 @@
 # Roadmap: SOS Permesso
 
-**Current Milestone:** v2.2 Language Infrastructure
-**Started:** 2026-02-03
+**Current Milestone:** v3.0 11ty Migration
+**Started:** 2026-02-04
 
 ---
 
-## v2.2 Language Infrastructure
+## v3.0 11ty Migration
+
+> **Goal:** Migrate from pure HTML to 11ty SSG for maintainable architecture without changing content or URLs. Extract shared components into reusable templates.
+
+### Phases
+
+| Phase | Name | Goal | Status |
+|-------|------|------|--------|
+| 35 | Setup | Install 11ty, configure passthrough, validate URLs | **Not started** |
+| 36 | Components | Extract header, footer, nav, language switcher | **Not started** |
+| 37 | Pages | Convert all IT/EN pages to use layouts | **Not started** |
+| 38 | Deployment | Configure Netlify, deploy to production | **Not started** |
+
+---
+
+## Phase Details (v3.0)
+
+### Phase 35: Setup
+
+**Goal:** 11ty v3.x installed and configured with Liquid templates, all URLs preserved.
+
+**Dependencies:** Phase 34 (RTL Infrastructure)
+
+**Requirements:**
+- SETUP-01: 11ty v3.x installed and configured with Liquid templates
+- SETUP-02: Passthrough copy configured for CSS, JS, and image assets
+- SETUP-03: All 469 existing URLs preserved (no broken links)
+- SETUP-04: Build completes without errors
+
+**Success Criteria:**
+1. Developer can run `npm run build` and 11ty generates site to `_site/` directory
+2. All static assets (CSS, JS, images) copy to output without modification
+3. Build completes without errors or warnings
+4. All 469 existing URLs accessible at same paths (no 404s)
+
+**Plans:** TBD
+
+Plans:
+- [ ] 35-01: [To be planned]
+
+---
+
+### Phase 36: Components
+
+**Goal:** Shared HTML components extracted as reusable includes.
+
+**Dependencies:** Phase 35
+
+**Requirements:**
+- COMP-01: Base layout template contains HTML structure (doctype, head, body)
+- COMP-02: Header extracted as reusable include
+- COMP-03: Footer extracted as reusable include
+- COMP-04: Navigation (desktop + mobile) extracted as reusable include
+- COMP-05: Language switcher extracted as reusable include
+
+**Success Criteria:**
+1. Base layout template renders complete HTML document structure (doctype through closing body tag)
+2. Header displays correctly with logo, navigation, and language switcher on all pages
+3. Footer displays correctly with same content and styling on all pages
+4. Navigation works identically to current implementation (desktop dropdowns, mobile hamburger)
+5. Language switcher shows IT/EN toggle with same behavior as current implementation
+
+**Plans:** TBD
+
+Plans:
+- [ ] 36-01: [To be planned]
+
+---
+
+### Phase 37: Pages
+
+**Goal:** All 469 pages converted to use shared layouts with multilingual output.
+
+**Dependencies:** Phase 36
+
+**Requirements:**
+- PAGE-01: All IT pages (~260) converted to use shared layouts
+- PAGE-02: All EN pages (~209) converted to use shared layouts
+- PAGE-03: Front matter contains page metadata (title, lang, layout)
+- PAGE-04: Page content preserved exactly (no content changes)
+- I18N-01: IT pages output to root directory (/)
+- I18N-02: EN pages output to /en/ directory
+- I18N-03: HTML lang attribute correct for each language
+
+**Success Criteria:**
+1. All IT pages (~260) render with shared header/footer, content unchanged
+2. All EN pages (~209) render with shared header/footer, content unchanged
+3. Each page has correct metadata in front matter (title, lang, layout)
+4. IT pages output to root directory (e.g., `/permesso-studio.html`)
+5. EN pages output to `/en/` directory (e.g., `/en/permesso-studio.html`)
+6. HTML lang attribute matches page language (lang="it" for IT, lang="en" for EN)
+7. Visual regression check shows no styling differences from current site
+
+**Plans:** TBD
+
+Plans:
+- [ ] 37-01: [To be planned]
+
+---
+
+### Phase 38: Deployment
+
+**Goal:** Site deployed to production on Netlify with fast builds.
+
+**Dependencies:** Phase 37
+
+**Requirements:**
+- DEPLOY-01: netlify.toml configured for 11ty build
+- DEPLOY-02: Production deploy successful on Netlify
+- DEPLOY-03: Build completes in under 60 seconds
+
+**Success Criteria:**
+1. Netlify build command configured in netlify.toml
+2. Production deploy completes successfully with no errors
+3. Build completes in under 60 seconds
+4. All 469 pages accessible on production domain
+5. Notion build scripts continue to work (no integration broken)
+
+**Plans:** TBD
+
+Plans:
+- [ ] 38-01: [To be planned]
+
+---
+
+## Coverage Validation (v3.0)
+
+| Requirement | Phase | Description |
+|-------------|-------|-------------|
+| SETUP-01 | 35 | 11ty v3.x with Liquid templates |
+| SETUP-02 | 35 | Passthrough copy for assets |
+| SETUP-03 | 35 | All 469 URLs preserved |
+| SETUP-04 | 35 | Build completes without errors |
+| COMP-01 | 36 | Base layout template |
+| COMP-02 | 36 | Header as include |
+| COMP-03 | 36 | Footer as include |
+| COMP-04 | 36 | Navigation as include |
+| COMP-05 | 36 | Language switcher as include |
+| PAGE-01 | 37 | IT pages converted (~260) |
+| PAGE-02 | 37 | EN pages converted (~209) |
+| PAGE-03 | 37 | Front matter metadata |
+| PAGE-04 | 37 | Content preserved exactly |
+| I18N-01 | 37 | IT output to root |
+| I18N-02 | 37 | EN output to /en/ |
+| I18N-03 | 37 | Correct lang attributes |
+| DEPLOY-01 | 38 | netlify.toml configured |
+| DEPLOY-02 | 38 | Production deploy successful |
+| DEPLOY-03 | 38 | Build under 60 seconds |
+
+**Mapped:** 19/19 requirements
+**Orphaned:** 0
+
+---
+
+## v2.2 Language Infrastructure (Shipped)
 
 > **Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese) languages.
 
@@ -122,30 +276,6 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 
 ---
 
-## Coverage Validation (v2.2)
-
-| Requirement | Phase | Description |
-|-------------|-------|-------------|
-| TRANS-01 | 32 | Notion change detection (timestamp + hash) |
-| TRANS-02 | 32 | Page-level content hashing |
-| TRANS-03 | 32 | Translation memory (JSON) |
-| TRANS-04 | 32 | Skip unchanged pages |
-| SEO-01 | 32 | EN sitemap |
-| SEO-02 | 32 | Sitemap index + hreflang |
-| RTL-01 | 33 | CSS logical properties |
-| RTL-02 | 33 | Direction support |
-| RTL-03 | 33 | Layout mirroring |
-| RTL-04 | 33 | Arabic fonts |
-| CJK-01 | 34 | Chinese fonts |
-| CJK-02 | 34 | No italics |
-| CJK-03 | 34 | Line-height |
-| CJK-04 | 34 | Word-break |
-
-**Mapped:** 14/14 requirements
-**Orphaned:** 0
-
----
-
 ## v2.1 Homepage CSS Redesign (Shipped)
 
 > **Goal:** Transform the homepage into a modern "startup SaaS" aesthetic with split hero layout, display typography, and cleaner white/black/yellow palette. Scope limited to homepage; header/footer changes propagate via shared CSS.
@@ -165,120 +295,15 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 
 ---
 
-## Phase Details
+## Previous Milestones
 
-### Phase 28: Foundation
-
-**Goal:** Establish visual regression baseline and prepare CSS infrastructure for redesign.
-
-**Dependencies:** None (first phase)
-
-**Requirements:**
-- QUAL-01: Visual regression baseline established before changes
-- TYPO-02: Typography uses fluid sizing with `clamp()`
-- TYPO-03: Playfair Display font loaded for hero headings
-- VISL-01: Homepage uses white/black/yellow color palette
-
-**Success Criteria:**
-1. User can run a command that captures baseline screenshots of current homepage (IT and EN)
-2. Playfair Display font loads without visible layout shift on page load
-3. CSS variables for the new color palette exist in main.css (yellow primary, white background, black text)
-4. Fluid typography scales smoothly when browser window is resized (no jumps at breakpoints)
-
----
-
-### Phase 29: Hero Section
-
-**Goal:** Users see a modern split-layout hero with bold display heading and organic wave divider.
-
-**Dependencies:** Phase 28 (font and color variables must exist)
-
-**Requirements:**
-- LAYT-01: Homepage has split hero layout (text left, illustration right)
-- LAYT-02: Homepage has organic wave divider below hero section
-- TYPO-01: Hero section has bold display heading
-- VISL-02: Primary CTA is dark rounded button
-
-**Success Criteria:**
-1. User sees hero text on left and lighthouse illustration on right on desktop widths
-2. User sees hero content stacked (text above, illustration below) on mobile widths
-3. User sees an organic wave shape separating hero from content below
-4. User sees a dark rounded button as the primary CTA that stands out clearly
-
----
-
-### Phase 30: Header/Footer
-
-**Goal:** Header and footer match the cleaner, more minimal aesthetic of the redesigned homepage.
-
-**Dependencies:** Phase 29 (hero establishes visual baseline for new aesthetic)
-
-**Requirements:**
-- HEAD-01: Header has minimal, clean design
-- HEAD-02: Footer style updated to match new aesthetic
-
-**Success Criteria:**
-1. User sees a cleaner header with reduced visual weight (simpler background, less clutter)
-2. User sees footer styling that complements the white/black/yellow palette
-3. Navigation remains fully functional (dropdowns work, mobile hamburger works)
-
----
-
-### Phase 31: Polish
-
-**Goal:** Interactive elements feel responsive and content appears smoothly as user scrolls.
-
-**Dependencies:** Phase 30 (all visual elements in place before polish)
-
-**Requirements:**
-- VISL-03: Interactive elements have CSS hover effects
-- VISL-04: Content sections fade in on scroll
-- QUAL-02: Design tested on mobile devices
-
-**Success Criteria:**
-1. User sees visual feedback (scale, shadow, or color change) when hovering over buttons and cards
-2. User sees content sections fade in as they scroll down the page
-3. User can navigate the full homepage on a mobile device without horizontal scrolling or touch target issues
-
----
-
-## Coverage Validation
-
-| Requirement | Phase | Description |
-|-------------|-------|-------------|
-| LAYT-01 | 29 | Split hero layout |
-| LAYT-02 | 29 | Wave divider |
-| TYPO-01 | 29 | Bold display heading |
-| TYPO-02 | 28 | Fluid typography |
-| TYPO-03 | 28 | Playfair Display font |
-| VISL-01 | 28 | Color palette |
-| VISL-02 | 29 | Dark rounded CTA |
-| VISL-03 | 31 | Hover effects |
-| VISL-04 | 31 | Scroll fade-ins |
-| HEAD-01 | 30 | Minimal header |
-| HEAD-02 | 30 | Updated footer |
-| QUAL-01 | 28 | Visual regression baseline |
-| QUAL-02 | 31 | Mobile testing |
-
-**Mapped:** 13/13 requirements
-**Orphaned:** 0
-
----
-
-## v2.0 Multilingual + Tests (Paused)
-
+### v2.0 Multilingual + Tests (Paused)
 > **Status:** Phase 20 complete (all 209 pages translated). Remaining phases (21-27) moved to v3.0.
->
-> See: `.planning/milestones/v2.0-ROADMAP.md` for full history.
 
 | Phase | Name | Status |
 |-------|------|--------|
 | 20 | Batch Translation Pipeline | Complete |
 | 21-27 | Human Review, Tests, Integration | Deferred to v3.0 |
-
----
-
-## Previous Milestones
 
 ### v1.10 UI Polish (Shipped 2026-02-01)
 > Sticky breadcrumb, document notes from Notion, test card titles
@@ -322,8 +347,11 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 | 32 | v2.2 | Complete | 2026-02-04 |
 | 33 | v2.2 | Complete | 2026-02-04 |
 | 34 | v2.2 | Complete | 2026-02-04 |
-| 30-31 | v3.0 | Deferred | — |
+| 35 | v3.0 | Not started | — |
+| 36 | v3.0 | Not started | — |
+| 37 | v3.0 | Not started | — |
+| 38 | v3.0 | Not started | — |
 
 ---
 
-*Last updated: 2026-02-04 — Phase 34 complete (CJK infrastructure) — v2.2 Language Infrastructure milestone complete*
+*Last updated: 2026-02-04 — v3.0 11ty Migration milestone started*
