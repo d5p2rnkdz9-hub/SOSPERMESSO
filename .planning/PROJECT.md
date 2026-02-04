@@ -108,63 +108,26 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-**Current Milestone: v2.1 Homepage CSS Redesign**
+**Current Milestone: v3.0 11ty Migration**
 
-**Goal:** Modern "startup SaaS" aesthetic for homepage with updated header/footer styling.
+**Goal:** Migrate from pure HTML to 11ty SSG for maintainable architecture. Extract shared components, keep same content and URLs.
 
 **Target features:**
-- [ ] Split hero layout (text left, illustration right)
-- [ ] Organic wave divider below hero
-- [ ] Bold display typography with Playfair Display font
-- [ ] White/black/yellow color palette
-- [ ] Dark rounded CTA button
-- [ ] Minimal header redesign
-- [ ] Updated footer style
-- [ ] Scroll-triggered fade-in animations
+- [ ] 11ty v3.x with Liquid templates
+- [ ] Passthrough copy for CSS/JS/images
+- [ ] Base layout with header/footer/nav as includes
+- [ ] Language switcher as include
+- [ ] All 469 pages converted to use layouts
+- [ ] URL preservation (no broken links)
+- [ ] Netlify deployment configured
 
-**Scope:** Homepage only. Header/footer propagation to all pages deferred.
+**Scope:** Structural migration only. Same content, same URLs, maintainable architecture.
 
----
-
-**Current: v2.2 Language Infrastructure**
-
-**Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese) languages.
-
-**Phase A: Translation Workflow — COMPLETE (Phase 32)**
-- ✓ Content hashing for incremental builds
-- ✓ Translation memory module
-- ✓ Multilingual sitemaps with hreflang
-
-**Phase B: RTL Infrastructure (Arabic) — Next (Phase 33)**
-- CSS logical properties (`margin-inline-start` instead of `margin-left`, etc.)
-- Direction support (`[lang="ar"] { direction: rtl; }`)
-- Layout mirroring (navigation, icons, arrows flip correctly)
-- Arabic font stack
-
-**Phase C: CJK Infrastructure (Chinese)**
-- Chinese font stack (`"PingFang SC", "Microsoft YaHei", "Noto Sans SC"`)
-- Typography rules (no italics, adjusted line-height)
-- Word-break rules for Chinese characters
-
-**Verification method:**
-1. Edit a test page in Notion, run build → only that page rebuilds
-2. Run build again without changes → no pages rebuild (hashes match)
-3. Add `lang="ar"` to test page → layout mirrors correctly
-4. Add `lang="zh"` to test page → Chinese fonts render correctly
-5. Check sitemap-index.xml links to all language sitemaps with correct hreflang
-
-**Not included (deferred):**
-- Paragraph-level tracking (page-level sufficient for now)
-- Actual AR/ZH translations (just the infrastructure)
-- Human review workflow (v3.0)
-
----
-
-**Deferred to v3.0:**
-- Human review workflow with volunteer translators
-- Proprietary test system replacing 3 Typeform tests (IT + EN)
-
-**v2.0 Shipped:** All 209 pages translated to English. CSS paths fixed. Language switcher UI works.
+**Not included (v3.1):**
+- Page-specific templates (permit, document, guide)
+- Notion integration rewrite (keep existing scripts)
+- Navigation as data files
+- i18n plugin integration
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
@@ -264,6 +227,9 @@ Users can quickly find accurate, understandable information about their specific
 | Sitemap index architecture | One master sitemap pointing to per-language sitemaps | ✓ Good — v2.2 |
 | Translation memory by content hash | Reuse translations for unchanged paragraphs | ✓ Good — v2.2 |
 | RTL CSS with logical properties | Preparation for Arabic, Hebrew support | — Pending (v2.2) |
+| 11ty migration (structural) | Eliminate duplicated headers/footers in 469 files | — Pending (v3.0) |
+| Liquid over Nunjucks | Nunjucks unmaintained since June 2022 | — Pending (v3.0) |
+| Incremental migration | Convert pages gradually, not big-bang | — Pending (v3.0) |
 
 ---
-*Last updated: 2026-02-04 — v2.2 Phase 32 shipped (translation workflow)*
+*Last updated: 2026-02-04 — v3.0 11ty Migration milestone started*

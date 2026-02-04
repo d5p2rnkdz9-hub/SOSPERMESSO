@@ -1,100 +1,107 @@
 # Requirements: SOS Permesso
 
-**Defined:** 2026-02-02
+**Defined:** 2026-02-04
 **Core Value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
-
-## v2.1 Requirements
-
-Requirements for Homepage CSS Redesign milestone.
-
-### Layout
-
-- [ ] **LAYT-01**: Homepage has split hero layout (text left, illustration right)
-- [ ] **LAYT-02**: Homepage has organic wave divider below hero section
-
-### Typography
-
-- [ ] **TYPO-01**: Hero section has bold display heading
-- [ ] **TYPO-02**: Typography uses fluid sizing with `clamp()`
-- [ ] **TYPO-03**: Playfair Display font loaded for hero headings
-
-### Visual
-
-- [ ] **VISL-01**: Homepage uses white/black/yellow color palette
-- [ ] **VISL-02**: Primary CTA is dark rounded button
-- [ ] **VISL-03**: Interactive elements have CSS hover effects
-- [ ] **VISL-04**: Content sections fade in on scroll
-
-### Header/Footer
-
-- [ ] **HEAD-01**: Header has minimal, clean design
-- [ ] **HEAD-02**: Footer style updated to match new aesthetic
-
-### Quality
-
-- [ ] **QUAL-01**: Visual regression baseline established before changes
-- [ ] **QUAL-02**: Design tested on mobile devices
 
 ## v3.0 Requirements
 
-Deferred from v2.0. Human review workflow and test system.
+Requirements for 11ty Migration milestone. Structural migration only — same content, same URLs, maintainable architecture.
 
-### Translation Review
+### Setup
 
-- **TREV-01**: All translated pages reviewed by volunteers
-- **TREV-02**: Glossary terms used consistently across EN pages
-- **TREV-03**: Legal/technical accuracy verified
+- [ ] **SETUP-01**: 11ty v3.x installed and configured with Liquid templates
+- [ ] **SETUP-02**: Passthrough copy configured for CSS, JS, and image assets
+- [ ] **SETUP-03**: All 469 existing URLs preserved (no broken links)
+- [ ] **SETUP-04**: Build completes without errors
 
-### Language Switching
+### Components
 
-- **LANG-01**: Language switcher points to correct EN pages
-- **LANG-02**: EN pages link back to IT equivalents
-- **LANG-03**: hreflang tags for SEO
-- **LANG-04**: EN sitemap.xml generated
+- [ ] **COMP-01**: Base layout template contains HTML structure (doctype, head, body)
+- [ ] **COMP-02**: Header extracted as reusable include
+- [ ] **COMP-03**: Footer extracted as reusable include
+- [ ] **COMP-04**: Navigation (desktop + mobile) extracted as reusable include
+- [ ] **COMP-05**: Language switcher extracted as reusable include
 
-### Proprietary Tests
+### Pages
 
-- **TEST-01**: Quiz engine (quiz.js) renders questions and handles navigation
-- **TEST-02**: test-avere quiz works in Italian
-- **TEST-03**: test-avere quiz works in English
-- **TEST-04**: test-convertire quiz works in both languages
-- **TEST-05**: test-rinnovare quiz works in both languages
-- **TEST-06**: Quiz results link to appropriate permit pages
-- **TEST-07**: Typeform references removed from site
+- [ ] **PAGE-01**: All IT pages (~260) converted to use shared layouts
+- [ ] **PAGE-02**: All EN pages (~209) converted to use shared layouts
+- [ ] **PAGE-03**: Front matter contains page metadata (title, lang, layout)
+- [ ] **PAGE-04**: Page content preserved exactly (no content changes)
+
+### Multilingual
+
+- [ ] **I18N-01**: IT pages output to root directory (/)
+- [ ] **I18N-02**: EN pages output to /en/ directory
+- [ ] **I18N-03**: HTML lang attribute correct for each language
+
+### Deployment
+
+- [ ] **DEPLOY-01**: netlify.toml configured for 11ty build
+- [ ] **DEPLOY-02**: Production deploy successful on Netlify
+- [ ] **DEPLOY-03**: Build completes in under 60 seconds
+
+## v3.1 Requirements (Deferred)
+
+Features deferred from v3.0 — can add after migration stable.
+
+### Enhanced Templates
+
+- **TMPL-01**: Permit page-specific template with Q&A structure
+- **TMPL-02**: Document page-specific template with checklist
+- **TMPL-03**: Guide page-specific template
+
+### Data Architecture
+
+- **DATA-01**: Navigation structure as JSON data file
+- **DATA-02**: Collections for page grouping (permits, documents, guides)
+- **DATA-03**: Notion integration migrated to 11ty data files
+
+### Enhanced i18n
+
+- **I18N-04**: Directory data files for automatic lang config
+- **I18N-05**: i18n plugin integration
+- **I18N-06**: Locale-aware URL filter in templates
 
 ## Out of Scope
 
 | Feature | Reason |
 |---------|--------|
-| Feature badge row | Deferred — not essential for v2.1 aesthetic |
-| Propagate header/footer to all pages | Do later if homepage design works well |
-| Generous whitespace overhaul | Not selected for v2.1 |
-| WCAG contrast audit | Manual check sufficient for now |
-| Additional languages (FR, ES, ZH) | Pipeline built for EN, reuse later |
+| Content changes | Structural migration only — content stays as-is |
+| Notion integration rewrite | Keep existing build scripts for now, migrate in v3.1 |
+| New languages (FR, ES, ZH) | Infrastructure exists, translations deferred |
+| Page-specific templates | Keep single layout, specialize in v3.1 |
+| Visual regression testing | Manual QA sufficient for structural migration |
 
 ## Traceability
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAYT-01 | 29 | Pending |
-| LAYT-02 | 29 | Pending |
-| TYPO-01 | 29 | Pending |
-| TYPO-02 | 28 | Pending |
-| TYPO-03 | 28 | Pending |
-| VISL-01 | 28 | Pending |
-| VISL-02 | 29 | Pending |
-| VISL-03 | 31 | Pending |
-| VISL-04 | 31 | Pending |
-| HEAD-01 | 30 | Pending |
-| HEAD-02 | 30 | Pending |
-| QUAL-01 | 28 | Pending |
-| QUAL-02 | 31 | Pending |
+| SETUP-01 | 35 | Pending |
+| SETUP-02 | 35 | Pending |
+| SETUP-03 | 35 | Pending |
+| SETUP-04 | 35 | Pending |
+| COMP-01 | 36 | Pending |
+| COMP-02 | 36 | Pending |
+| COMP-03 | 36 | Pending |
+| COMP-04 | 36 | Pending |
+| COMP-05 | 36 | Pending |
+| PAGE-01 | 37 | Pending |
+| PAGE-02 | 37 | Pending |
+| PAGE-03 | 37 | Pending |
+| PAGE-04 | 37 | Pending |
+| I18N-01 | 37 | Pending |
+| I18N-02 | 37 | Pending |
+| I18N-03 | 37 | Pending |
+| DEPLOY-01 | 38 | Pending |
+| DEPLOY-02 | 38 | Pending |
+| DEPLOY-03 | 38 | Pending |
 
 **Coverage:**
-- v2.1 requirements: 13 total
-- Mapped to phases: 13
+- v3.0 requirements: 19 total
+- Mapped to phases: 19
 - Unmapped: 0
 
 ---
-*Requirements defined: 2026-02-02*
-*Last updated: 2026-02-02 — Phase assignments complete*
+*Requirements defined: 2026-02-04*
+*Last updated: 2026-02-04 — Initial definition*
