@@ -14,7 +14,7 @@
 | Phase | Name | Goal | Status |
 |-------|------|------|--------|
 | 32 | Translation Workflow | Notion change detection, page hashing, translation memory, sitemaps | **Complete** |
-| 33 | RTL Infrastructure | CSS logical properties, direction support, Arabic fonts | Planned |
+| 33 | RTL Infrastructure | CSS logical properties, direction support, Arabic fonts | **Complete** |
 | 34 | CJK Infrastructure | Chinese fonts, typography rules, word-break | Queued |
 
 ---
@@ -71,7 +71,7 @@ grep -c "hreflang" sitemap-en.xml  # Should show hreflang entries
 **Plans:** 1 plan
 
 Plans:
-- [ ] 33-01-PLAN.md — Convert CSS to logical properties, create rtl.css with Arabic support
+- [x] 33-01-PLAN.md — Convert CSS to logical properties, create rtl.css with Arabic support
 
 **Success Criteria:**
 1. Add `lang="ar"` to any page → text aligns right, layout mirrors
@@ -315,10 +315,10 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 | 20 | v2.0 | Complete | 2026-02-02 |
 | 28-29 | v2.1 | Complete | 2026-02-03 |
 | 32 | v2.2 | Complete | 2026-02-04 |
-| 33 | v2.2 | Planned | — |
+| 33 | v2.2 | Complete | 2026-02-04 |
 | 34 | v2.2 | Queued | — |
 | 30-31 | v3.0 | Deferred | — |
 
 ---
 
-*Last updated: 2026-02-04 — Phase 33 planned (RTL infrastructure)*
+*Last updated: 2026-02-04 — Phase 33 complete (RTL infrastructure)*

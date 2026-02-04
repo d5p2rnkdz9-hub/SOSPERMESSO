@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v2.2 Language Infrastructure — Phase 33 (RTL Infrastructure) next
+**Current focus:** v2.2 Language Infrastructure — Phase 34 (CJK Infrastructure) next
 
 ## Current Position
 
 **Current Milestone:** v2.2 Language Infrastructure
-**Phase:** Phase 33 in progress (Plan 01 complete)
+**Phase:** Phase 33 complete, ready for Phase 34
 **Status:** In Progress
-**Last activity:** 2026-02-04 — Phase 33 Plan 01 complete (RTL CSS infrastructure with logical properties)
+**Last activity:** 2026-02-04 — Phase 33 complete (RTL CSS infrastructure)
 
 ```
 Milestones:
@@ -32,7 +32,7 @@ v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
 v2.0 Translations          [Shipped 2026-02-02] ##########
 v2.1 Homepage Redesign     [Shipped 2026-02-03] ##########
-v2.2 Language Infra        [In Progress]        ###.......
+v2.2 Language Infra        [In Progress]        ######....
 v3.0 Human Review + Tests  [Queued]             ..........
 ```
 
@@ -70,7 +70,7 @@ v3.0 Human Review + Tests  [Queued]             ..........
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 32 | Translation Workflow | TRANS-01 to TRANS-04, SEO-01, SEO-02 | **Complete** |
-| 33 | RTL Infrastructure | RTL-01 to RTL-04 | **In Progress (Plan 01 Complete)** |
+| 33 | RTL Infrastructure | RTL-01 to RTL-04 | **Complete** |
 | 34 | CJK Infrastructure | CJK-01 to CJK-04 | Queued |
 
 ## v2.2 Summary
@@ -83,12 +83,13 @@ v3.0 Human Review + Tests  [Queued]             ..........
 - robots.txt updated to point to sitemap-index.xml
 - npm run tm:stats script for translation memory statistics
 
-**Phase 33 Plan 01 delivered:**
-- CSS logical properties foundation (inline-start/end, block-start/end)
-- --text-x-direction variable system for RTL calculations
-- rtl.css with [dir="rtl"] and [lang="ar"]/[lang="he"] selectors
-- Arabic font stack (Noto Sans Arabic, Tajawal)
+**Phase 33 delivered:**
+- CSS logical properties (inline-start/end) across all stylesheets
+- --text-x-direction variable for RTL calculations
+- rtl.css with [dir="rtl"], [lang="ar"], [lang="he"] selectors
+- Arabic font stack (Geeza Pro, Arabic Typesetting, Tahoma)
 - Automatic icon mirroring for RTL contexts
+- Mobile navigation RTL support
 
 **Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese).
 
