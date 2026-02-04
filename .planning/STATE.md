@@ -14,9 +14,9 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 ## Current Position
 
 **Current Milestone:** v2.2 Language Infrastructure
-**Phase:** Phase 32 complete, ready for Phase 33
+**Phase:** Phase 33 in progress (Plan 01 complete)
 **Status:** In Progress
-**Last activity:** 2026-02-04 — Phase 32 shipped (content hashing, translation memory, multilingual sitemaps)
+**Last activity:** 2026-02-04 — Phase 33 Plan 01 complete (RTL CSS infrastructure with logical properties)
 
 ```
 Milestones:
@@ -70,7 +70,7 @@ v3.0 Human Review + Tests  [Queued]             ..........
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 32 | Translation Workflow | TRANS-01 to TRANS-04, SEO-01, SEO-02 | **Complete** |
-| 33 | RTL Infrastructure | RTL-01 to RTL-04 | Queued |
+| 33 | RTL Infrastructure | RTL-01 to RTL-04 | **In Progress (Plan 01 Complete)** |
 | 34 | CJK Infrastructure | CJK-01 to CJK-04 | Queued |
 
 ## v2.2 Summary
@@ -82,6 +82,13 @@ v3.0 Human Review + Tests  [Queued]             ..........
 - Per-language sitemaps with hreflang tags (sitemap-it.xml, sitemap-en.xml)
 - robots.txt updated to point to sitemap-index.xml
 - npm run tm:stats script for translation memory statistics
+
+**Phase 33 Plan 01 delivered:**
+- CSS logical properties foundation (inline-start/end, block-start/end)
+- --text-x-direction variable system for RTL calculations
+- rtl.css with [dir="rtl"] and [lang="ar"]/[lang="he"] selectors
+- Arabic font stack (Noto Sans Arabic, Tajawal)
+- Automatic icon mirroring for RTL contexts
 
 **Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese).
 
@@ -146,6 +153,10 @@ From prior milestones:
 | v2.2 | hreflang in sitemaps, not HTML | Scales better for 8-12 languages |
 | v2.2 | RTL CSS with logical properties | Preparation for Arabic support |
 | v2.2 | CJK font stack + typography | Preparation for Chinese support |
+| 33-01 | CSS logical properties everywhere | Automatic RTL support without property overrides |
+| 33-01 | Direction variable system | Mathematical direction calculations (--text-x-direction: 1/-1) |
+| 33-01 | Noto Sans Arabic primary font | Comprehensive glyph support with Tajawal fallback |
+| 33-01 | Automatic icon mirroring | transform: scaleX(-1) on directional icons in RTL |
 
 ### Research Completed
 
@@ -172,16 +183,16 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-04
-**Stopped at:** Phase 32 shipped
+**Stopped at:** Phase 33 Plan 01 complete (RTL CSS infrastructure)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md + ROADMAP.md (v2.2 phases)
-2. **Where we are:** Phase 32 complete, v2.2 in progress
+1. **Context to load:** This STATE.md + .planning/phases/33-rtl-infrastructure/33-01-SUMMARY.md
+2. **Where we are:** Phase 33 Plan 01 complete, ready for Phase 34
 3. **What to do next:**
-   - Phase 33: RTL Infrastructure (Arabic CSS)
    - Phase 34: CJK Infrastructure (Chinese CSS)
+   - Or continue Phase 33 if additional RTL plans exist
 
 ---
 
