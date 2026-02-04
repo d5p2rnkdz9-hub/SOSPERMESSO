@@ -98,6 +98,9 @@
   --z-fixed: 1030;
   --z-modal: 1040;
   --z-tooltip: 1050;
+
+  /* RTL Support */
+  --text-x-direction: 1; /* 1 for LTR, -1 for RTL (set by rtl.css) */
 }
 
 /* ===============================================
@@ -209,7 +212,7 @@ strong {
 /* Lists */
 ul, ol {
   margin-bottom: var(--spacing-sm);
-  padding-left: var(--spacing-lg);
+  padding-inline-start: var(--spacing-lg);
 }
 
 ul {
@@ -234,19 +237,19 @@ li::marker {
 ul ul, ol ol, ul ol, ol ul {
   margin-top: var(--spacing-xs);
   margin-bottom: var(--spacing-xs);
-  padding-left: var(--spacing-md);
+  padding-inline-start: var(--spacing-md);
 }
 
 /* List inside cards - Triangle bullets */
 .card ul {
   list-style: none;
   margin-top: var(--spacing-sm);
-  padding-left: var(--spacing-lg);
+  padding-inline-start: var(--spacing-lg);
 }
 
 .card ol {
   margin-top: var(--spacing-sm);
-  padding-left: var(--spacing-lg);
+  padding-inline-start: var(--spacing-lg);
 }
 
 .card li {
@@ -258,7 +261,7 @@ ul ul, ol ol, ul ol, ol ul {
 .card ul li::before {
   content: '\25B8';
   position: absolute;
-  left: -1.25rem;
+  inset-inline-start: -1.25rem;
   color: var(--accent-blue);
   font-size: 1.1rem;
   line-height: 1.5;
@@ -380,8 +383,10 @@ ul ul, ol ol, ul ol, ol ul {
    =============================================== */
 
 .text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-left { text-align: start; } /* Backwards compatible - now uses logical property */
+.text-right { text-align: end; } /* Backwards compatible - now uses logical property */
+.text-start { text-align: start; } /* New alias */
+.text-end { text-align: end; } /* New alias */
 
 .text-sm { font-size: var(--font-size-sm); }
 .text-lg { font-size: var(--font-size-lg); }
