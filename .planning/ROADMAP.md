@@ -159,7 +159,7 @@ Plans:
 
 ---
 
-## v2.2 Language Infrastructure (Shipped)
+## v2.2 Language Infrastructure (Gap Closure)
 
 > **Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese) languages.
 
@@ -170,6 +170,7 @@ Plans:
 | 32 | Translation Workflow | Notion change detection, page hashing, translation memory, sitemaps | **Complete** |
 | 33 | RTL Infrastructure | CSS logical properties, direction support, Arabic fonts | **Complete** |
 | 34 | CJK Infrastructure | Chinese fonts, typography rules, word-break | **Complete** |
+| 34.1 | CSS Integration Fix | Link rtl.css/cjk.css to HTML, convert remaining logical properties | **Queued** |
 
 ---
 
@@ -276,6 +277,42 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 
 ---
 
+### Phase 34.1: CSS Integration Fix
+
+**Goal:** Link RTL and CJK CSS files to all HTML pages so the infrastructure actually works.
+
+**Dependencies:** Phase 34 (CJK Infrastructure)
+
+**Gap Closure:** Closes gaps from v2.2 milestone audit
+
+**Requirements:**
+- RTL-01: CSS uses logical properties (complete remaining 3 conversions)
+- RTL-03: Navigation mirrors correctly in RTL mode (mobile nav)
+- Integration: rtl.css linked in all HTML pages
+- Integration: cjk.css linked in all HTML pages
+- Flow: RTL Layout Application works end-to-end
+- Flow: CJK Typography Application works end-to-end
+
+**Success Criteria:**
+1. All HTML pages include `<link rel="stylesheet" href="src/styles/rtl.css">`
+2. All HTML pages include `<link rel="stylesheet" href="src/styles/cjk.css">`
+3. Adding `lang="ar"` to any page causes RTL layout to apply
+4. Adding `lang="zh"` to any page causes CJK typography to apply
+5. Mobile navigation uses logical properties (no hardcoded left/right)
+
+**Files to change:**
+- index.html (add 2 link tags)
+- src/pages/*.html (all ~260 IT pages, via build script or manual)
+- en/src/pages/*.html (all ~209 EN pages, via build script or manual)
+- src/styles/components.css (convert 3 properties at lines 529, 530, 555)
+
+**Plans:** TBD
+
+Plans:
+- [ ] 34.1-01: [To be planned]
+
+---
+
 ## v2.1 Homepage CSS Redesign (Shipped)
 
 > **Goal:** Transform the homepage into a modern "startup SaaS" aesthetic with split hero layout, display typography, and cleaner white/black/yellow palette. Scope limited to homepage; header/footer changes propagate via shared CSS.
@@ -347,6 +384,7 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 | 32 | v2.2 | Complete | 2026-02-04 |
 | 33 | v2.2 | Complete | 2026-02-04 |
 | 34 | v2.2 | Complete | 2026-02-04 |
+| 34.1 | v2.2 | Queued | — |
 | 35 | v3.0 | Not started | — |
 | 36 | v3.0 | Not started | — |
 | 37 | v3.0 | Not started | — |
