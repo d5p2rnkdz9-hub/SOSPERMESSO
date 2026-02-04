@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-04
-**Status:** v3.0 roadmap created, ready to plan Phase 35
+**Status:** v3.0 Phase 35 Plan 01 complete, 11ty build infrastructure ready
 
 ## Project Reference
 
@@ -15,39 +15,39 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Current Milestone:** v3.0 11ty Migration
 **Phase:** 35 of 38 (Setup)
-**Plan:** 0 of TBD
-**Status:** Ready to plan
-**Last activity:** 2026-02-04 — Roadmap created, all 19 requirements mapped to 4 phases
+**Plan:** 1 of 1 complete
+**Status:** Phase 35 complete
+**Last activity:** 2026-02-04 — Completed 35-01-PLAN.md (11ty Setup)
 
 ```
-Progress: [░░░░░░░░░░] 0% (0/4 phases complete)
+Progress: [██░░░░░░░░] 25% (1/4 phases complete)
 ```
 
 ## v3.0 Phases
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 35 | Setup | SETUP-01 to SETUP-04 | Ready to plan |
-| 36 | Components | COMP-01 to COMP-05 | Queued |
+| 35 | Setup | SETUP-01 to SETUP-04 | COMPLETE |
+| 36 | Components | COMP-01 to COMP-05 | Ready |
 | 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | Queued |
 | 38 | Deployment | DEPLOY-01 to DEPLOY-03 | Queued |
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0 (v3.0 milestone just started)
-- Average duration: TBD
-- Total execution time: 0 hours
+- Total plans completed: 1 (v3.0 milestone)
+- Average duration: 5 min
+- Total execution time: 5 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 35 | 1 | 5 min | 5 min |
 
 **Recent Trend:**
-- New milestone started
-- Trend: TBD
+- Phase 35 Plan 01: 5 min (3 tasks, 5 deviations auto-fixed)
+- Trend: Fast execution with effective deviation handling
 
 *Updated after each plan completion*
 
@@ -83,12 +83,12 @@ From prior milestones (carry forward):
 
 ## Design Patterns to Follow
 
-**11ty patterns (from research):**
+**11ty patterns (established in Phase 35):**
 - Passthrough copy for static assets
-- Base layout with `{{ content }}` slot
-- Includes for reusable components
-- Front matter for page metadata
-- Computed permalinks for URL preservation
+- ESM config file (eleventy.config.mjs)
+- Global computed permalink via _data/eleventyComputed.js
+- Directory data files for URL preservation
+- Ignore pattern for non-template directories
 
 **Existing patterns to preserve:**
 - CSS variables system in main.css
@@ -106,6 +106,9 @@ Recent decisions affecting current work:
 - v3.0: Liquid over Nunjucks — Nunjucks unmaintained since June 2022
 - v3.0: Incremental migration — Convert pages gradually, not big-bang
 - v3.0: Structural only — Keep Notion integration separate (v3.1)
+- **35-01: ESM config file (.mjs)** — Used .mjs extension for 11ty config because project is CommonJS
+- **35-01: Global computed permalink** — _data/eleventyComputed.js handles all HTML files
+- **35-01: Retained directory data files** — Kept for explicitness as defense-in-depth
 
 ### Research Completed
 
@@ -127,10 +130,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-04
-**Stopped at:** Roadmap created with 4 phases, 19 requirements mapped
+**Stopped at:** Completed 35-01-PLAN.md (11ty Setup)
 **Resume file:** None
 
-**Next Action:** Run `/gsd:plan-phase 35` to create execution plan for Setup phase
+**Next Action:** Run `/gsd:plan-phase 36` to create execution plan for Components phase
 
 ---
 
