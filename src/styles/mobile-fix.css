@@ -128,8 +128,8 @@
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     bottom: 0;
     background: var(--white);
     z-index: 1040;
@@ -160,7 +160,7 @@
     padding: 1rem 1.25rem !important;
     border-radius: 12px;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: start;
   }
 
   .nav-menu .nav-link:active {
@@ -182,8 +182,8 @@
   .language-switcher {
     display: inline-flex !important;
     order: 2;
-    margin-left: auto;
-    margin-right: 0.5rem;
+    margin-inline-start: auto;
+    margin-inline-end: 0.5rem;
   }
 
   .language-button {
@@ -263,13 +263,13 @@
     text-align: center !important;
   }
 
-  /* Content cards (not card-links) should be left-aligned */
+  /* Content cards (not card-links) should be start-aligned */
   .card:not(.card-link):not(a) {
     width: 100%;
     padding: 1.25rem;
     margin-bottom: 0.75rem;
     box-sizing: border-box;
-    text-align: left;
+    text-align: start;
   }
 
   .card-icon {
@@ -348,7 +348,7 @@
   #resources .card-link {
     flex-direction: row !important;
     align-items: center !important;
-    text-align: left !important;
+    text-align: start !important;
     padding: 1rem !important;
     gap: 1rem;
   }
@@ -390,8 +390,8 @@
 
   .alert {
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: start;
+    text-align: start;
     padding: 1rem;
     width: 100%;
     box-sizing: border-box;
@@ -404,7 +404,7 @@
 
   .alert .btn {
     margin-top: 0.75rem;
-    margin-left: 0 !important;
+    margin-inline-start: 0 !important;
   }
 
   /* ===============================================

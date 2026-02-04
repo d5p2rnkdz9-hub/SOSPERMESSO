@@ -56,8 +56,8 @@
   /* Logo smaller on mobile */
   .logo {
     position: relative;
-    left: 0;
-    margin-left: 0;
+    inset-inline-start: 0;
+    margin-inline-start: 0;
   }
 
   /* Mobile Logo - Icon only (Phase 5) */
@@ -66,7 +66,7 @@
   }
 
   .logo-icon-wrapper {
-    margin-right: 0;
+    margin-inline-end: 0;
   }
 
   .logo-icon-img {
@@ -190,12 +190,12 @@
 
   /* Mobile-optimized lists */
   ul, ol {
-    padding-left: var(--spacing-md);
+    padding-inline-start: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
   }
 
   .card ul, .card ol {
-    padding-left: var(--spacing-lg);
+    padding-inline-start: var(--spacing-lg);
   }
 
   li {
@@ -283,8 +283,8 @@
     position: fixed;
     top: auto;
     bottom: 0;
-    left: 0;
-    right: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     width: 100%;
     max-width: none;
     min-width: unset;
@@ -513,7 +513,7 @@
   .skip-to-content {
     position: absolute;
     top: -40px;
-    left: 0;
+    inset-inline-start: 0;
     background: var(--taxi-yellow);
     color: var(--black);
     padding: var(--spacing-sm);

@@ -403,7 +403,7 @@
 .logo-icon-wrapper {
   position: relative;
   z-index: 2;
-  margin-right: -12px; /* Creates 10-15% overlap with text */
+  margin-inline-end: -12px; /* Creates 10-15% overlap with text */
 }
 
 .logo-icon-img {
@@ -417,7 +417,7 @@
   display: flex;
   align-items: baseline;
   gap: 8px;
-  padding-left: 8px;
+  padding-inline-start: 8px;
 }
 
 .logo-sos {
@@ -578,7 +578,7 @@
 .language-dropdown {
   position: absolute;
   top: 110%;
-  right: 0;
+  inset-inline-end: 0;
   background-color: var(--white);
   border: 2px solid var(--gray-light);
   border-radius: var(--radius-md);
@@ -623,14 +623,14 @@
 
 .has-dropdown .nav-link {
   position: relative;
-  padding-right: 1.5rem;
+  padding-inline-end: 1.5rem;
 }
 
 /* Arrow indicator */
 .has-dropdown .nav-link::after {
   content: '\25BE';
   position: absolute;
-  right: 0.5rem;
+  inset-inline-end: 0.5rem;
   font-size: 0.65rem;
   opacity: 0.6;
   transition: transform var(--transition-base);
@@ -645,7 +645,7 @@
 .nav-dropdown {
   position: absolute;
   top: 100%;
-  left: 0;
+  inset-inline-start: 0;
   background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
@@ -739,19 +739,19 @@
 .alert-info {
   background-color: #E3F2FD;
   color: #0D47A1;
-  border-left: 4px solid var(--accent-blue);
+  border-inline-start: 4px solid var(--accent-blue);
 }
 
 .alert-warning {
   background-color: #FFF3E0;
   color: #E65100;
-  border-left: 4px solid var(--warning);
+  border-inline-start: 4px solid var(--warning);
 }
 
 .alert-success {
   background-color: #E8F5E9;
   color: #1B5E20;
-  border-left: 4px solid var(--success);
+  border-inline-start: 4px solid var(--success);
 }
 
 /* ===============================================
@@ -1097,7 +1097,7 @@
 }
 
 .hero-text {
-  padding-right: 1rem;
+  padding-inline-end: 1rem;
 }
 
 .hero-display-title {
@@ -1239,7 +1239,7 @@
   }
 
   .hero-text {
-    padding-right: 0;
+    padding-inline-end: 0;
     order: 1;
   }
 
@@ -1248,8 +1248,8 @@
   }
 
   .hero-description {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   .hero-badges {
