@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-04
-**Status:** v3.0 Phase 35 Plan 01 complete, 11ty build infrastructure ready
+**Status:** Phase 34.1-01 complete (CSS Integration Fix), v3.0 Phase 35 ready
 
 ## Project Reference
 
@@ -9,7 +9,7 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v3.0 11ty Migration — Phase 35 Setup
+**Current focus:** Gap closure (v2.2) and v3.0 11ty Migration preparation
 
 ## Current Position
 
@@ -17,7 +17,7 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 **Phase:** 35 of 38 (Setup)
 **Plan:** 1 of 1 complete
 **Status:** Phase 35 complete
-**Last activity:** 2026-02-04 — Completed 35-01-PLAN.md (11ty Setup)
+**Last activity:** 2026-02-04 — Completed 34.1-01-PLAN.md (CSS Integration Fix)
 
 ```
 Progress: [██░░░░░░░░] 25% (1/4 phases complete)
@@ -35,17 +35,19 @@ Progress: [██░░░░░░░░] 25% (1/4 phases complete)
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1 (v3.0 milestone)
+- Total plans completed: 2 (v2.2 + v3.0 milestones)
 - Average duration: 5 min
-- Total execution time: 5 min
+- Total execution time: 10 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
+| 34.1 | 1 | 5 min | 5 min |
 | 35 | 1 | 5 min | 5 min |
 
 **Recent Trend:**
+- Phase 34.1 Plan 01: 5 min (2 tasks, 1 deviation auto-fixed)
 - Phase 35 Plan 01: 5 min (3 tasks, 5 deviations auto-fixed)
 - Trend: Fast execution with effective deviation handling
 
@@ -106,6 +108,7 @@ Recent decisions affecting current work:
 - v3.0: Liquid over Nunjucks — Nunjucks unmaintained since June 2022
 - v3.0: Incremental migration — Convert pages gradually, not big-bang
 - v3.0: Structural only — Keep Notion integration separate (v3.1)
+- **34.1-01: CSS link order matters** — Check en/index.html path BEFORE root index.html to avoid greedy matching
 - **35-01: ESM config file (.mjs)** — Used .mjs extension for 11ty config because project is CommonJS
 - **35-01: Global computed permalink** — _data/eleventyComputed.js handles all HTML files
 - **35-01: Retained directory data files** — Kept for explicitness as defense-in-depth
@@ -130,10 +133,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-04
-**Stopped at:** Completed 35-01-PLAN.md (11ty Setup)
+**Stopped at:** Completed 34.1-01-PLAN.md (CSS Integration Fix)
 **Resume file:** None
 
-**Next Action:** Run `/gsd:plan-phase 36` to create execution plan for Components phase
+**Next Action:** Phase 34.1 complete. v3.0 Phase 35 (11ty Setup) already complete. Ready for Phase 36 (Components) when needed.
 
 ---
 
