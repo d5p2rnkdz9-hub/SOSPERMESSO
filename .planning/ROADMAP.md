@@ -171,7 +171,7 @@ Plans:
 | 32 | Translation Workflow | Notion change detection, page hashing, translation memory, sitemaps | **Complete** |
 | 33 | RTL Infrastructure | CSS logical properties, direction support, Arabic fonts | **Complete** |
 | 34 | CJK Infrastructure | Chinese fonts, typography rules, word-break | **Complete** |
-| 34.1 | CSS Integration Fix | Link rtl.css/cjk.css to HTML, activate RTL/CJK infrastructure | **Ready to execute** |
+| 34.1 | CSS Integration Fix | Link rtl.css/cjk.css to HTML, activate RTL/CJK infrastructure | **Complete** |
 
 ---
 
@@ -303,7 +303,7 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 **Plans:** 1 plan
 
 Plans:
-- [ ] 34.1-01-PLAN.md — Create add-css-links.js script, link CSS to all 410 HTML pages
+- [x] 34.1-01-PLAN.md — Create add-css-links.js script, link CSS to all 410 HTML pages
 
 ---
 
@@ -378,7 +378,7 @@ Plans:
 | 32 | v2.2 | Complete | 2026-02-04 |
 | 33 | v2.2 | Complete | 2026-02-04 |
 | 34 | v2.2 | Complete | 2026-02-04 |
-| 34.1 | v2.2 | Ready to execute | — |
+| 34.1 | v2.2 | Complete | 2026-02-04 |
 | 35 | v3.0 | Complete | 2026-02-04 |
 | 36 | v3.0 | Not started | — |
 | 37 | v3.0 | Not started | — |
@@ -386,4 +386,4 @@ Plans:
 
 ---
 
-*Last updated: 2026-02-04 — Phase 36 planned*
+*Last updated: 2026-02-04 — Phase 34.1 complete, v2.2 milestone done*
