@@ -14,9 +14,9 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 ## Current Position
 
 **Current Milestone:** v2.2 Language Infrastructure
-**Phase:** Phase 33 complete, ready for Phase 34
+**Phase:** Phase 34 Plan 01 complete
 **Status:** In Progress
-**Last activity:** 2026-02-04 — Phase 33 complete (RTL CSS infrastructure)
+**Last activity:** 2026-02-04 — Completed Phase 34 Plan 01 (CJK CSS infrastructure)
 
 ```
 Milestones:
@@ -71,7 +71,7 @@ v3.0 Human Review + Tests  [Queued]             ..........
 |-------|------|--------------|--------|
 | 32 | Translation Workflow | TRANS-01 to TRANS-04, SEO-01, SEO-02 | **Complete** |
 | 33 | RTL Infrastructure | RTL-01 to RTL-04 | **Complete** |
-| 34 | CJK Infrastructure | CJK-01 to CJK-04 | Queued |
+| 34 | CJK Infrastructure | CJK-01 to CJK-04 | **In Progress (01 complete)** |
 
 ## v2.2 Summary
 
@@ -90,6 +90,16 @@ v3.0 Human Review + Tests  [Queued]             ..........
 - Arabic font stack (Geeza Pro, Arabic Typesetting, Tahoma)
 - Automatic icon mirroring for RTL contexts
 - Mobile navigation RTL support
+
+**Phase 34 Plan 01 delivered:**
+- cjk.css with CJK typography infrastructure (260 lines)
+- Chinese font stacks (Simplified: PingFang SC, YaHei; Traditional: PingFang TC, JhengHei)
+- Japanese font stack (Hiragino Sans, Yu Gothic, Noto Sans JP)
+- Korean font stack (Noto Sans KR, Nanum Gothic, Malgun Gothic)
+- Line-height adjustments (1.8 body, 1.5 headings) for dense CJK characters
+- Global italic override (font-style: normal) for all CJK languages
+- Text-emphasis marks (Japanese dots above, Chinese sesame below, Korean bold)
+- Word-break rules for character-level wrapping in Chinese/Japanese
 
 **Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese).
 
@@ -158,6 +168,11 @@ From prior milestones:
 | 33-01 | Direction variable system | Mathematical direction calculations (--text-x-direction: 1/-1) |
 | 33-01 | Noto Sans Arabic primary font | Comprehensive glyph support with Tajawal fallback |
 | 33-01 | Automatic icon mirroring | transform: scaleX(-1) on directional icons in RTL |
+| 34-01 | System fonts over web fonts | PingFang, YaHei, Hiragino avoid 15MB+ downloads |
+| 34-01 | Global italic override for CJK | font-style: normal !important (CJK doesn't use slanted text) |
+| 34-01 | Line-height 1.8 for CJK | Dense characters need more vertical space than Latin |
+| 34-01 | Text-emphasis as enhancement | Japanese dots above, Chinese sesame below, Korean bold |
+| 34-01 | Multi-region Chinese support | Separate stacks for Simplified (zh-CN) and Traditional (zh-TW, zh-HK) |
 
 ### Research Completed
 
@@ -183,17 +198,18 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-04
-**Stopped at:** Phase 33 Plan 01 complete (RTL CSS infrastructure)
+**Last session:** 2026-02-04 15:51
+**Stopped at:** Phase 34 Plan 01 complete (CJK CSS infrastructure)
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md + .planning/phases/33-rtl-infrastructure/33-01-SUMMARY.md
-2. **Where we are:** Phase 33 Plan 01 complete, ready for Phase 34
+1. **Context to load:** This STATE.md + .planning/phases/34-cjk-infrastructure/34-01-SUMMARY.md
+2. **Where we are:** Phase 34 Plan 01 complete
 3. **What to do next:**
-   - Phase 34: CJK Infrastructure (Chinese CSS)
-   - Or continue Phase 33 if additional RTL plans exist
+   - Check if Phase 34 has additional plans (02, 03, etc.)
+   - Otherwise, Phase 34 is complete
+   - Verify progress on v2.2 Language Infrastructure milestone
 
 ---
 
