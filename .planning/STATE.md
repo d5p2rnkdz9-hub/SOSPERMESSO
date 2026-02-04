@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-04
-**Status:** Milestone v2.2 in progress
+**Status:** Milestone v2.2 complete
 
 ## Project Reference
 
@@ -9,14 +9,14 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v2.2 Language Infrastructure — Phase 34 (CJK Infrastructure) next
+**Current focus:** v2.2 Language Infrastructure complete — ready for v3.0
 
 ## Current Position
 
 **Current Milestone:** v2.2 Language Infrastructure
-**Phase:** Phase 34 Plan 01 complete
-**Status:** In Progress
-**Last activity:** 2026-02-04 — Completed Phase 34 Plan 01 (CJK CSS infrastructure)
+**Phase:** Phase 34 complete — milestone complete
+**Status:** Complete
+**Last activity:** 2026-02-04 — Phase 34 complete (CJK CSS infrastructure) — v2.2 milestone complete
 
 ```
 Milestones:
@@ -32,7 +32,7 @@ v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
 v2.0 Translations          [Shipped 2026-02-02] ##########
 v2.1 Homepage Redesign     [Shipped 2026-02-03] ##########
-v2.2 Language Infra        [In Progress]        ######....
+v2.2 Language Infra        [Shipped 2026-02-04] ##########
 v3.0 Human Review + Tests  [Queued]             ..........
 ```
 
@@ -65,13 +65,13 @@ v3.0 Human Review + Tests  [Queued]             ..........
 - Phase 30: Header/Footer propagation to all pages
 - Phase 31: Hover effects, scroll fade-ins, mobile polish
 
-## v2.2 Phases (Current)
+## v2.2 Phases (SHIPPED)
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 32 | Translation Workflow | TRANS-01 to TRANS-04, SEO-01, SEO-02 | **Complete** |
 | 33 | RTL Infrastructure | RTL-01 to RTL-04 | **Complete** |
-| 34 | CJK Infrastructure | CJK-01 to CJK-04 | **In Progress (01 complete)** |
+| 34 | CJK Infrastructure | CJK-01 to CJK-04 | **Complete** |
 
 ## v2.2 Summary
 
@@ -198,18 +198,17 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-04 15:51
-**Stopped at:** Phase 34 Plan 01 complete (CJK CSS infrastructure)
+**Last session:** 2026-02-04
+**Stopped at:** v2.2 Language Infrastructure milestone complete
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md + .planning/phases/34-cjk-infrastructure/34-01-SUMMARY.md
-2. **Where we are:** Phase 34 Plan 01 complete
+1. **Context to load:** This STATE.md
+2. **Where we are:** v2.2 milestone complete (Phases 32, 33, 34)
 3. **What to do next:**
-   - Check if Phase 34 has additional plans (02, 03, etc.)
-   - Otherwise, Phase 34 is complete
-   - Verify progress on v2.2 Language Infrastructure milestone
+   - `/gsd:audit-milestone` — verify cross-phase integration before archiving
+   - Or `/gsd:complete-milestone` — archive v2.2 and start v3.0
 
 ---
 

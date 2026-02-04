@@ -15,7 +15,7 @@
 |-------|------|------|--------|
 | 32 | Translation Workflow | Notion change detection, page hashing, translation memory, sitemaps | **Complete** |
 | 33 | RTL Infrastructure | CSS logical properties, direction support, Arabic fonts | **Complete** |
-| 34 | CJK Infrastructure | Chinese fonts, typography rules, word-break | Queued |
+| 34 | CJK Infrastructure | Chinese fonts, typography rules, word-break | **Complete** |
 
 ---
 
@@ -104,7 +104,7 @@ cp src/pages/chi-siamo.html src/pages/test-rtl.html
 **Plans:** 1 plan
 
 Plans:
-- [ ] 34-01-PLAN.md — Create cjk.css with font stacks, line-height, italic overrides, word-break rules
+- [x] 34-01-PLAN.md — Create cjk.css with font stacks, line-height, italic overrides, word-break rules
 
 **Success Criteria:**
 1. Add `lang="zh"` to any page → Chinese fonts load
@@ -321,9 +321,9 @@ cp src/pages/chi-siamo.html src/pages/test-cjk.html
 | 28-29 | v2.1 | Complete | 2026-02-03 |
 | 32 | v2.2 | Complete | 2026-02-04 |
 | 33 | v2.2 | Complete | 2026-02-04 |
-| 34 | v2.2 | Queued | — |
+| 34 | v2.2 | Complete | 2026-02-04 |
 | 30-31 | v3.0 | Deferred | — |
 
 ---
 
-*Last updated: 2026-02-04 — Phase 33 complete (RTL infrastructure)*
+*Last updated: 2026-02-04 — Phase 34 complete (CJK infrastructure) — v2.2 Language Infrastructure milestone complete*
