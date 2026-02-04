@@ -1,22 +1,22 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-03
-**Status:** Milestone v2.1 shipped
+**Last Updated:** 2026-02-04
+**Status:** Milestone v2.2 in progress
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-02-02)
+See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v2.1 Homepage CSS Redesign — SHIPPED
+**Current focus:** v2.2 Language Infrastructure — Phase 33 (RTL Infrastructure) next
 
 ## Current Position
 
-**Current Milestone:** v2.1 Homepage CSS Redesign — COMPLETE
-**Phase:** All phases complete (28-29), remaining deferred to v3.0
-**Status:** Shipped
-**Last activity:** 2026-02-03 — v2.1 shipped, Phases 30-31 deferred to v3.0
+**Current Milestone:** v2.2 Language Infrastructure
+**Phase:** Phase 32 complete, ready for Phase 33
+**Status:** In Progress
+**Last activity:** 2026-02-04 — Phase 32 shipped (content hashing, translation memory, multilingual sitemaps)
 
 ```
 Milestones:
@@ -32,7 +32,7 @@ v1.8 Homepage + Costi      [Skipped]            ..........
 v1.9 SEO Foundations       [Shipped 2026-01-31] ##########
 v2.0 Translations          [Shipped 2026-02-02] ##########
 v2.1 Homepage Redesign     [Shipped 2026-02-03] ##########
-v2.2 Localization Infra    [Queued]             ..........
+v2.2 Language Infra        [In Progress]        ###.......
 v3.0 Human Review + Tests  [Queued]             ..........
 ```
 
@@ -65,17 +65,38 @@ v3.0 Human Review + Tests  [Queued]             ..........
 - Phase 30: Header/Footer propagation to all pages
 - Phase 31: Hover effects, scroll fade-ins, mobile polish
 
-## v2.2 Preview (Queued)
+## v2.2 Phases (Current)
 
-**Goal:** Scalable infrastructure for 8-12 languages with paragraph-level change tracking.
+| Phase | Name | Requirements | Status |
+|-------|------|--------------|--------|
+| 32 | Translation Workflow | TRANS-01 to TRANS-04, SEO-01, SEO-02 | **Complete** |
+| 33 | RTL Infrastructure | RTL-01 to RTL-04 | Queued |
+| 34 | CJK Infrastructure | CJK-01 to CJK-04 | Queued |
 
-Key features planned:
-- Content extraction from Notion with paragraph-level IDs
-- Hash-based change detection + selective translation
-- Translation memory (store translations by content hash)
-- Multi-language HTML generation from single pipeline
-- hreflang in sitemaps, sitemap index architecture
-- RTL CSS preparation for Arabic
+## v2.2 Summary
+
+**Phase 32 delivered:**
+- MD5 content hashing for accurate change detection in build-permits.js
+- Translation memory module (scripts/translation-memory.js)
+- Multilingual sitemap index (sitemap-index.xml)
+- Per-language sitemaps with hreflang tags (sitemap-it.xml, sitemap-en.xml)
+- robots.txt updated to point to sitemap-index.xml
+- npm run tm:stats script for translation memory statistics
+
+**Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese).
+
+**Key approach decisions:**
+- **Page-level hashing** (not paragraph-level) — simpler, sufficient for current needs
+- **Hybrid change detection** — use Notion `last_edited_time` as cheap filter, then hash content to confirm actual changes
+- **Translation memory as JSON** — no database, version-controlled with git
+- **Sitemap index architecture** — master sitemap pointing to per-language sitemaps with hreflang
+
+**Verification method:**
+1. Edit a test page in Notion, run build → only that page rebuilds
+2. Run build again without changes → no pages rebuild (hashes match)
+3. Add `lang="ar"` to test page → layout mirrors correctly
+4. Add `lang="zh"` to test page → Chinese fonts render correctly
+5. Check sitemap-index.xml links to all language sitemaps with correct hreflang
 
 ## v2.0 Status (Complete)
 
@@ -119,9 +140,12 @@ From prior milestones:
 | v2.1 | Skip feature badge row | Not essential for initial redesign |
 | 20 | Claude Code subagents for translation | User preferred existing subscription over API setup |
 | v2.0 | /en/ subfolder for English pages | Not subdomain |
-| v2.2 | Paragraph-level tracking | Enables selective re-translation, not full page |
+| v2.2 | Page-level hashing (not paragraph) | Simpler, sufficient for current content change frequency |
+| v2.2 | Hybrid Notion change detection | Timestamp filter (cheap) + hash confirm (accurate) |
+| v2.2 | Translation memory as JSON | No database, version-controlled with git |
 | v2.2 | hreflang in sitemaps, not HTML | Scales better for 8-12 languages |
 | v2.2 | RTL CSS with logical properties | Preparation for Arabic support |
+| v2.2 | CJK font stack + typography | Preparation for Chinese support |
 
 ### Research Completed
 
@@ -147,17 +171,17 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-03
-**Stopped at:** v2.1 shipped
+**Last session:** 2026-02-04
+**Stopped at:** Phase 32 shipped
 **Resume file:** None
 
 **For next session:**
 
-1. **Context to load:** This STATE.md
-2. **Where we are:** v2.1 complete, ready for v2.2 or v3.0
+1. **Context to load:** This STATE.md + ROADMAP.md (v2.2 phases)
+2. **Where we are:** Phase 32 complete, v2.2 in progress
 3. **What to do next:**
-   - v2.2: Localization Infrastructure (paragraph-level tracking, translation memory)
-   - v3.0: Human review + tests + deferred polish (Phases 30-31)
+   - Phase 33: RTL Infrastructure (Arabic CSS)
+   - Phase 34: CJK Infrastructure (Chinese CSS)
 
 ---
 

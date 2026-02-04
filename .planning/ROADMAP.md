@@ -1,11 +1,142 @@
 # Roadmap: SOS Permesso
 
-**Current Milestone:** v2.1 Homepage CSS Redesign
-**Started:** 2026-02-02
+**Current Milestone:** v2.2 Language Infrastructure
+**Started:** 2026-02-03
 
 ---
 
-## v2.1 Homepage CSS Redesign
+## v2.2 Language Infrastructure
+
+> **Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese) languages.
+
+### Phases
+
+| Phase | Name | Goal | Status |
+|-------|------|------|--------|
+| 32 | Translation Workflow | Notion change detection, page hashing, translation memory, sitemaps | **Complete** |
+| 33 | RTL Infrastructure | CSS logical properties, direction support, Arabic fonts | Queued |
+| 34 | CJK Infrastructure | Chinese fonts, typography rules, word-break | Queued |
+
+---
+
+## Phase Details (v2.2)
+
+### Phase 32: Translation Workflow
+
+**Goal:** Build system detects Notion changes and only rebuilds/re-translates affected pages.
+
+**Dependencies:** None (first phase of v2.2)
+
+**Requirements:**
+- TRANS-01: Notion-based change detection using hybrid approach (timestamp + hash)
+- TRANS-02: Page-level content hashing before HTML generation
+- TRANS-03: Translation memory stored as JSON files
+- TRANS-04: Build script skips unchanged pages
+- SEO-01: EN sitemap generated
+- SEO-02: Sitemap index architecture with hreflang tags
+
+**Success Criteria:**
+1. Edit a page in Notion, run build → only that page rebuilds (verify via console output)
+2. Run build again without Notion changes → zero pages rebuild (hashes match)
+3. `sitemap-index.xml` exists and links to `sitemap-it.xml`, `sitemap-en.xml`
+4. Each language sitemap includes hreflang alternates for all supported languages
+
+**Verification commands:**
+```bash
+# Test 1: Change detection
+node scripts/build-permits.js --verbose  # Should show which pages rebuilt
+
+# Test 2: No changes = no rebuilds
+node scripts/build-permits.js --verbose  # Should show "0 pages changed"
+
+# Test 3: Sitemap structure
+cat sitemap-index.xml  # Verify links to language sitemaps
+grep -c "hreflang" sitemap-en.xml  # Should show hreflang entries
+```
+
+---
+
+### Phase 33: RTL Infrastructure
+
+**Goal:** CSS supports right-to-left languages (Arabic, Hebrew) with correct layout mirroring.
+
+**Dependencies:** Phase 32 (translation workflow must exist)
+
+**Requirements:**
+- RTL-01: CSS uses logical properties (inline-start/end instead of left/right)
+- RTL-02: `[lang="ar"]` selector applies `direction: rtl`
+- RTL-03: Navigation, icons, arrows mirror correctly in RTL mode
+- RTL-04: Arabic font stack defined
+
+**Success Criteria:**
+1. Add `lang="ar"` to any page → text aligns right, layout mirrors
+2. Navigation flows right-to-left
+3. Margins/paddings use logical properties (no hardcoded left/right)
+4. Arabic text renders with appropriate font
+
+**Verification method:**
+```bash
+# Create test page
+cp src/pages/chi-siamo.html src/pages/test-rtl.html
+# Edit to add lang="ar" to <html> tag
+# Open in browser, verify layout mirrors
+```
+
+---
+
+### Phase 34: CJK Infrastructure
+
+**Goal:** CSS supports Chinese/Japanese/Korean with correct typography and fonts.
+
+**Dependencies:** Phase 32 (translation workflow must exist)
+
+**Requirements:**
+- CJK-01: Chinese font stack defined (`PingFang SC`, `Microsoft YaHei`, `Noto Sans SC`)
+- CJK-02: `[lang="zh"]` disables italics (use `font-style: normal`)
+- CJK-03: Line-height adjusted for CJK characters
+- CJK-04: Word-break rules for Chinese (no spaces between words)
+
+**Success Criteria:**
+1. Add `lang="zh"` to any page → Chinese fonts load
+2. No italic text appears (CJK doesn't use italics)
+3. Long Chinese text wraps correctly without breaking mid-character
+4. Line spacing looks appropriate for dense character sets
+
+**Verification method:**
+```bash
+# Create test page with Chinese content
+cp src/pages/chi-siamo.html src/pages/test-cjk.html
+# Edit to add lang="zh" and sample Chinese text
+# Open in browser, verify fonts and typography
+```
+
+---
+
+## Coverage Validation (v2.2)
+
+| Requirement | Phase | Description |
+|-------------|-------|-------------|
+| TRANS-01 | 32 | Notion change detection (timestamp + hash) |
+| TRANS-02 | 32 | Page-level content hashing |
+| TRANS-03 | 32 | Translation memory (JSON) |
+| TRANS-04 | 32 | Skip unchanged pages |
+| SEO-01 | 32 | EN sitemap |
+| SEO-02 | 32 | Sitemap index + hreflang |
+| RTL-01 | 33 | CSS logical properties |
+| RTL-02 | 33 | Direction support |
+| RTL-03 | 33 | Layout mirroring |
+| RTL-04 | 33 | Arabic fonts |
+| CJK-01 | 34 | Chinese fonts |
+| CJK-02 | 34 | No italics |
+| CJK-03 | 34 | Line-height |
+| CJK-04 | 34 | Word-break |
+
+**Mapped:** 14/14 requirements
+**Orphaned:** 0
+
+---
+
+## v2.1 Homepage CSS Redesign (Shipped)
 
 > **Goal:** Transform the homepage into a modern "startup SaaS" aesthetic with split hero layout, display typography, and cleaner white/black/yellow palette. Scope limited to homepage; header/footer changes propagate via shared CSS.
 
@@ -178,8 +309,10 @@
 | 18 | v1.9 | Complete | 2026-01-31 |
 | 20 | v2.0 | Complete | 2026-02-02 |
 | 28-29 | v2.1 | Complete | 2026-02-03 |
+| 32 | v2.2 | Complete | 2026-02-04 |
+| 33-34 | v2.2 | Queued | — |
 | 30-31 | v3.0 | Deferred | — |
 
 ---
 
-*Last updated: 2026-02-03 — v2.1 shipped, Phases 30-31 deferred to v3.0*
+*Last updated: 2026-02-04 — Phase 32 shipped (translation workflow)*

@@ -6,7 +6,15 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current State
 
-**Last Shipped:** v2.0 Multilingual Foundation (2026-02-02)
+**Last Shipped:** v2.2 Phase 32 Translation Workflow (2026-02-04)
+
+**What was delivered (v2.2 Phase 32):**
+- MD5 content hashing for accurate change detection in build-permits.js
+- Translation memory module (scripts/translation-memory.js) for caching translations
+- Multilingual sitemap index (sitemap-index.xml) pointing to per-language sitemaps
+- Per-language sitemaps with hreflang tags (sitemap-it.xml, sitemap-en.xml, 171 URLs each)
+- robots.txt updated to point to sitemap-index.xml
+- npm run tm:stats script for translation memory statistics
 
 **What was delivered (v2.0):**
 - Translated all 209 pages (208 content + homepage) from Italian to English
@@ -91,6 +99,10 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ All 209 pages translated IT → EN with glossary — v2.0
 - ✓ Language switcher UI (IT ↔ EN toggle) — v2.0
 - ✓ EN pages in /en/ subfolder with correct CSS/JS paths — v2.0
+- ✓ Content hashing for incremental builds (hash Notion blocks before HTML) — v2.2
+- ✓ Translation memory infrastructure (JSON-based, git-versioned) — v2.2
+- ✓ Sitemap index architecture with per-language sitemaps — v2.2
+- ✓ hreflang tags in sitemaps linking IT ↔ EN equivalents — v2.2
 
 ### Active
 
@@ -114,19 +126,37 @@ Users can quickly find accurate, understandable information about their specific
 
 ---
 
-**Upcoming: v2.2 Localization Infrastructure**
+**Current: v2.2 Language Infrastructure**
 
-**Goal:** Scalable infrastructure for 8-12 languages with paragraph-level change tracking.
+**Goal:** Scalable translation workflow with Notion-based change detection + CSS foundations for RTL (Arabic) and CJK (Chinese) languages.
 
-**Target features:**
-- Content extraction from Notion with paragraph-level IDs
-- Hash-based change detection for paragraphs
-- Diff engine + selective translation (only changed paragraphs)
-- Translation memory (store translations keyed by content hash)
-- Multi-language HTML generation from single pipeline
-- hreflang tags in sitemaps (not HTML)
-- Sitemap index architecture for 8-12 languages
-- RTL CSS infrastructure preparation (for Arabic)
+**Phase A: Translation Workflow — COMPLETE (Phase 32)**
+- ✓ Content hashing for incremental builds
+- ✓ Translation memory module
+- ✓ Multilingual sitemaps with hreflang
+
+**Phase B: RTL Infrastructure (Arabic) — Next (Phase 33)**
+- CSS logical properties (`margin-inline-start` instead of `margin-left`, etc.)
+- Direction support (`[lang="ar"] { direction: rtl; }`)
+- Layout mirroring (navigation, icons, arrows flip correctly)
+- Arabic font stack
+
+**Phase C: CJK Infrastructure (Chinese)**
+- Chinese font stack (`"PingFang SC", "Microsoft YaHei", "Noto Sans SC"`)
+- Typography rules (no italics, adjusted line-height)
+- Word-break rules for Chinese characters
+
+**Verification method:**
+1. Edit a test page in Notion, run build → only that page rebuilds
+2. Run build again without changes → no pages rebuild (hashes match)
+3. Add `lang="ar"` to test page → layout mirrors correctly
+4. Add `lang="zh"` to test page → Chinese fonts render correctly
+5. Check sitemap-index.xml links to all language sitemaps with correct hreflang
+
+**Not included (deferred):**
+- Paragraph-level tracking (page-level sufficient for now)
+- Actual AR/ZH translations (just the infrastructure)
+- Human review workflow (v3.0)
 
 ---
 
@@ -155,7 +185,7 @@ Users can quickly find accurate, understandable information about their specific
 - Build infrastructure: package.json, @notionhq/client, dotenv, netlify.toml
 - Notion database powers both document and permit page content
 - Build scripts: `scripts/build-documents.js`, `scripts/build-permits.js`, `scripts/build-sitemap.js`
-- SEO infrastructure: robots.txt + sitemap.xml (IT only, 174 pages) — EN sitemap missing
+- SEO infrastructure: robots.txt + sitemap-index.xml + sitemap-it.xml + sitemap-en.xml (171 URLs each with hreflang)
 - Translation glossary: `scripts/translation-glossary.json` (35+ terms)
 - Language switcher in header: IT ↔ EN functional, FR/ES/ZH show "coming soon"
 - Warm teal/coral color palette with blue triangle bullets
@@ -163,13 +193,14 @@ Users can quickly find accurate, understandable information about their specific
 - Yellow footer with centered layout
 - Mobile-optimized: simplified hamburger menu (categories only, no dropdowns)
 
-**Translation infrastructure (current, non-scalable):**
+**Translation infrastructure (v2.2 Phase 32):**
+- Content hashing for change detection (MD5 of Notion blocks)
+- Translation memory module (scripts/translation-memory.js)
+- Manifest tracks contentHash per page for incremental builds
+- Multilingual sitemaps with hreflang tags (sitemap-it.xml, sitemap-en.xml)
+- robots.txt points to sitemap-index.xml
 - Batch translation via Claude Code subagents (manual process)
-- Full-page translation (no paragraph-level tracking)
-- No change detection — any IT edit requires full re-translation
-- No translation memory — unchanged paragraphs re-translated
 - Hardcoded `/en/` path detection in app.js
-- No hreflang tags — SEO treats IT/EN as duplicates
 
 **Design patterns established:**
 - Database list style (`.permit-list`, `.category-section`)
@@ -228,11 +259,11 @@ Users can quickly find accurate, understandable information about their specific
 | Modern SaaS homepage aesthetic | Visual refresh, more professional feel | — Pending |
 | Playfair Display + Inter fonts | Serif display for hero, sans for body | — Pending |
 | Homepage-first, propagate later | Test design on homepage before full rollout | — Pending |
-| Paragraph-level change tracking | Enables selective re-translation, not full page | — Pending (v2.2) |
-| hreflang in sitemaps, not HTML | Scales better for 8-12 languages | — Pending (v2.2) |
-| Sitemap index architecture | One master sitemap pointing to per-language sitemaps | — Pending (v2.2) |
-| Translation memory by content hash | Reuse translations for unchanged paragraphs | — Pending (v2.2) |
+| Page-level content hashing | Hash Notion blocks before HTML for change detection | ✓ Good — v2.2 |
+| hreflang in sitemaps, not HTML | Scales better for 8-12 languages | ✓ Good — v2.2 |
+| Sitemap index architecture | One master sitemap pointing to per-language sitemaps | ✓ Good — v2.2 |
+| Translation memory by content hash | Reuse translations for unchanged paragraphs | ✓ Good — v2.2 |
 | RTL CSS with logical properties | Preparation for Arabic, Hebrew support | — Pending (v2.2) |
 
 ---
-*Last updated: 2026-02-02 after v2.1 Homepage CSS Redesign milestone started*
+*Last updated: 2026-02-04 — v2.2 Phase 32 shipped (translation workflow)*
