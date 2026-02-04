@@ -101,6 +101,11 @@ cp src/pages/chi-siamo.html src/pages/test-rtl.html
 - CJK-03: Line-height adjusted for CJK characters
 - CJK-04: Word-break rules for Chinese (no spaces between words)
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 34-01-PLAN.md — Create cjk.css with font stacks, line-height, italic overrides, word-break rules
+
 **Success Criteria:**
 1. Add `lang="zh"` to any page → Chinese fonts load
 2. No italic text appears (CJK doesn't use italics)
