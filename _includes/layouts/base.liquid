@@ -42,11 +42,11 @@
 </head>
 <body>
 
-  {%- comment -%}Header include goes here in Plan 02{%- endcomment -%}
+  {% include "components/header.liquid" %}
 
   {{ content }}
 
-  {%- comment -%}Footer include goes here in Plan 02{%- endcomment -%}
+  {% include "components/footer.liquid" %}
 
   <!-- Scripts -->
   <script src="{{ '/src/scripts/app.js' | url }}"></script>
