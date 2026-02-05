@@ -16,30 +16,30 @@ Requirements for 11ty Migration milestone. Structural migration only — same co
 
 ### Components
 
-- [ ] **COMP-01**: Base layout template contains HTML structure (doctype, head, body)
-- [ ] **COMP-02**: Header extracted as reusable include
-- [ ] **COMP-03**: Footer extracted as reusable include
-- [ ] **COMP-04**: Navigation (desktop + mobile) extracted as reusable include
-- [ ] **COMP-05**: Language switcher extracted as reusable include
+- [x] **COMP-01**: Base layout template contains HTML structure (doctype, head, body)
+- [x] **COMP-02**: Header extracted as reusable include
+- [x] **COMP-03**: Footer extracted as reusable include
+- [x] **COMP-04**: Navigation (desktop + mobile) extracted as reusable include
+- [x] **COMP-05**: Language switcher extracted as reusable include
 
 ### Pages
 
-- [ ] **PAGE-01**: All IT pages (~260) converted to use shared layouts
-- [ ] **PAGE-02**: All EN pages (~209) converted to use shared layouts
-- [ ] **PAGE-03**: Front matter contains page metadata (title, lang, layout)
-- [ ] **PAGE-04**: Page content preserved exactly (no content changes)
+- [x] **PAGE-01**: All IT pages (~260) converted to use shared layouts
+- [x] **PAGE-02**: All EN pages (~209) converted to use shared layouts
+- [x] **PAGE-03**: Front matter contains page metadata (title, lang, layout)
+- [x] **PAGE-04**: Page content preserved exactly (no content changes)
 
 ### Multilingual
 
-- [ ] **I18N-01**: IT pages output to root directory (/)
-- [ ] **I18N-02**: EN pages output to /en/ directory
-- [ ] **I18N-03**: HTML lang attribute correct for each language
+- [x] **I18N-01**: IT pages output to root directory (/)
+- [x] **I18N-02**: EN pages output to /en/ directory
+- [x] **I18N-03**: HTML lang attribute correct for each language
 
 ### Deployment
 
-- [ ] **DEPLOY-01**: netlify.toml configured for 11ty build
-- [ ] **DEPLOY-02**: Production deploy successful on Netlify
-- [ ] **DEPLOY-03**: Build completes in under 60 seconds
+- [x] **DEPLOY-01**: netlify.toml configured for 11ty build
+- [x] **DEPLOY-02**: Production deploy successful on Netlify
+- [x] **DEPLOY-03**: Build completes in under 60 seconds
 
 ## v3.1 Requirements (Deferred)
 
@@ -81,21 +81,21 @@ Features deferred from v3.0 — can add after migration stable.
 | SETUP-02 | 35 | Complete |
 | SETUP-03 | 35 | Complete |
 | SETUP-04 | 35 | Complete |
-| COMP-01 | 36 | Pending |
-| COMP-02 | 36 | Pending |
-| COMP-03 | 36 | Pending |
-| COMP-04 | 36 | Pending |
-| COMP-05 | 36 | Pending |
-| PAGE-01 | 37 | Pending |
-| PAGE-02 | 37 | Pending |
-| PAGE-03 | 37 | Pending |
-| PAGE-04 | 37 | Pending |
-| I18N-01 | 37 | Pending |
-| I18N-02 | 37 | Pending |
-| I18N-03 | 37 | Pending |
-| DEPLOY-01 | 38 | Pending |
-| DEPLOY-02 | 38 | Pending |
-| DEPLOY-03 | 38 | Pending |
+| COMP-01 | 36 | Complete |
+| COMP-02 | 36 | Complete |
+| COMP-03 | 36 | Complete |
+| COMP-04 | 36 | Complete |
+| COMP-05 | 36 | Complete |
+| PAGE-01 | 37 | Complete |
+| PAGE-02 | 37 | Complete |
+| PAGE-03 | 37 | Complete |
+| PAGE-04 | 37 | Complete |
+| I18N-01 | 37 | Complete |
+| I18N-02 | 37 | Complete |
+| I18N-03 | 37 | Complete |
+| DEPLOY-01 | 38 | Complete |
+| DEPLOY-02 | 38 | Complete |
+| DEPLOY-03 | 38 | Complete |
 
 **Coverage:**
 - v3.0 requirements: 19 total
@@ -104,4 +104,4 @@ Features deferred from v3.0 — can add after migration stable.
 
 ---
 *Requirements defined: 2026-02-04*
-*Last updated: 2026-02-04 — Phase 35 requirements complete*
+*Last updated: 2026-02-05 — v3.0 Migration complete (all 19 requirements satisfied)*

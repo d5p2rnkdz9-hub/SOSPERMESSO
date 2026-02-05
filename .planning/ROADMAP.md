@@ -16,7 +16,7 @@
 | 35 | Setup | Install 11ty, configure passthrough, validate URLs | **Complete** |
 | 36 | Components | Extract header, footer, nav, language switcher | **Complete** |
 | 37 | Pages | Convert all IT/EN pages to use layouts | **Complete** |
-| 38 | Deployment | Configure Netlify, deploy to production | **Not started** |
+| 38 | Deployment | Configure Netlify, deploy to production | **Complete** |
 
 ---
 
@@ -130,7 +130,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 38-01-PLAN.md — Configure netlify.toml and package.json for combined Notion + 11ty build
+- [x] 38-01-PLAN.md — Configure netlify.toml and package.json for combined Notion + 11ty build
 
 ---
 
@@ -385,8 +385,8 @@ Plans:
 | 35 | v3.0 | Complete | 2026-02-04 |
 | 36 | v3.0 | Complete | 2026-02-05 |
 | 37 | v3.0 | Complete | 2026-02-05 |
-| 38 | v3.0 | Not started | — |
+| 38 | v3.0 | Complete | 2026-02-05 |
 
 ---
 
-*Last updated: 2026-02-05 — Phase 38 planned (1 plan)*
+*Last updated: 2026-02-05 — v3.0 11ty Migration COMPLETE*
