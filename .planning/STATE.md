@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-04
-**Status:** Phase 34.1-01 complete (CSS Integration Fix), v3.0 Phase 35 ready
+**Last Updated:** 2026-02-05
+**Status:** Phase 36-01 complete (Foundation data files and base layout), ready for 36-02
 
 ## Project Reference
 
@@ -9,18 +9,18 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** Gap closure (v2.2) and v3.0 11ty Migration preparation
+**Current focus:** v3.0 11ty Migration - Component extraction
 
 ## Current Position
 
 **Current Milestone:** v3.0 11ty Migration
-**Phase:** 35 of 38 (Setup)
-**Plan:** 1 of 1 complete
-**Status:** Phase 35 complete
-**Last activity:** 2026-02-04 — Completed 34.1-01-PLAN.md (CSS Integration Fix)
+**Phase:** 36 of 38 (Components)
+**Plan:** 1 of 3 complete
+**Status:** In progress
+**Last activity:** 2026-02-05 — Completed 36-01-PLAN.md (Foundation)
 
 ```
-Progress: [██░░░░░░░░] 25% (1/4 phases complete)
+Progress: [████░░░░░░] 40% (2/5 phases complete: 35, 36-01)
 ```
 
 ## v3.0 Phases
@@ -28,16 +28,16 @@ Progress: [██░░░░░░░░] 25% (1/4 phases complete)
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 35 | Setup | SETUP-01 to SETUP-04 | COMPLETE |
-| 36 | Components | COMP-01 to COMP-05 | Ready |
+| 36 | Components | COMP-01 to COMP-05 | Plan 01 complete |
 | 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | Queued |
 | 38 | Deployment | DEPLOY-01 to DEPLOY-03 | Queued |
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2 (v2.2 + v3.0 milestones)
-- Average duration: 5 min
-- Total execution time: 10 min
+- Total plans completed: 3 (v2.2 + v3.0 milestones)
+- Average duration: 4.3 min
+- Total execution time: 13 min
 
 **By Phase:**
 
@@ -45,11 +45,13 @@ Progress: [██░░░░░░░░] 25% (1/4 phases complete)
 |-------|-------|-------|----------|
 | 34.1 | 1 | 5 min | 5 min |
 | 35 | 1 | 5 min | 5 min |
+| 36 | 1 | 3 min | 3 min |
 
 **Recent Trend:**
 - Phase 34.1 Plan 01: 5 min (2 tasks, 1 deviation auto-fixed)
 - Phase 35 Plan 01: 5 min (3 tasks, 5 deviations auto-fixed)
-- Trend: Fast execution with effective deviation handling
+- Phase 36 Plan 01: 3 min (3 tasks, 0 deviations)
+- Trend: Fast execution, plan quality improving (no deviations needed)
 
 *Updated after each plan completion*
 
@@ -92,6 +94,11 @@ From prior milestones (carry forward):
 - Directory data files for URL preservation
 - Ignore pattern for non-template directories
 
+**Data layer patterns (established in Phase 36-01):**
+- CommonJS format for data files (`module.exports = {}`)
+- Language-keyed data structures (it/en) for nav/footer
+- url filter for all asset paths in templates
+
 **Existing patterns to preserve:**
 - CSS variables system in main.css
 - Mobile-first responsive design
@@ -112,6 +119,9 @@ Recent decisions affecting current work:
 - **35-01: ESM config file (.mjs)** — Used .mjs extension for 11ty config because project is CommonJS
 - **35-01: Global computed permalink** — _data/eleventyComputed.js handles all HTML files
 - **35-01: Retained directory data files** — Kept for explicitness as defense-in-depth
+- **36-01: CommonJS for data files** — Matches existing eleventyComputed.js
+- **36-01: Language-keyed data** — nav.js and footer.js keyed by language code (it/en)
+- **36-01: external flag for links** — Typeform links marked with `external: true`
 
 ### Research Completed
 
@@ -132,11 +142,11 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-04
-**Stopped at:** Completed 34.1-01-PLAN.md (CSS Integration Fix)
+**Last session:** 2026-02-05
+**Stopped at:** Completed 36-01-PLAN.md (Foundation)
 **Resume file:** None
 
-**Next Action:** Phase 34.1 complete. v3.0 Phase 35 (11ty Setup) already complete. Ready for Phase 36 (Components) when needed.
+**Next Action:** Ready for Phase 36 Plan 02 (Header/Footer component includes).
 
 ---
 
