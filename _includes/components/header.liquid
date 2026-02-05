@@ -1,0 +1,22 @@
+<!-- Header Component -->
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="{% if lang == 'en' %}{{ '/en/' | url }}{% else %}{{ '/' | url }}{% endif %}" class="logo">
+        <img src="{{ '/IMAGES/logo-full.png' | url }}" alt="SOS Permesso" class="logo-image">
+      </a>
+
+      <!-- Language Switcher -->
+      {% include "components/language-switcher.liquid" %}
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        ☰
+      </button>
+
+      <!-- Navigation Menu -->
+      {% include "components/nav.liquid" %}
+    </nav>
+  </div>
+</header>

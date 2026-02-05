@@ -1,0 +1,18 @@
+<!-- Navigation Component -->
+<div class="nav-wrapper">
+  <ul class="nav-menu" id="nav-menu">
+    {% assign navData = nav[lang] | default: nav.it %}
+    {% for dropdown in navData.dropdowns %}
+    <li class="nav-item has-dropdown">
+      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link" aria-haspopup="true" aria-expanded="false"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}</a>
+      <ul class="nav-dropdown" role="menu">
+        {% for item in dropdown.items %}
+        <li role="none">
+          <a href="{% if item.external %}{{ item.href }}{% else %}{{ item.href | url }}{% endif %}" class="dropdown-link" role="menuitem"{% if item.external %} target="_blank"{% endif %}>{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
