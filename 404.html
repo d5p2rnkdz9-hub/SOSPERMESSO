@@ -1,40 +1,51 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Pagina non trovata | SOS Permesso</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="images/Favicon.svg">
-  <link rel="shortcut icon" type="image/svg+xml" href="images/Favicon.svg">
-  <link rel="apple-touch-icon" href="images/Favicon.svg">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/styles/main.css">
-  <link rel="stylesheet" href="src/styles/components.css">
-  <link rel="stylesheet" href="src/styles/animations.css">
-  <link rel="stylesheet" href="src/styles/mobile.css">
-  <link rel="stylesheet" href="src/styles/mobile-fix.css">
-</head>
-<body>
+---
+layout: layouts/base.liquid
+title: "404 - Pagina non trovata"
+lang: it
+extraStyles: |
+  <style>
+  
+      .hero-new {
+        position: relative;
+        overflow: hidden;
+      }
+  
+      @keyframes float-decoration {
+        0%, 100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+      }
+  
+      /* Make sure 404 content is readable */
+      .highlight-text {
+        color: #5B3FFF !important;
+        font-weight: 900;
+        display: block;
+        margin: 0.5rem 0;
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+      }
+  
+      /* Responsive adjustments for 404 */
+      @media (max-width: 768px) {
+        .highlight-text {
+          font-size: 4rem;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .highlight-text {
+          font-size: 3rem;
+        }
+      }
+    
+  </style>
+---
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img src="images/Logo.png" alt="SOS Permesso" class="logo-image">
-        </a>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="src/pages/database.html" class="nav-link">Database</a></li>
-          <li><a href="src/pages/chi-siamo.html" class="nav-link">Chi siamo</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  
 
   <!-- 404 HERO -->
   <section class="hero-new">
@@ -148,22 +159,13 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-links">
-        <a href="src/pages/chi-siamo.html" class="footer-link">Chi siamo</a>
-        <a href="src/pages/privacy-policy.html" class="footer-link">Privacy Policy</a>
-        <a href="#" class="footer-link" onclick="openContactModal(); return false;">Contatti</a>
-      </div>
-      <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
-    </div>
-  </footer>
+  
 
   <!-- Contact Form Container -->
   <div id="contact-form-container"></div>
 
-  <script src="src/scripts/app.js"></script>
-  <script src="src/scripts/mobile.js"></script>
+  
+  
   <script>
     // Load contact form
     fetch('src/components/contact-form.html')
@@ -201,42 +203,3 @@
   </script>
 
   <!-- Add 404-specific styles -->
-  <style>
-    .hero-new {
-      position: relative;
-      overflow: hidden;
-    }
-
-    @keyframes float-decoration {
-      0%, 100% {
-        transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-20px) rotate(5deg);
-      }
-    }
-
-    /* Make sure 404 content is readable */
-    .highlight-text {
-      color: #5B3FFF !important;
-      font-weight: 900;
-      display: block;
-      margin: 0.5rem 0;
-      text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Responsive adjustments for 404 */
-    @media (max-width: 768px) {
-      .highlight-text {
-        font-size: 4rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .highlight-text {
-        font-size: 3rem;
-      }
-    }
-  </style>
-</body>
-</html>
