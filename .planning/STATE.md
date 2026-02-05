@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-05
-**Status:** Phase 37 in progress (Plan 02 complete - IT pages migrated)
+**Status:** Phase 37 in progress (Plan 03 complete - EN pages verified)
 
 ## Project Reference
 
@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Current Milestone:** v3.0 11ty Migration
 **Phase:** 37 of 38 (Pages)
-**Plan:** 2 of 4 complete
+**Plan:** 3 of 4 complete
 **Status:** In progress
-**Last activity:** 2026-02-05 — Plan 37-02 complete (204 IT pages migrated)
+**Last activity:** 2026-02-05 — Plan 37-03 complete (204 EN pages verified)
 
 ```
-Progress: [██████░░░░] 60% (Plans: 35-01, 36-01, 36-02, 37-01, 37-02 complete)
+Progress: [███████░░░] 70% (Plans: 35-01, 36-01, 36-02, 37-01, 37-02, 37-03 complete)
 ```
 
 ## v3.0 Phases
@@ -29,15 +29,15 @@ Progress: [██████░░░░] 60% (Plans: 35-01, 36-01, 36-02, 37-0
 |-------|------|--------------|--------|
 | 35 | Setup | SETUP-01 to SETUP-04 | COMPLETE |
 | 36 | Components | COMP-01 to COMP-05 | COMPLETE |
-| 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | IN PROGRESS (2/4) |
+| 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | IN PROGRESS (3/4) |
 | 38 | Deployment | DEPLOY-01 to DEPLOY-03 | Queued |
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6 (v2.2 + v3.0 milestones)
-- Average duration: 4.7 min
-- Total execution time: 28 min
+- Total plans completed: 7 (v2.2 + v3.0 milestones)
+- Average duration: 4.3 min
+- Total execution time: 30 min
 
 **By Phase:**
 
@@ -46,7 +46,7 @@ Progress: [██████░░░░] 60% (Plans: 35-01, 36-01, 36-02, 37-0
 | 34.1 | 1 | 5 min | 5 min |
 | 35 | 1 | 5 min | 5 min |
 | 36 | 2 | 7 min | 3.5 min |
-| 37 | 2 | 11 min | 5.5 min |
+| 37 | 3 | 13 min | 4.3 min |
 
 **Recent Trend:**
 - Phase 34.1 Plan 01: 5 min (2 tasks, 1 deviation auto-fixed)
@@ -55,6 +55,7 @@ Progress: [██████░░░░] 60% (Plans: 35-01, 36-01, 36-02, 37-0
 - Phase 36 Plan 02: 4 min (4 tasks, 0 deviations, checkpoint verified)
 - Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
 - Phase 37 Plan 02: 3 min (2 tasks, 0 deviations)
+- Phase 37 Plan 03: 2 min (2 tasks, verification only - work done in 37-02)
 - Trend: Fast execution, plans executing cleanly
 
 *Updated after each plan completion*
@@ -134,6 +135,7 @@ Recent decisions affecting current work:
 - **36-01: external flag for links** — Typeform links marked with `external: true`
 - **36-02: Component includes** — Header, nav, footer, language-switcher as Liquid includes
 - **36-02: Language detection** — Uses HTML lang attribute, not URL path parsing
+- **37-03: EN migration bundled with IT** — EN pages were migrated in fc11fc2 along with IT pages
 
 ### Research Completed
 
@@ -155,10 +157,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-05
-**Stopped at:** Plan 37-02 complete (IT pages migrated)
+**Stopped at:** Plan 37-03 complete (EN pages verified)
 **Resume file:** None
 
-**Next Action:** Execute Plan 37-03 (EN pages) and Plan 37-04 (verification) to complete Phase 37.
+**Next Action:** Execute Plan 37-04 (URL preservation / final verification) to complete Phase 37.
 
 ---
 
