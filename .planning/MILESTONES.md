@@ -1,5 +1,50 @@
 # Project Milestones: SOS Permesso
 
+## v3.0 11ty Migration (Shipped: 2026-02-05)
+
+**Delivered:** Migrated 411 pages from pure HTML to 11ty SSG with shared layouts, eliminating ~36,000 lines of duplicated header/footer HTML.
+
+**Phases completed:** 35-38 (8 plans total)
+
+**Key accomplishments:**
+
+- 11ty v3.1.2 installed with Liquid templates and passthrough copy
+- Shared components extracted: header, footer, nav, language-switcher as reusable includes
+- 411 pages migrated (206 IT + 205 EN) to use shared layouts
+- ~36,000 lines of duplicate HTML eliminated — headers/footers now single source of truth
+- Combined Notion + 11ty build pipeline (`npm run build`)
+- Canonical URLs and hreflang tags added to base layout for SEO
+- Build time: 13.5s (well under 60s target)
+
+**Stats:**
+
+- 445 files modified
+- 8,425 lines added, 44,338 lines deleted (-35,913 net)
+- 4 phases, 8 plans
+- 1 day from start to ship
+
+**Git range:** `e50ed50` → `bcbdc0f`
+
+**What's next:** v3.1 — Page-specific templates, i18n plugin integration, new language translations
+
+---
+
+## v2.2 Language Infrastructure (Shipped: 2026-02-04)
+
+**Delivered:** Scalable translation workflow with Notion-based change detection, translation memory, and RTL/CJK CSS infrastructure.
+
+**Phases completed:** 32-34.1 (4 phases)
+
+**Key accomplishments:**
+
+- MD5 content hashing for accurate Notion change detection
+- Translation memory module for caching translations
+- Multilingual sitemap index with hreflang tags
+- RTL CSS infrastructure for Arabic/Hebrew support
+- CJK CSS infrastructure for Chinese typography
+
+---
+
 ## v2.0 Multilingual Foundation (Shipped: 2026-02-02)
 
 **Delivered:** Complete Italian-to-English translation of all 209 pages with working language switcher.

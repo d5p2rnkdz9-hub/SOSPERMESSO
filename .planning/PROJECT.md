@@ -2,11 +2,21 @@
 
 ## What This Is
 
-A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Features a comprehensive document requirements system and permit page generation powered by Notion for content management.
+A multilingual information website helping immigrants in Italy understand residence permits (permessi di soggiorno). The site presents complex bureaucratic information in a friendly, accessible format with a bright design, cartoon mascot, and Typeform-integrated tests. Features a comprehensive document requirements system and permit page generation powered by Notion for content management. Built on 11ty SSG with shared layouts for maintainable architecture.
 
 ## Current State
 
-**Last Shipped:** v2.2 Phase 32 Translation Workflow (2026-02-04)
+**Last Shipped:** v3.0 11ty Migration (2026-02-05)
+
+**What was delivered (v3.0):**
+- 11ty v3.1.2 with Liquid templates for static site generation
+- Shared component architecture: header, footer, nav, language-switcher as reusable includes
+- Base layout template with canonical URLs and hreflang tags for SEO
+- 411 pages migrated (206 IT + 205 EN) to use shared layouts
+- ~36,000 lines of duplicated HTML eliminated
+- Combined Notion + 11ty build pipeline (`npm run build`)
+- Netlify deployment configured with Node 22 LTS
+- Build time: 13.5s (down from manual header/footer management)
 
 **What was delivered (v2.2 Phase 32):**
 - MD5 content hashing for accurate change detection in build-permits.js
@@ -23,29 +33,6 @@ A multilingual information website helping immigrants in Italy understand reside
 - CSS/JS paths fixed in all EN pages via automated script
 - Language switcher UI functional for IT ↔ EN toggle
 - All EN pages have `lang="en"` attribute
-
-**What was delivered (v1.10):**
-- Sticky breadcrumb bar that stays visible below header on scroll
-- Fixed 150+ pages with correct breadcrumb HTML structure
-- Document notes from Notion displayed as Q&A cards on PSLP pages
-- parseDocNotes function for extracting Q&A content from Notion
-- Test card titles updated ("Posso CONVERTIRE/RINNOVARE il mio permesso?")
-- Card titles prevent word-breaking (whole words only wrap)
-- Footer pages (chi-siamo, policy, etc.) left-aligned on mobile
-
-**What was delivered (v1.9):**
-- robots.txt allowing all search engines to crawl
-- sitemap.xml with 174 indexable pages (35 redirects auto-excluded)
-- Automated sitemap generation script with redirect detection
-- `npm run build:sitemap` command for regeneration
-
-**What was delivered (v1.7):**
-- Permit page generation system from Notion database (67 pages)
-- Standard Q&A template with 7+ sections
-- Blue triangle bullet styling for visual consistency
-- Variant detection with parent/child page structure
-- Manifest-based incremental builds
-- Simplified mobile hamburger menu (categories only)
 
 ## Core Value
 
@@ -103,31 +90,27 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Translation memory infrastructure (JSON-based, git-versioned) — v2.2
 - ✓ Sitemap index architecture with per-language sitemaps — v2.2
 - ✓ hreflang tags in sitemaps linking IT ↔ EN equivalents — v2.2
+- ✓ 11ty v3.x with Liquid templates — v3.0
+- ✓ Passthrough copy for CSS/JS/images — v3.0
+- ✓ Base layout with header/footer/nav as includes — v3.0
+- ✓ Language switcher as include — v3.0
+- ✓ All 469 pages converted to use layouts — v3.0
+- ✓ URL preservation (no broken links) — v3.0
+- ✓ Netlify deployment configured — v3.0
+- ✓ Canonical and hreflang tags in base layout for SEO — v3.0
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-**Current Milestone: v3.0 11ty Migration**
+**Next Milestone:** v3.1 (planning required)
 
-**Goal:** Migrate from pure HTML to 11ty SSG for maintainable architecture. Extract shared components, keep same content and URLs.
-
-**Target features:**
-- [ ] 11ty v3.x with Liquid templates
-- [ ] Passthrough copy for CSS/JS/images
-- [ ] Base layout with header/footer/nav as includes
-- [ ] Language switcher as include
-- [ ] All 469 pages converted to use layouts
-- [ ] URL preservation (no broken links)
-- [ ] Netlify deployment configured
-
-**Scope:** Structural migration only. Same content, same URLs, maintainable architecture.
-
-**Not included (v3.1):**
+Potential focus areas:
 - Page-specific templates (permit, document, guide)
-- Notion integration rewrite (keep existing scripts)
+- Notion integration rewrite for 11ty data files
 - Navigation as data files
 - i18n plugin integration
+- New language translations (FR, ES, ZH)
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
@@ -141,29 +124,19 @@ Users can quickly find accurate, understandable information about their specific
 
 ## Context
 
-**Current state (after v2.0):**
-- Pure HTML/CSS/JavaScript static site with Node.js build process for document and permit generation
+**Current state (after v3.0):**
+- 11ty v3.1.2 SSG with Liquid templates
+- Shared layouts in `_includes/layouts/base.liquid`
+- Component includes: header, footer, nav, language-switcher
+- Data files: `_data/site.js`, `_data/nav.js`, `_data/footer.js`
+- 411 HTML pages with front matter (206 IT + 205 EN)
+- Build output to `_site/` directory
 - CSS design system with variables in `src/styles/main.css`
-- 260+ HTML pages in `src/pages/` (IT) + 209 pages in `/en/src/pages/` (EN)
-- Build infrastructure: package.json, @notionhq/client, dotenv, netlify.toml
-- Notion database powers both document and permit page content
+- Notion database powers document and permit page content
 - Build scripts: `scripts/build-documents.js`, `scripts/build-permits.js`, `scripts/build-sitemap.js`
-- SEO infrastructure: robots.txt + sitemap-index.xml + sitemap-it.xml + sitemap-en.xml (171 URLs each with hreflang)
-- Translation glossary: `scripts/translation-glossary.json` (35+ terms)
-- Language switcher in header: IT ↔ EN functional, FR/ES/ZH show "coming soon"
-- Warm teal/coral color palette with blue triangle bullets
-- Clean white header with 60px height, centered navigation with dropdown menus
-- Yellow footer with centered layout
-- Mobile-optimized: simplified hamburger menu (categories only, no dropdowns)
-
-**Translation infrastructure (v2.2 Phase 32):**
-- Content hashing for change detection (MD5 of Notion blocks)
-- Translation memory module (scripts/translation-memory.js)
-- Manifest tracks contentHash per page for incremental builds
-- Multilingual sitemaps with hreflang tags (sitemap-it.xml, sitemap-en.xml)
-- robots.txt points to sitemap-index.xml
-- Batch translation via Claude Code subagents (manual process)
-- Hardcoded `/en/` path detection in app.js
+- Combined build: `npm run build` chains Notion + 11ty
+- SEO: canonical URLs, hreflang tags, sitemap index architecture
+- Netlify deployment with Node 22 LTS, security headers
 
 **Design patterns established:**
 - Database list style (`.permit-list`, `.category-section`)
@@ -177,15 +150,14 @@ Users can quickly find accurate, understandable information about their specific
 
 **Technical debt:**
 - Dizionario links need revision (partial matching works but coverage incomplete)
-- Desktop header alignment (language switcher baseline)
 - No npm script for build-permits.js (manual execution)
 - 18 permits still need Notion content (placeholder pages)
 
 ## Constraints
 
-- **Tech stack**: Pure HTML/CSS/JS frontend + Node.js build for document/permit generation
+- **Tech stack**: 11ty v3.x SSG + Node.js build for Notion content generation
 - **Design**: Must match existing design system (colors, typography, spacing from CSS variables)
-- **Structure**: Pages go in `src/pages/`, follow existing header/footer template
+- **Structure**: Pages use shared layouts via front matter, content in `src/pages/`
 - **Mobile**: All pages must work on mobile (existing responsive CSS applies)
 - **Content**: Document and permit pages generated from Notion — edit content there, run build
 
@@ -216,20 +188,18 @@ Users can quickly find accurate, understandable information about their specific
 | Exclude redirect pages from sitemap | Prevents duplicate content issues | ✓ Good — v1.9 |
 | File modification time for lastmod | Simple, accurate, automatic updates | ✓ Good — v1.9 |
 | /en/ subfolder for English | Simpler than subdomain, same domain | ✓ Good — v2.0 |
-| Volunteer translators | Community-driven review process | — Pending |
-| No legal review for translations | AI + human review sufficient | — Pending |
-| Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
-| Modern SaaS homepage aesthetic | Visual refresh, more professional feel | — Pending |
-| Playfair Display + Inter fonts | Serif display for hero, sans for body | — Pending |
-| Homepage-first, propagate later | Test design on homepage before full rollout | — Pending |
 | Page-level content hashing | Hash Notion blocks before HTML for change detection | ✓ Good — v2.2 |
 | hreflang in sitemaps, not HTML | Scales better for 8-12 languages | ✓ Good — v2.2 |
 | Sitemap index architecture | One master sitemap pointing to per-language sitemaps | ✓ Good — v2.2 |
 | Translation memory by content hash | Reuse translations for unchanged paragraphs | ✓ Good — v2.2 |
-| RTL CSS with logical properties | Preparation for Arabic, Hebrew support | — Pending (v2.2) |
-| 11ty migration (structural) | Eliminate duplicated headers/footers in 469 files | — Pending (v3.0) |
-| Liquid over Nunjucks | Nunjucks unmaintained since June 2022 | — Pending (v3.0) |
-| Incremental migration | Convert pages gradually, not big-bang | — Pending (v3.0) |
+| 11ty migration (structural) | Eliminate duplicated headers/footers in 469 files | ✓ Good — v3.0 |
+| Liquid over Nunjucks | Nunjucks unmaintained since June 2022 | ✓ Good — v3.0 |
+| Front matter for page metadata | Standard 11ty pattern, clean separation | ✓ Good — v3.0 |
+| Keep existing Notion scripts | Don't rewrite working integration | ✓ Good — v3.0 |
+| Canonical + hreflang in base layout | SEO best practice, single source | ✓ Good — v3.0 |
+| Volunteer translators | Community-driven review process | — Pending |
+| No legal review for translations | AI + human review sufficient | — Pending |
+| Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-02-04 — v3.0 11ty Migration milestone started*
+*Last updated: 2026-02-05 — v3.0 11ty Migration shipped*
