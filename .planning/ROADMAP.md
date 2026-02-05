@@ -77,7 +77,7 @@ Plans:
 
 ### Phase 37: Pages
 
-**Goal:** All ~412 pages converted to use shared layouts with multilingual output.
+**Goal:** All ~410 pages converted to use shared layouts with multilingual output.
 
 **Dependencies:** Phase 36
 
@@ -99,10 +99,13 @@ Plans:
 6. HTML lang attribute matches page language (lang="it" for IT, lang="en" for EN)
 7. Visual regression check shows no styling differences from current site
 
-**Plans:** TBD
+**Plans:** 4 plans
 
 Plans:
-- [ ] 37-01: [To be planned]
+- [ ] 37-01-PLAN.md — Create migration script, migrate root pages, verify foundation
+- [ ] 37-02-PLAN.md — Migrate all IT pages (204 pages in src/pages/)
+- [ ] 37-03-PLAN.md — Migrate all EN pages (204 pages in en/src/pages/)
+- [ ] 37-04-PLAN.md — Final verification checkpoint for all requirements
 
 ---
 
@@ -386,4 +389,4 @@ Plans:
 
 ---
 
-*Last updated: 2026-02-05 — Phase 36 complete, Components extracted*
+*Last updated: 2026-02-05 — Phase 37 planned (4 plans)*
