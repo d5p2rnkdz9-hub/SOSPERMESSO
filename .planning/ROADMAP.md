@@ -15,7 +15,7 @@
 |-------|------|------|--------|
 | 35 | Setup | Install 11ty, configure passthrough, validate URLs | **Complete** |
 | 36 | Components | Extract header, footer, nav, language switcher | **Complete** |
-| 37 | Pages | Convert all IT/EN pages to use layouts | **Not started** |
+| 37 | Pages | Convert all IT/EN pages to use layouts | **Complete** |
 | 38 | Deployment | Configure Netlify, deploy to production | **Not started** |
 
 ---
@@ -102,10 +102,10 @@ Plans:
 **Plans:** 4 plans
 
 Plans:
-- [ ] 37-01-PLAN.md — Create migration script, migrate root pages, verify foundation
-- [ ] 37-02-PLAN.md — Migrate all IT pages (204 pages in src/pages/)
-- [ ] 37-03-PLAN.md — Migrate all EN pages (204 pages in en/src/pages/)
-- [ ] 37-04-PLAN.md — Final verification checkpoint for all requirements
+- [x] 37-01-PLAN.md — Create migration script, migrate root pages, verify foundation
+- [x] 37-02-PLAN.md — Migrate all IT pages (204 pages in src/pages/)
+- [x] 37-03-PLAN.md — Migrate all EN pages (204 pages in en/src/pages/)
+- [x] 37-04-PLAN.md — Final verification checkpoint for all requirements
 
 ---
 
@@ -384,7 +384,7 @@ Plans:
 | 34.1 | v2.2 | Complete | 2026-02-04 |
 | 35 | v3.0 | Complete | 2026-02-04 |
 | 36 | v3.0 | Complete | 2026-02-05 |
-| 37 | v3.0 | Not started | — |
+| 37 | v3.0 | Complete | 2026-02-05 |
 | 38 | v3.0 | Not started | — |
 
 ---
