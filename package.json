@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy",
+    "build": "npm run build:docs && npm run build:11ty",
+    "build:11ty": "npx @11ty/eleventy",
     "build:docs": "node scripts/build-documents.js",
     "build:sitemap": "node scripts/build-sitemap.js",
     "translate:en": "node scripts/translate-batch.js",
