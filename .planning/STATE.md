@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-05
-**Status:** Phase 37 complete (All pages migrated), ready for Phase 38
+**Status:** v3.0 11ty Migration COMPLETE - All phases shipped to production
 
 ## Project Reference
 
@@ -9,35 +9,35 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v3.0 11ty Migration - Page conversion
+**Current focus:** v3.0 11ty Migration complete - Production deployment live
 
 ## Current Position
 
 **Current Milestone:** v3.0 11ty Migration
-**Phase:** 37 of 38 (Pages)
-**Plan:** 4 of 4 complete
-**Status:** Phase complete ✓
-**Last activity:** 2026-02-05 — Phase 37 verified, all 411 pages migrated
+**Phase:** 38 of 38 (Deployment)
+**Plan:** 1 of 1 complete
+**Status:** Milestone COMPLETE ✓
+**Last activity:** 2026-02-05 — Completed 38-01-PLAN.md (Netlify deployment)
 
 ```
-Progress: [████████░░] 75% (3/4 phases complete: 35, 36, 37)
+Progress: [██████████] 100% (4/4 phases complete: 35, 36, 37, 38)
 ```
 
 ## v3.0 Phases
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 35 | Setup | SETUP-01 to SETUP-04 | COMPLETE |
-| 36 | Components | COMP-01 to COMP-05 | COMPLETE |
-| 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | COMPLETE |
-| 38 | Deployment | DEPLOY-01 to DEPLOY-03 | Queued |
+| 35 | Setup | SETUP-01 to SETUP-04 | COMPLETE ✓ |
+| 36 | Components | COMP-01 to COMP-05 | COMPLETE ✓ |
+| 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | COMPLETE ✓ |
+| 38 | Deployment | DEPLOY-01 to DEPLOY-03 | COMPLETE ✓ |
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7 (v2.2 + v3.0 milestones)
-- Average duration: 4.3 min
-- Total execution time: 30 min
+- Total plans completed: 8 (v2.2 + v3.0 milestones)
+- Average duration: 4.8 min
+- Total execution time: 38 min
 
 **By Phase:**
 
@@ -47,6 +47,7 @@ Progress: [████████░░] 75% (3/4 phases complete: 35, 36, 37)
 | 35 | 1 | 5 min | 5 min |
 | 36 | 2 | 7 min | 3.5 min |
 | 37 | 3 | 13 min | 4.3 min |
+| 38 | 1 | 8 min | 8 min |
 
 **Recent Trend:**
 - Phase 34.1 Plan 01: 5 min (2 tasks, 1 deviation auto-fixed)
@@ -56,7 +57,8 @@ Progress: [████████░░] 75% (3/4 phases complete: 35, 36, 37)
 - Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
 - Phase 37 Plan 02: 3 min (2 tasks, 0 deviations)
 - Phase 37 Plan 03: 2 min (2 tasks, verification only - work done in 37-02)
-- Trend: Fast execution, plans executing cleanly
+- Phase 38 Plan 01: 8 min (3 tasks, 0 deviations, checkpoint verified)
+- Trend: Clean execution, v3.0 milestone complete
 
 *Updated after each plan completion*
 
@@ -136,6 +138,9 @@ Recent decisions affecting current work:
 - **36-02: Component includes** — Header, nav, footer, language-switcher as Liquid includes
 - **36-02: Language detection** — Uses HTML lang attribute, not URL path parsing
 - **37-03: EN migration bundled with IT** — EN pages were migrated in fc11fc2 along with IT pages
+- **38-01: Node 22 LTS for Netlify** — Latest stable version with long support window (until Apr 2027)
+- **38-01: Combined build script** — Chains Notion content generation before 11ty compilation
+- **38-01: No build caching** — Build completes in 13.5s locally, caching adds complexity without benefit
 
 ### Research Completed
 
@@ -157,10 +162,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-05
-**Stopped at:** Plan 37-03 complete (EN pages verified)
+**Stopped at:** Completed 38-01-PLAN.md (Netlify deployment)
 **Resume file:** None
 
-**Next Action:** Execute Plan 37-04 (URL preservation / final verification) to complete Phase 37.
+**Next Action:** v3.0 11ty Migration complete! Site live at https://www.sospermesso.it with 419 pages. Ready for future milestones (v3.1 content integration, v3.2 language expansion, etc.).
 
 ---
 
