@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-05
-**Status:** Phase 36-01 complete (Foundation data files and base layout), ready for 36-02
+**Status:** Phase 36-02 complete (Header/Footer component includes), ready for 36-03 or Phase 37
 
 ## Project Reference
 
@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-04)
 
 **Current Milestone:** v3.0 11ty Migration
 **Phase:** 36 of 38 (Components)
-**Plan:** 1 of 3 complete
+**Plan:** 2 of 3 complete
 **Status:** In progress
-**Last activity:** 2026-02-05 — Completed 36-01-PLAN.md (Foundation)
+**Last activity:** 2026-02-05 — Completed 36-02-PLAN.md (Header/Footer Includes)
 
 ```
-Progress: [████░░░░░░] 40% (2/5 phases complete: 35, 36-01)
+Progress: [█████░░░░░] 50% (3/6 plans complete: 35-01, 36-01, 36-02)
 ```
 
 ## v3.0 Phases
@@ -28,16 +28,16 @@ Progress: [████░░░░░░] 40% (2/5 phases complete: 35, 36-01)
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 35 | Setup | SETUP-01 to SETUP-04 | COMPLETE |
-| 36 | Components | COMP-01 to COMP-05 | Plan 01 complete |
+| 36 | Components | COMP-01 to COMP-05 | Plan 02 complete |
 | 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | Queued |
 | 38 | Deployment | DEPLOY-01 to DEPLOY-03 | Queued |
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3 (v2.2 + v3.0 milestones)
-- Average duration: 4.3 min
-- Total execution time: 13 min
+- Total plans completed: 4 (v2.2 + v3.0 milestones)
+- Average duration: 4.25 min
+- Total execution time: 17 min
 
 **By Phase:**
 
@@ -45,13 +45,14 @@ Progress: [████░░░░░░] 40% (2/5 phases complete: 35, 36-01)
 |-------|-------|-------|----------|
 | 34.1 | 1 | 5 min | 5 min |
 | 35 | 1 | 5 min | 5 min |
-| 36 | 1 | 3 min | 3 min |
+| 36 | 2 | 7 min | 3.5 min |
 
 **Recent Trend:**
 - Phase 34.1 Plan 01: 5 min (2 tasks, 1 deviation auto-fixed)
 - Phase 35 Plan 01: 5 min (3 tasks, 5 deviations auto-fixed)
 - Phase 36 Plan 01: 3 min (3 tasks, 0 deviations)
-- Trend: Fast execution, plan quality improving (no deviations needed)
+- Phase 36 Plan 02: 4 min (4 tasks, 0 deviations, checkpoint verified)
+- Trend: Fast execution, plans executing cleanly
 
 *Updated after each plan completion*
 
@@ -99,6 +100,12 @@ From prior milestones (carry forward):
 - Language-keyed data structures (it/en) for nav/footer
 - url filter for all asset paths in templates
 
+**Component patterns (established in Phase 36-02):**
+- Liquid includes for reusable components: `{% include "components/name.liquid" %}`
+- Lang variable from page front matter for language detection
+- Loop through data: `{% for item in nav[lang] %}`
+- Fallback defaults: `{% assign data = footer[lang] | default: footer.it %}`
+
 **Existing patterns to preserve:**
 - CSS variables system in main.css
 - Mobile-first responsive design
@@ -122,6 +129,8 @@ Recent decisions affecting current work:
 - **36-01: CommonJS for data files** — Matches existing eleventyComputed.js
 - **36-01: Language-keyed data** — nav.js and footer.js keyed by language code (it/en)
 - **36-01: external flag for links** — Typeform links marked with `external: true`
+- **36-02: Component includes** — Header, nav, footer, language-switcher as Liquid includes
+- **36-02: Language detection** — Uses HTML lang attribute, not URL path parsing
 
 ### Research Completed
 
@@ -143,10 +152,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-05
-**Stopped at:** Completed 36-01-PLAN.md (Foundation)
+**Stopped at:** Completed 36-02-PLAN.md (Header/Footer Includes)
 **Resume file:** None
 
-**Next Action:** Ready for Phase 36 Plan 02 (Header/Footer component includes).
+**Next Action:** Ready for Phase 36 Plan 03 (Hero sections) or Phase 37 (Page conversion).
 
 ---
 
