@@ -176,8 +176,15 @@ const languageConfig = {
   'zh': { label: 'ZH 🇨🇳', path: '/zh/' }
 };
 
-// Detect current language from URL path (takes priority over localStorage)
-function detectLanguageFromPath() {
+// Detect current language - prioritize HTML lang attribute (set by server)
+function detectLanguage() {
+  // 1. First check HTML lang attribute (most reliable - set by server)
+  const htmlLang = document.documentElement.lang;
+  if (htmlLang && languageConfig[htmlLang]) {
+    return htmlLang;
+  }
+
+  // 2. Fall back to URL path detection
   const path = window.location.pathname;
   if (path.startsWith('/en/') || path === '/en') {
     return 'en';
@@ -186,18 +193,23 @@ function detectLanguageFromPath() {
   // if (path.startsWith('/fr/') || path === '/fr') return 'fr';
   // if (path.startsWith('/es/') || path === '/es') return 'es';
   // if (path.startsWith('/zh/') || path === '/zh') return 'zh';
+
   return 'it'; // Default to Italian
 }
 
-// Get current language from URL path
-let currentLanguage = detectLanguageFromPath();
+// Get current language
+let currentLanguage = detectLanguage();
 
 // Sync localStorage with detected language
 localStorage.setItem('sospermesso-lang', currentLanguage);
 
-// Update display
+// Update display only if it differs from server-rendered value
+// (Server may have already rendered correct value via Liquid template)
 if (currentLanguageDisplay) {
-  currentLanguageDisplay.textContent = languageConfig[currentLanguage].label;
+  const expectedLabel = languageConfig[currentLanguage].label;
+  if (currentLanguageDisplay.textContent.trim() !== expectedLabel) {
+    currentLanguageDisplay.textContent = expectedLabel;
+  }
 }
 
 // Handle language selection
