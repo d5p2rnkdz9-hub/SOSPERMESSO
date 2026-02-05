@@ -127,10 +127,10 @@ Plans:
 4. All ~412 pages accessible on production domain
 5. Notion build scripts continue to work (no integration broken)
 
-**Plans:** TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 38-01: [To be planned]
+- [ ] 38-01-PLAN.md — Configure netlify.toml and package.json for combined Notion + 11ty build
 
 ---
 
@@ -389,4 +389,4 @@ Plans:
 
 ---
 
-*Last updated: 2026-02-05 — Phase 37 planned (4 plans)*
+*Last updated: 2026-02-05 — Phase 38 planned (1 plan)*
