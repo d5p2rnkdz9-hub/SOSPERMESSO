@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default: 'it' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description | default: site.defaultDescription }}">
+  <title>{% if title %}{{ title }} - {% endif %}{{ site.name }}</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/IMAGES/logo-full.png' | url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/IMAGES/logo-full.png' | url }}">
+  <link rel="apple-touch-icon" href="{{ '/IMAGES/logo-full.png' | url }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}{{ site.name }}">
+  <meta property="og:description" content="{{ description | default: site.defaultDescription }}">
+  <meta property="og:image" content="{{ site.url }}/IMAGES/logo-full.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if title %}{{ title }} - {% endif %}{{ site.name }}">
+  <meta name="twitter:description" content="{{ description | default: site.defaultDescription }}">
+  <meta name="twitter:image" content="{{ site.url }}/IMAGES/logo-full.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/src/styles/main.css' | url }}">
+  <link rel="stylesheet" href="{{ '/src/styles/components.css' | url }}">
+  <link rel="stylesheet" href="{{ '/src/styles/animations.css' | url }}">
+  <link rel="stylesheet" href="{{ '/src/styles/mobile.css' | url }}">
+  <link rel="stylesheet" href="{{ '/src/styles/mobile-fix.css' | url }}">
+  <link rel="stylesheet" href="{{ '/src/styles/rtl.css' | url }}">
+  <link rel="stylesheet" href="{{ '/src/styles/cjk.css' | url }}">
+
+  {% if extraStyles %}{{ extraStyles }}{% endif %}
+</head>
+<body>
+
+  {%- comment -%}Header include goes here in Plan 02{%- endcomment -%}
+
+  {{ content }}
+
+  {%- comment -%}Footer include goes here in Plan 02{%- endcomment -%}
+
+  <!-- Scripts -->
+  <script src="{{ '/src/scripts/app.js' | url }}"></script>
+  <script src="{{ '/src/scripts/mobile.js' | url }}"></script>
+
+  {% if extraScripts %}{{ extraScripts }}{% endif %}
+
+</body>
+</html>
