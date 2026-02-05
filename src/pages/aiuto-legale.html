@@ -1,168 +1,69 @@
-<!DOCTYPE html><html lang="it"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aiuto Legale Gratis - SOS Permesso</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../../IMAGES/logo-full.png">
-  <link rel="shortcut icon" type="image/png" href="../../IMAGES/logo-full.png">
-  <link rel="apple-touch-icon" href="../../IMAGES/logo-full.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/components.css">
-  <link rel="stylesheet" href="../styles/animations.css">
-  <link rel="stylesheet" href="../styles/mobile.css">
-  <link rel="stylesheet" href="../styles/mobile-fix.css">
-  <link rel="stylesheet" href="../styles/rtl.css">
-  <link rel="stylesheet" href="../styles/cjk.css">
+---
+layout: layouts/base.liquid
+title: "Aiuto Legale Gratis"
+lang: it
+extraStyles: |
   <style>
-    .legal-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    .legal-table th, .legal-table td {
-      padding: 0.75rem;
-      text-align: left;
-      border-bottom: 1px solid #eee;
-      vertical-align: top;
-    }
-    .legal-table th {
-      background-color: var(--off-white);
-      font-weight: 600;
-      color: var(--black);
-    }
-    .legal-table tr:hover {
-      background-color: rgba(255, 215, 0, 0.1);
-    }
-    .city-section {
-      margin-bottom: 2rem;
-    }
-    .city-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--accent-purple);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--accent-purple);
-    }
-    @media (max-width: 768px) {
-      .legal-table, .legal-table tbody, .legal-table tr, .legal-table td {
-        display: block;
+  
+      .legal-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
       }
-      .legal-table thead {
-        display: none;
+      .legal-table th, .legal-table td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
       }
-      .legal-table tr {
-        margin-bottom: 1rem;
-        border: 1px solid #eee;
-        border-radius: 8px;
-        padding: 1rem;
-      }
-      .legal-table td {
-        border: none;
-        padding: 0.25rem 0;
-      }
-      .legal-table td::before {
-        content: attr(data-label);
+      .legal-table th {
+        background-color: var(--off-white);
         font-weight: 600;
-        display: block;
-        margin-bottom: 0.25rem;
-        color: var(--gray-medium);
-        font-size: 0.875rem;
+        color: var(--black);
       }
-    }
+      .legal-table tr:hover {
+        background-color: rgba(255, 215, 0, 0.1);
+      }
+      .city-section {
+        margin-bottom: 2rem;
+      }
+      .city-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--accent-purple);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--accent-purple);
+      }
+      @media (max-width: 768px) {
+        .legal-table, .legal-table tbody, .legal-table tr, .legal-table td {
+          display: block;
+        }
+        .legal-table thead {
+          display: none;
+        }
+        .legal-table tr {
+          margin-bottom: 1rem;
+          border: 1px solid #eee;
+          border-radius: 8px;
+          padding: 1rem;
+        }
+        .legal-table td {
+          border: none;
+          padding: 0.25rem 0;
+        }
+        .legal-table td::before {
+          content: attr(data-label);
+          font-weight: 600;
+          display: block;
+          margin-bottom: 0.25rem;
+          color: var(--gray-medium);
+          font-size: 0.875rem;
+        }
+      }
+    
   </style>
-</head>
-<body>
-
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="../../index.html" class="logo">
-          <img src="../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
-        </a>
-
-        <!-- Language Switcher (standalone) -->
-        <div class="language-switcher">
-          <button class="language-button" id="language-toggle">
-            <span id="current-language">IT 🇮🇹</span>
-            <span>▾</span>
-          </button>
-          <div class="language-dropdown" id="language-dropdown">
-            <div class="language-option" data-lang="it">
-              <span>🇮🇹</span>
-              <span>Italiano</span>
-            </div>
-            <div class="language-option" data-lang="en">
-              <span>🇬🇧</span>
-              <span>English</span>
-            </div>
-            <div class="language-option" data-lang="fr">
-              <span>🇫🇷</span>
-              <span>Français</span>
-            </div>
-            <div class="language-option" data-lang="es">
-              <span>🇪🇸</span>
-              <span>Español</span>
-            </div>
-            <div class="language-option" data-lang="zh">
-              <span>🇨🇳</span>
-              <span>中文</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Toggle -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
-          ☰
-        </button>
-
-        <div class="nav-wrapper">
-          <ul class="nav-menu" id="nav-menu">
-            <!-- Database with dropdown -->
-            <li class="nav-item has-dropdown">
-              <a href="database.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Database</a>
-              <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="database.html" class="dropdown-link" role="menuitem">Tutti i permessi</a></li>
-                <li role="none"><a href="documenti-questura.html" class="dropdown-link" role="menuitem">Che documenti porto in Questura</a></li>
-              </ul>
-            </li>
-
-            <!-- Guide with dropdown -->
-            <li class="nav-item has-dropdown">
-              <a href="dizionario.html" class="nav-link" aria-haspopup="true" aria-expanded="false">Guide</a>
-              <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="protezione-internazionale.html" class="dropdown-link" role="menuitem">Protezione internazionale</a></li>
-                <li role="none"><a href="permesso-ricongiungimento-familiare.html" class="dropdown-link" role="menuitem">Ricongiungimento familiare</a></li>
-                <li role="none"><a href="dizionario.html" class="dropdown-link" role="menuitem">Dizionario</a></li>
-              </ul>
-            </li>
-
-            <!-- Test with dropdown -->
-            <li class="nav-item has-dropdown">
-              <a href="https://form.typeform.com/to/kt7P9Ejk" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Test</a>
-              <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="https://form.typeform.com/to/kt7P9Ejk" class="dropdown-link" role="menuitem" target="_blank">Posso AVERE un permesso?</a></li>
-                <li role="none"><a href="https://form.typeform.com/to/oc9jhdkJ" class="dropdown-link" role="menuitem" target="_blank">Posso CONVERTIRE?</a></li>
-                <li role="none"><a href="https://form.typeform.com/to/R7HY8nBp" class="dropdown-link" role="menuitem" target="_blank">Posso RINNOVARE il permesso?</a></li>
-              </ul>
-            </li>
-
-                        <!-- Collabora with dropdown -->
-            <li class="nav-item has-dropdown">
-              <a href="https://form.typeform.com/to/USx16QN3" class="nav-link" target="_blank" aria-haspopup="true" aria-expanded="false">Collabora</a>
-              <ul class="nav-dropdown" role="menu">
-                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Dai una mano</a></li>
-                <li role="none"><a href="https://form.typeform.com/to/FsqvzdXI" class="dropdown-link" role="menuitem" target="_blank">Segnala un errore</a></li>
-                <li role="none"><a href="https://form.typeform.com/to/USx16QN3" class="dropdown-link" role="menuitem" target="_blank">Dai un feedback</a></li>
-              </ul>
-            </li>
-          </ul>
-                </div>
-      </nav>
-    </div>
-  </header>
+---
 
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
@@ -529,22 +430,3 @@
       </div>
     </div>
   </section>
-
-      <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <a href="il-progetto.html" class="footer-project-link">Il Progetto</a>
-        <span class="footer-separator">|</span>
-        <a href="chi-siamo.html" class="footer-project-link">Chi Siamo</a>
-        <span class="footer-separator">|</span>
-        <a href="privacy-policy.html" class="footer-project-link">Privacy e altro</a>
-        <span class="footer-separator">|</span>
-        <p class="footer-copyright">© 2026 SOS Permesso</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../scripts/app.js"></script>
-
-
-</body></html>
