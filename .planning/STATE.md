@@ -14,23 +14,22 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Notion-11ty Integration
-**Phase:** Not started (defining requirements)
+**Phase:** 39 (Document Pages) — not started
 **Plan:** —
-**Status:** Defining requirements
-**Last activity:** 2026-02-07 — Milestone v3.1 started
+**Status:** Ready to plan
+**Last activity:** 2026-02-07 — Milestone v3.1 roadmap created
 
 ```
-Progress: [██████████] 100% (4/4 phases complete: 35, 36, 37, 38)
+Progress: [░░░░░░░░░░] 0% (0/3 phases complete)
 ```
 
-## v3.0 Phases
+## v3.1 Phases
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 35 | Setup | SETUP-01 to SETUP-04 | COMPLETE ✓ |
-| 36 | Components | COMP-01 to COMP-05 | COMPLETE ✓ |
-| 37 | Pages | PAGE-01 to PAGE-04, I18N-01 to I18N-03 | COMPLETE ✓ |
-| 38 | Deployment | DEPLOY-01 to DEPLOY-03 | COMPLETE ✓ |
+| 39 | Document Pages | DOC-01 to DOC-04 | ○ Pending |
+| 40 | Permit Pages | PERM-01 to PERM-04 | ○ Pending |
+| 41 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
 
 ## Performance Metrics
 
@@ -161,11 +160,11 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-05
-**Stopped at:** Completed 38-01-PLAN.md (Netlify deployment)
+**Last session:** 2026-02-07
+**Stopped at:** Milestone v3.1 roadmap created
 **Resume file:** None
 
-**Next Action:** v3.0 11ty Migration complete! Site live at https://www.sospermesso.it with 419 pages. Ready for future milestones (v3.1 content integration, v3.2 language expansion, etc.).
+**Next Action:** Run `/gsd:discuss-phase 39` or `/gsd:plan-phase 39` to start Document Pages phase.
 
 ---
 
