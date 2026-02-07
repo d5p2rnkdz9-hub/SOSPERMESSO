@@ -20,6 +20,12 @@ Convert existing Notion build scripts to 11ty data files. After this milestone, 
 
 **Goal:** Document pages (primo rilascio + rinnovo) generated via 11ty instead of standalone script.
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 39-01-PLAN.md — Data layer: documents.js data file + Liquid filters
+- [ ] 39-02-PLAN.md — Templates: primo, rinnovo, and redirect page templates
+
 **Requirements:**
 - DOC-01: 11ty data file fetches document data from Notion
 - DOC-02: Liquid template renders document pages (primo/rinnovo)
@@ -28,7 +34,7 @@ Convert existing Notion build scripts to 11ty data files. After this milestone, 
 
 **Success Criteria:**
 1. `_data/documents.js` exists and fetches from Notion API
-2. `_includes/layouts/document.liquid` renders primo and rinnovo pages
+2. Liquid templates render primo and rinnovo pages
 3. Build produces `documenti-*-primo.html` and `documenti-*-rinnovo.html` files
 4. URL aliases redirect correctly
 5. Generated pages are visually identical to current pages
