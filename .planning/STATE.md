@@ -1,23 +1,23 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-05
-**Status:** v3.0 11ty Migration COMPLETE - All phases shipped to production
+**Last Updated:** 2026-02-07
+**Status:** v3.1 Notion-11ty Integration — Defining requirements
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-02-04)
+See: .planning/PROJECT.md (updated 2026-02-07)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v3.0 11ty Migration complete - Production deployment live
+**Current focus:** v3.1 Notion-11ty Integration — Convert build scripts to 11ty data files
 
 ## Current Position
 
-**Current Milestone:** v3.0 11ty Migration
-**Phase:** 38 of 38 (Deployment)
-**Plan:** 1 of 1 complete
-**Status:** Milestone COMPLETE ✓
-**Last activity:** 2026-02-05 — Completed 38-01-PLAN.md (Netlify deployment)
+**Current Milestone:** v3.1 Notion-11ty Integration
+**Phase:** Not started (defining requirements)
+**Plan:** —
+**Status:** Defining requirements
+**Last activity:** 2026-02-07 — Milestone v3.1 started
 
 ```
 Progress: [██████████] 100% (4/4 phases complete: 35, 36, 37, 38)

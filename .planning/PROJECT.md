@@ -103,14 +103,15 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-**Next Milestone:** v3.1 (planning required)
+## Current Milestone: v3.1 Notion-11ty Integration
 
-Potential focus areas:
-- Page-specific templates (permit, document, guide)
-- Notion integration rewrite for 11ty data files
-- Navigation as data files
-- i18n plugin integration
-- New language translations (FR, ES, ZH)
+**Goal:** Convert Notion build scripts to 11ty data files so content updates flow automatically through the build pipeline.
+
+**Target features:**
+- Document pages generated from 11ty data file + Liquid template
+- Permit pages generated from 11ty data file + Liquid template
+- Single `npm run build` command for entire site
+- Netlify configured with Notion API token for production builds
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
