@@ -9,10 +9,10 @@ Requirements for Notion-11ty integration. Converts existing build scripts to 11t
 
 ### Documents
 
-- [ ] **DOC-01**: 11ty data file fetches document data from Notion
-- [ ] **DOC-02**: Liquid template renders document pages (primo/rinnovo)
-- [ ] **DOC-03**: Generated pages have same URLs as current (`documenti-*-primo.html`, `documenti-*-rinnovo.html`)
-- [ ] **DOC-04**: Redirect pages generated via 11ty for URL aliases
+- [x] **DOC-01**: 11ty data file fetches document data from Notion
+- [x] **DOC-02**: Liquid template renders document pages (primo/rinnovo)
+- [x] **DOC-03**: Generated pages have same URLs as current (`documenti-*-primo.html`, `documenti-*-rinnovo.html`)
+- [x] **DOC-04**: Redirect pages generated via 11ty for URL aliases
 
 ### Permits
 
@@ -41,10 +41,10 @@ Requirements for Notion-11ty integration. Converts existing build scripts to 11t
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DOC-01 | Phase 39 | Pending |
-| DOC-02 | Phase 39 | Pending |
-| DOC-03 | Phase 39 | Pending |
-| DOC-04 | Phase 39 | Pending |
+| DOC-01 | Phase 39 | Complete |
+| DOC-02 | Phase 39 | Complete |
+| DOC-03 | Phase 39 | Complete |
+| DOC-04 | Phase 39 | Complete |
 | PERM-01 | Phase 40 | Pending |
 | PERM-02 | Phase 40 | Pending |
 | PERM-03 | Phase 40 | Pending |

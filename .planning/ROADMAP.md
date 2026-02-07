@@ -16,15 +16,17 @@ Convert existing Notion build scripts to 11ty data files. After this milestone, 
 
 ---
 
-## Phase 39: Document Pages
+## Phase 39: Document Pages ✓
 
 **Goal:** Document pages (primo rilascio + rinnovo) generated via 11ty instead of standalone script.
+
+**Status:** Complete (2026-02-07)
 
 **Plans:** 2 plans
 
 Plans:
-- [ ] 39-01-PLAN.md — Data layer: documents.js data file + Liquid filters
-- [ ] 39-02-PLAN.md — Templates: primo, rinnovo, and redirect page templates
+- [x] 39-01-PLAN.md — Data layer: documents.js data file + Liquid filters
+- [x] 39-02-PLAN.md — Templates: primo, rinnovo, and redirect page templates
 
 **Requirements:**
 - DOC-01: 11ty data file fetches document data from Notion
