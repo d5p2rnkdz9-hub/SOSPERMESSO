@@ -18,6 +18,14 @@ export default function(eleventyConfig) {
   eleventyConfig.ignores.add("*.md");
   eleventyConfig.ignores.add("CLAUDE.md");
 
+  // Ignore existing redirect HTML files (replaced by documents-redirects.liquid template)
+  // These files are old static redirects that will be regenerated via pagination
+  const redirectSlugs = require('./_data/slugMap.js').mappings;
+  for (const displaySlug of Object.keys(redirectSlugs)) {
+    eleventyConfig.ignores.add(`src/pages/documenti-${displaySlug}-primo.html`);
+    eleventyConfig.ignores.add(`src/pages/documenti-${displaySlug}-rinnovo.html`);
+  }
+
   // Register Liquid filters for template helpers
   // Used in document page templates for linking to dizionario, formatting, etc.
 
