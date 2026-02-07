@@ -24,6 +24,22 @@
   <meta name="twitter:description" content="{{ description | default: site.defaultDescription }}">
   <meta name="twitter:image" content="{{ site.url }}/IMAGES/logo-full.png">
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- hreflang for multilingual SEO -->
+  {%- assign isEnglish = page.url | slice: 0, 4 -%}
+  {%- if isEnglish == "/en/" -%}
+    {%- assign itUrl = page.url | replace_first: "/en/", "/" -%}
+    {%- assign enUrl = page.url -%}
+  {%- else -%}
+    {%- assign itUrl = page.url -%}
+    {%- assign enUrl = "/en" | append: page.url -%}
+  {%- endif -%}
+  <link rel="alternate" hreflang="it" href="{{ site.url }}{{ itUrl }}">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
