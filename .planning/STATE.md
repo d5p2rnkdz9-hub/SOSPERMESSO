@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 
 **Current Milestone:** v3.1 Notion-11ty Integration
 **Phase:** 39 (Document Pages) — in progress
-**Plan:** 39-01 (completed)
+**Plan:** 39-02 (completed)
 **Status:** In progress
-**Last activity:** 2026-02-07 — Completed 39-01-PLAN.md (data layer)
+**Last activity:** 2026-02-07 — Completed 39-02-PLAN.md (document templates)
 
 ```
-Progress: [█░░░░░░░░░] 10% (1/10 total plans complete)
+Progress: [██░░░░░░░░] 20% (2/10 total plans complete)
 ```
 
 ## v3.1 Phases
@@ -34,9 +34,9 @@ Progress: [█░░░░░░░░░] 10% (1/10 total plans complete)
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9 (v2.2 + v3.0 + v3.1 milestones)
+- Total plans completed: 10 (v2.2 + v3.0 + v3.1 milestones)
 - Average duration: 4.6 min
-- Total execution time: 41 min
+- Total execution time: 46 min
 
 **By Phase:**
 
@@ -47,10 +47,9 @@ Progress: [█░░░░░░░░░] 10% (1/10 total plans complete)
 | 36 | 2 | 7 min | 3.5 min |
 | 37 | 3 | 13 min | 4.3 min |
 | 38 | 1 | 8 min | 8 min |
-| 39 | 1 | 3 min | 3 min |
+| 39 | 2 | 8 min | 4 min |
 
 **Recent Trend:**
-- Phase 35 Plan 01: 5 min (3 tasks, 5 deviations auto-fixed)
 - Phase 36 Plan 01: 3 min (3 tasks, 0 deviations)
 - Phase 36 Plan 02: 4 min (4 tasks, 0 deviations, checkpoint verified)
 - Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
@@ -58,7 +57,8 @@ Progress: [█░░░░░░░░░] 10% (1/10 total plans complete)
 - Phase 37 Plan 03: 2 min (2 tasks, verification only - work done in 37-02)
 - Phase 38 Plan 01: 8 min (3 tasks, 0 deviations, checkpoint verified)
 - Phase 39 Plan 01: 3 min (3 tasks, 0 deviations)
-- Trend: v3.1 data layer started, clean execution continues
+- Phase 39 Plan 02: 5 min (3 tasks, 1 deviation - ignore conflict)
+- Trend: v3.1 template layer complete, pagination working correctly
 
 *Updated after each plan completion*
 
@@ -144,6 +144,8 @@ Recent decisions affecting current work:
 - **39-01: Separate primo/rinnovo arrays** — documents.js returns {primo: [], rinnovo: []} for direct pagination
 - **39-01: Graceful degradation** — Return empty arrays when NOTION_API_KEY missing, don't fail build
 - **39-01: createRequire pattern** — Use createRequire to import CommonJS helpers from ESM config
+- **39-02: Inline header/footer for documents** — Document pages use simpler nav, kept inline not includes
+- **39-02: Ignore old redirect HTML** — Dynamic ignore patterns via slugMap prevent permalink conflicts
 
 ### Research Completed
 
@@ -165,10 +167,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-07
-**Stopped at:** Completed 39-01-PLAN.md (data layer)
+**Stopped at:** Completed 39-02-PLAN.md (document templates)
 **Resume file:** None
 
-**Next Action:** Continue with 39-02-PLAN.md (document templates) or run `/gsd:execute-plan 39-02`.
+**Next Action:** Continue with 39-03-PLAN.md (content sync) or run `/gsd:execute-plan 39-03`.
 
 ---
 
