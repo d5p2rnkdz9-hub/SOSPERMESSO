@@ -1,0 +1,22 @@
+---
+pagination:
+  data: documentRedirects
+  size: 1
+  alias: redirect
+permalink: "src/pages/documenti-{{ redirect.displaySlug }}-{{ redirect.type }}.html"
+layout: false
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url={{ redirect.targetFile }}">
+  <link rel="canonical" href="{{ redirect.targetFile }}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Reindirizzamento in corso a <a href="{{ redirect.targetFile }}">{{ redirect.targetFile }}</a>...</p>
+  <script>window.location.replace("{{ redirect.targetFile }}");</script>
+</body>
+</html>
