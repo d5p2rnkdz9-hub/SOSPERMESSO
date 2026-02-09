@@ -95,6 +95,16 @@ Plans:
 
 **Goal:** Crowdsourced local questura practices on document pages — users can submit, view, and vote on practical tips about how specific questure handle procedures.
 
+**Status:** Planned
+
+**Plans:** 4 plans
+
+Plans:
+- [ ] 41-01-PLAN.md — Static core: data layer + display section on document pages
+- [ ] 41-02-PLAN.md — Netlify Functions: submission + voting endpoints
+- [ ] 41-03-PLAN.md — Interactive layer: modal form, voting UI, webhook auto-deploy
+- [ ] 41-04-PLAN.md — Visual verification checkpoint
+
 **Requirements:**
 - PRASSI-01: Submission form on document pages sends data via Netlify Function to Notion DB
 - PRASSI-02: "Prassi locali" section on document pages displays approved notes, filterable by city
