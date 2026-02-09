@@ -8,6 +8,11 @@
   NODE_VERSION = "22"
   NODE_ENV = "production"
 
+# Netlify Functions configuration
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 # Security headers
 [[headers]]
   for = "/*"
