@@ -14,13 +14,13 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Notion-11ty Integration
-**Phase:** 39 (Document Pages) — complete
-**Plan:** —
-**Status:** Phase 39 verified, ready for Phase 40
-**Last activity:** 2026-02-07 — Phase 39 complete and verified
+**Phase:** 40 (Permit Pages) — in progress
+**Plan:** 01 of 04 complete
+**Status:** Permit data layer complete
+**Last activity:** 2026-02-09 — Completed 40-01-PLAN.md
 
 ```
-Progress: [███░░░░░░░] 33% (1/3 phases complete)
+Progress: [███░░░░░░░] 33% (1/3 phases complete, 40-01 done)
 ```
 
 ## v3.1 Phases
@@ -28,7 +28,7 @@ Progress: [███░░░░░░░] 33% (1/3 phases complete)
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
-| 40 | Permit Pages | PERM-01 to PERM-04 | ○ Pending |
+| 40 | Permit Pages | PERM-01 to PERM-04 | ◐ In Progress (01/04) |
 | 41 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
 
 ## Performance Metrics
@@ -48,6 +48,7 @@ Progress: [███░░░░░░░] 33% (1/3 phases complete)
 | 37 | 3 | 13 min | 4.3 min |
 | 38 | 1 | 8 min | 8 min |
 | 39 | 2 | 8 min | 4 min |
+| 40 | 1 | 5 min | 5 min |
 
 **Recent Trend:**
 - Phase 36 Plan 01: 3 min (3 tasks, 0 deviations)
@@ -58,7 +59,8 @@ Progress: [███░░░░░░░] 33% (1/3 phases complete)
 - Phase 38 Plan 01: 8 min (3 tasks, 0 deviations, checkpoint verified)
 - Phase 39 Plan 01: 3 min (3 tasks, 0 deviations)
 - Phase 39 Plan 02: 5 min (3 tasks, 1 deviation - ignore conflict)
-- Trend: v3.1 template layer complete, pagination working correctly
+- Phase 40 Plan 01: 5 min (2 tasks, 0 deviations)
+- Trend: Permit data layer complete, ready for template implementation
 
 *Updated after each plan completion*
 
@@ -146,6 +148,9 @@ Recent decisions affecting current work:
 - **39-01: createRequire pattern** — Use createRequire to import CommonJS helpers from ESM config
 - **39-02: Inline header/footer for documents** — Document pages use simpler nav, kept inline not includes
 - **39-02: Ignore old redirect HTML** — Dynamic ignore patterns via slugMap prevent permalink conflicts
+- **40-01: Function copying from build scripts** — Copy parsing functions instead of import to avoid side-effect execution
+- **40-01: parentSlug pre-computation** — Variant children get parentSlug from detectVariants baseSlug for breadcrumbs
+- **40-01: Section index for styling** — Add index field to sections for getSectionBorderColor fallback rotation
 
 ### Research Completed
 
@@ -166,11 +171,11 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-07
-**Stopped at:** Phase 39 complete and verified
+**Last session:** 2026-02-09
+**Stopped at:** Completed 40-01-PLAN.md (Permit data layer)
 **Resume file:** None
 
-**Next Action:** Run `/gsd:discuss-phase 40` or `/gsd:plan-phase 40` to start Permit Pages phase.
+**Next Action:** Continue to 40-02 (Permit template) or verify 40-01 with dry run.
 
 ---
 
