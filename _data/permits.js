@@ -518,8 +518,20 @@ module.exports = async function() {
       }
     }
 
-    console.log(`[permits.js] Returning ${result.length} total permit objects (standalone + parents + children)`);
-    return result;
+    // Deduplicate by slug (keep first occurrence)
+    // This handles edge cases where a permit might be duplicated in standalone array
+    const seen = new Set();
+    const deduplicated = result.filter(permit => {
+      if (seen.has(permit.slug)) {
+        console.warn(`[permits.js] Removing duplicate entry for slug: ${permit.slug}`);
+        return false;
+      }
+      seen.add(permit.slug);
+      return true;
+    });
+
+    console.log(`[permits.js] Returning ${deduplicated.length} total permit objects (standalone + parents + children)`);
+    return deduplicated;
 
   } catch (error) {
     console.error(`[permits.js] Notion fetch failed: ${error.message}`);

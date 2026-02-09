@@ -26,6 +26,23 @@ export default function(eleventyConfig) {
     eleventyConfig.ignores.add(`src/pages/documenti-${displaySlug}-rinnovo.html`);
   }
 
+  // Ignore existing static permit HTML files (replaced by permits.liquid template)
+  const fs = require('fs');
+  const path = require('path');
+  try {
+    const pagesDir = path.join(process.cwd(), 'src', 'pages');
+    const files = fs.readdirSync(pagesDir);
+    const permitFiles = files.filter(f => f.startsWith('permesso-') && f.endsWith('.html'));
+    for (const file of permitFiles) {
+      eleventyConfig.ignores.add(`src/pages/${file}`);
+    }
+    if (permitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${permitFiles.length} old static permit files (replaced by permits.liquid)`);
+    }
+  } catch (e) {
+    // Directory might not exist in some environments
+  }
+
   // Register Liquid filters for template helpers
   // Used in document page templates for linking to dizionario, formatting, etc.
 
