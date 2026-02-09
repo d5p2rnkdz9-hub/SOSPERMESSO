@@ -50,15 +50,17 @@ Plans:
 
 ---
 
-## Phase 40: Permit Pages
+## Phase 40: Permit Pages ✓
 
 **Goal:** Permit pages (Q&A sections) generated via 11ty instead of standalone script.
+
+**Status:** Complete (2026-02-09)
 
 **Plans:** 2 plans
 
 Plans:
-- [ ] 40-01-PLAN.md — Data layer: permits.js data file + getSectionBorderColor filter
-- [ ] 40-02-PLAN.md — Template: permits.liquid + old file conflict handling + visual verification
+- [x] 40-01-PLAN.md — Data layer: permits.js data file + getSectionBorderColor filter
+- [x] 40-02-PLAN.md — Template: permits.liquid + old file conflict handling + visual verification
 
 **Requirements:**
 - PERM-01: 11ty data file fetches permit data and page blocks from Notion

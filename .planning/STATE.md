@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-07
-**Status:** v3.1 Notion-11ty Integration — Defining requirements
+**Last Updated:** 2026-02-09
+**Status:** v3.1 Notion-11ty Integration — Phase 40 complete
 
 ## Project Reference
 
@@ -14,13 +14,13 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Notion-11ty Integration
-**Phase:** 40 (Permit Pages) — in progress
-**Plan:** 01 of 04 complete
-**Status:** Permit data layer complete
-**Last activity:** 2026-02-09 — Completed 40-01-PLAN.md
+**Phase:** 40 (Permit Pages) — complete
+**Plan:** —
+**Status:** Phase 40 verified, ready for Phase 41
+**Last activity:** 2026-02-09 — Phase 40 complete and verified
 
 ```
-Progress: [███░░░░░░░] 33% (1/3 phases complete, 40-01 done)
+Progress: [██████░░░░] 67% (2/3 phases complete)
 ```
 
 ## v3.1 Phases
@@ -28,15 +28,15 @@ Progress: [███░░░░░░░] 33% (1/3 phases complete, 40-01 done)
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
-| 40 | Permit Pages | PERM-01 to PERM-04 | ◐ In Progress (01/04) |
+| 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
 | 41 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 4.6 min
-- Total execution time: 46 min
+- Total plans completed: 12 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 4.75 min
+- Total execution time: 57 min
 
 **By Phase:**
 
@@ -48,11 +48,9 @@ Progress: [███░░░░░░░] 33% (1/3 phases complete, 40-01 done)
 | 37 | 3 | 13 min | 4.3 min |
 | 38 | 1 | 8 min | 8 min |
 | 39 | 2 | 8 min | 4 min |
-| 40 | 1 | 5 min | 5 min |
+| 40 | 2 | 12 min | 6 min |
 
 **Recent Trend:**
-- Phase 36 Plan 01: 3 min (3 tasks, 0 deviations)
-- Phase 36 Plan 02: 4 min (4 tasks, 0 deviations, checkpoint verified)
 - Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
 - Phase 37 Plan 02: 3 min (2 tasks, 0 deviations)
 - Phase 37 Plan 03: 2 min (2 tasks, verification only - work done in 37-02)
@@ -60,7 +58,8 @@ Progress: [███░░░░░░░] 33% (1/3 phases complete, 40-01 done)
 - Phase 39 Plan 01: 3 min (3 tasks, 0 deviations)
 - Phase 39 Plan 02: 5 min (3 tasks, 1 deviation - ignore conflict)
 - Phase 40 Plan 01: 5 min (2 tasks, 0 deviations)
-- Trend: Permit data layer complete, ready for template implementation
+- Phase 40 Plan 02: 7 min (3 tasks, 1 deviation - duplicate slug fix, checkpoint verified)
+- Trend: Permit pages complete, Liquid boolean == true pattern discovered
 
 *Updated after each plan completion*
 
@@ -151,6 +150,8 @@ Recent decisions affecting current work:
 - **40-01: Function copying from build scripts** — Copy parsing functions instead of import to avoid side-effect execution
 - **40-01: parentSlug pre-computation** — Variant children get parentSlug from detectVariants baseSlug for breadcrumbs
 - **40-01: Section index for styling** — Add index field to sections for getSectionBorderColor fallback rotation
+- **40-02: Explicit boolean comparison in Liquid** — Use `== true` for JS booleans passed via 11ty data (truthy eval unreliable)
+- **40-02: Dynamic permit file ignore** — readdirSync to ignore all permesso-*.html files, matching Phase 39 redirect pattern
 
 ### Research Completed
 
@@ -172,10 +173,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-09
-**Stopped at:** Completed 40-01-PLAN.md (Permit data layer)
+**Stopped at:** Phase 40 complete and verified
 **Resume file:** None
 
-**Next Action:** Continue to 40-02 (Permit template) or verify 40-01 with dry run.
+**Next Action:** Run `/gsd:discuss-phase 41` or `/gsd:plan-phase 41` to start Build Pipeline phase.
 
 ---
 
