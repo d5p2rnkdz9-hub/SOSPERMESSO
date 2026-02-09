@@ -14,13 +14,13 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 41 (Prassi Locali MVP) — discussing
-**Plan:** —
-**Status:** Phase 40 complete, discussing Phase 41
-**Last activity:** 2026-02-09 — Roadmap updated, discussing prassi locali
+**Phase:** 41 (Prassi Locali MVP) — executing
+**Plan:** 02 of 5 (completed)
+**Status:** API endpoints ready, client UI next
+**Last activity:** 2026-02-09 — Completed 41-02-PLAN.md
 
 ```
-Progress: [██░░░░░░░░] 25% (2/8 phases complete)
+Progress: [███░░░░░░░] 28% (2.4/8 phases complete - Phase 41: 40% done)
 ```
 
 ## v3.1 Phases
@@ -29,7 +29,7 @@ Progress: [██░░░░░░░░] 25% (2/8 phases complete)
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
-| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◐ Discussing |
+| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◐ Executing (2/5 plans) |
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
@@ -39,9 +39,9 @@ Progress: [██░░░░░░░░] 25% (2/8 phases complete)
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 4.75 min
-- Total execution time: 57 min
+- Total plans completed: 13 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 4.54 min
+- Total execution time: 59 min
 
 **By Phase:**
 
@@ -54,6 +54,7 @@ Progress: [██░░░░░░░░] 25% (2/8 phases complete)
 | 38 | 1 | 8 min | 8 min |
 | 39 | 2 | 8 min | 4 min |
 | 40 | 2 | 12 min | 6 min |
+| 41 | 2 | 2 min | 1 min |
 
 **Recent Trend:**
 - Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
@@ -64,7 +65,8 @@ Progress: [██░░░░░░░░] 25% (2/8 phases complete)
 - Phase 39 Plan 02: 5 min (3 tasks, 1 deviation - ignore conflict)
 - Phase 40 Plan 01: 5 min (2 tasks, 0 deviations)
 - Phase 40 Plan 02: 7 min (3 tasks, 1 deviation - duplicate slug fix, checkpoint verified)
-- Trend: Permit pages complete, Liquid boolean == true pattern discovered
+- Phase 41 Plan 02: 2 min (2 tasks, 0 deviations)
+- Trend: Serverless functions simple, no rate limiting complexity in MVP
 
 *Updated after each plan completion*
 
@@ -157,6 +159,8 @@ Recent decisions affecting current work:
 - **40-01: Section index for styling** — Add index field to sections for getSectionBorderColor fallback rotation
 - **40-02: Explicit boolean comparison in Liquid** — Use `== true` for JS booleans passed via 11ty data (truthy eval unreliable)
 - **40-02: Dynamic permit file ignore** — readdirSync to ignore all permesso-*.html files, matching Phase 39 redirect pattern
+- **41-02: Dropped Upstash Redis** — Vote rate limiting simplified to localStorage client-side only; Notion stores vote counts; server-side rate limiting deferred until abuse occurs
+- **41-02: Hardcoded city list** — 105 questura cities in submit-prassi.js for fast validation, no external query needed
 
 ### Research Completed
 
@@ -178,10 +182,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-09
-**Stopped at:** Phase 40 complete and verified
+**Stopped at:** Completed 41-02-PLAN.md (Netlify Functions)
 **Resume file:** None
 
-**Next Action:** Discussing Phase 41 (Prassi Locali MVP) — capture context, then plan.
+**Next Action:** Execute 41-03-PLAN.md (Client UI - form modal and voting).
 
 ---
 
