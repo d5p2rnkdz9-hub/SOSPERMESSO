@@ -54,6 +54,12 @@ Plans:
 
 **Goal:** Permit pages (Q&A sections) generated via 11ty instead of standalone script.
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 40-01-PLAN.md — Data layer: permits.js data file + getSectionBorderColor filter
+- [ ] 40-02-PLAN.md — Template: permits.liquid + old file conflict handling + visual verification
+
 **Requirements:**
 - PERM-01: 11ty data file fetches permit data and page blocks from Notion
 - PERM-02: Liquid template renders permit Q&A pages
@@ -62,7 +68,7 @@ Plans:
 
 **Success Criteria:**
 1. `_data/permits.js` exists and fetches permits + page blocks from Notion
-2. `_includes/layouts/permit.liquid` renders Q&A sections
+2. Liquid template renders Q&A sections with colored borders
 3. Variant parent and child pages generate correctly
 4. Build produces `permesso-*.html` files matching current URLs
 5. Generated pages are visually identical to current pages
