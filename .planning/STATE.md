@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-09
-**Status:** v3.1 Notion-11ty Integration — Phase 40 complete
+**Status:** v3.1 Prassi Locali + Notion-11ty Completion — Phase 41 next
 
 ## Project Reference
 
@@ -9,18 +9,18 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v3.1 Notion-11ty Integration — Convert build scripts to 11ty data files
+**Current focus:** v3.1 Prassi Locali + Notion-11ty Completion
 
 ## Current Position
 
-**Current Milestone:** v3.1 Notion-11ty Integration
-**Phase:** 40 (Permit Pages) — complete
+**Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
+**Phase:** 41 (Prassi Locali MVP) — discussing
 **Plan:** —
-**Status:** Phase 40 verified, ready for Phase 41
-**Last activity:** 2026-02-09 — Phase 40 complete and verified
+**Status:** Phase 40 complete, discussing Phase 41
+**Last activity:** 2026-02-09 — Roadmap updated, discussing prassi locali
 
 ```
-Progress: [██████░░░░] 67% (2/3 phases complete)
+Progress: [██░░░░░░░░] 25% (2/8 phases complete)
 ```
 
 ## v3.1 Phases
@@ -29,7 +29,12 @@ Progress: [██████░░░░] 67% (2/3 phases complete)
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
-| 41 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
+| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◐ Discussing |
+| 42 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
+| 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
+| 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
+| 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
+| 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
 
 ## Performance Metrics
 
@@ -176,7 +181,7 @@ None.
 **Stopped at:** Phase 40 complete and verified
 **Resume file:** None
 
-**Next Action:** Run `/gsd:discuss-phase 41` or `/gsd:plan-phase 41` to start Build Pipeline phase.
+**Next Action:** Discussing Phase 41 (Prassi Locali MVP) — capture context, then plan.
 
 ---
 

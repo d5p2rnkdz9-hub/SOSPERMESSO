@@ -1,18 +1,24 @@
 # Roadmap: SOS Permesso v3.1
 
-**Milestone:** v3.1 Notion-11ty Integration
+**Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Phases:** 39-41 (continues from v3.0 which ended at phase 38)
+**Updated:** 2026-02-09
+**Phases:** 39-46 (continues from v3.0 which ended at phase 38)
 
 ## Overview
 
-Convert existing Notion build scripts to 11ty data files. After this milestone, Notion content updates flow automatically through the build pipeline.
+Complete Notion-11ty integration, build collaborative "prassi locali" infrastructure for crowdsourced questura notes, then clean up build pipeline and populate remaining content.
 
 | Phase | Name | Goal | Requirements |
 |-------|------|------|--------------|
-| 39 | Document Pages | Document pages generated via 11ty data + templates | DOC-01, DOC-02, DOC-03, DOC-04 |
-| 40 | Permit Pages | Permit pages generated via 11ty data + templates | PERM-01, PERM-02, PERM-03, PERM-04 |
-| 41 | Build Pipeline | Unified build command, deployment config, cleanup | BUILD-01, BUILD-02, BUILD-03, BUILD-04 |
+| 39 | Document Pages | Document pages generated via 11ty data + templates | DOC-01 to DOC-04 |
+| 40 | Permit Pages | Permit pages generated via 11ty data + templates | PERM-01 to PERM-04 |
+| 41 | Prassi Locali MVP | Crowdsourced local questura practices on document pages | PRASSI-01 to PRASSI-04 |
+| 42 | Build Pipeline | Unified build command, old script cleanup | BUILD-01 to BUILD-04 |
+| 43 | Populate Blank Permits | Add Notion content for 17 placeholder permits | CONTENT-01 to CONTENT-02 |
+| 44 | Costi Section | Cost information section on document pages | COSTI-01 to COSTI-02 |
+| 45 | Content Validation | Review pass on all generated content | VALID-01 to VALID-02 |
+| 46 | Dizionario Link Revision | Fix partial matching coverage for glossary links | DIZIO-01 to DIZIO-02 |
 
 ---
 
@@ -85,7 +91,35 @@ Plans:
 
 ---
 
-## Phase 41: Build Pipeline
+## Phase 41: Prassi Locali MVP
+
+**Goal:** Crowdsourced local questura practices on document pages — users can submit, view, and vote on practical tips about how specific questure handle procedures.
+
+**Requirements:**
+- PRASSI-01: Submission form on document pages sends data via Netlify Function to Notion DB
+- PRASSI-02: "Prassi locali" section on document pages displays approved notes, filterable by city
+- PRASSI-03: Upvote/downvote system (anonymous, localStorage + IP rate limiting)
+- PRASSI-04: Manual moderation workflow (approve in Notion, rebuild to publish)
+
+**Success Criteria:**
+1. Document pages have a "Prassi locali" section showing approved practices
+2. Users can submit new practices via inline form
+3. Practices are filterable by city (client-side)
+4. Upvote/downvote works with abuse prevention
+5. Submissions appear in Notion for moderation
+6. Approved submissions appear on site after rebuild
+
+**Dependencies:** Phases 39, 40 (document and permit pages must work via 11ty)
+
+**Technical Notes:**
+- Static core: approved notes baked into pages at build time
+- Thin dynamic layer: Netlify Functions for form submission + upvoting
+- Notion DB as content store (submissions table, moderation queue)
+- Future phase: pre-approved user auth for submitters
+
+---
+
+## Phase 42: Build Pipeline
 
 **Goal:** Single build command, Netlify deployment with Notion token, cleanup of old scripts.
 
@@ -111,15 +145,68 @@ Plans:
 
 ---
 
+## Phase 43: Populate Blank Permits
+
+**Goal:** Add Notion content for the 17 placeholder permit pages.
+
+**Requirements:**
+- CONTENT-01: All 17 placeholder permits have Q&A content in Notion
+- CONTENT-02: Generated pages render correctly with new content
+
+**Dependencies:** Phase 40 (permit page generation must work)
+
+---
+
+## Phase 44: Costi Section
+
+**Goal:** Add cost information section to document pages.
+
+**Requirements:**
+- COSTI-01: Cost data sourced from Notion
+- COSTI-02: Costi section rendered on document pages
+
+**Dependencies:** Phase 39 (document page templates)
+
+---
+
+## Phase 45: Content Validation
+
+**Goal:** Review pass on all generated content for accuracy and completeness.
+
+**Requirements:**
+- VALID-01: All document pages reviewed for accuracy
+- VALID-02: All permit pages reviewed for accuracy
+
+**Dependencies:** Phases 43, 44 (all content populated first)
+
+---
+
+## Phase 46: Dizionario Link Revision
+
+**Goal:** Fix partial matching coverage for glossary links across all pages.
+
+**Requirements:**
+- DIZIO-01: Glossary term matching improved
+- DIZIO-02: All relevant terms linked correctly
+
+**Dependencies:** Phase 45 (content finalized before link pass)
+
+---
+
 ## Risk Mitigation
 
 **API rate limiting:** Notion API has rate limits. If build is slow, consider:
 - Caching responses during build
 - Parallel fetching where possible
 
-**Content hash changes:** Current `build-permits.js` uses content hashing for incremental builds. 11ty rebuild behavior may differ — verify acceptable.
+**Netlify Functions cold start:** Prassi locali submission/voting uses serverless functions. Consider:
+- Keep functions small and focused
+- Warm-up strategies if latency is an issue
 
-**Template parity:** JS template functions → Liquid templates. Careful testing needed to ensure visual parity.
+**Moderation bottleneck:** Manual Notion moderation may not scale. Monitor volume and consider:
+- Batch approval workflows
+- Pre-approved contributor access (Phase 2)
 
 ---
 *Roadmap created: 2026-02-07*
+*Updated: 2026-02-09 — Added prassi locali, expanded to phases 39-46*
