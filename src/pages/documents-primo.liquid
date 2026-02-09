@@ -90,8 +90,8 @@ eleventyExcludeFromCollections: true
   </section>
 
   <!-- SUBMISSION METHOD CALLOUT -->
-  {%- assign isKit = doc.method | downcase | contains: 'kit' -%}
-  {%- if isKit -%}
+  {%- assign methodLower = doc.method | downcase -%}
+  {%- if methodLower contains 'kit' -%}
     {%- assign calloutClass = 'callout-kit' -%}
     {%- assign calloutIcon = '📮' -%}
     {%- assign calloutText = 'Invia tramite KIT alle Poste (non devi andare in Questura)' -%}

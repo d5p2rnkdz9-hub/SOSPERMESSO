@@ -90,8 +90,8 @@ eleventyExcludeFromCollections: true
   </section>
 
   <!-- SUBMISSION METHOD CALLOUT -->
-  {%- assign isKit = doc.method | downcase | contains: 'kit' -%}
-  {%- if isKit -%}
+  {%- assign methodLower = doc.method | downcase -%}
+  {%- if methodLower contains 'kit' -%}
     {%- assign calloutClass = 'callout-kit' -%}
     {%- assign calloutIcon = '📮' -%}
     {%- assign calloutText = 'Invia tramite KIT alle Poste (non devi andare in Questura)' -%}
@@ -109,8 +109,7 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
 
-  {%- assign isAttesaOccupazione = doc.slug | contains: 'attesa-occupazione' -%}
-  {%- if isAttesaOccupazione -%}
+  {%- if doc.slug contains 'attesa-occupazione' -%}
   <!-- DISPUTED RENEWAL WARNING -->
   <section class="section" style="padding: 0.5rem 0;">
     <div class="container" style="max-width: 700px;">
