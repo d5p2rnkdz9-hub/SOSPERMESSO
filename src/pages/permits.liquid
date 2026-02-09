@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
         <div class="breadcrumb-nav">
           <a href="../../index.html">Home</a> →
           <a href="database.html">Database</a> →
-          {% if permit.isVariantChild %}
+          {% if permit.isVariantChild == true %}
           <a href="permesso-{{ permit.parentSlug }}.html">Permesso per {{ permit.baseName }}</a> →
           <span>{{ permit.variantName }}</span>
           {% else %}
@@ -43,7 +43,7 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
 
-{% if permit.isVariantParent %}
+{% if permit.isVariantParent == true %}
   <!-- VARIANT PARENT PAGE -->
   <!-- GENERAL CONTENT -->
   <section class="section">
@@ -118,7 +118,7 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
 
-{% elsif permit.isPlaceholder %}
+{% elsif permit.isPlaceholder == true %}
   <!-- PLACEHOLDER PAGE -->
   <section class="section">
     <div class="container" style="max-width: 900px;">
@@ -139,7 +139,7 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
 
-{% elsif permit.isVariantChild %}
+{% elsif permit.isVariantChild == true %}
   <!-- VARIANT CHILD PAGE -->
   <!-- BACK TO PARENT LINK -->
   <section class="section" style="padding: 1rem 0;">
