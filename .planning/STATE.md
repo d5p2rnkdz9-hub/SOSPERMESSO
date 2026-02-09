@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-09
-**Status:** v3.1 Prassi Locali + Notion-11ty Completion — Phase 41 executing
+**Status:** v3.1 — Phase 41 Wave 2 complete, awaiting Wave 3
 
 ## Project Reference
 
@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Phase:** 41 (Prassi Locali MVP) — executing
-**Plan:** 01 of 5 (completed)
-**Status:** Static display core complete
-**Last activity:** 2026-02-09 — Completed 41-01-PLAN.md
+**Plan:** 03 of 5 (completed)
+**Status:** Wave 2 complete (static + serverless + interactive layers done)
+**Last activity:** 2026-02-09 — Completed 41-03-PLAN.md
 
 ```
-Progress: [███░░░░░░░] 28% (2.2/8 phases complete - Phase 41: 20% done)
+Progress: [███░░░░░░░] 29% (2.3/8 phases complete - Phase 41: 60% done)
 ```
 
 ## v3.1 Phases
@@ -29,7 +29,7 @@ Progress: [███░░░░░░░] 28% (2.2/8 phases complete - Phase 41
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
-| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◐ Executing (1/5 plans) |
+| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◕ Executing (3/5 plans) |
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
@@ -39,9 +39,9 @@ Progress: [███░░░░░░░] 28% (2.2/8 phases complete - Phase 41
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 14 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 5.36 min
-- Total execution time: 75 min
+- Total plans completed: 16 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.56 min
+- Total execution time: 89 min
 
 **By Phase:**
 
@@ -54,7 +54,7 @@ Progress: [███░░░░░░░] 28% (2.2/8 phases complete - Phase 41
 | 38 | 1 | 8 min | 8 min |
 | 39 | 2 | 8 min | 4 min |
 | 40 | 2 | 12 min | 6 min |
-| 41 | 1 | 16 min | 16 min |
+| 41 | 3 | 30 min | 10 min |
 
 **Recent Trend:**
 - Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
@@ -66,7 +66,9 @@ Progress: [███░░░░░░░] 28% (2.2/8 phases complete - Phase 41
 - Phase 40 Plan 01: 5 min (2 tasks, 0 deviations)
 - Phase 40 Plan 02: 7 min (3 tasks, 1 deviation - duplicate slug fix, checkpoint verified)
 - Phase 41 Plan 01: 16 min (2 tasks, 0 deviations)
-- Trend: Data layer and CSS work takes longer than simple functions
+- Phase 41 Plan 02: 7 min (2 tasks, 0 deviations)
+- Phase 41 Plan 03: 7 min (2 tasks, 0 deviations)
+- Trend: Client-side JS with extensive UX takes similar time to Netlify Functions
 
 *Updated after each plan completion*
 
@@ -162,6 +164,12 @@ Recent decisions affecting current work:
 - **41-01: prassi-data-structure** — Nested object: pageSlug -> [[cityName, practices[]]] - Liquid templates iterate easily over arrays. Converting city object to sorted array of tuples enables simple iteration while maintaining alphabetical city order
 - **41-01: empty-state-static** — Show empty state with button in static HTML - Button is non-functional until Plan 03 adds modal. Static button in HTML avoids layout shift when JS loads. Progressive enhancement pattern
 - **41-01: graceful-degradation** — Return empty object {} when NOTION_API_KEY or PRASSI_DB_ID missing - Build succeeds without credentials. Consistent with existing documents.js pattern
+- **41-02: no-upstash-redis** — localStorage only for vote duplicate prevention - Defer server-side rate limiting to future phase if abuse occurs. Keeps MVP simple
+- **41-02: notion-search-filtering** — Same pattern as documents.js - Use notion.search() with JS filtering instead of notion.databases.query
+- **41-03: modal-injection** — Inject modal HTML/CSS via JS (not separate include) - Matches contact-form.html pattern, keeps prassi feature self-contained
+- **41-03: city-validation** — Client-side validation with setCustomValidity + server-side validation - Defense in depth, UX feedback before submission
+- **41-03: vote-localStorage** — 24-hour expiry on duplicate prevention - Balance between preventing spam and allowing opinion changes
+- **41-03: webhook-timing-safe** — crypto.timingSafeEqual for signature comparison - Prevents timing attacks on signature verification
 
 ### Research Completed
 
@@ -183,10 +191,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-09
-**Stopped at:** Completed 41-01-PLAN.md (Static Display Core)
+**Stopped at:** Completed 41-03-PLAN.md (Interactive Layer)
 **Resume file:** None
 
-**Next Action:** Execute remaining Phase 41 plans (02-05) for complete prassi locali MVP.
+**Next Action:** Wave 2 complete. Await user decision on Wave 3 execution (Plans 04-05: UAT + Documentation).
 
 ---
 
