@@ -134,8 +134,10 @@
   font-size: var(--font-size-sm);
   padding-top: var(--spacing-xs);
   border-top: 1px solid var(--gray-light);
+  flex-wrap: wrap;
 }
 
+/* Static vote display (before JS enhancement) */
 .vote-confermo {
   color: var(--success);
   font-weight: 500;
@@ -144,6 +146,108 @@
 .vote-non-confermo {
   color: var(--gray-medium);
   font-weight: 500;
+}
+
+/* -----------------------------------------------
+   INTERACTIVE VOTE BUTTONS (added by JS)
+   ----------------------------------------------- */
+
+.vote-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 0.375rem 0.75rem;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-full);
+  background: var(--white);
+  color: var(--gray-dark);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-primary);
+}
+
+.vote-btn:hover:not(:disabled) {
+  background: var(--gray-light);
+  transform: translateY(-1px);
+}
+
+.vote-btn:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+}
+
+.vote-confermo-btn {
+  border-color: var(--accent-teal);
+  color: var(--accent-teal);
+}
+
+.vote-confermo-btn:hover:not(:disabled) {
+  background: rgba(38, 166, 154, 0.1);
+}
+
+.vote-confermo-btn.voted {
+  background: var(--accent-teal);
+  color: var(--white);
+}
+
+.vote-non-confermo-btn {
+  border-color: var(--lighthouse-red-dark);
+  color: var(--lighthouse-red-dark);
+}
+
+.vote-non-confermo-btn:hover:not(:disabled) {
+  background: rgba(224, 43, 43, 0.1);
+}
+
+.vote-non-confermo-btn.voted {
+  background: var(--lighthouse-red-dark);
+  color: var(--white);
+}
+
+.vote-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vote-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.vote-count {
+  font-weight: 600;
+}
+
+/* -----------------------------------------------
+   VOTE MESSAGES
+   ----------------------------------------------- */
+
+.vote-message {
+  width: 100%;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  margin-top: var(--spacing-xs);
+}
+
+.vote-message-success {
+  background-color: #E8F5E9;
+  color: #1B5E20;
+  border: 1px solid #4CAF50;
+}
+
+.vote-message-error {
+  background-color: #FFEBEE;
+  color: #B71C1C;
+  border: 1px solid #F44336;
+}
+
+.vote-message-info {
+  background-color: #E3F2FD;
+  color: #0D47A1;
+  border: 1px solid #2196F3;
 }
 
 /* -----------------------------------------------
@@ -236,9 +340,13 @@
   }
 
   .prassi-card-votes {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
     gap: var(--spacing-xs);
+  }
+
+  .vote-btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .prassi-empty-state {

@@ -238,7 +238,7 @@ eleventyExcludeFromCollections: true
       {% else %}
         <div class="prassi-empty-state">
           <p>Nessuna segnalazione ancora. Sei il primo a condividere la tua esperienza!</p>
-          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal()">
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/src/pages/documenti-{{ doc.slug }}-rinnovo.html', '{{ doc.slug }}')">
             Aggiungi la tua esperienza
           </button>
         </div>
@@ -246,7 +246,7 @@ eleventyExcludeFromCollections: true
 
       {% if pagePrassi %}
         <div style="text-align: center; margin-top: 1.5rem;">
-          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal()">
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/src/pages/documenti-{{ doc.slug }}-rinnovo.html', '{{ doc.slug }}')">
             Aggiungi la tua esperienza
           </button>
         </div>
@@ -319,5 +319,8 @@ eleventyExcludeFromCollections: true
       document.addEventListener('DOMContentLoaded', loadState);
     })();
   </script>
+
+  <!-- Prassi locali client-side functionality -->
+  <script src="../scripts/prassi.js"></script>
 </body>
 </html>
