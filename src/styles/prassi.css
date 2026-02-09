@@ -1,0 +1,283 @@
+/* ===============================================
+   PRASSI LOCALI SECTION STYLES
+   Community-contributed questura practices display
+   =============================================== */
+
+/* -----------------------------------------------
+   SECTION CONTAINER
+   ----------------------------------------------- */
+
+.prassi-section {
+  background: var(--off-white);
+  padding: var(--spacing-xl) 0;
+  margin-top: var(--spacing-lg);
+}
+
+.prassi-section .container {
+  max-width: 700px;
+}
+
+.prassi-section h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  color: var(--gray-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* -----------------------------------------------
+   ANCHOR LINK (in page header)
+   ----------------------------------------------- */
+
+.prassi-anchor-link {
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--accent-teal);
+  background: rgba(38, 166, 154, 0.1);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.prassi-anchor-link:hover {
+  background: var(--accent-teal-bright);
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+/* -----------------------------------------------
+   CITY GROUPING
+   ----------------------------------------------- */
+
+.prassi-city-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.prassi-city-name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--accent-teal);
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--accent-teal);
+}
+
+/* -----------------------------------------------
+   PRACTICE CARDS
+   ----------------------------------------------- */
+
+.prassi-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  border-left: 4px solid var(--accent-teal);
+  transition: all var(--transition-base);
+}
+
+.prassi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(38, 166, 154, 0.15);
+  border-left-color: var(--accent-teal-bright);
+}
+
+.prassi-card:last-child {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------------
+   CARD CONTENT
+   ----------------------------------------------- */
+
+.prassi-card-description {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--gray-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.prassi-card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--gray-medium);
+  margin-bottom: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.prassi-card-meta span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.prassi-category-tag {
+  background: rgba(38, 166, 154, 0.1);
+  color: var(--accent-teal);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+/* -----------------------------------------------
+   VOTE DISPLAY
+   ----------------------------------------------- */
+
+.prassi-card-votes {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-size: var(--font-size-sm);
+  padding-top: var(--spacing-xs);
+  border-top: 1px solid var(--gray-light);
+}
+
+.vote-confermo {
+  color: var(--success);
+  font-weight: 500;
+}
+
+.vote-non-confermo {
+  color: var(--gray-medium);
+  font-weight: 500;
+}
+
+/* -----------------------------------------------
+   EMPTY STATE
+   ----------------------------------------------- */
+
+.prassi-empty-state {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.prassi-empty-state p {
+  font-size: var(--font-size-lg);
+  color: var(--gray-medium);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+}
+
+/* -----------------------------------------------
+   SUBMIT BUTTON
+   ----------------------------------------------- */
+
+.prassi-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+
+  /* Yellow gradient matching .btn-primary */
+  background: linear-gradient(135deg, #FFF9C4 0%, #FFD700 100%);
+  color: #5D4E00;
+  border: 1.5px solid #FFC107;
+}
+
+.prassi-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.prassi-submit-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* -----------------------------------------------
+   MOBILE RESPONSIVE
+   ----------------------------------------------- */
+
+@media (max-width: 768px) {
+  .prassi-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .prassi-section h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .prassi-anchor-link {
+    display: block;
+    text-align: center;
+  }
+
+  .prassi-city-name {
+    font-size: var(--font-size-base);
+  }
+
+  .prassi-card {
+    padding: var(--spacing-sm);
+  }
+
+  .prassi-card-description {
+    font-size: var(--font-size-sm);
+  }
+
+  .prassi-card-meta {
+    font-size: var(--font-size-xs);
+    gap: var(--spacing-xs);
+  }
+
+  .prassi-card-votes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+  .prassi-empty-state {
+    padding: var(--spacing-md);
+  }
+
+  .prassi-empty-state p {
+    font-size: var(--font-size-base);
+  }
+
+  .prassi-submit-btn {
+    width: 100%;
+    padding: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .prassi-section h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  .prassi-city-name {
+    font-size: var(--font-size-sm);
+  }
+
+  .prassi-card {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .prassi-card-description {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .prassi-card-meta {
+    font-size: 0.7rem;
+  }
+
+  .prassi-submit-btn {
+    font-size: var(--font-size-sm);
+  }
+}

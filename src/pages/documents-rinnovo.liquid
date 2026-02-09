@@ -32,6 +32,7 @@ eleventyExcludeFromCollections: true
   <link rel="stylesheet" href="../styles/mobile.css">
   <link rel="stylesheet" href="../styles/mobile-fix.css">
   <link rel="stylesheet" href="../styles/document-page.css">
+  <link rel="stylesheet" href="../styles/prassi.css">
 </head>
 <body class="page-rinnovo">
 
@@ -80,6 +81,9 @@ eleventyExcludeFromCollections: true
         <p class="section-subtitle" style="margin-bottom: 0.5rem;">Documenti per il <strong>Rinnovo</strong></p>
         <a href="documenti-{{ doc.slug }}-primo.html" class="quick-switch-link">
           Vedi anche: Primo Rilascio →
+        </a>
+        <a href="#prassi-locali" class="prassi-anchor-link">
+          Prassi locali della tua Questura
         </a>
       </div>
     </div>
@@ -204,6 +208,51 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
   {%- endif -%}
+
+  <!-- PRASSI LOCALI -->
+  <section class="section prassi-section" id="prassi-locali">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 0.5rem;">Prassi locali</h2>
+      <p style="text-align: center; color: var(--gray-medium); margin-bottom: 1.5rem;">Esperienze condivise dalla community sulle pratiche delle Questure</p>
+
+      {% assign pagePrassi = prassiLocali[doc.slug] %}
+      {% if pagePrassi %}
+        {% for cityGroup in pagePrassi %}
+          <div class="prassi-city-group">
+            <h3 class="prassi-city-name">{{ cityGroup[0] }}</h3>
+            {% for practice in cityGroup[1] %}
+              <div class="prassi-card" data-prassi-id="{{ practice.id }}">
+                <p class="prassi-card-description">{{ practice.description }}</p>
+                <div class="prassi-card-meta">
+                  {% if practice.date %}<span>{{ practice.date }}</span>{% endif %}
+                  {% if practice.category %}<span class="prassi-category-tag">{{ practice.category }}</span>{% endif %}
+                </div>
+                <div class="prassi-card-votes">
+                  <span class="vote-confermo">Confermo: {{ practice.votiConfermo }}</span>
+                  <span class="vote-non-confermo">Non confermo: {{ practice.votiNonConfermo }}</span>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="prassi-empty-state">
+          <p>Nessuna segnalazione ancora. Sei il primo a condividere la tua esperienza!</p>
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal()">
+            Aggiungi la tua esperienza
+          </button>
+        </div>
+      {% endif %}
+
+      {% if pagePrassi %}
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal()">
+            Aggiungi la tua esperienza
+          </button>
+        </div>
+      {% endif %}
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
