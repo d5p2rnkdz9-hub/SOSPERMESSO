@@ -65,6 +65,34 @@ export default function(eleventyConfig) {
    */
   eleventyConfig.addFilter("parseDocNotes", helpers.parseDocNotes);
 
+  /**
+   * getSectionBorderColor - Return border color for permit Q&A section cards
+   * Based on question keywords, with index-based fallback for variety
+   * Usage: {{ section.index | getSectionBorderColor: section.question }}
+   */
+  eleventyConfig.addFilter("getSectionBorderColor", function(index, question) {
+    const q = (question || '').toLowerCase();
+
+    // Match by keywords first
+    if (q.includes("cos'è") || q.includes("che cos'è") || q.includes("che cosa")) return 'var(--accent-blue)';
+    if (q.includes('requisiti') || q.includes('chi può') || q.includes('chi puo')) return 'var(--taxi-yellow)';
+    if (q.includes('lavorare') || q.includes('lavoro') || q.includes('diritti')) return 'var(--lighthouse-red)';
+    if (q.includes('conversione') || q.includes('convertire')) return 'var(--accent-teal)';
+    if (q.includes('durata') || q.includes('quanto dura')) return 'var(--accent-blue)';
+    if (q.includes('costi') || q.includes('quanto costa')) return 'var(--accent-orange)';
+
+    // Fallback by index for variety
+    const colors = [
+      'var(--accent-blue)',
+      'var(--taxi-yellow)',
+      'var(--lighthouse-red)',
+      'var(--accent-teal)',
+      'var(--accent-purple)',
+      'var(--accent-orange)'
+    ];
+    return colors[index % colors.length];
+  });
+
   // Passthrough copy for asset directories
   eleventyConfig.addPassthroughCopy("src/styles");
   eleventyConfig.addPassthroughCopy("src/scripts");
