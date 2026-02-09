@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-09
-**Status:** v3.1 Prassi Locali + Notion-11ty Completion — Phase 41 next
+**Status:** v3.1 Prassi Locali + Notion-11ty Completion — Phase 41 executing
 
 ## Project Reference
 
@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Phase:** 41 (Prassi Locali MVP) — executing
-**Plan:** 02 of 5 (completed)
-**Status:** API endpoints ready, client UI next
-**Last activity:** 2026-02-09 — Completed 41-02-PLAN.md
+**Plan:** 01 of 5 (completed)
+**Status:** Static display core complete
+**Last activity:** 2026-02-09 — Completed 41-01-PLAN.md
 
 ```
-Progress: [███░░░░░░░] 28% (2.4/8 phases complete - Phase 41: 40% done)
+Progress: [███░░░░░░░] 28% (2.2/8 phases complete - Phase 41: 20% done)
 ```
 
 ## v3.1 Phases
@@ -29,7 +29,7 @@ Progress: [███░░░░░░░] 28% (2.4/8 phases complete - Phase 41
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
-| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◐ Executing (2/5 plans) |
+| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◐ Executing (1/5 plans) |
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
@@ -39,9 +39,9 @@ Progress: [███░░░░░░░] 28% (2.4/8 phases complete - Phase 41
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 4.54 min
-- Total execution time: 59 min
+- Total plans completed: 14 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.36 min
+- Total execution time: 75 min
 
 **By Phase:**
 
@@ -54,7 +54,7 @@ Progress: [███░░░░░░░] 28% (2.4/8 phases complete - Phase 41
 | 38 | 1 | 8 min | 8 min |
 | 39 | 2 | 8 min | 4 min |
 | 40 | 2 | 12 min | 6 min |
-| 41 | 2 | 2 min | 1 min |
+| 41 | 1 | 16 min | 16 min |
 
 **Recent Trend:**
 - Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
@@ -65,8 +65,8 @@ Progress: [███░░░░░░░] 28% (2.4/8 phases complete - Phase 41
 - Phase 39 Plan 02: 5 min (3 tasks, 1 deviation - ignore conflict)
 - Phase 40 Plan 01: 5 min (2 tasks, 0 deviations)
 - Phase 40 Plan 02: 7 min (3 tasks, 1 deviation - duplicate slug fix, checkpoint verified)
-- Phase 41 Plan 02: 2 min (2 tasks, 0 deviations)
-- Trend: Serverless functions simple, no rate limiting complexity in MVP
+- Phase 41 Plan 01: 16 min (2 tasks, 0 deviations)
+- Trend: Data layer and CSS work takes longer than simple functions
 
 *Updated after each plan completion*
 
@@ -159,8 +159,9 @@ Recent decisions affecting current work:
 - **40-01: Section index for styling** — Add index field to sections for getSectionBorderColor fallback rotation
 - **40-02: Explicit boolean comparison in Liquid** — Use `== true` for JS booleans passed via 11ty data (truthy eval unreliable)
 - **40-02: Dynamic permit file ignore** — readdirSync to ignore all permesso-*.html files, matching Phase 39 redirect pattern
-- **41-02: Dropped Upstash Redis** — Vote rate limiting simplified to localStorage client-side only; Notion stores vote counts; server-side rate limiting deferred until abuse occurs
-- **41-02: Hardcoded city list** — 105 questura cities in submit-prassi.js for fast validation, no external query needed
+- **41-01: prassi-data-structure** — Nested object: pageSlug -> [[cityName, practices[]]] - Liquid templates iterate easily over arrays. Converting city object to sorted array of tuples enables simple iteration while maintaining alphabetical city order
+- **41-01: empty-state-static** — Show empty state with button in static HTML - Button is non-functional until Plan 03 adds modal. Static button in HTML avoids layout shift when JS loads. Progressive enhancement pattern
+- **41-01: graceful-degradation** — Return empty object {} when NOTION_API_KEY or PRASSI_DB_ID missing - Build succeeds without credentials. Consistent with existing documents.js pattern
 
 ### Research Completed
 
@@ -182,10 +183,10 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-02-09
-**Stopped at:** Completed 41-02-PLAN.md (Netlify Functions)
+**Stopped at:** Completed 41-01-PLAN.md (Static Display Core)
 **Resume file:** None
 
-**Next Action:** Execute 41-03-PLAN.md (Client UI - form modal and voting).
+**Next Action:** Execute remaining Phase 41 plans (02-05) for complete prassi locali MVP.
 
 ---
 
