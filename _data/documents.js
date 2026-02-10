@@ -4,6 +4,7 @@
  * Returns object with separate primo and rinnovo arrays for pagination
  */
 
+require('dotenv').config();
 const { Client } = require("@notionhq/client");
 
 const DATABASE_ID = "1ad7355e-7f7f-8088-a065-e814c92e2cfd";

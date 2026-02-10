@@ -4,6 +4,7 @@
  * Returns object grouped by page slug, then by city
  */
 
+require('dotenv').config();
 const { Client } = require("@notionhq/client");
 
 const PRASSI_DB_ID = process.env.PRASSI_DB_ID;
