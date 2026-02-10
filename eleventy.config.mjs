@@ -43,20 +43,9 @@ export default function(eleventyConfig) {
     // Directory might not exist in some environments
   }
 
-  // Ignore existing static document HTML files (replaced by documents-primo/rinnovo.liquid templates)
-  try {
-    const pagesDir2 = path.join(process.cwd(), 'src', 'pages');
-    const files2 = fs.readdirSync(pagesDir2);
-    const docFiles = files2.filter(f => f.startsWith('documenti-') && f.endsWith('.html') && f !== 'documenti-questura.html');
-    for (const file of docFiles) {
-      eleventyConfig.ignores.add(`src/pages/${file}`);
-    }
-    if (docFiles.length > 0) {
-      console.log(`[eleventy] Ignoring ${docFiles.length} old static document files (replaced by documents-*.liquid)`);
-    }
-  } catch (e) {
-    // Directory might not exist in some environments
-  }
+  // Static documenti-*.html files are NOT ignored.
+  // documents.js filters out slugs that have existing static files to avoid duplicates.
+  // This way static files serve as fallback when no Liquid replacement exists.
 
   // Register Liquid filters for template helpers
   // Used in document page templates for linking to dizionario, formatting, etc.

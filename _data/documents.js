@@ -6,6 +6,8 @@
 
 require('dotenv').config();
 const { Client } = require("@notionhq/client");
+const fs = require('fs');
+const path = require('path');
 
 const DATABASE_ID = "1ad7355e-7f7f-8088-a065-e814c92e2cfd";
 
@@ -70,6 +72,7 @@ module.exports = async function() {
     // Transform to separate primo and rinnovo arrays
     const primo = [];
     const rinnovo = [];
+    const seenSlugs = new Set();
 
     for (const page of allPages) {
       // Get permit name from title property "Nome permesso"
@@ -88,10 +91,11 @@ module.exports = async function() {
       }
 
       // Skip duplicate slugs (multiple Notion entries with same permit name)
-      if (primo.some(p => p.slug === slug)) {
+      if (seenSlugs.has(slug)) {
         console.warn(`[documents.js] Skipping duplicate slug: ${slug}`);
         continue;
       }
+      seenSlugs.add(slug);
 
       // Get document notes from "Info extra su doc rilascio" field
       const docNotesRichText = page.properties["Info extra su doc rilascio"]?.rich_text || [];
@@ -105,23 +109,28 @@ module.exports = async function() {
       const primoMethod = page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null;
       const rinnovoMethod = page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null;
 
-      // Create primo entry
-      primo.push({
-        tipo,
-        slug,
-        documents: primoDocuments,
-        method: primoMethod,
-        docNotes: docNotes || null
-      });
+      // Only add entries when no static HTML file exists (avoids duplicate permalink errors)
+      const pagesDir = path.join(process.cwd(), 'src', 'pages');
+      const hasPrimoStatic = fs.existsSync(path.join(pagesDir, `documenti-${slug}-primo.html`));
+      const hasRinnovoStatic = fs.existsSync(path.join(pagesDir, `documenti-${slug}-rinnovo.html`));
 
-      // Create rinnovo entry
-      rinnovo.push({
-        tipo,
-        slug,
-        documents: rinnovoDocuments,
-        method: rinnovoMethod,
-        docNotes: docNotes || null
-      });
+      if (!hasPrimoStatic) {
+        primo.push({
+          tipo, slug,
+          documents: primoDocuments,
+          method: primoMethod,
+          docNotes: docNotes || null
+        });
+      }
+
+      if (!hasRinnovoStatic) {
+        rinnovo.push({
+          tipo, slug,
+          documents: rinnovoDocuments,
+          method: rinnovoMethod,
+          docNotes: docNotes || null
+        });
+      }
     }
 
     console.log(`[documents.js] Prepared ${primo.length} primo entries, ${rinnovo.length} rinnovo entries`);
