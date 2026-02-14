@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-14 — Phase 42 complete
+**Updated:** 2026-02-14 — Phase 42.1 complete
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -172,12 +172,12 @@ Plans:
 
 **Goal:** Fix prassi locali section not rendering in built document pages by removing old static HTML files that block Liquid template generation.
 
-**Status:** Planned
+**Status:** Complete (2026-02-14)
 
 **Plans:** 1 plan
 
 Plans:
-- [ ] 42.1-01-PLAN.md — Delete old static document files, remove filesystem guard from documents.js, verify build
+- [x] 42.1-01-PLAN.md — Delete old static document files, remove filesystem guard from documents.js, verify build
 
 **Requirements:**
 - PRASSI-01: Submission form on document pages sends data via Netlify Function to Notion DB

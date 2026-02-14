@@ -28,6 +28,13 @@ Requirements for Notion-11ty integration. Converts existing build scripts to 11t
 - [x] **BUILD-03**: Build completes in under 120 seconds
 - [x] **BUILD-04**: Old build scripts removed after migration verified
 
+### Prassi Locali
+
+- [x] **PRASSI-01**: Submission form on document pages sends data via Netlify Function to Notion DB
+- [x] **PRASSI-02**: "Prassi locali" section on document pages displays approved notes, filterable by city
+- [x] **PRASSI-03**: Upvote/downvote system (anonymous, localStorage + IP rate limiting)
+- [x] **PRASSI-04**: Manual moderation workflow (approve in Notion, rebuild to publish)
+
 ## Out of Scope
 
 | Feature | Reason |
@@ -54,11 +61,16 @@ Requirements for Notion-11ty integration. Converts existing build scripts to 11t
 | BUILD-03 | Phase 42 | Complete |
 | BUILD-04 | Phase 42 | Complete |
 
+| PRASSI-01 | Phase 41 + 42.1 | Complete |
+| PRASSI-02 | Phase 41 + 42.1 | Complete |
+| PRASSI-03 | Phase 41 + 42.1 | Complete |
+| PRASSI-04 | Phase 41 + 42.1 | Complete |
+
 **Coverage:**
-- v3.1 requirements: 12 total
-- Mapped to phases: 12
+- v3.1 requirements: 16 total
+- Mapped to phases: 16
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-02-07*
-*Last updated: 2026-02-14 — PERM-01..04 and BUILD-01..04 marked Complete*
+*Last updated: 2026-02-14 — PRASSI-01..04 added and marked Complete (Phase 41 + 42.1)*
