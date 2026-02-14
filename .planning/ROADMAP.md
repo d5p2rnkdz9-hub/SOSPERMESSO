@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-14 — Phase 42.1 complete
+**Updated:** 2026-02-14 — Phase 42.2 planned
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -201,9 +201,14 @@ Plans:
 
 ## Phase 42.2: Requirements & Docs Cleanup
 
-**Goal:** Bring requirements tracking up to date — add all v3.1 roadmap requirements to REQUIREMENTS.md and generate missing Phase 41 verification.
+**Goal:** Bring requirements tracking up to date -- add all v3.1 roadmap requirements to REQUIREMENTS.md and generate missing Phase 41 verification.
 
 **Status:** Pending
+
+**Plans:** 1 plan
+
+Plans:
+- [ ] 42.2-01-PLAN.md — Update REQUIREMENTS.md (add 8 requirements) + generate Phase 41 VERIFICATION.md
 
 **Success Criteria:**
 1. REQUIREMENTS.md includes PRASSI-01..04, CONTENT-01..02, COSTI-01..02, VALID-01..02, DIZIO-01..02
@@ -213,8 +218,8 @@ Plans:
 **Dependencies:** Phase 42.1 (prassi must work before verification can pass)
 
 **Technical Notes:**
-- REQUIREMENTS.md currently tracks 12 requirements (DOC, PERM, BUILD) — needs 8 more
-- Phase 41 plan 04 (visual verification) was never executed — needs to run after fix
+- REQUIREMENTS.md currently tracks 16 requirements (DOC, PERM, BUILD, PRASSI) -- needs 8 more (CONTENT, COSTI, VALID, DIZIO)
+- Phase 41 never had a VERIFICATION.md -- needs retroactive generation using build output evidence
 
 ---
 
@@ -282,4 +287,4 @@ Plans:
 
 ---
 *Roadmap created: 2026-02-07*
-*Updated: 2026-02-14 — Phase 42 planned (3 plans), Phases 39-41 marked complete*
+*Updated: 2026-02-14 — Phase 42.2 planned (1 plan)*
