@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-14
-**Status:** v3.1 — Phase 42 complete, Phase 43 pending
+**Status:** v3.1 — Phase 42 complete, gap closure phases 42.1-42.2 pending
 
 ## Project Reference
 
@@ -14,12 +14,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 42 (Build Pipeline) — complete
-**Status:** All 3 plans complete, verified (12/12 must-haves)
-**Last activity:** 2026-02-14 — Phase 42 complete. Build unified, webhook debounced, 20 scripts removed, audit report generated.
+**Phase:** 42.1 (Fix Prassi Integration) — pending
+**Status:** Milestone audit found critical gap: prassi section not rendering in built pages
+**Last activity:** 2026-02-14 — Gap closure phases 42.1 + 42.2 created from milestone audit.
 
 ```
-Progress: [█████░░░░░] 50% (4/8 phases complete)
+Progress: [████░░░░░░] 40% (4/10 phases complete)
 ```
 
 ## v3.1 Phases
@@ -28,8 +28,10 @@ Progress: [█████░░░░░] 50% (4/8 phases complete)
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
-| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ✓ Complete |
+| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ⚠️ Code delivered, integration broken |
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ✓ Complete |
+| **42.1** | **Fix Prassi Integration** | PRASSI-01 to PRASSI-04 | ○ **Next up** |
+| **42.2** | **Requirements & Docs Cleanup** | — | ○ Pending |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
@@ -173,7 +175,7 @@ None
 **Stopped at:** Phase 42 complete
 **Resume file:** None
 
-**Next Action:** Plan and execute Phase 43 (Populate Blank Permits). Use `/gsd:discuss-phase 43` or `/gsd:plan-phase 43`.
+**Next Action:** Plan and execute Phase 42.1 (Fix Prassi Integration). Use `/gsd:plan-phase 42.1`.
 
 ---
 

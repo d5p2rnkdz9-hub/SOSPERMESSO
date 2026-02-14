@@ -3,7 +3,7 @@
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
 **Updated:** 2026-02-14 — Phase 42 complete
-**Phases:** 39-46 (continues from v3.0 which ended at phase 38)
+**Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
 
@@ -15,6 +15,8 @@ Complete Notion-11ty integration, build collaborative "prassi locali" infrastruc
 | 40 | Permit Pages | Permit pages generated via 11ty data + templates | PERM-01 to PERM-04 |
 | 41 | Prassi Locali MVP | Crowdsourced local questura practices on document pages | PRASSI-01 to PRASSI-04 |
 | 42 | Build Pipeline | Unified build command, old script cleanup | BUILD-01 to BUILD-04 |
+| 42.1 | Fix Prassi Integration | Debug + fix prassi section not rendering in built pages | PRASSI-01 to PRASSI-04 |
+| 42.2 | Requirements & Docs Cleanup | Track all v3.1 requirements, generate Phase 41 verification | — |
 | 43 | Populate Blank Permits | Add Notion content for 17 placeholder permits | CONTENT-01 to CONTENT-02 |
 | 44 | Costi Section | Cost information section on document pages | COSTI-01 to COSTI-02 |
 | 45 | Content Validation | Review pass on all generated content | VALID-01 to VALID-02 |
@@ -163,6 +165,54 @@ Plans:
 - 20+ obsolete scripts removed (old build scripts, one-time migration/fix scripts)
 - Webhook debounce prevents multiple builds during batch Notion editing sessions
 - Content audit script generates report for Phase 43 and Phase 45
+
+---
+
+## Phase 42.1: Fix Prassi Integration
+
+**Goal:** Debug and fix the prassi locali section not rendering in built document pages. All prassi code exists (data file, CSS, JS, API functions, Liquid template sections) but output HTML is truncated — prassi CSS link, section, and script tag are all absent from built pages.
+
+**Status:** Pending
+
+**Requirements:**
+- PRASSI-01: Submission form on document pages sends data via Netlify Function to Notion DB
+- PRASSI-02: "Prassi locali" section on document pages displays approved notes, filterable by city
+- PRASSI-03: Upvote/downvote system (anonymous, localStorage + IP rate limiting)
+- PRASSI-04: Manual moderation workflow (approve in Notion, rebuild to publish)
+
+**Success Criteria:**
+1. Built document pages include prassi.css link in `<head>`
+2. Built document pages include prassi section HTML after document content
+3. Built document pages include prassi.js script tag
+4. Submission modal opens and submits to Netlify Function
+5. Voting UI renders and communicates with vote endpoint
+6. .env.example documents PRASSI_DB_ID
+
+**Dependencies:** Phase 42 (build pipeline must be working)
+
+**Technical Notes:**
+- Root cause: Liquid template truncation during 11ty build — debug documents-primo.liquid and documents-rinnovo.liquid
+- Orphaned artifacts: prassi.js (715 lines), prassi.css (8.4KB), submit-prassi.mjs, vote-prassi.mjs
+- All code exists, just not wired into output — likely a Liquid conditional or template rendering issue
+
+---
+
+## Phase 42.2: Requirements & Docs Cleanup
+
+**Goal:** Bring requirements tracking up to date — add all v3.1 roadmap requirements to REQUIREMENTS.md and generate missing Phase 41 verification.
+
+**Status:** Pending
+
+**Success Criteria:**
+1. REQUIREMENTS.md includes PRASSI-01..04, CONTENT-01..02, COSTI-01..02, VALID-01..02, DIZIO-01..02
+2. Phase 41 VERIFICATION.md generated (after 42.1 fixes the integration)
+3. Traceability table updated with all requirements mapped to phases
+
+**Dependencies:** Phase 42.1 (prassi must work before verification can pass)
+
+**Technical Notes:**
+- REQUIREMENTS.md currently tracks 12 requirements (DOC, PERM, BUILD) — needs 8 more
+- Phase 41 plan 04 (visual verification) was never executed — needs to run after fix
 
 ---
 
