@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-14 — Phase 42.2 complete
+**Updated:** 2026-02-14 — Phase 43 planned (4 plans)
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -225,13 +225,29 @@ Plans:
 
 ## Phase 43: Populate Blank Permits
 
-**Goal:** Add Notion content for the 17 placeholder permit pages.
+**Goal:** Add Notion content for all placeholder permit pages so zero "Contenuto in arrivo" pages remain.
+
+**Status:** Planning complete
+
+**Plans:** 4 plans
+
+Plans:
+- [ ] 43-01-PLAN.md — Audit permits, merge duplicates, study reference model
+- [ ] 43-02-PLAN.md — Populate protezione category permits + user spot-check
+- [ ] 43-03-PLAN.md — Populate lavoro category permits + user spot-check
+- [ ] 43-04-PLAN.md — Populate remaining categories (cure mediche, motivi familiari, altro) + final verification
 
 **Requirements:**
-- CONTENT-01: All 17 placeholder permits have Q&A content in Notion
+- CONTENT-01: All placeholder permits have Q&A content in Notion
 - CONTENT-02: Generated pages render correctly with new content
 
 **Dependencies:** Phase 40 (permit page generation must work)
+
+**Technical Notes:**
+- Content transformation from Notion database columns + NOTES into Q&A narrative
+- Two-step process: backfill HTML content into Notion, then generate from column data
+- Processed by Macrocategoria (protezione first) with user checkpoints between batches
+- Reference model: "Attesa occupazione (art.22)" page for tone and structure
 
 ---
 
