@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-14
-**Status:** v3.1 — Phase 42 in progress (plan 02 complete)
+**Status:** v3.1 — Phase 42 in progress (plan 01 complete)
 
 ## Project Reference
 
@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Phase:** 42 (Build Pipeline) — in progress
-**Plan:** 2 of 4 complete (42-01, 42-02)
-**Status:** Webhook debounce and build script cleanup complete
-**Last activity:** 2026-02-14 — Completed 42-02-PLAN.md (webhook debounce via Netlify Blobs), commit da43c84
+**Plan:** 1 of 4 complete (42-01)
+**Status:** Build script unification complete - single npm run build, 20 obsolete scripts deleted
+**Last activity:** 2026-02-14 — Completed 42-01-PLAN.md (build unification), commits 9c8e033, 4c93290
 
 ```
-Progress: [████░░░░░░] 38% (3/8 phases, 2/4 plans in phase 42)
+Progress: [████░░░░░░] 38% (3/8 phases, 1/4 plans in phase 42)
 ```
 
 ## v3.1 Phases
@@ -60,9 +60,9 @@ Progress: [████░░░░░░] 38% (3/8 phases, 2/4 plans in phase 4
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 19 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 5.21 min
-- Total execution time: ~99 min
+- Total plans completed: 18 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.5 min
+- Total execution time: ~110 min
 
 **By Phase:**
 
@@ -76,7 +76,7 @@ Progress: [████░░░░░░] 38% (3/8 phases, 2/4 plans in phase 4
 | 39 | 2 | 8 min | 4 min |
 | 40 | 2 | 12 min | 6 min |
 | 41 | 4 | 36 min | 9 min |
-| 42 | 2/4 | 4 min | 2 min |
+| 42 | 1/4 | 11 min | 11 min |
 
 *Updated after each plan completion*
 
@@ -95,8 +95,11 @@ Progress: [████░░░░░░] 38% (3/8 phases, 2/4 plans in phase 4
 From prior milestones (carry forward):
 - Dizionario links need revision (partial matching works but coverage incomplete)
 - Desktop header alignment (language switcher baseline)
-- No npm script for build-permits.js (manual execution)
 - 18 permits still need Notion content (placeholder pages)
+
+Resolved in Phase 42-01:
+- ✓ Single-step build (was: two-step build:docs + build:11ty)
+- ✓ Clean scripts/ directory (was: 20+ obsolete scripts)
 
 ## Design Patterns to Follow
 
@@ -131,12 +134,9 @@ From prior milestones (carry forward):
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- **42-02: webhook-debounce-window** — 30-minute window chosen to cover typical editing sessions
-- **42-02: netlify-blobs-state** — Netlify Blobs for persistent state (zero-config, native integration)
-- **42-02: timestamp-before-trigger** — Update timestamp BEFORE build to prevent race conditions
-- **42-02: descriptive-trigger-title** — Include trigger_title in POST for better build log visibility
-- **42-01: inline-notion-client** — Inline Notion API calls into permits.js (remove dependency)
+- **42-01: inline-notion-client** — Inline Notion API calls into permits.js (remove shared module dependency)
 - **42-01: single-build-command** — Simplify to `npx @11ty/eleventy` (no separate build:docs step)
+- **42-01: delete-obsolete-scripts** — Remove 20 obsolete scripts after changes committed (reduces maintenance confusion)
 - **41-01: prassi-data-structure** — Nested object: pageSlug -> [[cityName, practices[]]]
 - **41-01: empty-state-static** — Show empty state with button in static HTML (progressive enhancement)
 - **41-01: graceful-degradation** — Return empty {} when env vars missing
@@ -165,10 +165,10 @@ None
 ## Session Continuity
 
 **Last session:** 2026-02-14
-**Stopped at:** Phase 42 in progress (plan 02 complete)
+**Stopped at:** Phase 42 in progress (plan 01 complete)
 **Resume file:** None
 
-**Next Action:** Continue Phase 42 with plan 03 (if exists) or move to Phase 43. Use `/gsd:execute-phase 42` or check .planning/phases/42-build-pipeline/ for remaining plans.
+**Next Action:** Continue Phase 42 with plan 02 or move to Phase 43. Use `/gsd:execute-phase 42` or check .planning/phases/42-build-pipeline/ for remaining plans.
 
 ---
 
