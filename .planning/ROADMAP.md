@@ -170,9 +170,14 @@ Plans:
 
 ## Phase 42.1: Fix Prassi Integration
 
-**Goal:** Debug and fix the prassi locali section not rendering in built document pages. All prassi code exists (data file, CSS, JS, API functions, Liquid template sections) but output HTML is truncated — prassi CSS link, section, and script tag are all absent from built pages.
+**Goal:** Fix prassi locali section not rendering in built document pages by removing old static HTML files that block Liquid template generation.
 
-**Status:** Pending
+**Status:** Planned
+
+**Plans:** 1 plan
+
+Plans:
+- [ ] 42.1-01-PLAN.md — Delete old static document files, remove filesystem guard from documents.js, verify build
 
 **Requirements:**
 - PRASSI-01: Submission form on document pages sends data via Netlify Function to Notion DB
@@ -190,10 +195,7 @@ Plans:
 
 **Dependencies:** Phase 42 (build pipeline must be working)
 
-**Technical Notes:**
-- Root cause: Liquid template truncation during 11ty build — debug documents-primo.liquid and documents-rinnovo.liquid
-- Orphaned artifacts: prassi.js (715 lines), prassi.css (8.4KB), submit-prassi.mjs, vote-prassi.mjs
-- All code exists, just not wired into output — likely a Liquid conditional or template rendering issue
+**Root Cause:** Old static `documenti-*.html` files in `src/pages/` cause `documents.js` to skip those slugs from its data arrays (via `fs.existsSync` check). The Liquid pagination templates never generate pages for those slugs — old static files are served instead, lacking prassi CSS, section, and JS.
 
 ---
 
