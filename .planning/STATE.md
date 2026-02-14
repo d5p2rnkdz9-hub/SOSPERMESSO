@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-10
-**Status:** v3.1 — Phase 41 complete, Phase 42 pending
+**Last Updated:** 2026-02-14
+**Status:** v3.1 — Phase 42 in progress (plan 02 complete)
 
 ## Project Reference
 
@@ -14,12 +14,13 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 41 (Prassi Locali MVP) — complete
-**Status:** All 4 plans complete, visually verified in browser
-**Last activity:** 2026-02-10 — Fixed dotenv loading order in documents.js and prassiLocali.js (commit 5c8a318), prassi section renders correctly on both primo and rinnovo pages
+**Phase:** 42 (Build Pipeline) — in progress
+**Plan:** 2 of 4 complete (42-01, 42-02)
+**Status:** Webhook debounce and build script cleanup complete
+**Last activity:** 2026-02-14 — Completed 42-02-PLAN.md (webhook debounce via Netlify Blobs), commit da43c84
 
 ```
-Progress: [████░░░░░░] 38% (3/8 phases complete)
+Progress: [████░░░░░░] 38% (3/8 phases, 2/4 plans in phase 42)
 ```
 
 ## v3.1 Phases
@@ -29,7 +30,7 @@ Progress: [████░░░░░░] 38% (3/8 phases complete)
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
 | 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ✓ Complete |
-| 42 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
+| 42 | Build Pipeline | BUILD-01 to BUILD-04 | ◐ In Progress (2/4) |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
@@ -59,9 +60,9 @@ Progress: [████░░░░░░] 38% (3/8 phases complete)
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 17 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 5.56 min
-- Total execution time: ~95 min
+- Total plans completed: 19 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.21 min
+- Total execution time: ~99 min
 
 **By Phase:**
 
@@ -75,6 +76,7 @@ Progress: [████░░░░░░] 38% (3/8 phases complete)
 | 39 | 2 | 8 min | 4 min |
 | 40 | 2 | 12 min | 6 min |
 | 41 | 4 | 36 min | 9 min |
+| 42 | 2/4 | 4 min | 2 min |
 
 *Updated after each plan completion*
 
@@ -129,16 +131,18 @@ From prior milestones (carry forward):
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
+- **42-02: webhook-debounce-window** — 30-minute window chosen to cover typical editing sessions
+- **42-02: netlify-blobs-state** — Netlify Blobs for persistent state (zero-config, native integration)
+- **42-02: timestamp-before-trigger** — Update timestamp BEFORE build to prevent race conditions
+- **42-02: descriptive-trigger-title** — Include trigger_title in POST for better build log visibility
+- **42-01: inline-notion-client** — Inline Notion API calls into permits.js (remove dependency)
+- **42-01: single-build-command** — Simplify to `npx @11ty/eleventy` (no separate build:docs step)
 - **41-01: prassi-data-structure** — Nested object: pageSlug -> [[cityName, practices[]]]
 - **41-01: empty-state-static** — Show empty state with button in static HTML (progressive enhancement)
 - **41-01: graceful-degradation** — Return empty {} when env vars missing
 - **41-02: no-upstash-redis** — localStorage only for vote duplicate prevention, defer server-side rate limiting
 - **41-03: modal-injection** — Inject modal HTML/CSS via JS (matches contact-form.html pattern)
-- **41-03: vote-localStorage** — 24-hour expiry on duplicate prevention
 - **41-03: webhook-timing-safe** — crypto.timingSafeEqual for signature comparison
-- **41: Liquid contains operator** — Use `contains` operator in if/assign, NOT `| contains:` filter (LiquidJS doesn't have filter)
-- **41: Dynamic document file ignore** — readdirSync to ignore all documenti-*.html files (same pattern as permits)
-- **41: Slug dedup in documents.js** — Skip duplicate slugs and redirect display slugs to prevent 11ty DuplicatePermalinkOutputError
 - **41: dotenv in data files** — Always call `require('dotenv').config()` at top of data files that use process.env
 
 ### Research Completed
@@ -160,11 +164,11 @@ None
 
 ## Session Continuity
 
-**Last session:** 2026-02-10
-**Stopped at:** Phase 41 complete
+**Last session:** 2026-02-14
+**Stopped at:** Phase 42 in progress (plan 02 complete)
 **Resume file:** None
 
-**Next Action:** Plan and execute Phase 42 (Build Pipeline). Use `/gsd:plan-phase 42` or `/gsd:execute-phase 42`.
+**Next Action:** Continue Phase 42 with plan 03 (if exists) or move to Phase 43. Use `/gsd:execute-phase 42` or check .planning/phases/42-build-pipeline/ for remaining plans.
 
 ---
 
