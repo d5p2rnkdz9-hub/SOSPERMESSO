@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-14
-**Status:** v3.1 — Phase 42.1 complete, Phase 42.2 pending
+**Status:** v3.1 — Phase 42.2 complete, ready for Phase 43
 
 ## Project Reference
 
@@ -14,12 +14,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 42.2 (Requirements & Docs Cleanup) — pending
-**Status:** Prassi integration fixed, proceeding to final cleanup
-**Last activity:** 2026-02-14 — Completed 42.1-01-PLAN.md (Fix Prassi Integration)
+**Phase:** 42.2 (Requirements & Docs Cleanup) — complete
+**Status:** Documentation updated, ready for content phases
+**Last activity:** 2026-02-14 — Completed 42.2-01-PLAN.md (Requirements & Docs Cleanup)
 
 ```
-Progress: [█████░░░░░] 50% (5/10 phases complete)
+Progress: [██████░░░░] 60% (6/10 phases complete)
 ```
 
 ## v3.1 Phases
@@ -30,9 +30,9 @@ Progress: [█████░░░░░] 50% (5/10 phases complete)
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
 | 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ✓ Complete |
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ✓ Complete |
-| **42.1** | **Fix Prassi Integration** | PRASSI-01 to PRASSI-04 | ✓ Complete |
-| **42.2** | **Requirements & Docs Cleanup** | — | ○ **Next up** |
-| 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
+| 42.1 | Fix Prassi Integration | PRASSI-01 to PRASSI-04 | ✓ Complete |
+| 42.2 | Requirements & Docs Cleanup | — | ✓ Complete |
+| **43** | **Populate Blank Permits** | CONTENT-01 to CONTENT-02 | ○ **Next up** |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
@@ -169,6 +169,8 @@ Recent decisions affecting current work:
 - **41-03: modal-injection** — Inject modal HTML/CSS via JS (matches contact-form.html pattern)
 - **41-03: webhook-timing-safe** — crypto.timingSafeEqual for signature comparison
 - **41: dotenv in data files** — Always call `require('dotenv').config()` at top of data files that use process.env
+- **42.2-01: retroactive-verification** — Generate Phase 41 verification after Phase 42.1 fix (feature delivered but integration broken, fix first then verify)
+- **42.2-01: v3.1-requirements-expansion** — Add 8 new requirements for content phases 43-46 (CONTENT, COSTI, VALID, DIZIO)
 
 ### Research Completed
 
@@ -190,10 +192,10 @@ None
 ## Session Continuity
 
 **Last session:** 2026-02-14
-**Stopped at:** Completed 42.1-01-PLAN.md (Fix Prassi Integration)
+**Stopped at:** Completed 42.2-01-PLAN.md (Requirements & Docs Cleanup)
 **Resume file:** None
 
-**Next Action:** Plan and execute Phase 42.2 (Requirements & Docs Cleanup). Use `/gsd:plan-phase 42.2`.
+**Next Action:** Plan and execute Phase 43 (Populate Blank Permits). Use `/gsd:plan-phase 43`.
 
 ---
 
