@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-14 — Phase 42.2 planned
+**Updated:** 2026-02-14 — Phase 42.2 complete
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -203,12 +203,12 @@ Plans:
 
 **Goal:** Bring requirements tracking up to date -- add all v3.1 roadmap requirements to REQUIREMENTS.md and generate missing Phase 41 verification.
 
-**Status:** Pending
+**Status:** Complete (2026-02-14)
 
 **Plans:** 1 plan
 
 Plans:
-- [ ] 42.2-01-PLAN.md — Update REQUIREMENTS.md (add 8 requirements) + generate Phase 41 VERIFICATION.md
+- [x] 42.2-01-PLAN.md — Update REQUIREMENTS.md (add 8 requirements) + generate Phase 41 VERIFICATION.md
 
 **Success Criteria:**
 1. REQUIREMENTS.md includes PRASSI-01..04, CONTENT-01..02, COSTI-01..02, VALID-01..02, DIZIO-01..02
@@ -287,4 +287,4 @@ Plans:
 
 ---
 *Roadmap created: 2026-02-07*
-*Updated: 2026-02-14 — Phase 42.2 planned (1 plan)*
+*Updated: 2026-02-14 — Phase 42.2 complete*
