@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-14
-**Status:** v3.1 — Phase 42 complete, gap closure phases 42.1-42.2 pending
+**Status:** v3.1 — Phase 42.1 complete, Phase 42.2 pending
 
 ## Project Reference
 
@@ -14,12 +14,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 42.1 (Fix Prassi Integration) — pending
-**Status:** Milestone audit found critical gap: prassi section not rendering in built pages
-**Last activity:** 2026-02-14 — Gap closure phases 42.1 + 42.2 created from milestone audit.
+**Phase:** 42.2 (Requirements & Docs Cleanup) — pending
+**Status:** Prassi integration fixed, proceeding to final cleanup
+**Last activity:** 2026-02-14 — Completed 42.1-01-PLAN.md (Fix Prassi Integration)
 
 ```
-Progress: [████░░░░░░] 40% (4/10 phases complete)
+Progress: [█████░░░░░] 50% (5/10 phases complete)
 ```
 
 ## v3.1 Phases
@@ -28,10 +28,10 @@ Progress: [████░░░░░░] 40% (4/10 phases complete)
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
-| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ⚠️ Code delivered, integration broken |
+| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ✓ Complete |
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ✓ Complete |
-| **42.1** | **Fix Prassi Integration** | PRASSI-01 to PRASSI-04 | ○ **Next up** |
-| **42.2** | **Requirements & Docs Cleanup** | — | ○ Pending |
+| **42.1** | **Fix Prassi Integration** | PRASSI-01 to PRASSI-04 | ✓ Complete |
+| **42.2** | **Requirements & Docs Cleanup** | — | ○ **Next up** |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
@@ -58,12 +58,27 @@ Progress: [████░░░░░░] 40% (4/10 phases complete)
 4. Redirect slug conflicts → filter in documents.js
 5. **dotenv loading order** → Added `require('dotenv').config()` to documents.js and prassiLocali.js
 
+## Phase 42.1 Summary
+
+**Goal:** Fix prassi locali integration broken by static file conflict.
+
+**Root cause:** documents.js had `fs.existsSync()` checks that skipped slugs with existing static files. Old 145 static HTML files prevented Liquid templates from generating pages with prassi section.
+
+**Delivered:**
+- Deleted 145 old static `documenti-*.html` files from src/pages/
+- Removed filesystem guard from `_data/documents.js` (fs.existsSync checks)
+- Updated `eleventy.config.mjs` with safety-net ignore for stray document files
+- Added PRASSI_DB_ID to `.env.example`
+- Verified all 81 document pages now include prassi.css, prassi section, and prassi.js
+
+**Result:** Prassi locali feature now fully functional on all document pages.
+
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 20 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 5.7 min
-- Total execution time: ~131 min
+- Total plans completed: 21 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.4 min
+- Total execution time: ~134 min
 
 **By Phase:**
 
@@ -78,6 +93,7 @@ Progress: [████░░░░░░] 40% (4/10 phases complete)
 | 40 | 2 | 12 min | 6 min |
 | 41 | 4 | 36 min | 9 min |
 | 42 | 3 | 21 min | 7 min |
+| 42.1 | 1 | 3 min | 3 min |
 
 *Updated after each plan completion*
 
@@ -137,6 +153,8 @@ Resolved in Phase 42:
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
+- **42.1-01: filesystem-guard-removal** — Remove existsSync check from documents.js (static files deleted, guard no longer needed)
+- **42.1-01: safety-net-ignores** — Add dynamic ignore block for stray static document files (defense-in-depth)
 - **42-03: content-audit-categories** — Audit 7 quality types: capitalization, synthetic text, vague wording, missing docs, duplicates, long names, variants
 - **42-03: audit-actionability** — Every issue links to Notion page for easy fixing
 - **42-03: rate-limiting-350ms** — Stay under 3 req/sec Notion limit
@@ -172,10 +190,10 @@ None
 ## Session Continuity
 
 **Last session:** 2026-02-14
-**Stopped at:** Phase 42 complete
+**Stopped at:** Completed 42.1-01-PLAN.md (Fix Prassi Integration)
 **Resume file:** None
 
-**Next Action:** Plan and execute Phase 42.1 (Fix Prassi Integration). Use `/gsd:plan-phase 42.1`.
+**Next Action:** Plan and execute Phase 42.2 (Requirements & Docs Cleanup). Use `/gsd:plan-phase 42.2`.
 
 ---
 
