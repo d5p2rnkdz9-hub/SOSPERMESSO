@@ -2,6 +2,10 @@
 // Verifies Notion webhook signatures and triggers Netlify rebuild on content changes
 
 import crypto from 'crypto';
+import { getStore } from '@netlify/blobs';
+
+// 30-minute debounce window for build triggers
+const DEBOUNCE_WINDOW_MS = 30 * 60 * 1000;
 
 export default async (req, context) => {
   // Only accept POST method
@@ -72,7 +76,30 @@ export default async (req, context) => {
 
       // Trigger rebuild for content or schema changes
       if (eventType === 'page.content_updated' || eventType === 'data_source.schema_updated') {
-        console.log('[notion-webhook] Triggering Netlify rebuild for event:', eventType);
+        console.log('[notion-webhook] Content change detected:', eventType);
+
+        // Check debounce window using Netlify Blobs
+        const store = getStore('webhook-state');
+        const now = new Date();
+        const lastTriggerStr = await store.get('last-build-trigger');
+        const lastTrigger = lastTriggerStr ? new Date(lastTriggerStr) : null;
+
+        if (lastTrigger && (now - lastTrigger) < DEBOUNCE_WINDOW_MS) {
+          const minutesSinceLast = Math.floor((now - lastTrigger) / 60000);
+          console.log(`[notion-webhook] Debounced: ${minutesSinceLast}min since last trigger (< 30min)`);
+          return new Response(JSON.stringify({
+            message: 'Debounced',
+            minutes_since_last: minutesSinceLast,
+            debounce_window_minutes: 30
+          }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        }
+
+        // Update timestamp BEFORE triggering build (prevents race condition)
+        await store.set('last-build-trigger', now.toISOString());
+        console.log('[notion-webhook] Triggering build (30min window passed or first trigger)');
 
         const buildHookUrl = process.env.NETLIFY_BUILD_HOOK_URL;
         if (!buildHookUrl) {
@@ -83,8 +110,11 @@ export default async (req, context) => {
           });
         }
 
-        // Trigger build
-        const buildResponse = await fetch(buildHookUrl, { method: 'POST' });
+        // Trigger build with descriptive title
+        const buildResponse = await fetch(buildHookUrl, {
+          method: 'POST',
+          body: JSON.stringify({ trigger_title: 'Notion content updated' })
+        });
 
         if (!buildResponse.ok) {
           console.error('[notion-webhook] Build trigger failed:', buildResponse.status);
