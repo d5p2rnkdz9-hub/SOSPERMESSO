@@ -6,8 +6,6 @@
 
 require('dotenv').config();
 const { Client } = require("@notionhq/client");
-const fs = require('fs');
-const path = require('path');
 
 const DATABASE_ID = "1ad7355e-7f7f-8088-a065-e814c92e2cfd";
 
@@ -109,28 +107,19 @@ module.exports = async function() {
       const primoMethod = page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null;
       const rinnovoMethod = page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null;
 
-      // Only add entries when no static HTML file exists (avoids duplicate permalink errors)
-      const pagesDir = path.join(process.cwd(), 'src', 'pages');
-      const hasPrimoStatic = fs.existsSync(path.join(pagesDir, `documenti-${slug}-primo.html`));
-      const hasRinnovoStatic = fs.existsSync(path.join(pagesDir, `documenti-${slug}-rinnovo.html`));
+      primo.push({
+        tipo, slug,
+        documents: primoDocuments,
+        method: primoMethod,
+        docNotes: docNotes || null
+      });
 
-      if (!hasPrimoStatic) {
-        primo.push({
-          tipo, slug,
-          documents: primoDocuments,
-          method: primoMethod,
-          docNotes: docNotes || null
-        });
-      }
-
-      if (!hasRinnovoStatic) {
-        rinnovo.push({
-          tipo, slug,
-          documents: rinnovoDocuments,
-          method: rinnovoMethod,
-          docNotes: docNotes || null
-        });
-      }
+      rinnovo.push({
+        tipo, slug,
+        documents: rinnovoDocuments,
+        method: rinnovoMethod,
+        docNotes: docNotes || null
+      });
     }
 
     console.log(`[documents.js] Prepared ${primo.length} primo entries, ${rinnovo.length} rinnovo entries`);
