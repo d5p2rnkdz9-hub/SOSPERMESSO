@@ -5,7 +5,7 @@
 
 ## v3.1 Requirements
 
-Requirements for Notion-11ty integration. Converts existing build scripts to 11ty data files.
+Requirements for Notion-11ty integration, prassi locali, and content completion.
 
 ### Documents
 
@@ -34,6 +34,26 @@ Requirements for Notion-11ty integration. Converts existing build scripts to 11t
 - [x] **PRASSI-02**: "Prassi locali" section on document pages displays approved notes, filterable by city
 - [x] **PRASSI-03**: Upvote/downvote system (anonymous, localStorage + IP rate limiting)
 - [x] **PRASSI-04**: Manual moderation workflow (approve in Notion, rebuild to publish)
+
+### Content Population
+
+- [ ] **CONTENT-01**: All 17 placeholder permit pages have Q&A content in Notion
+- [ ] **CONTENT-02**: Generated pages render correctly with new content
+
+### Costi Section
+
+- [ ] **COSTI-01**: Cost data sourced from Notion database properties
+- [ ] **COSTI-02**: Costi section rendered on document pages (primo and rinnovo)
+
+### Content Validation
+
+- [ ] **VALID-01**: All document pages reviewed for content accuracy
+- [ ] **VALID-02**: All permit pages reviewed for content accuracy
+
+### Dizionario Links
+
+- [ ] **DIZIO-01**: Glossary term matching improved (covers all relevant terms)
+- [ ] **DIZIO-02**: All relevant terms linked correctly across pages
 
 ## Out of Scope
 
@@ -65,12 +85,20 @@ Requirements for Notion-11ty integration. Converts existing build scripts to 11t
 | PRASSI-02 | Phase 41 + 42.1 | Complete |
 | PRASSI-03 | Phase 41 + 42.1 | Complete |
 | PRASSI-04 | Phase 41 + 42.1 | Complete |
+| CONTENT-01 | Phase 43 | Pending |
+| CONTENT-02 | Phase 43 | Pending |
+| COSTI-01 | Phase 44 | Pending |
+| COSTI-02 | Phase 44 | Pending |
+| VALID-01 | Phase 45 | Pending |
+| VALID-02 | Phase 45 | Pending |
+| DIZIO-01 | Phase 46 | Pending |
+| DIZIO-02 | Phase 46 | Pending |
 
 **Coverage:**
-- v3.1 requirements: 16 total
-- Mapped to phases: 16
+- v3.1 requirements: 24 total
+- Mapped to phases: 24
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-02-07*
-*Last updated: 2026-02-14 — PRASSI-01..04 added and marked Complete (Phase 41 + 42.1)*
+*Last updated: 2026-02-14 — Added 8 new requirements for phases 43-46 (Content Population, Costi, Validation, Dizionario)*
