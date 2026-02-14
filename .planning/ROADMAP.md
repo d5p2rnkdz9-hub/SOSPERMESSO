@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-09
+**Updated:** 2026-02-14
 **Phases:** 39-46 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -91,19 +91,19 @@ Plans:
 
 ---
 
-## Phase 41: Prassi Locali MVP
+## Phase 41: Prassi Locali MVP ✓
 
 **Goal:** Crowdsourced local questura practices on document pages — users can submit, view, and vote on practical tips about how specific questure handle procedures.
 
-**Status:** Planned
+**Status:** Complete (2026-02-10)
 
 **Plans:** 4 plans
 
 Plans:
-- [ ] 41-01-PLAN.md — Static core: data layer + display section on document pages
-- [ ] 41-02-PLAN.md — Netlify Functions: submission + voting endpoints
-- [ ] 41-03-PLAN.md — Interactive layer: modal form, voting UI, webhook auto-deploy
-- [ ] 41-04-PLAN.md — Visual verification checkpoint
+- [x] 41-01-PLAN.md — Static core: data layer + display section on document pages
+- [x] 41-02-PLAN.md — Netlify Functions: submission + voting endpoints
+- [x] 41-03-PLAN.md — Interactive layer: modal form, voting UI, webhook auto-deploy
+- [x] 41-04-PLAN.md — Visual verification checkpoint
 
 **Requirements:**
 - PRASSI-01: Submission form on document pages sends data via Netlify Function to Notion DB
@@ -131,7 +131,16 @@ Plans:
 
 ## Phase 42: Build Pipeline
 
-**Goal:** Single build command, Netlify deployment with Notion token, cleanup of old scripts.
+**Goal:** Unified build command, webhook debounce for auto-rebuild, old script cleanup, and content audit report for downstream phases.
+
+**Status:** Planned
+
+**Plans:** 3 plans
+
+Plans:
+- [ ] 42-01-PLAN.md — Build unification: inline notion-client.js, simplify build command, remove obsolete scripts
+- [ ] 42-02-PLAN.md — Webhook debounce: 30-min debounce via Netlify Blobs on notion-webhook.mjs
+- [ ] 42-03-PLAN.md — Content audit: generate structured report of Notion content quality issues
 
 **Requirements:**
 - BUILD-01: Single `npm run build` command generates all pages
@@ -149,9 +158,11 @@ Plans:
 **Dependencies:** Phases 39, 40 (all page types must work before cleanup)
 
 **Technical Notes:**
-- May need to remove separate `npm run build:documents` script
-- Consider build caching if API calls are slow
-- Verify .env.example documents required variables
+- Build command simplified from two-step to single `npx @11ty/eleventy`
+- notion-client.js inlined into permits.js (matching documents.js self-contained pattern)
+- 20+ obsolete scripts removed (old build scripts, one-time migration/fix scripts)
+- Webhook debounce prevents multiple builds during batch Notion editing sessions
+- Content audit script generates report for Phase 43 and Phase 45
 
 ---
 
@@ -219,4 +230,4 @@ Plans:
 
 ---
 *Roadmap created: 2026-02-07*
-*Updated: 2026-02-09 — Added prassi locali, expanded to phases 39-46*
+*Updated: 2026-02-14 — Phase 42 planned (3 plans), Phases 39-41 marked complete*
