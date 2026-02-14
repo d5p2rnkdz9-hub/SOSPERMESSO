@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-14
+**Updated:** 2026-02-14 — Phase 42 complete
 **Phases:** 39-46 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -129,18 +129,18 @@ Plans:
 
 ---
 
-## Phase 42: Build Pipeline
+## Phase 42: Build Pipeline ✓
 
 **Goal:** Unified build command, webhook debounce for auto-rebuild, old script cleanup, and content audit report for downstream phases.
 
-**Status:** Planned
+**Status:** Complete (2026-02-14)
 
 **Plans:** 3 plans
 
 Plans:
-- [ ] 42-01-PLAN.md — Build unification: inline notion-client.js, simplify build command, remove obsolete scripts
-- [ ] 42-02-PLAN.md — Webhook debounce: 30-min debounce via Netlify Blobs on notion-webhook.mjs
-- [ ] 42-03-PLAN.md — Content audit: generate structured report of Notion content quality issues
+- [x] 42-01-PLAN.md — Build unification: inline notion-client.js, simplify build command, remove obsolete scripts
+- [x] 42-02-PLAN.md — Webhook debounce: 30-min debounce via Netlify Blobs on notion-webhook.mjs
+- [x] 42-03-PLAN.md — Content audit: generate structured report of Notion content quality issues
 
 **Requirements:**
 - BUILD-01: Single `npm run build` command generates all pages

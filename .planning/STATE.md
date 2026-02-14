@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-14
-**Status:** v3.1 — Phase 42 in progress (plans 01, 02, 03 complete)
+**Status:** v3.1 — Phase 42 complete, Phase 43 pending
 
 ## Project Reference
 
@@ -14,13 +14,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 42 (Build Pipeline) — in progress
-**Plan:** 3 of 4 complete (42-01, 42-02, 42-03)
-**Status:** Content audit complete - 28 issues identified in 47 Notion pages
-**Last activity:** 2026-02-14 — Completed 42-03-PLAN.md (content audit), commits 72ae6ef, 9292286
+**Phase:** 42 (Build Pipeline) — complete
+**Status:** All 3 plans complete, verified (12/12 must-haves)
+**Last activity:** 2026-02-14 — Phase 42 complete. Build unified, webhook debounced, 20 scripts removed, audit report generated.
 
 ```
-Progress: [████░░░░░░] 42% (3/8 phases, 3/4 plans in phase 42)
+Progress: [█████░░░░░] 50% (4/8 phases complete)
 ```
 
 ## v3.1 Phases
@@ -30,7 +29,7 @@ Progress: [████░░░░░░] 42% (3/8 phases, 3/4 plans in phase 4
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
 | 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ✓ Complete |
-| 42 | Build Pipeline | BUILD-01 to BUILD-04 | ◐ In Progress (3/4) |
+| 42 | Build Pipeline | BUILD-01 to BUILD-04 | ✓ Complete |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
@@ -60,9 +59,9 @@ Progress: [████░░░░░░] 42% (3/8 phases, 3/4 plans in phase 4
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 18 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 5.5 min
-- Total execution time: ~110 min
+- Total plans completed: 20 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.7 min
+- Total execution time: ~131 min
 
 **By Phase:**
 
@@ -76,7 +75,7 @@ Progress: [████░░░░░░] 42% (3/8 phases, 3/4 plans in phase 4
 | 39 | 2 | 8 min | 4 min |
 | 40 | 2 | 12 min | 6 min |
 | 41 | 4 | 36 min | 9 min |
-| 42 | 3/4 | 30 min | 10 min |
+| 42 | 3 | 21 min | 7 min |
 
 *Updated after each plan completion*
 
@@ -95,11 +94,13 @@ Progress: [████░░░░░░] 42% (3/8 phases, 3/4 plans in phase 4
 From prior milestones (carry forward):
 - Dizionario links need revision (partial matching works but coverage incomplete)
 - Desktop header alignment (language switcher baseline)
-- 18 permits still need Notion content (placeholder pages)
+- 8 permits still need document lists in Notion (see .planning/AUDIT-content.md)
 
-Resolved in Phase 42-01:
+Resolved in Phase 42:
 - ✓ Single-step build (was: two-step build:docs + build:11ty)
 - ✓ Clean scripts/ directory (was: 20+ obsolete scripts)
+- ✓ Webhook debounce (30-min window prevents excessive rebuilds)
+- ✓ Content audit infrastructure (reusable via `npm run audit`)
 
 ## Design Patterns to Follow
 
@@ -169,10 +170,10 @@ None
 ## Session Continuity
 
 **Last session:** 2026-02-14
-**Stopped at:** Phase 42 in progress (plans 01, 02, 03 complete)
+**Stopped at:** Phase 42 complete
 **Resume file:** None
 
-**Next Action:** Continue Phase 42 with plan 04 (final plan) or move to Phase 43. Use `/gsd:execute-phase 42` or check .planning/phases/42-build-pipeline/ for remaining plan.
+**Next Action:** Plan and execute Phase 43 (Populate Blank Permits). Use `/gsd:discuss-phase 43` or `/gsd:plan-phase 43`.
 
 ---
 
