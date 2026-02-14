@@ -19,33 +19,42 @@ All tasks, bugs, and feature requests are tracked in Notion.
 - **Chi lo fa:** Assignee name
 
 ### Related Files
-- `.planning/PROJECT.md` — Architecture, shipped features, constraints
+- `.planning/PROJECT.md` — Architecture, shipped features, constraints, current milestone
 - `.planning/TODO-permits.md` — Permits needing Notion content (auto-generated)
 
 ---
 
-## Future Milestones (Backburner)
+## Shipped Milestones
 
-### v2.0 Multilingual Support (English)
+| Version | Name | Shipped |
+|---------|------|---------|
+| v1.1–v1.10 | Foundation, documents, design, navigation | 2026-01 |
+| v2.0 | English translation (411 pages) | 2026-02 |
+| v2.2 | Content hashing, translation memory, sitemaps | 2026-02 |
+| v3.0 | 11ty migration (shared layouts, Netlify) | 2026-02-05 |
 
-**Priority:** High — crucial for non-Italian users
-**Status:** POC completed, awaiting activation
-**Roadmap:** `.planning/milestones/v2.0-LANGUAGES-ROADMAP.md`
+## Current Milestone: v3.1
+
+See `.planning/PROJECT.md` for full phase breakdown.
+
+**Order:**
+1. Prassi locali MVP (Phase 40) — crowdsourced questura notes
+2. Permit pages → 11ty (Phase 41)
+3. Old build script cleanup (Phase 42)
+4. Populate blank permits in Notion (Phase 43) — 17 permits
+5. Costi section (Phase 44)
+6. Content validation (Phase 45)
+7. Dizionario link revision (Phase 46)
+
+## Next Milestone: v3.2 Translation Batch
+
+**Prerequisite:** v3.1 content phases complete (permits populated + validated)
 
 **Scope:**
-- Translator review interface (web-based, user-friendly)
-- Batch translation pipeline (AI + glossary enforcement)
-- Human review & corrections workflow
-- Language switching integration
-
-**POC Assets (2026-01-31):**
-- 4 sample translated pages in `en/src/pages/`
-- Verification script: `scripts/verify-translation.js`
-- Comparison tool: `scripts/compare-translations.html`
-- Glossary: `scripts/translation-glossary.json`
-
-**Activate with:** `/gsd:new-milestone` when ready to prioritize
+- Batch translation of new/changed content (IT → EN + future languages)
+- Uses translation memory infrastructure (v2.2)
+- FR, ES, ZH translations (infrastructure exists from v2.2 RTL/CJK phases)
 
 ---
 
-*Last synced: 2026-01-31*
+*Last synced: 2026-02-07*

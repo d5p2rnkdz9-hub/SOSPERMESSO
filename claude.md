@@ -76,37 +76,66 @@ When checking Notion:
 
 ```
 Sito_Nuovo/
+├── eleventy.config.mjs          # 11ty configuration (filters, passthrough, etc.)
 ├── index.html                   # MAIN HOME PAGE (in root, NOT in src/pages/)
-├── PREVIEW.html                 # Demo/preview file
 ├── CLAUDE.md                    # This documentation file
+├── _includes/
+│   └── layouts/
+│       └── base.liquid          # Base layout (head, header, footer, nav)
+│   ├── header.liquid            # Header component include
+│   ├── footer.liquid            # Footer component include
+│   ├── nav.liquid               # Navigation include (desktop + mobile)
+│   └── language-switcher.liquid # IT/EN toggle include
+├── _data/                       # 11ty data files
+│   ├── site.js                  # Site metadata (title, URL, etc.)
+│   ├── nav.js                   # Navigation structure
+│   ├── footer.js                # Footer data
+│   ├── documents.js             # Notion → document page data (async)
+│   ├── slugMap.js               # URL redirect mappings (19 entries)
+│   └── documentRedirects.js     # Generates 38 redirect page objects
+├── _site/                       # BUILD OUTPUT (generated, gitignored)
 ├── src/
-│   ├── components/              # Reusable components
-│   │   ├── contact-form.html    # Contact modal form
-│   │   ├── lighthouse.html      # Lighthouse hero animation
-│   │   └── paperwork-illustration.html # Cartoon illustrations (4 variations)
-│   ├── pages/                   # Website subpages (NOT index.html!)
+│   ├── pages/                   # Website subpages (~411 HTML files)
 │   │   ├── database.html        # Database landing page
 │   │   ├── chi-siamo.html       # About us page
 │   │   ├── documenti-questura.html
-│   │   ├── permesso-*.html      # Individual permit pages
-│   │   ├── documenti-*.html     # Document requirement pages
-│   │   └── ...                  # ~137 HTML files total
+│   │   ├── permesso-*.html      # Individual permit pages (~67)
+│   │   ├── documenti-*.html     # Document requirement pages (~63 + 38 redirects)
+│   │   ├── documents-primo.liquid    # 11ty template for primo pages
+│   │   ├── documents-rinnovo.liquid  # 11ty template for rinnovo pages
+│   │   └── documents-redirects.liquid # 11ty template for redirect pages
 │   ├── styles/                  # CSS files
-│   │   ├── main.css             # Base styles & color system
+│   │   ├── main.css             # Base styles & color system (CSS variables)
 │   │   ├── components.css       # Component-specific styles
 │   │   ├── animations.css       # Animation definitions
 │   │   ├── mobile.css           # Mobile responsive styles
 │   │   └── mobile-fix.css       # Critical mobile fixes
-│   ├── scripts/                 # JavaScript files
+│   ├── scripts/                 # Client-side JavaScript
 │   │   ├── app.js               # Main application logic
 │   │   └── mobile.js            # Mobile-specific functionality
-│   └── data/                    # Content data
+│   └── data/                    # Content data (homepage)
 │       ├── content-it.json      # Italian content
 │       └── content-en.json      # English content
+├── en/                          # English pages (same structure as src/pages/)
+├── scripts/                     # Build scripts (Node.js)
+│   ├── build-documents.js       # Notion → document HTML (legacy, being replaced by 11ty)
+│   ├── build-permits.js         # Notion → permit HTML
+│   ├── build-sitemap.js         # Sitemap generation
+│   ├── notion-client.js         # Notion API client
+│   ├── translation-memory.js    # Translation caching module
+│   └── templates/               # HTML generation templates
+│       ├── primo.js             # First release template (legacy)
+│       ├── rinnovo.js           # Renewal template (legacy)
+│       ├── permesso.js          # Permit page template
+│       └── helpers.js           # Shared template filters (used by 11ty too)
+└── .planning/                   # Project planning docs
+    ├── PROJECT.md               # Current state, milestones, architecture
+    ├── BACKLOG.md               # Milestone overview
+    └── TODO-permits.md          # Permits needing content (auto-generated)
 
-IMPORTANT: index.html lives in the ROOT directory, not in src/pages/!
-- Root index.html uses paths like: src/pages/chi-siamo.html, src/styles/main.css
-- Pages in src/pages/ use relative paths like: chi-siamo.html, ../styles/main.css
+Pages use front matter (---layout/title/lang---) and shared layouts via 11ty.
+Build: `npm run build` chains Notion content fetch + 11ty static generation.
+Output goes to _site/ and deploys to Netlify.
 ```
 
 ## Key Features
@@ -176,19 +205,25 @@ All permit detail pages follow a consistent structure:
 
 ### Permit Pages
 
-**22 permit pages exist** in `src/pages/permesso-*.html`:
-- 21 with unique content (various formats)
-- 1 redirect (asilo → richiesta-asilo)
+**67 permit pages exist** in `src/pages/permesso-*.html`:
+- 56 with content (Q&A format from Notion)
+- 18 placeholder pages (need Notion content — see `.planning/TODO-permits.md`)
+- 4 variant pages (parent/child structure for multi-type permits)
 
-**Content formats (inconsistent):**
-- 6 pages use **Standard format** (Cos'è, Durata, Requisiti, Costi sections)
-- 15 pages use **Q&A format** (Che cos'è?, Come posso?, etc.)
+**Standard Q&A template** (7 sections + extras):
+1. Cos'è questo permesso?
+2. Chi può chiederlo?
+3. Come/dove si chiede?
+4. Che diritti mi dà?
+5. Quanto dura?
+6. Quando scade posso rinnovarlo?
+7. Posso convertirlo in un altro permesso?
++ Additional permit-specific Q&A from Notion
 
-**Notion database has 29 permits with content** ready to be pulled via build script.
-Future milestone will standardize all permit pages using Notion as source of truth.
+**Content generated from Notion** via `scripts/build-permits.js`.
 
 ### Database Categories (database.html)
-- **📋 STUDIO/LAVORO** (Purple-Blue gradient)
+- **📋 STUDIO/LAVORO** (Warm gradient)
   - Study, Employed work, Self-employment, EU long-term, Job seeking
 - **🛡️ PROTEZIONE** (Orange-Pink gradient)
   - Asylum request, Refugee status, Subsidiary protection, Special protection, Minors, Natural disaster, Administrative continuation
@@ -200,25 +235,14 @@ Future milestone will standardize all permit pages using Notion as source of tru
 ## Multilingual System
 
 ### Architecture
-- Content stored in JSON files (`src/data/content-*.json`)
-- Language switcher in header with dropdown
-- Supported languages: IT 🇮🇹, EN 🇬🇧, FR 🇫🇷, ES 🇪🇸, ZH 🇨🇳
-- Static site approach: Each language is a separate copy of the site
-
-### Content Structure (JSON)
-```json
-{
-  "tests": {
-    "items": [
-      {
-        "icon": "🤞",
-        "title": "Posso AVERE un permesso?",
-        "url": "https://form.typeform.com/to/kt7P9Ejk"
-      }
-    ]
-  }
-}
-```
+- 11ty-based: each language is a separate copy of pages in its own folder
+- IT pages in root, EN pages in `/en/` subfolder
+- Language switcher include in base layout (IT ↔ EN toggle)
+- hreflang tags in base layout for SEO (canonical + alternate)
+- Sitemap index architecture: `sitemap-index.xml` → `sitemap-it.xml` + `sitemap-en.xml`
+- Translation memory infrastructure for incremental re-translation
+- **Currently implemented:** IT 🇮🇹, EN 🇬🇧 (411 pages total)
+- **Future:** FR 🇫🇷, ES 🇪🇸, ZH 🇨🇳 (infrastructure exists, content pending)
 
 ## Mobile Optimization
 
@@ -321,42 +345,40 @@ Header navigation includes 4 dropdowns:
    - Inter: 400, 500, 600, 700
    - Poppins: 600, 700, 800
 
-### Contact Form Backend
-Currently simulated (setTimeout 1500ms). To integrate:
-```javascript
-// Replace simulation with actual API call
-const response = await fetch('/api/contact', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(data)
-});
-```
+### Contact & Error Reporting
+- Contact form: Typeform embed (https://form.typeform.com/to/USx16QN3)
+- Error reporting: "Segnala errore" button on all content pages → Typeform (pre-filled with page URL)
+- No custom backend for contact — Typeform handles submissions
 
 ## Future Development
 
 **Check local docs first:**
-- `.planning/PROJECT.md` — technical debt, shipped features
+- `.planning/PROJECT.md` — current milestone, phase plan, technical debt
 - `.planning/TODO-permits.md` — permits needing content (auto-generated)
 
-**Translations:** EN, FR, ES, ZH (low priority, infrastructure exists)
+**Current priority order:**
+1. Prassi locali MVP (crowdsourced questura notes)
+2. Permit pages → 11ty + content population
+3. Content validation
+4. Translation batch (after content is solid)
 
 ## Technical Notes
 
-### CSS Variables System
-All colors, spacing, typography, shadows, and transitions are defined as CSS variables in `:root`. This allows:
-- Easy theme customization
-- Consistent design system
-- Maintainable codebase
+### Build System
+- **11ty v3.1.2** with Liquid templates for static site generation
+- **Notion API** powers document and permit page content
+- **Combined build:** `npm run build` chains Notion content fetch + 11ty
+- **Output:** `_site/` directory, deployed to Netlify
+- **Incremental builds:** Content hashing (MD5) for change detection
 
-### Component Loading Pattern
-Components are loaded dynamically via fetch API:
-```javascript
-fetch('src/components/contact-form.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('container-id').innerHTML = html;
-  });
-```
+### CSS Variables System
+All colors, spacing, typography, shadows, and transitions are defined as CSS variables in `:root`.
+
+### Component Architecture
+Components are 11ty includes in `_includes/`:
+- `layouts/base.liquid` — base HTML structure (head, scripts, shared elements)
+- `header.liquid`, `footer.liquid`, `nav.liquid`, `language-switcher.liquid`
+- Pages reference layouts via front matter: `layout: layouts/base.liquid`
 
 ### Mobile-First Approach
 All base styles are designed for mobile, then enhanced for larger screens using media queries.
@@ -391,6 +413,6 @@ All base styles are designed for mobile, then enhanced for larger screens using 
 
 ---
 
-**Last Updated**: 2026-01-30
-**Version**: 1.8
-**Built with**: HTML, CSS, JavaScript (Vanilla), Node.js build scripts
+**Last Updated**: 2026-02-07
+**Version**: 3.0
+**Built with**: 11ty v3.1.2 (Liquid), CSS, JavaScript (Vanilla), Node.js build scripts, Notion API, Netlify

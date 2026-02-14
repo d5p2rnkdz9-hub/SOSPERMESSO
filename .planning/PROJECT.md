@@ -103,25 +103,59 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-## Current Milestone: v3.1 Notion-11ty Integration
+## Current Milestone: v3.1 Prassi Locali + Notion-11ty Completion
 
-**Goal:** Convert Notion build scripts to 11ty data files so content updates flow automatically through the build pipeline.
-
-**Target features:**
-- Document pages generated from 11ty data file + Liquid template
-- Permit pages generated from 11ty data file + Liquid template
-- Single `npm run build` command for entire site
-- Netlify configured with Notion API token for production builds
+**Goal:** Build collaborative "prassi locali" infrastructure for crowdsourced questura notes on document pages, then complete Notion-11ty integration and content cleanup.
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
+### Phases (in order)
+
+| Phase | Name | Type | Status |
+|-------|------|------|--------|
+| 39 | Document pages → 11ty | Technical | DONE |
+| 40 | **Prassi locali MVP** | New feature | Next up |
+| 41 | Permit pages → 11ty | Technical | Pending |
+| 42 | Old build script cleanup | Cleanup | Pending |
+| 43 | Populate blank permit pages | Content (17 permits in Notion) | Pending |
+| 44 | Costi section on document pages | Content/template | Pending |
+| 45 | Content validation pass | Review | Pending |
+| 46 | Dizionario link revision | Technical debt | Pending |
+
+### Phase 40: Prassi Locali MVP
+
+Crowdsourced local questura practices on document pages.
+
+**Architecture:**
+- Static core: approved notes baked into pages at build time
+- Thin dynamic layer: Netlify Functions for form submission + upvoting
+- Notion DB as content store (submissions table, moderation queue)
+- "Prassi locali" section on document pages, filterable by city
+
+**MVP scope:**
+- Inline submission form on document pages → Netlify Function → Notion DB
+- Manual moderation (approve in Notion, rebuild to publish)
+- "Prassi locali" section with city filter (client-side JS)
+- Upvote/downvote (anonymous, localStorage + IP rate limiting)
+
+**Phase 2 (future):**
+- Pre-approved user auth for submitting (Netlify Identity or access codes)
+- User management in Notion/Supabase
+
+### Next Milestone: v3.2 Translation Batch
+
+**Prerequisite:** All permit content populated and validated (Phases 43-45 complete)
+
+**Scope:**
+- Batch translation of all new/changed content (IT → EN + other languages)
+- Uses existing translation memory infrastructure (v2.2)
+- Leverages 11ty build pipeline for consistent output
+
 ### Out of Scope
 
-- Backend API integration — static site approach
 - Real-time permit status tracking — external service, just link to portale immigrazione
-- User accounts/authentication — information site, no personalization needed
-- Legal review for translations — volunteer review sufficient
 - Professional translation services — AI + volunteer review sufficient
+- Full user accounts system — prassi locali uses lightweight auth for approved contributors only
 
 ## Context
 
@@ -152,7 +186,8 @@ Users can quickly find accurate, understandable information about their specific
 **Technical debt:**
 - Dizionario links need revision (partial matching works but coverage incomplete)
 - No npm script for build-permits.js (manual execution)
-- 18 permits still need Notion content (placeholder pages)
+- 17 permits still need Notion content (see `.planning/TODO-permits.md`)
+- Old build scripts (build-documents.js, templates/primo.js, templates/rinnovo.js) can be removed after Phase 41
 
 ## Constraints
 
@@ -203,4 +238,4 @@ Users can quickly find accurate, understandable information about their specific
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-02-05 — v3.0 11ty Migration shipped*
+*Last updated: 2026-02-07 — v3.1 milestone replanned with prassi locali*

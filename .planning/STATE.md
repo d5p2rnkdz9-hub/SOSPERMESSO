@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-09
-**Status:** v3.1 — Phase 41 Wave 2 complete, awaiting Wave 3
+**Last Updated:** 2026-02-10
+**Status:** v3.1 — Phase 41 complete, Phase 42 pending
 
 ## Project Reference
 
@@ -14,13 +14,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 41 (Prassi Locali MVP) — executing
-**Plan:** 03 of 5 (completed)
-**Status:** Wave 2 complete (static + serverless + interactive layers done)
-**Last activity:** 2026-02-09 — Completed 41-03-PLAN.md
+**Phase:** 41 (Prassi Locali MVP) — complete
+**Status:** All 4 plans complete, visually verified in browser
+**Last activity:** 2026-02-10 — Fixed dotenv loading order in documents.js and prassiLocali.js (commit 5c8a318), prassi section renders correctly on both primo and rinnovo pages
 
 ```
-Progress: [███░░░░░░░] 29% (2.3/8 phases complete - Phase 41: 60% done)
+Progress: [████░░░░░░] 38% (3/8 phases complete)
 ```
 
 ## v3.1 Phases
@@ -29,19 +28,40 @@ Progress: [███░░░░░░░] 29% (2.3/8 phases complete - Phase 41
 |-------|------|--------------|--------|
 | 39 | Document Pages | DOC-01 to DOC-04 | ✓ Complete |
 | 40 | Permit Pages | PERM-01 to PERM-04 | ✓ Complete |
-| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ◕ Executing (3/5 plans) |
+| 41 | Prassi Locali MVP | PRASSI-01 to PRASSI-04 | ✓ Complete |
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ○ Pending |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ○ Pending |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
 
+## Phase 41 Summary
+
+**Goal:** Add crowdsourced prassi locali (local questura practices) to document pages.
+
+**Delivered:**
+- `_data/prassiLocali.js` — Notion data file for approved practices (grouped by slug then city)
+- `src/styles/prassi.css` — Complete styling (section, cards, votes, empty state, modal, responsive)
+- `src/scripts/prassi.js` — Client-side modal, voting UI, city autocomplete (105 questure)
+- `netlify/functions/submit-prassi.js` — Submission endpoint with validation
+- `netlify/functions/vote-prassi.js` — Vote counting via Notion API
+- `netlify/functions/notion-webhook.js` — Webhook with timing-safe signature verification
+- Prassi section in both `documents-primo.liquid` and `documents-rinnovo.liquid` templates
+- Anchor link in page header for quick navigation
+
+**Issues resolved during execution:**
+1. Liquid `| contains:` filter → `contains` operator (LiquidJS compatibility)
+2. Old static document files overwriting 11ty output → dynamic ignore pattern
+3. Duplicate slug conflicts → dedup in documents.js
+4. Redirect slug conflicts → filter in documents.js
+5. **dotenv loading order** → Added `require('dotenv').config()` to documents.js and prassiLocali.js
+
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 16 (v2.2 + v3.0 + v3.1 milestones)
+- Total plans completed: 17 (v2.2 + v3.0 + v3.1 milestones)
 - Average duration: 5.56 min
-- Total execution time: 89 min
+- Total execution time: ~95 min
 
 **By Phase:**
 
@@ -54,21 +74,7 @@ Progress: [███░░░░░░░] 29% (2.3/8 phases complete - Phase 41
 | 38 | 1 | 8 min | 8 min |
 | 39 | 2 | 8 min | 4 min |
 | 40 | 2 | 12 min | 6 min |
-| 41 | 3 | 30 min | 10 min |
-
-**Recent Trend:**
-- Phase 37 Plan 01: 8 min (3 tasks, 1 deviation - 404 cleanup)
-- Phase 37 Plan 02: 3 min (2 tasks, 0 deviations)
-- Phase 37 Plan 03: 2 min (2 tasks, verification only - work done in 37-02)
-- Phase 38 Plan 01: 8 min (3 tasks, 0 deviations, checkpoint verified)
-- Phase 39 Plan 01: 3 min (3 tasks, 0 deviations)
-- Phase 39 Plan 02: 5 min (3 tasks, 1 deviation - ignore conflict)
-- Phase 40 Plan 01: 5 min (2 tasks, 0 deviations)
-- Phase 40 Plan 02: 7 min (3 tasks, 1 deviation - duplicate slug fix, checkpoint verified)
-- Phase 41 Plan 01: 16 min (2 tasks, 0 deviations)
-- Phase 41 Plan 02: 7 min (2 tasks, 0 deviations)
-- Phase 41 Plan 03: 7 min (2 tasks, 0 deviations)
-- Trend: Client-side JS with extensive UX takes similar time to Netlify Functions
+| 41 | 4 | 36 min | 9 min |
 
 *Updated after each plan completion*
 
@@ -81,18 +87,6 @@ Progress: [███░░░░░░░] 29% (2.3/8 phases complete - Phase 41
 - **Incremental migration** (not big-bang)
 - **URL preservation** critical (all 469 URLs must work)
 - **Structural only** — same content, keep existing Notion scripts
-
-**What changes:**
-- Header/footer/nav extracted to reusable includes
-- Pages use shared layouts via front matter
-- Build via `npx @11ty/eleventy`
-
-**What stays the same:**
-- All CSS files unchanged
-- All JS files unchanged
-- All content unchanged
-- Notion build scripts unchanged
-- URL structure unchanged
 
 ## Technical Debt
 
@@ -113,6 +107,7 @@ From prior milestones (carry forward):
 
 **Data layer patterns (established in Phase 36-01):**
 - CommonJS format for data files (`module.exports = {}`)
+- **Always `require('dotenv').config()` at top of data files that use env vars**
 - Language-keyed data structures (it/en) for nav/footer
 - url filter for all asset paths in templates
 
@@ -134,42 +129,17 @@ From prior milestones (carry forward):
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- v3.0: 11ty migration (structural) — Eliminate duplicated headers/footers in 469 files
-- v3.0: Liquid over Nunjucks — Nunjucks unmaintained since June 2022
-- v3.0: Incremental migration — Convert pages gradually, not big-bang
-- v3.0: Structural only — Keep Notion integration separate (v3.1)
-- **34.1-01: CSS link order matters** — Check en/index.html path BEFORE root index.html to avoid greedy matching
-- **35-01: ESM config file (.mjs)** — Used .mjs extension for 11ty config because project is CommonJS
-- **35-01: Global computed permalink** — _data/eleventyComputed.js handles all HTML files
-- **35-01: Retained directory data files** — Kept for explicitness as defense-in-depth
-- **36-01: CommonJS for data files** — Matches existing eleventyComputed.js
-- **36-01: Language-keyed data** — nav.js and footer.js keyed by language code (it/en)
-- **36-01: external flag for links** — Typeform links marked with `external: true`
-- **36-02: Component includes** — Header, nav, footer, language-switcher as Liquid includes
-- **36-02: Language detection** — Uses HTML lang attribute, not URL path parsing
-- **37-03: EN migration bundled with IT** — EN pages were migrated in fc11fc2 along with IT pages
-- **38-01: Node 22 LTS for Netlify** — Latest stable version with long support window (until Apr 2027)
-- **38-01: Combined build script** — Chains Notion content generation before 11ty compilation
-- **38-01: No build caching** — Build completes in 13.5s locally, caching adds complexity without benefit
-- **39-01: Separate primo/rinnovo arrays** — documents.js returns {primo: [], rinnovo: []} for direct pagination
-- **39-01: Graceful degradation** — Return empty arrays when NOTION_API_KEY missing, don't fail build
-- **39-01: createRequire pattern** — Use createRequire to import CommonJS helpers from ESM config
-- **39-02: Inline header/footer for documents** — Document pages use simpler nav, kept inline not includes
-- **39-02: Ignore old redirect HTML** — Dynamic ignore patterns via slugMap prevent permalink conflicts
-- **40-01: Function copying from build scripts** — Copy parsing functions instead of import to avoid side-effect execution
-- **40-01: parentSlug pre-computation** — Variant children get parentSlug from detectVariants baseSlug for breadcrumbs
-- **40-01: Section index for styling** — Add index field to sections for getSectionBorderColor fallback rotation
-- **40-02: Explicit boolean comparison in Liquid** — Use `== true` for JS booleans passed via 11ty data (truthy eval unreliable)
-- **40-02: Dynamic permit file ignore** — readdirSync to ignore all permesso-*.html files, matching Phase 39 redirect pattern
-- **41-01: prassi-data-structure** — Nested object: pageSlug -> [[cityName, practices[]]] - Liquid templates iterate easily over arrays. Converting city object to sorted array of tuples enables simple iteration while maintaining alphabetical city order
-- **41-01: empty-state-static** — Show empty state with button in static HTML - Button is non-functional until Plan 03 adds modal. Static button in HTML avoids layout shift when JS loads. Progressive enhancement pattern
-- **41-01: graceful-degradation** — Return empty object {} when NOTION_API_KEY or PRASSI_DB_ID missing - Build succeeds without credentials. Consistent with existing documents.js pattern
-- **41-02: no-upstash-redis** — localStorage only for vote duplicate prevention - Defer server-side rate limiting to future phase if abuse occurs. Keeps MVP simple
-- **41-02: notion-search-filtering** — Same pattern as documents.js - Use notion.search() with JS filtering instead of notion.databases.query
-- **41-03: modal-injection** — Inject modal HTML/CSS via JS (not separate include) - Matches contact-form.html pattern, keeps prassi feature self-contained
-- **41-03: city-validation** — Client-side validation with setCustomValidity + server-side validation - Defense in depth, UX feedback before submission
-- **41-03: vote-localStorage** — 24-hour expiry on duplicate prevention - Balance between preventing spam and allowing opinion changes
-- **41-03: webhook-timing-safe** — crypto.timingSafeEqual for signature comparison - Prevents timing attacks on signature verification
+- **41-01: prassi-data-structure** — Nested object: pageSlug -> [[cityName, practices[]]]
+- **41-01: empty-state-static** — Show empty state with button in static HTML (progressive enhancement)
+- **41-01: graceful-degradation** — Return empty {} when env vars missing
+- **41-02: no-upstash-redis** — localStorage only for vote duplicate prevention, defer server-side rate limiting
+- **41-03: modal-injection** — Inject modal HTML/CSS via JS (matches contact-form.html pattern)
+- **41-03: vote-localStorage** — 24-hour expiry on duplicate prevention
+- **41-03: webhook-timing-safe** — crypto.timingSafeEqual for signature comparison
+- **41: Liquid contains operator** — Use `contains` operator in if/assign, NOT `| contains:` filter (LiquidJS doesn't have filter)
+- **41: Dynamic document file ignore** — readdirSync to ignore all documenti-*.html files (same pattern as permits)
+- **41: Slug dedup in documents.js** — Skip duplicate slugs and redirect display slugs to prevent 11ty DuplicatePermalinkOutputError
+- **41: dotenv in data files** — Always call `require('dotenv').config()` at top of data files that use process.env
 
 ### Research Completed
 
@@ -182,19 +152,19 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-None.
+None
 
 ### Blockers/Concerns
 
-None.
+None
 
 ## Session Continuity
 
-**Last session:** 2026-02-09
-**Stopped at:** Completed 41-03-PLAN.md (Interactive Layer)
+**Last session:** 2026-02-10
+**Stopped at:** Phase 41 complete
 **Resume file:** None
 
-**Next Action:** Wave 2 complete. Await user decision on Wave 3 execution (Plans 04-05: UAT + Documentation).
+**Next Action:** Plan and execute Phase 42 (Build Pipeline). Use `/gsd:plan-phase 42` or `/gsd:execute-phase 42`.
 
 ---
 
