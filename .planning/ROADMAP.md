@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-16 — Phase 44 complete
+**Updated:** 2026-02-16 — Phase 45 planned
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -282,13 +282,27 @@ Plans:
 
 ## Phase 45: Content Validation
 
-**Goal:** Review pass on all generated content for accuracy and completeness.
+**Goal:** Validate all permit and document page content against Notion database columns, enforce Phase 43 content rules, fix violations, add missing info, and flag conflicts for user review.
+
+**Plans:** 3 plans
+
+Plans:
+- [ ] 45-01-PLAN.md — Build validation script, cross-reference DB columns vs. page content, generate findings
+- [ ] 45-02-PLAN.md — Fix rule violations in Notion, add missing sections, generate VALIDATION-REPORT.md
+- [ ] 45-03-PLAN.md — Rebuild site + user spot-check and approval
 
 **Requirements:**
 - VALID-01: All document pages reviewed for accuracy
 - VALID-02: All permit pages reviewed for accuracy
 
 **Dependencies:** Phases 43, 44 (all content populated first)
+
+**Technical Notes:**
+- Two-layer validation: DB columns as source of truth + Phase 43 content rules
+- Script-based pre-screening (validate-permits.js) to find issues automatically
+- Notion API edits for rule violations and missing sections
+- Conflicts logged for user review (never auto-resolved)
+- Final rebuild + user spot-check before phase approval
 
 ---
 
@@ -320,4 +334,4 @@ Plans:
 
 ---
 *Roadmap created: 2026-02-07*
-*Updated: 2026-02-16 — Phase 44 planned*
+*Updated: 2026-02-16 — Phase 45 planned*
