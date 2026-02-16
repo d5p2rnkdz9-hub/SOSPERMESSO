@@ -82,6 +82,11 @@ eleventyExcludeFromCollections: true
         <a href="documenti-{{ doc.slug }}-primo.html" class="quick-switch-link">
           Vedi anche: Primo Rilascio →
         </a>
+        {%- if doc.costBollettino or doc.costMarcaBollo -%}
+        <a href="#quanto-costa" class="costi-anchor-link">
+          Quanto costa
+        </a>
+        {%- endif -%}
         <a href="#prassi-locali" class="prassi-anchor-link">
           Prassi locali della tua Questura
         </a>
@@ -204,6 +209,49 @@ eleventyExcludeFromCollections: true
         {{ section.content }}
       </div>
       {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- if doc.costBollettino or doc.costMarcaBollo -%}
+  <!-- COSTI -->
+  <section class="section bg-off-white" id="quanto-costa">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">💰 Quanto costa?</h2>
+      <div class="card">
+        <ul class="costi-list">
+          {%- if doc.costBollettino -%}
+          <li class="costi-item">
+            <span class="costi-label">Bollettino postale <span class="costi-note">da pagare alle Poste</span></span>
+            <span class="costi-amount">€ {{ doc.costBollettino }}</span>
+          </li>
+          {%- endif -%}
+          {%- if doc.costMarcaBollo -%}
+          <li class="costi-item">
+            <span class="costi-label">Marca da bollo <span class="costi-note">da comprare in tabaccheria</span></span>
+            <span class="costi-amount">€ {{ doc.costMarcaBollo }}</span>
+          </li>
+          {%- endif -%}
+          {%- assign methodLowerCosti = doc.method | downcase -%}
+          {%- if methodLowerCosti contains 'kit' -%}
+          <li class="costi-item">
+            <span class="costi-label">Kit postale <span class="costi-note">da comprare alle Poste</span></span>
+            <span class="costi-amount">€ 30,00</span>
+          </li>
+          {%- endif -%}
+        </ul>
+        <div class="costi-total">
+          <span class="costi-total-label">Totale</span>
+          <span class="costi-total-amount">€
+            {%- assign total = 0 -%}
+            {%- if doc.costBollettino -%}{%- assign total = total | plus: doc.costBollettino -%}{%- endif -%}
+            {%- if doc.costMarcaBollo -%}{%- assign total = total | plus: doc.costMarcaBollo -%}{%- endif -%}
+            {%- assign methodLowerTotal = doc.method | downcase -%}
+            {%- if methodLowerTotal contains 'kit' -%}{%- assign total = total | plus: 30 -%}{%- endif -%}
+            {{ total }}
+          </span>
+        </div>
+      </div>
     </div>
   </section>
   {%- endif -%}

@@ -253,6 +253,91 @@
 }
 
 /* -----------------------------------------------
+   COSTI SECTION
+   ----------------------------------------------- */
+
+.costi-anchor-link {
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  margin-right: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--accent-orange);
+  background: rgba(255, 152, 0, 0.1);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.costi-anchor-link:hover {
+  background: var(--accent-orange-bright);
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+.costi-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.costi-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.costi-item:last-child {
+  border-bottom: none;
+}
+
+.costi-label {
+  font-size: var(--font-size-base);
+  color: var(--gray-dark);
+  flex: 1;
+}
+
+.costi-note {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--gray-medium);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.costi-amount {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--gray-dark);
+  white-space: nowrap;
+  margin-left: var(--spacing-md);
+}
+
+.costi-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  border-top: 2px solid var(--gray-dark);
+}
+
+.costi-total-label {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--gray-dark);
+}
+
+.costi-total-amount {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--gray-dark);
+}
+
+/* -----------------------------------------------
    MOBILE RESPONSIVE - Touch-friendly targets
    ----------------------------------------------- */
 
@@ -291,6 +376,11 @@
   }
 
   .quick-switch-link {
+    display: block;
+    text-align: center;
+  }
+
+  .costi-anchor-link {
     display: block;
     text-align: center;
   }
@@ -455,6 +545,10 @@
 
   .progress-text {
     font-size: 9pt !important;
+  }
+
+  .costi-total {
+    border-top: 2px solid #333 !important;
   }
 
   /* Sections */
