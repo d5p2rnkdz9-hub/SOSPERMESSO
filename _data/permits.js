@@ -420,6 +420,61 @@ function parseQASections(blocks) {
 }
 
 /**
+ * Manual variant group definitions for naming patterns not caught by "a seguito di" detection
+ * These groups use parentheses, colons, or other patterns to indicate variants
+ */
+const manualVariantGroups = {
+  "Studio": {
+    childSlugs: [
+      "studio-dopo-ingresso-con-visto",
+      "studio-conversione-da-altro-permesso"
+    ]
+  },
+  "Lavoro autonomo": {
+    childSlugs: [
+      "lavoro-autonomo-dopo-ingresso-per-flussi",
+      "lavoro-autonomo-a-seguito-di-conversione-da-altro-permesso"
+    ]
+  },
+  "Cure mediche (art. 19)": {
+    childSlugs: [
+      "cure-mediche-art-19-donna-in-stato-di-gravidanza",
+      "cure-mediche-art-19-padre"
+    ]
+  }
+};
+
+/**
+ * Extract variant name from permit tipo based on naming pattern
+ * @param {string} tipo - Full permit type name
+ * @returns {string} Extracted variant name
+ */
+function extractVariantName(tipo) {
+  if (!tipo) return tipo;
+
+  // Pattern 1: Parentheses - "Studio (dopo ingresso con visto)" -> "dopo ingresso con visto"
+  const parenMatch = tipo.match(/\(([^)]+)\)/);
+  if (parenMatch) {
+    return parenMatch[1].trim();
+  }
+
+  // Pattern 2: "a seguito di" - extract text after
+  const aSeguitoMatch = tipo.match(/a\s+seguito\s+di\s+(.+)$/i);
+  if (aSeguitoMatch) {
+    return aSeguitoMatch[1].trim();
+  }
+
+  // Pattern 3: Colon for art.19 - "Cure mediche art.19: donna in stato di gravidanza" -> "donna in stato di gravidanza"
+  const colonMatch = tipo.match(/:\s*(.+)$/);
+  if (colonMatch) {
+    return colonMatch[1].trim();
+  }
+
+  // Fallback: return full tipo
+  return tipo;
+}
+
+/**
  * Detect permits that are variants of a base permit type
  * Groups by base name when "a seguito di" pattern is found
  * @param {Array} permits - Array of permit objects
@@ -518,11 +573,30 @@ module.exports = async function() {
       return [];
     }
 
+    // Filter out duplicate entries early
+    const filteredPermits = permits.filter(permit => {
+      if (!permit.tipo) return false;
+
+      // Check for duplicate markers
+      if (permit.slug && permit.slug.startsWith('duplicate-')) {
+        console.log(`[permits.js] Skipping duplicate entry: ${permit.slug}`);
+        return false;
+      }
+      if (permit.tipo.startsWith('[DUPLICATE]')) {
+        console.log(`[permits.js] Skipping duplicate entry: ${permit.tipo}`);
+        return false;
+      }
+
+      return true;
+    });
+
+    console.log(`[permits.js] Filtered to ${filteredPermits.length} permits (removed ${permits.length - filteredPermits.length} duplicates)`);
+
     // Process each permit with content
     const processedPermits = [];
     let count = 0;
 
-    for (const permit of permits) {
+    for (const permit of filteredPermits) {
       if (!permit.tipo) {
         console.warn(`[permits.js] Skipping permit ${permit.id} - no tipo defined`);
         continue;
@@ -577,9 +651,54 @@ module.exports = async function() {
 
     console.log(`[permits.js] Processed ${processedPermits.length} permits with content`);
 
-    // Detect variants
-    const { variantGroups, standalone } = detectVariants(processedPermits);
-    console.log(`[permits.js] Detected ${variantGroups.length} variant groups, ${standalone.length} standalone permits`);
+    // Process manual variant groups FIRST
+    const manuallyGroupedSlugs = new Set();
+    const manualGroups = [];
+
+    for (const [baseName, config] of Object.entries(manualVariantGroups)) {
+      const childPermits = [];
+
+      // Find matching permits by slug
+      for (const childSlug of config.childSlugs) {
+        const permit = processedPermits.find(p => p.slug === childSlug);
+        if (permit) {
+          manuallyGroupedSlugs.add(childSlug);
+          childPermits.push(permit);
+        } else {
+          console.warn(`[permits.js] Manual variant group "${baseName}": child slug "${childSlug}" not found`);
+        }
+      }
+
+      if (childPermits.length >= 2) {
+        // Extract variant names from tipo
+        const variants = childPermits.map(p => ({
+          ...p,
+          baseName,
+          variantName: extractVariantName(p.tipo),
+          variantSlug: slugify(extractVariantName(p.tipo))
+        }));
+
+        manualGroups.push({
+          baseName,
+          baseSlug: slugify(baseName),
+          variants
+        });
+
+        console.log(`[permits.js] Manual variant group "${baseName}": ${variants.length} children`);
+      } else {
+        console.warn(`[permits.js] Manual variant group "${baseName}": insufficient children (${childPermits.length} found, need 2+)`);
+      }
+    }
+
+    // Remove manually grouped permits from processedPermits for automatic detection
+    const permitsForAutoDetection = processedPermits.filter(p => !manuallyGroupedSlugs.has(p.slug));
+
+    // Detect automatic variant groups (e.g., "a seguito di" pattern)
+    const { variantGroups: autoGroups, standalone } = detectVariants(permitsForAutoDetection);
+    console.log(`[permits.js] Manual variant groups: ${manualGroups.length}, Auto-detected variant groups: ${autoGroups.length}, Standalone: ${standalone.length}`);
+
+    // Combine manual and auto-detected groups
+    const allVariantGroups = [...manualGroups, ...autoGroups];
 
     // Build final array: standalone + variant parents + variant children
     const result = [];
@@ -587,8 +706,8 @@ module.exports = async function() {
     // Add standalone permits
     result.push(...standalone);
 
-    // Add variant groups
-    for (const group of variantGroups) {
+    // Add variant groups (manual + auto)
+    for (const group of allVariantGroups) {
       // Add parent (synthetic object)
       result.push({
         slug: group.baseSlug,
