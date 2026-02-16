@@ -1,0 +1,1806 @@
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  override existing env vars with { override: true }
+=== PERMIT DATABASE AUDIT ===
+Database ID: 1ad7355e-7f7f-8088-a065-e814c92e2cfd
+Date: 2026-02-16T09:43:57.910Z
+
+[Analyzing reference model: Attesa occupazione]
+@notionhq/client warn: request fail {
+  code: 'object_not_found',
+  message: 'Could not find block with ID: 2f67355e-7f7f-813a-83f3-d5f229f0ba8c. Make sure the relevant pages and databases are shared with your integration.',
+  requestId: '807c1f2c-e267-490b-9d1e-0ffb6ac005fb'
+}
+Error analyzing reference model: Could not find block with ID: 2f67355e-7f7f-813a-83f3-d5f229f0ba8c. Make sure the relevant pages and databases are shared with your integration.
+
+[Fetching all permits from database...]
+Found 47 total permit entries
+
+[Checking for duplicates...]
+Found 2 duplicate permit names
+  - "Residenza elettiva" (2 instances)
+    ID: 2e77355e-7f7f-8058-beb5-cfcc98c6d2fe | Category: null | Edited: 2026-02-14T17:22:00.000Z
+    ID: 1ad7355e-7f7f-80fb-aee6-da46ddbc7ac4 | Category: null | Edited: 2025-03-18T11:12:00.000Z
+  - "Motivi religiosi" (2 instances)
+    ID: 2e77355e-7f7f-80f7-897e-d212e47bf04b | Category: null | Edited: 2026-02-14T17:20:00.000Z
+    ID: 1ad7355e-7f7f-80a5-9738-cd59474a66a8 | Category: null | Edited: 2025-03-18T11:11:00.000Z
+
+[Checking content status...]
+  10/47 - FAMIT per familiari di cittadini italiani “statici”
+  20/47 - Calamità naturale (art. 20 bis)
+  30/47 - Permesso UE per soggiornanti di lungo periodo (o “Carta di soggiorno” - PSLP)
+  40/47 - Attività sportiva
+  46/47 - [NO NAME] ID: 1b97355e-7f7f-807b-8795-dae74a940add
+  47/47 - [NO NAME] ID: 1b97355e-7f7f-8090-b398-c1cf8d2eb684
+
+[SUMMARY]
+Total permits: 47
+With content: 32
+Blank (no blocks): 13
+No name (unknown): 2
+
+By Macrocategoria:
+  protezione: 0 total (0 blank)
+  lavoro: 0 total (0 blank)
+  cure mediche: 0 total (0 blank)
+  motivi familiari: 0 total (0 blank)
+  altro: 45 total (13 blank)
+{
+  "audit_date": "2026-02-16T09:44:55.369Z",
+  "database_id": "1ad7355e-7f7f-8088-a065-e814c92e2cfd",
+  "reference_model": null,
+  "summary": {
+    "total": 47,
+    "has_content": 32,
+    "blank": 13,
+    "no_name": 2
+  },
+  "duplicates": [
+    {
+      "name": "Residenza elettiva",
+      "instances": [
+        {
+          "id": "2e77355e-7f7f-8058-beb5-cfcc98c6d2fe",
+          "slug": "residenza-elettiva",
+          "macrocategoria": null,
+          "last_edited": "2026-02-14T17:22:00.000Z"
+        },
+        {
+          "id": "1ad7355e-7f7f-80fb-aee6-da46ddbc7ac4",
+          "slug": "residenza-elettiva",
+          "macrocategoria": null,
+          "last_edited": "2025-03-18T11:12:00.000Z"
+        }
+      ]
+    },
+    {
+      "name": "Motivi religiosi",
+      "instances": [
+        {
+          "id": "2e77355e-7f7f-80f7-897e-d212e47bf04b",
+          "slug": "motivi-religiosi",
+          "macrocategoria": null,
+          "last_edited": "2026-02-14T17:20:00.000Z"
+        },
+        {
+          "id": "1ad7355e-7f7f-80a5-9738-cd59474a66a8",
+          "slug": "motivi-religiosi",
+          "macrocategoria": null,
+          "last_edited": "2025-03-18T11:11:00.000Z"
+        }
+      ]
+    }
+  ],
+  "permits_by_category": {
+    "protezione": [],
+    "lavoro": [],
+    "cure mediche": [],
+    "motivi familiari": [],
+    "altro": [
+      {
+        "id": "2ef7355e-7f7f-8000-9c13-cea8a7c0c0df",
+        "tipo": "Protezione sociale vittime di violenza domestica (art.18 bis)",
+        "slug": "protezione-sociale-vittime-di-violenza-domestica-art-18-bis",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "4 Foto",
+          "marca da bollo da 16€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Relazione/dichiarazione dei servizi sociali dei servizi sociali",
+          "Proposta/parere autorità giudiziaria",
+          "bollettino postale da 30.46€"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "marca da bollo da 16€",
+          "Bollettino postale da 30.46",
+          "Permesso in scadenza",
+          "proposta/parere Autorità giudiziaria",
+          "relazione servizi sociali se richiesta",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-14T17:22:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 25
+      },
+      {
+        "id": "2ef7355e-7f7f-8070-9ac0-e62c33b23175",
+        "tipo": "Sfruttamento lavorativo (18ter)",
+        "slug": "sfruttamento-lavorativo-18ter",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "Proposta/parere autorità giudiziaria",
+          "bollettino postale da 30.46€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "4fototessere",
+          "Copia del passaporto (non scaduto)",
+          "Permesso in scadenza"
+        ],
+        "modPrimo": "Autorità giudiziaria",
+        "modRinnovo": "personalmente",
+        "possoConvertire": "si: studio, lavoro, attesa occupazione",
+        "notes": null,
+        "last_edited_time": "2026-02-14T17:22:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 69
+      },
+      {
+        "id": "2e77355e-7f7f-8058-beb5-cfcc98c6d2fe",
+        "tipo": "Residenza elettiva",
+        "slug": "residenza-elettiva",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "bollettino postale da 30.46€",
+          "Visto per residenza elettiva",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Copia del passaporto (non scaduto)"
+        ],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": "Si, dopo 5 anni pds lungo periodo",
+        "notes": null,
+        "last_edited_time": "2026-02-14T17:22:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-80c7-b0f2-ff573167513c",
+        "tipo": "Protezione sociale vittime di tratta (Art. 18) ",
+        "slug": "protezione-sociale-vittime-di-tratta-art-18",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "Copia del passaporto (non scaduto)",
+          "Relazione/dichiarazione dei servizi sociali dei servizi sociali",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Certificato di residenza",
+          "bollettino postale da 30.46€"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "marca da bollo da 16€",
+          "Permesso in scadenza",
+          "relazione servizi sociali se richiesta",
+          "proposta/parere Autorità giudiziaria",
+          "Certificato di residenza",
+          "Bollettino postale da 30.46",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-14T17:21:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 31
+      },
+      {
+        "id": "2e77355e-7f7f-80f7-897e-d212e47bf04b",
+        "tipo": "Motivi religiosi",
+        "slug": "motivi-religiosi",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+          "bollettino postale da 80.46€",
+          "copia dic ente religioso attestante natura incarico",
+          "Indicazione mezzi sostentamento (vitto e alloggio)",
+          "Copia del passaporto (non scaduto)",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "Polizza assicurativa o iscrizione SSN",
+          "Indicazione mezzi sostentamento (vitto e alloggio)",
+          "4fototessere",
+          "Bollettino postale da 80.46€",
+          "Copia del passaporto (non scaduto)",
+          "copia dic ente religioso attestante natura incarico",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-14T17:20:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "2ef7355e-7f7f-809f-bb45-f5d2ea24698b",
+        "tipo": "Affidamento a familiari entro il quarto grado",
+        "slug": "affidamento-a-familiari-entro-il-quarto-grado",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Decreto di affidamento del Tribunale dei Minorenni",
+          "Certificato di nascita/documento di identità",
+          "Relazione/dichiarazione dei servizi sociali dei servizi sociali"
+        ],
+        "docRinnovo": [],
+        "modPrimo": "personalmente",
+        "modRinnovo": null,
+        "possoConvertire": "Si, permesso per studio; per lavoro; per attesa occupazione",
+        "notes": null,
+        "last_edited_time": "2026-02-14T14:25:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 34
+      },
+      {
+        "id": "2ef7355e-7f7f-8098-8408-d8ab6aff341e",
+        "tipo": "Carta di soggiorno per familiari di italiani “dinamici” (D. Lgs. 30/07)",
+        "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici-d-lgs-30-07",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Documento che prova il rapporto di parentela con il cittadino italiano",
+          "bollettino postale da 80.46€",
+          "4 Foto",
+          "Prova dei mezzi economici sufficienti",
+          "Copia del passaporto (non scaduto)"
+        ],
+        "docRinnovo": [
+          "Permesso in scadenza",
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "4fototessere",
+          "Bollettino postale da 80.46€",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+          "Prova dei mezzi economici sufficienti",
+          "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-14T14:24:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 77
+      },
+      {
+        "id": "1ad7355e-7f7f-80b7-b9a4-d0873f68af82",
+        "tipo": "Carta di soggiorno per familiari di cittadini UE (D. Lgs. 30/07)",
+        "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue-d-lgs-30-07",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Documento che prova il rapporto di parentela con il cittadino italiano",
+          "bollettino postale da 80.46€",
+          "Certificato di residenza",
+          "Prova dei mezzi economici sufficienti",
+          "Copia del passaporto (non scaduto)",
+          "4 Foto"
+        ],
+        "docRinnovo": [
+          "Permesso in scadenza",
+          "marca da bollo da 16€",
+          "Bollettino postale da 30.46",
+          "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")",
+          "4fototessere",
+          "Copia del passaporto (non scaduto)",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+          "Prova dei mezzi economici sufficienti"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-14T14:23:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 38
+      },
+      {
+        "id": "3067355e-7f7f-80ad-b6a1-cebacca743f2",
+        "tipo": "Figlio minore di più di 14 anni che vive con i genitori",
+        "slug": "figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": null,
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-14T14:23:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1b97355e-7f7f-8062-8e0b-d99beaa946e3",
+        "tipo": "FAMIT per familiari di cittadini italiani “statici”",
+        "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Documento che prova il rapporto di parentela con il cittadino italiano",
+          "bollettino postale da 80.46€",
+          "Copia del passaporto (non scaduto)",
+          "4 Foto",
+          "Documento di identità del cittadino italiano"
+        ],
+        "docRinnovo": [
+          "Copia del passaporto (non scaduto)",
+          "Permesso in scadenza",
+          "Documento di identità del cittadino italiano",
+          "Documento che prova il rapporto di parentela con il cittadino italiano (incluso nuovo certificato di matrimonio se è coniuge)",
+          "Bollettino postale da 80.46€",
+          "marca da bollo da 16€",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": null,
+        "possoConvertire": "Si: lavoro; studio",
+        "notes": null,
+        "last_edited_time": "2026-02-14T14:17:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 45
+      },
+      {
+        "id": "2dc7355e-7f7f-80d8-b0a5-c82c9b24043c",
+        "tipo": "Attività sportiva (art.27)",
+        "slug": "attivita-sportiva-art-27",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [
+          "Contratto con società sportiva",
+          "Indicazione mezzi sostentamento (vitto e alloggio)",
+          "Dichiarazione  nominativa di assenso del CONI",
+          "bollettino postale da 80.46€",
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "4 Foto",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "Indicazione mezzi sostentamento (vitto e alloggio)",
+          "Bollettino postale da 80.46€",
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "4 Foto",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Contratto con società sportiva"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": "SI: motivi di lavoro ",
+        "notes": null,
+        "last_edited_time": "2026-02-14T12:05:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "2e77355e-7f7f-804d-91cb-d88e50daec05",
+        "tipo": "Apolidia (art.17 D.P.R. n. 572/93)",
+        "slug": "apolidia-art-17-d-p-r-n-572-93",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "4 Foto",
+          "Decisione che dà lo status di apolide",
+          "marca da bollo da 16€",
+          "bollettino postale da 80.46€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "Bollettino postale da 80.46€",
+          "Permesso in scadenza",
+          "marca da bollo da 16€",
+          "Decisione che dà lo status di apolide"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-14T12:04:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-80d2-adb1-d99b52c9b836",
+        "tipo": "Assistenza minore (Art. 31)",
+        "slug": "assistenza-minore-art-31",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Decisione del Tribunale per i MInorenni",
+          "bollettino postale da 80.46€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "4 Foto",
+          "Copia del passaporto (non scaduto)"
+        ],
+        "docRinnovo": [
+          "n/a"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "personalmente",
+        "possoConvertire": "prima della sua scadenza in permesso per motivi di lavoro. o dopo 5 anni pds ue per soggiornanti lungo periodo",
+        "notes": null,
+        "last_edited_time": "2026-02-13T11:40:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 41
+      },
+      {
+        "id": "1b27355e-7f7f-8088-98c6-f3c65c6e7724",
+        "tipo": "Attesa occupazione (art.22)",
+        "slug": "attesa-occupazione-art-22",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Iscrizione al centro per l'impiego",
+          "bollettino postale da 70.46€",
+          "Copia del passaporto (non scaduto)",
+          "4 Foto"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "4 Foto",
+          "Iscrizione al centro per l'impiego",
+          "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "n/a",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T11:37:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 50
+      },
+      {
+        "id": "1b97355e-7f7f-8030-bca0-e191b477d1a4",
+        "tipo": "Famiglia - motivi familiari (convivente con parente cittadino italiano - art. 19)",
+        "slug": "famiglia-motivi-familiari-convivente-con-parente-cittadino-italiano-art-19",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Documento che prova il rapporto di parentela con il cittadino italiano",
+          "4 Foto",
+          "Prova della convivenza (basta la dichiarazione di ospitalità)",
+          "bollettino postale da 80.46€",
+          "Copia del passaporto (non scaduto)"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "4fototessere",
+          "Permesso in scadenza",
+          "Copia del passaporto (non scaduto)",
+          "Prova della convivenza (basta la dichiarazione di ospitalità)",
+          "Bollettino postale da 80.46€",
+          "Documento che prova il rapporto di parentela con il cittadino italiano"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "KIT",
+        "possoConvertire": "Si, studio o lavoro",
+        "notes": null,
+        "last_edited_time": "2026-02-13T11:35:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 46
+      },
+      {
+        "id": "2ef7355e-7f7f-80fa-b9e9-f27d740afec5",
+        "tipo": "Famiglia per genitore di cittadino italiano (Art. 30)",
+        "slug": "famiglia-per-genitore-di-cittadino-italiano-art-30",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "Copia del passaporto (non scaduto)",
+          "Documento che prova il rapporto di parentela con il cittadino italiano",
+          "4 Foto",
+          "marca da bollo da 16€",
+          "bollettino postale da 80.46€",
+          "Certificato di residenza del minore in Italia"
+        ],
+        "docRinnovo": [
+          "Permesso in scadenza",
+          "marca da bollo da 16€",
+          "4fototessere",
+          "Documento di identità del cittadino italiano",
+          "Copia del passaporto (non scaduto)",
+          "Bollettino postale da 80.46€",
+          "certificato di residenza del minore in Italia"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "KIT",
+        "possoConvertire": "Si: studio o lavoro",
+        "notes": null,
+        "last_edited_time": "2026-02-13T11:30:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 27
+      },
+      {
+        "id": "2ef7355e-7f7f-80c9-abcd-ddb94f90d05c",
+        "tipo": "Famiglia (o “motivi familiari”) SENZA nullaosta per ricongiungimento (”coesione”)",
+        "slug": "famiglia-o-motivi-familiari-senza-nullaosta-per-ricongiungimento-coesione",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "bollettino postale da 80.46€",
+          "4 Foto",
+          "Copia del passaporto (non scaduto)",
+          "Certificato idoneità alloggiativa",
+          "Documento che prova il legame famigliare",
+          "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+          "Copia di un permesso di soggiorno tuo scaduto da meno di un anno",
+          "Copia del permesso di soggiorno del famigliare con cui fare la coesione"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "Copia del passaporto (non scaduto)",
+          "marca da bollo da 16€",
+          "Permesso in scadenza",
+          "Certificato idoneità alloggiativa",
+          "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+          "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")",
+          "Bollettino postale da 80.46€",
+          "Copia del permesso di soggiorno del famigliare con cui fare la coesione"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": "Si: lavoro; studio; attesa occupazione",
+        "notes": null,
+        "last_edited_time": "2026-02-13T11:23:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 56
+      },
+      {
+        "id": "1ad7355e-7f7f-80fe-a6b1-e15522f7cf5a",
+        "tipo": "Famiglia (motivi familiari) dopo ingresso con nullaosta per ricongiungimento familiare",
+        "slug": "famiglia-motivi-familiari-dopo-ingresso-con-nullaosta-per-ricongiungimento-familiare",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "bollettino postale da 80.46€",
+          "Nullaosta al ricongiungimento familiare",
+          "4 Foto",
+          "Copia del passaporto (non scaduto)",
+          "Certificato idoneità alloggiativa",
+          "Visto d'ingresso",
+          "Documento che prova il legame famigliare",
+          "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+          "Copia del permesso di soggiorno del familiare che ha chiesto il ricongiungimento"
+        ],
+        "docRinnovo": [
+          "Copia del passaporto (non scaduto)",
+          "Permesso in scadenza",
+          "Bollettino postale da 80.46€",
+          "4fototessere",
+          "marca da bollo da 16€",
+          "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+          "Copia del permesso di soggiorno del familiare che ha chiesto il ricongiungimento",
+          "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": "Si: lavoro, studio attesa occupazione",
+        "notes": null,
+        "last_edited_time": "2026-02-13T11:19:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 48
+      },
+      {
+        "id": "2ef7355e-7f7f-80fb-8eb4-c91ec07e594f",
+        "tipo": "Integrazione (”Prosieguo amministrativo”)",
+        "slug": "integrazione-prosieguo-amministrativo",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [
+          "4 Foto",
+          "bollettino postale da 30.46€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "marca da bollo da 16€",
+          "Permesso per minore età",
+          "Decisione del Tribunale per i minorenni che decide il prosieguo amministrativo"
+        ],
+        "docRinnovo": [
+          "n/a"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T11:06:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 12
+      },
+      {
+        "id": "1ad7355e-7f7f-8082-92d9-e90292bdccde",
+        "tipo": "Calamità naturale (art. 20 bis)",
+        "slug": "calamita-naturale-art-20-bis",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "Prova della calamità naturale",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "Permesso in scadenza",
+          "4fototessere",
+          "marca da bollo da 16€",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+          "Prova della calamità naturale"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "personalmente",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:57:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 38
+      },
+      {
+        "id": "1ad7355e-7f7f-80e0-a182-e179b81a8f0f",
+        "tipo": "Minore età",
+        "slug": "minore-eta",
+        "macrocategoria": null,
+        "possoLavorare": "a partire dai 16 anni",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "permesso precedente"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "n/a",
+        "possoConvertire": "Si: lavoro, studio, attesa occupazione, famiglia, prosieguo amministrativo",
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:54:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 37
+      },
+      {
+        "id": "1ad7355e-7f7f-803d-8a1b-f0c4fb12b5dc",
+        "tipo": "Protezione speciale dopo decisione positiva della Commissione o del Tribunale (art. 32 d.lgs 25/2008)",
+        "slug": "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-art-32-d-lgs-25-2008",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "Decisione della commissione o del Tribunale",
+          "bollettino postale da 30.46€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "Permesso in scadenza",
+          "Decisone della commissione o del Tribunale",
+          "Bollettino postale da 30.46",
+          "marca da bollo da 16€",
+          "4fototessere"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "personalmente",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:47:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 55
+      },
+      {
+        "id": "1ad7355e-7f7f-80d1-9488-ef9e5c19dcab",
+        "tipo": "Protezione sussidiaria",
+        "slug": "protezione-sussidiaria",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Decisione della commissione o del Tribunale",
+          "4 Foto",
+          "bollettino postale da 30.46€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "4fototessere",
+          "Bollettino postale da 30.46",
+          "Permesso in scadenza",
+          "Decisone della commissione o del Tribunale",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:44:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 43
+      },
+      {
+        "id": "1ad7355e-7f7f-8041-aad5-e2dbfe6ed65b",
+        "tipo": "Asilo (status rifugiato)",
+        "slug": "asilo-status-rifugiato",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Decisione della commissione o del Tribunale",
+          "4 Foto",
+          "bollettino postale da 30.46€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "Permesso in scadenza",
+          "Decisone della commissione o del Tribunale",
+          "marca da bollo da 16€",
+          "4fototessere",
+          "Bollettino postale da 30.46",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:41:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 38
+      },
+      {
+        "id": "2ef7355e-7f7f-8057-9aba-ef36d6b01e50",
+        "tipo": "Richiesta Asilo",
+        "slug": "richiesta-asilo",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto"
+        ],
+        "docRinnovo": [
+          "Modello C3",
+          "Attestato nominativo",
+          "Se hai un ricorso in tribunale stampa del fascicolo telematico in Tribunale (chiedi al tuo avvocato)",
+          "marca da bollo da 16€",
+          "4fototessere"
+        ],
+        "modPrimo": "personalmente",
+        "modRinnovo": "personalmente",
+        "possoConvertire": "no",
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:40:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 23
+      },
+      {
+        "id": "2ef7355e-7f7f-8046-a722-c4f78cc64742",
+        "tipo": "Cure mediche per persona gravemente malata che si trova già in Italia (",
+        "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "4 Foto",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Documenti medici (ospedale pubblico o medico pubblico) che provano la tua malattia",
+          "Documenti che provano che la tua malattia non si può curare bene nel tuo paese",
+          "marca da bollo da 16€"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "marca da bollo da 16€",
+          "Permesso in scadenza",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Documenti che provano che la tua malattia non si può curare bene nel tuo paese",
+          "Documenti medici (ospedale pubblico o medico pubblico) che provano la tua malattia"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": "Si: permesso per lavoro; motivi familiari",
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:36:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 57
+      },
+      {
+        "id": "3067355e-7f7f-8091-8b80-c01931ea68ca",
+        "tipo": "Cure mediche (art. 19: donna in stato di gravidanza)",
+        "slug": "cure-mediche-art-19-donna-in-stato-di-gravidanza",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "4 Foto",
+          "Certificato di gravidanza con data presunta del parto o certificato di nascita se già nato",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "n/a"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:34:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 18
+      },
+      {
+        "id": "1b27355e-7f7f-8076-9826-ddcacea91bf7",
+        "tipo": "Cure mediche dopo ingresso con visto (art.36)",
+        "slug": "cure-mediche-dopo-ingresso-con-visto-art-36",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "Documenti medici",
+          "marca da bollo da 16€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "4 Foto",
+          "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+          "Indicazione mezzi sostentamento (vitto e alloggio)",
+          "bollettino postale da 30.46€",
+          "Visto d'ingresso",
+          "Copia del passaporto (non scaduto)"
+        ],
+        "docRinnovo": [
+          "Permesso in scadenza",
+          "Copia del passaporto (non scaduto)",
+          "4fototessere",
+          "Dichiarazione dell'ospedale per necessità di continuare le cure in Italia",
+          "marca da bollo da 16€",
+          "Indicazione mezzi sostentamento (vitto e alloggio)",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Bollettino postale da 30.46",
+          "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:25:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 18
+      },
+      {
+        "id": "3067355e-7f7f-80e8-8bd0-cad5af35a598",
+        "tipo": "Cure mediche (art. 19: padre)",
+        "slug": "cure-mediche-art-19-padre",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "4 Foto",
+          "Certificato di gravidanza con data presunta del parto o certificato di nascita se già nato",
+          "Certificato o autodichiarazione di convivenza"
+        ],
+        "docRinnovo": [
+          "n/a"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:22:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 18
+      },
+      {
+        "id": "1ad7355e-7f7f-800c-8d97-de55e2dc8b40",
+        "tipo": "Permesso UE per soggiornanti di lungo periodo (o “Carta di soggiorno” - PSLP)",
+        "slug": "permesso-ue-per-soggiornanti-di-lungo-periodo-o-carta-di-soggiorno-pslp",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Documenti reddito ultimo anno",
+          "certificato lingua A2",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Copia del passaporto (non scaduto)",
+          "4 Foto",
+          "Bollettino postale da 130.46",
+          "Prova di avere avuto permessi di soggiorno senza buchi negli ultimi 5 anni"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "marca da bollo da 16€",
+          "Bollettino postale da 30.46",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T10:10:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 60
+      },
+      {
+        "id": "3067355e-7f7f-8070-b435-d26b21627942",
+        "tipo": "Studio (dopo ingresso con visto)",
+        "slug": "studio-dopo-ingresso-con-visto",
+        "macrocategoria": null,
+        "possoLavorare": "previa conversione",
+        "quantoDura": null,
+        "docPrimo": [
+          "Copia del passaporto (non scaduto)",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+          "marca da bollo da 16€",
+          "4 Foto",
+          "bollettino postale da 70.46€",
+          "certificato di ammissione al corso di studi vidimato dall'Ambasciata italiana all'estero",
+          "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)"
+        ],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": "si, mot di lavoro ",
+        "notes": null,
+        "last_edited_time": "2026-02-13T09:49:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 31
+      },
+      {
+        "id": "1ad7355e-7f7f-8095-8a06-e3c6a39fe0fa",
+        "tipo": "Studio (conversione da altro permesso)",
+        "slug": "studio-conversione-da-altro-permesso",
+        "macrocategoria": null,
+        "possoLavorare": "previa conversione",
+        "quantoDura": null,
+        "docPrimo": [
+          "Copia del passaporto (non scaduto)",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Documento di iscrizione e esami sostenuti",
+          "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+          "marca da bollo da 16€",
+          "4 Foto",
+          "bollettino postale da 70.46€",
+          "Permesso precedente",
+          "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)"
+        ],
+        "docRinnovo": [
+          "Copia del passaporto (non scaduto)",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+          "marca da bollo da 16€",
+          "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+          "documento di iscrizione e esami sostenuti",
+          "polizza assicurativa copertura sanitaria o iscrizione al Servizio Sanitario",
+          "4 Foto",
+          "Bollettino portale da 7046",
+          "permesso precedente",
+          "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": "si, mot di lavoro ",
+        "notes": null,
+        "last_edited_time": "2026-02-13T09:49:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 31
+      },
+      {
+        "id": "1ad7355e-7f7f-807a-8378-d6163eb5742e",
+        "tipo": "Lavoro subordinato a seguito di ingresso per flussi",
+        "slug": "lavoro-subordinato-a-seguito-di-ingresso-per-flussi",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Contratto di soggiorno",
+          "Visto di ingresso",
+          "Nullaosta della Prefettura",
+          "Modulo 209 che dà la Prefettura quando fai il contratto di soggiorno",
+          "4 Foto",
+          "Certificato idoneità alloggiativa",
+          "bollettino postale da 70.46€"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "Copia del passaporto (non scaduto)",
+          "Permesso in scadenza",
+          "marca da bollo da 16€",
+          "Contratto di lavoro",
+          "Prova dei redditi (CUD e/o buste paga)",
+          "Certificato UNILAV",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T09:49:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 7
+      },
+      {
+        "id": "1ad7355e-7f7f-8039-93ca-c3e08f7b8279",
+        "tipo": "Lavoro subordinato a seguito di conversione da altro permesso",
+        "slug": "lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Contratto di lavoro",
+          "Copia del documento di identità del tuo datore di lavoro (se italiano o europeo) o copia del suo permesso di soggiorno (se non comunitario)",
+          "4 Foto",
+          "Prova dei redditi (CUD e/o buste paga)",
+          "Certificato UNILAV",
+          "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)"
+        ],
+        "docRinnovo": [
+          "4fototessere",
+          "Copia del passaporto (non scaduto)",
+          "Permesso in scadenza",
+          "marca da bollo da 16€",
+          "Contratto di lavoro",
+          "Prova dei redditi (CUD e/o buste paga)",
+          "Certificato UNILAV",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T09:49:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 144
+      },
+      {
+        "id": "3067355e-7f7f-807b-97b1-dadd4b83c79e",
+        "tipo": "Lavoro autonomo (dopo ingresso per flussi)",
+        "slug": "lavoro-autonomo-dopo-ingresso-per-flussi",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "bollettino postale da 80.46€",
+          "4 Foto",
+          "visto di ingresso per lavoro autonomo",
+          "Nullaosta della Questura",
+          "Nullaosta dei parametri economici per svolgere l'attività",
+          "Prova delle risorse economiche per svolgere le attività",
+          "Certificato di idoneità alloggiativa",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "Bollettino postale da 80.46€",
+          "4 Foto",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Certificato attribuzione partita IVA o iscrizione al registro delle imprese",
+          "Ultima dichiarazione dei redditi"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T09:49:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 57
+      },
+      {
+        "id": "1ad7355e-7f7f-80d0-8eb7-eaf89571f818",
+        "tipo": "Lavoro autonomo a seguito di conversione da altro permesso",
+        "slug": "lavoro-autonomo-a-seguito-di-conversione-da-altro-permesso",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "bollettino postale da 80.46€",
+          "4 Foto",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Certificato attribuzione partita IVA o iscrizione alla Camera di Commercio",
+          "Ultima dichiarazione dei redditi"
+        ],
+        "docRinnovo": [
+          "marca da bollo da 16€",
+          "Copia del passaporto (non scaduto)",
+          "Bollettino postale da 80.46€",
+          "4 Foto",
+          "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+          "Certificato attribuzione partita IVA o iscrizione al registro delle imprese",
+          "Ultima dichiarazione dei redditi"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "KIT",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2026-02-13T09:49:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 57
+      },
+      {
+        "id": "2ef7355e-7f7f-801c-ba02-edc8ccf9e8bc",
+        "tipo": "Familiari di titolari di status di rifugiato o protezione sussidiaria",
+        "slug": "familiari-di-titolari-di-status-di-rifugiato-o-protezione-sussidiaria",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [
+          "4 Foto",
+          "marca da bollo da 16€",
+          "Documento che dimostri il legame di parentela",
+          "Permesso di soggiorno del familiare straniero"
+        ],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": "Si",
+        "notes": null,
+        "last_edited_time": "2026-01-28T15:14:00.000Z",
+        "hasBlocks": true,
+        "blockCount": 7
+      },
+      {
+        "id": "1ad7355e-7f7f-8067-ad48-ef7ac7a43a83",
+        "tipo": "Ricerca scientifica (art.27ter)",
+        "slug": "ricerca-scientifica-art-27ter",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-06-04T17:07:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-809b-b8fb-e9c19fb89c4d",
+        "tipo": "Acquisto cittadinanza o stato di apolide",
+        "slug": "acquisto-cittadinanza-o-stato-di-apolide",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": "personalmente",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-03-18T11:13:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-80c4-847b-f94b215df3e6",
+        "tipo": "Attività sportiva",
+        "slug": "attivita-sportiva",
+        "macrocategoria": null,
+        "possoLavorare": null,
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-03-18T11:12:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-805b-ba6b-dbff5529fc7f",
+        "tipo": "Lavoro artistico",
+        "slug": "lavoro-artistico",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-03-18T11:12:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-8054-a4a1-e9f4a31686d4",
+        "tipo": "Lavoro subordinato a seguito di sanatoria",
+        "slug": "lavoro-subordinato-a-seguito-di-sanatoria",
+        "macrocategoria": null,
+        "possoLavorare": "SI",
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-03-18T11:12:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-80fb-aee6-da46ddbc7ac4",
+        "tipo": "Residenza elettiva",
+        "slug": "residenza-elettiva",
+        "macrocategoria": null,
+        "possoLavorare": "NO",
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-03-18T11:12:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-80b1-bf0e-ced1be3cd742",
+        "tipo": "Tirocinio",
+        "slug": "tirocinio",
+        "macrocategoria": null,
+        "possoLavorare": "previa conversione",
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [
+          "rinnovabile previa conversione"
+        ],
+        "modPrimo": "KIT",
+        "modRinnovo": "rinnovabile previa conversione",
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-03-18T11:11:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      },
+      {
+        "id": "1ad7355e-7f7f-80a5-9738-cd59474a66a8",
+        "tipo": "Motivi religiosi",
+        "slug": "motivi-religiosi",
+        "macrocategoria": null,
+        "possoLavorare": "NO",
+        "quantoDura": null,
+        "docPrimo": [],
+        "docRinnovo": [],
+        "modPrimo": "KIT",
+        "modRinnovo": null,
+        "possoConvertire": null,
+        "notes": null,
+        "last_edited_time": "2025-03-18T11:11:00.000Z",
+        "hasBlocks": false,
+        "blockCount": 0
+      }
+    ]
+  },
+  "blank_permits": [
+    {
+      "id": "2e77355e-7f7f-8058-beb5-cfcc98c6d2fe",
+      "tipo": "Residenza elettiva",
+      "slug": "residenza-elettiva",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [
+        "marca da bollo da 16€",
+        "4 Foto",
+        "bollettino postale da 30.46€",
+        "Visto per residenza elettiva",
+        "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+        "Copia del passaporto (non scaduto)"
+      ],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "2e77355e-7f7f-80f7-897e-d212e47bf04b",
+      "tipo": "Motivi religiosi",
+      "slug": "motivi-religiosi",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [
+        "marca da bollo da 16€",
+        "4 Foto",
+        "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+        "bollettino postale da 80.46€",
+        "copia dic ente religioso attestante natura incarico",
+        "Indicazione mezzi sostentamento (vitto e alloggio)",
+        "Copia del passaporto (non scaduto)",
+        "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+      ],
+      "docRinnovo": [
+        "marca da bollo da 16€",
+        "Polizza assicurativa o iscrizione SSN",
+        "Indicazione mezzi sostentamento (vitto e alloggio)",
+        "4fototessere",
+        "Bollettino postale da 80.46€",
+        "Copia del passaporto (non scaduto)",
+        "copia dic ente religioso attestante natura incarico",
+        "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+      ],
+      "notes": null
+    },
+    {
+      "id": "3067355e-7f7f-80ad-b6a1-cebacca743f2",
+      "tipo": "Figlio minore di più di 14 anni che vive con i genitori",
+      "slug": "figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "2dc7355e-7f7f-80d8-b0a5-c82c9b24043c",
+      "tipo": "Attività sportiva (art.27)",
+      "slug": "attivita-sportiva-art-27",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [
+        "Contratto con società sportiva",
+        "Indicazione mezzi sostentamento (vitto e alloggio)",
+        "Dichiarazione  nominativa di assenso del CONI",
+        "bollettino postale da 80.46€",
+        "marca da bollo da 16€",
+        "Copia del passaporto (non scaduto)",
+        "4 Foto",
+        "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+      ],
+      "docRinnovo": [
+        "Indicazione mezzi sostentamento (vitto e alloggio)",
+        "Bollettino postale da 80.46€",
+        "marca da bollo da 16€",
+        "Copia del passaporto (non scaduto)",
+        "4 Foto",
+        "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+        "Contratto con società sportiva"
+      ],
+      "notes": null
+    },
+    {
+      "id": "2e77355e-7f7f-804d-91cb-d88e50daec05",
+      "tipo": "Apolidia (art.17 D.P.R. n. 572/93)",
+      "slug": "apolidia-art-17-d-p-r-n-572-93",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [
+        "4 Foto",
+        "Decisione che dà lo status di apolide",
+        "marca da bollo da 16€",
+        "bollettino postale da 80.46€",
+        "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+      ],
+      "docRinnovo": [
+        "4fototessere",
+        "Bollettino postale da 80.46€",
+        "Permesso in scadenza",
+        "marca da bollo da 16€",
+        "Decisione che dà lo status di apolide"
+      ],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-8067-ad48-ef7ac7a43a83",
+      "tipo": "Ricerca scientifica (art.27ter)",
+      "slug": "ricerca-scientifica-art-27ter",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-809b-b8fb-e9c19fb89c4d",
+      "tipo": "Acquisto cittadinanza o stato di apolide",
+      "slug": "acquisto-cittadinanza-o-stato-di-apolide",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-80c4-847b-f94b215df3e6",
+      "tipo": "Attività sportiva",
+      "slug": "attivita-sportiva",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-805b-ba6b-dbff5529fc7f",
+      "tipo": "Lavoro artistico",
+      "slug": "lavoro-artistico",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-8054-a4a1-e9f4a31686d4",
+      "tipo": "Lavoro subordinato a seguito di sanatoria",
+      "slug": "lavoro-subordinato-a-seguito-di-sanatoria",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-80fb-aee6-da46ddbc7ac4",
+      "tipo": "Residenza elettiva",
+      "slug": "residenza-elettiva",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-80b1-bf0e-ced1be3cd742",
+      "tipo": "Tirocinio",
+      "slug": "tirocinio",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [
+        "rinnovabile previa conversione"
+      ],
+      "notes": null
+    },
+    {
+      "id": "1ad7355e-7f7f-80a5-9738-cd59474a66a8",
+      "tipo": "Motivi religiosi",
+      "slug": "motivi-religiosi",
+      "macrocategoria": null,
+      "blockCount": 0,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "notes": null
+    }
+  ],
+  "has_content_permits": [
+    {
+      "id": "2ef7355e-7f7f-8000-9c13-cea8a7c0c0df",
+      "tipo": "Protezione sociale vittime di violenza domestica (art.18 bis)",
+      "slug": "protezione-sociale-vittime-di-violenza-domestica-art-18-bis",
+      "macrocategoria": null,
+      "blockCount": 25
+    },
+    {
+      "id": "2ef7355e-7f7f-8070-9ac0-e62c33b23175",
+      "tipo": "Sfruttamento lavorativo (18ter)",
+      "slug": "sfruttamento-lavorativo-18ter",
+      "macrocategoria": null,
+      "blockCount": 69
+    },
+    {
+      "id": "1ad7355e-7f7f-80c7-b0f2-ff573167513c",
+      "tipo": "Protezione sociale vittime di tratta (Art. 18) ",
+      "slug": "protezione-sociale-vittime-di-tratta-art-18",
+      "macrocategoria": null,
+      "blockCount": 31
+    },
+    {
+      "id": "2ef7355e-7f7f-809f-bb45-f5d2ea24698b",
+      "tipo": "Affidamento a familiari entro il quarto grado",
+      "slug": "affidamento-a-familiari-entro-il-quarto-grado",
+      "macrocategoria": null,
+      "blockCount": 34
+    },
+    {
+      "id": "2ef7355e-7f7f-8098-8408-d8ab6aff341e",
+      "tipo": "Carta di soggiorno per familiari di italiani “dinamici” (D. Lgs. 30/07)",
+      "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici-d-lgs-30-07",
+      "macrocategoria": null,
+      "blockCount": 77
+    },
+    {
+      "id": "1ad7355e-7f7f-80b7-b9a4-d0873f68af82",
+      "tipo": "Carta di soggiorno per familiari di cittadini UE (D. Lgs. 30/07)",
+      "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue-d-lgs-30-07",
+      "macrocategoria": null,
+      "blockCount": 38
+    },
+    {
+      "id": "1b97355e-7f7f-8062-8e0b-d99beaa946e3",
+      "tipo": "FAMIT per familiari di cittadini italiani “statici”",
+      "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+      "macrocategoria": null,
+      "blockCount": 45
+    },
+    {
+      "id": "1ad7355e-7f7f-80d2-adb1-d99b52c9b836",
+      "tipo": "Assistenza minore (Art. 31)",
+      "slug": "assistenza-minore-art-31",
+      "macrocategoria": null,
+      "blockCount": 41
+    },
+    {
+      "id": "1b27355e-7f7f-8088-98c6-f3c65c6e7724",
+      "tipo": "Attesa occupazione (art.22)",
+      "slug": "attesa-occupazione-art-22",
+      "macrocategoria": null,
+      "blockCount": 50
+    },
+    {
+      "id": "1b97355e-7f7f-8030-bca0-e191b477d1a4",
+      "tipo": "Famiglia - motivi familiari (convivente con parente cittadino italiano - art. 19)",
+      "slug": "famiglia-motivi-familiari-convivente-con-parente-cittadino-italiano-art-19",
+      "macrocategoria": null,
+      "blockCount": 46
+    },
+    {
+      "id": "2ef7355e-7f7f-80fa-b9e9-f27d740afec5",
+      "tipo": "Famiglia per genitore di cittadino italiano (Art. 30)",
+      "slug": "famiglia-per-genitore-di-cittadino-italiano-art-30",
+      "macrocategoria": null,
+      "blockCount": 27
+    },
+    {
+      "id": "2ef7355e-7f7f-80c9-abcd-ddb94f90d05c",
+      "tipo": "Famiglia (o “motivi familiari”) SENZA nullaosta per ricongiungimento (”coesione”)",
+      "slug": "famiglia-o-motivi-familiari-senza-nullaosta-per-ricongiungimento-coesione",
+      "macrocategoria": null,
+      "blockCount": 56
+    },
+    {
+      "id": "1ad7355e-7f7f-80fe-a6b1-e15522f7cf5a",
+      "tipo": "Famiglia (motivi familiari) dopo ingresso con nullaosta per ricongiungimento familiare",
+      "slug": "famiglia-motivi-familiari-dopo-ingresso-con-nullaosta-per-ricongiungimento-familiare",
+      "macrocategoria": null,
+      "blockCount": 48
+    },
+    {
+      "id": "2ef7355e-7f7f-80fb-8eb4-c91ec07e594f",
+      "tipo": "Integrazione (”Prosieguo amministrativo”)",
+      "slug": "integrazione-prosieguo-amministrativo",
+      "macrocategoria": null,
+      "blockCount": 12
+    },
+    {
+      "id": "1ad7355e-7f7f-8082-92d9-e90292bdccde",
+      "tipo": "Calamità naturale (art. 20 bis)",
+      "slug": "calamita-naturale-art-20-bis",
+      "macrocategoria": null,
+      "blockCount": 38
+    },
+    {
+      "id": "1ad7355e-7f7f-80e0-a182-e179b81a8f0f",
+      "tipo": "Minore età",
+      "slug": "minore-eta",
+      "macrocategoria": null,
+      "blockCount": 37
+    },
+    {
+      "id": "1ad7355e-7f7f-803d-8a1b-f0c4fb12b5dc",
+      "tipo": "Protezione speciale dopo decisione positiva della Commissione o del Tribunale (art. 32 d.lgs 25/2008)",
+      "slug": "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-art-32-d-lgs-25-2008",
+      "macrocategoria": null,
+      "blockCount": 55
+    },
+    {
+      "id": "1ad7355e-7f7f-80d1-9488-ef9e5c19dcab",
+      "tipo": "Protezione sussidiaria",
+      "slug": "protezione-sussidiaria",
+      "macrocategoria": null,
+      "blockCount": 43
+    },
+    {
+      "id": "1ad7355e-7f7f-8041-aad5-e2dbfe6ed65b",
+      "tipo": "Asilo (status rifugiato)",
+      "slug": "asilo-status-rifugiato",
+      "macrocategoria": null,
+      "blockCount": 38
+    },
+    {
+      "id": "2ef7355e-7f7f-8057-9aba-ef36d6b01e50",
+      "tipo": "Richiesta Asilo",
+      "slug": "richiesta-asilo",
+      "macrocategoria": null,
+      "blockCount": 23
+    },
+    {
+      "id": "2ef7355e-7f7f-8046-a722-c4f78cc64742",
+      "tipo": "Cure mediche per persona gravemente malata che si trova già in Italia (",
+      "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+      "macrocategoria": null,
+      "blockCount": 57
+    },
+    {
+      "id": "3067355e-7f7f-8091-8b80-c01931ea68ca",
+      "tipo": "Cure mediche (art. 19: donna in stato di gravidanza)",
+      "slug": "cure-mediche-art-19-donna-in-stato-di-gravidanza",
+      "macrocategoria": null,
+      "blockCount": 18
+    },
+    {
+      "id": "1b27355e-7f7f-8076-9826-ddcacea91bf7",
+      "tipo": "Cure mediche dopo ingresso con visto (art.36)",
+      "slug": "cure-mediche-dopo-ingresso-con-visto-art-36",
+      "macrocategoria": null,
+      "blockCount": 18
+    },
+    {
+      "id": "3067355e-7f7f-80e8-8bd0-cad5af35a598",
+      "tipo": "Cure mediche (art. 19: padre)",
+      "slug": "cure-mediche-art-19-padre",
+      "macrocategoria": null,
+      "blockCount": 18
+    },
+    {
+      "id": "1ad7355e-7f7f-800c-8d97-de55e2dc8b40",
+      "tipo": "Permesso UE per soggiornanti di lungo periodo (o “Carta di soggiorno” - PSLP)",
+      "slug": "permesso-ue-per-soggiornanti-di-lungo-periodo-o-carta-di-soggiorno-pslp",
+      "macrocategoria": null,
+      "blockCount": 60
+    },
+    {
+      "id": "3067355e-7f7f-8070-b435-d26b21627942",
+      "tipo": "Studio (dopo ingresso con visto)",
+      "slug": "studio-dopo-ingresso-con-visto",
+      "macrocategoria": null,
+      "blockCount": 31
+    },
+    {
+      "id": "1ad7355e-7f7f-8095-8a06-e3c6a39fe0fa",
+      "tipo": "Studio (conversione da altro permesso)",
+      "slug": "studio-conversione-da-altro-permesso",
+      "macrocategoria": null,
+      "blockCount": 31
+    },
+    {
+      "id": "1ad7355e-7f7f-807a-8378-d6163eb5742e",
+      "tipo": "Lavoro subordinato a seguito di ingresso per flussi",
+      "slug": "lavoro-subordinato-a-seguito-di-ingresso-per-flussi",
+      "macrocategoria": null,
+      "blockCount": 7
+    },
+    {
+      "id": "1ad7355e-7f7f-8039-93ca-c3e08f7b8279",
+      "tipo": "Lavoro subordinato a seguito di conversione da altro permesso",
+      "slug": "lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso",
+      "macrocategoria": null,
+      "blockCount": 144
+    },
+    {
+      "id": "3067355e-7f7f-807b-97b1-dadd4b83c79e",
+      "tipo": "Lavoro autonomo (dopo ingresso per flussi)",
+      "slug": "lavoro-autonomo-dopo-ingresso-per-flussi",
+      "macrocategoria": null,
+      "blockCount": 57
+    },
+    {
+      "id": "1ad7355e-7f7f-80d0-8eb7-eaf89571f818",
+      "tipo": "Lavoro autonomo a seguito di conversione da altro permesso",
+      "slug": "lavoro-autonomo-a-seguito-di-conversione-da-altro-permesso",
+      "macrocategoria": null,
+      "blockCount": 57
+    },
+    {
+      "id": "2ef7355e-7f7f-801c-ba02-edc8ccf9e8bc",
+      "tipo": "Familiari di titolari di status di rifugiato o protezione sussidiaria",
+      "slug": "familiari-di-titolari-di-status-di-rifugiato-o-protezione-sussidiaria",
+      "macrocategoria": null,
+      "blockCount": 7
+    }
+  ],
+  "no_name_permits": [
+    {
+      "id": "1b97355e-7f7f-807b-8795-dae74a940add",
+      "tipo": null,
+      "slug": null,
+      "macrocategoria": null,
+      "possoLavorare": null,
+      "quantoDura": null,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "modPrimo": null,
+      "modRinnovo": null,
+      "possoConvertire": null,
+      "notes": null,
+      "last_edited_time": "2025-03-17T14:46:00.000Z"
+    },
+    {
+      "id": "1b97355e-7f7f-8090-b398-c1cf8d2eb684",
+      "tipo": null,
+      "slug": null,
+      "macrocategoria": null,
+      "possoLavorare": null,
+      "quantoDura": null,
+      "docPrimo": [],
+      "docRinnovo": [],
+      "modPrimo": null,
+      "modRinnovo": null,
+      "possoConvertire": null,
+      "notes": null,
+      "last_edited_time": "2025-03-17T14:46:00.000Z"
+    }
+  ]
+}
