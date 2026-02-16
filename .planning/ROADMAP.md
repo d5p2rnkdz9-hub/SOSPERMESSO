@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-16 — Phase 44 planned
+**Updated:** 2026-02-16 — Phase 44 complete
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -254,14 +254,16 @@ Plans:
 
 ---
 
-## Phase 44: Costi Section
+## Phase 44: Costi Section ✓
 
 **Goal:** Add itemized cost breakdown section to document pages (primo rilascio and rinnovo), sourced from Notion cost columns.
+
+**Status:** Complete (2026-02-16)
 
 **Plans:** 1 plan
 
 Plans:
-- [ ] 44-01-PLAN.md — Data layer (cost fields from Notion) + templates (costi section) + CSS + visual verification
+- [x] 44-01-PLAN.md — Data layer (cost fields from Notion) + templates (costi section) + CSS + visual verification
 
 **Requirements:**
 - COSTI-01: Cost data sourced from Notion database properties

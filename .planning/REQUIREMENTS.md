@@ -42,8 +42,8 @@ Requirements for Notion-11ty integration, prassi locali, and content completion.
 
 ### Costi Section
 
-- [ ] **COSTI-01**: Cost data sourced from Notion database properties
-- [ ] **COSTI-02**: Costi section rendered on document pages (primo and rinnovo)
+- [x] **COSTI-01**: Cost data sourced from Notion database properties
+- [x] **COSTI-02**: Costi section rendered on document pages (primo and rinnovo)
 
 ### Content Validation
 
@@ -87,8 +87,8 @@ Requirements for Notion-11ty integration, prassi locali, and content completion.
 | PRASSI-04 | Phase 41 + 42.1 | Complete |
 | CONTENT-01 | Phase 43 | Complete |
 | CONTENT-02 | Phase 43 | Complete |
-| COSTI-01 | Phase 44 | Pending |
-| COSTI-02 | Phase 44 | Pending |
+| COSTI-01 | Phase 44 | Complete |
+| COSTI-02 | Phase 44 | Complete |
 | VALID-01 | Phase 45 | Pending |
 | VALID-02 | Phase 45 | Pending |
 | DIZIO-01 | Phase 46 | Pending |
@@ -101,4 +101,4 @@ Requirements for Notion-11ty integration, prassi locali, and content completion.
 
 ---
 *Requirements defined: 2026-02-07*
-*Last updated: 2026-02-16 — CONTENT-01, CONTENT-02 marked Complete (Phase 43)*
+*Last updated: 2026-02-16 — COSTI-01, COSTI-02 marked Complete (Phase 44)*

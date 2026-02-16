@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-16
-**Status:** v3.1 — Phase 43 complete, Phase 44 next
+**Status:** v3.1 — Phase 44 complete, Phase 45 next
 
 ## Project Reference
 
@@ -14,11 +14,11 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 43 (Populate Blank Permits) — ✓ Complete
-**Last activity:** 2026-02-16 — Phase 43 verified and completed
+**Phase:** 44 (Costi Section) — ✓ Complete
+**Last activity:** 2026-02-16 — Phase 44 executed and verified
 
 ```
-Progress: [███████░░░] 70% (7/10 phases complete)
+Progress: [████████░░] 80% (8/10 phases complete)
 ```
 
 ## v3.1 Phases
@@ -32,23 +32,29 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 | 42.1 | Fix Prassi Integration | PRASSI-01 to PRASSI-04 | ✓ Complete |
 | 42.2 | Requirements & Docs Cleanup | — | ✓ Complete |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ✓ Complete |
-| **44** | **Costi Section** | COSTI-01 to COSTI-02 | ○ **Pending** |
-| 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
+| 44 | Costi Section | COSTI-01 to COSTI-02 | ✓ Complete |
+| **45** | **Content Validation** | VALID-01 to VALID-02 | ○ **Pending** |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
+
+## Phase 44 Summary
+
+**Goal:** Add itemized cost breakdown section to document pages.
+
+**Delivered:**
+- 44-01: Cost extraction from Notion multi_select values + costi section in templates + CSS
+- `extractCost()` helper parses "marca da bollo da 16€" and "bollettino postale da 70.46€" from document lists
+- 35 of 65 primo pages show cost section; 30 correctly hidden (no cost data)
+- Kit postale 30€ conditional on method containing "kit"
+- "Quanto costa" anchor link in page header
+- Responsive CSS + print support
+
+**Key decision:** Cost data parsed from existing multi_select fields (no new Notion columns needed).
 
 ## Phase 43 Summary
 
 **Goal:** Add Notion content for all placeholder permit pages.
 
-**Delivered:**
-- 43-01: Audit — 10 unique blank permits identified, 3 duplicates archived, reference model documented
-- 43-02: Protezione — Apolidia populated (1 permit)
-- 43-03: Lavoro — Attività sportiva art.27 + Ricerca scientifica populated (2 permits). 3 skipped by user
-- 43-04: Remaining — Figlio minore, Residenza elettiva, Motivi religiosi, Acquisto cittadinanza (4 permits)
-- Post-checkpoint: Familiari di titolari rewritten from Trento-specific to Q&A (1 permit)
-- Post-checkpoint: 2 old static files deleted (attivita-sportiva, familiari-di-titolari)
-
-**Result:** 8 permits populated, 3 skipped by user (not recognized in DB), 6 placeholder pages remain (3 duplicates + 3 skipped)
+**Result:** 8 permits populated, 3 skipped by user (not recognized in DB)
 
 **Content rules established:**
 - No document lists in Q&A — link to doc pages instead
@@ -56,41 +62,12 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 - Full URLs for Notion links
 - Conversational "tu" tone throughout
 
-## Phase 41 Summary
-
-**Goal:** Add crowdsourced prassi locali (local questura practices) to document pages.
-
-**Delivered:**
-- `_data/prassiLocali.js` — Notion data file for approved practices (grouped by slug then city)
-- `src/styles/prassi.css` — Complete styling (section, cards, votes, empty state, modal, responsive)
-- `src/scripts/prassi.js` — Client-side modal, voting UI, city autocomplete (105 questure)
-- `netlify/functions/submit-prassi.js` — Submission endpoint with validation
-- `netlify/functions/vote-prassi.js` — Vote counting via Notion API
-- `netlify/functions/notion-webhook.js` — Webhook with timing-safe signature verification
-- Prassi section in both `documents-primo.liquid` and `documents-rinnovo.liquid` templates
-- Anchor link in page header for quick navigation
-
-## Phase 42.1 Summary
-
-**Goal:** Fix prassi locali integration broken by static file conflict.
-
-**Root cause:** documents.js had `fs.existsSync()` checks that skipped slugs with existing static files. Old 145 static HTML files prevented Liquid templates from generating pages with prassi section.
-
-**Delivered:**
-- Deleted 145 old static `documenti-*.html` files from src/pages/
-- Removed filesystem guard from `_data/documents.js` (fs.existsSync checks)
-- Updated `eleventy.config.mjs` with safety-net ignore for stray document files
-- Added PRASSI_DB_ID to `.env.example`
-- Verified all 81 document pages now include prassi.css, prassi section, and prassi.js
-
-**Result:** Prassi locali feature now fully functional on all document pages.
-
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 25 (v2.2 + v3.0 + v3.1 milestones)
+- Total plans completed: 26 (v2.2 + v3.0 + v3.1 milestones)
 - Average duration: 5.5 min
-- Total execution time: ~154 min
+- Total execution time: ~164 min
 
 **By Phase:**
 
@@ -107,18 +84,9 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 | 42 | 3 | 21 min | 7 min |
 | 42.1 | 1 | 3 min | 3 min |
 | 43 | 4 | 20 min | 5 min |
+| 44 | 1 | 10 min | 10 min |
 
 *Updated after each plan completion*
-
-## v3.0 Summary
-
-**Goal:** Migrate from pure HTML (469 pages) to 11ty SSG for maintainable architecture.
-
-**Key approach decisions:**
-- **Liquid templates** (not Nunjucks — unmaintained since June 2022)
-- **Incremental migration** (not big-bang)
-- **URL preservation** critical (all 469 URLs must work)
-- **Structural only** — same content, keep existing Notion scripts
 
 ## Technical Debt
 
@@ -128,62 +96,29 @@ From prior milestones (carry forward):
 - Template variable `{{ permit.tipo }}` in meta tags (pre-existing Phase 40 issue)
 - 3 unrecognized permits in DB (Tirocinio, Lavoro artistico, Sanatoria) — user to decide
 
-Resolved in Phase 42:
-- ✓ Single-step build (was: two-step build:docs + build:11ty)
-- ✓ Clean scripts/ directory (was: 20+ obsolete scripts)
-- ✓ Webhook debounce (30-min window prevents excessive rebuilds)
-- ✓ Content audit infrastructure (reusable via `npm run audit`)
-
 ## Design Patterns to Follow
 
-**11ty patterns (established in Phase 35):**
-- Passthrough copy for static assets
-- ESM config file (eleventy.config.mjs)
-- Global computed permalink via _data/eleventyComputed.js
-- Directory data files for URL preservation
-- Ignore pattern for non-template directories
-
-**Data layer patterns (established in Phase 36-01):**
+**Data layer patterns:**
 - CommonJS format for data files (`module.exports = {}`)
 - **Always `require('dotenv').config()` at top of data files that use env vars**
-- Language-keyed data structures (it/en) for nav/footer
-- url filter for all asset paths in templates
+- `extractCost()` for parsing amounts from Notion multi_select labels
 
-**Component patterns (established in Phase 36-02):**
-- Liquid includes for reusable components: `{% include "components/name.liquid" %}`
-- Lang variable from page front matter for language detection
-- Loop through data: `{% for item in nav[lang] %}`
-- Fallback defaults: `{% assign data = footer[lang] | default: footer.it %}`
-
-**Existing patterns to preserve:**
-- CSS variables system in main.css
-- Mobile-first responsive design
-- Dropdown navigation structure
+**Cost data pattern (Phase 44):**
+- Costs embedded in "Doc primo/rinnovo" multi_select values
+- Parse with regex: `item.match(/(\d+[\.,]?\d*)\s*€/)`
+- Kit postale is fixed 30€ in template (not from Notion)
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
+- **44-01: parse-costs-from-multiselect** — Cost data parsed from existing multi_select values, no new Notion columns
 - **43-04: content-rules** — No doc lists in Q&A (link to doc pages), bollettino includes 40€, full URLs, "tu" tone
-- **43-03: skip-unrecognized** — User skipped 3 permits not recognized in DB (Tirocinio, Lavoro artistico, Sanatoria)
-- **43-01: duplicate-archive** — Rename duplicates with [DUPLICATE] prefix (build dedup ignores them)
+- **43-03: skip-unrecognized** — User skipped 3 permits not recognized in DB
+- **43-01: duplicate-archive** — Rename duplicates with [DUPLICATE] prefix
 - **42.1-01: filesystem-guard-removal** — Remove existsSync check from documents.js
-- **42.1-01: safety-net-ignores** — Add dynamic ignore block for stray static document files
-- **42-01: inline-notion-client** — Inline Notion API calls into permits.js
 - **42-01: single-build-command** — Simplify to `npx @11ty/eleventy`
-- **41: dotenv in data files** — Always call `require('dotenv').config()` at top of data files that use process.env
-
-### Research Completed
-
-**v3.0 research** in `.planning/research/`:
-- STACK-11ty-migration.md — 11ty v3.1.2, Liquid templates, minimal dependencies
-- FEATURES-11ty-migration.md — Table stakes, differentiators, anti-features
-- ARCHITECTURE-11ty-migration.md — Directory structure, integration points
-- PITFALLS-11ty-migration.md — Common mistakes, prevention strategies
-- SUMMARY-11ty-migration.md — Synthesized findings
+- **41: dotenv in data files** — Always call `require('dotenv').config()` at top
 
 ### Pending Todos
 
@@ -196,10 +131,10 @@ None
 ## Session Continuity
 
 **Last session:** 2026-02-16
-**Stopped at:** Phase 43 complete and verified
+**Stopped at:** Phase 44 complete and verified
 **Resume file:** None
 
-**Next Action:** `/gsd:discuss-phase 44` or `/gsd:plan-phase 44` — Costi Section
+**Next Action:** `/gsd:discuss-phase 45` or `/gsd:plan-phase 45` — Content Validation
 
 ---
 
