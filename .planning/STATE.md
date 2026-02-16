@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-16
-**Status:** v3.1 — Phase 44 complete, Phase 45 next
+**Status:** v3.1 — Phase 44.1-01 complete
 
 ## Project Reference
 
@@ -14,11 +14,11 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 44 (Costi Section) — ✓ Complete
-**Last activity:** 2026-02-16 — Phase 44 executed and verified
+**Phase:** 44.1 (URL Coverage & Content Preservation) — ⌛ In Progress (Plan 01 complete)
+**Last activity:** 2026-02-16 — Completed 44.1-01-PLAN.md
 
 ```
-Progress: [████████░░] 80% (8/10 phases complete)
+Progress: [███████░░░] 73% (8/11 phases, 1/3 plans in Phase 44.1 complete)
 ```
 
 ## v3.1 Phases
@@ -33,8 +33,27 @@ Progress: [████████░░] 80% (8/10 phases complete)
 | 42.2 | Requirements & Docs Cleanup | — | ✓ Complete |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ✓ Complete |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ✓ Complete |
-| **45** | **Content Validation** | VALID-01 to VALID-02 | ○ **Pending** |
+| **44.1** | **URL Coverage & Content Preservation** | URL-01 to URL-03 | ⌛ **In Progress** (1/3 plans) |
+| 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
+
+## Phase 44.1 Summary (In Progress)
+
+**Goal:** Ensure every Notion DB permit has a working HTML page, old URLs redirect to canonical pages, variant permits have parent/hub pages, and content from old static files is preserved.
+
+**Delivered (Plan 01):**
+- 44.1-01: Content audit script comparing 64 static permit files against CONTEXT.md mapping
+- CONTENT-AUDIT.md documenting 34 mapped files: 8 safe to redirect, 22 need review, 4 need parent pages
+- Identified 13 "TARGET NOT FOUND" cases (canonical pages missing)
+- Content preservation guarantee: no file deleted/redirected without verified migration
+- URL-03 requirement satisfied
+
+**Key decisions:**
+- File-based canonical validation (not Notion API) — simpler, matches actual page generation
+- Defer migration to manual review — too risky to auto-migrate
+- Zero-loss tolerance — 22 files blocked pending content verification
+
+**Next:** Plan 02 (redirect creation), Plan 03 (static cleanup)
 
 ## Phase 44 Summary
 
@@ -65,9 +84,9 @@ Progress: [████████░░] 80% (8/10 phases complete)
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 26 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 5.5 min
-- Total execution time: ~164 min
+- Total plans completed: 27 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.6 min
+- Total execution time: ~170 min
 
 **By Phase:**
 
@@ -85,6 +104,7 @@ Progress: [████████░░] 80% (8/10 phases complete)
 | 42.1 | 1 | 3 min | 3 min |
 | 43 | 4 | 20 min | 5 min |
 | 44 | 1 | 10 min | 10 min |
+| 44.1 | 1 | 6 min | 6 min |
 
 *Updated after each plan completion*
 
@@ -112,6 +132,9 @@ From prior milestones (carry forward):
 
 ### Decisions
 
+- **44.1-01-C: zero-loss-tolerance** — Block any file deletion/redirect unless content equivalence confirmed (URL-03 requirement)
+- **44.1-01-B: defer-migration-to-review** — Document migration needs but don't auto-migrate (too risky without human verification)
+- **44.1-01-A: file-based-canonical-validation** — Check target file existence in src/pages/ (not Notion API)
 - **44-01: parse-costs-from-multiselect** — Cost data parsed from existing multi_select values, no new Notion columns
 - **43-04: content-rules** — No doc lists in Q&A (link to doc pages), bollettino includes 40€, full URLs, "tu" tone
 - **43-03: skip-unrecognized** — User skipped 3 permits not recognized in DB
@@ -124,17 +147,24 @@ From prior milestones (carry forward):
 
 None
 
+### Roadmap Evolution
+
+- Phase 44.1 inserted after Phase 44: URL Coverage & Content Preservation (URGENT) — 34 static permit files not generating pages, old URLs broken, variant parent pages missing, content at risk of loss
+
 ### Blockers/Concerns
 
-None
+**Phase 44.1 findings:**
+- 13 mapped files point to canonical slugs that don't exist as static files (need investigation)
+- 9 files have partial unique content overlap (need manual review before redirect)
+- Recommendation: Check Notion DB directly for the 13 missing canonical slugs
 
 ## Session Continuity
 
 **Last session:** 2026-02-16
-**Stopped at:** Phase 44 complete and verified
+**Stopped at:** Completed 44.1-01-PLAN.md
 **Resume file:** None
 
-**Next Action:** `/gsd:discuss-phase 45` or `/gsd:plan-phase 45` — Content Validation
+**Next Action:** `/gsd:execute-plan 44.1-02` — Create permit redirects
 
 ---
 
