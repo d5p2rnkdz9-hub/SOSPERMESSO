@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-16
-**Status:** v3.1 — Phase 43 in progress (plans 01-03 done, plan 04 next)
+**Status:** v3.1 — Phase 43 complete (checkpoint: user verification of content)
 
 ## Project Reference
 
@@ -14,12 +14,12 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 43 (Populate Blank Permits) — in progress
-**Status:** Plans 01-03 complete, Plan 04 pending
-**Last activity:** 2026-02-16 — Completed 43-03 (lavoro permits, partial)
+**Phase:** 43 (Populate Blank Permits) — complete (awaiting user verification)
+**Status:** All 4 plans complete (7/10 original blank permits populated, 3 skipped)
+**Last activity:** 2026-02-16 — Completed 43-04 (remaining permits: figlio minore, residenza elettiva, motivi religiosi, acquisto cittadinanza)
 
 ```
-Progress: [██████░░░░] 60% (6/10 phases complete)
+Progress: [███████░░░] 70% (7/10 phases complete)
 ```
 
 ## v3.1 Phases
@@ -32,7 +32,7 @@ Progress: [██████░░░░] 60% (6/10 phases complete)
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ✓ Complete |
 | 42.1 | Fix Prassi Integration | PRASSI-01 to PRASSI-04 | ✓ Complete |
 | 42.2 | Requirements & Docs Cleanup | — | ✓ Complete |
-| **43** | **Populate Blank Permits** | CONTENT-01 to CONTENT-02 | ◆ **In progress** |
+| **43** | **Populate Blank Permits** | CONTENT-01 to CONTENT-02 | ✓ **Complete** |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
@@ -192,21 +192,27 @@ None
 ## Session Continuity
 
 **Last session:** 2026-02-16
-**Stopped at:** Phase 43 mid-execution — Plans 01-03 complete, Plan 04 pending
+**Stopped at:** Phase 43 complete — at checkpoint for user verification
 **Resume file:** None
 
-**Next Action:** Resume Phase 43 execution with `/gsd:execute-phase 43` — will pick up at Plan 04 (remaining categories).
+**Next Action:** User to review 43-04 checkpoint and approve content, then proceed to Phase 44 (Costi Section) or address skipped permits.
 
-**Phase 43 Progress:**
+**Phase 43 Summary:**
 - 43-01 ✓ Audit: 10 unique blank permits, 3 duplicates archived, reference model documented
 - 43-02 ✓ Protezione: Apolidia populated (1 permit)
 - 43-03 ✓ Lavoro: Attività sportiva (art.27) + Ricerca scientifica populated (2 permits). 3 skipped (Tirocinio, Lavoro artistico, Sanatoria — user doesn't recognize in DB)
-- 43-04 ○ Remaining: Figlio minore, Residenza elettiva, Motivi religiosi, Acquisto cittadinanza
+- 43-04 ✓ Remaining: Figlio minore, Residenza elettiva, Motivi religiosi, Acquisto cittadinanza populated (4 permits)
 
-**Open Issues:**
-- DB ID mismatch: user sees `1a27355e...`, code uses `1ad7355e...` — build works but user can't see some entries
-- 3 permits skipped — user to verify if they belong in database
-- Content rules: no doc lists (link to doc pages), bollettino includes electronic permit cost
+**Completion Status:**
+- 7/10 original blank permits populated (70%)
+- 3 permits skipped by user (may not belong in database)
+- 8 placeholder pages remaining (3 duplicates, 3 skipped, 1 old static, 1 familiari-di-titolari)
+- Build produces 45 permits with content (out of 46 total)
+
+**Awaiting User Verification:**
+- Review content quality for 4 newly populated permits
+- Decide on 3 skipped permits (keep/archive)
+- Review "familiari-di-titolari" permit status (not in original audit)
 
 ---
 
