@@ -2,8 +2,8 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-16 — Phase 45 planned
-**Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
+**Updated:** 2026-02-16 — Phase 44.1 planned
+**Phases:** 39-46 + 42.1, 42.2, 44.1 (continues from v3.0 which ended at phase 38)
 
 ## Overview
 
@@ -19,6 +19,7 @@ Complete Notion-11ty integration, build collaborative "prassi locali" infrastruc
 | 42.2 | Requirements & Docs Cleanup | Track all v3.1 requirements, generate Phase 41 verification | — |
 | 43 | Populate Blank Permits | Add Notion content for 17 placeholder permits | CONTENT-01 to CONTENT-02 |
 | 44 | Costi Section | Cost information section on document pages | COSTI-01 to COSTI-02 |
+| 44.1 | URL Coverage & Content Preservation | Permit redirects, parent pages for variants, content migration | URL-01 to URL-03 |
 | 45 | Content Validation | Review pass on all generated content | VALID-01 to VALID-02 |
 | 46 | Dizionario Link Revision | Fix partial matching coverage for glossary links | DIZIO-01 to DIZIO-02 |
 
@@ -280,6 +281,42 @@ Plans:
 
 ---
 
+## Phase 44.1: URL Coverage & Content Preservation (INSERTED)
+
+**Goal:** Ensure every Notion DB permit has a working HTML page, old URLs redirect to canonical pages, variant permits have parent/hub pages, and content from old static files is preserved in Notion before those files become pure redirects.
+
+**Dependencies:** Phase 44 (all content and costs populated)
+
+**Plans:** 3 plans
+
+Plans:
+- [ ] 44.1-01-PLAN.md — Content audit: compare 34 static files vs Notion, migrate unique content, document findings
+- [ ] 44.1-02-PLAN.md — Extend variant detection (3 parent pages) + permit redirect system (~28 URLs) + slugMap fix
+- [ ] 44.1-03-PLAN.md — Delete old static files, clean build, full verification + user spot-check
+
+**Requirements:**
+- URL-01: Every permit in Notion DB generates an HTML page (no 404s for canonical URLs)
+- URL-02: All old permit URLs (34 static files in src/pages/) redirect to correct canonical pages
+- URL-03: Unique content from old static files is migrated to Notion before files are replaced with redirects
+
+**Success Criteria:**
+1. Permit redirect system (like documentRedirects.js) generates redirect pages for ~28 old URLs
+2. Parent/hub pages exist for variant groups (Studio, Lavoro Autonomo, Cure Mediche art.19)
+3. Content diff between static files and Notion identifies any unique info not yet in Notion
+4. Unique info migrated to Notion pages
+5. slugMap.js fixes (prosieguo-amministravo typo, stale targets)
+6. Build produces all expected pages with zero broken internal links
+7. Old static files in src/pages/ can be safely deleted after redirects are in place
+
+**Technical Notes:**
+- ~28 old URLs need redirects (short slugs, typos, renamed permits)
+- 3 variant groups need parent pages: Studio (2 children), Lavoro Autonomo (2 children), Gravidanza/Cure art 19 (split into donna + padre)
+- Document redirects already work via slugMap.js + documentRedirects.js; permit redirects need equivalent system
+- Content preservation: compare static file Q&A against Notion page content, flag unique info for migration
+- Lavoro/studio hierarchy must be clear and navigable
+
+---
+
 ## Phase 45: Content Validation
 
 **Goal:** Validate all permit and document page content against Notion database columns, enforce Phase 43 content rules, fix violations, add missing info, and flag conflicts for user review.
@@ -295,7 +332,7 @@ Plans:
 - VALID-01: All document pages reviewed for accuracy
 - VALID-02: All permit pages reviewed for accuracy
 
-**Dependencies:** Phases 43, 44 (all content populated first)
+**Dependencies:** Phases 43, 44, 44.1 (all content populated + URLs resolved first)
 
 **Technical Notes:**
 - Two-layer validation: DB columns as source of truth + Phase 43 content rules
@@ -334,4 +371,4 @@ Plans:
 
 ---
 *Roadmap created: 2026-02-07*
-*Updated: 2026-02-16 — Phase 45 planned*
+*Updated: 2026-02-16 — Phase 44.1 planned*
