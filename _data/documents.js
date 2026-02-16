@@ -24,6 +24,23 @@ function slugify(name) {
 }
 
 /**
+ * Extract cost from document list multi_select values
+ * @param {Array} documents - Array of document name strings
+ * @param {string} keyword - Keyword to search for (e.g., 'bollettino', 'marca da bollo')
+ * @returns {number|null} Extracted cost or null if not found
+ */
+function extractCost(documents, keyword) {
+  if (!documents || !documents.length) return null;
+  const item = documents.find(d => d.toLowerCase().includes(keyword));
+  if (!item) return null;
+  // Match number before € symbol (handles both comma and dot decimals)
+  const match = item.match(/(\d+[\.,]?\d*)\s*€/);
+  if (!match) return null;
+  // Extract first number found (for cases like "70.46 o 80.46")
+  return parseFloat(match[1].replace(',', '.'));
+}
+
+/**
  * Fetch and transform permit data from Notion
  * Exports async function that 11ty will call during build
  */
@@ -107,18 +124,28 @@ module.exports = async function() {
       const primoMethod = page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null;
       const rinnovoMethod = page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null;
 
+      // Extract costs from document lists
+      const costBollettinoPrimo = extractCost(primoDocuments, 'bollettino');
+      const costMarcaBolloPrimo = extractCost(primoDocuments, 'marca da bollo');
+      const costBollettinoRinnovo = extractCost(rinnovoDocuments, 'bollettino');
+      const costMarcaBolloRinnovo = extractCost(rinnovoDocuments, 'marca da bollo');
+
       primo.push({
         tipo, slug,
         documents: primoDocuments,
         method: primoMethod,
-        docNotes: docNotes || null
+        docNotes: docNotes || null,
+        costBollettino: costBollettinoPrimo,
+        costMarcaBollo: costMarcaBolloPrimo
       });
 
       rinnovo.push({
         tipo, slug,
         documents: rinnovoDocuments,
         method: rinnovoMethod,
-        docNotes: docNotes || null
+        docNotes: docNotes || null,
+        costBollettino: costBollettinoRinnovo,
+        costMarcaBollo: costMarcaBolloRinnovo
       });
     }
 
