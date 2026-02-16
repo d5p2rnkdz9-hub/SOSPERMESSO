@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-16
-**Status:** v3.1 — Phase 43 complete (checkpoint: user verification of content)
+**Status:** v3.1 — Phase 43 complete, Phase 44 next
 
 ## Project Reference
 
@@ -14,9 +14,8 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 43 (Populate Blank Permits) — complete (awaiting user verification)
-**Status:** All 4 plans complete (7/10 original blank permits populated, 3 skipped)
-**Last activity:** 2026-02-16 — Completed 43-04 (remaining permits: figlio minore, residenza elettiva, motivi religiosi, acquisto cittadinanza)
+**Phase:** 43 (Populate Blank Permits) — ✓ Complete
+**Last activity:** 2026-02-16 — Phase 43 verified and completed
 
 ```
 Progress: [███████░░░] 70% (7/10 phases complete)
@@ -32,10 +31,30 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ✓ Complete |
 | 42.1 | Fix Prassi Integration | PRASSI-01 to PRASSI-04 | ✓ Complete |
 | 42.2 | Requirements & Docs Cleanup | — | ✓ Complete |
-| **43** | **Populate Blank Permits** | CONTENT-01 to CONTENT-02 | ✓ **Complete** |
-| 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
+| 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ✓ Complete |
+| **44** | **Costi Section** | COSTI-01 to COSTI-02 | ○ **Pending** |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
+
+## Phase 43 Summary
+
+**Goal:** Add Notion content for all placeholder permit pages.
+
+**Delivered:**
+- 43-01: Audit — 10 unique blank permits identified, 3 duplicates archived, reference model documented
+- 43-02: Protezione — Apolidia populated (1 permit)
+- 43-03: Lavoro — Attività sportiva art.27 + Ricerca scientifica populated (2 permits). 3 skipped by user
+- 43-04: Remaining — Figlio minore, Residenza elettiva, Motivi religiosi, Acquisto cittadinanza (4 permits)
+- Post-checkpoint: Familiari di titolari rewritten from Trento-specific to Q&A (1 permit)
+- Post-checkpoint: 2 old static files deleted (attivita-sportiva, familiari-di-titolari)
+
+**Result:** 8 permits populated, 3 skipped by user (not recognized in DB), 6 placeholder pages remain (3 duplicates + 3 skipped)
+
+**Content rules established:**
+- No document lists in Q&A — link to doc pages instead
+- Bollettino includes 40€ electronic permit cost (never list separately)
+- Full URLs for Notion links
+- Conversational "tu" tone throughout
 
 ## Phase 41 Summary
 
@@ -50,13 +69,6 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 - `netlify/functions/notion-webhook.js` — Webhook with timing-safe signature verification
 - Prassi section in both `documents-primo.liquid` and `documents-rinnovo.liquid` templates
 - Anchor link in page header for quick navigation
-
-**Issues resolved during execution:**
-1. Liquid `| contains:` filter → `contains` operator (LiquidJS compatibility)
-2. Old static document files overwriting 11ty output → dynamic ignore pattern
-3. Duplicate slug conflicts → dedup in documents.js
-4. Redirect slug conflicts → filter in documents.js
-5. **dotenv loading order** → Added `require('dotenv').config()` to documents.js and prassiLocali.js
 
 ## Phase 42.1 Summary
 
@@ -76,9 +88,9 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 21 (v2.2 + v3.0 + v3.1 milestones)
-- Average duration: 5.4 min
-- Total execution time: ~134 min
+- Total plans completed: 25 (v2.2 + v3.0 + v3.1 milestones)
+- Average duration: 5.5 min
+- Total execution time: ~154 min
 
 **By Phase:**
 
@@ -94,6 +106,7 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 | 41 | 4 | 36 min | 9 min |
 | 42 | 3 | 21 min | 7 min |
 | 42.1 | 1 | 3 min | 3 min |
+| 43 | 4 | 20 min | 5 min |
 
 *Updated after each plan completion*
 
@@ -112,7 +125,8 @@ Progress: [███████░░░] 70% (7/10 phases complete)
 From prior milestones (carry forward):
 - Dizionario links need revision (partial matching works but coverage incomplete)
 - Desktop header alignment (language switcher baseline)
-- 8 permits still need document lists in Notion (see .planning/AUDIT-content.md)
+- Template variable `{{ permit.tipo }}` in meta tags (pre-existing Phase 40 issue)
+- 3 unrecognized permits in DB (Tirocinio, Lavoro artistico, Sanatoria) — user to decide
 
 Resolved in Phase 42:
 - ✓ Single-step build (was: two-step build:docs + build:11ty)
@@ -153,24 +167,14 @@ Resolved in Phase 42:
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- **42.1-01: filesystem-guard-removal** — Remove existsSync check from documents.js (static files deleted, guard no longer needed)
-- **42.1-01: safety-net-ignores** — Add dynamic ignore block for stray static document files (defense-in-depth)
-- **42-03: content-audit-categories** — Audit 7 quality types: capitalization, synthetic text, vague wording, missing docs, duplicates, long names, variants
-- **42-03: audit-actionability** — Every issue links to Notion page for easy fixing
-- **42-03: rate-limiting-350ms** — Stay under 3 req/sec Notion limit
-- **42-03: single-database-confirmed** — Both documents and permits from same Notion database ID
-- **42-01: inline-notion-client** — Inline Notion API calls into permits.js (remove shared module dependency)
-- **42-01: single-build-command** — Simplify to `npx @11ty/eleventy` (no separate build:docs step)
-- **42-01: delete-obsolete-scripts** — Remove 20 obsolete scripts after changes committed (reduces maintenance confusion)
-- **41-01: prassi-data-structure** — Nested object: pageSlug -> [[cityName, practices[]]]
-- **41-01: empty-state-static** — Show empty state with button in static HTML (progressive enhancement)
-- **41-01: graceful-degradation** — Return empty {} when env vars missing
-- **41-02: no-upstash-redis** — localStorage only for vote duplicate prevention, defer server-side rate limiting
-- **41-03: modal-injection** — Inject modal HTML/CSS via JS (matches contact-form.html pattern)
-- **41-03: webhook-timing-safe** — crypto.timingSafeEqual for signature comparison
+- **43-04: content-rules** — No doc lists in Q&A (link to doc pages), bollettino includes 40€, full URLs, "tu" tone
+- **43-03: skip-unrecognized** — User skipped 3 permits not recognized in DB (Tirocinio, Lavoro artistico, Sanatoria)
+- **43-01: duplicate-archive** — Rename duplicates with [DUPLICATE] prefix (build dedup ignores them)
+- **42.1-01: filesystem-guard-removal** — Remove existsSync check from documents.js
+- **42.1-01: safety-net-ignores** — Add dynamic ignore block for stray static document files
+- **42-01: inline-notion-client** — Inline Notion API calls into permits.js
+- **42-01: single-build-command** — Simplify to `npx @11ty/eleventy`
 - **41: dotenv in data files** — Always call `require('dotenv').config()` at top of data files that use process.env
-- **42.2-01: retroactive-verification** — Generate Phase 41 verification after Phase 42.1 fix (feature delivered but integration broken, fix first then verify)
-- **42.2-01: v3.1-requirements-expansion** — Add 8 new requirements for content phases 43-46 (CONTENT, COSTI, VALID, DIZIO)
 
 ### Research Completed
 
@@ -192,27 +196,10 @@ None
 ## Session Continuity
 
 **Last session:** 2026-02-16
-**Stopped at:** Phase 43 complete — at checkpoint for user verification
+**Stopped at:** Phase 43 complete and verified
 **Resume file:** None
 
-**Next Action:** User to review 43-04 checkpoint and approve content, then proceed to Phase 44 (Costi Section) or address skipped permits.
-
-**Phase 43 Summary:**
-- 43-01 ✓ Audit: 10 unique blank permits, 3 duplicates archived, reference model documented
-- 43-02 ✓ Protezione: Apolidia populated (1 permit)
-- 43-03 ✓ Lavoro: Attività sportiva (art.27) + Ricerca scientifica populated (2 permits). 3 skipped (Tirocinio, Lavoro artistico, Sanatoria — user doesn't recognize in DB)
-- 43-04 ✓ Remaining: Figlio minore, Residenza elettiva, Motivi religiosi, Acquisto cittadinanza populated (4 permits)
-
-**Completion Status:**
-- 7/10 original blank permits populated (70%)
-- 3 permits skipped by user (may not belong in database)
-- 8 placeholder pages remaining (3 duplicates, 3 skipped, 1 old static, 1 familiari-di-titolari)
-- Build produces 45 permits with content (out of 46 total)
-
-**Awaiting User Verification:**
-- Review content quality for 4 newly populated permits
-- Decide on 3 skipped permits (keep/archive)
-- Review "familiari-di-titolari" permit status (not in original audit)
+**Next Action:** `/gsd:discuss-phase 44` or `/gsd:plan-phase 44` — Costi Section
 
 ---
 

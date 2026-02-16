@@ -84,6 +84,23 @@ Followed all rules from Plan 02/03 user feedback:
 5. ✓ **Informal "tu" tone** maintained throughout
 6. ✓ **Sensitive language** for permits affecting vulnerable groups (minors, citizenship seekers)
 
+## Post-Checkpoint Fixes (user feedback)
+
+After checkpoint approval, the following additional fixes were applied:
+
+1. **Familiari di titolari di status di rifugiato o protezione sussidiaria** (`2ef7355e-7f7f-801c-ba02-edc8ccf9e8bc`)
+   - Rewrote Notion content from Trento-specific procedural text to standard Q&A format (27 blocks)
+   - Deleted old static file `src/pages/permesso-familiari-di-titolari-*.html` blocking 11ty generation
+   - Commit: `9427f1e`
+
+2. **Attività sportiva (without art.27)**
+   - Deleted old static file `src/pages/permesso-attivita-sportiva.html` (superseded by art-27 version)
+   - Commit: `9427f1e`
+
+3. **User manual changes (acknowledged, no action needed):**
+   - Deleted notes from permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori in Notion
+   - Changed "modalità primo rilascio" to "personalmente" for Cure mediche (donna in stato di gravidanza) and Cure mediche (padre)
+
 ## Phase 43 Completion Status
 
 ### Original Goal (from 43-01 audit)
@@ -95,27 +112,26 @@ Populate **10 unique blank permits** (after duplicate merge):
 ### Actual Completion
 - ✓ Plan 02 (protezione): 1 permit populated (Apolidia)
 - ✓ Plan 03 (lavoro): 2 permits populated (Attività sportiva art.27, Ricerca scientifica art.27ter)
-- ○ Plan 03 (lavoro): 3 permits skipped by user (Tirocinio, Lavoro artistico, Sanatoria)
-- ✓ **Plan 04 (remaining): 4 permits populated (this plan)**
+- ○ Plan 03 (lavoro): 3 permits skipped by user (Tirocinio, Lavoro artistico, Sanatoria — may not belong in DB)
+- ✓ Plan 04 (remaining): 4 permits populated
+- ✓ Plan 04 post-fix: Familiari di titolari rewritten to Q&A + 2 static files deleted
 
-**Total populated in Phase 43:** 7 out of 10 original blank permits (70%)
-**User-skipped:** 3 permits (may not belong in database, requires user verification)
+**Total populated in Phase 43:** 8 permits (7 original blanks + 1 rewritten)
+**User-skipped:** 3 permits (user doesn't recognize in DB)
+**Remaining placeholders after fixes:** 6 (3 duplicates + 3 skipped)
 
 ## Requirements Status
 
 ### CONTENT-01: All placeholder permits populated
-**Status:** Partial (70% complete)
-- Original 10 blank permits: 7 populated, 3 skipped
-- 3 [DUPLICATE] archived pages remain blank (expected)
-- 1 "familiari-di-titolari" permit blank (not in original audit)
-
-**Resolution needed:**
-- User to verify if skipped permits (Tirocinio, Lavoro artistico, Sanatoria) belong in database
-- User to review "familiari-di-titolari" permit status
+**Status:** Complete (with caveats)
+- 8 permits populated with Q&A content
+- 3 permits intentionally skipped by user (not recognized in DB)
+- 3 [DUPLICATE] archived pages remain blank (expected, renamed with [DUPLICATE] prefix)
+- User approved completion
 
 ### CONTENT-02: Generated pages render correctly
 **Status:** ✓ Complete
-- All 4 Plan 04 permits render with Q&A content
+- All populated permits render with Q&A content
 - No Liquid template errors
 - Document links functional
 - Build completes without errors
@@ -141,6 +157,8 @@ These additions follow Rule 2 (auto-add missing critical functionality) — user
 ## Commits
 
 1. `e9cfd29` - chore(43-04): add script to populate remaining permits
+2. `ed76010` - docs(43-04): complete remaining permits population plan
+3. `9427f1e` - fix(43-04): delete static files blocking 11ty generation
 
 ## Deliverables
 

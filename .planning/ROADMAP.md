@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-14 — Phase 43 planned (4 plans)
+**Updated:** 2026-02-16 — Phase 43 complete
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -223,19 +223,19 @@ Plans:
 
 ---
 
-## Phase 43: Populate Blank Permits
+## Phase 43: Populate Blank Permits ✓
 
 **Goal:** Add Notion content for all placeholder permit pages so zero "Contenuto in arrivo" pages remain.
 
-**Status:** Planning complete
+**Status:** Complete (2026-02-16)
 
 **Plans:** 4 plans
 
 Plans:
-- [ ] 43-01-PLAN.md — Audit permits, merge duplicates, study reference model
-- [ ] 43-02-PLAN.md — Populate protezione category permits + user spot-check
-- [ ] 43-03-PLAN.md — Populate lavoro category permits + user spot-check
-- [ ] 43-04-PLAN.md — Populate remaining categories (cure mediche, motivi familiari, altro) + final verification
+- [x] 43-01-PLAN.md — Audit permits, merge duplicates, study reference model
+- [x] 43-02-PLAN.md — Populate protezione category permits + user spot-check
+- [x] 43-03-PLAN.md — Populate lavoro category permits + user spot-check
+- [x] 43-04-PLAN.md — Populate remaining categories (motivi familiari, altro) + final verification
 
 **Requirements:**
 - CONTENT-01: All placeholder permits have Q&A content in Notion
@@ -248,6 +248,9 @@ Plans:
 - Two-step process: backfill HTML content into Notion, then generate from column data
 - Processed by Macrocategoria (protezione first) with user checkpoints between batches
 - Reference model: "Attesa occupazione (art.22)" page for tone and structure
+- 8 permits populated, 3 skipped by user (not recognized in DB), 3 duplicates archived
+- Familiari di titolari rewritten from Trento-specific to standard Q&A format
+- 2 old static files deleted (attivita-sportiva without art.27, familiari-di-titolari)
 
 ---
 
