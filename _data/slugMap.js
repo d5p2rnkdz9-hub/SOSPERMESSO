@@ -15,7 +15,7 @@ module.exports = {
     "studio": "studio-art-39",
     "ue-lungo-periodo": "carta-di-soggiorno-psuelp-art-9",
     "asilo-politico": "asilo-status-rifugiato",
-    "prosieguo-amministrativo": "prosieguo-amministravo",
+    "prosieguo-amministrativo": "integrazione-prosieguo-amministrativo",
     "cure-mediche": "cure-mediche-art-36-d-lgs-286-1998",
     "gravi-motivi-salute": "cure-mediche-ex-art-19-comma-2-lett-d-bis",
     "ricongiungimento-familiare": "famiglia-motivi-famigliari-art-30-dopo-ingresso-con-nullaosta",
