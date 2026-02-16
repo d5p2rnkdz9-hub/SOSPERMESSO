@@ -2,7 +2,7 @@
 
 **Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
 **Created:** 2026-02-07
-**Updated:** 2026-02-16 — Phase 43 complete
+**Updated:** 2026-02-16 — Phase 44 planned
 **Phases:** 39-46 + 42.1, 42.2 (continues from v3.0 which ended at phase 38)
 
 ## Overview
@@ -256,13 +256,25 @@ Plans:
 
 ## Phase 44: Costi Section
 
-**Goal:** Add cost information section to document pages.
+**Goal:** Add itemized cost breakdown section to document pages (primo rilascio and rinnovo), sourced from Notion cost columns.
+
+**Plans:** 1 plan
+
+Plans:
+- [ ] 44-01-PLAN.md — Data layer (cost fields from Notion) + templates (costi section) + CSS + visual verification
 
 **Requirements:**
-- COSTI-01: Cost data sourced from Notion
-- COSTI-02: Costi section rendered on document pages
+- COSTI-01: Cost data sourced from Notion database properties
+- COSTI-02: Costi section rendered on document pages (primo and rinnovo)
 
 **Dependencies:** Phase 39 (document page templates)
+
+**Technical Notes:**
+- Cost columns already exist in Notion DB (bollettino, marca da bollo per primo/rinnovo)
+- Kit postale 30 EUR added conditionally based on existing `method` field
+- 40 EUR electronic permit fee is ALREADY INCLUDED in bollettino (never listed separately)
+- Section placement: after document notes, before prassi locali
+- Hidden entirely when no cost data exists for a permit
 
 ---
 
@@ -306,4 +318,4 @@ Plans:
 
 ---
 *Roadmap created: 2026-02-07*
-*Updated: 2026-02-14 — Phase 42.2 complete*
+*Updated: 2026-02-16 — Phase 44 planned*
