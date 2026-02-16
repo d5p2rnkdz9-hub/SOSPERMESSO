@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-14
-**Status:** v3.1 — Phase 42.2 complete, ready for Phase 43
+**Last Updated:** 2026-02-16
+**Status:** v3.1 — Phase 43 in progress (plans 01-03 done, plan 04 next)
 
 ## Project Reference
 
@@ -14,9 +14,9 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 42.2 (Requirements & Docs Cleanup) — complete
-**Status:** Documentation updated, ready for content phases
-**Last activity:** 2026-02-14 — Completed 42.2-01-PLAN.md (Requirements & Docs Cleanup)
+**Phase:** 43 (Populate Blank Permits) — in progress
+**Status:** Plans 01-03 complete, Plan 04 pending
+**Last activity:** 2026-02-16 — Completed 43-03 (lavoro permits, partial)
 
 ```
 Progress: [██████░░░░] 60% (6/10 phases complete)
@@ -32,7 +32,7 @@ Progress: [██████░░░░] 60% (6/10 phases complete)
 | 42 | Build Pipeline | BUILD-01 to BUILD-04 | ✓ Complete |
 | 42.1 | Fix Prassi Integration | PRASSI-01 to PRASSI-04 | ✓ Complete |
 | 42.2 | Requirements & Docs Cleanup | — | ✓ Complete |
-| **43** | **Populate Blank Permits** | CONTENT-01 to CONTENT-02 | ○ **Next up** |
+| **43** | **Populate Blank Permits** | CONTENT-01 to CONTENT-02 | ◆ **In progress** |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ○ Pending |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
@@ -191,11 +191,22 @@ None
 
 ## Session Continuity
 
-**Last session:** 2026-02-14
-**Stopped at:** Completed 42.2-01-PLAN.md (Requirements & Docs Cleanup)
+**Last session:** 2026-02-16
+**Stopped at:** Phase 43 mid-execution — Plans 01-03 complete, Plan 04 pending
 **Resume file:** None
 
-**Next Action:** Plan and execute Phase 43 (Populate Blank Permits). Use `/gsd:plan-phase 43`.
+**Next Action:** Resume Phase 43 execution with `/gsd:execute-phase 43` — will pick up at Plan 04 (remaining categories).
+
+**Phase 43 Progress:**
+- 43-01 ✓ Audit: 10 unique blank permits, 3 duplicates archived, reference model documented
+- 43-02 ✓ Protezione: Apolidia populated (1 permit)
+- 43-03 ✓ Lavoro: Attività sportiva (art.27) + Ricerca scientifica populated (2 permits). 3 skipped (Tirocinio, Lavoro artistico, Sanatoria — user doesn't recognize in DB)
+- 43-04 ○ Remaining: Figlio minore, Residenza elettiva, Motivi religiosi, Acquisto cittadinanza
+
+**Open Issues:**
+- DB ID mismatch: user sees `1a27355e...`, code uses `1ad7355e...` — build works but user can't see some entries
+- 3 permits skipped — user to verify if they belong in database
+- Content rules: no doc lists (link to doc pages), bollettino includes electronic permit cost
 
 ---
 
