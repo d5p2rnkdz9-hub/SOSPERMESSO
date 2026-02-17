@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-16
-**Status:** v3.1 — Phase 44.1-02 complete
+**Last Updated:** 2026-02-17
+**Status:** v3.1 — Phase 44.1, Plan 03 checkpoint (issues found)
 
 ## Project Reference
 
@@ -14,11 +14,11 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 44.1 (URL Coverage & Content Preservation) — ⌛ In Progress (Plan 02 complete)
-**Last activity:** 2026-02-16 — Completed 44.1-02-PLAN.md
+**Phase:** 44.1 (URL Coverage & Content Preservation) — ⌛ In Progress (Plan 03 checkpoint)
+**Last activity:** 2026-02-17 — Plan 03 Task 1 done, checkpoint issues found
 
 ```
-Progress: [███████░░░] 75% (8/11 phases, 2/3 plans in Phase 44.1 complete)
+Progress: [███████░░░] 75% (8/11 phases, 2.5/3 plans in Phase 44.1)
 ```
 
 ## v3.1 Phases
@@ -33,7 +33,7 @@ Progress: [███████░░░] 75% (8/11 phases, 2/3 plans in Phase 
 | 42.2 | Requirements & Docs Cleanup | — | ✓ Complete |
 | 43 | Populate Blank Permits | CONTENT-01 to CONTENT-02 | ✓ Complete |
 | 44 | Costi Section | COSTI-01 to COSTI-02 | ✓ Complete |
-| **44.1** | **URL Coverage & Content Preservation** | URL-01 to URL-03 | ⌛ **In Progress** (1/3 plans) |
+| **44.1** | **URL Coverage & Content Preservation** | URL-01 to URL-03 | ⌛ **In Progress** (Plan 03 checkpoint) |
 | 45 | Content Validation | VALID-01 to VALID-02 | ○ Pending |
 | 46 | Dizionario Link Revision | DIZIO-01 to DIZIO-02 | ○ Pending |
 
@@ -53,7 +53,19 @@ Progress: [███████░░░] 75% (8/11 phases, 2/3 plans in Phase 
 - Defer migration to manual review — too risky to auto-migrate
 - Zero-loss tolerance — 22 files blocked pending content verification
 
-**Next:** Plan 02 (redirect creation), Plan 03 (static cleanup)
+**Delivered (Plan 02):**
+- 44.1-02: Permit redirect system (31 old URLs → canonical), 3 parent pages (Studio, Lavoro Autonomo, Cure Mediche art.19), duplicate filtering, slugMap.js typo fix
+- Commits: `4ce515b` (variant detection + duplicates), `f57fab3` (redirects + slugMap)
+
+**Delivered (Plan 03 — Task 1 done, checkpoint blocked):**
+- 44.1-03 Task 1: Deleted 64 old static permit files, removed permit ignore block from eleventy.config.mjs, cleaned up audit script
+- Commit: `1a3d9b0`
+- Automated checks passed: 77 permit pages, 0 stale files, 0 broken redirect targets
+
+**Checkpoint issues found (3 issues, must debug in fresh context):**
+1. **database.html URL path** — database.html lives at `/src/pages/database.html` in the build, NOT at `/database.html`. Links from it use relative paths like `permesso-xxx.html` which resolve to `/src/pages/permesso-xxx.html` — but permit pages are generated at root level (`/permesso-xxx.html`). All 25 permit links are 404.
+2. **Variant parent/child pages NOT wanted** — User does NOT want parent+children hierarchy for Studio, Lavoro autonomo, Lavoro subordinato, Cure mediche art.19. Wants FLAT structure mirroring Notion DB exactly. The entire `manualVariantGroups` system and `detectVariants()` parent page generation needs to be removed or disabled. Each Notion permit page = one HTML page, no synthetic parent pages.
+3. **Lavoro subordinato manual override committed (08e34a4)** — Added lavoro subordinato to manualVariantGroups (3→2 children). This commit should be REVERTED since the whole variant system is being removed per issue #2.
 
 ## Phase 44 Summary
 
@@ -110,6 +122,11 @@ Progress: [███████░░░] 75% (8/11 phases, 2/3 plans in Phase 
 
 ## Technical Debt
 
+**New (Phase 44.1 checkpoint — 3 issues for debug):**
+- **database.html path + broken links** — Page is at `/src/pages/database.html` but permit pages are at root (`/permesso-*.html`). Relative links all 404. Need either: (a) move database.html to root, or (b) fix link paths to absolute.
+- **Remove variant parent/child system** — User wants FLAT hierarchy mirroring Notion DB. Remove `manualVariantGroups`, `detectVariants()` parent page generation, `isVariantParent`/`isVariantChild` logic. Each Notion page = one HTML page. Revert commit `08e34a4`.
+- **Redirect system may need adjustment** — After removing parent pages, some redirects that pointed to parent pages need to point to actual Notion-generated pages instead.
+
 From prior milestones (carry forward):
 - Dizionario links need revision (partial matching works but coverage incomplete)
 - Desktop header alignment (language switcher baseline)
@@ -145,7 +162,7 @@ From prior milestones (carry forward):
 
 ### Pending Todos
 
-None
+- **Review how pages are built** — User wants to review the overall 11ty page generation architecture: where pages end up in the build output, how paths/URLs work, why database.html is at `/src/pages/` while permits are at root. May overlap with Phase 45 (Content Validation) or warrant its own review pass.
 
 ### Roadmap Evolution
 
@@ -160,11 +177,15 @@ None
 
 ## Session Continuity
 
-**Last session:** 2026-02-16
-**Stopped at:** Completed 44.1-01-PLAN.md
+**Last session:** 2026-02-17
+**Stopped at:** Plan 44.1-03 checkpoint — Task 1 complete (commit `1a3d9b0`), two issues found
 **Resume file:** None
 
-**Next Action:** `/gsd:execute-plan 44.1-02` — Create permit redirects
+**Next Action:** Debug 3 issues in fresh context (`/gsd:debug`):
+1. **database.html links 404** — relative paths resolve wrong because page is at `/src/pages/` while permits are at root. Investigate 11ty output path for database.html.
+2. **Remove variant parent/child system** — User wants flat hierarchy (1 Notion page = 1 HTML page). Remove `manualVariantGroups`, `detectVariants()` parent generation, `isVariantParent`/`isVariantChild`. Revert commit `08e34a4`. Update permits.liquid template.
+3. **Fix redirects** — After removing parent pages, redirects pointing to parent slugs (studio, lavoro-autonomo, lavoro-subordinato, cure-mediche-art-19) need new targets.
+4. Then rebuild, re-verify, complete Plan 03
 
 ---
 

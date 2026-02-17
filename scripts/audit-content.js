@@ -11,7 +11,7 @@ const { Client } = require("@notionhq/client");
 const fs = require('fs');
 const path = require('path');
 
-const DATABASE_ID = "1ad7355e-7f7f-8088-a065-e814c92e2cfd";
+const DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
 const OUTPUT_PATH = path.join(process.cwd(), '.planning', 'AUDIT-content.md');
 
 /**

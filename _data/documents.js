@@ -7,7 +7,7 @@
 require('dotenv').config();
 const { Client } = require("@notionhq/client");
 
-const DATABASE_ID = "1ad7355e-7f7f-8088-a065-e814c92e2cfd";
+const DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
 
 /**
  * Generate URL-friendly slug from permit name

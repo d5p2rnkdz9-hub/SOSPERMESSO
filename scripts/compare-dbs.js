@@ -4,7 +4,7 @@ const { Client } = require('@notionhq/client');
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
 const USER_DB = '1a27355e-7f7f-80cc-96ff-e9d109d7f8f9';
-const CODE_DB = '1ad7355e-7f7f-8088-a065-e814c92e2cfd';
+const CODE_DB = '3097355e-7f7f-819c-af33-d0fd0739cc5b';
 
 async function fetchAllPages() {
   const allPages = [];

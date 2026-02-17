@@ -3,7 +3,7 @@ pagination:
   data: documents.rinnovo
   size: 1
   alias: doc
-permalink: "src/pages/documenti-{{ doc.slug }}-rinnovo.html"
+permalink: "documenti-{{ doc.slug }}-rinnovo.html"
 layout: false
 eleventyExcludeFromCollections: true
 ---
@@ -16,9 +16,9 @@ eleventyExcludeFromCollections: true
   <title>Documenti {{ doc.tipo }} - Rinnovo - SOS Permesso</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../../images/Favicon.svg">
-  <link rel="shortcut icon" type="image/svg+xml" href="../../images/Favicon.svg">
-  <link rel="apple-touch-icon" href="../../images/Favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="IMAGES/Favicon.svg">
+  <link rel="shortcut icon" type="image/svg+xml" href="IMAGES/Favicon.svg">
+  <link rel="apple-touch-icon" href="IMAGES/Favicon.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +26,13 @@ eleventyExcludeFromCollections: true
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/components.css">
-  <link rel="stylesheet" href="../styles/animations.css">
-  <link rel="stylesheet" href="../styles/mobile.css">
-  <link rel="stylesheet" href="../styles/mobile-fix.css">
-  <link rel="stylesheet" href="../styles/document-page.css">
-  <link rel="stylesheet" href="../styles/prassi.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/animations.css">
+  <link rel="stylesheet" href="src/styles/mobile.css">
+  <link rel="stylesheet" href="src/styles/mobile-fix.css">
+  <link rel="stylesheet" href="src/styles/document-page.css">
+  <link rel="stylesheet" href="src/styles/prassi.css">
 </head>
 <body class="page-rinnovo">
 
@@ -40,12 +40,12 @@ eleventyExcludeFromCollections: true
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <a href="../../index.html" class="logo">
-          <img src="../../images/logo-full.png" alt="SOS Permesso" class="logo-image">
+        <a href="index.html" class="logo">
+          <img src="IMAGES/logo-full.png" alt="SOS Permesso" class="logo-image">
         </a>
         <button class="menu-toggle" id="menu-toggle">☰</button>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="database.html" class="nav-link">Database</a></li>
           <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
         </ul>
@@ -57,13 +57,13 @@ eleventyExcludeFromCollections: true
   <section class="section" style="padding: 1rem 0;">
     <div class="container" style="position: relative;">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="../../index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <a href="index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
         <a href="documenti-questura.html" style="color: var(--taxi-yellow-dark);">Documenti Questura</a> →
         <span>{{ doc.tipo }} - Rinnovo</span>
       </div>
 
       <!-- ERROR BUTTON -->
-      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https://sospermesso.it/src/pages/documenti-{{ doc.slug }}-rinnovo.html"
+      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https://sospermesso.it/documenti-{{ doc.slug }}-rinnovo.html"
          class="error-report-btn"
          target="_blank"
          rel="noopener noreferrer"
@@ -285,7 +285,7 @@ eleventyExcludeFromCollections: true
       {% else %}
         <div class="prassi-empty-state">
           <p>Nessuna segnalazione ancora. Sei il primo a condividere la tua esperienza!</p>
-          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/src/pages/documenti-{{ doc.slug }}-rinnovo.html', '{{ doc.slug }}')">
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/documenti-{{ doc.slug }}-rinnovo.html', '{{ doc.slug }}')">
             Aggiungi la tua esperienza
           </button>
         </div>
@@ -293,7 +293,7 @@ eleventyExcludeFromCollections: true
 
       {% if pagePrassi %}
         <div style="text-align: center; margin-top: 1.5rem;">
-          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/src/pages/documenti-{{ doc.slug }}-rinnovo.html', '{{ doc.slug }}')">
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/documenti-{{ doc.slug }}-rinnovo.html', '{{ doc.slug }}')">
             Aggiungi la tua esperienza
           </button>
         </div>
@@ -306,14 +306,14 @@ eleventyExcludeFromCollections: true
     <div class="container">
       <div class="footer-links">
         <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
-        <a href="../../index.html" class="footer-link">Home</a>
+        <a href="index.html" class="footer-link">Home</a>
         <a href="https://form.typeform.com/to/USx16QN3" class="footer-link">Contatti</a>
       </div>
       <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
     </div>
   </footer>
 
-  <script src="../scripts/app.js"></script>
+  <script src="src/scripts/app.js"></script>
   <script>
     // Checklist persistence with localStorage
     (function() {
@@ -368,6 +368,6 @@ eleventyExcludeFromCollections: true
   </script>
 
   <!-- Prassi locali client-side functionality -->
-  <script src="../scripts/prassi.js"></script>
+  <script src="src/scripts/prassi.js"></script>
 </body>
 </html>

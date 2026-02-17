@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
     <div class="container">
       <div class="breadcrumb-content">
         <div class="breadcrumb-nav">
-          <a href="../../index.html">Home</a> →
+          <a href="index.html">Home</a> →
           <a href="database.html">Database</a> →
           {% if permit.isVariantChild == true %}
           <a href="permesso-{{ permit.parentSlug }}.html">Permesso per {{ permit.baseName }}</a> →
@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: true
           <span>Permesso per {{ permit.tipo }}</span>
           {% endif %}
         </div>
-        <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https%3A%2F%2Fsospermesso.it%2Fsrc%2Fpages%2Fpermesso-{{ permit.slug }}.html"
+        <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https%3A%2F%2Fsospermesso.it%2Fpermesso-{{ permit.slug }}.html"
            class="error-report-btn" target="_blank" rel="noopener noreferrer">
           🚨 Segnala errore
         </a>
@@ -255,7 +255,7 @@ eleventyExcludeFromCollections: true
 
   <script>
     // Load contact form
-    fetch('../components/contact-form.html')
+    fetch('/src/components/contact-form.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('contact-form-container').innerHTML = html;

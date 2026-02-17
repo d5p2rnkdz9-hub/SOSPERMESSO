@@ -3,19 +3,19 @@ module.exports = {
     dropdowns: [
       {
         label: "Database",
-        href: "/src/pages/database.html",
+        href: "/database.html",
         items: [
-          { label: "Tutti i permessi", href: "/src/pages/database.html" },
-          { label: "Che documenti porto in Questura", href: "/src/pages/documenti-questura.html" }
+          { label: "Tutti i permessi", href: "/database.html" },
+          { label: "Che documenti porto in Questura", href: "/documenti-questura.html" }
         ]
       },
       {
         label: "Guide",
-        href: "/src/pages/dizionario.html",
+        href: "/dizionario.html",
         items: [
-          { label: "Protezione internazionale", href: "/src/pages/protezione-internazionale.html" },
-          { label: "Ricongiungimento familiare", href: "/src/pages/permesso-ricongiungimento-familiare.html" },
-          { label: "Dizionario", href: "/src/pages/dizionario.html" }
+          { label: "Protezione internazionale", href: "/protezione-internazionale.html" },
+          { label: "Ricongiungimento familiare", href: "/permesso-ricongiungimento-familiare.html" },
+          { label: "Dizionario", href: "/dizionario.html" }
         ]
       },
       {
@@ -44,19 +44,19 @@ module.exports = {
     dropdowns: [
       {
         label: "Database",
-        href: "/en/src/pages/database.html",
+        href: "/en/database.html",
         items: [
-          { label: "All permits", href: "/en/src/pages/database.html" },
-          { label: "What documents to bring to the Police", href: "/en/src/pages/documenti-questura.html" }
+          { label: "All permits", href: "/en/database.html" },
+          { label: "What documents to bring to the Police", href: "/en/documenti-questura.html" }
         ]
       },
       {
         label: "Guides",
-        href: "/en/src/pages/dizionario.html",
+        href: "/en/dizionario.html",
         items: [
-          { label: "International protection", href: "/en/src/pages/protezione-internazionale.html" },
-          { label: "Family reunification", href: "/en/src/pages/permesso-ricongiungimento-familiare.html" },
-          { label: "Dictionary", href: "/en/src/pages/dizionario.html" }
+          { label: "International protection", href: "/en/protezione-internazionale.html" },
+          { label: "Family reunification", href: "/en/permesso-ricongiungimento-familiare.html" },
+          { label: "Dictionary", href: "/en/dizionario.html" }
         ]
       },
       {

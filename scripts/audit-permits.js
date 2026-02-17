@@ -11,7 +11,7 @@
 require('dotenv').config();
 const { Client } = require("@notionhq/client");
 
-const DATABASE_ID = "1ad7355e-7f7f-8088-a065-e814c92e2cfd";
+const DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
 const REFERENCE_PAGE_ID = "2f67355e-7f7f-813a-83f3-d5f229f0ba8c"; // Attesa occupazione
 
 /**

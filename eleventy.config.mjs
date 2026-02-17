@@ -122,7 +122,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("IMAGES");
   eleventyConfig.addPassthroughCopy("public");
 
-  // Note: EN site uses IT assets via relative paths (../../../src/styles, etc.)
+  // Note: EN site uses IT assets via absolute paths (/src/styles, etc.)
   // No separate en/src/styles, en/src/scripts, etc. directories exist
 
   // Passthrough copy for root-level files
