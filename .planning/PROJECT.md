@@ -188,6 +188,7 @@ Crowdsourced local questura practices on document pages.
 - No npm script for build-permits.js (manual execution)
 - 17 permits still need Notion content (see `.planning/TODO-permits.md`)
 - Old build scripts (build-documents.js, templates/primo.js, templates/rinnovo.js) can be removed after Phase 41
+- Re-add "Segnala errore" button to document pages (primo/rinnovo) — removed temporarily, also present in permits.liquid and 2 static carta-soggiorno pages
 
 ## Constraints
 

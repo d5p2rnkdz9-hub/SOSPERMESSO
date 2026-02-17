@@ -36,22 +36,7 @@ eleventyExcludeFromCollections: true
 </head>
 <body class="page-primo">
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img src="IMAGES/logo-full.png" alt="SOS Permesso" class="logo-image">
-        </a>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="database.html" class="nav-link">Database</a></li>
-          <li><a href="chi-siamo.html" class="nav-link">Chi siamo</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include "components/header.liquid" %}
 
   <!-- BREADCRUMB -->
   <section class="section" style="padding: 1rem 0;">
@@ -61,15 +46,6 @@ eleventyExcludeFromCollections: true
         <a href="documenti-questura.html" style="color: var(--taxi-yellow-dark);">Documenti Questura</a> →
         <span>{{ doc.tipo }} - Primo Rilascio</span>
       </div>
-
-      <!-- ERROR BUTTON -->
-      <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https://sospermesso.it/documenti-{{ doc.slug }}-primo.html"
-         class="error-report-btn"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Segnala un errore in questa pagina">
-        🚨 Segnala errore
-      </a>
     </div>
   </section>
 
@@ -82,11 +58,9 @@ eleventyExcludeFromCollections: true
         <a href="documenti-{{ doc.slug }}-rinnovo.html" class="quick-switch-link">
           Vedi anche: Rinnovo →
         </a>
-        {%- if doc.costBollettino or doc.costMarcaBollo -%}
-        <a href="#quanto-costa" class="costi-anchor-link">
-          Quanto costa
+        <a href="permesso-{{ doc.slug }}.html" class="costi-anchor-link">
+          Vedi il permesso
         </a>
-        {%- endif -%}
         <a href="#prassi-locali" class="prassi-anchor-link">
           Prassi locali della tua Questura
         </a>
@@ -258,17 +232,7 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-links">
-        <a href="chi-siamo.html" class="footer-link">Chi siamo</a>
-        <a href="index.html" class="footer-link">Home</a>
-        <a href="https://form.typeform.com/to/USx16QN3" class="footer-link">Contatti</a>
-      </div>
-      <p class="footer-copyright">© 2025 SOS Permesso. Tutti i diritti riservati.</p>
-    </div>
-  </footer>
+  {% include "components/footer.liquid" %}
 
   <script src="src/scripts/app.js"></script>
   <script>
