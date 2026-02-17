@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-18
-**Status:** v3.2 — Roadmap created, ready to plan Phase 47
+**Last Updated:** 2026-02-17
+**Status:** v3.2 — Phase 47-01 complete
 
 ## Project Reference
 
@@ -14,14 +14,16 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 **Current Milestone:** v3.2 EN Translation Pipeline
-**Phase:** 47 of 50 (Notion Cache) — ready to plan
-**Plan:** 0 of 2
-**Status:** Ready to plan
-**Last activity:** 2026-02-18 — Roadmap created (Phases 47-50)
+**Phase:** 47 of 50 (Notion Cache) — in progress
+**Plan:** 1 of 2
+**Status:** In progress
+**Last activity:** 2026-02-17 — Completed 47-01-PLAN.md (Notion cache module)
 
 ```
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 10%
 ```
+
+(1 of ~8 plans across phases 47-50 complete)
 
 ## v3.2 Architecture Decisions
 
@@ -40,6 +42,9 @@ Progress: [░░░░░░░░░░] 0%
 - **v3.2-arch: offline-translation** — `npm run translate` is a separate step, not part of every build
 - **v3.2-arch: notion-en-columns** — EN translations written back to Notion DB as properties alongside IT
 - **v3.2-arch: section-hashing** — Only re-translate sections whose Italian source text changed
+- **47-01: cache-blocks-only** — Only cache blocks (not search results); search is fast, block fetching is the ~15s bottleneck
+- **47-01: last_edited_time-string** — Compare last_edited_time with strict string !== to avoid timezone parsing edge cases
+- **47-01: cache-safety-net** — If getBlocks() returns null despite index hit, re-fetch from Notion (guards against corrupted cache)
 
 ### Carried from v3.1
 
@@ -49,12 +54,12 @@ Progress: [░░░░░░░░░░] 0%
 
 ### Blockers/Concerns
 
-None. Phase 47 is independent infrastructure with no external dependencies.
+None. Cache infrastructure is in place. Phase 47-02 (if planned) can extend to documents.js.
 
 ## Session Continuity
 
-**Last session:** 2026-02-18
-**Stopped at:** Roadmap created for v3.2. Next: `/gsd:plan-phase 47`
+**Last session:** 2026-02-17
+**Stopped at:** Completed 47-01-PLAN.md — Notion cache module with 41 hits/0 misses on second build
 **Resume file:** None
 
 ---
