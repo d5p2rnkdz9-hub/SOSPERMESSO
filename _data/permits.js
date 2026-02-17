@@ -436,6 +436,12 @@ const manualVariantGroups = {
       "lavoro-autonomo-a-seguito-di-conversione-da-altro-permesso"
     ]
   },
+  "Lavoro subordinato": {
+    childSlugs: [
+      "lavoro-subordinato-a-seguito-di-ingresso-per-flussi",
+      "lavoro-subordinato-a-seguito-di-conversione-da-altro-permesso"
+    ]
+  },
   "Cure mediche (art. 19)": {
     childSlugs: [
       "cure-mediche-art-19-donna-in-stato-di-gravidanza",
