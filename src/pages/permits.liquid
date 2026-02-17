@@ -18,12 +18,7 @@ eleventyExcludeFromCollections: true
         <div class="breadcrumb-nav">
           <a href="index.html">Home</a> →
           <a href="database.html">Database</a> →
-          {% if permit.isVariantChild == true %}
-          <a href="permesso-{{ permit.parentSlug }}.html">Permesso per {{ permit.baseName }}</a> →
-          <span>{{ permit.variantName }}</span>
-          {% else %}
           <span>Permesso per {{ permit.tipo }}</span>
-          {% endif %}
         </div>
         <a href="https://form.typeform.com/to/FsqvzdXI#page_url=https%3A%2F%2Fsospermesso.it%2Fpermesso-{{ permit.slug }}.html"
            class="error-report-btn" target="_blank" rel="noopener noreferrer">
@@ -43,82 +38,7 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
 
-{% if permit.isVariantParent == true %}
-  <!-- VARIANT PARENT PAGE -->
-  <!-- GENERAL CONTENT -->
-  <section class="section">
-    <div class="container" style="max-width: 900px;">
-      <div class="alert alert-info" style="margin-bottom: 2rem;">
-        <span class="alert-icon">ℹ️</span>
-        <div>
-          <strong>Questa pagina contiene informazioni comuni a tutte le tipologie.</strong>
-          <p style="margin-top: 0.5rem; margin-bottom: 0;">
-            Le pagine specifiche sotto contengono solo gli elementi <strong>distinti</strong> per ogni variante
-            (ad esempio: come si ottiene, requisiti specifici, documenti particolari).
-          </p>
-        </div>
-      </div>
-
-      {% if permit.sections.size > 0 %}
-        {% for section in permit.sections %}
-      <!-- Section {{ forloop.index }}: {{ section.question }} -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }};">
-        <h2>{{ section.question }}</h2>
-        {{ section.content }}
-      </div>
-        {% endfor %}
-      {% else %}
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>Cos'è il permesso per {{ permit.tipo }}?</h2>
-        <p>Il permesso di soggiorno per {{ permit.tipo }} permette di lavorare in Italia in modo regolare.</p>
-      </div>
-
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>Durata</h2>
-        <p>La durata varia in base alla tipologia di contratto e alle circostanze specifiche di ottenimento.</p>
-      </div>
-
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>Che diritti mi dà?</h2>
-        <ul>
-          <li>Lavoro subordinato presso datori di lavoro italiani</li>
-          <li>Accesso al servizio sanitario nazionale</li>
-          <li>Possibilità di aprire un conto corrente</li>
-          <li>Diritto all'istruzione e alla formazione</li>
-        </ul>
-      </div>
-      {% endif %}
-    </div>
-  </section>
-
-  <!-- VARIANT LINKS -->
-  <section class="section bg-off-white">
-    <div class="container">
-      <h2 class="text-center mb-lg">Quale situazione ti interessa?</h2>
-      <div class="grid grid-2" style="max-width: 800px; margin: 0 auto;">
-        {% for variant in permit.variants %}
-        <a href="permesso-{{ variant.slug }}.html" class="card card-link">
-          <span class="card-icon">{{ variant.emoji }}</span>
-          <h3 class="card-title">
-            {{ variant.variantName }}
-            {% if variant.isPlaceholder %}
-            <span style="background: var(--accent-orange); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem;">In costruzione</span>
-            {% endif %}
-          </h3>
-          <p style="color: var(--gray-medium); font-size: 0.875rem;">
-            {% if variant.isPlaceholder %}
-            Contenuto in arrivo
-            {% else %}
-            Informazioni specifiche per {{ variant.variantName | downcase }}
-            {% endif %}
-          </p>
-        </a>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-{% elsif permit.isPlaceholder == true %}
+{% if permit.isPlaceholder == true %}
   <!-- PLACEHOLDER PAGE -->
   <section class="section">
     <div class="container" style="max-width: 900px;">
@@ -136,53 +56,6 @@ eleventyExcludeFromCollections: true
           Dai una mano
         </a>
       </div>
-    </div>
-  </section>
-
-{% elsif permit.isVariantChild == true %}
-  <!-- VARIANT CHILD PAGE -->
-  <!-- BACK TO PARENT LINK -->
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container" style="max-width: 900px;">
-      <a href="permesso-{{ permit.parentSlug }}.html" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--taxi-yellow-dark); text-decoration: none; font-weight: 500;">
-        ← Torna alle informazioni generali su {{ permit.baseName }}
-      </a>
-    </div>
-  </section>
-
-  <!-- CONTENT -->
-  <section class="section">
-    <div class="container" style="max-width: 900px;">
-      <div class="alert alert-info" style="margin-bottom: 2rem;">
-        <span class="alert-icon">ℹ️</span>
-        <div>
-          <strong>Questa pagina contiene solo le informazioni specifiche per {{ permit.variantName | downcase }}.</strong>
-          <p style="margin-top: 0.5rem; margin-bottom: 0;">
-            Per informazioni generali (cos'è, durata, diritti), vedi la
-            <a href="permesso-{{ permit.parentSlug }}.html" style="color: var(--taxi-yellow-dark); font-weight: 600;">pagina principale</a>.
-          </p>
-        </div>
-      </div>
-
-      {% for section in permit.sections %}
-      <!-- Section {{ forloop.index }}: {{ section.question }} -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }};">
-        <h2>{{ section.question }}</h2>
-        {{ section.content }}
-      </div>
-      {% endfor %}
-
-      <!-- CTA -->
-      <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
-        <div>
-          Hai altre domande sul permesso per {{ permit.tipo }}?
-          <button onclick="openContactModal()" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
-            Scrivici
-          </button>
-        </div>
-      </div>
-
     </div>
   </section>
 

@@ -79,11 +79,6 @@ module.exports = async function() {
 
     console.log(`[documents.js] Fetched ${allPages.length} permit pages from Notion`);
 
-    // Redirect display slugs already generate pages via documents-redirects.liquid
-    // Exclude them from primo/rinnovo to avoid duplicate permalink errors
-    const slugMap = require('./slugMap.js');
-    const redirectSlugs = new Set(Object.keys(slugMap.mappings));
-
     // Transform to separate primo and rinnovo arrays
     const primo = [];
     const rinnovo = [];
@@ -99,11 +94,6 @@ module.exports = async function() {
       }
 
       const slug = slugify(tipo);
-
-      // Skip if slug matches a redirect display slug (would cause duplicate permalink)
-      if (redirectSlugs.has(slug)) {
-        continue;
-      }
 
       // Skip duplicate slugs (multiple Notion entries with same permit name)
       if (seenSlugs.has(slug)) {

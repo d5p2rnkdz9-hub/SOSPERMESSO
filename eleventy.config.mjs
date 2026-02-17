@@ -43,9 +43,8 @@ export default function(eleventyConfig) {
   }
 
   // All document pages are generated via Liquid pagination templates
-  // (documents-primo.liquid, documents-rinnovo.liquid, documents-redirects.liquid).
-  // Old static documenti-*.html files were removed in Phase 42.1.
-  // Old static permesso-*.html files were removed in Phase 44.1-03.
+  // (documents-primo.liquid, documents-rinnovo.liquid).
+  // All permit pages are generated via permits.liquid.
 
   // Register Liquid filters for template helpers
   // Used in document page templates for linking to dizionario, formatting, etc.
