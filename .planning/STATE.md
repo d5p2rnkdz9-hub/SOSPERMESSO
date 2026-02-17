@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-17
-**Status:** v3.2 — Phase 47-01 complete
+**Last Updated:** 2026-02-18
+**Status:** v3.2 — Phase 47 complete
 
 ## Project Reference
 
@@ -14,16 +14,16 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 **Current Milestone:** v3.2 EN Translation Pipeline
-**Phase:** 47 of 50 (Notion Cache) — in progress
-**Plan:** 1 of 2
-**Status:** In progress
-**Last activity:** 2026-02-17 — Completed 47-01-PLAN.md (Notion cache module)
+**Phase:** 47 of 50 (Notion Cache) — COMPLETE
+**Plan:** 2 of 2
+**Status:** Phase complete — ready for Phase 48
+**Last activity:** 2026-02-18 — Completed 47-02-PLAN.md (build verification, user approved)
 
 ```
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 20%
 ```
 
-(1 of ~8 plans across phases 47-50 complete)
+(2 of ~8 plans across phases 47-50 complete)
 
 ## v3.2 Architecture Decisions
 
@@ -45,6 +45,7 @@ Progress: [█░░░░░░░░░] 10%
 - **47-01: cache-blocks-only** — Only cache blocks (not search results); search is fast, block fetching is the ~15s bottleneck
 - **47-01: last_edited_time-string** — Compare last_edited_time with strict string !== to avoid timezone parsing edge cases
 - **47-01: cache-safety-net** — If getBlocks() returns null despite index hit, re-fetch from Notion (guards against corrupted cache)
+- **47-02: verified-87pct-speedup** — Cold build ~72-80s, warm build ~11-13s; correct hit/miss behavior confirmed across cold, warm, and post-clear scenarios
 
 ### Carried from v3.1
 
@@ -54,12 +55,12 @@ Progress: [█░░░░░░░░░] 10%
 
 ### Blockers/Concerns
 
-None. Cache infrastructure is in place. Phase 47-02 (if planned) can extend to documents.js.
+None. Phase 47 is complete and verified. Phase 48 (translation pipeline) can begin.
 
 ## Session Continuity
 
-**Last session:** 2026-02-17
-**Stopped at:** Completed 47-01-PLAN.md — Notion cache module with 41 hits/0 misses on second build
+**Last session:** 2026-02-18
+**Stopped at:** Completed 47-02-PLAN.md — build verification approved, phase 47 done
 **Resume file:** None
 
 ---
