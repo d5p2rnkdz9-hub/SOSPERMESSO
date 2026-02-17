@@ -105,11 +105,11 @@
 3. Running `npm run cache:clear` removes all cached responses, forcing a full re-fetch on next build
 4. Build log shows per-page cache hit/miss counts so the user can see what changed
 
-**Plans:** TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 47-01: Cache layer implementation in data files (permits.js, documents.js)
-- [ ] 47-02: Verification — measure build times before/after with cache
+- [ ] 47-01-PLAN.md — Cache module + integration into permits.js, documents.js, package.json, .gitignore
+- [ ] 47-02-PLAN.md — Build time measurement + verification checkpoint
 
 ---
 
