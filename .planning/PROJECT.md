@@ -6,7 +6,7 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current State
 
-**Last Shipped:** v3.0 11ty Migration (2026-02-05)
+**Last Shipped:** v3.1 Prassi Locali + Notion-11ty Completion (2026-02-17)
 
 **What was delivered (v3.0):**
 - 11ty v3.1.2 with Liquid templates for static site generation
@@ -98,64 +98,31 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ URL preservation (no broken links) — v3.0
 - ✓ Netlify deployment configured — v3.0
 - ✓ Canonical and hreflang tags in base layout for SEO — v3.0
+- ✓ Document pages generated from Notion via 11ty Liquid templates — v3.1
+- ✓ Permit pages generated from Notion via 11ty Liquid templates (flat, no variants) — v3.1
+- ✓ Prassi locali MVP (crowdsourced questura notes, submission, voting, moderation) — v3.1
+- ✓ Unified build pipeline (`npm run build` = Notion + 11ty) — v3.1
+- ✓ Cost breakdown section on document pages from Notion data — v3.1
+- ✓ All placeholder permits populated with Q&A content — v3.1
+- ✓ Flat permit architecture (1 Notion page = 1 HTML page, no variants) — v3.1
+- ✓ All pages output at root level in _site/ — v3.1
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-## Current Milestone: v3.1 Prassi Locali + Notion-11ty Completion
+## Current Milestone: v3.2 EN Translation Pipeline
 
-**Goal:** Build collaborative "prassi locali" infrastructure for crowdsourced questura notes on document pages, then complete Notion-11ty integration and content cleanup.
+**Goal:** Connect English pages to the same 11ty/Notion pipeline as Italian, replacing 136 frozen static files with dynamically generated pages. Add Notion response caching for incremental builds.
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 
-### Phases (in order)
-
-| Phase | Name | Type | Status |
-|-------|------|------|--------|
-| 39 | Document pages → 11ty | Technical | DONE |
-| 40 | **Prassi locali MVP** | New feature | Next up |
-| 41 | Permit pages → 11ty | Technical | Pending |
-| 42 | Old build script cleanup | Cleanup | Pending |
-| 43 | Populate blank permit pages | Content (17 permits in Notion) | Pending |
-| 44 | Costi section on document pages | Content/template | Pending |
-| 45 | Content validation pass | Review | Pending |
-| 46 | Dizionario link revision | Technical debt | Pending |
-
-### Phase 40: Prassi Locali MVP
-
-Crowdsourced local questura practices on document pages.
-
-**Architecture:**
-- Static core: approved notes baked into pages at build time
-- Thin dynamic layer: Netlify Functions for form submission + upvoting
-- Notion DB as content store (submissions table, moderation queue)
-- "Prassi locali" section on document pages, filterable by city
-
-**MVP scope:**
-- Inline submission form on document pages → Netlify Function → Notion DB
-- Manual moderation (approve in Notion, rebuild to publish)
-- "Prassi locali" section with city filter (client-side JS)
-- Upvote/downvote (anonymous, localStorage + IP rate limiting)
-
-**Phase 2 (future):**
-- Pre-approved user auth for submitting (Netlify Identity or access codes)
-- User management in Notion/Supabase
-
-### Next Milestone: v3.2 Translation Batch
-
-**Prerequisite:** All permit content populated and validated (Phases 43-45 complete)
-
-**Scope:**
-- Batch translation of all new/changed content (IT → EN + other languages)
-- Uses existing translation memory infrastructure (v2.2)
-- Leverages 11ty build pipeline for consistent output
-
 ### Out of Scope
 
+- Additional languages (FR, ES, ZH) — EN only for this milestone, architecture supports adding later
 - Real-time permit status tracking — external service, just link to portale immigrazione
-- Professional translation services — AI + volunteer review sufficient
-- Full user accounts system — prassi locali uses lightweight auth for approved contributors only
+- Content validation pass — translate what's there, fix content separately
+- Dizionario link revision — separate concern, defer
 
 ## Context
 
@@ -184,10 +151,8 @@ Crowdsourced local questura practices on document pages.
 - Mobile flat list navigation for faster task completion
 
 **Technical debt:**
+- **No incremental Notion fetching** — every build re-fetches ALL permits (43) and documents (65) from Notion API even when only 1 page changed. Build takes ~72s. Fix: cache Notion responses locally with `last_edited_time` check, only re-fetch changed pages. Affects both IT and future EN builds.
 - Dizionario links need revision (partial matching works but coverage incomplete)
-- No npm script for build-permits.js (manual execution)
-- 17 permits still need Notion content (see `.planning/TODO-permits.md`)
-- Old build scripts (build-documents.js, templates/primo.js, templates/rinnovo.js) can be removed after Phase 41
 - Re-add "Segnala errore" button to document pages (primo/rinnovo) — removed temporarily, also present in permits.liquid and 2 static carta-soggiorno pages
 
 ## Constraints
@@ -239,4 +204,4 @@ Crowdsourced local questura practices on document pages.
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-02-07 — v3.1 milestone replanned with prassi locali*
+*Last updated: 2026-02-17 — v3.2 EN Translation Pipeline milestone started*
