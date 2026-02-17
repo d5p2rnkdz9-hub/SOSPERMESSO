@@ -7,3 +7,6 @@ _site/
 
 # Local Netlify folder
 .netlify
+
+# Notion API response cache
+.notion-cache/

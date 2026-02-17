@@ -77,6 +77,7 @@ module.exports = async function() {
       startCursor = response.next_cursor;
     }
 
+    console.log(`[documents.js] Search fetched ${allPages.length} pages (no block cache — search only)`);
     console.log(`[documents.js] Fetched ${allPages.length} permit pages from Notion`);
 
     // Transform to separate primo and rinnovo arrays

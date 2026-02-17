@@ -10,6 +10,9 @@ require('dotenv').config();
 // Import Notion API client
 const { Client } = require("@notionhq/client");
 
+// Import Notion response cache
+const cache = require('../scripts/notion-cache');
+
 // Import helper functions used by parsing functions
 const { escapeHtml, linkToDizionario } = require('../scripts/templates/helpers.js');
 
@@ -486,6 +489,11 @@ module.exports = async function() {
 
     console.log(`[permits.js] Filtered to ${filteredPermits.length} permits (removed ${permits.length - filteredPermits.length} duplicates)`);
 
+    // Load cache index for change detection
+    const pagesIndex = await cache.loadPagesIndex();
+    let cacheHits = 0;
+    let cacheMisses = 0;
+
     // Process each permit with content
     const processedPermits = [];
     let count = 0;
@@ -504,11 +512,29 @@ module.exports = async function() {
       }
 
       try {
-        // Rate limiting: 350ms delay between requests (stays under 3 req/s)
-        await delay(350);
+        // Check if page changed since last cache (strict string equality on ISO timestamp)
+        const cachedEntry = pagesIndex[permit.id];
+        const pageChanged = !cachedEntry || cachedEntry.last_edited_time !== permit.last_edited_time;
 
-        // Fetch page blocks
-        const blocks = await fetchPageBlocks(notion, permit.id);
+        let blocks;
+        if (!pageChanged) {
+          blocks = await cache.getBlocks(permit.id);
+        }
+
+        if (blocks) {
+          cacheHits++;
+        } else {
+          cacheMisses++;
+          // Rate limiting: 350ms delay between Notion API requests (stays under 3 req/s)
+          await delay(350);
+          blocks = await fetchPageBlocks(notion, permit.id);
+          // Save to cache
+          await cache.setBlocks(permit.id, blocks);
+          pagesIndex[permit.id] = {
+            last_edited_time: permit.last_edited_time,
+            fetchedAt: new Date().toISOString()
+          };
+        }
 
         // Parse Q&A sections
         const sections = blocks && blocks.length > 0 ? parseQASections(blocks) : [];
@@ -542,6 +568,10 @@ module.exports = async function() {
         });
       }
     }
+
+    // Save updated cache index and report stats
+    await cache.savePagesIndex(pagesIndex);
+    console.log(`[permits.js] Cache: ${cacheHits} hits, ${cacheMisses} misses`);
 
     console.log(`[permits.js] Returning ${processedPermits.length} permits (flat, one per Notion row)`);
     return processedPermits;
