@@ -88,26 +88,26 @@ Requirements for EN translation pipeline and incremental build caching.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CACHE-01 | — | Pending |
-| CACHE-02 | — | Pending |
-| CACHE-03 | — | Pending |
-| TRANS-01 | — | Pending |
-| TRANS-02 | — | Pending |
-| TRANS-03 | — | Pending |
-| TRANS-04 | — | Pending |
-| TRANS-05 | — | Pending |
-| ENGEN-01 | — | Pending |
-| ENGEN-02 | — | Pending |
-| ENGEN-03 | — | Pending |
-| ENGEN-04 | — | Pending |
-| STATIC-01 | — | Pending |
-| CLEAN-01 | — | Pending |
+| CACHE-01 | Phase 47 | Pending |
+| CACHE-02 | Phase 47 | Pending |
+| CACHE-03 | Phase 47 | Pending |
+| TRANS-01 | Phase 48 | Pending |
+| TRANS-02 | Phase 48 | Pending |
+| TRANS-03 | Phase 48 | Pending |
+| TRANS-04 | Phase 48 | Pending |
+| TRANS-05 | Phase 48 | Pending |
+| ENGEN-01 | Phase 49 | Pending |
+| ENGEN-02 | Phase 49 | Pending |
+| ENGEN-03 | Phase 49 | Pending |
+| ENGEN-04 | Phase 49 | Pending |
+| STATIC-01 | Phase 50 | Pending |
+| CLEAN-01 | Phase 50 | Pending |
 
 **Coverage:**
 - v3.2 requirements: 14 total
-- Mapped to phases: 0 (roadmap pending)
-- Unmapped: 14
+- Mapped to phases: 14 (100%)
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-18*
-*Last updated: 2026-02-18 — initial definition*
+*Last updated: 2026-02-18 — traceability updated, all 14 requirements mapped to Phases 47-50*
