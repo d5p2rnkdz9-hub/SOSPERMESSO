@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-16
-**Status:** v3.1 — Phase 44.1-01 complete
+**Status:** v3.1 — Phase 44.1-02 complete
 
 ## Project Reference
 
@@ -14,11 +14,11 @@ See: .planning/PROJECT.md (updated 2026-02-07)
 ## Current Position
 
 **Current Milestone:** v3.1 Prassi Locali + Notion-11ty Completion
-**Phase:** 44.1 (URL Coverage & Content Preservation) — ⌛ In Progress (Plan 01 complete)
-**Last activity:** 2026-02-16 — Completed 44.1-01-PLAN.md
+**Phase:** 44.1 (URL Coverage & Content Preservation) — ⌛ In Progress (Plan 02 complete)
+**Last activity:** 2026-02-16 — Completed 44.1-02-PLAN.md
 
 ```
-Progress: [███████░░░] 73% (8/11 phases, 1/3 plans in Phase 44.1 complete)
+Progress: [███████░░░] 75% (8/11 phases, 2/3 plans in Phase 44.1 complete)
 ```
 
 ## v3.1 Phases
