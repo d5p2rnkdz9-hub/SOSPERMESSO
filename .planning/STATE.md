@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-18
-**Status:** v4.0 — Phase 53 in progress (2/3 tasks of Plan 03 done, at checkpoint)
+**Status:** v4.0 — Phase 53 complete, Phase 54 next
 
 ## Project Reference
 
@@ -14,13 +14,13 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 ## Current Position
 
 **Current Milestone:** v4.0 FR Translation
-**Phase:** 53 - FR Page Generation (in progress)
-**Plan:** 03 in progress — at checkpoint:human-verify (Tasks 1+2 complete, Task 3 awaiting user verification)
-**Status:** Build succeeded. 39 FR permits, 39 FR doc primo/rinnovo, 4 static pages in _site/fr/. Waiting for human verification of FR site in browser.
-**Last activity:** 2026-02-18 — Tasks 1+2 of 53-03-PLAN.md complete
+**Phase:** 53 - FR Page Generation (complete, verified)
+**Plan:** 3 of 3 done
+**Status:** Phase 53 verified (12/12 must-haves passed). FGEN-01, FGEN-02, FGEN-03 complete.
+**Last activity:** 2026-02-18 — Phase 53 executed and verified. 39 FR permits, 39 FR primo docs, 39 FR rinnovo docs, 4 static pages.
 
 ```
-Progress: [████░░░░░░] 40%  (Plans 01+02+03[partial] in phase 53)
+Progress: [███████░░░] 75%  (3/4 phases complete)
 ```
 
 ## Accumulated Context
@@ -39,7 +39,7 @@ Progress: [████░░░░░░] 40%  (Plans 01+02+03[partial] in phas
 - **52-01: same-parent** — FR database created under same Notion parent page as EN (30b7355e-7f7f-8184-975d-fb18ca69875c)
 - **53-01: copy-then-edit** — FR templates are exact structural copies of EN templates with targeted en->fr substitutions (no structural divergence)
 - **53-01: en-permit-blocker-fixed** — EN permesso-* DuplicatePermalinkOutputError fixed by adding safety net block inside existing EN try block in eleventy.config.mjs
-- **53-03: fr-static-pages-created** — 4 FR static pages created by copy-then-edit from EN: fr/index.html, fr/src/pages/database.html, fr/src/pages/documenti-questura.html, fr/src/pages/chi-siamo.html
+- **53-03: fr-page-counts** — 39 FR permits (matches EN; 4 permits filtered at Notion DB level, not a gap)
 
 ### Carried from v3.2
 
@@ -49,12 +49,12 @@ Progress: [████░░░░░░] 40%  (Plans 01+02+03[partial] in phas
 
 ### Blockers/Concerns
 
-- None currently blocking. Awaiting human verification of FR site before Plan 03 can be marked complete.
+- None.
 
 ## Session Continuity
 
-**Last session:** 2026-02-18 22:36 UTC
-**Stopped at:** 53-03-PLAN.md Task 3 checkpoint:human-verify — build succeeded, waiting for browser verification
+**Last session:** 2026-02-18
+**Stopped at:** Phase 53 complete and verified. Phase 54 (SEO) not yet planned.
 **Resume file:** None
 
 ---
