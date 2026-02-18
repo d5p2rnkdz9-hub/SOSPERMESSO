@@ -195,7 +195,14 @@
 7. Language switcher is a dropdown in the main nav bar (top of hamburger menu on mobile)
 
 **Status:** Not started
-**Plans:** TBD
+**Plans:** 5 plans
+
+Plans:
+- [ ] 53.1-01-PLAN.md -- Quick fixes: Typeform button, footer contact, homepage canonical + redirects
+- [ ] 53.1-02-PLAN.md -- Listing page gaps: add missing permits to database.html + documenti-questura.html (IT/EN/FR)
+- [ ] 53.1-03-PLAN.md -- Language switcher: move into main nav bar with mobile-first positioning
+- [ ] 53.1-04-PLAN.md -- Sitemap rewrite: 11ty-native sitemap templates replacing build-sitemap.js
+- [ ] 53.1-05-PLAN.md -- Dizionario links: expand term map with EN/FR equivalents, language-aware filter
 
 ---
 
@@ -229,11 +236,12 @@
 | 51. Translation Infrastructure | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 52. Notion Database | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 53. FR Page Generation | v4.0 | 3/3 | ✓ Complete | 2026-02-18 |
-| 53.1 Tech Debt | v4.0 | 0/? | Not started | - |
+| 53.1 Tech Debt | v4.0 | 0/5 | Not started | - |
 | 54. SEO | v4.0 | 0/? | Not started | - |
 
 ---
 
 *Roadmap created: 2026-02-18 -- v4.0 FR + ES Translation*
 *Revised: 2026-02-18 -- scoped to FR only; ES deferred to v4.1*
+*Revised: 2026-02-19 -- Phase 53.1 planned (5 plans, 1 wave)*
 *Previous milestone: v3.2 (Phases 47-50) shipped 2026-02-18*
