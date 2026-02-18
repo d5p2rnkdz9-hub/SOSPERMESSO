@@ -171,8 +171,12 @@
 3. FR static pages exist at `/fr/` (homepage, database listing, documenti-questura, chi-siamo)
 4. Language switcher on any IT/EN page shows FR option and navigates to the correct translated page
 
-**Status:** Not started
-**Plans:** TBD
+**Status:** In progress
+**Plans:** 3 plans
+Plans:
+- [ ] 53-01-PLAN.md -- FR pagination pipeline + blocker fix
+- [ ] 53-02-PLAN.md -- Language infrastructure wiring (nav, footer, header, switcher, hreflang)
+- [ ] 53-03-PLAN.md -- FR static pages + build verification
 
 ---
 
@@ -205,7 +209,7 @@
 | 50. Static Pages + Cleanup | v3.2 | 2/2 | ✓ Complete | 2026-02-18 |
 | 51. Translation Infrastructure | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 52. Notion Database | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
-| 53. FR Page Generation | v4.0 | 0/? | Not started | - |
+| 53. FR Page Generation | v4.0 | 0/3 | In progress | - |
 | 54. SEO | v4.0 | 0/? | Not started | - |
 
 ---
