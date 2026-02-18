@@ -152,10 +152,8 @@
 2. The database contains translated document names, notes, and application method text
 3. Running `npm run build` fetches content from the FR database without errors
 
-**Status:** Not started
-**Plans:** 1 plan
-Plans:
-- [ ] 52-01-PLAN.md — Run FR translation, create FR data files, verify build
+**Status:** Complete (2026-02-18)
+**Plans:** 1 plan — [x] 52-01
 
 ---
 
@@ -206,7 +204,7 @@ Plans:
 | 49. EN Page Generation | v3.2 | 3/3 | ✓ Complete | 2026-02-18 |
 | 50. Static Pages + Cleanup | v3.2 | 2/2 | ✓ Complete | 2026-02-18 |
 | 51. Translation Infrastructure | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
-| 52. Notion Database | v4.0 | 0/1 | Not started | - |
+| 52. Notion Database | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 53. FR Page Generation | v4.0 | 0/? | Not started | - |
 | 54. SEO | v4.0 | 0/? | Not started | - |
 

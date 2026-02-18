@@ -15,7 +15,7 @@ Requirements for French translation via the same Notion + 11ty pipeline as EN. E
 
 ### Notion Database
 
-- [ ] **NOTION-01**: French Notion database created with translated permit Q&A + document content
+- [x] **NOTION-01**: French Notion database created with translated permit Q&A + document content
 
 ### FR Page Generation
 
@@ -116,7 +116,7 @@ Requirements for French translation via the same Notion + 11ty pipeline as EN. E
 | TRANS-01 | Phase 51 | Complete |
 | TRANS-03 | Phase 51 | Complete |
 | TRANS-05 | Phase 51 | Complete |
-| NOTION-01 | Phase 52 | Pending |
+| NOTION-01 | Phase 52 | Complete |
 | FGEN-01 | Phase 53 | Pending |
 | FGEN-02 | Phase 53 | Pending |
 | FGEN-03 | Phase 53 | Pending |
