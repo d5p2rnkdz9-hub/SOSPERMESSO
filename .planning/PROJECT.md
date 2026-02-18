@@ -115,9 +115,9 @@ Users can quickly find accurate, understandable information about their specific
 
 <!-- Current scope. Building toward these. -->
 
-## Current Milestone: v4.0 FR + ES Translation
+## Current Milestone: v4.0 FR Translation
 
-**Goal:** Add French and Spanish translations to the site using the same Notion → 11ty pipeline established for EN. Extend the translation script to target FR/ES, create translated Notion databases, generate pages at /fr/ and /es/ prefixes, and upgrade the language switcher to support 4 languages.
+**Goal:** Add French translation to the site using the same Notion → 11ty pipeline established for EN. Extend the translation script to target FR, create a French Notion database, generate pages at /fr/ prefix, and upgrade the language switcher to support IT/EN/FR. ES translation follows in v4.1 if the FR pipeline works well.
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 **Permit Database (LIVE IT):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
@@ -125,7 +125,8 @@ Users can quickly find accurate, understandable information about their specific
 
 ### Out of Scope
 
-- Additional languages beyond FR/ES (ZH, AR, etc.) — architecture supports adding later
+- ES translation — deferred to v4.1 after FR pipeline is validated
+- Additional languages beyond FR (ZH, AR, etc.) — architecture supports adding later
 - Moving language switcher into main nav bar — tech debt, noted for future milestone
 - Real-time permit status tracking — external service, just link to portale immigrazione
 - Content validation pass — translate what's there, fix content separately
@@ -209,9 +210,10 @@ Users can quickly find accurate, understandable information about their specific
 | Front matter for page metadata | Standard 11ty pattern, clean separation | ✓ Good — v3.0 |
 | Keep existing Notion scripts | Don't rewrite working integration | ✓ Good — v3.0 |
 | Canonical + hreflang in base layout | SEO best practice, single source | ✓ Good — v3.0 |
+| FR first, ES in v4.1 | Validate pipeline with one language before committing to two | — Decided 2026-02-18 |
 | Volunteer translators | Community-driven review process | — Pending |
 | No legal review for translations | AI + human review sufficient | — Pending |
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-02-18 — started v4.0 FR + ES Translation milestone*
+*Last updated: 2026-02-18 — scoped v4.0 to FR only; ES deferred to v4.1*
