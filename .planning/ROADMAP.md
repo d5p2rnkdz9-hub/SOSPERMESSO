@@ -114,12 +114,8 @@
 4. Translated text uses the 35+ term glossary consistently (e.g., "permesso di soggiorno" → "residence permit")
 5. Document content (names, notes, application methods) is translated and written to Notion EN columns
 
-**Plans:** TBD
-
-Plans:
-- [ ] 48-01: Translation script scaffold — Claude API client, glossary loading, Notion EN column write-back
-- [ ] 48-02: Section-level hashing — detect changed IT source sections, skip unchanged
-- [ ] 48-03: Full translate run + Notion verification that EN columns contain correct content
+**Status:** Complete (2026-02-18, commit d1f36d5)
+**Plans:** 1 plan (implemented outside GSD) — [x] 48-01
 
 ---
 
@@ -137,12 +133,13 @@ Plans:
 3. EN pages reference asset paths with `/` prefix (not broken relative paths)
 4. Clicking the language switcher on any IT permit page navigates to the correct EN page and vice versa
 
-**Plans:** TBD
+**Status:** Complete (2026-02-18)
+**Plans:** 3 plans — [x] 49-01, [x] 49-02, [x] 49-03
 
 Plans:
-- [ ] 49-01: EN data files (permits-en.js, documents-en.js) reading Notion EN columns
-- [ ] 49-02: EN-aware Liquid templates or front matter for en/ output path
-- [ ] 49-03: Language switcher links verified across all page types + visual spot-check
+- [x] 49-01: EN data files (permitsEn.js, documentsEn.js) reading Notion EN database
+- [x] 49-02: EN Liquid templates + static file cleanup
+- [x] 49-03: Build verification + language switcher spot-check
 
 ---
 
@@ -173,8 +170,8 @@ Plans:
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 47. Notion Cache | v3.2 | 2/2 | ✓ Complete | 2026-02-18 |
-| 48. Translation Script | v3.2 | 0/3 | Not started | - |
-| 49. EN Page Generation | v3.2 | 0/3 | Not started | - |
+| 48. Translation Script | v3.2 | 1/1 | ✓ Complete | 2026-02-18 |
+| 49. EN Page Generation | v3.2 | 3/3 | ✓ Complete | 2026-02-18 |
 | 50. Static Pages + Cleanup | v3.2 | 0/2 | Not started | - |
 
 ---

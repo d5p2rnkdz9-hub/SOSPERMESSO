@@ -42,6 +42,23 @@ export default function(eleventyConfig) {
     // Directory might not exist in some environments
   }
 
+  // Same safety net for EN document pages
+  const enPagesDir = path.join(process.cwd(), 'en', 'src', 'pages');
+  try {
+    const enFiles = fs.readdirSync(enPagesDir);
+    const enDocFiles = enFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html') && f !== 'documenti-questura.html'
+    );
+    for (const file of enDocFiles) {
+      eleventyConfig.ignores.add(`en/src/pages/${file}`);
+    }
+    if (enDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${enDocFiles.length} static EN document files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist
+  }
+
   // All document pages are generated via Liquid pagination templates
   // (documents-primo.liquid, documents-rinnovo.liquid).
   // All permit pages are generated via permits.liquid.

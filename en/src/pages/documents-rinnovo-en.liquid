@@ -1,0 +1,283 @@
+---
+pagination:
+  data: documentsEn.rinnovo
+  size: 1
+  alias: doc
+permalink: "en/documenti-{{ doc.slug }}-rinnovo.html"
+layout: false
+lang: en
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documents required for the renewal of the permit for {{ doc.tipo }}">
+  <title>Documents {{ doc.tipo }} - Renewal - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/IMAGES/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="/IMAGES/logo-full.png">
+  <link rel="apple-touch-icon" href="/IMAGES/logo-full.png">
+
+  <!-- hreflang -->
+  <link rel="canonical" href="https://www.sospermesso.it/en/documenti-{{ doc.slug }}-rinnovo.html">
+  <link rel="alternate" hreflang="it" href="https://www.sospermesso.it/documenti-{{ doc.slug }}-rinnovo.html">
+  <link rel="alternate" hreflang="en" href="https://www.sospermesso.it/en/documenti-{{ doc.slug }}-rinnovo.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.sospermesso.it/documenti-{{ doc.slug }}-rinnovo.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles (absolute paths — EN pages output to /en/) -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/components.css">
+  <link rel="stylesheet" href="/src/styles/animations.css">
+  <link rel="stylesheet" href="/src/styles/mobile.css">
+  <link rel="stylesheet" href="/src/styles/mobile-fix.css">
+  <link rel="stylesheet" href="/src/styles/document-page.css">
+</head>
+<body class="page-rinnovo">
+
+  {% include "components/header.liquid" %}
+
+  <!-- BREADCRUMB -->
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container" style="position: relative;">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="/en/index.html" style="color: var(--taxi-yellow-dark);">Home</a> →
+        <a href="/en/documenti-questura.html" style="color: var(--taxi-yellow-dark);">Police Documents</a> →
+        <span>{{ doc.tipo }} - Renewal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white" style="padding: 1.5rem 0;">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1 class="page-title" style="margin-bottom: 0.25rem;">{{ doc.tipo }}</h1>
+        <p class="section-subtitle" style="margin-bottom: 0.5rem;">Documents for <strong>Renewal</strong></p>
+        <a href="/en/documenti-{{ doc.slug }}-primo.html" class="quick-switch-link">
+          See also: First Issue →
+        </a>
+        <a href="/en/permesso-{{ doc.slug }}.html" class="costi-anchor-link">
+          View the permit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMISSION METHOD CALLOUT -->
+  {%- assign methodLower = doc.method | downcase -%}
+  {%- if methodLower contains 'kit' -%}
+    {%- assign calloutClass = 'callout-kit' -%}
+    {%- assign calloutIcon = '📮' -%}
+    {%- assign calloutText = 'Submit via postal KIT (no Police visit needed)' -%}
+  {%- else -%}
+    {%- assign calloutClass = 'callout-questura' -%}
+    {%- assign calloutIcon = '🏛️' -%}
+    {%- assign calloutText = 'Bring documents to the Police Headquarters (you cannot use the postal KIT)' -%}
+  {%- endif -%}
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container" style="max-width: 700px;">
+      <div class="submission-callout {{ calloutClass }}">
+        <span class="callout-icon">{{ calloutIcon }}</span>
+        <div class="callout-text">{{ calloutText }}</div>
+      </div>
+    </div>
+  </section>
+
+  {%- if doc.slug contains 'attesa-occupazione' -%}
+  <!-- DISPUTED RENEWAL WARNING -->
+  <section class="section" style="padding: 0.5rem 0;">
+    <div class="container" style="max-width: 700px;">
+      <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Warning:</strong> Renewal of the job-seeking permit is controversial. Some Police offices deny it. We recommend consulting a lawyer or legal aid office before proceeding.
+          <br><br>
+          <a href="/en/aiuto-legale.html" style="color: #E53935; font-weight: 600;">→ Find legal help in your area</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  <!-- DOCUMENT CHECKLIST -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div class="card">
+        <h2>📋 Required documents</h2>
+        <p class="checklist-intro">Check off the documents you've already prepared. Your progress is saved automatically.</p>
+
+        {%- assign commonDocName = "Copy of previous permit (or loss report)" -%}
+        {%- assign commonDocNormalized = commonDocName | normalizeDocumentName -%}
+        {%- assign commonDocClass = commonDocNormalized | getDocumentClass -%}
+        {%- assign commonDocLabel = commonDocNormalized | escapeHtml -%}
+
+        <div class="doc-checklist" data-permit="{{ doc.slug }}-rinnovo-en">
+          <!-- Common document always first -->
+          <div class="{{ commonDocClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ doc.slug }}-rinnovo-en-0"
+                   data-doc="{{ commonDocNormalized | escapeHtml }}">
+            <span class="doc-label">{{ commonDocLabel }}</span>
+          </div>
+
+          <!-- Remaining documents (skip if duplicate of common doc) -->
+          {%- for docItem in doc.documents -%}
+            {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
+            {%- assign lowerDoc = normalizedDoc | downcase -%}
+            {%- unless lowerDoc contains "copy of previous permit" or lowerDoc contains "copia permesso precedente" -%}
+              {%- assign docClass = normalizedDoc | getDocumentClass -%}
+              {%- assign docLabel = normalizedDoc | escapeHtml -%}
+              {%- assign disputed = normalizedDoc | isDisputed -%}
+              {%- assign idx = forloop.index -%}
+          <div class="{{ docClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ doc.slug }}-rinnovo-en-{{ idx }}"
+                   data-doc="{{ normalizedDoc | escapeHtml }}">
+            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(may vary by Police office)</span>{% endif %}</span>
+          </div>
+            {%- endunless -%}
+          {%- endfor -%}
+        </div>
+
+        {%- assign totalDocs = doc.documents.size | plus: 1 -%}
+        <div class="checklist-progress">
+          <span class="progress-text">Completed: <span id="progress-count">0</span>/{{ totalDocs }}</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" style="margin-top: 1rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Note:</strong> Required documents may vary from one Police office to another.
+        </div>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 0.75rem;">
+        <span class="alert-icon">📅</span>
+        <div>
+          <strong>Remember:</strong> The renewal application should preferably be submitted <strong>before the expiry date</strong> or in any case <strong>within 60 days</strong> of expiry.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {%- assign notesSections = doc.docNotes | parseDocNotes -%}
+  {%- if notesSections.size > 0 -%}
+  <!-- DOCUMENT NOTES -->
+  <section class="section bg-off-white">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">📝 Additional document information</h2>
+      {%- for section in notesSections -%}
+      <div class="card" style="margin-bottom: 1rem;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h3>
+        {{ section.content }}
+      </div>
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- if doc.costBollettino or doc.costMarcaBollo -%}
+  <!-- COSTS -->
+  <section class="section bg-off-white" id="quanto-costa">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">💰 How much does it cost?</h2>
+      <div class="card">
+        <ul class="costi-list">
+          {%- if doc.costBollettino -%}
+          <li class="costi-item">
+            <span class="costi-label">Postal payment slip <span class="costi-note">to pay at the Post Office</span></span>
+            <span class="costi-amount">€ {{ doc.costBollettino }}</span>
+          </li>
+          {%- endif -%}
+          {%- if doc.costMarcaBollo -%}
+          <li class="costi-item">
+            <span class="costi-label">Revenue stamp <span class="costi-note">to buy at a tobacco shop</span></span>
+            <span class="costi-amount">€ {{ doc.costMarcaBollo }}</span>
+          </li>
+          {%- endif -%}
+          {%- assign methodLowerCosti = doc.method | downcase -%}
+          {%- if methodLowerCosti contains 'kit' -%}
+          <li class="costi-item">
+            <span class="costi-label">Postal kit <span class="costi-note">to buy at the Post Office</span></span>
+            <span class="costi-amount">€ 30,00</span>
+          </li>
+          {%- endif -%}
+        </ul>
+        <div class="costi-total">
+          <span class="costi-total-label">Total</span>
+          <span class="costi-total-amount">€
+            {%- assign total = 0 -%}
+            {%- if doc.costBollettino -%}{%- assign total = total | plus: doc.costBollettino -%}{%- endif -%}
+            {%- if doc.costMarcaBollo -%}{%- assign total = total | plus: doc.costMarcaBollo -%}{%- endif -%}
+            {%- assign methodLowerTotal = doc.method | downcase -%}
+            {%- if methodLowerTotal contains 'kit' -%}{%- assign total = total | plus: 30 -%}{%- endif -%}
+            {{ total }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {% include "components/footer.liquid" %}
+
+  <script src="/src/scripts/app.js"></script>
+  <script>
+    // Checklist persistence with localStorage
+    (function() {
+      var permitKey = '{{ doc.slug }}-rinnovo-en';
+      var checkboxes = document.querySelectorAll('.doc-checkbox');
+      var progressCount = document.getElementById('progress-count');
+      var progressFill = document.getElementById('progress-fill');
+
+      function loadState() {
+        var saved = localStorage.getItem('checklist-' + permitKey);
+        if (saved) {
+          try {
+            var state = JSON.parse(saved);
+            state.forEach(function(item) {
+              var checkbox = document.getElementById(item.id);
+              if (checkbox) checkbox.checked = item.checked;
+            });
+          } catch (e) {
+            console.warn('Failed to load checklist state:', e);
+          }
+        }
+        updateProgress();
+      }
+
+      function saveState() {
+        var state = Array.from(checkboxes).map(function(cb) {
+          return { id: cb.id, checked: cb.checked };
+        });
+        localStorage.setItem('checklist-' + permitKey, JSON.stringify(state));
+        updateProgress();
+      }
+
+      function updateProgress() {
+        var total = checkboxes.length;
+        var checked = Array.from(checkboxes).filter(function(cb) { return cb.checked; }).length;
+        progressCount.textContent = checked;
+        progressFill.style.width = (total > 0 ? (checked / total) * 100 : 0) + '%';
+      }
+
+      checkboxes.forEach(function(cb) { cb.addEventListener('change', saveState); });
+      document.addEventListener('DOMContentLoaded', loadState);
+    })();
+  </script>
+</body>
+</html>
