@@ -1,0 +1,241 @@
+---
+pagination:
+  data: documentsFr.primo
+  size: 1
+  alias: doc
+permalink: "fr/documenti-{{ doc.slug }}-primo.html"
+layout: false
+lang: fr
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documents requis pour le premier titre du permis pour {{ doc.tipo }}">
+  <title>Documents {{ doc.tipo }} - Premier titre - SOS Permesso</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/IMAGES/logo-full.png">
+  <link rel="shortcut icon" type="image/png" href="/IMAGES/logo-full.png">
+  <link rel="apple-touch-icon" href="/IMAGES/logo-full.png">
+
+  <!-- hreflang -->
+  <link rel="canonical" href="https://www.sospermesso.it/fr/documenti-{{ doc.slug }}-primo.html">
+  <link rel="alternate" hreflang="it" href="https://www.sospermesso.it/documenti-{{ doc.slug }}-primo.html">
+  <link rel="alternate" hreflang="en" href="https://www.sospermesso.it/en/documenti-{{ doc.slug }}-primo.html">
+  <link rel="alternate" hreflang="fr" href="https://www.sospermesso.it/fr/documenti-{{ doc.slug }}-primo.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.sospermesso.it/documenti-{{ doc.slug }}-primo.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles (absolute paths — FR pages output to /fr/) -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/components.css">
+  <link rel="stylesheet" href="/src/styles/animations.css">
+  <link rel="stylesheet" href="/src/styles/mobile.css">
+  <link rel="stylesheet" href="/src/styles/mobile-fix.css">
+  <link rel="stylesheet" href="/src/styles/document-page.css">
+</head>
+<body class="page-primo">
+
+  {% include "components/header.liquid" %}
+
+  <!-- BREADCRUMB -->
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container" style="position: relative;">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="/fr/index.html" style="color: var(--taxi-yellow-dark);">Accueil</a> →
+        <a href="/fr/documenti-questura.html" style="color: var(--taxi-yellow-dark);">Documents pour la Questura</a> →
+        <span>{{ doc.tipo }} - Premier titre</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white" style="padding: 1.5rem 0;">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1 class="page-title" style="margin-bottom: 0.25rem;">{{ doc.tipo }}</h1>
+        <p class="section-subtitle" style="margin-bottom: 0.5rem;">Documents pour <strong>Premier titre</strong></p>
+        <a href="/fr/documenti-{{ doc.slug }}-rinnovo.html" class="quick-switch-link">
+          Voir aussi : Renouvellement →
+        </a>
+        <a href="/fr/permesso-{{ doc.slug }}.html" class="costi-anchor-link">
+          Voir le permis
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMISSION METHOD CALLOUT -->
+  {%- assign methodLower = doc.method | downcase -%}
+  {%- if methodLower contains 'kit' -%}
+    {%- assign calloutClass = 'callout-kit' -%}
+    {%- assign calloutIcon = '📮' -%}
+    {%- assign calloutText = 'Déposer via kit postal (pas besoin d\'aller à la Questura)' -%}
+  {%- else -%}
+    {%- assign calloutClass = 'callout-questura' -%}
+    {%- assign calloutIcon = '🏛️' -%}
+    {%- assign calloutText = 'Apporter les documents à la Questura (le kit postal n\'est pas utilisable)' -%}
+  {%- endif -%}
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container" style="max-width: 700px;">
+      <div class="submission-callout {{ calloutClass }}">
+        <span class="callout-icon">{{ calloutIcon }}</span>
+        <div class="callout-text">{{ calloutText }}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENT CHECKLIST -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div class="card">
+        <h2>📋 Documents requis</h2>
+        <p class="checklist-intro">Cochez les documents que vous avez déjà préparés. Votre progrès est sauvegardé automatiquement.</p>
+
+        <div class="doc-checklist" data-permit="{{ doc.slug }}-primo-fr">
+          {%- for docItem in doc.documents -%}
+            {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
+            {%- assign docClass = normalizedDoc | getDocumentClass -%}
+            {%- assign docLabel = normalizedDoc | escapeHtml -%}
+            {%- assign disputed = normalizedDoc | isDisputed -%}
+          <div class="{{ docClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ doc.slug }}-primo-fr-{{ forloop.index0 }}"
+                   data-doc="{{ normalizedDoc | escapeHtml }}">
+            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(peut varier selon la Questura)</span>{% endif %}</span>
+          </div>
+          {%- endfor -%}
+        </div>
+
+        <div class="checklist-progress">
+          <span class="progress-text">Complété : <span id="progress-count">0</span>/{{ doc.documents.size }}</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" style="margin-top: 1rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Note :</strong> Les documents requis peuvent varier d'une Questura à l'autre.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {%- assign notesSections = doc.docNotes | parseDocNotes -%}
+  {%- if notesSections.size > 0 -%}
+  <!-- DOCUMENT NOTES -->
+  <section class="section bg-off-white">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">📝 Informations supplémentaires sur les documents</h2>
+      {%- for section in notesSections -%}
+      <div class="card" style="margin-bottom: 1rem;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h3>
+        {{ section.content }}
+      </div>
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- if doc.costBollettino or doc.costMarcaBollo -%}
+  <!-- COSTS -->
+  <section class="section bg-off-white" id="quanto-costa">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">💰 Combien ça coûte ?</h2>
+      <div class="card">
+        <ul class="costi-list">
+          {%- if doc.costBollettino -%}
+          <li class="costi-item">
+            <span class="costi-label">Bon de paiement postal <span class="costi-note">à payer à la Poste</span></span>
+            <span class="costi-amount">€ {{ doc.costBollettino }}</span>
+          </li>
+          {%- endif -%}
+          {%- if doc.costMarcaBollo -%}
+          <li class="costi-item">
+            <span class="costi-label">Timbre fiscal <span class="costi-note">à acheter chez un buraliste</span></span>
+            <span class="costi-amount">€ {{ doc.costMarcaBollo }}</span>
+          </li>
+          {%- endif -%}
+          {%- assign methodLowerCosti = doc.method | downcase -%}
+          {%- if methodLowerCosti contains 'kit' -%}
+          <li class="costi-item">
+            <span class="costi-label">Kit postal <span class="costi-note">à acheter à la Poste</span></span>
+            <span class="costi-amount">€ 30,00</span>
+          </li>
+          {%- endif -%}
+        </ul>
+        <div class="costi-total">
+          <span class="costi-total-label">Total</span>
+          <span class="costi-total-amount">€
+            {%- assign total = 0 -%}
+            {%- if doc.costBollettino -%}{%- assign total = total | plus: doc.costBollettino -%}{%- endif -%}
+            {%- if doc.costMarcaBollo -%}{%- assign total = total | plus: doc.costMarcaBollo -%}{%- endif -%}
+            {%- assign methodLowerTotal = doc.method | downcase -%}
+            {%- if methodLowerTotal contains 'kit' -%}{%- assign total = total | plus: 30 -%}{%- endif -%}
+            {{ total }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {% include "components/footer.liquid" %}
+
+  <script src="/src/scripts/app.js"></script>
+  <script>
+    // Checklist persistence with localStorage
+    (function() {
+      var permitKey = '{{ doc.slug }}-primo-fr';
+      var checkboxes = document.querySelectorAll('.doc-checkbox');
+      var progressCount = document.getElementById('progress-count');
+      var progressFill = document.getElementById('progress-fill');
+
+      function loadState() {
+        var saved = localStorage.getItem('checklist-' + permitKey);
+        if (saved) {
+          try {
+            var state = JSON.parse(saved);
+            state.forEach(function(item) {
+              var checkbox = document.getElementById(item.id);
+              if (checkbox) checkbox.checked = item.checked;
+            });
+          } catch (e) {
+            console.warn('Failed to load checklist state:', e);
+          }
+        }
+        updateProgress();
+      }
+
+      function saveState() {
+        var state = Array.from(checkboxes).map(function(cb) {
+          return { id: cb.id, checked: cb.checked };
+        });
+        localStorage.setItem('checklist-' + permitKey, JSON.stringify(state));
+        updateProgress();
+      }
+
+      function updateProgress() {
+        var total = checkboxes.length;
+        var checked = Array.from(checkboxes).filter(function(cb) { return cb.checked; }).length;
+        progressCount.textContent = checked;
+        progressFill.style.width = (total > 0 ? (checked / total) * 100 : 0) + '%';
+      }
+
+      checkboxes.forEach(function(cb) { cb.addEventListener('change', saveState); });
+      document.addEventListener('DOMContentLoaded', loadState);
+    })();
+  </script>
+</body>
+</html>

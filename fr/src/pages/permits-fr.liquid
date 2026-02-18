@@ -1,0 +1,132 @@
+---
+pagination:
+  data: permitsFr
+  size: 1
+  alias: permit
+permalink: "fr/permesso-{{ permit.slug }}.html"
+layout: layouts/base.liquid
+title: "Permis pour {{ permit.tipo }}"
+lang: fr
+description: "Permis de séjour {{ permit.tipo }} - informations, conditions, documents et démarches"
+eleventyExcludeFromCollections: true
+---
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="/fr/index.html">Accueil</a> →
+          <a href="/fr/database.html">Base de données</a> →
+          <span>Permis pour {{ permit.tipo }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">{{ permit.emoji }}</span>
+        <h1 class="page-title">Permis pour {{ permit.tipo }}</h1>
+      </div>
+    </div>
+  </section>
+
+{% if permit.isPlaceholder == true %}
+  <!-- PLACEHOLDER PAGE -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card text-center" style="padding: 3rem;">
+        <span style="font-size: 4rem;">{{ permit.emoji }}</span>
+        <h2 style="margin: 1rem 0;">Contenu à venir</h2>
+        <p style="color: var(--gray-medium); max-width: 500px; margin: 0 auto 1.5rem;">
+          Nous travaillons encore à compléter les informations
+          sur ce permis de séjour.
+        </p>
+        <a href="https://form.typeform.com/to/USx16QN3"
+           class="btn btn-primary"
+           target="_blank"
+           rel="noopener noreferrer">
+          Aider
+        </a>
+      </div>
+    </div>
+  </section>
+
+{% else %}
+  <!-- STANDARD PERMIT PAGE -->
+  <!-- DOCUMENT CTA -->
+  <section class="section" style="padding: 1.5rem 0;">
+    <div class="container" style="max-width: 900px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+        <a href="/fr/documenti-{{ permit.slug }}-primo.html" class="btn btn-primary">
+          Documents pour premier titre
+        </a>
+        <a href="/fr/documenti-{{ permit.slug }}-rinnovo.html" class="btn btn-rinnovo">
+          Documents pour renouvellement
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      {% for section in permit.sections %}
+      <!-- Section {{ forloop.index }}: {{ section.question }} -->
+      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }};">
+        <h2>{{ section.question }}</h2>
+        {{ section.content }}
+      </div>
+      {% endfor %}
+
+      <!-- CTA -->
+      <div class="alert alert-info">
+        <span class="alert-icon">❓</span>
+        <div>
+          Vous avez d'autres questions sur le permis pour {{ permit.tipo }} ?
+          <button onclick="openContactModal()" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Contactez-nous
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+{% endif %}
+
+  <!-- RELATED -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Vous pourriez aussi être intéressé par</h2>
+      <div class="grid grid-3">
+        <a href="/fr/database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Tous les permis</h3>
+        </a>
+        <a href="/fr/documenti-questura.html" class="card card-link card-compact">
+          <span class="card-icon">📋</span>
+          <h3 class="card-title">Documents pour la Questura</h3>
+        </a>
+        <a href="/fr/dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">📖</span>
+          <h3 class="card-title">Dictionnaire</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Container -->
+  <div id="contact-form-container"></div>
+
+  <script>
+    // Load contact form
+    fetch('/src/components/contact-form.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('contact-form-container').innerHTML = html;
+      });
+  </script>
