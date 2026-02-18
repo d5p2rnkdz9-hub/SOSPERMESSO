@@ -132,10 +132,13 @@
 **Success Criteria** (what must be TRUE):
 1. Running `npm run translate --lang fr` produces French translations of all permit Q&A sections in Notion
 2. Re-running the command with no source changes skips all sections (hashes match, zero API calls)
-3. French output consistently applies the FR glossary (e.g., "permesso di soggiorno" → "titre de séjour")
+3. French output consistently applies the FR glossary (e.g., "permesso di soggiorno" -> "titre de sejour")
 
-**Status:** Not started
-**Plans:** TBD
+**Status:** Planning complete
+**Plans:** 1 plan
+
+Plans:
+- [ ] 51-01-PLAN.md -- Parameterize translate-notion.js for FR, create FR glossary, add npm scripts
 
 ---
 
@@ -203,13 +206,13 @@
 | 48. Translation Script | v3.2 | 1/1 | ✓ Complete | 2026-02-18 |
 | 49. EN Page Generation | v3.2 | 3/3 | ✓ Complete | 2026-02-18 |
 | 50. Static Pages + Cleanup | v3.2 | 2/2 | ✓ Complete | 2026-02-18 |
-| 51. Translation Infrastructure | v4.0 | 0/? | Not started | - |
+| 51. Translation Infrastructure | v4.0 | 0/1 | Planning complete | - |
 | 52. Notion Database | v4.0 | 0/? | Not started | - |
 | 53. FR Page Generation | v4.0 | 0/? | Not started | - |
 | 54. SEO | v4.0 | 0/? | Not started | - |
 
 ---
 
-*Roadmap created: 2026-02-18 — v4.0 FR + ES Translation*
-*Revised: 2026-02-18 — scoped to FR only; ES deferred to v4.1*
+*Roadmap created: 2026-02-18 -- v4.0 FR + ES Translation*
+*Revised: 2026-02-18 -- scoped to FR only; ES deferred to v4.1*
 *Previous milestone: v3.2 (Phases 47-50) shipped 2026-02-18*
