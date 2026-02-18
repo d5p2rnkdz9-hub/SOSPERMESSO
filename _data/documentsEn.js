@@ -7,7 +7,8 @@
 require('dotenv').config();
 const { Client } = require("@notionhq/client");
 
-const EN_DATABASE_ID = process.env.NOTION_DATABASE_EN_ID;
+// EN Notion database ID (hardcoded like IT — no env var needed)
+const EN_DATABASE_ID = "c1dc0271-f1f4-4147-9464-391884f4dfad";
 const IT_DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
 
 function slugify(name) {
@@ -77,8 +78,8 @@ async function buildItSlugMap(notion) {
 }
 
 module.exports = async function() {
-  if (!process.env.NOTION_API_KEY || !EN_DATABASE_ID) {
-    console.warn('[documentsEn.js] NOTION_API_KEY or NOTION_DATABASE_EN_ID not set - returning empty arrays');
+  if (!process.env.NOTION_API_KEY) {
+    console.warn('[documentsEn.js] NOTION_API_KEY not set - returning empty arrays');
     return { primo: [], rinnovo: [] };
   }
 

@@ -11,8 +11,8 @@ const { Client } = require("@notionhq/client");
 const cache = require('../scripts/notion-cache');
 const { escapeHtml } = require('../scripts/templates/helpers.js');
 
-// EN Notion database ID (set by translate-notion.js)
-const EN_DATABASE_ID = process.env.NOTION_DATABASE_EN_ID;
+// EN Notion database ID (hardcoded like IT — no env var needed)
+const EN_DATABASE_ID = "c1dc0271-f1f4-4147-9464-391884f4dfad";
 
 // IT database ID for slug resolution
 const IT_DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
@@ -333,8 +333,8 @@ function getEmojiForPermit(tipo) {
  * Fetch and transform EN permit data from Notion
  */
 module.exports = async function() {
-  if (!process.env.NOTION_API_KEY || !EN_DATABASE_ID) {
-    console.warn('[permitsEn.js] NOTION_API_KEY or NOTION_DATABASE_EN_ID not set - returning empty array');
+  if (!process.env.NOTION_API_KEY) {
+    console.warn('[permitsEn.js] NOTION_API_KEY not set - returning empty array');
     return [];
   }
 
