@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 /**
- * Translate IT Notion permit content to EN via Claude API
- * Creates/maintains an EN Notion database with translated content
+ * Translate IT Notion permit content to target language (EN/FR) via Claude API
+ * Creates/maintains a translated Notion database with translated content
  *
- * Phase 48: Translation Script
+ * Phase 48: Translation Script (extended Phase 51: multi-language support)
  *
  * Usage:
- *   node scripts/translate-notion.js              # Full run
+ *   node scripts/translate-notion.js              # Full run (EN default)
+ *   node scripts/translate-notion.js --lang fr    # Translate to French
  *   node scripts/translate-notion.js --dry-run    # List permits, no API calls
  *   node scripts/translate-notion.js --permit studio  # Single permit
  *   node scripts/translate-notion.js --force      # Re-translate everything
- *   node scripts/translate-notion.js --verify     # Verify EN pages after write
+ *   node scripts/translate-notion.js --verify     # Verify target pages after write
  */
 require('dotenv').config();
 const { Client } = require('@notionhq/client');
@@ -25,7 +26,6 @@ const glossary = require('./translation-glossary.json');
 // ─── Constants ───────────────────────────────────────────────────────────────
 
 const IT_DATABASE_ID = '3097355e-7f7f-819c-af33-d0fd0739cc5b';
-const TRANSLATION_INDEX_PATH = path.join(cache.CACHE_DIR, 'translation-index.json');
 const NOTION_DELAY = 350;
 const CLAUDE_DELAY = 500;
 const CLAUDE_MODEL = 'claude-sonnet-4-20250514';
@@ -55,6 +55,7 @@ function parseArgs() {
     verify: false,
     permit: null,
     help: false,
+    lang: 'en',
   };
 
   for (let i = 0; i < args.length; i++) {
@@ -66,6 +67,9 @@ function parseArgs() {
       case '--permit':
         opts.permit = args[++i];
         break;
+      case '--lang':
+        opts.lang = args[++i];
+        break;
     }
   }
 
@@ -74,37 +78,95 @@ function parseArgs() {
 
 function showHelp() {
   console.log(`
-Translate IT Notion permits to EN via Claude API
+Translate IT Notion permits to target language via Claude API
 
 Usage: node scripts/translate-notion.js [options]
 
 Options:
+  --lang <code>      Target language (en, fr). Default: en
   --dry-run          List permits, no API calls
   --permit <slug>    Translate a single permit
   --force            Re-translate everything (ignore hashes)
-  --verify           Verify EN pages after writing
+  --verify           Verify target pages after writing
   --help, -h         Show this help
 `);
+}
+
+// ─── Language Config ─────────────────────────────────────────────────────────
+
+/**
+ * Returns language-specific configuration for the given language code.
+ * Exits with error if the language is unsupported.
+ */
+function getLangConfig(lang) {
+  const configs = {
+    en: {
+      dbEnvVar: 'NOTION_DATABASE_EN_ID',
+      parentEnvVar: 'NOTION_EN_PARENT_PAGE_ID',
+      translationIndexPath: path.join(cache.CACHE_DIR, 'translation-index-en.json'),
+      dbTitle: 'EN - Permits Database',
+      langName: 'English',
+      langCode: 'en',
+      glossaryKey: 'terms', // backward compat: EN uses existing 'terms' key
+    },
+    fr: {
+      dbEnvVar: 'NOTION_DATABASE_FR_ID',
+      parentEnvVar: 'NOTION_FR_PARENT_PAGE_ID',
+      translationIndexPath: path.join(cache.CACHE_DIR, 'translation-index-fr.json'),
+      dbTitle: 'FR - Permits Database',
+      langName: 'French',
+      langCode: 'fr',
+      glossaryKey: 'termsFr',
+    },
+  };
+
+  const config = configs[lang];
+  if (!config) {
+    console.error(`Unsupported language: "${lang}". Supported: ${Object.keys(configs).join(', ')}`);
+    process.exit(1);
+  }
+  return config;
 }
 
 // ─── Translation Index (Plan 48-02) ─────────────────────────────────────────
 
 /**
- * Load translation index mapping IT pages to EN pages + section hashes
- * Schema: { pages: { itPageId: { enPageId, lastEditedTime, propertyHash, sectionHashes: { question: hash } } } }
+ * Migrate old translation-index.json (EN-only) to translation-index-en.json
+ * Only runs once; safe to call on every startup.
  */
-async function loadTranslationIndex() {
+async function migrateTranslationIndex() {
+  const oldPath = path.join(cache.CACHE_DIR, 'translation-index.json');
+  const newEnPath = path.join(cache.CACHE_DIR, 'translation-index-en.json');
   try {
-    const data = await fs.readFile(TRANSLATION_INDEX_PATH, 'utf-8');
+    await fs.access(oldPath);
+    try {
+      await fs.access(newEnPath);
+      // New file already exists — leave both, old file becomes stale but harmless
+    } catch {
+      await fs.rename(oldPath, newEnPath);
+      console.log('[translate] Migrated translation-index.json -> translation-index-en.json');
+    }
+  } catch {
+    // Old file doesn't exist, nothing to migrate
+  }
+}
+
+/**
+ * Load translation index mapping IT pages to target pages + section hashes
+ * Schema: { pages: { itPageId: { targetPageId, lastEditedTime, propertyHash, sectionHashes: { question: hash } } } }
+ */
+async function loadTranslationIndex(indexPath) {
+  try {
+    const data = await fs.readFile(indexPath, 'utf-8');
     return JSON.parse(data);
   } catch {
     return { pages: {} };
   }
 }
 
-async function saveTranslationIndex(index) {
-  await fs.mkdir(path.dirname(TRANSLATION_INDEX_PATH), { recursive: true });
-  await fs.writeFile(TRANSLATION_INDEX_PATH, JSON.stringify(index, null, 2), 'utf-8');
+async function saveTranslationIndex(index, indexPath) {
+  await fs.mkdir(path.dirname(indexPath), { recursive: true });
+  await fs.writeFile(indexPath, JSON.stringify(index, null, 2), 'utf-8');
 }
 
 // ─── Notion Helpers ──────────────────────────────────────────────────────────
@@ -390,50 +452,52 @@ function collectTranslatableSegments(blocks) {
   return segments;
 }
 
-// ─── EN Database Management (Plan 48-01) ─────────────────────────────────────
+// ─── Target Database Management ───────────────────────────────────────────────
 
 /**
- * Ensure the EN database exists. Create if missing.
- * Returns { enDbId, enDataSourceId }
+ * Ensure the target language database exists. Create if missing.
+ * Returns { targetDbId, targetDataSourceId }
  */
-async function ensureEnDatabase(notion) {
+async function ensureTargetDatabase(notion, langConfig) {
+  const langLabel = langConfig.langCode.toUpperCase();
+
   // Check if already stored in env
-  if (process.env.NOTION_DATABASE_EN_ID) {
+  if (process.env[langConfig.dbEnvVar]) {
     try {
-      const db = await notion.databases.retrieve({ database_id: process.env.NOTION_DATABASE_EN_ID });
+      const db = await notion.databases.retrieve({ database_id: process.env[langConfig.dbEnvVar] });
       const dsId = db.data_sources?.[0]?.id;
-      if (dsId) return { enDbId: process.env.NOTION_DATABASE_EN_ID, enDataSourceId: dsId };
+      if (dsId) return { targetDbId: process.env[langConfig.dbEnvVar], targetDataSourceId: dsId };
     } catch {
-      console.warn('[translate] Stored EN database ID is invalid, will create new');
+      console.warn(`[translate] Stored ${langLabel} database ID is invalid, will create new`);
     }
   }
 
-  if (!process.env.NOTION_EN_PARENT_PAGE_ID) {
+  if (!process.env[langConfig.parentEnvVar]) {
     throw new Error(
-      'NOTION_EN_PARENT_PAGE_ID not set in .env. ' +
-      'Create a page in Notion to host the EN database, then add its ID to .env'
+      `${langConfig.parentEnvVar} not set in .env. ` +
+      `Create a page in Notion to host the ${langLabel} database, then add its ID to .env`
     );
   }
 
-  console.log('[translate] Creating EN database...');
+  console.log(`[translate] Creating ${langLabel} database...`);
 
   // Step 1: Create database (SDK v5 — properties go on data source)
   const db = await notion.databases.create({
-    parent: { type: 'page_id', page_id: process.env.NOTION_EN_PARENT_PAGE_ID },
-    title: [{ text: { content: 'EN - Permits Database' } }],
+    parent: { type: 'page_id', page_id: process.env[langConfig.parentEnvVar] },
+    title: [{ text: { content: langConfig.dbTitle } }],
     properties: {
       'Name': { title: {} },
     },
   });
 
-  const enDbId = db.id;
-  const enDataSourceId = db.data_sources?.[0]?.id;
-  console.log(`[translate] Created EN database: ${enDbId} (data source: ${enDataSourceId})`);
+  const targetDbId = db.id;
+  const targetDataSourceId = db.data_sources?.[0]?.id;
+  console.log(`[translate] Created ${langLabel} database: ${targetDbId} (data source: ${targetDataSourceId})`);
 
   // Step 2: Add custom properties to the data source
-  if (enDataSourceId) {
+  if (targetDataSourceId) {
     await notion.dataSources.update({
-      data_source_id: enDataSourceId,
+      data_source_id: targetDataSourceId,
       properties: {
         'Doc primo rilascio': { multi_select: {} },
         'Doc rinnovo': { multi_select: {} },
@@ -443,15 +507,15 @@ async function ensureEnDatabase(notion) {
         'IT Page ID': { rich_text: {} },
       },
     });
-    console.log('[translate] Added properties to EN data source');
+    console.log(`[translate] Added properties to ${langLabel} data source`);
   }
 
   // Step 3: Save to .env
   const envPath = path.join(process.cwd(), '.env');
-  await fs.appendFile(envPath, `\nNOTION_DATABASE_EN_ID=${enDbId}\n`);
-  console.log('[translate] Saved NOTION_DATABASE_EN_ID to .env');
+  await fs.appendFile(envPath, `\n${langConfig.dbEnvVar}=${targetDbId}\n`);
+  console.log(`[translate] Saved ${langConfig.dbEnvVar} to .env`);
 
-  return { enDbId, enDataSourceId };
+  return { targetDbId, targetDataSourceId };
 }
 
 // ─── Claude Translation (Plan 48-01) ─────────────────────────────────────────
@@ -459,16 +523,19 @@ async function ensureEnDatabase(notion) {
 /**
  * Build the system prompt for Claude with glossary terms
  */
-function buildTranslationPrompt() {
-  const termLines = Object.entries(glossary.terms)
-    .map(([it, en]) => `  "${it}" → "${en}"`)
+function buildTranslationPrompt(langConfig) {
+  const termsKey = langConfig.glossaryKey;
+  const terms = glossary[termsKey] || glossary.terms;
+
+  const termLines = Object.entries(terms)
+    .map(([it, target]) => `  "${it}" → "${target}"`)
     .join('\n');
 
   const dntLines = glossary.doNotTranslate
     .map(t => `  - ${t}`)
     .join('\n');
 
-  return `You are a professional translator specializing in Italian immigration law and bureaucracy. Translate Italian text to English.
+  return `You are a professional translator specializing in Italian immigration law and bureaucracy. Translate Italian text to ${langConfig.langName}.
 
 RULES:
 1. Use the glossary consistently for all occurrences.
@@ -530,7 +597,7 @@ async function translateText(client, systemPrompt, text, retries = 3) {
  * Batch translate multiple text segments via one Claude call
  * Returns Map<originalText, translatedText>
  */
-async function batchTranslateSegments(client, systemPrompt, texts) {
+async function batchTranslateSegments(client, systemPrompt, texts, langConfig) {
   if (texts.length === 0) return new Map();
 
   // Protect cost amounts by replacing with placeholders before translation
@@ -552,7 +619,7 @@ async function batchTranslateSegments(client, systemPrompt, texts) {
 
   // Format as numbered lines
   const numbered = protectedTexts.map((t, i) => `${i + 1}: ${t}`).join('\n');
-  const prompt = `Translate these ${texts.length} lines from Italian to English:\n\n${numbered}`;
+  const prompt = `Translate these ${texts.length} lines from Italian to ${langConfig.langName}:\n\n${numbered}`;
 
   await delay(CLAUDE_DELAY);
   const response = await translateText(client, systemPrompt, prompt);
@@ -592,7 +659,7 @@ async function batchTranslateSegments(client, systemPrompt, texts) {
  * Translate all segments in a section's blocks using translation memory
  * Returns translated blocks in Notion create format
  */
-async function translateSectionBlocks(client, systemPrompt, blocks, memory) {
+async function translateSectionBlocks(client, systemPrompt, blocks, memory, langConfig) {
   const segments = collectTranslatableSegments(blocks);
 
   // Check translation memory for each segment
@@ -613,7 +680,7 @@ async function translateSectionBlocks(client, systemPrompt, blocks, memory) {
   if (uncached.length > 0) {
     // Deduplicate
     const unique = [...new Set(uncached)];
-    newTranslations = await batchTranslateSegments(client, systemPrompt, unique);
+    newTranslations = await batchTranslateSegments(client, systemPrompt, unique, langConfig);
 
     // Store in translation memory
     for (const [source, target] of newTranslations) {
@@ -777,7 +844,7 @@ function segmentToCreateFormat(segment) {
  * Translate all permit properties (title, doc names, methods, notes)
  * Returns properties object ready for Notion page create/update
  */
-async function translateAllProperties(client, systemPrompt, itPage, memory) {
+async function translateAllProperties(client, systemPrompt, itPage, memory, langConfig) {
   const props = itPage.properties;
   const textsToTranslate = [];
 
@@ -819,7 +886,7 @@ async function translateAllProperties(client, systemPrompt, itPage, memory) {
 
   let newTranslations = new Map();
   if (uncached.length > 0) {
-    newTranslations = await batchTranslateSegments(client, systemPrompt, uncached);
+    newTranslations = await batchTranslateSegments(client, systemPrompt, uncached, langConfig);
     for (const [source, target] of newTranslations) {
       tm.storeTranslation(source, target, memory);
     }
@@ -845,7 +912,7 @@ async function translateAllProperties(client, systemPrompt, itPage, memory) {
     return (tr(text) || text).replace(/,/g, ';');
   }
 
-  // Build translated properties (EN DB uses "Name" as title, not "Nome permesso")
+  // Build translated properties (target DB uses "Name" as title, not "Nome permesso")
   const result = {
     'Name': {
       title: [{ text: { content: tr(title) || title } }],
@@ -876,22 +943,22 @@ async function translateAllProperties(client, systemPrompt, itPage, memory) {
   return result;
 }
 
-// ─── EN Page Write (Plan 48-01) ──────────────────────────────────────────────
+// ─── Target Page Write ────────────────────────────────────────────────────────
 
 /**
- * Find existing EN page for an IT page (uses search API — SDK v5 compat)
+ * Find existing target page for an IT page (uses search API — SDK v5 compat)
  */
-async function findEnPage(notion, enDataSourceId, itPageId) {
+async function findTargetPage(notion, targetDataSourceId, itPageId) {
   await delay(NOTION_DELAY);
   const response = await notion.search({
     filter: { property: 'object', value: 'page' },
     page_size: 100,
   });
 
-  // Filter to pages in our EN data source with matching IT Page ID
+  // Filter to pages in our target data source with matching IT Page ID
   const match = response.results.find(page => {
     const parentDs = page.parent?.data_source_id || page.parent?.database_id;
-    if (parentDs !== enDataSourceId) return false;
+    if (parentDs !== targetDataSourceId) return false;
     const storedId = (page.properties?.['IT Page ID']?.rich_text || [])
       .map(s => s.plain_text).join('');
     return storedId === itPageId;
@@ -901,55 +968,56 @@ async function findEnPage(notion, enDataSourceId, itPageId) {
 }
 
 /**
- * Write (create or update) an EN page
+ * Write (create or update) a target language page
  */
-async function writeEnPage(notion, enDataSourceId, itPage, translatedProps, translatedBlocks, index) {
+async function writeTargetPage(notion, targetDataSourceId, itPage, translatedProps, translatedBlocks, index, langConfig) {
+  const langLabel = langConfig.langCode.toUpperCase();
   const itPageId = itPage.id;
 
-  // Check if EN page already exists
-  let enPageId = index.pages[itPageId]?.enPageId;
-  let enPage = null;
+  // Check if target page already exists
+  let targetPageId = index.pages[itPageId]?.targetPageId;
+  let targetPage = null;
 
-  if (enPageId) {
+  if (targetPageId) {
     try {
-      enPage = await notion.pages.retrieve({ page_id: enPageId });
-      if (enPage.archived) enPage = null;
+      targetPage = await notion.pages.retrieve({ page_id: targetPageId });
+      if (targetPage.archived) targetPage = null;
     } catch {
-      enPage = null;
+      targetPage = null;
     }
   }
 
-  if (!enPage) {
+  if (!targetPage) {
     // Try to find by IT Page ID property
-    enPage = await findEnPage(notion, enDataSourceId, itPageId);
-    if (enPage) enPageId = enPage.id;
+    targetPage = await findTargetPage(notion, targetDataSourceId, itPageId);
+    if (targetPage) targetPageId = targetPage.id;
   }
 
-  if (enPage) {
+  if (targetPage) {
     // Update existing page properties
     await delay(NOTION_DELAY);
     await notion.pages.update({
-      page_id: enPage.id,
+      page_id: targetPage.id,
       properties: translatedProps,
     });
 
     // Delete existing blocks
     await delay(NOTION_DELAY);
-    const existing = await notion.blocks.children.list({ block_id: enPage.id, page_size: 100 });
+    const existing = await notion.blocks.children.list({ block_id: targetPage.id, page_size: 100 });
     for (const block of existing.results) {
       await delay(200);
       await notion.blocks.delete({ block_id: block.id });
     }
 
-    enPageId = enPage.id;
+    targetPageId = targetPage.id;
   } else {
     // Create new page (SDK v5: use data_source_id)
     await delay(NOTION_DELAY);
     const created = await notion.pages.create({
-      parent: { type: 'data_source_id', data_source_id: enDataSourceId },
+      parent: { type: 'data_source_id', data_source_id: targetDataSourceId },
       properties: translatedProps,
     });
-    enPageId = created.id;
+    targetPageId = created.id;
   }
 
   // Write translated blocks in batches
@@ -959,12 +1027,12 @@ async function writeEnPage(notion, enDataSourceId, itPage, translatedProps, tran
     const batch = flatBlocks.slice(i, i + MAX_BLOCKS_PER_APPEND);
     await delay(NOTION_DELAY);
     await notion.blocks.children.append({
-      block_id: enPageId,
+      block_id: targetPageId,
       children: batch,
     });
   }
 
-  return enPageId;
+  return targetPageId;
 }
 
 /**
@@ -998,23 +1066,24 @@ function flattenChildrenForWrite(blocks) {
 // ─── Deleted Permit Handling (Plan 48-03) ─────────────────────────────────────
 
 /**
- * Archive EN pages whose IT source has been removed
+ * Archive target pages whose IT source has been removed
  */
-async function handleDeletedPermits(notion, enDbId, currentItIds, index) {
+async function handleDeletedPermits(notion, targetDbId, currentItIds, index, langConfig) {
+  const langLabel = langConfig.langCode.toUpperCase();
   let archived = 0;
   const storedIds = Object.keys(index.pages);
 
   for (const itPageId of storedIds) {
     if (!currentItIds.has(itPageId)) {
-      const enPageId = index.pages[itPageId]?.enPageId;
-      if (enPageId) {
+      const targetPageId = index.pages[itPageId]?.targetPageId;
+      if (targetPageId) {
         try {
           await delay(NOTION_DELAY);
-          await notion.pages.update({ page_id: enPageId, archived: true });
-          console.log(`[translate] Archived EN page for deleted IT permit ${itPageId}`);
+          await notion.pages.update({ page_id: targetPageId, archived: true });
+          console.log(`[translate] Archived ${langLabel} page for deleted IT permit ${itPageId}`);
           archived++;
         } catch (err) {
-          console.warn(`[translate] Failed to archive EN page ${enPageId}: ${err.message}`);
+          console.warn(`[translate] Failed to archive ${langLabel} page ${targetPageId}: ${err.message}`);
         }
       }
       delete index.pages[itPageId];
@@ -1027,22 +1096,22 @@ async function handleDeletedPermits(notion, enDbId, currentItIds, index) {
 // ─── Verification (Plan 48-03) ───────────────────────────────────────────────
 
 /**
- * Verify an EN page has expected content
+ * Verify a target page has expected content
  */
-async function verifyEnPage(notion, enPageId, expectedBlockCount) {
+async function verifyTargetPage(notion, targetPageId, expectedBlockCount) {
   const errors = [];
 
   try {
     await delay(NOTION_DELAY);
-    const page = await notion.pages.retrieve({ page_id: enPageId });
+    const page = await notion.pages.retrieve({ page_id: targetPageId });
 
-    // Check title
-    const title = page.properties['Nome permesso']?.title?.[0]?.plain_text;
+    // Check title (target DB uses 'Name' as title property)
+    const title = page.properties['Name']?.title?.[0]?.plain_text;
     if (!title) errors.push('Missing title');
 
     // Check blocks
     await delay(NOTION_DELAY);
-    const blocks = await notion.blocks.children.list({ block_id: enPageId, page_size: 100 });
+    const blocks = await notion.blocks.children.list({ block_id: targetPageId, page_size: 100 });
     const actualCount = blocks.results.length;
 
     if (actualCount === 0) {
@@ -1085,6 +1154,10 @@ async function main() {
     return;
   }
 
+  // Resolve language config (exits on unsupported lang)
+  const langConfig = getLangConfig(opts.lang);
+  const langLabel = langConfig.langCode.toUpperCase();
+
   // Validate env vars
   if (!process.env.NOTION_API_KEY) {
     console.error('Error: NOTION_API_KEY not set in .env');
@@ -1123,23 +1196,27 @@ async function main() {
 
   // Dry run: just list permits and exit
   if (opts.dryRun) {
-    console.log('\n─── Dry Run: IT Permits ───────────────────────');
+    console.log(`\n─── Dry Run: IT Permits (target: ${langLabel}) ────────────`);
     for (const p of permits) {
       console.log(`  ${p.slug} — ${p.tipo} (${p.id})`);
     }
     console.log(`\n  Total: ${permits.length} permits`);
+    console.log(`  Target language: ${langConfig.langName}`);
     console.log('  No API calls made (--dry-run)\n');
     return;
   }
 
-  // Ensure EN database exists
-  const { enDbId, enDataSourceId } = await ensureEnDatabase(notion);
-  console.log(`[translate] EN database: ${enDbId} (data source: ${enDataSourceId})`);
+  // Migrate old translation-index.json -> translation-index-en.json (runs once)
+  await migrateTranslationIndex();
+
+  // Ensure target database exists
+  const { targetDbId, targetDataSourceId } = await ensureTargetDatabase(notion, langConfig);
+  console.log(`[translate] ${langLabel} database: ${targetDbId} (data source: ${targetDataSourceId})`);
 
   // Load translation state
-  const index = await loadTranslationIndex();
-  const memory = await tm.loadTranslationMemory('it', 'en');
-  const systemPrompt = buildTranslationPrompt();
+  const index = await loadTranslationIndex(langConfig.translationIndexPath);
+  const memory = await tm.loadTranslationMemory('it', opts.lang);
+  const systemPrompt = buildTranslationPrompt(langConfig);
 
   // Track stats
   const stats = {
@@ -1201,14 +1278,14 @@ async function main() {
       // Translate properties (if changed or new)
       let translatedProps;
       if (changes.isNew || changes.propertiesChanged) {
-        translatedProps = await translateAllProperties(anthropic, systemPrompt, permit, memory);
+        translatedProps = await translateAllProperties(anthropic, systemPrompt, permit, memory, langConfig);
         stats.apiCalls++;
       } else {
-        // Re-use existing properties (fetch from EN page)
-        const enPageId = index.pages[permit.id]?.enPageId;
-        if (enPageId) {
-          const enPage = await notion.pages.retrieve({ page_id: enPageId });
-          translatedProps = enPage.properties;
+        // Re-use existing properties (fetch from target page)
+        const targetPageId = index.pages[permit.id]?.targetPageId;
+        if (targetPageId) {
+          const targetPage = await notion.pages.retrieve({ page_id: targetPageId });
+          translatedProps = targetPage.properties;
         }
       }
 
@@ -1219,12 +1296,12 @@ async function main() {
 
         if (changes.isNew || changes.changedSections.includes(si)) {
           // Translate this section
-          const translated = await translateSectionBlocks(anthropic, systemPrompt, section.blocks, memory);
+          const translated = await translateSectionBlocks(anthropic, systemPrompt, section.blocks, memory, langConfig);
           allTranslatedBlocks.push(...translated);
           stats.apiCalls++;
         } else {
           // Re-translate using memory (all segments should be cached)
-          const translated = await translateSectionBlocks(anthropic, systemPrompt, section.blocks, memory);
+          const translated = await translateSectionBlocks(anthropic, systemPrompt, section.blocks, memory, langConfig);
           allTranslatedBlocks.push(...translated);
           // This shouldn't make API calls if memory has everything
         }
@@ -1236,8 +1313,8 @@ async function main() {
       stats.memoryMisses += newEntries;
       stats.memoryHits += (collectTranslatableSegments(blocks).length - newEntries);
 
-      // Write to EN database
-      const enPageId = await writeEnPage(notion, enDataSourceId, permit, translatedProps, allTranslatedBlocks, index);
+      // Write to target database
+      const targetPageId = await writeTargetPage(notion, targetDataSourceId, permit, translatedProps, allTranslatedBlocks, index, langConfig);
 
       // Update index
       const sectionHashes = {};
@@ -1245,7 +1322,7 @@ async function main() {
         sectionHashes[section.question] = hashSection(section.question, section.blocks);
       }
       index.pages[permit.id] = {
-        enPageId,
+        targetPageId,
         lastEditedTime: permit.last_edited_time,
         propertyHash: propHash,
         sectionHashes,
@@ -1253,20 +1330,20 @@ async function main() {
 
       // Verify if requested
       if (opts.verify) {
-        const errors = await verifyEnPage(notion, enPageId, allTranslatedBlocks.length);
+        const errors = await verifyTargetPage(notion, targetPageId, allTranslatedBlocks.length);
         if (errors.length > 0) {
-          console.log(`  ⚠ Verification issues: ${errors.join('; ')}`);
+          console.log(`  Warning: Verification issues: ${errors.join('; ')}`);
           stats.verifyErrors += errors.length;
         } else {
-          console.log(`  ✓ Verified`);
+          console.log(`  OK: Verified`);
         }
       }
 
-      console.log(`  ✓ Written to EN page ${enPageId}`);
+      console.log(`  OK: Written to ${langLabel} page ${targetPageId}`);
       stats.translated++;
 
     } catch (err) {
-      console.error(`  ✗ Error: ${err.message}`);
+      console.error(`  Error: ${err.message}`);
       stats.errors++;
     }
   }
@@ -1274,12 +1351,12 @@ async function main() {
   // Handle deleted permits (only on full runs)
   if (!opts.permit) {
     const currentItIds = new Set(itPermits.map(p => p.id));
-    stats.archived = await handleDeletedPermits(notion, enDbId, currentItIds, index);
+    stats.archived = await handleDeletedPermits(notion, targetDbId, currentItIds, index, langConfig);
   }
 
   // Save state
-  await saveTranslationIndex(index);
-  await tm.saveTranslationMemory('it', 'en', memory);
+  await saveTranslationIndex(index, langConfig.translationIndexPath);
+  await tm.saveTranslationMemory('it', opts.lang, memory);
 
   // Report
   generateReport(stats);
