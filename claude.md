@@ -20,7 +20,8 @@ These files contain everything needed for most tasks.
 
 **Only check Notion when the user explicitly requests it** (e.g., "check Notion", "sync with Notion", "what's in CHI FA COSA").
 
-Notion database URL: https://www.notion.so/2cd7355e7f7f80538130e9c246190699
+Notion task board URL: https://www.notion.so/2cd7355e7f7f80538130e9c246190699
+Notion permit database (LIVE): https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35
 
 When checking Notion:
 - Use `mcp__claude_ai_Notion__notion-search` to find tasks
@@ -90,20 +91,21 @@ Sito_Nuovo/
 │   ├── site.js                  # Site metadata (title, URL, etc.)
 │   ├── nav.js                   # Navigation structure
 │   ├── footer.js                # Footer data
-│   ├── documents.js             # Notion → document page data (async)
-│   ├── slugMap.js               # URL redirect mappings (19 entries)
-│   └── documentRedirects.js     # Generates 38 redirect page objects
+│   ├── permits.js               # Notion → IT permit page data (DB ID hardcoded)
+│   ├── permitsEn.js             # Notion → EN permit page data (DB ID hardcoded)
+│   ├── documents.js             # Notion → IT document page data (DB ID hardcoded)
+│   └── documentsEn.js           # Notion → EN document page data (DB ID hardcoded)
 ├── _site/                       # BUILD OUTPUT (generated, gitignored)
+│   ├── *.html                   # ALL pages output at ROOT level (flat)
+│   └── en/*.html                # EN pages at en/ prefix (same slugs as IT)
 ├── src/
-│   ├── pages/                   # Website subpages (~411 HTML files)
+│   ├── pages/                   # Source pages (11ty processes these)
 │   │   ├── database.html        # Database landing page
 │   │   ├── chi-siamo.html       # About us page
 │   │   ├── documenti-questura.html
-│   │   ├── permesso-*.html      # Individual permit pages (~67)
-│   │   ├── documenti-*.html     # Document requirement pages (~63 + 38 redirects)
-│   │   ├── documents-primo.liquid    # 11ty template for primo pages
-│   │   ├── documents-rinnovo.liquid  # 11ty template for rinnovo pages
-│   │   └── documents-redirects.liquid # 11ty template for redirect pages
+│   │   ├── permits.liquid       # 11ty pagination template → permesso-{slug}.html
+│   │   ├── documents-primo.liquid    # 11ty pagination template → documenti-{slug}-primo.html
+│   │   └── documents-rinnovo.liquid  # 11ty pagination template → documenti-{slug}-rinnovo.html
 │   ├── styles/                  # CSS files
 │   │   ├── main.css             # Base styles & color system (CSS variables)
 │   │   ├── components.css       # Component-specific styles
@@ -116,7 +118,14 @@ Sito_Nuovo/
 │   └── data/                    # Content data (homepage)
 │       ├── content-it.json      # Italian content
 │       └── content-en.json      # English content
-├── en/                          # English pages (same structure as src/pages/)
+├── en/                          # English pages (generated from Notion via 11ty)
+│   ├── index.html               # EN homepage (static)
+│   └── src/pages/               # EN static pages + pagination templates
+│       ├── database.html        # EN database landing (static)
+│       ├── documenti-questura.html # EN documents landing (static)
+│       ├── permits-en.liquid    # EN pagination template for permits
+│       ├── documents-primo-en.liquid  # EN pagination template for primo docs
+│       └── documents-rinnovo-en.liquid # EN pagination template for rinnovo docs
 ├── scripts/                     # Build scripts (Node.js)
 │   ├── build-documents.js       # Notion → document HTML (legacy, being replaced by 11ty)
 │   ├── build-permits.js         # Notion → permit HTML
@@ -135,7 +144,15 @@ Sito_Nuovo/
 
 Pages use front matter (---layout/title/lang---) and shared layouts via 11ty.
 Build: `npm run build` chains Notion content fetch + 11ty static generation.
-Output goes to _site/ and deploys to Netlify.
+Output goes to _site/ (ALL pages at root level, EN at en/ prefix) and deploys to Netlify.
+
+**IMPORTANT — URL Architecture:**
+- ALL pages output at ROOT level in `_site/`. No `src/pages/` nesting in URLs.
+- Permits: `permesso-{slug}.html`, Documents: `documenti-{slug}-primo.html` / `documenti-{slug}-rinnovo.html`
+- EN pages: `en/permesso-{slug}.html`, `en/documenti-{slug}-primo.html`, etc. (same IT slugs)
+- Cross-page links: simple relative paths (e.g., `database.html`, NOT `src/pages/database.html`)
+- Notion database IDs are HARDCODED in data files, not read from env vars (only NOTION_API_KEY needed)
+- Architecture is FLAT: 1 Notion page = 1 HTML page. No variants, no redirects.
 ```
 
 ## Key Features
@@ -205,10 +222,11 @@ All permit detail pages follow a consistent structure:
 
 ### Permit Pages
 
-**67 permit pages exist** in `src/pages/permesso-*.html`:
-- 56 with content (Q&A format from Notion)
-- 18 placeholder pages (need Notion content — see `.planning/TODO-permits.md`)
-- 4 variant pages (parent/child structure for multi-type permits)
+**Permit pages are generated dynamically from Notion** via 11ty pagination templates.
+- Flat architecture: 1 Notion DB entry = 1 HTML page (no variants, no parent/child)
+- IT permits: `_data/permits.js` → `src/pages/permits.liquid` → `permesso-{slug}.html`
+- EN permits: `_data/permitsEn.js` → `en/src/pages/permits-en.liquid` → `en/permesso-{slug}.html`
+- EN pages use same IT slugs (resolved via IT Page ID mapping)
 
 **Standard Q&A template** (7 sections + extras):
 1. Cos'è questo permesso?
@@ -219,8 +237,6 @@ All permit detail pages follow a consistent structure:
 6. Quando scade posso rinnovarlo?
 7. Posso convertirlo in un altro permesso?
 + Additional permit-specific Q&A from Notion
-
-**Content generated from Notion** via `scripts/build-permits.js`.
 
 ### Database Categories (database.html)
 - **📋 STUDIO/LAVORO** (Warm gradient)
@@ -235,14 +251,29 @@ All permit detail pages follow a consistent structure:
 ## Multilingual System
 
 ### Architecture
-- 11ty-based: each language is a separate copy of pages in its own folder
-- IT pages in root, EN pages in `/en/` subfolder
+- 11ty-based: each language has its own data files + pagination templates
+- IT pages at root (`/`), EN pages at `/en/`, future languages at `/{lang}/`
 - Language switcher include in base layout (IT ↔ EN toggle)
 - hreflang tags in base layout for SEO (canonical + alternate)
 - Sitemap index architecture: `sitemap-index.xml` → `sitemap-it.xml` + `sitemap-en.xml`
 - Translation memory infrastructure for incremental re-translation
-- **Currently implemented:** IT 🇮🇹, EN 🇬🇧 (411 pages total)
+- **Currently implemented:** IT 🇮🇹, EN 🇬🇧
 - **Future:** FR 🇫🇷, ES 🇪🇸, ZH 🇨🇳 (infrastructure exists, content pending)
+
+### Adding a New Language (Checklist)
+1. Create Notion translated database via `scripts/translate-notion.js`
+2. Create data files: `_data/permits{Lang}.js` and `_data/documents{Lang}.js`
+   - **Hardcode the Notion database ID** (don't use env vars)
+   - Slugs must match IT slugs (resolved via IT Page ID mapping)
+3. Create pagination templates in `{lang}/src/pages/`:
+   - `permits-{lang}.liquid`, `documents-primo-{lang}.liquid`, `documents-rinnovo-{lang}.liquid`
+   - Permalink pattern: `{lang}/permesso-{{ permit.slug }}.html` etc.
+4. Create static pages: `{lang}/index.html`, `{lang}/src/pages/database.html`, `{lang}/src/pages/documenti-questura.html`
+   - **Use root-relative links** (e.g., `database.html`, NOT `src/pages/database.html`)
+   - **Use correct Notion-derived slugs** (copy from IT versions, they're the same)
+   - **Asset paths** from `{lang}/index.html`: use `IMAGES/...`, `src/styles/...` (no `../` prefix)
+5. Update `eleventy.config.mjs` to ignore old static files for the new language
+6. Update language switcher, nav, hreflang tags, sitemap
 
 ## Mobile Optimization
 
