@@ -1,0 +1,325 @@
+---
+layout: layouts/base.liquid
+title: "S.O.S.Permesso - Votre guide des permis de séjour en Italie"
+lang: fr
+description: "SOS Permesso - Guide complet des permis de séjour en Italie"
+extraStyles: |
+  <style>
+
+      .lighthouse-container {
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      #lighthouse-svg {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+      }
+
+      .wave {
+        animation: wave-float 3s ease-in-out infinite;
+      }
+      .wave-1 { animation-delay: 0s; animation-duration: 4s; }
+      .wave-2 { animation-delay: 0.3s; animation-duration: 5s; }
+      .wave-3 { animation-delay: 0.6s; animation-duration: 6s; }
+
+      @keyframes wave-float {
+        0%, 100% { transform: translateX(0) translateY(0); }
+        25% { transform: translateX(-5px) translateY(-2px); }
+        50% { transform: translateX(-10px) translateY(0); }
+        75% { transform: translateX(-5px) translateY(2px); }
+      }
+
+      .rotating-beam {
+        transform-origin: 150px 120px;
+        animation: rotate-beam 4s linear infinite;
+      }
+
+      @keyframes rotate-beam {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .blinking-star {
+        animation: blink 2s ease-in-out infinite;
+      }
+
+      .star-glow {
+        animation: glow-pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+
+      @keyframes glow-pulse {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.2); }
+      }
+
+      .window-light, .tower-window {
+        animation: light-pulse 3s ease-in-out infinite;
+      }
+
+      .tower-window {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes light-pulse {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; }
+      }
+
+      .light-room {
+        animation: room-glow 2s ease-in-out infinite;
+      }
+
+      @keyframes room-glow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 0.9; }
+      }
+
+      .eye {
+        animation: eye-blink 4s ease-in-out infinite;
+      }
+
+      .eye-right {
+        animation-delay: 0.1s;
+      }
+
+      @keyframes eye-blink {
+        0%, 96%, 100% { transform: scaleY(1); }
+        98% { transform: scaleY(0.1); }
+      }
+
+      .lighthouse-container:hover #lighthouse-tower,
+      .lighthouse-container:hover #lighthouse-cupola,
+      .lighthouse-container:hover #star-top {
+        animation: sway 1s ease-in-out infinite;
+      }
+
+      @keyframes sway {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(1deg); }
+        75% { transform: rotate(-1deg); }
+      }
+
+      @media (max-width: 768px) {
+        .lighthouse-container { max-width: 300px; }
+      }
+
+      @media (max-width: 480px) {
+        .lighthouse-container { max-width: 250px; }
+      }
+
+  </style>
+---
+
+  <!-- HEADER -->
+
+
+  <!-- HERO SECTION -->
+  <section class="hero-split" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: Text Content -->
+        <div class="hero-text">
+          <h1 class="hero-display-title">
+            Votre guide des <span class="nowrap">permis de séjour.</span><br>
+            <em class="hero-tagline"><span class="hero-highlight">Simple.</span> Clair. Gratuit.</em>
+          </h1>
+
+          <p class="hero-description">
+            Informations complètes et à jour sur les permis de séjour en Italie, pour naviguer la bureaucratie sans stress.
+          </p>
+
+          <a href="database.html" class="btn-hero-cta">
+            Explorer les permis →
+          </a>
+
+          <!-- Trust badges -->
+          <div class="hero-badges">
+            <div class="hero-badge">
+              <span class="badge-icon">📚</span>
+              <span class="badge-text">23+ Permis</span>
+            </div>
+            <div class="hero-badge">
+              <span class="badge-icon">✓</span>
+              <span class="badge-text">Updated 31.12.2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Illustration -->
+        <div class="hero-illustration">
+          <img src="IMAGES/team checklist-rafiki.svg" alt="People consulting documents" class="hero-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave divider -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="#FFD700"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- TESTS SECTION -->
+  <section class="section" id="test" style="background: linear-gradient(180deg, #FFD700 0%, #FFF9E6 30%, #FFFFFF 100%); padding-top: 4rem;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--black);">NOS TESTS</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤞</span>
+          <h3 class="card-title">Puis-je OBTENIR un permis ?</h3>
+          <p class="card-description">Vérifiez si vous remplissez les conditions pour obtenir un permis de séjour en Italie</p>
+          <button class="btn btn-primary">COMMENCER LE TEST →</button>
+        </a>
+
+        <a href="https://form.typeform.com/to/oc9jhdkJ" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">👉</span>
+          <h3 class="card-title">Puis-je CONVERTIR mon permis ?</h3>
+          <p class="card-description">Découvrez si vous pouvez convertir votre permis de séjour actuel</p>
+          <button class="btn btn-primary">COMMENCER LE TEST →</button>
+        </a>
+
+        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤙</span>
+          <h3 class="card-title">Puis-je RENOUVELER mon permis ?</h3>
+          <p class="card-description">Vérifiez si vous pouvez renouveler votre permis de séjour</p>
+          <button class="btn btn-primary">COMMENCER LE TEST →</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATABASE SECTION -->
+  <section id="database" class="section" style="background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--accent-teal);">NOS BASES DE DONNÉES</h2>
+      </div>
+
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+        <a href="database.html" class="card card-link">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Tous les permis</h3>
+          <p class="card-description">Base de données avec tous (ou presque tous) les permis de séjour en Italie</p>
+        </a>
+
+        <a href="documenti-questura.html" class="card card-link">
+          <span class="card-icon">📌</span>
+          <h3 class="card-title">Quels documents apporter à la Questura</h3>
+          <p class="card-description">Liste simple des documents à apporter à la Questura ou à inclure dans le kit postal</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDES SECTION -->
+  <section class="section" id="guide" style="background: linear-gradient(135deg, #FFF9E6 0%, #FFE0B2 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--accent-orange);">NOS GUIDES</h2>
+      </div>
+
+      <div class="grid grid-3" style="max-width: 900px; margin: 0 auto;">
+        <a href="protezione-internazionale.html" class="card card-link">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">Protection internationale</h3>
+          <p class="card-description">Comment demander l'asile en Italie et comment la procédure fonctionne</p>
+        </a>
+
+        <a href="ricongiungimento-familiare.html" class="card card-link">
+          <span class="card-icon">👨‍👩‍👧</span>
+          <h3 class="card-title">Regroupement familial</h3>
+          <p class="card-description">Comment demander l'autorisation d'amener des membres de la famille en Italie</p>
+        </a>
+
+        <a href="decreto-flussi.html" class="card card-link" style="position: relative; overflow: hidden;">
+          <span style="position: absolute; top: 12px; right: -35px; background: var(--accent-orange); color: white; font-size: 0.65rem; font-weight: 600; padding: 4px 40px; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">Bientôt</span>
+          <span class="card-icon">💼</span>
+          <h3 class="card-title">Décret-flux annuel</h3>
+          <p class="card-description">Comment fonctionne l'entrée en Italie à des fins de travail</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USEFUL LINKS SECTION -->
+  <section id="resources" class="section" style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--lighthouse-red);">LIENS UTILES</h2>
+      </div>
+
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+        <a href="aiuto-legale.html" class="card card-link">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Assistance juridique gratuite près de chez vous</h3>
+          <p class="card-description">Bureaux et organisations qui fournissent une assistance juridique gratuite en Italie</p>
+        </a>
+
+        <a href="kit-postale.html" class="card card-link">
+          <span class="card-icon">📩</span>
+          <h3 class="card-title">Formulaires utiles (kit postal et autres)</h3>
+          <p class="card-description">Guide pratique pour remplir et envoyer le kit postal</p>
+        </a>
+
+        <a href="controlla-permesso.html" class="card card-link">
+          <span class="card-icon">👀</span>
+          <h3 class="card-title">Vérifier votre permis</h3>
+          <p class="card-description">Vérifiez l'état de votre permis</p>
+        </a>
+
+        <a href="dizionario.html" class="card card-link">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">Dictionnaire</h3>
+          <p class="card-description">Termes bureaucratiques expliqués simplement</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="alert alert-info" style="max-width: 600px; margin: 0 auto;">
+        <div>
+          Vous n'avez pas trouvé la réponse que vous cherchiez ?
+          <a href="https://form.typeform.com/to/USx16QN3" class="btn btn-primary btn-sm" style="margin-left: 0;" target="_blank">
+            Contactez-nous
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM MODAL -->
+  <div id="contact-form-container"></div>
+
+  <!-- FOOTER -->
+
+
+  <!-- Lighthouse animations CSS inline -->
+
+
+  <!-- Scripts -->
+
+
+  <script>
+    // Load contact form component
+    fetch('src/components/contact-form.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('contact-form-container').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading contact form:', err));
+  </script>

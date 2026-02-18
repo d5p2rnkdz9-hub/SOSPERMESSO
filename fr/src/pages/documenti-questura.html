@@ -1,0 +1,573 @@
+---
+layout: layouts/base.liquid
+title: "Quels documents apporter à la Questura"
+lang: fr
+description: "Documents requis pour demander ou renouveler un permis de séjour à la Questura"
+extraStyles: |
+  <style>
+
+    /* Compact list style like Notion (from database.html) */
+    .permit-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+    }
+
+    .permit-list li {
+     margin: 0;
+    }
+
+    .category-section {
+     margin-bottom: 2rem;
+    }
+
+    .category-title {
+     font-size: 0.875rem;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+     padding: 0.5rem 1rem;
+     margin-bottom: 0.5rem;
+     border-bottom: 2px solid;
+    }
+
+    .category-purple .category-title {
+     color: var(--accent-purple);
+     border-color: var(--accent-purple);
+    }
+
+    .category-orange .category-title {
+     color: var(--accent-orange);
+     border-color: var(--accent-orange);
+    }
+
+    .category-blue .category-title {
+     color: var(--accent-blue);
+     border-color: var(--accent-blue);
+    }
+
+    .category-teal .category-title {
+     color: var(--accent-teal);
+     border-color: var(--accent-teal);
+    }
+
+    .database-container {
+     background: white;
+     border-radius: 12px;
+     padding: 1.5rem;
+     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+     max-width: 800px;
+     margin: 0 auto;
+    }
+
+    /* Badge component - compact pill style */
+    .doc-badge {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0.35rem 0.75rem;
+     font-size: 0.8rem;
+     font-weight: 600;
+     border-radius: 12px;
+     text-decoration: none;
+     transition: all 0.15s ease;
+     white-space: nowrap;
+    }
+
+    .badge-primo {
+     background: linear-gradient(135deg, #FFF9C4 0%, #FFD700 100%);
+     color: #5D4E00;
+     border: 1.5px solid #FFC107;
+    }
+
+    .badge-rinnovo {
+     background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+     color: #0D47A1;
+     border: 1.5px solid #64B5F6;
+    }
+
+    .doc-badge:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .doc-badge:active {
+     transform: translateY(0) scale(0.98);
+    }
+
+    /* Wrapper for permit row with badges */
+    .permit-link-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.75rem 1rem;
+     border-radius: 6px;
+     transition: background-color 0.15s ease;
+    }
+
+    .permit-link-wrapper:hover {
+     background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    .permit-info {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+    }
+
+    .permit-info .icon {
+     font-size: 1.25rem;
+     flex-shrink: 0;
+    }
+
+    .permit-info .title {
+     font-weight: 500;
+     color: var(--black);
+    }
+
+    .badge-group {
+     display: flex;
+     gap: 0.5rem;
+    }
+
+    /* Mobile: Ensure touch targets, allow wrapping */
+    @media (max-width: 768px) {
+     .permit-link-wrapper {
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding: 0.875rem 0.75rem;
+     }
+
+     .permit-info .title {
+      font-size: 0.95rem;
+     }
+
+     .badge-group {
+      flex-basis: 100%;
+      justify-content: flex-start;
+     }
+
+     .doc-badge {
+      min-width: 44px;
+      min-height: 44px;
+      padding: 0.5rem 1rem;
+     }
+
+     .database-container {
+      padding: 1rem;
+      border-radius: 8px;
+     }
+    }
+
+  </style>
+---
+
+ <!-- HEADER -->
+
+
+ <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Accueil</a> →
+          <span>Quels documents apporter à la Questura</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- PAGE HEADER -->
+ <section class="section bg-off-white">
+  <div class="container">
+   <div class="page-header text-center">
+    <span class="page-icon" style="font-size: 3rem;">📌</span>
+    <h1 class="page-title">Quels documents apporter à la Questura</h1>
+    <p class="section-subtitle">Cliquez sur Premier ou Renouvellement pour voir les documents requis</p>
+   </div>
+
+   <p style="max-width: 700px; margin: 0 auto 1.5rem; text-align: center; color: var(--gray-medium);">
+    Ici vous trouverez la liste des documents que vous devez apporter à la Questura ou inclure dans le kit postal.
+   </p>
+
+   <div class="alert alert-warning" style="max-width: 700px; margin: 0 auto 2rem;">
+    <span class="alert-icon">⚠️</span>
+    <div>
+     <strong>Note :</strong> Les documents requis peuvent varier d'une Questura à l'autre. Contactez toujours votre Questura pour confirmer la liste exacte des documents requis.
+    </div>
+   </div>
+
+   <div class="database-container">
+
+    <!-- ÉTUDES/TRAVAIL -->
+    <div class="category-section category-purple">
+     <h2 class="category-title">📋 ÉTUDES/TRAVAIL</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">📖</span>
+         <span class="title">Études (après entrée avec visa)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-studio-dopo-ingresso-con-visto-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-studio-dopo-ingresso-con-visto-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">📖</span>
+         <span class="title">Études (conversion depuis un autre permis)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-studio-conversione-da-altro-permesso-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-studio-conversione-da-altro-permesso-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💼</span>
+         <span class="title">Travail salarié (après entrée avec visa via décret-flux)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💼</span>
+         <span class="title">Travail salarié (conversion depuis un autre permis)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-lavoro-subordinato-conversione-da-altro-permesso-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-lavoro-subordinato-conversione-da-altro-permesso-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🏢</span>
+         <span class="title">Travail indépendant (après entrée avec visa via décret-flux)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🇪🇺</span>
+         <span class="title">Permis de séjour UE pour résidents de longue durée ("Carte")</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🔍</span>
+         <span class="title">Recherche d'emploi ("attente d'emploi")</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-attesa-occupazione-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-attesa-occupazione-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+    <!-- PROTECTION -->
+    <div class="category-section category-orange">
+     <h2 class="category-title">🛡️ PROTECTION (INTERNATIONALE OU SOCIALE)</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🟨</span>
+         <span class="title">Demande d'asile ("permis jaune")</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-richiesta-asilo-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-richiesta-asilo-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🛡️</span>
+         <span class="title">Asile (statut de réfugié)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-asilo-status-rifugiato-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-asilo-status-rifugiato-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🔰</span>
+         <span class="title">Protection subsidiaire</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-protezione-sussidiaria-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-protezione-sussidiaria-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">✨</span>
+         <span class="title">Protection spéciale (après décision positive)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👶</span>
+         <span class="title">Mineurs (mineurs étrangers non accompagnés)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-minore-eta-per-msna-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-minore-eta-per-msna-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🌋</span>
+         <span class="title">Catastrophe naturelle</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-calamita-naturale-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-calamita-naturale-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">📄</span>
+         <span class="title">Continuation administrative (intégration)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-integrazione-prosieguo-amministrativo-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-integrazione-prosieguo-amministrativo-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+    <!-- SOINS MÉDICAUX -->
+    <div class="category-section category-blue">
+     <h2 class="category-title">🏥 SOINS MÉDICAUX</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🤰</span>
+         <span class="title">Femme enceinte ou mère d'un enfant de moins de 6 mois</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👨‍👶</span>
+         <span class="title">Père d'un enfant de moins de 6 mois ou sur le point de naître</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💊</span>
+         <span class="title">Soins médicaux après entrée avec visa</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🏥</span>
+         <span class="title">Personne gravement malade déjà en Italie (art. 19)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+    <!-- MOTIFS FAMILIAUX -->
+    <div class="category-section category-teal">
+     <h2 class="category-title">👨‍👩‍👧‍👦 MOTIFS FAMILIAUX</h2>
+     <ul class="permit-list">
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🧑‍🤝‍🧑</span>
+         <span class="title">Regroupement familial (après entrée avec visa)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💑</span>
+         <span class="title">Cohésion familiale (sans autorisation)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🇮🇹</span>
+         <span class="title">Parent d'un citoyen italien</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-famiglia-genitore-di-cittadino-italiano-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-famiglia-genitore-di-cittadino-italiano-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👵</span>
+         <span class="title">Cohabitant avec un parent italien jusqu'au deuxième degré</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🧒</span>
+         <span class="title">Assistance aux mineurs (art. 31)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-assistenza-minore-articolo-31-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-assistenza-minore-articolo-31-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👦</span>
+         <span class="title">Mineurs étrangers confiés à des parents jusqu'au quatrième degré</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-affidamento-a-familiari-entro-il-quarto-grado-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-affidamento-a-familiari-entro-il-quarto-grado-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🇪🇺</span>
+         <span class="title">Carte de séjour pour membre de la famille d'un citoyen UE</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-cittadini-ue-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-cittadini-ue-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">🚀</span>
+         <span class="title">Carte de séjour pour membre de la famille d'un citoyen italien "mobile"</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-italiani-dinamici-primo.html" class="doc-badge badge-primo">Premier</a>
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-italiani-dinamici-rinnovo.html" class="doc-badge badge-rinnovo">Renouvellement</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+
+   </div>
+  </div>
+ </section>
+
+ <!-- RELATED LINKS -->
+ <section class="section bg-off-white">
+  <div class="container">
+   <h2 class="text-center mb-lg">Vous pourriez aussi être intéressé par</h2>
+   <div class="grid grid-3">
+    <a href="database.html" class="card card-link card-compact">
+     <span class="card-icon">📚</span>
+     <h3 class="card-title">Tous les permis</h3>
+    </a>
+    <a href="kit-postale.html" class="card card-link card-compact">
+     <span class="card-icon">📩</span>
+     <h3 class="card-title">Kit postal</h3>
+    </a>
+    <a href="controlla-permesso.html" class="card card-link card-compact">
+     <span class="card-icon">👀</span>
+     <h3 class="card-title">Vérifier l'état du permis</h3>
+    </a>
+   </div>
+  </div>
+ </section>
+
+ <!-- FOOTER -->

@@ -1,0 +1,203 @@
+---
+layout: layouts/base.liquid
+title: "Base de données des permis de séjour"
+lang: fr
+description: "Base de données complète des permis de séjour en Italie"
+extraStyles: |
+  <style>
+
+      /* Compact list style like Notion */
+      .permit-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .permit-list li {
+        margin: 0;
+      }
+
+      .permit-link {
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        color: inherit;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.15s ease;
+        gap: 0.75rem;
+      }
+
+      .permit-link:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+
+      .permit-link .icon {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      .permit-link .title {
+        font-weight: 500;
+        color: var(--black);
+      }
+
+      .category-section {
+        margin-bottom: 2rem;
+      }
+
+      .category-title {
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid;
+      }
+
+      .category-purple .category-title {
+        color: var(--accent-purple);
+        border-color: var(--accent-purple);
+      }
+
+      .category-orange .category-title {
+        color: var(--accent-orange);
+        border-color: var(--accent-orange);
+      }
+
+      .category-blue .category-title {
+        color: var(--accent-blue);
+        border-color: var(--accent-blue);
+      }
+
+      .category-teal .category-title {
+        color: var(--accent-teal);
+        border-color: var(--accent-teal);
+      }
+
+      .database-container {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .permit-link {
+          padding: 0.875rem 0.75rem;
+        }
+
+        .permit-link .title {
+          font-size: 0.95rem;
+        }
+
+        .database-container {
+          padding: 1rem;
+          border-radius: 8px;
+        }
+      }
+
+  </style>
+---
+
+  <!-- HEADER -->
+
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 3rem;">📚</span>
+        <h1 class="page-title">Tous les permis de séjour</h1>
+      </div>
+
+      <div class="alert alert-info" style="max-width: 700px; margin: 0 auto 2rem;">
+        <span class="alert-icon">📌</span>
+        <div>
+          Vous voulez savoir si vous pouvez obtenir un des permis ci-dessous ?
+          <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" style="color: var(--lighthouse-red); font-weight: 600;">Faites notre test</a>
+        </div>
+      </div>
+
+      <div class="database-container">
+
+        <!-- ÉTUDES/TRAVAIL -->
+        <div class="category-section category-purple">
+          <h2 class="category-title">ÉTUDES/TRAVAIL</h2>
+          <ul class="permit-list">
+            <li><a href="permesso-studio-dopo-ingresso-con-visto.html" class="permit-link"><span class="icon">📖</span><span class="title">Permis d'études (après entrée avec visa)</span></a></li>
+            <li><a href="permesso-studio-conversione-da-altro-permesso.html" class="permit-link"><span class="icon">📖</span><span class="title">Permis d'études (conversion depuis un autre permis)</span></a></li>
+            <li><a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html" class="permit-link"><span class="icon">💼</span><span class="title">Travail salarié (après entrée avec visa via décret-flux)</span></a></li>
+            <li><a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html" class="permit-link"><span class="icon">💼</span><span class="title">Travail salarié (conversion depuis un autre permis)</span></a></li>
+            <li><a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html" class="permit-link"><span class="icon">🏢</span><span class="title">Travail indépendant (après entrée avec visa via décret-flux)</span></a></li>
+            <li><a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html" class="permit-link"><span class="icon">🏢</span><span class="title">Travail indépendant (conversion depuis un autre permis)</span></a></li>
+            <li><a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html" class="permit-link"><span class="icon">🇪🇺</span><span class="title">Permis de séjour UE pour résidents de longue durée ("Carte")</span></a></li>
+            <li><a href="permesso-attesa-occupazione.html" class="permit-link"><span class="icon">🔍</span><span class="title">Recherche d'emploi ("attente d'emploi")</span></a></li>
+          </ul>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+        <!-- PROTECTION -->
+        <div class="category-section category-orange">
+          <h2 class="category-title">PROTECTION (INTERNATIONALE OU SOCIALE)</h2>
+          <ul class="permit-list">
+            <li><a href="permesso-richiesta-asilo.html" class="permit-link"><span class="icon">🟨</span><span class="title">Demande d'asile ("permis jaune")</span></a></li>
+            <li><a href="permesso-asilo-status-rifugiato.html" class="permit-link"><span class="icon">🛡️</span><span class="title">Asile (statut de réfugié)</span></a></li>
+            <li><a href="permesso-protezione-sussidiaria.html" class="permit-link"><span class="icon">🔰</span><span class="title">Protection subsidiaire</span></a></li>
+            <li><a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-link"><span class="icon">✨</span><span class="title">Protection spéciale (après décision positive)</span></a></li>
+            <li><a href="permesso-minore-eta-per-msna.html" class="permit-link"><span class="icon">👶</span><span class="title">Mineurs (mineurs étrangers non accompagnés)</span></a></li>
+            <li><a href="permesso-calamita-naturale.html" class="permit-link"><span class="icon">🌋</span><span class="title">Catastrophe naturelle</span></a></li>
+            <li><a href="permesso-integrazione-prosieguo-amministrativo.html" class="permit-link"><span class="icon">📄</span><span class="title">Continuation administrative (intégration)</span></a></li>
+          </ul>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+        <!-- SOINS MÉDICAUX -->
+        <div class="category-section category-blue">
+          <h2 class="category-title">SOINS MÉDICAUX</h2>
+          <ul class="permit-list">
+            <li><a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html" class="permit-link"><span class="icon">🤰</span><span class="title">Femme enceinte ou mère d'un enfant de moins de 6 mois</span></a></li>
+            <li><a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html" class="permit-link"><span class="icon">👨‍👶</span><span class="title">Père d'un enfant de moins de 6 mois ou sur le point de naître</span></a></li>
+            <li><a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html" class="permit-link"><span class="icon">💊</span><span class="title">Soins médicaux après entrée avec visa</span></a></li>
+            <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html" class="permit-link"><span class="icon">🏥</span><span class="title">Personne gravement malade déjà en Italie (art. 19)</span></a></li>
+          </ul>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+        <!-- MOTIFS FAMILIAUX -->
+        <div class="category-section category-teal">
+          <h2 class="category-title">MOTIFS FAMILIAUX</h2>
+          <ul class="permit-list">
+            <li><a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="permit-link"><span class="icon">🧑‍🤝‍🧑</span><span class="title">Regroupement familial (après entrée avec visa)</span></a></li>
+            <li><a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="permit-link"><span class="icon">💑</span><span class="title">Cohésion familiale (sans autorisation)</span></a></li>
+            <li><a href="permesso-famiglia-genitore-di-cittadino-italiano.html" class="permit-link"><span class="icon">🇮🇹</span><span class="title">Parent d'un citoyen italien</span></a></li>
+            <li><a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html" class="permit-link"><span class="icon">👵</span><span class="title">Cohabitant avec un parent italien jusqu'au deuxième degré</span></a></li>
+            <li><a href="permesso-assistenza-minore-articolo-31.html" class="permit-link"><span class="icon">🧒</span><span class="title">Assistance aux mineurs (art. 31)</span></a></li>
+            <li><a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html" class="permit-link"><span class="icon">👦</span><span class="title">Mineurs étrangers confiés à des parents jusqu'au quatrième degré</span></a></li>
+            <li><a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html" class="permit-link"><span class="icon">🏠</span><span class="title">FAMIT pour les membres de la famille de citoyens italiens</span></a></li>
+            <li><a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html" class="permit-link"><span class="icon">🇪🇺</span><span class="title">Carte de séjour pour membre de la famille d'un citoyen UE</span></a></li>
+            <li><a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html" class="permit-link"><span class="icon">🚀</span><span class="title">Carte de séjour pour membre de la famille d'un citoyen italien "mobile"</span></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container text-center">
+      <p class="mb-md">Vous ne trouvez pas le permis que vous cherchez ?</p>
+      <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary">
+        Contactez-nous pour obtenir de l'aide
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
