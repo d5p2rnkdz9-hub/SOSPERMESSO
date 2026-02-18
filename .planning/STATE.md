@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-18
-**Status:** v4.0 — Phase 51 Plan 01 complete, FR translation infrastructure ready
+**Status:** v4.0 — Phase 52 Plan 01 complete, FR Notion DB populated and data files ready
 
 ## Project Reference
 
@@ -14,13 +14,13 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 ## Current Position
 
 **Current Milestone:** v4.0 FR Translation
-**Phase:** 51 - Translation Infrastructure (plan 01 complete)
+**Phase:** 52 - Notion Database (plan 01 complete)
 **Plan:** 01 of 1 done
-**Status:** Phase 51 complete, ready for Phase 52 (FR Notion DB population)
-**Last activity:** 2026-02-18 — Completed 51-01-PLAN.md (multi-language translation infrastructure)
+**Status:** Phase 52 complete, ready for Phase 53 (FR page generation)
+**Last activity:** 2026-02-18 — Completed 52-01-PLAN.md (FR Notion DB population + data files)
 
 ```
-Progress: [██░░░░░░░░] 25%  (1/4 phases complete)
+Progress: [████░░░░░░] 50%  (2/4 phases complete)
 ```
 
 ## Accumulated Context
@@ -35,6 +35,8 @@ Progress: [██░░░░░░░░] 25%  (1/4 phases complete)
 - **51-01: glossary-keys** — Keep existing 'terms' key for EN backward compat; FR uses separate 'termsFr' key (not 'termsEn')
 - **51-01: index-per-lang** — Translation index files are language-specific (translation-index-en.json, translation-index-fr.json) to prevent cross-language data corruption
 - **51-01: migration-on-write** — Old translation-index.json migrates to translation-index-en.json on first real (non-dry-run) execution
+- **52-01: fr-db-id=b7955daa** — FR Notion DB ID b7955daa-3da7-4a0c-ac9d-0bbe4ba7d70e hardcoded in _data/permitsFr.js and _data/documentsFr.js (not env var)
+- **52-01: same-parent** — FR database created under same Notion parent page as EN (30b7355e-7f7f-8184-975d-fb18ca69875c)
 
 ### Carried from v3.2
 
@@ -44,12 +46,12 @@ Progress: [██░░░░░░░░] 25%  (1/4 phases complete)
 
 ### Blockers/Concerns
 
-None.
+- Pre-existing `DuplicatePermalinkOutputError` in `en/src/pages/permits-en.liquid` causes 11ty build to fail after FR data fetch. Caused by untracked EN static HTML files conflicting with liquid pagination template. Should be investigated before Phase 53 deployment.
 
 ## Session Continuity
 
 **Last session:** 2026-02-18
-**Stopped at:** Completed 51-01-PLAN.md (translation infrastructure). Next: Phase 52 (run FR translation to populate Notion DB)
+**Stopped at:** Completed 52-01-PLAN.md (FR Notion DB + data files). Next: Phase 53 (FR 11ty page generation templates)
 **Resume file:** None
 
 ---
