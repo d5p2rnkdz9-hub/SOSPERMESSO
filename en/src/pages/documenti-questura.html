@@ -5,22 +5,22 @@ lang: en
 description: "Required documents to apply for or renew a residence permit at Police Headquarters (Questura)"
 extraStyles: |
   <style>
-  
+
     /* Compact list style like Notion (from database.html) */
     .permit-list {
      list-style: none;
      padding: 0;
      margin: 0;
     }
-  
+
     .permit-list li {
      margin: 0;
     }
-  
+
     .category-section {
      margin-bottom: 2rem;
     }
-  
+
     .category-title {
      font-size: 0.875rem;
      font-weight: 600;
@@ -30,27 +30,27 @@ extraStyles: |
      margin-bottom: 0.5rem;
      border-bottom: 2px solid;
     }
-  
+
     .category-purple .category-title {
      color: var(--accent-purple);
      border-color: var(--accent-purple);
     }
-  
+
     .category-orange .category-title {
      color: var(--accent-orange);
      border-color: var(--accent-orange);
     }
-  
+
     .category-blue .category-title {
      color: var(--accent-blue);
      border-color: var(--accent-blue);
     }
-  
+
     .category-teal .category-title {
      color: var(--accent-teal);
      border-color: var(--accent-teal);
     }
-  
+
     .database-container {
      background: white;
      border-radius: 12px;
@@ -59,7 +59,7 @@ extraStyles: |
      max-width: 800px;
      margin: 0 auto;
     }
-  
+
     /* Badge component - compact pill style */
     .doc-badge {
      display: inline-flex;
@@ -73,28 +73,28 @@ extraStyles: |
      transition: all 0.15s ease;
      white-space: nowrap;
     }
-  
+
     .badge-primo {
      background: linear-gradient(135deg, #FFF9C4 0%, #FFD700 100%);
      color: #5D4E00;
      border: 1.5px solid #FFC107;
     }
-  
+
     .badge-rinnovo {
      background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
      color: #0D47A1;
      border: 1.5px solid #64B5F6;
     }
-  
+
     .doc-badge:hover {
      transform: translateY(-2px);
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
-  
+
     .doc-badge:active {
      transform: translateY(0) scale(0.98);
     }
-  
+
     /* Wrapper for permit row with badges */
     .permit-link-wrapper {
      display: flex;
@@ -104,32 +104,32 @@ extraStyles: |
      border-radius: 6px;
      transition: background-color 0.15s ease;
     }
-  
+
     .permit-link-wrapper:hover {
      background-color: rgba(0, 0, 0, 0.04);
     }
-  
+
     .permit-info {
      display: flex;
      align-items: center;
      gap: 0.75rem;
     }
-  
+
     .permit-info .icon {
      font-size: 1.25rem;
      flex-shrink: 0;
     }
-  
+
     .permit-info .title {
      font-weight: 500;
      color: var(--black);
     }
-  
+
     .badge-group {
      display: flex;
      gap: 0.5rem;
     }
-  
+
     /* Mobile: Ensure touch targets, allow wrapping */
     @media (max-width: 768px) {
      .permit-link-wrapper {
@@ -137,33 +137,33 @@ extraStyles: |
       gap: 0.75rem;
       padding: 0.875rem 0.75rem;
      }
-  
+
      .permit-info .title {
       font-size: 0.95rem;
      }
-  
+
      .badge-group {
       flex-basis: 100%;
       justify-content: flex-start;
      }
-  
+
      .doc-badge {
       min-width: 44px;
       min-height: 44px;
       padding: 0.5rem 1rem;
      }
-  
+
      .database-container {
       padding: 1rem;
       border-radius: 8px;
      }
     }
-   
+
   </style>
 ---
 
  <!-- HEADER -->
- 
+
 
  <!-- BREADCRUMB -->
   <div class="breadcrumb-bar">
@@ -207,11 +207,23 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">📖</span>
-         <span class="title">Study permit</span>
+         <span class="title">Study (after entry with visa)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-studio-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-studio-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-studio-dopo-ingresso-con-visto-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-studio-dopo-ingresso-con-visto-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">📖</span>
+         <span class="title">Study (conversion from another permit)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-studio-conversione-da-altro-permesso-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-studio-conversione-da-altro-permesso-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -219,11 +231,23 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">💼</span>
-         <span class="title">Residence permit for employed work</span>
+         <span class="title">Employed work (after entry with visa via quota decree)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-lavoro-subordinato-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-lavoro-subordinato-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">💼</span>
+         <span class="title">Employed work (conversion from another permit)</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-lavoro-subordinato-conversione-da-altro-permesso-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-lavoro-subordinato-conversione-da-altro-permesso-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -231,11 +255,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🏢</span>
-         <span class="title">Residence permit for self-employment</span>
+         <span class="title">Self-employment (after entry with visa via quota decree)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-lavoro-autonomo-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-lavoro-autonomo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -246,8 +270,8 @@ extraStyles: |
          <span class="title">EU long-term residence permit ("Card")</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-ue-lungo-periodo-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-ue-lungo-periodo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -255,7 +279,7 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🔍</span>
-         <span class="title">Residence permit for job seeking</span>
+         <span class="title">Job seeking ("waiting for employment")</span>
         </div>
         <div class="badge-group">
          <a href="documenti-attesa-occupazione-primo.html" class="doc-badge badge-primo">First</a>
@@ -276,7 +300,7 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🟨</span>
-         <span class="title">Residence permit for asylum application ("yellow permit")</span>
+         <span class="title">Asylum application ("yellow permit")</span>
         </div>
         <div class="badge-group">
          <a href="documenti-richiesta-asilo-primo.html" class="doc-badge badge-primo">First</a>
@@ -288,11 +312,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🛡️</span>
-         <span class="title">Residence permit for political asylum (refugee status)</span>
+         <span class="title">Asylum (refugee status)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-asilo-politico-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-asilo-politico-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-asilo-status-rifugiato-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-asilo-status-rifugiato-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -300,7 +324,7 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🔰</span>
-         <span class="title">Residence permit for subsidiary protection</span>
+         <span class="title">Subsidiary protection</span>
         </div>
         <div class="badge-group">
          <a href="documenti-protezione-sussidiaria-primo.html" class="doc-badge badge-primo">First</a>
@@ -312,11 +336,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">✨</span>
-         <span class="title">Residence permit for special protection</span>
+         <span class="title">Special protection (after positive decision)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-protezione-speciale-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-protezione-speciale-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -324,11 +348,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">👶</span>
-         <span class="title">Residence permit for minors</span>
+         <span class="title">Minors (unaccompanied foreign minors)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-minore-eta-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-minore-eta-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-minore-eta-per-msna-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-minore-eta-per-msna-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -336,7 +360,7 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🌋</span>
-         <span class="title">Residence permit for natural disaster</span>
+         <span class="title">Natural disaster</span>
         </div>
         <div class="badge-group">
          <a href="documenti-calamita-naturale-primo.html" class="doc-badge badge-primo">First</a>
@@ -348,11 +372,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">📄</span>
-         <span class="title">Residence permit for administrative continuation</span>
+         <span class="title">Administrative continuation (integration)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-prosieguo-amministrativo-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-prosieguo-amministrativo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-integrazione-prosieguo-amministrativo-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-integrazione-prosieguo-amministrativo-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -369,11 +393,23 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🤰</span>
-         <span class="title">Pregnant woman and father of the child</span>
+         <span class="title">Pregnant woman or mother of child under 6 months</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-gravidanza-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-gravidanza-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+        </div>
+       </div>
+      </li>
+      <li>
+       <div class="permit-link-wrapper">
+        <div class="permit-info">
+         <span class="icon">👨‍👶</span>
+         <span class="title">Father of child under 6 months or about to be born</span>
+        </div>
+        <div class="badge-group">
+         <a href="documenti-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -381,11 +417,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">💊</span>
-         <span class="title">Medical treatment permit after entry visa</span>
+         <span class="title">Medical treatment after entry with visa</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-cure-mediche-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-cure-mediche-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -393,11 +429,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🏥</span>
-         <span class="title">Seriously ill person already in Italy (art. 19 comma 2 letter d-bis)</span>
+         <span class="title">Seriously ill person already in Italy (art. 19)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-gravi-motivi-salute-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-gravi-motivi-salute-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -414,11 +450,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🧑‍🤝‍🧑</span>
-         <span class="title">Family reasons after authorization and visa for family reunification</span>
+         <span class="title">Family reunification (after entry with visa)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-ricongiungimento-familiare-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-ricongiungimento-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -426,11 +462,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">💑</span>
-         <span class="title">Family cohesion</span>
+         <span class="title">Family cohesion (without authorization)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-coesione-familiare-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-coesione-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -438,11 +474,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🇮🇹</span>
-         <span class="title">Parent of Italian minor child</span>
+         <span class="title">Parent of Italian citizen</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-genitore-minore-italiano-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-genitore-minore-italiano-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-famiglia-genitore-di-cittadino-italiano-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-famiglia-genitore-di-cittadino-italiano-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -450,11 +486,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">👵</span>
-         <span class="title">Cohabitants with Italian relatives up to second degree (Art. 19)</span>
+         <span class="title">Cohabitant with Italian relative up to second degree</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-conviventi-familiari-italiani-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-conviventi-familiari-italiani-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -462,11 +498,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🧒</span>
-         <span class="title">Minor assistance permit (art. 31)</span>
+         <span class="title">Minor assistance (art. 31)</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-assistenza-minore-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-assistenza-minore-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-assistenza-minore-articolo-31-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-assistenza-minore-articolo-31-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -474,11 +510,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">👦</span>
-         <span class="title">Family reasons permit for foreign minors in custody of relatives up to fourth degree</span>
+         <span class="title">Foreign minors in custody of relatives up to fourth degree</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-minori-stranieri-affidati-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-minori-stranieri-affidati-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-affidamento-a-familiari-entro-il-quarto-grado-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-affidamento-a-familiari-entro-il-quarto-grado-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -486,11 +522,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🇪🇺</span>
-         <span class="title">Residence card for family member of EU citizen (D.Lgs. 30/07)</span>
+         <span class="title">Residence card for family member of EU citizen</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-carta-soggiorno-familiare-ue-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-carta-soggiorno-familiare-ue-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-cittadini-ue-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-cittadini-ue-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
@@ -498,11 +534,11 @@ extraStyles: |
        <div class="permit-link-wrapper">
         <div class="permit-info">
          <span class="icon">🚀</span>
-         <span class="title">Residence card for family member of "mobile" Italian citizen (D.Lgs. 30/07)</span>
+         <span class="title">Residence card for family member of "mobile" Italian citizen</span>
         </div>
         <div class="badge-group">
-         <a href="documenti-carta-soggiorno-familiare-italiano-primo.html" class="doc-badge badge-primo">First</a>
-         <a href="documenti-carta-soggiorno-familiare-italiano-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-italiani-dinamici-primo.html" class="doc-badge badge-primo">First</a>
+         <a href="documenti-carta-di-soggiorno-per-familiari-di-italiani-dinamici-rinnovo.html" class="doc-badge badge-rinnovo">Renewal</a>
         </div>
        </div>
       </li>
