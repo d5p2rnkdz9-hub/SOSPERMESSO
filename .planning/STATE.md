@@ -14,10 +14,10 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 ## Current Position
 
 **Current Milestone:** v4.0 FR Translation
-**Phase:** 53 - FR Page Generation (planned, ready for execution)
-**Plan:** 0 of 3 done
-**Status:** Plans rewritten with copy-then-edit approach. 3 plans in 2 waves (01+02 parallel, 03 sequential).
-**Last activity:** 2026-02-18 — Phase 53 plans rewritten with copy-then-edit approach per user directive.
+**Phase:** 53 - FR Page Generation (in progress)
+**Plan:** 2 of 3 done (Plan 01 + Plan 02 complete — Wave 1 done)
+**Status:** Wave 1 complete. Plan 03 (SEO/sitemap) ready to execute as Wave 2.
+**Last activity:** 2026-02-18 — Completed 53-02-PLAN.md (FR infrastructure wiring)
 
 ```
 Progress: [████░░░░░░] 50%  (2/4 phases complete)
@@ -37,6 +37,7 @@ Progress: [████░░░░░░] 50%  (2/4 phases complete)
 - **51-01: migration-on-write** — Old translation-index.json migrates to translation-index-en.json on first real (non-dry-run) execution
 - **52-01: fr-db-id=b7955daa** — FR Notion DB ID b7955daa-3da7-4a0c-ac9d-0bbe4ba7d70e hardcoded in _data/permitsFr.js and _data/documentsFr.js (not env var)
 - **52-01: same-parent** — FR database created under same Notion parent page as EN (30b7355e-7f7f-8184-975d-fb18ca69875c)
+- **53-02: fr-check-order** — FR condition checked before EN in Liquid if-elsif chains (header, switcher); without this, FR falls through to IT else branch
 
 ### Carried from v3.2
 
@@ -50,8 +51,8 @@ Progress: [████░░░░░░] 50%  (2/4 phases complete)
 
 ## Session Continuity
 
-**Last session:** 2026-02-18
-**Stopped at:** Phase 53 plans rewritten. Ready for `/gsd:execute-phase 53`. Plans 01+02 run in parallel (Wave 1), Plan 03 depends on both (Wave 2). Plan 03 has a human-verify checkpoint at the end.
+**Last session:** 2026-02-18 22:32 UTC
+**Stopped at:** Completed 53-02-PLAN.md. Wave 1 (Plans 01+02) done. Wave 2 (Plan 03 SEO/sitemap) ready.
 **Resume file:** None
 
 ---
