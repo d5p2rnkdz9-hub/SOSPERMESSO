@@ -172,11 +172,11 @@
 4. Language switcher on any IT/EN page shows FR option and navigates to the correct translated page
 
 **Status:** In progress
-**Plans:** 3 plans
+**Plans:** 3 plans (2 waves: 01+02 parallel, then 03)
 Plans:
-- [ ] 53-01-PLAN.md -- FR pagination pipeline + blocker fix
-- [ ] 53-02-PLAN.md -- Language infrastructure wiring (nav, footer, header, switcher, hreflang)
-- [ ] 53-03-PLAN.md -- FR static pages + build verification
+- [ ] 53-01-PLAN.md -- FR pagination pipeline (copy EN templates, edit en->fr) + EN permesso-* blocker fix
+- [ ] 53-02-PLAN.md -- Language infrastructure wiring (nav, footer, header, switcher, app.js, hreflang)
+- [ ] 53-03-PLAN.md -- FR static pages (homepage, database, documenti-questura, chi-siamo) + build verification
 
 ---
 
