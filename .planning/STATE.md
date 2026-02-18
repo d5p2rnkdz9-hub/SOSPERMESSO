@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-18
-**Status:** v4.0 — Phase 53 planned (3 plans in 2 waves), copy-then-edit approach
+**Status:** v4.0 — Phase 53 in progress (1 of 3 plans done)
 
 ## Project Reference
 
@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 
 **Current Milestone:** v4.0 FR Translation
 **Phase:** 53 - FR Page Generation (in progress)
-**Plan:** 2 of 3 done (Plan 01 + Plan 02 complete — Wave 1 done)
-**Status:** Wave 1 complete. Plan 03 (SEO/sitemap) ready to execute as Wave 2.
-**Last activity:** 2026-02-18 — Completed 53-02-PLAN.md (FR infrastructure wiring)
+**Plan:** 1 of 3 done (Plan 01 complete — Wave 1 partial)
+**Status:** Plan 01 complete. Plan 02 (FR static pages + infrastructure wiring) can run in parallel as Wave 1. Plan 03 (SEO/sitemap) depends on both.
+**Last activity:** 2026-02-18 — Completed 53-01-PLAN.md (FR pagination pipeline + EN permesso-* blocker fix)
 
 ```
-Progress: [████░░░░░░] 50%  (2/4 phases complete)
+Progress: [███░░░░░░░] 33%  (1/3 plans in phase 53 complete)
 ```
 
 ## Accumulated Context
@@ -37,7 +37,8 @@ Progress: [████░░░░░░] 50%  (2/4 phases complete)
 - **51-01: migration-on-write** — Old translation-index.json migrates to translation-index-en.json on first real (non-dry-run) execution
 - **52-01: fr-db-id=b7955daa** — FR Notion DB ID b7955daa-3da7-4a0c-ac9d-0bbe4ba7d70e hardcoded in _data/permitsFr.js and _data/documentsFr.js (not env var)
 - **52-01: same-parent** — FR database created under same Notion parent page as EN (30b7355e-7f7f-8184-975d-fb18ca69875c)
-- **53-02: fr-check-order** — FR condition checked before EN in Liquid if-elsif chains (header, switcher); without this, FR falls through to IT else branch
+- **53-01: copy-then-edit** — FR templates are exact structural copies of EN templates with targeted en->fr substitutions (no structural divergence)
+- **53-01: en-permit-blocker-fixed** — EN permesso-* DuplicatePermalinkOutputError fixed by adding safety net block inside existing EN try block in eleventy.config.mjs
 
 ### Carried from v3.2
 
@@ -47,12 +48,12 @@ Progress: [████░░░░░░] 50%  (2/4 phases complete)
 
 ### Blockers/Concerns
 
-- Pre-existing `DuplicatePermalinkOutputError` in `en/src/pages/permits-en.liquid` causes 11ty build to fail after FR data fetch. Caused by untracked EN static HTML files conflicting with liquid pagination template. Should be investigated before Phase 53 deployment.
+- None currently blocking. The EN permesso-* DuplicatePermalinkOutputError was fixed in Plan 01 (commit d51288e).
 
 ## Session Continuity
 
 **Last session:** 2026-02-18 22:32 UTC
-**Stopped at:** Completed 53-02-PLAN.md. Wave 1 (Plans 01+02) done. Wave 2 (Plan 03 SEO/sitemap) ready.
+**Stopped at:** Completed 53-01-PLAN.md (FR pagination pipeline). Plan 02 ready to execute.
 **Resume file:** None
 
 ---
