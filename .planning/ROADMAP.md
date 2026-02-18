@@ -94,22 +94,8 @@
 ### Phase 47: Notion Cache
 
 **Goal:** Build only re-fetches Notion pages that changed since the last build.
-
-**Depends on:** Nothing (independent infrastructure improvement)
-
-**Requirements:** CACHE-01, CACHE-02, CACHE-03
-
-**Success Criteria** (what must be TRUE):
-1. Running `npm run build` twice with no Notion changes skips all page fetches on the second run
-2. Editing one Notion page causes the build to re-fetch only that page on the next run
-3. Running `npm run cache:clear` removes all cached responses, forcing a full re-fetch on next build
-4. Build log shows per-page cache hit/miss counts so the user can see what changed
-
-**Plans:** 2 plans
-
-Plans:
-- [ ] 47-01-PLAN.md — Cache module + integration into permits.js, documents.js, package.json, .gitignore
-- [ ] 47-02-PLAN.md — Build time measurement + verification checkpoint
+**Status:** Complete (2026-02-18)
+**Plans:** 2 plans — [x] 47-01, [x] 47-02
 
 ---
 
@@ -186,7 +172,7 @@ Plans:
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 47. Notion Cache | v3.2 | 0/2 | Not started | - |
+| 47. Notion Cache | v3.2 | 2/2 | ✓ Complete | 2026-02-18 |
 | 48. Translation Script | v3.2 | 0/3 | Not started | - |
 | 49. EN Page Generation | v3.2 | 0/3 | Not started | - |
 | 50. Static Pages + Cleanup | v3.2 | 0/2 | Not started | - |

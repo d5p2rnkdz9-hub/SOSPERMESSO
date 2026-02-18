@@ -9,9 +9,9 @@ Requirements for EN translation pipeline and incremental build caching.
 
 ### Notion Cache
 
-- [ ] **CACHE-01**: Notion API responses cached locally per page with `last_edited_time` tracking
-- [ ] **CACHE-02**: Build only re-fetches pages whose `last_edited_time` changed since last cache
-- [ ] **CACHE-03**: Cache clearable via `npm run cache:clear`
+- [x] **CACHE-01**: Notion API responses cached locally per page with `last_edited_time` tracking
+- [x] **CACHE-02**: Build only re-fetches pages whose `last_edited_time` changed since last cache
+- [x] **CACHE-03**: Cache clearable via `npm run cache:clear`
 
 ### Translation Script
 
@@ -88,9 +88,9 @@ Requirements for EN translation pipeline and incremental build caching.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CACHE-01 | Phase 47 | Pending |
-| CACHE-02 | Phase 47 | Pending |
-| CACHE-03 | Phase 47 | Pending |
+| CACHE-01 | Phase 47 | Complete |
+| CACHE-02 | Phase 47 | Complete |
+| CACHE-03 | Phase 47 | Complete |
 | TRANS-01 | Phase 48 | Pending |
 | TRANS-02 | Phase 48 | Pending |
 | TRANS-03 | Phase 48 | Pending |
