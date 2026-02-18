@@ -9,6 +9,8 @@
     "build": "npx @11ty/eleventy",
     "build:sitemap": "node scripts/build-sitemap.js",
     "translate:en": "node scripts/translate-batch.js",
+    "translate": "node scripts/translate-notion.js",
+    "translate:dry": "node scripts/translate-notion.js --dry-run",
     "tm:stats": "node -e \"const tm = require('./scripts/translation-memory'); (async () => { const m = await tm.loadTranslationMemory('it', 'en'); console.log(tm.getMemoryStats(m)); })();\"",
     "audit": "node scripts/audit-content.js",
     "cache:clear": "node -e \"require('./scripts/notion-cache').clearCache()\""
