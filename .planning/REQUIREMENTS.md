@@ -9,9 +9,9 @@ Requirements for French translation via the same Notion + 11ty pipeline as EN. E
 
 ### Translation Script
 
-- [ ] **TRANS-01**: `npm run translate --lang fr` translates IT permit Q&A and document content to French via Claude API
-- [ ] **TRANS-03**: French translation glossary created (legal/immigration terms mapped to FR equivalents)
-- [ ] **TRANS-05**: Section-level hashing prevents re-translating unchanged sections for FR (same mechanism as EN)
+- [x] **TRANS-01**: `npm run translate --lang fr` translates IT permit Q&A and document content to French via Claude API
+- [x] **TRANS-03**: French translation glossary created (legal/immigration terms mapped to FR equivalents)
+- [x] **TRANS-05**: Section-level hashing prevents re-translating unchanged sections for FR (same mechanism as EN)
 
 ### Notion Database
 
@@ -113,9 +113,9 @@ Requirements for French translation via the same Notion + 11ty pipeline as EN. E
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TRANS-01 | Phase 51 | Pending |
-| TRANS-03 | Phase 51 | Pending |
-| TRANS-05 | Phase 51 | Pending |
+| TRANS-01 | Phase 51 | Complete |
+| TRANS-03 | Phase 51 | Complete |
+| TRANS-05 | Phase 51 | Complete |
 | NOTION-01 | Phase 52 | Pending |
 | FGEN-01 | Phase 53 | Pending |
 | FGEN-02 | Phase 53 | Pending |

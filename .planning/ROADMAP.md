@@ -134,11 +134,8 @@
 2. Re-running the command with no source changes skips all sections (hashes match, zero API calls)
 3. French output consistently applies the FR glossary (e.g., "permesso di soggiorno" -> "titre de sejour")
 
-**Status:** Planning complete
-**Plans:** 1 plan
-
-Plans:
-- [ ] 51-01-PLAN.md -- Parameterize translate-notion.js for FR, create FR glossary, add npm scripts
+**Status:** Complete (2026-02-18)
+**Plans:** 1 plan — [x] 51-01
 
 ---
 
@@ -206,7 +203,7 @@ Plans:
 | 48. Translation Script | v3.2 | 1/1 | ✓ Complete | 2026-02-18 |
 | 49. EN Page Generation | v3.2 | 3/3 | ✓ Complete | 2026-02-18 |
 | 50. Static Pages + Cleanup | v3.2 | 2/2 | ✓ Complete | 2026-02-18 |
-| 51. Translation Infrastructure | v4.0 | 0/1 | Planning complete | - |
+| 51. Translation Infrastructure | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 52. Notion Database | v4.0 | 0/? | Not started | - |
 | 53. FR Page Generation | v4.0 | 0/? | Not started | - |
 | 54. SEO | v4.0 | 0/? | Not started | - |
