@@ -55,8 +55,44 @@ export default function(eleventyConfig) {
     if (enDocFiles.length > 0) {
       console.log(`[eleventy] Ignoring ${enDocFiles.length} static EN document files (replaced by Liquid templates)`);
     }
+    // Safety net for EN static permit pages (fixes DuplicatePermalinkOutputError)
+    const enPermitFiles = enFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of enPermitFiles) {
+      eleventyConfig.ignores.add(`en/src/pages/${file}`);
+    }
+    if (enPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${enPermitFiles.length} static EN permit files (replaced by Liquid templates)`);
+    }
   } catch (e) {
     // Directory might not exist
+  }
+
+  // Safety net for FR document and permit pages
+  const frPagesDir = path.join(process.cwd(), 'fr', 'src', 'pages');
+  try {
+    const frFiles = fs.readdirSync(frPagesDir);
+    const frDocFiles = frFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html') && f !== 'documenti-questura.html'
+    );
+    for (const file of frDocFiles) {
+      eleventyConfig.ignores.add(`fr/src/pages/${file}`);
+    }
+    if (frDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${frDocFiles.length} static FR document files (replaced by Liquid templates)`);
+    }
+    const frPermitFiles = frFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of frPermitFiles) {
+      eleventyConfig.ignores.add(`fr/src/pages/${file}`);
+    }
+    if (frPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${frPermitFiles.length} static FR permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
   }
 
   // All document pages are generated via Liquid pagination templates
