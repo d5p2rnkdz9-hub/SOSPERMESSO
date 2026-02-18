@@ -1,7 +1,9 @@
 <!-- Language Switcher Component -->
 <div class="language-switcher">
   <button class="language-button" id="language-toggle">
-    {% if lang == 'en' %}
+    {% if lang == 'fr' %}
+    <span id="current-language">FR 🇫🇷</span>
+    {% elsif lang == 'en' %}
     <span id="current-language">EN 🇬🇧</span>
     {% else %}
     <span id="current-language">IT 🇮🇹</span>

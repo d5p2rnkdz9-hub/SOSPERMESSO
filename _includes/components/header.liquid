@@ -3,7 +3,7 @@
   <div class="container">
     <nav class="navbar">
       <!-- Logo -->
-      <a href="{% if lang == 'en' %}{{ '/en/' | url }}{% else %}{{ '/' | url }}{% endif %}" class="logo">
+      <a href="{% if lang == 'fr' %}{{ '/fr/' | url }}{% elsif lang == 'en' %}{{ '/en/' | url }}{% else %}{{ '/' | url }}{% endif %}" class="logo">
         <img src="{{ '/IMAGES/logo-full.png' | url }}" alt="SOS Permesso" class="logo-image">
       </a>
 

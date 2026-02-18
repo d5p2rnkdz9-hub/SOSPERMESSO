@@ -28,16 +28,23 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
   <!-- hreflang for multilingual SEO -->
-  {%- assign isEnglish = page.url | slice: 0, 4 -%}
-  {%- if isEnglish == "/en/" -%}
+  {%- assign urlPrefix = page.url | slice: 0, 4 -%}
+  {%- if urlPrefix == "/en/" -%}
     {%- assign itUrl = page.url | replace_first: "/en/", "/" -%}
     {%- assign enUrl = page.url -%}
+    {%- assign frUrl = "/fr" | append: itUrl -%}
+  {%- elsif urlPrefix == "/fr/" -%}
+    {%- assign itUrl = page.url | replace_first: "/fr/", "/" -%}
+    {%- assign enUrl = "/en" | append: itUrl -%}
+    {%- assign frUrl = page.url -%}
   {%- else -%}
     {%- assign itUrl = page.url -%}
     {%- assign enUrl = "/en" | append: page.url -%}
+    {%- assign frUrl = "/fr" | append: page.url -%}
   {%- endif -%}
   <link rel="alternate" hreflang="it" href="{{ site.url }}{{ itUrl }}">
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ frUrl }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
 
   <!-- Fonts -->

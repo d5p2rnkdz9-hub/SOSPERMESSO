@@ -190,7 +190,7 @@ function detectLanguage() {
     return 'en';
   }
   // Add more languages here when available:
-  // if (path.startsWith('/fr/') || path === '/fr') return 'fr';
+  if (path.startsWith('/fr/') || path === '/fr') return 'fr';
   // if (path.startsWith('/es/') || path === '/es') return 'es';
   // if (path.startsWith('/zh/') || path === '/zh') return 'zh';
 
@@ -223,8 +223,8 @@ languageOptions.forEach(option => {
     }
 
     if (selectedLang !== currentLanguage) {
-      // Only IT and EN are available for now
-      if (selectedLang !== 'it' && selectedLang !== 'en') {
+      // Only IT, EN, and FR are available for now
+      if (selectedLang !== 'it' && selectedLang !== 'en' && selectedLang !== 'fr') {
         alert('This language is coming soon! / Questa lingua arriverà presto!');
         return;
       }
@@ -238,28 +238,37 @@ languageOptions.forEach(option => {
 
       // Determine current language from path
       const isCurrentlyEnglish = currentPath.startsWith('/en/') || currentPath === '/en';
+      const isCurrentlyFrench = currentPath.startsWith('/fr/') || currentPath === '/fr';
 
-      if (selectedLang === 'en') {
-        // Switching TO English
-        if (isCurrentlyEnglish) {
-          return; // Already on English
+      if (selectedLang === 'fr') {
+        // Switching TO French
+        if (isCurrentlyFrench) return;
+        if (currentPath === '/' || currentPath === '/index.html') {
+          newPath = '/fr/';
+        } else if (isCurrentlyEnglish) {
+          newPath = '/fr' + currentPath.replace(/^\/en/, '');
+        } else {
+          newPath = '/fr' + currentPath;
         }
-        // Add /en/ prefix
+      } else if (selectedLang === 'en') {
+        // Switching TO English
+        if (isCurrentlyEnglish) return;
         if (currentPath === '/' || currentPath === '/index.html') {
           newPath = '/en/';
+        } else if (isCurrentlyFrench) {
+          newPath = '/en' + currentPath.replace(/^\/fr/, '');
         } else {
           newPath = '/en' + currentPath;
         }
       } else if (selectedLang === 'it') {
         // Switching TO Italian
-        if (!isCurrentlyEnglish) {
-          return; // Already on Italian
-        }
-        // Remove /en/ prefix
-        if (currentPath === '/en/' || currentPath === '/en' || currentPath === '/en/index.html') {
-          newPath = '/';
-        } else {
-          newPath = currentPath.replace(/^\/en/, '');
+        if (!isCurrentlyEnglish && !isCurrentlyFrench) return;
+        if (isCurrentlyEnglish) {
+          newPath = (currentPath === '/en/' || currentPath === '/en' || currentPath === '/en/index.html')
+            ? '/' : currentPath.replace(/^\/en/, '');
+        } else if (isCurrentlyFrench) {
+          newPath = (currentPath === '/fr/' || currentPath === '/fr' || currentPath === '/fr/index.html')
+            ? '/' : currentPath.replace(/^\/fr/, '');
         }
       }
 
