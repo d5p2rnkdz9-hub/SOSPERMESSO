@@ -1,5 +1,29 @@
 # Project Milestones: SOS Permesso
 
+## v3.2 EN Translation Pipeline (Shipped: 2026-02-18)
+
+**Delivered:** Connected English pages to the same 11ty/Notion pipeline as Italian. Added Notion response caching for incremental builds, translation script with Claude API, and EN page generation from Notion.
+
+**Phases completed:** 47-50
+
+**Key accomplishments:**
+
+- Notion API response caching with `last_edited_time` tracking (87% build speedup: ~72s → ~11s)
+- Translation script (`npm run translate`) using Claude API with 35+ term glossary
+- Section-level hashing prevents re-translating unchanged content
+- EN permit pages (39) + document pages (39 primo, 39 rinnovo) generated from Notion via 11ty
+- EN static pages re-translated and old frozen files removed
+- All EN pages at `/en/` prefix with correct asset paths and hreflang tags
+
+**Stats:**
+
+- 4 phases, ~7 plans
+- Shipped: 2026-02-18
+
+**What's next:** v4.0 FR Translation — same pipeline for French
+
+---
+
 ## v3.0 11ty Migration (Shipped: 2026-02-05)
 
 **Delivered:** Migrated 411 pages from pure HTML to 11ty SSG with shared layouts, eliminating ~36,000 lines of duplicated header/footer HTML.
