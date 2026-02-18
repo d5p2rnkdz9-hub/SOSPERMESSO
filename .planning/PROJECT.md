@@ -105,37 +105,48 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ All placeholder permits populated with Q&A content — v3.1
 - ✓ Flat permit architecture (1 Notion page = 1 HTML page, no variants) — v3.1
 - ✓ All pages output at root level in _site/ — v3.1
+- ✓ Notion API response caching with last_edited_time tracking — v3.2
+- ✓ EN permit + document pages generated from Notion via 11ty — v3.2
+- ✓ Translation script (npm run translate) with Claude API + glossary — v3.2
+- ✓ Section-level hashing for incremental re-translation — v3.2
+- ✓ EN static pages re-translated and old frozen files removed — v3.2
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-## Current Milestone: v3.2 EN Translation Pipeline
+## Current Milestone: v4.0 FR + ES Translation
 
-**Goal:** Connect English pages to the same 11ty/Notion pipeline as Italian, replacing 136 frozen static files with dynamically generated pages. Add Notion response caching for incremental builds.
+**Goal:** Add French and Spanish translations to the site using the same Notion → 11ty pipeline established for EN. Extend the translation script to target FR/ES, create translated Notion databases, generate pages at /fr/ and /es/ prefixes, and upgrade the language switcher to support 4 languages.
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
-**Permit Database (LIVE):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
+**Permit Database (LIVE IT):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
+**Permit Database (LIVE EN):** ID `c1dc0271-f1f4-4147-9464-391884f4dfad`
 
 ### Out of Scope
 
-- Additional languages (FR, ES, ZH) — EN only for this milestone, architecture supports adding later
+- Additional languages beyond FR/ES (ZH, AR, etc.) — architecture supports adding later
+- Moving language switcher into main nav bar — tech debt, noted for future milestone
 - Real-time permit status tracking — external service, just link to portale immigrazione
 - Content validation pass — translate what's there, fix content separately
 - Dizionario link revision — separate concern, defer
 
 ## Context
 
-**Current state (after v3.1):**
+**Current state (after v3.2):**
 - 11ty v3.1.2 SSG with Liquid templates
 - Shared layouts in `_includes/layouts/base.liquid`
 - Component includes: header, footer, nav, language-switcher
 - Data files: `_data/permits.js`, `_data/permitsEn.js`, `_data/documents.js`, `_data/documentsEn.js` (DB IDs hardcoded)
 - ALL pages output at ROOT level in `_site/`, EN at `_site/en/` (flat, no `src/pages/` nesting)
 - Notion database IDs hardcoded in data files (only `NOTION_API_KEY` env var needed)
+- Notion API response caching with `last_edited_time` tracking (warm builds ~11-13s vs cold ~72s)
+- Translation script: `npm run translate` using Claude API with 35+ term glossary
+- Section-level hashing prevents re-translating unchanged content
 - CSS design system with variables in `src/styles/main.css`
 - Notion database powers document and permit page content
 - Combined build: `npm run build` chains Notion + 11ty
+- EN pages generated from Notion EN database (39 permits, 39 primo, 39 rinnovo)
 - SEO: canonical URLs, hreflang tags, sitemap index architecture
 - Netlify deployment with Node 22 LTS, security headers
 
@@ -151,9 +162,9 @@ Users can quickly find accurate, understandable information about their specific
 - Mobile flat list navigation for faster task completion
 
 **Technical debt:**
-- **No incremental Notion fetching** — every build re-fetches ALL permits (43) and documents (65) from Notion API even when only 1 page changed. Build takes ~72s. Fix: cache Notion responses locally with `last_edited_time` check, only re-fetch changed pages. Affects both IT and future EN builds.
 - Dizionario links need revision (partial matching works but coverage incomplete)
 - Re-add "Segnala errore" button to document pages (primo/rinnovo) — removed temporarily, also present in permits.liquid and 2 static carta-soggiorno pages
+- Move language switcher into main nav bar (currently standalone dropdown, works but not ideal for 4+ languages)
 
 ## Constraints
 
@@ -203,4 +214,4 @@ Users can quickly find accurate, understandable information about their specific
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-02-18 — fixed EN broken links, updated docs for flat architecture*
+*Last updated: 2026-02-18 — started v4.0 FR + ES Translation milestone*
