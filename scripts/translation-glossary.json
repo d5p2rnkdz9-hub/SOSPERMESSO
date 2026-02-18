@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0",
-    "description": "Translation glossary for IT→EN. Terms must be translated consistently across all pages.",
-    "lastUpdated": "2026-01-31"
+    "version": "1.1",
+    "description": "Translation glossary for IT→EN and IT→FR. Terms must be translated consistently across all pages.",
+    "lastUpdated": "2026-02-18"
   },
   "terms": {
     "permesso di soggiorno": "residence permit",
@@ -43,6 +43,46 @@
     "visto di ingresso": "entry visa",
     "permesso giallo": "yellow permit",
     "carta di soggiorno": "residence card"
+  },
+  "termsFr": {
+    "permesso di soggiorno": "titre de séjour",
+    "permesso": "titre de séjour",
+    "Questura": "Questure (commissariat principal)",
+    "Prefettura": "Préfecture",
+    "soggiornante di lungo periodo": "résident de longue durée",
+    "decreto flussi": "décret annuel sur les quotas d'immigration",
+    "kit postale": "kit postal",
+    "primo rilascio": "première délivrance",
+    "rinnovo": "renouvellement",
+    "richiesta asilo": "demande d'asile",
+    "protezione internazionale": "protection internationale",
+    "protezione sussidiaria": "protection subsidiaire",
+    "protezione speciale": "protection spéciale",
+    "status di rifugiato": "statut de réfugié",
+    "ricongiungimento familiare": "regroupement familial",
+    "coesione familiare": "cohésion familiale",
+    "motivi familiari": "motifs familiaux",
+    "lavoro subordinato": "travail salarié",
+    "lavoro autonomo": "travail indépendant",
+    "attesa occupazione": "recherche d'emploi",
+    "ricerca lavoro": "recherche d'emploi",
+    "Commissione Territoriale": "Commission territoriale",
+    "Servizio Sanitario Nazionale": "Service national de santé (SSN)",
+    "SSN": "SSN (Sécurité sociale italienne)",
+    "marca da bollo": "timbre fiscal",
+    "bollettino postale": "bordereau de paiement postal",
+    "codice fiscale": "code fiscal",
+    "carta d'identità": "carte d'identité",
+    "dichiarazione ospitalità": "déclaration d'hébergement",
+    "contratto di affitto": "contrat de location",
+    "cittadino UE": "citoyen UE",
+    "cittadino italiano": "citoyen italien",
+    "extracomunitario": "ressortissant non-UE",
+    "minore": "mineur",
+    "maggiorenne": "majeur",
+    "visto di ingresso": "visa d'entrée",
+    "permesso giallo": "récépissé (permesso giallo)",
+    "carta di soggiorno": "carte de séjour"
   },
   "doNotTranslate": [
     "SOS Permesso",
