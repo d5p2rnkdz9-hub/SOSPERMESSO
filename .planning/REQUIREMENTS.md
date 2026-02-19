@@ -7,8 +7,8 @@
 
 ### Bug Fixes
 
-- [ ] **BUG-01**: Note editoriali visibili su pagine documento — fix nome campo `"Info extra su doc rilascio"` → `"Info extra su doc rilascio/rinnovo"` in `_data/documents.js` e `_data/permits.js`
-- [ ] **BUG-02**: `PRASSI_DB_ID` hardcoded in `_data/prassiLocali.js` (consistente con pattern dei data file; resta env var nelle Netlify Functions)
+- [x] **BUG-01**: Note editoriali visibili su pagine documento — fix nome campo `"Info extra su doc rilascio"` → `"Info extra su doc rilascio/rinnovo"` in `_data/documents.js` e `_data/permits.js`
+- [x] **BUG-02**: `PRASSI_DB_ID` hardcoded in `_data/prassiLocali.js` (consistente con pattern dei data file; resta env var nelle Netlify Functions)
 
 ### Prassi — Submission
 
@@ -60,8 +60,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUG-01 | Phase 55 | Pending |
-| BUG-02 | Phase 55 | Pending |
+| BUG-01 | Phase 55 | Complete |
+| BUG-02 | Phase 55 | Complete |
 | PRAS-01 | Phase 56 | Pending |
 | PRAS-02 | Phase 57 | Pending |
 | PRAS-03 | Phase 57 | Pending |
