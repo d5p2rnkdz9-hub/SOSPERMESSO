@@ -1,0 +1,57 @@
+---
+permalink: sitemap-fr.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- FR Homepage -->
+  <url>
+    <loc>{{ site.url }}/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/"/>
+  </url>
+  <!-- FR Static pages -->
+  {%- assign frStaticPages = "database,documenti-questura,chi-siamo" | split: "," %}
+  {%- for slug in frStaticPages %}
+  <url>
+    <loc>{{ site.url }}/fr/{{ slug }}.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ slug }}.html"/>
+  </url>
+  {%- endfor %}
+  <!-- FR Permit pages -->
+  {%- for permit in permitsFr %}
+  <url>
+    <loc>{{ site.url }}/fr/permesso-{{ permit.slug }}.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
+  </url>
+  {%- endfor %}
+  <!-- FR Document pages (primo rilascio) -->
+  {%- for doc in documentsFr.primo %}
+  <url>
+    <loc>{{ site.url }}/fr/documenti-{{ doc.slug }}-primo.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/documenti-{{ doc.slug }}-primo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/documenti-{{ doc.slug }}-primo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/documenti-{{ doc.slug }}-primo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/documenti-{{ doc.slug }}-primo.html"/>
+  </url>
+  {%- endfor %}
+  <!-- FR Document pages (rinnovo) -->
+  {%- for doc in documentsFr.rinnovo %}
+  <url>
+    <loc>{{ site.url }}/fr/documenti-{{ doc.slug }}-rinnovo.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/documenti-{{ doc.slug }}-rinnovo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/documenti-{{ doc.slug }}-rinnovo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html"/>
+  </url>
+  {%- endfor %}
+</urlset>

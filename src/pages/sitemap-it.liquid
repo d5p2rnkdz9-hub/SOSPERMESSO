@@ -1,0 +1,57 @@
+---
+permalink: sitemap-it.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/"/>
+  </url>
+  <!-- Static pages -->
+  {%- assign staticPages = "database,documenti-questura,chi-siamo,dizionario,protezione-internazionale,ricongiungimento-familiare,decreto-flussi,kit-postale,il-progetto,privacy-policy,aiuto-legale,controlla-permesso" | split: "," %}
+  {%- for slug in staticPages %}
+  <url>
+    <loc>{{ site.url }}/{{ slug }}.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ slug }}.html"/>
+  </url>
+  {%- endfor %}
+  <!-- Permit pages -->
+  {%- for permit in permits %}
+  <url>
+    <loc>{{ site.url }}/permesso-{{ permit.slug }}.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
+  </url>
+  {%- endfor %}
+  <!-- Document pages (primo rilascio) -->
+  {%- for doc in documents.primo %}
+  <url>
+    <loc>{{ site.url }}/documenti-{{ doc.slug }}-primo.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/documenti-{{ doc.slug }}-primo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/documenti-{{ doc.slug }}-primo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/documenti-{{ doc.slug }}-primo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/documenti-{{ doc.slug }}-primo.html"/>
+  </url>
+  {%- endfor %}
+  <!-- Document pages (rinnovo) -->
+  {%- for doc in documents.rinnovo %}
+  <url>
+    <loc>{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/documenti-{{ doc.slug }}-rinnovo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/documenti-{{ doc.slug }}-rinnovo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html"/>
+  </url>
+  {%- endfor %}
+</urlset>
