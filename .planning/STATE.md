@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-19
-**Status:** v4.0 — Phase 53.1 in progress (plans 01, 02, 04, 05 done; 03 pending)
+**Status:** v4.0 — Phase 53.1 all plans complete, awaiting verification
 
 ## Project Reference
 
@@ -9,18 +9,18 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v4.0 FR Translation — Tech Debt cleanup in progress
+**Current focus:** v4.0 FR Translation — Tech Debt phase plans done, needs verification + phase completion
 
 ## Current Position
 
 **Current Milestone:** v4.0 FR Translation
-**Phase:** 53.1 - Tech Debt (in progress)
-**Plan:** 04 of 5 just completed (plans 01, 02, 04, 05 done; 03 pending)
-**Status:** In progress — 11ty-native sitemaps complete.
-**Last activity:** 2026-02-19 — Completed 53.1-04-PLAN.md (11ty sitemap templates for IT/EN/FR)
+**Phase:** 53.1 - Tech Debt (all 5 plans executed)
+**Plan:** 5 of 5 complete (all plans have SUMMARY.md)
+**Status:** All plans executed. Needs: verification → ROADMAP/STATE update → REQUIREMENTS update → phase completion commit.
+**Last activity:** 2026-02-19 — All 5 plans complete + orchestrator corrections committed (9a0cb17)
 
 ```
-Progress: [████████░░] 4/5 plans complete in phase 53.1
+Progress: [██████████] 5/5 plans complete in phase 53.1
 ```
 
 ## Accumulated Context
@@ -46,7 +46,8 @@ Progress: [████████░░] 4/5 plans complete in phase 53.1
 - **53.1-05: dizionario-null-safe** — Internal formatNotesContent() call linkToDizionario(bullet) passes no lang; null-safe guard defaults to 'it' — no modification needed to internal calls
 - **53.1-02: listing-coverage** — IT has 41 permits (incl. tirocinio/artistico); EN/FR have 39 each — consistent with Notion DB filtering; lavoro-autonomo-conversione was pre-existing gap in all 3 documenti-questura pages
 - **53.1-04: sitemap-data-driven** — Sitemaps use Liquid for-loops over permits/documentsX data arrays (not collection API) because pagination templates use eleventyExcludeFromCollections: true, excluding generated pages from collections
-- **53.1-04: pages.11tydata-bypass** — Added bypass in pages.11tydata.js: if front matter permalink is string not ending in .html, return it unchanged (prevents overriding .xml sitemap permalinks)
+- **53.1-04: pages.11tydata-bypass** — Added bypass in pages.11tydata.js: if front matter permalink ends in .xml, return it unchanged (prevents overriding sitemap permalinks). NOTE: original !.endsWith('.html') check broke static pages; corrected to .endsWith('.xml') only
+- **53.1-03: lang-switcher-in-nav** — Language switcher is now a nav dropdown (not standalone); only IT/EN/FR; flag emojis added; mobile uses horizontal pills with CSS order: -1
 
 ### Carried from v3.2
 
@@ -60,7 +61,8 @@ Progress: [████████░░] 4/5 plans complete in phase 53.1
 ## Session Continuity
 
 **Last session:** 2026-02-19
-**Stopped at:** Completed 53.1-04-PLAN.md (11ty sitemap templates — IT/EN/FR + sitemap-index)
+**Stopped at:** All 5 plans executed + orchestrator corrections committed. Phase 53.1 needs verification + completion workflow.
+**Resume with:** `/gsd:execute-phase 53.1` — will detect all SUMMARYs exist, skip execution, proceed to verification → phase completion
 **Resume file:** None
 
 ---
