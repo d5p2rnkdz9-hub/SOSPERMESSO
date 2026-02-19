@@ -27,6 +27,11 @@
 
 - [ ] **MOD-01**: Notion DB prassi ha view "Da approvare" filtrata su Status=Pending (facilita review admin)
 
+### Note Editoriali dai Blocchi Notion
+
+- [ ] **NOTES-01**: `documents.js` fetcha i blocchi di ogni pagina Notion (stessa logica di `permits.js`) e li parsa in sezioni Q&A, con supporto cache per non aumentare il build time
+- [ ] **NOTES-02**: Pagine documento (primo + rinnovo) mostrano sezione "Note" in fondo con Q&A provenienti dai blocchi — sezione assente se la pagina non ha blocchi (graceful degradation)
+
 ## Future Requirements (v4.2+)
 
 ### Voting
@@ -65,12 +70,14 @@
 | AUTO-02 | Phase 58 | Pending |
 | AUTO-03 | Phase 59 | Pending |
 | MOD-01 | Phase 58 | Pending |
+| NOTES-01 | Phase 60 | Pending |
+| NOTES-02 | Phase 60 | Pending |
 
 **Coverage:**
-- v4.1 requirements: 10 total
-- Mapped to phases: 10
+- v4.1 requirements: 12 total
+- Mapped to phases: 12
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-02-19*
-*Last updated: 2026-02-19 — initial definition for v4.1*
+*Last updated: 2026-02-19 — added NOTES-01, NOTES-02 (Phase 60: note editoriali da blocchi Notion)*

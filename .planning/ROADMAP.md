@@ -144,9 +144,9 @@
 
 **Milestone Goal:** Complete the prassi locali system (three Netlify Functions already written — wire and verify them) and fix the bug preventing editorial notes from displaying on document pages.
 
-**Requirements:** BUG-01, BUG-02, PRAS-01, PRAS-02, PRAS-03, PRAS-04, AUTO-01, AUTO-02, AUTO-03, MOD-01
+**Requirements:** BUG-01, BUG-02, PRAS-01, PRAS-02, PRAS-03, PRAS-04, AUTO-01, AUTO-02, AUTO-03, MOD-01, NOTES-01, NOTES-02
 
-**Coverage:** 10/10 requirements mapped ✓
+**Coverage:** 12/12 requirements mapped ✓
 
 ---
 
@@ -237,6 +237,24 @@
 
 ---
 
+### Phase 60: Note Editoriali da Blocchi Notion
+
+**Goal:** Le pagine documento mostrano note editoriali scritte come Q&A nei blocchi della pagina Notion — con cache integrata per non aumentare il build time.
+
+**Dependencies:** Phase 55 (nessuna dipendenza funzionale, ma BUG-01 risolve il campo proprietà che diventa irrilevante dopo questa fase).
+
+**Requirements:** NOTES-01, NOTES-02
+
+**Success Criteria:**
+1. Una pagina documento con Q&A nei blocchi della pagina Notion mostra una sezione "Note" in fondo alla pagina HTML — leggibile da un umano senza errori di build.
+2. Una pagina documento il cui Notion page non ha blocchi Q&A non mostra la sezione "Note" — graceful degradation, nessun errore.
+3. Il build time su build caldo non aumenta di più di 5s rispetto al baseline (cache per i block fetch attiva, stesso sistema di `permits.js`).
+4. Le pagine EN e FR non sono impattate — note solo IT per v4.1, pipeline di traduzione gestirà EN/FR in futuro.
+
+**Status:** Pending
+
+---
+
 ## Progress
 
 | Phase | Name | Goal | Requirements | Criteria | Status |
@@ -246,6 +264,7 @@
 | 57 | Security Controls | Honeypot + rate limiting active before user promotion | PRAS-02, PRAS-03 | 3 | Pending |
 | 58 | Rebuild Automation | Approval triggers rebuild; admin has moderation view | AUTO-01, AUTO-02, MOD-01 | 3 | Pending |
 | 59 | End-to-End Validation | Full submit→approve→rebuild→visible flow confirmed | AUTO-03 | 4 | Pending |
+| 60 | Note Editoriali | Doc pages show editorial Q&A from Notion page blocks with cache | NOTES-01, NOTES-02 | 4 | Pending |
 
 ---
 
@@ -254,4 +273,5 @@
 *Revised: 2026-02-19 -- Phase 53.1 planned (5 plans, 1 wave)*
 *v4.0 archived: 2026-02-19*
 *v4.1 added: 2026-02-19 -- Phases 55-59, 10 requirements mapped*
+*v4.1 revised: 2026-02-19 -- Phase 60 added (note editoriali da blocchi Notion), 12 requirements total*
 *Previous milestone: v3.2 (Phases 47-50) shipped 2026-02-18*
