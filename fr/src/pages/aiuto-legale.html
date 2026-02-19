@@ -1,0 +1,432 @@
+---
+layout: layouts/base.liquid
+title: "Aide juridique gratuite"
+lang: fr
+extraStyles: |
+  <style>
+
+      .legal-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+      }
+      .legal-table th, .legal-table td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
+      }
+      .legal-table th {
+        background-color: var(--off-white);
+        font-weight: 600;
+        color: var(--black);
+      }
+      .legal-table tr:hover {
+        background-color: rgba(255, 215, 0, 0.1);
+      }
+      .city-section {
+        margin-bottom: 2rem;
+      }
+      .city-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--accent-purple);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--accent-purple);
+      }
+      @media (max-width: 768px) {
+        .legal-table, .legal-table tbody, .legal-table tr, .legal-table td {
+          display: block;
+        }
+        .legal-table thead {
+          display: none;
+        }
+        .legal-table tr {
+          margin-bottom: 1rem;
+          border: 1px solid #eee;
+          border-radius: 8px;
+          padding: 1rem;
+        }
+        .legal-table td {
+          border: none;
+          padding: 0.25rem 0;
+        }
+        .legal-table td::before {
+          content: attr(data-label);
+          font-weight: 600;
+          display: block;
+          margin-bottom: 0.25rem;
+          color: var(--gray-medium);
+          font-size: 0.875rem;
+        }
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="index.html" style="color: var(--taxi-yellow-dark);">Accueil</a> →
+        <span>Aide juridique</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">⚖️</span>
+        <h1 class="page-title">Aide juridique gratuite près de chez vous</h1>
+        <p class="section-subtitle">Trouvez une assistance juridique gratuite dans votre ville</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 1100px;">
+
+      <!-- BOLOGNE -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Bologne</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organisation</th>
+              <th>Adresse</th>
+              <th>Horaires</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organisation">Help Desk Migrante</td>
+              <td data-label="Adresse">Via Stalingrado 12 / Via Serlio 25/2</td>
+              <td data-label="Horaires">Mardi 15h00-18h00 sur rendez-vous</td>
+              <td data-label="Contact">legale@arcacoop.com</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Associazione Xenia</td>
+              <td data-label="Adresse">Via Marco Polo, 21/23</td>
+              <td data-label="Horaires">Sur rendez-vous</td>
+              <td data-label="Contact">info@xeniabo.org - 0516350774</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Associazione Universo APS</td>
+              <td data-label="Adresse">Piazza XX Settembre, 7</td>
+              <td data-label="Horaires">Sur rendez-vous</td>
+              <td data-label="Contact">helpdesk@universointerculturale.it - 051 8556042</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Attivist* Tpo e Labàs</td>
+              <td data-label="Adresse">Vicolo Bolognetti,4 / Via Casarini 17/4</td>
+              <td data-label="Horaires">Écrire sur WhatsApp</td>
+              <td data-label="Contact">sportellomigrantitpo@gmail.com - 3534076384</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Ya Basta!</td>
+              <td data-label="Adresse">Via Casarini 17/4</td>
+              <td data-label="Horaires">Mercredi 18h00-20h00</td>
+              <td data-label="Contact">yabasta.bologna@gmail.com - 0510935901</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BRESCIA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Brescia</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organisation</th>
+              <th>Adresse</th>
+              <th>Horaires</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organisation">Guichet d'aide aux demandeurs d'asile et réfugiés</td>
+              <td data-label="Adresse">Via Repubblica Argentina, 90</td>
+              <td data-label="Horaires">Lun 9h-13h, Mar-Mer 14h-17h</td>
+              <td data-label="Contact">sportello.brescia@rifugiati.eu - 3371488628</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Centro Migranti ONLUS</td>
+              <td data-label="Adresse">Via Antiche Mura, 3</td>
+              <td data-label="Horaires">Lun-Mer-Ven 13h30-17h30, Mar-Jeu 8h30-12h30</td>
+              <td data-label="Contact">centromigranti@diocesi.brescia.it - 030.42467</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MILAN -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Milan</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organisation</th>
+              <th>Adresse</th>
+              <th>Horaires</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organisation">Naga</td>
+              <td data-label="Adresse">Via Zamenhof, 7A</td>
+              <td data-label="Horaires">Lun-Ven 9h-12h/14h-17h, Mar-Mer 9h-12h/14h-19h, Jeu 9h-12h</td>
+              <td data-label="Contact">0258102599</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- NAPLES -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Naples</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organisation</th>
+              <th>Adresse</th>
+              <th>Horaires</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organisation">Ex OPG - Je So' Pazzo</td>
+              <td data-label="Adresse">Via Matteo Renato Imbriani, 218</td>
+              <td data-label="Horaires">Jeudi 14h00-20h00</td>
+              <td data-label="Contact">info@jesopazz.org</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PADOUE -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Padoue</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organisation</th>
+              <th>Adresse</th>
+              <th>Horaires</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organisation">Guichet RAR</td>
+              <td data-label="Adresse">Vicolo Ponte Molino, 7</td>
+              <td data-label="Horaires">Lun-Jeu 9h-12h et sur rendez-vous</td>
+              <td data-label="Contact">sportellorar@comune.padova.it - 0498205997</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Open Gates APS</td>
+              <td data-label="Adresse">Piazza Gasparotto 4 / Via Diego Valeri 9</td>
+              <td data-label="Horaires">Lun-Mer-Ven 9h30-12h30, Mar-Jeu 15h-18h</td>
+              <td data-label="Contact">351 291 3479</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ROME -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Rome</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organisation</th>
+              <th>Adresse</th>
+              <th>Horaires</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organisation">Casa dei Diritti Sociali</td>
+              <td data-label="Adresse">Via Giovanni Giolitti 225, 00185</td>
+              <td data-label="Horaires">Lun-Mer-Ven 10h-13h/14h30-16h30, Mar-Jeu 14h-18h30</td>
+              <td data-label="Contact">net@dirittisociali.org - 06/4461162 - 06/4464676</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Guichet migrants USB (Unione Sindacale di Base)</td>
+              <td data-label="Adresse">Via Giovanni Giolitti 231, 00175 (premier étage)</td>
+              <td data-label="Horaires">Mar 14h-18h, Jeu 11h30-13h/14h-18h30 (sur rendez-vous uniquement)</td>
+              <td data-label="Contact">migranti@usb.it - 340/9651049 - 06/4462030</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Guichet ESC Infomigrante (Centro sociale ESC Atelier)</td>
+              <td data-label="Adresse">Via dei Volsci 159, 00185</td>
+              <td data-label="Horaires">Mardi 18h-20h (sur rendez-vous par e-mail)</td>
+              <td data-label="Contact">sportello.infomigrante@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">A Buon Diritto Onlus</td>
+              <td data-label="Adresse">Via dei Pisoni 57/59, 00175</td>
+              <td data-label="Horaires">Sur rendez-vous uniquement</td>
+              <td data-label="Contact">sportelli@abuondiritto.it - 06/85356796</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Progetto diritti</td>
+              <td data-label="Adresse">Via Ettore Giovenale 79, 00176</td>
+              <td data-label="Horaires">Lun-Ven 16h30-19h, matins sur rendez-vous</td>
+              <td data-label="Contact">segreteria@progettodiritti.it - 06/298777</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">ARCI - Guichets d'aide juridique</td>
+              <td data-label="Adresse">Viale Giuseppe Stefanini 15, 00158</td>
+              <td data-label="Horaires">Orientation : Mar 15h-17h30 / Migrants : Mar-Ven 15h-17h30 / Logement : Ven 10h-13h</td>
+              <td data-label="Contact">inforoma@arci.it - sportellisociali.immigrazione@arciroma.it - 06/41734712</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Arcigay Roma - Guichet interculturel</td>
+              <td data-label="Adresse">Via Nicola Zabaglia 14, 00153</td>
+              <td data-label="Horaires">Gay Help Line : Lun-Sam 16h-20h / Guichet : Mar 17h-20h sur rendez-vous</td>
+              <td data-label="Contact">intercultura@gayhelpline.it - 800713713 (numéro vert)</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Médecins pour les droits humains (MEDU) - Clinique mobile</td>
+              <td data-label="Adresse">Piazzale della Stazione Tiburtina, 00162 (Welcome Center)</td>
+              <td data-label="Horaires">Deux fois par mois, jeudis alternés 19h-22h</td>
+              <td data-label="Contact">06/97844892 - 335/1853360</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Centre Psychè "Francesca Uneddu" - MEDU (Santé mentale)</td>
+              <td data-label="Adresse">Via Trebbia 3, interno I, 00198</td>
+              <td data-label="Horaires">Lun-Jeu 10h-13h/15h-19h, Mer 15h-19h</td>
+              <td data-label="Contact">psyche@mediciperidirittiumani.org - 06/8419556</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Guichet "Roxanne ed Oltre" (Victimes de la traite)</td>
+              <td data-label="Adresse">Via Galilei 15, 00185</td>
+              <td data-label="Horaires">Lun-Ven 10h-16h (appel pour accéder)</td>
+              <td data-label="Contact">roxanne.dipsociale@comune.roma.it - 06/77072404 - 338/4931100</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Cooperativa Parsec (Prostitution et traite)</td>
+              <td data-label="Adresse">Via Catania 89, 00161</td>
+              <td data-label="Horaires">Lun-Ven 10h-15h</td>
+              <td data-label="Contact">parsec.rightjob@gmail.com - 348/9945653</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">DISCOL - Refus d'inscription scolaire (Réseau des écoles migrantes)</td>
+              <td data-label="Adresse">Via Liberiana 17, 00187</td>
+              <td data-label="Horaires">Lun-Ven 10h-13h</td>
+              <td data-label="Contact">info@scuolemigranti.org - 327/2804675 (aussi WhatsApp)</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Guichet Yalla - Droit à l'étude</td>
+              <td data-label="Adresse">En ligne</td>
+              <td data-label="Horaires">Contacter par e-mail</td>
+              <td data-label="Contact">studyyalla@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Centre communautaire Diaconia Valdese-CSD (Centocelle)</td>
+              <td data-label="Adresse">Via Ceccano 10C, 00175</td>
+              <td data-label="Horaires">Lun-Mar-Ven 9h-13h, Mer 9h-13h/14h-17h30, Jeu 9h30-13h/14h-17h30</td>
+              <td data-label="Contact">3451133670 (sur rendez-vous uniquement)</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Centre communautaire Diaconia Valdese-CSD (Centre-ville)</td>
+              <td data-label="Adresse">Via IV Novembre 107, 00187</td>
+              <td data-label="Horaires">Lun 14h-18h30, Mar 9h30-13h30/14h30-18h, Mer 9h30-13h30, Jeu 9h30-13h30/14h30-17h30</td>
+              <td data-label="Contact">3451133670 (sur rendez-vous uniquement)</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Clinique juridique droit de l'immigration et de la citoyenneté (Uniroma3)</td>
+              <td data-label="Adresse">Via Ostiense 139, 00154</td>
+              <td data-label="Horaires">Jeudi 15h-19h sans rendez-vous</td>
+              <td data-label="Contact">lawclinic@uniroma3.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- TURIN -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Turin</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Organisation</th>
+              <th>Adresse</th>
+              <th>Horaires</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Organisation">CSOA Gabrio</td>
+              <td data-label="Adresse">Via Millio, 42</td>
+              <td data-label="Horaires">Lundi 18h30-20h00</td>
+              <td data-label="Contact">3509007929</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Street Lawyer</td>
+              <td data-label="Adresse">Via Giovanni Camerana, 10</td>
+              <td data-label="Horaires">Premier jeudi du mois 14h00</td>
+              <td data-label="Contact">011 534854</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Diaconia Valdese</td>
+              <td data-label="Adresse">Via Nomaglio, 6</td>
+              <td data-label="Horaires">Mar-Jeu 9h-13h/14h-17h</td>
+              <td data-label="Contact">3440214043</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">Cecchi Point</td>
+              <td data-label="Adresse">Via Cecchi, 17</td>
+              <td data-label="Horaires">Mar 17h-19h, Ven 14h30-16h30</td>
+              <td data-label="Contact">011 19714416</td>
+            </tr>
+            <tr>
+              <td data-label="Organisation">UPM - Bureau pastoral des migrants</td>
+              <td data-label="Adresse">Via Cottolengo, 22</td>
+              <td data-label="Horaires">Lun-Jeu 9h-13h sans rendez-vous</td>
+              <td data-label="Contact">0112462092</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">📍</span>
+        <div>
+          Vous ne trouvez pas votre ville ? Vous connaissez une organisation absente ?
+          <a href="https://form.typeform.com/to/USx16QN3" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Dites-le nous
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Cela pourrait aussi vous intéresser</h2>
+      <div class="grid grid-3">
+        <a href="protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">Protection internationale</h3>
+        </a>
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Tous les permis</h3>
+        </a>
+        <a href="dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">Dictionnaire</h3>
+        </a>
+      </div>
+    </div>
+  </section>
