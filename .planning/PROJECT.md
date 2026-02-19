@@ -6,7 +6,21 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current State
 
-**Last Shipped:** v3.1 Prassi Locali + Notion-11ty Completion (2026-02-17)
+**Last Shipped:** v4.0 FR Translation (2026-02-19)
+
+**What was delivered (v4.0):**
+- French translation pipeline: `npm run translate --lang fr` with FR glossary
+- French Notion database (ID b7955daa) with 39 translated permits
+- FR pages generated: 39 permits, ~78 document pages, 12 static pages at `/fr/`
+- 11ty-native sitemaps (IT/EN/FR + index) with hreflang cross-references
+- Language switcher integrated as nav dropdown with flag emojis (IT/EN/FR)
+- Tech debt fixed: Typeform CTA, footer contact, listing page coverage, dizionario EN/FR links, canonical redirects
+
+**What was delivered (v3.2):**
+- Notion API response caching with `last_edited_time` tracking (87% build speedup)
+- Translation script (`npm run translate`) using Claude API with 35+ term glossary
+- EN permit + document pages generated from Notion via 11ty
+- Section-level hashing prevents re-translating unchanged content
 
 **What was delivered (v3.0):**
 - 11ty v3.1.2 with Liquid templates for static site generation
@@ -110,27 +124,32 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Translation script (npm run translate) with Claude API + glossary — v3.2
 - ✓ Section-level hashing for incremental re-translation — v3.2
 - ✓ EN static pages re-translated and old frozen files removed — v3.2
+- ✓ FR translation pipeline (translate script + Notion DB + 11ty generation) — v4.0
+- ✓ FR pages generated: 39 permits, ~78 document pages, 12 static pages at /fr/ — v4.0
+- ✓ 11ty-native sitemaps (IT/EN/FR + index) with hreflang alternates — v4.0
+- ✓ Language switcher as nav dropdown with flag emojis (IT/EN/FR) — v4.0
+- ✓ Dizionario links in EN/FR document pages — v4.0
+- ✓ Typeform CTA on permit pages, footer contact link — v4.0
+- ✓ Homepage canonical 301 redirects — v4.0
+- ✓ Complete listing page coverage (41 IT / 39 EN / 39 FR) — v4.0
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-## Current Milestone: v4.0 FR Translation
-
-**Goal:** Add French translation to the site using the same Notion → 11ty pipeline established for EN. Extend the translation script to target FR, create a French Notion database, generate pages at /fr/ prefix, and upgrade the language switcher to support IT/EN/FR. ES translation follows in v4.1 if the FR pipeline works well.
+(No active milestone — run `/gsd:new-milestone` to define next goals)
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 **Permit Database (LIVE IT):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
 **Permit Database (LIVE EN):** ID `c1dc0271-f1f4-4147-9464-391884f4dfad`
+**Permit Database (LIVE FR):** ID `b7955daa-3da7-4a0c-ac9d-0bbe4ba7d70e`
 
 ### Out of Scope
 
 - ES translation — deferred to v4.1 after FR pipeline is validated
-- Additional languages beyond FR (ZH, AR, etc.) — architecture supports adding later
-- Moving language switcher into main nav bar — tech debt, noted for future milestone
+- Additional languages beyond FR/ES (ZH, AR, etc.) — architecture supports adding later
 - Real-time permit status tracking — external service, just link to portale immigrazione
 - Content validation pass — translate what's there, fix content separately
-- Dizionario link revision — separate concern, defer
 
 ## Context
 

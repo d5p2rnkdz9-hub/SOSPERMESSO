@@ -1,5 +1,32 @@
 # Project Milestones: SOS Permesso
 
+## v4.0 FR Translation (Shipped: 2026-02-19)
+
+**Delivered:** French translation of the entire site using the same Notion + 11ty pipeline as EN, with 11ty-native sitemaps, nav-integrated language switcher, and comprehensive tech debt fixes.
+
+**Phases completed:** 51-54 (+ 53.1 tech debt), 10 plans total
+
+**Key accomplishments:**
+
+- Translation script extended for multi-language support with FR-specific glossary
+- French Notion database created with 39 translated permits and document data
+- FR pages generated: 39 permits, ~78 document pages, 12 static pages at `/fr/` prefix
+- Tech debt resolved: 11ty-native sitemaps, listing page coverage, Typeform CTA, footer contact, nav language switcher, dizionario EN/FR links
+- SEO: hreflang IT/EN/FR on all pages, 3 language sitemaps with cross-references, canonical redirects
+
+**Stats:**
+
+- 92 files changed (+19,197 / -2,951)
+- 5 phases, 10 plans
+- 52 commits
+- 2 days (2026-02-18 → 2026-02-19)
+
+**Git range:** `a18ec43` → `0a65983`
+
+**What's next:** v4.1 ES Translation (if FR pipeline validates well)
+
+---
+
 ## v3.2 EN Translation Pipeline (Shipped: 2026-02-18)
 
 **Delivered:** Connected English pages to the same 11ty/Notion pipeline as Italian. Added Notion response caching for incremental builds, translation script with Claude API, and EN page generation from Notion.
