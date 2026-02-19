@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-19
-**Status:** Milestone v4.1 avviato — requirements definiti, roadmap in creazione
+**Status:** Milestone v4.1 avviato — roadmap creata, Phase 55 pronta per pianificazione
 
 ## Project Reference
 
@@ -9,19 +9,30 @@ See: .planning/PROJECT.md (updated 2026-02-19)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v4.1 Prassi & Note Editoriali — Phase 55 (Bug Fixes)
+**Current focus:** v4.1 Prassi & Note Editoriali — Phase 55 (Bug Fixes) is next
 
 ## Current Position
 
 **Current Milestone:** v4.1 Prassi & Note Editoriali
-**Phase:** Not started (Phase 55 è il prossimo)
+**Phase:** Phase 55 — Bug Fixes (not started)
 **Plan:** —
-**Status:** Defining roadmap
-**Last activity:** 2026-02-19 — Milestone v4.1 avviato, requirements approvati
+**Status:** Roadmap complete, ready to plan Phase 55
+**Last activity:** 2026-02-19 — Roadmap v4.1 created (Phases 55-59, 10 requirements)
 
 ```
-Progress: No active phase — run /gsd:plan-phase 55
+Progress: [----------] 0/5 phases complete
+Next: /gsd:plan-phase 55
 ```
+
+## Phases at a Glance
+
+| Phase | Name | Requirements | Status |
+|-------|------|--------------|--------|
+| 55 | Bug Fixes | BUG-01, BUG-02 | Pending |
+| 56 | Function Smoke Tests | PRAS-01, PRAS-04 | Pending |
+| 57 | Security Controls | PRAS-02, PRAS-03 | Pending |
+| 58 | Rebuild Automation | AUTO-01, AUTO-02, MOD-01 | Pending |
+| 59 | End-to-End Validation | AUTO-03 | Pending |
 
 ## Accumulated Context
 
@@ -38,22 +49,23 @@ Progress: No active phase — run /gsd:plan-phase 55
 ### Decisioni chiave per v4.1
 
 - **Notion Automation → Build Hook direttamente**: workspace su piano a pagamento, opzione semplice (no code)
-- **notion-webhook.mjs**: già scritto ma non necessario per v4.1 — non usare
+- **notion-webhook.mjs**: già scritto ma non necessario per v4.1 — non usare, non puntare Notion Automation a questo endpoint (manca X-Notion-Signature, ritornerebbe 401)
 - **Voting rinviato**: `vote-prassi.mjs` esiste ma non viene attivato in v4.1
-- **PRASSI_DB_ID**: env var nelle Netlify Functions (ok), hardcoded in `_data/prassiLocali.js` (da fixare)
-- **Build Hook URL**: segreto assoluto — mai in git o client-side code
+- **PRASSI_DB_ID**: env var nelle Netlify Functions (ok), hardcoded in `_data/prassiLocali.js` (da fixare in Phase 55)
+- **Build Hook URL**: segreto assoluto — mai in git o client-side code; se esposto, ruotarlo subito in Netlify Dashboard
 
 ### Blockers/Concerns
 
-- `@notionhq/client` v5 ha cambiato `parent.database_id` → `parent.data_source_id` in alcuni contesti — `submit-prassi.mjs` usa vecchio pattern, da verificare live prima di tutto il resto (Phase 56)
-- Build Hook URL da non esporre pubblicamente — budget 300 min/mese su free tier
+- `@notionhq/client` v5 ha cambiato `parent.database_id` → `parent.data_source_id` in alcuni contesti — `submit-prassi.mjs` usa vecchio pattern, da verificare live in Phase 56 con curl prima di procedere
+- CORS headers potrebbero mancare sui path di errore (400, 429, 500) — verificare ogni `return new Response(...)` in `submit-prassi.mjs` incluso il `catch` block
+- Budget build Netlify: 300 min/mese free tier, ogni rebuild ~72s — Build Hook URL deve restare segreto
 
 ## Session Continuity
 
 **Last session:** 2026-02-19
-**Stopped at:** Requirements approvati, roadmap in creazione
+**Stopped at:** Roadmap v4.1 scritta (Phases 55-59)
 **Resume with:** `/gsd:plan-phase 55`
-**Resume file:** None
+**Resume file:** .planning/ROADMAP.md
 
 ---
 

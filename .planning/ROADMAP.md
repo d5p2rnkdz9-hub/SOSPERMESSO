@@ -15,6 +15,7 @@
 - ✅ **v3.1 Prassi Locali + Notion-11ty Completion** - Phases 39-46 (shipped 2026-02-17)
 - ✅ **v3.2 EN Translation Pipeline** - Phases 47-50 (shipped 2026-02-18)
 - ✅ **v4.0 FR Translation** - Phases 51-54 (shipped 2026-02-19)
+- 🔄 **v4.1 Prassi & Note Editoriali** - Phases 55-59 (active)
 
 ---
 
@@ -139,8 +140,118 @@
 
 ---
 
+## v4.1 Prassi & Note Editoriali (Phases 55-59)
+
+**Milestone Goal:** Complete the prassi locali system (three Netlify Functions already written — wire and verify them) and fix the bug preventing editorial notes from displaying on document pages.
+
+**Requirements:** BUG-01, BUG-02, PRAS-01, PRAS-02, PRAS-03, PRAS-04, AUTO-01, AUTO-02, AUTO-03, MOD-01
+
+**Coverage:** 10/10 requirements mapped ✓
+
+---
+
+### Phase 55: Bug Fixes
+
+**Goal:** Known data bugs are corrected and content that was silently missing now appears on the site.
+
+**Dependencies:** None — standalone fixes, ship immediately.
+
+**Requirements:** BUG-01, BUG-02
+
+**Success Criteria:**
+1. Editorial notes ("Info extra su doc rilascio/rinnovo") are visible on document and permit pages in the built site — a human can open a document page and see the note content that was previously blank.
+2. `_data/prassiLocali.js` reads `PRASSI_DB_ID` from a hardcoded constant (not `process.env`), consistent with all other data files in the project.
+3. A build completes without errors after both changes; no existing page content is broken.
+
+**Status:** Pending
+
+---
+
+### Phase 56: Function Smoke Tests
+
+**Goal:** `submit-prassi.mjs` accepts a real submission against the live Notion database, and CORS headers are present on every response code path so browsers can read both success and error responses.
+
+**Dependencies:** Phase 55 (BUG-02 ensures `PRASSI_DB_ID` is available at build time; env var must also be set in Netlify for the function).
+
+**Requirements:** PRAS-01, PRAS-04
+
+**Success Criteria:**
+1. A `curl` POST to `/.netlify/functions/submit-prassi` on the deployed site returns `{ success: true, id: "..." }` and a new row appears in the Notion Prassi DB with Status=Pending.
+2. A deliberately malformed request (e.g., missing `description`) returns a 400 response that includes CORS headers — a browser `fetch()` call can read the error body without a CORS error.
+3. A simulated server error path (500) also returns CORS headers — verified by code review of the `catch` block in `submit-prassi.mjs`.
+4. If `@notionhq/client` v5 requires `parent.data_source_id` instead of `parent.database_id`, the fix is applied and confirmed working with the live test.
+
+**Status:** Pending
+
+---
+
+### Phase 57: Security Controls
+
+**Goal:** The submission endpoint is hardened against bots and abuse before the feature is promoted to real users.
+
+**Dependencies:** Phase 56 (endpoint must be confirmed working before adding controls on top of it).
+
+**Requirements:** PRAS-02, PRAS-03
+
+**Success Criteria:**
+1. A form submission with the honeypot field (`website`) populated is rejected server-side with a 400 response — bots filling all fields cannot create Notion rows.
+2. A fourth submission from the same IP within 180 seconds receives a 429 response — rate limiting is active via the `config` export in `submit-prassi.mjs`.
+3. The honeypot `<input>` is hidden from real users via CSS (`display: none`) and does not appear in the rendered form.
+
+**Status:** Pending
+
+---
+
+### Phase 58: Rebuild Automation
+
+**Goal:** When an admin approves a prassi entry in Notion, the site rebuilds automatically without any manual action — and the admin has a filtered view to find pending entries quickly.
+
+**Dependencies:** Phase 57 (endpoints must be hardened before wiring automation that could trigger production rebuilds).
+
+**Requirements:** AUTO-01, AUTO-02, MOD-01
+
+**Success Criteria:**
+1. A Netlify Build Hook exists for the production site and its URL is stored only in Netlify environment variables and in the Notion Automation config — it does not appear anywhere in the git repository.
+2. Changing a Prassi DB row's Status to "Approvato" in Notion triggers a Netlify rebuild within ~2 minutes — verified by observing a new deploy appear in the Netlify dashboard.
+3. The Notion Prassi DB has a "Da approvare" view filtered to Status=Pending, sorted by creation date ascending — an admin can open this view and see only unreviewed submissions.
+
+**Status:** Pending
+
+---
+
+### Phase 59: End-to-End Validation
+
+**Goal:** The full user-to-site pipeline works: a submission from the live form appears on the correct document page after admin approval and a rebuild.
+
+**Dependencies:** Phase 58 (rebuild automation must be wired before the flow can be validated end-to-end).
+
+**Requirements:** AUTO-03
+
+**Success Criteria:**
+1. A test submission made from the live site's prassi form (not curl) creates a Pending row in Notion with the correct `pageSlug`, city, and description.
+2. After the admin approves the row in the "Da approvare" view, a Netlify rebuild triggers automatically (no manual build command needed).
+3. After the rebuild completes, navigating to the document page corresponding to `pageSlug` shows the approved prassi entry in the prassi section — a human can read it.
+4. The test entry is deleted or marked Rejected in Notion after validation to keep the DB clean.
+
+**Status:** Pending
+
+---
+
+## Progress
+
+| Phase | Name | Goal | Requirements | Criteria | Status |
+|-------|------|------|--------------|----------|--------|
+| 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Pending |
+| 56 | Function Smoke Tests | submit-prassi works live, CORS on all paths | PRAS-01, PRAS-04 | 4 | Pending |
+| 57 | Security Controls | Honeypot + rate limiting active before user promotion | PRAS-02, PRAS-03 | 3 | Pending |
+| 58 | Rebuild Automation | Approval triggers rebuild; admin has moderation view | AUTO-01, AUTO-02, MOD-01 | 3 | Pending |
+| 59 | End-to-End Validation | Full submit→approve→rebuild→visible flow confirmed | AUTO-03 | 4 | Pending |
+
+---
+
 *Roadmap created: 2026-02-18 -- v4.0 FR + ES Translation*
 *Revised: 2026-02-18 -- scoped to FR only; ES deferred to v4.1*
 *Revised: 2026-02-19 -- Phase 53.1 planned (5 plans, 1 wave)*
 *v4.0 archived: 2026-02-19*
+*v4.1 added: 2026-02-19 -- Phases 55-59, 10 requirements mapped*
 *Previous milestone: v3.2 (Phases 47-50) shipped 2026-02-18*
