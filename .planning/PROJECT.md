@@ -133,11 +133,31 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Homepage canonical 301 redirects — v4.0
 - ✓ Complete listing page coverage (41 IT / 39 EN / 39 FR) — v4.0
 
+## Current Milestone: v4.1 Prassi & Note Editoriali
+
+**Goal:** Completare il sistema prassi locali (Netlify Functions già scritte, da cablare e verificare) e correggere il bug che impedisce la visualizzazione delle note editoriali sui documenti.
+
+**Target features:**
+- Fix nome campo Notion `"Info extra su doc rilascio"` → `"Info extra su doc rilascio/rinnovo"` (note editoriali finalmente visibili)
+- `submit-prassi.mjs` funzionante in produzione con spam protection (honeypot + rate limiting)
+- Netlify Build Hook + Notion Automation: rebuild automatico quando admin approva una prassi
+- Notion DB moderation views per semplificare il lavoro admin
+- `PRASSI_DB_ID` hardcoded in `_data/prassiLocali.js`
+
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-(No active milestone — run `/gsd:new-milestone` to define next goals)
+- [ ] BUG-01: Note editoriali visibili — fix campo Notion in documents.js e permits.js
+- [ ] BUG-02: PRASSI_DB_ID hardcoded in prassiLocali.js
+- [ ] PRAS-01: submit-prassi.mjs funzionante live (env vars + v5 parent field fix)
+- [ ] PRAS-02: Spam protection — honeypot field + validazione server-side
+- [ ] PRAS-03: Rate limiting su submit-prassi (Netlify config export)
+- [ ] PRAS-04: CORS su tutti i response path
+- [ ] AUTO-01: Netlify Build Hook creato e segreto
+- [ ] AUTO-02: Notion Automation configurata (Status=Approvato → rebuild)
+- [ ] AUTO-03: Flow end-to-end validato
+- [ ] MOD-01: Notion DB view "Da approvare" configurata
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 **Permit Database (LIVE IT):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
@@ -235,4 +255,4 @@ Users can quickly find accurate, understandable information about their specific
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-02-18 — scoped v4.0 to FR only; ES deferred to v4.1*
+*Last updated: 2026-02-19 — started v4.1 Prassi & Note Editoriali; ES Translation rinviato a v4.2*
