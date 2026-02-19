@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-19
-**Status:** v4.0 — Phase 53.1 complete (all 5 plans done)
+**Status:** v4.0 — Phase 53.1 in progress (plans 01, 02, 05 done; 03, 04 pending)
 
 ## Project Reference
 
@@ -9,18 +9,18 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v4.0 FR Translation — Tech Debt cleanup COMPLETE
+**Current focus:** v4.0 FR Translation — Tech Debt cleanup in progress
 
 ## Current Position
 
 **Current Milestone:** v4.0 FR Translation
-**Phase:** 53.1 - Tech Debt (COMPLETE)
-**Plan:** 5 of 5 done
-**Status:** All 5 tech debt plans complete.
-**Last activity:** 2026-02-19 — Completed 53.1-05-PLAN.md (dizionario EN/FR linking)
+**Phase:** 53.1 - Tech Debt (in progress)
+**Plan:** 02 of 5 just completed (plans 01, 02, 05 done; 03, 04 pending)
+**Status:** In progress — listing pages audit complete.
+**Last activity:** 2026-02-19 — Completed 53.1-02-PLAN.md (listing pages audit IT/EN/FR)
 
 ```
-Progress: [██████████] 100%  (plan 05/05 of phase 53.1 done — phase complete)
+Progress: [████████░░] 3/5 plans complete in phase 53.1
 ```
 
 ## Accumulated Context
@@ -44,6 +44,7 @@ Progress: [██████████] 100%  (plan 05/05 of phase 53.1 done 
 - **53.1-01: contact-modal-removed** — Dead contact-form-container div + fetch script removed from all permit templates; Typeform is the sole contact CTA
 - **53.1-05: dizionario-lang-aware** — linkToDizionario filter accepts optional lang param; IT uses relative dizionario.html, EN/FR use absolute /dizionario.html; IT dizionario is single source of truth
 - **53.1-05: dizionario-null-safe** — Internal formatNotesContent() call linkToDizionario(bullet) passes no lang; null-safe guard defaults to 'it' — no modification needed to internal calls
+- **53.1-02: listing-coverage** — IT has 41 permits (incl. tirocinio/artistico); EN/FR have 39 each — consistent with Notion DB filtering; lavoro-autonomo-conversione was pre-existing gap in all 3 documenti-questura pages
 
 ### Carried from v3.2
 
@@ -57,7 +58,7 @@ Progress: [██████████] 100%  (plan 05/05 of phase 53.1 done 
 ## Session Continuity
 
 **Last session:** 2026-02-19
-**Stopped at:** Completed 53.1-05-PLAN.md (dizionario EN/FR linking — final plan in phase 53.1)
+**Stopped at:** Completed 53.1-02-PLAN.md (listing pages audit — IT/EN/FR database.html + documenti-questura.html)
 **Resume file:** None
 
 ---
