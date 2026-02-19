@@ -13,6 +13,25 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
+# Homepage canonical redirects
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/index.html"
+  to = "/en/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/index.html"
+  to = "/fr/"
+  status = 301
+  force = true
+
 # Security headers
 [[headers]]
   for = "/*"
