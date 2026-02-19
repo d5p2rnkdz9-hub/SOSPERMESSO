@@ -163,7 +163,11 @@
 2. `_data/prassiLocali.js` reads `PRASSI_DB_ID` from a hardcoded constant (not `process.env`), consistent with all other data files in the project.
 3. A build completes without errors after both changes; no existing page content is broken.
 
-**Status:** Pending
+**Plans:** 1 plan
+Plans:
+- [ ] 55-01-PLAN.md — Fix Notion field name mismatch + hardcode PRASSI_DB_ID
+
+**Status:** Planned
 
 ---
 
@@ -259,7 +263,7 @@
 
 | Phase | Name | Goal | Requirements | Criteria | Status |
 |-------|------|------|--------------|----------|--------|
-| 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Pending |
+| 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Planned |
 | 56 | Function Smoke Tests | submit-prassi works live, CORS on all paths | PRAS-01, PRAS-04 | 4 | Pending |
 | 57 | Security Controls | Honeypot + rate limiting active before user promotion | PRAS-02, PRAS-03 | 3 | Pending |
 | 58 | Rebuild Automation | Approval triggers rebuild; admin has moderation view | AUTO-01, AUTO-02, MOD-01 | 3 | Pending |
@@ -275,3 +279,4 @@
 *v4.1 added: 2026-02-19 -- Phases 55-59, 10 requirements mapped*
 *v4.1 revised: 2026-02-19 -- Phase 60 added (note editoriali da blocchi Notion), 12 requirements total*
 *Previous milestone: v3.2 (Phases 47-50) shipped 2026-02-18*
+*Phase 55 planned: 2026-02-19 -- 1 plan, 1 wave*
