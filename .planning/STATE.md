@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-02-18
-**Status:** v4.0 — Phase 53 complete, Phase 54 next
+**Last Updated:** 2026-02-19
+**Status:** v4.0 — Phase 53.1 in progress (plan 01 complete)
 
 ## Project Reference
 
@@ -9,18 +9,18 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v4.0 FR Translation
+**Current focus:** v4.0 FR Translation — Tech Debt cleanup
 
 ## Current Position
 
 **Current Milestone:** v4.0 FR Translation
-**Phase:** 53.1 - Tech Debt (not started, context gathered)
-**Plan:** 0 of ? done
-**Status:** Context gathered. 7 tech debt items scoped. Ready for planning.
-**Last activity:** 2026-02-19 — Phase 53.1 context gathered (sitemap, listing gaps, canonicals, dizionario links, Typeform fix, footer contact, nav language switcher).
+**Phase:** 53.1 - Tech Debt (in progress)
+**Plan:** 1 of 5 done
+**Status:** Plan 01 complete. Typeform CTA fixed, footer Contattaci added, Netlify redirects added.
+**Last activity:** 2026-02-19 — Completed 53.1-01-PLAN.md (Typeform fix + footer + redirects)
 
 ```
-Progress: [███████░░░] 75%  (3/4 phases complete)
+Progress: [████████░░] 80%  (plan 01/05 of phase 53.1 done)
 ```
 
 ## Accumulated Context
@@ -40,6 +40,8 @@ Progress: [███████░░░] 75%  (3/4 phases complete)
 - **53-01: copy-then-edit** — FR templates are exact structural copies of EN templates with targeted en->fr substitutions (no structural divergence)
 - **53-01: en-permit-blocker-fixed** — EN permesso-* DuplicatePermalinkOutputError fixed by adding safety net block inside existing EN try block in eleventy.config.mjs
 - **53-03: fr-page-counts** — 39 FR permits (matches EN; 4 permits filtered at Notion DB level, not a gap)
+- **53.1-01: external-link-pattern** — Footer links with `external: true` use raw href + target=_blank (no url filter); pattern established for future external footer links
+- **53.1-01: contact-modal-removed** — Dead contact-form-container div + fetch script removed from all permit templates; Typeform is the sole contact CTA
 
 ### Carried from v3.2
 
@@ -54,7 +56,7 @@ Progress: [███████░░░] 75%  (3/4 phases complete)
 ## Session Continuity
 
 **Last session:** 2026-02-19
-**Stopped at:** Phase 53.1 (Tech Debt) context gathered. Ready for planning.
+**Stopped at:** Completed 53.1-01-PLAN.md (Typeform CTA fix, Contattaci footer, Netlify redirects)
 **Resume file:** None
 
 ---
