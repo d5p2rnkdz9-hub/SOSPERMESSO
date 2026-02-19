@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-19
-**Status:** v4.0 — Phase 53.1 in progress (plans 01, 02, 05 done; 03, 04 pending)
+**Status:** v4.0 — Phase 53.1 in progress (plans 01, 02, 04, 05 done; 03 pending)
 
 ## Project Reference
 
@@ -15,12 +15,12 @@ See: .planning/PROJECT.md (updated 2026-02-18)
 
 **Current Milestone:** v4.0 FR Translation
 **Phase:** 53.1 - Tech Debt (in progress)
-**Plan:** 02 of 5 just completed (plans 01, 02, 05 done; 03, 04 pending)
-**Status:** In progress — listing pages audit complete.
-**Last activity:** 2026-02-19 — Completed 53.1-02-PLAN.md (listing pages audit IT/EN/FR)
+**Plan:** 04 of 5 just completed (plans 01, 02, 04, 05 done; 03 pending)
+**Status:** In progress — 11ty-native sitemaps complete.
+**Last activity:** 2026-02-19 — Completed 53.1-04-PLAN.md (11ty sitemap templates for IT/EN/FR)
 
 ```
-Progress: [████████░░] 3/5 plans complete in phase 53.1
+Progress: [████████░░] 4/5 plans complete in phase 53.1
 ```
 
 ## Accumulated Context
@@ -45,6 +45,8 @@ Progress: [████████░░] 3/5 plans complete in phase 53.1
 - **53.1-05: dizionario-lang-aware** — linkToDizionario filter accepts optional lang param; IT uses relative dizionario.html, EN/FR use absolute /dizionario.html; IT dizionario is single source of truth
 - **53.1-05: dizionario-null-safe** — Internal formatNotesContent() call linkToDizionario(bullet) passes no lang; null-safe guard defaults to 'it' — no modification needed to internal calls
 - **53.1-02: listing-coverage** — IT has 41 permits (incl. tirocinio/artistico); EN/FR have 39 each — consistent with Notion DB filtering; lavoro-autonomo-conversione was pre-existing gap in all 3 documenti-questura pages
+- **53.1-04: sitemap-data-driven** — Sitemaps use Liquid for-loops over permits/documentsX data arrays (not collection API) because pagination templates use eleventyExcludeFromCollections: true, excluding generated pages from collections
+- **53.1-04: pages.11tydata-bypass** — Added bypass in pages.11tydata.js: if front matter permalink is string not ending in .html, return it unchanged (prevents overriding .xml sitemap permalinks)
 
 ### Carried from v3.2
 
@@ -58,7 +60,7 @@ Progress: [████████░░] 3/5 plans complete in phase 53.1
 ## Session Continuity
 
 **Last session:** 2026-02-19
-**Stopped at:** Completed 53.1-02-PLAN.md (listing pages audit — IT/EN/FR database.html + documenti-questura.html)
+**Stopped at:** Completed 53.1-04-PLAN.md (11ty sitemap templates — IT/EN/FR + sitemap-index)
 **Resume file:** None
 
 ---
