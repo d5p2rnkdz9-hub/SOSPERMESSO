@@ -27,9 +27,21 @@ function extractCost(documents, keyword) {
   if (!documents || !documents.length) return null;
   const item = documents.find(d => d.toLowerCase().includes(keyword));
   if (!item) return null;
-  const match = item.match(/(\d+[\.,]?\d*)\s*€/);
+  const match = item.match(/(\d+[\.,]?\d*)\s*€/) || item.match(/da\s+(\d+[\.,]?\d*)/);
   if (!match) return null;
   return parseFloat(match[1].replace(',', '.'));
+}
+
+/**
+ * Extract alternative cost when item contains "X o Y" pattern
+ */
+function extractCostAlt(documents, keyword) {
+  if (!documents || !documents.length) return null;
+  const item = documents.find(d => d.toLowerCase().includes(keyword));
+  if (!item) return null;
+  const match = item.match(/(\d+[\.,]?\d*)\s+o\s+(\d+[\.,]?\d*)/);
+  if (!match) return null;
+  return parseFloat(match[2].replace(',', '.'));
 }
 
 /**
@@ -133,8 +145,10 @@ module.exports = async function() {
       // Extract costs (with FR keyword fallbacks)
       const costBollettinoPrimo = extractCost(primoDocuments, 'bollettino') || extractCost(primoDocuments, 'bordereau') || extractCost(primoDocuments, 'postal payment');
       const costMarcaBolloPrimo = extractCost(primoDocuments, 'marca da bollo') || extractCost(primoDocuments, 'timbre') || extractCost(primoDocuments, 'revenue stamp');
+      const costBollettinoAltPrimo = extractCostAlt(primoDocuments, 'bollettino') || extractCostAlt(primoDocuments, 'bordereau') || extractCostAlt(primoDocuments, 'postal payment');
       const costBollettinoRinnovo = extractCost(rinnovoDocuments, 'bollettino') || extractCost(rinnovoDocuments, 'bordereau') || extractCost(rinnovoDocuments, 'postal payment');
       const costMarcaBolloRinnovo = extractCost(rinnovoDocuments, 'marca da bollo') || extractCost(rinnovoDocuments, 'timbre') || extractCost(rinnovoDocuments, 'revenue stamp');
+      const costBollettinoAltRinnovo = extractCostAlt(rinnovoDocuments, 'bollettino') || extractCostAlt(rinnovoDocuments, 'bordereau') || extractCostAlt(rinnovoDocuments, 'postal payment');
 
       primo.push({
         tipo, slug,
@@ -142,6 +156,7 @@ module.exports = async function() {
         method: primoMethod,
         docNotes: docNotes || null,
         costBollettino: costBollettinoPrimo,
+        costBollettinoAlt: costBollettinoAltPrimo,
         costMarcaBollo: costMarcaBolloPrimo
       });
 
@@ -151,6 +166,7 @@ module.exports = async function() {
         method: rinnovoMethod,
         docNotes: docNotes || null,
         costBollettino: costBollettinoRinnovo,
+        costBollettinoAlt: costBollettinoAltRinnovo,
         costMarcaBollo: costMarcaBolloRinnovo
       });
     }

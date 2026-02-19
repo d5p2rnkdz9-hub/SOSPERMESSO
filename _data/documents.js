@@ -33,11 +33,24 @@ function extractCost(documents, keyword) {
   if (!documents || !documents.length) return null;
   const item = documents.find(d => d.toLowerCase().includes(keyword));
   if (!item) return null;
-  // Match number before € symbol (handles both comma and dot decimals)
-  const match = item.match(/(\d+[\.,]?\d*)\s*€/);
+  // Match number before € symbol, or after "da" (for entries without €)
+  const match = item.match(/(\d+[\.,]?\d*)\s*€/) || item.match(/da\s+(\d+[\.,]?\d*)/);
   if (!match) return null;
-  // Extract first number found (for cases like "70.46 o 80.46")
   return parseFloat(match[1].replace(',', '.'));
+}
+
+/**
+ * Extract alternative cost when item contains "X o Y" pattern
+ * e.g., "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)"
+ * @returns {number|null} The second (higher) amount, or null if no alternative
+ */
+function extractCostAlt(documents, keyword) {
+  if (!documents || !documents.length) return null;
+  const item = documents.find(d => d.toLowerCase().includes(keyword));
+  if (!item) return null;
+  const match = item.match(/(\d+[\.,]?\d*)\s+o\s+(\d+[\.,]?\d*)/);
+  if (!match) return null;
+  return parseFloat(match[2].replace(',', '.'));
 }
 
 /**
@@ -118,8 +131,10 @@ module.exports = async function() {
       // Extract costs from document lists
       const costBollettinoPrimo = extractCost(primoDocuments, 'bollettino');
       const costMarcaBolloPrimo = extractCost(primoDocuments, 'marca da bollo');
+      const costBollettinoAltPrimo = extractCostAlt(primoDocuments, 'bollettino');
       const costBollettinoRinnovo = extractCost(rinnovoDocuments, 'bollettino');
       const costMarcaBolloRinnovo = extractCost(rinnovoDocuments, 'marca da bollo');
+      const costBollettinoAltRinnovo = extractCostAlt(rinnovoDocuments, 'bollettino');
 
       primo.push({
         tipo, slug,
@@ -127,6 +142,7 @@ module.exports = async function() {
         method: primoMethod,
         docNotes: docNotes || null,
         costBollettino: costBollettinoPrimo,
+        costBollettinoAlt: costBollettinoAltPrimo,
         costMarcaBollo: costMarcaBolloPrimo
       });
 
@@ -136,6 +152,7 @@ module.exports = async function() {
         method: rinnovoMethod,
         docNotes: docNotes || null,
         costBollettino: costBollettinoRinnovo,
+        costBollettinoAlt: costBollettinoAltRinnovo,
         costMarcaBollo: costMarcaBolloRinnovo
       });
     }

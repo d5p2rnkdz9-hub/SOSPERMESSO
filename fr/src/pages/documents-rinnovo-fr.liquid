@@ -201,8 +201,11 @@ eleventyExcludeFromCollections: true
           {%- if doc.costBollettino -%}
           <li class="costi-item">
             <span class="costi-label">Bon de paiement postal <span class="costi-note">à payer à la Poste</span></span>
-            <span class="costi-amount">€ {{ doc.costBollettino }}</span>
+            <span class="costi-amount">€ {{ doc.costBollettino }}{% if doc.costBollettinoAlt %} ou € {{ doc.costBollettinoAlt }}{% endif %}</span>
           </li>
+          {%- if doc.costBollettinoAlt -%}
+          <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">Dépend de la durée du permis</li>
+          {%- endif -%}
           {%- endif -%}
           {%- if doc.costMarcaBollo -%}
           <li class="costi-item">
@@ -226,7 +229,7 @@ eleventyExcludeFromCollections: true
             {%- if doc.costMarcaBollo -%}{%- assign total = total | plus: doc.costMarcaBollo -%}{%- endif -%}
             {%- assign methodLowerTotal = doc.method | downcase -%}
             {%- if methodLowerTotal contains 'kit' -%}{%- assign total = total | plus: 30 -%}{%- endif -%}
-            {{ total }}
+            {{ total }}{%- if doc.costBollettinoAlt -%}{%- assign totalMax = 0 -%}{%- assign totalMax = totalMax | plus: doc.costBollettinoAlt -%}{%- if doc.costMarcaBollo -%}{%- assign totalMax = totalMax | plus: doc.costMarcaBollo -%}{%- endif -%}{%- if methodLowerTotal contains 'kit' -%}{%- assign totalMax = totalMax | plus: 30 -%}{%- endif -%} – {{ totalMax }}{%- endif -%}
           </span>
         </div>
       </div>
