@@ -25,8 +25,8 @@ Requirements for French translation via the same Notion + 11ty pipeline as EN. E
 
 ### SEO
 
-- [ ] **SEO-01**: Hreflang tags in base layout include FR alternate for all page types
-- [ ] **SEO-02**: sitemap-fr.xml added to sitemap index with hreflang cross-references
+- [x] **SEO-01**: Hreflang tags in base layout include FR alternate for all page types
+- [x] **SEO-02**: sitemap-fr.xml added to sitemap index with hreflang cross-references
 
 ### Tech Debt (Phase 53.1)
 
@@ -130,8 +130,8 @@ Requirements for French translation via the same Notion + 11ty pipeline as EN. E
 | FGEN-01 | Phase 53 | Complete |
 | FGEN-02 | Phase 53 | Complete |
 | FGEN-03 | Phase 53 | Complete |
-| SEO-01 | Phase 54 | Pending |
-| SEO-02 | Phase 54 | Pending |
+| SEO-01 | Phase 54 | Complete |
+| SEO-02 | Phase 54 | Complete |
 | DEBT-01 | Phase 53.1 | Complete |
 | DEBT-02 | Phase 53.1 | Complete |
 | DEBT-03 | Phase 53.1 | Complete |

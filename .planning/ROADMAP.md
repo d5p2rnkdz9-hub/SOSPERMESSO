@@ -14,7 +14,7 @@
 - ✅ **v3.0 11ty Migration** - Phases 35-38 (shipped 2026-02-05)
 - ✅ **v3.1 Prassi Locali + Notion-11ty Completion** - Phases 39-46 (shipped 2026-02-17)
 - ✅ **v3.2 EN Translation Pipeline** - Phases 47-50 (shipped 2026-02-18)
-- 🚧 **v4.0 FR Translation** - Phases 51-54 (in progress)
+- ✅ **v4.0 FR Translation** - Phases 51-54 (shipped 2026-02-19)
 
 ---
 
@@ -105,7 +105,7 @@
 
 ---
 
-## 🚧 v4.0 FR Translation (In Progress)
+## ✅ v4.0 FR Translation (Shipped 2026-02-19)
 
 **Milestone Goal:** Add French translation using the same Notion + 11ty pipeline as EN. Extend the translation script to support `--lang fr`, create a French Notion database, generate pages at `/fr/` prefix, and upgrade the language switcher and sitemaps to cover IT/EN/FR. ES translation follows in v4.1 if the FR pipeline works well.
 
@@ -213,8 +213,8 @@
 3. Hreflang tags on any page include a `fr` alternate link pointing to the correct translated page
 4. No hreflang errors reported by Google Search Console tooling (self-referencing canonical + all language alternates present)
 
-**Status:** Not started
-**Plans:** TBD
+**Status:** Complete (2026-02-19)
+**Plans:** Pre-built in phases 53 and 53.1 (hreflang in base.liquid, sitemaps in 53.1-04, static page parity + sitemap fix done directly)
 
 ---
 
@@ -230,7 +230,7 @@
 | 52. Notion Database | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 53. FR Page Generation | v4.0 | 3/3 | ✓ Complete | 2026-02-18 |
 | 53.1 Tech Debt | v4.0 | 5/5 | ✓ Complete | 2026-02-19 |
-| 54. SEO | v4.0 | 0/? | Not started | - |
+| 54. SEO | v4.0 | n/a | ✓ Complete | 2026-02-19 |
 
 ---
 
