@@ -99,7 +99,7 @@ eleventyExcludeFromCollections: true
           {%- for docItem in doc.documents -%}
             {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
             {%- assign docClass = normalizedDoc | getDocumentClass -%}
-            {%- assign docLabel = normalizedDoc | linkToDizionario -%}
+            {%- assign docLabel = normalizedDoc | linkToDizionario: lang -%}
             {%- assign disputed = normalizedDoc | isDisputed -%}
           <div class="{{ docClass }}">
             <input type="checkbox"

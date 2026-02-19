@@ -118,7 +118,7 @@ eleventyExcludeFromCollections: true
         {%- assign commonDocName = "Copie du permis précédent (ou déclaration de perte)" -%}
         {%- assign commonDocNormalized = commonDocName | normalizeDocumentName -%}
         {%- assign commonDocClass = commonDocNormalized | getDocumentClass -%}
-        {%- assign commonDocLabel = commonDocNormalized | escapeHtml -%}
+        {%- assign commonDocLabel = commonDocNormalized | linkToDizionario: lang -%}
 
         <div class="doc-checklist" data-permit="{{ doc.slug }}-rinnovo-fr">
           <!-- Common document always first -->
@@ -136,7 +136,7 @@ eleventyExcludeFromCollections: true
             {%- assign lowerDoc = normalizedDoc | downcase -%}
             {%- unless lowerDoc contains "copy of previous permit" or lowerDoc contains "copia permesso precedente" or lowerDoc contains "copie du permis" -%}
               {%- assign docClass = normalizedDoc | getDocumentClass -%}
-              {%- assign docLabel = normalizedDoc | escapeHtml -%}
+              {%- assign docLabel = normalizedDoc | linkToDizionario: lang -%}
               {%- assign disputed = normalizedDoc | isDisputed -%}
               {%- assign idx = forloop.index -%}
           <div class="{{ docClass }}">

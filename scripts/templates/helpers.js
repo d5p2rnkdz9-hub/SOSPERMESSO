@@ -17,10 +17,20 @@ const DISPUTED_DOCUMENTS = [
  * Find dizionario terms within text and wrap them in links
  * Searches for partial matches (terms contained within the document name)
  * @param {string} documentName - Document name from Notion
+ * @param {string} [lang] - Language code ('it', 'en', 'fr'). Defaults to 'it'.
+ *   EN/FR pages use absolute path (/dizionario.html) since they're served from /en/ or /fr/.
+ *   IT pages use relative path (dizionario.html) since they're at root level.
  * @returns {string} HTML string with terms linked to dizionario
  */
-function linkToDizionario(documentName) {
+function linkToDizionario(documentName, lang) {
+  if (!lang) lang = 'it';  // Internal calls without lang default to IT
   if (!documentName) return '';
+
+  // Determine dizionario URL base based on language
+  // EN/FR pages are at /en/ or /fr/ prefix, so need absolute path to reach root dizionario
+  const dizionarioBase = (lang === 'en' || lang === 'fr')
+    ? '/dizionario.html'
+    : 'dizionario.html';
 
   // Sort terms by length (longest first) to match longer phrases before shorter ones
   const terms = Object.keys(dizionarioMap).sort((a, b) => b.length - a.length);
@@ -59,7 +69,7 @@ function linkToDizionario(documentName) {
   for (const r of replacements) {
     const before = result.slice(0, r.start);
     const after = result.slice(r.end);
-    const link = `<a href="dizionario.html#${r.anchorId}" class="doc-link">${escapeHtml(r.original)}</a>`;
+    const link = `<a href="${dizionarioBase}#${r.anchorId}" class="doc-link">${escapeHtml(r.original)}</a>`;
     result = before + link + after;
   }
 
