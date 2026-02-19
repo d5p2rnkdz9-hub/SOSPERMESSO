@@ -130,8 +130,8 @@ module.exports = async function() {
       }
       seenSlugs.add(slug);
 
-      // Get document notes
-      const docNotesRichText = page.properties["Info extra su doc rilascio"]?.rich_text || [];
+      // Get document notes from "Info extra su doc rilascio/rinnovo" field
+      const docNotesRichText = page.properties["Info extra su doc rilascio/rinnovo"]?.rich_text || [];
       const docNotes = docNotesRichText.map(segment => segment.plain_text || '').join('');
 
       // Extract document lists

@@ -67,8 +67,8 @@ async function fetchPermitData(notion) {
     // Get permit name from title property "Nome permesso"
     const tipo = page.properties["Nome permesso"]?.title?.[0]?.plain_text || null;
 
-    // Get document notes from "Info extra su doc rilascio" field
-    const docNotesRichText = page.properties["Info extra su doc rilascio"]?.rich_text || [];
+    // Get document notes from "Info extra su doc rilascio/rinnovo" field
+    const docNotesRichText = page.properties["Info extra su doc rilascio/rinnovo"]?.rich_text || [];
     const docNotes = docNotesRichText.map(segment => segment.plain_text || '').join('');
 
     return {
