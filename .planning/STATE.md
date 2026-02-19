@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-02-19
-**Status:** Milestone v4.1 avviato — roadmap creata, Phase 55 pronta per pianificazione
+**Status:** Phase 55 plan 01 complete — editorial notes fix applied, build passing
 
 ## Project Reference
 
@@ -9,26 +9,26 @@ See: .planning/PROJECT.md (updated 2026-02-19)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v4.1 Prassi & Note Editoriali — Phase 55 (Bug Fixes) is next
+**Current focus:** v4.1 Prassi & Note Editoriali — Phase 55 complete (1/1 plan done)
 
 ## Current Position
 
 **Current Milestone:** v4.1 Prassi & Note Editoriali
-**Phase:** Phase 55 — Bug Fixes (not started)
-**Plan:** —
-**Status:** Roadmap complete, ready to plan Phase 55
-**Last activity:** 2026-02-19 — Roadmap v4.1 created (Phases 55-59, 10 requirements)
+**Phase:** Phase 55 — Bug Fixes (complete)
+**Plan:** 1 of 1 in current phase
+**Status:** Phase 55 complete, ready for Phase 56
+**Last activity:** 2026-02-19 — Completed 55-01-PLAN.md
 
 ```
-Progress: [----------] 0/5 phases complete
-Next: /gsd:plan-phase 55
+Progress: [##--------] 1/5 phases complete
+Next: /gsd:plan-phase 56
 ```
 
 ## Phases at a Glance
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 55 | Bug Fixes | BUG-01, BUG-02 | Pending |
+| 55 | Bug Fixes | BUG-01, BUG-02 | Complete |
 | 56 | Function Smoke Tests | PRAS-01, PRAS-04 | Pending |
 | 57 | Security Controls | PRAS-02, PRAS-03 | Pending |
 | 58 | Rebuild Automation | AUTO-01, AUTO-02, MOD-01 | Pending |
@@ -51,8 +51,10 @@ Next: /gsd:plan-phase 55
 - **Notion Automation → Build Hook direttamente**: workspace su piano a pagamento, opzione semplice (no code)
 - **notion-webhook.mjs**: già scritto ma non necessario per v4.1 — non usare, non puntare Notion Automation a questo endpoint (manca X-Notion-Signature, ritornerebbe 401)
 - **Voting rinviato**: `vote-prassi.mjs` esiste ma non viene attivato in v4.1
-- **PRASSI_DB_ID**: env var nelle Netlify Functions (ok), hardcoded in `_data/prassiLocali.js` (da fixare in Phase 55)
+- **PRASSI_DB_ID**: env var nelle Netlify Functions (ok), hardcoded in `_data/prassiLocali.js` (FIXATO in 55-01)
 - **Build Hook URL**: segreto assoluto — mai in git o client-side code; se esposto, ruotarlo subito in Netlify Dashboard
+- **Tutti i DB ID hardcoded in _data/**: pattern confermato (documents.js, permits.js, prassiLocali.js)
+- **Field name Notion**: `"Info extra su doc rilascio/rinnovo"` (con /rinnovo) è il nome corretto — fix applicato a documents.js, permits.js, documentsEn.js, documentsFr.js
 
 ### Blockers/Concerns
 
@@ -63,8 +65,8 @@ Next: /gsd:plan-phase 55
 ## Session Continuity
 
 **Last session:** 2026-02-19
-**Stopped at:** Roadmap v4.1 scritta (Phases 55-59)
-**Resume with:** `/gsd:plan-phase 55`
+**Stopped at:** Completed 55-01-PLAN.md
+**Resume with:** `/gsd:plan-phase 56`
 **Resume file:** .planning/ROADMAP.md
 
 ---

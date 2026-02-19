@@ -165,9 +165,9 @@
 
 **Plans:** 1 plan
 Plans:
-- [ ] 55-01-PLAN.md — Fix Notion field name mismatch + hardcode PRASSI_DB_ID
+- [x] 55-01-PLAN.md — Fix Notion field name mismatch + hardcode PRASSI_DB_ID
 
-**Status:** Planned
+**Status:** Complete (2026-02-19)
 
 ---
 
@@ -263,7 +263,7 @@ Plans:
 
 | Phase | Name | Goal | Requirements | Criteria | Status |
 |-------|------|------|--------------|----------|--------|
-| 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Planned |
+| 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Complete |
 | 56 | Function Smoke Tests | submit-prassi works live, CORS on all paths | PRAS-01, PRAS-04 | 4 | Pending |
 | 57 | Security Controls | Honeypot + rate limiting active before user promotion | PRAS-02, PRAS-03 | 3 | Pending |
 | 58 | Rebuild Automation | Approval triggers rebuild; admin has moderation view | AUTO-01, AUTO-02, MOD-01 | 3 | Pending |
