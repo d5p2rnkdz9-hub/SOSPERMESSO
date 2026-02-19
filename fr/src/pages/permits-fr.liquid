@@ -87,9 +87,9 @@ eleventyExcludeFromCollections: true
         <span class="alert-icon">❓</span>
         <div>
           Vous avez d'autres questions sur le permis pour {{ permit.tipo }} ?
-          <button onclick="openContactModal()" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             Contactez-nous
-          </button>
+          </a>
         </div>
       </div>
 
@@ -118,15 +118,3 @@ eleventyExcludeFromCollections: true
       </div>
     </div>
   </section>
-
-  <!-- Contact Form Container -->
-  <div id="contact-form-container"></div>
-
-  <script>
-    // Load contact form
-    fetch('/src/components/contact-form.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('contact-form-container').innerHTML = html;
-      });
-  </script>
