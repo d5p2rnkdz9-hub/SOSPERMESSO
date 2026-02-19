@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/"/>
   </url>
   <!-- EN Static pages -->
-  {%- assign enStaticPages = "database,documenti-questura,chi-siamo,dizionario,protezione-internazionale,ricongiungimento-familiare,decreto-flussi,kit-postale,il-progetto,privacy-policy,aiuto-legale,carta-soggiorno-familiare-italiano-dinamico,carta-soggiorno-familiare-ue" | split: "," %}
+  {%- assign enStaticPages = "database,documenti-questura,chi-siamo,dizionario,protezione-internazionale,ricongiungimento-familiare,decreto-flussi,kit-postale,il-progetto,privacy-policy,aiuto-legale,controlla-permesso" | split: "," %}
   {%- for slug in enStaticPages %}
   <url>
     <loc>{{ site.url }}/en/{{ slug }}.html</loc>
