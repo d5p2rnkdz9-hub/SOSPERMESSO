@@ -52,7 +52,7 @@ Progress: [██████████] 5/5 plans complete in phase 53.1 ✓
 ### Carried from v3.2
 
 - Content validation pass (deferred from v3.1) — dizionario links now working across IT/EN/FR
-- 3 unrecognized permits in DB (Tirocinio, Lavoro artistico, Sanatoria) — user to decide
+- 2 permits with no Q&A content in Notion (Tirocinio, Lavoro artistico) — IT-only, not translated to EN/FR
 
 ### Blockers/Concerns
 

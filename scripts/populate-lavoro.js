@@ -178,50 +178,6 @@ const permits = [
     ]
   },
   {
-    id: '1ad7355e-7f7f-8054-a4a1-e9f4a31686d4',
-    name: 'Lavoro subordinato a seguito di sanatoria',
-    slug: 'lavoro-subordinato-a-seguito-di-sanatoria',
-    blocks: [
-      p(bold("Che cos'è questo permesso?")),
-      p(plain("Il permesso di soggiorno per lavoro subordinato a seguito di sanatoria (o \"emersione\") ti viene dato se il tuo datore di lavoro ha presentato domanda durante un decreto di regolarizzazione (sanatoria) e la domanda è stata accettata. È un permesso per lavoro dipendente, uguale a quello ottenuto con i flussi, ma con un percorso di ingresso diverso.")),
-      empty(),
-
-      p(bold("Chi può chiederlo?")),
-      p(plain("Puoi avere questo permesso se:")),
-      bullet(plain("Il tuo datore di lavoro ha presentato domanda di emersione durante una sanatoria")),
-      bullet(plain("La domanda è stata accettata dalla Prefettura")),
-      bullet(plain("Hai firmato il contratto di soggiorno")),
-      empty(),
-
-      p(bold("Come si chiede questo permesso?")),
-      p(plain("Si chiede con il kit postale, sia per il primo rilascio che per il rinnovo.")),
-      // doc links inserted below
-      empty(),
-
-      p(bold("Che diritti mi dà? A cosa ho accesso?")),
-      p(plain("Con questo permesso puoi:")),
-      bullet([bold("Lavorare come dipendente (lavoro subordinato)")]),
-      bullet([bold("Iscriverti al Servizio Sanitario Nazionale (SSN)")]),
-      bullet(plain("Chiedere la residenza")),
-      bullet(plain("Chiedere il ricongiungimento familiare")),
-      empty(),
-
-      p(bold("Quanto dura questo permesso?")),
-      p(plain("Il permesso ha la stessa durata del contratto di lavoro, fino a un massimo di 2 anni. Puoi rinnovarlo se hai ancora un contratto di lavoro.")),
-      empty(),
-
-      p(bold("Quando scade posso rinnovarlo?")),
-      p(plain("Sì, puoi rinnovarlo con il kit postale prima della scadenza. Al rinnovo funziona come un normale permesso per lavoro subordinato: devi presentare il contratto di lavoro e le prove di reddito.")),
-      empty(),
-
-      p(bold("Quanto costa?")),
-      p(plain("Il costo totale è circa 116,46€ o 126,46€ (dipende dalla durata del permesso):")),
-      bullet(plain("70,46€ o 80,46€ per il bollettino postale (include il costo del permesso elettronico)")),
-      bullet(plain("30€ per spedire il kit postale")),
-      bullet(plain("16€ per la marca da bollo")),
-    ]
-  },
-  {
     id: '1ad7355e-7f7f-80b1-bf0e-ced1be3cd742',
     name: 'Tirocinio',
     slug: 'tirocinio',

@@ -22,7 +22,6 @@ These permits have no Q&A content in Notion and need to be filled in:
 | Acquisto cittadinanza o stato di apolide | 1ad7355e-7f7f-809b-b8fb-e9c19fb89c4d | No blocks (empty page) |
 | Attività sportiva | 1ad7355e-7f7f-80c4-847b-f94b215df3e6 | No blocks (empty page) |
 | Lavoro artistico | 1ad7355e-7f7f-805b-ba6b-dbff5529fc7f | No blocks (empty page) |
-| Lavoro subordinato a seguito di sanatoria | 1ad7355e-7f7f-8054-a4a1-e9f4a31686d4 | No blocks (empty page) |
 | Residenza elettiva | 1ad7355e-7f7f-80fb-aee6-da46ddbc7ac4 | No blocks (empty page) |
 | Tirocinio | 1ad7355e-7f7f-80b1-bf0e-ced1be3cd742 | No blocks (empty page) |
 | Motivi religiosi | 1ad7355e-7f7f-80a5-9738-cd59474a66a8 | No blocks (empty page) |
