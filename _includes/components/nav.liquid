@@ -1,6 +1,31 @@
 <!-- Navigation Component -->
 <div class="nav-wrapper">
   <ul class="nav-menu" id="nav-menu">
+    <!-- Language Switcher as first nav item -->
+    {%- assign urlPrefix = page.url | slice: 0, 4 -%}
+    {%- if urlPrefix == "/en/" -%}
+      {%- assign langItUrl = page.url | replace_first: "/en/", "/" -%}
+      {%- assign langEnUrl = page.url -%}
+      {%- assign langFrUrl = "/fr" | append: langItUrl -%}
+    {%- elsif urlPrefix == "/fr/" -%}
+      {%- assign langItUrl = page.url | replace_first: "/fr/", "/" -%}
+      {%- assign langEnUrl = "/en" | append: langItUrl -%}
+      {%- assign langFrUrl = page.url -%}
+    {%- else -%}
+      {%- assign langItUrl = page.url -%}
+      {%- assign langEnUrl = "/en" | append: page.url -%}
+      {%- assign langFrUrl = "/fr" | append: page.url -%}
+    {%- endif -%}
+    <li class="nav-item has-dropdown nav-language">
+      <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+        {% if lang == 'fr' %}FR{% elsif lang == 'en' %}EN{% else %}IT{% endif %}
+      </a>
+      <ul class="nav-dropdown" role="menu">
+        <li role="none"><a href="{{ langItUrl }}" class="dropdown-link{% if lang == 'it' %} active-lang{% endif %}" role="menuitem">IT Italiano</a></li>
+        <li role="none"><a href="{{ langEnUrl }}" class="dropdown-link{% if lang == 'en' %} active-lang{% endif %}" role="menuitem">EN English</a></li>
+        <li role="none"><a href="{{ langFrUrl }}" class="dropdown-link{% if lang == 'fr' %} active-lang{% endif %}" role="menuitem">FR Français</a></li>
+      </ul>
+    </li>
     {% assign navData = nav[lang] | default: nav.it %}
     {% for dropdown in navData.dropdowns %}
     <li class="nav-item has-dropdown">
