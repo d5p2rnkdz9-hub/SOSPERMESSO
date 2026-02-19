@@ -194,15 +194,8 @@
 6. "Contattaci" item present in footer
 7. Language switcher is a dropdown in the main nav bar (top of hamburger menu on mobile)
 
-**Status:** Not started
-**Plans:** 5 plans
-
-Plans:
-- [ ] 53.1-01-PLAN.md -- Quick fixes: Typeform button, footer contact, homepage canonical + redirects
-- [ ] 53.1-02-PLAN.md -- Listing page gaps: add missing permits to database.html + documenti-questura.html (IT/EN/FR)
-- [ ] 53.1-03-PLAN.md -- Language switcher: move into main nav bar with mobile-first positioning
-- [ ] 53.1-04-PLAN.md -- Sitemap rewrite: 11ty-native sitemap templates replacing build-sitemap.js
-- [ ] 53.1-05-PLAN.md -- Dizionario links: expand term map with EN/FR equivalents, language-aware filter
+**Status:** Complete (2026-02-19)
+**Plans:** 5 plans — [x] 53.1-01, [x] 53.1-02, [x] 53.1-03, [x] 53.1-04, [x] 53.1-05
 
 ---
 
@@ -236,7 +229,7 @@ Plans:
 | 51. Translation Infrastructure | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 52. Notion Database | v4.0 | 1/1 | ✓ Complete | 2026-02-18 |
 | 53. FR Page Generation | v4.0 | 3/3 | ✓ Complete | 2026-02-18 |
-| 53.1 Tech Debt | v4.0 | 0/5 | Not started | - |
+| 53.1 Tech Debt | v4.0 | 5/5 | ✓ Complete | 2026-02-19 |
 | 54. SEO | v4.0 | 0/? | Not started | - |
 
 ---
