@@ -382,7 +382,7 @@
 }
 
 .logo-image {
-  height: 120px;
+  height: 180px;
   width: auto;
   display: block;
   transition: all var(--transition-base);
@@ -1046,9 +1046,9 @@
 }
 
 .hero-display-title {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: 'Baloo 2', sans-serif;
   font-size: clamp(2.2rem, 4vw, 3.2rem);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.15;
   color: var(--black);
   margin-bottom: 1.5rem;
