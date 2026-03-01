@@ -1,5 +1,22 @@
 # Project Milestones: SOS Permesso
 
+## v4.1 Prassi & Note Editoriali (Partial: 2026-02-19)
+
+**Delivered:** Bug fixes only (Phase 55). Remaining prassi/automation phases (56-59) dropped — code exists but deprioritized.
+
+**Phases completed:** 55 (1 plan)
+
+**Key accomplishments:**
+
+- Fixed Notion field name `"Info extra su doc rilascio/rinnovo"` in documents.js, permits.js, documentsEn.js, documentsFr.js
+- Hardcoded PRASSI_DB_ID in `_data/prassiLocali.js`
+
+**Dropped:** Phases 56-59 (submit-prassi live, security controls, rebuild automation, e2e validation)
+
+**What's next:** v4.2 Page Restructure
+
+---
+
 ## v4.0 FR Translation (Shipped: 2026-02-19)
 
 **Delivered:** French translation of the entire site using the same Notion + 11ty pipeline as EN, with 11ty-native sitemaps, nav-integrated language switcher, and comprehensive tech debt fixes.

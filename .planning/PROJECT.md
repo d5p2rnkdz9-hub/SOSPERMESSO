@@ -133,34 +133,23 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Homepage canonical 301 redirects — v4.0
 - ✓ Complete listing page coverage (41 IT / 39 EN / 39 FR) — v4.0
 
-## Current Milestone: v4.1 Prassi & Note Editoriali
+## Current Milestone: v4.2 Page Restructure
 
-**Goal:** Completare il sistema prassi locali (Netlify Functions già scritte, da cablare e verificare) e correggere il bug che impedisce la visualizzazione delle note editoriali sui documenti.
+**Goal:** Restructure permit page layout — sticky section navigation, reorganized alerts, compact prassi accordion, and bottom CTA placement.
 
 **Target features:**
-- Fix nome campo Notion `"Info extra su doc rilascio/rinnovo"` in documents.js e permits.js
-- Note editoriali Q&A da blocchi Notion visibili in sezione "Note" in fondo alle pagine documento (con cache build-time)
-- `submit-prassi.mjs` funzionante in produzione con spam protection (honeypot + rate limiting)
-- Netlify Build Hook + Notion Automation: rebuild automatico quando admin approva una prassi
-- Notion DB moderation views per semplificare il lavoro admin
-- `PRASSI_DB_ID` hardcoded in `_data/prassiLocali.js`
+- Sticky tab badges (Cos'è / Primo / Rinnovo / Prassi locali) that fix to top on scroll
+- Move "Hai altre domande? Scrivici" CTA to bottom of page
+- Move "Ricorda" (entro 60gg) alert to before checklist in Rinnovo section
+- Replace full Prassi locali section with compact collapsible accordion
+- Prassi locali tab badge scrolls to accordion section
+- Apply changes across all 3 language templates (IT/EN/FR)
 
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-- [ ] BUG-01: Fix campo Notion in documents.js e permits.js (prerequisito per NOTES)
-- [ ] BUG-02: PRASSI_DB_ID hardcoded in prassiLocali.js
-- [ ] PRAS-01: submit-prassi.mjs funzionante live (env vars + v5 parent field fix)
-- [ ] PRAS-02: Spam protection — honeypot field + validazione server-side
-- [ ] PRAS-03: Rate limiting su submit-prassi (Netlify config export)
-- [ ] PRAS-04: CORS su tutti i response path
-- [ ] AUTO-01: Netlify Build Hook creato e segreto
-- [ ] AUTO-02: Notion Automation configurata (Status=Approvato → rebuild)
-- [ ] AUTO-03: Flow end-to-end validato
-- [ ] MOD-01: Notion DB view "Da approvare" configurata
-- [ ] NOTES-01: documents.js fetcha blocchi pagina Notion con cache (stessa logica di permits.js)
-- [ ] NOTES-02: Sezione "Note" in fondo alle pagine documento con Q&A da blocchi Notion
+(Requirements defined in REQUIREMENTS.md)
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 **Permit Database (LIVE IT):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
@@ -169,7 +158,8 @@ Users can quickly find accurate, understandable information about their specific
 
 ### Out of Scope
 
-- ES translation — deferred to v4.1 after FR pipeline is validated
+- ES translation — deferred after FR pipeline is validated
+- Prassi locali backend (submit-prassi.mjs, Netlify Functions, build hooks, moderation) — dropped from v4.1, revisit later
 - Additional languages beyond FR/ES (ZH, AR, etc.) — architecture supports adding later
 - Real-time permit status tracking — external service, just link to portale immigrazione
 - Content validation pass — translate what's there, fix content separately
@@ -258,4 +248,4 @@ Users can quickly find accurate, understandable information about their specific
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-02-19 — started v4.1 Prassi & Note Editoriali; ES Translation rinviato a v4.2*
+*Last updated: 2026-03-01 — started v4.2 Page Restructure; v4.1 archived (Phase 55 only)*
