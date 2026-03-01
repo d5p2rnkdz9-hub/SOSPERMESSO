@@ -198,6 +198,91 @@
 }
 
 /* ===============================================
+   PERMIT TAB BAR - STICKY
+   =============================================== */
+
+.permit-tab-bar {
+  position: sticky;
+  top: 170px; /* breadcrumb-bar top (130px) + breadcrumb height (~40px) */
+  z-index: 99; /* Just below breadcrumb-bar (100) */
+  background: var(--white);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+/* Tab badge base styles (moved from inline) */
+.tab-badge {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s, transform 0.15s;
+  line-height: 1.4;
+  background: #FFD700;
+  color: #1A1A1A;
+}
+
+.tab-badge:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.tab-badge-primo {
+  background: #1565C0;
+  color: white;
+}
+
+.tab-badge-rinnovo {
+  background: #90CAF9;
+  color: #1A1A1A;
+}
+
+.tab-badge-prassi {
+  background: #26A69A;
+  color: white;
+}
+
+/* Scroll margin for anchored sections — accounts for header + breadcrumb + tab bar */
+#cose,
+#primo,
+#rinnovo,
+#prassi-locali {
+  scroll-margin-top: 220px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .permit-tab-bar {
+    top: 110px; /* mobile breadcrumb top (70px) + breadcrumb height (~40px) */
+    padding: 0.5rem 0;
+  }
+
+  .tab-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  #cose,
+  #primo,
+  #rinnovo,
+  #prassi-locali {
+    scroll-margin-top: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.55rem;
+  }
+}
+
+/* ===============================================
    CARDS
    =============================================== */
 
