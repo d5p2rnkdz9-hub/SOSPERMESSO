@@ -185,12 +185,12 @@
 4. Clicking the "Prassi locali" tab badge scrolls the page to the prassi accordion section without a full page reload.
 5. The prassi section renders as a compact collapsible accordion: collapsed by default, showing "Nessuna segnalazione finora" when the permit has no prassi entries, or questura city names when it does.
 
-**Plans:** TBD
+**Plans:** 3 plans in 2 waves
 
 Plans:
-- [ ] 60-01: Sticky tab badges + Prassi tab badge (LAYOUT-01, LAYOUT-04) — CSS position sticky + JS scroll anchor
-- [ ] 60-02: Prassi accordion + scroll-to behavior (PRASSI-01, PRASSI-02, PRASSI-03) — replace section with collapsible, wire badge click
-- [ ] 60-03: CTA relocation + Ricorda alert move (LAYOUT-02, LAYOUT-03) — reorder template blocks
+- [ ] 60-01: Sticky tab badges + Prassi tab badge (LAYOUT-01, LAYOUT-04) — extract badges into sticky bar, add Prassi badge, CSS stacking
+- [ ] 60-02: Prassi accordion (PRASSI-01, PRASSI-02, PRASSI-03) — replace full section with collapsible accordion, CSS-only toggle
+- [ ] 60-03: CTA relocation + Ricorda alert move (LAYOUT-02, LAYOUT-03) — reorder template blocks, visual checkpoint
 
 ---
 
@@ -220,7 +220,7 @@ Plans:
 | Phase | Name | Goal | Requirements | Criteria | Status |
 |-------|------|------|--------------|----------|--------|
 | 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Complete |
-| 60 | IT Template Restructure | Sticky tabs, prassi accordion, repositioned CTA and alert | LAYOUT-01–04, PRASSI-01–03 | 5 | Not started |
+| 60 | IT Template Restructure | Sticky tabs, prassi accordion, repositioned CTA and alert | LAYOUT-01–04, PRASSI-01–03 | 5 | Planned (3 plans, 2 waves) |
 | 61 | Language Template Propagation | EN and FR templates match IT structure | I18N-01, I18N-02 | 3 | Not started |
 
 ---
