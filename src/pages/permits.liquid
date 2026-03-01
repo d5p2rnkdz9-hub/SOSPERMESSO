@@ -9,34 +9,6 @@ title: "Permesso per {{ permit.tipo }}"
 lang: it
 description: "Permesso di soggiorno per {{ permit.tipo }} - informazioni, requisiti, documenti e procedure"
 eleventyExcludeFromCollections: true
-extraStyles: |
-  <style>
-    .tab-badge {
-      display: inline-block;
-      padding: 0.3rem 0.85rem;
-      border-radius: 20px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: opacity 0.15s, transform 0.15s;
-      line-height: 1.4;
-      background: #FFD700;
-      color: #1A1A1A;
-    }
-    .tab-badge:hover {
-      opacity: 0.85;
-      transform: translateY(-1px);
-    }
-    .tab-badge-primo {
-      background: #1565C0;
-      color: white;
-    }
-    .tab-badge-rinnovo {
-      background: #90CAF9;
-      color: #1A1A1A;
-    }
-  </style>
 ---
 
   <!-- BREADCRUMB -->
@@ -58,21 +30,26 @@ extraStyles: |
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{{ permit.emoji }}</span>
         <h1 class="page-title">Permesso per {{ permit.tipo }}</h1>
-
-        {% unless permit.isPlaceholder == true %}
-        <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
-          <a href="#cose" class="tab-badge">Cos'è</a>
-          {% if permit.primoDocuments.size > 0 %}
-          <a href="#primo" class="tab-badge tab-badge-primo">📋 Primo rilascio</a>
-          {% endif %}
-          {% if permit.rinnovoDocuments.size > 0 %}
-          <a href="#rinnovo" class="tab-badge tab-badge-rinnovo">🔄 Rinnovo</a>
-          {% endif %}
-        </div>
-        {% endunless %}
       </div>
     </div>
   </section>
+
+  {% unless permit.isPlaceholder == true %}
+  <div class="permit-tab-bar" id="permit-tab-bar">
+    <div class="container">
+      <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+        <a href="#cose" class="tab-badge">Cos'è</a>
+        {% if permit.primoDocuments.size > 0 %}
+        <a href="#primo" class="tab-badge tab-badge-primo">📋 Primo rilascio</a>
+        {% endif %}
+        {% if permit.rinnovoDocuments.size > 0 %}
+        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo">🔄 Rinnovo</a>
+        {% endif %}
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi">📍 Prassi locali</a>
+      </div>
+    </div>
+  </div>
+  {% endunless %}
 
 {% if permit.isPlaceholder == true %}
   <!-- PLACEHOLDER PAGE -->
