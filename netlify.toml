@@ -32,6 +32,39 @@
   status = 301
   force = true
 
+# IT document pages → unified permit pages
+[[redirects]]
+  from = "/documenti-*-primo.html"
+  to = "/permesso-:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/documenti-*-rinnovo.html"
+  to = "/permesso-:splat.html"
+  status = 301
+
+# EN document pages → unified permit pages
+[[redirects]]
+  from = "/en/documenti-*-primo.html"
+  to = "/en/permesso-:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/documenti-*-rinnovo.html"
+  to = "/en/permesso-:splat.html"
+  status = 301
+
+# FR document pages → unified permit pages
+[[redirects]]
+  from = "/fr/documenti-*-primo.html"
+  to = "/fr/permesso-:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/fr/documenti-*-rinnovo.html"
+  to = "/fr/permesso-:splat.html"
+  status = 301
+
 # Security headers
 [[headers]]
   for = "/*"

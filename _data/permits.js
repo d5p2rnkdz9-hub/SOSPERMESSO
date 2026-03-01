@@ -20,6 +20,30 @@ const { escapeHtml, linkToDizionario } = require('../scripts/templates/helpers.j
 const DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
 
 /**
+ * Extract cost from document list multi_select values
+ */
+function extractCost(documents, keyword) {
+  if (!documents || !documents.length) return null;
+  const item = documents.find(d => d.toLowerCase().includes(keyword));
+  if (!item) return null;
+  const match = item.match(/(\d+[\.,]?\d*)\s*€/) || item.match(/da\s+(\d+[\.,]?\d*)/);
+  if (!match) return null;
+  return parseFloat(match[1].replace(',', '.'));
+}
+
+/**
+ * Extract alternative cost when item contains "X o Y" pattern
+ */
+function extractCostAlt(documents, keyword) {
+  if (!documents || !documents.length) return null;
+  const item = documents.find(d => d.toLowerCase().includes(keyword));
+  if (!item) return null;
+  const match = item.match(/(\d+[\.,]?\d*)\s+o\s+(\d+[\.,]?\d*)/);
+  if (!match) return null;
+  return parseFloat(match[2].replace(',', '.'));
+}
+
+/**
  * Generate URL-friendly slug from permit name
  * @param {string} name - Permit name in Italian
  * @returns {string} Slugified name
@@ -552,7 +576,18 @@ module.exports = async function() {
           tipo: permit.tipo,
           emoji: getEmojiForPermit(permit.tipo),
           sections: sectionsWithIndex,
-          isPlaceholder: sectionsWithIndex.length === 0
+          isPlaceholder: sectionsWithIndex.length === 0,
+          primoDocuments: permit.primoDocuments,
+          primoMethod: permit.primoMethod,
+          costBollettinoPrimo: extractCost(permit.primoDocuments, 'bollettino'),
+          costBollettinoAltPrimo: extractCostAlt(permit.primoDocuments, 'bollettino'),
+          costMarcaBolloPrimo: extractCost(permit.primoDocuments, 'marca da bollo'),
+          rinnovoDocuments: permit.rinnovoDocuments,
+          rinnovoMethod: permit.rinnovoMethod,
+          costBollettinoRinnovo: extractCost(permit.rinnovoDocuments, 'bollettino'),
+          costBollettinoAltRinnovo: extractCostAlt(permit.rinnovoDocuments, 'bollettino'),
+          costMarcaBolloRinnovo: extractCost(permit.rinnovoDocuments, 'marca da bollo'),
+          docNotes: permit.docNotes,
         });
 
       } catch (err) {
@@ -564,7 +599,18 @@ module.exports = async function() {
           tipo: permit.tipo,
           emoji: getEmojiForPermit(permit.tipo),
           sections: [],
-          isPlaceholder: true
+          isPlaceholder: true,
+          primoDocuments: permit.primoDocuments || [],
+          primoMethod: permit.primoMethod || null,
+          costBollettinoPrimo: null,
+          costBollettinoAltPrimo: null,
+          costMarcaBolloPrimo: null,
+          rinnovoDocuments: permit.rinnovoDocuments || [],
+          rinnovoMethod: permit.rinnovoMethod || null,
+          costBollettinoRinnovo: null,
+          costBollettinoAltRinnovo: null,
+          costMarcaBolloRinnovo: null,
+          docNotes: permit.docNotes || null,
         });
       }
     }

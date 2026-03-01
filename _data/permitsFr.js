@@ -14,6 +14,30 @@ const { escapeHtml } = require('../scripts/templates/helpers.js');
 // FR Notion database ID (hardcoded like IT — no env var needed)
 const FR_DATABASE_ID = "b7955daa-3da7-4a0c-ac9d-0bbe4ba7d70e";
 
+/**
+ * Extract cost from document list multi_select values
+ */
+function extractCost(documents, keyword) {
+  if (!documents || !documents.length) return null;
+  const item = documents.find(d => d.toLowerCase().includes(keyword));
+  if (!item) return null;
+  const match = item.match(/(\d+[\.,]?\d*)\s*€/) || item.match(/da\s+(\d+[\.,]?\d*)/);
+  if (!match) return null;
+  return parseFloat(match[1].replace(',', '.'));
+}
+
+/**
+ * Extract alternative cost when item contains "X o Y" pattern
+ */
+function extractCostAlt(documents, keyword) {
+  if (!documents || !documents.length) return null;
+  const item = documents.find(d => d.toLowerCase().includes(keyword));
+  if (!item) return null;
+  const match = item.match(/(\d+[\.,]?\d*)\s+o\s+(\d+[\.,]?\d*)/);
+  if (!match) return null;
+  return parseFloat(match[2].replace(',', '.'));
+}
+
 // IT database ID for slug resolution
 const IT_DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
 
@@ -386,6 +410,14 @@ module.exports = async function() {
         console.log(`[permitsFr.js] Processed ${count}/${frPages.length} permits...`);
       }
 
+      // Extract doc fields from FR page properties
+      const primoDocuments = page.properties["Doc primo rilascio"]?.multi_select?.map(d => d.name) || [];
+      const rinnovoDocuments = page.properties["Doc rinnovo"]?.multi_select?.map(d => d.name) || [];
+      const primoMethod = page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null;
+      const rinnovoMethod = page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null;
+      const docNotesRichText = page.properties["Info extra su doc rilascio/rinnovo"]?.rich_text || [];
+      const docNotes = docNotesRichText.map(s => s.plain_text || '').join('') || null;
+
       try {
         // Check cache
         const cachedEntry = pagesIndex[page.id];
@@ -418,7 +450,18 @@ module.exports = async function() {
           tipo,
           emoji: getEmojiForPermit(tipo),
           sections: sectionsWithIndex,
-          isPlaceholder: sectionsWithIndex.length === 0
+          isPlaceholder: sectionsWithIndex.length === 0,
+          primoDocuments,
+          primoMethod,
+          costBollettinoPrimo: extractCost(primoDocuments, 'bollettino'),
+          costBollettinoAltPrimo: extractCostAlt(primoDocuments, 'bollettino'),
+          costMarcaBolloPrimo: extractCost(primoDocuments, 'marca da bollo'),
+          rinnovoDocuments,
+          rinnovoMethod,
+          costBollettinoRinnovo: extractCost(rinnovoDocuments, 'bollettino'),
+          costBollettinoAltRinnovo: extractCostAlt(rinnovoDocuments, 'bollettino'),
+          costMarcaBolloRinnovo: extractCost(rinnovoDocuments, 'marca da bollo'),
+          docNotes,
         });
 
       } catch (err) {
@@ -429,7 +472,18 @@ module.exports = async function() {
           tipo,
           emoji: getEmojiForPermit(tipo),
           sections: [],
-          isPlaceholder: true
+          isPlaceholder: true,
+          primoDocuments,
+          primoMethod,
+          costBollettinoPrimo: null,
+          costBollettinoAltPrimo: null,
+          costMarcaBolloPrimo: null,
+          rinnovoDocuments,
+          rinnovoMethod,
+          costBollettinoRinnovo: null,
+          costBollettinoAltRinnovo: null,
+          costMarcaBolloRinnovo: null,
+          docNotes,
         });
       }
     }
