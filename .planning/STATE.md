@@ -14,9 +14,9 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 Phase: 60 of 61 (IT Template Restructure)
-Plan: 2 of 3 in current phase
-Status: In progress
-Last activity: 2026-03-01 — Completed 60-02 (prassi accordion — compact collapsible, CSS-only toggle)
+Plan: 3 of 3 in current phase
+Status: In progress — awaiting human verification (Task 2 checkpoint)
+Last activity: 2026-03-01 — Task 1 of 60-03 complete (CTA to bottom, Ricorda before checklist)
 
 Progress: [████░░░░░░] 40% (2/5 plans complete across phases 60-61)
 
@@ -46,8 +46,8 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-03-01
-**Stopped at:** Completed 60-02-PLAN.md (prassi accordion)
-**Resume with:** `/gsd:execute-phase 60 03`
+**Stopped at:** 60-03 Task 1 complete — awaiting human verification at Task 2 checkpoint
+**Resume with:** `/gsd:execute-phase 60 03` (continuation — Task 1 already committed ee6844f)
 **Resume file:** .planning/phases/60-it-template-restructure/60-03-PLAN.md
 
 ---
