@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-03-01
-**Status:** Phase 60 in progress — 60-02 complete (prassi accordion)
+**Status:** Phase 60 complete — Phase 61 (Language Template Propagation) next
 
 ## Project Reference
 
@@ -9,16 +9,16 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v4.2 Page Restructure — Phase 60 (IT Template Restructure)
+**Current focus:** v4.2 Page Restructure — Phase 61 (Language Template Propagation)
 
 ## Current Position
 
-Phase: 60 of 61 (IT Template Restructure)
-Plan: 3 of 3 in current phase
-Status: In progress — awaiting human verification (Task 2 checkpoint)
-Last activity: 2026-03-01 — Task 1 of 60-03 complete (CTA to bottom, Ricorda before checklist)
+Phase: 61 of 61 (Language Template Propagation)
+Plan: 0 of 2 in current phase (not started)
+Status: Phase 60 complete — ready to start Phase 61
+Last activity: 2026-03-01 — Completed 60-03-PLAN.md (CTA relocation, Ricorda alert move, visual verification)
 
-Progress: [████░░░░░░] 40% (2/5 plans complete across phases 60-61)
+Progress: [█████░░░░░] 60% (3/5 plans complete across phases 60-61)
 
 ## Accumulated Context
 
@@ -30,14 +30,23 @@ Progress: [████░░░░░░] 40% (2/5 plans complete across phases
 - Language switcher da spostare in main nav — tech debt, fuori scope v4.2
 - Prassi locali backend (submit, moderation, automation) — dropped da v4.1, codice esiste non wired
 
-### Phase 60 Context
+### Phase 60 Context (Complete)
 
-- 3 templates da modificare: `src/pages/permits.liquid` (IT) ✓, `en/src/pages/permits-en.liquid` (EN), `fr/src/pages/permits-fr.liquid` (FR)
-- Prassi JS esiste in `src/scripts/prassi.js` — accordion riusa `.prassi-card[data-prassi-id]`, nessuna modifica JS necessaria
-- Tab badges esistenti: Cos'è / Primo / Rinnovo — Prassi locali badge aggiunto in 60-01 ✓
-- CSS sticky: implementato in 60-01 ✓
-- Accordion pattern stabilito in 60-02: `button.prassi-accordion-header[aria-expanded] + div.prassi-accordion-body`, inline onclick, `max-height: 0/2000px` CSS transition
-- EN/FR templates devono replicare lo stesso pattern accordion (usare stessa struttura HTML e classi CSS)
+Phase 60 delivered the full IT template restructure across 3 plans:
+- 60-01: Sticky tab bar with 4 badges (Cos'è / Primo / Rinnovo / Prassi locali), CSS stacking
+- 60-02: Prassi section replaced with compact collapsible accordion, CSS-only toggle via aria-expanded + max-height transition
+- 60-03: CTA "Hai altre domande?" moved to page bottom before Related links; "Ricorda: entro 60 giorni" moved before Rinnovo checklist
+
+### Phase 61 Context
+
+Apply all Phase 60 changes to EN and FR templates:
+- Templates to modify: `en/src/pages/permits-en.liquid` (61-01), `fr/src/pages/permits-fr.liquid` (61-02)
+- Sticky tab bar: same CSS already applies (shared stylesheet), need to add HTML tab-bar markup and update section IDs
+- Accordion pattern: `button.prassi-accordion-header[aria-expanded] + div.prassi-accordion-body`, inline onclick, `max-height: 0/2000px` transition — same as IT
+- CTA: same Typeform URL (G6YT01Vj), text in target language
+- Ricorda alert: text in target language, same position (before checklist)
+- `scrollToSection()` JS function must be copied to EN/FR templates — replaces CSS scroll-margin-top
+- Language-specific strings: keep EN/FR text, do not let Italian leak
 
 ### Blockers/Concerns
 
@@ -46,9 +55,9 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-03-01
-**Stopped at:** 60-03 Task 1 complete — awaiting human verification at Task 2 checkpoint
-**Resume with:** `/gsd:execute-phase 60 03` (continuation — Task 1 already committed ee6844f)
-**Resume file:** .planning/phases/60-it-template-restructure/60-03-PLAN.md
+**Stopped at:** Completed 60-03-PLAN.md — Phase 60 fully done
+**Resume with:** `/gsd:execute-phase 61 01`
+**Resume file:** .planning/phases/61-language-template-propagation/61-01-PLAN.md (to be created)
 
 ---
 
