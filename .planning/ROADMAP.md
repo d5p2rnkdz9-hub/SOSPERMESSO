@@ -15,7 +15,8 @@
 - ✅ **v3.1 Prassi Locali + Notion-11ty Completion** - Phases 39-46 (shipped 2026-02-17)
 - ✅ **v3.2 EN Translation Pipeline** - Phases 47-50 (shipped 2026-02-18)
 - ✅ **v4.0 FR Translation** - Phases 51-54 (shipped 2026-02-19)
-- 🔄 **v4.1 Prassi & Note Editoriali** - Phases 55-59 (active)
+- ✅ **v4.1 Prassi & Note Editoriali** - Phase 55 only (shipped 2026-02-19; phases 56-60 dropped)
+- 🚧 **v4.2 Page Restructure** - Phases 60-61 (in progress)
 
 ---
 
@@ -140,122 +141,77 @@
 
 ---
 
-## v4.1 Prassi & Note Editoriali (Phases 55-59)
+<details>
+<summary>✅ v4.1 Prassi & Note Editoriali (Phase 55 only) - SHIPPED 2026-02-19</summary>
 
-**Milestone Goal:** Complete the prassi locali system (three Netlify Functions already written — wire and verify them) and fix the bug preventing editorial notes from displaying on document pages.
-
-**Requirements:** BUG-01, BUG-02, PRAS-01, PRAS-02, PRAS-03, PRAS-04, AUTO-01, AUTO-02, AUTO-03, MOD-01, NOTES-01, NOTES-02
-
-**Coverage:** 12/12 requirements mapped ✓
-
----
+**Milestone Goal:** Fix known data bugs (field name mismatch, hardcoded PRASSI_DB_ID). Phases 56-60 (prassi backend, security, automation, note editoriali) were dropped — code exists but never wired.
 
 ### Phase 55: Bug Fixes
-
 **Goal:** Known data bugs are corrected and content that was silently missing now appears on the site.
-
-**Dependencies:** None — standalone fixes, ship immediately.
-
 **Requirements:** BUG-01, BUG-02
-
 **Success Criteria:**
-1. Editorial notes ("Info extra su doc rilascio/rinnovo") are visible on document and permit pages in the built site — a human can open a document page and see the note content that was previously blank.
-2. `_data/prassiLocali.js` reads `PRASSI_DB_ID` from a hardcoded constant (not `process.env`), consistent with all other data files in the project.
+1. Editorial notes ("Info extra su doc rilascio/rinnovo") are visible on document and permit pages in the built site.
+2. `_data/prassiLocali.js` reads `PRASSI_DB_ID` from a hardcoded constant, consistent with all other data files.
 3. A build completes without errors after both changes; no existing page content is broken.
-
-**Plans:** 1 plan
-Plans:
-- [x] 55-01-PLAN.md — Fix Notion field name mismatch + hardcode PRASSI_DB_ID
-
+**Plans:** 1 plan — [x] 55-01-PLAN.md
 **Status:** Complete (2026-02-19)
 
----
-
-### Phase 56: Function Smoke Tests
-
-**Goal:** `submit-prassi.mjs` accepts a real submission against the live Notion database, and CORS headers are present on every response code path so browsers can read both success and error responses.
-
-**Dependencies:** Phase 55 (BUG-02 ensures `PRASSI_DB_ID` is available at build time; env var must also be set in Netlify for the function).
-
-**Requirements:** PRAS-01, PRAS-04
-
-**Success Criteria:**
-1. A `curl` POST to `/.netlify/functions/submit-prassi` on the deployed site returns `{ success: true, id: "..." }` and a new row appears in the Notion Prassi DB with Status=Pending.
-2. A deliberately malformed request (e.g., missing `description`) returns a 400 response that includes CORS headers — a browser `fetch()` call can read the error body without a CORS error.
-3. A simulated server error path (500) also returns CORS headers — verified by code review of the `catch` block in `submit-prassi.mjs`.
-4. If `@notionhq/client` v5 requires `parent.data_source_id` instead of `parent.database_id`, the fix is applied and confirmed working with the live test.
-
-**Status:** Pending
+</details>
 
 ---
 
-### Phase 57: Security Controls
+## v4.2 Page Restructure (Phases 60-61)
 
-**Goal:** The submission endpoint is hardened against bots and abuse before the feature is promoted to real users.
+**Milestone Goal:** Restructure the IT permit template with sticky tab navigation, compact prassi accordion, repositioned alerts and CTA — then propagate every change to the EN and FR templates.
 
-**Dependencies:** Phase 56 (endpoint must be confirmed working before adding controls on top of it).
+**Requirements:** LAYOUT-01, LAYOUT-02, LAYOUT-03, LAYOUT-04, PRASSI-01, PRASSI-02, PRASSI-03, I18N-01, I18N-02
 
-**Requirements:** PRAS-02, PRAS-03
-
-**Success Criteria:**
-1. A form submission with the honeypot field (`website`) populated is rejected server-side with a 400 response — bots filling all fields cannot create Notion rows.
-2. A fourth submission from the same IP within 180 seconds receives a 429 response — rate limiting is active via the `config` export in `submit-prassi.mjs`.
-3. The honeypot `<input>` is hidden from real users via CSS (`display: none`) and does not appear in the rendered form.
-
-**Status:** Pending
+**Coverage:** 9/9 requirements mapped ✓
 
 ---
 
-### Phase 58: Rebuild Automation
+### Phase 60: IT Template Restructure
 
-**Goal:** When an admin approves a prassi entry in Notion, the site rebuilds automatically without any manual action — and the admin has a filtered view to find pending entries quickly.
+**Goal:** The Italian permit template delivers a reorganized page experience — sticky tab badges, a compact prassi accordion, repositioned alert and CTA.
 
-**Dependencies:** Phase 57 (endpoints must be hardened before wiring automation that could trigger production rebuilds).
+**Dependencies:** None — pure template and CSS changes on an existing, working template.
 
-**Requirements:** AUTO-01, AUTO-02, MOD-01
+**Requirements:** LAYOUT-01, LAYOUT-02, LAYOUT-03, LAYOUT-04, PRASSI-01, PRASSI-02, PRASSI-03
 
 **Success Criteria:**
-1. A Netlify Build Hook exists for the production site and its URL is stored only in Netlify environment variables and in the Notion Automation config — it does not appear anywhere in the git repository.
-2. Changing a Prassi DB row's Status to "Approvato" in Notion triggers a Netlify rebuild within ~2 minutes — verified by observing a new deploy appear in the Netlify dashboard.
-3. The Notion Prassi DB has a "Da approvare" view filtered to Status=Pending, sorted by creation date ascending — an admin can open this view and see only unreviewed submissions.
+1. On any `permesso-{slug}.html` page, scrolling past the header causes the tab bar (Cos'è / Primo / Rinnovo / Prassi locali) to fix to the top of the viewport and remain readable while the rest of the page scrolls.
+2. The "Hai altre domande? Scrivici" CTA appears at the bottom of the page, after all content sections and before the Related links block — it no longer appears inline after the Q&A section.
+3. In the Rinnovo section, the "Ricorda: entro 60 giorni" alert appears immediately before the document checklist, not after it.
+4. Clicking the "Prassi locali" tab badge scrolls the page to the prassi accordion section without a full page reload.
+5. The prassi section renders as a compact collapsible accordion: collapsed by default, showing "Nessuna segnalazione finora" when the permit has no prassi entries, or questura city names when it does.
 
-**Status:** Pending
+**Plans:** TBD
+
+Plans:
+- [ ] 60-01: Sticky tab badges + Prassi tab badge (LAYOUT-01, LAYOUT-04) — CSS position sticky + JS scroll anchor
+- [ ] 60-02: Prassi accordion + scroll-to behavior (PRASSI-01, PRASSI-02, PRASSI-03) — replace section with collapsible, wire badge click
+- [ ] 60-03: CTA relocation + Ricorda alert move (LAYOUT-02, LAYOUT-03) — reorder template blocks
 
 ---
 
-### Phase 59: End-to-End Validation
+### Phase 61: Language Template Propagation
 
-**Goal:** The full user-to-site pipeline works: a submission from the live form appears on the correct document page after admin approval and a rebuild.
+**Goal:** Every change from Phase 60 is mirrored in the EN and FR permit templates so all three languages have an identical page structure.
 
-**Dependencies:** Phase 58 (rebuild automation must be wired before the flow can be validated end-to-end).
+**Dependencies:** Phase 60 — the IT template must be final before copying to EN/FR.
 
-**Requirements:** AUTO-03
-
-**Success Criteria:**
-1. A test submission made from the live site's prassi form (not curl) creates a Pending row in Notion with the correct `pageSlug`, city, and description.
-2. After the admin approves the row in the "Da approvare" view, a Netlify rebuild triggers automatically (no manual build command needed).
-3. After the rebuild completes, navigating to the document page corresponding to `pageSlug` shows the approved prassi entry in the prassi section — a human can read it.
-4. The test entry is deleted or marked Rejected in Notion after validation to keep the DB clean.
-
-**Status:** Pending
-
----
-
-### Phase 60: Note Editoriali da Blocchi Notion
-
-**Goal:** Le pagine documento mostrano note editoriali scritte come Q&A nei blocchi della pagina Notion — con cache integrata per non aumentare il build time.
-
-**Dependencies:** Phase 55 (nessuna dipendenza funzionale, ma BUG-01 risolve il campo proprietà che diventa irrilevante dopo questa fase).
-
-**Requirements:** NOTES-01, NOTES-02
+**Requirements:** I18N-01, I18N-02
 
 **Success Criteria:**
-1. Una pagina documento con Q&A nei blocchi della pagina Notion mostra una sezione "Note" in fondo alla pagina HTML — leggibile da un umano senza errori di build.
-2. Una pagina documento il cui Notion page non ha blocchi Q&A non mostra la sezione "Note" — graceful degradation, nessun errore.
-3. Il build time su build caldo non aumenta di più di 5s rispetto al baseline (cache per i block fetch attiva, stesso sistema di `permits.js`).
-4. Le pagine EN e FR non sono impattate — note solo IT per v4.1, pipeline di traduzione gestirà EN/FR in futuro.
+1. An EN permit page (`en/permesso-{slug}.html`) has sticky tab badges, the prassi accordion, the repositioned CTA, and the moved Ricorda alert — the same structure as the IT page.
+2. A FR permit page (`fr/permesso-{slug}.html`) has the identical structural changes — sticky tabs, accordion, repositioned CTA, moved Ricorda alert.
+3. Language-specific strings in the EN and FR templates remain in English and French respectively — no Italian text leaks into the translated templates.
 
-**Status:** Pending
+**Plans:** TBD
+
+Plans:
+- [ ] 61-01: Apply all Phase 60 changes to `permits-en.liquid` (I18N-01)
+- [ ] 61-02: Apply all Phase 60 changes to `permits-fr.liquid` (I18N-02)
 
 ---
 
@@ -264,11 +220,8 @@ Plans:
 | Phase | Name | Goal | Requirements | Criteria | Status |
 |-------|------|------|--------------|----------|--------|
 | 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Complete |
-| 56 | Function Smoke Tests | submit-prassi works live, CORS on all paths | PRAS-01, PRAS-04 | 4 | Pending |
-| 57 | Security Controls | Honeypot + rate limiting active before user promotion | PRAS-02, PRAS-03 | 3 | Pending |
-| 58 | Rebuild Automation | Approval triggers rebuild; admin has moderation view | AUTO-01, AUTO-02, MOD-01 | 3 | Pending |
-| 59 | End-to-End Validation | Full submit→approve→rebuild→visible flow confirmed | AUTO-03 | 4 | Pending |
-| 60 | Note Editoriali | Doc pages show editorial Q&A from Notion page blocks with cache | NOTES-01, NOTES-02 | 4 | Pending |
+| 60 | IT Template Restructure | Sticky tabs, prassi accordion, repositioned CTA and alert | LAYOUT-01–04, PRASSI-01–03 | 5 | Not started |
+| 61 | Language Template Propagation | EN and FR templates match IT structure | I18N-01, I18N-02 | 3 | Not started |
 
 ---
 
@@ -278,5 +231,5 @@ Plans:
 *v4.0 archived: 2026-02-19*
 *v4.1 added: 2026-02-19 -- Phases 55-59, 10 requirements mapped*
 *v4.1 revised: 2026-02-19 -- Phase 60 added (note editoriali da blocchi Notion), 12 requirements total*
-*Previous milestone: v3.2 (Phases 47-50) shipped 2026-02-18*
-*Phase 55 planned: 2026-02-19 -- 1 plan, 1 wave*
+*v4.1 archived: 2026-03-01 -- only Phase 55 shipped; phases 56-60 dropped*
+*v4.2 added: 2026-03-01 -- Phases 60-61, 9 requirements mapped (page restructure)*

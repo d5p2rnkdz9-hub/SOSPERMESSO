@@ -60,21 +60,21 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAYOUT-01 | — | Pending |
-| LAYOUT-02 | — | Pending |
-| LAYOUT-03 | — | Pending |
-| LAYOUT-04 | — | Pending |
-| PRASSI-01 | — | Pending |
-| PRASSI-02 | — | Pending |
-| PRASSI-03 | — | Pending |
-| I18N-01 | — | Pending |
-| I18N-02 | — | Pending |
+| LAYOUT-01 | Phase 60 | Pending |
+| LAYOUT-02 | Phase 60 | Pending |
+| LAYOUT-03 | Phase 60 | Pending |
+| LAYOUT-04 | Phase 60 | Pending |
+| PRASSI-01 | Phase 60 | Pending |
+| PRASSI-02 | Phase 60 | Pending |
+| PRASSI-03 | Phase 60 | Pending |
+| I18N-01 | Phase 61 | Pending |
+| I18N-02 | Phase 61 | Pending |
 
 **Coverage:**
 - v4.2 requirements: 9 total
-- Mapped to phases: 0
-- Unmapped: 9 ⚠️
+- Mapped to phases: 9
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-01*
-*Last updated: 2026-03-01 after initial definition*
+*Last updated: 2026-03-01 — traceability completed after roadmap creation*
