@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-03-01
-**Status:** Phase 60 in progress — 60-01 complete (sticky tab bar + Prassi badge)
+**Status:** Phase 60 in progress — 60-02 complete (prassi accordion)
 
 ## Project Reference
 
@@ -14,11 +14,11 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 Phase: 60 of 61 (IT Template Restructure)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-03-01 — Completed 60-01 (sticky tab bar + Prassi locali badge)
+Last activity: 2026-03-01 — Completed 60-02 (prassi accordion — compact collapsible, CSS-only toggle)
 
-Progress: [██░░░░░░░░] 20% (1/5 plans complete across phases 60-61)
+Progress: [████░░░░░░] 40% (2/5 plans complete across phases 60-61)
 
 ## Accumulated Context
 
@@ -32,11 +32,12 @@ Progress: [██░░░░░░░░] 20% (1/5 plans complete across phases
 
 ### Phase 60 Context
 
-- 3 templates da modificare: `src/pages/permits.liquid` (IT), `en/src/pages/permits-en.liquid` (EN), `fr/src/pages/permits-fr.liquid` (FR)
-- Prassi JS esiste in `src/scripts/prassi.js` — accordion può riusarlo
-- Tab badges esistenti: Cos'è / Primo / Rinnovo — aggiungere Prassi locali come 4° badge
-- CSS sticky: `position: sticky; top: 0` sul contenitore dei badge (verificare z-index vs header)
-- Accordion: collassato di default; label "Nessuna segnalazione finora" quando vuoto
+- 3 templates da modificare: `src/pages/permits.liquid` (IT) ✓, `en/src/pages/permits-en.liquid` (EN), `fr/src/pages/permits-fr.liquid` (FR)
+- Prassi JS esiste in `src/scripts/prassi.js` — accordion riusa `.prassi-card[data-prassi-id]`, nessuna modifica JS necessaria
+- Tab badges esistenti: Cos'è / Primo / Rinnovo — Prassi locali badge aggiunto in 60-01 ✓
+- CSS sticky: implementato in 60-01 ✓
+- Accordion pattern stabilito in 60-02: `button.prassi-accordion-header[aria-expanded] + div.prassi-accordion-body`, inline onclick, `max-height: 0/2000px` CSS transition
+- EN/FR templates devono replicare lo stesso pattern accordion (usare stessa struttura HTML e classi CSS)
 
 ### Blockers/Concerns
 
@@ -45,9 +46,9 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-03-01
-**Stopped at:** Completed 60-01-PLAN.md (sticky tab bar + Prassi badge)
-**Resume with:** `/gsd:execute-phase 60 02`
-**Resume file:** .planning/phases/60-it-template-restructure/60-02-PLAN.md
+**Stopped at:** Completed 60-02-PLAN.md (prassi accordion)
+**Resume with:** `/gsd:execute-phase 60 03`
+**Resume file:** .planning/phases/60-it-template-restructure/60-03-PLAN.md
 
 ---
 
