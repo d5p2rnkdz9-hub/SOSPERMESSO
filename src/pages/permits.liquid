@@ -85,16 +85,6 @@ eleventyExcludeFromCollections: true
       </div>
       {% endfor %}
 
-      <!-- CTA -->
-      <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
-        <div>
-          Hai altre domande sul permesso per {{ permit.tipo }}?
-          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
-            Scrivici
-          </a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -247,6 +237,14 @@ eleventyExcludeFromCollections: true
       </div>
       {%- endif -%}
 
+      <!-- RICORDA ALERT -->
+      <div class="alert alert-info" style="margin-bottom: 1rem;">
+        <span class="alert-icon">📅</span>
+        <div>
+          <strong>Ricorda:</strong> La richiesta di rinnovo va presentata preferibilmente <strong>prima della scadenza</strong> o comunque <strong>entro 60 giorni</strong> dalla scadenza.
+        </div>
+      </div>
+
       <!-- CHECKLIST -->
       <div class="card">
         <h3>📋 Documenti necessari</h3>
@@ -299,13 +297,6 @@ eleventyExcludeFromCollections: true
         <span class="alert-icon">⚠️</span>
         <div>
           <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. Vedi se ci sono info specifiche nella sezione 'Prassi locali'.
-        </div>
-      </div>
-
-      <div class="alert alert-info" style="margin-top: 0.75rem;">
-        <span class="alert-icon">📅</span>
-        <div>
-          <strong>Ricorda:</strong> La richiesta di rinnovo va presentata preferibilmente <strong>prima della scadenza</strong> o comunque <strong>entro 60 giorni</strong> dalla scadenza.
         </div>
       </div>
 
@@ -473,6 +464,21 @@ eleventyExcludeFromCollections: true
     })();
   </script>
   <script src="src/scripts/prassi.js"></script>
+
+  <!-- CTA: HAI ALTRE DOMANDE -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div class="alert alert-info">
+        <span class="alert-icon">❓</span>
+        <div>
+          Hai altre domande sul permesso per {{ permit.tipo }}?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Scrivici
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 {% endif %}
 
