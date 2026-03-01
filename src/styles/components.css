@@ -252,7 +252,7 @@
 #primo,
 #rinnovo,
 #prassi-locali {
-  scroll-margin-top: 220px;
+  scroll-margin-top: 290px;
 }
 
 /* Mobile */
@@ -271,7 +271,7 @@
   #primo,
   #rinnovo,
   #prassi-locali {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 210px;
   }
 }
 
