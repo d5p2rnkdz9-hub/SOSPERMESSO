@@ -1,7 +1,7 @@
 # Project State: SOS Permesso
 
 **Last Updated:** 2026-03-01
-**Status:** v4.2 roadmap created — ready to plan Phase 60
+**Status:** Phase 60 in progress — 60-01 complete (sticky tab bar + Prassi badge)
 
 ## Project Reference
 
@@ -14,11 +14,11 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 Phase: 60 of 61 (IT Template Restructure)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-03-01 — v4.2 roadmap created, 9/9 requirements mapped
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-03-01 — Completed 60-01 (sticky tab bar + Prassi locali badge)
 
-Progress: [░░░░░░░░░░] 0% (0/5 plans complete across phases 60-61)
+Progress: [██░░░░░░░░] 20% (1/5 plans complete across phases 60-61)
 
 ## Accumulated Context
 
@@ -45,9 +45,9 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-03-01
-**Stopped at:** Roadmap created for v4.2
-**Resume with:** `/gsd:plan-phase 60`
-**Resume file:** .planning/ROADMAP.md
+**Stopped at:** Completed 60-01-PLAN.md (sticky tab bar + Prassi badge)
+**Resume with:** `/gsd:execute-phase 60 02`
+**Resume file:** .planning/phases/60-it-template-restructure/60-02-PLAN.md
 
 ---
 

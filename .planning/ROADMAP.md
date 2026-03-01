@@ -188,7 +188,7 @@
 **Plans:** 3 plans in 2 waves
 
 Plans:
-- [ ] 60-01: Sticky tab badges + Prassi tab badge (LAYOUT-01, LAYOUT-04) — extract badges into sticky bar, add Prassi badge, CSS stacking
+- [x] 60-01: Sticky tab badges + Prassi tab badge (LAYOUT-01, LAYOUT-04) — extract badges into sticky bar, add Prassi badge, CSS stacking
 - [ ] 60-02: Prassi accordion (PRASSI-01, PRASSI-02, PRASSI-03) — replace full section with collapsible accordion, CSS-only toggle
 - [ ] 60-03: CTA relocation + Ricorda alert move (LAYOUT-02, LAYOUT-03) — reorder template blocks, visual checkpoint
 
