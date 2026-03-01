@@ -6,7 +6,6 @@ description: "Complete database of residence permits in Italy"
 extraStyles: |
   <style>
 
-      /* Compact list style like Notion */
       .permit-list {
         list-style: none;
         padding: 0;
@@ -17,29 +16,86 @@ extraStyles: |
         margin: 0;
       }
 
-      .permit-link {
+      .permit-row {
         display: flex;
         align-items: center;
-        padding: 0.75rem 1rem;
-        color: inherit;
-        text-decoration: none;
+        padding: 0.5rem 1rem;
         border-radius: 6px;
         transition: background-color 0.15s ease;
         gap: 0.75rem;
       }
 
-      .permit-link:hover {
+      .permit-row:hover {
         background-color: rgba(0, 0, 0, 0.04);
       }
 
-      .permit-link .icon {
+      .permit-main {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+        min-width: 0;
+      }
+
+      .permit-main .icon {
         font-size: 1.25rem;
         flex-shrink: 0;
       }
 
-      .permit-link .title {
+      .permit-main .title {
         font-weight: 500;
         color: var(--black);
+      }
+
+      .permit-actions {
+        display: flex;
+        gap: 0.4rem;
+        flex-shrink: 0;
+        align-items: center;
+      }
+
+      .permit-btn {
+        display: inline-block;
+        padding: 0.25rem 0.65rem;
+        border-radius: 20px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: opacity 0.15s, transform 0.15s;
+        line-height: 1.4;
+      }
+
+      .permit-btn:hover {
+        opacity: 0.85;
+        transform: translateY(-1px);
+      }
+
+      .btn-cose {
+        background: #FFD700;
+        color: #1A1A1A;
+      }
+
+      .btn-primo {
+        background: #1565C0;
+        color: white;
+      }
+
+      .btn-rinnovo {
+        background: #90CAF9;
+        color: #1A1A1A;
+      }
+
+      .permit-badge-wip {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #999;
+        background: #f0f0f0;
+        padding: 0.22rem 0.6rem;
+        border-radius: 20px;
+        white-space: nowrap;
       }
 
       .category-section {
@@ -86,12 +142,19 @@ extraStyles: |
       }
 
       @media (max-width: 768px) {
-        .permit-link {
-          padding: 0.875rem 0.75rem;
+        .permit-row {
+          flex-wrap: wrap;
+          padding: 0.625rem 0.75rem;
         }
 
-        .permit-link .title {
+        .permit-main .title {
           font-size: 0.95rem;
+        }
+
+        .permit-actions {
+          width: 100%;
+          padding-left: 2rem;
+          margin-top: 0.25rem;
         }
 
         .database-container {
@@ -128,19 +191,175 @@ extraStyles: |
         <div class="category-section category-purple">
           <h2 class="category-title">STUDY/WORK</h2>
           <ul class="permit-list">
-            <li><a href="permesso-studio-dopo-ingresso-con-visto.html" class="permit-link"><span class="icon">📖</span><span class="title">Study permit (after entry with visa)</span></a></li>
-            <li><a href="permesso-studio-conversione-da-altro-permesso.html" class="permit-link"><span class="icon">📖</span><span class="title">Study permit (conversion from another permit)</span></a></li>
-            <li><a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html" class="permit-link"><span class="icon">💼</span><span class="title">Employed work (after entry with visa via quota decree)</span></a></li>
-            <li><a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html" class="permit-link"><span class="icon">💼</span><span class="title">Employed work (conversion from another permit)</span></a></li>
-            <li><a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html" class="permit-link"><span class="icon">🌾</span><span class="title">Seasonal employed work (after entry with visa via seasonal quota decree)</span></a></li>
-            <li><a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html" class="permit-link"><span class="icon">🏢</span><span class="title">Self-employment (after entry with visa via quota decree)</span></a></li>
-            <li><a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html" class="permit-link"><span class="icon">🏢</span><span class="title">Self-employment (conversion from another permit)</span></a></li>
-            <li><a href="permesso-ricerca-scientifica.html" class="permit-link"><span class="icon">🔬</span><span class="title">Scientific research permit</span></a></li>
-            <li><a href="permesso-attivita-sportiva.html" class="permit-link"><span class="icon">⚽</span><span class="title">Sports activity permit</span></a></li>
-            <li><a href="permesso-motivi-religiosi.html" class="permit-link"><span class="icon">🕊️</span><span class="title">Religious reasons permit</span></a></li>
-            <li><a href="permesso-residenza-elettiva.html" class="permit-link"><span class="icon">🏡</span><span class="title">Elective residence permit</span></a></li>
-            <li><a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html" class="permit-link"><span class="icon">🇪🇺</span><span class="title">EU long-term residence permit ("Card")</span></a></li>
-            <li><a href="permesso-attesa-occupazione.html" class="permit-link"><span class="icon">🔍</span><span class="title">Job seeking ("waiting for employment")</span></a></li>
+
+            {% assign p = permitsEn | where: "slug", "studio-dopo-ingresso-con-visto" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-studio-dopo-ingresso-con-visto.html" class="permit-main"><span class="icon">📖</span><span class="title">Study permit (after entry with visa)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-studio-dopo-ingresso-con-visto.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "studio-conversione-da-altro-permesso" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-studio-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">📖</span><span class="title">Study permit (conversion from another permit)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-studio-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html" class="permit-main"><span class="icon">💼</span><span class="title">Employed work (after entry with visa via quota decree)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "lavoro-subordinato-conversione-da-altro-permesso" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">💼</span><span class="title">Employed work (conversion from another permit)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html" class="permit-main"><span class="icon">🌾</span><span class="title">Seasonal employed work (after entry with visa via seasonal quota decree)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html" class="permit-main"><span class="icon">🏢</span><span class="title">Self-employment (after entry with visa via quota decree)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "lavoro-autonomo-conversione-da-altro-permesso" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">🏢</span><span class="title">Self-employment (conversion from another permit)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "lavoro-artistico" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-artistico.html" class="permit-main"><span class="icon">🎨</span><span class="title">Artistic work permit</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-lavoro-artistico.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-artistico.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-artistico.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "ricerca-scientifica" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-ricerca-scientifica.html" class="permit-main"><span class="icon">🔬</span><span class="title">Scientific research permit</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-ricerca-scientifica.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-ricerca-scientifica.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-ricerca-scientifica.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "attivita-sportiva" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-attivita-sportiva.html" class="permit-main"><span class="icon">⚽</span><span class="title">Sports activity permit</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-attivita-sportiva.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-attivita-sportiva.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-attivita-sportiva.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "motivi-religiosi" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-motivi-religiosi.html" class="permit-main"><span class="icon">🕊️</span><span class="title">Religious reasons permit</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-motivi-religiosi.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-motivi-religiosi.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-motivi-religiosi.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "residenza-elettiva" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-residenza-elettiva.html" class="permit-main"><span class="icon">🏡</span><span class="title">Elective residence permit</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-residenza-elettiva.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-residenza-elettiva.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-residenza-elettiva.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html" class="permit-main"><span class="icon">🇪🇺</span><span class="title">EU long-term residence permit ("Card")</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "attesa-occupazione" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-attesa-occupazione.html" class="permit-main"><span class="icon">🔍</span><span class="title">Job seeking ("waiting for employment")</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-attesa-occupazione.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
           </ul>
         </div>
 
@@ -150,17 +369,139 @@ extraStyles: |
         <div class="category-section category-orange">
           <h2 class="category-title">PROTECTION (INTERNATIONAL OR SOCIAL)</h2>
           <ul class="permit-list">
-            <li><a href="permesso-richiesta-asilo.html" class="permit-link"><span class="icon">🟨</span><span class="title">Asylum application ("yellow permit")</span></a></li>
-            <li><a href="permesso-asilo-status-rifugiato.html" class="permit-link"><span class="icon">🛡️</span><span class="title">Asylum (refugee status)</span></a></li>
-            <li><a href="permesso-protezione-sussidiaria.html" class="permit-link"><span class="icon">🔰</span><span class="title">Subsidiary protection</span></a></li>
-            <li><a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-link"><span class="icon">✨</span><span class="title">Special protection (after positive decision)</span></a></li>
-            <li><a href="permesso-protezione-sociale-vittime-di-tratta.html" class="permit-link"><span class="icon">🆘</span><span class="title">Social protection (victims of trafficking)</span></a></li>
-            <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html" class="permit-link"><span class="icon">🛑</span><span class="title">Social protection (victims of domestic violence)</span></a></li>
-            <li><a href="permesso-sfruttamento-lavorativo.html" class="permit-link"><span class="icon">⚠️</span><span class="title">Labour exploitation permit</span></a></li>
-            <li><a href="permesso-apolidia.html" class="permit-link"><span class="icon">🌐</span><span class="title">Statelessness permit</span></a></li>
-            <li><a href="permesso-minore-eta-per-msna.html" class="permit-link"><span class="icon">👶</span><span class="title">Minors (unaccompanied foreign minors)</span></a></li>
-            <li><a href="permesso-calamita-naturale.html" class="permit-link"><span class="icon">🌋</span><span class="title">Natural disaster</span></a></li>
-            <li><a href="permesso-integrazione-prosieguo-amministrativo.html" class="permit-link"><span class="icon">📄</span><span class="title">Administrative continuation (integration)</span></a></li>
+
+            {% assign p = permitsEn | where: "slug", "richiesta-asilo" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-richiesta-asilo.html" class="permit-main"><span class="icon">🟨</span><span class="title">Asylum application ("yellow permit")</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-richiesta-asilo.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "asilo-status-rifugiato" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-asilo-status-rifugiato.html" class="permit-main"><span class="icon">🛡️</span><span class="title">Asylum (refugee status)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-asilo-status-rifugiato.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "protezione-sussidiaria" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-protezione-sussidiaria.html" class="permit-main"><span class="icon">🔰</span><span class="title">Subsidiary protection</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-main"><span class="icon">✨</span><span class="title">Special protection (after positive decision)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "protezione-sociale-vittime-di-tratta" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-protezione-sociale-vittime-di-tratta.html" class="permit-main"><span class="icon">🆘</span><span class="title">Social protection (victims of trafficking)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "protezione-sociale-vittime-di-violenza-domestica" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html" class="permit-main"><span class="icon">🛑</span><span class="title">Social protection (victims of domestic violence)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "sfruttamento-lavorativo" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-sfruttamento-lavorativo.html" class="permit-main"><span class="icon">⚠️</span><span class="title">Labour exploitation permit</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-sfruttamento-lavorativo.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-sfruttamento-lavorativo.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-sfruttamento-lavorativo.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "apolidia" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-apolidia.html" class="permit-main"><span class="icon">🌐</span><span class="title">Statelessness permit</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-apolidia.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-apolidia.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-apolidia.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "minore-eta-per-msna" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-minore-eta-per-msna.html" class="permit-main"><span class="icon">👶</span><span class="title">Minors (unaccompanied foreign minors)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-minore-eta-per-msna.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "calamita-naturale" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-calamita-naturale.html" class="permit-main"><span class="icon">🌋</span><span class="title">Natural disaster</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-calamita-naturale.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-calamita-naturale.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-calamita-naturale.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "integrazione-prosieguo-amministrativo" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-integrazione-prosieguo-amministrativo.html" class="permit-main"><span class="icon">📄</span><span class="title">Administrative continuation (integration)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-integrazione-prosieguo-amministrativo.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
           </ul>
         </div>
 
@@ -170,10 +511,55 @@ extraStyles: |
         <div class="category-section category-blue">
           <h2 class="category-title">MEDICAL TREATMENT</h2>
           <ul class="permit-list">
-            <li><a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html" class="permit-link"><span class="icon">🤰</span><span class="title">Pregnant woman or mother of child under 6 months</span></a></li>
-            <li><a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html" class="permit-link"><span class="icon">👨‍👶</span><span class="title">Father of child under 6 months or about to be born</span></a></li>
-            <li><a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html" class="permit-link"><span class="icon">💊</span><span class="title">Medical treatment after entry with visa</span></a></li>
-            <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html" class="permit-link"><span class="icon">🏥</span><span class="title">Seriously ill person already in Italy (art. 19)</span></a></li>
+
+            {% assign p = permitsEn | where: "slug", "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html" class="permit-main"><span class="icon">🤰</span><span class="title">Pregnant woman or mother of child under 6 months</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html" class="permit-main"><span class="icon">👨‍👶</span><span class="title">Father of child under 6 months or about to be born</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html" class="permit-main"><span class="icon">💊</span><span class="title">Medical treatment after entry with visa</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html" class="permit-main"><span class="icon">🏥</span><span class="title">Seriously ill person already in Italy (art. 19)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
           </ul>
         </div>
 
@@ -183,17 +569,139 @@ extraStyles: |
         <div class="category-section category-teal">
           <h2 class="category-title">FAMILY REASONS</h2>
           <ul class="permit-list">
-            <li><a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="permit-link"><span class="icon">🧑‍🤝‍🧑</span><span class="title">Family reunification (after entry with visa)</span></a></li>
-            <li><a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="permit-link"><span class="icon">💑</span><span class="title">Family cohesion (without authorization)</span></a></li>
-            <li><a href="permesso-famiglia-genitore-di-cittadino-italiano.html" class="permit-link"><span class="icon">🇮🇹</span><span class="title">Parent of Italian citizen</span></a></li>
-            <li><a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html" class="permit-link"><span class="icon">👵</span><span class="title">Cohabitant with Italian relative up to second degree</span></a></li>
-            <li><a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html" class="permit-link"><span class="icon">👨‍👧</span><span class="title">Minor child over 14 living with parents</span></a></li>
-            <li><a href="permesso-assistenza-minore-articolo-31.html" class="permit-link"><span class="icon">🧒</span><span class="title">Minor assistance (art. 31)</span></a></li>
-            <li><a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html" class="permit-link"><span class="icon">👦</span><span class="title">Foreign minors in custody of relatives up to fourth degree</span></a></li>
-            <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html" class="permit-link"><span class="icon">🫂</span><span class="title">Family members of persons with refugee status or subsidiary protection</span></a></li>
-            <li><a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html" class="permit-link"><span class="icon">🏠</span><span class="title">FAMIT for family members of Italian citizens</span></a></li>
-            <li><a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html" class="permit-link"><span class="icon">🇪🇺</span><span class="title">Residence card for family member of EU citizen</span></a></li>
-            <li><a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html" class="permit-link"><span class="icon">🚀</span><span class="title">Residence card for family member of "mobile" Italian citizen</span></a></li>
+
+            {% assign p = permitsEn | where: "slug", "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="permit-main"><span class="icon">🧑‍🤝‍🧑</span><span class="title">Family reunification (after entry with visa)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="permit-main"><span class="icon">💑</span><span class="title">Family cohesion (without authorization)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "famiglia-genitore-di-cittadino-italiano" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famiglia-genitore-di-cittadino-italiano.html" class="permit-main"><span class="icon">🇮🇹</span><span class="title">Parent of Italian citizen</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html" class="permit-main"><span class="icon">👵</span><span class="title">Cohabitant with Italian relative up to second degree</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html" class="permit-main"><span class="icon">👨‍👧</span><span class="title">Minor child over 14 living with parents</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "assistenza-minore-articolo-31" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-assistenza-minore-articolo-31.html" class="permit-main"><span class="icon">🧒</span><span class="title">Minor assistance (art. 31)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-assistenza-minore-articolo-31.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-assistenza-minore-articolo-31.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-assistenza-minore-articolo-31.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "affidamento-a-familiari-entro-il-quarto-grado" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html" class="permit-main"><span class="icon">👦</span><span class="title">Foreign minors in custody of relatives up to fourth degree</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html" class="permit-main"><span class="icon">🫂</span><span class="title">Family members of persons with refugee status or subsidiary protection</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "famit-per-familiari-di-cittadini-italiani-statici" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html" class="permit-main"><span class="icon">🏠</span><span class="title">FAMIT for family members of Italian citizens</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "carta-di-soggiorno-per-familiari-di-cittadini-ue" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html" class="permit-main"><span class="icon">🇪🇺</span><span class="title">Residence card for family member of EU citizen</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsEn | where: "slug", "carta-di-soggiorno-per-familiari-di-italiani-dinamici" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html" class="permit-main"><span class="icon">🚀</span><span class="title">Residence card for family member of "mobile" Italian citizen</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 Coming soon</span>
+                {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#cose" class="permit-btn btn-cose">What is it</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#primo" class="permit-btn btn-primo">First issue</a>{% endif %}
+                  {% if p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#rinnovo" class="permit-btn btn-rinnovo">Renewal</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
           </ul>
         </div>
 
