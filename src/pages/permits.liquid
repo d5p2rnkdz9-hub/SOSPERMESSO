@@ -38,17 +38,33 @@ eleventyExcludeFromCollections: true
   <div class="permit-tab-bar" id="permit-tab-bar">
     <div class="container">
       <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
-        <a href="#cose" class="tab-badge">Cos'è</a>
+        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">Cos'è</a>
         {% if permit.primoDocuments.size > 0 %}
-        <a href="#primo" class="tab-badge tab-badge-primo">Primo rilascio</a>
+        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">Primo rilascio</a>
         {% endif %}
         {% if permit.rinnovoDocuments.size > 0 %}
-        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo">Rinnovo</a>
+        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Rinnovo</a>
         {% endif %}
-        <a href="#prassi-locali" class="tab-badge tab-badge-prassi">Prassi locali</a>
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">Prassi locali</a>
       </div>
     </div>
   </div>
+  <script>
+  function scrollToSection(id) {
+    var el = document.getElementById(id);
+    if (!el) return true;
+    var header = document.querySelector('header') || document.querySelector('.site-header');
+    var breadcrumb = document.querySelector('.breadcrumb-bar');
+    var tabBar = document.getElementById('permit-tab-bar');
+    var offset = 20; // extra breathing room
+    if (header) offset += header.getBoundingClientRect().height;
+    if (breadcrumb) offset += breadcrumb.getBoundingClientRect().height;
+    if (tabBar) offset += tabBar.getBoundingClientRect().height;
+    var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+    return false;
+  }
+  </script>
   {% endunless %}
 
 {% if permit.isPlaceholder == true %}

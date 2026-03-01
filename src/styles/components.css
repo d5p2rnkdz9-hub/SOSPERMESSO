@@ -247,13 +247,7 @@
   color: #1A1A1A;
 }
 
-/* Scroll margin for anchored sections — accounts for header + breadcrumb + tab bar */
-#cose,
-#primo,
-#rinnovo,
-#prassi-locali {
-  scroll-margin-top: 290px;
-}
+/* Scroll offset handled by JS scrollToSection() — measures actual sticky heights at runtime */
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -267,12 +261,6 @@
     padding: 0.4rem 1rem;
   }
 
-  #cose,
-  #primo,
-  #rinnovo,
-  #prassi-locali {
-    scroll-margin-top: 210px;
-  }
 }
 
 @media (max-width: 480px) {
