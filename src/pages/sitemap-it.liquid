@@ -34,24 +34,4 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
   </url>
   {%- endfor %}
-  <!-- Document pages (primo rilascio) -->
-  {%- for doc in documents.primo %}
-  <url>
-    <loc>{{ site.url }}/documenti-{{ doc.slug }}-primo.html</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/documenti-{{ doc.slug }}-primo.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/documenti-{{ doc.slug }}-primo.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/documenti-{{ doc.slug }}-primo.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/documenti-{{ doc.slug }}-primo.html"/>
-  </url>
-  {%- endfor %}
-  <!-- Document pages (rinnovo) -->
-  {%- for doc in documents.rinnovo %}
-  <url>
-    <loc>{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/documenti-{{ doc.slug }}-rinnovo.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/documenti-{{ doc.slug }}-rinnovo.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/documenti-{{ doc.slug }}-rinnovo.html"/>
-  </url>
-  {%- endfor %}
 </urlset>
