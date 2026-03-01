@@ -37,15 +37,15 @@ eleventyExcludeFromCollections: true
   {% unless permit.isPlaceholder == true %}
   <div class="permit-tab-bar" id="permit-tab-bar">
     <div class="container">
-      <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+      <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
         <a href="#cose" class="tab-badge">Cos'è</a>
         {% if permit.primoDocuments.size > 0 %}
-        <a href="#primo" class="tab-badge tab-badge-primo">📋 Primo rilascio</a>
+        <a href="#primo" class="tab-badge tab-badge-primo">Primo rilascio</a>
         {% endif %}
         {% if permit.rinnovoDocuments.size > 0 %}
-        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo">🔄 Rinnovo</a>
+        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo">Rinnovo</a>
         {% endif %}
-        <a href="#prassi-locali" class="tab-badge tab-badge-prassi">📍 Prassi locali</a>
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi">Prassi locali</a>
       </div>
     </div>
   </div>

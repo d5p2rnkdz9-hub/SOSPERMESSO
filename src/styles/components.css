@@ -203,7 +203,7 @@
 
 .permit-tab-bar {
   position: sticky;
-  top: 170px; /* breadcrumb-bar top (130px) + breadcrumb height (~40px) */
+  top: 200px; /* breadcrumb-bar top (130px) + breadcrumb height (~40px) + extra clearance */
   z-index: 99; /* Just below breadcrumb-bar (100) */
   background: var(--white);
   padding: 0.6rem 0;
@@ -215,9 +215,9 @@
 /* Tab badge base styles (moved from inline) */
 .tab-badge {
   display: inline-block;
-  padding: 0.3rem 0.85rem;
-  border-radius: 20px;
-  font-size: 0.82rem;
+  padding: 0.55rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
@@ -243,8 +243,8 @@
 }
 
 .tab-badge-prassi {
-  background: #26A69A;
-  color: white;
+  background: #FFB74D;
+  color: #1A1A1A;
 }
 
 /* Scroll margin for anchored sections — accounts for header + breadcrumb + tab bar */
@@ -258,13 +258,13 @@
 /* Mobile */
 @media (max-width: 768px) {
   .permit-tab-bar {
-    top: 110px; /* mobile breadcrumb top (70px) + breadcrumb height (~40px) */
+    top: 130px; /* mobile breadcrumb top (70px) + breadcrumb height (~40px) + clearance */
     padding: 0.5rem 0;
   }
 
   .tab-badge {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.65rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
   }
 
   #cose,
@@ -277,8 +277,8 @@
 
 @media (max-width: 480px) {
   .tab-badge {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.55rem;
+    font-size: 0.8rem;
+    padding: 0.35rem 0.85rem;
   }
 }
 
