@@ -1,83 +1,80 @@
-# Requirements: SOS Permesso v4.1
+# Requirements: SOS Permesso v4.2
 
-**Defined:** 2026-02-19
+**Defined:** 2026-03-01
 **Core Value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-## v4.1 Requirements
+## v4.2 Requirements
 
-### Bug Fixes
+Requirements for permit page restructure. Each maps to roadmap phases.
 
-- [x] **BUG-01**: Note editoriali visibili su pagine documento — fix nome campo `"Info extra su doc rilascio"` → `"Info extra su doc rilascio/rinnovo"` in `_data/documents.js` e `_data/permits.js`
-- [x] **BUG-02**: `PRASSI_DB_ID` hardcoded in `_data/prassiLocali.js` (consistente con pattern dei data file; resta env var nelle Netlify Functions)
+### Layout
 
-### Prassi — Submission
+- [ ] **LAYOUT-01**: Tab badges (Cos'è / Primo / Rinnovo / Prassi locali) become sticky at top of viewport when user scrolls past header
+- [ ] **LAYOUT-02**: "Hai altre domande? Scrivici" CTA moves from after Q&A section to bottom of page (before Related links)
+- [ ] **LAYOUT-03**: "Ricorda" (entro 60gg) alert moves to before checklist in Rinnovo section
+- [ ] **LAYOUT-04**: Prassi locali added as 4th tab badge in header alongside Cos'è / Primo / Rinnovo
 
-- [ ] **PRAS-01**: `submit-prassi.mjs` funzionante in produzione — env var `PRASSI_DB_ID` configurata in Netlify, parent field `@notionhq/client` v5 verificato (`database_id` vs `data_source_id`) e corretto se necessario
-- [ ] **PRAS-02**: Endpoint resistente allo spam — honeypot field nel form HTML + validazione server-side (lunghezza minima/massima descrizione)
-- [ ] **PRAS-03**: Rate limiting configurato su `submit-prassi` via Netlify config export
-- [ ] **PRAS-04**: CORS headers presenti su tutti i response path (200, 400, 429, 500) — non solo happy path
+### Prassi
 
-### Prassi — Automation
+- [ ] **PRASSI-01**: Full Prassi locali section replaced with compact collapsible accordion
+- [ ] **PRASSI-02**: Accordion shows "Nessuna segnalazione finora" when empty, questura city names when populated
+- [ ] **PRASSI-03**: Clicking Prassi locali tab badge scrolls to accordion section
 
-- [ ] **AUTO-01**: Netlify Build Hook creato, URL salvato come segreto in Netlify dashboard (mai in git o client-side)
-- [ ] **AUTO-02**: Notion Automation configurata: quando "Status" → "Approvato" → POST al Build Hook → rebuild automatico del sito
-- [ ] **AUTO-03**: Flow end-to-end validato: submit form → Notion row "Pending" → admin approva → rebuild → voce compare sul sito nella pagina documento corretta
+### i18n
 
-### Moderation
+- [ ] **I18N-01**: All layout changes applied to EN permit template (permits-en.liquid)
+- [ ] **I18N-02**: All layout changes applied to FR permit template (permits-fr.liquid)
 
-- [ ] **MOD-01**: Notion DB prassi ha view "Da approvare" filtrata su Status=Pending (facilita review admin)
+## Future Requirements
 
-### Note Editoriali dai Blocchi Notion
+### Prassi Backend
 
-- [ ] **NOTES-01**: `documents.js` fetcha i blocchi di ogni pagina Notion (stessa logica di `permits.js`) e li parsa in sezioni Q&A, con supporto cache per non aumentare il build time
-- [ ] **NOTES-02**: Pagine documento (primo + rinnovo) mostrano sezione "Note" in fondo con Q&A provenienti dai blocchi — sezione assente se la pagina non ha blocchi (graceful degradation)
-
-## Future Requirements (v4.2+)
+- **PRAS-01**: submit-prassi.mjs functional in production (env vars + v5 parent field fix)
+- **PRAS-02**: Spam protection — honeypot + server-side validation
+- **PRAS-03**: Rate limiting on submit-prassi
+- **PRAS-04**: Netlify Build Hook + Notion Automation for auto-rebuild
 
 ### Voting
 
-- **VOTE-01**: `vote-prassi.mjs` funzionante in produzione — vote confermo/non confermo aggiornano contatori Notion
-- **VOTE-02**: Server-side rate limiting su `vote-prassi` (prevenzione vote bombing)
-- **VOTE-03**: Verifica che l'ID votato appartenga al DB prassi (sicurezza)
+- **VOTE-01**: vote-prassi.mjs functional in production
+- **VOTE-02**: Server-side rate limiting on vote-prassi
 
 ### Tech Debt
 
-- **DEBT-01**: "Segnala errore" button ripristinato su pagine documento (primo/rinnovo)
-- **DEBT-02**: Language switcher integrato nella main nav bar (attualmente dropdown separato)
-- **DEBT-03**: `prassiLocali.js` migrato da `notion.search()` a `notion.databases.query()` (efficienza)
+- **DEBT-01**: "Segnala errore" button restored on document pages (primo/rinnovo)
+- **DEBT-02**: Language switcher integrated in main nav bar
 
 ## Out of Scope
 
-| Feature | Motivo |
+| Feature | Reason |
 |---------|--------|
-| `vote-prassi.mjs` activation | Rinviato a v4.2 — priorità bassa, submission è il flusso critico |
-| `notion-webhook.mjs` (Notion API webhook) | Non necessario — Notion Automation (piano a pagamento) è più semplice e già sufficiente |
-| ES Translation (v4.1 originale) | Rinviato a v4.2 — priorità inferiore rispetto a far funzionare prassi |
-| Real-time vote counts senza rebuild | Non allineato con architettura build-time |
-| User accounts / autenticazione | Fuori scope — sistema anonimo per design |
+| Prassi locali backend (submission, moderation) | Dropped from v4.1, revisit separately |
+| Floating side dots navigation | User chose sticky badges for simplicity |
+| ES translation | Deferred to future milestone |
+| Content validation pass | Separate from structural changes |
+| Note editoriali da blocchi Notion | Deferred from v4.1 |
 
 ## Traceability
 
+Which phases cover which requirements. Updated during roadmap creation.
+
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUG-01 | Phase 55 | Complete |
-| BUG-02 | Phase 55 | Complete |
-| PRAS-01 | Phase 56 | Pending |
-| PRAS-02 | Phase 57 | Pending |
-| PRAS-03 | Phase 57 | Pending |
-| PRAS-04 | Phase 56 | Pending |
-| AUTO-01 | Phase 58 | Pending |
-| AUTO-02 | Phase 58 | Pending |
-| AUTO-03 | Phase 59 | Pending |
-| MOD-01 | Phase 58 | Pending |
-| NOTES-01 | Phase 60 | Pending |
-| NOTES-02 | Phase 60 | Pending |
+| LAYOUT-01 | — | Pending |
+| LAYOUT-02 | — | Pending |
+| LAYOUT-03 | — | Pending |
+| LAYOUT-04 | — | Pending |
+| PRASSI-01 | — | Pending |
+| PRASSI-02 | — | Pending |
+| PRASSI-03 | — | Pending |
+| I18N-01 | — | Pending |
+| I18N-02 | — | Pending |
 
 **Coverage:**
-- v4.1 requirements: 12 total
-- Mapped to phases: 12
-- Unmapped: 0 ✓
+- v4.2 requirements: 9 total
+- Mapped to phases: 0
+- Unmapped: 9 ⚠️
 
 ---
-*Requirements defined: 2026-02-19*
-*Last updated: 2026-02-19 — added NOTES-01, NOTES-02 (Phase 60: note editoriali da blocchi Notion)*
+*Requirements defined: 2026-03-01*
+*Last updated: 2026-03-01 after initial definition*
