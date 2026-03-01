@@ -270,6 +270,119 @@
 }
 
 /* -----------------------------------------------
+   ACCORDION LAYOUT
+   ----------------------------------------------- */
+
+.prassi-accordion {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.prassi-accordion-item {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.prassi-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.prassi-accordion-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  text-align: left;
+  transition: background var(--transition-fast);
+  gap: 0.5rem;
+}
+
+.prassi-accordion-header:hover {
+  background: var(--gray-light);
+}
+
+.prassi-accordion-header:focus-visible {
+  outline: 2px solid var(--accent-teal);
+  outline-offset: -2px;
+}
+
+.prassi-accordion-city {
+  font-weight: 600;
+  color: var(--accent-teal);
+  flex: 1;
+}
+
+.prassi-accordion-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.4rem;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  background: rgba(38, 166, 154, 0.12);
+  color: var(--accent-teal);
+  border-radius: var(--radius-full);
+}
+
+.prassi-accordion-chevron {
+  font-size: 0.85rem;
+  color: var(--gray-medium);
+  transition: transform 0.2s ease;
+}
+
+/* Expanded state: rotate chevron */
+.prassi-accordion-header[aria-expanded="true"] .prassi-accordion-chevron {
+  transform: rotate(90deg);
+}
+
+/* Accordion body: collapsed by default */
+.prassi-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1rem;
+}
+
+/* Expanded state */
+.prassi-accordion-body.prassi-accordion-open {
+  max-height: 2000px; /* Large enough for any content; transition handles visual */
+  padding: 0.5rem 1rem 1rem;
+}
+
+/* Cards inside accordion need tighter spacing */
+.prassi-accordion-body .prassi-card {
+  margin-bottom: 0.75rem;
+}
+
+.prassi-accordion-body .prassi-card:last-child {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------------
+   ACCORDION EMPTY STATE
+   ----------------------------------------------- */
+
+.prassi-accordion-empty {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.prassi-accordion-empty p {
+  font-size: var(--font-size-base);
+  color: var(--gray-medium);
+  margin: 0.5rem 0 0.75rem;
+  font-weight: 500;
+}
+
+/* -----------------------------------------------
    SUBMIT BUTTON
    ----------------------------------------------- */
 
@@ -361,6 +474,19 @@
     width: 100%;
     padding: var(--spacing-sm);
   }
+
+  .prassi-accordion-header {
+    padding: 0.75rem 0.85rem;
+    font-size: var(--font-size-sm);
+  }
+
+  .prassi-accordion-body {
+    padding: 0 0.85rem;
+  }
+
+  .prassi-accordion-body.prassi-accordion-open {
+    padding: 0.5rem 0.85rem 0.85rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -386,6 +512,19 @@
   }
 
   .prassi-submit-btn {
+    font-size: var(--font-size-sm);
+  }
+
+  .prassi-accordion-header {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .prassi-accordion-empty {
+    padding: 1rem 0.75rem;
+  }
+
+  .prassi-accordion-empty p {
     font-size: var(--font-size-sm);
   }
 }
