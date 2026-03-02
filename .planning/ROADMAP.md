@@ -16,7 +16,7 @@
 - ✅ **v3.2 EN Translation Pipeline** - Phases 47-50 (shipped 2026-02-18)
 - ✅ **v4.0 FR Translation** - Phases 51-54 (shipped 2026-02-19)
 - ✅ **v4.1 Prassi & Note Editoriali** - Phase 55 only (shipped 2026-02-19; phases 56-60 dropped)
-- 🚧 **v4.2 Page Restructure** - Phases 60-61 (in progress)
+- ✅ **v4.2 Page Restructure** - Phases 60-61 (shipped 2026-03-02)
 
 ---
 
@@ -211,7 +211,7 @@ Plans:
 
 Plans:
 - [x] 61-01: Apply all Phase 60 changes to `permits-en.liquid` (I18N-01) (completed 2026-03-02)
-- [ ] 61-02: Apply all Phase 60 changes to `permits-fr.liquid` (I18N-02)
+- [x] 61-02: Apply all Phase 60 changes to `permits-fr.liquid` (I18N-02) (completed 2026-03-02)
 
 ---
 
@@ -221,7 +221,7 @@ Plans:
 |-------|------|------|--------------|----------|--------|
 | 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Complete |
 | 60 | IT Template Restructure | Complete    | 2026-03-02 | 5 | Complete (2026-03-01) |
-| 61 | Language Template Propagation | EN and FR templates match IT structure | I18N-01, I18N-02 | 3 | Not started |
+| 61 | Language Template Propagation | EN and FR templates match IT structure | I18N-01, I18N-02 | 3 | Complete (2026-03-02) |
 
 ---
 
@@ -233,3 +233,4 @@ Plans:
 *v4.1 revised: 2026-02-19 -- Phase 60 added (note editoriali da blocchi Notion), 12 requirements total*
 *v4.1 archived: 2026-03-01 -- only Phase 55 shipped; phases 56-60 dropped*
 *v4.2 added: 2026-03-01 -- Phases 60-61, 9 requirements mapped (page restructure)*
+*v4.2 archived: 2026-03-02 -- all phases complete, IT/EN/FR permit templates fully restructured*

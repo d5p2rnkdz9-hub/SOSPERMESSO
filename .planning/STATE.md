@@ -3,18 +3,18 @@ gsd_state_version: 1.0
 milestone: v4.2
 milestone_name: Page Restructure
 status: completed
-stopped_at: Completed 60-03-PLAN.md — Phase 60 fully done
-last_updated: "2026-03-02T13:57:19.622Z"
+stopped_at: Completed 61-02-PLAN.md — Phase 61 fully done, v4.2 milestone complete
+last_updated: "2026-03-02T15:35:24Z"
 progress:
   total_phases: 45
-  completed_phases: 40
+  completed_phases: 41
   total_plans: 80
-  completed_plans: 75
+  completed_plans: 77
 ---
 
 # Project State: SOS Permesso
 
-**Last Updated:** 2026-03-01
+**Last Updated:** 2026-03-02
 **Status:** Milestone complete
 
 ## Project Reference
@@ -23,16 +23,16 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 
 **Core value:** Users can quickly find accurate, understandable information about their specific permit type and what documents they need for the Questura.
 
-**Current focus:** v4.2 Page Restructure — Phase 61 (Language Template Propagation)
+**Current focus:** v4.2 Page Restructure — COMPLETE (Phase 61 done)
 
 ## Current Position
 
 Phase: 61 of 61 (Language Template Propagation)
-Plan: 0 of 2 in current phase (not started)
-Status: Phase 60 complete — ready to start Phase 61
-Last activity: 2026-03-01 — Completed 60-03-PLAN.md (CTA relocation, Ricorda alert move, visual verification)
+Plan: 2 of 2 in current phase (complete)
+Status: Phase 61 complete — v4.2 milestone fully done
+Last activity: 2026-03-02 — Completed 61-02-PLAN.md (FR permit template Phase 60 propagation)
 
-Progress: [█████░░░░░] 60% (3/5 plans complete across phases 60-61)
+Progress: [███████░░░] 70% (5/5 plans complete across phases 60-61)
 
 ## Accumulated Context
 
@@ -51,16 +51,20 @@ Phase 60 delivered the full IT template restructure across 3 plans:
 - 60-02: Prassi section replaced with compact collapsible accordion, CSS-only toggle via aria-expanded + max-height transition
 - 60-03: CTA "Hai altre domande?" moved to page bottom before Related links; "Ricorda: entro 60 giorni" moved before Rinnovo checklist
 
-### Phase 61 Context
+### Phase 61 Context (Complete)
 
-Apply all Phase 60 changes to EN and FR templates:
-- Templates to modify: `en/src/pages/permits-en.liquid` (61-01), `fr/src/pages/permits-fr.liquid` (61-02)
-- Sticky tab bar: same CSS already applies (shared stylesheet), need to add HTML tab-bar markup and update section IDs
-- Accordion pattern: `button.prassi-accordion-header[aria-expanded] + div.prassi-accordion-body`, inline onclick, `max-height: 0/2000px` transition — same as IT
-- CTA: same Typeform URL (G6YT01Vj), text in target language
-- Ricorda alert: text in target language, same position (before checklist)
-- `scrollToSection()` JS function must be copied to EN/FR templates — replaces CSS scroll-margin-top
-- Language-specific strings: keep EN/FR text, do not let Italian leak
+Phase 61 propagated all Phase 60 changes to EN and FR templates:
+- 61-01: EN permit template updated (permits-en.liquid) — sticky tab bar with scrollToSection, prassi accordion, CTA at bottom, Remember alert before checklist
+- 61-02: FR permit template updated (permits-fr.liquid) — same structural changes with French strings, added missing "Pratiques locales" tab badge
+
+**Key pattern:** All three language templates (IT/EN/FR) now have identical structure. Only text strings differ. extraStyles frontmatter blocks removed from EN/FR (CSS in shared stylesheet).
+
+### Decisions (Phase 61)
+
+| Decision | Rationale | Plan |
+|----------|-----------|------|
+| Remove extraStyles frontmatter from EN/FR | Tab-badge CSS is in shared stylesheet; inline block was a holdover | 61-02 |
+| permit-tab-bar appears twice (HTML + getElementById) | Same as IT reference — not a bug | 61-02 |
 
 ### Blockers/Concerns
 
@@ -68,10 +72,10 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-03-01
-**Stopped at:** Completed 60-03-PLAN.md — Phase 60 fully done
-**Resume with:** `/gsd:execute-phase 61 01`
-**Resume file:** .planning/phases/61-language-template-propagation/61-01-PLAN.md (to be created)
+**Last session:** 2026-03-02
+**Stopped at:** Completed 61-02-PLAN.md — Phase 61 fully done
+**Resume with:** Next milestone planning
+**Resume file:** None
 
 ---
 
