@@ -22,8 +22,8 @@ Requirements for permit page restructure. Each maps to roadmap phases.
 
 ### i18n
 
-- [ ] **I18N-01**: All layout changes applied to EN permit template (permits-en.liquid)
-- [ ] **I18N-02**: All layout changes applied to FR permit template (permits-fr.liquid)
+- [x] **I18N-01**: All layout changes applied to EN permit template (permits-en.liquid)
+- [x] **I18N-02**: All layout changes applied to FR permit template (permits-fr.liquid)
 
 ## Future Requirements
 
@@ -67,8 +67,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PRASSI-01 | Phase 60 | Complete |
 | PRASSI-02 | Phase 60 | Complete |
 | PRASSI-03 | Phase 60 | Complete |
-| I18N-01 | Phase 61 | Pending |
-| I18N-02 | Phase 61 | Pending |
+| I18N-01 | Phase 61 | Complete |
+| I18N-02 | Phase 61 | Complete |
 
 **Coverage:**
 - v4.2 requirements: 9 total
