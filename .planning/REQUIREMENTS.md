@@ -9,16 +9,16 @@ Requirements for permit page restructure. Each maps to roadmap phases.
 
 ### Layout
 
-- [ ] **LAYOUT-01**: Tab badges (Cos'è / Primo / Rinnovo / Prassi locali) become sticky at top of viewport when user scrolls past header
-- [ ] **LAYOUT-02**: "Hai altre domande? Scrivici" CTA moves from after Q&A section to bottom of page (before Related links)
-- [ ] **LAYOUT-03**: "Ricorda" (entro 60gg) alert moves to before checklist in Rinnovo section
-- [ ] **LAYOUT-04**: Prassi locali added as 4th tab badge in header alongside Cos'è / Primo / Rinnovo
+- [x] **LAYOUT-01**: Tab badges (Cos'è / Primo / Rinnovo / Prassi locali) become sticky at top of viewport when user scrolls past header
+- [x] **LAYOUT-02**: "Hai altre domande? Scrivici" CTA moves from after Q&A section to bottom of page (before Related links)
+- [x] **LAYOUT-03**: "Ricorda" (entro 60gg) alert moves to before checklist in Rinnovo section
+- [x] **LAYOUT-04**: Prassi locali added as 4th tab badge in header alongside Cos'è / Primo / Rinnovo
 
 ### Prassi
 
-- [ ] **PRASSI-01**: Full Prassi locali section replaced with compact collapsible accordion
-- [ ] **PRASSI-02**: Accordion shows "Nessuna segnalazione finora" when empty, questura city names when populated
-- [ ] **PRASSI-03**: Clicking Prassi locali tab badge scrolls to accordion section
+- [x] **PRASSI-01**: Full Prassi locali section replaced with compact collapsible accordion
+- [x] **PRASSI-02**: Accordion shows "Nessuna segnalazione finora" when empty, questura city names when populated
+- [x] **PRASSI-03**: Clicking Prassi locali tab badge scrolls to accordion section
 
 ### i18n
 
@@ -60,13 +60,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAYOUT-01 | Phase 60 | Pending |
-| LAYOUT-02 | Phase 60 | Pending |
-| LAYOUT-03 | Phase 60 | Pending |
-| LAYOUT-04 | Phase 60 | Pending |
-| PRASSI-01 | Phase 60 | Pending |
-| PRASSI-02 | Phase 60 | Pending |
-| PRASSI-03 | Phase 60 | Pending |
+| LAYOUT-01 | Phase 60 | Complete |
+| LAYOUT-02 | Phase 60 | Complete |
+| LAYOUT-03 | Phase 60 | Complete |
+| LAYOUT-04 | Phase 60 | Complete |
+| PRASSI-01 | Phase 60 | Complete |
+| PRASSI-02 | Phase 60 | Complete |
+| PRASSI-03 | Phase 60 | Complete |
 | I18N-01 | Phase 61 | Pending |
 | I18N-02 | Phase 61 | Pending |
 

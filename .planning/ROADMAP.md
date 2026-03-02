@@ -185,7 +185,7 @@
 4. Clicking the "Prassi locali" tab badge scrolls the page to the prassi accordion section without a full page reload.
 5. The prassi section renders as a compact collapsible accordion: collapsed by default, showing "Nessuna segnalazione finora" when the permit has no prassi entries, or questura city names when it does.
 
-**Plans:** 3 plans in 2 waves
+**Plans:** 3/3 plans complete
 
 Plans:
 - [x] 60-01: Sticky tab badges + Prassi tab badge (LAYOUT-01, LAYOUT-04) — extract badges into sticky bar, add Prassi badge, CSS stacking
@@ -210,7 +210,7 @@ Plans:
 **Plans:** TBD
 
 Plans:
-- [ ] 61-01: Apply all Phase 60 changes to `permits-en.liquid` (I18N-01)
+- [x] 61-01: Apply all Phase 60 changes to `permits-en.liquid` (I18N-01) (completed 2026-03-02)
 - [ ] 61-02: Apply all Phase 60 changes to `permits-fr.liquid` (I18N-02)
 
 ---
@@ -220,7 +220,7 @@ Plans:
 | Phase | Name | Goal | Requirements | Criteria | Status |
 |-------|------|------|--------------|----------|--------|
 | 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Complete |
-| 60 | IT Template Restructure | Sticky tabs, prassi accordion, repositioned CTA and alert | LAYOUT-01–04, PRASSI-01–03 | 5 | Complete (2026-03-01) |
+| 60 | IT Template Restructure | Complete    | 2026-03-02 | 5 | Complete (2026-03-01) |
 | 61 | Language Template Propagation | EN and FR templates match IT structure | I18N-01, I18N-02 | 3 | Not started |
 
 ---
