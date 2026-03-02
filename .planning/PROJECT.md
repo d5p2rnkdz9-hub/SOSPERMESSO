@@ -6,47 +6,34 @@ A multilingual information website helping immigrants in Italy understand reside
 
 ## Current State
 
-**Last Shipped:** v4.0 FR Translation (2026-02-19)
+**Last Shipped:** v4.2 Page Restructure (2026-03-02)
+
+**What was delivered (v4.2):**
+- Sticky tab bar with 4 section badges on all permit pages (IT/EN/FR)
+- Prassi locali compact collapsible accordion (CSS-only toggle, collapsed by default)
+- CTA "Hai altre domande?" relocated to page bottom (before Related links)
+- "Ricorda: entro 60 giorni" alert repositioned before rinnovo checklist
+- scrollToSection JS with measured sticky heights for precise scroll offset
+- Identical page structure across all 3 language templates
+
+**What was delivered (v4.1):**
+- Fixed Notion field name mismatch for editorial notes
+- Hardcoded PRASSI_DB_ID in prassiLocali.js
 
 **What was delivered (v4.0):**
 - French translation pipeline: `npm run translate --lang fr` with FR glossary
 - French Notion database (ID b7955daa) with 39 translated permits
-- FR pages generated: 39 permits, ~78 document pages, 12 static pages at `/fr/`
-- 11ty-native sitemaps (IT/EN/FR + index) with hreflang cross-references
-- Language switcher integrated as nav dropdown with flag emojis (IT/EN/FR)
-- Tech debt fixed: Typeform CTA, footer contact, listing page coverage, dizionario EN/FR links, canonical redirects
+- FR pages at `/fr/`, 11ty-native sitemaps (IT/EN/FR), nav language switcher
 
 **What was delivered (v3.2):**
-- Notion API response caching with `last_edited_time` tracking (87% build speedup)
-- Translation script (`npm run translate`) using Claude API with 35+ term glossary
+- Notion API response caching (87% build speedup)
+- Translation script with Claude API + 35-term glossary
 - EN permit + document pages generated from Notion via 11ty
-- Section-level hashing prevents re-translating unchanged content
 
 **What was delivered (v3.0):**
-- 11ty v3.1.2 with Liquid templates for static site generation
-- Shared component architecture: header, footer, nav, language-switcher as reusable includes
-- Base layout template with canonical URLs and hreflang tags for SEO
-- 411 pages migrated (206 IT + 205 EN) to use shared layouts
-- ~36,000 lines of duplicated HTML eliminated
+- 11ty v3.1.2 with Liquid templates, shared component architecture
+- 411 pages migrated, ~36,000 lines of duplicated HTML eliminated
 - Combined Notion + 11ty build pipeline (`npm run build`)
-- Netlify deployment configured with Node 22 LTS
-- Build time: 13.5s (down from manual header/footer management)
-
-**What was delivered (v2.2 Phase 32):**
-- MD5 content hashing for accurate change detection in build-permits.js
-- Translation memory module (scripts/translation-memory.js) for caching translations
-- Multilingual sitemap index (sitemap-index.xml) pointing to per-language sitemaps
-- Per-language sitemaps with hreflang tags (sitemap-it.xml, sitemap-en.xml, 171 URLs each)
-- robots.txt updated to point to sitemap-index.xml
-- npm run tm:stats script for translation memory statistics
-
-**What was delivered (v2.0):**
-- Translated all 209 pages (208 content + homepage) from Italian to English
-- Claude Code subagents for batch translation (8 batches, 4 parallel agents)
-- Translation glossary (35+ terms) applied consistently
-- CSS/JS paths fixed in all EN pages via automated script
-- Language switcher UI functional for IT ↔ EN toggle
-- All EN pages have `lang="en"` attribute
 
 ## Core Value
 
@@ -132,24 +119,18 @@ Users can quickly find accurate, understandable information about their specific
 - ✓ Typeform CTA on permit pages, footer contact link — v4.0
 - ✓ Homepage canonical 301 redirects — v4.0
 - ✓ Complete listing page coverage (41 IT / 39 EN / 39 FR) — v4.0
+- ✓ Sticky tab badges (Cos'è / Primo / Rinnovo / Prassi locali) fix to top on scroll — v4.2
+- ✓ CTA "Hai altre domande?" relocated to page bottom — v4.2
+- ✓ "Ricorda" alert repositioned before rinnovo checklist — v4.2
+- ✓ Prassi locali as 4th tab badge — v4.2
+- ✓ Compact collapsible prassi accordion (CSS-only) — v4.2
+- ✓ Prassi tab badge scrolls to accordion section — v4.2
+- ✓ All layout changes applied to EN permit template — v4.2
+- ✓ All layout changes applied to FR permit template — v4.2
 
-## Current Milestone: v4.2 Page Restructure
+## Next Milestone
 
-**Goal:** Restructure permit page layout — sticky section navigation, reorganized alerts, compact prassi accordion, and bottom CTA placement.
-
-**Target features:**
-- Sticky tab badges (Cos'è / Primo / Rinnovo / Prassi locali) that fix to top on scroll
-- Move "Hai altre domande? Scrivici" CTA to bottom of page
-- Move "Ricorda" (entro 60gg) alert to before checklist in Rinnovo section
-- Replace full Prassi locali section with compact collapsible accordion
-- Prassi locali tab badge scrolls to accordion section
-- Apply changes across all 3 language templates (IT/EN/FR)
-
-### Active
-
-<!-- Current scope. Building toward these. -->
-
-(Requirements defined in REQUIREMENTS.md)
+Not yet defined. Run `/gsd:new-milestone` to plan next goals.
 
 **Task Tracking:** [Notion "CHI FA COSA"](https://www.notion.so/2cd7355e7f7f80538130e9c246190699) — source of truth for all tasks
 **Permit Database (LIVE IT):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
@@ -166,21 +147,20 @@ Users can quickly find accurate, understandable information about their specific
 
 ## Context
 
-**Current state (after v3.2):**
+**Current state (after v4.2):**
 - 11ty v3.1.2 SSG with Liquid templates
 - Shared layouts in `_includes/layouts/base.liquid`
 - Component includes: header, footer, nav, language-switcher
-- Data files: `_data/permits.js`, `_data/permitsEn.js`, `_data/documents.js`, `_data/documentsEn.js` (DB IDs hardcoded)
-- ALL pages output at ROOT level in `_site/`, EN at `_site/en/` (flat, no `src/pages/` nesting)
+- Data files: `_data/permits.js`, `_data/permitsEn.js`, `_data/permitsFr.js`, `_data/documents.js`, `_data/documentsEn.js`, `_data/documentsFr.js` (DB IDs hardcoded)
+- ALL pages output at ROOT level in `_site/`, EN at `_site/en/`, FR at `_site/fr/`
 - Notion database IDs hardcoded in data files (only `NOTION_API_KEY` env var needed)
 - Notion API response caching with `last_edited_time` tracking (warm builds ~11-13s vs cold ~72s)
-- Translation script: `npm run translate` using Claude API with 35+ term glossary
-- Section-level hashing prevents re-translating unchanged content
+- Translation script: `npm run translate` using Claude API with 35+ term glossary (EN + FR)
 - CSS design system with variables in `src/styles/main.css`
-- Notion database powers document and permit page content
 - Combined build: `npm run build` chains Notion + 11ty
-- EN pages generated from Notion EN database (39 permits, 39 primo, 39 rinnovo)
-- SEO: canonical URLs, hreflang tags, sitemap index architecture
+- 3 languages (IT/EN/FR) with identical permit page structure
+- Permit pages: sticky tab bar, prassi accordion, CTA at bottom, scrollToSection JS
+- SEO: canonical URLs, hreflang tags (IT/EN/FR), sitemap index architecture
 - Netlify deployment with Node 22 LTS, security headers
 
 **Design patterns established:**
@@ -188,16 +168,19 @@ Users can quickly find accurate, understandable information about their specific
 - Color-coded categories: teal (familiari), orange (protezione), warm colors throughout
 - Badge component with gradient styling
 - Document page template with checklist, callout, print styles
-- Permit page template with Q&A cards, semantic border colors
+- Permit page template with Q&A cards, sticky tab bar, prassi accordion
 - Flat permit architecture (1 Notion page = 1 HTML page, no variants/redirects)
-- All pages output at root level in `_site/`, EN at `_site/en/`
+- Accordion via aria-expanded + max-height CSS transition (no extra JS)
+- Dual sticky bars: breadcrumb (z-index 100) stacks above tab bar (z-index 99)
+- Tab-badge colors: yellow (Cos'è), dark-blue (Primo), light-blue (Rinnovo), teal (Prassi)
 - Homepage sections: Tests → Database → Guide → Aiuto legale → Link utili
 - Mobile flat list navigation for faster task completion
 
 **Technical debt:**
 - Dizionario links need revision (partial matching works but coverage incomplete)
-- Re-add "Segnala errore" button to document pages (primo/rinnovo) — removed temporarily, also present in permits.liquid and 2 static carta-soggiorno pages
-- Move language switcher into main nav bar (currently standalone dropdown, works but not ideal for 4+ languages)
+- Re-add "Segnala errore" button to document pages (primo/rinnovo) — removed temporarily
+- Move language switcher into main nav bar (currently standalone dropdown)
+- 2 permits without Q&A content in Notion (Tirocinio, Lavoro artistico) — IT only, not translated
 
 ## Constraints
 
@@ -243,9 +226,13 @@ Users can quickly find accurate, understandable information about their specific
 | Keep existing Notion scripts | Don't rewrite working integration | ✓ Good — v3.0 |
 | Canonical + hreflang in base layout | SEO best practice, single source | ✓ Good — v3.0 |
 | FR first, ES in v4.1 | Validate pipeline with one language before committing to two | — Decided 2026-02-18 |
+| Sticky tab badges over floating side dots | User preference for simplicity | ✓ Good — v4.2 |
+| CSS-only accordion (aria-expanded + max-height) | No extra JS needed, smooth transitions | ✓ Good — v4.2 |
+| scrollToSection JS over CSS scroll-margin-top | Measured sticky heights at runtime for precise offset | ✓ Good — v4.2 |
+| Identical template structure across IT/EN/FR | Only text strings differ, easier maintenance | ✓ Good — v4.2 |
 | Volunteer translators | Community-driven review process | — Pending |
 | No legal review for translations | AI + human review sufficient | — Pending |
 | Replace Typeform with proprietary tests | Full control, multilingual, no external dependency | — Pending |
 
 ---
-*Last updated: 2026-03-01 — started v4.2 Page Restructure; v4.1 archived (Phase 55 only)*
+*Last updated: 2026-03-02 after v4.2 milestone*

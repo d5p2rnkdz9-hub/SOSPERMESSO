@@ -1,5 +1,30 @@
 # Project Milestones: SOS Permesso
 
+## v4.2 Page Restructure (Shipped: 2026-03-02)
+
+**Delivered:** Permit page layout restructure — sticky section navigation, compact prassi accordion, repositioned alerts and CTA — applied identically across IT, EN, and FR templates.
+
+**Phases completed:** 60-61 (2 phases, 5 plans)
+
+**Key accomplishments:**
+
+- Sticky tab bar with 4 badges (Cos'è / Primo / Rinnovo / Prassi locali) that fixes to top on scroll
+- Prassi locali section replaced with compact collapsible accordion (CSS-only, aria-expanded + max-height transition)
+- CTA "Hai altre domande?" relocated from inline after Q&A to page bottom
+- "Ricorda: entro 60 giorni" alert repositioned before rinnovo checklist
+- scrollToSection JS with measured sticky heights for precise scroll offset
+- All changes propagated to EN and FR templates — 3 languages have identical page structure
+
+**Stats:**
+
+- +3,352 / -733 lines
+- 2 phases, 5 plans
+- 2 days (2026-03-01 → 2026-03-02)
+
+**What's next:** TBD — run `/gsd:new-milestone` to define next goals
+
+---
+
 ## v4.1 Prassi & Note Editoriali (Partial: 2026-02-19)
 
 **Delivered:** Bug fixes only (Phase 55). Remaining prassi/automation phases (56-59) dropped — code exists but deprioritized.
