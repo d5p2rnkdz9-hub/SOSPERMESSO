@@ -9,34 +9,6 @@ title: "Permit for {{ permit.tipo }}"
 lang: en
 description: "Residence permit for {{ permit.tipo }} - information, requirements, documents and procedures"
 eleventyExcludeFromCollections: true
-extraStyles: |
-  <style>
-    .tab-badge {
-      display: inline-block;
-      padding: 0.3rem 0.85rem;
-      border-radius: 20px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: opacity 0.15s, transform 0.15s;
-      line-height: 1.4;
-      background: #FFD700;
-      color: #1A1A1A;
-    }
-    .tab-badge:hover {
-      opacity: 0.85;
-      transform: translateY(-1px);
-    }
-    .tab-badge-primo {
-      background: #1565C0;
-      color: white;
-    }
-    .tab-badge-rinnovo {
-      background: #90CAF9;
-      color: #1A1A1A;
-    }
-  </style>
 ---
 
   <!-- BREADCRUMB -->
@@ -58,21 +30,42 @@ extraStyles: |
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{{ permit.emoji }}</span>
         <h1 class="page-title">Permit for {{ permit.tipo }}</h1>
-
-        {% unless permit.isPlaceholder == true %}
-        <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
-          <a href="#cose" class="tab-badge">What is it</a>
-          {% if permit.primoDocuments.size > 0 %}
-          <a href="#primo" class="tab-badge tab-badge-primo">📋 First Issue</a>
-          {% endif %}
-          {% if permit.rinnovoDocuments.size > 0 %}
-          <a href="#rinnovo" class="tab-badge tab-badge-rinnovo">🔄 Renewal</a>
-          {% endif %}
-        </div>
-        {% endunless %}
       </div>
     </div>
   </section>
+
+  {% unless permit.isPlaceholder == true %}
+  <div class="permit-tab-bar" id="permit-tab-bar">
+    <div class="container">
+      <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
+        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">What is it</a>
+        {% if permit.primoDocuments.size > 0 %}
+        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">First Issue</a>
+        {% endif %}
+        {% if permit.rinnovoDocuments.size > 0 %}
+        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Renewal</a>
+        {% endif %}
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">Local practices</a>
+      </div>
+    </div>
+  </div>
+  <script>
+  function scrollToSection(id) {
+    var el = document.getElementById(id);
+    if (!el) return true;
+    var header = document.querySelector('header') || document.querySelector('.site-header');
+    var breadcrumb = document.querySelector('.breadcrumb-bar');
+    var tabBar = document.getElementById('permit-tab-bar');
+    var offset = 20; // extra breathing room
+    if (header) offset += header.getBoundingClientRect().height;
+    if (breadcrumb) offset += breadcrumb.getBoundingClientRect().height;
+    if (tabBar) offset += tabBar.getBoundingClientRect().height;
+    var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+    return false;
+  }
+  </script>
+  {% endunless %}
 
 {% if permit.isPlaceholder == true %}
   <!-- PLACEHOLDER PAGE -->
@@ -108,16 +101,6 @@ extraStyles: |
       </div>
       {% endfor %}
 
-      <!-- CTA -->
-      <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
-        <div>
-          Do you have more questions about the permit for {{ permit.tipo }}?
-          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
-            Contact us
-          </a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -269,6 +252,14 @@ extraStyles: |
       </div>
       {%- endif -%}
 
+      <!-- REMEMBER ALERT -->
+      <div class="alert alert-info" style="margin-bottom: 1rem;">
+        <span class="alert-icon">📅</span>
+        <div>
+          <strong>Remember:</strong> The renewal application should be submitted preferably <strong>before expiry</strong> or at most <strong>within 60 days</strong> of expiry.
+        </div>
+      </div>
+
       <!-- CHECKLIST -->
       <div class="card">
         <h3>📋 Required documents</h3>
@@ -321,13 +312,6 @@ extraStyles: |
         <span class="alert-icon">⚠️</span>
         <div>
           <strong>Note:</strong> Required documents may vary from one Police office to another.
-        </div>
-      </div>
-
-      <div class="alert alert-info" style="margin-top: 0.75rem;">
-        <span class="alert-icon">📅</span>
-        <div>
-          <strong>Remember:</strong> The renewal application should be submitted preferably <strong>before expiry</strong> or at most <strong>within 60 days</strong> of expiry.
         </div>
       </div>
 
@@ -390,6 +374,60 @@ extraStyles: |
   </section>
   {% endif %}
 
+  <!-- PRASSI LOCALI ACCORDION -->
+  <section class="section prassi-section bg-off-white" id="prassi-locali">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 0.5rem;">📍 Local practices</h2>
+      <p style="text-align: center; color: var(--gray-medium); margin-bottom: 1rem; font-size: 0.9rem;">Experiences shared by the community about Police office practices</p>
+
+      {% assign pagePrassi = prassiLocali[permit.slug] %}
+      {% if pagePrassi %}
+        <div class="prassi-accordion">
+          {% for cityGroup in pagePrassi %}
+            <div class="prassi-accordion-item">
+              <button class="prassi-accordion-header" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); this.nextElementSibling.classList.toggle('prassi-accordion-open');">
+                <span class="prassi-accordion-city">{{ cityGroup[0] }}</span>
+                <span class="prassi-accordion-count">{{ cityGroup[1].size }}</span>
+                <span class="prassi-accordion-chevron">▸</span>
+              </button>
+              <div class="prassi-accordion-body">
+                {% for practice in cityGroup[1] %}
+                  <div class="prassi-card" data-prassi-id="{{ practice.id }}">
+                    <p class="prassi-card-description">{{ practice.description }}</p>
+                    <div class="prassi-card-meta">
+                      {% if practice.date %}<span>{{ practice.date }}</span>{% endif %}
+                      {% if practice.category %}<span class="prassi-category-tag">{{ practice.category }}</span>{% endif %}
+                    </div>
+                    <div class="prassi-card-votes">
+                      <span class="vote-confermo">I confirm: {{ practice.votiConfermo }}</span>
+                      <span class="vote-non-confermo">I do not confirm: {{ practice.votiNonConfermo }}</span>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem;">
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/en/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
+            Add your experience
+          </button>
+        </div>
+      {% else %}
+        <div class="prassi-accordion">
+          <div class="prassi-accordion-empty">
+            <span style="font-size: 1.5rem;">📭</span>
+            <p>No reports yet</p>
+            <button class="btn btn-primary prassi-submit-btn btn-sm" onclick="openPrassiModal('https://sospermesso.it/en/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
+              Be the first to share
+            </button>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
   <!-- Checklist persistence -->
   <script>
     (function() {
@@ -440,6 +478,22 @@ extraStyles: |
       });
     })();
   </script>
+  <script src="src/scripts/prassi.js"></script>
+
+  <!-- CTA: DO YOU HAVE MORE QUESTIONS -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div class="alert alert-info">
+        <span class="alert-icon">❓</span>
+        <div>
+          Do you have more questions about the permit for {{ permit.tipo }}?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Contact us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 {% endif %}
 
