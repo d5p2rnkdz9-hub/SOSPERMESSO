@@ -212,7 +212,7 @@ Plans:
 Plans:
 - [x] 61-01: Apply all Phase 60 changes to `permits-en.liquid` (I18N-01) (completed 2026-03-02) -- VERIFICATION FAILED: changes never applied
 - [x] 61-02: Apply all Phase 60 changes to `permits-fr.liquid` (I18N-02) (completed 2026-03-02)
-- [ ] 61-03: [GAP CLOSURE] Apply all Phase 60 changes to `permits-en.liquid` (I18N-01) -- closes 6 verification gaps from 61-VERIFICATION.md
+- [x] 61-03: [GAP CLOSURE] Apply all Phase 60 changes to `permits-en.liquid` (I18N-01) -- closes 6 verification gaps from 61-VERIFICATION.md (completed 2026-03-02)
 
 ---
 
@@ -222,7 +222,7 @@ Plans:
 |-------|------|------|--------------|----------|--------|
 | 55 | Bug Fixes | Known data bugs corrected, missing content visible | BUG-01, BUG-02 | 3 | Complete |
 | 60 | IT Template Restructure | Complete    | 2026-03-02 | 5 | Complete (2026-03-01) |
-| 61 | Language Template Propagation | EN and FR templates match IT structure | I18N-01, I18N-02 | 3 | Gap closure (61-03 pending) |
+| 61 | Language Template Propagation | EN and FR templates match IT structure | I18N-01, I18N-02 | 3 | Complete (2026-03-02) |
 
 ---
 
