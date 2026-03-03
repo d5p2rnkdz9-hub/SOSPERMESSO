@@ -28,6 +28,7 @@
     </li>
     {% assign navData = nav[lang] | default: nav.it %}
     {% for dropdown in navData.dropdowns %}
+    {% if dropdown.items.size > 0 %}
     <li class="nav-item has-dropdown">
       <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link" aria-haspopup="true" aria-expanded="false"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}</a>
       <ul class="nav-dropdown" role="menu">
@@ -38,6 +39,11 @@
         {% endfor %}
       </ul>
     </li>
+    {% else %}
+    <li class="nav-item">
+      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}</a>
+    </li>
+    {% endif %}
     {% endfor %}
   </ul>
 </div>

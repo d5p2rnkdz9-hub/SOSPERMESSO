@@ -65,6 +65,22 @@
   to = "/fr/permesso-:splat.html"
   status = 301
 
+# Documenti-questura page removed — redirect to database
+[[redirects]]
+  from = "/documenti-questura.html"
+  to = "/database.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/documenti-questura.html"
+  to = "/en/database.html"
+  status = 301
+
+[[redirects]]
+  from = "/fr/documenti-questura.html"
+  to = "/fr/database.html"
+  status = 301
+
 # Security headers
 [[headers]]
   for = "/*"

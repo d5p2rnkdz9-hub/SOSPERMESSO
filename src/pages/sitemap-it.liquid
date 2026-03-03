@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/"/>
   </url>
   <!-- Static pages -->
-  {%- assign staticPages = "database,documenti-questura,chi-siamo,dizionario,protezione-internazionale,ricongiungimento-familiare,decreto-flussi,kit-postale,il-progetto,privacy-policy,aiuto-legale,controlla-permesso" | split: "," %}
+  {%- assign staticPages = "database,chi-siamo,dizionario,protezione-internazionale,ricongiungimento-familiare,decreto-flussi,kit-postale,il-progetto,privacy-policy,aiuto-legale,controlla-permesso" | split: "," %}
   {%- for slug in staticPages %}
   <url>
     <loc>{{ site.url }}/{{ slug }}.html</loc>

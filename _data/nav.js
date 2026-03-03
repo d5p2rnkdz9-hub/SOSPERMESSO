@@ -4,10 +4,7 @@ module.exports = {
       {
         label: "Database",
         href: "/database.html",
-        items: [
-          { label: "Tutti i permessi", href: "/database.html" },
-          { label: "Che documenti porto in Questura", href: "/documenti-questura.html" }
-        ]
+        items: []
       },
       {
         label: "Guide",
@@ -45,10 +42,7 @@ module.exports = {
       {
         label: "Database",
         href: "/en/database.html",
-        items: [
-          { label: "All permits", href: "/en/database.html" },
-          { label: "What documents to bring to the Police", href: "/en/documenti-questura.html" }
-        ]
+        items: []
       },
       {
         label: "Guides",
@@ -86,10 +80,7 @@ module.exports = {
       {
         label: "Base de données",
         href: "/fr/database.html",
-        items: [
-          { label: "Tous les permis", href: "/fr/database.html" },
-          { label: "Documents pour la Questura", href: "/fr/documenti-questura.html" }
-        ]
+        items: []
       },
       {
         label: "Guides",
