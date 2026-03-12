@@ -1,0 +1,320 @@
+---
+layout: layouts/base.liquid
+title: "S.O.S.Permesso - ইতালিতে বসবাসের অনুমতির সহজ গাইড"
+lang: bn
+description: "SOS Permesso - ইতালিতে বসবাসের অনুমতি (permesso di soggiorno) সম্পর্কে সম্পূর্ণ গাইড"
+permalink: bn/index.html
+extraStyles: |
+  <style>
+
+      .lighthouse-container {
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      #lighthouse-svg {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+      }
+
+      .wave {
+        animation: wave-float 3s ease-in-out infinite;
+      }
+      .wave-1 { animation-delay: 0s; animation-duration: 4s; }
+      .wave-2 { animation-delay: 0.3s; animation-duration: 5s; }
+      .wave-3 { animation-delay: 0.6s; animation-duration: 6s; }
+
+      @keyframes wave-float {
+        0%, 100% { transform: translateX(0) translateY(0); }
+        25% { transform: translateX(-5px) translateY(-2px); }
+        50% { transform: translateX(-10px) translateY(0); }
+        75% { transform: translateX(-5px) translateY(2px); }
+      }
+
+      .rotating-beam {
+        transform-origin: 150px 120px;
+        animation: rotate-beam 4s linear infinite;
+      }
+
+      @keyframes rotate-beam {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .blinking-star {
+        animation: blink 2s ease-in-out infinite;
+      }
+
+      .star-glow {
+        animation: glow-pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+
+      @keyframes glow-pulse {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.2); }
+      }
+
+      .window-light, .tower-window {
+        animation: light-pulse 3s ease-in-out infinite;
+      }
+
+      .tower-window {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes light-pulse {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; }
+      }
+
+      .light-room {
+        animation: room-glow 2s ease-in-out infinite;
+      }
+
+      @keyframes room-glow {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 0.9; }
+      }
+
+      .eye {
+        animation: eye-blink 4s ease-in-out infinite;
+      }
+
+      .eye-right {
+        animation-delay: 0.1s;
+      }
+
+      @keyframes eye-blink {
+        0%, 96%, 100% { transform: scaleY(1); }
+        98% { transform: scaleY(0.1); }
+      }
+
+      .lighthouse-container:hover #lighthouse-tower,
+      .lighthouse-container:hover #lighthouse-cupola,
+      .lighthouse-container:hover #star-top {
+        animation: sway 1s ease-in-out infinite;
+      }
+
+      @keyframes sway {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(1deg); }
+        75% { transform: rotate(-1deg); }
+      }
+
+      @media (max-width: 768px) {
+        .lighthouse-container { max-width: 300px; }
+      }
+
+      @media (max-width: 480px) {
+        .lighthouse-container { max-width: 250px; }
+      }
+
+  </style>
+---
+
+  <!-- HEADER -->
+
+
+  <!-- HERO SECTION -->
+  <section class="hero-split" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: Text Content -->
+        <div class="hero-text">
+          <h1 class="hero-display-title">
+            আপনার <span class="nowrap">বসবাসের অনুমতির (Permesso di Soggiorno)</span> গাইড।<br>
+            <em class="hero-tagline"><span class="hero-highlight">সহজ।</span> সম্পূর্ণ। হালনাগাদ।</em>
+          </h1>
+
+          <p class="hero-description">
+            ইতালিতে বসবাসের অনুমতি (permesso di soggiorno) সম্পর্কে সম্পূর্ণ ও হালনাগাদ তথ্য, যাতে আমলাতন্ত্রের জটিলতা ছাড়াই আপনি সবকিছু বুঝতে পারেন।
+          </p>
+
+          <a href="bn/database.html" class="btn-hero-cta">
+            অনুমতিগুলো দেখুন →
+          </a>
+
+          <!-- Trust badges -->
+          <div class="hero-badges">
+            <div class="hero-badge">
+              <span class="badge-icon">📚</span>
+              <span class="badge-text">৪১+ অনুমতি</span>
+            </div>
+            <div class="hero-badge">
+              <span class="badge-icon">✓</span>
+              <span class="badge-text">৩১.১২.২০২৫ পর্যন্ত হালনাগাদ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Illustration -->
+        <div class="hero-illustration">
+          <img src="IMAGES/team checklist-rafiki.svg" alt="নথিপত্র পরীক্ষা করছেন মানুষজন" class="hero-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave divider -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="#FFD700"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- TESTS SECTION -->
+  <section class="section" id="test" style="background: linear-gradient(180deg, #FFD700 0%, #FFF9E6 30%, #FFFFFF 100%); padding-top: 4rem;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--black);">আমাদের পরীক্ষাগুলো</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤞</span>
+          <h3 class="card-title">আমি কি অনুমতি পেতে পারি?</h3>
+          <p class="card-description">ইতালিতে বসবাসের অনুমতি পাওয়ার যোগ্যতা আছে কিনা যাচাই করুন</p>
+          <button class="btn btn-primary">পরীক্ষা শুরু করুন →</button>
+        </a>
+
+        <a href="https://form.typeform.com/to/oc9jhdkJ" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">👉</span>
+          <h3 class="card-title">আমি কি আমার অনুমতি রূপান্তর করতে পারি?</h3>
+          <p class="card-description">আপনার বর্তমান বসবাসের অনুমতি রূপান্তর করা সম্ভব কিনা জানুন</p>
+          <button class="btn btn-primary">পরীক্ষা শুরু করুন →</button>
+        </a>
+
+        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="card card-link card-yellow">
+          <span class="card-icon">🤙</span>
+          <h3 class="card-title">আমি কি আমার অনুমতি নবায়ন করতে পারি?</h3>
+          <p class="card-description">আপনার বসবাসের অনুমতি নবায়ন করা সম্ভব কিনা পরীক্ষা করুন</p>
+          <button class="btn btn-primary">পরীক্ষা শুরু করুন →</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATABASE SECTION -->
+  <section id="database" class="section" style="background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--accent-teal);">আমাদের ডাটাবেস</h2>
+      </div>
+
+      <div style="max-width: 500px; margin: 0 auto;">
+        <a href="bn/database.html" class="card card-link">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">সকল অনুমতি</h3>
+          <p class="card-description">ইতালিতে সকল (বা প্রায় সকল) বসবাসের অনুমতির ডাটাবেস</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDES SECTION -->
+  <section class="section" id="guide" style="background: linear-gradient(135deg, #FFF9E6 0%, #FFE0B2 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--accent-orange);">আমাদের গাইডসমূহ</h2>
+      </div>
+
+      <div class="grid grid-3" style="max-width: 900px; margin: 0 auto;">
+        <a href="bn/protezione-internazionale.html" class="card card-link">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">আন্তর্জাতিক সুরক্ষা (Protezione internazionale)</h3>
+          <p class="card-description">ইতালিতে কিভাবে আশ্রয় (asilo) আবেদন করবেন এবং প্রক্রিয়াটি কিভাবে কাজ করে</p>
+        </a>
+
+        <a href="bn/ricongiungimento-familiare.html" class="card card-link">
+          <span class="card-icon">👨‍👩‍👧</span>
+          <h3 class="card-title">পারিবারিক পুনর্মিলন (Ricongiungimento familiare)</h3>
+          <p class="card-description">পরিবারের সদস্যদের ইতালিতে আনার জন্য কিভাবে নুল্লা ওস্তা (nulla osta) আবেদন করবেন</p>
+        </a>
+
+        <a href="bn/decreto-flussi.html" class="card card-link" style="position: relative; overflow: hidden;">
+          <span style="position: absolute; top: 12px; right: -35px; background: var(--accent-orange); color: white; font-size: 0.65rem; font-weight: 600; padding: 4px 40px; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">শীঘ্রই আসছে</span>
+          <span class="card-icon">💼</span>
+          <h3 class="card-title">ফ্লাসি ডিক্রি (Decreto flussi)</h3>
+          <p class="card-description">কাজের জন্য ইতালিতে প্রবেশের প্রক্রিয়া কিভাবে কাজ করে</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USEFUL LINKS SECTION -->
+  <section id="resources" class="section" style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" style="color: var(--lighthouse-red);">কার্যকর লিংক</h2>
+      </div>
+
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+        <a href="bn/aiuto-legale.html" class="card card-link">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">আপনার কাছে বিনামূল্যে আইনি সহায়তা</h3>
+          <p class="card-description">ইতালিতে বিনামূল্যে আইনি সহায়তা প্রদানকারী কাউন্টার ও সংগঠনসমূহ</p>
+        </a>
+
+        <a href="bn/kit-postale.html" class="card card-link">
+          <span class="card-icon">📩</span>
+          <h3 class="card-title">প্রয়োজনীয় ফর্ম (kit postale ও অন্যান্য)</h3>
+          <p class="card-description">কিট পোস্তালে (kit postale) পূরণ ও পাঠানোর ব্যবহারিক গাইড</p>
+        </a>
+
+        <a href="bn/controlla-permesso.html" class="card card-link">
+          <span class="card-icon">👀</span>
+          <h3 class="card-title">আপনার অনুমতি পরীক্ষা করুন</h3>
+          <p class="card-description">আপনার অনুমতির অবস্থা যাচাই করুন</p>
+        </a>
+
+        <a href="bn/dizionario.html" class="card card-link">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">অভিধান (Dizionario)</h3>
+          <p class="card-description">আমলাতান্ত্রিক শব্দগুলো সহজ ভাষায় ব্যাখ্যা করা হয়েছে</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="alert alert-info" style="max-width: 600px; margin: 0 auto;">
+        <div>
+          আপনি যে উত্তর খুঁজছিলেন তা পাননি?
+          <a href="https://form.typeform.com/to/USx16QN3" class="btn btn-primary btn-sm" style="margin-left: 0;" target="_blank">
+            আমাদের লিখুন
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM MODAL -->
+  <div id="contact-form-container"></div>
+
+  <!-- FOOTER -->
+
+
+  <!-- Lighthouse animations CSS inline -->
+
+
+  <!-- Scripts -->
+
+
+  <script>
+    // Load contact form component
+    fetch('src/components/contact-form.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('contact-form-container').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading contact form:', err));
+  </script>

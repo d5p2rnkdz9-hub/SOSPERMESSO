@@ -1,0 +1,46 @@
+---
+permalink: sitemap-bn.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- BN Homepage -->
+  <url>
+    <loc>{{ site.url }}/bn/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="{{ site.url }}/tr/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="{{ site.url }}/bn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/"/>
+  </url>
+  <!-- BN Static pages -->
+  {%- assign bnStaticPages = "database,chi-siamo,dizionario,protezione-internazionale,ricongiungimento-familiare,decreto-flussi,kit-postale,il-progetto,privacy-policy,aiuto-legale,controlla-permesso" | split: "," %}
+  {%- for slug in bnStaticPages %}
+  <url>
+    <loc>{{ site.url }}/bn/{{ slug }}.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="{{ site.url }}/tr/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="{{ site.url }}/bn/{{ slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ slug }}.html"/>
+  </url>
+  {%- endfor %}
+  <!-- BN Permit pages -->
+  {%- for permit in permitsBn %}
+  <url>
+    <loc>{{ site.url }}/bn/permesso-{{ permit.slug }}.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="{{ site.url }}/tr/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="{{ site.url }}/bn/permesso-{{ permit.slug }}.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
+  </url>
+  {%- endfor %}
+</urlset>

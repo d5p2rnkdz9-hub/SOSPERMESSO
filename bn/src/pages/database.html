@@ -1,0 +1,478 @@
+---
+layout: layouts/base.liquid
+title: "বসবাসের অনুমতির ডাটাবেস"
+lang: bn
+description: "ইতালিতে বসবাসের অনুমতির সম্পূর্ণ ডাটাবেস"
+extraStyles: |
+  <style>
+
+      .permit-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .permit-list li {
+        margin: 0;
+      }
+
+      .permit-row {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        transition: background-color 0.15s ease;
+        gap: 0.75rem;
+      }
+
+      .permit-row:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+
+      .permit-main {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+        min-width: 0;
+      }
+
+      .permit-main .icon {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      .permit-main .title {
+        font-weight: 500;
+        color: var(--black);
+      }
+
+      .permit-actions {
+        display: flex;
+        gap: 0.4rem;
+        flex-shrink: 0;
+        align-items: center;
+      }
+
+      .permit-btn {
+        display: inline-block;
+        padding: 0.25rem 0.65rem;
+        border-radius: 20px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: opacity 0.15s, transform 0.15s;
+        line-height: 1.4;
+      }
+
+      .permit-btn:hover {
+        opacity: 0.85;
+        transform: translateY(-1px);
+      }
+
+      .btn-cose {
+        background: #FFD700;
+        color: #1A1A1A;
+      }
+
+      .btn-primo {
+        background: #1565C0;
+        color: white;
+      }
+
+      .btn-rinnovo {
+        background: #90CAF9;
+        color: #1A1A1A;
+      }
+
+      .permit-badge-wip {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #999;
+        background: #f0f0f0;
+        padding: 0.22rem 0.6rem;
+        border-radius: 20px;
+        white-space: nowrap;
+      }
+
+      .permit-badge-na {
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: #bbb;
+        white-space: nowrap;
+        font-style: italic;
+      }
+
+      .category-section {
+        margin-bottom: 2rem;
+      }
+
+      .category-title {
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid;
+      }
+
+      .category-purple .category-title {
+        color: var(--accent-purple);
+        border-color: var(--accent-purple);
+      }
+
+      .category-orange .category-title {
+        color: var(--accent-orange);
+        border-color: var(--accent-orange);
+      }
+
+      .category-blue .category-title {
+        color: var(--accent-blue);
+        border-color: var(--accent-blue);
+      }
+
+      .category-teal .category-title {
+        color: var(--accent-teal);
+        border-color: var(--accent-teal);
+      }
+
+      .database-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      }
+
+      @media (max-width: 768px) {
+        .permit-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+        .permit-actions {
+          padding-left: 2rem;
+        }
+        .database-container {
+          padding: 1rem;
+          border-radius: 8px;
+        }
+      }
+
+  </style>
+---
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 3rem;">📚</span>
+        <h1 class="page-title">সকল বসবাসের অনুমতি</h1>
+      </div>
+
+      <div class="alert alert-info" style="max-width: 700px; margin: 0 auto 2rem;">
+        <span class="alert-icon">📌</span>
+        <div>
+          নিচের অনুমতিগুলোর মধ্যে কোনটি আপনি পেতে পারেন কিনা জানতে চান?
+          <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" style="color: var(--lighthouse-red); font-weight: 600;">আমাদের পরীক্ষা দিন</a>
+        </div>
+      </div>
+
+      <div class="database-container">
+
+        <!-- পড়াশোনা/কাজ -->
+        <div class="category-section category-purple">
+          <h2 class="category-title">পড়াশোনা / কাজ</h2>
+          <ul class="permit-list">
+
+            {% assign p = permitsBn | where: "slug", "studio-dopo-ingresso-con-visto" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-studio-dopo-ingresso-con-visto.html" class="permit-main"><span class="icon">📖</span><span class="title">পড়াশোনার অনুমতি (ভিসা নিয়ে প্রবেশের পর)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-studio-dopo-ingresso-con-visto.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "studio-conversione-da-altro-permesso" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-studio-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">📖</span><span class="title">পড়াশোনার অনুমতি (অন্য অনুমতি থেকে রূপান্তর)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-studio-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html" class="permit-main"><span class="icon">💼</span><span class="title">চাকরির অনুমতি (ফ্লাসি ভিসা নিয়ে প্রবেশের পর)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "lavoro-subordinato-conversione-da-altro-permesso" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">💼</span><span class="title">চাকরির অনুমতি (অন্য অনুমতি থেকে রূপান্তর)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html" class="permit-main"><span class="icon">🌾</span><span class="title">মৌসুমী চাকরির অনুমতি (মৌসুমী ফ্লাসি ভিসার পর)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html" class="permit-main"><span class="icon">🏢</span><span class="title">স্বনিযুক্ত কাজের অনুমতি (ফ্লাসি ভিসার পর)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "lavoro-autonomo-conversione-da-altro-permesso" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">🏢</span><span class="title">স্বনিযুক্ত কাজের অনুমতি (অন্য অনুমতি থেকে রূপান্তর)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html" class="permit-main"><span class="icon">🇪🇺</span><span class="title">দীর্ঘমেয়াদী বসবাসকারীদের EU অনুমতি ("কার্তা")</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "attesa-occupazione" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-attesa-occupazione.html" class="permit-main"><span class="icon">🔍</span><span class="title">চাকরি খোঁজার অনুমতি (attesa occupazione)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-attesa-occupazione.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+          </ul>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+        <!-- সুরক্ষা -->
+        <div class="category-section category-orange">
+          <h2 class="category-title">সুরক্ষা (আন্তর্জাতিক বা সামাজিক)</h2>
+          <ul class="permit-list">
+
+            {% assign p = permitsBn | where: "slug", "richiesta-asilo" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-richiesta-asilo.html" class="permit-main"><span class="icon">🟨</span><span class="title">আশ্রয় আবেদনের অনুমতি ("হলুদ অনুমতি")</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-richiesta-asilo.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "asilo-status-rifugiato" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-asilo-status-rifugiato.html" class="permit-main"><span class="icon">🛡️</span><span class="title">আশ্রয়ের অনুমতি (শরণার্থী মর্যাদা)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-asilo-status-rifugiato.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "protezione-sussidiaria" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-protezione-sussidiaria.html" class="permit-main"><span class="icon">🔰</span><span class="title">সহায়ক সুরক্ষার অনুমতি</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-main"><span class="icon">✨</span><span class="title">বিশেষ সুরক্ষার অনুমতি</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "minore-eta-per-msna" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-minore-eta-per-msna.html" class="permit-main"><span class="icon">👶</span><span class="title">অপ্রাপ্তবয়স্কতার অনুমতি</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-minore-eta-per-msna.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "integrazione-prosieguo-amministrativo" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-integrazione-prosieguo-amministrativo.html" class="permit-main"><span class="icon">📄</span><span class="title">প্রশাসনিক ধারাবাহিকতার অনুমতি (prosieguo amministrativo)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-integrazione-prosieguo-amministrativo.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+          </ul>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+        <!-- চিকিৎসা -->
+        <div class="category-section category-blue">
+          <h2 class="category-title">চিকিৎসা</h2>
+          <ul class="permit-list">
+
+            {% assign p = permitsBn | where: "slug", "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html" class="permit-main"><span class="icon">🤰</span><span class="title">গর্ভবতী মহিলা বা ৬ মাসের কম বয়সী সন্তানের মা</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html" class="permit-main"><span class="icon">🏥</span><span class="title">ইতালিতে থাকা গুরুতর অসুস্থ ব্যক্তি</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+          </ul>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+        <!-- পারিবারিক কারণ -->
+        <div class="category-section category-teal">
+          <h2 class="category-title">পারিবারিক কারণ</h2>
+          <ul class="permit-list">
+
+            {% assign p = permitsBn | where: "slug", "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="permit-main"><span class="icon">🧑‍🤝‍🧑</span><span class="title">পুনর্মিলন ভিসা নিয়ে প্রবেশের পর পরিবার</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="permit-main"><span class="icon">💑</span><span class="title">পারিবারিক ঐক্য (নুল্লা ওস্তা ছাড়া)</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+            {% assign p = permitsBn | where: "slug", "famiglia-genitore-di-cittadino-italiano" | first %}
+            <li><div class="permit-row">
+              <a href="permesso-famiglia-genitore-di-cittadino-italiano.html" class="permit-main"><span class="icon">🇮🇹</span><span class="title">ইতালীয় নাগরিকের পিতামাতা</span></a>
+              <div class="permit-actions">
+                {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 নির্মাণাধীন</span>
+                {% else %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#cose" class="permit-btn btn-cose">এটি কী</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#primo" class="permit-btn btn-primo">প্রথম ইস্যু</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">নবায়ন প্রযোজ্য নয়</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#rinnovo" class="permit-btn btn-rinnovo">নবায়ন</a>{% endif %}
+                {% endif %}
+              </div>
+            </div></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container text-center">
+      <p class="mb-md">আপনি যে অনুমতি খুঁজছিলেন তা পাননি?</p>
+      <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary">
+        সাহায্যের জন্য আমাদের লিখুন
+      </a>
+    </div>
+  </section>

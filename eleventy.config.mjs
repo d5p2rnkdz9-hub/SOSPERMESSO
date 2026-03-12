@@ -118,6 +118,58 @@ export default function(eleventyConfig) {
     // Directory might not exist yet
   }
 
+  // Safety net for TR document and permit pages
+  const trPagesDir = path.join(process.cwd(), 'tr', 'src', 'pages');
+  try {
+    const trFiles = fs.readdirSync(trPagesDir);
+    const trDocFiles = trFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of trDocFiles) {
+      eleventyConfig.ignores.add(`tr/src/pages/${file}`);
+    }
+    if (trDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${trDocFiles.length} static TR document files (replaced by Liquid templates)`);
+    }
+    const trPermitFiles = trFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of trPermitFiles) {
+      eleventyConfig.ignores.add(`tr/src/pages/${file}`);
+    }
+    if (trPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${trPermitFiles.length} static TR permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
+  // Safety net for BN document and permit pages
+  const bnPagesDir = path.join(process.cwd(), 'bn', 'src', 'pages');
+  try {
+    const bnFiles = fs.readdirSync(bnPagesDir);
+    const bnDocFiles = bnFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of bnDocFiles) {
+      eleventyConfig.ignores.add(`bn/src/pages/${file}`);
+    }
+    if (bnDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${bnDocFiles.length} static BN document files (replaced by Liquid templates)`);
+    }
+    const bnPermitFiles = bnFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of bnPermitFiles) {
+      eleventyConfig.ignores.add(`bn/src/pages/${file}`);
+    }
+    if (bnPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${bnPermitFiles.length} static BN permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
   // All document pages are generated via Liquid pagination templates
   // (documents-primo.liquid, documents-rinnovo.liquid).
   // All permit pages are generated via permits.liquid.

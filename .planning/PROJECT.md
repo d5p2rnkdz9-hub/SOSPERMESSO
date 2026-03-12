@@ -136,12 +136,15 @@ Not yet defined. Run `/gsd:new-milestone` to plan next goals.
 **Permit Database (LIVE IT):** [Notion DB](https://www.notion.so/sospermesso/DATABASE-DI-PERMESSI-DI-SOGGIORNO-3097355e7f7f806b8018fe85ce2c9f35) — ID `3097355e-7f7f-819c-af33-d0fd0739cc5b`
 **Permit Database (LIVE EN):** ID `c1dc0271-f1f4-4147-9464-391884f4dfad`
 **Permit Database (LIVE FR):** ID `b7955daa-3da7-4a0c-ac9d-0bbe4ba7d70e`
+**Permit Database (LIVE ES):** ID `93ad8b71-73e7-499b-83bc-a1975bda89dd`
+**Permit Database (LIVE TR):** ID `49d77cd7-b4c7-4c8a-a731-40b6315bc29e`
+**Permit Database (LIVE BN):** ID `552940da-0783-46dd-9094-b5a2f2e8276d`
+**Translation DB Parent Page:** [Traduzioni del Database](https://www.notion.so/sospermesso/Traduzioni-del-Database-30b7355e7f7f8184975dfb18ca69875c) — all translated DBs are children of this page (ID `30b7355e-7f7f-8184-975d-fb18ca69875c`)
 
 ### Out of Scope
 
-- ES translation — deferred after FR pipeline is validated
 - Prassi locali backend (submit-prassi.mjs, Netlify Functions, build hooks, moderation) — dropped from v4.1, revisit later
-- Additional languages beyond FR/ES (ZH, AR, etc.) — architecture supports adding later
+- Additional languages beyond TR/BN (ZH, AR, etc.) — architecture supports adding later
 - Real-time permit status tracking — external service, just link to portale immigrazione
 - Content validation pass — translate what's there, fix content separately
 
@@ -155,7 +158,7 @@ Not yet defined. Run `/gsd:new-milestone` to plan next goals.
 - ALL pages output at ROOT level in `_site/`, EN at `_site/en/`, FR at `_site/fr/`
 - Notion database IDs hardcoded in data files (only `NOTION_API_KEY` env var needed)
 - Notion API response caching with `last_edited_time` tracking (warm builds ~11-13s vs cold ~72s)
-- Translation script: `npm run translate` using Claude API with 35+ term glossary (EN + FR)
+- Translation script: `npm run translate` — **NO LONGER USED** (paid Anthropic API). Translations done within Claude Code + Notion API directly.
 - CSS design system with variables in `src/styles/main.css`
 - Combined build: `npm run build` chains Notion + 11ty
 - 3 languages (IT/EN/FR) with identical permit page structure

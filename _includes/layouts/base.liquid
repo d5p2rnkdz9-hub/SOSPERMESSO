@@ -35,32 +35,56 @@
     {%- assign enUrl = page.url -%}
     {%- assign frUrl = "/fr" | append: itUrl -%}
     {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
   {%- elsif urlPrefix == "/fr/" -%}
     {%- assign itUrl = page.url | replace_first: "/fr/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
     {%- assign frUrl = page.url -%}
     {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
   {%- elsif urlPrefix == "/es/" -%}
     {%- assign itUrl = page.url | replace_first: "/es/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
     {%- assign frUrl = "/fr" | append: itUrl -%}
     {%- assign esUrl = page.url -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
+  {%- elsif urlPrefix == "/tr/" -%}
+    {%- assign itUrl = page.url | replace_first: "/tr/", "/" -%}
+    {%- assign enUrl = "/en" | append: itUrl -%}
+    {%- assign frUrl = "/fr" | append: itUrl -%}
+    {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = page.url -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
+  {%- elsif urlPrefix == "/bn/" -%}
+    {%- assign itUrl = page.url | replace_first: "/bn/", "/" -%}
+    {%- assign enUrl = "/en" | append: itUrl -%}
+    {%- assign frUrl = "/fr" | append: itUrl -%}
+    {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = page.url -%}
   {%- else -%}
     {%- assign itUrl = page.url -%}
     {%- assign enUrl = "/en" | append: page.url -%}
     {%- assign frUrl = "/fr" | append: page.url -%}
     {%- assign esUrl = "/es" | append: page.url -%}
+    {%- assign trUrl = "/tr" | append: page.url -%}
+    {%- assign bnUrl = "/bn" | append: page.url -%}
   {%- endif -%}
   <link rel="alternate" hreflang="it" href="{{ site.url }}{{ itUrl }}">
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
   <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ frUrl }}">
   <link rel="alternate" hreflang="es" href="{{ site.url }}{{ esUrl }}">
+  <link rel="alternate" hreflang="tr" href="{{ site.url }}{{ trUrl }}">
+  <link rel="alternate" hreflang="bn" href="{{ site.url }}{{ bnUrl }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/src/styles/main.css' | url }}">
@@ -70,6 +94,7 @@
   <link rel="stylesheet" href="{{ '/src/styles/mobile-fix.css' | url }}">
   <link rel="stylesheet" href="{{ '/src/styles/rtl.css' | url }}">
   <link rel="stylesheet" href="{{ '/src/styles/cjk.css' | url }}">
+  <link rel="stylesheet" href="{{ '/src/styles/bengali.css' | url }}">
   <link rel="stylesheet" href="{{ '/src/styles/document-page.css' | url }}">
   <link rel="stylesheet" href="{{ '/src/styles/prassi.css' | url }}">
 

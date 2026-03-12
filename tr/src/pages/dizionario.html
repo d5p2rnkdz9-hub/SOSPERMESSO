@@ -1,0 +1,406 @@
+---
+layout: layouts/base.liquid
+title: "Sözlük"
+lang: tr
+extraStyles: |
+  <style>
+
+      .dictionary-term {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        scroll-margin-top: 200px;
+      }
+      .dictionary-term:last-child {
+        border-bottom: none;
+      }
+      .dictionary-term:target {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: var(--radius-md);
+        animation: highlight-fade 2s ease-out;
+      }
+      @keyframes highlight-fade {
+        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+      }
+      .dictionary-term h3 {
+        color: var(--accent-purple);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dictionary-term h3 .anchor-link {
+        opacity: 0;
+        font-size: 0.875rem;
+        color: var(--gray-medium);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      .dictionary-term:hover h3 .anchor-link {
+        opacity: 0.6;
+      }
+      .dictionary-term h3 .anchor-link:hover {
+        opacity: 1;
+        color: var(--taxi-yellow-dark);
+      }
+      .dictionary-term p {
+        margin: 0;
+        color: var(--gray-dark);
+      }
+      .dictionary-letter {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--taxi-yellow-dark);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--taxi-yellow);
+        scroll-margin-top: 200px;
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="/tr/index.html" style="color: var(--taxi-yellow-dark);">Ana Sayfa</a> →
+        <span>Sözlük</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">Zor kelimelerin sözlüğü</h1>
+        <p class="section-subtitle">Bürokratik terimler basit bir şekilde açıklanmıştır</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="lettera-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza (Kabul/Barınma) <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>Uluslararası koruma başvurusunda bulunan kişileri barındıran merkezler sistemi.</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico (Bağımlı/Bakmakla yükümlü) <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>Ekonomik olarak başka birine bağımlı olan kişi. Örneğin, çalışmayan bir çocuk, yemek, giysi ve diğer masraflarını anne babası ödediği için onların "bakımında"dır.</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento (Koruyucu aile/Vesayet) <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>Bir küçüğün (18 yaşından küçük çocuk veya genç) öz anne babası olmayan bir kişi, aile veya kurumun bakımına verilmesi.</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo (Sığınma) <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>Ülkesine dönemeyecek olan kişiler için bir tür uluslararası koruma; çünkü zulme uğrama riski vardır (örneğin öldürülme, işkence görme, ağır ayrımcılığa maruz kalma). Ayrıca bkz. "Rifugiato" (Mülteci).</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale (Yerel Sağlık Birimi). Bir bölgedeki tıbbi ve sağlık hizmetlerini yöneten ofis. Burada Ulusal Sağlık Hizmetine kaydolabilir ve aile hekimi seçebilirsiniz.</p>
+        </div>
+
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo (Kimlik belgesi) <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
+          <p>Sığınma başvurusu yaptığınızda Questura'nın (emniyet müdürlüğü) size verdiği ilk oturma izni; sarı kart oturma izni verilene kadar geçerlidir. C3 formuyla birlikte verilir. Son kullanma tarihi yoktur: sığınma başvurusunun incelenmesi bitene kadar geçerlidir.</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="lettera-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>Questura'da sığınma başvurusu yapmak için kullanılan form. Kişisel bilgilerinizi içerir.</p>
+        </div>
+
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti (Bekleyen davalar) <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
+          <p>Bir kişi aleyhine henüz kesinleşmiş bir kararla sonuçlanmamış ceza davaları olup olmadığını gösteren belge.</p>
+        </div>
+
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno (Oturma kartı) <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>İki farklı oturma iznini ifade edebilen belirsiz bir terim: Uzun süreli ikamet eden AB vatandaşları için oturma izni veya AB vatandaşı aile üyesi oturma kartı.</p>
+        </div>
+
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale (Adli sicil) <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
+          <p>Bir kişinin ceza mahkumiyetleri hakkında bilgi içeren kayıt. Savcılıktan talep edilir.</p>
+        </div>
+
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato (Gayrimenkul devir bildirimi) <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
+          <p>Birine ev veya oda kiraladığınızda yapmanız gereken belge. 48 saat içinde yerel polise sunulmalıdır.</p>
+        </div>
+
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare (Aile uyumu) <a href="#coesione-familiare" class="anchor-link">#</a></h3>
+          <p>Zaten İtalya'da bulunan bir kişinin, İtalya'da zaten yasal olarak yaşayan bir aile üyesiyle birlikte kalmak için oturma izni almasını sağlayan süreç.</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale (Vergi kimlik numarası) <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>Her kişiye özgü kişisel kod; İtalya'da tanınmak ve çalışmak, doktora gitmek veya resmi belge imzalamak gibi işlemler için gereklidir.</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale (Bölgesel Komisyon) <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>Kimin mülteci statüsü, ikincil koruma, özel koruma veya tıbbi tedavi izni alabileceğine karar veren İtalyan Hükümeti kuruluşu.</p>
+        </div>
+
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge (Eş) <a href="#coniuge" class="anchor-link">#</a></h3>
+          <p>Koca veya karı. Evlilik (nikah) veya medeni birliktelik yoluyla birleşilen kişiyi ifade eder.</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione (Dönüştürme) <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>Bir oturma iznini başka birine dönüştürmek (örneğin, öğrenim oturma izninden çalışma oturma iznine), anavatana dönmek zorunda kalmadan.</p>
+        </div>
+
+        <div class="dictionary-term" id="copia-conforme">
+          <h3>Copia conforme (Onaylı kopya) <a href="#copia-conforme" class="anchor-link">#</a></h3>
+          <p>Bir belgenin orijinaliyle aynı olduğunu onaylayan resmi damgalı fotokopisi. Belediyede, noterde veya bazı durumlarda postanede yaptırılabilir.</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="lettera-d">D</div>
+
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione (Sınır dışı kararı) <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
+          <p>Valilik tarafından İtalya'dan ayrılmanız gerektiğini bildiren karar. Sınır dışı kararıyla birlikte geri dönüş yasağı da verilebilir.</p>
+        </div>
+
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità (Misafirlik beyanı) <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
+          <p>Bir kişinin sizi İtalya'daki evinde ücretsiz olarak misafir ettiğini beyan eden imzalı belge. 48 saat içinde polise götürülmelidir.</p>
+        </div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego (Red) <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>Olumsuz karar. Başvurunuzun yetkililer tarafından reddedilmesi.</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio (İkamet adresi) <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>Geçici olarak da olsa yaşadığınız adres.</p>
+        </div>
+
+        <!-- I -->
+        <div class="dictionary-letter" id="lettera-i">I</div>
+
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa (Konut uygunluk belgesi) <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
+          <p>Bir evin oturmaya uygun olduğunu (yeterli alana sahip, güvenli, gerekli hizmetlere sahip) gösteren belge. Evin bulunduğu belediyeden talep edilmelidir.</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="lettera-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale (Posta kiti) <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>Bazı oturma izni türlerini talep etmek veya yenilemek için postaneden alınan form paketi.</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="lettera-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo (Damga pulu) <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>Tütüncüden satın alınan ve Questura'ya yapılan başvurular gibi resmi belgelere yapıştırılan mali pul. 16 euro (en yaygın değer) tutarındadır ve devlete vergi ödemek için kullanılır.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore">
+          <h3>Minore (Küçük/Reşit olmayan) <a href="#minore" class="anchor-link">#</a></h3>
+          <p>18 yaşından küçük kişi.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato (Refakatsiz yabancı küçük) <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
+          <p>İtalya'da ebeveynleri veya yasal olarak sorumlu başka yetişkinler olmadan bulunan 18 yaşın altındaki kişi.</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="lettera-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta (İzin belgesi) <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>Bir şey yapmak için gereken resmi izin. Örneğin, "aile birleşimi için nulla osta", aile üyelerinizi İtalya'ya getirmek için Valilikten alınan yeşil ışıktır.</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="lettera-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno (Oturma izni) <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>Belirli bir süre için İtalya'da yasal olarak yaşama hakkı veren belge.</p>
+        </div>
+
+        <div class="dictionary-term" id="prefettura">
+          <h3>Prefettura (Valilik) <a href="#prefettura" class="anchor-link">#</a></h3>
+          <p>Her ilde bulunan İtalyan Devlet ofisi. Kamu düzeni, güvenlik ve vatandaşlık ile aile birleşimi gibi bazı yabancı işlemleriyle ilgilenir.</p>
+        </div>
+
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale (Uluslararası koruma) <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
+          <p>Ülkelerine dönmeleri halinde tehlikede olacak kişilere İtalya tarafından sağlanan koruma. Sığınma ve İkincil Korumayı içerir.</p>
+        </div>
+
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo (İdari devam) <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
+          <p>Küçükken İtalya'ya gelen yabancı bir gencin 18 yaşını doldurduktan sonra da destekle İtalya'da kalma imkanı.</p>
+        </div>
+
+        <!-- Q -->
+        <div class="dictionary-letter" id="lettera-q">Q</div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura (Emniyet Müdürlüğü) <a href="#questura" class="anchor-link">#</a></h3>
+          <p>Her il merkezinde bulunan Devlet Polisi ofisi. Oturma izninin talep edildiği, alındığı ve yenilendiği yerdir. "Ufficio Immigrazione" (Göç Ofisi) adında bir masası vardır.</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="lettera-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza (İkametgah) <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>Sürekli yaşadığınız ve Belediye nüfus kütüğüne kayıtlı olduğunuz adres.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta (Makbuz) <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>Bir başvuru veya ödeme yaptığınızı kanıtlayan belge. Questura makbuzu (cedolino), oturma izni başvurusunda bulunduğunuzu kanıtlar ve beklerken İtalya'da kalmanıza izin verir.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare (Aile birleşimi) <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
+          <p>Geçerli bir oturma izniyle İtalya'da yaşayan yabancı bir kişinin ailesinin bazı üyelerini İtalya'ya getirmesine izin veren prosedür.</p>
+        </div>
+
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato (Mülteci) <a href="#rifugiato" class="anchor-link">#</a></h3>
+          <p>Zulüm gördüğü için ülkesinden kaçan ve İtalya'da mülteci statüsü alabilen kişi.</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo (Yenileme) <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>Oturma izninizin geçerliliğini süresi dolmadan uzatma işlemi.</p>
+        </div>
+
+        <!-- S -->
+        <div class="dictionary-letter" id="lettera-s">S</div>
+
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali (Sosyal hizmetler) <a href="#servizi-sociali" class="anchor-link">#</a></h3>
+          <p>Zor durumdaki kişilere (aileler, yaşlılar, engelliler, küçükler) yardım eden Belediye ofisleri.</p>
+        </div>
+
+        <div class="dictionary-term" id="sportello-unico">
+          <h3>Sportello Unico (Tek pencere) <a href="#sportello-unico" class="anchor-link">#</a></h3>
+          <p>Sportello Unico per l'Immigrazione (SUI). Yabancılar için iş işlemlerini (izin belgesi, ikamet sözleşmesi) ve aile birleşimini yöneten Valilik ofisi.</p>
+        </div>
+
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato (Mülteci statüsü) <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
+          <p>Komisyon veya Mahkemenin bir kişiyi mülteci olarak tanıyan kararı. Mülteci statüsüyle sığınma oturma izni talep edilebilir.</p>
+        </div>
+
+        <!-- T -->
+        <div class="dictionary-letter" id="lettera-t">T</div>
+
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale (Mahkeme) <a href="#tribunale" class="anchor-link">#</a></h3>
+          <p>Hakimlerin hukuki konularda karar verdiği yer.</p>
+        </div>
+
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni (Çocuk mahkemesi) <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
+          <p>18 yaşın altındaki kişilerle ilgili hukuki konularla ilgilenen özel mahkeme.</p>
+        </div>
+
+        <div class="dictionary-term" id="tessera-sanitaria">
+          <h3>Tessera sanitaria (Sağlık kartı) <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
+          <p>Ulusal Sağlık Hizmetini (aile hekimi, acil servis, ilaçlar) kullanmanıza izin veren plastik kart. Oturma izni ve ikametgah aldıktan sonra ASL'den talep edilir.</p>
+        </div>
+
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore (Vasi) <a href="#tutore" class="anchor-link">#</a></h3>
+          <p>Anne babası bunu yapamadığında, 18 yaşından küçük bir gence yardım eden ve bakımını üstlenen, hakim tarafından seçilen kişi.</p>
+        </div>
+
+        <!-- U -->
+        <div class="dictionary-letter" id="lettera-u">U</div>
+
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza (Duruşma) <a href="#udienza" class="anchor-link">#</a></h3>
+          <p>Mahkemede bir hakimle randevu. Vakaların %99'unda avukatınızın gitmesi gerekir.</p>
+        </div>
+
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile (Medeni birliktelik) <a href="#unione-civile" class="anchor-link">#</a></h3>
+          <p>İtalya'da aynı cinsiyetten kişiler arasındaki evlilik.</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="lettera-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto (Vize) <a href="#visto" class="anchor-link">#</a></h3>
+          <p>Yola çıkmadan önce kendi ülkenizdeki İtalyan Büyükelçiliği veya Konsolosluğundan istenen İtalya'ya giriş izni. Farklı türleri vardır: turizm, eğitim, çalışma, aile birleşimi vizesi.</p>
+        </div>
+
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela (Akrabalık bağı) <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
+          <p>İki kişi arasındaki aile ilişkisi (anne-baba-çocuklar, kardeşler, büyükanne-büyükbaba-torunlar, amca/teyze-yeğenler).</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          Anlamak istediğiniz bir kelime eksik mi?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Bize yazın
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">İlginizi çekebilir</h2>
+      <div class="grid grid-3">
+        <a href="/tr/database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Tüm izinler</h3>
+        </a>
+        <a href="/tr/protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">Uluslararası koruma</h3>
+        </a>
+        <a href="/tr/aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Hukuki yardım</h3>
+        </a>
+      </div>
+    </div>
+  </section>

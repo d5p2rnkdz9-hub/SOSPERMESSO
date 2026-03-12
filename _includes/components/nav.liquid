@@ -8,31 +8,55 @@
       {%- assign langEnUrl = page.url -%}
       {%- assign langFrUrl = "/fr" | append: langItUrl -%}
       {%- assign langEsUrl = "/es" | append: langItUrl -%}
+      {%- assign langTrUrl = "/tr" | append: langItUrl -%}
+      {%- assign langBnUrl = "/bn" | append: langItUrl -%}
     {%- elsif urlPrefix == "/fr/" -%}
       {%- assign langItUrl = page.url | replace_first: "/fr/", "/" -%}
       {%- assign langEnUrl = "/en" | append: langItUrl -%}
       {%- assign langFrUrl = page.url -%}
       {%- assign langEsUrl = "/es" | append: langItUrl -%}
+      {%- assign langTrUrl = "/tr" | append: langItUrl -%}
+      {%- assign langBnUrl = "/bn" | append: langItUrl -%}
     {%- elsif urlPrefix == "/es/" -%}
       {%- assign langItUrl = page.url | replace_first: "/es/", "/" -%}
       {%- assign langEnUrl = "/en" | append: langItUrl -%}
       {%- assign langFrUrl = "/fr" | append: langItUrl -%}
       {%- assign langEsUrl = page.url -%}
+      {%- assign langTrUrl = "/tr" | append: langItUrl -%}
+      {%- assign langBnUrl = "/bn" | append: langItUrl -%}
+    {%- elsif urlPrefix == "/tr/" -%}
+      {%- assign langItUrl = page.url | replace_first: "/tr/", "/" -%}
+      {%- assign langEnUrl = "/en" | append: langItUrl -%}
+      {%- assign langFrUrl = "/fr" | append: langItUrl -%}
+      {%- assign langEsUrl = "/es" | append: langItUrl -%}
+      {%- assign langTrUrl = page.url -%}
+      {%- assign langBnUrl = "/bn" | append: langItUrl -%}
+    {%- elsif urlPrefix == "/bn/" -%}
+      {%- assign langItUrl = page.url | replace_first: "/bn/", "/" -%}
+      {%- assign langEnUrl = "/en" | append: langItUrl -%}
+      {%- assign langFrUrl = "/fr" | append: langItUrl -%}
+      {%- assign langEsUrl = "/es" | append: langItUrl -%}
+      {%- assign langTrUrl = "/tr" | append: langItUrl -%}
+      {%- assign langBnUrl = page.url -%}
     {%- else -%}
       {%- assign langItUrl = page.url -%}
       {%- assign langEnUrl = "/en" | append: page.url -%}
       {%- assign langFrUrl = "/fr" | append: page.url -%}
       {%- assign langEsUrl = "/es" | append: page.url -%}
+      {%- assign langTrUrl = "/tr" | append: page.url -%}
+      {%- assign langBnUrl = "/bn" | append: page.url -%}
     {%- endif -%}
     <li class="nav-item has-dropdown nav-language">
       <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
-        {% if lang == 'fr' %}🇫🇷 FR{% elsif lang == 'en' %}🇬🇧 EN{% elsif lang == 'es' %}🇪🇸 ES{% else %}🇮🇹 IT{% endif %}
+        {% if lang == 'fr' %}🇫🇷 FR{% elsif lang == 'en' %}🇬🇧 EN{% elsif lang == 'es' %}🇪🇸 ES{% elsif lang == 'tr' %}🇹🇷 TR{% elsif lang == 'bn' %}🇧🇩 BN{% else %}🇮🇹 IT{% endif %}
       </a>
       <ul class="nav-dropdown" role="menu">
         <li role="none"><a href="{{ langItUrl }}" class="dropdown-link{% if lang == 'it' %} active-lang{% endif %}" role="menuitem">🇮🇹 Italiano</a></li>
         <li role="none"><a href="{{ langEnUrl }}" class="dropdown-link{% if lang == 'en' %} active-lang{% endif %}" role="menuitem">🇬🇧 English</a></li>
         <li role="none"><a href="{{ langFrUrl }}" class="dropdown-link{% if lang == 'fr' %} active-lang{% endif %}" role="menuitem">🇫🇷 Français</a></li>
         <li role="none"><a href="{{ langEsUrl }}" class="dropdown-link{% if lang == 'es' %} active-lang{% endif %}" role="menuitem">🇪🇸 Español</a></li>
+        <li role="none"><a href="{{ langTrUrl }}" class="dropdown-link{% if lang == 'tr' %} active-lang{% endif %}" role="menuitem">🇹🇷 Türkçe</a></li>
+        <li role="none"><a href="{{ langBnUrl }}" class="dropdown-link{% if lang == 'bn' %} active-lang{% endif %}" role="menuitem">🇧🇩 বাংলা</a></li>
       </ul>
     </li>
     {% assign navData = nav[lang] | default: nav.it %}

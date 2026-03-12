@@ -1,0 +1,82 @@
+/* ===============================================
+   SOS PERMESSO - Bengali Typography Infrastructure
+   For Bengali (Bangla) language
+   ===============================================
+
+   Purpose: Provide proper Bengali typography support with:
+   - Google Fonts Noto Sans Bengali + system font fallbacks
+   - Adjusted line-height for comfortable reading of conjunct characters
+   - Word-break rules for space-separated Bengali text
+   - Card title overrides for long conjunct words
+
+   Usage: Add lang attribute to HTML element
+   - Bengali: lang="bn"
+
+   Note: Bengali script supports slanted/italic text natively,
+   so no italic overrides are needed (unlike CJK).
+
+   Related: Bengali language infrastructure
+   =============================================== */
+
+/* ===============================================
+   BENGALI FONT STACK
+   =============================================== */
+
+/* Bengali (Bangla)
+   Noto Sans Bengali: Google Fonts (primary, web font)
+   Kalpurush: Popular Bengali font (Linux/custom installs)
+   SolaimanLipi: Widely used Bengali Unicode font
+   Vrinda: Windows system Bengali font */
+[lang="bn"] {
+  font-family: "Noto Sans Bengali", "Kalpurush", "SolaimanLipi", "Vrinda", sans-serif;
+  line-height: 1.8; /* Bengali needs extra vertical space for conjuncts */
+  letter-spacing: normal !important;
+}
+
+/* ===============================================
+   HEADING LINE-HEIGHT ADJUSTMENTS
+   =============================================== */
+
+/* Bengali headings need more vertical space than Latin headings
+   Latin headings: typically line-height 1.2-1.3
+   Bengali headings: need 1.5 for comfortable reading of conjuncts */
+[lang="bn"] h1,
+[lang="bn"] h2,
+[lang="bn"] h3,
+[lang="bn"] h4 {
+  line-height: 1.5;
+}
+
+/* Large display text (hero titles) can be slightly tighter
+   Still more generous than Latin (1.2-1.3) due to conjunct complexity */
+[lang="bn"] .hero-title {
+  line-height: 1.4;
+}
+
+/* ===============================================
+   WORD-BREAK RULES
+   ===============================================
+
+   Bengali uses spaces between words (like English/Korean).
+   Standard word-based breaking applies.
+   overflow-wrap provides safety for URLs and long strings.
+   =============================================== */
+
+[lang="bn"] {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* ===============================================
+   CARD TITLE OVERRIDES
+   ===============================================
+
+   Bengali words can be long due to conjunct characters
+   (multiple consonants joined together). Allow wrapping
+   to prevent overflow in constrained containers like cards.
+   =============================================== */
+
+[lang="bn"] .card h2 {
+  word-break: normal !important;
+  overflow-wrap: break-word;
+}

@@ -150,5 +150,81 @@ module.exports = {
         ]
       }
     ]
+  },
+  tr: {
+    dropdowns: [
+      {
+        label: "Veritabanı",
+        href: "/tr/database.html",
+        items: []
+      },
+      {
+        label: "Rehberler",
+        href: "/tr/dizionario.html",
+        items: [
+          { label: "Uluslararası koruma", href: "/tr/protezione-internazionale.html" },
+          { label: "Aile birleşimi", href: "/tr/permesso-ricongiungimento-familiare.html" },
+          { label: "Sözlük", href: "/tr/dizionario.html" }
+        ]
+      },
+      {
+        label: "Test",
+        href: "https://form.typeform.com/to/kt7P9Ejk",
+        external: true,
+        items: [
+          { label: "İzin ALABİLİR miyim?", href: "https://form.typeform.com/to/kt7P9Ejk", external: true },
+          { label: "DÖNÜŞTÜREBİLİR miyim?", href: "https://form.typeform.com/to/oc9jhdkJ", external: true },
+          { label: "YENİLEYEBİLİR miyim?", href: "https://form.typeform.com/to/R7HY8nBp", external: true }
+        ]
+      },
+      {
+        label: "İş birliği",
+        href: "https://form.typeform.com/to/USx16QN3",
+        external: true,
+        items: [
+          { label: "Yardım et", href: "https://form.typeform.com/to/USx16QN3", external: true },
+          { label: "Hata bildir", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
+          { label: "Görüş bildir", href: "https://form.typeform.com/to/USx16QN3", external: true }
+        ]
+      }
+    ]
+  },
+  bn: {
+    dropdowns: [
+      {
+        label: "ডাটাবেস",
+        href: "/bn/database.html",
+        items: []
+      },
+      {
+        label: "গাইড",
+        href: "/bn/dizionario.html",
+        items: [
+          { label: "আন্তর্জাতিক সুরক্ষা", href: "/bn/protezione-internazionale.html" },
+          { label: "পারিবারিক পুনর্মিলন", href: "/bn/permesso-ricongiungimento-familiare.html" },
+          { label: "অভিধান", href: "/bn/dizionario.html" }
+        ]
+      },
+      {
+        label: "পরীক্ষা",
+        href: "https://form.typeform.com/to/kt7P9Ejk",
+        external: true,
+        items: [
+          { label: "আমি কি অনুমতি পেতে পারি?", href: "https://form.typeform.com/to/kt7P9Ejk", external: true },
+          { label: "আমি কি রূপান্তর করতে পারি?", href: "https://form.typeform.com/to/oc9jhdkJ", external: true },
+          { label: "আমি কি নবায়ন করতে পারি?", href: "https://form.typeform.com/to/R7HY8nBp", external: true }
+        ]
+      },
+      {
+        label: "সহযোগিতা",
+        href: "https://form.typeform.com/to/USx16QN3",
+        external: true,
+        items: [
+          { label: "সাহায্য করুন", href: "https://form.typeform.com/to/USx16QN3", external: true },
+          { label: "ত্রুটি জানান", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
+          { label: "মতামত দিন", href: "https://form.typeform.com/to/USx16QN3", external: true }
+        ]
+      }
+    ]
   }
 };

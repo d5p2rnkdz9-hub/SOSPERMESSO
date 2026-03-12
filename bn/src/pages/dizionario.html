@@ -1,0 +1,251 @@
+---
+layout: layouts/base.liquid
+title: "অভিধান"
+lang: bn
+extraStyles: |
+  <style>
+
+      .dictionary-term {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        scroll-margin-top: 200px;
+      }
+      .dictionary-term:last-child {
+        border-bottom: none;
+      }
+      .dictionary-term:target {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: var(--radius-md);
+        animation: highlight-fade 2s ease-out;
+      }
+      @keyframes highlight-fade {
+        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+      }
+      .dictionary-term h3 {
+        color: var(--accent-purple);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dictionary-term h3 .anchor-link {
+        opacity: 0;
+        font-size: 0.875rem;
+        color: var(--gray-medium);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      .dictionary-term:hover h3 .anchor-link {
+        opacity: 0.6;
+      }
+      .dictionary-term h3 .anchor-link:hover {
+        opacity: 1;
+        color: var(--taxi-yellow-dark);
+      }
+      .dictionary-term p {
+        margin: 0;
+        color: var(--gray-dark);
+      }
+      .dictionary-letter {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--taxi-yellow-dark);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--taxi-yellow);
+        scroll-margin-top: 200px;
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="/bn/index.html" style="color: var(--taxi-yellow-dark);">হোম</a> →
+        <span>অভিধান (Dizionario)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">কঠিন শব্দের অভিধান</h1>
+        <p class="section-subtitle">আমলাতান্ত্রিক শব্দগুলো সহজ ভাষায় ব্যাখ্যা করা হয়েছে</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="lettera-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza (আশ্রয়) <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>এমন কেন্দ্রের ব্যবস্থা যেখানে আন্তর্জাতিক সুরক্ষার আবেদনকারীদের আশ্রয় দেওয়া হয়।</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico (নির্ভরশীল) <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>যে ব্যক্তি অন্য কারো উপর অর্থনৈতিকভাবে নির্ভরশীল। উদাহরণস্বরূপ, যে সন্তান কাজ করে না সে পিতামাতার "উপর নির্ভরশীল" কারণ তারা তার খাবার, পোশাক ও অন্যান্য খরচ বহন করে।</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento (তত্ত্বাবধান) <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>যখন একজন অপ্রাপ্তবয়স্ক (১৮ বছরের কম শিশু বা কিশোর)-কে তার জন্মদাতা পিতামাতা নয় এমন কোনো ব্যক্তি, পরিবার বা প্রতিষ্ঠানের যত্নে দেওয়া হয়।</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo (আশ্রয়) <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>এমন ব্যক্তির জন্য এক ধরনের আন্তর্জাতিক সুরক্ষা যে নিজের দেশে ফিরে যেতে পারে না কারণ সেখানে নিপীড়নের (হত্যা, নির্যাতন, গুরুতর বৈষম্য) ঝুঁকি থাকবে। "শরণার্থী (Rifugiato)"-ও দেখুন।</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL (স্থানীয় স্বাস্থ্য সংস্থা) <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale। একটি এলাকায় চিকিৎসা ও স্বাস্থ্য সেবা পরিচালনাকারী অফিস। এখানে আপনি জাতীয় স্বাস্থ্য সেবায় (Servizio Sanitario Nazionale) নাম লেখাতে এবং পারিবারিক ডাক্তার (medico di base) বেছে নিতে পারেন।</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="lettera-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>কুয়েস্তুরায় (Questura) আশ্রয় আবেদন করার জন্য ফর্ম। এতে আপনার ব্যক্তিগত তথ্য থাকে।</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale (আর্থিক কোড) <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>ব্যক্তিগত কোড, প্রতিটি ব্যক্তির জন্য অনন্য, যা ইতালিতে পরিচিত হতে এবং কাজ করা, ডাক্তার দেখানো বা সরকারি নথি স্বাক্ষর করার মতো কাজ করতে ব্যবহৃত হয়।</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale (আঞ্চলিক কমিশন) <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>ইতালীয় সরকারের সংস্থা যা সিদ্ধান্ত নেয় কে শরণার্থী মর্যাদা, সহায়ক সুরক্ষা, বিশেষ সুরক্ষা বা চিকিৎসার অনুমতি পেতে পারে।</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione (রূপান্তর) <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>একটি বসবাসের অনুমতিকে অন্যটিতে পরিবর্তন করা (উদাহরণস্বরূপ, পড়াশোনার অনুমতি থেকে কাজের অনুমতিতে), মূল দেশে না ফিরে।</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="lettera-d">D</div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego (প্রত্যাখ্যান) <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>নেতিবাচক সিদ্ধান্ত। যখন কর্তৃপক্ষ আপনার আবেদন প্রত্যাখ্যান করে।</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio (বাসস্থান) <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>যেখানে আপনি বাস করেন, এমনকি অস্থায়ীভাবেও।</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="lettera-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale (কিট পোস্তালে) <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>কিছু ধরনের বসবাসের অনুমতি আবেদন বা নবায়নের জন্য ডাকঘরে (ufficio postale) নেওয়া ফর্মের প্যাকেজ।</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="lettera-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo (রাজস্ব স্ট্যাম্প) <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>তামাকের দোকানে (tabaccheria) কেনা এবং কুয়েস্তুরায় আবেদনের মতো সরকারি নথিতে লাগানো রাজস্ব স্ট্যাম্প। এটির দাম € 16 (সবচেয়ে সাধারণ মূল্য) এবং এটি রাষ্ট্রকে কর পরিশোধের জন্য ব্যবহৃত হয়।</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="lettera-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta (নুল্লা ওস্তা / অনুমোদন) <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>কিছু করার জন্য প্রয়োজনীয় সরকারি অনুমোদন। উদাহরণস্বরূপ, "পারিবারিক পুনর্মিলনের নুল্লা ওস্তা" হলো আপনার পরিবারের সদস্যদের ইতালিতে আনার জন্য প্রেফেত্তুরার (Prefettura) সবুজ সংকেত।</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="lettera-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno (বসবাসের অনুমতি) <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>এমন নথি যা আপনাকে নির্দিষ্ট সময়ের জন্য ইতালিতে বৈধভাবে বসবাসের অধিকার দেয়।</p>
+        </div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura (কুয়েস্তুরা / পুলিশ সদর দপ্তর) <a href="#questura" class="anchor-link">#</a></h3>
+          <p>প্রতিটি প্রদেশের রাজধানীতে অবস্থিত রাষ্ট্রীয় পুলিশ অফিস। এখানে বসবাসের অনুমতি আবেদন, সংগ্রহ ও নবায়ন করা হয়। এর "ইম্মিগ্রাৎসিওনে অফিস (Ufficio Immigrazione)" নামে একটি কাউন্টার আছে।</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="lettera-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza (বসবাসস্থান) <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>যেখানে আপনি স্থায়ীভাবে বাস করেন এবং পৌরসভার (Comune) নিবন্ধনে (anagrafe) তালিকাভুক্ত।</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta (রসিদ) <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>এমন নথি যা প্রমাণ করে আপনি একটি আবেদন বা পরিশোধ করেছেন। কুয়েস্তুরার রসিদ (cedolino) প্রমাণ করে আপনি বসবাসের অনুমতি আবেদন করেছেন এবং অপেক্ষা করার সময় ইতালিতে থাকতে পারবেন।</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo (নবায়ন) <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>আপনার বসবাসের অনুমতির মেয়াদ শেষ হওয়ার আগে তা বাড়ানোর প্রক্রিয়া।</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="lettera-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto (ভিসা) <a href="#visto" class="anchor-link">#</a></h3>
+          <p>ইতালিতে প্রবেশের অনুমোদন যা যাত্রার আগে নিজের দেশে ইতালীয় দূতাবাস বা কনস্যুলেটে আবেদন করতে হয়। বিভিন্ন ধরন আছে: পর্যটন, পড়াশোনা, কাজ, পারিবারিক পুনর্মিলনের ভিসা।</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          কোনো শব্দ বুঝতে চান যা এখানে নেই?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            আমাদের লিখুন
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">আপনার আরও আগ্রহ থাকতে পারে</h2>
+      <div class="grid grid-3">
+        <a href="/bn/database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">সকল অনুমতি</h3>
+        </a>
+        <a href="/bn/protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">আন্তর্জাতিক সুরক্ষা</h3>
+        </a>
+        <a href="/bn/aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">আইনি সহায়তা</h3>
+        </a>
+      </div>
+    </div>
+  </section>
