@@ -12,8 +12,7 @@ const cache = require('../scripts/notion-cache');
 const { escapeHtml } = require('../scripts/templates/helpers.js');
 
 // ES Notion database ID (hardcoded like IT — no env var needed)
-// PLACEHOLDER: Replace with actual ES database ID after running translate-notion.js --lang es
-const ES_DATABASE_ID = "PLACEHOLDER_ES_DATABASE_ID";
+const ES_DATABASE_ID = "93ad8b71-73e7-499b-83bc-a1975bda89dd";
 
 /**
  * Extract cost from document list multi_select values
@@ -360,12 +359,6 @@ function getEmojiForPermit(tipo) {
 module.exports = async function() {
   if (!process.env.NOTION_API_KEY) {
     console.warn('[permitsEs.js] NOTION_API_KEY not set - returning empty array');
-    return [];
-  }
-
-  // Don't attempt to fetch if ES database ID is not set yet
-  if (ES_DATABASE_ID === "PLACEHOLDER_ES_DATABASE_ID") {
-    console.warn('[permitsEs.js] ES database ID not set yet - returning empty array');
     return [];
   }
 
