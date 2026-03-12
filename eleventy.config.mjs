@@ -92,6 +92,32 @@ export default function(eleventyConfig) {
     // Directory might not exist yet
   }
 
+  // Safety net for ES document and permit pages
+  const esPagesDir = path.join(process.cwd(), 'es', 'src', 'pages');
+  try {
+    const esFiles = fs.readdirSync(esPagesDir);
+    const esDocFiles = esFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of esDocFiles) {
+      eleventyConfig.ignores.add(`es/src/pages/${file}`);
+    }
+    if (esDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${esDocFiles.length} static ES document files (replaced by Liquid templates)`);
+    }
+    const esPermitFiles = esFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of esPermitFiles) {
+      eleventyConfig.ignores.add(`es/src/pages/${file}`);
+    }
+    if (esPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${esPermitFiles.length} static ES permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
   // All document pages are generated via Liquid pagination templates
   // (documents-primo.liquid, documents-rinnovo.liquid).
   // All permit pages are generated via permits.liquid.

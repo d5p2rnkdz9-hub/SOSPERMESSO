@@ -1,0 +1,406 @@
+---
+layout: layouts/base.liquid
+title: "Diccionario"
+lang: es
+extraStyles: |
+  <style>
+
+      .dictionary-term {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        scroll-margin-top: 200px; /* Must match header height (~190px) */
+      }
+      .dictionary-term:last-child {
+        border-bottom: none;
+      }
+      .dictionary-term:target {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: var(--radius-md);
+        animation: highlight-fade 2s ease-out;
+      }
+      @keyframes highlight-fade {
+        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+      }
+      .dictionary-term h3 {
+        color: var(--accent-purple);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dictionary-term h3 .anchor-link {
+        opacity: 0;
+        font-size: 0.875rem;
+        color: var(--gray-medium);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      .dictionary-term:hover h3 .anchor-link {
+        opacity: 0.6;
+      }
+      .dictionary-term h3 .anchor-link:hover {
+        opacity: 1;
+        color: var(--taxi-yellow-dark);
+      }
+      .dictionary-term p {
+        margin: 0;
+        color: var(--gray-dark);
+      }
+      .dictionary-letter {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--taxi-yellow-dark);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--taxi-yellow);
+        scroll-margin-top: 200px; /* Must match header height (~190px) */
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="index.html" style="color: var(--taxi-yellow-dark);">Inicio</a> →
+        <span>Diccionario</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">Diccionario de palabras difíciles</h1>
+        <p class="section-subtitle">Términos burocráticos explicados de forma sencilla</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="lettera-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza (Acogida) <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>Sistema de centros que acogen a personas que han presentado una solicitud de protección internacional.</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico (A cargo) <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>Persona que depende económicamente de otra. Por ejemplo, un hijo que no trabaja está "a carico" de sus padres porque ellos pagan su comida, ropa y otros gastos.</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento (Acogimiento) <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>Cuando un menor (niño o joven menor de 18 años) es confiado al cuidado de una persona, una familia o una institución que no son sus padres naturales.</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>Tipo de protección internacional para quien no puede volver a su país porque correría el riesgo de ser perseguido (por ejemplo, ser asesinado, torturado o gravemente discriminado). Ver también "Rifugiato".</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale. Oficina que gestiona los servicios médicos y sanitarios en una zona. Aquí puedes inscribirte en el Servizio Sanitario Nazionale y elegir tu médico de cabecera.</p>
+        </div>
+
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo (Certificado nominativo) <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
+          <p>Primer permesso di soggiorno que la Questura te da cuando solicitas asilo, mientras esperas recibir el documento amarillo en papel. Se entrega junto con el formulario C3. No tiene fecha de vencimiento: es válido hasta que termine el examen de la solicitud de asilo.</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="lettera-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>Formulario con el que puedes hacer la solicitud de asilo en la Questura. Contiene tu información personal.</p>
+        </div>
+
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti (Causas pendientes) <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
+          <p>Certificado que indica si hay procesos penales contra una persona que todavía no han terminado con una sentencia definitiva.</p>
+        </div>
+
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno (Tarjeta de residencia) <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>Término ambiguo que puede referirse a dos permisos de residencia diferentes: el Permesso di soggiorno per soggiornanti di lungo periodo o la Carta di soggiorno familiare cittadino UE.</p>
+        </div>
+
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale (Antecedentes penales) <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
+          <p>Registro que contiene información sobre las condenas penales de una persona. Se solicita en la Procura.</p>
+        </div>
+
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato (Cesión de inmueble) <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
+          <p>Documento que presentas cuando alquilas una casa o una habitación a alguien a cambio de un pago. Debes presentarlo a la Polizia locale en un plazo de 48 horas.</p>
+        </div>
+
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare (Cohesión familiar) <a href="#coesione-familiare" class="anchor-link">#</a></h3>
+          <p>Procedimiento que permite a quien ya está en Italia obtener un permesso di soggiorno para estar con un familiar que ya vive legalmente en Italia.</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale (Código fiscal) <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>Código personal, único para cada persona, que sirve para ser identificado en Italia y para hacer cosas como trabajar, ir al médico o firmar documentos oficiales.</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>Organismo del Gobierno italiano que decide quién puede obtener el status de rifugiato, la protezione sussidiaria, la protezione speciale o un permiso por cure mediche.</p>
+        </div>
+
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge (Cónyuge) <a href="#coniuge" class="anchor-link">#</a></h3>
+          <p>Marido o mujer. Se refiere a la persona con la que estás casado (matrimonio) o unido civilmente (unione civile).</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione (Conversión) <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>Cambiar un permesso di soggiorno por otro (por ejemplo, de permesso di soggiorno por estudio a permesso di soggiorno por trabajo), sin tener que volver al país de origen.</p>
+        </div>
+
+        <div class="dictionary-term" id="copia-conforme">
+          <h3>Copia conforme (Copia certificada) <a href="#copia-conforme" class="anchor-link">#</a></h3>
+          <p>Fotocopia de un documento con un sello oficial que certifica que es idéntica al original. Se puede hacer en el Comune, en el notario o en algunos casos en la oficina de correos.</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="lettera-d">D</div>
+
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione (Decreto de expulsión) <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
+          <p>Decisión de la Prefettura que dice que debes irte de Italia. Junto con la expulsión también puede darse un divieto di rimpatrio (prohibición de regreso).</p>
+        </div>
+
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità (Declaración de hospitalidad) <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
+          <p>Documento firmado por la persona que declara que te hospeda gratuitamente en su casa en Italia. Hay que llevarlo a la policía en un plazo de 48 horas.</p>
+        </div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego (Denegación) <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>Decisión negativa. Cuando tu solicitud es rechazada por las autoridades.</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>Dirección donde vives, aunque sea temporalmente.</p>
+        </div>
+
+        <!-- I -->
+        <div class="dictionary-letter" id="lettera-i">I</div>
+
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa (Idoneidad de la vivienda) <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
+          <p>Certificado que demuestra que una casa es adecuada para ser habitada (tiene suficiente espacio, es segura, tiene los servicios necesarios). Se debe solicitar en el Comune donde se encuentra la casa.</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="lettera-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale (Kit postal) <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>Paquete de formularios que se recoge en la oficina de correos para solicitar o renovar algunos tipos de permesso di soggiorno.</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="lettera-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo (Sello fiscal) <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>Sello fiscal que se compra en un estanco y se pega en documentos oficiales como las solicitudes en la Questura. Cuesta 16 euros (el valor más habitual) y sirve para pagar un impuesto al Estado.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore">
+          <h3>Minore (Menor) <a href="#minore" class="anchor-link">#</a></h3>
+          <p>Persona menor de 18 años.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato (Menor extranjero no acompañado) <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
+          <p>Persona menor de 18 años que se encuentra en Italia sin padres ni otros adultos legalmente responsables de ella.</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="lettera-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta (Autorización) <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>Permiso oficial necesario para hacer algo. Por ejemplo, el "nulla osta al ricongiungimento familiare" es la luz verde de la Prefettura para hacer venir a tus familiares a Italia.</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="lettera-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno (Permiso de residencia) <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>Documento que te da el derecho de vivir en Italia legalmente durante un cierto periodo de tiempo.</p>
+        </div>
+
+        <div class="dictionary-term" id="prefettura">
+          <h3>Prefettura <a href="#prefettura" class="anchor-link">#</a></h3>
+          <p>Oficina del Estado italiano presente en cada provincia. Se ocupa del orden público, la seguridad y algunos trámites para extranjeros como la ciudadanía y el ricongiungimento familiare.</p>
+        </div>
+
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale (Protección internacional) <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
+          <p>Protección que Italia da a personas que no pueden volver a su país porque estarían en peligro. Incluye el Asilo y la Protezione sussidiaria.</p>
+        </div>
+
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo (Continuación administrativa) <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
+          <p>Posibilidad para un joven extranjero que llegó a Italia siendo menor de quedarse con apoyo incluso después de cumplir 18 años.</p>
+        </div>
+
+        <!-- Q -->
+        <div class="dictionary-letter" id="lettera-q">Q</div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura <a href="#questura" class="anchor-link">#</a></h3>
+          <p>Oficina de la Polizia di Stato presente en cada capital de provincia. Es el lugar donde se solicita, se recoge y se renueva el permesso di soggiorno. Tiene una ventanilla llamada "Ufficio Immigrazione".</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="lettera-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza (Residencia) <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>Dirección donde vives de forma estable y estás inscrito en el registro del Comune.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta (Recibo) <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>Documento que prueba que has hecho una solicitud o un pago. La ricevuta de la Questura (cedolino) demuestra que has solicitado el permesso di soggiorno y te permite estar en Italia mientras esperas.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare (Reagrupación familiar) <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
+          <p>Procedimiento que permite a una persona extranjera que ya vive en Italia con un permesso di soggiorno válido traer a Italia a algunos miembros de su familia.</p>
+        </div>
+
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato (Refugiado) <a href="#rifugiato" class="anchor-link">#</a></h3>
+          <p>Persona que huye de su país porque es perseguida y que por tanto puede obtener el status di rifugiato en Italia.</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo (Renovación) <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>Proceso para extender la validez de tu permesso di soggiorno antes de que caduque.</p>
+        </div>
+
+        <!-- S -->
+        <div class="dictionary-letter" id="lettera-s">S</div>
+
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali (Servicios sociales) <a href="#servizi-sociali" class="anchor-link">#</a></h3>
+          <p>Oficinas del Comune que ayudan a personas en dificultad (familias, mayores, personas con discapacidad, menores).</p>
+        </div>
+
+        <div class="dictionary-term" id="sportello-unico">
+          <h3>Sportello Unico (Ventanilla Única) <a href="#sportello-unico" class="anchor-link">#</a></h3>
+          <p>Sportello Unico per l'Immigrazione (SUI). Oficina de la Prefettura que gestiona los trámites de trabajo para extranjeros (nulla osta, contratto di soggiorno) y el ricongiungimento familiare.</p>
+        </div>
+
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato (Estatuto de refugiado) <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
+          <p>Decisión de la Commissione o del Tribunale que reconoce a una persona como refugiada. Con el status di rifugiato se puede solicitar el permesso di soggiorno per asilo.</p>
+        </div>
+
+        <!-- T -->
+        <div class="dictionary-letter" id="lettera-t">T</div>
+
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale (Tribunal) <a href="#tribunale" class="anchor-link">#</a></h3>
+          <p>Lugar donde los jueces toman decisiones sobre cuestiones legales.</p>
+        </div>
+
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni (Tribunal de menores) <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
+          <p>Tribunal especial que se ocupa de cuestiones legales que afectan a personas menores de 18 años.</p>
+        </div>
+
+        <div class="dictionary-term" id="tessera-sanitaria">
+          <h3>Tessera sanitaria (Tarjeta sanitaria) <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
+          <p>Tarjeta plastificada que te permite usar el Servizio Sanitario Nazionale (médico de cabecera, urgencias, medicamentos). Se solicita en la ASL después de obtener el permesso di soggiorno y la residenza.</p>
+        </div>
+
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore (Tutor) <a href="#tutore" class="anchor-link">#</a></h3>
+          <p>Persona elegida por el juez que ayuda y cuida a un menor de 18 años cuando los padres no pueden hacerlo.</p>
+        </div>
+
+        <!-- U -->
+        <div class="dictionary-letter" id="lettera-u">U</div>
+
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza (Audiencia) <a href="#udienza" class="anchor-link">#</a></h3>
+          <p>Cita en el Tribunale con un juez. En el 99% de los casos debe ir tu abogado.</p>
+        </div>
+
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile (Unión civil) <a href="#unione-civile" class="anchor-link">#</a></h3>
+          <p>Matrimonio entre personas del mismo sexo en Italia.</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="lettera-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto (Visado) <a href="#visto" class="anchor-link">#</a></h3>
+          <p>Autorización para entrar en Italia que se solicita en la Ambasciata o el Consolato italiano en tu país antes de partir. Hay varios tipos: visto de turismo, estudio, trabajo, ricongiungimento familiare.</p>
+        </div>
+
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela (Vínculo de parentesco) <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
+          <p>Relación de familia entre dos personas (padres-hijos, hermanos, abuelos-nietos, tíos-sobrinos).</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          ¿Falta alguna palabra que te gustaría entender?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Escríbenos
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">También te puede interesar</h2>
+      <div class="grid grid-3">
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Todos los permisos</h3>
+        </a>
+        <a href="protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">Protección internacional</h3>
+        </a>
+        <a href="aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Ayuda legal</h3>
+        </a>
+      </div>
+    </div>
+  </section>

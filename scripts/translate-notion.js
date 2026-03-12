@@ -83,7 +83,7 @@ Translate IT Notion permits to target language via Claude API
 Usage: node scripts/translate-notion.js [options]
 
 Options:
-  --lang <code>      Target language (en, fr). Default: en
+  --lang <code>      Target language (en, fr, es). Default: en
   --dry-run          List permits, no API calls
   --permit <slug>    Translate a single permit
   --force            Re-translate everything (ignore hashes)
@@ -117,6 +117,15 @@ function getLangConfig(lang) {
       langName: 'French',
       langCode: 'fr',
       glossaryKey: 'termsFr',
+    },
+    es: {
+      dbEnvVar: 'NOTION_DATABASE_ES_ID',
+      parentEnvVar: 'NOTION_ES_PARENT_PAGE_ID',
+      translationIndexPath: path.join(cache.CACHE_DIR, 'translation-index-es.json'),
+      dbTitle: 'ES - Permits Database',
+      langName: 'Spanish',
+      langCode: 'es',
+      glossaryKey: 'termsEs',
     },
   };
 
