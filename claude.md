@@ -261,7 +261,12 @@ All permit detail pages follow a consistent structure:
 - **Future:** FR 🇫🇷, ES 🇪🇸, ZH 🇨🇳 (infrastructure exists, content pending)
 
 ### Adding a New Language (Checklist)
-1. Create Notion translated database via `scripts/translate-notion.js`
+1. Create Notion translated database via `scripts/translate-notion.js --lang {code}`
+   - All translated DBs live under **"Traduzioni del Database"** parent page: `30b7355e-7f7f-8184-975d-fb18ca69875c` ([Notion link](https://www.notion.so/sospermesso/Traduzioni-del-Database-30b7355e7f7f8184975dfb18ca69875c))
+   - Add `NOTION_{LANG}_PARENT_PAGE_ID=30b7355e-7f7f-8184-975d-fb18ca69875c` to `.env` (same for all langs)
+   - Script translates from **IT source** (never from another translation), creates DB, returns DB ID
+   - **NO CLAUDE/ANTHROPIC API for translation.** The `translate-notion.js` script calls the paid Anthropic API — do NOT use it. Instead, translate within Claude Code (subagents) and write to Notion via Notion API directly.
+   - After run, hardcode the returned DB ID in `.env` as `NOTION_DATABASE_{LANG}_ID`
 2. Create data files: `_data/permits{Lang}.js` and `_data/documents{Lang}.js`
    - **Hardcode the Notion database ID** (don't use env vars)
    - Slugs must match IT slugs (resolved via IT Page ID mapping)
@@ -272,6 +277,7 @@ All permit detail pages follow a consistent structure:
    - **Use root-relative links** (e.g., `database.html`, NOT `src/pages/database.html`)
    - **Use correct Notion-derived slugs** (copy from IT versions, they're the same)
    - **Asset paths** from `{lang}/index.html`: use `IMAGES/...`, `src/styles/...` (no `../` prefix)
+   - **Non-Latin scripts** (Bengali, Chinese, Arabic): add font CSS (see `src/styles/cjk.css` pattern)
 5. Update `eleventy.config.mjs` to ignore old static files for the new language
 6. Update language switcher, nav, hreflang tags, sitemap
 
