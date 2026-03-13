@@ -282,9 +282,9 @@
   }
 
   .nav-language .nav-dropdown {
-    display: flex !important;
-    flex-direction: row;
-    gap: 0.5rem;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
     position: static;
     box-shadow: none;
     background: transparent;
@@ -295,12 +295,22 @@
     min-width: unset;
   }
 
+  /* Hide full language name, show only flag + code on mobile */
+  .nav-language .dropdown-link .lang-name {
+    display: none;
+  }
+
+  .nav-language .dropdown-link .lang-code {
+    display: inline;
+  }
+
   .nav-language .dropdown-link {
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.4rem 0.5rem;
+    border-radius: 12px;
     background: var(--gray-light);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     white-space: nowrap;
+    text-align: center;
   }
 
   .nav-language .dropdown-link.active-lang {

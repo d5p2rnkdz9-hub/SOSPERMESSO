@@ -720,6 +720,11 @@
   font-weight: 600;
 }
 
+/* Desktop: show full name, hide short code */
+.nav-language .lang-code {
+  display: none;
+}
+
 /* ===============================================
    HERO SECTION
    =============================================== */
