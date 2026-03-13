@@ -170,6 +170,32 @@ export default function(eleventyConfig) {
     // Directory might not exist yet
   }
 
+  // Safety net for RU document and permit pages
+  const ruPagesDir = path.join(process.cwd(), 'ru', 'src', 'pages');
+  try {
+    const ruFiles = fs.readdirSync(ruPagesDir);
+    const ruDocFiles = ruFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of ruDocFiles) {
+      eleventyConfig.ignores.add(`ru/src/pages/${file}`);
+    }
+    if (ruDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${ruDocFiles.length} static RU document files (replaced by Liquid templates)`);
+    }
+    const ruPermitFiles = ruFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of ruPermitFiles) {
+      eleventyConfig.ignores.add(`ru/src/pages/${file}`);
+    }
+    if (ruPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${ruPermitFiles.length} static RU permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
   // All document pages are generated via Liquid pagination templates
   // (documents-primo.liquid, documents-rinnovo.liquid).
   // All permit pages are generated via permits.liquid.

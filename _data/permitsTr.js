@@ -361,6 +361,16 @@ function getEmojiForPermit(tipo) {
  * Fetch and transform TR permit data from Notion
  */
 module.exports = async function() {
+  if (!process.env.NOTION_FETCH) {
+    try {
+      const cached = JSON.parse(require('fs').readFileSync(
+        require('path').join(__dirname, '..', '_cache', 'permits-tr.json'), 'utf-8'
+      ));
+      console.log(`[permitsTr.js] Using cached data (${cached.length} permits)`);
+      return cached;
+    } catch { /* no cache, fall through to Notion fetch */ }
+  }
+
   if (!process.env.NOTION_API_KEY) {
     console.warn('[permitsTr.js] NOTION_API_KEY not set - returning empty array');
     return [];

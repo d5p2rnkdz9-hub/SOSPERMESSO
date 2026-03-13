@@ -357,6 +357,17 @@ function getEmojiForPermit(tipo) {
  * Fetch and transform EN permit data from Notion
  */
 module.exports = async function() {
+  // Use cached data if available (skip Notion API calls entirely)
+  if (!process.env.NOTION_FETCH) {
+    try {
+      const cached = JSON.parse(require('fs').readFileSync(
+        require('path').join(__dirname, '..', '_cache', 'permits-en.json'), 'utf-8'
+      ));
+      console.log(`[permitsEn.js] Using cached data (${cached.length} permits)`);
+      return cached;
+    } catch { /* no cache, fall through to Notion fetch */ }
+  }
+
   if (!process.env.NOTION_API_KEY) {
     console.warn('[permitsEn.js] NOTION_API_KEY not set - returning empty array');
     return [];

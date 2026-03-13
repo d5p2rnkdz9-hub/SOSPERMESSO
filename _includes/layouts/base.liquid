@@ -37,6 +37,7 @@
     {%- assign esUrl = "/es" | append: itUrl -%}
     {%- assign trUrl = "/tr" | append: itUrl -%}
     {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
   {%- elsif urlPrefix == "/fr/" -%}
     {%- assign itUrl = page.url | replace_first: "/fr/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -44,6 +45,7 @@
     {%- assign esUrl = "/es" | append: itUrl -%}
     {%- assign trUrl = "/tr" | append: itUrl -%}
     {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
   {%- elsif urlPrefix == "/es/" -%}
     {%- assign itUrl = page.url | replace_first: "/es/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -51,6 +53,7 @@
     {%- assign esUrl = page.url -%}
     {%- assign trUrl = "/tr" | append: itUrl -%}
     {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
   {%- elsif urlPrefix == "/tr/" -%}
     {%- assign itUrl = page.url | replace_first: "/tr/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -58,6 +61,7 @@
     {%- assign esUrl = "/es" | append: itUrl -%}
     {%- assign trUrl = page.url -%}
     {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
   {%- elsif urlPrefix == "/bn/" -%}
     {%- assign itUrl = page.url | replace_first: "/bn/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -65,6 +69,15 @@
     {%- assign esUrl = "/es" | append: itUrl -%}
     {%- assign trUrl = "/tr" | append: itUrl -%}
     {%- assign bnUrl = page.url -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
+  {%- elsif urlPrefix == "/ru/" -%}
+    {%- assign itUrl = page.url | replace_first: "/ru/", "/" -%}
+    {%- assign enUrl = "/en" | append: itUrl -%}
+    {%- assign frUrl = "/fr" | append: itUrl -%}
+    {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = page.url -%}
   {%- else -%}
     {%- assign itUrl = page.url -%}
     {%- assign enUrl = "/en" | append: page.url -%}
@@ -72,6 +85,7 @@
     {%- assign esUrl = "/es" | append: page.url -%}
     {%- assign trUrl = "/tr" | append: page.url -%}
     {%- assign bnUrl = "/bn" | append: page.url -%}
+    {%- assign ruUrl = "/ru" | append: page.url -%}
   {%- endif -%}
   <link rel="alternate" hreflang="it" href="{{ site.url }}{{ itUrl }}">
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
@@ -79,6 +93,7 @@
   <link rel="alternate" hreflang="es" href="{{ site.url }}{{ esUrl }}">
   <link rel="alternate" hreflang="tr" href="{{ site.url }}{{ trUrl }}">
   <link rel="alternate" hreflang="bn" href="{{ site.url }}{{ bnUrl }}">
+  <link rel="alternate" hreflang="ru" href="{{ site.url }}{{ ruUrl }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
 
   <!-- Fonts -->

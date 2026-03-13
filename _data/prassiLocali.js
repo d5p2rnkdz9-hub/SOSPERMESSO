@@ -14,6 +14,17 @@ const PRASSI_DB_ID = "3027355e7f7f80f6957ec3107a5f7aa4";
  * Exports async function that 11ty will call during build
  */
 module.exports = async function() {
+  if (!process.env.NOTION_FETCH) {
+    try {
+      const cached = JSON.parse(require('fs').readFileSync(
+        require('path').join(__dirname, '..', '_cache', 'prassi-locali.json'), 'utf-8'
+      ));
+      const count = Object.keys(cached).length;
+      console.log(`[prassiLocali.js] Using cached data (${count} pages)`);
+      return cached;
+    } catch { /* no cache, fall through to Notion fetch */ }
+  }
+
   // Graceful degradation: return empty object if no API key or DB ID
   if (!process.env.NOTION_API_KEY) {
     console.warn('[prassiLocali.js] NOTION_API_KEY not set - returning empty object');

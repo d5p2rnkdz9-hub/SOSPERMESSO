@@ -11,7 +11,7 @@ module.exports = {
         href: "/dizionario.html",
         items: [
           { label: "Protezione internazionale", href: "/protezione-internazionale.html" },
-          { label: "Ricongiungimento familiare", href: "/permesso-ricongiungimento-familiare.html" },
+          { label: "Ricongiungimento familiare", href: "/ricongiungimento-familiare.html" },
           { label: "Dizionario", href: "/dizionario.html" }
         ]
       },
@@ -49,7 +49,7 @@ module.exports = {
         href: "/en/dizionario.html",
         items: [
           { label: "International protection", href: "/en/protezione-internazionale.html" },
-          { label: "Family reunification", href: "/en/permesso-ricongiungimento-familiare.html" },
+          { label: "Family reunification", href: "/en/ricongiungimento-familiare.html" },
           { label: "Dictionary", href: "/en/dizionario.html" }
         ]
       },
@@ -87,7 +87,7 @@ module.exports = {
         href: "/fr/dizionario.html",
         items: [
           { label: "Protection internationale", href: "/fr/protezione-internazionale.html" },
-          { label: "Regroupement familial", href: "/fr/permesso-ricongiungimento-familiare.html" },
+          { label: "Regroupement familial", href: "/fr/ricongiungimento-familiare.html" },
           { label: "Dictionnaire", href: "/fr/dizionario.html" }
         ]
       },
@@ -125,7 +125,7 @@ module.exports = {
         href: "/es/dizionario.html",
         items: [
           { label: "Protección internacional", href: "/es/protezione-internazionale.html" },
-          { label: "Reagrupación familiar", href: "/es/permesso-ricongiungimento-familiare.html" },
+          { label: "Reagrupación familiar", href: "/es/ricongiungimento-familiare.html" },
           { label: "Diccionario", href: "/es/dizionario.html" }
         ]
       },
@@ -163,7 +163,7 @@ module.exports = {
         href: "/tr/dizionario.html",
         items: [
           { label: "Uluslararası koruma", href: "/tr/protezione-internazionale.html" },
-          { label: "Aile birleşimi", href: "/tr/permesso-ricongiungimento-familiare.html" },
+          { label: "Aile birleşimi", href: "/tr/ricongiungimento-familiare.html" },
           { label: "Sözlük", href: "/tr/dizionario.html" }
         ]
       },
@@ -189,6 +189,44 @@ module.exports = {
       }
     ]
   },
+  ru: {
+    dropdowns: [
+      {
+        label: "База данных",
+        href: "/ru/database.html",
+        items: []
+      },
+      {
+        label: "Руководства",
+        href: "/ru/dizionario.html",
+        items: [
+          { label: "Международная защита", href: "/ru/protezione-internazionale.html" },
+          { label: "Воссоединение семьи", href: "/ru/ricongiungimento-familiare.html" },
+          { label: "Словарь", href: "/ru/dizionario.html" }
+        ]
+      },
+      {
+        label: "Тесты",
+        href: "https://form.typeform.com/to/kt7P9Ejk",
+        external: true,
+        items: [
+          { label: "Могу ли я ПОЛУЧИТЬ разрешение?", href: "https://form.typeform.com/to/kt7P9Ejk", external: true },
+          { label: "Могу ли я КОНВЕРТИРОВАТЬ?", href: "https://form.typeform.com/to/oc9jhdkJ", external: true },
+          { label: "Могу ли я ПРОДЛИТЬ?", href: "https://form.typeform.com/to/R7HY8nBp", external: true }
+        ]
+      },
+      {
+        label: "Сотрудничество",
+        href: "https://form.typeform.com/to/USx16QN3",
+        external: true,
+        items: [
+          { label: "Помочь", href: "https://form.typeform.com/to/USx16QN3", external: true },
+          { label: "Сообщить об ошибке", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
+          { label: "Оставить отзыв", href: "https://form.typeform.com/to/USx16QN3", external: true }
+        ]
+      }
+    ]
+  },
   bn: {
     dropdowns: [
       {
@@ -201,7 +239,7 @@ module.exports = {
         href: "/bn/dizionario.html",
         items: [
           { label: "আন্তর্জাতিক সুরক্ষা", href: "/bn/protezione-internazionale.html" },
-          { label: "পারিবারিক পুনর্মিলন", href: "/bn/permesso-ricongiungimento-familiare.html" },
+          { label: "পারিবারিক পুনর্মিলন", href: "/bn/ricongiungimento-familiare.html" },
           { label: "অভিধান", href: "/bn/dizionario.html" }
         ]
       },

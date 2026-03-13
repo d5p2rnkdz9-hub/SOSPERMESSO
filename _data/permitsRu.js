@@ -1,7 +1,7 @@
 /**
- * 11ty data file for ES permit pages
- * Fetches permit data from ES Notion database, parses Q&A content into HTML
- * Slugs are resolved via IT Page ID → IT slug mapping (ES slugs = IT slugs)
+ * 11ty data file for RU permit pages
+ * Fetches permit data from RU Notion database, parses Q&A content into HTML
+ * Slugs are resolved via IT Page ID → IT slug mapping (RU slugs = IT slugs)
  */
 
 // CRITICAL: Load dotenv before Client instantiation (see MEMORY.md)
@@ -11,8 +11,8 @@ const { Client } = require("@notionhq/client");
 const cache = require('../scripts/notion-cache');
 const { escapeHtml } = require('../scripts/templates/helpers.js');
 
-// ES Notion database ID (hardcoded like IT — no env var needed)
-const ES_DATABASE_ID = "93ad8b71-73e7-499b-83bc-a1975bda89dd";
+// RU Notion database ID (hardcoded like IT — no env var needed)
+const RU_DATABASE_ID = '133cab29-7903-44be-b1c5-551563451fa8';
 
 /**
  * Extract cost from document list multi_select values
@@ -39,7 +39,7 @@ function extractCostAlt(documents, keyword) {
 }
 
 // IT database ID for slug resolution
-const IT_DATABASE_ID = "3097355e-7f7f-819c-af33-d0fd0739cc5b";
+const IT_DATABASE_ID = '3097355e-7f7f-819c-af33-d0fd0739cc5b';
 
 /**
  * Generate URL-friendly slug from permit name (IT name)
@@ -136,7 +136,7 @@ function extractPlainText(richText) {
 
 /**
  * Convert Notion rich_text array to HTML
- * ES version: no linkToDizionario, just escapeHtml for all text
+ * RU version: no linkToDizionario, just escapeHtml for all text
  */
 function richTextToHtml(richTextArray) {
   if (!richTextArray || !Array.isArray(richTextArray)) return '';
@@ -333,60 +333,69 @@ function parseQASections(blocks) {
 }
 
 /**
- * Get emoji based on permit type keywords (ES + IT)
+ * Get emoji based on permit type keywords (RU + IT)
  */
 function getEmojiForPermit(tipo) {
   if (!tipo) return '📄';
   const t = tipo.toLowerCase();
 
-  // ES keywords
-  if (t.includes('estudio') || t.includes('studio')) return '📖';
-  if (t.includes('trabajo asalariado') || t.includes('trabajo autónomo') || t.includes('lavoro subordinato') || t.includes('lavoro autonomo')) return '💼';
-  if (t.includes('búsqueda') || t.includes('attesa occupazione') || t.includes('attesa lavoro')) return '🔍';
-  if (t.includes('protección') || t.includes('asilo') || t.includes('refugiado') || t.includes('protezione') || t.includes('rifugiato')) return '🛡️';
-  if (t.includes('familia') || t.includes('familiar') || t.includes('famiglia') || t.includes('familiare') || t.includes('ricongiungimento') || t.includes('reagrupación')) return '👨‍👩‍👧‍👦';
-  if (t.includes('médico') || t.includes('médica') || t.includes('salud') || t.includes('embarazo') || t.includes('medic') || t.includes('salute') || t.includes('gravidanza') || t.includes('cure')) return '🏥';
-  if (t.includes('larga duración') || t.includes('soggiornanti') || t.includes('lungo')) return '🏠';
-  if (t.includes('menor') || t.includes('minore')) return '👶';
-  if (t.includes('catástrofe') || t.includes('calamit')) return '🌊';
+  // RU keywords
+  if (t.includes('учёб') || t.includes('учеб') || t.includes('стажир') || t.includes('studio')) return '📚';
+  if (t.includes('работ') || t.includes('трудов') || t.includes('lavoro subordinato') || t.includes('lavoro autonomo')) return '💼';
+  if (t.includes('ожидан') || t.includes('трудоустройств') || t.includes('attesa occupazione') || t.includes('attesa lavoro')) return '🔍';
+  if (t.includes('защит') || t.includes('убежищ') || t.includes('беженц') || t.includes('protezione') || t.includes('rifugiato') || t.includes('asilo')) return '🛡️';
+  if (t.includes('семь') || t.includes('воссоединен') || t.includes('родител') || t.includes('famiglia') || t.includes('familiare') || t.includes('ricongiungimento')) return '👨‍👩‍👧‍👦';
+  if (t.includes('медицин') || t.includes('лечен') || t.includes('беременн') || t.includes('medic') || t.includes('salute') || t.includes('gravidanza') || t.includes('cure')) return '🏥';
+  if (t.includes('долгосрочн') || t.includes('soggiornante') || t.includes('lungo')) return '🏠';
+  if (t.includes('религ')) return '⛪';
+  if (t.includes('спорт')) return '⚽';
+  if (t.includes('искусств') || t.includes('художеств')) return '🎭';
+  if (t.includes('исследован') || t.includes('науч')) return '🔬';
+  if (t.includes('несовершеннолетн') || t.includes('minore')) return '👶';
+  if (t.includes('стихийн') || t.includes('бедстви') || t.includes('calamit')) return '🌊';
 
-  return '📄';
+  return '📋';
 }
 
 /**
- * Fetch and transform ES permit data from Notion
+ * Fetch and transform RU permit data from Notion
  */
 module.exports = async function() {
   if (!process.env.NOTION_FETCH) {
     try {
       const cached = JSON.parse(require('fs').readFileSync(
-        require('path').join(__dirname, '..', '_cache', 'permits-es.json'), 'utf-8'
+        require('path').join(__dirname, '..', '_cache', 'permits-ru.json'), 'utf-8'
       ));
-      console.log(`[permitsEs.js] Using cached data (${cached.length} permits)`);
+      console.log(`[permitsRu.js] Using cached data (${cached.length} permits)`);
       return cached;
     } catch { /* no cache, fall through to Notion fetch */ }
   }
 
   if (!process.env.NOTION_API_KEY) {
-    console.warn('[permitsEs.js] NOTION_API_KEY not set - returning empty array');
+    console.warn('[permitsRu.js] NOTION_API_KEY not set - returning empty array');
+    return [];
+  }
+
+  if (!RU_DATABASE_ID) {
+    console.warn('[permitsRu.js] RU_DATABASE_ID not set - returning empty array');
     return [];
   }
 
   try {
-    console.log('[permitsEs.js] Fetching ES permit data from Notion...');
+    console.log('[permitsRu.js] Fetching RU permit data from Notion...');
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
-    // Build IT page ID → slug map (for resolving ES slugs)
-    console.log('[permitsEs.js] Building IT slug map...');
+    // Build IT page ID → slug map (for resolving RU slugs)
+    console.log('[permitsRu.js] Building IT slug map...');
     const itSlugMap = await buildItSlugMap(notion);
-    console.log(`[permitsEs.js] IT slug map has ${Object.keys(itSlugMap).length} entries`);
+    console.log(`[permitsRu.js] IT slug map has ${Object.keys(itSlugMap).length} entries`);
 
-    // Fetch ES pages
-    const esPages = await fetchDatabasePages(notion, ES_DATABASE_ID);
-    console.log(`[permitsEs.js] Found ${esPages.length} ES permit pages`);
+    // Fetch RU pages
+    const ruPages = await fetchDatabasePages(notion, RU_DATABASE_ID);
+    console.log(`[permitsRu.js] Found ${ruPages.length} RU permit pages`);
 
-    if (esPages.length === 0) {
-      console.warn('[permitsEs.js] No ES permit data found');
+    if (ruPages.length === 0) {
+      console.warn('[permitsRu.js] No RU permit data found');
       return [];
     }
 
@@ -398,10 +407,10 @@ module.exports = async function() {
     const processedPermits = [];
     let count = 0;
 
-    for (const page of esPages) {
+    for (const page of ruPages) {
       const tipo = page.properties["Name"]?.title?.[0]?.plain_text || null;
       if (!tipo) {
-        console.warn(`[permitsEs.js] Skipping page ${page.id} - no Name`);
+        console.warn(`[permitsRu.js] Skipping page ${page.id} - no Name`);
         continue;
       }
 
@@ -411,16 +420,16 @@ module.exports = async function() {
       const slug = itPageId ? itSlugMap[itPageId] : null;
 
       if (!slug) {
-        console.warn(`[permitsEs.js] Skipping "${tipo}" - no IT slug found (IT Page ID: ${itPageId || 'missing'})`);
+        console.warn(`[permitsRu.js] Skipping "${tipo}" - no IT slug found (IT Page ID: ${itPageId || 'missing'})`);
         continue;
       }
 
       count++;
       if (count % 10 === 0) {
-        console.log(`[permitsEs.js] Processed ${count}/${esPages.length} permits...`);
+        console.log(`[permitsRu.js] Processed ${count}/${ruPages.length} permits...`);
       }
 
-      // Extract doc fields from ES page properties
+      // Extract doc fields from RU page properties
       const primoDocuments = page.properties["Doc primo rilascio"]?.multi_select?.map(d => d.name) || [];
       const rinnovoDocuments = page.properties["Doc rinnovo"]?.multi_select?.map(d => d.name) || [];
       const primoMethod = page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null;
@@ -475,7 +484,7 @@ module.exports = async function() {
         });
 
       } catch (err) {
-        console.error(`[permitsEs.js] Error processing ${tipo}: ${err.message}`);
+        console.error(`[permitsRu.js] Error processing ${tipo}: ${err.message}`);
         processedPermits.push({
           id: page.id,
           slug,
@@ -499,12 +508,12 @@ module.exports = async function() {
     }
 
     await cache.savePagesIndex(pagesIndex);
-    console.log(`[permitsEs.js] Cache: ${cacheHits} hits, ${cacheMisses} misses`);
-    console.log(`[permitsEs.js] Returning ${processedPermits.length} ES permits`);
+    console.log(`[permitsRu.js] Cache: ${cacheHits} hits, ${cacheMisses} misses`);
+    console.log(`[permitsRu.js] Returning ${processedPermits.length} RU permits`);
     return processedPermits;
 
   } catch (error) {
-    console.error(`[permitsEs.js] Notion fetch failed: ${error.message}`);
+    console.error(`[permitsRu.js] Notion fetch failed: ${error.message}`);
     return [];
   }
 };

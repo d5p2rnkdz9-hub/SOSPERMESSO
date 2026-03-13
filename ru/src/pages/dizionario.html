@@ -1,0 +1,406 @@
+---
+layout: layouts/base.liquid
+title: "Словарь"
+lang: ru
+extraStyles: |
+  <style>
+
+      .dictionary-term {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        scroll-margin-top: 200px;
+      }
+      .dictionary-term:last-child {
+        border-bottom: none;
+      }
+      .dictionary-term:target {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: var(--radius-md);
+        animation: highlight-fade 2s ease-out;
+      }
+      @keyframes highlight-fade {
+        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+      }
+      .dictionary-term h3 {
+        color: var(--accent-purple);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dictionary-term h3 .anchor-link {
+        opacity: 0;
+        font-size: 0.875rem;
+        color: var(--gray-medium);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      .dictionary-term:hover h3 .anchor-link {
+        opacity: 0.6;
+      }
+      .dictionary-term h3 .anchor-link:hover {
+        opacity: 1;
+        color: var(--taxi-yellow-dark);
+      }
+      .dictionary-term p {
+        margin: 0;
+        color: var(--gray-dark);
+      }
+      .dictionary-letter {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--taxi-yellow-dark);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--taxi-yellow);
+        scroll-margin-top: 200px;
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="/ru/index.html" style="color: var(--taxi-yellow-dark);">Главная</a> →
+        <span>Словарь</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">Словарь сложных слов</h1>
+        <p class="section-subtitle">Бюрократические термины, объясненные простым языком</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="lettera-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza (Прием/Размещение) <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>Система центров размещения лиц, подавших заявление на международную защиту.</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico (Иждивенец) <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>Лицо, экономически зависящее от другого человека. Например, ребенок, который не работает, находится «на иждивении» родителей, так как они оплачивают его питание, одежду и другие расходы.</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento (Опека/Попечительство) <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>Передача несовершеннолетнего (ребенка или подростка до 18 лет) на попечение лица, семьи или учреждения, не являющихся его биологическими родителями.</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo (Убежище) <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>Вид международной защиты для лиц, которые не могут вернуться в свою страну из-за риска преследования (например, риска быть убитым, подвергнуться пыткам, серьезной дискриминации). См. также «Rifugiato» (Беженец).</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale (Местное управление здравоохранения). Учреждение, управляющее медицинскими и санитарными услугами в определенном районе. Здесь можно зарегистрироваться в Национальной системе здравоохранения и выбрать семейного врача.</p>
+        </div>
+
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo (Именное свидетельство) <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
+          <p>Первый вид на жительство, который выдает Квестура (управление полиции) при подаче заявления на убежище; действителен до получения вида на жительство (желтой карточки). Выдается вместе с формой C3. Не имеет срока действия: действителен до завершения рассмотрения заявления на убежище.</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="lettera-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>Форма для подачи заявления на убежище в Квестуре. Содержит ваши персональные данные.</p>
+        </div>
+
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti (Незавершенные дела) <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
+          <p>Документ, показывающий, есть ли у лица незавершенные уголовные дела, по которым еще не вынесено окончательное решение.</p>
+        </div>
+
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno (Карта проживания) <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>Неоднозначный термин, который может обозначать два разных вида на жительство: вид на жительство для долгосрочных резидентов ЕС или карту проживания для члена семьи гражданина ЕС.</p>
+        </div>
+
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale (Справка о судимости) <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
+          <p>Документ, содержащий информацию о судимостях лица. Запрашивается в прокуратуре.</p>
+        </div>
+
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato (Уведомление о передаче недвижимости) <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
+          <p>Документ, который необходимо оформить при сдаче жилья или комнаты в аренду. Должен быть представлен в местную полицию в течение 48 часов.</p>
+        </div>
+
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare (Воссоединение семьи на территории) <a href="#coesione-familiare" class="anchor-link">#</a></h3>
+          <p>Процедура, позволяющая лицу, уже находящемуся в Италии, получить вид на жительство для проживания с членом семьи, который уже законно проживает в Италии.</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale (Налоговый код) <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>Персональный код, уникальный для каждого человека; необходим для идентификации в Италии и для таких действий, как работа, посещение врача или подписание официальных документов.</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale (Территориальная комиссия) <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>Государственный орган Италии, который решает, кто может получить статус беженца, субсидиарную защиту, специальную защиту или разрешение на медицинское лечение.</p>
+        </div>
+
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge (Супруг/Супруга) <a href="#coniuge" class="anchor-link">#</a></h3>
+          <p>Муж или жена. Лицо, с которым заключен брак или гражданский союз.</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione (Конверсия/Преобразование) <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>Преобразование одного вида на жительство в другой (например, из учебного в рабочий) без необходимости возвращения на родину.</p>
+        </div>
+
+        <div class="dictionary-term" id="copia-conforme">
+          <h3>Copia conforme (Заверенная копия) <a href="#copia-conforme" class="anchor-link">#</a></h3>
+          <p>Фотокопия документа с официальной печатью, подтверждающей ее соответствие оригиналу. Может быть сделана в муниципалитете, у нотариуса или в некоторых случаях на почте.</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="lettera-d">D</div>
+
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione (Указ о высылке) <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
+          <p>Решение префектуры, обязывающее покинуть Италию. Вместе с указом о высылке может быть установлен запрет на въезд.</p>
+        </div>
+
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità (Заявление о гостеприимстве) <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
+          <p>Подписанный документ, в котором лицо заявляет о бесплатном размещении вас в своем доме в Италии. Должен быть передан в полицию в течение 48 часов.</p>
+        </div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego (Отказ) <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>Отрицательное решение. Отклонение вашего заявления властями.</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio (Место проживания) <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>Адрес, по которому вы проживаете, даже временно.</p>
+        </div>
+
+        <!-- I -->
+        <div class="dictionary-letter" id="lettera-i">I</div>
+
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa (Сертификат пригодности жилья) <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
+          <p>Документ, подтверждающий, что жилье пригодно для проживания (имеет достаточную площадь, безопасно, обеспечено необходимыми услугами). Запрашивается в муниципалитете по месту нахождения жилья.</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="lettera-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale (Почтовый комплект) <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>Пакет форм, получаемый на почте для запроса или продления некоторых видов на жительство.</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="lettera-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo (Гербовая марка) <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>Фискальная марка, приобретаемая в табачном киоске и наклеиваемая на официальные документы, такие как заявления в Квестуру. Стоимость составляет 16 евро (наиболее распространенный номинал) и используется для уплаты налога государству.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore">
+          <h3>Minore (Несовершеннолетний) <a href="#minore" class="anchor-link">#</a></h3>
+          <p>Лицо младше 18 лет.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato (Несопровождаемый несовершеннолетний иностранец) <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
+          <p>Лицо младше 18 лет, находящееся в Италии без родителей или других юридически ответственных взрослых.</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="lettera-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta (Разрешение) <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>Официальное разрешение на совершение определенного действия. Например, «nulla osta для воссоединения семьи» — это разрешение от Префектуры на то, чтобы привезти членов вашей семьи в Италию.</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="lettera-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno (Вид на жительство) <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>Документ, дающий право легально проживать в Италии в течение определенного периода.</p>
+        </div>
+
+        <div class="dictionary-term" id="prefettura">
+          <h3>Prefettura (Префектура) <a href="#prefettura" class="anchor-link">#</a></h3>
+          <p>Государственное учреждение Италии, расположенное в каждой провинции. Занимается вопросами общественного порядка, безопасности, гражданства и некоторыми процедурами для иностранцев, такими как воссоединение семьи.</p>
+        </div>
+
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale (Международная защита) <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
+          <p>Защита, предоставляемая Италией лицам, которые подвергаются опасности в случае возвращения в свою страну. Включает убежище и субсидиарную защиту.</p>
+        </div>
+
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo (Административное продление) <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
+          <p>Возможность для иностранного молодого человека, прибывшего в Италию несовершеннолетним, продолжить получать поддержку и оставаться в Италии после достижения 18 лет.</p>
+        </div>
+
+        <!-- Q -->
+        <div class="dictionary-letter" id="lettera-q">Q</div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura (Квестура/Управление полиции) <a href="#questura" class="anchor-link">#</a></h3>
+          <p>Отделение государственной полиции, расположенное в каждом областном центре. Именно здесь запрашивается, получается и продлевается вид на жительство. Имеет отдел под названием «Ufficio Immigrazione» (Иммиграционный офис).</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="lettera-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza (Место жительства/Прописка) <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>Адрес, по которому вы постоянно проживаете и который зарегистрирован в муниципальном реестре населения.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta (Квитанция) <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>Документ, подтверждающий, что вы подали заявление или совершили платеж. Квитанция Квестуры (cedolino) подтверждает, что вы подали заявление на вид на жительство, и позволяет вам оставаться в Италии в ожидании решения.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare (Воссоединение семьи) <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
+          <p>Процедура, позволяющая иностранному гражданину, проживающему в Италии с действующим видом на жительство, привезти некоторых членов своей семьи в Италию.</p>
+        </div>
+
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato (Беженец) <a href="#rifugiato" class="anchor-link">#</a></h3>
+          <p>Лицо, покинувшее свою страну из-за преследований, которое может получить статус беженца в Италии.</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo (Продление) <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>Процедура продления срока действия вашего вида на жительство до истечения его срока.</p>
+        </div>
+
+        <!-- S -->
+        <div class="dictionary-letter" id="lettera-s">S</div>
+
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali (Социальные службы) <a href="#servizi-sociali" class="anchor-link">#</a></h3>
+          <p>Муниципальные учреждения, помогающие лицам, находящимся в трудной ситуации (семьям, пожилым людям, людям с инвалидностью, несовершеннолетним).</p>
+        </div>
+
+        <div class="dictionary-term" id="sportello-unico">
+          <h3>Sportello Unico (Единое окно) <a href="#sportello-unico" class="anchor-link">#</a></h3>
+          <p>Sportello Unico per l'Immigrazione (SUI). Отдел Префектуры, управляющий трудовыми процедурами для иностранцев (разрешения, договор о проживании) и воссоединением семьи.</p>
+        </div>
+
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato (Статус беженца) <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
+          <p>Решение Комиссии или Суда, признающее лицо беженцем. Со статусом беженца можно запросить вид на жительство по убежищу.</p>
+        </div>
+
+        <!-- T -->
+        <div class="dictionary-letter" id="lettera-t">T</div>
+
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale (Суд) <a href="#tribunale" class="anchor-link">#</a></h3>
+          <p>Место, где судьи выносят решения по правовым вопросам.</p>
+        </div>
+
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni (Суд по делам несовершеннолетних) <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
+          <p>Специальный суд, рассматривающий правовые вопросы, касающиеся лиц младше 18 лет.</p>
+        </div>
+
+        <div class="dictionary-term" id="tessera-sanitaria">
+          <h3>Tessera sanitaria (Медицинская карта) <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
+          <p>Пластиковая карта, дающая право на пользование Национальной системой здравоохранения (семейный врач, скорая помощь, лекарства). Запрашивается в ASL после получения вида на жительство и регистрации по месту жительства.</p>
+        </div>
+
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore (Опекун) <a href="#tutore" class="anchor-link">#</a></h3>
+          <p>Лицо, назначенное судьей для помощи и заботы о несовершеннолетнем до 18 лет, когда родители не могут выполнять эту функцию.</p>
+        </div>
+
+        <!-- U -->
+        <div class="dictionary-letter" id="lettera-u">U</div>
+
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza (Судебное заседание) <a href="#udienza" class="anchor-link">#</a></h3>
+          <p>Прием у судьи в суде. В 99% случаев на заседание должен явиться ваш адвокат.</p>
+        </div>
+
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile (Гражданский союз) <a href="#unione-civile" class="anchor-link">#</a></h3>
+          <p>Брак между лицами одного пола в Италии.</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="lettera-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto (Виза) <a href="#visto" class="anchor-link">#</a></h3>
+          <p>Разрешение на въезд в Италию, запрашиваемое в итальянском посольстве или консульстве в вашей стране перед отъездом. Существуют различные типы: туристическая, учебная, рабочая виза, виза для воссоединения семьи.</p>
+        </div>
+
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela (Родственная связь) <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
+          <p>Семейные отношения между двумя людьми (родители-дети, братья и сестры, бабушки и дедушки-внуки, дяди/тети-племянники).</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          Не нашли слово, которое хотите понять?
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            Напишите нам
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Вам может быть интересно</h2>
+      <div class="grid grid-3">
+        <a href="/ru/database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Все разрешения</h3>
+        </a>
+        <a href="/ru/protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">Международная защита</h3>
+        </a>
+        <a href="/ru/aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">Юридическая помощь</h3>
+        </a>
+      </div>
+    </div>
+  </section>
