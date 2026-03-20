@@ -356,14 +356,14 @@ extraStyles: |
               </div>
             </div></li>
 
-            {% assign p = permits | where: "slug", "permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno" | first %}
+            {% assign p = permits | where: "slug", "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno" | first %}
             <li><div class="permit-row">
-              <a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html" class="permit-main"><span class="icon">🇪🇺</span><span class="title">Permesso UE per soggiornanti di lungo periodo ("Carta")</span></a>
+              <a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html" class="permit-main"><span class="icon">🇪🇺</span><span class="title">Permesso UE per soggiornanti di lungo periodo ("Carta")</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#cose" class="permit-btn btn-cose">Cos'è</a>
-                  {% if p.primoDocuments.size > 0 %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
+                {% else %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
