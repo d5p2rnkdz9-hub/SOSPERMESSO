@@ -1,5 +1,101 @@
 [
   {
+    "id": "3097355e-7f7f-8123-80f7-d0faddc516c9",
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "tipo": "UE per soggiornanti di lungo periodo (“Carta di soggiorno”)",
+    "emoji": "🏠",
+    "sections": [
+      {
+        "question": "Che cos'è questo permesso?",
+        "content": "<p>È un permesso di soggiorno che non ha scadenza. E’ anche conosciuto come “<a href=\"dizionario.html#carta-di-soggiorno\" class=\"doc-link\">Carta di soggiorno</a>” ma <strong>attenzione</strong> a non confonderlo con Carta per familiari di cittadini UE.</p>",
+        "index": 0
+      },
+      {
+        "question": "Chi può chiedere questo permesso?",
+        "content": "<p>Puoi fare richiesta se:</p>\n<ul><li>Vivi regolarmente in Italia da almeno 5 anni</li><li>Hai un altro permesso di soggiorno ancora valido</li><li>Hai un reddito di almeno 7.000 euro negli ultimi tre anni</li><li>Hai un certificato di conoscenza della lingua italiana di livello almeno A2</li></ul>\n<p><strong>Attenzione! </strong>⚠️ <strong>Non tutti i permessi di soggiorno possono essere convertiti in Carta!</strong></p>\n<p>Ad esempio, NON puoi chiedere la Carta se hai</p>\n<ul><li>Un permesso per studio o formazione professionale</li><li>Un permesso per cure mediche, protezione speciale o protezione temporanea</li><li>Un permesso per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> (mentre aspetti la decisione della Commissione o del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>)</li></ul>\n<p>Se hai dubbi, <a href=\"https://sospermesso.typeform.com/conversione\">fai il nostro test.</a></p>",
+        "index": 1
+      },
+      {
+        "question": "I 5 anni di soggiorno in Italia devono essere senza interruzioni?",
+        "content": "<p>Sì. I 5 anni si contano dalla data del tuo primo permesso di soggiorno e non ci devono essere “buchi” nei tuoi permessi di soggiorno. </p>",
+        "index": 2
+      },
+      {
+        "question": "Come si calcolano i 5 anni di soggiorno regolare?",
+        "content": "<p>Nel calcolo dei 5 anni non si contano i periodi in cui avevi un permesso breve o &quot;diplomatico&quot;. Si contano invece i periodi con permesso per studio, formazione, protezione temporanea o umanitaria.</p>",
+        "index": 3
+      },
+      {
+        "question": "Che livello di italiano devo conoscere per chiedere questo permesso?",
+        "content": "<p>Devi dimostrare di conoscere l&#039;italiano a livello A2. Questo significa saper capire e parlare in situazioni di tutti i giorni. Se in Italia hai avuto un diploma di terza media o superiore, questo è sufficiente.</p>",
+        "index": 4
+      },
+      {
+        "question": "Posso chiedere la Carta anche per i miei familiari che sono con me in Italia?",
+        "content": "<p>Sì. Puoi chiedere questo permesso per</p>\n<ul><li>Moglie/marito <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></li><li>Figli minori (anche solo del <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, nati fuori dal matrimonio, adottati o sotto la tua tutela)</li><li>Figli maggiorenni <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> con invalidità totale (100%) che non possono mantenersi da soli</li><li>Genitori <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></li></ul>\n<p>Per estendere il permesso UE di lungo periodo ai familiari devi:</p>\n<ul><li>Dimostrare di avere una casa adatta, che rispetta le regole sanitarie italiane ed è abbastanza grande per tutti: devi portare in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> il \"<a href=\"/2187355e7f7f8148ac7efe618d4b0ae9\">certificato di idoneità alloggiativa</a>&quot; dato dal tuo Comune</li><li>Avere un reddito sufficiente. Si contano anche i redditi dei familiari che vivono con te. Il reddito minimo si calcola prendendo l&#039;importo dell&#039;assegno sociale più la metà per ogni familiare. Con 2 o più figli minori di 14 anni, serve il doppio dell&#039;assegno sociale.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "Quanto dura il permesso di soggiorno UE per soggiornanti di lungo periodo?",
+        "content": "<p>in teoria non ha scadenza (dura per sempre), ma deve essere aggiornato ogni 10 anni. Il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> non sempre è automatico: la <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> di solito verifica se ci sono ancora tutti gli elementi per averlo. Per i minori il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> si fa ogni 5 anni</p>",
+        "index": 6
+      },
+      {
+        "question": "Quali diritti mi dà?",
+        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Entrare e uscire dall’Italia senza <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a></li><li>Lavorare con regolare contratto (lavoro autonomo o subordinato)</li><li>Stare in un altro Paese UE anche per più di 90 giorni, ma se vuoi andare a lavorare in permanenza in un altro Paese UE, devi informarti sulle regole di quel Paese per capire se questo permesso è sufficiente.</li><li>Usare i servizi della Pubblica Amministrazione, comprese le procedure per le case popolari</li><li>Avere assistenza sociale, previdenza sociale, assistenza sanitaria e scolastica: ad esempio, l&#039;assegno INPS per l&#039;invalidità civile e l&#039;assegno sociale</li></ul>",
+        "index": 7
+      },
+      {
+        "question": "Mentre aspetto il permesso, la ricevuta delle Poste mi autorizza a lavorare?",
+        "content": "<p>Sì, la <a href=\"dizionario.html#ricevuta\" class=\"doc-link\">ricevuta</a> delle Poste ti autorizza a lavorare con regolare contratto (lavoro autonomo o subordinato).</p>",
+        "index": 8
+      },
+      {
+        "question": "Cosa succede se la documentazione che ho mandato con il Kit o portato in Questura non è completa?",
+        "content": "<p>La <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> ti dà una richiesta di integrazione con un elenco dei documenti mancanti. Devi portare al più presto i documenti richiesti; nel frattempo la tua pratica rimane ferma.</p>",
+        "index": 9
+      },
+      {
+        "question": "In quali  casi il permesso UE di lungo periodo può essere tolto?",
+        "content": "<p>Se stai fuori dall&#039;Italia e dall’Unione europea per più di 12 mesi di fila</p>",
+        "index": 10
+      },
+      {
+        "question": "Con un permesso UE di lungo periodo, posso andare a vivere in un altro Paese europeo?",
+        "content": "<p>Sì, puoi stare in un altro paese dell&#039;area Schengen, per studio o lavoro, anche per più di 90 giorni. Lo stesso diritto ce l&#039;hanno i tuoi familiari. Se un altro Stato europeo ti dà un permesso UE di lungo periodo, ti sarà tolto il permesso italiano.</p>",
+        "index": 11
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Documenti reddito ultimo anno",
+      "certificato lingua A2",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto",
+      "Bollettino postale da 130.46",
+      "Prova di avere avuto permessi di soggiorno senza buchi negli ultimi 5 anni"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 130.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "marca da bollo da 16€",
+      "Bollettino postale da 30.46",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": "Alcune Questure chiedono idoneità alloggiativa anche se chiedi solo per te; la legge non lo chiede e probabilmente un tribunale ti darà ragione\n\nAlcune questure chiedono prova di assenza di condanne (certificato di casellario giudiziale e carichi pendenti)\n\nNOTA rinnovo: si chiama aggiornamento (bisogna solo provare foto e aggiornamento della residenza). Molte Questure potrebbero chiedere altri documenti come se fosse un rinnovo. Quindi se li hai tutti, mettili nel kit! Se non li hai, chiedi lo stesso l’aggiornamento e se la Questura rigetta la tua domanda, rivolgiti a un aiuto legale.\n\nNOTA documenti primo rilascio\nQuali documenti devo mettere nel Kit se chiedo il permesso anche per mia moglie/marito o per un genitore?\n• Moduli 1 e 2: il modulo 2 si compila solo se il familiare ha un reddito proprio\n• Fotocopia del tuo passaporto e permesso di soggiorno\n• Fotocopia del passaporto e permesso di soggiorno di tua moglie/marito o del genitore\n• Certificato del casellario e dei carichi pendenti da chiedere alla Procura\n• Certificato di residenza e stato di famiglia\n• Documenti sulla casa (atto di proprietà, contratto di affitto o dichiarazione di ospitalità)\n• Certificato di idoneità dell'alloggio dato dal Comune\n• Documenti sul reddito (dichiarazione dei redditi, CUD, buste paga, contratto di lavoro, anche del tuo familiare se contribuisce al reddito della famiglia)\n• Attestato di italiano livello A2\n\nQuali documenti devo mettere nel Kit se chiedo il permesso anche per i miei figli minori?\n• Modulo 1\n• Fotocopia del tuo passaporto e permesso di soggiorno\n• Fotocopia del passaporto e permesso di soggiorno di tuo figlio\n• Certificato di residenza e stato di famiglia\n• Documenti sul reddito (dichiarazione dei redditi, CUD, buste paga, contratto di lavoro)\n• Certificato di idoneità dell'alloggio\n• Certificato di frequenza scolastica se il minore deve andare a scuola per legge\n• Attestato di italiano livello A2 (se il minore non ha già un diploma di scuola media o superiore)\nRicorda che ogni familiare sopra i 14 anni deve compilare un Kit proprio. Se tuo figlio ha meno di 14 anni, puoi metterlo nel tuo Kit.",
+    "rinnovoNonApplicabile": false,
+    "categoria": "Studio/Lavoro"
+  },
+  {
     "id": "3097355e-7f7f-8127-8fac-e9349bceaa14",
     "slug": "protezione-sociale-vittime-di-violenza-domestica",
     "tipo": "Protezione sociale vittime di violenza domestica",
@@ -2520,102 +2616,6 @@
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": 16,
     "docNotes": "NOTA: alcune questura potrebbero chiedere l’idoneità alloggiativa",
-    "rinnovoNonApplicabile": false,
-    "categoria": "Studio/Lavoro"
-  },
-  {
-    "id": "3097355e-7f7f-8123-80f7-d0faddc516c9",
-    "slug": "permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
-    "tipo": "Permesso UE per soggiornanti di lungo periodo (“Carta di soggiorno”)",
-    "emoji": "🏠",
-    "sections": [
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>È un permesso di soggiorno che non ha scadenza. E’ anche conosciuto come “<a href=\"dizionario.html#carta-di-soggiorno\" class=\"doc-link\">Carta di soggiorno</a>” ma <strong>attenzione</strong> a non confonderlo con Carta per familiari di cittadini UE.</p>",
-        "index": 0
-      },
-      {
-        "question": "Chi può chiedere questo permesso?",
-        "content": "<p>Puoi fare richiesta se:</p>\n<ul><li>Vivi regolarmente in Italia da almeno 5 anni</li><li>Hai un altro permesso di soggiorno ancora valido</li><li>Hai un reddito di almeno 7.000 euro negli ultimi tre anni</li><li>Hai un certificato di conoscenza della lingua italiana di livello almeno A2</li></ul>\n<p><strong>Attenzione! </strong>⚠️ <strong>Non tutti i permessi di soggiorno possono essere convertiti in Carta!</strong></p>\n<p>Ad esempio, NON puoi chiedere la Carta se hai</p>\n<ul><li>Un permesso per studio o formazione professionale</li><li>Un permesso per cure mediche, protezione speciale o protezione temporanea</li><li>Un permesso per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> (mentre aspetti la decisione della Commissione o del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>)</li></ul>\n<p>Se hai dubbi, <a href=\"https://sospermesso.typeform.com/conversione\">fai il nostro test.</a></p>",
-        "index": 1
-      },
-      {
-        "question": "I 5 anni di soggiorno in Italia devono essere senza interruzioni?",
-        "content": "<p>Sì. I 5 anni si contano dalla data del tuo primo permesso di soggiorno e non ci devono essere “buchi” nei tuoi permessi di soggiorno. </p>",
-        "index": 2
-      },
-      {
-        "question": "Come si calcolano i 5 anni di soggiorno regolare?",
-        "content": "<p>Nel calcolo dei 5 anni non si contano i periodi in cui avevi un permesso breve o &quot;diplomatico&quot;. Si contano invece i periodi con permesso per studio, formazione, protezione temporanea o umanitaria.</p>",
-        "index": 3
-      },
-      {
-        "question": "Che livello di italiano devo conoscere per chiedere questo permesso?",
-        "content": "<p>Devi dimostrare di conoscere l&#039;italiano a livello A2. Questo significa saper capire e parlare in situazioni di tutti i giorni. Se in Italia hai avuto un diploma di terza media o superiore, questo è sufficiente.</p>",
-        "index": 4
-      },
-      {
-        "question": "Posso chiedere la Carta anche per i miei familiari che sono con me in Italia?",
-        "content": "<p>Sì. Puoi chiedere questo permesso per</p>\n<ul><li>Moglie/marito <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></li><li>Figli minori (anche solo del <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, nati fuori dal matrimonio, adottati o sotto la tua tutela)</li><li>Figli maggiorenni <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> con invalidità totale (100%) che non possono mantenersi da soli</li><li>Genitori <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></li></ul>\n<p>Per estendere il permesso UE di lungo periodo ai familiari devi:</p>\n<ul><li>Dimostrare di avere una casa adatta, che rispetta le regole sanitarie italiane ed è abbastanza grande per tutti: devi portare in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> il \"<a href=\"/2187355e7f7f8148ac7efe618d4b0ae9\">certificato di idoneità alloggiativa</a>&quot; dato dal tuo Comune</li><li>Avere un reddito sufficiente. Si contano anche i redditi dei familiari che vivono con te. Il reddito minimo si calcola prendendo l&#039;importo dell&#039;assegno sociale più la metà per ogni familiare. Con 2 o più figli minori di 14 anni, serve il doppio dell&#039;assegno sociale.</li></ul>",
-        "index": 5
-      },
-      {
-        "question": "Quanto dura il permesso di soggiorno UE per soggiornanti di lungo periodo?",
-        "content": "<p>in teoria non ha scadenza (dura per sempre), ma deve essere aggiornato ogni 10 anni. Il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> non sempre è automatico: la <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> di solito verifica se ci sono ancora tutti gli elementi per averlo. Per i minori il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> si fa ogni 5 anni</p>",
-        "index": 6
-      },
-      {
-        "question": "Quali diritti mi dà?",
-        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Entrare e uscire dall’Italia senza <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a></li><li>Lavorare con regolare contratto (lavoro autonomo o subordinato)</li><li>Stare in un altro Paese UE anche per più di 90 giorni, ma se vuoi andare a lavorare in permanenza in un altro Paese UE, devi informarti sulle regole di quel Paese per capire se questo permesso è sufficiente.</li><li>Usare i servizi della Pubblica Amministrazione, comprese le procedure per le case popolari</li><li>Avere assistenza sociale, previdenza sociale, assistenza sanitaria e scolastica: ad esempio, l&#039;assegno INPS per l&#039;invalidità civile e l&#039;assegno sociale</li></ul>",
-        "index": 7
-      },
-      {
-        "question": "Mentre aspetto il permesso, la ricevuta delle Poste mi autorizza a lavorare?",
-        "content": "<p>Sì, la <a href=\"dizionario.html#ricevuta\" class=\"doc-link\">ricevuta</a> delle Poste ti autorizza a lavorare con regolare contratto (lavoro autonomo o subordinato).</p>",
-        "index": 8
-      },
-      {
-        "question": "Cosa succede se la documentazione che ho mandato con il Kit o portato in Questura non è completa?",
-        "content": "<p>La <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> ti dà una richiesta di integrazione con un elenco dei documenti mancanti. Devi portare al più presto i documenti richiesti; nel frattempo la tua pratica rimane ferma.</p>",
-        "index": 9
-      },
-      {
-        "question": "In quali  casi il permesso UE di lungo periodo può essere tolto?",
-        "content": "<p>Se stai fuori dall&#039;Unione Europea per 12 mesi di fila; oppure se stai fuori dall&#039;Italia per più di 6 anni.</p>",
-        "index": 10
-      },
-      {
-        "question": "Con un permesso UE di lungo periodo, posso andare a vivere in un altro Paese europeo?",
-        "content": "<p>Sì, puoi stare in un altro paese dell&#039;area Schengen, per studio o lavoro, anche per più di 90 giorni, rispettando le leggi dell&#039;altro Paese. Lo stesso diritto ce l&#039;hanno i tuoi familiari. Se un altro Stato europeo ti dà un permesso UE di lungo periodo, ti sarà tolto il permesso italiano.</p>",
-        "index": 11
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "marca da bollo da 16€",
-      "Documenti reddito ultimo anno",
-      "certificato lingua A2",
-      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
-      "Copia del passaporto (non scaduto)",
-      "4 Foto",
-      "Bollettino postale da 130.46",
-      "Prova di avere avuto permessi di soggiorno senza buchi negli ultimi 5 anni"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": 130.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "4fototessere",
-      "marca da bollo da 16€",
-      "Bollettino postale da 30.46",
-      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 30.46,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": "Alcune Questure chiedono idoneità alloggiativa anche se chiedi solo per te; la legge non lo chiede e probabilmente un tribunale ti darà ragione\n\nAlcune questure chiedono prova di assenza di condanne (certificato di casellario giudiziale e carichi pendenti)\n\nNOTA rinnovo: si chiama aggiornamento (bisogna solo provare foto e aggiornamento della residenza). Molte Questure potrebbero chiedere altri documenti come se fosse un rinnovo. Quindi se li hai tutti, mettili nel kit! Se non li hai, chiedi lo stesso l’aggiornamento e se la Questura rigetta la tua domanda, rivolgiti a un aiuto legale.\n\nDATABASE DI PERMESSI DI SOGGIORNODatabase di permessiDoc primo rilascio:marca da bollo da 16€,2 fototessere,Documenti redd…\n\nQuali documenti devo mettere nel Kit se chiedo il permesso anche per mia moglie/marito o per un genitore?\n• Moduli 1 e 2: il modulo 2 si compila solo se il familiare ha un reddito proprio\n• Fotocopia del tuo passaporto e permesso di soggiorno\n• Fotocopia del passaporto e permesso di soggiorno di tua moglie/marito o del genitore\n• Certificato del casellario e dei carichi pendenti da chiedere alla Procura\n• Certificato di residenza e stato di famiglia\n• Documenti sulla casa (atto di proprietà, contratto di affitto o dichiarazione di ospitalità)\n• Certificato di idoneità dell'alloggio dato dal Comune\n• Documenti sul reddito (dichiarazione dei redditi, CUD, buste paga, contratto di lavoro, anche del tuo familiare se contribuisce al reddito della famiglia)\n• Attestato di italiano livello A2\n\nQuali documenti devo mettere nel Kit se chiedo il permesso anche per i miei figli minori?\n• Modulo 1\n• Fotocopia del tuo passaporto e permesso di soggiorno\n• Fotocopia del passaporto e permesso di soggiorno di tuo figlio\n• Certificato di residenza e stato di famiglia\n• Documenti sul reddito (dichiarazione dei redditi, CUD, buste paga, contratto di lavoro)\n• Certificato di idoneità dell'alloggio\n• Certificato di frequenza scolastica se il minore deve andare a scuola per legge\n• Attestato di italiano livello A2 (se il minore non ha già un diploma di scuola media o superiore)\nRicorda che ogni familiare sopra i 14 anni deve compilare un Kit proprio. Se tuo figlio ha meno di 14 anni, puoi metterlo nel tuo Kit.\nDevo pagare per inviare la domanda con il Kit postale?\nSì, devi:\n• Comprare una marca da bollo da 16,00 euro\n• Pagare il bollettino per il permesso di soggiorno elettronico di 130,46 euro (direttamente in Ufficio Postale)\n• Pagare 30,00 euro per la spedizione del Kit (direttamente in Ufficio Postale)\nQuali documenti devo portare in Questura il giorno dell'appuntamento per le impronte?\nIn Questura devi portare:\n• Il passaporto (controlla che sia valido)\n• Il permesso di soggiorno\n• 4 fototessere\n• La lettera che ti hanno dato in Posta con la data dell'appuntamento in Questura\n• La ricevuta delle Poste (\"assicurata\")\n• La ricevuta del pagamento del bollettino di 130,46 euro\n• Gli originali dei documenti che hai messo in copia nel Kit\nSe passa molto tempo tra la spedizione del Kit e l'appuntamento in Questura, porta documenti aggiornati sul lavoro e sulla casa.38 blocks deletedMoved CollaboraStesso database ma per categorie",
     "rinnovoNonApplicabile": false,
     "categoria": "Studio/Lavoro"
   },
