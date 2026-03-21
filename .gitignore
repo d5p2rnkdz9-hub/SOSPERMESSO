@@ -10,3 +10,6 @@ _site/
 
 # Notion API response cache
 .notion-cache/
+
+# Translation review reports (generated locally, not committed)
+review-reports/
