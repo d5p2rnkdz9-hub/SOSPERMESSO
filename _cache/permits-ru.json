@@ -214,9 +214,7 @@
     "costBollettinoPrimo": 30.46,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "n/a",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -364,9 +362,7 @@
     "costBollettinoPrimo": 80.46,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "personalmente",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -1389,9 +1385,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -1787,9 +1781,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -2233,9 +2225,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "n/a",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,

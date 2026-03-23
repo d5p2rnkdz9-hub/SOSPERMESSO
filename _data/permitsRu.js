@@ -367,7 +367,7 @@ module.exports = async function() {
         require('path').join(__dirname, '..', '_cache', 'permits-ru.json'), 'utf-8'
       ));
       console.log(`[permitsRu.js] Using cached data (${cached.length} permits)`);
-      return cached;
+      return cached.map(p => ({ ...p, rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a') }));
     } catch { /* no cache, fall through to Notion fetch */ }
   }
 
@@ -431,7 +431,7 @@ module.exports = async function() {
 
       // Extract doc fields from RU page properties
       const primoDocuments = page.properties["Doc primo rilascio"]?.multi_select?.map(d => d.name) || [];
-      const rinnovoDocuments = page.properties["Doc rinnovo"]?.multi_select?.map(d => d.name) || [];
+      const rinnovoDocuments = (page.properties["Doc rinnovo"]?.multi_select?.map(d => d.name) || []).filter(d => d.toLowerCase() !== 'n/a');
       const primoMethod = page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null;
       const rinnovoMethod = page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null;
       const docNotesRichText = page.properties["Info extra su doc rilascio/rinnovo"]?.rich_text || [];

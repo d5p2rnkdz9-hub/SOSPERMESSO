@@ -952,9 +952,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -1331,9 +1329,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -1862,9 +1858,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "n/a",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -2269,9 +2263,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "ব্যক্তিগতভাবে",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
@@ -2399,9 +2391,7 @@
     "costBollettinoPrimo": null,
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "n/a"
-    ],
+    "rinnovoDocuments": [],
     "rinnovoMethod": "n/a",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,

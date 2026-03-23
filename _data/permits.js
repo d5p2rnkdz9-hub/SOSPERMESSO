@@ -105,14 +105,13 @@ async function fetchPermitData(notion) {
       tipo,
       slug: slugify(tipo),
       primoDocuments: page.properties["Doc primo rilascio"]?.multi_select?.map(d => d.name) || [],
-      rinnovoDocuments: page.properties["Doc rinnovo"]?.multi_select?.map(d => d.name) || [],
+      rinnovoDocuments: (page.properties["Doc rinnovo"]?.multi_select?.map(d => d.name) || []).filter(d => d.toLowerCase() !== 'n/a'),
       // Mod fields are multi_select, get first value
       primoMethod: page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null,
       rinnovoMethod: page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null,
       // Document notes (extra info about documents)
       docNotes: docNotes || null,
-      // Explicit flags: rinnovo not applicable, category grouping
-      rinnovoNonApplicabile: page.properties["Rinnovo non applicabile"]?.checkbox ?? false,
+      // Category grouping
       categoria: page.properties["Categoria"]?.select?.name || null,
       // Include last_edited_time for change detection
       last_edited_time: page.last_edited_time || null,
@@ -488,7 +487,10 @@ module.exports = async function() {
         require('path').join(__dirname, '..', '_cache', 'permits-it.json'), 'utf-8'
       ));
       console.log(`[permits.js] Using cached data (${cached.length} permits)`);
-      return cached;
+      return cached.map(p => ({
+        ...p,
+        rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a'),
+      }));
     } catch { /* no cache, fall through to Notion fetch */ }
   }
 
@@ -607,7 +609,6 @@ module.exports = async function() {
           costBollettinoAltRinnovo: extractCostAlt(permit.rinnovoDocuments, 'bollettino'),
           costMarcaBolloRinnovo: extractCost(permit.rinnovoDocuments, 'marca da bollo'),
           docNotes: permit.docNotes,
-          rinnovoNonApplicabile: permit.rinnovoNonApplicabile,
           categoria: permit.categoria,
         });
 
@@ -632,7 +633,6 @@ module.exports = async function() {
           costBollettinoAltRinnovo: null,
           costMarcaBolloRinnovo: null,
           docNotes: permit.docNotes || null,
-          rinnovoNonApplicabile: permit.rinnovoNonApplicabile || false,
           categoria: permit.categoria || null,
         });
       }
