@@ -280,6 +280,41 @@ All permit detail pages follow a consistent structure:
    - **Non-Latin scripts** (Bengali, Chinese, Arabic): add font CSS (see `src/styles/cjk.css` pattern)
 5. Update `eleventy.config.mjs` to ignore old static files for the new language
 6. Update language switcher, nav, hreflang tags, sitemap
+7. **Run translation quality review** (see below)
+
+### Translation Quality Review
+
+After adding or updating a language, run a quality review:
+
+```bash
+npm run fetch -- --lang {code}   # refresh cache from Notion
+npm run review -- --lang {code}  # automated checks + AI review payload
+```
+
+Outputs to `review-reports/` (gitignored):
+- `{lang}-automated.md` — automated issues (bad terms, register, incomplete sentences, artifacts, duplications)
+- `{lang}-for-ai-review.json` — full Q&A + static page text in batches of 6, ready for parallel AI review agents
+
+**Scripts:**
+- `scripts/review-translations.js` — main CLI, works for any language
+- `scripts/glossaries/{lang}.js` — per-language rules: bad terms, register pair (formal/informal pronoun), preserved Italian terms. **Add confirmed mistakes here after each review** so they're caught automatically next time.
+
+**3-phase workflow:**
+1. Automated check (`npm run review`) — catches known bad terms, register violations, dangling sentences, artifacts
+2. AI review (Claude Code subagents, parallel batches from the JSON file) — catches unnatural phrasing, legal term nuance, cultural adaptation failures
+3. Human spot-check by native speaker — final gate, focuses on what AI missed
+
+**Glossary format** (`scripts/glossaries/{lang}.js`):
+```js
+module.exports = {
+  register: { formal: 'siz', informal: 'sen' },  // null for EN/BN
+  badTerms: [{ wrong: '...', correct: '...', source: '...', note: '...' }],
+  preservedTerms: ['Questura', 'Prefettura', ...],  // informational only
+  incompleteSentencePatterns: [],  // language-specific regex patterns
+};
+```
+
+**Do NOT** check for absence of preserved terms — a page about family reunification has no reason to mention "C3". Only flag when a *translated form* of a preserved term appears (use `badTerms`).
 
 ## Mobile Optimization
 

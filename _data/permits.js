@@ -50,11 +50,16 @@ function extractCostAlt(documents, keyword) {
  */
 function slugify(name) {
   if (!name) return null;
-  return name
+  let slug = name
     .toLowerCase()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // Remove accents
     .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric with hyphens
     .replace(/^-+|-+$/g, ''); // Trim hyphens from ends
+  // Strip leading "permesso-" — the template already adds the prefix
+  if (slug.startsWith('permesso-')) {
+    slug = slug.slice('permesso-'.length);
+  }
+  return slug;
 }
 
 /**

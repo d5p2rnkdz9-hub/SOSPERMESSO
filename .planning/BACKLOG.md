@@ -57,4 +57,13 @@ See `.planning/PROJECT.md` for full phase breakdown.
 
 ---
 
-*Last synced: 2026-02-07*
+## Tech Debt
+
+1. **Database page: dropdown filter for permits** — Add a filtering dropdown/search to `database.html` so users can filter permits by category instead of scrolling the full list
+2. **Notion fetch: capture NOTE field** — `npm run fetch` doesn't pull the "Note" property from the permit database. Needs to be added to `fetchPermitData()` in `_data/permits.js` and included in cache/template
+3. **Review language translations (automated)** — Run an automated quality check across all translated permit pages (EN/FR/ES/TR/BN/RU) to catch stale, missing, or low-quality translations
+4. **Implement prassi locali** — Crowdsourced questura-specific notes on permit pages (infrastructure exists from Phase 40, needs content population and UI additions)
+
+---
+
+*Last synced: 2026-03-19*
