@@ -5,9 +5,10 @@ pagination:
   alias: permit
 permalink: "ru/permesso-{{ permit.slug }}.html"
 layout: layouts/base.liquid
-title: "{{ permit.tipo }} вид на жительство"
 lang: ru
-description: "{{ permit.tipo }} вид на жительство - информация, требования, документы и процедуры"
+eleventyComputed:
+  title: "{{ permit.tipo }} вид на жительство"
+  description: "{{ permit.tipo }} вид на жительство - информация, требования, документы и процедуры"
 eleventyExcludeFromCollections: true
 ---
 

@@ -5,9 +5,10 @@ pagination:
   alias: permit
 permalink: "permesso-{{ permit.slug }}.html"
 layout: layouts/base.liquid
-title: "Permesso per {{ permit.tipo }}"
 lang: it
-description: "Permesso di soggiorno per {{ permit.tipo }} - informazioni, requisiti, documenti e procedure"
+eleventyComputed:
+  title: "Permesso per {{ permit.tipo }}"
+  description: "Permesso di soggiorno per {{ permit.tipo }} - informazioni, requisiti, documenti e procedure"
 eleventyExcludeFromCollections: true
 ---
 

@@ -5,9 +5,10 @@ pagination:
   alias: permit
 permalink: "en/permesso-{{ permit.slug }}.html"
 layout: layouts/base.liquid
-title: "Permit for {{ permit.tipo }}"
 lang: en
-description: "Residence permit for {{ permit.tipo }} - information, requirements, documents and procedures"
+eleventyComputed:
+  title: "Permit for {{ permit.tipo }}"
+  description: "Residence permit for {{ permit.tipo }} - information, requirements, documents and procedures"
 eleventyExcludeFromCollections: true
 ---
 

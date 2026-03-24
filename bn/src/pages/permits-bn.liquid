@@ -5,9 +5,10 @@ pagination:
   alias: permit
 permalink: "bn/permesso-{{ permit.slug }}.html"
 layout: layouts/base.liquid
-title: "{{ permit.tipo }}-এর অনুমতি"
 lang: bn
-description: "বসবাসের অনুমতি {{ permit.tipo }} - তথ্য, শর্ত, নথিপত্র ও প্রক্রিয়া"
+eleventyComputed:
+  title: "{{ permit.tipo }}-এর অনুমতি"
+  description: "বসবাসের অনুমতি {{ permit.tipo }} - তথ্য, শর্ত, নথিপত্র ও প্রক্রিয়া"
 eleventyExcludeFromCollections: true
 ---
 

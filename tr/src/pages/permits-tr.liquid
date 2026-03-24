@@ -5,9 +5,10 @@ pagination:
   alias: permit
 permalink: "tr/permesso-{{ permit.slug }}.html"
 layout: layouts/base.liquid
-title: "{{ permit.tipo }} oturma izni"
 lang: tr
-description: "{{ permit.tipo }} oturma izni - bilgiler, şartlar, belgeler ve işlemler"
+eleventyComputed:
+  title: "{{ permit.tipo }} oturma izni"
+  description: "{{ permit.tipo }} oturma izni - bilgiler, şartlar, belgeler ve işlemler"
 eleventyExcludeFromCollections: true
 ---
 
