@@ -1,1 +1,85 @@
-{}
+{
+  "integrazione-prosieguo-amministrativo": [
+    [
+      "Padova",
+      [
+        {
+          "id": "30d7355e-7f7f-8110-bc82-d6249139067a",
+          "city": "Padova",
+          "description": "A Padova il bollettino richiesto è di 50.46 + 32 euro per la spedizione kit",
+          "date": "2026-02-20",
+          "category": "Documenti",
+          "pageSlug": "integrazione-prosieguo-amministrativo",
+          "votiConfermo": 0,
+          "votiNonConfermo": 0
+        }
+      ]
+    ]
+  ],
+  "protezione-sussidiaria": [
+    [
+      "Cuneo",
+      [
+        {
+          "id": "3207355e-7f7f-81a7-aacd-f2e31a21df1d",
+          "city": "Cuneo",
+          "description": "Per Cuneo bisogna prendere appuntamento tramite il sito prenotafacile.\nNon inviare il kit",
+          "date": null,
+          "category": null,
+          "pageSlug": "protezione-sussidiaria",
+          "votiConfermo": 0,
+          "votiNonConfermo": 0
+        }
+      ]
+    ]
+  ],
+  "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno": [
+    [
+      "Pisa",
+      [
+        {
+          "id": "3217355e-7f7f-811c-97ff-e0af195c78f3",
+          "city": "Pisa",
+          "description": "La Questura chiede l'idoneità alloggiativa anche se il permesso è chiesto solo per il richiedente, senza familiari",
+          "date": null,
+          "category": null,
+          "pageSlug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+          "votiConfermo": 0,
+          "votiNonConfermo": 0
+        }
+      ]
+    ],
+    [
+      "Torino",
+      [
+        {
+          "id": "3217355e-7f7f-81a2-a8d7-d3ca5c2d923f",
+          "city": "Torino",
+          "description": "Questura chiede idoneità alloggiativa anche se il permesso viene richiesto solo in favore del richiedente, senza familiari",
+          "date": null,
+          "category": "Documenti",
+          "pageSlug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+          "votiConfermo": 0,
+          "votiNonConfermo": 0
+        }
+      ]
+    ]
+  ],
+  "famit-per-familiari-di-cittadini-italiani-statici": [
+    [
+      "Torino",
+      [
+        {
+          "id": "3217355e-7f7f-8189-9562-d1e094e610b1",
+          "city": "Torino",
+          "description": "La Questura non riconosce questo permesso di soggiorno a chi non rientra nella nozione di familiari ex art 29 Testo Unico, quindi non a conviventi registrati, o a figli a carico del coniuge",
+          "date": null,
+          "category": null,
+          "pageSlug": "famit-per-familiari-di-cittadini-italiani-statici",
+          "votiConfermo": 0,
+          "votiNonConfermo": 0
+        }
+      ]
+    ]
+  ]
+}

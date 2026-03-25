@@ -7,7 +7,7 @@
 require('dotenv').config();
 const { Client } = require("@notionhq/client");
 
-const PRASSI_DB_ID = "3027355e7f7f80f6957ec3107a5f7aa4";
+const PRASSI_DB_ID = "3027355e-7f7f-8014-8d06-000b5aa04d2e";
 
 /**
  * Fetch and transform prassi locali data from Notion
