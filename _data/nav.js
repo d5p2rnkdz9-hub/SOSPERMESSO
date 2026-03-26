@@ -125,7 +125,7 @@ module.exports = {
         href: "/es/dizionario.html",
         items: [
           { label: "Protección internacional", href: "/es/protezione-internazionale.html" },
-          { label: "Reagrupación familiar", href: "/es/ricongiungimento-familiare.html" },
+          { label: "Reunificación familiar", href: "/es/ricongiungimento-familiare.html" },
           { label: "Diccionario", href: "/es/dizionario.html" }
         ]
       },

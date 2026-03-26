@@ -8,7 +8,7 @@ layout: layouts/base.liquid
 lang: es
 eleventyComputed:
   title: "Permiso de {{ permit.tipo }}"
-  description: "Permiso de estancia {{ permit.tipo }} - información, requisitos, documentos y trámites"
+  description: "Permiso de estadía {{ permit.tipo }} - información, requisitos, documentos y trámites"
 eleventyExcludeFromCollections: true
 ---
 
@@ -77,7 +77,7 @@ eleventyExcludeFromCollections: true
         <h2 style="margin: 1rem 0;">Contenido próximamente</h2>
         <p style="color: var(--gray-medium); max-width: 500px; margin: 0 auto 1.5rem;">
           Estamos trabajando para completar la información
-          sobre este permiso de estancia.
+          sobre este permiso de estadía.
         </p>
         <a href="https://form.typeform.com/to/USx16QN3"
            class="btn btn-primary"
@@ -159,7 +159,7 @@ eleventyExcludeFromCollections: true
       <div class="alert alert-warning" style="margin-top: 1rem;">
         <span class="alert-icon">⚠️</span>
         <div>
-          <strong>Nota:</strong> Los documentos requeridos pueden variar de una Questura a otra.
+          <strong>Nota:</strong> Los documentos necesarios pueden variar de una Questura a otra.
         </div>
       </div>
 
@@ -183,7 +183,7 @@ eleventyExcludeFromCollections: true
           <ul class="costi-list">
             {%- if permit.costBollettinoPrimo -%}
             <li class="costi-item">
-              <span class="costi-label">Boletín postal <span class="costi-note">a pagar en Correos</span></span>
+              <span class="costi-label">Boleta de pago postal (bollettino postale) <span class="costi-note">a pagar en Correos</span></span>
               <span class="costi-amount">€ {{ permit.costBollettinoPrimo }}{% if permit.costBollettinoAltPrimo %} o € {{ permit.costBollettinoAltPrimo }}{% endif %}</span>
             </li>
             {%- if permit.costBollettinoAltPrimo -%}
@@ -192,7 +192,7 @@ eleventyExcludeFromCollections: true
             {%- endif -%}
             {%- if permit.costMarcaBolloPrimo -%}
             <li class="costi-item">
-              <span class="costi-label">Timbre fiscal <span class="costi-note">comprar en un estanco</span></span>
+              <span class="costi-label">Timbre fiscal <span class="costi-note">comprar en una tabacchería (tienda de tabaco)</span></span>
               <span class="costi-amount">€ {{ permit.costMarcaBolloPrimo }}</span>
             </li>
             {%- endif -%}
@@ -247,9 +247,9 @@ eleventyExcludeFromCollections: true
       <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px; margin-bottom: 1rem;">
         <span class="alert-icon">⚠️</span>
         <div>
-          <strong>Atención:</strong> La renovación del permiso de búsqueda de empleo es controvertida. Algunas Questure lo rechazan. Te aconsejamos consultar un abogado o un centro de asistencia legal antes de proceder.
+          <strong>Atención:</strong> La renovación del permiso de búsqueda de empleo es controvertida. Algunas Questure lo rechazan. Te aconsejamos consultar un abogado o un centro de asesoría legal antes de proceder.
           <br><br>
-          <a href="/es/aiuto-legale.html" style="color: #E53935; font-weight: 600;">→ Encontrar asistencia legal en tu zona</a>
+          <a href="/es/aiuto-legale.html" style="color: #E53935; font-weight: 600;">→ Encontrar asesoría legal en tu zona</a>
         </div>
       </div>
       {%- endif -%}
@@ -313,7 +313,7 @@ eleventyExcludeFromCollections: true
       <div class="alert alert-warning" style="margin-top: 1rem;">
         <span class="alert-icon">⚠️</span>
         <div>
-          <strong>Nota:</strong> Los documentos requeridos pueden variar de una Questura a otra.
+          <strong>Nota:</strong> Los documentos necesarios pueden variar de una Questura a otra.
         </div>
       </div>
 
@@ -339,7 +339,7 @@ eleventyExcludeFromCollections: true
           <ul class="costi-list">
             {%- if permit.costBollettinoRinnovo -%}
             <li class="costi-item">
-              <span class="costi-label">Boletín postal <span class="costi-note">a pagar en Correos</span></span>
+              <span class="costi-label">Boleta de pago postal (bollettino postale) <span class="costi-note">a pagar en Correos</span></span>
               <span class="costi-amount">€ {{ permit.costBollettinoRinnovo }}{% if permit.costBollettinoAltRinnovo %} o € {{ permit.costBollettinoAltRinnovo }}{% endif %}</span>
             </li>
             {%- if permit.costBollettinoAltRinnovo -%}
@@ -348,7 +348,7 @@ eleventyExcludeFromCollections: true
             {%- endif -%}
             {%- if permit.costMarcaBolloRinnovo -%}
             <li class="costi-item">
-              <span class="costi-label">Timbre fiscal <span class="costi-note">comprar en un estanco</span></span>
+              <span class="costi-label">Timbre fiscal <span class="costi-note">comprar en una tabacchería (tienda de tabaco)</span></span>
               <span class="costi-amount">€ {{ permit.costMarcaBolloRinnovo }}</span>
             </li>
             {%- endif -%}
