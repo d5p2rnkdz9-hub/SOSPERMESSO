@@ -1,5 +1,692 @@
 [
   {
+    "id": "30b7355e-7f7f-81b0-bde2-c2e99d29a52a",
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "tipo": "Employed work (conversion from another permit)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>If you&#039;re on this page it&#039;s because you have a residence permit and you&#039;re wondering if you can convert it to a residence permit for employed work. </p>\n<p>→ Take the test to find out if you can convert your residence permit to a residence permit for employed work. </p>\n<p>The residence permit for employed work is issued if <strong>you work as an employee of an employer with a regular contract</strong>. This means you have a boss who pays you a salary and you are their employee.\n</p>",
+        "index": 0
+      },
+      {
+        "question": "What are the conditions to obtain it?",
+        "content": "<p>To get this permit you need to have a regular employment contract with an Italian employer and a pay slip of at least 538 euros per month (the social allowance amount, updated annually).</p>",
+        "index": 1
+      },
+      {
+        "question": "How do I apply for this permit?",
+        "content": "<p>You apply at the post office with the postal kit.</p>",
+        "index": 2
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>The duration depends on the type of work contract you have. Usually:</p>\n<ul><li><strong>2 years</strong> if your work contract is fixed-term (has an end date)</li><li><strong>3 years</strong> if your work contract is permanent (has no end date)</li></ul>\n<hr>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "What rights does it give me?",
+        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Work</strong> with a regular contract (employed work or self-employment)</li><li><strong>Obtain residence</strong> in the Municipality where you live</li><li><strong>Register with the National Health Service (NHS)</strong> and have a general practitioner</li><li><strong>Travel in the Schengen area</strong> with passport (for stays up to 3 months).</li><li><strong>Enroll in school, a professional course, or university</strong></li><li><strong>Apply for family reunification</strong></li></ul>\n<p> ‼️ You cannot work in another European country</p>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "What happens if I lose my job?",
+        "content": "<p>If you lose your job <strong>you don&#039;t lose the permit</strong> until expiration. You can:</p>\n<ul><li>Look for a new job</li><li>Register on unemployment lists</li><li>Request a <a href=\"/2187355e7f7f81d38a54d111fa27f45f\">permit for </a><a href=\"/2187355e7f7f81d38a54d111fa27f45f\"><strong>job seeking</strong></a> at renewal</li></ul>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "And when does the permit expire? Can I renew it? Can I convert it?",
+        "content": "<p>Before it expires you have two options:</p>\n<ol><li><strong>Renew it: </strong>the renewal request should preferably be submitted <strong>before expiration</strong> or in any case <strong>within 60 days</strong> from expiration. The application is made with a postal kit. </li></ol>\n<p><strong>2. Convert it: </strong>if you have all the necessary requirements, this permit can be converted into a residence permit for:</p>\n<ul><li>Study</li><li>Job seeking</li><li>Family reasons</li><li>Card for long-term residents (if you have at least 5 years of residence)</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "Copy of passport (not expired)",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Employment contract",
+      "Copy of your employer's ID document (if Italian or European) or copy of their residence permit (if non-EU citizen)",
+      "4 Photos",
+      "Proof of income (CUD and/or pay slips)",
+      "UNILAV certificate",
+      "Postal payment slip of €70.46 or €80.46 (depends on permit duration)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 passport photos",
+      "Copy of passport (not expired)",
+      "Expiring permit",
+      "revenue stamp of 16€",
+      "Employment contract",
+      "Proof of income (CUD and/or pay slips)",
+      "UNILAV certificate",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Postal payment slip of €70.46 or €80.46 (depends on permit duration)"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-8122-a098-d451e78c875d",
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "tipo": "Social protection for trafficking victims",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "📄 What it is and how to apply",
+        "content": "<p>The residence permit for social protection reasons concerns foreign citizens subject to a situation of violence or victims of crimes of prostitution exploitation, labor exploitation and against whom concrete dangers to their safety may arise.</p>\n<p>The permit for social protection is requested:</p>\n<ul><li>by the Public Prosecutor in cases where criminal proceedings have begun regarding acts of violence or serious exploitation against the foreigner.</li><li>by social services of local authorities;</li><li>by associations, entities and other organizations registered in the appropriate <a href=\"http://www.lavoro.gov.it/temi-e-priorita/immigrazione/focus-on/registro-associazioni-ed-enti/Pagine/default.aspx\">register at the Ministry of Labor and Social Policies</a> and authorized to implement assistance and social protection programs for foreigners.</li></ul>\n<p>The Police Headquarters (Questura), having received the request and verified the existence of the required conditions, issues the residence permit for social protection (Art. 18 T.U. Immigrazione).</p>\n<p>What are the requirements to obtain this permit?</p>\n<ul><li>You must be a victim of violence or serious exploitation.</li><li>You must be in danger for having tried to escape from exploiters or for having testified against them.</li><li>You must participate in an assistance and social integration program.</li><li>Should you decide to return to your country, if there is risk to your safety and that of your family members, this must be considered.</li></ul>\n<p>Is it necessary to file a complaint to obtain the residence permit?</p>\n<p>No. The permit under art 18 can in fact be issued in two ways:</p>\n<ul><li>Judicial pathway: the victim reports the exploiters and the permit is granted based on the Public Prosecutor&#039;s opinion.</li><li>Social pathway: the victim does not report, but enters a help program managed by specialized entities.</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "What documents and requirements are needed?",
+        "content": "<ul><li>opinion of the Public Prosecutor, in cases where the Prosecutor provides indications about the severity and current nature of the danger;</li><li>participation of the foreigner in a social assistance and integration program prepared by local authorities or private entities registered in the appropriate register established at the Ministry of Labor and contracted with the local authority. </li><li>acceptance of the commitments related to the program by the head of the structure where the program must be implemented.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "How long does it last?",
+        "content": "<p>The permit lasts <strong>6 months</strong>, renewable for 1 year or for the longer period required for justice reasons. It can be revoked in case of interruption of the social assistance and integration program or conduct incompatible with its purposes, reported by the public prosecutor or, within their competence, by the social service of the local authority, or in any case verified by the police chief, or when the other conditions that justified its issue are no longer met.</p>",
+        "index": 2
+      },
+      {
+        "question": "Can I convert it?",
+        "content": "<p>The permit can be converted to a residence permit for study or work reasons.</p>",
+        "index": 3
+      },
+      {
+        "question": "🔹 Art. 18 TUI (trafficking, violence, severe exploitation)",
+        "content": "<ul><li>For very serious cases (trafficking, violence, mandatory arrest in flagrante delicto).</li><li>Duration: 6 months → renewable.</li><li>With or without complaint (social protection program).</li></ul>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "4 Photos",
+      "Copy of passport (not expired)",
+      "Report/declaration from social services from social services",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Certificate of residence",
+      "postal payment slip for 30.46€"
+    ],
+    "primoMethod": "personally",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 passport photos",
+      "revenue stamp of 16€",
+      "Expiring permit",
+      "social services report if requested",
+      "proposal/opinion from judicial authority",
+      "Certificate of residence",
+      "Postal payment slip of €30.46",
+      "Hospitality declaration or rental contract or residence certificate"
+    ],
+    "rinnovoMethod": "personally",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-8186-ab42-c4ac1a334b43",
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "tipo": "Family - without clearance for reunification (\"family cohesion\")",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>The residence permit for family cohesion is a type of family reunification that you can request directly in Italy. It&#039;s for those who want to live together with their foreign family member who is already in Italy.</p>",
+        "index": 0
+      },
+      {
+        "question": "What is the difference with family reunification?",
+        "content": "<p>The family member requesting family cohesion is already present in Italy and does not live abroad as in the case of family reunification, which is why it is not necessary to request the clearance for reunification from the One-Stop Immigration Office at the Prefecture.</p>",
+        "index": 1
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>It has the same duration as the residence permit of your family member already in Italy.</p>",
+        "index": 2
+      },
+      {
+        "question": "What are the conditions to obtain it?",
+        "content": "<p>To obtain this permit:</p>\n<ul><li>Your foreign family member must have a valid residence permit of at least one year or an EU residence permit for long-term residents</li><li>You must already be in Italy with regular stay (even with a still valid tourist visa) or with a permit expired for no more than 12 months</li><li>You must prove the family relationship</li></ul>\n<p>You can request family cohesion with:</p>\n<ul><li>Your husband or wife of at least 18 years old (only if you are not legally separated)</li><li>Your children under 18 years old (at the time of application)</li><li>Your adult children who are dependents, if they cannot support themselves due to serious health problems</li><li>Your parents over 65 years old, if they have no other children in their country or if these cannot help them</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Where do you apply for this permit?",
+        "content": "<p>You must submit the application through a postal kit that you will then take to the post office. You can get help from a patronage organization or legal office to fill out the forms.</p>",
+        "index": 4
+      },
+      {
+        "question": "What documents do I need to request it?",
+        "content": "<ul><li>Postal kit to collect and send by post</li><li>Photocopy of your passport pages with personal data, renewal stamps and visas</li><li>Documents showing family relationship translated and legalized</li><li>Copy of the housing declaration (cessione di fabbricato)</li><li>Copy of your foreign family member&#039;s passport (pages with personal data)</li><li>Copy of your foreign family member&#039;s residence permit</li><li>Photocopy of your foreign family member&#039;s tax return</li><li>Housing suitability certificate issued by the Technical Office of the Municipality where you live</li></ul>\n<p><strong>Your family member must have:</strong></p>\n<ol><li>A house that meets size and cleanliness requirements (you need the housing suitability document from the Municipality)</li><li>Enough money (the minimum income is €6.947,33 € for 2024, plus half for each family member)</li><li>Health insurance only if the family members are parents over 65 years old</li></ol>\n<p>Attention! If your family member has a <strong>permit for asylum or subsidiary protection</strong>, income and housing requirements are not needed.</p>",
+        "index": 5
+      },
+      {
+        "question": "What can I do with this residence permit?",
+        "content": "<p>With this permit you can:</p>\n<ul><li>Get residency in the municipality where you live</li><li>Work with a regular contract (self-employment or employed work)</li><li>Register for free with the National Health Service (NHS (SSN)) and have a general practitioner</li><li>Travel in the Schengen area with your passport (for short stays up to 3 months)</li><li>Enroll in school, a professional course, or university</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "And when does the permit expire?",
+        "content": "<p>You can renew it if you continue to meet the requirements.</p>",
+        "index": 7
+      },
+      {
+        "question": "Can I convert this permit?",
+        "content": "<p>Yes, this permit can be converted to:</p>\n<ul><li>Permit for work (self-employment or employed work)</li><li>Permit for job seeking</li><li>Permit for study reasons</li></ul>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "postal payment slip for 80.46€",
+      "4 Photos",
+      "Copy of passport (not expired)",
+      "Housing suitability certificate",
+      "Document proving family relationship",
+      "Proof of minimum income (tax statement or payslips or tax return or other)",
+      "Copy of your residence permit expired for less than one year",
+      "Copy of the family member's residence permit with whom to establish cohesion"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 passport photos",
+      "Copy of passport (not expired)",
+      "revenue stamp of 16€",
+      "Expiring permit",
+      "Housing suitability certificate",
+      "Proof of minimum income (tax statement or payslips or tax return or other)",
+      "Document proving family relationship (for example \"family status certificate\")",
+      "Postal payment slip for 80.46€",
+      "Copy of the family member's residence permit with whom to establish cohesion"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-8171-b0b1-e68eb732dcef",
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "tipo": "Medical treatment for a seriously ill person who is already in Italy",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>The residence permit for medical treatment is given to foreigners who have <strong>very serious illnesses</strong> and who <strong>cannot be treated properly in their country</strong>.</p>\n<p>If these people returned to their country, their health would worsen greatly ⚠️ or they could even die.</p>",
+        "index": 0
+      },
+      {
+        "question": "Who can apply for it?",
+        "content": "<p>You can apply for this permit if:</p>\n<ul><li><strong>You have a very serious illness</strong> that cannot be treated well in your country</li><li><strong>You are already in Italy</strong> (even without a residence permit)</li><li><strong>An Italian doctor</strong> (from a public hospital or one affiliated with the National Health Service) has confirmed that your illness is serious</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Where do you apply for this permit?",
+        "content": "<p>Go to the <strong>Police Headquarters (Questura) in the area where you live</strong> and book an appointment at the Immigration Office.</p>\n<p>You will need to submit all medical documentation in addition to other documents.</p>\n<p><strong>⚠️ If you have applied for international protection…</strong></p>\n<p>During the examination of your asylum application, the Commission or the Court might decide to ask the Police Headquarters (Questura) to give you this residence permit, if they think you are <a href=\"/2187355e7f7f81198cd1c609d77bd25b#2187355e7f7f81309acaea84e0903cf8\">entitled to it</a>. </p>",
+        "index": 2
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<ul><li><strong>Maximum 1 year</strong> (it can be less, depends on what the doctor says)</li><li><strong>It can be renewed</strong> as long as you still have the serious illness and need treatment</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "✅ What can you do with this permit?",
+        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Work</strong> (with regular contract - self-employment or employed work) 💼</li><li><strong>Register with the National Health Service (NHS-SSN) and have a general practitioner</strong></li><li><strong>Receive free medical care</strong> in public hospitals</li><li><strong>Register in the registry office</strong> of the municipality where you live</li></ul>\n<p><strong>⚠️ What you CANNOT do:</strong></p>\n<ul><li><strong>You cannot travel outside Italy</strong> - this permit is only valid in Italy</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "How to renew the permit?",
+        "content": "<p>To renew you must show:</p>\n<ul><li><strong>New medical certificate</strong> that confirms you still have the serious illness</li><li>The same documents from the first application</li></ul>\n<p><strong>Permit conversion</strong></p>\n<p>When it expires, this permit is very difficult to convert to another one. </p>\n<p>According to current law, the permit for medical treatment <strong>cannot</strong> be changed to <strong>permit for work. </strong>If you applied for the permit for medical treatment <strong>before</strong> May 2023, you might still try to request conversion to a work permit, but you will need good legal assistance and possibly a lawsuit in court. Look for legal help near you.</p>\n<p>If there are members of your family in Italy, you can take our test to see if you are entitled to a <strong>permit for family reasons. </strong>If you have minor children in Italy, you could consider applying for a permit under Art. 31.</p>",
+        "index": 5
+      },
+      {
+        "question": "Who can apply for you?",
+        "content": "<p>If you are too sick, the application can be made by:</p>\n<ul><li>A family member (with authorization)</li><li>The head of the hospital where you are admitted</li><li>Anyone who has an interest in helping you</li></ul>\n<p><strong>Collecting the permit</strong></p>\n<ul><li>They give you a <strong>receipt</strong> when you apply</li><li>The permit is <strong>ready within 60 days</strong></li><li>The permit is <strong>paper</strong> (not electronic)</li><li>Another person can also collect it with authorization</li></ul>\n<p><strong>Important difference</strong></p>\n<p>This permit is different from the <a href=\"/2187355e7f7f81a3a444f6c6bd8a13ae\">permit for medical treatment for those who come to Italy already with a visa</a> for medical treatment. This is for people who are already in Italy and discover they have a serious illness that cannot be treated in their country.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Photos",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Medical documents (public hospital or public doctor) that prove your illness",
+      "Documents that prove that your illness cannot be treated properly in your country",
+      "revenue stamp of 16€"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 passport photos",
+      "revenue stamp of 16€",
+      "Expiring permit",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Documents that prove that your illness cannot be treated properly in your country",
+      "Medical documents (public hospital or public doctor) that prove your illness"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-81c1-b3c2-c308d51984a3",
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "tipo": "Medical treatment - father of a minor child under 6 months or about to be born in Italy",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>It is a residence permit for the father of the child when the mother is pregnant or has just given birth. The law (art. 19 of the Immigration Consolidated Act) protects the family unit in these situations.</p>",
+        "index": 0
+      },
+      {
+        "question": "Who can apply for it?",
+        "content": "<ul><li>The foreign father of the child, if living with the mother</li><li>⚠️ If you are <strong>married and cohabiting</strong> with the mother, you can get this permit without problems</li><li>⚠️ If you are <strong>NOT married</strong> and/or <strong>NOT cohabiting</strong> with the mother, it could be a problem to get this permit — seek qualified <strong>legal advice</strong></li></ul>",
+        "index": 1
+      },
+      {
+        "question": "How do you apply?",
+        "content": "<p>It is requested with the <strong>postal KIT</strong>. Fill out the form and send it from an authorized post office. You will receive an appointment at the Police Headquarters (Questura).</p>",
+        "index": 2
+      },
+      {
+        "question": "What documents are needed?",
+        "content": "<p>For the complete list of documents to bring to Police Headquarters (Questura), go to the page <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-padre-primo.html\">What documents to bring — first issue</a>.</p>",
+        "index": 3
+      },
+      {
+        "question": "What rights does it give me?",
+        "content": "<ul><li>✅ You can <strong>work</strong> (employed work or self-employment)</li><li>✅ You can register with the <strong>National Health Service</strong> and have a general practitioner</li><li>❌ <strong>You cannot</strong> apply for family reunification with this permit</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>It lasts <strong>1 year</strong>.</p>",
+        "index": 5
+      },
+      {
+        "question": "When does it expire and can I renew it?",
+        "content": "<p>This permit is usually not renewable. When it expires, consult with a legal advisor to see if you can obtain another type of residence permit.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "Hospitality declaration or rental contract or residence certificate",
+      "4 Photos",
+      "Pregnancy certificate with expected delivery date or birth certificate if already born",
+      "Certificate or self-declaration of cohabitation"
+    ],
+    "primoMethod": "personally",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-8142-96d4-cc09ff374d01",
+    "slug": "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche",
+    "tipo": "Medical treatment after entry with visa for medical treatment",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>The residence permit for medical treatment (art. 36 of T.U. 286/98) is designed for those who enter Italy with a specific visa to receive medical care. This is a permit for foreign citizens who need specialist medical treatments that are not available or not easily accessible in their country of origin.</p>",
+        "index": 0
+      },
+      {
+        "question": "Who can apply for it?",
+        "content": "<p>The following people can apply:</p>\n<ul><li>Has obtained an <strong>entry visa for medical treatment</strong> from the Italian Embassy or Consulate</li><li>Has a declaration from the Italian healthcare facility (public or accredited private) that certifies the type of treatment, expected duration and any hospitalization</li><li>Has paid a <strong>deposit of 30%</strong> of the estimated cost of treatment to the chosen healthcare facility</li><li>Has demonstrated having sufficient resources to pay for medical expenses, food and accommodation</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "How/where do you apply?",
+        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the dedicated pages:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-cure-mediche-dopo-ingresso-con-visto-art-36-primo.html\">Documents for first issue</a></li><li><a href=\"https://www.sospermesso.it/documenti-cure-mediche-dopo-ingresso-con-visto-art-36-rinnovo.html\">Documents for renewal</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "What rights does it give me? What do I have access to?",
+        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Work</strong> (employed work or self-employment)</li><li>Access medical care at the healthcare facility indicated in the visa</li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li></ul>\n<p>⚠️ Remember: this permit is linked to the need for medical treatment. If the treatment ends, the permit may not be renewed.</p>",
+        "index": 3
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>The duration is <strong>1 year</strong>, based on the period necessary to complete the medical treatments indicated in the health certification.</p>",
+        "index": 4
+      },
+      {
+        "question": "When does it expire and can I renew it?",
+        "content": "<p>Yes, you can renew it if the healthcare facility certifies that you still need to continue treatment in Italy. For the renewal you will need to submit an updated declaration from the hospital.</p>",
+        "index": 5
+      },
+      {
+        "question": "How much does it cost?",
+        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>30,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Medical documents",
+      "revenue stamp of 16€",
+      "Hospitality declaration or rental contract or residence certificate",
+      "4 Photos",
+      "Health insurance policy or voluntary enrollment in NHS (SSN)",
+      "Indication of means of support (board and lodging)",
+      "postal payment slip for 30.46€",
+      "Entry visa",
+      "Copy of passport (not expired)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Expiring permit",
+      "Copy of passport (not expired)",
+      "4 passport photos",
+      "Hospital declaration for the need to continue treatment in Italy",
+      "revenue stamp of 16€",
+      "Indication of means of support (board and lodging)",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Postal payment slip of €30.46",
+      "Health insurance policy or voluntary enrollment in NHS (SSN)"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-8195-90e4-ef574b5de97b",
+    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
+    "tipo": "Medical treatment - woman who is pregnant or with a child under 6 months",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>It is a residence permit for foreign women who are pregnant and are already in Italy. The law (art. 19 of the Immigration Consolidated Act) prohibits the expulsion of pregnant women from the third month of pregnancy until six months after delivery. For this period, you can obtain a residence permit for medical treatment.</p>",
+        "index": 0
+      },
+      {
+        "question": "Who can apply for it?",
+        "content": "<ul><li>Foreign women who are pregnant (from the third month)</li><li>Even if you don&#039;t have a valid residence permit or are irregular</li><li>After childbirth, the permit also covers the six months following the child&#039;s birth</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "How do you apply?",
+        "content": "<p>It is requested with the <strong>postal KIT</strong>. Fill out the form and send it from an authorized post office. You will receive an appointment at the Police Headquarters (Questura).</p>\n<p>⚠️ <strong>Attention:</strong> for this type of permit, if you don&#039;t have a hospitality declaration, indicating a domicile should be sufficient. The Police Headquarters (Questura) needs an address to know where you are.</p>\n<p>⚠️ <strong>Attention:</strong> some Police Headquarters (Questura) might issue this permit in electronic format and therefore ask for payment of a postal payment slip of 30,46€.</p>",
+        "index": 2
+      },
+      {
+        "question": "What documents are needed?",
+        "content": "<p>For the complete list of documents to bring to Police Headquarters (Questura), go to the page <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-donna-in-stato-di-gravidanza-primo.html\">What documents to bring — first issue</a>.</p>",
+        "index": 3
+      },
+      {
+        "question": "What rights does it give me?",
+        "content": "<ul><li>✅ You can <strong>work</strong> (employed work or self-employment)</li><li>✅ You can register with the <strong>National Health Service</strong> and have a general practitioner</li><li>❌ <strong>You cannot</strong> apply for family reunification with this permit</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>It lasts <strong>1 year</strong>. The permit covers the period from pregnancy until six months after birth.</p>",
+        "index": 5
+      },
+      {
+        "question": "When does it expire and can I renew it?",
+        "content": "<p>This permit is usually not renewable. When it expires, consult with a legal advisor to see if you can obtain another type of residence permit.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "4 Photos",
+      "Pregnancy certificate with expected delivery date or birth certificate if already born",
+      "Hospitality declaration or rental contract or residence certificate"
+    ],
+    "primoMethod": "personally",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-8187-8a4a-ce5cceff34b1",
+    "slug": "calamita-naturale",
+    "tipo": "Natural disaster",
+    "emoji": "🌊",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>The residence permit for natural disasters (Art. 20bis, Immigration Consolidated Act) is given to foreigners who <strong>cannot return to their country because there is a serious emergency</strong> ⚠️ (such as earthquakes, wars, natural disasters) that makes it dangerous to live there.</p>\n<p>This permit is different from asylum application and you do not need to apply for international protection.</p>",
+        "index": 0
+      },
+      {
+        "question": "When can I apply for it?",
+        "content": "<p>You can apply for this permit if:</p>\n<ul><li>You already live in Italy</li><li>In your country there is a <strong>very serious and dangerous situation</strong> (emergency, calamity, disaster)</li><li>You cannot return to your country <strong>safely</strong></li><li>The situation in your country puts your fundamental rights at risk (right to life, to freedom, to decide about your life)</li></ul>\n<p>The situation must be <strong>exceptional and temporary</strong> but also very dangerous.</p>",
+        "index": 1
+      },
+      {
+        "question": "How and where do you apply for this permit?",
+        "content": "<p>You must submit the application to the <strong>Police Headquarters (Questura) in the area where you live</strong>.</p>\n<p>You must go directly to the Police Headquarters (Questura) and request an appointment</p>\n<p>After you apply, the Police Headquarters (Questura) can check if there really is a dangerous situation in your country, and then will decide.</p>",
+        "index": 2
+      },
+      {
+        "question": "📋 What documents do you need?",
+        "content": "<ul><li><strong>Documents that show the dangerous situation in your country</strong>: newspaper articles, reports from international organizations, official documents that show there is a serious emergency in your country</li><li><strong>Copy of documents that show how you support yourself in Italy</strong> (if you have them): pay slip, employment contract, assistance you receive</li><li><strong>Passport</strong> or similar document</li><li><strong>2 photos</strong></li><li><strong>Revenue stamp</strong> 16 euros</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "How long does it last?",
+        "content": "<p>The duration of the permit is six months, renewable for another six months if the emergency situation in your country persists </p>",
+        "index": 4
+      },
+      {
+        "question": "✅ What rights does it give me? What do I have access to?",
+        "content": "<p>With this permit you can:</p>\n<ul><li>Obtaining <strong>residency</strong> in the Municipality where you live</li><li><strong>Work</strong> (with a regular contract - self-employment or employed work)</li><li><strong>Register with the National Health Service (NHS-SSN) and have a general practitioner</strong></li><li>Enroll in school, a professional course, or university</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "4 Photos",
+      "Proof of natural disaster",
+      "Hospitality declaration or rental contract or residence certificate"
+    ],
+    "primoMethod": "personally",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Expiring permit",
+      "4 passport photos",
+      "revenue stamp of 16€",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Proof of natural disaster"
+    ],
+    "rinnovoMethod": "personally",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-816c-93db-c4bc982155aa",
+    "slug": "residenza-elettiva",
+    "tipo": "Elective residence",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>The residence permit for elective residency is designed for those who want to live in Italy without working, supporting themselves with their own economic resources. It is the typical permit for <strong>retired</strong> foreigners, people with <strong>annuities</strong> or <strong>passive income</strong> who choose Italy as their place of residence.</p>",
+        "index": 0
+      },
+      {
+        "question": "Who can apply for it?",
+        "content": "<p>The following people can apply:</p>\n<ul><li>Has obtained an <strong>visa for elective residence</strong> from the Italian Embassy or Consulate</li><li>Proves to have <strong>stable and sufficient economic resources</strong> to support oneself in Italy without working (for example: pension, annuities, investments)</li><li>Has <strong>accommodation</strong> in Italy (property or rental contract)</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "How/where do you apply?",
+        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the page <a href=\"https://www.sospermesso.it/documenti-residenza-elettiva-primo.html\">documents for first issue</a>.</p>",
+        "index": 2
+      },
+      {
+        "question": "What rights does it give me? What do I have access to?",
+        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Living permanently in Italy</strong></li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li><li>Apply for residency</li></ul>\n<p>⚠️ <strong>Attention:</strong> with this permit <strong>you CANNOT work</strong>. If you want to work in Italy, you will need to convert the permit to another type.</p>",
+        "index": 3
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>The duration is <strong>1 year</strong> and is renewable, provided that you continue to demonstrate sufficient economic resources.</p>",
+        "index": 4
+      },
+      {
+        "question": "When does it expire and can I renew it?",
+        "content": "<p>Yes, you can renew it by submitting updated documentation that proves your financial resources and housing availability. The application is made through <strong>postal KIT</strong>.</p>",
+        "index": 5
+      },
+      {
+        "question": "Can I convert it to another permit?",
+        "content": "<p>Yes — after <strong>5 years</strong> of regular residence, you can apply for the <strong>EU residence permit for long-term residents</strong>, which gives you more rights and has no expiration date.</p>",
+        "index": 6
+      },
+      {
+        "question": "How much does it cost?",
+        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>30,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "4 Photos",
+      "postal payment slip for 30.46€",
+      "Visa for elective residence",
+      "Hospitality declaration or rental contract or residence certificate",
+      "Copy of passport (not expired)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "30b7355e-7f7f-8161-93ec-f544bdeab146",
+    "slug": "motivi-religiosi",
+    "tipo": "Religious reasons",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>The residence permit for religious reasons is intended for foreign citizens who carry out activities related to a religious denomination in Italy. This is a permit for <strong>religious personnel, missionaries, ministers of worship</strong> and people sent to Italy by recognized religious organizations.</p>",
+        "index": 0
+      },
+      {
+        "question": "Who can apply for it?",
+        "content": "<p>The following people can apply:</p>\n<ul><li>Has been sent to Italy by a <strong>religious organization</strong> recognized</li><li>Has <strong>documented religious assignment</strong> (for example: priest, nun, missionary, pastor)</li><li>Has obtained the entry visa for religious reasons</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "How/where do you apply?",
+        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the dedicated pages:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documents for first issue</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documents for renewal</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "What rights does it give me? What do I have access to?",
+        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Carry out your religious activity</strong> in Italy</li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li><li>Apply for residency</li></ul>\n<p>⚠️ <strong>Attention:</strong> with this permit <strong>you CANNOT work</strong> outside the religious activity for which it was issued.</p>",
+        "index": 3
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>The duration depends on the religious assignment and is indicated in the permit. It usually corresponds to the duration of the mission or assignment.</p>",
+        "index": 4
+      },
+      {
+        "question": "When does it expire and can I renew it?",
+        "content": "<p>Yes, you can renew it if the religious organization confirms that your assignment in Italy continues. For renewal, you need a new declaration from the religious organization.</p>",
+        "index": 5
+      },
+      {
+        "question": "How much does it cost?",
+        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>80,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "4 Photos",
+      "Health insurance policy or voluntary enrollment in NHS (SSN)",
+      "postal payment slip for 80.46€",
+      "copy of religious entity declaration certifying the nature of the assignment",
+      "Indication of means of support (board and lodging)",
+      "Copy of passport (not expired)",
+      "Hospitality declaration or rental contract or residence certificate"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "revenue stamp of 16€",
+      "Insurance policy or NHS (SSN) registration",
+      "Indication of means of support (board and lodging)",
+      "4 passport photos",
+      "Postal payment slip for 80.46€",
+      "Copy of passport (not expired)",
+      "copy of religious entity declaration certifying the nature of the assignment",
+      "Hospitality declaration or rental contract or residence certificate"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
     "id": "30b7355e-7f7f-8120-9ec9-d4c26dc697d4",
     "slug": "richiesta-asilo",
     "tipo": "Asylum Application",
@@ -37,7 +724,7 @@
       },
       {
         "question": "What happens if my international protection application is rejected?",
-        "content": "<p>If the Territorial Commission says no to your application, you can appeal with the help of a lawyer. If in 2025 you earned less than 13,500 Euro, your lawyer can file the appeal <strong>for free</strong>.</p>",
+        "content": "<p>If the Territorial Commission says no to your application, you can appeal with the help of a lawyer. If in the last fiscal year you earned less than 13,500 Euro, your lawyer can file the appeal for free.</p>",
         "index": 6
       }
     ],
@@ -215,114 +902,6 @@
     "docNotes": null
   },
   {
-    "id": "30b7355e-7f7f-8161-93ec-f544bdeab146",
-    "slug": "motivi-religiosi",
-    "tipo": "Religious reasons",
-    "emoji": "📄",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for religious reasons is intended for foreign citizens who carry out activities related to a religious denomination in Italy. This is a permit for <strong>religious personnel, missionaries, ministers of worship</strong> and people sent to Italy by recognized religious organizations.</p>",
-        "index": 0
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<p>Can apply whoever:</p>\n<ul><li>Has been sent to Italy by a <strong>religious organization</strong> recognized</li><li>Has <strong>documented religious assignment</strong> (for example: priest, nun, missionary, pastor)</li><li>Has obtained the entry visa for religious reasons</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "How/where do you apply?",
-        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the dedicated pages:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documents for first issue</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documents for renewal</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "What rights does it give me? What do I have access to?",
-        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Carry out your religious activity</strong> in Italy</li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li><li>Apply for residency</li></ul>\n<p>⚠️ <strong>Attention:</strong> with this permit <strong>you CANNOT work</strong> outside the religious activity for which it was issued.</p>",
-        "index": 3
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>The duration depends on the religious assignment and is indicated in the permit. It usually corresponds to the duration of the mission or assignment.</p>",
-        "index": 4
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>Yes, you can renew it if the religious organization confirms that your assignment in Italy continues. For renewal, you need a new declaration from the religious organization.</p>",
-        "index": 5
-      },
-      {
-        "question": "How much does it cost?",
-        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>80,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
-        "index": 6
-      },
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for religious reasons is intended for ministers of worship, religious figures, missionaries and other individuals who carry out religious activities in Italy on behalf of recognized religious denominations. It allows carrying out activities related to one&#039;s religious ministry.</p>",
-        "index": 7
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<p>This permit can be requested by those who:</p>\n<ul><li>Is a minister of worship (priest, pastor, imam, rabbi, monk, etc.)</li><li>Is a member of a religious order or congregation</li><li>Performs religious activities on behalf of a religious denomination recognized in Italy</li><li>Has received an official appointment from their religious organization</li><li>Entered Italy with a visa for religious reasons</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "How/where do you apply?",
-        "content": "<p>Before entering Italy:</p>\n<ul><li>You must apply for a visa for religious reasons at the Italian Consulate in your country</li></ul>\n<p>Once in Italy:</p>\n<ul><li>Within 8 working days of entry, apply for the residence permit through postal kit (Poste Italiane)</li><li>Or directly at Police Headquarters (Questura), if required</li></ul>\n<p>For the necessary documents, see the dedicated page: <strong>https://www.sospermesso.it/documenti-motivi-religiosi-primo.html</strong></p>",
-        "index": 9
-      },
-      {
-        "question": "What rights does it give me? What do I have access to?",
-        "content": "<p>With this permit:</p>\n<ul><li>You can carry out religious and ministerial activities in Italy</li><li>You can celebrate rites, ceremonies and religious functions</li><li>You can carry out religious education and catechesis activities</li><li>You can access health services if you have health insurance</li><li><strong>You CANNOT carry out work activities other than religious ones</strong></li></ul>\n<p>⚠️ Warning: you can only carry out the religious activities provided for by your assignment, not other forms of work.</p>",
-        "index": 10
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>The residence permit for religious reasons has a variable duration, usually 1 or 2 years, depending on the duration of the religious assignment. It can be renewed if the assignment continues.</p>",
-        "index": 11
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>Yes, you can renew it if:</p>\n<ul><li>Your religious assignment is still ongoing</li><li>Your religious organization confirms the continuation of the mission</li><li>You have adequate means of support (provided by the religious organization)</li><li>You have valid health insurance</li></ul>\n<p>For the documents required for renewal, see: <strong>https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html</strong></p>",
-        "index": 12
-      },
-      {
-        "question": "Can I convert it to another permit?",
-        "content": "<p>Conversion to other residence permits is possible in specific cases:</p>\n<ul><li>Permit for employed work (if you obtain an employment contract and there are available quotas)</li><li>Permit for family reasons (if you have an Italian spouse or regular foreign family member)</li><li>Permit for study (if you enroll in a training program)</li><li>EU permit for long-term residents (if you meet the income and residence requirements)</li></ul>",
-        "index": 13
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "4 Photos",
-      "Health insurance policy or voluntary enrollment in NHS (SSN)",
-      "postal payment slip for 80.46€",
-      "copy of religious entity declaration certifying the nature of the assignment",
-      "Indication of means of support (board and lodging)",
-      "Copy of passport (not expired)",
-      "Hospitality declaration or rental contract or residence certificate"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "revenue stamp of 16€",
-      "Insurance policy or NHS (SSN) registration",
-      "Indication of means of support (board and lodging)",
-      "4 passport photos",
-      "Postal payment slip for 80.46€",
-      "Copy of passport (not expired)",
-      "copy of religious entity declaration certifying the nature of the assignment",
-      "Hospitality declaration or rental contract or residence certificate"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "30b7355e-7f7f-8198-acb7-fdf3e0a734a2",
     "slug": "figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori",
     "tipo": "Minor child over 14 years old who lives with parents",
@@ -402,108 +981,6 @@
     "costMarcaBolloPrimo": null,
     "rinnovoDocuments": [],
     "rinnovoMethod": null,
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-816c-93db-c4bc982155aa",
-    "slug": "residenza-elettiva",
-    "tipo": "Elective residence",
-    "emoji": "📄",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for elective residency is designed for those who want to live in Italy without working, supporting themselves with their own economic resources. It is the typical permit for <strong>retired</strong> foreigners, people with <strong>annuities</strong> or <strong>passive income</strong> who choose Italy as their place of residence.</p>",
-        "index": 0
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<p>Can apply whoever:</p>\n<ul><li>Has obtained an <strong>visa for elective residence</strong> from the Italian Embassy or Consulate</li><li>Proves to have <strong>stable and sufficient economic resources</strong> to support oneself in Italy without working (for example: pension, annuities, investments)</li><li>Has <strong>accommodation</strong> in Italy (property or rental contract)</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "How/where do you apply?",
-        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the page <a href=\"https://www.sospermesso.it/documenti-residenza-elettiva-primo.html\">documents for first issue</a>.</p>",
-        "index": 2
-      },
-      {
-        "question": "What rights does it give me? What do I have access to?",
-        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Living permanently in Italy</strong></li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li><li>Apply for residency</li></ul>\n<p>⚠️ <strong>Attention:</strong> with this permit <strong>you CANNOT work</strong>. If you want to work in Italy, you will need to convert the permit to another type.</p>",
-        "index": 3
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>The duration is <strong>1 year</strong> and is renewable, provided that you continue to demonstrate sufficient economic resources.</p>",
-        "index": 4
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>Yes, you can renew it by submitting updated documentation that proves your financial resources and housing availability. The application is made through <strong>postal KIT</strong>.</p>",
-        "index": 5
-      },
-      {
-        "question": "Can I convert it to another permit?",
-        "content": "<p>Yes — after <strong>5 years</strong> of regular residence, you can apply for the <strong>EU residence permit for long-term residents</strong>, which gives you more rights and has no expiration date.</p>",
-        "index": 6
-      },
-      {
-        "question": "How much does it cost?",
-        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>30,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
-        "index": 7
-      },
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for elective residence is intended for foreign citizens who wish to live permanently in Italy without engaging in work activities. It is designed for economically independent people who have sufficient resources to support themselves without working, such as foreign retirees or people with income from investments.</p>",
-        "index": 8
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<p>This permit can be requested by those who:</p>\n<ul><li>Have stable and documentable financial resources to support themselves in Italy without working</li><li>Have suitable housing in Italy (owned or rented)</li><li>Have valid health insurance in Italy</li><li>Do not intend to carry out work activities in Italy (employed work or self-employment)</li><li>Have already entered Italy with an elective residence visa</li></ul>",
-        "index": 9
-      },
-      {
-        "question": "How/where do you apply?",
-        "content": "<p>Before entering Italy:</p>\n<ul><li>You must apply for an elective residence visa at the Italian Consulate in your country</li></ul>\n<p>Once in Italy:</p>\n<ul><li>Within 8 working days of entry, apply for the residence permit through postal kit (Poste Italiane)</li><li>Or directly at Police Headquarters (Questura), if required</li></ul>\n<p>For the necessary documents, see the dedicated page: <strong>https://www.sospermesso.it/documenti-residenza-elettiva-primo.html</strong></p>",
-        "index": 10
-      },
-      {
-        "question": "What rights does it give me? What do I have access to?",
-        "content": "<p>With this permit:</p>\n<ul><li>You can live permanently in Italy</li><li>You can travel freely in the Schengen area (with conditions)</li><li>You can access health services if you have health insurance</li><li><strong>You CANNOT work (neither as an employee nor self-employed)</strong></li></ul>\n<p>⚠️ Warning: this permit does not allow you to carry out any type of work activity in Italy.</p>",
-        "index": 11
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>The first residence permit for elective residence has a variable duration, usually 1 year. It can be renewed if you continue to meet the financial and housing requirements.</p>",
-        "index": 12
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>Yes, you can renew it if:</p>\n<ul><li>You still have sufficient financial resources to support yourself</li><li>You still have suitable housing in Italy</li><li>You have valid health insurance</li><li>You have not performed unauthorized work activities</li></ul>\n<p>For the documents required for renewal, see: <strong>https://www.sospermesso.it/documenti-residenza-elettiva-rinnovo.html</strong></p>",
-        "index": 13
-      },
-      {
-        "question": "Can I convert it to another permit?",
-        "content": "<p>Conversion to other residence permits is only possible in specific cases, for example:</p>\n<ul><li>Permit for employed work (if you obtain an employment contract and there are available quotas)</li><li>Permit for family reasons (if you have an Italian spouse or regular foreign family member)</li><li>EU permit for long-term residents (if you meet the income and residence requirements)</li></ul>\n<p>Conversion always requires verification of the specific requirements for the new permit.</p>",
-        "index": 14
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "4 Photos",
-      "postal payment slip for 30.46€",
-      "Visa for elective residence",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Copy of passport (not expired)"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [],
-    "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": null,
@@ -1342,263 +1819,6 @@
     "docNotes": null
   },
   {
-    "id": "30b7355e-7f7f-8187-8a4a-ce5cceff34b1",
-    "slug": "calamita-naturale",
-    "tipo": "Natural disaster",
-    "emoji": "🌊",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for natural disasters (Art. 20bis, Immigration Consolidated Act) is given to foreigners who <strong>cannot return to their country because there is a serious emergency</strong> ⚠️ (such as earthquakes, wars, natural disasters) that makes it dangerous to live there.</p>\n<p>This permit is different from asylum application and you do not need to apply for international protection.</p>",
-        "index": 0
-      },
-      {
-        "question": "When can I apply for it?",
-        "content": "<p>You can apply for this permit if:</p>\n<ul><li>You already live in Italy</li><li>In your country there is a <strong>very serious and dangerous situation</strong> (emergency, calamity, disaster)</li><li>You cannot return to your country <strong>safely</strong></li><li>The situation in your country puts your fundamental rights at risk (right to life, to freedom, to decide about your life)</li></ul>\n<p>The situation must be <strong>exceptional and temporary</strong> but also very dangerous.</p>",
-        "index": 1
-      },
-      {
-        "question": "How and where do you apply for this permit?",
-        "content": "<p>You must submit the application to the <strong>Police Headquarters (Questura) in the area where you live</strong>.</p>\n<p>You must go directly to the Police Headquarters (Questura) and request an appointment</p>\n<p>After you apply, the Police Headquarters (Questura) can check if there really is a dangerous situation in your country, and then will decide.</p>",
-        "index": 2
-      },
-      {
-        "question": "📋 What documents do you need?",
-        "content": "<ul><li><strong>Documents that show the dangerous situation in your country</strong>: newspaper articles, reports from international organizations, official documents that show there is a serious emergency in your country</li><li><strong>Copy of documents that show how you support yourself in Italy</strong> (if you have them): pay slip, employment contract, assistance you receive</li><li><strong>Passport</strong> or similar document</li><li><strong>2 photos</strong></li><li><strong>Revenue stamp</strong> 16 euros</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "How long does it last?",
-        "content": "<p>The duration of the permit is <strong>six months, </strong>renewable for another six months if </p>",
-        "index": 4
-      },
-      {
-        "question": "✅ What rights does it give me? What do I have access to?",
-        "content": "<p>With this permit you can:</p>\n<ul><li>Obtaining <strong>residency</strong> in the Municipality where you live</li><li><strong>Work</strong> (with a regular contract - self-employment or employed work)</li><li><strong>Register with the National Health Service (NHS-SSN) and have a general practitioner</strong></li><li>Enroll in school, a professional course, or university</li></ul>",
-        "index": 5
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "4 Photos",
-      "Proof of natural disaster",
-      "Hospitality declaration or rental contract or residence certificate"
-    ],
-    "primoMethod": "personally",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Expiring permit",
-      "4 passport photos",
-      "revenue stamp of 16€",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Proof of natural disaster"
-    ],
-    "rinnovoMethod": "personally",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-8195-90e4-ef574b5de97b",
-    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
-    "tipo": "Medical treatment - woman who is pregnant or with a child under 6 months",
-    "emoji": "🏥",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>It is a residence permit for foreign women who are pregnant and are already in Italy. The law (art. 19 of the Immigration Consolidated Act) prohibits the expulsion of pregnant women from the third month of pregnancy until six months after delivery. For this period, you can obtain a residence permit for medical treatment.</p>",
-        "index": 0
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<ul><li>Foreign women in state of pregnancy (from the third month)</li><li>Even if you don&#039;t have a valid residence permit or are irregular</li><li>After childbirth, the permit also covers the six months following the child&#039;s birth</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "How do you apply?",
-        "content": "<p>It is requested with the <strong>postal KIT</strong>. Fill out the form and send it from an authorized post office. You will receive an appointment at the Police Headquarters (Questura).</p>\n<p>⚠️ <strong>Attention:</strong> for this type of permit, if you don&#039;t have a hospitality declaration, indicating a domicile should be sufficient. The Police Headquarters (Questura) needs an address to know where you are.</p>\n<p>⚠️ <strong>Attention:</strong> some Police Headquarters (Questura) might issue this permit in electronic format and therefore ask for payment of a postal payment slip of 30,46€.</p>",
-        "index": 2
-      },
-      {
-        "question": "What documents are needed?",
-        "content": "<p>For the complete list of documents to bring to Police Headquarters (Questura), go to the page <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-donna-in-stato-di-gravidanza-primo.html\">What documents to bring — first issue</a>.</p>",
-        "index": 3
-      },
-      {
-        "question": "What rights does it give me?",
-        "content": "<ul><li>✅ You can <strong>work</strong> (employed work or self-employment)</li><li>✅ You can register with the <strong>National Health Service</strong> and have a general practitioner</li><li>❌ <strong>You cannot</strong> apply for family reunification with this permit</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>It lasts <strong>1 year</strong>. The permit covers the period from pregnancy until six months after birth.</p>",
-        "index": 5
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>This permit is usually not renewable. When it expires, consult with a legal operator to see if you can obtain another type of residence permit.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "4 Photos",
-      "Pregnancy certificate with expected delivery date or birth certificate if already born",
-      "Hospitality declaration or rental contract or residence certificate"
-    ],
-    "primoMethod": "personally",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-8142-96d4-cc09ff374d01",
-    "slug": "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche",
-    "tipo": "Medical treatment after entry with visa for medical treatment",
-    "emoji": "🏥",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for medical treatment (art. 36 of T.U. 286/98) is designed for those who enter Italy with a specific visa to receive medical care. This is a permit for foreign citizens who need specialist medical treatments that are not available or not easily accessible in their country of origin.</p>",
-        "index": 0
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<p>Can apply whoever:</p>\n<ul><li>Has obtained an <strong>entry visa for medical treatment</strong> from the Italian Embassy or Consulate</li><li>Has a declaration from the Italian healthcare facility (public or accredited private) that certifies the type of treatment, expected duration and any hospitalization</li><li>Has paid a <strong>deposit of 30%</strong> of the estimated cost of treatment to the chosen healthcare facility</li><li>Has demonstrated having sufficient resources to pay for medical expenses, food and accommodation</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "How/where do you apply?",
-        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the dedicated pages:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-cure-mediche-dopo-ingresso-con-visto-art-36-primo.html\">Documents for first issue</a></li><li><a href=\"https://www.sospermesso.it/documenti-cure-mediche-dopo-ingresso-con-visto-art-36-rinnovo.html\">Documents for renewal</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "What rights does it give me? What do I have access to?",
-        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Work</strong> (employed work or self-employment)</li><li>Access medical care at the healthcare facility indicated in the visa</li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li></ul>\n<p>⚠️ Remember: this permit is linked to the need for medical treatment. If the treatment ends, the permit may not be renewed.</p>",
-        "index": 3
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>The duration is <strong>1 year</strong>, based on the period necessary to complete the medical treatments indicated in the health certification.</p>",
-        "index": 4
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>Yes, you can renew it if the healthcare facility certifies that you still need to continue treatment in Italy. For the renewal you will need to submit an updated declaration from the hospital.</p>",
-        "index": 5
-      },
-      {
-        "question": "How much does it cost?",
-        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>30,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Medical documents",
-      "revenue stamp of 16€",
-      "Hospitality declaration or rental contract or residence certificate",
-      "4 Photos",
-      "Health insurance policy or voluntary enrollment in NHS (SSN)",
-      "Indication of means of support (board and lodging)",
-      "postal payment slip for 30.46€",
-      "Entry visa",
-      "Copy of passport (not expired)"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Expiring permit",
-      "Copy of passport (not expired)",
-      "4 passport photos",
-      "Hospital declaration for the need to continue treatment in Italy",
-      "revenue stamp of 16€",
-      "Indication of means of support (board and lodging)",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Postal payment slip of €30.46",
-      "Health insurance policy or voluntary enrollment in NHS (SSN)"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-81c1-b3c2-c308d51984a3",
-    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
-    "tipo": "Medical treatment - father of a minor child under 6 months or about to be born in Italy",
-    "emoji": "🏥",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>It is a residence permit for the father of the child when the mother is pregnant or has just given birth. The law (art. 19 of the Immigration Consolidated Act) protects the family unit in these situations.</p>",
-        "index": 0
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<ul><li>The foreign father of the child, if living with the mother</li><li>⚠️ If you are <strong>married and cohabiting</strong> with the mother, you can get this permit without problems</li><li>⚠️ If you are <strong>NOT married</strong> and/or <strong>NOT cohabiting</strong> with the mother, it could be a problem to get this permit — seek qualified <strong>legal advice</strong></li></ul>",
-        "index": 1
-      },
-      {
-        "question": "How do you apply?",
-        "content": "<p>It is requested with the <strong>postal KIT</strong>. Fill out the form and send it from an authorized post office. You will receive an appointment at the Police Headquarters (Questura).</p>",
-        "index": 2
-      },
-      {
-        "question": "What documents are needed?",
-        "content": "<p>For the complete list of documents to bring to Police Headquarters (Questura), go to the page <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-padre-primo.html\">What documents to bring — first issue</a>.</p>",
-        "index": 3
-      },
-      {
-        "question": "What rights does it give me?",
-        "content": "<ul><li>✅ You can <strong>work</strong> (employed work or self-employment)</li><li>✅ You can register with the <strong>National Health Service</strong> and have a general practitioner</li><li>❌ <strong>You cannot</strong> apply for family reunification with this permit</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>It lasts <strong>1 year</strong>.</p>",
-        "index": 5
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>This permit is usually not renewable. When it expires, consult with a legal operator to see if you can obtain another type of residence permit.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "Hospitality declaration or rental contract or residence certificate",
-      "4 Photos",
-      "Pregnancy certificate with expected delivery date or birth certificate if already born",
-      "Certificate or self-declaration of cohabitation"
-    ],
-    "primoMethod": "personally",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "30b7355e-7f7f-8196-b687-da2a33ec211c",
     "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
     "tipo": "EU permit for long-term residents (\"Residence card\")",
@@ -1685,74 +1905,6 @@
       "revenue stamp of 16€",
       "Postal payment slip of €30.46",
       "Hospitality declaration or rental contract or residence certificate"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-8171-b0b1-e68eb732dcef",
-    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
-    "tipo": "Medical treatment for a seriously ill person who is already in Italy",
-    "emoji": "🏥",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for medical treatment is given to foreigners who have <strong>very serious illnesses</strong> and who <strong>cannot be treated properly in their country</strong>.</p>\n<p>If these people returned to their country, their health would worsen greatly ⚠️ or they could even die.</p>",
-        "index": 0
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<p>You can apply for this permit if:</p>\n<ul><li><strong>You have a very serious illness</strong> that cannot be treated well in your country</li><li><strong>You are already in Italy</strong> (even without a residence permit)</li><li><strong>An Italian doctor</strong> (from a public hospital or one affiliated with the National Health Service) has confirmed that your illness is serious</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Where do you apply for this permit?",
-        "content": "<p>Go to the <strong>Police Headquarters (Questura) in the area where you live</strong> and book an appointment at the Immigration Office.</p>\n<p>You will need to submit all medical documentation in addition to other documents.</p>\n<p><strong>⚠️ If you have applied for international protection…</strong></p>\n<p>During the examination of your asylum application, the Commission or the Court might decide to ask the Police Headquarters (Questura) to give you this residence permit, if they think you are <a href=\"/2187355e7f7f81198cd1c609d77bd25b#2187355e7f7f81309acaea84e0903cf8\">entitled to it</a>. </p>",
-        "index": 2
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<ul><li><strong>Maximum 1 year</strong> (it can be less, depends on what the doctor says)</li><li><strong>It can be renewed</strong> as long as you still have the serious illness and need treatment</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "✅ What can you do with this permit?",
-        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Work</strong> (with regular contract - self-employment or employed work) 💼</li><li><strong>Register with the National Health Service (NHS-SSN) and have a general practitioner</strong></li><li><strong>Receive free medical care</strong> in public hospitals</li><li><strong>Register in the registry office</strong> of the municipality where you live</li></ul>\n<p><strong>⚠️ What you CANNOT do:</strong></p>\n<ul><li><strong>You cannot travel outside Italy</strong> - this permit is only valid in Italy</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "How to renew the permit?",
-        "content": "<p>To renew you must show:</p>\n<ul><li><strong>New medical certificate</strong> that confirms you still have the serious illness</li><li>The same documents from the first application</li></ul>\n<p><strong>Permit conversion</strong></p>\n<p>When it expires, this permit is hardly convertible to another one. </p>\n<p>According to current law, the permit for medical treatment <strong>cannot</strong> be changed to <strong>permit for work. </strong>If you applied for the permit for medical treatment <strong>before</strong> May 2023, you might still try to request conversion to a work permit, but you will need good legal assistance and possibly a lawsuit in court. Look for legal help near you.</p>\n<p>If there are members of your family in Italy, you can take our test to see if you are entitled to a <strong>permit for family reasons. </strong>If you have minor children in Italy, you could consider applying for a permit under Art. 31.</p>",
-        "index": 5
-      },
-      {
-        "question": "Who can apply for you?",
-        "content": "<p>If you are too sick, the application can be made by:</p>\n<ul><li>A family member (with authorization)</li><li>The head of the hospital where you are admitted</li><li>Anyone who has an interest in helping you</li></ul>\n<p><strong>Collecting the permit</strong></p>\n<ul><li>They give you a <strong>receipt</strong> when you apply</li><li>The permit is <strong>ready within 60 days</strong></li><li>The permit is <strong>paper</strong> (not electronic)</li><li>Another person can also collect it with authorization</li></ul>\n<p><strong>Important difference</strong></p>\n<p>This permit is different from the <a href=\"/2187355e7f7f81a3a444f6c6bd8a13ae\">permit for medical treatment for those who come to Italy already with a visa</a> for medical treatment. This is for people who are already in Italy and discover they have a serious illness that cannot be treated in their country.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "4 Photos",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Medical documents (public hospital or public doctor) that prove your illness",
-      "Documents that prove that your illness cannot be treated properly in your country",
-      "revenue stamp of 16€"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 passport photos",
-      "revenue stamp of 16€",
-      "Expiring permit",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Documents that prove that your illness cannot be treated properly in your country",
-      "Medical documents (public hospital or public doctor) that prove your illness"
     ],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
@@ -2067,91 +2219,6 @@
     "docNotes": null
   },
   {
-    "id": "30b7355e-7f7f-8186-ab42-c4ac1a334b43",
-    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
-    "tipo": "Family - without clearance for reunification (\"family cohesion\")",
-    "emoji": "👨‍👩‍👧‍👦",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for family cohesion is a type of family reunification that you can request directly in Italy. It&#039;s for those who want to live together with their foreign family member who is already in Italy.</p>",
-        "index": 0
-      },
-      {
-        "question": "What is the difference with family reunification?",
-        "content": "<p>The family member requesting family cohesion is already present in Italy and does not live abroad as in the case of family reunification, which is why it is not necessary to request the clearance for reunification from the One-Stop Immigration Office at the Prefecture.</p>",
-        "index": 1
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>It has the same duration as the residence permit of your family member already in Italy.</p>",
-        "index": 2
-      },
-      {
-        "question": "What are the conditions to obtain it?",
-        "content": "<p>To obtain this permit:</p>\n<ul><li>Your foreign family member must have a valid residence permit of at least one year or an EU residence permit for long-term residents</li><li>You must already be in Italy with regular stay (even with a still valid tourist visa) or with a permit expired for no more than 12 months</li><li>You must prove the family relationship</li></ul>\n<p>You can request family cohesion with:</p>\n<ul><li>Your husband or wife of at least 18 years old (only if you are not legally separated)</li><li>Your children under 18 years old (at the time of application)</li><li>Your adult children who are dependents, if they cannot support themselves due to serious health problems</li><li>Your parents over 65 years old, if they have no other children in their country or if these cannot help them</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Where do you apply for this permit?",
-        "content": "<p>You must submit the application through a postal kit that you will then take to the post office. You can get help from a patronage organization or legal office to fill out the forms.</p>",
-        "index": 4
-      },
-      {
-        "question": "What documents do I need to request it?",
-        "content": "<ul><li>Postal kit to collect and send by post</li><li>Photocopy of your passport pages with personal data, renewal stamps and visas</li><li>Documents showing family relationship translated and legalized</li><li>Copy of the property transfer notification</li><li>Copy of your foreign family member&#039;s passport (pages with personal data)</li><li>Copy of your foreign family member&#039;s residence permit</li><li>Photocopy of your foreign family member&#039;s tax return</li><li>Housing suitability certificate issued by the Technical Office of the Municipality where you live</li></ul>\n<p><strong>Your family member must have:</strong></p>\n<ol><li>A house that meets size and cleanliness requirements (you need the housing suitability document from the Municipality)</li><li>Enough money (the minimum income is €6.947,33 € for 2024, plus half for each family member)</li><li>Health insurance only if the family members are parents over 65 years old</li></ol>\n<p>Attention! If your family member has a <strong>permit for asylum or subsidiary protection</strong>, income and housing requirements are not needed.</p>",
-        "index": 5
-      },
-      {
-        "question": "What can I do with this residence permit?",
-        "content": "<p>With this permit you can:</p>\n<ul><li>Get residency in the municipality where you live</li><li>Work with a regular contract (self-employment or employed work)</li><li>Register for free with the National Health Service (NHS (SSN)) and have a general practitioner</li><li>Travel in the Schengen area with your passport (for short stays up to 3 months)</li><li>Enroll in school, a professional course, or university</li></ul>",
-        "index": 6
-      },
-      {
-        "question": "And when does the permit expire?",
-        "content": "<p>You can renew it if you continue to meet the requirements.</p>",
-        "index": 7
-      },
-      {
-        "question": "Can I convert this permit?",
-        "content": "<p>Yes, this permit can be converted to:</p>\n<ul><li>Permit for work (self-employment or employed work)</li><li>Permit for job seeking</li><li>Permit for study reasons</li></ul>",
-        "index": 8
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "postal payment slip for 80.46€",
-      "4 Photos",
-      "Copy of passport (not expired)",
-      "Housing suitability certificate",
-      "Document proving family relationship",
-      "Proof of minimum income (tax statement or payslips or tax return or other)",
-      "Copy of your residence permit expired for less than one year",
-      "Copy of the family member's residence permit with whom to establish cohesion"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 passport photos",
-      "Copy of passport (not expired)",
-      "revenue stamp of 16€",
-      "Expiring permit",
-      "Housing suitability certificate",
-      "Proof of minimum income (tax statement or payslips or tax return or other)",
-      "Document proving family relationship (for example \"family status certificate\")",
-      "Postal payment slip for 80.46€",
-      "Copy of the family member's residence permit with whom to establish cohesion"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "30b7355e-7f7f-818d-bf60-ef2510b9b0a8",
     "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
     "tipo": "Family - after entry with visa for family reunification",
@@ -2287,68 +2354,6 @@
     "docNotes": null
   },
   {
-    "id": "30b7355e-7f7f-8122-a098-d451e78c875d",
-    "slug": "protezione-sociale-vittime-di-tratta",
-    "tipo": "Social protection for trafficking victims",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "📄 What it is and how to apply",
-        "content": "<p>The residence permit for social protection reasons concerns foreign citizens subject to a situation of violence or victims of crimes of prostitution exploitation, labor exploitation and against whom concrete dangers to their safety may arise.</p>\n<p>The permit for special protection is requested:</p>\n<ul><li>by the Public Prosecutor in cases where criminal proceedings have begun regarding acts of violence or serious exploitation against the foreigner.</li><li>by social services of local authorities;</li><li>by associations, entities and other organizations registered in the appropriate <a href=\"http://www.lavoro.gov.it/temi-e-priorita/immigrazione/focus-on/registro-associazioni-ed-enti/Pagine/default.aspx\">register at the Ministry of Labor and Social Policies</a> and authorized to implement assistance and social protection programs for foreigners.</li></ul>\n<p>The Police Headquarters (Questura), having received the request and verified the existence of the required conditions, issues the residence permit for humanitarian reasons.</p>\n<p>What are the requirements to obtain this permit?</p>\n<ul><li>You must be a victim of violence or serious exploitation.</li><li>You must be in danger for having tried to escape from exploiters or for having testified against them.</li><li>You must participate in an assistance and social integration program.</li><li>Should you decide to return to your country, if there is risk to your safety and that of your family members, this must be considered.</li></ul>\n<p>Is it necessary to file a complaint to obtain the residence permit?</p>\n<p>No. The permit under art 18 can in fact be issued in two ways:</p>\n<ul><li>Judicial pathway: the victim reports the exploiters and the permit is granted based on the Public Prosecutor&#039;s opinion.</li><li>Social pathway: the victim does not report, but enters a help program managed by specialized entities.</li></ul>",
-        "index": 0
-      },
-      {
-        "question": "What documents and requirements are needed?",
-        "content": "<ul><li>opinion of the Public Prosecutor, in cases where the Prosecutor provides indications about the severity and current nature of the danger;</li><li>participation of the foreigner in a social assistance and integration program prepared by local authorities or private entities registered in the appropriate register established at the Ministry of Labor and contracted with the local authority. </li><li>acceptance of the commitments related to the program by the head of the structure where the program must be implemented.</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "How long does it last?",
-        "content": "<p>The permit lasts <strong>6 months</strong>, renewable for 1 year or for the longer period required for justice reasons. It can be revoked in case of interruption of the social assistance and integration program or conduct incompatible with its purposes, reported by the public prosecutor or, within their competence, by the social service of the local authority, or in any case verified by the police chief, or when the other conditions that justified its issue are no longer met.</p>",
-        "index": 2
-      },
-      {
-        "question": "Can I convert it?",
-        "content": "<p>The permit can be converted to a residence permit for study or work reasons.</p>",
-        "index": 3
-      },
-      {
-        "question": "🔹 Art. 18 TUI (trafficking, violence, severe exploitation)",
-        "content": "<ul><li>For very serious cases (trafficking, violence, mandatory arrest in flagrante delicto).</li><li>Duration: 6 months → renewable.</li><li>With or without complaint (social protection program).</li></ul>",
-        "index": 4
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "4 Photos",
-      "Copy of passport (not expired)",
-      "Report/declaration from social services from social services",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Certificate of residence",
-      "postal payment slip for 30.46€"
-    ],
-    "primoMethod": "personally",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 passport photos",
-      "revenue stamp of 16€",
-      "Expiring permit",
-      "social services report if requested",
-      "proposal/opinion from judicial authority",
-      "Certificate of residence",
-      "Postal payment slip of €30.46",
-      "Hospitality declaration or rental contract or residence certificate"
-    ],
-    "rinnovoMethod": "personally",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "30b7355e-7f7f-814a-8182-e3a60f51a502",
     "slug": "protezione-sociale-vittime-di-violenza-domestica",
     "tipo": "Social protection for victims of domestic violence",
@@ -2459,101 +2464,6 @@
       "Expiring permit"
     ],
     "rinnovoMethod": "personally",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-81b0-bde2-c2e99d29a52a",
-    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
-    "tipo": "Employed work (conversion from another permit)",
-    "emoji": "💼",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>If you&#039;re on this page it&#039;s because you have a residence permit and you&#039;re wondering if you can convert it to a residence permit for employed work. </p>\n<p>→ Take the test to find out if you can convert your residence permit to a residence permit for employed work. </p>\n<p>The residence permit for employed work is issued if <strong>you work as an employee of an employer with a regular contract</strong>. This means you have a boss who pays you a salary and you are their employee.\n</p>",
-        "index": 0
-      },
-      {
-        "question": "What are the conditions to obtain it?",
-        "content": "<p>To get this permit you need to have a <strong>regular employment contract</strong> with an Italian employer and a <strong>pay slip</strong> of at least 538 euros per month, more or less.</p>",
-        "index": 1
-      },
-      {
-        "question": "How do I apply for this permit?",
-        "content": "<p>You apply at the post office with the postal kit.</p>",
-        "index": 2
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>The duration depends on the type of work contract you have. Usually:</p>\n<ul><li><strong>2 years</strong> if your work contract is fixed-term (has an end date)</li><li><strong>3 years</strong> if your work contract is permanent (has no end date)</li></ul>\n<hr>\n<hr>",
-        "index": 3
-      },
-      {
-        "question": "What rights does it give me?",
-        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Work</strong> with a regular contract (employed work or self-employment)</li><li><strong>Obtain residence</strong> in the Municipality where you live</li><li><strong>Register with the National Health Service (NHS)</strong> and have a general practitioner</li><li><strong>Travel in the Schengen area</strong> with passport (for stays up to 3 months).</li><li><strong>Enroll in school, a professional course, or university</strong></li><li><strong>Apply for family reunification</strong></li></ul>\n<p> ‼️ You cannot work in another European country</p>\n<hr>",
-        "index": 4
-      },
-      {
-        "question": "What happens if I lose my job?",
-        "content": "<p>If you lose your job <strong>you don&#039;t lose the permit</strong> until expiration. You can:</p>\n<ul><li>Look for a new job</li><li>Register on unemployment lists</li><li>Request a <a href=\"/2187355e7f7f81d38a54d111fa27f45f\">permit for </a><a href=\"/2187355e7f7f81d38a54d111fa27f45f\"><strong>job seeking</strong></a> at renewal</li></ul>\n<hr>",
-        "index": 5
-      },
-      {
-        "question": "And when does the permit expire? Can I renew it? Can I convert it?",
-        "content": "<p>Before it expires you have two options:</p>\n<ol><li><strong>Renew it: </strong>the renewal request should preferably be submitted <strong>before expiration</strong> or in any case <strong>within 60 days</strong> from expiration. The application is made with a postal kit. </li></ol>\n<p><strong>2. Convert it: </strong>if you have all the necessary requirements, this permit can be converted into a residence permit for:</p>\n<ul><li>Study</li><li>Job seeking</li><li>Family reasons</li><li>Card for long-term residents (if you have at least 5 years of residence)</li></ul>",
-        "index": 6
-      },
-      {
-        "question": "What is this permit?",
-        "content": "<p>It is a residence permit for those who <strong>work independently</strong>, that is <strong>do not have an employer</strong>, but carry out work or professional activity on their own (for example: merchant, craftsman, freelancer, etc.).</p>",
-        "index": 7
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<ul><li>The duration depends on the activity you perform and the documents you present, but usually it is <strong>1 to 2 years</strong>.</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "When does the permit expire, what do I do?",
-        "content": "<ul><li>You must <strong>apply for renewal</strong> <strong>before expiration </strong>or at most within 60 days after</li><li>If <strong>you meet the requirements</strong>, you can also <strong>convert it</strong> into another type of permit (study, family, long-term resident, employed work, etc.). You must request the conversion before expiration.</li></ul>",
-        "index": 9
-      },
-      {
-        "question": "If I am unemployed at the time of renewal?",
-        "content": "<p>You can request the issue of a <a href=\"https://www.sospermesso.it/Permesso-di-soggiorno-per-attesa-occupazione-ricerca-lavoro-2187355e7f7f81d38a54d111fa27f45f\">residence permit for job seeking</a>, attaching the registration at the Employment Center!</p>",
-        "index": 10
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "Copy of passport (not expired)",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Employment contract",
-      "Copy of your employer's ID document (if Italian or European) or copy of their residence permit (if non-EU citizen)",
-      "4 Photos",
-      "Proof of income (CUD and/or pay slips)",
-      "UNILAV certificate",
-      "Postal payment slip of €70.46 or €80.46 (depends on permit duration)"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 passport photos",
-      "Copy of passport (not expired)",
-      "Expiring permit",
-      "revenue stamp of 16€",
-      "Employment contract",
-      "Proof of income (CUD and/or pay slips)",
-      "UNILAV certificate",
-      "Hospitality declaration or rental contract or residence certificate",
-      "Postal payment slip of €70.46 or €80.46 (depends on permit duration)"
-    ],
-    "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": null,
