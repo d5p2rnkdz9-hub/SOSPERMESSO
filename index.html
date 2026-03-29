@@ -49,11 +49,13 @@ extraStyles: |
     }
 
     .hr-hero p {
-      font-size: 1.05rem;
-      color: var(--hr-gray-medium);
-      line-height: 1.6;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--hr-gray-dark);
+      line-height: 1.5;
       margin-bottom: 1.5rem;
-      max-width: 480px;
+      max-width: 520px;
     }
 
     .hr-hero-badges {
@@ -83,7 +85,7 @@ extraStyles: |
 
     .hr-hero-image {
       width: 100%;
-      max-width: 400px;
+      max-width: 520px;
       margin: 0 auto;
       display: block;
     }
@@ -227,20 +229,6 @@ extraStyles: |
       box-shadow: 0px 0px 0 var(--hr-black);
     }
 
-    /* ── GUIDE SECTION (3-col uses same card) ── */
-    .hr-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .hr-ucard--col {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
     .hr-badge-soon {
       position: absolute;
       top: 12px;
@@ -263,7 +251,7 @@ extraStyles: |
     }
 
     .hr-cta p {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 1.1rem;
       font-weight: 700;
       color: var(--hr-black);
@@ -300,7 +288,6 @@ extraStyles: |
       .hr-hero-badges { justify-content: center; }
       .hr-hero-image { max-width: 260px; order: -1; }
       .hr-cards-grid { grid-template-columns: 1fr; }
-      .hr-grid-3 { grid-template-columns: 1fr; }
       .hr-btn { width: 100%; text-align: center; }
       .hr-ucard-arrow { display: none; }
     }
@@ -321,7 +308,7 @@ extraStyles: |
         <h1>
           La tua Guida ai<br>
           Permessi di Soggiorno.<br>
-          <span class="hr-highlight">Facile.</span> Completa. Aggiornata.
+          <span class="hr-highlight" style="font-weight: 400;">Facile.</span><span style="font-weight: 400;"> Completa. Aggiornata.</span>
         </h1>
         <p>
           Informazioni e test interattivi sui permessi di soggiorno in Italia.
@@ -339,7 +326,7 @@ extraStyles: |
         </div>
       </div>
       <div>
-        <img src="IMAGES/team checklist-rafiki.svg" alt="Persone che consultano documenti" class="hr-hero-image">
+        <img src="IMAGES/hero-illustration.png" alt="Persone che consultano documenti sui permessi di soggiorno" class="hr-hero-image">
       </div>
     </div>
   </section>
@@ -374,10 +361,10 @@ extraStyles: |
     </div>
   </section>
 
-  <!-- QUESTION CARDS -->
-  <section class="hr-section hr-section-alt">
+  <!-- INFORMAZIONI (merged section) -->
+  <section class="hr-section hr-section-alt" id="informazioni">
     <div class="hr-container">
-      <h2 class="hr-section-title">Che cosa vuoi sapere?</h2>
+      <h2 class="hr-section-title"><span class="hr-tag" style="font-size: 0.75rem; padding: 5px 12px; letter-spacing: 2px;">Informazioni</span></h2>
       <div class="hr-cards-grid">
 
         <a href="database.html" class="hr-ucard">
@@ -412,6 +399,14 @@ extraStyles: |
           </div>
         </a>
 
+        <a href="protezione-internazionale.html" class="hr-ucard">
+          <span class="hr-ucard-icon">🛡️</span>
+          <div>
+            <h3>Protezione internazionale</h3>
+            <p>Come chiedere asilo in Italia e come funziona la procedura</p>
+          </div>
+        </a>
+
         <a href="aiuto-legale.html" class="hr-ucard">
           <span class="hr-ucard-icon">⚖️</span>
           <div>
@@ -428,31 +423,15 @@ extraStyles: |
           </div>
         </a>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- GUIDES -->
-  <section class="hr-section">
-    <div class="hr-container">
-      <h2 class="hr-section-title">Avere un permesso in Italia</h2>
-      <div class="hr-grid-3">
-        <a href="protezione-internazionale.html" class="hr-ucard hr-ucard--col">
-          <span class="hr-ucard-icon">🛡️</span>
-          <h3>Protezione internazionale</h3>
-          <p>Come chiedere asilo in Italia e come funziona la procedura</p>
-        </a>
-        <a href="ricongiungimento-familiare.html" class="hr-ucard hr-ucard--col">
-          <span class="hr-ucard-icon">👨‍👩‍👧</span>
-          <h3>Ricongiungimento familiare</h3>
-          <p>Come chiedere il nullaosta per portare familiari in Italia</p>
-        </a>
-        <a href="decreto-flussi.html" class="hr-ucard hr-ucard--col" style="overflow: hidden;">
+        <a href="decreto-flussi.html" class="hr-ucard" style="overflow: hidden; position: relative;">
           <span class="hr-badge-soon">In arrivo</span>
           <span class="hr-ucard-icon">💼</span>
-          <h3>Decreto flussi</h3>
-          <p>Come funziona l'ingresso per lavoro</p>
+          <div>
+            <h3>Decreto flussi</h3>
+            <p>Come funziona l'ingresso per lavoro</p>
+          </div>
         </a>
+
       </div>
     </div>
   </section>

@@ -1,307 +1,448 @@
 ---
 layout: layouts/base.liquid
-title: "S.O.S.Permesso - Tu guía para los permisos de estadía en Italia"
+title: "S.O.S.Permesso - Tu Guía Fácil a los Permisos de Residencia en Italia"
 lang: es
-description: "SOS Permesso - Guía completa de los permisos de estadía en Italia"
+description: "SOS Permesso - Información y tests interactivos sobre permisos de residencia en Italia"
 extraStyles: |
   <style>
+    /* ── HOMEPAGE REFRESH — scoped styles ── */
 
-      .lighthouse-container {
-        max-width: 400px;
-        margin: 0 auto;
-        position: relative;
+    .home-refresh {
+      --hr-yellow: #FFD700;
+      --hr-yellow-light: #FFF9E6;
+      --hr-yellow-bright: #FFEB3B;
+      --hr-black: #1A1A1A;
+      --hr-gray-dark: #2D2D2D;
+      --hr-gray-medium: #757575;
+      --hr-gray-light: #F5F5F5;
+      --hr-white: #FFFFFF;
+    }
+
+    /* ── HERO ── */
+    .hr-hero {
+      padding: 4.5rem 0 3.5rem;
+      background: var(--hr-white);
+    }
+
+    .hr-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .hr-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--hr-black);
+      margin-bottom: 1rem;
+    }
+
+    .hr-hero .hr-highlight {
+      background: linear-gradient(180deg, transparent 50%, var(--hr-yellow) 50%);
+      padding: 0 4px;
+    }
+
+    .hr-hero p {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--hr-gray-dark);
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      max-width: 520px;
+    }
+
+    .hr-hero-badges {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .hr-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--hr-gray-medium);
+    }
+
+    .hr-badge-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--hr-yellow-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .hr-hero-image {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* ── SECTION BASE ── */
+    .hr-section {
+      padding: 4rem 0;
+    }
+
+    .hr-section-yellow {
+      background: var(--hr-yellow);
+    }
+
+    .hr-section-alt {
+      background: var(--hr-gray-light);
+    }
+
+    .hr-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .hr-section-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--hr-black);
+      margin-bottom: 2rem;
+    }
+
+    /* ── UNIFIED CARD SYSTEM ── */
+    .hr-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hr-ucard {
+      background: var(--hr-white);
+      border: 2.5px solid var(--hr-black);
+      border-radius: 16px;
+      padding: 1.35rem 1.5rem;
+      text-decoration: none;
+      color: var(--hr-black);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: all 0.12s ease;
+      box-shadow: 4px 4px 0 var(--hr-black);
+      cursor: pointer;
+    }
+
+    .hr-ucard:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 var(--hr-black);
+    }
+
+    .hr-ucard:active {
+      transform: translate(3px, 3px);
+      box-shadow: 1px 1px 0 var(--hr-black);
+    }
+
+    /* Yellow variant for test badges */
+    .hr-ucard--yellow {
+      background: var(--hr-yellow);
+    }
+
+    .hr-ucard-icon {
+      font-size: 1.75rem;
+      flex-shrink: 0;
+    }
+
+    .hr-ucard h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      margin: 0 0 0.25rem;
+      line-height: 1.3;
+    }
+
+    .hr-ucard p {
+      font-size: 0.82rem;
+      color: var(--hr-gray-dark);
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .hr-ucard--yellow p {
+      color: var(--hr-gray-dark);
+    }
+
+    .hr-tag {
+      display: inline-block;
+      background: var(--hr-black);
+      color: var(--hr-yellow);
+      font-size: 0.6rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.35rem;
+    }
+
+    .hr-ucard-arrow {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-left: auto;
+      flex-shrink: 0;
+      color: var(--hr-black);
+    }
+
+    /* ── BRUTALIST BUTTON ── */
+    .hr-btn {
+      display: inline-block;
+      background: var(--hr-yellow);
+      color: var(--hr-black);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 0.9rem 2.25rem;
+      border-radius: 14px;
+      text-decoration: none;
+      border: 2.5px solid var(--hr-black);
+      transition: all 0.12s ease;
+      box-shadow: 4px 4px 0 var(--hr-black);
+    }
+
+    .hr-btn:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 var(--hr-black);
+    }
+
+    .hr-btn:active {
+      transform: translate(4px, 4px);
+      box-shadow: 0px 0px 0 var(--hr-black);
+    }
+
+    .hr-badge-soon {
+      position: absolute;
+      top: 12px;
+      right: -30px;
+      background: var(--hr-black);
+      color: var(--hr-yellow);
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 4px 36px;
+      transform: rotate(45deg);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── CTA STRIP ── */
+    .hr-cta {
+      background: var(--hr-yellow);
+      padding: 2.25rem 0;
+      text-align: center;
+    }
+
+    .hr-cta p {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--hr-black);
+      margin: 0 0 1rem;
+    }
+
+    .hr-btn-dark {
+      display: inline-block;
+      background: var(--hr-black);
+      color: var(--hr-white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 2px solid var(--hr-black);
+      transition: all 0.15s;
+    }
+
+    .hr-btn-dark:hover {
+      background: var(--hr-gray-dark);
+      transform: translateY(-2px);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hr-hero { padding: 3rem 0 2.5rem; }
+      .hr-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
       }
+      .hr-hero h1 { font-size: 1.9rem; }
+      .hr-hero p { margin: 0 auto 1.5rem; }
+      .hr-hero-badges { justify-content: center; }
+      .hr-hero-image { max-width: 260px; order: -1; }
+      .hr-cards-grid { grid-template-columns: 1fr; }
+      .hr-btn { width: 100%; text-align: center; }
+      .hr-ucard-arrow { display: none; }
+    }
 
-      #lighthouse-svg {
-        width: 100%;
-        height: auto;
-        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
-      }
-
-      .wave {
-        animation: wave-float 3s ease-in-out infinite;
-      }
-      .wave-1 { animation-delay: 0s; animation-duration: 4s; }
-      .wave-2 { animation-delay: 0.3s; animation-duration: 5s; }
-      .wave-3 { animation-delay: 0.6s; animation-duration: 6s; }
-
-      @keyframes wave-float {
-        0%, 100% { transform: translateX(0) translateY(0); }
-        25% { transform: translateX(-5px) translateY(-2px); }
-        50% { transform: translateX(-10px) translateY(0); }
-        75% { transform: translateX(-5px) translateY(2px); }
-      }
-
-      .rotating-beam {
-        transform-origin: 150px 120px;
-        animation: rotate-beam 4s linear infinite;
-      }
-
-      @keyframes rotate-beam {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-
-      .blinking-star {
-        animation: blink 2s ease-in-out infinite;
-      }
-
-      .star-glow {
-        animation: glow-pulse 2s ease-in-out infinite;
-      }
-
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
-      }
-
-      @keyframes glow-pulse {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 0.6; transform: scale(1.2); }
-      }
-
-      .window-light, .tower-window {
-        animation: light-pulse 3s ease-in-out infinite;
-      }
-
-      .tower-window {
-        animation-delay: 0.5s;
-      }
-
-      @keyframes light-pulse {
-        0%, 100% { opacity: 0.7; }
-        50% { opacity: 1; }
-      }
-
-      .light-room {
-        animation: room-glow 2s ease-in-out infinite;
-      }
-
-      @keyframes room-glow {
-        0%, 100% { opacity: 0.6; }
-        50% { opacity: 0.9; }
-      }
-
-      .eye {
-        animation: eye-blink 4s ease-in-out infinite;
-      }
-
-      .eye-right {
-        animation-delay: 0.1s;
-      }
-
-      @keyframes eye-blink {
-        0%, 96%, 100% { transform: scaleY(1); }
-        98% { transform: scaleY(0.1); }
-      }
-
-      .lighthouse-container:hover #lighthouse-tower,
-      .lighthouse-container:hover #lighthouse-cupola,
-      .lighthouse-container:hover #star-top {
-        animation: sway 1s ease-in-out infinite;
-      }
-
-      @keyframes sway {
-        0%, 100% { transform: rotate(0deg); }
-        25% { transform: rotate(1deg); }
-        75% { transform: rotate(-1deg); }
-      }
-
-      @media (max-width: 768px) {
-        .lighthouse-container { max-width: 300px; }
-      }
-
-      @media (max-width: 480px) {
-        .lighthouse-container { max-width: 250px; }
-      }
-
+    @media (max-width: 480px) {
+      .hr-hero h1 { font-size: 1.6rem; }
+      .hr-ucard { padding: 1.1rem 1.25rem; }
+    }
   </style>
 ---
 
-  <!-- HERO SECTION -->
-  <section class="hero-split" id="home">
-    <div class="container">
-      <div class="hero-grid">
-        <!-- Left: Text Content -->
-        <div class="hero-text">
-          <h1 class="hero-display-title">
-            Tu guía para los <span class="nowrap">permisos de estadía.</span><br>
-            <em class="hero-tagline"><span class="hero-highlight">Simple.</span> Claro. Gratis.</em>
-          </h1>
+<div class="home-refresh">
 
-          <p class="hero-description">
-            Información completa y actualizada sobre los permisos de estadía en Italia, para gestionar los trámites burocráticos sin estrés.
-          </p>
-
-          <a href="database.html" class="btn-hero-cta">
-            Explorar los permisos →
-          </a>
-
-          <!-- Trust badges -->
-          <div class="hero-badges">
-            <div class="hero-badge">
-              <span class="badge-icon">📚</span>
-              <span class="badge-text">41+ Permisos</span>
-            </div>
-            <div class="hero-badge">
-              <span class="badge-icon">✓</span>
-              <span class="badge-text">Updated 31.12.2025</span>
-            </div>
+  <!-- HERO (dark with yellow accents) -->
+  <section class="hr-hero">
+    <div class="hr-hero-grid">
+      <div>
+        <h1>
+          Tu Guía a los<br>
+          Permisos de Residencia.<br>
+          <span class="hr-highlight" style="font-weight: 400;">Fácil.</span><span style="font-weight: 400;"> Completa. Actualizada.</span>
+        </h1>
+        <p>
+          Información y tests interactivos sobre permisos de residencia en Italia.
+        </p>
+        <a href="database.html" class="hr-btn">Todos los Permisos →</a>
+        <div class="hr-hero-badges">
+          <div class="hr-badge">
+            <span class="hr-badge-icon">📚</span>
+            <span>41+ Permisos</span>
+          </div>
+          <div class="hr-badge">
+            <span class="hr-badge-icon">✓</span>
+            <span>Actualizada 2025</span>
           </div>
         </div>
-
-        <!-- Right: Illustration -->
-        <div class="hero-illustration">
-          <img src="../IMAGES/team checklist-rafiki.svg" alt="Personas consultando documentos" class="hero-image">
-        </div>
       </div>
-    </div>
-
-    <!-- Wave divider -->
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="#FFD700"></path>
-      </svg>
-    </div>
-  </section>
-
-  <!-- TESTS SECTION -->
-  <section class="section" id="test" style="background: linear-gradient(180deg, #FFD700 0%, #FFF9E6 30%, #FFFFFF 100%); padding-top: 4rem;">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--black);">NUESTROS TESTS</h2>
-      </div>
-
-      <div class="grid grid-3">
-        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="card card-link card-yellow">
-          <span class="card-icon">🤞</span>
-          <h3 class="card-title">¿Puedo OBTENER un permiso?</h3>
-          <p class="card-description">Verifica si cumples los requisitos para obtener un permiso de estadía en Italia</p>
-          <button class="btn btn-primary">EMPEZAR EL TEST →</button>
-        </a>
-
-        <a href="https://form.typeform.com/to/oc9jhdkJ" target="_blank" rel="noopener" class="card card-link card-yellow">
-          <span class="card-icon">👉</span>
-          <h3 class="card-title">¿Puedo CONVERTIR mi permiso?</h3>
-          <p class="card-description">Descubre si puedes convertir tu permiso de estadía actual</p>
-          <button class="btn btn-primary">EMPEZAR EL TEST →</button>
-        </a>
-
-        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="card card-link card-yellow">
-          <span class="card-icon">🤙</span>
-          <h3 class="card-title">¿Puedo RENOVAR mi permiso?</h3>
-          <p class="card-description">Verifica si puedes renovar tu permiso de estadía</p>
-          <button class="btn btn-primary">EMPEZAR EL TEST →</button>
-        </a>
+      <div>
+        <img src="../IMAGES/hero-illustration.png" alt="Personas consultando documentos sobre permisos de residencia" class="hr-hero-image">
       </div>
     </div>
   </section>
 
-  <!-- DATABASE SECTION -->
-  <section id="database" class="section" style="background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--accent-teal);">NUESTRA BASE DE DATOS</h2>
-      </div>
+  <!-- TEST BADGES (prominent, first section) -->
+  <section class="hr-section">
+    <div class="hr-container">
+      <h2 class="hr-section-title"><span class="hr-tag" style="font-size: 0.75rem; padding: 5px 12px; letter-spacing: 2px;">Tests interactivos</span></h2>
+      <div class="hr-cards-grid">
 
-      <div style="max-width: 500px; margin: 0 auto;">
-        <a href="database.html" class="card card-link">
-          <span class="card-icon">📚</span>
-          <h3 class="card-title">Todos los permisos</h3>
-          <p class="card-description">Base de datos con todos (o casi todos) los permisos de estadía en Italia</p>
-        </a>
-      </div>
-    </div>
-  </section>
+        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="hr-ucard hr-ucard--yellow">
+          <span class="hr-ucard-icon">🤞</span>
+          <div>
 
-  <!-- GUIDES SECTION -->
-  <section class="section" id="guide" style="background: linear-gradient(135deg, #FFF9E6 0%, #FFE0B2 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--accent-orange);">NUESTRAS GUÍAS</h2>
-      </div>
-
-      <div class="grid grid-3" style="max-width: 900px; margin: 0 auto;">
-        <a href="protezione-internazionale.html" class="card card-link">
-          <span class="card-icon">🛡️</span>
-          <h3 class="card-title">Protección internacional</h3>
-          <p class="card-description">Cómo solicitar asilo en Italia y cómo funciona el procedimiento</p>
+            <h3>¿Puedo obtener un permiso?</h3>
+            <p>Responde a unas preguntas y descubre qué permisos puedes solicitar</p>
+          </div>
+          <span class="hr-ucard-arrow">→</span>
         </a>
 
-        <a href="ricongiungimento-familiare.html" class="card card-link">
-          <span class="card-icon">👨‍👩‍👧</span>
-          <h3 class="card-title">Reunificación familiar</h3>
-          <p class="card-description">Cómo solicitar la autorización para traer a familiares a Italia</p>
+        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="hr-ucard hr-ucard--yellow">
+          <span class="hr-ucard-icon">🔄</span>
+          <div>
+
+            <h3>¿Puedo renovar o convertir?</h3>
+            <p>Verifica si puedes renovar o cambiar tu permiso de residencia</p>
+          </div>
+          <span class="hr-ucard-arrow">→</span>
         </a>
 
-        <a href="decreto-flussi.html" class="card card-link" style="position: relative; overflow: hidden;">
-          <span style="position: absolute; top: 12px; right: -35px; background: var(--accent-orange); color: white; font-size: 0.65rem; font-weight: 600; padding: 4px 40px; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">Próximamente</span>
-          <span class="card-icon">💼</span>
-          <h3 class="card-title">Decreto flujos anual</h3>
-          <p class="card-description">Cómo ingresar a Italia para trabajar</p>
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- USEFUL LINKS SECTION -->
-  <section id="resources" class="section" style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--lighthouse-red);">ENLACES ÚTILES</h2>
-      </div>
+  <!-- INFORMACIÓN (merged section) -->
+  <section class="hr-section hr-section-alt" id="informazioni">
+    <div class="hr-container">
+      <h2 class="hr-section-title"><span class="hr-tag" style="font-size: 0.75rem; padding: 5px 12px; letter-spacing: 2px;">Información</span></h2>
+      <div class="hr-cards-grid">
 
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
-        <a href="aiuto-legale.html" class="card card-link">
-          <span class="card-icon">⚖️</span>
-          <h3 class="card-title">Asesoría legal gratuita cerca de ti</h3>
-          <p class="card-description">Oficinas y organizaciones que ofrecen asesoría legal gratuita en Italia</p>
+        <a href="database.html" class="hr-ucard">
+          <span class="hr-ucard-icon">🔍</span>
+          <div>
+            <h3>Todos los permisos</h3>
+            <p>Busca en la base de datos de todos los permisos de residencia en Italia</p>
+          </div>
         </a>
 
-        <a href="kit-postale.html" class="card card-link">
-          <span class="card-icon">📩</span>
-          <h3 class="card-title">Formularios útiles (kit postal y otros)</h3>
-          <p class="card-description">Guía práctica para llenar y enviar el kit postal</p>
+        <a href="database.html?go=documenti" class="hr-ucard">
+          <span class="hr-ucard-icon">📄</span>
+          <div>
+            <h3>¿Qué documentos necesito?</h3>
+            <p>Descubre qué documentos llevar a la Questura para tu permiso</p>
+          </div>
         </a>
 
-        <a href="controlla-permesso.html" class="card card-link">
-          <span class="card-icon">👀</span>
-          <h3 class="card-title">Consultar tu permiso</h3>
-          <p class="card-description">Verifica el estado de tu permiso</p>
+        <a href="database.html?go=costi" class="hr-ucard">
+          <span class="hr-ucard-icon">💰</span>
+          <div>
+            <h3>¿Cuánto cuesta el permiso?</h3>
+            <p>Boletines, sellos fiscales y costos para cada tipo de permiso</p>
+          </div>
         </a>
 
-        <a href="dizionario.html" class="card card-link">
-          <span class="card-icon">🔤</span>
-          <h3 class="card-title">Diccionario</h3>
-          <p class="card-description">Términos burocráticos explicados de forma sencilla</p>
+        <a href="ricongiungimento-familiare.html" class="hr-ucard">
+          <span class="hr-ucard-icon">👨‍👩‍👧</span>
+          <div>
+            <h3>¿Puedo traer a mi familia?</h3>
+            <p>Guía a la reunificación familiar en Italia</p>
+          </div>
         </a>
+
+        <a href="protezione-internazionale.html" class="hr-ucard">
+          <span class="hr-ucard-icon">🛡️</span>
+          <div>
+            <h3>Protección internacional</h3>
+            <p>Cómo solicitar asilo en Italia y cómo funciona el procedimiento</p>
+          </div>
+        </a>
+
+        <a href="aiuto-legale.html" class="hr-ucard">
+          <span class="hr-ucard-icon">⚖️</span>
+          <div>
+            <h3>Asistencia legal gratis</h3>
+            <p>Oficinas y asociaciones con asistencia legal gratuita cerca de ti</p>
+          </div>
+        </a>
+
+        <a href="dizionario.html" class="hr-ucard">
+          <span class="hr-ucard-icon">🔤</span>
+          <div>
+            <h3>Diccionario</h3>
+            <p>Términos burocráticos explicados de forma sencilla</p>
+          </div>
+        </a>
+
+        <a href="decreto-flussi.html" class="hr-ucard" style="overflow: hidden; position: relative;">
+          <span class="hr-badge-soon">Próximamente</span>
+          <span class="hr-ucard-icon">💼</span>
+          <div>
+            <h3>Decreto flussi</h3>
+            <p>Cómo funciona la entrada por trabajo</p>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- CTA SECTION -->
-  <section class="section">
-    <div class="container text-center">
-      <div class="alert alert-info" style="max-width: 600px; margin: 0 auto;">
-        <div>
-          ¿No has encontrado la respuesta que buscabas?
-          <a href="https://form.typeform.com/to/USx16QN3" class="btn btn-primary btn-sm" style="margin-left: 0;" target="_blank">
-            Contáctanos
-          </a>
-        </div>
-      </div>
+  <!-- CTA -->
+  <section class="hr-cta">
+    <div class="hr-container">
+      <p>¿No encontraste la respuesta?</p>
+      <a href="https://form.typeform.com/to/USx16QN3" target="_blank" rel="noopener" class="hr-btn-dark">Escríbenos</a>
     </div>
   </section>
 
-  <!-- CONTACT FORM MODAL -->
-  <div id="contact-form-container"></div>
 
-  <script>
-    // Load contact form component
-    fetch('../src/components/contact-form.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('contact-form-container').innerHTML = html;
-      })
-      .catch(err => console.error('Error loading contact form:', err));
-  </script>
+</div>
