@@ -1,7 +1,26 @@
 <!-- Navigation Component -->
 <div class="nav-wrapper">
   <ul class="nav-menu" id="nav-menu">
-    <!-- Language Switcher as first nav item -->
+    {% assign navData = nav[lang] | default: nav.it %}
+    {% for dropdown in navData.dropdowns %}
+    {% if dropdown.items.size > 0 %}
+    <li class="nav-item has-dropdown">
+      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link" aria-haspopup="true" aria-expanded="false"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}</a>
+      <ul class="nav-dropdown" role="menu">
+        {% for item in dropdown.items %}
+        <li role="none">
+          <a href="{% if item.external %}{{ item.href }}{% else %}{{ item.href | url }}{% endif %}" class="dropdown-link" role="menuitem"{% if item.external %} target="_blank"{% endif %}>{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <!-- Language Switcher as last nav item -->
     {%- assign urlPrefix = page.url | slice: 0, 4 -%}
     {%- if urlPrefix == "/en/" -%}
       {%- assign langItUrl = page.url | replace_first: "/en/", "/" -%}
@@ -74,24 +93,5 @@
         <li role="none"><a href="{{ langRuUrl }}" class="dropdown-link{% if lang == 'ru' %} active-lang{% endif %}" role="menuitem">🇷🇺 <span class="lang-code">RU</span><span class="lang-name"> Русский</span></a></li>
       </ul>
     </li>
-    {% assign navData = nav[lang] | default: nav.it %}
-    {% for dropdown in navData.dropdowns %}
-    {% if dropdown.items.size > 0 %}
-    <li class="nav-item has-dropdown">
-      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link" aria-haspopup="true" aria-expanded="false"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}</a>
-      <ul class="nav-dropdown" role="menu">
-        {% for item in dropdown.items %}
-        <li role="none">
-          <a href="{% if item.external %}{{ item.href }}{% else %}{{ item.href | url }}{% endif %}" class="dropdown-link" role="menuitem"{% if item.external %} target="_blank"{% endif %}>{{ item.label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </li>
-    {% else %}
-    <li class="nav-item">
-      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
   </ul>
 </div>

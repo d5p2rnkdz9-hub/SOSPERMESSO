@@ -2,14 +2,10 @@ module.exports = {
   it: {
     dropdowns: [
       {
-        label: "Database",
+        label: "Info",
         href: "/database.html",
-        items: []
-      },
-      {
-        label: "Guide",
-        href: "/dizionario.html",
         items: [
+          { label: "Tutti i permessi", href: "/database.html" },
           { label: "Protezione internazionale", href: "/protezione-internazionale.html" },
           { label: "Ricongiungimento familiare", href: "/ricongiungimento-familiare.html" },
           { label: "Dizionario", href: "/dizionario.html" }
@@ -40,14 +36,10 @@ module.exports = {
   en: {
     dropdowns: [
       {
-        label: "Database",
+        label: "Info",
         href: "/en/database.html",
-        items: []
-      },
-      {
-        label: "Guides",
-        href: "/en/dizionario.html",
         items: [
+          { label: "All permits", href: "/en/database.html" },
           { label: "International protection", href: "/en/protezione-internazionale.html" },
           { label: "Family reunification", href: "/en/ricongiungimento-familiare.html" },
           { label: "Dictionary", href: "/en/dizionario.html" }
@@ -78,14 +70,10 @@ module.exports = {
   fr: {
     dropdowns: [
       {
-        label: "Base de données",
+        label: "Info",
         href: "/fr/database.html",
-        items: []
-      },
-      {
-        label: "Guides",
-        href: "/fr/dizionario.html",
         items: [
+          { label: "Tous les permis", href: "/fr/database.html" },
           { label: "Protection internationale", href: "/fr/protezione-internazionale.html" },
           { label: "Regroupement familial", href: "/fr/ricongiungimento-familiare.html" },
           { label: "Dictionnaire", href: "/fr/dizionario.html" }
@@ -116,14 +104,10 @@ module.exports = {
   es: {
     dropdowns: [
       {
-        label: "Base de datos",
+        label: "Info",
         href: "/es/database.html",
-        items: []
-      },
-      {
-        label: "Guías",
-        href: "/es/dizionario.html",
         items: [
+          { label: "Todos los permisos", href: "/es/database.html" },
           { label: "Protección internacional", href: "/es/protezione-internazionale.html" },
           { label: "Reunificación familiar", href: "/es/ricongiungimento-familiare.html" },
           { label: "Diccionario", href: "/es/dizionario.html" }
@@ -154,14 +138,10 @@ module.exports = {
   tr: {
     dropdowns: [
       {
-        label: "Veritabanı",
+        label: "Bilgi",
         href: "/tr/database.html",
-        items: []
-      },
-      {
-        label: "Rehberler",
-        href: "/tr/dizionario.html",
         items: [
+          { label: "Tüm izinler", href: "/tr/database.html" },
           { label: "Uluslararası koruma", href: "/tr/protezione-internazionale.html" },
           { label: "Aile birleşimi", href: "/tr/ricongiungimento-familiare.html" },
           { label: "Sözlük", href: "/tr/dizionario.html" }
@@ -192,14 +172,10 @@ module.exports = {
   ru: {
     dropdowns: [
       {
-        label: "База данных",
+        label: "Инфо",
         href: "/ru/database.html",
-        items: []
-      },
-      {
-        label: "Руководства",
-        href: "/ru/dizionario.html",
         items: [
+          { label: "Все разрешения", href: "/ru/database.html" },
           { label: "Международная защита", href: "/ru/protezione-internazionale.html" },
           { label: "Воссоединение семьи", href: "/ru/ricongiungimento-familiare.html" },
           { label: "Словарь", href: "/ru/dizionario.html" }
@@ -230,14 +206,10 @@ module.exports = {
   bn: {
     dropdowns: [
       {
-        label: "ডাটাবেস",
+        label: "তথ্য",
         href: "/bn/database.html",
-        items: []
-      },
-      {
-        label: "গাইড",
-        href: "/bn/dizionario.html",
         items: [
+          { label: "সব অনুমতি", href: "/bn/database.html" },
           { label: "আন্তর্জাতিক সুরক্ষা", href: "/bn/protezione-internazionale.html" },
           { label: "পারিবারিক পুনর্মিলন", href: "/bn/ricongiungimento-familiare.html" },
           { label: "অভিধান", href: "/bn/dizionario.html" }

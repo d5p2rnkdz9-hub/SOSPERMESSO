@@ -117,60 +117,70 @@ extraStyles: |
       margin-bottom: 2rem;
     }
 
-    /* ── TEST BADGES (prominent row) ── */
-    .hr-tests-row {
+    /* ── UNIFIED CARD SYSTEM ── */
+    .hr-cards-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.25rem;
       max-width: 900px;
-      margin: 0 auto 1.5rem;
+      margin: 0 auto;
     }
 
-    .hr-test-badge {
-      background: var(--hr-yellow);
-      border: 3px solid var(--hr-black);
+    .hr-ucard {
+      background: var(--hr-white);
+      border: 2.5px solid var(--hr-black);
       border-radius: 16px;
-      padding: 1.5rem 1.75rem;
+      padding: 1.35rem 1.5rem;
       text-decoration: none;
       color: var(--hr-black);
       display: flex;
       align-items: center;
       gap: 1rem;
       transition: all 0.12s ease;
-      box-shadow: 5px 5px 0 var(--hr-black);
+      box-shadow: 4px 4px 0 var(--hr-black);
+      cursor: pointer;
     }
 
-    .hr-test-badge:hover {
+    .hr-ucard:hover {
       transform: translate(2px, 2px);
-      box-shadow: 3px 3px 0 var(--hr-black);
+      box-shadow: 2px 2px 0 var(--hr-black);
     }
 
-    .hr-test-badge:active {
-      transform: translate(4px, 4px);
+    .hr-ucard:active {
+      transform: translate(3px, 3px);
       box-shadow: 1px 1px 0 var(--hr-black);
     }
 
-    .hr-test-badge-icon {
-      font-size: 2rem;
+    /* Yellow variant for test badges */
+    .hr-ucard--yellow {
+      background: var(--hr-yellow);
+    }
+
+    .hr-ucard-icon {
+      font-size: 1.75rem;
       flex-shrink: 0;
     }
 
-    .hr-test-badge h3 {
+    .hr-ucard h3 {
       font-family: 'Poppins', sans-serif;
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 800;
       margin: 0 0 0.25rem;
-      color: var(--hr-black);
+      line-height: 1.3;
     }
 
-    .hr-test-badge p {
-      font-size: 0.8rem;
+    .hr-ucard p {
+      font-size: 0.82rem;
       color: var(--hr-gray-dark);
       margin: 0;
       line-height: 1.4;
     }
 
-    .hr-test-badge .hr-tag {
+    .hr-ucard--yellow p {
+      color: var(--hr-gray-dark);
+    }
+
+    .hr-tag {
       display: inline-block;
       background: var(--hr-black);
       color: var(--hr-yellow);
@@ -180,66 +190,15 @@ extraStyles: |
       border-radius: 4px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
-    .hr-test-badge-arrow {
-      font-size: 1.4rem;
+    .hr-ucard-arrow {
+      font-size: 1.3rem;
       font-weight: 700;
       margin-left: auto;
       flex-shrink: 0;
       color: var(--hr-black);
-    }
-
-    /* ── QUESTION CARDS ── */
-    .hr-questions-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .hr-qcard {
-      background: var(--hr-white);
-      border: 2px solid #e5e5e5;
-      border-radius: 16px;
-      padding: 1.5rem 1.75rem;
-      text-decoration: none;
-      color: var(--hr-black);
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .hr-qcard:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      border-color: var(--hr-yellow);
-    }
-
-    .hr-qcard-icon {
-      font-size: 1.6rem;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .hr-qcard h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      margin: 0 0 0.35rem;
-      line-height: 1.3;
-    }
-
-    .hr-qcard p {
-      font-size: 0.85rem;
-      color: var(--hr-gray-medium);
-      line-height: 1.5;
-      margin: 0;
     }
 
     /* ── BRUTALIST BUTTON ── */
@@ -268,7 +227,7 @@ extraStyles: |
       box-shadow: 0px 0px 0 var(--hr-black);
     }
 
-    /* ── GUIDE CARDS ── */
+    /* ── GUIDE SECTION (3-col uses same card) ── */
     .hr-grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -277,42 +236,9 @@ extraStyles: |
       margin: 0 auto;
     }
 
-    .hr-card {
-      background: var(--hr-white);
-      border: 2px solid #e5e5e5;
-      border-radius: 16px;
-      padding: 1.5rem;
-      text-decoration: none;
-      color: var(--hr-black);
-      transition: all 0.2s ease;
-      display: flex;
+    .hr-ucard--col {
       flex-direction: column;
-      position: relative;
-    }
-
-    .hr-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      border-color: var(--hr-yellow);
-    }
-
-    .hr-card-icon {
-      font-size: 1.6rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .hr-card h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin: 0 0 0.35rem;
-    }
-
-    .hr-card p {
-      font-size: 0.85rem;
-      color: var(--hr-gray-medium);
-      line-height: 1.5;
-      margin: 0;
+      align-items: flex-start;
     }
 
     .hr-badge-soon {
@@ -362,113 +288,6 @@ extraStyles: |
       transform: translateY(-2px);
     }
 
-    /* ── SEARCH MODAL ── */
-    .psm-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.5);
-      backdrop-filter: blur(4px);
-      z-index: 1000;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-
-    .psm-overlay.psm-open {
-      display: flex;
-    }
-
-    .psm-box {
-      background: var(--hr-white);
-      border-radius: 20px;
-      width: 100%;
-      max-width: 560px;
-      max-height: 80vh;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-      animation: psm-slide-up 0.2s ease;
-    }
-
-    @keyframes psm-slide-up {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .psm-header {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 1.25rem 1.5rem;
-      border-bottom: 1px solid #eee;
-    }
-
-    .psm-input {
-      flex: 1;
-      border: none;
-      outline: none;
-      font-size: 1rem;
-      font-family: 'Inter', sans-serif;
-      color: var(--hr-black);
-      background: transparent;
-    }
-
-    .psm-input::placeholder {
-      color: #bbb;
-    }
-
-    .psm-close {
-      background: none;
-      border: none;
-      font-size: 1.3rem;
-      cursor: pointer;
-      color: var(--hr-gray-medium);
-      padding: 0.25rem;
-      line-height: 1;
-      border-radius: 8px;
-      transition: background 0.15s;
-    }
-
-    .psm-close:hover {
-      background: var(--hr-gray-light);
-    }
-
-    .psm-list {
-      overflow-y: auto;
-      padding: 0.5rem;
-      flex: 1;
-    }
-
-    .psm-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 1rem;
-      text-decoration: none;
-      color: var(--hr-black);
-      border-radius: 10px;
-      transition: background 0.12s;
-      font-size: 0.95rem;
-    }
-
-    .psm-item:hover {
-      background: var(--hr-yellow-light);
-    }
-
-    .psm-item-emoji {
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-
-    .psm-empty {
-      display: none;
-      text-align: center;
-      padding: 2rem 1rem;
-      color: var(--hr-gray-medium);
-      font-size: 0.9rem;
-    }
-
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .hr-hero { padding: 3rem 0 2.5rem; }
@@ -480,32 +299,15 @@ extraStyles: |
       .hr-hero p { margin: 0 auto 1.5rem; }
       .hr-hero-badges { justify-content: center; }
       .hr-hero-image { max-width: 260px; order: -1; }
-      .hr-tests-row { grid-template-columns: 1fr; }
-      .hr-questions-grid { grid-template-columns: 1fr; }
+      .hr-cards-grid { grid-template-columns: 1fr; }
       .hr-grid-3 { grid-template-columns: 1fr; }
       .hr-btn { width: 100%; text-align: center; }
-      .hr-test-badge-arrow { display: none; }
-
-      .psm-box {
-        max-height: 90vh;
-        border-radius: 16px 16px 0 0;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        max-width: 100%;
-      }
-
-      .psm-overlay {
-        align-items: flex-end;
-        padding: 0;
-      }
+      .hr-ucard-arrow { display: none; }
     }
 
     @media (max-width: 480px) {
       .hr-hero h1 { font-size: 1.6rem; }
-      .hr-qcard { padding: 1.25rem; }
-      .hr-test-badge { padding: 1.25rem; }
+      .hr-ucard { padding: 1.1rem 1.25rem; }
     }
   </style>
 ---
@@ -545,27 +347,27 @@ extraStyles: |
   <!-- TEST BADGES (prominent, first section) -->
   <section class="hr-section">
     <div class="hr-container">
-      <h2 class="hr-section-title">Fai il test</h2>
-      <div class="hr-tests-row">
+      <h2 class="hr-section-title"><span class="hr-tag" style="font-size: 0.75rem; padding: 5px 12px; letter-spacing: 2px;">Test interattivi</span></h2>
+      <div class="hr-cards-grid">
 
-        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="hr-test-badge">
-          <span class="hr-test-badge-icon">🤞</span>
+        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="hr-ucard hr-ucard--yellow">
+          <span class="hr-ucard-icon">🤞</span>
           <div>
-            <span class="hr-tag">Test interattivo</span>
+
             <h3>Posso avere un permesso?</h3>
             <p>Rispondi a poche domande e scopri quali permessi puoi chiedere</p>
           </div>
-          <span class="hr-test-badge-arrow">→</span>
+          <span class="hr-ucard-arrow">→</span>
         </a>
 
-        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="hr-test-badge">
-          <span class="hr-test-badge-icon">🔄</span>
+        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="hr-ucard hr-ucard--yellow">
+          <span class="hr-ucard-icon">🔄</span>
           <div>
-            <span class="hr-tag">Test interattivo</span>
+
             <h3>Posso rinnovare o convertire?</h3>
             <p>Verifica se puoi rinnovare o cambiare il tuo permesso di soggiorno</p>
           </div>
-          <span class="hr-test-badge-arrow">→</span>
+          <span class="hr-ucard-arrow">→</span>
         </a>
 
       </div>
@@ -576,50 +378,50 @@ extraStyles: |
   <section class="hr-section hr-section-alt">
     <div class="hr-container">
       <h2 class="hr-section-title">Che cosa vuoi sapere?</h2>
-      <div class="hr-questions-grid">
+      <div class="hr-cards-grid">
 
-        <a href="database.html" class="hr-qcard">
-          <span class="hr-qcard-icon">🔍</span>
+        <a href="database.html" class="hr-ucard">
+          <span class="hr-ucard-icon">🔍</span>
           <div>
             <h3>Tutti i permessi</h3>
             <p>Cerca nel database di tutti i permessi di soggiorno in Italia</p>
           </div>
         </a>
 
-        <a href="#" class="hr-qcard" data-modal-anchor="#primo">
-          <span class="hr-qcard-icon">📄</span>
+        <a href="database.html?go=documenti" class="hr-ucard">
+          <span class="hr-ucard-icon">📄</span>
           <div>
             <h3>Quali documenti mi servono?</h3>
             <p>Scopri quali documenti portare in Questura per il tuo permesso</p>
           </div>
         </a>
 
-        <a href="#" class="hr-qcard" data-modal-anchor="#primo-quanto-costa">
-          <span class="hr-qcard-icon">💰</span>
+        <a href="database.html?go=costi" class="hr-ucard">
+          <span class="hr-ucard-icon">💰</span>
           <div>
             <h3>Quanto costa il permesso?</h3>
             <p>Bollettini, marche da bollo e costi per ogni tipo di permesso</p>
           </div>
         </a>
 
-        <a href="ricongiungimento-familiare.html" class="hr-qcard">
-          <span class="hr-qcard-icon">👨‍👩‍👧</span>
+        <a href="ricongiungimento-familiare.html" class="hr-ucard">
+          <span class="hr-ucard-icon">👨‍👩‍👧</span>
           <div>
             <h3>Posso portare qui la mia famiglia?</h3>
             <p>Guida al ricongiungimento familiare in Italia</p>
           </div>
         </a>
 
-        <a href="aiuto-legale.html" class="hr-qcard">
-          <span class="hr-qcard-icon">⚖️</span>
+        <a href="aiuto-legale.html" class="hr-ucard">
+          <span class="hr-ucard-icon">⚖️</span>
           <div>
             <h3>Assistenza legale gratis</h3>
             <p>Sportelli e associazioni con assistenza legale gratuita vicino a te</p>
           </div>
         </a>
 
-        <a href="dizionario.html" class="hr-qcard">
-          <span class="hr-qcard-icon">🔤</span>
+        <a href="dizionario.html" class="hr-ucard">
+          <span class="hr-ucard-icon">🔤</span>
           <div>
             <h3>Dizionario</h3>
             <p>Termini burocratici spiegati in modo semplice</p>
@@ -635,19 +437,19 @@ extraStyles: |
     <div class="hr-container">
       <h2 class="hr-section-title">Avere un permesso in Italia</h2>
       <div class="hr-grid-3">
-        <a href="protezione-internazionale.html" class="hr-card">
-          <span class="hr-card-icon">🛡️</span>
+        <a href="protezione-internazionale.html" class="hr-ucard hr-ucard--col">
+          <span class="hr-ucard-icon">🛡️</span>
           <h3>Protezione internazionale</h3>
           <p>Come chiedere asilo in Italia e come funziona la procedura</p>
         </a>
-        <a href="ricongiungimento-familiare.html" class="hr-card">
-          <span class="hr-card-icon">👨‍👩‍👧</span>
+        <a href="ricongiungimento-familiare.html" class="hr-ucard hr-ucard--col">
+          <span class="hr-ucard-icon">👨‍👩‍👧</span>
           <h3>Ricongiungimento familiare</h3>
           <p>Come chiedere il nullaosta per portare familiari in Italia</p>
         </a>
-        <a href="decreto-flussi.html" class="hr-card" style="overflow: hidden;">
+        <a href="decreto-flussi.html" class="hr-ucard hr-ucard--col" style="overflow: hidden;">
           <span class="hr-badge-soon">In arrivo</span>
-          <span class="hr-card-icon">💼</span>
+          <span class="hr-ucard-icon">💼</span>
           <h3>Decreto flussi</h3>
           <p>Come funziona l'ingresso per lavoro</p>
         </a>
@@ -663,29 +465,5 @@ extraStyles: |
     </div>
   </section>
 
-  <!-- PERMIT SEARCH MODAL -->
-  <div id="permit-search-modal" class="psm-overlay" role="dialog" aria-modal="true" aria-label="Cerca permesso">
-    <div class="psm-box">
-      <div class="psm-header">
-        <span style="font-size: 1.1rem;">🔍</span>
-        <input type="text" class="psm-input" placeholder="Cerca un permesso..." autocomplete="off">
-        <button class="psm-close" aria-label="Chiudi">&times;</button>
-      </div>
-      <div class="psm-list">
-        {%- for permit in permits -%}
-          {%- if permit.slug -%}
-        <a class="psm-item" data-href="permesso-{{ permit.slug }}.html" data-name="{{ permit.tipo }}" href="#">
-          <span class="psm-item-emoji">{{ permit.emoji }}</span>
-          <span>{{ permit.tipo }}</span>
-        </a>
-          {%- endif -%}
-        {%- endfor -%}
-        <div class="psm-empty">Nessun permesso trovato</div>
-      </div>
-    </div>
-  </div>
 
 </div>
-
-<!-- Search modal script -->
-<script src="src/scripts/permit-search-modal.js"></script>
