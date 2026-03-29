@@ -149,6 +149,103 @@ extraStyles: |
         margin: 0 auto;
       }
 
+      /* ── SEARCH + FILTER ── */
+      .db-search-wrap {
+        max-width: 900px;
+        margin: 0 auto 1.5rem;
+      }
+
+      .db-search-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: white;
+        border: 2px solid #e5e5e5;
+        border-radius: 14px;
+        padding: 0.85rem 1.25rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        transition: border-color 0.2s;
+      }
+
+      .db-search-bar:focus-within {
+        border-color: #FFD700;
+        box-shadow: 0 2px 12px rgba(255,215,0,0.15);
+      }
+
+      .db-search-bar .search-icon {
+        font-size: 1.1rem;
+        flex-shrink: 0;
+      }
+
+      .db-search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+        color: #1A1A1A;
+        background: transparent;
+      }
+
+      .db-search-input::placeholder {
+        color: #bbb;
+      }
+
+      .db-search-count {
+        font-size: 0.8rem;
+        color: #999;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .db-filters {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .db-filter-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.65rem 1.25rem;
+        border-radius: 12px;
+        border: 2.5px solid #1A1A1A;
+        background: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #1A1A1A;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        box-shadow: 3px 3px 0 #1A1A1A;
+        text-decoration: none;
+      }
+
+      .db-filter-badge:hover {
+        transform: translate(1px, 1px);
+        box-shadow: 2px 2px 0 #1A1A1A;
+      }
+
+      .db-filter-badge.active {
+        background: #FFD700;
+        transform: translate(3px, 3px);
+        box-shadow: 0px 0px 0 #1A1A1A;
+      }
+
+      .db-filter-badge .badge-emoji {
+        font-size: 1.1rem;
+      }
+
+      .db-no-results {
+        display: none;
+        text-align: center;
+        padding: 2.5rem 1rem;
+        color: #999;
+        font-size: 0.95rem;
+      }
+
       @media (max-width: 768px) {
         .permit-row {
           flex-direction: column;
@@ -172,6 +269,20 @@ extraStyles: |
           padding: 1rem;
           border-radius: 8px;
         }
+
+        .db-filters {
+          gap: 0.5rem;
+        }
+
+        .db-filter-badge {
+          padding: 0.5rem 0.9rem;
+          font-size: 0.78rem;
+          box-shadow: 2px 2px 0 #1A1A1A;
+        }
+
+        .db-filter-badge.active {
+          transform: translate(2px, 2px);
+        }
       }
 
   </style>
@@ -193,10 +304,34 @@ extraStyles: |
         </div>
       </div>
 
+      <!-- SEARCH + FILTER BADGES -->
+      <div class="db-search-wrap">
+        <div class="db-search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="db-search-input" placeholder="Cerca un permesso..." autocomplete="off">
+          <span class="db-search-count"></span>
+        </div>
+        <div class="db-filters">
+          <button class="db-filter-badge" data-filter="studio-lavoro">
+            <span class="badge-emoji">📋</span> Studio / Lavoro
+          </button>
+          <button class="db-filter-badge" data-filter="protezione">
+            <span class="badge-emoji">🛡️</span> Protezione
+          </button>
+          <button class="db-filter-badge" data-filter="cure-mediche">
+            <span class="badge-emoji">🏥</span> Cure Mediche
+          </button>
+          <button class="db-filter-badge" data-filter="famiglia">
+            <span class="badge-emoji">👨‍👩‍👧</span> Famiglia
+          </button>
+        </div>
+      </div>
+
       <div class="database-container">
+        <div class="db-no-results">Nessun permesso trovato</div>
 
         <!-- STUDIO/LAVORO -->
-        <div class="category-section category-purple">
+        <div class="category-section category-purple" data-category="studio-lavoro">
           <h2 class="category-title">STUDIO/LAVORO</h2>
           <ul class="permit-list">
 
@@ -386,7 +521,7 @@ extraStyles: |
         <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
 
         <!-- PROTEZIONE -->
-        <div class="category-section category-orange">
+        <div class="category-section category-orange" data-category="protezione">
           <h2 class="category-title">PROTEZIONE (INTERNAZIONALE O SOCIALE)</h2>
           <ul class="permit-list">
 
@@ -528,7 +663,7 @@ extraStyles: |
         <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
 
         <!-- CURE MEDICHE -->
-        <div class="category-section category-blue">
+        <div class="category-section category-blue" data-category="cure-mediche">
           <h2 class="category-title">CURE MEDICHE</h2>
           <ul class="permit-list">
 
@@ -586,7 +721,7 @@ extraStyles: |
         <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
 
         <!-- MOTIVI FAMILIARI -->
-        <div class="category-section category-teal">
+        <div class="category-section category-teal" data-category="famiglia">
           <h2 class="category-title">MOTIVI FAMILIARI</h2>
           <ul class="permit-list">
 
@@ -738,5 +873,96 @@ extraStyles: |
       </a>
     </div>
   </section>
+
+  <!-- DATABASE FILTER SCRIPT -->
+  <script>
+  (function() {
+    var input = document.querySelector('.db-search-input');
+    var badges = document.querySelectorAll('.db-filter-badge');
+    var sections = document.querySelectorAll('.category-section');
+    var separators = document.querySelectorAll('.database-container > hr');
+    var noResults = document.querySelector('.db-no-results');
+    var countEl = document.querySelector('.db-search-count');
+    var activeFilter = null;
+
+    // Count total permits
+    var allRows = document.querySelectorAll('.permit-row');
+    var totalCount = allRows.length;
+
+    function updateCount(visible) {
+      if (!countEl) return;
+      if (input.value || activeFilter) {
+        countEl.textContent = visible + ' / ' + totalCount;
+      } else {
+        countEl.textContent = totalCount + ' permessi';
+      }
+    }
+
+    function applyFilters() {
+      var query = (input.value || '').toLowerCase().trim();
+      var visibleTotal = 0;
+
+      sections.forEach(function(section) {
+        var cat = section.getAttribute('data-category');
+        var catMatch = !activeFilter || activeFilter === cat;
+
+        if (!catMatch) {
+          section.style.display = 'none';
+          return;
+        }
+
+        section.style.display = '';
+        var rows = section.querySelectorAll('.permit-row');
+        var sectionVisible = 0;
+
+        rows.forEach(function(row) {
+          var titleEl = row.querySelector('.title');
+          var name = titleEl ? titleEl.textContent.toLowerCase() : '';
+          var match = !query || name.indexOf(query) !== -1;
+          row.closest('li').style.display = match ? '' : 'none';
+          if (match) sectionVisible++;
+        });
+
+        // Hide entire section if no rows match
+        section.style.display = sectionVisible > 0 ? '' : 'none';
+        visibleTotal += sectionVisible;
+      });
+
+      // Hide separators when filtering
+      separators.forEach(function(hr) {
+        hr.style.display = (activeFilter || query) ? 'none' : '';
+      });
+
+      // No results message
+      if (noResults) {
+        noResults.style.display = visibleTotal === 0 ? 'block' : 'none';
+      }
+
+      updateCount(visibleTotal);
+    }
+
+    // Search input
+    input.addEventListener('input', applyFilters);
+
+    // Badge click toggles
+    badges.forEach(function(badge) {
+      badge.addEventListener('click', function() {
+        var filter = this.getAttribute('data-filter');
+        if (activeFilter === filter) {
+          activeFilter = null;
+          this.classList.remove('active');
+        } else {
+          badges.forEach(function(b) { b.classList.remove('active'); });
+          activeFilter = filter;
+          this.classList.add('active');
+        }
+        applyFilters();
+      });
+    });
+
+    // Initial count
+    updateCount(totalCount);
+  })();
+  </script>
 
   <!-- FOOTER -->

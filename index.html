@@ -2,318 +2,690 @@
 layout: layouts/base.liquid
 title: "S.O.S.Permesso - La Tua Guida Facile ai Permessi di Soggiorno in Italia"
 lang: it
-description: "SOS Permesso - Guida completa ai permessi di soggiorno in Italia"
+description: "SOS Permesso - Informazioni e test interattivi sui permessi di soggiorno in Italia"
 extraStyles: |
   <style>
-  
-      .lighthouse-container {
-        max-width: 400px;
-        margin: 0 auto;
-        position: relative;
+    /* ── HOMEPAGE REFRESH — scoped styles ── */
+
+    .home-refresh {
+      --hr-yellow: #FFD700;
+      --hr-yellow-light: #FFF9E6;
+      --hr-yellow-bright: #FFEB3B;
+      --hr-black: #1A1A1A;
+      --hr-gray-dark: #2D2D2D;
+      --hr-gray-medium: #757575;
+      --hr-gray-light: #F5F5F5;
+      --hr-white: #FFFFFF;
+    }
+
+    /* ── HERO ── */
+    .hr-hero {
+      padding: 4.5rem 0 3.5rem;
+      background: var(--hr-white);
+    }
+
+    .hr-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .hr-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--hr-black);
+      margin-bottom: 1rem;
+    }
+
+    .hr-hero .hr-highlight {
+      background: linear-gradient(180deg, transparent 50%, var(--hr-yellow) 50%);
+      padding: 0 4px;
+    }
+
+    .hr-hero p {
+      font-size: 1.05rem;
+      color: var(--hr-gray-medium);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      max-width: 480px;
+    }
+
+    .hr-hero-badges {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .hr-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--hr-gray-medium);
+    }
+
+    .hr-badge-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--hr-yellow-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .hr-hero-image {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* ── SECTION BASE ── */
+    .hr-section {
+      padding: 4rem 0;
+    }
+
+    .hr-section-yellow {
+      background: var(--hr-yellow);
+    }
+
+    .hr-section-alt {
+      background: var(--hr-gray-light);
+    }
+
+    .hr-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .hr-section-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--hr-black);
+      margin-bottom: 2rem;
+    }
+
+    /* ── TEST BADGES (prominent row) ── */
+    .hr-tests-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hr-test-badge {
+      background: var(--hr-yellow);
+      border: 3px solid var(--hr-black);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      text-decoration: none;
+      color: var(--hr-black);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: all 0.12s ease;
+      box-shadow: 5px 5px 0 var(--hr-black);
+    }
+
+    .hr-test-badge:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 3px 3px 0 var(--hr-black);
+    }
+
+    .hr-test-badge:active {
+      transform: translate(4px, 4px);
+      box-shadow: 1px 1px 0 var(--hr-black);
+    }
+
+    .hr-test-badge-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .hr-test-badge h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin: 0 0 0.25rem;
+      color: var(--hr-black);
+    }
+
+    .hr-test-badge p {
+      font-size: 0.8rem;
+      color: var(--hr-gray-dark);
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .hr-test-badge .hr-tag {
+      display: inline-block;
+      background: var(--hr-black);
+      color: var(--hr-yellow);
+      font-size: 0.6rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.4rem;
+    }
+
+    .hr-test-badge-arrow {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-left: auto;
+      flex-shrink: 0;
+      color: var(--hr-black);
+    }
+
+    /* ── QUESTION CARDS ── */
+    .hr-questions-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hr-qcard {
+      background: var(--hr-white);
+      border: 2px solid #e5e5e5;
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      text-decoration: none;
+      color: var(--hr-black);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .hr-qcard:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border-color: var(--hr-yellow);
+    }
+
+    .hr-qcard-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .hr-qcard h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0 0 0.35rem;
+      line-height: 1.3;
+    }
+
+    .hr-qcard p {
+      font-size: 0.85rem;
+      color: var(--hr-gray-medium);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ── BRUTALIST BUTTON ── */
+    .hr-btn {
+      display: inline-block;
+      background: var(--hr-yellow);
+      color: var(--hr-black);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 0.9rem 2.25rem;
+      border-radius: 14px;
+      text-decoration: none;
+      border: 2.5px solid var(--hr-black);
+      transition: all 0.12s ease;
+      box-shadow: 4px 4px 0 var(--hr-black);
+    }
+
+    .hr-btn:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 var(--hr-black);
+    }
+
+    .hr-btn:active {
+      transform: translate(4px, 4px);
+      box-shadow: 0px 0px 0 var(--hr-black);
+    }
+
+    /* ── GUIDE CARDS ── */
+    .hr-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hr-card {
+      background: var(--hr-white);
+      border: 2px solid #e5e5e5;
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: var(--hr-black);
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .hr-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border-color: var(--hr-yellow);
+    }
+
+    .hr-card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hr-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 0 0 0.35rem;
+    }
+
+    .hr-card p {
+      font-size: 0.85rem;
+      color: var(--hr-gray-medium);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .hr-badge-soon {
+      position: absolute;
+      top: 12px;
+      right: -30px;
+      background: var(--hr-black);
+      color: var(--hr-yellow);
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 4px 36px;
+      transform: rotate(45deg);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── CTA STRIP ── */
+    .hr-cta {
+      background: var(--hr-yellow);
+      padding: 2.25rem 0;
+      text-align: center;
+    }
+
+    .hr-cta p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--hr-black);
+      margin: 0 0 1rem;
+    }
+
+    .hr-btn-dark {
+      display: inline-block;
+      background: var(--hr-black);
+      color: var(--hr-white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 2px solid var(--hr-black);
+      transition: all 0.15s;
+    }
+
+    .hr-btn-dark:hover {
+      background: var(--hr-gray-dark);
+      transform: translateY(-2px);
+    }
+
+    /* ── SEARCH MODAL ── */
+    .psm-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .psm-overlay.psm-open {
+      display: flex;
+    }
+
+    .psm-box {
+      background: var(--hr-white);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 560px;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      animation: psm-slide-up 0.2s ease;
+    }
+
+    @keyframes psm-slide-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .psm-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .psm-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--hr-black);
+      background: transparent;
+    }
+
+    .psm-input::placeholder {
+      color: #bbb;
+    }
+
+    .psm-close {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: var(--hr-gray-medium);
+      padding: 0.25rem;
+      line-height: 1;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+
+    .psm-close:hover {
+      background: var(--hr-gray-light);
+    }
+
+    .psm-list {
+      overflow-y: auto;
+      padding: 0.5rem;
+      flex: 1;
+    }
+
+    .psm-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: var(--hr-black);
+      border-radius: 10px;
+      transition: background 0.12s;
+      font-size: 0.95rem;
+    }
+
+    .psm-item:hover {
+      background: var(--hr-yellow-light);
+    }
+
+    .psm-item-emoji {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .psm-empty {
+      display: none;
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--hr-gray-medium);
+      font-size: 0.9rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hr-hero { padding: 3rem 0 2.5rem; }
+      .hr-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
       }
-  
-      #lighthouse-svg {
-        width: 100%;
-        height: auto;
-        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+      .hr-hero h1 { font-size: 1.9rem; }
+      .hr-hero p { margin: 0 auto 1.5rem; }
+      .hr-hero-badges { justify-content: center; }
+      .hr-hero-image { max-width: 260px; order: -1; }
+      .hr-tests-row { grid-template-columns: 1fr; }
+      .hr-questions-grid { grid-template-columns: 1fr; }
+      .hr-grid-3 { grid-template-columns: 1fr; }
+      .hr-btn { width: 100%; text-align: center; }
+      .hr-test-badge-arrow { display: none; }
+
+      .psm-box {
+        max-height: 90vh;
+        border-radius: 16px 16px 0 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 100%;
       }
-  
-      .wave {
-        animation: wave-float 3s ease-in-out infinite;
+
+      .psm-overlay {
+        align-items: flex-end;
+        padding: 0;
       }
-      .wave-1 { animation-delay: 0s; animation-duration: 4s; }
-      .wave-2 { animation-delay: 0.3s; animation-duration: 5s; }
-      .wave-3 { animation-delay: 0.6s; animation-duration: 6s; }
-  
-      @keyframes wave-float {
-        0%, 100% { transform: translateX(0) translateY(0); }
-        25% { transform: translateX(-5px) translateY(-2px); }
-        50% { transform: translateX(-10px) translateY(0); }
-        75% { transform: translateX(-5px) translateY(2px); }
-      }
-  
-      .rotating-beam {
-        transform-origin: 150px 120px;
-        animation: rotate-beam 4s linear infinite;
-      }
-  
-      @keyframes rotate-beam {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-  
-      .blinking-star {
-        animation: blink 2s ease-in-out infinite;
-      }
-  
-      .star-glow {
-        animation: glow-pulse 2s ease-in-out infinite;
-      }
-  
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
-      }
-  
-      @keyframes glow-pulse {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 0.6; transform: scale(1.2); }
-      }
-  
-      .window-light, .tower-window {
-        animation: light-pulse 3s ease-in-out infinite;
-      }
-  
-      .tower-window {
-        animation-delay: 0.5s;
-      }
-  
-      @keyframes light-pulse {
-        0%, 100% { opacity: 0.7; }
-        50% { opacity: 1; }
-      }
-  
-      .light-room {
-        animation: room-glow 2s ease-in-out infinite;
-      }
-  
-      @keyframes room-glow {
-        0%, 100% { opacity: 0.6; }
-        50% { opacity: 0.9; }
-      }
-  
-      .eye {
-        animation: eye-blink 4s ease-in-out infinite;
-      }
-  
-      .eye-right {
-        animation-delay: 0.1s;
-      }
-  
-      @keyframes eye-blink {
-        0%, 96%, 100% { transform: scaleY(1); }
-        98% { transform: scaleY(0.1); }
-      }
-  
-      .lighthouse-container:hover #lighthouse-tower,
-      .lighthouse-container:hover #lighthouse-cupola,
-      .lighthouse-container:hover #star-top {
-        animation: sway 1s ease-in-out infinite;
-      }
-  
-      @keyframes sway {
-        0%, 100% { transform: rotate(0deg); }
-        25% { transform: rotate(1deg); }
-        75% { transform: rotate(-1deg); }
-      }
-  
-      @media (max-width: 768px) {
-        .lighthouse-container { max-width: 300px; }
-      }
-  
-      @media (max-width: 480px) {
-        .lighthouse-container { max-width: 250px; }
-      }
-    
+    }
+
+    @media (max-width: 480px) {
+      .hr-hero h1 { font-size: 1.6rem; }
+      .hr-qcard { padding: 1.25rem; }
+      .hr-test-badge { padding: 1.25rem; }
+    }
   </style>
 ---
 
-  <!-- HEADER -->
-  
+<div class="home-refresh">
 
-  <!-- HERO SECTION -->
-  <section class="hero-split" id="home">
-    <div class="container">
-      <div class="hero-grid">
-        <!-- Left: Text Content -->
-        <div class="hero-text">
-          <h1 class="hero-display-title">
-            La tua Guida ai <span class="nowrap">Permessi di Soggiorno.</span><br>
-            <em class="hero-tagline"><span class="hero-highlight">Facile.</span> Completa. Aggiornata.</em>
-          </h1>
-
-          <p class="hero-description">
-            Informazioni complete e aggiornate sui permessi di soggiorno in Italia, per navigare la burocrazia senza stress.
-          </p>
-
-          <a href="database.html" class="btn-hero-cta">
-            Esplora i Permessi →
-          </a>
-
-          <!-- Trust badges -->
-          <div class="hero-badges">
-            <div class="hero-badge">
-              <span class="badge-icon">📚</span>
-              <span class="badge-text">41+ Permessi</span>
-            </div>
-            <div class="hero-badge">
-              <span class="badge-icon">✓</span>
-              <span class="badge-text">Aggiornata al 31.12.2025</span>
-            </div>
+  <!-- HERO (dark with yellow accents) -->
+  <section class="hr-hero">
+    <div class="hr-hero-grid">
+      <div>
+        <h1>
+          La tua Guida ai<br>
+          Permessi di Soggiorno.<br>
+          <span class="hr-highlight">Facile.</span> Completa. Aggiornata.
+        </h1>
+        <p>
+          Informazioni e test interattivi sui permessi di soggiorno in Italia.
+        </p>
+        <a href="database.html" class="hr-btn">Tutti i Permessi →</a>
+        <div class="hr-hero-badges">
+          <div class="hr-badge">
+            <span class="hr-badge-icon">📚</span>
+            <span>41+ Permessi</span>
+          </div>
+          <div class="hr-badge">
+            <span class="hr-badge-icon">✓</span>
+            <span>Aggiornata al 2025</span>
           </div>
         </div>
-
-        <!-- Right: Illustration -->
-        <div class="hero-illustration">
-          <img src="IMAGES/team checklist-rafiki.svg" alt="Persone che consultano documenti" class="hero-image">
-        </div>
       </div>
-    </div>
-
-    <!-- Wave divider -->
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="#FFD700"></path>
-      </svg>
-    </div>
-  </section>
-
-  <!-- TESTS SECTION -->
-  <section class="section" id="test" style="background: linear-gradient(180deg, #FFD700 0%, #FFF9E6 30%, #FFFFFF 100%); padding-top: 4rem;">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--black);">I NOSTRI TEST</h2>
-      </div>
-
-      <div class="grid grid-3">
-        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="card card-link card-yellow">
-          <span class="card-icon">🤞</span>
-          <h3 class="card-title">Posso AVERE un permesso?</h3>
-          <p class="card-description">Verifica se hai i requisiti per ottenere un permesso di soggiorno in Italia</p>
-          <button class="btn btn-primary">INIZIA IL TEST →</button>
-        </a>
-
-        <a href="https://form.typeform.com/to/oc9jhdkJ" target="_blank" rel="noopener" class="card card-link card-yellow">
-          <span class="card-icon">👉</span>
-          <h3 class="card-title">Posso CONVERTIRE il mio permesso?</h3>
-          <p class="card-description">Scopri se puoi convertire il tuo permesso di soggiorno attuale</p>
-          <button class="btn btn-primary">INIZIA IL TEST →</button>
-        </a>
-
-        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="card card-link card-yellow">
-          <span class="card-icon">🤙</span>
-          <h3 class="card-title">Posso RINNOVARE il mio permesso?</h3>
-          <p class="card-description">Controlla se puoi rinnovare il tuo permesso di soggiorno</p>
-          <button class="btn btn-primary">INIZIA IL TEST →</button>
-        </a>
+      <div>
+        <img src="IMAGES/team checklist-rafiki.svg" alt="Persone che consultano documenti" class="hr-hero-image">
       </div>
     </div>
   </section>
 
-  <!-- DATABASE SECTION -->
-  <section id="database" class="section" style="background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--accent-teal);">I NOSTRI DATABASE</h2>
-      </div>
+  <!-- TEST BADGES (prominent, first section) -->
+  <section class="hr-section">
+    <div class="hr-container">
+      <h2 class="hr-section-title">Fai il test</h2>
+      <div class="hr-tests-row">
 
-      <div style="max-width: 500px; margin: 0 auto;">
-        <a href="database.html" class="card card-link">
-          <span class="card-icon">📚</span>
-          <h3 class="card-title">Tutti i permessi</h3>
-          <p class="card-description">Database con tutti (o quasi) i permessi di soggiorno in Italia</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- GUIDES SECTION -->
-  <section class="section" id="guide" style="background: linear-gradient(135deg, #FFF9E6 0%, #FFE0B2 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--accent-orange);">LE NOSTRE GUIDE</h2>
-      </div>
-
-      <div class="grid grid-3" style="max-width: 900px; margin: 0 auto;">
-        <a href="protezione-internazionale.html" class="card card-link">
-          <span class="card-icon">🛡️</span>
-          <h3 class="card-title">Protezione internazionale</h3>
-          <p class="card-description">Come chiedere asilo in Italia e come funziona la procedura</p>
+        <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="hr-test-badge">
+          <span class="hr-test-badge-icon">🤞</span>
+          <div>
+            <span class="hr-tag">Test interattivo</span>
+            <h3>Posso avere un permesso?</h3>
+            <p>Rispondi a poche domande e scopri quali permessi puoi chiedere</p>
+          </div>
+          <span class="hr-test-badge-arrow">→</span>
         </a>
 
-        <a href="ricongiungimento-familiare.html" class="card card-link">
-          <span class="card-icon">👨‍👩‍👧</span>
-          <h3 class="card-title">Ricongiungimento familiare</h3>
-          <p class="card-description">Come chiedere il nullaosta per portare familiari in Italia</p>
+        <a href="https://sospermesso.typeform.com/rinnovo" target="_blank" rel="noopener" class="hr-test-badge">
+          <span class="hr-test-badge-icon">🔄</span>
+          <div>
+            <span class="hr-tag">Test interattivo</span>
+            <h3>Posso rinnovare o convertire?</h3>
+            <p>Verifica se puoi rinnovare o cambiare il tuo permesso di soggiorno</p>
+          </div>
+          <span class="hr-test-badge-arrow">→</span>
         </a>
 
-        <a href="decreto-flussi.html" class="card card-link" style="position: relative; overflow: hidden;">
-          <span style="position: absolute; top: 12px; right: -35px; background: var(--accent-orange); color: white; font-size: 0.65rem; font-weight: 600; padding: 4px 40px; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">In arrivo</span>
-          <span class="card-icon">💼</span>
-          <h3 class="card-title">Decreto flussi</h3>
-          <p class="card-description">Come funziona l'ingresso per lavoro</p>
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- USEFUL LINKS SECTION -->
-  <section id="resources" class="section" style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" style="color: var(--lighthouse-red);">LINK UTILI</h2>
+  <!-- QUESTION CARDS -->
+  <section class="hr-section hr-section-alt">
+    <div class="hr-container">
+      <h2 class="hr-section-title">Che cosa vuoi sapere?</h2>
+      <div class="hr-questions-grid">
+
+        <a href="database.html" class="hr-qcard">
+          <span class="hr-qcard-icon">🔍</span>
+          <div>
+            <h3>Tutti i permessi</h3>
+            <p>Cerca nel database di tutti i permessi di soggiorno in Italia</p>
+          </div>
+        </a>
+
+        <a href="#" class="hr-qcard" data-modal-anchor="#primo">
+          <span class="hr-qcard-icon">📄</span>
+          <div>
+            <h3>Quali documenti mi servono?</h3>
+            <p>Scopri quali documenti portare in Questura per il tuo permesso</p>
+          </div>
+        </a>
+
+        <a href="#" class="hr-qcard" data-modal-anchor="#primo-quanto-costa">
+          <span class="hr-qcard-icon">💰</span>
+          <div>
+            <h3>Quanto costa il permesso?</h3>
+            <p>Bollettini, marche da bollo e costi per ogni tipo di permesso</p>
+          </div>
+        </a>
+
+        <a href="ricongiungimento-familiare.html" class="hr-qcard">
+          <span class="hr-qcard-icon">👨‍👩‍👧</span>
+          <div>
+            <h3>Posso portare qui la mia famiglia?</h3>
+            <p>Guida al ricongiungimento familiare in Italia</p>
+          </div>
+        </a>
+
+        <a href="aiuto-legale.html" class="hr-qcard">
+          <span class="hr-qcard-icon">⚖️</span>
+          <div>
+            <h3>Assistenza legale gratis</h3>
+            <p>Sportelli e associazioni con assistenza legale gratuita vicino a te</p>
+          </div>
+        </a>
+
+        <a href="dizionario.html" class="hr-qcard">
+          <span class="hr-qcard-icon">🔤</span>
+          <div>
+            <h3>Dizionario</h3>
+            <p>Termini burocratici spiegati in modo semplice</p>
+          </div>
+        </a>
+
       </div>
+    </div>
+  </section>
 
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
-        <a href="aiuto-legale.html" class="card card-link">
-          <span class="card-icon">⚖️</span>
-          <h3 class="card-title">Assistenza legale gratis vicino a te</h3>
-          <p class="card-description">Sportelli e associazioni che danno assistenza legale gratuita in Italia</p>
+  <!-- GUIDES -->
+  <section class="hr-section">
+    <div class="hr-container">
+      <h2 class="hr-section-title">Avere un permesso in Italia</h2>
+      <div class="hr-grid-3">
+        <a href="protezione-internazionale.html" class="hr-card">
+          <span class="hr-card-icon">🛡️</span>
+          <h3>Protezione internazionale</h3>
+          <p>Come chiedere asilo in Italia e come funziona la procedura</p>
         </a>
-
-        <a href="kit-postale.html" class="card card-link">
-          <span class="card-icon">📩</span>
-          <h3 class="card-title">Moduli utili (kit postale e altri)</h3>
-          <p class="card-description">Guida pratica per compilare e spedire il kit postale</p>
+        <a href="ricongiungimento-familiare.html" class="hr-card">
+          <span class="hr-card-icon">👨‍👩‍👧</span>
+          <h3>Ricongiungimento familiare</h3>
+          <p>Come chiedere il nullaosta per portare familiari in Italia</p>
         </a>
-
-        <a href="controlla-permesso.html" class="card card-link">
-          <span class="card-icon">👀</span>
-          <h3 class="card-title">Controlla il tuo permesso</h3>
-          <p class="card-description">Verifica lo stato del tuo permesso</p>
-        </a>
-
-        <a href="dizionario.html" class="card card-link">
-          <span class="card-icon">🔤</span>
-          <h3 class="card-title">Dizionario</h3>
-          <p class="card-description">Termini burocratici spiegati in modo semplice</p>
+        <a href="decreto-flussi.html" class="hr-card" style="overflow: hidden;">
+          <span class="hr-badge-soon">In arrivo</span>
+          <span class="hr-card-icon">💼</span>
+          <h3>Decreto flussi</h3>
+          <p>Come funziona l'ingresso per lavoro</p>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA SECTION -->
-  <section class="section">
-    <div class="container text-center">
-      <div class="alert alert-info" style="max-width: 600px; margin: 0 auto;">
-        <div>
-          Non hai trovato la risposta che cercavi?
-          <a href="https://form.typeform.com/to/USx16QN3" class="btn btn-primary btn-sm" style="margin-left: 0;" target="_blank">
-            Scrivici
-          </a>
-        </div>
-      </div>
+  <!-- CTA -->
+  <section class="hr-cta">
+    <div class="hr-container">
+      <p>Non hai trovato la risposta che cercavi?</p>
+      <a href="https://form.typeform.com/to/USx16QN3" target="_blank" rel="noopener" class="hr-btn-dark">Scrivici</a>
     </div>
   </section>
 
-  <!-- CONTACT FORM MODAL -->
-  <div id="contact-form-container"></div>
+  <!-- PERMIT SEARCH MODAL -->
+  <div id="permit-search-modal" class="psm-overlay" role="dialog" aria-modal="true" aria-label="Cerca permesso">
+    <div class="psm-box">
+      <div class="psm-header">
+        <span style="font-size: 1.1rem;">🔍</span>
+        <input type="text" class="psm-input" placeholder="Cerca un permesso..." autocomplete="off">
+        <button class="psm-close" aria-label="Chiudi">&times;</button>
+      </div>
+      <div class="psm-list">
+        {%- for permit in permits -%}
+          {%- if permit.slug -%}
+        <a class="psm-item" data-href="permesso-{{ permit.slug }}.html" data-name="{{ permit.tipo }}" href="#">
+          <span class="psm-item-emoji">{{ permit.emoji }}</span>
+          <span>{{ permit.tipo }}</span>
+        </a>
+          {%- endif -%}
+        {%- endfor -%}
+        <div class="psm-empty">Nessun permesso trovato</div>
+      </div>
+    </div>
+  </div>
 
-  <!-- FOOTER -->
-  
+</div>
 
-  <!-- Lighthouse animations CSS inline -->
-  
-
-  <!-- Scripts -->
-  
-  
-  <script>
-    // Load contact form component
-    fetch('src/components/contact-form.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('contact-form-container').innerHTML = html;
-      })
-      .catch(err => console.error('Error loading contact form:', err));
-  </script>
+<!-- Search modal script -->
+<script src="src/scripts/permit-search-modal.js"></script>
