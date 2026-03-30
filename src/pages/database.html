@@ -8,37 +8,27 @@ extraStyles: |
 
       /* ── COLUMN HEADER ── */
       .db-col-header {
-        display: flex;
-        justify-content: flex-end;
-        gap: 0;
-        padding: 0 1rem 0.4rem;
+        display: grid;
+        grid-template-columns: 1fr 56px 140px 56px;
+        padding: 0 1rem 0.35rem;
         max-width: 900px;
         margin: 0 auto;
       }
 
       .db-col-label {
         font-family: 'Poppins', sans-serif;
-        font-size: 0.6rem;
-        font-weight: 700;
+        font-size: 0.8rem;
+        font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #999;
+        letter-spacing: 1.5px;
+        color: #1A1A1A;
         text-align: center;
-        padding: 0.35rem 0;
+        padding: 0.4rem 0;
       }
 
       .db-col-label-doc {
-        width: 140px;
-        background: #f5f5f5;
+        background: #f0f0f0;
         border-radius: 8px 8px 0 0;
-      }
-
-      .db-col-label-prassi {
-        width: 52px;
-      }
-
-      .db-col-label-info {
-        width: 52px;
       }
 
       /* ── PERMIT LIST ── */
@@ -53,123 +43,139 @@ extraStyles: |
       }
 
       .permit-row {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 56px 70px 70px 56px;
         align-items: center;
-        padding: 0.4rem 1rem;
-        transition: background-color 0.15s ease;
-        gap: 0;
+        padding: 0.5rem 1rem;
+        transition: background 0.12s;
+        border-bottom: 1px solid #f5f5f5;
       }
 
       .permit-row:hover {
-        background-color: rgba(255, 215, 0, 0.06);
+        background: rgba(255, 215, 0, 0.05);
       }
 
       .permit-main {
         display: flex;
         align-items: center;
         gap: 0.6rem;
-        flex: 1;
         text-decoration: none;
         color: inherit;
         min-width: 0;
       }
 
       .permit-main .icon {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         flex-shrink: 0;
       }
 
       .permit-main .title {
+        font-family: 'Inter', -apple-system, sans-serif;
         font-weight: 500;
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         color: #1A1A1A;
       }
 
-      .permit-actions {
+      /* Grid cells */
+      .permit-cell {
         display: flex;
-        gap: 0;
-        flex-shrink: 0;
         align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0.25rem 0;
+      }
+
+      .permit-cell-doc {
+        background: #f7f7f7;
+      }
+
+      .permit-actions {
+        display: contents;
       }
 
       .permit-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 34px;
-        height: 28px;
+        padding: 0.22rem 0.55rem;
         border-radius: 6px;
-        font-size: 0.65rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.62rem;
         font-weight: 700;
         text-decoration: none;
         transition: all 0.12s ease;
         border: 1.5px solid #1A1A1A;
-        background: white;
-        color: #1A1A1A;
         box-shadow: 1.5px 1.5px 0 #1A1A1A;
-        margin: 0 3px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
       }
 
       .permit-btn:hover {
         transform: translate(1px, 1px);
         box-shadow: 0.5px 0.5px 0 #1A1A1A;
-        background: #FFD700;
       }
 
-      /* Documenti column shading — applied to primo + rinnovo buttons */
+      /* Info button — yellow, black/yellow on hover */
+      .btn-cose {
+        background: #FFD700;
+        color: #1A1A1A;
+      }
+
+      .btn-cose:hover {
+        background: #1A1A1A;
+        color: #FFD700;
+        border-color: #1A1A1A;
+      }
+
+      /* Rilascio & Rinnovo — white */
       .btn-primo, .btn-rinnovo {
-        background: #f9f9f9;
+        background: white;
+        color: #1A1A1A;
       }
 
       .btn-primo:hover, .btn-rinnovo:hover {
         background: #FFD700;
       }
 
-      /* Prassi button — lighter style */
+      /* Prassi — white */
       .btn-prassi {
         background: white;
-        border-color: #ccc;
-        box-shadow: 1.5px 1.5px 0 #ccc;
-        color: #999;
-        font-size: 0.7rem;
-      }
-
-      .btn-prassi:hover {
-        border-color: #1A1A1A;
-        box-shadow: 0.5px 0.5px 0 #1A1A1A;
-        background: #FFD700;
         color: #1A1A1A;
       }
 
+      .btn-prassi:hover {
+        background: #FFD700;
+      }
+
+      /* Empty cell — keeps alignment */
+      .permit-cell-empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
       .permit-badge-wip {
-        font-size: 0.65rem;
-        font-weight: 600;
-        color: #999;
-        background: #f0f0f0;
-        padding: 0.2rem 0.5rem;
-        border-radius: 4px;
-        white-space: nowrap;
+        font-size: 0.62rem;
+        color: #bbb;
+        grid-column: 2 / -1;
+        text-align: center;
+        padding: 0.2rem;
       }
 
       .permit-badge-na {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 34px;
-        height: 28px;
-        font-size: 0.65rem;
-        font-weight: 500;
+        font-size: 0.62rem;
         color: #ccc;
-        margin: 0 3px;
       }
 
       .category-section {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
 
       .category-title {
         font-family: 'Poppins', sans-serif;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1.5px;
@@ -177,6 +183,7 @@ extraStyles: |
         margin-bottom: 0;
         color: #1A1A1A;
         border-bottom: 2px solid #eee;
+        background: #fafafa;
       }
 
       .category-purple .category-title,
@@ -196,6 +203,64 @@ extraStyles: |
         max-width: 900px;
         margin: 0 auto;
         overflow: hidden;
+      }
+
+      /* ── FLOATING TEST BUTTON ── */
+      .fab-test {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        background: #FFD700;
+        border: 2.5px solid #1A1A1A;
+        border-radius: 12px;
+        padding: 0.6rem 0.9rem;
+        box-shadow: 3px 3px 0 #1A1A1A;
+        text-decoration: none;
+        color: #1A1A1A;
+        font-family: 'Inter', -apple-system, sans-serif;
+        font-weight: 500;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        z-index: 100;
+        transition: all 0.12s;
+        max-width: 200px;
+        line-height: 1.35;
+      }
+
+      .fab-test strong {
+        font-weight: 800;
+      }
+
+      .fab-test:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 1px 1px 0 #1A1A1A;
+      }
+
+      .fab-test .fab-icon {
+        font-size: 1rem;
+        flex-shrink: 0;
+      }
+
+      /* ── PAGE HEADER inline ── */
+      .db-page-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .db-page-header .page-icon {
+        font-size: 2.2rem;
+      }
+
+      .db-page-header .page-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+        margin: 0;
       }
 
       /* ── SEARCH + FILTER ── */
@@ -335,9 +400,10 @@ extraStyles: |
         }
 
         .permit-row {
+          display: flex;
           flex-wrap: wrap;
+          gap: 0.35rem;
           padding: 0.6rem 0.75rem;
-          gap: 0.4rem;
         }
 
         .permit-main {
@@ -345,26 +411,34 @@ extraStyles: |
         }
 
         .permit-actions {
+          display: flex;
           flex-wrap: wrap;
           gap: 0.25rem;
           padding-left: 1.75rem;
         }
 
-        .permit-btn {
-          width: auto;
+        .permit-cell {
+          background: none !important;
           height: auto;
-          padding: 0.2rem 0.55rem;
-          font-size: 0.62rem;
+          padding: 0;
         }
 
-        .permit-badge-na {
-          width: auto;
-          height: auto;
+        .permit-btn {
+          padding: 0.2rem 0.5rem;
+          font-size: 0.6rem;
         }
 
         .database-container {
           border-radius: 12px;
           box-shadow: 3px 3px 0 #1A1A1A;
+        }
+
+        .fab-test {
+          bottom: 1rem;
+          right: 1rem;
+          padding: 0.5rem 0.8rem;
+          font-size: 0.65rem;
+          max-width: 180px;
         }
 
         .db-filters {
@@ -388,17 +462,9 @@ extraStyles: |
   <!-- PAGE HEADER -->
   <section class="section bg-off-white">
     <div class="container">
-      <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 3rem;">📚</span>
+      <div class="db-page-header">
+        <span class="page-icon">📚</span>
         <h1 class="page-title">Tutti i permessi di soggiorno</h1>
-      </div>
-
-      <div class="alert alert-info" style="max-width: 700px; margin: 0 auto 2rem;">
-        <span class="alert-icon">📌</span>
-        <div>
-          Vuoi sapere se puoi avere uno dei permessi qui sotto?
-          <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" style="color: var(--lighthouse-red); font-weight: 600;">Fai il nostro test</a>
-        </div>
       </div>
 
       <!-- SEARCH + FILTER BADGES -->
@@ -435,9 +501,10 @@ extraStyles: |
 
       <!-- Column headers -->
       <div class="db-col-header">
-        <span class="db-col-label db-col-label-info">Info</span>
+        <span></span>
+        <span class="db-col-label">Info</span>
         <span class="db-col-label db-col-label-doc">Documenti</span>
-        <span class="db-col-label db-col-label-prassi">Prassi</span>
+        <span class="db-col-label">Prassi</span>
       </div>
 
       <div class="database-container">
@@ -990,31 +1057,69 @@ extraStyles: |
   <!-- COLUMN ENHANCEMENT SCRIPT -->
   <script>
   (function() {
-    // Shorten button labels and add prassi column
+    // Transform each permit row into grid cell layout
     document.querySelectorAll('.permit-row').forEach(function(row) {
       var actions = row.querySelector('.permit-actions');
       if (!actions) return;
 
-      // Shorten existing buttons
-      actions.querySelectorAll('.permit-btn').forEach(function(btn) {
-        var text = btn.textContent.trim();
-        if (text === "Cos'è") { btn.textContent = 'i'; btn.title = "Cos'è"; }
-        else if (text === 'Primo rilascio') { btn.textContent = '1°'; btn.title = 'Primo rilascio'; }
-        else if (text === 'Rinnovo') { btn.textContent = 'R'; btn.title = 'Rinnovo'; }
-      });
-
-      // Add prassi link
       var mainLink = row.querySelector('.permit-main');
-      if (mainLink) {
-        var href = mainLink.getAttribute('href');
-        var base = href.split('#')[0];
-        var prassi = document.createElement('a');
-        prassi.href = base + '#prassi-locali';
-        prassi.className = 'permit-btn btn-prassi';
-        prassi.textContent = '📍';
-        prassi.title = 'Prassi locali';
-        actions.appendChild(prassi);
+      if (!mainLink) return;
+      var href = mainLink.getAttribute('href');
+      var base = href.split('#')[0];
+
+      // Find existing buttons
+      var coseBtn = actions.querySelector('.btn-cose');
+      var primoBtn = actions.querySelector('.btn-primo');
+      var rinnovoBtn = actions.querySelector('.btn-rinnovo');
+      var wipBadge = actions.querySelector('.permit-badge-wip');
+
+      // If WIP, leave as-is
+      if (wipBadge) return;
+
+      // Clear actions and rebuild as grid cells
+      actions.innerHTML = '';
+      actions.style.display = 'contents';
+
+      // Info cell
+      var infoCell = document.createElement('div');
+      infoCell.className = 'permit-cell';
+      if (coseBtn) {
+        coseBtn.textContent = 'Info';
+        infoCell.appendChild(coseBtn);
       }
+      row.appendChild(infoCell);
+
+      // Primo cell (doc column)
+      var primoCell = document.createElement('div');
+      primoCell.className = 'permit-cell permit-cell-doc';
+      if (primoBtn) {
+        primoBtn.textContent = 'Rilascio';
+        primoCell.appendChild(primoBtn);
+      }
+      row.appendChild(primoCell);
+
+      // Rinnovo cell (doc column)
+      var rinnovoCell = document.createElement('div');
+      rinnovoCell.className = 'permit-cell permit-cell-doc';
+      if (rinnovoBtn) {
+        rinnovoBtn.textContent = 'Rinnovo';
+        rinnovoCell.appendChild(rinnovoBtn);
+      }
+      row.appendChild(rinnovoCell);
+
+      // Prassi cell
+      var prassiCell = document.createElement('div');
+      prassiCell.className = 'permit-cell';
+      var prassiLink = document.createElement('a');
+      prassiLink.href = base + '#prassi-locali';
+      prassiLink.className = 'permit-btn btn-prassi';
+      prassiLink.textContent = '📍';
+      prassiLink.title = 'Prassi locali';
+      prassiCell.appendChild(prassiLink);
+      row.appendChild(prassiCell);
+
+      // Remove the now-empty actions div
+      actions.remove();
     });
   })();
   </script>
@@ -1163,5 +1268,11 @@ extraStyles: |
     updateCount(totalCount);
   })();
   </script>
+
+  <!-- Floating test button -->
+  <a href="https://form.typeform.com/to/kt7P9Ejk" target="_blank" rel="noopener" class="fab-test">
+    <span class="fab-icon">🤞</span>
+    <span>Vuoi sapere se puoi avere un permesso? <strong>Fai il test</strong></span>
+  </a>
 
   <!-- FOOTER -->
