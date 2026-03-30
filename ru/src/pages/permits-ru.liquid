@@ -28,9 +28,9 @@ eleventyExcludeFromCollections: true
   <!-- PAGE HEADER -->
   <section class="section bg-off-white" style="padding: 1.5rem 0;">
     <div class="container">
-      <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">{{ permit.emoji }}</span>
-        <h1 class="page-title">{{ permit.tipo }} разрешение</h1>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+        <span style="font-size: 2.5rem;">{{ permit.emoji }}</span>
+        <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800;">{{ permit.tipo }} разрешение</h1>
       </div>
     </div>
   </section>
@@ -39,14 +39,14 @@ eleventyExcludeFromCollections: true
   <div class="permit-tab-bar" id="permit-tab-bar">
     <div class="container">
       <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
-        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">Описание</a>
+        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">Info</a>
         {% if permit.primoDocuments.size > 0 %}
         <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">Первичное оформление</a>
         {% endif %}
         {% if permit.rinnovoDocuments.size > 0 %}
         <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Продление</a>
         {% endif %}
-        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">Местные практики</a>
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 Местные практики</a>
       </div>
     </div>
   </div>
@@ -497,6 +497,13 @@ eleventyExcludeFromCollections: true
   </section>
 
 {% endif %}
+
+  <!-- SEGNALA ERRORE -->
+  <div class="report-bar">
+    <a href="https://form.typeform.com/to/FsqvzdXI" target="_blank" rel="noopener" class="report-btn">
+      <span>🚩</span> Segnala un errore in questa pagina
+    </a>
+  </div>
 
   <!-- RELATED -->
   <section class="section bg-off-white">
