@@ -22,5 +22,13 @@ module.exports = {
       { label: "Confidentialité", href: "/fr/privacy-policy.html" },
       { label: "Contactez-nous", href: "https://form.typeform.com/to/G6YT01Vj", external: true }
     ]
+  },
+  ar: {
+    links: [
+      { label: "المشروع", href: "/ar/il-progetto.html" },
+      { label: "من نحن", href: "/ar/chi-siamo.html" },
+      { label: "سياسة الخصوصية", href: "/ar/privacy-policy.html" },
+      { label: "اتصل بنا", href: "https://form.typeform.com/to/G6YT01Vj", external: true }
+    ]
   }
 };

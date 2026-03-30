@@ -1,0 +1,2816 @@
+[
+  {
+    "id": "3337355e-7f7f-8147-b81d-c78285d5edb4",
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "tipo": "تصريح الاتحاد الأوروبي للمقيمين لفترة طويلة (\"Carta di soggiorno\")",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno ليس له تاريخ انتهاء. يُعرف أيضاً باسم &quot;Carta di soggiorno&quot; ولكن انتبه لعدم الخلط بينه وبين بطاقة أفراد عائلة مواطني الاتحاد الأوروبي.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلب هذا التصريح؟",
+        "content": "<p>يمكنك تقديم الطلب إذا:</p>\n<ul><li>تعيش بشكل قانوني في إيطاليا منذ 5 سنوات على الأقللديك Permesso di Soggiorno آخر لا يزال ساري المفعوللديك دخل لا يقل عن 7,000 يورو في السنوات الثلاث الأخيرةلديك شهادة معرفة اللغة الإيطالية بمستوى A2 على الأقل</li><li>انتبه! ⚠️ ليس كل أنواع Permesso di Soggiorno يمكن تحويلها إلى Carta!</li><li>على سبيل المثال، لا يمكنك طلب الـ Carta إذا كان لديك</li><li>Permesso di Soggiorno للدراسة أو التدريب المهنيPermesso di Soggiorno للعلاج الطبي أو الحماية الخاصة أو الحماية المؤقتةPermesso di Soggiorno لطلب اللجوء (أثناء انتظار قرار Commissione Territoriale أو المحكمة)</li></ul>\n<p>إذا كانت لديك شكوك، قم بإجراء اختبارنا.</p>",
+        "index": 1
+      },
+      {
+        "question": "هل يجب أن تكون السنوات الخمس من الإقامة في إيطاليا متواصلة؟",
+        "content": "<p>نعم. تُحسب السنوات الخمس من تاريخ أول Permesso di Soggiorno لك ويجب ألا تكون هناك &quot;فجوات&quot; في تصاريح إقامتك.</p>",
+        "index": 2
+      },
+      {
+        "question": "كيف تُحسب السنوات الخمس من الإقامة القانونية؟",
+        "content": "<p>في حساب السنوات الخمس لا تُحتسب الفترات التي كان لديك فيها تصريح قصير المدة أو &quot;دبلوماسي&quot;. لكن تُحتسب الفترات التي كان لديك فيها تصريح للدراسة أو التدريب أو الحماية المؤقتة أو الإنسانية.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما مستوى اللغة الإيطالية المطلوب لطلب هذا التصريح؟",
+        "content": "<p>يجب أن تثبت معرفتك للإيطالية بمستوى A2. هذا يعني القدرة على الفهم والتحدث في المواقف اليومية. إذا حصلت في إيطاليا على شهادة المرحلة الإعدادية أو أعلى، فهذا كافٍ.</p>",
+        "index": 4
+      },
+      {
+        "question": "هل يمكنني طلب الـ Carta أيضاً لأفراد عائلتي الموجودين معي في إيطاليا؟",
+        "content": "<p>نعم. يمكنك طلب هذا التصريح لـ</p>\n<ul><li>الزوج/الزوجة المُعالين/المُعالاتالأبناء القُصّر (حتى لو كانوا أبناء الزوج/الزوجة فقط، أو مولودين خارج إطار الزواج، أو متبنّين أو تحت وصايتك)الأبناء البالغون المُعالون ذوو إعاقة كاملة (100%) الذين لا يستطيعون إعالة أنفسهمالوالدان المُعالان</li><li>لتمديد تصريح الاتحاد الأوروبي طويل الأمد لأفراد العائلة يجب عليك:</li><li>إثبات أن لديك مسكناً مناسباً يستوفي المعايير الصحية الإيطالية وكبيراً بما يكفي للجميع: يجب أن تحضر إلى Questura شهادة &quot;certificato di idoneità alloggiativa&quot; الصادرة عن بلديتكأن يكون لديك دخل كافٍ. تُحسب أيضاً دخول أفراد العائلة الذين يعيشون معك. يُحسب الحد الأدنى للدخل بأخذ مبلغ المعاش الاجتماعي مع إضافة نصفه لكل فرد من أفراد العائلة. في حالة وجود طفلين قاصرين أو أكثر تحت سن 14 عاماً، يلزم ضعف المعاش الاجتماعي.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "كم تبلغ مدة صلاحية تصريح الاتحاد الأوروبي للمقيمين لفترة طويلة؟",
+        "content": "<p>نظرياً ليس له تاريخ انتهاء (يدوم إلى الأبد)، لكن يجب تحديثه كل 10 سنوات. التجديد ليس دائماً تلقائياً: عادةً تتحقق Questura من استمرار توفر جميع الشروط. بالنسبة للقُصّر يتم التجديد كل 5 سنوات.</p>",
+        "index": 6
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>الدخول والخروج من إيطاليا بدون تأشيرةالعمل بعقد نظامي (عمل مستقل أو تابع)البقاء في دولة أخرى في الاتحاد الأوروبي لأكثر من 90 يوماً، لكن إذا أردت الذهاب للعمل بشكل دائم في دولة أوروبية أخرى، عليك الاستفسار عن قوانين تلك الدولة لمعرفة ما إذا كان هذا التصريح كافياً.استخدام خدمات الإدارة العامة، بما في ذلك إجراءات السكن الشعبيالحصول على المساعدة الاجتماعية والضمان الاجتماعي والرعاية الصحية والتعليمية: على سبيل المثال، بدل INPS للإعاقة المدنية والمعاش الاجتماعي</li></ul>",
+        "index": 7
+      },
+      {
+        "question": "أثناء انتظار التصريح، هل يسمح لي إيصال Poste Italiane بالعمل؟",
+        "content": "<p>نعم، إيصال Poste Italiane يسمح لك بالعمل بعقد نظامي (عمل مستقل أو تابع).</p>",
+        "index": 8
+      },
+      {
+        "question": "ماذا يحدث إذا كانت الوثائق التي أرسلتها مع الـ Kit Postale أو قدمتها في Questura غير مكتملة؟",
+        "content": "<p>تمنحك Questura طلب استكمال مع قائمة بالوثائق الناقصة. يجب عليك تقديم الوثائق المطلوبة في أقرب وقت ممكن؛ وفي هذه الأثناء تبقى معاملتك متوقفة.</p>",
+        "index": 9
+      },
+      {
+        "question": "في أي حالات يمكن سحب تصريح الاتحاد الأوروبي طويل الأمد؟",
+        "content": "<p>إذا بقيت خارج إيطاليا وخارج الاتحاد الأوروبي لأكثر من 12 شهراً متتالياً.</p>",
+        "index": 10
+      },
+      {
+        "question": "بتصريح الاتحاد الأوروبي طويل الأمد، هل يمكنني الذهاب للعيش في دولة أوروبية أخرى؟",
+        "content": "<p>نعم، يمكنك البقاء في دولة أخرى من منطقة شنغن، للدراسة أو العمل، حتى لأكثر من 90 يوماً. نفس الحق يملكه أفراد عائلتك. إذا منحتك دولة أوروبية أخرى تصريح اتحاد أوروبي طويل الأمد، سيتم سحب التصريح الإيطالي منك.</p>",
+        "index": 11
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Documenti reddito ultimo anno",
+      "certificato lingua A2",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto",
+      "Bollettino postale da 130.46",
+      "Prova di avere avuto permessi di soggiorno senza buchi negli ultimi 5 anni"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 130.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "marca da bollo da 16€",
+      "Bollettino postale da 30.46",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8186-8f7e-e9ecd4fb73a9",
+    "slug": "protezione-sociale-vittime-di-violenza-domestica",
+    "tipo": "الحماية الاجتماعية لضحايا العنف الأسري",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno خاص لضحايا &quot;العنف الأسري&quot; (العنف الجسدي أو الجنسي أو النفسي أو الاقتصادي داخل الأسرة أو بين الشركاء أو الشركاء السابقين، حتى لو لم يكونوا يعيشون معاً).</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يُمنح التصريح لمن هو ضحية في إجراء جنائي لجرائم خطيرة مرتبطة بالعنف الأسري، مثل</p>\n<ul><li>سوء المعاملة داخل الأسرةالإيذاء الجسديتشويه الأعضاء التناسلية الأنثويةالاحتجاز القسريالعنف الجنسيالملاحقة (Stalking)</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب؟",
+        "content": "<p>يُطلب شخصياً في Questura (وليس بواسطة Kit Postale)، بناءً على:</p>\n<ul><li>اقتراح السلطة القضائية، استناداً إلى التحقيقاتتقرير من الخدمات الاجتماعية أو مراكز مكافحة العنف</li><li>⚠️ انتبه: بعض مكاتب Questura قد تطلب جواز السفر.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟",
+        "content": "<ul><li>✅ يمكنك العمل (عمل تابع أو مستقل)✅ يمكنك الدراسة والتسجيل في الدورات والمدارس✅ يمكنك التسجيل في مراكز التوظيف✅ يمكنك الوصول إلى خدمات المساعدة الاجتماعية</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "كم تبلغ مدة هذا التصريح؟",
+        "content": "<p>مدته سنة واحدة وقابل للتجديد.</p>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Foto",
+      "marca da bollo da 16€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Relazione/dichiarazione dei servizi sociali dei servizi sociali",
+      "Proposta/parere autorità giudiziaria",
+      "bollettino postale da 30.46€"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "marca da bollo da 16€",
+      "Bollettino postale da 30.46",
+      "Permesso in scadenza",
+      "proposta/parere Autorità giudiziaria",
+      "relazione servizi sociali se richiesta",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-815b-b582-f606a43d09c5",
+    "slug": "figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori",
+    "tipo": "ابن قاصر فوق 14 سنة يعيش مع والديه",
+    "emoji": "👶",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno هذا مخصص للأبناء القُصّر الأجانب الذين تزيد أعمارهم عن 14 سنة ويعيشون في إيطاليا مع والديهم.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن طلبه (عبر الوالدين) لمن:</p>\n<ul><li>عمره أكثر من 14 سنة وهو قاصريعيش مع والديه في إيطاليالديه والد واحد على الأقل يحمل Permesso di Soggiorno ساري المفعول</li><li>بالنسبة للقُصّر تحت 14 سنة، عادةً يتم تسجيل الابن على Permesso di Soggiorno الخاص بالوالد.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف/أين يُطلب؟",
+        "content": "<p>يقدم الوالدان الطلب. قد تختلف الطريقة: في كثير من الحالات يُقدّم مباشرة في Questura.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>مع هذا التصريح يمكن للقاصر:</p>\n<ul><li>الالتحاق بالمدرسة (التعليم الإلزامي)التسجيل في SSN (الخدمة الصحية الوطنية)العيش بشكل قانوني في إيطاليا مع العائلة</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "كم تبلغ مدة هذا التصريح؟",
+        "content": "<p>المدة مرتبطة بـ Permesso di Soggiorno الخاص بالوالدين.</p>",
+        "index": 4
+      },
+      {
+        "question": "عند انتهاء صلاحيته هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكن تجديده طالما أن القاصر يعيش مع والديه وعمره أقل من 18 سنة. عند بلوغ سن الرشد، يمكن الحصول على Permesso di Soggiorno مستقل.</p>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [],
+    "primoMethod": null,
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": null,
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8198-8ef3-da7ad0dab55a",
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "tipo": "العمل الموسمي التابع (بعد الدخول بتأشيرة \"التدفقات الموسمية\")",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno لمن دخل إيطاليا بـ Nulla Osta وتأشيرة للعمل التابع، عبر Decreto Flussi (Decreto Flussi). يُصدر بعد توقيع عقد الإقامة وإرسال Kit Postale.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<ul><li>المواطنون من خارج الاتحاد الأوروبي الذين حصلوا على Nulla Osta للعمل الموسمي عبر Decreto Flussiالذين دخلوا إيطاليا بتأشيرة للعمل التابعالذين لديهم صاحب عمل في إيطاليا قدّم الطلب</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب؟",
+        "content": "<p>يُطلب بواسطة Kit Postale.</p>\n<ol><li>بعد الدخول إلى إيطاليا، خلال 8 أيام من الوصول، اذهب إلى Sportello Unico للهجرة (في Prefettura) لتوقيع عقد الإقامةاملأ Kit Postale (نموذج 1 و2) وأرسله من مكتب البريد المعتمدستتلقى موعداً في Questura لأخذ البصماتستخبرك Questura بموعد استلام تصريحك</li></ol>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة؟",
+        "content": "<p>للاطلاع على القائمة الكاملة للوثائق المطلوب تقديمها في Questura، اذهب إلى الصفحة:</p>\n<ul><li>ما هي الوثائق التي أحضرها — الإصدار الأولما هي الوثائق التي أحضرها — التجديد</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟",
+        "content": "<ul><li>✅ يمكنك العمل كموظف✅ يمكنك الحصول على الإقامة في البلدية التي تعيش فيها✅ يمكنك التسجيل في SSN والحصول على طبيب أسرة✅ يمكنك السفر في منطقة شنغن بجواز السفر (بحد أقصى 90 يوماً كل 180)</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "كم تبلغ مدة هذا التصريح؟",
+        "content": "<p>المدة تعتمد على عقد العمل - عادةً تكون ستة أشهر.</p>",
+        "index": 5
+      },
+      {
+        "question": "عند انتهاء صلاحيته هل يمكنني تجديده؟",
+        "content": "<p>من الأفضل طلب تحويل التصريح إلى Permesso di Soggiorno لأسباب العمل التابع. لا حاجة لـ Nulla Osta جديد. يجب تقديم طلب التحويل في Questura قبل انتهاء الصلاحية، بواسطة Kit Postale.</p>",
+        "index": 6
+      },
+      {
+        "question": "ماذا يحدث إذا فقدت عملي؟",
+        "content": "<p>إذا لم يكن لديك عمل عند انتهاء صلاحية التصريح، يمكنك طلب تصريح لانتظار التوظيف مدته سنة واحدة، بإثبات تسجيلك في مركز التوظيف.</p>",
+        "index": 7
+      },
+      {
+        "question": "كم تبلغ التكلفة؟",
+        "content": "<p>تكاليف الإصدار والتجديد مذكورة في صفحة الوثائق. البوليصة البريدية هي 70,46€ (أو 80,46€ للتصاريح التي تزيد مدتها عن سنة).</p>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Contratto di soggiorno",
+      "Visto di ingresso",
+      "Nullaosta della Prefettura",
+      "Modulo 209 che dà la Prefettura quando fai il contratto di soggiorno",
+      "4 Foto",
+      "Certificato idoneità alloggiativa",
+      "bollettino postale da 80.46€"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "Copia del passaporto (non scaduto)",
+      "Permesso in scadenza",
+      "marca da bollo da 16€",
+      "Contratto di lavoro",
+      "Prova dei redditi (CUD e/o buste paga)",
+      "Certificato UNILAV",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Bollettino postale da 80.46€"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81b5-891a-d87cecdafdf6",
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "tipo": "العائلة - المقيم مع قريب مواطن إيطالي حتى الدرجة الثانية",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للمقيمين مع مواطنين إيطاليين يُمنح للأجانب الذين يعيشون في إيطاليا مع أقارب إيطاليين حتى الدرجة الثانية (زوج/زوجة؛ أم/أب؛ ابن/ابنة؛ جدة/جد؛ حفيد/حفيدة؛ أخ/أخت).</p>",
+        "index": 0
+      },
+      {
+        "question": "كم تبلغ مدة هذا التصريح؟",
+        "content": "<p>صلاحيته سنتان.</p>",
+        "index": 1
+      },
+      {
+        "question": "ما هي شروط الحصول عليه؟",
+        "content": "<p>العنصران الأساسيان لهذا التصريح هما إثبات صلة القرابة والعيش معاً.</p>\n<p>صلة القرابة: لك الحق في هذا التصريح إذا كنت</p>\n<ul><li>أخ/أخت المواطن الإيطاليزوج (أو شريك في اتحاد مدني، للأشخاص من نفس الجنس) المواطن الإيطاليوالد/والدة المواطن الإيطاليابن/ابنة (من أي عمر) المواطن الإيطاليجد/جدة المواطن الإيطاليحفيد/حفيدة (ابن الأبناء) المواطن الإيطالي</li><li>العيش معاً: يجب أن تعيش مع قريبك الإيطالي. يجب أن تكونا مسجلين على نفس العنوان، حتى لو لم تعيشا معاً 100% من الوقت.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يجب تقديم الطلب في Questura التابعة للمنطقة التي تعيش فيها مع المواطن الإيطالي، مرفقاً بجميع الوثائق المطلوبة. ستحصل على إيصال يسمح لك بالبقاء في إيطاليا بشكل قانوني حتى صدور القرار.</p>\n<p>خلال مرحلة التقييم، قد تطلب منك Questura استكمال الوثائق التي قدمتها وقد تجري مقابلات للتحقق من إقامتك الفعلية مع المواطن الإيطالي.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة لطلبه؟",
+        "content": "<p>(https://questure.poliziadistato.it/it/Venezia/articolo/214963dcfc880e387930055883)</p>\n<ul><li>إثبات السكن المحدد: شهادة حالة عائلية محدّثة أو إعلان استضافة مصادق من السلطة الأمنية أو عقد إيجار مشترك ومسجل لدى Agenzia delle Entrate.شهادات تثبت صلة القرابة (مترجمة ومصدّقة أو مختومة بالأبوستيل)للزوج: شهادة زواجللأبناء: شهادة ميلاد تتضمن الأبوة والأمومةللإقامة مع قريب آخر حتى الدرجة الثانية: شهادات ميلاد أو عائلية يتبين منها أن المواطن الإيطالي قريبكنسخة من وثيقة هوية القريب الإيطاليإثبات الإقامة المشتركة (شهادة حالة عائلية محدّثة للمواطن الإيطالي وإعلان استضافة مصادق من السلطة الأمنية للأجنبي أو عقد إيجار مشترك ومسجل لدى Agenzia delle Entrate)إذا كانت لديك: Permesso di Soggiorno القديم و Codice Fiscalemarca da bollo da 16,00€جواز سفر ساري المفعول4 صور شخصية للمتقدم، بالإضافة إلى 4 صور شخصية لكل طفل قاصر تحت 14 سنة سيُضاف إلى التصريح (يجب أن يكون الأطفال حاضرين وقت الاستدعاء);</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذا Permesso di Soggiorno؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>الحصول على الإقامة في البلدية التي تعيش فيهاالعمل (عمل مستقل أو تابع)التسجيل في SSN والحصول على طبيب أسرةالسفر في منطقة شنغن، إذا كان لديك جواز سفر ساري المفعولالتسجيل في دورات تدريبية ومدارس وجامعات</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "وعندما ينتهي التصريح؟",
+        "content": "<p>قبل انتهاء صلاحيته، يمكنك</p>\n<ul><li>تجديده تحويله إلى تصريح آخر، مثل العمل (مستقل أو تابع) أو الدراسة</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Documento che prova il rapporto di parentela con il cittadino italiano",
+      "4 Foto",
+      "Prova della convivenza (basta la dichiarazione di ospitalità)",
+      "bollettino postale da 80.46€",
+      "Copia del passaporto (non scaduto)"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "4fototessere",
+      "Permesso in scadenza",
+      "Copia del passaporto (non scaduto)",
+      "Prova della convivenza (basta la dichiarazione di ospitalità)",
+      "Bollettino postale da 80.46€",
+      "Documento che prova il rapporto di parentela con il cittadino italiano"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-817a-a856-dd4749782994",
+    "slug": "studio-conversione-da-altro-permesso",
+    "tipo": "دراسة (تحويل من تصريح إقامة آخر)",
+    "emoji": "📚",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لأغراض الدراسة يُمنح للأشخاص الأجانب الذين يرغبون في حضور دورة دراسية أو جامعية أو تدريبية في إيطاليا تستمر لأكثر من 3 أشهر.</p>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب هذا التصريح؟",
+        "content": "<p>يُطلب Permesso di Soggiorno لأغراض الدراسة عبر Kit Postale مع إرفاق المستندات المطلوبة.</p>",
+        "index": 1
+      },
+      {
+        "question": "ما مدة صلاحية هذا التصريح؟",
+        "content": "<p>يمكن أن تتراوح مدة هذا التصريح من ستة أشهر إلى سنة واحدة. يمكنك تجديده ليغطي كامل فترة دورتك الدراسية.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها / ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>السفر إلى دول منطقة Schengen لمدة أقل من ثلاثة أشهر بجواز سفركالعمل بعقد نظامي (عمل تابع) لمدة أقصاها 1040 ساعة في السنةالتسجيل في SSN بدفع رسوم لا تقل عن 700 يورو سنوياً، أو الحصول على تأمين صحي خاصطلب لمّ شمل الأسرة، لكن فقط إذا كان لديك دخل كافٍ وسكن مناسب وفقاً للقانون</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "هل يمكنني طلب هذا التصريح إذا كنت موجوداً في إيطاليا؟",
+        "content": "<p>نعم، يمكنك طلبه إذا كنت تعيش في إيطاليا وتريد بدء أو متابعة مسار دراسي.</p>\n<p>لمعرفة ما إذا كان يمكن تحويل Permesso di Soggiorno الخاص بك إلى تصريح إقامة للدراسة، قم باختبارنا</p>",
+        "index": 4
+      },
+      {
+        "question": "هل يمكنني تجديده؟",
+        "content": "<p>يجب أن تطلب التجديد من Questura قبل انتهاء صلاحية التصريح (أو خلال 60 يوماً)، باستخدام Kit Postale. يجب إرفاق المستندات التي تثبت أنك لا تزال مسجلاً في الدورة الجامعية أو التدريبية.</p>\n<p>إذا كنت تدرس في الجامعة، يمكنك تجديد التصريح حتى ثلاث سنوات بعد المدة العادية لدورة الشهادة. يمكنك أيضاً تجديده لمتابعة تخصص أو دكتوراه بحثية.</p>",
+        "index": 5
+      },
+      {
+        "question": "ماذا يحدث إذا لم أنجح في عدد كافٍ من الامتحانات؟",
+        "content": "<p>لتجديد التصريح يجب أن تكون قد اجتزت:</p>\n<ul><li>امتحاناً واحداً على الأقل في السنة الجامعية الأولىامتحانين على الأقل في السنوات الأخرىلا يمكنك التسجيل بعد السنة الثالثة خارج المسار</li><li>إذا كانت لديك مشاكل صحية خطيرة موثقة أو ظروف قاهرة أخرى، يمكنك تجديد التصريح حتى لو اجتزت امتحاناً واحداً فقط بعد السنة الأولى.</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Documento di iscrizione e esami sostenuti",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+      "marca da bollo da 16€",
+      "4 Foto",
+      "bollettino postale da 70.46€",
+      "Permesso precedente",
+      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+      "marca da bollo da 16€",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+      "documento di iscrizione e esami sostenuti",
+      "polizza assicurativa copertura sanitaria o iscrizione al Servizio Sanitario",
+      "4 Foto",
+      "Bollettino portale da 7046",
+      "permesso precedente",
+      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 7046,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81d5-b3a7-fed25f5f5399",
+    "slug": "integrazione-prosieguo-amministrativo",
+    "tipo": "اندماج (\"استمرار إداري\")",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "📄 ما هو وكيف يُطلب",
+        "content": "<ul><li>يُستخدم لاستمرار المساعدة من الخدمات الاجتماعية حتى بعد بلوغ سن الرشد.يمكنك تقديم الطلب إلى محكمة الأحداث بنفسك أو عبر الوصي عليك.لا يلزم وجود محامٍ لتقديم الطلب.يمكن طلبه حتى لو لم يكن لديك Permesso di Soggiorno للقاصرين.</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "🪪 Permesso di Soggiorno",
+        "content": "<p>إذا وافقت المحكمة على الاستمرار الإداري، يمكنك طلب Permesso di Soggiorno للاستمرار الإداري.</p>\n<ul><li>هذا التصريح صالح حتى بلوغ سن 21 عاماً كحد أقصى.يسمح بالعيش بشكل قانوني في إيطاليا، والدراسة، والعمل، والوصول إلى مشاريع الاستقبال SAI، حتى لو لم تكن مستقبَلاً من قبل.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "ما الذي يجب ذكره في طلب الاستمرار الإداري؟",
+        "content": "<p>للحصول على الاستمرار الإداري، يجب أن يكون المعني أ) قد بدأ مساراً للاندماج الاجتماعي خلال فترة القصور و ب) عند بلوغ سن الرشد، يحتاج إلى دعم مطوّل لنجاح هذا المسار الذي يهدف إلى الاستقلالية</p>\n<p>في الطلب، يجب عرض المسار الذي قطعه القاصر بإيجاز، من وصوله إلى إيطاليا حتى لحظة تقديم طلب الاستمرار الإداري، مع التركيز بشكل خاص على</p>\n<p>مسار الاندماج الاجتماعي الذي بدأه خلال فترة القصور والآفاق المستقبلية بعد بلوغ سن الرشد، من حيث الالتحاق بالمدرسة والتدريب والعمل والاستقبال وتسوية وضع الإقامة وأي جوانب أخرى للاندماج الاجتماعي (أنشطة تطوعية واجتماعية وغيرها).</p>",
+        "index": 2
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Foto",
+      "bollettino postale da 30.46€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "marca da bollo da 16€",
+      "Permesso per minore età",
+      "Decisione del Tribunale per i minorenni che decide il prosieguo amministrativo"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8184-8f41-f090f29c2b6d",
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "tipo": "عمل تابع (بعد الدخول بتأشيرة عبر \"مرسوم التدفقات\")",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno لمن دخل إيطاليا بـ Nulla Osta وتأشيرة عمل تابع عبر Decreto Flussi. يُصدر بعد توقيع عقد الإقامة وإرسال Kit Postale.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<ul><li>المواطنون من خارج الاتحاد الأوروبي الذين حصلوا على Nulla Osta للعمل عبر Decreto Flussiالذين دخلوا إيطاليا بتأشيرة عمل تابعالذين لديهم صاحب عمل في إيطاليا قدّم الطلب</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب؟",
+        "content": "<p>يُطلب عبر Kit Postale.</p>\n<ol><li>بعد الدخول إلى إيطاليا، خلال 8 أيام من الوصول، اذهب إلى Sportello Unico per l&amp;#039;Immigrazione (في Prefettura) لتوقيع عقد الإقامةاملأ Kit Postale (نموذج 1 و2) وأرسله من مكتب البريد المعتمدستتلقى موعداً في Questura لأخذ البصماتستُخبرك Questura بموعد استلام تصريحك</li></ol>",
+        "index": 2
+      },
+      {
+        "question": "ما هي المستندات المطلوبة؟",
+        "content": "<p>للاطلاع على القائمة الكاملة للمستندات التي يجب إحضارها إلى Questura، اذهب إلى الصفحة:</p>\n<ul><li>ما هي المستندات المطلوبة — الإصدار الأولما هي المستندات المطلوبة — التجديد</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟",
+        "content": "<ul><li>✅ يمكنك العمل كموظف تابع✅ يمكنك الحصول على الإقامة في البلدية التي تعيش فيها✅ يمكنك التسجيل في SSN والحصول على طبيب عائلة✅ يمكنك السفر في منطقة Schengen بجواز السفر (90 يوماً كحد أقصى كل 180 يوماً)✅ يمكنك طلب لمّ شمل الأسرة</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ما مدة صلاحية هذا التصريح؟",
+        "content": "<p>تعتمد المدة على عقد العمل:</p>\n<ul><li>سنة واحدة لعقد محدد المدةسنتان لعقد غير محدد المدةللعمل الموسمي: انظر البطاقة المخصصة</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم. يجب تقديم طلب التجديد إلى Questura ويُفضّل قبل انتهاء الصلاحية أو خلال 60 يوماً من الانتهاء. يُقدَّم الطلب عبر Kit Postale.</p>",
+        "index": 6
+      },
+      {
+        "question": "ماذا يحدث إذا فقدت عملي؟",
+        "content": "<p>إذا لم يكن لديك عمل عند انتهاء صلاحية التصريح، يمكنك طلب تصريح انتظار عمل لمدة سنة واحدة، بشرط إثبات التسجيل في مركز التوظيف.</p>",
+        "index": 7
+      },
+      {
+        "question": "كم يكلّف؟",
+        "content": "<p>تكاليف الإصدار والتجديد مذكورة في صفحة المستندات. bollettino postale هي 70,46€ (أو 80,46€ للتصاريح التي تزيد مدتها عن سنة).</p>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Contratto di soggiorno",
+      "Visto di ingresso",
+      "Nullaosta della Prefettura",
+      "Modulo 209 che dà la Prefettura quando fai il contratto di soggiorno",
+      "4 Foto",
+      "Certificato idoneità alloggiativa",
+      "bollettino postale da 80.46€"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "Copia del passaporto (non scaduto)",
+      "Permesso in scadenza",
+      "marca da bollo da 16€",
+      "Contratto di lavoro",
+      "Prova dei redditi (CUD e/o buste paga)",
+      "Certificato UNILAV",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Bollettino postale da 80.46€"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-813e-b1b7-dc34f5d83290",
+    "slug": "assistenza-minore-articolo-31",
+    "tipo": "مساعدة القاصر (\"المادة 31\")",
+    "emoji": "👶",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لمساعدة قاصر يُمنح عندما تسمح محكمة الأحداث بدخول أو بقاء قريب لقاصر أجنبي في إيطاليا لأسباب خطيرة تتعلق بنمو الطفل ورفاهيته.</p>",
+        "index": 0
+      },
+      {
+        "question": "ما مدة صلاحية هذا التصريح؟",
+        "content": "<p>تحدد محكمة الأحداث المدة وعادةً تكون سنة واحدة على الأقل. التصريح قابل للتجديد.</p>",
+        "index": 1
+      },
+      {
+        "question": "ما هي شروط الحصول عليه؟",
+        "content": "<p>المتطلبات الأساسية لهذا التصريح هي:</p>\n<ul><li>يجب أن يكون القاصر موجوداً على الأراضي الإيطاليةيجب أن يكون مقدم الطلب قريباً للقاصر (عادةً أحد الوالدين)يجب إثبات أن القاصر سيعاني كثيراً بدون القريب، من الناحية العاطفية والجسدية، خاصةً إذا كان الطفل صغيراًيجب على القريب تقديم مستندات تثبت الرابطة العائلية مع القاصرمستندات تثبت المسار الذي قطعه القاصر (المدرسة والأنشطة وغيرها).</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يجب تقديم الطلب إلى محكمة الأحداث في المنطقة التي يعيش فيها القاصر. لا يُشترط وجود محامٍ: يمكنك تقديم الطعن بنفسك رغم أن المساعدة القانونية مُستحسنة.</p>\n<p>تنبيه: قد تستغرق القضية في المحكمة أشهراً أو سنوات والنتيجة غير مضمونة. أثناء انتظار قرار المحكمة لن يكون لديك Permesso di Soggiorno مؤقت.</p>\n<p>بعد الحصول على وثيقة المحكمة، يجب على الأقارب طلب Permesso di Soggiorno من Questura في المنطقة التي يعيشون فيها. التصريح بصيغة إلكترونية.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما هي المستندات التي أحتاجها لتقديم الطلب؟",
+        "content": "<p>عند تقديم الطلب إلى محكمة الأحداث، يجب إحضار:</p>\n<ul><li>طلب الطعن (يتوفر نموذج جاهز)طابع ضريبي بقيمة 27,00€شهادة ميلاد القاصروثائق هوية القريب مقدم الطلب والقاصرشهادات طبية إن وُجدت، إذا كانت تثبت مشاكل صحية تتعلق بالقاصر</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذا التصريح؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>العمل بعقد نظامي (عمل مستقل أو تابع)التسجيل في SSN والحصول على طبيب عائلةالتسجيل في المدرسة أو دورة مهنية أو الجامعةالتنقل بحرية في إيطاليا ودول Schengen (لإقامات قصيرة حتى 3 أشهر) بجواز السفر</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "وعندما ينتهي التصريح؟",
+        "content": "<p>يمكنك تجديده أو تحويله إلى تصريح آخر</p>\n<p>تنبيه: لتجديد هذا التصريح يجب رفع دعوى جديدة أمام محكمة الأحداث. لا يمكن تجديده في Questura أو عبر Kit Postale.</p>\n<p>للتحويل، يمكن تغيير هذا التصريح إلى:</p>\n<ul><li>Permesso di Soggiorno للعمل (مستقل أو تابع)تصريح الاتحاد الأوروبي للمقيمين لفترة طويلة بعد 5 سنوات من الإقامة القانونية في إيطاليا</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Decisione del Tribunale per i MInorenni",
+      "bollettino postale da 80.46€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "4 Foto",
+      "Copia del passaporto (non scaduto)"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8134-9db0-daab14600a9b",
+    "slug": "studio-dopo-ingresso-con-visto",
+    "tipo": "دراسة (بعد الدخول بتأشيرة)",
+    "emoji": "📚",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لأغراض الدراسة يُمنح للأشخاص الأجانب الذين يرغبون في حضور دورة دراسية أو جامعية أو تدريبية في إيطاليا تستمر لأكثر من 3 أشهر.</p>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب هذا التصريح؟",
+        "content": "<p>يُطلب Permesso di Soggiorno لأغراض الدراسة عبر Kit Postale مع إرفاق المستندات المطلوبة.</p>",
+        "index": 1
+      },
+      {
+        "question": "ما مدة صلاحية هذا التصريح؟",
+        "content": "<p>يمكن أن تتراوح مدة هذا التصريح من ستة أشهر إلى سنة واحدة. يمكنك تجديده ليغطي كامل فترة دورتك الدراسية.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها / ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>السفر إلى دول منطقة Schengen لمدة أقل من ثلاثة أشهر بجواز سفركالعمل بعقد نظامي (عمل تابع) لمدة أقصاها 1040 ساعة في السنةالتسجيل في SSN بدفع رسوم لا تقل عن 700 يورو سنوياً، أو الحصول على تأمين صحي خاصطلب لمّ شمل الأسرة، لكن فقط إذا كان لديك دخل كافٍ وسكن مناسب وفقاً للقانون</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "هل يمكنني طلب هذا التصريح إذا كنت موجوداً في إيطاليا؟",
+        "content": "<p>نعم، يمكنك طلبه إذا كنت تعيش في إيطاليا وتريد بدء أو متابعة مسار دراسي.</p>\n<p>لمعرفة ما إذا كان يمكن تحويل Permesso di Soggiorno الخاص بك إلى تصريح إقامة للدراسة، قم باختبارنا</p>",
+        "index": 4
+      },
+      {
+        "question": "هل يمكنني تجديده؟",
+        "content": "<p>يجب أن تطلب التجديد من Questura قبل انتهاء صلاحية التصريح (أو خلال 60 يوماً)، باستخدام Kit Postale. يجب إرفاق المستندات التي تثبت أنك لا تزال مسجلاً في الدورة الجامعية أو التدريبية.</p>\n<p>إذا كنت تدرس في الجامعة، يمكنك تجديد التصريح حتى ثلاث سنوات بعد المدة العادية لدورة الشهادة. يمكنك أيضاً تجديده لمتابعة تخصص أو دكتوراه بحثية.</p>",
+        "index": 5
+      },
+      {
+        "question": "ماذا يحدث إذا لم أنجح في عدد كافٍ من الامتحانات؟",
+        "content": "<p>لتجديد التصريح يجب أن تكون قد اجتزت:</p>\n<ul><li>امتحاناً واحداً على الأقل في السنة الجامعية الأولىامتحانين على الأقل في السنوات الأخرىلا يمكنك التسجيل بعد السنة الثالثة خارج المسار</li><li>إذا كانت لديك مشاكل صحية خطيرة موثقة أو ظروف قاهرة أخرى، يمكنك تجديد التصريح حتى لو اجتزت امتحاناً واحداً فقط بعد السنة الأولى.</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+      "marca da bollo da 16€",
+      "4 Foto",
+      "bollettino postale da 70.46€",
+      "certificato di ammissione al corso di studi vidimato dall'Ambasciata italiana all'estero",
+      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Copia del passaporto (non scaduto)",
+      "Permesso in scadenza",
+      "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)",
+      "4fototessere",
+      "marca da bollo da 16€",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+      "Certificato esami sostenuti",
+      "certificato di iscrizione all'ano accademico in corso"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 70.46,
+    "costBollettinoAltRinnovo": 80.46,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8170-8762-c03eb2378cd3",
+    "slug": "richiesta-asilo",
+    "tipo": "طلب اللجوء",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لطلب اللجوء (التصريح الأصفر) هو وثيقة تُمنح لمن تقدّم بطلب حماية دولية (لجوء) في إيطاليا ولا يزال ينتظر قراراً نهائياً</p>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب هذا التصريح؟",
+        "content": "<p>أولاً، يجب أن تذهب إلى مكتب الهجرة في Questura وتطلب الحماية الدولية: سيأخذون بصماتك وبعد ذلك سيمنحونك Permesso di Soggiorno لطلب اللجوء. لا تحتاج إلى جواز سفر. إذا قلت أن لديك جواز سفر، يجب أن تسلّمه إلى Questura.</p>\n<p>كل من يتقدم بطلب لجوء له الحق في هذا التصريح، الذي يسمح لك بالبقاء بشكل قانوني في إيطاليا حتى صدور القرار بشأن طلبك. هناك بعض الاستثناءات (تابع القراءة).</p>",
+        "index": 1
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟",
+        "content": "<ul><li>العمل بعقد نظامي (عمل مستقل أو تابع): يمكنك توقيع عقد عمل بعد 60 يوماً من تاريخ تصريحك الذي يحمل صورتك (&quot;attestato nominativo&quot;) الذي تمنحك إياه Questura بعد ذلك. التسجيل في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عام. الحصول على الإقامة في البلدية التي تعيش فيها. إذا لم يكن لديك مال كافٍ لإعالة نفسك، يمكنك الذهاب للعيش في مركز استقبال.</li><li>لا يمكنك السفر خارج إيطاليا بهذا التصريح.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "كم مدة صلاحيته؟",
+        "content": "<p>مدته 6 أشهر. لكن حتى لو انتهت صلاحيته (وهو أمر شائع جداً)، تبقى في وضع قانوني حتى صدور قرار Commissione Territoriale بشأن طلب الحماية الدولية الخاص بك. في كثير من الحالات يمكنك الاستمرار في البقاء في إيطاليا حتى صدور قرار المحكمة، لكن ليس دائماً (يعتمد أيضاً على البلد الذي أتيت منه، وكيف دخلت إيطاليا، وهناك قوانين جديدة قادمة ستحدّ من هذا الحق أكثر).</p>",
+        "index": 3
+      },
+      {
+        "question": "هل يمكنني تجديده؟",
+        "content": "<p>يتم تجديد تصريح طلب اللجوء تلقائياً حتى تصدر Commissione Territoriale قرارها بشأن طلب الحماية الدولية الخاص بك.</p>\n<p>⚠️ في بعض الحالات إذا حصلت على رد سلبي من Commissione وعلى سبيل المثال (أ) أنت من بلد يُعتبر &quot;آمناً&quot;؛ (ب) قدّمت طلبات لجوء أخرى في الماضي؛ (ج) تم الإبلاغ عنك للشرطة بسبب جرائم، فقد لا يتم تجديد Permesso di Soggiorno الخاص بك. إذا حصلت بالفعل على رد سلبي أول وتتساءل عما إذا كان يمكن ترحيلك أو وضعك في مركز احتجاز للترحيل (&quot;CPR&quot;)، فمن الجيد طلب مساعدة قانونية متخصصة فوراً.</p>",
+        "index": 4
+      },
+      {
+        "question": "هل يمكنني تحويله إلى تصريح آخر؟",
+        "content": "<p>لا، لا يمكن تحويل Permesso di Soggiorno هذا إلى تصاريح أخرى، باستثناء Permesso di Soggiorno لأسباب عائلية.</p>\n<p>إذا تقدمت بطلب لجوء عندما كان عمرك أقل من 18 سنة، وحصلت على قرار نهائي سلبي (من Commissione أو من المحكمة)، يمكنك تحويل هذا التصريح إلى تصريح للدراسة أو العمل أو انتظار العمل، حتى لو كان عمرك الآن أكثر من 18 سنة.</p>",
+        "index": 5
+      },
+      {
+        "question": "ماذا يحدث إذا تم رفض طلب الحماية الدولية الخاص بي؟",
+        "content": "<p>إذا رفضت Commissione Territoriale طلبك، يمكنك تقديم طعن بمساعدة محامٍ. إذا كسبت في عام 2025 أقل من 13.500 Euro، يمكن لمحاميك تقديم الطعن مجاناً.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Modello C3",
+      "Attestato nominativo",
+      "Se hai un ricorso in tribunale stampa del fascicolo telematico in Tribunale (chiedi al tuo avvocato)",
+      "marca da bollo da 16€",
+      "4fototessere"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81a7-8ea2-c4da53429233",
+    "slug": "minore-eta-per-msna",
+    "tipo": "القاصرون (للقاصرين الأجانب غير المصحوبين)",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للقاصرين يُمنح للشباب الأجانب الذين تقل أعمارهم عن 18 سنة والموجودين في إيطاليا بدون أهل أو أقارب قريبين. يُمنح هذا التصريح حتى لو وصلت بدون وثائق أو بطريقة غير نظامية.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن طلب هذا التصريح لمجرد كونك قاصراً (أقل من 18 سنة) وليس لديك أهل أو أقارب قريبون في إيطاليا.</p>\n<p>يمكن تقديم الطلب من قبل:</p>\n<ul><li>القاصر نفسه (بمساعدة محامٍ أو العاملين في المركز الذي يعيش فيه). الخدمات الاجتماعية في المنطقة. الوصي (الشخص البالغ المسؤول قانونياً عن القاصر).</li><li>إذا لم يتم اختيار الوصي بعد من قبل المحكمة، يمكن لمسؤول المركز الذي يعيش فيه القاصر تقديم الطلب.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يجب تقديم الطلب في Questura المدينة التي يقع فيها المركز الذي تعيش فيه.</p>",
+        "index": 2
+      },
+      {
+        "question": "📋 ما هي الوثائق المطلوبة؟",
+        "content": "<ul><li>4 صور شخصية. Marca da bollo بقيمة 16€. إعلان استضافة مع وثيقة هوية مسؤول المركز. وثيقة الوصي المعيّن من محكمة الأحداث (إن وُجد) أو إعلان من مسؤول المركز الذي يعيش فيه القاصر.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>يستمر التصريح حتى بلوغ 18 سنة (حتى سن الرشد).</p>",
+        "index": 4
+      },
+      {
+        "question": "ماذا يمكنك أن تفعل بهذا التصريح؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<p>✅ التسجيل في المدرسة (ابتدائي، إعدادي، ثانوي) حتى بدون وثائق أخرى</p>\n<p>✅ التسجيل في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عام 🏥</p>\n<p>✅ ابتداءً من سن 16 سنة، العمل (بعقد نظامي - عمل مستقل أو تابع، مع احترام قوانين عمل القاصرين)</p>\n<p>✅ طلب الإيواء في مركز استقبال للقاصرين</p>",
+        "index": 5
+      },
+      {
+        "question": "ماذا يحدث عندما تبلغ 18 سنة؟",
+        "content": "<p>قبل بلوغ 18 سنة، يمكنك تحويل التصريح إلى أنواع أخرى مثل:</p>\n<ul><li>تصريح للعمل. تصريح للدراسة. تصريح لانتظار العمل. تصريح عائلي، إذا توفرت جميع الشروط اللازمة. تصريح للاستمرار الإداري.</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "permesso precedente"
+    ],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-817a-b709-e2545dc48378",
+    "slug": "asilo-status-rifugiato",
+    "tipo": "اللجوء (صفة اللاجئ)",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو التصريح الذي يُمنح لمن يفر من بلده لأنه يتعرض لخطر الاضطهاد بسبب دينه أو رأيه السياسي أو جنسيته أو انتمائه إلى مجموعة عرقية أو اجتماعية معينة.</p>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب هذا التصريح؟",
+        "content": "<p>للحصول على هذا التصريح يجب عليك:</p>\n<ul><li>تقديم طلب حماية دولية (راجع دليلنا). الحصول على قرار إيجابي من Commissione Territoriale أو من المحكمة. بهذا القرار الإيجابي، اذهب إلى Questura لطلب التصريح.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يجب أن تذهب شخصياً إلى Questura.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة لطلبه؟",
+        "content": "<p>لطلب التصريح يجب أن تحضر قرار Commissione (أو المحكمة) الذي اعترف بك كلاجئ.</p>",
+        "index": 3
+      },
+      {
+        "question": "كم مدة صلاحيته؟",
+        "content": "<p>مدة التصريح 5 سنوات ويمكن تجديده، عادةً بشكل تلقائي، لمدة 5 سنوات أخرى.</p>",
+        "index": 4
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>الحصول على الإقامة في بلديتك. العمل بشكل نظامي (عمل تابع أو مستقل). التسجيل في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عام. التسجيل في المدرسة أو دورة مهنية أو الجامعة. الحصول على مساعدات مالية وسكنية. طلب الجنسية الإيطالية بعد 5 سنوات من الإقامة القانونية (تُحسب من تاريخ تقديم طلب الحماية). طلب لمّ الشمل مع أفراد العائلة المقربين: الزوج/الزوجة، الأبناء القاصرون، الأبناء البالغون إذا كانوا معاقين كلياً، الوالدون فوق 65 سنة أو المُعالون.</li><li>للمّ الشمل العائلي لا تحتاج إلى إثبات أن لديك سكناً كبيراً وراتباً أدنى كباقي الأجانب.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "هل يمكنني السفر خارج إيطاليا؟",
+        "content": "<p>يمكنك التنقل بحرية في إيطاليا، والذهاب إلى دول الاتحاد الأوروبي الأخرى لمدة تصل إلى 3 أشهر، ومع &quot;وثيقة السفر&quot; (جواز سفر يُمنح للاجئين) يمكنك أيضاً السفر إلى دول أخرى في العالم.</p>\n<p>انتبه! لا يمكنك السفر إلى بلدك الأصلي. إذا فعلت ذلك، يمكن لـ Questura سحب Permesso di Soggiorno الخاص بك.</p>",
+        "index": 6
+      },
+      {
+        "question": "هل يمكنني تحويل هذا التصريح؟",
+        "content": "<p>التصريح الوحيد الذي من المنطقي تحويل تصريح اللجوء إليه هو Permesso di Soggiorno UE للمقيمين لفترة طويلة (&quot;Carta&quot;)، بعد خمس سنوات من الإقامة في إيطاليا.</p>\n<p>لا يمكن تحويل تصريح اللجوء السياسي إلى Permesso di Soggiorno للعمل المستقل أو التابع.</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Decisione della commissione o del Tribunale",
+      "4 Foto",
+      "bollettino postale da 30.46€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Permesso in scadenza",
+      "Decisone della commissione o del Tribunale",
+      "marca da bollo da 16€",
+      "4fototessere",
+      "Bollettino postale da 30.46",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81e0-aabf-fcc4fc32c694",
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "tipo": "FAMIT لأفراد عائلة المواطنين الإيطاليين \"المقيمين\"",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno يُمنح لأحد أفراد عائلة مواطن إيطالي لم يعش أبداً في دول أخرى من الاتحاد الأوروبي.</p>",
+        "index": 0
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>مدته 5 سنوات.</p>",
+        "index": 1
+      },
+      {
+        "question": "من يمكنه تقديم الطلب؟",
+        "content": "<p>يمكن تقديم الطلب من قبل:</p>\n<ul><li>الزوج/الزوجة للمواطن الإيطالي (أو الشريك في اتحاد مدني). الشريك الذي وقّع عقد معاشرة، حتى بدون زواج أو اتحاد مدني. الأبناء حتى سن 21 سنة (للمواطن الإيطالي أو الزوج). الأبناء فوق 21 سنة (للمواطن الإيطالي أو الزوج) المُعالون من العائلة. لذلك يجب تقديم إثباتات (وثائق من بلد الأصل، إيصالات تحويل أموال، وأحياناً التسجيل كمُعال ضريبياً). الوالدون (للمواطن الإيطالي أو الزوج) المُعالون من العائلة. لذلك يجب تقديم إثباتات (وثائق من بلد الأصل، إيصالات تحويل أموال، وأحياناً التسجيل كمُعال ضريبياً). الأجداد (للمواطن الإيطالي أو الزوج). الأحفاد حتى سن 21 سنة (للمواطن الإيطالي أو الزوج). الأحفاد فوق 21 سنة (للمواطن الإيطالي أو الزوج) المُعالون من العائلة. لذلك يجب تقديم إثباتات (وثائق من بلد الأصل، إيصالات تحويل أموال، وأحياناً التسجيل كمُعال ضريبياً).</li><li>انتبه: الإخوة والأخوات والأعمام وأبناء العمومة وباقي الأقارب ليس لهم الحق في هذا التصريح. لهم فقط &quot;تسهيل&quot; للدخول والإقامة في إيطاليا.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة؟",
+        "content": "<p>عند تقديم الطلب يجب أن تحضر:</p>\n<ul><li>جواز سفر ساري المفعول أو وثيقة بصورة تثبت جنسيتك. Permesso di Soggiorno المنتهي أو قيد الانتهاء إن كان لديك واحد. وثيقة هوية فرد العائلة الإيطالي. وثائق تثبت وجودك النظامي في إيطاليا. وثائق تثبت أن عائلتك لديها دخل كافٍ مقارنة بعدد أفرادها (يجب أن يكون هذا الدخل من مصادر قانونية ولا يقل عن المبلغ السنوي المحدد بالقانون لكل فرد من العائلة). شهادة عائلية وشهادة إقامة لفرد العائلة الإيطالي (إذا تم بإقرار ذاتي، أرفق نسخ وثائق هوية كل شخص في العائلة). عقد إيجار مسجل أو سند ملكية مسجل، باسم فرد العائلة الإيطالي. تأمين صحي لمدة 12 شهراً على الأقل لأفراد العائلة من خارج الاتحاد الأوروبي فوق 65 سنة (باستثناء والدي المواطنين الإيطاليين). وثائق تثبت صلة القرابة. إثبات أنك &quot;مُعال&quot; من فرد العائلة الإيطالي، مثل شهادات من بلدك الأصلي صالحة لمدة 180 يوماً. يجب ترجمة هذه الوثائق، وإذا لزم الأمر، المصادقة عليها بالأبوستيل أو من كاتب العدل. إقرار من فرد العائلة الإيطالي يضمن إعالتك ويؤكد أنكم تعيشون معاً. إعلان استضافة.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ماذا يسمح لي بفعله؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>الحصول على Permesso di Soggiorno لمدة 5 سنوات. الحصول على الإقامة حيث تعيش. العمل بعقد نظامي (عمل مستقل أو تابع). التسجيل في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عام. السفر بحرية في إيطاليا وفي دول منطقة شنغن (بجواز سفر ساري). الوصول إلى دورات التدريب والمدارس والجامعات.</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "كيف يمكنني تجديده؟",
+        "content": "<p>قبل انتهاء صلاحيته، يمكنك تجديد هذا التصريح في Questura منطقتك، بتقديم:</p>\n<ul><li>جواز سفر ساري المفعول. شهادة عائلية وشهادة إقامة. وثيقة هوية فرد العائلة الإيطالي. أي وثائق أخرى قد تُطلب.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "هل يمكنني تحويله؟",
+        "content": "<p>إذا توفرت لديك الشروط، يمكن تحويل هذا التصريح إلى:</p>\n<ul><li>تصريح للعمل. تصريح للدراسة.</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Documento che prova il rapporto di parentela con il cittadino italiano",
+      "bollettino postale da 80.46€",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto",
+      "Documento di identità del cittadino italiano"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Copia del passaporto (non scaduto)",
+      "Permesso in scadenza",
+      "Documento di identità del cittadino italiano",
+      "Documento che prova il rapporto di parentela con il cittadino italiano (incluso nuovo certificato di matrimonio se è coniuge)",
+      "Bollettino postale da 80.46€",
+      "marca da bollo da 16€",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-814e-b42a-d05f4b080550",
+    "slug": "affidamento-a-familiari-entro-il-quarto-grado",
+    "tipo": "الكفالة لدى أقارب حتى الدرجة الرابعة",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno لأسباب عائلية يُمنح للقاصرين الأجانب الذين وصلوا إلى إيطاليا بدون أهلهم (MSNA) والذين تم إسناد كفالتهم إلى قريب حتى الدرجة الرابعة (أخ/أخت، عم/عمة، ابن/ابنة عم، جد/جدة...).</p>\n<p>إذا لم يكن لديك أقارب في إيطاليا، سيُمنح لك Permesso di Soggiorno للقاصر الأجنبي غير المصحوب (MSNA).</p>\n<p>التصريح لأسباب عائلية أفضل لأنه عندما تبلغ 18 سنة سيكون من الأسهل تحويله إلى نوع آخر من التصاريح.</p>",
+        "index": 0
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>صالح حتى بلوغ 18 سنة.</p>",
+        "index": 1
+      },
+      {
+        "question": "ما هي شروط الحصول عليه؟",
+        "content": "<p>يمكنك الحصول على هذا التصريح إذا:</p>\n<ul><li>تم إسناد كفالتك إلى قريب حتى الدرجة الرابعة (أخ/أخت، عم/عمة، ابن/ابنة عم، جد/جدة...) بوثيقة من محكمة الأحداث.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يجب طلبه مباشرة في Questura.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة لطلبه؟",
+        "content": "<p>عند تقديم الطلب، يجب أن تحضر:</p>\n<ul><li>شهادة ميلاد أو وثيقة هوية (إن وُجدت). وثيقة كفالة أو وصاية صادرة عن محكمة الأحداث. إقرار من الخدمات الاجتماعية يؤكد أنهم يتولون رعايتك. شهادة إقامة أو إعلان استضافة من المجتمع/العائلة التي تعيش فيها.</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ماذا يمكنني فعله بهذا التصريح؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>التسجيل في المدرسة أو دورة مهنية أو الجامعة. التسجيل في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عام. العمل بعقد نظامي (عمل مستقل أو تابع)، لكن فقط بعد سن 16 سنة.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "وعندما أبلغ 18 سنة؟",
+        "content": "<p>قبل بلوغ 18 سنة، يمكنك تحويل تصريحك إلى:</p>\n<ul><li>تصريح للدراسة (إذا كنت مسجلاً في مدرسة أو جامعة). تصريح للعمل (إذا كان لديك عقد عمل مستقل أو تابع). تصريح لانتظار العمل (إذا كنت تبحث عن عمل).</li><li>انتبه: يجب أن تطلب تحويل التصريح قبل بلوغ 18 سنة، وإلا ينتهي التصريح وتخاطر بأن تصبح في وضع غير نظامي.</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Decreto di affidamento del Tribunale dei Minorenni",
+      "Certificato di nascita/documento di identità",
+      "Relazione/dichiarazione dei servizi sociali dei servizi sociali"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81f6-9817-e46156eceb71",
+    "slug": "ricerca-scientifica",
+    "tipo": "البحث العلمي",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للبحث العلمي يسمح لك بالبقاء في إيطاليا للقيام بنشاط بحثي في جامعة أو مؤسسة بحثية أو معهد آخر معترف به. وهو منصوص عليه في art. 27-ter من النص الموحد للهجرة.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكنك طلب هذا التصريح إذا:</p>\n<ul><li>لديك اتفاقية استقبال مع مؤسسة بحثية إيطالية معترف بها من الوزارة. لديك مؤهل علمي يسمح لك بالوصول إلى برامج الدكتوراه (عادةً ماجستير أو ما يعادله). دخلت إيطاليا بتأشيرة للبحث العلمي.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب هذا التصريح؟",
+        "content": "<p>يُطلب عبر Kit Postale.</p>\n<p>👉 راجع قائمة الوثائق للإصدار الأول</p>\n<p>👉 راجع قائمة الوثائق للتجديد</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل كباحث في المؤسسة المذكورة في الاتفاقية. التسجيل في الخدمة الصحية الوطنية (SSN). طلب الإقامة. القيام بنشاط تدريسي مرتبط بالبحث.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>مدة التصريح بقدر مدة اتفاقية الاستقبال. عادةً من سنة إلى سنتين، قابل للتجديد.</p>",
+        "index": 4
+      },
+      {
+        "question": "عند انتهائه هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده إذا تم تجديد أو تمديد اتفاقية الاستقبال. أرسل الطلب عبر Kit Postale قبل انتهاء الصلاحية.</p>",
+        "index": 5
+      },
+      {
+        "question": "كم تكلفته؟",
+        "content": "<p>التكلفة الإجمالية حوالي 126,46€:</p>\n<ul><li>80,46€ للبوليصة البريدية (تشمل تكلفة Permesso di Soggiorno الإلكتروني). 30€ لإرسال Kit Postale. 16€ لـ marca da bollo.</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": null,
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-817d-bafe-ee1dc88af3dd",
+    "slug": "residenza-elettiva",
+    "tipo": "الإقامة الاختيارية",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للإقامة الاختيارية مخصص لمن يريد العيش في إيطاليا دون العمل، معتمداً على موارده المالية الخاصة. هو التصريح النموذجي للمتقاعدين الأجانب، والأشخاص الذين لديهم إيرادات أو دخل سلبي ويختارون إيطاليا كمكان إقامة.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن طلبه لمن:</p>\n<ul><li>حصل على تأشيرة إقامة اختيارية من السفارة أو القنصلية الإيطاليةيُثبت أن لديه موارد مالية مستقرة وكافية للعيش في إيطاليا دون العمل (مثلاً: معاش تقاعدي، إيرادات، استثمارات)لديه سكن في إيطاليا (ملكية أو عقد إيجار)</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف/أين يُقدَّم الطلب؟",
+        "content": "<p>يُقدَّم الطلب عبر Kit Postale المتوفر في مكاتب البريد المعتمدة.</p>\n<p>خلال 8 أيام من الدخول إلى إيطاليا، يجب تقديم الطلب.</p>\n<p>لمعرفة الوثائق المطلوبة، راجع صفحة الوثائق للإصدار الأول.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>العيش بشكل مستقر في إيطالياالتسجيل في الخدمة الصحية الوطنية (SSN) أو الحصول على تأمين صحي خاصطلب الإقامة</li><li>⚠️ انتبه: مع هذا التصريح لا يمكنك العمل. إذا أردت العمل في إيطاليا، يجب عليك تحويل التصريح إلى نوع آخر.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ما هي مدة هذا التصريح؟",
+        "content": "<p>المدة هي سنة واحدة وقابلة للتجديد، بشرط أن تستمر في إثبات أن لديك موارد مالية كافية.</p>",
+        "index": 4
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده بتقديم الوثائق المحدّثة التي تثبت مواردك المالية وتوفر السكن. يُقدَّم الطلب عبر Kit Postale.</p>",
+        "index": 5
+      },
+      {
+        "question": "هل يمكنني تحويله إلى تصريح آخر؟",
+        "content": "<p>نعم — بعد 5 سنوات من الإقامة القانونية، يمكنك طلب Permesso di Soggiorno UE للمقيمين لفترة طويلة، الذي يمنحك حقوقاً أكثر وليس له تاريخ انتهاء.</p>",
+        "index": 6
+      },
+      {
+        "question": "كم يكلف؟",
+        "content": "<p>لتقديم الطلب يجب دفع:</p>\n<ul><li>بوليصة بريدية بقيمة 30,46€طابع ضريبي بقيمة 16€</li></ul>",
+        "index": 7
+      },
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للإقامة الاختيارية مخصص للمواطنين الأجانب الذين يرغبون في العيش بشكل مستقر في إيطاليا دون ممارسة نشاط عمل. وهو مصمم للأشخاص المستقلين مالياً الذين لديهم موارد كافية للعيش دون العمل، مثل المتقاعدين الأجانب أو أصحاب الإيرادات.</p>",
+        "index": 8
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن طلب هذا التصريح لمن:</p>\n<ul><li>لديه موارد مالية مستقرة وموثقة للعيش في إيطاليا دون العمللديه سكن مناسب في إيطاليا (ملكية أو إيجار)لديه تأمين صحي ساري المفعول في إيطاليالا ينوي ممارسة نشاط عمل في إيطاليا (تابع أو مستقل)دخل إيطاليا بالفعل بتأشيرة إقامة اختيارية</li></ul>",
+        "index": 9
+      },
+      {
+        "question": "كيف/أين يُقدَّم الطلب؟",
+        "content": "<p>قبل الدخول إلى إيطاليا:</p>\n<ul><li>يجب طلب تأشيرة إقامة اختيارية من القنصلية الإيطالية في بلدك</li></ul>\n<p>بعد الوصول إلى إيطاليا:</p>\n<ul><li>خلال 8 أيام عمل من الدخول، قدّم طلب Permesso di Soggiorno عبر Kit Postale (Poste Italiane)أو مباشرة في Questura، إذا طُلب منك ذلك</li><li>للوثائق المطلوبة، راجع الصفحة المخصصة: https://www.sospermesso.it/documenti-residenza-elettiva-primo.html</li></ul>",
+        "index": 10
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>مع هذا التصريح:</p>\n<ul><li>يمكنك العيش بشكل مستقر في إيطاليايمكنك السفر بحرية في منطقة شنغن (بشروط)يمكنك الوصول إلى الخدمات الصحية إذا كان لديك تأمين صحيلا يمكنك العمل (لا كموظف ولا كعامل مستقل)</li><li>⚠️ انتبه: هذا التصريح لا يسمح بممارسة أي نوع من النشاط العملي في إيطاليا.</li></ul>",
+        "index": 11
+      },
+      {
+        "question": "ما هي مدة هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno الأول للإقامة الاختيارية له مدة متغيرة، عادةً سنة واحدة. يمكن تجديده إذا استمررت في استيفاء الشروط المالية وشروط السكن.</p>",
+        "index": 12
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده إذا:</p>\n<ul><li>لا تزال لديك موارد مالية كافية للعيشلا يزال لديك سكن مناسب في إيطاليالديك تأمين صحي ساري المفعوللم تمارس نشاط عمل غير مصرح به</li><li>للوثائق المطلوبة للتجديد، راجع: https://www.sospermesso.it/documenti-residenza-elettiva-rinnovo.html</li></ul>",
+        "index": 13
+      },
+      {
+        "question": "هل يمكنني تحويله إلى تصريح آخر؟",
+        "content": "<p>التحويل إلى تصاريح إقامة أخرى ممكن فقط في حالات محددة، مثلاً:</p>\n<ul><li>Permesso di Soggiorno للعمل التابع (إذا حصلت على عقد عمل وتتوفر حصص)Permesso di Soggiorno لأسباب عائلية (إذا كان لديك زوج/زوجة أو فرد من العائلة إيطالي/أجنبي مقيم بشكل قانوني)Permesso di Soggiorno UE للمقيمين لفترة طويلة (إذا استوفيت شروط الدخل والإقامة)</li><li>التحويل يتطلب دائماً التحقق من الشروط الخاصة بالتصريح الجديد.</li></ul>",
+        "index": 14
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Visto per residenza elettiva",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Copia del passaporto (non scaduto)",
+      "bollettino postale da 80.46€"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Copia del passaporto (non scaduto)",
+      "Bollettino postale da 80.46€",
+      "Permesso in scadenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8108-9af2-e9edcb2d82ad",
+    "slug": "attivita-sportiva",
+    "tipo": "النشاط الرياضي",
+    "emoji": "⚽",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للنشاط الرياضي يسمح لك بالبقاء في إيطاليا لممارسة نشاط رياضي احترافي أو هاوٍ. وهو مخصص للرياضيين الأجانب الذين لديهم عقد مع نادٍ رياضي إيطالي وتصريح من CONI (اللجنة الأولمبية الوطنية الإيطالية).</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكنك طلب هذا التصريح إذا:</p>\n<ul><li>لديك عقد مع نادٍ رياضي إيطاليحصلت على التصريح الاسمي بالموافقة من CONIدخلت إيطاليا بتأشيرة للنشاط الرياضي</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب هذا التصريح؟",
+        "content": "<p>يُطلب عبر Kit Postale، سواء للإصدار الأول أو للتجديد.</p>\n<p>👉 راجع قائمة الوثائق للإصدار الأول</p>\n<p>👉 راجع قائمة الوثائق للتجديد</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>ممارسة النشاط الرياضي الذي لديك عقد بشأنهالتسجيل في الخدمة الصحية الوطنية (SSN)طلب الإقامة</li><li>⚠️ انتبه: هذا التصريح يسمح لك بالعمل فقط في المجال الرياضي الذي صُدر من أجله.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ما هي مدة هذا التصريح؟",
+        "content": "<p>التصريح يستمر بقدر مدة عقدك الرياضي، حتى حد أقصى سنتين. يمكنك تجديده إذا تم تجديد العقد.</p>",
+        "index": 4
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده عبر Kit Postale قبل انتهاء الصلاحية، بتقديم العقد الرياضي الجديد وتأكيد CONI.</p>",
+        "index": 5
+      },
+      {
+        "question": "هل يمكنني تحويله إلى تصريح آخر؟",
+        "content": "<p>نعم، يمكنك تحويله إلى Permesso di Soggiorno للعمل التابع.</p>",
+        "index": 6
+      },
+      {
+        "question": "كم يكلف؟",
+        "content": "<p>التكلفة الإجمالية حوالي 126,46€:</p>\n<ul><li>80,46€ للبوليصة البريدية (تشمل تكلفة Permesso di Soggiorno الإلكتروني)30€ لإرسال Kit Postale16€ للطابع الضريبي</li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Contratto con società sportiva",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "Dichiarazione  nominativa di assenso del CONI",
+      "bollettino postale da 80.46€",
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "Bollettino postale da 80.46€",
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Contratto con società sportiva"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81c1-9566-f917ec3cbb3f",
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "tipo": "أفراد عائلة حاملي صفة اللاجئ أو الحماية الفرعية",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno لأفراد العائلة الأجانب لمن حصل على صفة اللاجئ أو الحماية الفرعية في إيطاليا. إذا كان زوجك/زوجتك أو والدك/والدتك أو ابنك/ابنتك يحمل الحماية الدولية، يمكنك طلب هذا التصريح للعيش معهم.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن لأفراد العائلة الأجانب لحاملي الحماية الدولية (لاجئين أو حماية فرعية) طلبه:</p>\n<ul><li>الزوج/الزوجة أو الشريك في اتحاد مدنيالأبناء القاصرون غير المتزوجين (بما في ذلك أبناء الزوج/الزوجة)الوالدان المعالان، إذا لم يكن لديهم أبناء آخرون في بلد المنشأ</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب هذا التصريح؟",
+        "content": "<p>يُطلب عبر Kit Postale: تملأ النموذج، وتسلّمه في مكتب البريد المعتمد وتحصل على موعد في Questura.</p>\n<p>لمعرفة الوثائق المطلوبة، راجع صفحة الوثائق المطلوبة</p>\n<p>➡️ الوثائق للإصدار الأول</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>العمل (عمل تابع أو مستقل)التسجيل في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عامطلب الإقامة في السجل المدنيالوصول إلى الخدمات الاجتماعية والتعليمية</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ما هي مدة هذا التصريح؟",
+        "content": "<p>المدة هي 5 سنوات.</p>",
+        "index": 4
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده. يجب تقديم طلب التجديد قبل انتهاء الصلاحية. يتم تجديد التصريح إذا حافظ فرد عائلتك على صفة الحماية الدولية وإذا كانت الرابطة العائلية لا تزال قائمة.</p>",
+        "index": 5
+      },
+      {
+        "question": "هل يمكنني تحويله إلى تصريح آخر؟",
+        "content": "<p>مع هذا التصريح يمكنك العمل، لذلك مع مرور الوقت قد تستوفي الشروط لطلب Permesso di Soggiorno للعمل التابع أو المستقل. يمكنك أيضاً طلب Permesso di Soggiorno UE للمقيمين لفترة طويلة بعد 5 سنوات من الإقامة القانونية.</p>",
+        "index": 6
+      },
+      {
+        "question": "كم يكلف؟",
+        "content": "<p>تكاليف الطلب هي:</p>\n<ul><li>بوليصة بريدية: 70,46€ (تشمل تكلفة Permesso di Soggiorno الإلكتروني)طابع ضريبي: 16€</li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Foto",
+      "marca da bollo da 16€",
+      "Documento che dimostri il legame di parentela",
+      "Permesso di soggiorno del familiare straniero"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81b9-b2b4-e93a1333548f",
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "tipo": "العائلة - بدون Nulla Osta لإعادة لمّ الشمل (\"التماسك العائلي\")",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للتماسك العائلي هو نوع من لمّ الشمل يمكنك طلبه مباشرة في إيطاليا. وهو مخصص لمن يريد العيش مع فرد عائلته الأجنبي الموجود بالفعل في إيطاليا.</p>",
+        "index": 0
+      },
+      {
+        "question": "ما الفرق بينه وبين لمّ الشمل العائلي؟",
+        "content": "<p>فرد العائلة الذي يطلب التماسك العائلي موجود بالفعل في إيطاليا ولا يعيش في الخارج كما في حالة لمّ الشمل العائلي، لهذا ليس من الضروري طلب Nulla Osta للمّ الشمل من Sportello Unico للهجرة في Prefettura.</p>",
+        "index": 1
+      },
+      {
+        "question": "ما هي مدة هذا التصريح؟",
+        "content": "<p>له نفس مدة Permesso di Soggiorno لفرد عائلتك الموجود بالفعل في إيطاليا.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي شروط الحصول عليه؟",
+        "content": "<p>للحصول على هذا التصريح:</p>\n<ul><li>يجب أن يكون لدى فرد عائلتك الأجنبي Permesso di Soggiorno ساري المفعول لمدة سنة على الأقل أو Permesso di Soggiorno UE للمقيمين لفترة طويلةيجب أن تكون موجوداً بالفعل في إيطاليا بإقامة قانونية (حتى بتأشيرة سياحية سارية المفعول) أو بتصريح منتهي الصلاحية منذ أقل من 12 شهراًيجب إثبات صلة القرابة</li><li>يمكنك طلب التماسك العائلي مع:</li><li>زوجك أو زوجتك البالغ/ة 18 سنة على الأقل (فقط إذا لم تكونا منفصلين قانونياً)أبناؤك القاصرون تحت 18 سنة (عند تقديم الطلب)أبناؤك البالغون المعالون، إذا لم يتمكنوا من إعالة أنفسهم بسبب مشاكل صحية خطيرةوالداك فوق 65 سنة، إذا لم يكن لديهم أبناء آخرون في بلدهم أو إذا كان هؤلاء لا يستطيعون مساعدتهم</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "أين يُقدَّم طلب هذا التصريح؟",
+        "content": "<p>يجب تقديم الطلب عبر Kit Postale الذي تأخذه إلى مكتب البريد. يمكنك الاستعانة بمكتب patronato أو مكتب مساعدة قانونية لملء النماذج.</p>",
+        "index": 4
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة لطلبه؟",
+        "content": "<ul><li>Kit Postale لأخذه وإرساله من البريدصورة من صفحات جواز سفرك مع البيانات الشخصية وأختام التجديد والتأشيراتوثائق تثبت صلة القرابة مترجمة ومصدقةنسخة من إشعار التنازل عن المبنىنسخة من جواز سفر فرد عائلتك الأجنبي (الصفحات مع البيانات الشخصية)نسخة من Permesso di Soggiorno لفرد عائلتك الأجنبيصورة من الإقرار الضريبي لفرد عائلتك الأجنبيشهادة صلاحية السكن صادرة من المكتب الفني للبلدية التي تعيش فيها</li><li>يجب أن يكون لدى فرد عائلتك:</li><li>سكن يستوفي معايير المساحة والنظافة (تحتاج شهادة صلاحية السكن من البلدية)دخل كافٍ (الحد الأدنى للدخل هو 6.947,33€ لعام 2024، بالإضافة إلى النصف لكل فرد من العائلة)تأمين صحي فقط إذا كان أفراد العائلة والدين فوق 65 سنة</li><li>انتبه! إذا كان فرد عائلتك يحمل Permesso di Soggiorno للجوء أو الحماية الفرعية، فلا تُشترط متطلبات الدخل والسكن.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذا التصريح؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>الحصول على الإقامة في البلدية التي تعيش فيهاالعمل بعقد نظامي (عمل مستقل أو تابع)التسجيل مجاناً في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عامالسفر في منطقة شنغن بجواز سفرك (لإقامات قصيرة حتى 3 أشهر)التسجيل في المدرسة أو دورة مهنية أو الجامعة</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "وعندما ينتهي التصريح؟",
+        "content": "<p>يمكنك تجديده إذا استمررت في استيفاء الشروط.</p>",
+        "index": 7
+      },
+      {
+        "question": "هل يمكنني تحويل هذا التصريح؟",
+        "content": "<p>نعم، هذا التصريح يمكن تحويله إلى:</p>\n<ul><li>Permesso di Soggiorno للعمل (مستقل أو تابع)Permesso di Soggiorno لانتظار العملPermesso di Soggiorno لأسباب دراسية</li></ul>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "bollettino postale da 80.46€",
+      "4 Foto",
+      "Copia del passaporto (non scaduto)",
+      "Certificato idoneità alloggiativa",
+      "Documento che prova il legame famigliare",
+      "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+      "Copia di un permesso di soggiorno tuo scaduto da meno di un anno",
+      "Copia del permesso di soggiorno del famigliare con cui fare la coesione"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "Copia del passaporto (non scaduto)",
+      "marca da bollo da 16€",
+      "Permesso in scadenza",
+      "Certificato idoneità alloggiativa",
+      "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+      "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")",
+      "Bollettino postale da 80.46€",
+      "Copia del permesso di soggiorno del famigliare con cui fare la coesione"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81aa-9b48-d94e75339073",
+    "slug": "protezione-sussidiaria",
+    "tipo": "الحماية الفرعية",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو التصريح الذي يُمنح لمن يفر من بلده بسبب وجود حرب أو خطر القتل أو الحكم بالإعدام أو التعذيب أو التعرض لسوء معاملة جسيمة.</p>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب التصريح؟",
+        "content": "<p>للحصول على هذا التصريح يجب:</p>\n<ul><li>تقديم طلب لجوء (أو حماية دولية، وهو نفس الشيء - راجع دليلنا)الحصول على قرار إيجابي من Commissione Territoriale أو من المحكمةبهذا القرار الإيجابي، اذهب إلى Questura لطلب التصريح</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "ما هي مدته؟",
+        "content": "<p>التصريح يستمر 5 سنوات ويمكن تجديده، عادةً بشكل تلقائي، لمدة 5 سنوات أخرى</p>",
+        "index": 2
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذا التصريح؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>الحصول على الإقامة في بلديتكالعمل بشكل نظامي (عمل تابع أو مستقل)التسجيل في الخدمة الصحية الوطنية (SSN) والحصول على طبيب عامالتسجيل في المدرسة أو دورة مهنية أو الجامعةالحصول على مساعدات مالية ومساعدات سكنيةطلب لمّ شمل أفراد العائلة المقربين:الزوج/الزوجةالأبناء القاصرونالأبناء البالغون إذا كانوا عاجزين بالكاملالوالدان فوق 65 سنة أو المعالون</li><li>للمّ شمل العائلي لا يجب عليك إثبات أن لديك سكناً كبيراً وحداً أدنى من الراتب مثل الأجانب الآخرين.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "هل يمكنني السفر خارج إيطاليا؟",
+        "content": "<p>السفر بحرية في إيطاليا، والذهاب إلى دول الاتحاد الأوروبي الأخرى حتى 3 أشهر.</p>\n<p>إذا لم تتمكن من الحصول على جواز سفر من بلدك، يمكنك محاولة طلب &quot;وثيقة السفر&quot; (نوع من جواز السفر الإيطالي يمكنك السفر به إلى دول أخرى أيضاً).</p>\n<p>انتبه! لا يمكنك السفر إلى بلدك الأصلي. إذا فعلت ذلك، قد تسحب Questura منك Permesso di Soggiorno.</p>",
+        "index": 4
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يجب الذهاب شخصياً إلى Questura.</p>",
+        "index": 5
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة لطلبه؟",
+        "content": "<p>لطلب التصريح يجب إحضار قرار Commissione Territoriale (أو المحكمة) الذي منحك الحماية الفرعية.</p>",
+        "index": 6
+      },
+      {
+        "question": "هل يمكنني تجديده عندما ينتهي؟",
+        "content": "<p>نعم، عادةً يتم تجديد Permesso di Soggiorno للحماية الفرعية لمدة خمس سنوات أخرى. لكن انتبه! إذا لم تعد ظروف الخطر في بلدك قائمة، قد لا يتم تجديد التصريح.</p>",
+        "index": 7
+      },
+      {
+        "question": "هل يمكنني تحويل هذا التصريح؟",
+        "content": "<p>قبل انتهاء صلاحيته، يمكنك أن تقرر عدم تجديد Permesso di Soggiorno للحماية الفرعية وطلب تحويله إلى Permesso di Soggiorno للعمل المستقل أو التابع إذا كنت تعمل بشكل نظامي، أو إلى Permesso di Soggiorno للدراسة إذا كنت مسجلاً في دورة تدريبية أو في الجامعة، أو إلى Permesso di Soggiorno UE للمقيمين لفترة طويلة (&quot;Carta&quot;)، بعد خمس سنوات من الإقامة في إيطاليا.</p>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Decisione della commissione o del Tribunale",
+      "4 Foto",
+      "bollettino postale da 30.46€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "4fototessere",
+      "Bollettino postale da 30.46",
+      "Permesso in scadenza",
+      "Decisone della commissione o del Tribunale",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8136-a775-f8181acc4ccc",
+    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
+    "tipo": "العلاج الطبي - المرأة الحامل أو التي لديها طفل أقل من 6 أشهر",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno للنساء الأجنبيات الحوامل الموجودات بالفعل في إيطاليا. القانون (art. 19 من قانون الهجرة الموحد) يمنع ترحيل النساء الحوامل، من الشهر الثالث من الحمل حتى ستة أشهر بعد الولادة. لهذه الفترة، يمكنك الحصول على Permesso di Soggiorno للعلاج الطبي.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<ul><li>النساء الأجنبيات الحوامل (من الشهر الثالث)حتى لو لم يكن لديكِ Permesso di Soggiorno ساري المفعول أو كنتِ في وضع غير قانونيبعد الولادة، يغطي التصريح أيضاً الأشهر الستة التالية لولادة الطفل</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب؟",
+        "content": "<p>يُطلب عبر Kit Postale. املئي النموذج وأرسليه من مكتب البريد المعتمد. ستحصلين على موعد في Questura.</p>\n<p>⚠️ انتبهي: لهذا النوع من التصاريح، إذا لم يكن لديكِ إعلان استضافة، يكفي تحديد عنوان إقامة. Questura تحتاج عنواناً لمعرفة أين أنتِ.</p>\n<p>⚠️ انتبهي: بعض مكاتب Questura قد تصدر هذا التصريح بصيغة إلكترونية وبالتالي تطلب دفع بوليصة بريدية بقيمة 30,46€.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة؟",
+        "content": "<p>للقائمة الكاملة بالوثائق المطلوبة لتقديمها في Questura، اذهبي إلى صفحة الوثائق المطلوبة — الإصدار الأول.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟",
+        "content": "<ul><li>✅ يمكنكِ العمل (عمل تابع أو مستقل)✅ يمكنكِ التسجيل في الخدمة الصحية الوطنية والحصول على طبيب عام❌ لا يمكنكِ طلب لمّ شمل العائلة بهذا التصريح</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ما هي مدة هذا التصريح؟",
+        "content": "<p>يستمر سنة واحدة. يغطي التصريح الفترة من الحمل حتى ستة أشهر بعد الولادة.</p>",
+        "index": 5
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>هذا التصريح عادةً غير قابل للتجديد. عند انتهاء صلاحيته، استشيري مستشاراً قانونياً لمعرفة ما إذا كان بإمكانكِ الحصول على نوع آخر من Permesso di Soggiorno.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Certificato di gravidanza con data presunta del parto o certificato di nascita se già nato",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8150-a62c-e4a10d42cb7d",
+    "slug": "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale",
+    "tipo": "حماية خاصة بعد قرار إيجابي من Commissione Territoriale أو المحكمة",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno يمكن منحه لحالات مختلفة، مثل الأشخاص المندمجين جيداً في إيطاليا، أو الذين يعانون من ضعف شديد، أو الذين لا يستطيعون العودة إلى بلدهم.</p>\n<hr>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب هذا التصريح؟",
+        "content": "<p>يمكن منح Permesso di Soggiorno للحماية الخاصة:</p>\n<ul><li>من Commissione Territoriale بعد تقديم طلب الحماية الدولية (طلب &quot;لجوء&quot;)</li><li>من محكمة بعد قرار سلبي من Commissione Territoriale (عادةً المحاكم تمنحه بسهولة أكبر من Commissione Territoriale). إذا كنت قد قدمت طعناً أمام المحكمة فلديك بالتأكيد محامٍ وننصحك بطلب المشورة منه.</li></ul>\n<hr>",
+        "index": 1
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>إذا قررت Commissione Territoriale أو المحكمة أنه يحق لك الحصول على الحماية الخاصة:</p>\n<ul><li>يجب أن تذهب إلى Questura لتقديم طلب التصريح</li><li>سيعطونك موعداً لأخذ البصمات</li><li>ستخبرك Questura عندما يكون التصريح جاهزاً</li></ul>\n<hr>",
+        "index": 2
+      },
+      {
+        "question": "هل يمكنني طلبه مباشرة من Questura دون تقديم طلب لجوء؟",
+        "content": "<p>منذ عام 2023 تغير القانون وأصبح الحصول على تصريح الحماية الخاصة مباشرة من Questura أصعب بكثير. هناك أحكام محاكم تقول إنه يمكنك الاستمرار في طلبه مباشرة من Questura، لكن ننصحك بطلب المساعدة من محامٍ جيد.</p>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة لتقديم الطلب؟",
+        "content": "<ul><li>قرار Commissione Territoriale الذي يعترف بالحماية الخاصة (أو قرار المحكمة)</li><li>4 صور شخصية حديثة</li><li>شهادة إقامة أو وثائق تُثبت مكان سكنك</li></ul>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>صلاحيته سنتان.</p>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "ما هي حقوقي مع هذا التصريح؟ إلى ماذا يمكنني الوصول؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>العمل بعقد نظامي (عمل مستقل أو تابع)</li><li>الحصول على الإقامة في البلدية التي تعيش فيها</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>السفر في منطقة شنغن بجواز السفر (لإقامات حتى 3 أشهر)</li><li>التسجيل في المدرسة أو دورة مهنية أو الجامعة</li></ul>\n<hr>",
+        "index": 6
+      },
+      {
+        "question": "عندما ينتهي التصريح، هل يمكنني تحويله إلى تصريح عمل؟",
+        "content": "<p>‼️ انتبه لأن القانون تغير في 2023 والآن هناك احتمالان:</p>\n<ul><li>إذا قدمت طلب اللجوء أو طلب الحماية الخاصة قبل 6 مايو 2023: يمكنك تحويله إلى تصريح عمل (مستقل أو تابع)، إذا توفرت لديك جميع الشروط.</li><li>إذا قدمت طلب اللجوء أو طلب الحماية الخاصة بعد 6 مايو 2023: لا يمكنك تحويل تصريحك إلى تصريح عمل.</li></ul>\n<p>تنبيه: لتجنب الأخطاء، اطلب المساعدة أولاً من مركز مساعدة قانونية مجاني.</p>\n<hr>",
+        "index": 7
+      },
+      {
+        "question": "هل يمكنني تجديد تصريح الحماية الخاصة؟",
+        "content": "<p>لا يمكننا إعطاءك إجابة مؤكدة في الوقت الحالي.</p>\n<ul><li>إذا حصلت على تصريح الحماية الخاصة لأنك قدمت طلب اللجوء أو طلب الحماية الخاصة قبل 6 مايو 2023، ننصحك دائماً بطلب التحويل إلى تصريح آخر إن أمكن. اطلب التجديد فقط إذا لم يكن لديك خيار آخر. سيتم تجديده لمدة سنة واحدة، وبعد ذلك ليس واضحاً ماذا سيحدث.</li><li>إذا حصلت على تصريح الحماية الخاصة لأنك قدمت طلب اللجوء أو طلب الحماية الخاصة بعد 6 مايو 2023: يمكنك محاولة تحويل تصريحك إلى تصريح عمل.</li></ul>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Decisione della commissione o del Tribunale",
+      "bollettino postale da 30.46€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Permesso in scadenza",
+      "Decisone della commissione o del Tribunale",
+      "Bollettino postale da 30.46",
+      "marca da bollo da 16€",
+      "4fototessere"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-815d-a093-c13ec5a29408",
+    "slug": "motivi-religiosi",
+    "tipo": "أسباب دينية",
+    "emoji": "⛪",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لأسباب دينية مخصص للمواطنين الأجانب الذين يمارسون أنشطة مرتبطة بطائفة دينية في إيطاليا. هو تصريح لرجال الدين والمبشرين وخدام العبادة والأشخاص المرسلين إلى إيطاليا من هيئات دينية معترف بها.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن طلبه لمن:</p>\n<ul><li>أُرسل إلى إيطاليا من هيئة دينية معترف بها</li><li>لديه مهمة دينية موثقة (مثلاً: كاهن، راهبة، مبشر، قسيس)</li><li>حصل على تأشيرة دخول لأسباب دينية</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف/أين يُقدَّم الطلب؟",
+        "content": "<p>يُقدَّم عبر Kit Postale المتوفر في مكاتب Poste Italiane المعتمدة.</p>\n<p>خلال 8 أيام من الدخول إلى إيطاليا، يجب تقديم الطلب.</p>\n<p>لمعرفة الوثائق المطلوبة، راجع الصفحات المخصصة:</p>\n<ul><li>وثائق الإصدار الأول</li><li>وثائق التجديد</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "ما هي حقوقي مع هذا التصريح؟ إلى ماذا يمكنني الوصول؟",
+        "content": "<p>مع هذا التصريح يمكنك:</p>\n<ul><li>ممارسة نشاطك الديني في إيطاليا</li><li>التسجيل في SSN أو الحصول على تأمين صحي خاص</li><li>طلب الإقامة</li></ul>\n<p>⚠️ تنبيه: مع هذا التصريح لا يمكنك العمل خارج نطاق النشاط الديني الذي صدر من أجله التصريح.</p>",
+        "index": 3
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>المدة تعتمد على المهمة الدينية وهي مذكورة في التصريح. عادةً تتوافق مع مدة المهمة أو التكليف.</p>",
+        "index": 4
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده إذا أكدت الهيئة الدينية أن مهمتك في إيطاليا مستمرة. للتجديد يلزم تصريح جديد من الهيئة الدينية.</p>",
+        "index": 5
+      },
+      {
+        "question": "كم تكلفته؟",
+        "content": "<p>لتقديم الطلب يجب دفع:</p>\n<ul><li>بوليتينو بوستالي بقيمة 80,46 €</li><li>ماركا دا بولو بقيمة 16 €</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لأسباب دينية مخصص لخدام العبادة ورجال الدين والمبشرين وغيرهم من الشخصيات التي تمارس أنشطة دينية في إيطاليا نيابة عن طوائف دينية معترف بها. يسمح بممارسة الأنشطة المرتبطة بالخدمة الدينية.</p>",
+        "index": 7
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن طلب هذا التصريح لمن:</p>\n<ul><li>هو خادم عبادة (كاهن، قسيس، إمام، حاخام، راهب، إلخ)</li><li>هو عضو في رهبنة أو جمعية دينية</li><li>يمارس أنشطة دينية نيابة عن طائفة دينية معترف بها في إيطاليا</li><li>تلقى تكليفاً رسمياً من منظمته الدينية</li><li>دخل إيطاليا بتأشيرة لأسباب دينية</li></ul>",
+        "index": 8
+      },
+      {
+        "question": "كيف/أين يُقدَّم الطلب؟",
+        "content": "<p>قبل الدخول إلى إيطاليا:</p>\n<ul><li>يجب طلب تأشيرة لأسباب دينية من القنصلية الإيطالية في بلدك</li></ul>\n<p>بعد الوصول إلى إيطاليا:</p>\n<ul><li>خلال 8 أيام عمل من الدخول، قدّم طلب Permesso di Soggiorno عبر Kit Postale (Poste Italiane)</li><li>أو مباشرة في Questura، إذا طُلب منك ذلك</li></ul>\n<p>للاطلاع على الوثائق المطلوبة، راجع الصفحة المخصصة: https://www.sospermesso.it/documenti-motivi-religiosi-primo.html</p>",
+        "index": 9
+      },
+      {
+        "question": "ما هي حقوقي مع هذا التصريح؟ إلى ماذا يمكنني الوصول؟",
+        "content": "<p>مع هذا التصريح:</p>\n<ul><li>يمكنك ممارسة الأنشطة الدينية والخدمية في إيطاليا</li><li>يمكنك إقامة الشعائر والاحتفالات والوظائف الدينية</li><li>يمكنك ممارسة أنشطة التعليم الديني</li><li>يمكنك الوصول إلى الخدمات الصحية إذا كان لديك تأمين صحي</li><li>لا يمكنك ممارسة أنشطة عمل مختلفة عن الأنشطة الدينية</li></ul>\n<p>⚠️ تنبيه: يمكنك فقط ممارسة الأنشطة الدينية المنصوص عليها في تكليفك، وليس أشكال عمل أخرى.</p>",
+        "index": 10
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لأسباب دينية مدته متغيرة، عادةً سنة أو سنتان، حسب مدة التكليف الديني. يمكن تجديده إذا استمر التكليف.</p>",
+        "index": 11
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده إذا:</p>\n<ul><li>كان تكليفك الديني لا يزال سارياً</li><li>أكدت منظمتك الدينية استمرار المهمة</li><li>لديك وسائل إعالة كافية (مقدمة من المنظمة الدينية)</li><li>لديك تأمين صحي ساري المفعول</li></ul>\n<p>للاطلاع على الوثائق المطلوبة للتجديد، راجع: https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html</p>",
+        "index": 12
+      },
+      {
+        "question": "هل يمكنني تحويله إلى تصريح آخر؟",
+        "content": "<p>التحويل إلى تصاريح إقامة أخرى ممكن في حالات معينة:</p>\n<ul><li>Permesso di Soggiorno للعمل التابع (إذا حصلت على عقد عمل وتوفرت حصص)</li><li>Permesso di Soggiorno لأسباب عائلية (إذا كان لديك زوج أو قريب إيطالي/أجنبي مقيم بشكل نظامي)</li><li>Permesso di Soggiorno للدراسة (إذا سجلت في مسار تعليمي)</li><li>Permesso di Soggiorno طويل الأمد للاتحاد الأوروبي (إذا توفرت لديك شروط الدخل والإقامة)</li></ul>",
+        "index": 13
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+      "bollettino postale da 80.46€",
+      "copia dic ente religioso attestante natura incarico",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "Polizza assicurativa o iscrizione SSN",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "4fototessere",
+      "Bollettino postale da 80.46€",
+      "Copia del passaporto (non scaduto)",
+      "copia dic ente religioso attestante natura incarico",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8163-acf1-f5fcdfd42f70",
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "tipo": "حماية اجتماعية لضحايا الاتجار بالبشر",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "📄 ما هو وكيف يُطلب",
+        "content": "<p>Permesso di Soggiorno للحماية الاجتماعية يخص المواطن الأجنبي الذي يتعرض لحالة عنف أو هو ضحية لجرائم استغلال الدعارة أو الاستغلال في العمل والذي قد تنشأ أخطار حقيقية على سلامته.</p>\n<p>يُطلب تصريح الحماية الاجتماعية من قبل:</p>\n<ul><li>النائب العام في الحالات التي بدأ فيها إجراء جنائي يتعلق بأفعال العنف أو الاستغلال الخطير ضد الأجنبي.</li><li>الخدمات الاجتماعية التابعة للهيئات المحلية.</li><li>الجمعيات والهيئات والمنظمات الأخرى المسجلة في السجل الخاص لدى وزارة العمل والسياسات الاجتماعية والمؤهلة لتنفيذ برامج المساعدة والحماية الاجتماعية للأجانب.</li></ul>\n<p>تقوم Questura، بعد تلقي الطلب والتحقق من توفر الشروط المنصوص عليها، بإصدار Permesso di Soggiorno لأسباب إنسانية.</p>\n<p>ما هي شروط الحصول على هذا التصريح؟</p>\n<ul><li>يجب أن تكون ضحية عنف أو استغلال خطير.</li><li>يجب أن تكون في خطر بسبب محاولتك الهروب من المستغلين أو لأنك شهدت ضدهم.</li><li>يجب أن تشارك في برنامج مساعدة واندماج اجتماعي.</li><li>في حال قررت العودة إلى بلدك، إذا كان هناك خطر على سلامتك وسلامة أفراد عائلتك، فيجب أخذ ذلك بعين الاعتبار.</li></ul>\n<p>هل يجب تقديم شكوى للحصول على Permesso di Soggiorno؟</p>\n<p>لا. التصريح بموجب art. 18 يمكن إصداره بطريقتين:</p>\n<ul><li>المسار القضائي: الضحية تبلّغ عن المستغلين ويُمنح التصريح بموافقة النيابة العامة.</li><li>المسار الاجتماعي: الضحية لا تبلّغ، لكنها تدخل في برنامج مساعدة تديره هيئات متخصصة.</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "ما هي الوثائق والشروط المطلوبة؟",
+        "content": "<ul><li>رأي النائب العام، في الحالات التي يقدم فيها النائب العام مؤشرات حول خطورة الخطر وراهنيته.</li><li>مشاركة الأجنبي في برنامج مساعدة واندماج اجتماعي أعدته الهيئات المحلية أو الجهات الخاصة المسجلة في السجل الخاص لدى وزارة العمل والمتعاقدة مع الهيئة المحلية.</li><li>قبول الالتزامات المتعلقة بالبرنامج من قبل مسؤول المنشأة التي سيُنفذ فيها البرنامج.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كم مدة صلاحيته؟",
+        "content": "<p>مدة التصريح 6 أشهر، قابلة للتجديد لمدة سنة واحدة أو للمدة الأطول اللازمة لأسباب قضائية.</p>\n<p>يمكن إلغاؤه في حالة انقطاع برنامج المساعدة والاندماج الاجتماعي أو سلوك يتعارض مع أهداف البرنامج، بناءً على إشارة من النائب العام أو، حسب الاختصاص، من الخدمة الاجتماعية للهيئة المحلية، أو عندما يتم التأكد من ذلك من قبل المحافظ، أو عند زوال الشروط الأخرى التي بررت إصداره.</p>",
+        "index": 2
+      },
+      {
+        "question": "هل يمكنني تحويله؟",
+        "content": "<p>التصريح قابل للتحويل إلى Permesso di Soggiorno للدراسة أو للعمل.</p>",
+        "index": 3
+      },
+      {
+        "question": "🔹 Art. 18 TUI (اتجار بالبشر، عنف، استغلال خطير)",
+        "content": "<ul><li>للحالات الخطيرة جداً (اتجار بالبشر، عنف، توقيف إلزامي في حالة التلبس).</li><li>المدة: 6 أشهر → قابلة للتجديد.</li><li>بشكوى أو بدون شكوى (برنامج حماية اجتماعية).</li></ul>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Copia del passaporto (non scaduto)",
+      "Relazione/dichiarazione dei servizi sociali dei servizi sociali",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Certificato di residenza",
+      "bollettino postale da 30.46€"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "marca da bollo da 16€",
+      "Permesso in scadenza",
+      "relazione servizi sociali se richiesta",
+      "proposta/parere Autorità giudiziaria",
+      "Certificato di residenza",
+      "Bollettino postale da 30.46",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-817b-9e6c-fd3be722b3ed",
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "tipo": "عائلة - بعد الدخول بتأشيرة لم شمل الأسرة",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "ما هو Permesso di Soggiorno هذا؟",
+        "content": "<p>هو Permesso di Soggiorno لأسباب عائلية يُمنح لأفراد العائلة الذين دخلوا إيطاليا بتأشيرة لم شمل الأسرة.</p>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب هذا التصريح؟",
+        "content": "<p>لقد دخلت إيطاليا بتأشيرة دخول، بعد أن حصل قريبك على Nulla Osta للم الشمل. جيد جداً. إليك الخطوات التالية:</p>\n<ul><li>خلال 8 أيام يجب أن تذهب إلى Sportello Unico للهجرة في Prefettura في منطقتك.</li><li>سيعطيك Sportello Unico نماذج لتعبئتها. اذهب إلى Poste Italiane وأرسل النماذج. ستعطيك Poste Italiane موعداً في Questura.</li><li>اذهب إلى Questura في يوم الموعد. سيأخذون بصماتك.</li><li>ستخبرك Questura عندما يكون تصريحك جاهزاً.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كم مدة صلاحيته؟",
+        "content": "<p>المدة تعتمد على وضع القريب الذي طلب لم الشمل:</p>\n<ul><li>إذا كان القريب حاصلاً على وضع اللاجئ أو الحماية الفرعية، فإن Permesso di Soggiorno لأسباب عائلية مدته 5 سنوات.</li><li>إذا كان القريب حاصلاً على Permesso di Soggiorno طويل الأمد، فإن Permesso di Soggiorno لأسباب عائلية مدته سنتان.</li><li>إذا كان القريب حاصلاً على Permesso di Soggiorno لمدة أقصر (مثلاً للعمل أو الدراسة)، فإن التصريح سيكون بنفس مدة تصريح القريب الذي طلب لم الشمل.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "ما هي حقوقي / إلى ماذا يمكنني الوصول؟",
+        "content": "<p>بعد تقديم طلب التصريح، مع إيصال البريد يمكنك:</p>\n<ul><li>العمل بعقد نظامي</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>السفر في دول شنغن حتى 90 يوماً كل 180 يوماً</li><li>التسجيل في السجل المدني والحصول على الإقامة</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "هل يمكنني تجديده؟",
+        "content": "<p>يجب تقديم طلب التجديد قبل انتهاء صلاحية التصريح عبر Kit Postale.</p>\n<p>عند تقديم طلب التجديد يجب إرفاق:</p>\n<ul><li>نموذج الطلب (متوفر في مكتب البريد أو Questura)</li><li>نسخة من جواز السفر الساري</li><li>نسخة من Permesso di Soggiorno المنتهي الصلاحية</li><li>Codice Fiscale</li><li>شهادة حالة عائلية وإقامة</li><li>Permesso di Soggiorno للقريب الذي طلب لم الشمل (إذا كان أجنبياً)</li><li>إعلان استضافة أو عقد إيجار/ملكية سكن</li><li>شهادة زواج أو قرابة (إن وُجدت)</li><li>إثبات وسائل الإعالة (إذا طُلب، مثل كشف الراتب أو إقرار ضريبي)</li><li>إيصال دفع البوليتينو بوستالي</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "هل يمكنني تحويله؟",
+        "content": "<p>قبل انتهاء الصلاحية، يمكنك تحويل تصريحك إلى:</p>\n<ul><li>Permesso di Soggiorno للعمل (إذا كان لديك عقد عمل)</li><li>Permesso di Soggiorno للدراسة (إذا كنت مسجلاً في دورة دراسية)</li><li>Permesso di Soggiorno لانتظار العمل (إذا كنت قد عملت سابقاً وتبحث عن عمل جديد)</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "bollettino postale da 80.46€",
+      "Nullaosta al ricongiungimento familiare",
+      "4 Foto",
+      "Copia del passaporto (non scaduto)",
+      "Certificato idoneità alloggiativa",
+      "Visto d'ingresso",
+      "Documento che prova il legame famigliare",
+      "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+      "Copia del permesso di soggiorno del familiare che ha chiesto il ricongiungimento"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Copia del passaporto (non scaduto)",
+      "Permesso in scadenza",
+      "Bollettino postale da 80.46€",
+      "4fototessere",
+      "marca da bollo da 16€",
+      "Prova del reddito minimo (CUD o buste paga o dichiarazione dei redditi o altro)",
+      "Copia del permesso di soggiorno del familiare che ha chiesto il ricongiungimento",
+      "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81cc-a2c3-f06b003620c5",
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "tipo": "علاج طبي - أب لطفل عمره أقل من 6 أشهر أو على وشك الولادة في إيطاليا",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno لأب الطفل عندما تكون الأم حاملاً أو قد وضعت مولودها حديثاً. القانون (art. 19 del T.U. Immigrazione) يحمي الأسرة في هذه الحالات.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<ul><li>الأب الأجنبي للطفل، إذا كان يعيش مع الأم</li><li>⚠️ إذا كنت متزوجاً وتعيش مع الأم، يمكنك الحصول على هذا التصريح بدون مشاكل</li><li>⚠️ إذا لم تكن متزوجاً و/أو لا تعيش مع الأم، قد يكون من الصعب الحصول على هذا التصريح — اطلب استشارة قانونية مؤهلة</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُقدَّم الطلب؟",
+        "content": "<p>يُقدَّم عبر Kit Postale. املأ النموذج وأرسله من مكتب Poste Italiane المعتمد. ستحصل على موعد في Questura.</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الوثائق المطلوبة؟",
+        "content": "<p>للاطلاع على القائمة الكاملة للوثائق المطلوبة في Questura، اذهب إلى صفحة ما هي الوثائق المطلوبة — الإصدار الأول.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما هي حقوقي مع هذا التصريح؟",
+        "content": "<ul><li>✅ يمكنك العمل (عمل تابع أو مستقل)</li><li>✅ يمكنك التسجيل في SSN والحصول على طبيب أساسي</li><li>❌ لا يمكنك طلب لم شمل الأسرة بهذا التصريح</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>مدته سنة واحدة.</p>",
+        "index": 5
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>هذا التصريح عادةً غير قابل للتجديد. عند انتهائه، قيّم مع مستشار قانوني إمكانية الحصول على نوع آخر من Permesso di Soggiorno.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "4 Foto",
+      "Certificato di gravidanza con data presunta del parto o certificato di nascita se già nato",
+      "Certificato o autodichiarazione di convivenza"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8154-b3db-ce9187ea4531",
+    "slug": "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi",
+    "tipo": "عمل مستقل (بعد الدخول بتأشيرة \"flussi\")",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno لمن يعمل بشكل مستقل، أي ليس لديه صاحب عمل، بل يمارس نشاطاً مهنياً أو تجارياً بشكل ذاتي (مثلاً: تاجر، حرفي، صاحب مهنة حرة، إلخ).</p>\n<p>✈️ إذا كنت في هذه الصفحة فذلك لأنك دخلت إيطاليا بتأشيرة عمل مستقل.</p>\n<ol><li>خلال 8 أيام من وصولك إلى إيطاليا، املأ النموذج 1 والنموذج 2 (Kit Postale) وأرسله إلى مكتب البريد المعتمد. ستحصل على موعد في Questura لأخذ البصمات. ستخبرك Questura متى تستلم تصريحك.</li></ol>",
+        "index": 0
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<ul><li>تعتمد المدة على النشاط الذي تمارسه والوثائق التي تقدمها، لكنها عادة من سنة إلى سنتين. يمكن تجديده إذا استمررت في العمل المستقل واستوفيت الشروط المطلوبة.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "ماذا يمكنك أن تفعل بهذا التصريح؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل بشكل مستقل بـ partita IVA</li><li>العمل كموظف (عمل تابع)</li><li>الحصول على الإقامة في البلدية التي تعيش فيها</li><li>التسجيل في الخدمة الصحية والحصول على طبيب أساسي</li><li>السفر في منطقة شنغن بجواز السفر (لمدة أقصاها 90 يوماً كل 180 يوماً)</li><li>طلب لمّ الشمل العائلي</li><li>التسجيل في دورات ومدارس وجامعات</li></ul>\n<hr>",
+        "index": 2
+      },
+      {
+        "question": "ماذا يحدث إذا أغلقت نشاطك؟",
+        "content": "<ul><li>يمكنك طلب تصريح انتظار العمل عند التجديد، لكن عليك إثبات أنك تبحث عن عمل أو نشاط آخر.</li></ul>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "عندما ينتهي التصريح، ماذا أفعل؟",
+        "content": "<ul><li>يجب أن تطلب التجديد قبل انتهاء الصلاحية أو خلال 60 يوماً بعدها على الأكثر. إذا استوفيت الشروط، يمكنك أيضاً تحويله إلى نوع آخر من التصاريح (دراسة، عائلة، إقامة طويلة الأمد، عمل تابع، إلخ). يجب طلب التحويل قبل انتهاء الصلاحية.</li></ul>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "bollettino postale da 80.46€",
+      "4 Foto",
+      "visto di ingresso per lavoro autonomo",
+      "Nullaosta della Questura",
+      "Nullaosta dei parametri economici per svolgere l'attività",
+      "Prova delle risorse economiche per svolgere le attività",
+      "Certificato di idoneità alloggiativa",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "Bollettino postale da 80.46€",
+      "4 Foto",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Certificato attribuzione partita IVA o iscrizione al registro delle imprese",
+      "Ultima dichiarazione dei redditi",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+      "Permesso in scadenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8123-9486-ce1af47c1a87",
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "tipo": "علاج طبي لشخص مريض بشكل خطير موجود بالفعل في إيطاليا",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للعلاج الطبي يُمنح للأجانب الذين يعانون من أمراض خطيرة جداً ولا يمكن علاجها بشكل جيد في بلدهم.</p>\n<p>إذا عاد هؤلاء الأشخاص إلى بلدهم، فإن صحتهم ستتدهور كثيراً ⚠️ أو قد يموتون.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكنك طلب هذا التصريح إذا:</p>\n<ul><li>كنت تعاني من مرض خطير جداً لا يمكن علاجه بشكل جيد في بلدك</li><li>كنت موجوداً بالفعل في إيطاليا (حتى بدون Permesso di Soggiorno)</li><li>طبيب إيطالي (من مستشفى عام أو متعاقد مع SSN) أكد أن مرضك خطير</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>اذهب إلى Questura في المنطقة التي تعيش فيها واحجز موعداً في مكتب الهجرة.</p>\n<p>يجب تسليم جميع الوثائق الطبية بالإضافة إلى المستندات الأخرى.</p>\n<p>⚠️ إذا كنت قد تقدمت بطلب حماية دولية...</p>\n<p>أثناء دراسة طلب اللجوء الخاص بك، قد تقرر Commissione Territoriale أو المحكمة أن تطلب من Questura منحك هذا التصريح، إذا رأت أنك تستحقه.</p>",
+        "index": 2
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<ul><li>سنة واحدة كحد أقصى (قد تكون أقل، حسب ما يقوله الطبيب). يمكن تجديده طالما لا تزال تعاني من المرض الخطير وتحتاج إلى علاج.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "✅ ماذا يمكنك أن تفعل بهذا التصريح؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل (بعقد نظامي - عمل مستقل أو تابع) 💼</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>تلقي العلاج الطبي المجاني في المستشفيات العامة</li><li>التسجيل في سجل البلدية التي تعيش فيها</li></ul>\n<p>⚠️ ما لا يمكنك فعله:</p>\n<ul><li>لا يمكنك السفر خارج إيطاليا - هذا التصريح صالح فقط في إيطاليا</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "كيف أجدد التصريح؟",
+        "content": "<p>للتجديد يجب تقديم:</p>\n<ul><li>شهادة طبية جديدة تؤكد أنك لا تزال تعاني من المرض الخطير</li><li>نفس وثائق الطلب الأول</li></ul>\n<p>تحويل التصريح</p>\n<p>عند انتهاء صلاحيته، يصعب تحويل هذا التصريح إلى نوع آخر.</p>\n<p>وفقاً للقانون الحالي، لا يمكن تغيير تصريح العلاج الطبي إلى تصريح عمل. إذا كنت قد طلبت تصريح العلاج الطبي قبل مايو 2023، فقد تتمكن من محاولة طلب التحويل إلى تصريح عمل، لكنك ستحتاج إلى مساعدة قانونية جيدة وربما دعوى في المحكمة. ابحث عن مساعدة قانونية قريبة منك.</p>\n<p>إذا كان لديك أفراد من عائلتك في إيطاليا، يمكنك إجراء اختبارنا لمعرفة ما إذا كان لديك الحق في تصريح لأسباب عائلية. إذا كان لديك أطفال قاصرون في إيطاليا، يمكنك التفكير في طلب تصريح بموجب Art. 31.</p>",
+        "index": 5
+      },
+      {
+        "question": "من يمكنه تقديم الطلب بدلاً عنك؟",
+        "content": "<p>إذا كنت مريضاً جداً، يمكن تقديم الطلب من قبل:</p>\n<ul><li>أحد أفراد العائلة (بتفويض)</li><li>مسؤول المستشفى الذي أنت فيه</li><li>أي شخص لديه مصلحة في مساعدتك</li></ul>\n<p>استلام التصريح</p>\n<ul><li>تحصل على إيصال عند تقديم الطلب</li><li>التصريح يكون جاهزاً خلال 60 يوماً</li><li>التصريح ورقي (ليس إلكترونياً)</li><li>يمكن لشخص آخر استلامه بتفويض</li></ul>\n<p>فرق مهم</p>\n<p>هذا التصريح يختلف عن تصريح العلاج الطبي لمن يأتي إلى إيطاليا بتأشيرة علاج طبي. هذا مخصص للأشخاص الموجودين بالفعل في إيطاليا ويكتشفون أن لديهم مرضاً خطيراً لا يمكن علاجه في بلدهم.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Foto",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Documenti medici (ospedale pubblico o medico pubblico) che provano la tua malattia",
+      "Documenti che provano che la tua malattia non si può curare bene nel tuo paese",
+      "marca da bollo da 16€"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "marca da bollo da 16€",
+      "Permesso in scadenza",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Documenti che provano che la tua malattia non si può curare bene nel tuo paese",
+      "Documenti medici (ospedale pubblico o medico pubblico) che provano la tua malattia"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81dd-8be9-df24931471a3",
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "tipo": "عمل تابع (تحويل من تصريح آخر)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>إذا كنت في هذه الصفحة فذلك لأن لديك Permesso di Soggiorno وتتساءل إن كان بإمكانك تحويله إلى Permesso di Soggiorno للعمل التابع.</p>\n<p>→ قم بالاختبار لمعرفة إن كان بإمكانك تحويل تصريحك إلى Permesso di Soggiorno للعمل التابع.</p>\n<p>Permesso di Soggiorno للعمل التابع يُمنح إذا كنت تعمل لدى صاحب عمل بعقد نظامي. هذا يعني أن لديك رئيساً يدفع لك راتباً وأنت موظف عنده.</p>",
+        "index": 0
+      },
+      {
+        "question": "ما هي شروط الحصول عليه؟",
+        "content": "<p>للحصول على هذا التصريح يجب أن يكون لديك عقد عمل نظامي مع صاحب عمل إيطالي وراتب لا يقل عن حوالي 538 يورو شهرياً.</p>",
+        "index": 1
+      },
+      {
+        "question": "كيف أطلب هذا التصريح؟",
+        "content": "<p>يُطلب في مكتب البريد باستخدام Kit Postale.</p>",
+        "index": 2
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>تعتمد المدة على نوع عقد العمل الخاص بك. عادة:</p>\n<ul><li>سنتان إذا كان عقد عملك محدد المدة (له تاريخ انتهاء)</li><li>3 سنوات إذا كان عقد عملك غير محدد المدة (ليس له تاريخ انتهاء)</li></ul>\n<hr>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل بعقد نظامي (تابع أو مستقل)</li><li>الحصول على الإقامة في البلدية التي تعيش فيها</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>السفر في منطقة شنغن بجواز السفر (لإقامات تصل إلى 3 أشهر)</li><li>التسجيل في مدرسة أو دورة مهنية أو جامعة</li><li>طلب لمّ الشمل العائلي</li></ul>\n<p>‼️ لا يمكنك العمل في دولة أوروبية أخرى</p>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "ماذا يحدث إذا فقدت عملي؟",
+        "content": "<p>إذا فقدت عملك لا تفقد التصريح حتى انتهاء صلاحيته. يمكنك:</p>\n<ul><li>البحث عن عمل جديد</li><li>التسجيل في قوائم البطالة</li><li>طلب تصريح انتظار العمل عند التجديد</li></ul>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "وعندما ينتهي التصريح؟ هل يمكنني تجديده؟ هل يمكنني تحويله؟",
+        "content": "<p>قبل انتهاء صلاحيته لديك خياران:</p>\n<ol><li>تجديده: يجب تقديم طلب التجديد يفضل قبل انتهاء الصلاحية أو خلال 60 يوماً من انتهائها على الأكثر. يتم الطلب بـ Kit Postale.</li></ol>\n<p>2. تحويله: إذا استوفيت جميع الشروط المطلوبة، يمكن تحويل هذا التصريح إلى Permesso di Soggiorno لـ:</p>\n<ul><li>دراسة</li><li>انتظار عمل</li><li>أسباب عائلية</li><li>Carta di Soggiorno للمقيمين لفترة طويلة (إذا كان لديك 5 سنوات إقامة على الأقل)</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>هو Permesso di Soggiorno لمن يعمل بشكل مستقل، أي ليس لديه صاحب عمل، بل يمارس نشاطاً مهنياً أو تجارياً بشكل ذاتي (مثلاً: تاجر، حرفي، صاحب مهنة حرة، إلخ).</p>",
+        "index": 7
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<ul><li>تعتمد المدة على النشاط الذي تمارسه والوثائق التي تقدمها، لكنها عادة من سنة إلى سنتين.</li></ul>",
+        "index": 8
+      },
+      {
+        "question": "عندما ينتهي التصريح، ماذا أفعل؟",
+        "content": "<ul><li>يجب أن تطلب التجديد قبل انتهاء الصلاحية أو خلال 60 يوماً بعدها على الأكثر. إذا استوفيت الشروط، يمكنك أيضاً تحويله إلى نوع آخر من التصاريح (دراسة، عائلة، إقامة طويلة الأمد، عمل تابع، إلخ). يجب طلب التحويل قبل انتهاء الصلاحية.</li></ul>",
+        "index": 9
+      },
+      {
+        "question": "إذا كنت عاطلاً عن العمل وقت التجديد؟",
+        "content": "<p>يمكنك طلب إصدار Permesso di Soggiorno لانتظار العمل، مع إرفاق التسجيل في مركز التوظيف!</p>",
+        "index": 10
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Contratto di lavoro",
+      "Copia del documento di identità del tuo datore di lavoro (se italiano o europeo) o copia del suo permesso di soggiorno (se non comunitario)",
+      "4 Foto",
+      "Prova dei redditi (CUD e/o buste paga)",
+      "Certificato UNILAV",
+      "bollettino postale da 80.46€"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "Copia del passaporto (non scaduto)",
+      "Permesso in scadenza",
+      "marca da bollo da 16€",
+      "Contratto di lavoro",
+      "Prova dei redditi (CUD e/o buste paga)",
+      "Certificato UNILAV",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Bollettino postale da 80.46€"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81f1-8dcc-d0c23a4dcc39",
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "tipo": "Carta di Soggiorno لأفراد عائلات مواطني الاتحاد الأوروبي",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "ما هي هذه البطاقة؟",
+        "content": "<p>هي Permesso di Soggiorno يُمنح لأفراد العائلة من خارج الاتحاد الأوروبي لمواطن من الاتحاد الأوروبي يعيش في إيطاليا.</p>",
+        "index": 0
+      },
+      {
+        "question": "كم مدة صلاحية هذه البطاقة؟",
+        "content": "<p>مدتها 5 سنوات ويمكن تجديدها. بعد التجديد الأول تصبح دائمة.</p>",
+        "index": 1
+      },
+      {
+        "question": "من يمكنه طلب هذه البطاقة؟",
+        "content": "<p>يمكنك طلبها إذا كنت:</p>\n<ul><li>زوج/زوجة أو شريك في اتحاد مدني لمواطن الاتحاد الأوروبي</li><li>شريك وقّع عقد معاشرة، حتى بدون زواج أو اتحاد مدني</li><li>ابن/ابنة حتى سن 21 عاماً لمواطن الاتحاد الأوروبي أو زوجه</li><li>ابن/ابنة فوق 21 عاماً لمواطن الاتحاد الأوروبي أو زوجه، لكن على نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على قريبك الأوروبي)</li><li>أم/أب مواطن الاتحاد الأوروبي أو زوجه، لكن على نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على قريبك الأوروبي)</li><li>جد/جدة مواطن الاتحاد الأوروبي أو زوجه</li><li>حفيد/حفيدة (ابن الأبناء) لمواطن الاتحاد الأوروبي أو زوجه حتى 21 عاماً</li><li>حفيد/حفيدة (ابن الأبناء) لمواطن الاتحاد الأوروبي أو زوجه، فوق 21 عاماً وعلى نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على قريبك الأوروبي)</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "أين تُطلب هذه البطاقة؟",
+        "content": "<p>يجب تقديم الطلب في Questura في المنطقة التي تعيش فيها.</p>\n<p>يجب تقديم الطلب خلال 3 أشهر من دخولك إلى إيطاليا. إذا كنت موجوداً بالفعل في إيطاليا بنوع آخر من التأشيرات (سياحة، عائلة، إلخ)، يمكنك تغييره إلى Carta di Soggiorno إذا استوفيت جميع الشروط.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما هي الوثائق التي أحتاجها لطلبها؟",
+        "content": "<ul><li>جواز سفر ساري المفعول (صفحة البيانات الشخصية وتواريخ الانتهاء، التأشيرات وأختام الدخول/الخروج إن وجدت)</li><li>Permesso di Soggiorno القديم (إن وجد)</li><li>وثيقة هوية المواطن الأوروبي</li><li>إعلان الاستضافة</li><li>شهادة حالة عائلية للمواطن الأوروبي (من البلدية التي يعيش فيها)</li><li>وثائق تثبت درجة القرابة (إذا كانت من الخارج يجب ترجمتها وتصديقها/وضع أبوستيل عليها)</li><li>وثائق تثبت دخل المواطن الأوروبي (Cu/730/Unico) (عندما يُشترط أن يكون القريب من خارج الاتحاد الأوروبي على نفقة القريب الأوروبي)</li><li>وثائق تثبت أنك تعيش على نفقته (عندما يُشترط أن يكون القريب من خارج الاتحاد الأوروبي على نفقة القريب الأوروبي)</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذه البطاقة؟",
+        "content": "<p>بهذه البطاقة يمكنك:</p>\n<ul><li>العمل بعقد نظامي (عمل مستقل أو تابع)</li><li>التسجيل في مدرسة أو دورة مهنية أو جامعة</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>السفر في دول شنغن حتى 90 يوماً كل 6 أشهر، إذا كان لديك جواز سفر ساري</li><li>بعد 5 سنوات يمكنك طلب Carta di Soggiorno الدائمة</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Documento che prova il rapporto di parentela con il cittadino italiano",
+      "bollettino postale da 80.46€",
+      "Certificato di residenza",
+      "Prova dei mezzi economici sufficienti",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Permesso in scadenza",
+      "marca da bollo da 16€",
+      "Bollettino postale da 30.46",
+      "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")",
+      "4fototessere",
+      "Copia del passaporto (non scaduto)",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+      "Prova dei mezzi economici sufficienti"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81eb-b493-f232a85bef85",
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "tipo": "Carta di Soggiorno لأفراد عائلات الإيطاليين \"الديناميكيين\"",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "ما هي هذه البطاقة؟",
+        "content": "<p>هي Permesso di Soggiorno يُمنح لأفراد العائلة من خارج الاتحاد الأوروبي لمواطن إيطالي &quot;ديناميكي&quot; (أي عاش بشكل مستقر في دولة أخرى من الاتحاد الأوروبي، عادة للعمل، ويعيش الآن في إيطاليا).</p>",
+        "index": 0
+      },
+      {
+        "question": "ما هي هذه البطاقة؟",
+        "content": "<p>هي Permesso di Soggiorno يُمنح لأفراد العائلة من خارج الاتحاد الأوروبي لمواطن إيطالي &quot;ديناميكي&quot;. المواطن الإيطالي &quot;الديناميكي&quot; هو مواطن إيطالي عاش أو عمل في دولة أخرى من الاتحاد الأوروبي غير إيطاليا.</p>",
+        "index": 1
+      },
+      {
+        "question": "كم مدة صلاحية هذه البطاقة؟",
+        "content": "<p>مدتها 5 سنوات ويمكن تجديدها. بعد التجديد الأول تصبح دائمة.</p>",
+        "index": 2
+      },
+      {
+        "question": "من يمكنه طلب هذه البطاقة؟",
+        "content": "<p>يمكنك طلبها إذا كنت:</p>\n<ul><li>زوج/زوجة أو شريك في اتحاد مدني للمواطن الإيطالي</li><li>شريك وقّع عقد معاشرة، حتى بدون زواج أو اتحاد مدني</li><li>ابن/ابنة حتى سن 21 عاماً للمواطن الإيطالي أو زوجه</li><li>ابن/ابنة فوق 21 عاماً للمواطن الإيطالي &quot;الديناميكي&quot; أو زوجه، لكن على نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على القريب الإيطالي)</li><li>أم/أب المواطن الإيطالي &quot;الديناميكي&quot; أو زوجه، لكن على نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على القريب الإيطالي)</li><li>جد/جدة المواطن الإيطالي &quot;الديناميكي&quot; أو زوجه</li><li>حفيد/حفيدة (ابن الأبناء) للمواطن الإيطالي &quot;الديناميكي&quot; أو زوجه حتى 21 عاماً</li><li>حفيد/حفيدة (ابن الأبناء) للمواطن الإيطالي &quot;الديناميكي&quot; أو زوجه، فوق 21 عاماً وعلى نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على القريب الإيطالي)</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "أين تُطلب هذه البطاقة؟",
+        "content": "<p>يجب تقديم الطلب في Questura في المنطقة التي تعيش فيها.</p>\n<p>يجب تقديم الطلب خلال 3 أشهر من دخولك إلى إيطاليا. إذا كنت موجوداً بالفعل في إيطاليا بنوع آخر من التأشيرات (سياحة، عائلة، إلخ)، يمكنك تغييره إلى Carta di Soggiorno إذا استوفيت جميع الشروط.</p>",
+        "index": 4
+      },
+      {
+        "question": "ما هي الوثائق التي أحتاجها لطلبها؟",
+        "content": "<ul><li>جواز سفر ساري المفعول (صفحة البيانات الشخصية وتواريخ الانتهاء، التأشيرات وأختام الدخول/الخروج إن وجدت)</li><li>Permesso di Soggiorno القديم (إن وجد)</li><li>وثيقة هوية المواطن الإيطالي</li><li>إعلان الاستضافة</li><li>شهادة حالة عائلية للمواطن الإيطالي (من البلدية التي يعيش فيها)</li><li>وثائق تثبت درجة القرابة (إذا كانت من الخارج يجب ترجمتها وتصديقها/وضع أبوستيل عليها)</li><li>وثائق تثبت دخل المواطن الإيطالي (Cu/730/Unico) (عندما يُشترط أن يكون القريب من خارج الاتحاد الأوروبي على نفقة القريب الإيطالي الديناميكي)</li><li>وثائق تثبت أنك تعيش على نفقته (عندما يُشترط أن يكون القريب من خارج الاتحاد الأوروبي على نفقة القريب الإيطالي الديناميكي)</li><li>وثائق تثبت أن المواطن الإيطالي عاش في دولة أوروبية أخرى (وفقاً لـ art. 23 D.lvo 30 del 2007)</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذه البطاقة؟",
+        "content": "<p>بهذه البطاقة يمكنك:</p>\n<ul><li>العمل بعقد نظامي (عمل مستقل أو تابع)</li><li>التسجيل في مدرسة أو دورة مهنية أو جامعة</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>السفر في دول شنغن حتى 90 يوماً كل 6 أشهر، إذا كان لديك جواز سفر ساري</li><li>بعد 5 سنوات يمكنك طلب Carta di Soggiorno الدائمة</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "كم مدة صلاحية هذه البطاقة؟",
+        "content": "<p>مدتها 5 سنوات ويمكن تجديدها. بعد التجديد الأول تصبح دائمة.</p>",
+        "index": 7
+      },
+      {
+        "question": "من يمكنه طلب هذه البطاقة؟",
+        "content": "<p>يمكنك طلبها إذا كنت:</p>\n<ul><li>زوج/زوجة أو شريك في اتحاد مدني لمواطن الاتحاد الأوروبي</li><li>شريك وقّع عقد معاشرة، حتى بدون زواج أو اتحاد مدني</li><li>ابن/ابنة حتى سن 21 عاماً لمواطن الاتحاد الأوروبي أو زوجه</li><li>ابن/ابنة فوق 21 عاماً لمواطن الاتحاد الأوروبي أو زوجه، لكن على نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على قريبك الأوروبي)</li><li>أم/أب مواطن الاتحاد الأوروبي أو زوجه، لكن على نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على قريبك الأوروبي)</li><li>جد/جدة مواطن الاتحاد الأوروبي أو زوجه</li><li>حفيد/حفيدة (ابن الأبناء) لمواطن الاتحاد الأوروبي أو زوجه حتى 21 عاماً</li><li>حفيد/حفيدة (ابن الأبناء) لمواطن الاتحاد الأوروبي أو زوجه، فوق 21 عاماً وعلى نفقته (يجب إثبات أنك تعيش على نفقته: وثائق من بلدك الأصلي، تحويلات مالية من الخارج، بعض Questure تطلب أيضاً إثبات أنك عالة ضريبية على قريبك الأوروبي)</li></ul>",
+        "index": 8
+      },
+      {
+        "question": "أين تُطلب هذه البطاقة؟",
+        "content": "<p>يجب تقديم الطلب في Questura في المنطقة التي تعيش فيها.</p>\n<p>يجب تقديم الطلب خلال 3 أشهر من دخولك إلى إيطاليا. إذا كنت موجوداً بالفعل في إيطاليا بنوع آخر من التأشيرات (سياحة، عائلة، إلخ)، يمكنك تغييره إلى Carta di Soggiorno إذا استوفيت جميع الشروط.</p>",
+        "index": 9
+      },
+      {
+        "question": "ما هي الوثائق التي أحتاجها لطلبها؟",
+        "content": "<ul><li>جواز سفر ساري المفعول (صفحة البيانات الشخصية وتواريخ الانتهاء، التأشيرات وأختام الدخول/الخروج إن وجدت)</li><li>Permesso di Soggiorno القديم (إن وجد)</li><li>وثيقة هوية المواطن الأوروبي</li><li>إعلان الاستضافة</li><li>شهادة حالة عائلية للمواطن الأوروبي (من البلدية التي يعيش فيها)</li><li>وثائق تثبت درجة القرابة (إذا كانت من الخارج يجب ترجمتها وتصديقها/وضع أبوستيل عليها)</li><li>وثائق تثبت دخل المواطن الأوروبي (Cu/730/Unico) (عندما يُشترط أن يكون القريب من خارج الاتحاد الأوروبي على نفقة القريب الأوروبي)</li><li>وثائق تثبت أنك تعيش على نفقته (عندما يُشترط أن يكون القريب من خارج الاتحاد الأوروبي على نفقة القريب الأوروبي)</li></ul>",
+        "index": 10
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذه البطاقة؟",
+        "content": "<p>بهذه البطاقة يمكنك:</p>\n<ul><li>العمل بعقد نظامي (عمل مستقل أو تابع)</li><li>التسجيل في مدرسة أو دورة مهنية أو جامعة</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>السفر في دول شنغن حتى 90 يوماً كل 6 أشهر، إذا كان لديك جواز سفر ساري</li><li>بعد 5 سنوات يمكنك طلب Carta di Soggiorno الدائمة</li></ul>",
+        "index": 11
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Documento che prova il rapporto di parentela con il cittadino italiano",
+      "bollettino postale da 80.46€",
+      "4 Foto",
+      "Prova dei mezzi economici sufficienti",
+      "Copia del passaporto (non scaduto)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Permesso in scadenza",
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "4fototessere",
+      "Bollettino postale da 80.46€",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+      "Prova dei mezzi economici sufficienti",
+      "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81ea-830a-d2eb53e9afc8",
+    "slug": "apolidia",
+    "tipo": "انعدام الجنسية",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لانعدام الجنسية هو تصريح يُمنح لك إذا تم الاعتراف بك كعديم الجنسية في إيطاليا، أي أنه لا توجد دولة تعترف بك كمواطن لها. هذه حالة نادرة، لكن إذا حصلت على هذا الاعتراف، فلديك الحق في Permesso di Soggiorno يمنحك حقوقاً كثيرة في إيطاليا.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكنك طلب هذا التصريح إذا:</p>\n<ul><li>حصلت على الاعتراف بوضع عديم الجنسية من وزارة الداخلية أو المحكمة المدنية</li><li>لديك وثيقة (حكم أو مرسوم) تثبت وضعك كعديم الجنسية</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف يُطلب هذا التصريح؟",
+        "content": "<p>للإصدار الأول يجب الذهاب مباشرة إلى Questura (لا يُستخدم Kit Postale).</p>\n<p>👉 انظر قائمة الوثائق للإصدار الأول</p>\n<p>للتجديد يمكنك استخدام Kit Postale.</p>\n<p>👉 انظر قائمة الوثائق للتجديد</p>",
+        "index": 2
+      },
+      {
+        "question": "ما هي الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل (عمل مستقل أو تابع)</li><li>التسجيل في SSN والحصول على طبيب أساسي</li><li>طلب الإقامة</li><li>السفر بوثيقة سفر لعديمي الجنسية</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "كم مدة صلاحية هذا التصريح؟",
+        "content": "<p>تصريح انعدام الجنسية مدته 5 سنوات ويمكن تجديده.</p>",
+        "index": 4
+      },
+      {
+        "question": "عندما ينتهي هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده. أرسل طلب التجديد بـ Kit Postale قبل انتهاء الصلاحية. وضع عديم الجنسية دائم، لذلك التجديد تلقائي تقريباً إذا قدمت الوثائق المطلوبة.</p>",
+        "index": 5
+      },
+      {
+        "question": "كم يكلف؟",
+        "content": "<p>التكلفة الإجمالية حوالي 126.46€:</p>\n<ul><li>80.46€ للبوليتينو البريدي (يشمل تكلفة التصريح الإلكتروني)</li><li>30€ لإرسال Kit Postale (فقط للتجديد)</li><li>16€ لطابع الدمغة</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Foto",
+      "Decisione che dà lo status di apolide",
+      "marca da bollo da 16€",
+      "bollettino postale da 80.46€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "4fototessere",
+      "Bollettino postale da 80.46€",
+      "Permesso in scadenza",
+      "marca da bollo da 16€",
+      "Decisione che dà lo status di apolide"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81fa-8029-f93902c6f0e3",
+    "slug": "lavoro-autonomo-conversione-da-altro-permesso",
+    "tipo": "عمل مستقل (تحويل من تصريح إقامة آخر)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>إذا كنت في هذه الصفحة فذلك لأن لديك Permesso di Soggiorno وتتساءل إن كان بإمكانك تحويله إلى Permesso di Soggiorno للعمل المستقل. مثال: لديك تصريح إقامة في إيطاليا للدراسة أو لأسباب عائلية أو انتظار عمل وغيرها، والآن تريد العمل كعامل مستقل.</p>\n<p>→ قم بالاختبار لمعرفة ما إذا كان بإمكانك تحويل Permesso di Soggiorno الخاص بك إلى Permesso di Soggiorno للعمل المستقل</p>\n<p>هو Permesso di Soggiorno لمن يعمل بشكل مستقل، أي ليس لديه صاحب عمل، بل يمارس نشاطاً مهنياً أو حرفياً بشكل مستقل (مثلاً: تاجر، حرفي، صاحب مهنة حرة، إلخ).</p>",
+        "index": 0
+      },
+      {
+        "question": "ما مدة صلاحية هذا التصريح؟",
+        "content": "<ul><li>تعتمد المدة على النشاط الذي تمارسه والوثائق التي تقدمها، لكنها عادةً من سنة إلى سنتين. يمكن تجديده إذا استمررت في العمل المستقل واستوفيت الشروط المطلوبة.</li></ul>\n<hr>",
+        "index": 1
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يُطلب في مكتب البريد عن طريق تعبئة Kit Postale</p>\n<p>ما يجب عليك فعله:</p>\n<hr>\n<ol><li>قم بتعبئة Kit Postale (النموذج 1 و2) وأرسله من مكتب بريد معتمد. ستتلقى موعداً في Questura لأخذ البصمات. إذا وافقت Questura على التحويل، ستحصل على Permesso di Soggiorno الجديد للعمل المستقل.</li></ol>",
+        "index": 2
+      },
+      {
+        "question": "ماذا يمكنك أن تفعل بهذا التصريح؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل بشكل مستقل بموجب partita IVA. العمل كموظف (عمل تابع). الحصول على الإقامة في البلدية التي تعيش فيها. التسجيل في الخدمة الصحية والحصول على طبيب عام. السفر في منطقة شنغن بجواز السفر (لمدة أقصاها 90 يوماً كل 180 يوماً). طلب لمّ شمل الأسرة. التسجيل في دورات ومدارس وجامعات.</li></ul>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "ماذا يحدث إذا أغلقت نشاطك؟",
+        "content": "<ul><li>يمكنك طلب تصريح انتظار عمل عند التجديد، لكن يجب عليك إثبات أنك تبحث عن عمل أو نشاط آخر.</li></ul>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "متى ينتهي التصريح؟",
+        "content": "<ul><li>يجب طلب التجديد قبل انتهاء الصلاحية أو خلال 60 يوماً على الأكثر بعد ذلك. إذا كانت لديك الشروط المطلوبة، يمكنك أيضاً تحويله إلى نوع آخر من التصاريح (دراسة، عائلة، إقامة طويلة الأمد، عمل تابع، إلخ). يجب طلب التحويل قبل انتهاء الصلاحية.</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "bollettino postale da 80.46€",
+      "4 Foto",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Certificato attribuzione partita IVA o iscrizione alla Camera di Commercio",
+      "Ultima dichiarazione dei redditi"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "Bollettino postale da 80.46€",
+      "4 Foto",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Certificato attribuzione partita IVA o iscrizione al registro delle imprese",
+      "Ultima dichiarazione dei redditi",
+      "Permesso in scadenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81aa-990a-f5b0f76ab07b",
+    "slug": "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche",
+    "tipo": "علاج طبي بعد الدخول بتأشيرة علاج طبي",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno للعلاج الطبي (art. 36 del T.U. 286/98) مخصص لمن يدخل إيطاليا بتأشيرة خاصة لتلقي العلاج الطبي. يتعلق الأمر بتصريح للمواطنين الأجانب الذين يحتاجون إلى علاجات طبية متخصصة غير متوفرة أو غير سهلة الوصول في بلدهم الأصلي.</p>",
+        "index": 0
+      },
+      {
+        "question": "من يمكنه طلبه؟",
+        "content": "<p>يمكن طلبه لمن:</p>\n<ul><li>حصل على تأشيرة دخول للعلاج الطبي من السفارة أو القنصلية الإيطالية. لديه تصريح من المنشأة الصحية الإيطالية (عامة أو خاصة معتمدة) يُثبت نوع العلاج والمدة المتوقعة والإقامة في المستشفى إن وُجدت. دفع تأميناً بنسبة 30% من التكلفة المقدرة للعلاج إلى المنشأة الصحية المختارة. أثبت أن لديه موارد كافية لتغطية النفقات الطبية والطعام والسكن.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف/أين يُطلب؟",
+        "content": "<p>يُطلب عبر Kit Postale المتوفر في مكاتب البريد المعتمدة.</p>\n<p>خلال 8 أيام من الدخول إلى إيطاليا، يجب تقديم الطلب.</p>\n<p>لمعرفة الوثائق المطلوبة، راجع الصفحات المخصصة:</p>\n<ul><li>الوثائق للحصول على التصريح لأول مرة. الوثائق للتجديد.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "ما الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل (عمل تابع أو مستقل). الحصول على العلاج الطبي في المنشأة الصحية المحددة في التأشيرة. التسجيل في SSN أو الحصول على تأمين صحي خاص.</li><li>⚠️ تذكر: هذا التصريح مرتبط بحاجتك للعلاج. إذا انتهى العلاج، قد لا يتم تجديد التصريح.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ما مدة صلاحية هذا التصريح؟",
+        "content": "<p>المدة سنة واحدة، بناءً على الفترة اللازمة لإتمام العلاج الطبي المذكور في الشهادة الصحية.</p>",
+        "index": 4
+      },
+      {
+        "question": "عند انتهاء صلاحيته، هل يمكنني تجديده؟",
+        "content": "<p>نعم، يمكنك تجديده إذا أصدرت المنشأة الصحية شهادة تؤكد أنك لا تزال بحاجة إلى متابعة العلاج في إيطاليا. للتجديد يجب تقديم تصريح محدّث من المستشفى.</p>",
+        "index": 5
+      },
+      {
+        "question": "كم يكلف؟",
+        "content": "<p>للتقديم يجب دفع:</p>\n<ul><li>بوليصة بريدية بقيمة 30,46€. طابع ضريبي بقيمة 16€.</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Documenti medici",
+      "marca da bollo da 16€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "4 Foto",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "bollettino postale da 30.46€",
+      "Visto d'ingresso",
+      "Copia del passaporto (non scaduto)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Permesso in scadenza",
+      "Copia del passaporto (non scaduto)",
+      "4fototessere",
+      "Dichiarazione dell'ospedale per necessità di continuare le cure in Italia",
+      "marca da bollo da 16€",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza",
+      "Bollettino postale da 30.46",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-8159-a2ae-e2bea40abed0",
+    "slug": "calamita-naturale",
+    "tipo": "كارثة طبيعية",
+    "emoji": "🌊",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno بسبب كارثة طبيعية (Art. 20bis, Testo Unico Immigrazione) يُمنح للأجانب الذين لا يستطيعون العودة إلى بلدهم بسبب وجود حالة طوارئ خطيرة ⚠️ (مثل الزلازل أو الحروب أو الكوارث الطبيعية) تجعل العيش هناك خطيراً.</p>\n<p>هذا التصريح مختلف عن طلب اللجوء السياسي ولا يتطلب تقديم طلب حماية دولية.</p>",
+        "index": 0
+      },
+      {
+        "question": "متى يمكنني طلبه؟",
+        "content": "<p>يمكنك طلب هذا التصريح إذا:</p>\n<ul><li>كنت تعيش بالفعل في إيطاليا. يوجد في بلدك وضع خطير جداً (حالة طوارئ، كارثة). لا تستطيع العودة إلى بلدك بأمان. الوضع في بلدك يعرّض حقوقك الأساسية للخطر (الحق في الحياة والحرية وتقرير المصير).</li><li>يجب أن يكون الوضع استثنائياً ومؤقتاً ولكن أيضاً خطيراً جداً.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "كيف وأين يُطلب هذا التصريح؟",
+        "content": "<p>يجب تقديم الطلب إلى Questura في المنطقة التي تعيش فيها.</p>\n<p>يجب الذهاب مباشرة إلى Questura وطلب موعد.</p>\n<p>بعد تقديم الطلب، يمكن لـ Questura التحقق مما إذا كان الوضع في بلدك خطيراً فعلاً، ثم تتخذ القرار.</p>",
+        "index": 2
+      },
+      {
+        "question": "📋 ما الوثائق التي تحتاجها؟",
+        "content": "<ul><li>وثائق تُظهر الوضع الخطير في بلدك: مقالات صحفية، تقارير منظمات دولية، وثائق رسمية تُثبت وجود حالة طوارئ خطيرة في بلدك. نسخة من وثائق تُظهر كيف تعيل نفسك في إيطاليا (إن وُجدت): قسيمة راتب، عقد عمل، مساعدات تتلقاها. جواز سفر أو وثيقة مشابهة. صورتان شخصيتان. طابع ضريبي بقيمة 16€.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "ما مدة صلاحيته؟",
+        "content": "<p>مدة التصريح ستة أشهر، قابلة للتجديد لستة أشهر أخرى إذا</p>",
+        "index": 4
+      },
+      {
+        "question": "✅ ما الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>الحصول على الإقامة في البلدية التي تعيش فيها. العمل (بعقد نظامي - عمل مستقل أو تابع). التسجيل في SSN والحصول على طبيب عام. التسجيل في المدرسة أو دورة مهنية أو الجامعة.</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Prova della calamità naturale",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Permesso in scadenza",
+      "4fototessere",
+      "marca da bollo da 16€",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza",
+      "Prova della calamità naturale"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81a9-a566-f7f2aeae4490",
+    "slug": "attesa-occupazione",
+    "tipo": "انتظار عمل",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "ما هو هذا التصريح؟",
+        "content": "<p>Permesso di Soggiorno لانتظار العمل يسمح لك بالبقاء في إيطاليا حتى لو لم يكن لديك عقد عمل أو فقدته. يُمنح عادةً:</p>\n<ul><li>للعمال الأجانب الذين فقدوا عملهم ويبحثون عن عمل جديد. للقاصرين الأجانب غير المصحوبين الذين بلغوا 18 عاماً دون أن يكون لديهم عمل مستقر. للطلاب الأجانب الذين تخرجوا في إيطاليا ولم يجدوا عملاً بعد.</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "كيف أطلب Permesso di Soggiorno لانتظار العمل؟",
+        "content": "<p>يمكنك طلب هذا التصريح إذا كنت في إحدى هذه الحالات الثلاث:</p>\n<ul><li>لديك Permesso di Soggiorno للعمل المستقل أو التابع لكن لا تستطيع تجديده لأنك فقدت العمل (فصل أو استقالة) أو انتهى نشاطك المستقل. لديك تصريح للدراسة وتخرجت في إيطاليا (بكالوريوس، ماجستير، دكتوراه) لكن لم تجد عملاً بعد. في هذه الحالات يُنصح بالتحويل أولاً إلى انتظار عمل ثم إلى عمل. من الأصعب الانتقال مباشرة من تصريح الدراسة إلى تصريح العمل. لديك تصريح للقاصرين وتريد المزيد من الوقت للعثور على عمل.</li><li>⚠️ انتبه: إذا لم يكن لديك أبداً Permesso di Soggiorno آخر، فلا يمكنك طلب تصريح انتظار عمل في إيطاليا. بمعنى آخر: لا يمكنك القدوم إلى إيطاليا بدون تأشيرة أو بتأشيرة سياحية ثم البحث عن عمل بتصريح انتظار عمل.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "👉 كيف يُطلب هذا التصريح؟",
+        "content": "<ul><li>إذا كان تصريحك على وشك الانتهاء: أرسل الطلب عبر Kit Postale قبل انتهاء الصلاحية. إذا كان تصريحك قد انتهى بالفعل: اذهب مباشرة إلى Questura واطلب موعداً.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "ماذا يجب أن تفعل قبل طلب التصريح؟",
+        "content": "<p>1. سجّل في مركز التوظيف (Centro per l&amp;#039;Impiego)</p>\n<ul><li>اذهب إلى أقرب مركز توظيف. أعلن عن استعدادك للعمل (حتى في عمل مختلف عما كنت تقوم به سابقاً). سيمنحونك شهادة تسجيل كشخص يبحث عن عمل.</li><li>للتسجيل في مركز التوظيف تحتاج إلى:</li><li>Codice Fiscale. Permesso di Soggiorno صالح (أو منتهي الصلاحية مع إيصال تجديد). وثيقة هوية صالحة.</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "كم يكلف؟",
+        "content": "<p>التكلفة الإجمالية 116,46€:</p>\n<ul><li>30,46€ للتصريح الإلكتروني. 30€ لإرسال Kit Postale. 40€ لإصدار التصريح. 16€ للطابع الضريبي.</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ما مدة صلاحية هذا التصريح؟",
+        "content": "<p>مدة التصريح عادةً سنة واحدة، وحسب Questura لا يمكن تجديده.</p>",
+        "index": 5
+      },
+      {
+        "question": "✅ ما الحقوق التي يمنحني إياها؟ ما الذي يمكنني الوصول إليه؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل (عمل مستقل أو تابع). التسجيل في SSN والحصول على طبيب عام. طلب الإقامة.</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "ماذا يحدث عند انتهاء صلاحيته؟",
+        "content": "<p>إذا وجدت عملاً: يمكنك تحويل التصريح إلى تصريح عمل (مستقل أو تابع)، عبر Kit Postale.</p>\n<p>إذا لم تجد عملاً: قبل انتهاء الصلاحية، اطلب مساعدة قانونية متخصصة.</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "Iscrizione al centro per l'impiego",
+      "bollettino postale da 70.46€",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "Copia del passaporto (non scaduto)",
+      "4 Foto",
+      "Iscrizione al centro per l'impiego",
+      "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)"
+    ],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": 70.46,
+    "costBollettinoAltRinnovo": 80.46,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-818e-a9e9-d98b05d55d9b",
+    "slug": "famiglia-genitore-di-cittadino-italiano",
+    "tipo": "عائلة - والد/ة مواطن إيطالي",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "ما هو Permesso di Soggiorno لوالد/ة مواطن إيطالي؟",
+        "content": "<p>هو Permesso di Soggiorno مخصص لأولياء أمور القاصرين الذين يحملون الجنسية الإيطالية.</p>",
+        "index": 0
+      },
+      {
+        "question": "ما مدة صلاحيته؟",
+        "content": "<p>مدة صلاحية التصريح عادةً سنتان.</p>",
+        "index": 1
+      },
+      {
+        "question": "ما الشروط المطلوبة؟",
+        "content": "<p>لطلب هذا التصريح يجب أن يكون لديك ابن/ابنة قاصر يحمل الجنسية الإيطالية ويقيم في إيطاليا وأن تكون لا تزال تتحمل مسؤوليتك كوالد/ة.</p>\n<p>العيش معاً ليس شرطاً ضرورياً. يمكنك الحصول على هذا التصريح حتى لو كان القاصر يعيش مع الوالد/ة الآخر/ى.</p>",
+        "index": 2
+      },
+      {
+        "question": "أين يُطلب هذا التصريح؟",
+        "content": "<p>يجب تقديم الطلب إلى Questura في المنطقة التي تعيش فيها.</p>",
+        "index": 3
+      },
+      {
+        "question": "ما الوثائق التي أحتاجها لطلبه؟",
+        "content": "<ul><li>شهادة تُثبت أنك والد/ة المواطن الإيطالي. شهادة تُظهر مكان إقامة ابنك/ابنتك في إيطاليا. وثيقة من محكمة الأحداث تُثبت أنك لا تزال تملك حق الولاية. جواز سفر صالح.</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "ماذا يمكنني أن أفعل بهذا Permesso di Soggiorno؟",
+        "content": "<p>بهذا التصريح يمكنك:</p>\n<ul><li>العمل (عمل مستقل أو تابع) بعقد نظامي. الحصول على الإقامة في البلدية التي تعيش فيها. التسجيل في SSN والحصول على طبيب عام. السفر في منطقة شنغن إذا كان لديك جواز سفر صالح.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "وعندما ينتهي التصريح؟",
+        "content": "<p>قبل انتهاء صلاحيته، يمكنك:</p>\n<ul><li>تجديده طالما أن ابنك/ابنتك قاصر/ة. تحويله إلى تصريح آخر (مثلاً للعمل أو الدراسة).</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Copia del passaporto (non scaduto)",
+      "Documento che prova il rapporto di parentela con il cittadino italiano",
+      "4 Foto",
+      "marca da bollo da 16€",
+      "bollettino postale da 80.46€",
+      "Certificato di residenza del minore in Italia"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Permesso in scadenza",
+      "marca da bollo da 16€",
+      "4fototessere",
+      "Documento di identità del cittadino italiano",
+      "Copia del passaporto (non scaduto)",
+      "Bollettino postale da 80.46€",
+      "certificato di residenza del minore in Italia"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81fa-919b-e7c04d5e0a67",
+    "slug": "lavoro-artistico",
+    "tipo": "عمل فني",
+    "emoji": "💼",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": null,
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-81df-bbe3-f232141d3744",
+    "slug": "tirocinio",
+    "tipo": "تدريب مهني",
+    "emoji": "📋",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "rinnovabile previa conversione"
+    ],
+    "rinnovoMethod": "rinnovabile previa conversione",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3337355e-7f7f-813a-9f46-c1ff82f98149",
+    "slug": "sfruttamento-lavorativo",
+    "tipo": "الاستغلال في العمل",
+    "emoji": "💼",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Proposta/parere autorità giudiziaria",
+      "bollettino postale da 30.46€",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "Autorità giudiziaria",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "4fototessere",
+      "Copia del passaporto (non scaduto)",
+      "Permesso in scadenza"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  }
+]

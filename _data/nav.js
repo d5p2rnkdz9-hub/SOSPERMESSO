@@ -244,5 +244,40 @@ module.exports = {
         ]
       }
     ]
+  },
+  ar: {
+    dropdowns: [
+      {
+        label: "معلومات",
+        href: "/ar/#informazioni",
+        items: [
+          { label: "جميع التصاريح", href: "/ar/database.html" },
+          { label: "الحماية الدولية", href: "/ar/protezione-internazionale.html" },
+          { label: "لم شمل الأسرة", href: "/ar/ricongiungimento-familiare.html" },
+          { label: "المساعدة القانونية", href: "/ar/aiuto-legale.html" },
+          { label: "القاموس", href: "/ar/dizionario.html" }
+        ]
+      },
+      {
+        label: "اختبارات",
+        href: "https://form.typeform.com/to/kt7P9Ejk",
+        external: true,
+        items: [
+          { label: "هل يمكنني الحصول على تصريح؟", href: "https://form.typeform.com/to/kt7P9Ejk", external: true },
+          { label: "هل يمكنني التحويل؟", href: "https://form.typeform.com/to/oc9jhdkJ", external: true },
+          { label: "هل يمكنني التجديد؟", href: "https://form.typeform.com/to/R7HY8nBp", external: true }
+        ]
+      },
+      {
+        label: "تعاون",
+        href: "https://form.typeform.com/to/USx16QN3",
+        external: true,
+        items: [
+          { label: "ساعدنا", href: "https://form.typeform.com/to/USx16QN3", external: true },
+          { label: "أبلغ عن خطأ", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
+          { label: "أعطنا رأيك", href: "https://form.typeform.com/to/USx16QN3", external: true }
+        ]
+      }
+    ]
   }
 };

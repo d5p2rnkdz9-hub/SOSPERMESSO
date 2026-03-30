@@ -196,6 +196,32 @@ export default function(eleventyConfig) {
     // Directory might not exist yet
   }
 
+  // Safety net for AR document and permit pages
+  const arPagesDir = path.join(process.cwd(), 'ar', 'src', 'pages');
+  try {
+    const arFiles = fs.readdirSync(arPagesDir);
+    const arDocFiles = arFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of arDocFiles) {
+      eleventyConfig.ignores.add(`ar/src/pages/${file}`);
+    }
+    if (arDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${arDocFiles.length} static AR document files (replaced by Liquid templates)`);
+    }
+    const arPermitFiles = arFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of arPermitFiles) {
+      eleventyConfig.ignores.add(`ar/src/pages/${file}`);
+    }
+    if (arPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${arPermitFiles.length} static AR permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
   // All document pages are generated via Liquid pagination templates
   // (documents-primo.liquid, documents-rinnovo.liquid).
   // All permit pages are generated via permits.liquid.

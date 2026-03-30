@@ -1,0 +1,527 @@
+---
+pagination:
+  data: permitsAr
+  size: 1
+  alias: permit
+permalink: "ar/permesso-{{ permit.slug }}.html"
+layout: layouts/base.liquid
+lang: ar
+eleventyComputed:
+  title: "{{ permit.tipo }} - تصريح إقامة"
+  description: "{{ permit.tipo }} - معلومات عن تصريح الإقامة، الشروط، الوثائق والإجراءات"
+eleventyExcludeFromCollections: true
+---
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="/ar/index.html">الرئيسية</a> ←
+          <a href="/ar/database.html">قاعدة البيانات</a> ←
+          <span>{{ permit.tipo }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white" style="padding: 1.5rem 0;">
+    <div class="container">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+        <span style="font-size: 2.5rem;">{{ permit.emoji }}</span>
+        <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800;">{{ permit.tipo }}</h1>
+      </div>
+    </div>
+  </section>
+
+  {% unless permit.isPlaceholder == true %}
+  <div class="permit-tab-bar" id="permit-tab-bar">
+    <div class="container">
+      <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
+        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">معلومات</a>
+        {% if permit.primoDocuments.size > 0 %}
+        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">الإصدار الأول</a>
+        {% endif %}
+        {% if permit.rinnovoDocuments.size > 0 %}
+        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">التجديد</a>
+        {% endif %}
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 الممارسات المحلية</a>
+      </div>
+    </div>
+  </div>
+  <script>
+  function scrollToSection(id) {
+    var el = document.getElementById(id);
+    if (!el) return true;
+    var header = document.querySelector('header') || document.querySelector('.site-header');
+    var breadcrumb = document.querySelector('.breadcrumb-bar');
+    var tabBar = document.getElementById('permit-tab-bar');
+    var offset = 20;
+    if (header) offset += header.getBoundingClientRect().height;
+    if (breadcrumb) offset += breadcrumb.getBoundingClientRect().height;
+    if (tabBar) offset += tabBar.getBoundingClientRect().height;
+    var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+    return false;
+  }
+  </script>
+  {% endunless %}
+
+{% if permit.isPlaceholder == true %}
+  <!-- PLACEHOLDER PAGE -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card text-center" style="padding: 3rem;">
+        <span style="font-size: 4rem;">{{ permit.emoji }}</span>
+        <h2 style="margin: 1rem 0;">المحتوى قريباً</h2>
+        <p style="color: var(--gray-medium); max-width: 500px; margin: 0 auto 1.5rem;">
+          نحن نعمل على إكمال المعلومات حول تصريح الإقامة هذا.
+        </p>
+        <a href="https://form.typeform.com/to/USx16QN3"
+           class="btn btn-primary"
+           target="_blank"
+           rel="noopener noreferrer">
+          ساعدنا
+        </a>
+      </div>
+    </div>
+  </section>
+
+{% else %}
+
+  <!-- SECTION: INFO -->
+  <section id="cose" class="section">
+    <div class="container" style="max-width: 900px;">
+      {% for section in permit.sections %}
+      <!-- Section {{ forloop.index }}: {{ section.question }} -->
+      <div class="card" style="margin-bottom: 2rem; border-right: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }}; border-left: none;">
+        <h2>{{ section.question }}</h2>
+        {{ section.content }}
+      </div>
+      {% endfor %}
+
+    </div>
+  </section>
+
+  {% if permit.primoDocuments.size > 0 %}
+  <!-- SECTION: FIRST ISSUANCE -->
+  <section id="primo" class="section bg-off-white">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">📋 الإصدار الأول</h2>
+
+      <!-- SUBMISSION METHOD CALLOUT -->
+      {%- assign primoMethodLower = permit.primoMethod | downcase -%}
+      {%- if primoMethodLower contains 'kit' -%}
+        {%- assign primoCalloutClass = 'callout-kit' -%}
+        {%- assign primoCalloutIcon = '📮' -%}
+        {%- assign primoCalloutText = 'أرسل عبر Kit Postale (لا حاجة للذهاب إلى Questura)' -%}
+      {%- else -%}
+        {%- assign primoCalloutClass = 'callout-questura' -%}
+        {%- assign primoCalloutIcon = '🏛️' -%}
+        {%- assign primoCalloutText = 'قدّم الوثائق في Questura (لا يمكن استخدام Kit Postale)' -%}
+      {%- endif -%}
+      <div class="submission-callout {{ primoCalloutClass }}" style="margin-bottom: 1.5rem;">
+        <span class="callout-icon">{{ primoCalloutIcon }}</span>
+        <div class="callout-text">{{ primoCalloutText }}</div>
+      </div>
+
+      <!-- CHECKLIST -->
+      <div class="card">
+        <h3>📋 الوثائق المطلوبة</h3>
+        <p class="checklist-intro">ضع علامة على الوثائق التي أعددتها. يتم حفظ تقدمك تلقائياً.</p>
+
+        <div class="doc-checklist" data-permit="{{ permit.slug }}-primo-ar">
+          {%- for docItem in permit.primoDocuments -%}
+            {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
+            {%- assign docClass = normalizedDoc | getDocumentClass -%}
+            {%- assign docLabel = normalizedDoc | escapeHtml -%}
+            {%- assign disputed = normalizedDoc | isDisputed -%}
+          <div class="{{ docClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ permit.slug }}-primo-ar-{{ forloop.index0 }}"
+                   data-doc="{{ normalizedDoc | escapeHtml }}">
+            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(قد يختلف حسب Questura)</span>{% endif %}</span>
+          </div>
+          {%- endfor -%}
+        </div>
+
+        <div class="checklist-progress">
+          <span class="progress-text">المكتمل: <span id="primo-progress-count">0</span>/{{ permit.primoDocuments.size }}</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="primo-progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" style="margin-top: 1rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>ملاحظة:</strong> قد تختلف الوثائق المطلوبة من Questura إلى أخرى.
+        </div>
+      </div>
+
+      {%- assign notesSections = permit.docNotes | parseDocNotes -%}
+      {%- if notesSections.size > 0 -%}
+      <div style="margin-top: 1.5rem;">
+        <h3 style="text-align: center; margin-bottom: 1rem;">📝 معلومات إضافية عن الوثائق</h3>
+        {%- for section in notesSections -%}
+        <div class="card" style="margin-bottom: 1rem;">
+          <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
+          {{ section.content }}
+        </div>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+
+      {%- if permit.costBollettinoPrimo or permit.costMarcaBolloPrimo -%}
+      <div id="primo-quanto-costa" style="margin-top: 1.5rem;">
+        <h3 style="text-align: center; margin-bottom: 1rem;">💰 كم تبلغ التكلفة؟</h3>
+        <div class="card">
+          <ul class="costi-list">
+            {%- if permit.costBollettinoPrimo -%}
+            <li class="costi-item">
+              <span class="costi-label">حوالة بريدية <span class="costi-note">تُدفع في البريد</span></span>
+              <span class="costi-amount">€ {{ permit.costBollettinoPrimo }}{% if permit.costBollettinoAltPrimo %} أو € {{ permit.costBollettinoAltPrimo }}{% endif %}</span>
+            </li>
+            {%- if permit.costBollettinoAltPrimo -%}
+            <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">يعتمد على مدة التصريح</li>
+            {%- endif -%}
+            {%- endif -%}
+            {%- if permit.costMarcaBolloPrimo -%}
+            <li class="costi-item">
+              <span class="costi-label">طابع ضريبي <span class="costi-note">يُشترى من بائع التبغ</span></span>
+              <span class="costi-amount">€ {{ permit.costMarcaBolloPrimo }}</span>
+            </li>
+            {%- endif -%}
+            {%- if primoMethodLower contains 'kit' -%}
+            <li class="costi-item">
+              <span class="costi-label">Kit Postale <span class="costi-note">يُشترى من البريد</span></span>
+              <span class="costi-amount">€ 30,00</span>
+            </li>
+            {%- endif -%}
+          </ul>
+          <div class="costi-total">
+            <span class="costi-total-label">المجموع</span>
+            <span class="costi-total-amount">€
+              {%- assign primoTotal = 0 -%}
+              {%- if permit.costBollettinoPrimo -%}{%- assign primoTotal = primoTotal | plus: permit.costBollettinoPrimo -%}{%- endif -%}
+              {%- if permit.costMarcaBolloPrimo -%}{%- assign primoTotal = primoTotal | plus: permit.costMarcaBolloPrimo -%}{%- endif -%}
+              {%- if primoMethodLower contains 'kit' -%}{%- assign primoTotal = primoTotal | plus: 30 -%}{%- endif -%}
+              {{ primoTotal }}{%- if permit.costBollettinoAltPrimo -%}{%- assign primoTotalMax = 0 -%}{%- assign primoTotalMax = primoTotalMax | plus: permit.costBollettinoAltPrimo -%}{%- if permit.costMarcaBolloPrimo -%}{%- assign primoTotalMax = primoTotalMax | plus: permit.costMarcaBolloPrimo -%}{%- endif -%}{%- if primoMethodLower contains 'kit' -%}{%- assign primoTotalMax = primoTotalMax | plus: 30 -%}{%- endif -%} – {{ primoTotalMax }}{%- endif -%}
+            </span>
+          </div>
+        </div>
+      </div>
+      {%- endif -%}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if permit.rinnovoDocuments.size > 0 %}
+  <!-- SECTION: RENEWAL -->
+  <section id="rinnovo" class="section">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">🔄 التجديد</h2>
+
+      <!-- SUBMISSION METHOD CALLOUT -->
+      {%- assign rinnovoMethodLower = permit.rinnovoMethod | downcase -%}
+      {%- if rinnovoMethodLower contains 'kit' -%}
+        {%- assign rinnovoCalloutClass = 'callout-kit' -%}
+        {%- assign rinnovoCalloutIcon = '📮' -%}
+        {%- assign rinnovoCalloutText = 'أرسل عبر Kit Postale (لا حاجة للذهاب إلى Questura)' -%}
+      {%- else -%}
+        {%- assign rinnovoCalloutClass = 'callout-questura' -%}
+        {%- assign rinnovoCalloutIcon = '🏛️' -%}
+        {%- assign rinnovoCalloutText = 'قدّم الوثائق في Questura (لا يمكن استخدام Kit Postale)' -%}
+      {%- endif -%}
+      <div class="submission-callout {{ rinnovoCalloutClass }}" style="margin-bottom: 1rem;">
+        <span class="callout-icon">{{ rinnovoCalloutIcon }}</span>
+        <div class="callout-text">{{ rinnovoCalloutText }}</div>
+      </div>
+
+      {%- if permit.slug contains 'attesa-occupazione' -%}
+      <!-- DISPUTED RENEWAL WARNING -->
+      <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px; margin-bottom: 1rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>تنبيه:</strong> تجديد تصريح انتظار العمل مسألة خلافية. بعض مكاتب Questura ترفضه. ننصحك باستشارة محامٍ أو مركز مساعدة قانونية قبل البدء بالإجراءات.
+          <br><br>
+          <a href="/ar/aiuto-legale.html" style="color: #E53935; font-weight: 600;">← ابحث عن مساعدة قانونية في منطقتك</a>
+        </div>
+      </div>
+      {%- endif -%}
+
+      <!-- REMINDER ALERT -->
+      <div class="alert alert-info" style="margin-bottom: 1rem;">
+        <span class="alert-icon">📅</span>
+        <div>
+          <strong>تذكّر:</strong> يجب تقديم طلب التجديد ويفضّل <strong>قبل انتهاء الصلاحية</strong> أو في غضون <strong>60 يوماً</strong> كحد أقصى بعد انتهائها.
+        </div>
+      </div>
+
+      <!-- CHECKLIST -->
+      <div class="card">
+        <h3>📋 الوثائق المطلوبة</h3>
+        <p class="checklist-intro">ضع علامة على الوثائق التي أعددتها. يتم حفظ تقدمك تلقائياً.</p>
+
+        {%- assign commonDocName = "Copia permesso precedente (o denuncia smarrimento)" -%}
+        {%- assign commonDocNormalized = commonDocName | normalizeDocumentName -%}
+        {%- assign commonDocClass = commonDocNormalized | getDocumentClass -%}
+        {%- assign commonDocLabel = commonDocNormalized | escapeHtml -%}
+
+        <div class="doc-checklist" data-permit="{{ permit.slug }}-rinnovo-ar">
+          <!-- Common document always first -->
+          <div class="{{ commonDocClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ permit.slug }}-rinnovo-ar-0"
+                   data-doc="{{ commonDocNormalized | escapeHtml }}">
+            <span class="doc-label">{{ commonDocLabel }}</span>
+          </div>
+
+          {%- for docItem in permit.rinnovoDocuments -%}
+            {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
+            {%- assign lowerDoc = normalizedDoc | downcase -%}
+            {%- unless lowerDoc contains "copia permesso precedente" -%}
+              {%- assign docClass = normalizedDoc | getDocumentClass -%}
+              {%- assign docLabel = normalizedDoc | escapeHtml -%}
+              {%- assign disputed = normalizedDoc | isDisputed -%}
+              {%- assign idx = forloop.index -%}
+          <div class="{{ docClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ permit.slug }}-rinnovo-ar-{{ idx }}"
+                   data-doc="{{ normalizedDoc | escapeHtml }}">
+            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(قد يختلف حسب Questura)</span>{% endif %}</span>
+          </div>
+            {%- endunless -%}
+          {%- endfor -%}
+        </div>
+
+        {%- assign rinnovoTotalDocs = permit.rinnovoDocuments.size | plus: 1 -%}
+        <div class="checklist-progress">
+          <span class="progress-text">المكتمل: <span id="rinnovo-progress-count">0</span>/{{ rinnovoTotalDocs }}</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="rinnovo-progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" style="margin-top: 1rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>ملاحظة:</strong> قد تختلف الوثائق المطلوبة من Questura إلى أخرى.
+        </div>
+      </div>
+
+      {%- if permit.primoDocuments.size == 0 -%}
+        {%- assign rinnovoNotesSections = permit.docNotes | parseDocNotes -%}
+        {%- if rinnovoNotesSections.size > 0 -%}
+        <div style="margin-top: 1.5rem;">
+          <h3 style="text-align: center; margin-bottom: 1rem;">📝 معلومات إضافية عن الوثائق</h3>
+          {%- for section in rinnovoNotesSections -%}
+          <div class="card" style="margin-bottom: 1rem;">
+            <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
+            {{ section.content }}
+          </div>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if permit.costBollettinoRinnovo or permit.costMarcaBolloRinnovo -%}
+      <div id="rinnovo-quanto-costa" style="margin-top: 1.5rem;">
+        <h3 style="text-align: center; margin-bottom: 1rem;">💰 كم تبلغ تكلفة التجديد؟</h3>
+        <div class="card">
+          <ul class="costi-list">
+            {%- if permit.costBollettinoRinnovo -%}
+            <li class="costi-item">
+              <span class="costi-label">حوالة بريدية <span class="costi-note">تُدفع في البريد</span></span>
+              <span class="costi-amount">€ {{ permit.costBollettinoRinnovo }}{% if permit.costBollettinoAltRinnovo %} أو € {{ permit.costBollettinoAltRinnovo }}{% endif %}</span>
+            </li>
+            {%- if permit.costBollettinoAltRinnovo -%}
+            <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">يعتمد على مدة التصريح</li>
+            {%- endif -%}
+            {%- endif -%}
+            {%- if permit.costMarcaBolloRinnovo -%}
+            <li class="costi-item">
+              <span class="costi-label">طابع ضريبي <span class="costi-note">يُشترى من بائع التبغ</span></span>
+              <span class="costi-amount">€ {{ permit.costMarcaBolloRinnovo }}</span>
+            </li>
+            {%- endif -%}
+            {%- if rinnovoMethodLower contains 'kit' -%}
+            <li class="costi-item">
+              <span class="costi-label">Kit Postale <span class="costi-note">يُشترى من البريد</span></span>
+              <span class="costi-amount">€ 30,00</span>
+            </li>
+            {%- endif -%}
+          </ul>
+          <div class="costi-total">
+            <span class="costi-total-label">المجموع</span>
+            <span class="costi-total-amount">€
+              {%- assign rinnovoTotal = 0 -%}
+              {%- if permit.costBollettinoRinnovo -%}{%- assign rinnovoTotal = rinnovoTotal | plus: permit.costBollettinoRinnovo -%}{%- endif -%}
+              {%- if permit.costMarcaBolloRinnovo -%}{%- assign rinnovoTotal = rinnovoTotal | plus: permit.costMarcaBolloRinnovo -%}{%- endif -%}
+              {%- if rinnovoMethodLower contains 'kit' -%}{%- assign rinnovoTotal = rinnovoTotal | plus: 30 -%}{%- endif -%}
+              {{ rinnovoTotal }}{%- if permit.costBollettinoAltRinnovo -%}{%- assign rinnovoTotalMax = 0 -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costBollettinoAltRinnovo -%}{%- if permit.costMarcaBolloRinnovo -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costMarcaBolloRinnovo -%}{%- endif -%}{%- if rinnovoMethodLower contains 'kit' -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: 30 -%}{%- endif -%} – {{ rinnovoTotalMax }}{%- endif -%}
+            </span>
+          </div>
+        </div>
+      </div>
+      {%- endif -%}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- PRASSI LOCALI ACCORDION -->
+  <section class="section prassi-section bg-off-white" id="prassi-locali">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align: center; margin-bottom: 0.5rem;">📍 الممارسات المحلية</h2>
+      <p style="text-align: center; color: var(--gray-medium); margin-bottom: 1rem; font-size: 0.9rem;">تجارب يشاركها المجتمع حول ممارسات Questura</p>
+
+      {% assign pagePrassi = prassiLocali[permit.slug] %}
+      {% if pagePrassi %}
+        <div class="prassi-accordion">
+          {% for cityGroup in pagePrassi %}
+            <div class="prassi-accordion-item">
+              <button class="prassi-accordion-header" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); this.nextElementSibling.classList.toggle('prassi-accordion-open');">
+                <span class="prassi-accordion-city">{{ cityGroup[0] }}</span>
+                <span class="prassi-accordion-count">{{ cityGroup[1].size }}</span>
+                <span class="prassi-accordion-chevron">◂</span>
+              </button>
+              <div class="prassi-accordion-body">
+                {% for practice in cityGroup[1] %}
+                  <div class="prassi-card" data-prassi-id="{{ practice.id }}">
+                    <p class="prassi-card-description">{{ practice.description }}</p>
+                    <div class="prassi-card-meta">
+                      {% if practice.date %}<span>{{ practice.date }}</span>{% endif %}
+                      {% if practice.category %}<span class="prassi-category-tag">{{ practice.category }}</span>{% endif %}
+                    </div>
+                    <div class="prassi-card-votes">
+                      <span class="vote-confermo">أؤكد: {{ practice.votiConfermo }}</span>
+                      <span class="vote-non-confermo">لا أؤكد: {{ practice.votiNonConfermo }}</span>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem;">
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/ar/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
+            أضف تجربتك
+          </button>
+        </div>
+      {% else %}
+        <div class="prassi-accordion">
+          <div class="prassi-accordion-empty">
+            <span style="font-size: 1.5rem;">📭</span>
+            <p>لا توجد بلاغات حالياً</p>
+            <button class="btn btn-primary prassi-submit-btn btn-sm" onclick="openPrassiModal('https://sospermesso.it/ar/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
+              كن أول من يشارك
+            </button>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Checklist persistence -->
+  <script>
+    (function() {
+      function initChecklist(permitKey, progressCountId, progressFillId) {
+        var checkboxes = document.querySelectorAll('[data-permit="' + permitKey + '"] .doc-checkbox');
+        if (!checkboxes.length) return;
+        var progressCount = document.getElementById(progressCountId);
+        var progressFill = document.getElementById(progressFillId);
+
+        function updateProgress() {
+          var total = checkboxes.length;
+          var checked = Array.from(checkboxes).filter(function(cb) { return cb.checked; }).length;
+          if (progressCount) progressCount.textContent = checked;
+          if (progressFill) progressFill.style.width = (total > 0 ? (checked / total) * 100 : 0) + '%';
+        }
+
+        function loadState() {
+          var saved = localStorage.getItem('checklist-' + permitKey);
+          if (saved) {
+            try {
+              var state = JSON.parse(saved);
+              state.forEach(function(item) {
+                var checkbox = document.getElementById(item.id);
+                if (checkbox) checkbox.checked = item.checked;
+              });
+            } catch (e) {
+              console.warn('Failed to load checklist state:', e);
+            }
+          }
+          updateProgress();
+        }
+
+        function saveState() {
+          var state = Array.from(checkboxes).map(function(cb) {
+            return { id: cb.id, checked: cb.checked };
+          });
+          localStorage.setItem('checklist-' + permitKey, JSON.stringify(state));
+          updateProgress();
+        }
+
+        checkboxes.forEach(function(cb) { cb.addEventListener('change', saveState); });
+        loadState();
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        initChecklist('{{ permit.slug }}-primo-ar', 'primo-progress-count', 'primo-progress-fill');
+        initChecklist('{{ permit.slug }}-rinnovo-ar', 'rinnovo-progress-count', 'rinnovo-progress-fill');
+      });
+    })();
+  </script>
+  <script src="../src/scripts/prassi.js"></script>
+
+  <!-- CTA: QUESTIONS -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div class="alert alert-info">
+        <span class="alert-icon">❓</span>
+        <div>
+          هل لديك أسئلة أخرى حول {{ permit.tipo }}؟
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            تواصل معنا
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endif %}
+
+  <!-- REPORT ERROR -->
+  <div class="report-bar">
+    <a href="https://form.typeform.com/to/FsqvzdXI" target="_blank" rel="noopener" class="report-btn">
+      <span>🚩</span> أبلغ عن خطأ في هذه الصفحة
+    </a>
+  </div>
+
+  <!-- RELATED -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">قد يهمك أيضاً</h2>
+      <div class="grid grid-3">
+        <a href="/ar/database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">جميع التصاريح</h3>
+        </a>
+        <a href="/ar/aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">المساعدة القانونية</h3>
+        </a>
+        <a href="/ar/dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">📖</span>
+          <h3 class="card-title">القاموس</h3>
+        </a>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,406 @@
+---
+layout: layouts/base.liquid
+title: "القاموس"
+lang: ar
+extraStyles: |
+  <style>
+
+      .dictionary-term {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        scroll-margin-top: 200px;
+      }
+      .dictionary-term:last-child {
+        border-bottom: none;
+      }
+      .dictionary-term:target {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: var(--radius-md);
+        animation: highlight-fade 2s ease-out;
+      }
+      @keyframes highlight-fade {
+        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+      }
+      .dictionary-term h3 {
+        color: var(--accent-purple);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dictionary-term h3 .anchor-link {
+        opacity: 0;
+        font-size: 0.875rem;
+        color: var(--gray-medium);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      .dictionary-term:hover h3 .anchor-link {
+        opacity: 0.6;
+      }
+      .dictionary-term h3 .anchor-link:hover {
+        opacity: 1;
+        color: var(--taxi-yellow-dark);
+      }
+      .dictionary-term p {
+        margin: 0;
+        color: var(--gray-dark);
+      }
+      .dictionary-letter {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--taxi-yellow-dark);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--taxi-yellow);
+        scroll-margin-top: 200px;
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="/ar/index.html" style="color: var(--taxi-yellow-dark);">الصفحة الرئيسية</a> →
+        <span>القاموس</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">قاموس الكلمات الصعبة</h1>
+        <p class="section-subtitle">المصطلحات البيروقراطية مشروحة بطريقة بسيطة</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="lettera-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza (الإيواء/الاستقبال) <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>نظام مراكز تستقبل الأشخاص الذين يقدمون طلب حماية دولية.</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico (على عاتق/مُعال) <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>الشخص الذي يعتمد اقتصاديا على شخص آخر. مثلا، الطفل الذي لا يعمل يكون "على عاتق" والديه لأنهم يدفعون مصاريف الطعام والملابس وغيرها.</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento (الحضانة/الكفالة) <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>إسناد رعاية قاصر (طفل أو شاب أقل من 18 سنة) إلى شخص أو عائلة أو مؤسسة ليسوا والديه الحقيقيين.</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo (اللجوء) <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>نوع من الحماية الدولية للأشخاص الذين لا يمكنهم العودة إلى بلدهم بسبب خطر التعرض للاضطهاد (مثل القتل أو التعذيب أو التمييز الشديد). انظر أيضا "Rifugiato" (لاجئ).</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale (وحدة الصحة المحلية). المكتب الذي يدير الخدمات الطبية والصحية في منطقة معينة. هنا يمكنك التسجيل في الخدمة الصحية الوطنية واختيار طبيب الأسرة.</p>
+        </div>
+
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo (شهادة اسمية) <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
+          <p>أول تصريح إقامة تمنحه لك Questura (مديرية الشرطة) عند تقديم طلب لجوء، وذلك حتى يتم إصدار تصريح الإقامة ذو البطاقة الصفراء. يُصدر مع نموذج C3. ليس له تاريخ انتهاء: يبقى ساريا حتى انتهاء دراسة طلب اللجوء.</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="lettera-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>النموذج المستخدم لتقديم طلب اللجوء في Questura. يحتوي على بياناتك الشخصية.</p>
+        </div>
+
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti (القضايا المعلقة) <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
+          <p>مستند يوضح ما إذا كانت هناك قضايا جنائية ضد شخص لم تنتهِ بعد بحكم نهائي.</p>
+        </div>
+
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno (بطاقة الإقامة) <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>مصطلح غامض قد يشير إلى تصريحي إقامة مختلفين: تصريح الإقامة طويل الأمد للاتحاد الأوروبي أو بطاقة إقامة لأفراد عائلة مواطن أوروبي.</p>
+        </div>
+
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale (السجل العدلي) <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
+          <p>سجل يحتوي على معلومات عن الإدانات الجنائية لشخص ما. يُطلب من النيابة العامة.</p>
+        </div>
+
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato (إبلاغ عن تأجير عقار) <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
+          <p>المستند الذي يجب تقديمه عند تأجير منزل أو غرفة لشخص. يجب تقديمه للشرطة المحلية خلال 48 ساعة.</p>
+        </div>
+
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare (التماسك الأسري) <a href="#coesione-familiare" class="anchor-link">#</a></h3>
+          <p>الإجراء الذي يسمح لشخص موجود بالفعل في إيطاليا بالحصول على تصريح إقامة للبقاء مع فرد من عائلته يعيش بالفعل بشكل قانوني في إيطاليا.</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale (الرقم الضريبي) <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>رمز شخصي خاص بكل فرد، ضروري في إيطاليا للتعريف والقيام بأمور مثل العمل وزيارة الطبيب وتوقيع المستندات الرسمية.</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale (اللجنة الإقليمية) <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>هيئة حكومية إيطالية تقرر من يمكنه الحصول على صفة اللاجئ أو الحماية الفرعية أو الحماية الخاصة أو تصريح العلاج الطبي.</p>
+        </div>
+
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge (الزوج/الزوجة) <a href="#coniuge" class="anchor-link">#</a></h3>
+          <p>الزوج أو الزوجة. يشير إلى الشخص المرتبط بالزواج (عقد نكاح) أو الاتحاد المدني.</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione (التحويل) <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>تحويل تصريح إقامة إلى نوع آخر (مثلا من تصريح دراسة إلى تصريح عمل)، دون الحاجة للعودة إلى البلد الأصلي.</p>
+        </div>
+
+        <div class="dictionary-term" id="copia-conforme">
+          <h3>Copia conforme (نسخة مطابقة للأصل) <a href="#copia-conforme" class="anchor-link">#</a></h3>
+          <p>نسخة مصورة من مستند مع ختم رسمي يؤكد أنها مطابقة للأصل. يمكن عملها في البلدية أو عند كاتب العدل أو في بعض الحالات في مكتب البريد.</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="lettera-d">D</div>
+
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione (قرار الترحيل) <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
+          <p>قرار تصدره Prefettura (المحافظة) يُبلغك بوجوب مغادرة إيطاليا. قد يصاحب قرار الترحيل حظر عودة.</p>
+        </div>
+
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità (إعلان الاستضافة) <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
+          <p>مستند موقع يعلن أن شخصا يستضيفك مجانا في منزله في إيطاليا. يجب تقديمه للشرطة خلال 48 ساعة.</p>
+        </div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego (الرفض) <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>قرار سلبي. رفض طلبك من قبل السلطات.</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio (عنوان الإقامة) <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>العنوان الذي تعيش فيه، حتى لو كان بشكل مؤقت.</p>
+        </div>
+
+        <!-- I -->
+        <div class="dictionary-letter" id="lettera-i">I</div>
+
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa (شهادة صلاحية السكن) <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
+          <p>مستند يثبت أن المسكن صالح للسكن (مساحة كافية، آمن، به الخدمات اللازمة). يُطلب من بلدية المنطقة التي يقع فيها المسكن.</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="lettera-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>حزمة نماذج تُؤخذ من مكتب البريد لطلب أو تجديد بعض أنواع تصاريح الإقامة.</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="lettera-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo (طابع ضريبي) <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>طابع مالي يُشترى من بائع التبغ ويُلصق على المستندات الرسمية مثل الطلبات المقدمة إلى Questura. قيمته 16 يورو (الأكثر شيوعا) ويُستخدم لدفع ضريبة للدولة.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore">
+          <h3>Minore (قاصر) <a href="#minore" class="anchor-link">#</a></h3>
+          <p>شخص أقل من 18 سنة.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato (قاصر أجنبي غير مصحوب) <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
+          <p>شخص أقل من 18 سنة موجود في إيطاليا بدون والديه أو بالغ آخر مسؤول عنه قانونيا.</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="lettera-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta (إذن/موافقة) <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>إذن رسمي مطلوب للقيام بشيء ما. مثلا "nulla osta للم شمل الأسرة" هو الضوء الأخضر من Prefettura لإحضار أفراد عائلتك إلى إيطاليا.</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="lettera-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno (تصريح الإقامة) <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>مستند يمنحك الحق في العيش بشكل قانوني في إيطاليا لفترة محددة.</p>
+        </div>
+
+        <div class="dictionary-term" id="prefettura">
+          <h3>Prefettura (المحافظة) <a href="#prefettura" class="anchor-link">#</a></h3>
+          <p>مكتب الدولة الإيطالية الموجود في كل مقاطعة. يتعامل مع النظام العام والأمن وبعض إجراءات الأجانب مثل الجنسية ولم شمل الأسرة.</p>
+        </div>
+
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale (الحماية الدولية) <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
+          <p>الحماية التي تقدمها إيطاليا للأشخاص الذين سيكونون في خطر إذا عادوا إلى بلدهم. تشمل اللجوء والحماية الفرعية.</p>
+        </div>
+
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo (الاستمرار الإداري) <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
+          <p>إمكانية بقاء شاب أجنبي وصل إلى إيطاليا وهو قاصر في إيطاليا مع الدعم حتى بعد بلوغه 18 سنة.</p>
+        </div>
+
+        <!-- Q -->
+        <div class="dictionary-letter" id="lettera-q">Q</div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura (مديرية الشرطة) <a href="#questura" class="anchor-link">#</a></h3>
+          <p>مكتب شرطة الدولة الموجود في كل عاصمة مقاطعة. هو المكان الذي يتم فيه طلب تصريح الإقامة واستلامه وتجديده. يحتوي على مكتب يُسمى "Ufficio Immigrazione" (مكتب الهجرة).</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="lettera-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza (الإقامة) <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>العنوان الذي تعيش فيه بشكل دائم والمسجل في السجل المدني للبلدية.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta (إيصال) <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>مستند يثبت أنك قدمت طلبا أو قمت بدفع مبلغ. إيصال Questura (cedolino) يثبت أنك قدمت طلب تصريح إقامة ويسمح لك بالبقاء في إيطاليا أثناء الانتظار.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare (لم شمل الأسرة) <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
+          <p>الإجراء الذي يسمح لشخص أجنبي يعيش في إيطاليا بتصريح إقامة ساري المفعول بإحضار بعض أفراد عائلته إلى إيطاليا.</p>
+        </div>
+
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato (لاجئ) <a href="#rifugiato" class="anchor-link">#</a></h3>
+          <p>شخص فر من بلده بسبب الاضطهاد ويمكنه الحصول على صفة اللاجئ في إيطاليا.</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo (التجديد) <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>تمديد صلاحية تصريح إقامتك قبل انتهائه.</p>
+        </div>
+
+        <!-- S -->
+        <div class="dictionary-letter" id="lettera-s">S</div>
+
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali (الخدمات الاجتماعية) <a href="#servizi-sociali" class="anchor-link">#</a></h3>
+          <p>مكاتب البلدية التي تساعد الأشخاص في وضع صعب (عائلات، كبار السن، ذوي الإعاقة، قاصرين).</p>
+        </div>
+
+        <div class="dictionary-term" id="sportello-unico">
+          <h3>Sportello Unico (الشباك الواحد) <a href="#sportello-unico" class="anchor-link">#</a></h3>
+          <p>Sportello Unico per l'Immigrazione (SUI). مكتب Prefettura الذي يدير إجراءات العمل للأجانب (nulla osta، عقد الإقامة) ولم شمل الأسرة.</p>
+        </div>
+
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato (صفة اللاجئ) <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
+          <p>قرار اللجنة أو المحكمة الذي يعترف بشخص كلاجئ. بصفة اللاجئ يمكن طلب تصريح إقامة لجوء.</p>
+        </div>
+
+        <!-- T -->
+        <div class="dictionary-letter" id="lettera-t">T</div>
+
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale (المحكمة) <a href="#tribunale" class="anchor-link">#</a></h3>
+          <p>المكان الذي يتخذ فيه القضاة قرارات في المسائل القانونية.</p>
+        </div>
+
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni (محكمة الأحداث) <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
+          <p>محكمة خاصة تتعامل مع المسائل القانونية المتعلقة بالأشخاص أقل من 18 سنة.</p>
+        </div>
+
+        <div class="dictionary-term" id="tessera-sanitaria">
+          <h3>Tessera sanitaria (البطاقة الصحية) <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
+          <p>بطاقة بلاستيكية تسمح لك باستخدام الخدمة الصحية الوطنية (طبيب الأسرة، الطوارئ، الأدوية). تُطلب من ASL بعد الحصول على تصريح الإقامة والإقامة.</p>
+        </div>
+
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore (الوصي) <a href="#tutore" class="anchor-link">#</a></h3>
+          <p>شخص يختاره القاضي لمساعدة ورعاية شاب أقل من 18 سنة عندما لا يستطيع والداه القيام بذلك.</p>
+        </div>
+
+        <!-- U -->
+        <div class="dictionary-letter" id="lettera-u">U</div>
+
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza (جلسة المحكمة) <a href="#udienza" class="anchor-link">#</a></h3>
+          <p>موعد مع قاضٍ في المحكمة. في 99% من الحالات يجب أن يحضر محاميك.</p>
+        </div>
+
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile (الاتحاد المدني) <a href="#unione-civile" class="anchor-link">#</a></h3>
+          <p>الزواج بين شخصين من نفس الجنس في إيطاليا.</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="lettera-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto (التأشيرة) <a href="#visto" class="anchor-link">#</a></h3>
+          <p>إذن دخول إلى إيطاليا يُطلب من السفارة أو القنصلية الإيطالية في بلدك قبل السفر. له أنواع مختلفة: تأشيرة سياحية، دراسية، عمل، لم شمل أسري.</p>
+        </div>
+
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela (رابطة القرابة) <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
+          <p>العلاقة العائلية بين شخصين (آباء-أبناء، إخوة، أجداد-أحفاد، أعمام/خالات-أبناء إخوة).</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          هل هناك كلمة ناقصة تريد فهمها؟
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            اكتب لنا
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">قد يهمك أيضا</h2>
+      <div class="grid grid-3">
+        <a href="/ar/database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">جميع التصاريح</h3>
+        </a>
+        <a href="/ar/protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">الحماية الدولية</h3>
+        </a>
+        <a href="/ar/aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">المساعدة القانونية</h3>
+        </a>
+      </div>
+    </div>
+  </section>

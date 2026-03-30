@@ -27,7 +27,7 @@
 
 /* Arabic language-specific typography */
 [lang="ar"] {
-  font-family: "Geeza Pro", "Arabic Typesetting", "Tahoma", var(--font-primary);
+  font-family: "Noto Sans Arabic", "Geeza Pro", "Arabic Typesetting", "Tahoma", var(--font-primary);
   line-height: 1.8; /* Extra space for diacritics */
   letter-spacing: normal !important; /* NEVER add letter-spacing for Arabic */
 }
