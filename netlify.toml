@@ -13,7 +13,30 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
-# Homepage canonical redirects
+# ── FAVICON & ICONS ──
+# Browsers auto-request these at root
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/IMAGES/favicon-32x32.png"
+  status = 200
+
+[[redirects]]
+  from = "/apple-touch-icon.png"
+  to = "/IMAGES/apple-touch-icon.png"
+  status = 200
+
+[[redirects]]
+  from = "/apple-touch-icon-precomposed.png"
+  to = "/IMAGES/apple-touch-icon.png"
+  status = 200
+
+# ── SITEMAP ──
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap-index.xml"
+  status = 301
+
+# ── HOMEPAGE CANONICAL ──
 [[redirects]]
   from = "/index.html"
   to = "/"
@@ -32,56 +55,126 @@
   status = 301
   force = true
 
-# IT document pages → unified permit pages
+# ── OLD /src/pages/ URL STRUCTURE ──
+# Before flat output, pages lived at /src/pages/*.html
+[[redirects]]
+  from = "/src/pages/permesso-*.html"
+  to = "/permesso-:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/src/pages/documenti-*.html"
+  to = "/documenti-:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/src/pages/*.html"
+  to = "/:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/src/pages/permesso-*.html"
+  to = "/en/permesso-:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/src/pages/documenti-*.html"
+  to = "/en/documenti-:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/src/pages/*.html"
+  to = "/en/:splat.html"
+  status = 301
+
+# Also handle without .html extension
+[[redirects]]
+  from = "/src/pages/*"
+  to = "/:splat.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/src/pages/*"
+  to = "/en/:splat.html"
+  status = 301
+
+# ── NOTION PAGE ID URLS ──
+# Search engines cached old broken Notion internal links
+[[redirects]]
+  from = "/2187355e7f7f81d38a54d111fa27f45f"
+  to = "/permesso-attesa-occupazione.html"
+  status = 301
+
+[[redirects]]
+  from = "/2187355e7f7f819c8fc8fd2ef36a09d1"
+  to = "/permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html"
+  status = 301
+
+[[redirects]]
+  from = "/2187355e7f7f818b843df8b6a7fd30b7"
+  to = "/permesso-minore-eta-per-msna.html"
+  status = 301
+
+[[redirects]]
+  from = "/2187355e7f7f81a3a444f6c6bd8a13ae"
+  to = "/permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html"
+  status = 301
+
+[[redirects]]
+  from = "/2187355e7f7f81b6a119f485cc340e1c"
+  to = "/permesso-studio-dopo-ingresso-con-visto.html"
+  status = 301
+
+[[redirects]]
+  from = "/2187355e7f7f81e48862e58bff4681dc"
+  to = "/permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html"
+  status = 301
+
+[[redirects]]
+  from = "/20a7355e7f7f8173bffccbb2a93bae6f"
+  to = "/permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html"
+  status = 301
+
+[[redirects]]
+  from = "/2967355e7f7f8006a790da7e5b938d1b"
+  to = "/permesso-integrazione-prosieguo-amministrativo.html"
+  status = 301
+
+# ── OLD DOCUMENT PAGE SLUG REDIRECTS ──
+# Old slugs used different naming (e.g. "a-seguito-di" vs "dopo", "art-27" suffixes)
+# These are catch-alls for old doc URLs that don't match current filenames.
+# Without force=true, Netlify serves existing files first, so new doc pages work fine.
 [[redirects]]
   from = "/documenti-*-primo.html"
-  to = "/permesso-:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/documenti-*-rinnovo.html"
-  to = "/permesso-:splat.html"
-  status = 301
-
-# EN document pages → unified permit pages
-[[redirects]]
-  from = "/en/documenti-*-primo.html"
-  to = "/en/permesso-:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/en/documenti-*-rinnovo.html"
-  to = "/en/permesso-:splat.html"
-  status = 301
-
-# FR document pages → unified permit pages
-[[redirects]]
-  from = "/fr/documenti-*-primo.html"
-  to = "/fr/permesso-:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/fr/documenti-*-rinnovo.html"
-  to = "/fr/permesso-:splat.html"
-  status = 301
-
-# Documenti-questura page removed — redirect to database
-[[redirects]]
-  from = "/documenti-questura.html"
   to = "/database.html"
   status = 301
 
 [[redirects]]
-  from = "/en/documenti-questura.html"
+  from = "/documenti-*-rinnovo.html"
+  to = "/database.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/documenti-*-primo.html"
   to = "/en/database.html"
   status = 301
 
 [[redirects]]
-  from = "/fr/documenti-questura.html"
+  from = "/en/documenti-*-rinnovo.html"
+  to = "/en/database.html"
+  status = 301
+
+[[redirects]]
+  from = "/fr/documenti-*-primo.html"
   to = "/fr/database.html"
   status = 301
 
-# Security headers
+[[redirects]]
+  from = "/fr/documenti-*-rinnovo.html"
+  to = "/fr/database.html"
+  status = 301
+
+# ── SECURITY HEADERS ──
 [[headers]]
   for = "/*"
   [headers.values]
