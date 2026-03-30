@@ -6,6 +6,7 @@ module.exports = {
         href: "/#informazioni",
         items: [
           { label: "Tutti i permessi", href: "/database.html" },
+          { label: "Che documenti porto?", href: "/documenti-questura.html" },
           { label: "Protezione internazionale", href: "/protezione-internazionale.html" },
           { label: "Ricongiungimento familiare", href: "/ricongiungimento-familiare.html" },
           { label: "Aiuto legale", href: "/aiuto-legale.html" },

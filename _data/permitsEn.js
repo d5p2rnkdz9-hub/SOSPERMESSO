@@ -10,6 +10,7 @@ require('dotenv').config();
 const { Client } = require("@notionhq/client");
 const cache = require('../scripts/notion-cache');
 const { escapeHtml } = require('../scripts/templates/helpers.js');
+const notionLinks = require('../scripts/fix-notion-links');
 
 // EN Notion database ID (hardcoded like IT — no env var needed)
 const EN_DATABASE_ID = "c1dc0271-f1f4-4147-9464-391884f4dfad";
@@ -364,7 +365,7 @@ module.exports = async function() {
         require('path').join(__dirname, '..', '_cache', 'permits-en.json'), 'utf-8'
       ));
       console.log(`[permitsEn.js] Using cached data (${cached.length} permits)`);
-      return cached.map(p => ({ ...p, rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a') }));
+      return notionLinks.fixLinksInPermits(cached.map(p => ({ ...p, rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a') })), 'en/');
     } catch { /* no cache, fall through to Notion fetch */ }
   }
 

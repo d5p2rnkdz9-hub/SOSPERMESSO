@@ -228,35 +228,12 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
-  background: #FFD700;
-  color: #1A1A1A;
-}
-
-.tab-badge:hover {
-  transform: translate(1.5px, 1.5px);
-  box-shadow: 1px 1px 0 #1A1A1A;
-  background: #1A1A1A;
-  color: #FFD700;
-}
-
-.tab-badge-primo,
-.tab-badge-rinnovo {
   background: white;
   color: #1A1A1A;
 }
 
-.tab-badge-primo:hover,
-.tab-badge-rinnovo:hover {
-  background: #FFD700;
-  color: #1A1A1A;
-}
-
-.tab-badge-prassi {
-  background: white;
-  color: #1A1A1A;
-}
-
-.tab-badge-prassi:hover {
+.tab-badge:hover,
+.tab-badge.active {
   background: #FFD700;
   color: #1A1A1A;
 }

@@ -10,6 +10,7 @@ require('dotenv').config();
 const { Client } = require("@notionhq/client");
 const cache = require('../scripts/notion-cache');
 const { escapeHtml } = require('../scripts/templates/helpers.js');
+const notionLinks = require('../scripts/fix-notion-links');
 
 // BN Notion database ID (hardcoded like IT — no env var needed)
 const BN_DATABASE_ID = '552940da-0783-46dd-9094-b5a2f2e8276d';
@@ -367,7 +368,7 @@ module.exports = async function() {
         require('path').join(__dirname, '..', '_cache', 'permits-bn.json'), 'utf-8'
       ));
       console.log(`[permitsBn.js] Using cached data (${cached.length} permits)`);
-      return cached.map(p => ({ ...p, rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a') }));
+      return notionLinks.fixLinksInPermits(cached.map(p => ({ ...p, rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a') })), 'bn/');
     } catch { /* no cache, fall through to Notion fetch */ }
   }
 

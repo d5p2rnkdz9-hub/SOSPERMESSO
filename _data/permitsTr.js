@@ -10,6 +10,7 @@ require('dotenv').config();
 const { Client } = require("@notionhq/client");
 const cache = require('../scripts/notion-cache');
 const { escapeHtml } = require('../scripts/templates/helpers.js');
+const notionLinks = require('../scripts/fix-notion-links');
 
 // TR Notion database ID (hardcoded like IT — no env var needed)
 const TR_DATABASE_ID = '49d77cd7-b4c7-4c8a-a731-40b6315bc29e';
@@ -367,7 +368,7 @@ module.exports = async function() {
         require('path').join(__dirname, '..', '_cache', 'permits-tr.json'), 'utf-8'
       ));
       console.log(`[permitsTr.js] Using cached data (${cached.length} permits)`);
-      return cached.map(p => ({ ...p, rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a') }));
+      return notionLinks.fixLinksInPermits(cached.map(p => ({ ...p, rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a') })), 'tr/');
     } catch { /* no cache, fall through to Notion fetch */ }
   }
 

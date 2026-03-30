@@ -63,8 +63,56 @@ eleventyExcludeFromCollections: true
     if (tabBar) offset += tabBar.getBoundingClientRect().height;
     var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
     window.scrollTo({ top: top, behavior: 'smooth' });
+    // Set active badge
+    setActiveBadge(id);
     return false;
   }
+
+  function setActiveBadge(id) {
+    var badges = document.querySelectorAll('.tab-badge');
+    badges.forEach(function(b) { b.classList.remove('active'); });
+    var active = document.querySelector('.tab-badge[href="#' + id + '"]');
+    if (active) active.classList.add('active');
+  }
+
+  // Track scroll position to update active badge
+  (function() {
+    var sections = ['cose', 'primo', 'rinnovo', 'prassi-locali'];
+    var ticking = false;
+
+    function getOffset() {
+      var header = document.querySelector('header') || document.querySelector('.site-header');
+      var tabBar = document.getElementById('permit-tab-bar');
+      var off = 40;
+      if (header) off += header.getBoundingClientRect().height;
+      if (tabBar) off += tabBar.getBoundingClientRect().height;
+      return off;
+    }
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function() {
+        var offset = getOffset();
+        var current = null;
+        for (var i = sections.length - 1; i >= 0; i--) {
+          var el = document.getElementById(sections[i]);
+          if (el && el.getBoundingClientRect().top <= offset) {
+            current = sections[i];
+            break;
+          }
+        }
+        if (current) setActiveBadge(current);
+        ticking = false;
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    // Set initial active badge on load
+    document.addEventListener('DOMContentLoaded', function() {
+      onScroll();
+    });
+  })();
   </script>
   {% endunless %}
 

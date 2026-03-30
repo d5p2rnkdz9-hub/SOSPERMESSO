@@ -171,6 +171,10 @@ function extractPlainText(richText) {
   return richText.map(segment => (segment.plain_text || '').replace(/[✓✔☑]/g, '')).join('').trim();
 }
 
+// Shared Notion link fixing module
+const notionLinks = require('../scripts/fix-notion-links');
+
+
 /**
  * Convert Notion rich_text array to HTML
  * Handles bold, italic, underline, strikethrough, code, and links
@@ -206,9 +210,13 @@ function richTextToHtml(richTextArray) {
     if (annotations.underline) text = `<u>${text}</u>`;
     if (annotations.strikethrough) text = `<s>${text}</s>`;
 
-    // Handle Notion links
+    // Handle Notion links — fix internal Notion page links to site URLs
     if (segment.href) {
-      text = `<a href="${escapeHtml(segment.href)}">${text}</a>`;
+      const fixedHref = notionLinks.fixHref(segment.href, '');
+      // null means non-permit page — keep text, strip link
+      if (fixedHref !== null) {
+        text = `<a href="${escapeHtml(fixedHref)}">${text}</a>`;
+      }
     }
 
     return text;
@@ -479,6 +487,7 @@ function getEmojiForPermit(tipo) {
  * Fetch and transform permit data from Notion
  * Exports async function that 11ty will call during build
  */
+
 module.exports = async function() {
   // Use cached data if available (skip Notion API calls entirely)
   if (!process.env.NOTION_FETCH) {
@@ -487,10 +496,11 @@ module.exports = async function() {
         require('path').join(__dirname, '..', '_cache', 'permits-it.json'), 'utf-8'
       ));
       console.log(`[permits.js] Using cached data (${cached.length} permits)`);
-      return cached.map(p => ({
+      const mapped = cached.map(p => ({
         ...p,
         rinnovoDocuments: (p.rinnovoDocuments || []).filter(d => d.toLowerCase() !== 'n/a'),
       }));
+      return notionLinks.fixLinksInPermits(mapped, '');
     } catch { /* no cache, fall through to Notion fetch */ }
   }
 
@@ -533,6 +543,9 @@ module.exports = async function() {
     });
 
     console.log(`[permits.js] Filtered to ${filteredPermits.length} permits (removed ${permits.length - filteredPermits.length} duplicates)`);
+
+    // Build Notion ID → slug map before parsing content (for fixing internal links)
+    notionLinks.buildMap(filteredPermits);
 
     // Load cache index for change detection
     const pagesIndex = await cache.loadPagesIndex();

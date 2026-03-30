@@ -27,7 +27,7 @@ export default function(eleventyConfig) {
   try {
     const files = fs.readdirSync(pagesDir);
     const docFiles = files.filter(f =>
-      f.startsWith('documenti-') && f.endsWith('.html')
+      f.startsWith('documenti-') && f.endsWith('.html') && f !== 'documenti-questura.html'
     );
     for (const file of docFiles) {
       eleventyConfig.ignores.add(`src/pages/${file}`);

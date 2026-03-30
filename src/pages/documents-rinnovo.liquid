@@ -1,0 +1,277 @@
+---
+pagination:
+  data: permits
+  size: 1
+  alias: permit
+permalink: "documenti-{{ permit.slug }}-rinnovo.html"
+layout: layouts/base.liquid
+lang: it
+eleventyComputed:
+  title: "Documenti rinnovo — {{ permit.tipo }}"
+  description: "Documenti necessari per il rinnovo del permesso per {{ permit.tipo }}"
+eleventyExcludeFromCollections: true
+---
+
+{% if permit.rinnovoDocuments.size > 0 %}
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a> →
+          <a href="documenti-questura.html">Documenti</a> →
+          <span>{{ permit.tipo }} — Rinnovo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white" style="padding: 1.5rem 0;">
+    <div class="container">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+        <span style="font-size: 2.5rem;">{{ permit.emoji }}</span>
+        <div style="text-align: center;">
+          <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800; margin-bottom: 0.25rem;">Rinnovo</h1>
+          <p style="color: var(--gray-medium); margin: 0; font-size: 0.95rem;">Permesso per {{ permit.tipo }}</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 0.75rem;">
+        <a href="permesso-{{ permit.slug }}.html" style="color: var(--accent-blue); font-size: 0.9rem;">← Vedi tutte le info su questo permesso</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENT SECTION -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+
+      <!-- SUBMISSION METHOD CALLOUT -->
+      {%- assign rinnovoMethodLower = permit.rinnovoMethod | downcase -%}
+      {%- if rinnovoMethodLower contains 'kit' -%}
+        {%- assign rinnovoCalloutClass = 'callout-kit' -%}
+        {%- assign rinnovoCalloutIcon = '📮' -%}
+        {%- assign rinnovoCalloutText = 'Invia tramite KIT alle Poste (non devi andare in Questura)' -%}
+      {%- else -%}
+        {%- assign rinnovoCalloutClass = 'callout-questura' -%}
+        {%- assign rinnovoCalloutIcon = '🏛️' -%}
+        {%- assign rinnovoCalloutText = 'Porta i documenti in Questura (non puoi usare il KIT postale)' -%}
+      {%- endif -%}
+      <div class="submission-callout {{ rinnovoCalloutClass }}" style="margin-bottom: 1rem;">
+        <span class="callout-icon">{{ rinnovoCalloutIcon }}</span>
+        <div class="callout-text">{{ rinnovoCalloutText }}</div>
+      </div>
+
+      {%- if permit.slug contains 'attesa-occupazione' -%}
+      <!-- DISPUTED RENEWAL WARNING -->
+      <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px; margin-bottom: 1rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Attenzione:</strong> Il rinnovo del permesso per attesa occupazione è controverso. Alcune Questure lo negano. Ti consigliamo di rivolgerti a un avvocato o sportello legale prima di procedere.
+          <br><br>
+          <a href="aiuto-legale.html" style="color: #E53935; font-weight: 600;">→ Trova aiuto legale nella tua zona</a>
+        </div>
+      </div>
+      {%- endif -%}
+
+      <!-- RICORDA ALERT -->
+      <div class="alert alert-info" style="margin-bottom: 1rem;">
+        <span class="alert-icon">📅</span>
+        <div>
+          <strong>Ricorda:</strong> La richiesta di rinnovo va presentata preferibilmente <strong>prima della scadenza</strong> o comunque <strong>entro 60 giorni</strong> dalla scadenza.
+        </div>
+      </div>
+
+      <!-- CHECKLIST -->
+      <div class="card">
+        <h3>📋 Documenti necessari</h3>
+        <p class="checklist-intro">Spunta i documenti che hai già preparato. I tuoi progressi vengono salvati automaticamente.</p>
+
+        {%- assign commonDocName = "Copia permesso precedente (o denuncia smarrimento)" -%}
+        {%- assign commonDocNormalized = commonDocName | normalizeDocumentName -%}
+        {%- assign commonDocClass = commonDocNormalized | getDocumentClass -%}
+        {%- assign commonDocLabel = commonDocNormalized | linkToDizionario: lang -%}
+
+        <div class="doc-checklist" data-permit="{{ permit.slug }}-rinnovo">
+          <!-- Common document always first -->
+          <div class="{{ commonDocClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ permit.slug }}-rinnovo-0"
+                   data-doc="{{ commonDocNormalized | escapeHtml }}">
+            <span class="doc-label">{{ commonDocLabel }}</span>
+          </div>
+
+          {%- for docItem in permit.rinnovoDocuments -%}
+            {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
+            {%- assign lowerDoc = normalizedDoc | downcase -%}
+            {%- unless lowerDoc contains "copia permesso precedente" -%}
+              {%- assign docClass = normalizedDoc | getDocumentClass -%}
+              {%- assign docLabel = normalizedDoc | linkToDizionario: lang -%}
+              {%- assign disputed = normalizedDoc | isDisputed -%}
+              {%- assign idx = forloop.index -%}
+          <div class="{{ docClass }}">
+            <input type="checkbox"
+                   class="doc-checkbox"
+                   id="doc-{{ permit.slug }}-rinnovo-{{ idx }}"
+                   data-doc="{{ normalizedDoc | escapeHtml }}">
+            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>{% endif %}</span>
+          </div>
+            {%- endunless -%}
+          {%- endfor -%}
+        </div>
+
+        {%- assign rinnovoTotalDocs = permit.rinnovoDocuments.size | plus: 1 -%}
+        <div class="checklist-progress">
+          <span class="progress-text">Completati: <span id="rinnovo-progress-count">0</span>/{{ rinnovoTotalDocs }}</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="rinnovo-progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" style="margin-top: 1rem;">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. <a href="permesso-{{ permit.slug }}.html#prassi-locali">Vedi le prassi locali →</a>
+        </div>
+      </div>
+
+      {%- if permit.primoDocuments.size == 0 -%}
+        {%- assign rinnovoNotesSections = permit.docNotes | parseDocNotes -%}
+        {%- if rinnovoNotesSections.size > 0 -%}
+        <div style="margin-top: 1.5rem;">
+          <h3 style="text-align: center; margin-bottom: 1rem;">📝 Informazioni aggiuntive sui documenti</h3>
+          {%- for section in rinnovoNotesSections -%}
+          <div class="card" style="margin-bottom: 1rem;">
+            <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
+            {{ section.content }}
+          </div>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if permit.costBollettinoRinnovo or permit.costMarcaBolloRinnovo -%}
+      <div style="margin-top: 1.5rem;">
+        <h3 style="text-align: center; margin-bottom: 1rem;">💰 Quanto costa il rinnovo?</h3>
+        <div class="card">
+          <ul class="costi-list">
+            {%- if permit.costBollettinoRinnovo -%}
+            <li class="costi-item">
+              <span class="costi-label">Bollettino postale <span class="costi-note">da pagare alle Poste</span></span>
+              <span class="costi-amount">€ {{ permit.costBollettinoRinnovo }}{% if permit.costBollettinoAltRinnovo %} o € {{ permit.costBollettinoAltRinnovo }}{% endif %}</span>
+            </li>
+            {%- if permit.costBollettinoAltRinnovo -%}
+            <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">Dipende dalla durata del permesso</li>
+            {%- endif -%}
+            {%- endif -%}
+            {%- if permit.costMarcaBolloRinnovo -%}
+            <li class="costi-item">
+              <span class="costi-label">Marca da bollo <span class="costi-note">da comprare in tabaccheria</span></span>
+              <span class="costi-amount">€ {{ permit.costMarcaBolloRinnovo }}</span>
+            </li>
+            {%- endif -%}
+            {%- if rinnovoMethodLower contains 'kit' -%}
+            <li class="costi-item">
+              <span class="costi-label">Kit postale <span class="costi-note">da comprare alle Poste</span></span>
+              <span class="costi-amount">€ 30,00</span>
+            </li>
+            {%- endif -%}
+          </ul>
+          <div class="costi-total">
+            <span class="costi-total-label">Totale</span>
+            <span class="costi-total-amount">€
+              {%- assign rinnovoTotal = 0 -%}
+              {%- if permit.costBollettinoRinnovo -%}{%- assign rinnovoTotal = rinnovoTotal | plus: permit.costBollettinoRinnovo -%}{%- endif -%}
+              {%- if permit.costMarcaBolloRinnovo -%}{%- assign rinnovoTotal = rinnovoTotal | plus: permit.costMarcaBolloRinnovo -%}{%- endif -%}
+              {%- if rinnovoMethodLower contains 'kit' -%}{%- assign rinnovoTotal = rinnovoTotal | plus: 30 -%}{%- endif -%}
+              {{ rinnovoTotal }}{%- if permit.costBollettinoAltRinnovo -%}{%- assign rinnovoTotalMax = 0 -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costBollettinoAltRinnovo -%}{%- if permit.costMarcaBolloRinnovo -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costMarcaBolloRinnovo -%}{%- endif -%}{%- if rinnovoMethodLower contains 'kit' -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: 30 -%}{%- endif -%} – {{ rinnovoTotalMax }}{%- endif -%}
+            </span>
+          </div>
+        </div>
+      </div>
+      {%- endif -%}
+
+    </div>
+  </section>
+
+  <!-- Checklist persistence -->
+  <script>
+    (function() {
+      var checkboxes = document.querySelectorAll('[data-permit="{{ permit.slug }}-rinnovo"] .doc-checkbox');
+      if (!checkboxes.length) return;
+      var progressCount = document.getElementById('rinnovo-progress-count');
+      var progressFill = document.getElementById('rinnovo-progress-fill');
+      var key = 'checklist-{{ permit.slug }}-rinnovo';
+
+      function updateProgress() {
+        var total = checkboxes.length;
+        var checked = Array.from(checkboxes).filter(function(cb) { return cb.checked; }).length;
+        if (progressCount) progressCount.textContent = checked;
+        if (progressFill) progressFill.style.width = (total > 0 ? (checked / total) * 100 : 0) + '%';
+      }
+
+      function loadState() {
+        var saved = localStorage.getItem(key);
+        if (saved) {
+          try {
+            JSON.parse(saved).forEach(function(item) {
+              var checkbox = document.getElementById(item.id);
+              if (checkbox) checkbox.checked = item.checked;
+            });
+          } catch (e) {}
+        }
+        updateProgress();
+      }
+
+      function saveState() {
+        var state = Array.from(checkboxes).map(function(cb) {
+          return { id: cb.id, checked: cb.checked };
+        });
+        localStorage.setItem(key, JSON.stringify(state));
+        updateProgress();
+      }
+
+      checkboxes.forEach(function(cb) { cb.addEventListener('change', saveState); });
+      loadState();
+    })();
+  </script>
+
+  <!-- RELATED -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
+      <div class="grid grid-3">
+        <a href="permesso-{{ permit.slug }}.html" class="card card-link card-compact">
+          <span class="card-icon">📄</span>
+          <h3 class="card-title">Info su questo permesso</h3>
+        </a>
+        {% if permit.primoDocuments.size > 0 %}
+        <a href="documenti-{{ permit.slug }}-primo.html" class="card card-link card-compact">
+          <span class="card-icon">📋</span>
+          <h3 class="card-title">Documenti primo rilascio</h3>
+        </a>
+        {% endif %}
+        <a href="documenti-questura.html" class="card card-link card-compact">
+          <span class="card-icon">📋</span>
+          <h3 class="card-title">Tutti i documenti</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGNALA ERRORE -->
+  <div class="report-bar">
+    <a href="https://form.typeform.com/to/FsqvzdXI" target="_blank" rel="noopener" class="report-btn">
+      <span>🚩</span> Segnala un errore in questa pagina
+    </a>
+  </div>
+
+{% else %}
+
+  <!-- No rinnovo documents for this permit — output empty page that 11ty can skip -->
+  <div style="display:none;">No rinnovo documents available for {{ permit.tipo }}</div>
+
+{% endif %}

@@ -1,0 +1,254 @@
+---
+layout: layouts/base.liquid
+title: "Che documenti porto? — Documenti per la Questura"
+lang: it
+description: "Lista completa dei documenti necessari per ogni permesso di soggiorno: primo rilascio e rinnovo"
+extraStyles: |
+  <style>
+    .docq-category {
+      margin-bottom: 2rem;
+    }
+    .docq-category-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+    }
+    .docq-cat-studio { background: linear-gradient(135deg, #E8D5F5 0%, #F3E8FF 100%); color: #4A148C; }
+    .docq-cat-protezione { background: linear-gradient(135deg, #FFE0CC 0%, #FFECD6 100%); color: #BF360C; }
+    .docq-cat-cure { background: linear-gradient(135deg, #D0ECE7 0%, #E0F7FA 100%); color: #004D40; }
+    .docq-cat-famiglia { background: linear-gradient(135deg, #D5F0E8 0%, #E0F2F1 100%); color: #00695C; }
+
+    .docq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .docq-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid #f0f0f0;
+      flex-wrap: wrap;
+    }
+    .docq-item:last-child {
+      border-bottom: none;
+    }
+    .docq-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .docq-name {
+      flex: 1;
+      min-width: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #1A1A1A;
+    }
+    .docq-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .docq-name a:hover {
+      text-decoration: underline;
+    }
+    .docq-buttons {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .docq-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+    .docq-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    .docq-btn-primo {
+      background: #E3F2FD;
+      color: #1565C0;
+    }
+    .docq-btn-rinnovo {
+      background: #FFF3E0;
+      color: #E65100;
+    }
+    .docq-badge-wip {
+      font-size: 0.75rem;
+      color: var(--gray-medium);
+    }
+    .docq-badge-na {
+      font-size: 0.72rem;
+      color: #999;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .docq-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.35rem;
+      }
+      .docq-buttons {
+        padding-left: 1.6rem;
+      }
+    }
+  </style>
+---
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a> →
+          <span>Documenti per la Questura</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-off-white" style="padding: 1.5rem 0;">
+    <div class="container">
+      <div style="text-align: center;">
+        <span style="font-size: 2.5rem;">📋</span>
+        <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800;">Che documenti porto?</h1>
+        <p style="color: var(--gray-medium); margin: 0.5rem auto 0; max-width: 500px; font-size: 0.95rem;">
+          Trova la lista dei documenti necessari per il tuo permesso di soggiorno — primo rilascio o rinnovo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERMIT LIST BY CATEGORY -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+
+      <!-- STUDIO/LAVORO -->
+      <div class="docq-category">
+        <h2 class="docq-category-title docq-cat-studio">📋 STUDIO / LAVORO</h2>
+        <ul class="docq-list">
+          {% assign studioPermits = permits | where: "categoria", "Studio/Lavoro" %}
+          {% for p in studioPermits %}
+          <li class="docq-item">
+            <span class="docq-icon">{{ p.emoji }}</span>
+            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
+            <div class="docq-buttons">
+              {% if p.isPlaceholder == true %}
+                <span class="docq-badge-wip">🚧 In costruzione</span>
+              {% else %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+      <!-- PROTEZIONE -->
+      <div class="docq-category">
+        <h2 class="docq-category-title docq-cat-protezione">🛡️ PROTEZIONE</h2>
+        <ul class="docq-list">
+          {% assign protezPermits = permits | where: "categoria", "Protezione" %}
+          {% for p in protezPermits %}
+          <li class="docq-item">
+            <span class="docq-icon">{{ p.emoji }}</span>
+            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
+            <div class="docq-buttons">
+              {% if p.isPlaceholder == true %}
+                <span class="docq-badge-wip">🚧 In costruzione</span>
+              {% else %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+      <!-- CURE MEDICHE -->
+      <div class="docq-category">
+        <h2 class="docq-category-title docq-cat-cure">🏥 CURE MEDICHE</h2>
+        <ul class="docq-list">
+          {% assign curePermits = permits | where: "categoria", "Cure Mediche" %}
+          {% for p in curePermits %}
+          <li class="docq-item">
+            <span class="docq-icon">{{ p.emoji }}</span>
+            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
+            <div class="docq-buttons">
+              {% if p.isPlaceholder == true %}
+                <span class="docq-badge-wip">🚧 In costruzione</span>
+              {% else %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
+
+      <!-- MOTIVI FAMILIARI -->
+      <div class="docq-category">
+        <h2 class="docq-category-title docq-cat-famiglia">👨‍👩‍👧‍👦 MOTIVI FAMILIARI</h2>
+        <ul class="docq-list">
+          {% assign famigliaPermits = permits | where: "categoria", "Motivi Familiari" %}
+          {% for p in famigliaPermits %}
+          <li class="docq-item">
+            <span class="docq-icon">{{ p.emoji }}</span>
+            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
+            <div class="docq-buttons">
+              {% if p.isPlaceholder == true %}
+                <span class="docq-badge-wip">🚧 In costruzione</span>
+              {% else %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
+      <div class="grid grid-3">
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">Tutti i permessi</h3>
+        </a>
+        <a href="dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">📖</span>
+          <h3 class="card-title">Dizionario</h3>
+        </a>
+        <a href="https://form.typeform.com/to/kt7P9Ejk" class="card card-link card-compact" target="_blank" rel="noopener">
+          <span class="card-icon">🧪</span>
+          <h3 class="card-title">Posso avere un permesso?</h3>
+        </a>
+      </div>
+    </div>
+  </section>
