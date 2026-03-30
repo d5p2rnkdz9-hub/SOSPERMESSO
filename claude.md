@@ -1,5 +1,9 @@
 # SOS Permesso - Project Documentation
 
+## CRITICAL RULES
+
+**NEVER push to the remote repository unless the user explicitly says "push" or "push it".** Committing locally is fine when asked, but `git push` requires explicit authorization every single time. No exceptions.
+
 ## Project Overview
 
 **SOS Permesso** is a comprehensive, multilingual website providing information about residence permits (permessi di soggiorno) in Italy. The website aims to make complex bureaucratic information accessible, easy to understand, and available in multiple languages.

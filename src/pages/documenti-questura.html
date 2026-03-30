@@ -5,102 +5,133 @@ lang: it
 description: "Lista completa dei documenti necessari per ogni permesso di soggiorno: primo rilascio e rinnovo"
 extraStyles: |
   <style>
-    .docq-category {
+    /* ── PAGE HEADER ── */
+    .docq-page-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
       margin-bottom: 2rem;
     }
+    .docq-page-header .page-icon { font-size: 2.2rem; }
+    .docq-page-header .page-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    /* ── MAIN CONTAINER (brutalist) ── */
+    .docq-container {
+      background: white;
+      border: 2.5px solid #1A1A1A;
+      border-radius: 16px;
+      padding: 0;
+      box-shadow: 4px 4px 0 #1A1A1A;
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    /* ── CATEGORY HEADERS ── */
     .docq-category-title {
       font-family: 'Poppins', sans-serif;
-      font-weight: 800;
-      font-size: 1.1rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
       padding: 0.6rem 1rem;
-      border-radius: 8px;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0;
+      color: #1A1A1A;
+      border-bottom: 2px solid #eee;
+      background: #fafafa;
     }
-    .docq-cat-studio { background: linear-gradient(135deg, #E8D5F5 0%, #F3E8FF 100%); color: #4A148C; }
-    .docq-cat-protezione { background: linear-gradient(135deg, #FFE0CC 0%, #FFECD6 100%); color: #BF360C; }
-    .docq-cat-cure { background: linear-gradient(135deg, #D0ECE7 0%, #E0F7FA 100%); color: #004D40; }
-    .docq-cat-famiglia { background: linear-gradient(135deg, #D5F0E8 0%, #E0F2F1 100%); color: #00695C; }
 
+    /* ── PERMIT LIST ── */
     .docq-list {
       list-style: none;
       padding: 0;
       margin: 0;
     }
-    .docq-item {
+
+    .docq-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0 0.5rem;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #f5f5f5;
+      transition: background 0.12s;
+    }
+    .docq-row:hover {
+      background: rgba(255, 215, 0, 0.05);
+    }
+
+    .docq-main {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.6rem 0.75rem;
-      border-bottom: 1px solid #f0f0f0;
-      flex-wrap: wrap;
-    }
-    .docq-item:last-child {
-      border-bottom: none;
-    }
-    .docq-icon {
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-    .docq-name {
-      flex: 1;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: inherit;
       min-width: 0;
-      font-size: 0.9rem;
+    }
+    .docq-main .icon { font-size: 1.1rem; flex-shrink: 0; }
+    .docq-main .title {
+      font-family: 'Inter', -apple-system, sans-serif;
       font-weight: 500;
+      font-size: 0.85rem;
       color: #1A1A1A;
     }
-    .docq-name a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .docq-name a:hover {
-      text-decoration: underline;
-    }
-    .docq-buttons {
+
+    /* ── BUTTONS (brutalist) ── */
+    .docq-actions {
       display: flex;
-      gap: 6px;
+      gap: 4px;
       flex-shrink: 0;
     }
+
     .docq-btn {
       display: inline-flex;
       align-items: center;
-      padding: 0.3rem 0.7rem;
-      font-size: 0.78rem;
-      font-weight: 600;
+      justify-content: center;
+      padding: 0.22rem 0.55rem;
       border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 700;
       text-decoration: none;
+      transition: all 0.12s ease;
+      border: 1.5px solid #1A1A1A;
+      box-shadow: 1.5px 1.5px 0 #1A1A1A;
       white-space: nowrap;
-      transition: transform 0.1s, box-shadow 0.1s;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      background: white;
+      color: #1A1A1A;
     }
     .docq-btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      transform: translate(1px, 1px);
+      box-shadow: 0.5px 0.5px 0 #1A1A1A;
+      background: #FFD700;
     }
-    .docq-btn-primo {
-      background: #E3F2FD;
-      color: #1565C0;
-    }
-    .docq-btn-rinnovo {
-      background: #FFF3E0;
-      color: #E65100;
-    }
+
     .docq-badge-wip {
-      font-size: 0.75rem;
-      color: var(--gray-medium);
-    }
-    .docq-badge-na {
-      font-size: 0.72rem;
-      color: #999;
-      font-style: italic;
+      font-size: 0.62rem;
+      color: #bbb;
+      text-align: center;
+      padding: 0.2rem;
     }
 
     @media (max-width: 600px) {
-      .docq-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.35rem;
+      .docq-row {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
       }
-      .docq-buttons {
-        padding-left: 1.6rem;
+      .docq-actions {
+        padding-left: 1.7rem;
+      }
+      .docq-page-header .page-title {
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -112,123 +143,111 @@ extraStyles: |
       <div class="breadcrumb-content">
         <div class="breadcrumb-nav">
           <a href="index.html">Home</a> →
-          <span>Documenti per la Questura</span>
+          <span>Che documenti porto?</span>
         </div>
       </div>
     </div>
   </div>
 
   <!-- PAGE HEADER -->
-  <section class="section bg-off-white" style="padding: 1.5rem 0;">
+  <section class="section bg-off-white">
     <div class="container">
-      <div style="text-align: center;">
-        <span style="font-size: 2.5rem;">📋</span>
-        <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800;">Che documenti porto?</h1>
-        <p style="color: var(--gray-medium); margin: 0.5rem auto 0; max-width: 500px; font-size: 0.95rem;">
-          Trova la lista dei documenti necessari per il tuo permesso di soggiorno — primo rilascio o rinnovo.
-        </p>
+      <div class="docq-page-header">
+        <span class="page-icon">📋</span>
+        <h1 class="page-title">Che documenti porto?</h1>
       </div>
-    </div>
-  </section>
 
-  <!-- PERMIT LIST BY CATEGORY -->
-  <section class="section">
-    <div class="container" style="max-width: 900px;">
+      <div class="docq-container">
 
-      <!-- STUDIO/LAVORO -->
-      <div class="docq-category">
-        <h2 class="docq-category-title docq-cat-studio">📋 STUDIO / LAVORO</h2>
+        <!-- STUDIO/LAVORO -->
+        <h2 class="docq-category-title">STUDIO / LAVORO</h2>
         <ul class="docq-list">
           {% assign studioPermits = permits | where: "categoria", "Studio/Lavoro" %}
           {% for p in studioPermits %}
-          <li class="docq-item">
-            <span class="docq-icon">{{ p.emoji }}</span>
-            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
-            <div class="docq-buttons">
+          <li><div class="docq-row">
+            <a href="permesso-{{ p.slug }}.html" class="docq-main">
+              <span class="icon">{{ p.emoji }}</span>
+              <span class="title">{{ p.tipo }}</span>
+            </a>
+            <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">🚧</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
               {% endif %}
             </div>
-          </li>
+          </div></li>
           {% endfor %}
         </ul>
-      </div>
 
-      <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
-
-      <!-- PROTEZIONE -->
-      <div class="docq-category">
-        <h2 class="docq-category-title docq-cat-protezione">🛡️ PROTEZIONE</h2>
+        <!-- PROTEZIONE -->
+        <h2 class="docq-category-title">PROTEZIONE</h2>
         <ul class="docq-list">
           {% assign protezPermits = permits | where: "categoria", "Protezione" %}
           {% for p in protezPermits %}
-          <li class="docq-item">
-            <span class="docq-icon">{{ p.emoji }}</span>
-            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
-            <div class="docq-buttons">
+          <li><div class="docq-row">
+            <a href="permesso-{{ p.slug }}.html" class="docq-main">
+              <span class="icon">{{ p.emoji }}</span>
+              <span class="title">{{ p.tipo }}</span>
+            </a>
+            <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">🚧</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
               {% endif %}
             </div>
-          </li>
+          </div></li>
           {% endfor %}
         </ul>
-      </div>
 
-      <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
-
-      <!-- CURE MEDICHE -->
-      <div class="docq-category">
-        <h2 class="docq-category-title docq-cat-cure">🏥 CURE MEDICHE</h2>
+        <!-- CURE MEDICHE -->
+        <h2 class="docq-category-title">CURE MEDICHE</h2>
         <ul class="docq-list">
           {% assign curePermits = permits | where: "categoria", "Cure Mediche" %}
           {% for p in curePermits %}
-          <li class="docq-item">
-            <span class="docq-icon">{{ p.emoji }}</span>
-            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
-            <div class="docq-buttons">
+          <li><div class="docq-row">
+            <a href="permesso-{{ p.slug }}.html" class="docq-main">
+              <span class="icon">{{ p.emoji }}</span>
+              <span class="title">{{ p.tipo }}</span>
+            </a>
+            <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">🚧</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
               {% endif %}
             </div>
-          </li>
+          </div></li>
           {% endfor %}
         </ul>
-      </div>
 
-      <hr style="border: none; border-top: 1px solid #eee; margin: 1.5rem 0;">
-
-      <!-- MOTIVI FAMILIARI -->
-      <div class="docq-category">
-        <h2 class="docq-category-title docq-cat-famiglia">👨‍👩‍👧‍👦 MOTIVI FAMILIARI</h2>
+        <!-- MOTIVI FAMILIARI -->
+        <h2 class="docq-category-title">MOTIVI FAMILIARI</h2>
         <ul class="docq-list">
           {% assign famigliaPermits = permits | where: "categoria", "Motivi Familiari" %}
           {% for p in famigliaPermits %}
-          <li class="docq-item">
-            <span class="docq-icon">{{ p.emoji }}</span>
-            <span class="docq-name"><a href="permesso-{{ p.slug }}.html">{{ p.tipo }}</a></span>
-            <div class="docq-buttons">
+          <li><div class="docq-row">
+            <a href="permesso-{{ p.slug }}.html" class="docq-main">
+              <span class="icon">{{ p.emoji }}</span>
+              <span class="title">{{ p.tipo }}</span>
+            </a>
+            <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">🚧</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn docq-btn-primo">📋 Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn docq-btn-rinnovo">🔄 Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
               {% endif %}
             </div>
-          </li>
+          </div></li>
           {% endfor %}
         </ul>
-      </div>
 
+      </div>
     </div>
   </section>
 

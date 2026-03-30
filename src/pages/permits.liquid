@@ -12,33 +12,15 @@ eleventyComputed:
 eleventyExcludeFromCollections: true
 ---
 
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb-bar">
+  <!-- STICKY HEADER: title + tab badges -->
+  <div class="permit-sticky-header" id="permit-tab-bar">
     <div class="container">
-      <div class="breadcrumb-content">
-        <div class="breadcrumb-nav">
-          <a href="index.html">Home</a> →
-          <a href="database.html">Database</a> →
-          <span>Permesso per {{ permit.tipo }}</span>
-        </div>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 0 0.25rem;">
+        <span style="font-size: 1.4rem; line-height: 1;">{{ permit.emoji }}</span>
+        <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.4rem; margin: 0; line-height: 1.2;">Permesso per {{ permit.tipo }}</h1>
       </div>
-    </div>
-  </div>
-
-  <!-- PAGE HEADER -->
-  <section class="section bg-off-white" style="padding: 1.5rem 0;">
-    <div class="container">
-      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
-        <span style="font-size: 2.5rem;">{{ permit.emoji }}</span>
-        <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800;">Permesso per {{ permit.tipo }}</h1>
-      </div>
-    </div>
-  </section>
-
-  {% unless permit.isPlaceholder == true %}
-  <div class="permit-tab-bar" id="permit-tab-bar">
-    <div class="container">
-      <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
+      {% unless permit.isPlaceholder == true %}
+      <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; padding: 0.5rem 0 0.75rem;">
         <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">Info</a>
         {% if permit.primoDocuments.size > 0 %}
         <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">Primo rilascio</a>
@@ -48,19 +30,18 @@ eleventyExcludeFromCollections: true
         {% endif %}
         <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 Prassi locali</a>
       </div>
+      {% endunless %}
     </div>
   </div>
+
+  {% unless permit.isPlaceholder == true %}
   <script>
   function scrollToSection(id) {
     var el = document.getElementById(id);
     if (!el) return true;
-    var header = document.querySelector('header') || document.querySelector('.site-header');
-    var breadcrumb = document.querySelector('.breadcrumb-bar');
-    var tabBar = document.getElementById('permit-tab-bar');
-    var offset = 20; // extra breathing room
-    if (header) offset += header.getBoundingClientRect().height;
-    if (breadcrumb) offset += breadcrumb.getBoundingClientRect().height;
-    if (tabBar) offset += tabBar.getBoundingClientRect().height;
+    var stickyHeader = document.getElementById('permit-tab-bar');
+    var offset = 20;
+    if (stickyHeader) offset += stickyHeader.getBoundingClientRect().height;
     var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
     window.scrollTo({ top: top, behavior: 'smooth' });
     // Set active badge
@@ -81,11 +62,9 @@ eleventyExcludeFromCollections: true
     var ticking = false;
 
     function getOffset() {
-      var header = document.querySelector('header') || document.querySelector('.site-header');
-      var tabBar = document.getElementById('permit-tab-bar');
+      var stickyHeader = document.getElementById('permit-tab-bar');
       var off = 40;
-      if (header) off += header.getBoundingClientRect().height;
-      if (tabBar) off += tabBar.getBoundingClientRect().height;
+      if (stickyHeader) off += stickyHeader.getBoundingClientRect().height;
       return off;
     }
 
