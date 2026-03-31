@@ -15,9 +15,9 @@ eleventyExcludeFromCollections: true
   <!-- STICKY HEADER: title + tab badges -->
   <div class="permit-sticky-header" id="permit-tab-bar">
     <div class="container">
-      <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 0 0.25rem;">
-        <span style="font-size: 1.4rem; line-height: 1;">{{ permit.emoji }}</span>
-        <h1 class="page-title" style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.4rem; margin: 0; line-height: 1.2;">Permit for {{ permit.tipo }}</h1>
+      <div class="permit-title-row">
+        <span class="permit-title-emoji">{{ permit.emoji }}</span>
+        <h1 class="permit-title-text">Permit for {{ permit.tipo }}</h1>
       </div>
       {% unless permit.isPlaceholder == true %}
       <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; padding: 0.5rem 0 0.75rem;">
