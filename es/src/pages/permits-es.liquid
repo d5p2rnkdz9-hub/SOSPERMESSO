@@ -245,7 +245,7 @@ eleventyExcludeFromCollections: true
               {%- if permit.costBollettinoPrimo -%}{%- assign primoTotal = primoTotal | plus: permit.costBollettinoPrimo -%}{%- endif -%}
               {%- if permit.costMarcaBolloPrimo -%}{%- assign primoTotal = primoTotal | plus: permit.costMarcaBolloPrimo -%}{%- endif -%}
               {%- if primoMethodLower contains 'kit' -%}{%- assign primoTotal = primoTotal | plus: 30 -%}{%- endif -%}
-              {{ primoTotal }}{%- if permit.costBollettinoAltPrimo -%}{%- assign primoTotalMax = 0 -%}{%- assign primoTotalMax = primoTotalMax | plus: permit.costBollettinoAltPrimo -%}{%- if permit.costMarcaBolloPrimo -%}{%- assign primoTotalMax = primoTotalMax | plus: permit.costMarcaBolloPrimo -%}{%- endif -%}{%- if primoMethodLower contains 'kit' -%}{%- assign primoTotalMax = primoTotalMax | plus: 30 -%}{%- endif -%} – {{ primoTotalMax }}{%- endif -%}
+              {{ primoTotal | round: 2 }}{%- if permit.costBollettinoAltPrimo -%}{%- assign primoTotalMax = 0 -%}{%- assign primoTotalMax = primoTotalMax | plus: permit.costBollettinoAltPrimo -%}{%- if permit.costMarcaBolloPrimo -%}{%- assign primoTotalMax = primoTotalMax | plus: permit.costMarcaBolloPrimo -%}{%- endif -%}{%- if primoMethodLower contains 'kit' -%}{%- assign primoTotalMax = primoTotalMax | plus: 30 -%}{%- endif -%} – {{ primoTotalMax | round: 2 }}{%- endif -%}
             </span>
           </div>
         </div>
@@ -401,7 +401,7 @@ eleventyExcludeFromCollections: true
               {%- if permit.costBollettinoRinnovo -%}{%- assign rinnovoTotal = rinnovoTotal | plus: permit.costBollettinoRinnovo -%}{%- endif -%}
               {%- if permit.costMarcaBolloRinnovo -%}{%- assign rinnovoTotal = rinnovoTotal | plus: permit.costMarcaBolloRinnovo -%}{%- endif -%}
               {%- if rinnovoMethodLower contains 'kit' -%}{%- assign rinnovoTotal = rinnovoTotal | plus: 30 -%}{%- endif -%}
-              {{ rinnovoTotal }}{%- if permit.costBollettinoAltRinnovo -%}{%- assign rinnovoTotalMax = 0 -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costBollettinoAltRinnovo -%}{%- if permit.costMarcaBolloRinnovo -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costMarcaBolloRinnovo -%}{%- endif -%}{%- if rinnovoMethodLower contains 'kit' -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: 30 -%}{%- endif -%} – {{ rinnovoTotalMax }}{%- endif -%}
+              {{ rinnovoTotal | round: 2 }}{%- if permit.costBollettinoAltRinnovo -%}{%- assign rinnovoTotalMax = 0 -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costBollettinoAltRinnovo -%}{%- if permit.costMarcaBolloRinnovo -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: permit.costMarcaBolloRinnovo -%}{%- endif -%}{%- if rinnovoMethodLower contains 'kit' -%}{%- assign rinnovoTotalMax = rinnovoTotalMax | plus: 30 -%}{%- endif -%} – {{ rinnovoTotalMax | round: 2 }}{%- endif -%}
             </span>
           </div>
         </div>

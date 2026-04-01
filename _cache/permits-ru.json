@@ -717,7 +717,7 @@
     "id": "3217355e-7f7f-818d-904c-c3f0d8d3da13",
     "slug": "famit-per-familiari-di-cittadini-italiani-statici",
     "tipo": "FAMIT для родственников «статичных» граждан Италии",
-    "emoji": "📋",
+    "emoji": "👨‍👩‍👧‍👦",
     "sections": [
       {
         "question": "Что это за разрешение?",
@@ -939,7 +939,7 @@
     "id": "3217355e-7f7f-81ab-bb96-d289bd3cc8b4",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
     "tipo": "Вид на жительство для родственников «динамичных» итальянцев",
-    "emoji": "📋",
+    "emoji": "🇮🇹",
     "sections": [
       {
         "question": "Che cos'è questa вид на жительство (carta di soggiorno)?",
@@ -1320,7 +1320,7 @@
     "id": "3217355e-7f7f-8160-bdac-ed3c4c3786a1",
     "slug": "apolidia",
     "tipo": "Безгражданство",
-    "emoji": "📋",
+    "emoji": "🌐",
     "sections": [
       {
         "question": "Che cos'è questo разрешение (permesso)?",
@@ -1387,7 +1387,7 @@
     "id": "3217355e-7f7f-81be-afaf-d9336dc072e6",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
     "tipo": "Вид на жительство для родственников граждан ЕС",
-    "emoji": "📋",
+    "emoji": "🇪🇺",
     "sections": [
       {
         "question": "Che cos'è questa вид на жительство (carta di soggiorno)?",
@@ -1654,7 +1654,7 @@
     "id": "3217355e-7f7f-81a5-ae42-e02a007b6023",
     "slug": "motivi-religiosi",
     "tipo": "Религиозные мотивы",
-    "emoji": "⛪",
+    "emoji": "🙏",
     "sections": [
       {
         "question": "Che cos'è questo разрешение (permesso)?",
@@ -1762,7 +1762,7 @@
     "id": "3217355e-7f7f-8115-9afc-c4398bea4306",
     "slug": "lavoro-artistico",
     "tipo": "Художественная деятельность",
-    "emoji": "🎭",
+    "emoji": "🎨",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [],
@@ -2061,7 +2061,7 @@
     "id": "3217355e-7f7f-810e-9dd1-e09bb3a4e1c3",
     "slug": "residenza-elettiva",
     "tipo": "Выборное место жительства",
-    "emoji": "📋",
+    "emoji": "🏡",
     "sections": [
       {
         "question": "Che cos'è questo разрешение (permesso)?",
@@ -2225,7 +2225,7 @@
     "id": "3217355e-7f7f-8168-952e-d7b7d73f8dcf",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "Опека родственниками до четвёртой степени родства",
-    "emoji": "📋",
+    "emoji": "👪",
     "sections": [
       {
         "question": "Che cos'è questo разрешение (permesso)?",
@@ -2493,7 +2493,7 @@
     "id": "3217355e-7f7f-81b1-8c7a-db2b04509a1c",
     "slug": "tirocinio",
     "tipo": "Стажировка",
-    "emoji": "📚",
+    "emoji": "🎓",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [],
@@ -2712,7 +2712,7 @@
     "id": "3217355e-7f7f-81b4-a024-c327bc4daa10",
     "slug": "sfruttamento-lavorativo",
     "tipo": "Трудовая эксплуатация",
-    "emoji": "💼",
+    "emoji": "⚖️",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [

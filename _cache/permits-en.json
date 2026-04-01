@@ -550,7 +550,7 @@
     "id": "30b7355e-7f7f-816c-93db-c4bc982155aa",
     "slug": "residenza-elettiva",
     "tipo": "Elective residence",
-    "emoji": "📄",
+    "emoji": "🏡",
     "sections": [
       {
         "question": "What is this permit?",
@@ -617,7 +617,7 @@
     "id": "30b7355e-7f7f-8161-93ec-f544bdeab146",
     "slug": "motivi-religiosi",
     "tipo": "Religious reasons",
-    "emoji": "📄",
+    "emoji": "🙏",
     "sections": [
       {
         "question": "What is this permit?",
@@ -990,7 +990,7 @@
     "id": "30b7355e-7f7f-8167-b416-e9556e9d49aa",
     "slug": "integrazione-prosieguo-amministrativo",
     "tipo": "Integration (\"Administrative continuation\")",
-    "emoji": "📄",
+    "emoji": "📋",
     "sections": [
       {
         "question": "📄 What it is and how to apply",
@@ -1544,7 +1544,7 @@
     "id": "30b7355e-7f7f-8126-9864-ddc38810fed6",
     "slug": "apolidia",
     "tipo": "Statelessness",
-    "emoji": "📄",
+    "emoji": "🌐",
     "sections": [
       {
         "question": "What is this permit?",
@@ -1745,7 +1745,7 @@
     "id": "30b7355e-7f7f-81fc-b2aa-c1b066e11ecb",
     "slug": "attivita-sportiva",
     "tipo": "Sports activity",
-    "emoji": "📄",
+    "emoji": "⚽",
     "sections": [
       {
         "question": "What is this permit?",
@@ -1987,7 +1987,7 @@
     "id": "30b7355e-7f7f-818b-9055-cad1e4aa3362",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
     "tipo": "Residence card for family members of EU citizens",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇪🇺",
     "sections": [
       {
         "question": "What is this residence card?",
@@ -2055,7 +2055,7 @@
     "id": "30b7355e-7f7f-81df-a99f-deb528b4737b",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
     "tipo": "Residence card for family members of \"dynamic\" Italian citizens",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇮🇹",
     "sections": [
       {
         "question": "What is this residence card?",
@@ -2437,7 +2437,7 @@
     "id": "30b7355e-7f7f-8173-923b-cff1be38cc9e",
     "slug": "sfruttamento-lavorativo",
     "tipo": "Labor exploitation",
-    "emoji": "📄",
+    "emoji": "⚖️",
     "sections": [
       {
         "question": "🔹 Art. 18-ter TUI (labor exploitation – gangmastering)",
@@ -2473,7 +2473,7 @@
     "id": "30b7355e-7f7f-81d6-a219-d951e89a95f4",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "Custody to relatives within the fourth degree",
-    "emoji": "📄",
+    "emoji": "👪",
     "sections": [
       {
         "question": "What is this permit?",
@@ -2533,7 +2533,7 @@
     "id": "30b7355e-7f7f-8185-8412-d258be780b28",
     "slug": "ricerca-scientifica",
     "tipo": "Scientific research",
-    "emoji": "📄",
+    "emoji": "🔬",
     "sections": [
       {
         "question": "What is this permit?",

@@ -159,7 +159,7 @@
     "id": "3097355e-7f7f-81a2-9a82-ed9fddfccac2",
     "slug": "sfruttamento-lavorativo",
     "tipo": "Sfruttamento lavorativo",
-    "emoji": "📄",
+    "emoji": "⚖️",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [
@@ -478,7 +478,7 @@
     "id": "3097355e-7f7f-81da-904a-faa3eb7928e7",
     "slug": "integrazione-prosieguo-amministrativo",
     "tipo": "Integrazione (”Prosieguo amministrativo”)",
-    "emoji": "📄",
+    "emoji": "📋",
     "sections": [
       {
         "question": "📄 Cos’è e come si chiede",
@@ -608,7 +608,7 @@
     "id": "3097355e-7f7f-81cc-9923-fa821130c183",
     "slug": "tirocinio",
     "tipo": "Tirocinio",
-    "emoji": "📄",
+    "emoji": "🎓",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [],
@@ -969,7 +969,7 @@
     "id": "3097355e-7f7f-81ba-93c3-d25dfdfe5c30",
     "slug": "famit-per-familiari-di-cittadini-italiani-statici",
     "tipo": "FAMIT per familiari di cittadini italiani “statici”",
-    "emoji": "📄",
+    "emoji": "👨‍👩‍👧‍👦",
     "sections": [
       {
         "question": "Cos'è questo permesso?",
@@ -1041,7 +1041,7 @@
     "id": "3097355e-7f7f-81b9-8768-f39008f743e6",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "Affidamento a familiari entro il quarto grado",
-    "emoji": "📄",
+    "emoji": "👪",
     "sections": [
       {
         "question": "Che cos'è questo permesso?",
@@ -1102,7 +1102,7 @@
     "id": "3097355e-7f7f-81b2-a3aa-df2975701251",
     "slug": "ricerca-scientifica",
     "tipo": "Ricerca scientifica",
-    "emoji": "📄",
+    "emoji": "🔬",
     "sections": [
       {
         "question": "Che cos'è questo permesso?",
@@ -1158,7 +1158,7 @@
     "id": "3097355e-7f7f-81ae-b1fb-cd6c7f7a9418",
     "slug": "residenza-elettiva",
     "tipo": "Residenza elettiva",
-    "emoji": "📄",
+    "emoji": "🏡",
     "sections": [
       {
         "question": "Che cos'è questo permesso?",
@@ -1268,7 +1268,7 @@
     "id": "3097355e-7f7f-81ac-a8fb-d9b78b2fa275",
     "slug": "attivita-sportiva",
     "tipo": "Attività sportiva",
-    "emoji": "📄",
+    "emoji": "⚽",
     "sections": [
       {
         "question": "Che cos'è questo permesso?",
@@ -1638,7 +1638,7 @@
     "id": "3097355e-7f7f-8190-8e12-d79c4507b511",
     "slug": "lavoro-artistico",
     "tipo": "Lavoro artistico",
-    "emoji": "📄",
+    "emoji": "🎨",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [],
@@ -1736,7 +1736,7 @@
     "id": "3097355e-7f7f-8186-96d5-f3daceac6f93",
     "slug": "motivi-religiosi",
     "tipo": "Motivi religiosi",
-    "emoji": "📄",
+    "emoji": "🙏",
     "sections": [
       {
         "question": "Che cos'è questo permesso?",
@@ -2273,7 +2273,7 @@
     "id": "3097355e-7f7f-813b-9a45-e631d9802d85",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
     "tipo": "Carta di soggiorno per familiari di cittadini UE",
-    "emoji": "📄",
+    "emoji": "🇪🇺",
     "sections": [
       {
         "question": "Che cos'è questa carta di soggiorno?",
@@ -2342,7 +2342,7 @@
     "id": "3097355e-7f7f-8136-9e16-efed3dae5e68",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
     "tipo": "Carta di soggiorno per familiari di italiani “dinamici”",
-    "emoji": "📄",
+    "emoji": "🇮🇹",
     "sections": [
       {
         "question": "Che cos'è questa carta di soggiorno?",
@@ -2440,7 +2440,7 @@
     "id": "3097355e-7f7f-8134-9f6d-fdb7dc29873b",
     "slug": "apolidia",
     "tipo": "Apolidia",
-    "emoji": "📄",
+    "emoji": "🌐",
     "sections": [
       {
         "question": "Che cos'è questo permesso?",

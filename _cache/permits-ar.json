@@ -974,7 +974,7 @@
     "id": "3337355e-7f7f-814e-b42a-d05f4b080550",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "الكفالة لدى أقارب حتى الدرجة الرابعة",
-    "emoji": "📋",
+    "emoji": "👪",
     "sections": [
       {
         "question": "ما هو هذا التصريح؟",
@@ -1034,7 +1034,7 @@
     "id": "3337355e-7f7f-81f6-9817-e46156eceb71",
     "slug": "ricerca-scientifica",
     "tipo": "البحث العلمي",
-    "emoji": "📋",
+    "emoji": "🔬",
     "sections": [
       {
         "question": "ما هو هذا التصريح؟",
@@ -1089,7 +1089,7 @@
     "id": "3337355e-7f7f-817d-bafe-ee1dc88af3dd",
     "slug": "residenza-elettiva",
     "tipo": "الإقامة الاختيارية",
-    "emoji": "📋",
+    "emoji": "🏡",
     "sections": [
       {
         "question": "ما هو هذا التصريح؟",
@@ -1640,7 +1640,7 @@
     "id": "3337355e-7f7f-815d-a093-c13ec5a29408",
     "slug": "motivi-religiosi",
     "tipo": "أسباب دينية",
-    "emoji": "⛪",
+    "emoji": "🙏",
     "sections": [
       {
         "question": "ما هو هذا التصريح؟",
@@ -2170,7 +2170,7 @@
     "id": "3337355e-7f7f-81f1-8dcc-d0c23a4dcc39",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
     "tipo": "Carta di Soggiorno لأفراد عائلات مواطني الاتحاد الأوروبي",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇪🇺",
     "sections": [
       {
         "question": "ما هي هذه البطاقة؟",
@@ -2238,7 +2238,7 @@
     "id": "3337355e-7f7f-81eb-b493-f232a85bef85",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
     "tipo": "Carta di Soggiorno لأفراد عائلات الإيطاليين \"الديناميكيين\"",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇮🇹",
     "sections": [
       {
         "question": "ما هي هذه البطاقة؟",
@@ -2335,7 +2335,7 @@
     "id": "3337355e-7f7f-81ea-830a-d2eb53e9afc8",
     "slug": "apolidia",
     "tipo": "انعدام الجنسية",
-    "emoji": "📋",
+    "emoji": "🌐",
     "sections": [
       {
         "question": "ما هو هذا التصريح؟",
@@ -2747,7 +2747,7 @@
     "id": "3337355e-7f7f-81fa-919b-e7c04d5e0a67",
     "slug": "lavoro-artistico",
     "tipo": "عمل فني",
-    "emoji": "💼",
+    "emoji": "🎨",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [],
@@ -2766,7 +2766,7 @@
     "id": "3337355e-7f7f-81df-bbe3-f232141d3744",
     "slug": "tirocinio",
     "tipo": "تدريب مهني",
-    "emoji": "📋",
+    "emoji": "🎓",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [],
@@ -2787,7 +2787,7 @@
     "id": "3337355e-7f7f-813a-9f46-c1ff82f98149",
     "slug": "sfruttamento-lavorativo",
     "tipo": "الاستغلال في العمل",
-    "emoji": "💼",
+    "emoji": "⚖️",
     "sections": [],
     "isPlaceholder": true,
     "primoDocuments": [

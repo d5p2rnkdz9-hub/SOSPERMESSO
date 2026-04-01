@@ -829,7 +829,7 @@
     "id": "3217355e-7f7f-8153-bfe5-d51651974dbd",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "Dördüncü dereceye kadar akrabaya emanet",
-    "emoji": "📋",
+    "emoji": "👪",
     "sections": [
       {
         "question": "Bu izin nedir?",
@@ -944,7 +944,7 @@
     "id": "3217355e-7f7f-815c-b733-dc78110f8234",
     "slug": "residenza-elettiva",
     "tipo": "İsteğe bağlı ikamet",
-    "emoji": "📋",
+    "emoji": "🏡",
     "sections": [
       {
         "question": "Bu izin nedir?",
@@ -1460,7 +1460,7 @@
     "id": "3217355e-7f7f-81ea-9594-caa1418fbe07",
     "slug": "motivi-religiosi",
     "tipo": "Dini sebepler",
-    "emoji": "⛪",
+    "emoji": "🙏",
     "sections": [
       {
         "question": "Bu izin nedir?",
@@ -1934,7 +1934,7 @@
     "id": "3217355e-7f7f-81ec-b452-e5599f6611f5",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
     "tipo": "AB vatandaşlarının aile üyeleri için oturma kartı",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇪🇺",
     "sections": [
       {
         "question": "Bu oturma kartı nedir?",
@@ -2002,7 +2002,7 @@
     "id": "3217355e-7f7f-818e-8886-f8e26612bf91",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
     "tipo": "\"Dinamik\" İtalyan vatandaşlarının aile üyeleri için oturma kartı",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇮🇹",
     "sections": [
       {
         "question": "Bu oturma kartı nedir?",
@@ -2074,7 +2074,7 @@
     "id": "3217355e-7f7f-81ee-ac2f-c317168ca916",
     "slug": "apolidia",
     "tipo": "Vatansızlık",
-    "emoji": "📋",
+    "emoji": "🌐",
     "sections": [
       {
         "question": "Bu izin nedir?",

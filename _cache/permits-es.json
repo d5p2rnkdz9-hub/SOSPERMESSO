@@ -346,7 +346,7 @@
     "id": "3217355e-7f7f-815a-be6c-f128426a8baf",
     "slug": "integrazione-prosieguo-amministrativo",
     "tipo": "Integración (\"Prosieguo administrativo\")",
-    "emoji": "📄",
+    "emoji": "📋",
     "sections": [
       {
         "question": "📄 Qué es y cómo se solicita",
@@ -879,7 +879,7 @@
     "id": "3217355e-7f7f-8130-a0a3-eb251e63dee8",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "Acogimiento por familiares hasta el cuarto grado",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "👪",
     "sections": [
       {
         "question": "¿Qué es este permiso?",
@@ -939,7 +939,7 @@
     "id": "3217355e-7f7f-81ba-b784-cfc4eb43e90c",
     "slug": "ricerca-scientifica",
     "tipo": "Investigación científica",
-    "emoji": "📄",
+    "emoji": "🔬",
     "sections": [
       {
         "question": "¿Qué es este permiso?",
@@ -994,7 +994,7 @@
     "id": "3217355e-7f7f-8141-bbc1-e9e44fe2f89a",
     "slug": "residenza-elettiva",
     "tipo": "Residencia electiva",
-    "emoji": "📄",
+    "emoji": "🏡",
     "sections": [
       {
         "question": "¿Qué es este permiso?",
@@ -1068,7 +1068,7 @@
     "id": "3217355e-7f7f-8139-9998-c508686498e1",
     "slug": "attivita-sportiva",
     "tipo": "Actividad deportiva",
-    "emoji": "📄",
+    "emoji": "⚽",
     "sections": [
       {
         "question": "¿Qué es este permiso?",
@@ -1510,7 +1510,7 @@
     "id": "3217355e-7f7f-8118-af1c-fa539726af5f",
     "slug": "motivi-religiosi",
     "tipo": "Motivos religiosos",
-    "emoji": "📄",
+    "emoji": "🙏",
     "sections": [
       {
         "question": "¿Qué es este permiso?",
@@ -1984,7 +1984,7 @@
     "id": "3217355e-7f7f-81dd-8dba-c148af35c197",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
     "tipo": "Tarjeta de residencia para familiares de ciudadanos de la UE",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇪🇺",
     "sections": [
       {
         "question": "¿Qué es esta tarjeta de residencia?",
@@ -2052,7 +2052,7 @@
     "id": "3217355e-7f7f-8101-9a10-ebf91437ebcf",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
     "tipo": "Tarjeta de residencia para familiares de italianos \"dinámicos\"",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇮🇹",
     "sections": [
       {
         "question": "¿Qué es esta tarjeta de residencia?",
@@ -2124,7 +2124,7 @@
     "id": "3217355e-7f7f-81af-8805-e904e527877c",
     "slug": "apolidia",
     "tipo": "Apatridia",
-    "emoji": "📄",
+    "emoji": "🌐",
     "sections": [
       {
         "question": "¿Qué es este permiso?",

@@ -1,14 +1,14 @@
 ---
 pagination:
-  data: permitsRu
+  data: permitsFa
   size: 1
   alias: permit
-permalink: "ru/permesso-{{ permit.slug }}.html"
+permalink: "fa/permesso-{{ permit.slug }}.html"
 layout: layouts/base.liquid
-lang: ru
+lang: fa
 eleventyComputed:
-  title: "{{ permit.tipo }} вид на жительство"
-  description: "{{ permit.tipo }} вид на жительство - информация, требования, документы и процедуры"
+  title: "{{ permit.tipo }} - اجازه اقامت"
+  description: "{{ permit.tipo }} - اطلاعات درباره اجازه اقامت، شرایط، مدارک و مراحل"
 eleventyExcludeFromCollections: true
 ---
 
@@ -17,18 +17,18 @@ eleventyExcludeFromCollections: true
     <div class="container">
       <div class="permit-title-row">
         <span class="permit-title-emoji">{{ permit.emoji }}</span>
-        <h1 class="permit-title-text">{{ permit.tipo }} разрешение</h1>
+        <h1 class="permit-title-text">{{ permit.tipo }}</h1>
       </div>
       {% unless permit.isPlaceholder == true %}
       <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; padding: 0.5rem 0 0.75rem;">
-        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">Info</a>
+        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">اطلاعات</a>
         {% if permit.primoDocuments.size > 0 %}
-        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">Doc Первичное оформление</a>
+        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">Doc صدور اولیه</a>
         {% endif %}
         {% if permit.rinnovoDocuments.size > 0 %}
-        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Doc Продление</a>
+        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Doc تمدید</a>
         {% endif %}
-        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 Местные практики</a>
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 رویه‌های محلی</a>
       </div>
       {% endunless %}
     </div>
@@ -109,15 +109,15 @@ eleventyExcludeFromCollections: true
     <div class="container" style="max-width: 900px;">
       <div class="card text-center" style="padding: 3rem;">
         <span style="font-size: 4rem;">{{ permit.emoji }}</span>
-        <h2 style="margin: 1rem 0;">Содержание скоро появится</h2>
+        <h2 style="margin: 1rem 0;">این صفحه در حال ساخت است</h2>
         <p style="color: var(--gray-medium); max-width: 500px; margin: 0 auto 1.5rem;">
-          Мы работаем над подготовкой информации об этом виде на жительство.
+          ما در حال تکمیل اطلاعات مربوط به این اجازه اقامت هستیم.
         </p>
         <a href="https://form.typeform.com/to/USx16QN3"
            class="btn btn-primary"
            target="_blank"
            rel="noopener noreferrer">
-          Помочь
+          به ما کمک کنید
         </a>
       </div>
     </div>
@@ -125,12 +125,12 @@ eleventyExcludeFromCollections: true
 
 {% else %}
 
-  <!-- SECTION: ОПИСАНИЕ -->
+  <!-- SECTION: INFO -->
   <section id="cose" class="section">
     <div class="container" style="max-width: 900px;">
       {% for section in permit.sections %}
       <!-- Section {{ forloop.index }}: {{ section.question }} -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }};">
+      <div class="card" style="margin-bottom: 2rem; border-right: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }}; border-left: none;">
         <h2>{{ section.question }}</h2>
         {{ section.content }}
       </div>
@@ -140,21 +140,21 @@ eleventyExcludeFromCollections: true
   </section>
 
   {% if permit.primoDocuments.size > 0 %}
-  <!-- SECTION: ПЕРВИЧНОЕ ОФОРМЛЕНИЕ -->
+  <!-- SECTION: FIRST ISSUANCE -->
   <section id="primo" class="section bg-off-white">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 1.5rem;">📋 Первичное оформление</h2>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">📋 صدور اولیه</h2>
 
       <!-- SUBMISSION METHOD CALLOUT -->
       {%- assign primoMethodLower = permit.primoMethod | downcase -%}
       {%- if primoMethodLower contains 'kit' -%}
         {%- assign primoCalloutClass = 'callout-kit' -%}
         {%- assign primoCalloutIcon = '📮' -%}
-        {%- assign primoCalloutText = 'Отправьте почтовым КОМПЛЕКТОМ (не нужно ходить в Квестуру)' -%}
+        {%- assign primoCalloutText = 'از طریق Kit Postale ارسال کنید (نیازی به مراجعه به Questura نیست)' -%}
       {%- else -%}
         {%- assign primoCalloutClass = 'callout-questura' -%}
         {%- assign primoCalloutIcon = '🏛️' -%}
-        {%- assign primoCalloutText = 'Отнесите документы в Квестуру (почтовый КОМПЛЕКТ не используется)' -%}
+        {%- assign primoCalloutText = 'مدارک را به Questura تحویل دهید (امکان استفاده از Kit Postale نیست)' -%}
       {%- endif -%}
       <div class="submission-callout {{ primoCalloutClass }}" style="margin-bottom: 1.5rem;">
         <span class="callout-icon">{{ primoCalloutIcon }}</span>
@@ -163,10 +163,10 @@ eleventyExcludeFromCollections: true
 
       <!-- CHECKLIST -->
       <div class="card">
-        <h3>📋 Необходимые документы</h3>
-        <p class="checklist-intro">Отметьте подготовленные документы. Ваш прогресс сохраняется автоматически.</p>
+        <h3>📋 مدارک مورد نیاز</h3>
+        <p class="checklist-intro">مدارکی که آماده کرده‌اید را علامت بزنید. پیشرفت شما به‌طور خودکار ذخیره می‌شود.</p>
 
-        <div class="doc-checklist" data-permit="{{ permit.slug }}-primo-ru">
+        <div class="doc-checklist" data-permit="{{ permit.slug }}-primo-fa">
           {%- for docItem in permit.primoDocuments -%}
             {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
             {%- assign docClass = normalizedDoc | getDocumentClass -%}
@@ -175,15 +175,15 @@ eleventyExcludeFromCollections: true
           <div class="{{ docClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
-                   id="doc-{{ permit.slug }}-primo-ru-{{ forloop.index0 }}"
+                   id="doc-{{ permit.slug }}-primo-fa-{{ forloop.index0 }}"
                    data-doc="{{ normalizedDoc | escapeHtml }}">
-            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(может варьироваться в зависимости от Квестуры)</span>{% endif %}</span>
+            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(ممکن است بسته به Questura متفاوت باشد)</span>{% endif %}</span>
           </div>
           {%- endfor -%}
         </div>
 
         <div class="checklist-progress">
-          <span class="progress-text">Выполнено: <span id="primo-progress-count">0</span>/{{ permit.primoDocuments.size }}</span>
+          <span class="progress-text">تکمیل‌شده: <span id="primo-progress-count">0</span>/{{ permit.primoDocuments.size }}</span>
           <div class="progress-bar">
             <div class="progress-fill" id="primo-progress-fill" style="width: 0%"></div>
           </div>
@@ -193,14 +193,14 @@ eleventyExcludeFromCollections: true
       <div class="alert alert-warning" style="margin-top: 1rem;">
         <span class="alert-icon">⚠️</span>
         <div>
-          <strong>Примечание:</strong> Необходимые документы могут различаться в зависимости от Квестуры.
+          <strong>توجه:</strong> مدارک مورد نیاز ممکن است از یک Questura به Questura دیگر متفاوت باشد.
         </div>
       </div>
 
       {%- assign notesSections = permit.docNotes | parseDocNotes -%}
       {%- if notesSections.size > 0 -%}
       <div style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">📝 Дополнительная информация о документах</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">📝 اطلاعات تکمیلی درباره مدارک</h3>
         {%- for section in notesSections -%}
         <div class="card" style="margin-bottom: 1rem;">
           <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
@@ -212,33 +212,33 @@ eleventyExcludeFromCollections: true
 
       {%- if permit.costBollettinoPrimo or permit.costMarcaBolloPrimo -%}
       <div id="primo-quanto-costa" style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">💰 Сколько это стоит?</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">💰 هزینه‌ها چقدر است؟</h3>
         <div class="card">
           <ul class="costi-list">
             {%- if permit.costBollettinoPrimo -%}
             <li class="costi-item">
-              <span class="costi-label">Почтовый перевод <span class="costi-note">оплачивается на почте</span></span>
-              <span class="costi-amount">€ {{ permit.costBollettinoPrimo }}{% if permit.costBollettinoAltPrimo %} или € {{ permit.costBollettinoAltPrimo }}{% endif %}</span>
+              <span class="costi-label">بولتینو پستال <span class="costi-note">در اداره پست پرداخت می‌شود</span></span>
+              <span class="costi-amount">€ {{ permit.costBollettinoPrimo }}{% if permit.costBollettinoAltPrimo %} یا € {{ permit.costBollettinoAltPrimo }}{% endif %}</span>
             </li>
             {%- if permit.costBollettinoAltPrimo -%}
-            <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">Зависит от срока действия разрешения</li>
+            <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">بستگی به مدت اعتبار اجازه اقامت دارد</li>
             {%- endif -%}
             {%- endif -%}
             {%- if permit.costMarcaBolloPrimo -%}
             <li class="costi-item">
-              <span class="costi-label">Гербовая марка <span class="costi-note">приобретается в табачной лавке</span></span>
+              <span class="costi-label">مارکا دا بولو <span class="costi-note">از تنباکوفروشی خریداری می‌شود</span></span>
               <span class="costi-amount">€ {{ permit.costMarcaBolloPrimo }}</span>
             </li>
             {%- endif -%}
             {%- if primoMethodLower contains 'kit' -%}
             <li class="costi-item">
-              <span class="costi-label">Почтовый комплект <span class="costi-note">приобретается на почте</span></span>
+              <span class="costi-label">Kit Postale <span class="costi-note">از اداره پست خریداری می‌شود</span></span>
               <span class="costi-amount">€ 30,00</span>
             </li>
             {%- endif -%}
           </ul>
           <div class="costi-total">
-            <span class="costi-total-label">Итого</span>
+            <span class="costi-total-label">مجموع</span>
             <span class="costi-total-amount">€
               {%- assign primoTotal = 0 -%}
               {%- if permit.costBollettinoPrimo -%}{%- assign primoTotal = primoTotal | plus: permit.costBollettinoPrimo -%}{%- endif -%}
@@ -255,21 +255,21 @@ eleventyExcludeFromCollections: true
   {% endif %}
 
   {% if permit.rinnovoDocuments.size > 0 %}
-  <!-- SECTION: ПРОДЛЕНИЕ -->
+  <!-- SECTION: RENEWAL -->
   <section id="rinnovo" class="section">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 1.5rem;">🔄 Продление</h2>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">🔄 تمدید</h2>
 
       <!-- SUBMISSION METHOD CALLOUT -->
       {%- assign rinnovoMethodLower = permit.rinnovoMethod | downcase -%}
       {%- if rinnovoMethodLower contains 'kit' -%}
         {%- assign rinnovoCalloutClass = 'callout-kit' -%}
         {%- assign rinnovoCalloutIcon = '📮' -%}
-        {%- assign rinnovoCalloutText = 'Отправьте почтовым КОМПЛЕКТОМ (не нужно ходить в Квестуру)' -%}
+        {%- assign rinnovoCalloutText = 'از طریق Kit Postale ارسال کنید (نیازی به مراجعه به Questura نیست)' -%}
       {%- else -%}
         {%- assign rinnovoCalloutClass = 'callout-questura' -%}
         {%- assign rinnovoCalloutIcon = '🏛️' -%}
-        {%- assign rinnovoCalloutText = 'Отнесите документы в Квестуру (почтовый КОМПЛЕКТ не используется)' -%}
+        {%- assign rinnovoCalloutText = 'مدارک را به Questura تحویل دهید (امکان استفاده از Kit Postale نیست)' -%}
       {%- endif -%}
       <div class="submission-callout {{ rinnovoCalloutClass }}" style="margin-bottom: 1rem;">
         <span class="callout-icon">{{ rinnovoCalloutIcon }}</span>
@@ -281,9 +281,9 @@ eleventyExcludeFromCollections: true
       <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px; margin-bottom: 1rem;">
         <span class="alert-icon">⚠️</span>
         <div>
-          <strong>Внимание:</strong> Продление разрешения в ожидании трудоустройства является спорным вопросом. Некоторые Квестуры отказывают в нём. Рекомендуем обратиться к адвокату или в центр юридической помощи перед подачей заявления.
+          <strong>هشدار:</strong> تمدید اجازه اقامت انتظار اشتغال موضوعی بحث‌برانگیز است. برخی از Questura ها آن را رد می‌کنند. توصیه می‌کنیم قبل از شروع مراحل، با یک وکیل یا مرکز کمک حقوقی مشورت کنید.
           <br><br>
-          <a href="/ru/aiuto-legale.html" style="color: #E53935; font-weight: 600;">&rarr; Найти юридическую помощь в вашем регионе</a>
+          <a href="/fa/aiuto-legale.html" style="color: #E53935; font-weight: 600;">← جستجوی کمک حقوقی در منطقه خود</a>
         </div>
       </div>
       {%- endif -%}
@@ -292,26 +292,26 @@ eleventyExcludeFromCollections: true
       <div class="alert alert-info" style="margin-bottom: 1rem;">
         <span class="alert-icon">📅</span>
         <div>
-          <strong>Не забудьте:</strong> Заявление на продление предпочтительно подать <strong>до истечения срока</strong> или в течение <strong>60 дней после</strong> истечения срока действия.
+          <strong>یادآوری:</strong> درخواست تمدید باید ترجیحاً <strong>قبل از انقضا</strong> یا حداکثر ظرف <strong>۶۰ روز</strong> پس از انقضا ارائه شود.
         </div>
       </div>
 
       <!-- CHECKLIST -->
       <div class="card">
-        <h3>📋 Необходимые документы</h3>
-        <p class="checklist-intro">Отметьте подготовленные документы. Ваш прогресс сохраняется автоматически.</p>
+        <h3>📋 مدارک مورد نیاز</h3>
+        <p class="checklist-intro">مدارکی که آماده کرده‌اید را علامت بزنید. پیشرفت شما به‌طور خودکار ذخیره می‌شود.</p>
 
         {%- assign commonDocName = "Copia permesso precedente (o denuncia smarrimento)" -%}
         {%- assign commonDocNormalized = commonDocName | normalizeDocumentName -%}
         {%- assign commonDocClass = commonDocNormalized | getDocumentClass -%}
         {%- assign commonDocLabel = commonDocNormalized | escapeHtml -%}
 
-        <div class="doc-checklist" data-permit="{{ permit.slug }}-rinnovo-ru">
+        <div class="doc-checklist" data-permit="{{ permit.slug }}-rinnovo-fa">
           <!-- Common document always first -->
           <div class="{{ commonDocClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
-                   id="doc-{{ permit.slug }}-rinnovo-ru-0"
+                   id="doc-{{ permit.slug }}-rinnovo-fa-0"
                    data-doc="{{ commonDocNormalized | escapeHtml }}">
             <span class="doc-label">{{ commonDocLabel }}</span>
           </div>
@@ -327,9 +327,9 @@ eleventyExcludeFromCollections: true
           <div class="{{ docClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
-                   id="doc-{{ permit.slug }}-rinnovo-ru-{{ idx }}"
+                   id="doc-{{ permit.slug }}-rinnovo-fa-{{ idx }}"
                    data-doc="{{ normalizedDoc | escapeHtml }}">
-            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(может варьироваться в зависимости от Квестуры)</span>{% endif %}</span>
+            <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(ممکن است بسته به Questura متفاوت باشد)</span>{% endif %}</span>
           </div>
             {%- endunless -%}
           {%- endfor -%}
@@ -337,7 +337,7 @@ eleventyExcludeFromCollections: true
 
         {%- assign rinnovoTotalDocs = permit.rinnovoDocuments.size | plus: 1 -%}
         <div class="checklist-progress">
-          <span class="progress-text">Выполнено: <span id="rinnovo-progress-count">0</span>/{{ rinnovoTotalDocs }}</span>
+          <span class="progress-text">تکمیل‌شده: <span id="rinnovo-progress-count">0</span>/{{ rinnovoTotalDocs }}</span>
           <div class="progress-bar">
             <div class="progress-fill" id="rinnovo-progress-fill" style="width: 0%"></div>
           </div>
@@ -347,7 +347,7 @@ eleventyExcludeFromCollections: true
       <div class="alert alert-warning" style="margin-top: 1rem;">
         <span class="alert-icon">⚠️</span>
         <div>
-          <strong>Примечание:</strong> Необходимые документы могут различаться в зависимости от Квестуры.
+          <strong>توجه:</strong> مدارک مورد نیاز ممکن است از یک Questura به Questura دیگر متفاوت باشد.
         </div>
       </div>
 
@@ -355,7 +355,7 @@ eleventyExcludeFromCollections: true
         {%- assign rinnovoNotesSections = permit.docNotes | parseDocNotes -%}
         {%- if rinnovoNotesSections.size > 0 -%}
         <div style="margin-top: 1.5rem;">
-          <h3 style="text-align: center; margin-bottom: 1rem;">📝 Дополнительная информация о документах</h3>
+          <h3 style="text-align: center; margin-bottom: 1rem;">📝 اطلاعات تکمیلی درباره مدارک</h3>
           {%- for section in rinnovoNotesSections -%}
           <div class="card" style="margin-bottom: 1rem;">
             <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
@@ -368,33 +368,33 @@ eleventyExcludeFromCollections: true
 
       {%- if permit.costBollettinoRinnovo or permit.costMarcaBolloRinnovo -%}
       <div id="rinnovo-quanto-costa" style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">💰 Сколько стоит продление?</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">💰 هزینه تمدید چقدر است؟</h3>
         <div class="card">
           <ul class="costi-list">
             {%- if permit.costBollettinoRinnovo -%}
             <li class="costi-item">
-              <span class="costi-label">Почтовый перевод <span class="costi-note">оплачивается на почте</span></span>
-              <span class="costi-amount">€ {{ permit.costBollettinoRinnovo }}{% if permit.costBollettinoAltRinnovo %} или € {{ permit.costBollettinoAltRinnovo }}{% endif %}</span>
+              <span class="costi-label">بولتینو پستال <span class="costi-note">در اداره پست پرداخت می‌شود</span></span>
+              <span class="costi-amount">€ {{ permit.costBollettinoRinnovo }}{% if permit.costBollettinoAltRinnovo %} یا € {{ permit.costBollettinoAltRinnovo }}{% endif %}</span>
             </li>
             {%- if permit.costBollettinoAltRinnovo -%}
-            <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">Зависит от срока действия разрешения</li>
+            <li style="font-size: 0.85rem; color: var(--gray-medium); list-style: none; margin-top: -0.25rem;">بستگی به مدت اعتبار اجازه اقامت دارد</li>
             {%- endif -%}
             {%- endif -%}
             {%- if permit.costMarcaBolloRinnovo -%}
             <li class="costi-item">
-              <span class="costi-label">Гербовая марка <span class="costi-note">приобретается в табачной лавке</span></span>
+              <span class="costi-label">مارکا دا بولو <span class="costi-note">از تنباکوفروشی خریداری می‌شود</span></span>
               <span class="costi-amount">€ {{ permit.costMarcaBolloRinnovo }}</span>
             </li>
             {%- endif -%}
             {%- if rinnovoMethodLower contains 'kit' -%}
             <li class="costi-item">
-              <span class="costi-label">Почтовый комплект <span class="costi-note">приобретается на почте</span></span>
+              <span class="costi-label">Kit Postale <span class="costi-note">از اداره پست خریداری می‌شود</span></span>
               <span class="costi-amount">€ 30,00</span>
             </li>
             {%- endif -%}
           </ul>
           <div class="costi-total">
-            <span class="costi-total-label">Итого</span>
+            <span class="costi-total-label">مجموع</span>
             <span class="costi-total-amount">€
               {%- assign rinnovoTotal = 0 -%}
               {%- if permit.costBollettinoRinnovo -%}{%- assign rinnovoTotal = rinnovoTotal | plus: permit.costBollettinoRinnovo -%}{%- endif -%}
@@ -413,8 +413,8 @@ eleventyExcludeFromCollections: true
   <!-- PRASSI LOCALI ACCORDION -->
   <section class="section prassi-section bg-off-white" id="prassi-locali">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 0.5rem;">📍 Местные практики</h2>
-      <p style="text-align: center; color: var(--gray-medium); margin-bottom: 1rem; font-size: 0.9rem;">Опыт, которым поделились пользователи о практиках Квестур</p>
+      <h2 style="text-align: center; margin-bottom: 0.5rem;">📍 رویه‌های محلی</h2>
+      <p style="text-align: center; color: var(--gray-medium); margin-bottom: 1rem; font-size: 0.9rem;">تجربیاتی که جامعه درباره رویه‌های Questura به اشتراک گذاشته است</p>
 
       {% assign pagePrassi = prassiLocali[permit.slug] %}
       {% if pagePrassi %}
@@ -424,7 +424,7 @@ eleventyExcludeFromCollections: true
               <button class="prassi-accordion-header" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); this.nextElementSibling.classList.toggle('prassi-accordion-open');">
                 <span class="prassi-accordion-city">{{ cityGroup[0] }}</span>
                 <span class="prassi-accordion-count">{{ cityGroup[1].size }}</span>
-                <span class="prassi-accordion-chevron">▸</span>
+                <span class="prassi-accordion-chevron">◂</span>
               </button>
               <div class="prassi-accordion-body">
                 {% for practice in cityGroup[1] %}
@@ -435,8 +435,8 @@ eleventyExcludeFromCollections: true
                       {% if practice.category %}<span class="prassi-category-tag">{{ practice.category }}</span>{% endif %}
                     </div>
                     <div class="prassi-card-votes">
-                      <span class="vote-confermo">Подтверждаю: {{ practice.votiConfermo }}</span>
-                      <span class="vote-non-confermo">Не подтверждаю: {{ practice.votiNonConfermo }}</span>
+                      <span class="vote-confermo">تایید می‌کنم: {{ practice.votiConfermo }}</span>
+                      <span class="vote-non-confermo">تایید نمی‌کنم: {{ practice.votiNonConfermo }}</span>
                     </div>
                   </div>
                 {% endfor %}
@@ -446,17 +446,17 @@ eleventyExcludeFromCollections: true
         </div>
 
         <div style="text-align: center; margin-top: 1rem;">
-          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/ru/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
-            Добавить свой опыт
+          <button class="btn btn-primary prassi-submit-btn" onclick="openPrassiModal('https://sospermesso.it/fa/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
+            تجربه خود را اضافه کنید
           </button>
         </div>
       {% else %}
         <div class="prassi-accordion">
           <div class="prassi-accordion-empty">
             <span style="font-size: 1.5rem;">📭</span>
-            <p>Пока нет сообщений</p>
-            <button class="btn btn-primary prassi-submit-btn btn-sm" onclick="openPrassiModal('https://sospermesso.it/ru/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
-              Будьте первым, кто поделится
+            <p>در حال حاضر گزارشی وجود ندارد</p>
+            <button class="btn btn-primary prassi-submit-btn btn-sm" onclick="openPrassiModal('https://sospermesso.it/fa/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
+              اولین نفری باشید که تجربه خود را به اشتراک می‌گذارد
             </button>
           </div>
         </div>
@@ -509,22 +509,22 @@ eleventyExcludeFromCollections: true
       }
 
       document.addEventListener('DOMContentLoaded', function() {
-        initChecklist('{{ permit.slug }}-primo-ru', 'primo-progress-count', 'primo-progress-fill');
-        initChecklist('{{ permit.slug }}-rinnovo-ru', 'rinnovo-progress-count', 'rinnovo-progress-fill');
+        initChecklist('{{ permit.slug }}-primo-fa', 'primo-progress-count', 'primo-progress-fill');
+        initChecklist('{{ permit.slug }}-rinnovo-fa', 'rinnovo-progress-count', 'rinnovo-progress-fill');
       });
     })();
   </script>
   <script src="../src/scripts/prassi.js"></script>
 
-  <!-- CTA: ЕСТЬ ВОПРОСЫ? -->
+  <!-- CTA: QUESTIONS -->
   <section class="section">
     <div class="container" style="max-width: 700px;">
       <div class="alert alert-info">
         <span class="alert-icon">❓</span>
         <div>
-          Есть вопросы о разрешении {{ permit.tipo }}?
+          آیا سوال دیگری درباره {{ permit.tipo }} دارید؟
           <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
-            Свяжитесь с нами
+            با ما تماس بگیرید
           </a>
         </div>
       </div>
@@ -533,29 +533,29 @@ eleventyExcludeFromCollections: true
 
 {% endif %}
 
-  <!-- SEGNALA ERRORE -->
+  <!-- REPORT ERROR -->
   <div class="report-bar">
     <a href="https://form.typeform.com/to/FsqvzdXI" target="_blank" rel="noopener" class="report-btn">
-      <span>🚩</span> Segnala un errore in questa pagina
+      <span>🚩</span> گزارش خطا در این صفحه
     </a>
   </div>
 
   <!-- RELATED -->
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">Вам может быть интересно</h2>
+      <h2 class="text-center mb-lg">شاید برایتان مفید باشد</h2>
       <div class="grid grid-3">
-        <a href="/ru/database.html" class="card card-link card-compact">
+        <a href="/fa/database.html" class="card card-link card-compact">
           <span class="card-icon">📚</span>
-          <h3 class="card-title">Все разрешения</h3>
+          <h3 class="card-title">همه اجازه‌های اقامت</h3>
         </a>
-        <a href="/ru/aiuto-legale.html" class="card card-link card-compact">
+        <a href="/fa/aiuto-legale.html" class="card card-link card-compact">
           <span class="card-icon">⚖️</span>
-          <h3 class="card-title">Юридическая помощь</h3>
+          <h3 class="card-title">کمک حقوقی</h3>
         </a>
-        <a href="/ru/dizionario.html" class="card card-link card-compact">
+        <a href="/fa/dizionario.html" class="card card-link card-compact">
           <span class="card-icon">📖</span>
-          <h3 class="card-title">Словарь</h3>
+          <h3 class="card-title">فرهنگ لغت</h3>
         </a>
       </div>
     </div>

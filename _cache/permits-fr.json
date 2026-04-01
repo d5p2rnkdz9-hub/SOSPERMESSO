@@ -3,7 +3,7 @@
     "id": "30b7355e-7f7f-8130-b803-cefd6b115f57",
     "slug": "ricerca-scientifica",
     "tipo": "Recherche scientifique",
-    "emoji": "🔍",
+    "emoji": "🔬",
     "sections": [
       {
         "question": "Qu'est-ce que ce titre de séjour ?",
@@ -58,7 +58,7 @@
     "id": "30b7355e-7f7f-81de-b2a0-d94a4302a6c8",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "Placement familial auprès de parents jusqu'au quatrième degré",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "👪",
     "sections": [
       {
         "question": "Qu'est-ce que ce titre de séjour ?",
@@ -193,7 +193,7 @@
     "id": "30b7355e-7f7f-81b1-a74f-d9f843fca5c9",
     "slug": "sfruttamento-lavorativo",
     "tipo": "Exploitation au travail",
-    "emoji": "📄",
+    "emoji": "⚖️",
     "sections": [
       {
         "question": "🔹 Art. 18-ter TUI (exploitation au travail – caporalato)",
@@ -661,7 +661,7 @@
     "id": "30b7355e-7f7f-814e-9cbd-c519153b4f26",
     "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
     "tipo": "Carte de séjour pour les membres de famille d'italiens \"dynamiques\"",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇮🇹",
     "sections": [
       {
         "question": "Qu'est-ce que cette carte de séjour ?",
@@ -733,7 +733,7 @@
     "id": "30b7355e-7f7f-814d-9bdd-c8e906c16a1e",
     "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
     "tipo": "Carte de séjour pour les membres de famille de citoyens UE",
-    "emoji": "👨‍👩‍👧‍👦",
+    "emoji": "🇪🇺",
     "sections": [
       {
         "question": "Qu'est-ce que cette carte de séjour ?",
@@ -1291,7 +1291,7 @@
     "id": "30b7355e-7f7f-81f1-b963-d54ccc3277cf",
     "slug": "attivita-sportiva",
     "tipo": "Activité sportive",
-    "emoji": "📄",
+    "emoji": "⚽",
     "sections": [
       {
         "question": "Qu'est-ce que ce titre de séjour ?",
@@ -1502,7 +1502,7 @@
     "id": "30b7355e-7f7f-81ed-83c1-c82531b18cc4",
     "slug": "apolidia",
     "tipo": "Apatridie",
-    "emoji": "📄",
+    "emoji": "🌐",
     "sections": [
       {
         "question": "Qu'est-ce que ce titre de séjour ?",
@@ -2081,7 +2081,7 @@
     "id": "30b7355e-7f7f-81fe-bcc6-c93a4f22e5d1",
     "slug": "integrazione-prosieguo-amministrativo",
     "tipo": "Intégration (\"Poursuite administrative\")",
-    "emoji": "📄",
+    "emoji": "📋",
     "sections": [
       {
         "question": "📄 Qu'est-ce que c'est et comment le demander",
@@ -2263,7 +2263,7 @@
     "id": "30b7355e-7f7f-8122-a711-c358b28c3a38",
     "slug": "residenza-elettiva",
     "tipo": "Résidence élective",
-    "emoji": "📄",
+    "emoji": "🏡",
     "sections": [
       {
         "question": "Qu'est-ce que ce titre de séjour ?",
@@ -2444,7 +2444,7 @@
     "id": "30b7355e-7f7f-81d3-95aa-c12521e46ef9",
     "slug": "motivi-religiosi",
     "tipo": "Motifs religieux",
-    "emoji": "📄",
+    "emoji": "🙏",
     "sections": [
       {
         "question": "Qu'est-ce que ce titre de séjour ?",
