@@ -23,10 +23,10 @@ eleventyExcludeFromCollections: true
       <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; padding: 0.5rem 0 0.75rem;">
         <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">Info</a>
         {% if permit.primoDocuments.size > 0 %}
-        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">First Issue</a>
+        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">Doc First Issue</a>
         {% endif %}
         {% if permit.rinnovoDocuments.size > 0 %}
-        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Renewal</a>
+        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Doc Renewal</a>
         {% endif %}
         <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 Local practices</a>
       </div>
@@ -36,6 +36,15 @@ eleventyExcludeFromCollections: true
 
   {% unless permit.isPlaceholder == true %}
   <script>
+  // Measure actual header height for sticky positioning
+  (function() {
+    var h = document.querySelector('.header');
+    if (h) document.documentElement.style.setProperty('--header-h', h.offsetHeight + 'px');
+    window.addEventListener('resize', function() {
+      if (h) document.documentElement.style.setProperty('--header-h', h.offsetHeight + 'px');
+    });
+  })();
+
   function scrollToSection(id) {
     var el = document.getElementById(id);
     if (!el) return true;
