@@ -225,19 +225,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===============================================
 
 let lastScroll = 0;
+let scrollTicking = false;
 const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-
-  if (currentScroll > 100) {
-    header.style.boxShadow = 'var(--shadow-md)';
-  } else {
-    header.style.boxShadow = 'var(--shadow-sm)';
+  if (!scrollTicking) {
+    requestAnimationFrame(() => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 100) {
+        header.style.boxShadow = 'var(--shadow-md)';
+      } else {
+        header.style.boxShadow = 'var(--shadow-sm)';
+      }
+      lastScroll = currentScroll;
+      scrollTicking = false;
+    });
+    scrollTicking = true;
   }
-
-  lastScroll = currentScroll;
-});
+}, { passive: true });
 
 // ===============================================
 // CARD HOVER EFFECTS

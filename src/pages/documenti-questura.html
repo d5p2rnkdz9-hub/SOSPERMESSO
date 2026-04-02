@@ -122,6 +122,65 @@ extraStyles: |
       padding: 0.2rem;
     }
 
+    /* ── SEARCH + FILTER ── */
+    .docq-search-wrap {
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+    }
+    .docq-search-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: white;
+      border: 2px solid #1A1A1A;
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 3px 3px 0 #1A1A1A;
+    }
+    .docq-search-bar:focus-within {
+      border-color: #FFD700;
+      box-shadow: 3px 3px 0 #FFD700;
+    }
+    .docq-search-bar .search-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .docq-search-input {
+      flex: 1; border: none; outline: none;
+      font-size: 0.95rem; font-family: 'Inter', sans-serif;
+      color: #1A1A1A; background: transparent;
+    }
+    .docq-search-input::placeholder { color: #bbb; }
+    .docq-search-count { font-size: 0.78rem; color: #999; white-space: nowrap; flex-shrink: 0; }
+
+    .docq-filters {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+    }
+    .docq-filter-badge {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0.5rem; padding: 0.85rem 1rem;
+      border-radius: 10px; border: 2.5px solid #1A1A1A;
+      background: white; font-family: 'Poppins', sans-serif;
+      font-size: 0.88rem; font-weight: 700; color: #1A1A1A;
+      cursor: pointer; transition: all 0.12s ease;
+      box-shadow: 3px 3px 0 #1A1A1A;
+    }
+    .docq-filter-badge:hover {
+      transform: translate(1.5px, 1.5px);
+      box-shadow: 1.5px 1.5px 0 #1A1A1A;
+    }
+    .docq-filter-badge.active {
+      background: #FFD700;
+      transform: translate(3px, 3px);
+      box-shadow: 0 0 0 #1A1A1A;
+    }
+    .docq-filter-badge .badge-emoji { font-size: 1.15rem; }
+
+    .docq-no-results {
+      display: none; text-align: center; padding: 2rem 1rem;
+      color: #999; font-size: 0.9rem;
+    }
+
     @media (max-width: 600px) {
       .docq-row {
         grid-template-columns: 1fr;
@@ -133,6 +192,12 @@ extraStyles: |
       .docq-page-header .page-title {
         font-size: 1.5rem;
       }
+      .docq-filters { gap: 0.5rem; }
+      .docq-filter-badge {
+        padding: 0.7rem 0.75rem; font-size: 0.8rem;
+        box-shadow: 2.5px 2.5px 0 #1A1A1A;
+      }
+      .docq-filter-badge.active { transform: translate(2.5px, 2.5px); }
     }
   </style>
 ---
@@ -145,9 +210,33 @@ extraStyles: |
         <h1 class="page-title">Che documenti porto?</h1>
       </div>
 
+      <!-- SEARCH + FILTER -->
+      <div class="docq-search-wrap">
+        <div class="docq-search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="docq-search-input" placeholder="Cerca un permesso..." autocomplete="off">
+          <span class="docq-search-count"></span>
+        </div>
+        <div class="docq-filters">
+          <button class="docq-filter-badge" data-filter="studio-lavoro">
+            <span class="badge-emoji">📋</span> Studio / Lavoro
+          </button>
+          <button class="docq-filter-badge" data-filter="protezione">
+            <span class="badge-emoji">🛡️</span> Protezione
+          </button>
+          <button class="docq-filter-badge" data-filter="cure-mediche">
+            <span class="badge-emoji">🏥</span> Cure Mediche
+          </button>
+          <button class="docq-filter-badge" data-filter="famiglia">
+            <span class="badge-emoji">👨‍👩‍👧</span> Famiglia
+          </button>
+        </div>
+      </div>
+
       <div class="docq-container">
 
         <!-- STUDIO/LAVORO -->
+        <div class="docq-category-section" data-category="studio-lavoro">
         <h2 class="docq-category-title">STUDIO / LAVORO</h2>
         <ul class="docq-list">
           {% assign studioPermits = permits | where: "categoria", "Studio/Lavoro" %}
@@ -168,8 +257,10 @@ extraStyles: |
           </div></li>
           {% endfor %}
         </ul>
+        </div>
 
         <!-- PROTEZIONE -->
+        <div class="docq-category-section" data-category="protezione">
         <h2 class="docq-category-title">PROTEZIONE</h2>
         <ul class="docq-list">
           {% assign protezPermits = permits | where: "categoria", "Protezione" %}
@@ -190,8 +281,10 @@ extraStyles: |
           </div></li>
           {% endfor %}
         </ul>
+        </div>
 
         <!-- CURE MEDICHE -->
+        <div class="docq-category-section" data-category="cure-mediche">
         <h2 class="docq-category-title">CURE MEDICHE</h2>
         <ul class="docq-list">
           {% assign curePermits = permits | where: "categoria", "Cure Mediche" %}
@@ -212,8 +305,10 @@ extraStyles: |
           </div></li>
           {% endfor %}
         </ul>
+        </div>
 
         <!-- MOTIVI FAMILIARI -->
+        <div class="docq-category-section" data-category="famiglia">
         <h2 class="docq-category-title">MOTIVI FAMILIARI</h2>
         <ul class="docq-list">
           {% assign famigliaPermits = permits | where: "categoria", "Motivi Familiari" %}
@@ -234,10 +329,87 @@ extraStyles: |
           </div></li>
           {% endfor %}
         </ul>
+        </div>
+
+        <div class="docq-no-results">Nessun permesso trovato</div>
 
       </div>
     </div>
   </section>
+
+  <!-- SEARCH/FILTER JS -->
+  <script>
+  (function() {
+    var input = document.querySelector('.docq-search-input');
+    var badges = document.querySelectorAll('.docq-filter-badge');
+    var sections = document.querySelectorAll('.docq-category-section');
+    var noResults = document.querySelector('.docq-no-results');
+    var countEl = document.querySelector('.docq-search-count');
+    var activeFilter = null;
+    var totalCount = document.querySelectorAll('.docq-row').length;
+
+    function applyFilters() {
+      var query = (input.value || '').toLowerCase().trim();
+      var visibleTotal = 0;
+
+      sections.forEach(function(section) {
+        var cat = section.getAttribute('data-category');
+        var catMatch = !activeFilter || activeFilter === cat;
+
+        if (!catMatch) {
+          section.style.display = 'none';
+          return;
+        }
+
+        section.style.display = '';
+        var rows = section.querySelectorAll('.docq-row');
+        var sectionVisible = 0;
+
+        rows.forEach(function(row) {
+          var titleEl = row.querySelector('.title');
+          var name = titleEl ? titleEl.textContent.toLowerCase() : '';
+          var match = !query || name.indexOf(query) !== -1;
+          row.closest('li').style.display = match ? '' : 'none';
+          if (match) sectionVisible++;
+        });
+
+        section.style.display = sectionVisible > 0 ? '' : 'none';
+        visibleTotal += sectionVisible;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleTotal === 0 ? 'block' : 'none';
+      }
+
+      if (countEl) {
+        if (input.value || activeFilter) {
+          countEl.textContent = visibleTotal + ' / ' + totalCount;
+        } else {
+          countEl.textContent = totalCount + ' permessi';
+        }
+      }
+    }
+
+    input.addEventListener('input', applyFilters);
+
+    badges.forEach(function(badge) {
+      badge.addEventListener('click', function() {
+        var filter = this.getAttribute('data-filter');
+        if (activeFilter === filter) {
+          activeFilter = null;
+          this.classList.remove('active');
+        } else {
+          badges.forEach(function(b) { b.classList.remove('active'); });
+          activeFilter = filter;
+          this.classList.add('active');
+        }
+        applyFilters();
+      });
+    });
+
+    if (countEl) countEl.textContent = totalCount + ' permessi';
+  })();
+  </script>
 
   <!-- RELATED -->
   <section class="section bg-off-white">
