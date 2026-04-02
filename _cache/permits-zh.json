@@ -1,0 +1,2797 @@
+[
+  {
+    "id": "3357355e-7f7f-81f0-813d-c3edcb49ebb7",
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "tipo": "已在意大利的重病患者的医疗许可",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "如何续签许可？",
+        "content": "<p>续签时你需要出示：</p>\n<ul><li><strong>新的医疗证明</strong> 确认你仍患有严重疾病</li><li>与首次申请相同的文件</li></ul>\n<p><strong>许可转换</strong></p>\n<p>到期时，该许可很难转换为其他许可。 </p>\n<p>根据现行法律，医疗许可 <strong>不</strong> 可以转换为 <strong>工作许可。 </strong>如果你申请了医疗许可 <strong>在……之前</strong> 2023年5月之前的，你仍然可以尝试申请转换为工作许可，但你需要良好的法律援助，可能还需要上法庭。在你附近寻找法律帮助。</p>\n<p>如果你在意大利有家庭成员，可以做我们的测试看看你是否有权申请一个 <strong>家庭原因许可。 </strong>如果你在意大利有未成年子女，可以考虑申请Art. 31许可。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以代你提交申请？",
+        "content": "<p>如果你病得太重，申请可以由以下人员代为提出：</p>\n<ul><li>一位家属（持委托书）</li><li>你住院的医院负责人</li><li>任何有意愿帮助你的人</li></ul>\n<p><strong>领取许可</strong></p>\n<ul><li>他们会给你一张 <strong>收据</strong> 当你提交申请时</li><li>该许可为 <strong>60天内准备好</strong></li><li>该许可为 <strong>纸质的</strong> （非电子版）</li><li>也可以由持委托书的其他人代为领取</li></ul>\n<p><strong>重要区别</strong></p>\n<p>该许可与以下不同： <a href=\"/2187355e7f7f81a3a444f6c6bd8a13ae\">已持签证来意大利的人的医疗许可</a> 用于医疗。这适用于已经在意大利并发现自己患有在本国无法治疗的严重疾病的人。</p>",
+        "index": 1
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "住宿声明或租赁合同或居住证明",
+      "证明你的疾病在你的国家无法得到良好治疗的文件",
+      "证明你疾病的医疗文件（公立医院或公立医生出具）"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "证明你的疾病在你的国家无法得到良好治疗的文件",
+      "证明你疾病的医疗文件（公立医院或公立医生出具）"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-812a-b378-e99d4b9ad46e",
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "tipo": "受雇工作（从其他许可转换）",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>如果你在看这个页面，是因为你有一份permesso di soggiorno，并且想知道是否可以将其转换为受雇工作permesso di soggiorno。 </p>\n<p>→ 做测试，看看你是否可以将你的 permesso di soggiorno 转换为受雇工作 permesso di soggiorno。 </p>\n<p>受雇工作permesso di soggiorno在以下情况下颁发： <strong>凭正式合同在雇主处工作</strong>。这意味着你有一个支付你工资的雇主，你是他的雇员。\n</p>",
+        "index": 0
+      },
+      {
+        "question": "获得该许可的条件是什么？",
+        "content": "<p>要获得该许可，你必须有一个 <strong>正式劳动合同</strong> 与意大利雇主签订合同并持有 <strong>工资单</strong> 大约每月至少538欧元。</p>",
+        "index": 1
+      },
+      {
+        "question": "如何申请这个许可？",
+        "content": "<p>在邮局通过Kit postale申请。</p>",
+        "index": 2
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期取决于你拥有的工作合同类型。通常：</p>\n<ul><li><strong>2年</strong> 如果你的劳动合同是固定期限的（有结束日期）</li><li><strong>3年</strong> 如果你的劳动合同是无固定期限的（没有结束日期）</li></ul>\n<hr>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "我有什么权利？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>工作</strong> 凭正式合同（受雇或自营）</li><li><strong>获得居住登记</strong> 在你居住的市政府</li><li><strong>注册国家卫生服务（SSN）</strong> 并拥有家庭医生</li><li><strong>在申根区旅行</strong> 持护照（停留最多3个月）。</li><li><strong>报名参加学校、职业课程或大学</strong></li><li><strong>申请家庭团聚</strong></li></ul>\n<p> ‼️ 你不能在其他欧洲国家工作</p>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "如果我失去工作会怎样？",
+        "content": "<p>如果你失去工作 <strong>你不会失去许可</strong> 直到到期。你可以：</p>\n<ul><li>寻找新工作</li><li>登记失业名单</li><li>申请 <a href=\"/2187355e7f7f81d38a54d111fa27f45f\">用于……的许可 </a><a href=\"/2187355e7f7f81d38a54d111fa27f45f\"><strong>等待就业</strong></a> 续签</li></ul>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "许可到期后怎么办？可以续签吗？可以转换吗？",
+        "content": "<p>在到期之前有两个选择：</p>\n<ol><li><strong>续签： </strong>续签申请最好在 <strong>到期之前</strong> 或者无论如何 <strong>60天内</strong> 到期前。申请通过 Kit postale 提交。 </li></ol>\n<p><strong>2. 转换： </strong>如果你满足所有必要条件，这个许可可以转换为以下 permesso di soggiorno：</p>\n<ul><li>学习</li><li>待业</li><li>家庭原因</li><li>长期居留卡（如果你有至少5年的居住记录）</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是给那些……的 permesso di soggiorno <strong>独立工作</strong>，即 <strong>没有雇主</strong>，但从事独立的工作或专业活动（例如：商人、手工业者、自由职业者等）。</p>",
+        "index": 7
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<ul><li>期限取决于你从事的活动和提交的文件，但通常是 <strong>1至2年</strong>。</li></ul>",
+        "index": 8
+      },
+      {
+        "question": "许可到期后，我该怎么办？",
+        "content": "<ul><li>你必须 <strong>申请续签</strong> <strong>到期之前 </strong>或最迟在到期后60天内</li><li>如果 <strong>你符合条件</strong>，你还可以 <strong>转换</strong> 转换为其他类型的许可（学习、家庭、长期居留、受雇工作等）。你必须在到期前申请转换。</li></ul>",
+        "index": 9
+      },
+      {
+        "question": "如果续签时我失业了怎么办？",
+        "content": "<p>你可以申请颁发 <a href=\"https://www.sospermesso.it/Permesso-di-soggiorno-per-attesa-occupazione-ricerca-lavoro-2187355e7f7f81d38a54d111fa27f45f\">等待就业 permesso di soggiorno</a>，并附上就业中心的登记证明！</p>",
+        "index": 10
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "劳动合同",
+      "收入证明（CUD和/或工资单）",
+      "UNILAV证明",
+      "你雇主的身份证件复印件（如果是意大利人或欧洲人）或其permesso di soggiorno复印件（如果是非欧盟公民）"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "劳动合同",
+      "收入证明（CUD和/或工资单）",
+      "UNILAV证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-810e-ba9d-cf028060c69b",
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "tipo": "欧盟公民家庭成员的carta di soggiorno",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "这个carta di soggiorno是什么？",
+        "content": "<p>这是发给居住在意大利的欧盟公民的非欧盟家属的 permesso di soggiorno。</p>",
+        "index": 0
+      },
+      {
+        "question": "这张卡有效期多长？",
+        "content": "<p>有效期5年，可续签。首次续签后成为永久性。</p>",
+        "index": 1
+      },
+      {
+        "question": "谁可以申请这张卡？",
+        "content": "<p>如果你属于以下情况，可以申请：</p>\n<ul><li>欧盟公民的配偶或民事结合伴侣</li><li>签订了同居合同的伴侣，即使没有结婚或民事结合</li><li>欧盟公民或其配偶的21岁以下的子女</li><li>欧盟公民或其配偶的21岁以上的子女，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li><li>欧盟公民或其配偶的父/母，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li><li>欧盟公民或其配偶的祖父/祖母</li><li>欧盟公民或其配偶的孙子女（子女的子女），21岁以下</li><li>欧盟公民或其配偶的孙子女（子女的子女），21岁以上且 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "在哪里申请这张卡？",
+        "content": "<p>你需要向你居住地区的Questura提交申请。</p>\n<p>你必须在进入意大利后3个月内提出申请。如果你已经持其他类型签证（旅游、家庭等）在意大利，只要满足所有条件，你可以将其更换为carta di soggiorno。</p>",
+        "index": 3
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<ul><li>有效护照（含个人信息和有效期的页面、签证及入境/出境章）</li><li>你的旧permesso di soggiorno（如果有的话）</li><li>欧盟公民的身份证件</li><li>住宿声明</li><li>欧盟公民的家庭状况证明（由其居住地市政府出具）</li><li>证明亲属关系的文件（如果来自国外需经翻译和认证/海牙认证）</li><li>显示欧盟公民收入的文件（Cu/730/Unico） <em>（当要求非欧盟家庭成员由欧盟家庭成员赡养时）</em></li><li>证明你是被赡养人的文件 <em>（当要求非欧盟家庭成员由欧盟家庭成员赡养时）</em></li></ul>",
+        "index": 4
+      },
+      {
+        "question": "持有这个carta di soggiorno我可以做什么？",
+        "content": "<p>持有这张卡你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>报名参加学校、职业课程或大学</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>持有效护照可每6个月在申根国家旅行最多90天</li><li>5年后你可以申请永久carta di soggiorno</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "居住证明",
+      "证明与意大利公民亲属关系的文件",
+      "充足经济能力证明"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "证明家庭关系的文件（例如",
+      "充足经济能力证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81a3-9c94-e5b6901a13b1",
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "tipo": "意大利“动态”公民家庭成员的carta di soggiorno",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "这个carta di soggiorno是什么？",
+        "content": "<p>这是发给意大利“动态”公民（即曾在另一个欧盟国家长期居住，通常是为了工作，现在居住在意大利）的非欧盟家庭成员的permesso di soggiorno。</p>",
+        "index": 0
+      },
+      {
+        "question": "这张卡是什么？",
+        "content": "<p>这是发给</p>",
+        "index": 1
+      },
+      {
+        "question": "这张卡有效期多长？",
+        "content": "<p>有效期5年，可续签。首次续签后，成为永久性。</p>",
+        "index": 2
+      },
+      {
+        "question": "谁可以申请这张卡？",
+        "content": "<p>如果你属于以下情况，可以申请：</p>\n<ul><li>意大利公民的配偶或民事结合伴侣</li><li>签订了同居合同的伴侣，即使没有结婚或民事结合</li><li>意大利公民或其配偶的21岁以下的子女</li><li>意大利“动态”公民或其配偶的21岁以上子女，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在意大利家庭成员的税务上是被赡养人）</li><li>意大利“动态”公民或其配偶的父/母，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在意大利家庭成员的税务上是被赡养人）</li><li>意大利“动态”公民或其配偶的祖父/祖母</li><li>意大利“动态”公民或其配偶的21岁以下孙子女</li><li>意大利“动态”公民或其配偶的21岁以上孙子女，且 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在意大利家庭成员的税务上是被赡养人）</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "在哪里申请这张卡？",
+        "content": "<p>你需要向你居住地区的Questura提交申请。</p>\n<p>你必须在进入意大利后3个月内提出申请。如果你已经持其他类型签证（旅游、家庭等）在意大利，只要满足所有条件，你可以将其更换为carta di soggiorno。</p>",
+        "index": 4
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<ul><li>有效护照（含个人信息和有效期的页面、签证及入境/出境章）</li><li>你的旧permesso di soggiorno（如果有的话）</li><li>意大利公民的身份证件</li><li>住宿声明</li><li>意大利公民的家庭状况证明（由其居住地市政府出具）</li><li>证明亲属关系的文件（如果来自国外需经翻译和认证/海牙认证）</li><li>显示意大利公民收入的文件（Cu/730/Unico） <em>（当要求非欧盟家庭成员由</em></li><li>证明你是被赡养人的文件 <em>（当要求非欧盟家庭成员由</em></li><li><strong>证明意大利公民曾在另一个欧盟国家居住的文件</strong> （根据2007年第30号D.lvo第23条）</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "持有这个carta di soggiorno我可以做什么？",
+        "content": "<p>持有这张卡你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>报名参加学校、职业课程或大学</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>持有效护照可每6个月在申根国家旅行最多90天</li><li>5年后你可以申请永久carta di soggiorno</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "这张卡有效期多长？",
+        "content": "<p>有效期5年，可续签。首次续签后成为永久性。</p>",
+        "index": 7
+      },
+      {
+        "question": "谁可以申请这张卡？",
+        "content": "<p>如果你属于以下情况，可以申请：</p>\n<ul><li>欧盟公民的配偶或民事结合伴侣</li><li>签订了同居合同的伴侣，即使没有结婚或民事结合</li><li>欧盟公民或其配偶的21岁以下的子女</li><li>欧盟公民或其配偶的21岁以上的子女，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li><li>欧盟公民或其配偶的父/母，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li><li>欧盟公民或其配偶的祖父/祖母</li><li>欧盟公民或其配偶的孙子女（子女的子女），21岁以下</li><li>欧盟公民或其配偶的孙子女（子女的子女），21岁以上且 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li></ul>",
+        "index": 8
+      },
+      {
+        "question": "在哪里申请这张卡？",
+        "content": "<p>你需要向你居住地区的Questura提交申请。</p>\n<p>你必须在进入意大利后3个月内提出申请。如果你已经持其他类型签证（旅游、家庭等）在意大利，只要满足所有条件，你可以将其更换为carta di soggiorno。</p>",
+        "index": 9
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<ul><li>有效护照（含个人信息和有效期的页面、签证及入境/出境章）</li><li>你的旧permesso di soggiorno（如果有的话）</li><li>欧盟公民的身份证件</li><li>住宿声明</li><li>欧盟公民的家庭状况证明（由其居住地市政府出具）</li><li>证明亲属关系的文件（如果来自国外需经翻译和认证/海牙认证）</li><li>显示欧盟公民收入的文件（Cu/730/Unico） <em>（当要求非欧盟家庭成员由欧盟家庭成员赡养时）</em></li><li>证明你是被赡养人的文件 <em>（当要求非欧盟家庭成员由欧盟家庭成员赡养时）</em></li></ul>",
+        "index": 10
+      },
+      {
+        "question": "持有这个carta di soggiorno我可以做什么？",
+        "content": "<p>持有这张卡你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>报名参加学校、职业课程或大学</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>持有效护照可每6个月在申根国家旅行最多90天</li><li>5年后你可以申请永久carta di soggiorno</li></ul>",
+        "index": 11
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "证明与意大利公民亲属关系的文件",
+      "充足经济能力证明"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "证明家庭关系的文件（例如",
+      "充足经济能力证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8160-ba97-d4c616434b37",
+    "slug": "apolidia",
+    "tipo": "无国籍",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>无国籍permesso di soggiorno是在你被意大利认定为无国籍人士（即没有任何国家承认你为其公民）时颁发给你的。这种情况比较少见，但如果你获得了这一认定，你有权获得一份在意大利享有很多权利的permesso di soggiorno。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>如果符合以下条件，你可以申请该许可：</p>\n<ul><li>你已获得内政部或民事法院的无国籍身份认定</li><li>你有一份证明你无国籍身份的文件（判决或法令）</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请这个许可？",
+        "content": "<p>首次申请必须直接去Questura（不使用Kit postale）。</p>\n<p>👉 <a href=\"https://www.sospermesso.it/documenti-apolidia-art-17-d-p-r-n-572-93-primo.html\"><strong>查看首次办理所需文件清单</strong></a></p>\n<p>续签时可以使用Kit postale。</p>\n<p>👉 <a href=\"https://www.sospermesso.it/documenti-apolidia-art-17-d-p-r-n-572-93-rinnovo.html\"><strong>查看续签所需文件清单</strong></a></p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>工作（自营或受雇）</strong></li><li><strong>注册国家卫生服务（SSN）并获得家庭医生</strong></li><li>申请户籍登记</li><li>使用无国籍人旅行证件出行</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>无国籍许可有效期为5年，可续签。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，你可以续签。请在到期前通过 Kit postale 提交续签申请。无国籍身份是永久的，因此只要你提交所需文件，续签基本上是自动的。</p>",
+        "index": 5
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>总费用约为126,46€：</p>\n<ul><li>80.46€ 用于bollettino postale（包含电子许可证的费用）</li><li>30€ 用于寄送Kit postale（仅限续签）</li><li>16€ 用于marca da bollo</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "住宿声明或租赁合同或居住证明",
+      "授予无国籍身份的决定"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "即将到期的许可",
+      "授予无国籍身份的决定"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8122-95e1-e3904a130c8b",
+    "slug": "lavoro-autonomo-conversione-da-altro-permesso",
+    "tipo": "自营工作（从其他许可转换）",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>如果你在看这个页面，是因为你有一份permesso di soggiorno，并且想知道是否可以将其转换为自营工作permesso di soggiorno。例如：你在意大利持有学习、家庭、等待就业等许可，现在想做自营工作者。</p>\n<p><em>→ 做测试，看看你是否可以将你的 permesso di soggiorno 转换为自营工作 permesso di soggiorno</em></p>\n<p>这是给那些……的 permesso di soggiorno <strong>独立工作</strong>，即 <strong>没有雇主</strong>，但从事独立的工作或专业活动（例如：商人、手工业者、自由职业者等）。</p>",
+        "index": 0
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<ul><li>期限取决于你从事的活动和提交的文件，但通常是 <strong>1至2年</strong>。</li><li>是 <strong>可续签</strong>，前提是你继续从事自营工作并满足所需要求。</li></ul>\n<hr>",
+        "index": 1
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>在邮局填写Kit postale申请</p>\n<p><strong>你需要做的是：</strong></p>\n<hr>\n<ol><li>填写 <strong>Kit postale</strong> （表格1和表格2），然后从指定邮局寄出。</li><li>你会收到一个去Questura采集指纹的预约。</li><li>如果Questura批准转换，你将收到新的自营工作许可。</li></ol>",
+        "index": 2
+      },
+      {
+        "question": "持有此许可你可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>自主创业</strong> 持有增值税号（个体经营）</li><li><a href=\"/20a7355e7f7f8173bffccbb2a93bae6f\"><strong>作为受雇人员工作（受雇工作）</strong></a></li><li><strong>获得居住登记</strong> 在你居住的市政府</li><li><strong>注册卫生服务</strong> 并拥有家庭医生</li><li><strong>在申根区旅行</strong> 持护照（每180天最多90天）</li><li><strong>申请家庭团聚</strong></li><li><strong>报名参加课程、学校、大学</strong></li></ul>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "如果你关闭你的生意会怎样？",
+        "content": "<ul><li>你可以申请一个 <strong>等待就业许可</strong> 续签，但你必须证明你正在寻找其他工作或活动。</li></ul>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "许可什么时候到期？",
+        "content": "<ul><li>你必须 <strong>申请续签</strong> <strong>到期之前 </strong>或最迟在到期后60天内</li><li>如果 <strong>你符合条件</strong>，你还可以 <strong>转换</strong> 转换为其他类型的许可（学习、家庭、长期居留、受雇工作等）。你必须在到期前申请转换。</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "最近的收入申报",
+      "增值税号分配证明或商会注册证明"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "最近的收入申报",
+      "增值税号分配证明或企业登记证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8145-9fde-f4973a534d6a",
+    "slug": "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche",
+    "tipo": "持医疗签证入境后的医疗许可",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>医疗permesso di soggiorno（T.U. 286/98第36条）适用于持专门签证进入意大利接受医疗的人。这是为需要在本国无法获得或难以获得的专科医疗的外国公民准备的。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>以下人员可以申请：</p>\n<ul><li>已获得 <strong>医疗入境签证</strong> 从意大利大使馆或领事馆</li><li>有意大利医疗机构（公立或认可的私立）出具的声明，说明治疗类型、预计时间和可能的住院情况</li><li>已缴纳 <strong>30%保证金</strong> 向选定医疗机构支付预计治疗费用的</li><li>已证明有足够的资源支付医疗费、食宿费</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何/在哪里申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong> 在授权邮局提供。</p>\n<p>在 <strong>8天</strong> 从进入意大利起，你必须提交申请。</p>\n<p>要了解需要携带哪些文件，请查阅专门页面：</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-cure-mediche-dopo-ingresso-con-visto-art-36-primo.html\">首次申请所需文件</a></li><li><a href=\"https://www.sospermesso.it/documenti-cure-mediche-dopo-ingresso-con-visto-art-36-rinnovo.html\">续签所需文件</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>工作</strong> （受雇或自雇）</li><li>在签证指定的医疗机构接受治疗</li><li>注册国家卫生服务（SSN）或购买私人医疗保险</li></ul>\n<p>⚠️ 请记住：此许可与你的治疗需求相关。如果治疗结束，许可可能不会被续签。</p>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为 <strong>1年</strong>，根据医疗证明中所示完成治疗所需的时间。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，如果医疗机构证明你仍需在意大利继续治疗，你可以续签。续签需要提交医院的更新声明。</p>",
+        "index": 5
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>申请时你需要支付：</p>\n<ul><li>一张 bollettino postale，金额为 <strong>30.46€</strong></li><li>一张 marca da bollo，金额为 <strong>16€</strong></li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "入境签证",
+      "医疗文件",
+      "生活来源说明（食宿）",
+      "医疗保险或自愿加入SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "医院出具的需要在意大利继续治疗的声明",
+      "生活来源说明（食宿）",
+      "医疗保险或自愿加入SSN"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81c4-9bf6-dd7036913202",
+    "slug": "calamita-naturale",
+    "tipo": "自然灾害",
+    "emoji": "🌊",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>自然灾害permesso di soggiorno（移民法Art. 20bis）颁发给以下外国人： <strong>因为发生了严重紧急情况而无法返回自己的国家</strong> ⚠️ （如地震、战争、自然灾害）使得在那里生活很危险。</p>\n<p>该许可与政治庇护申请不同，你不需要申请国际保护。</p>",
+        "index": 0
+      },
+      {
+        "question": "什么时候可以申请？",
+        "content": "<p>如果符合以下条件，你可以申请该许可：</p>\n<ul><li>你已经住在意大利</li><li>在你的国家有一个 <strong>非常严重和危险的情况</strong> （紧急情况、灾害、灾难）</li><li>你不能回到你的国家 <strong>安全地</strong></li><li>你本国的情况危及你的基本权利（生命权、自由权、自主决定权）</li></ul>\n<p>情况必须是 <strong>特殊且临时的</strong> 但也非常危险。</p>",
+        "index": 1
+      },
+      {
+        "question": "如何以及在哪里申请这个许可？",
+        "content": "<p>你需要向以下机构提交申请 <strong>你居住地区的Questura</strong>。</p>\n<p>你必须直接去Questura预约</p>\n<p>你提交申请后，Questura可能会核实你的国家是否确实存在危险状况，然后做出决定。</p>",
+        "index": 2
+      },
+      {
+        "question": "📋 你需要什么文件？",
+        "content": "<ul><li><strong>证明你的国家存在危险状况的文件</strong>：报纸文章、国际组织的报告、证明你的国家存在严重紧急情况的官方文件</li><li><strong>证明你在意大利经济来源的文件复印件</strong> （如果有的话）：工资单、劳动合同、你领取的补助</li><li><strong>护照</strong> 或类似文件</li><li><strong>2张照片</strong></li><li><strong>Marca da bollo</strong> 16欧元的</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "有效期多长？",
+        "content": "<p>许可的有效期为 <strong>六个月， </strong>如果满足以下条件可再续签六个月 </p>",
+        "index": 4
+      },
+      {
+        "question": "✅ 这给我什么权利？我可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>获得 <strong>居住</strong> 在你居住的市政府</li><li><strong>工作</strong> （持有正规合同——自雇或受雇）</li><li><strong>注册国家卫生服务（SSN）并获得家庭医生</strong></li><li>报名参加学校、职业课程或大学</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "住宿声明或租赁合同或居住证明",
+      "自然灾害证明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "自然灾害证明"
+    ],
+    "rinnovoMethod": "本人亲自",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81f3-854e-fbf18393651e",
+    "slug": "attesa-occupazione",
+    "tipo": "待业",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>等待就业permesso di soggiorno允许你在没有或不再拥有工作合同的情况下留在意大利。通常颁发给 </p>\n<ul><li>发给外国工人，条件是 <strong>已失业</strong> 并正在寻找新工作</li><li>发给年满18岁但没有稳定工作的无陪伴外国未成年人</li><li>到 <strong>外国学生</strong> 在意大利毕业但尚未找到工作的</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "如何申请待业permesso di soggiorno？",
+        "content": "<p>如果你处于以下三种情况之一，可以申请该许可：</p>\n<ul><li><strong>你持有自雇或受雇工作的permesso di soggiorno</strong> 但你无法续签，因为你失业了（被解雇或辞职）或你的自营活动已结束</li><li><strong>你持有学习许可</strong> 并且你在意大利获得了学位（本科、硕士、博士）但还没有找到工作。在这种情况下，建议先转换为待业许可，然后再转换为工作许可。从学习许可直接转换为工作许可更加困难</li><li><strong>你持有未成年人许可</strong> 而你还需要一些时间来找工作</li></ul>\n<p>⚠️ <em>注意：如果你从未持有过其他permesso di soggiorno，你不能在意大利申请待业许可。也就是说：你不能在没有签证或持旅游签证的情况下来到意大利，然后用待业许可找工作。</em></p>",
+        "index": 1
+      },
+      {
+        "question": "👉 如何申请这个许可？",
+        "content": "<ul><li>如果你的许可即将到期：通过以下方式寄送申请 <strong>Kit postale</strong> 到期之前</li><li>如果你的许可已经过期：直接去Questura预约</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "申请许可前你需要做什么？",
+        "content": "<p><strong>1. 在就业中心注册</strong></p>\n<ul><li>前往最近的就业中心</li><li>声明你愿意工作（包括与你之前不同的工作）</li><li>他们会给你一个 <strong>注册证明</strong> 作为求职者</li></ul>\n<p><strong>在就业中心登记需要</strong></p>\n<ul><li>税号</li><li>有效的permesso di soggiorno（或已过期但有续签收据）</li><li>有效身份证件</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>总费用为 <strong>116.46€</strong>：</p>\n<ul><li>30.46€ 用于电子许可证</li><li>30€ 用于寄送Kit postale</li><li>40€ 用于签发许可</li><li>16€ 用于marca da bollo</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>该许可通常有效期为<strong> 1年，根据Questura的规定不能续签。</strong></p>",
+        "index": 5
+      },
+      {
+        "question": "✅ 这给我什么权利？我可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>工作</strong> （自雇或受雇）</li><li><strong>注册国家卫生服务（SSN）并获得家庭医生</strong></li><li>申请户籍登记 </li></ul>",
+        "index": 6
+      },
+      {
+        "question": "到期后会怎样？",
+        "content": "<p><strong>如果你找到工作：</strong> 你可以通过 Kit postale 将许可转换为工作许可（自营或受雇）</p>\n<p><strong>如果你找不到工作： </strong>到期之前，寻求专业法律帮助</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 70.46€",
+      "护照复印件（未过期）",
+      "在就业中心登记"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 70.46或80.46€（取决于许可期限）",
+      "护照复印件（未过期）",
+      "在就业中心登记"
+    ],
+    "rinnovoMethod": "不适用",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-816e-b392-c34b5d6e771e",
+    "slug": "affidamento-a-familiari-entro-il-quarto-grado",
+    "tipo": "由四等亲以内的亲属托管",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是发给在没有父母的情况下到达意大利的外国未成年人（MSNA），且已被委托给四等以内亲属（兄弟/姐妹、叔叔/阿姨、堂表兄弟姐妹、祖父母……）照顾的家庭原因 permesso di soggiorno。</p>\n<p>如果你在意大利没有亲属，你会被给予一个 <a href=\"/2187355e7f7f818b843df8b6a7fd30b7\">无陪伴外国未成年人（MSNA）permesso di soggiorno</a>。</p>\n<p>家庭原因的许可更好，因为当你满18岁时，更容易将其转换为其他类型的许可。</p>",
+        "index": 0
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期至你年满18岁。</p>",
+        "index": 1
+      },
+      {
+        "question": "获得该许可的条件是什么？",
+        "content": "<p>如果符合以下条件，你可以获得该许可：</p>\n<ul><li>你已被少年法院的文件委托给四等亲内的亲属（兄弟/姐妹、叔叔/阿姨、堂/表兄弟姐妹、祖父母……）</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>你必须直接在Questura申请。</p>",
+        "index": 3
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<p>申请时，你需要携带：</p>\n<ul><li>出生证明或身份证件（如果有的话）</li><li>少年法院出具的监护或托管文件</li><li>社会服务部门确认为你提供照顾的声明</li><li>居住证明或你所住社区/家庭的住宿声明</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "持有这个permesso di soggiorno我可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>报名参加学校、职业课程或大学</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>以正式合同工作（自营或受雇），但需年满16岁</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "满18岁时怎么办？",
+        "content": "<p>在满18岁之前，你可以将你的许可转换为：</p>\n<ul><li>学习许可（如果你已注册学校或大学）</li><li>工作许可（如果你有自营或受雇工作合同）</li><li>等待就业许可（如果你正在找工作）</li></ul>\n<p>注意：你必须在满18岁之前申请更换许可，否则许可将到期，你可能变为非法居留。</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "住宿声明或租赁合同或居住证明",
+      "出生证明/身份证件",
+      "少年法院的监护令",
+      "社会服务的报告/声明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "不适用",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81bc-9e91-e3e89cc6945d",
+    "slug": "famiglia-genitore-di-cittadino-italiano",
+    "tipo": "家庭——意大利公民的父母",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "什么是意大利公民父母的permesso di soggiorno？",
+        "content": "<p>这是一种专门为意大利未成年公民的父母提供的 permesso di soggiorno。</p>",
+        "index": 0
+      },
+      {
+        "question": "有效期多长？",
+        "content": "<p>该许可通常有效期为2年</p>",
+        "index": 1
+      },
+      {
+        "question": "需要哪些条件？",
+        "content": "<p>要申请该许可，你必须有一个居住在意大利的意大利国籍未成年子女，并且仍然承担其监护责任。 </p>\n<p>不需要同住。例如，即使未成年人与另一位家长住在一起，你也可以获得此许可。</p>",
+        "index": 2
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>你需要向你居住地区的Questura提交申请。</p>",
+        "index": 3
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<ul><li>证明你是意大利公民父母的证书</li><li>证明你子女在意大利居住地址的证书</li><li>少年法院出具的证明你仍具有监护能力的文件</li><li>有效护照</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "持有这个permesso di soggiorno我可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>在你居住的市镇获得居住登记</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>在申根区旅行（如果你有有效护照）</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "许可到期后怎么办？",
+        "content": "<p>在到期之前，你可以 </p>\n<ul><li>续签，直到你的孩子未成年。</li><li>转换为其他许可（例如工作或学习）</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "未成年人在意大利的居住证明",
+      "证明与意大利公民亲属关系的文件"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "即将到期的许可",
+      "未成年人在意大利的居住证明",
+      "意大利公民的身份证件"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-818b-b998-f40fea25642e",
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "tipo": "意大利“静态”公民家庭成员的FAMIT许可",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是发给从未在其他欧盟国家居住过的意大利公民的家属的 permesso di soggiorno。</p>",
+        "index": 0
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期5年。</p>",
+        "index": 1
+      },
+      {
+        "question": "谁可以提交申请？",
+        "content": "<p>以下人员可以申请：</p>\n<ul><li>意大利公民的配偶（或民事结合伴侣）</li><li>签订了同居合同的伴侣，即使没有结婚或民事结合</li><li>21岁以下的子女（意大利公民或其配偶的）</li><li>21岁以上的被赡养子女（意大利公民或其配偶的）。需要提供证明（原籍国的文件、汇款收据，有时还需要在税务上登记为被赡养人）</li><li>被赡养的父母（意大利公民或其配偶的）。需要提供证明（原籍国的文件、汇款收据，有时还需要在税务上登记为被赡养人）</li><li>（意大利公民或其配偶的）祖父母</li><li>意大利公民或其配偶21岁以下的孙子女（子女的子女）</li><li>意大利公民或其配偶21岁以上的孙子女（子女的子女），由家庭抚养。为此需要提交证明（原籍国文件、汇款收据，有时需要在税务上登记为被抚养人）</li></ul>\n<p><strong>注意：</strong> 兄弟、姐妹、叔伯姑舅姨、表亲堂亲和其他亲属无权获得此许可。他们只能享受进入和居留意大利的</p>",
+        "index": 2
+      },
+      {
+        "question": "我需要什么文件？",
+        "content": "<p>申请时你需要携带：</p>\n<ul><li>有效护照或带照片的国籍证明文件</li><li>即将到期/已过期的permesso di soggiorno（如果有的话）</li><li>意大利家庭成员的身份证件</li><li>证明你在意大利合法居留的文件</li><li>证明你的家庭相对于成员人数有足够收入的文件（该收入必须来源合法，且不低于法律规定的每位家庭成员的年度最低金额）</li><li>意大利家庭成员的家庭和居住证明（如果是自我声明，还需附上家庭中每位成员的身份证件复印件）</li><li>以意大利家庭成员名义的已注册租赁合同或已注册产权证书</li><li>65岁以上的非欧盟家庭成员需购买至少12个月的医疗保险（意大利公民的父母除外）</li><li>证明亲属关系的文件</li><li>证明你</li><li>意大利家庭成员保证你的生活费用并确认你们住在一起的声明</li><li>住宿声明</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "它允许我做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>持有permesso di soggiorno满5年</li><li>在你居住的地方获得居住登记</li><li>以正式合同工作（自营或受雇）</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>在意大利和申根国家自由旅行（持有效护照）</li><li>参加培训课程、学校和大学</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "我如何续签？",
+        "content": "<p>在到期之前，你可以在你所在地区的Questura续签该许可，需提交：</p>\n<ul><li>有效护照</li><li>家庭和居住证明</li><li>意大利家庭成员的身份证件</li><li>可能被要求的其他文件</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "我可以转换它吗？",
+        "content": "<p>如果你满足条件，该许可可以转换为：</p>\n<ul><li>工作许可</li><li>学习许可</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "证明与意大利公民亲属关系的文件",
+      "意大利公民的身份证件"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "证明与意大利公民亲属关系的文件（如果是配偶需包括新的结婚证书）",
+      "意大利公民的身份证件"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-814c-975a-ef5610234477",
+    "slug": "minore-eta-per-msna",
+    "tipo": "未成年（适用于MSNA）",
+    "emoji": "👶",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>未成年permesso di soggiorno颁发给 <strong>18岁以下的外国青少年</strong> 在意大利没有父母或其他近亲的。即使你没有证件或以非正规方式到达，也可以获得此许可。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>仅凭以下事实即可申请该许可： <strong>是未成年人</strong> （未满18岁）并且在意大利没有父母或其他近亲。</p>\n<p>申请可以由以下人员提出：</p>\n<ul><li>未成年人本人（在律师或所居住中心工作人员的帮助下）</li><li>当地社会服务机构</li><li>该 <strong>监护人</strong> （依法照顾未成年人的成年人）</li></ul>\n<p>如果法院尚未指定监护人，未成年人居住的中心负责人可以提交申请。</p>",
+        "index": 1
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>你需要向以下机构提交申请 <strong>中心所在城市的Questura</strong> 你居住的。</p>",
+        "index": 2
+      },
+      {
+        "question": "📋 需要什么文件？",
+        "content": "<ul><li><strong>4张证件照</strong></li><li><strong>Marca da bollo 16€</strong></li><li><strong>住宿声明</strong> 附中心负责人的身份证件</li><li><strong>监护人的文件</strong> 由未成年人法庭任命的（如已有）或未成年人所在中心负责人的声明</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>该许可有效期为 <strong>直到18岁</strong> （直到成年）。</p>",
+        "index": 4
+      },
+      {
+        "question": "持有此许可你可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<p><strong>  ✅ 上学</strong> （小学、初中、高中）即使没有其他文件</p>\n<p><strong>  ✅ 注册国家医疗服务（SSN）并拥有家庭医生</strong> 🏥</p>\n<p><strong>  ✅ 从16岁起，工作</strong> （持有正规合同——自雇或受雇，须遵守未成年人劳动保护规定）</p>\n<p><strong>  ✅ </strong>申请加入一个<strong> 未成年人接待中心</strong></p>",
+        "index": 5
+      },
+      {
+        "question": "满18岁时会怎样？",
+        "content": "<p>在满18岁之前，你可以将许可转换为其他类型，例如：</p>\n<ul><li><a href=\"/2187355e7f7f81e48862e58bff4681dc\">工作许可</a></li><li><a href=\"/2187355e7f7f81b6a119f485cc340e1c\">学习许可</a></li><li>等待就业许可 </li><li>家庭许可（如果满足所有必要条件）</li><li><a href=\"/2967355e7f7f8006a790da7e5b938d1b\">行政延续许可</a></li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "之前的许可"
+    ],
+    "rinnovoMethod": "不适用",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81b3-a741-cec56c248950",
+    "slug": "studio-conversione-da-altro-permesso",
+    "tipo": "学习（从其他许可转换）",
+    "emoji": "📖",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>学习permesso di soggiorno颁发给希望在意大利参加超过3个月的学习课程、大学课程或培训课程的外国人。</p>",
+        "index": 0
+      },
+      {
+        "question": "如何申请许可？",
+        "content": "<p>学习permesso di soggiorno通过Kit postale申请，并附上所需文件。 </p>",
+        "index": 1
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>该许可有效期为六个月至一年。你可以续签以覆盖整个学习课程期间。</p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利/可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>持护照在申根区国家旅行，不超过三个月</li><li>以正式合同从事受雇工作，每年最多1040小时</li><li>注册国家卫生服务（SSN），每年支付至少700欧元的费用，或者购买私人医疗保险。</li><li>申请 <a href=\"/2187355e7f7f819c8fc8fd2ef36a09d1\">家庭团聚</a>，但前提是你有足够的收入和符合法律要求的住房</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "如果我已经在意大利，可以申请该许可吗？",
+        "content": "<p>是的，如果你已经住在意大利并想开始或继续学业，你可以申请。</p>\n<p>要了解你的permesso di soggiorno是否可以转换为学习permesso di soggiorno，请做我们的测试</p>",
+        "index": 4
+      },
+      {
+        "question": "我可以续签吗？",
+        "content": "<p>你必须在许可到期前（或到期后60天内）通过Kit postale向Questura申请续签。你需要附上证明你仍然在读大学或培训课程的文件。</p>\n<p>如果你在大学学习，你可以在正常学制之外最多续签三年。你也可以为攻读专业课程或博士学位而续签。</p>",
+        "index": 5
+      },
+      {
+        "question": "如果我没有通过足够的考试会怎样？",
+        "content": "<p>续签许可，你必须通过：</p>\n<ul><li>大学第一年至少通过一门考试</li><li>其他学年至少通过两门考试</li><li>你不能在超过正常学制三年之后继续注册</li></ul>\n<p>如果你有记录在案的严重健康问题或其他不可抗力原因，即使第一年后只通过了一门考试，也可以续签许可。</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 70.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "之前的许可",
+      "注册和已通过考试的证明文件",
+      "经济担保（银行对账单或奖学金或家庭成员赡养声明）",
+      "医疗保险或自愿加入SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 70.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "之前的许可",
+      "注册和已通过考试的证明文件",
+      "经济担保（银行对账单或奖学金或家庭成员赡养声明）",
+      "健康保险或国家医疗服务注册",
+      "医疗保险或自愿加入SSN"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 70.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81f0-bbb0-f1ac790f8b59",
+    "slug": "tirocinio",
+    "tipo": "实习",
+    "emoji": "📄",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "转换后可续签"
+    ],
+    "rinnovoMethod": "转换后可续签",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8130-bf0f-c5ca3816565e",
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "tipo": "难民身份或辅助保护持有者的家庭成员",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是为在意大利获得难民身份或辅助保护的人的外国家属提供的 permesso di soggiorno。如果你的配偶、父母或子女拥有国际保护，你可以申请此许可与他们团聚。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>国际保护持有者（难民或辅助保护）的外籍家庭成员可以申请：</p>\n<ul><li>配偶或民事结合伴侣</li><li>未婚的未成年子女（包括配偶的子女）</li><li>被赡养的父母，前提是他们在原籍国没有其他子女</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请这个许可？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong>：填写表格，在指定邮局交付，然后你将收到Questura的预约通知。</p>\n<p>要了解需要携带哪些文件，请查阅页面 <strong>我需要带什么文件</strong></p>\n<p>➡️ <u><strong>首次申请所需文件</strong></u></p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>工作</strong> （受雇或自雇）</li><li><strong>注册国家卫生服务（SSN）</strong> 并拥有家庭医生</li><li>申请户籍登记</li><li>享受社会服务和教育服务</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为 <strong>5年</strong>。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，你可以续签。你必须在到期前提交续签申请。如果你的家人仍保持国际保护身份且家庭关系仍然存在，许可将被续签。</p>",
+        "index": 5
+      },
+      {
+        "question": "我可以转换为其他许可吗？",
+        "content": "<p>持有此许可你可以工作，因此随着时间的推移你可能满足申请受雇或自雇工作许可的条件。合法居住满5年后，你还可以申请欧盟长期居留许可。</p>",
+        "index": 6
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>申请费用为：</p>\n<ul><li><strong>bollettino postale：70.46€</strong> （包含电子许可证的费用）</li><li><strong>Marca da bollo：16€</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "证明亲属关系的文件",
+      "外籍家庭成员的permesso di soggiorno"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81e5-a403-c52d00a14732",
+    "slug": "protezione-sussidiaria",
+    "tipo": "辅助保护",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是发给因本国有战争或面临被杀害、被判死刑、遭受酷刑或其他严重虐待风险而逃离的人的许可。 </p>",
+        "index": 0
+      },
+      {
+        "question": "如何申请许可？",
+        "content": "<p>要获得该许可，你必须：</p>\n<ul><li>申请庇护（或国际保护，是一回事——请参阅我们的 <a href=\"/2187355e7f7f814989cbc7ee16321ee8\">指南</a>)</li><li>获得Commissione Territoriale或法院的肯定决定</li><li>凭此肯定决定，前往Questura申请许可</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "有效期多长？",
+        "content": "<p>该许可有效期为5年，通常可自动续签5年</p>",
+        "index": 2
+      },
+      {
+        "question": "持有这个许可我可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>在你所在的市镇获得居住登记</li><li>合法工作（受雇或自营）</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>报名参加学校、职业课程或大学</li><li>获得经济和住房援助</li><li>申请与近亲团聚：<ul><li>妻子/丈夫</li><li>未成年子女</li><li>完全丧失行为能力的成年子女</li><li>65岁以上或受抚养的父母</li></ul></li></ul>\n<p>家庭团聚时，你不需要像其他外国人一样证明你有足够大的住房和最低收入。</p>",
+        "index": 3
+      },
+      {
+        "question": "我可以出意大利旅行吗？",
+        "content": "<p>在意大利自由旅行，前往其他欧盟国家最多3个月。 </p>\n<p>如果你无法获得本国护照，可以尝试申请“titolo di viaggio”（一种意大利旅行证件，可以用来前往其他国家）。</p>\n<p><strong>注意！</strong> 你不能前往你的原籍国。如果你这样做，Questura可能会撤销你的permesso di soggiorno。</p>",
+        "index": 4
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>你必须亲自前往Questura。</p>",
+        "index": 5
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<p>申请该许可时，你需要携带Commissione Territoriale（或法院）授予你辅助保护的决定。</p>",
+        "index": 6
+      },
+      {
+        "question": "到期后我可以续签吗？",
+        "content": "<p>是的，通常辅助保护的许可会再续签五年。但请注意！如果你的国家不再存在危险状况，许可可能不会被续签。</p>",
+        "index": 7
+      },
+      {
+        "question": "我可以转换该许可吗？",
+        "content": "<p>在到期之前，你可以选择不续签辅助保护许可，而是申请转换为：如果你有正式工作，可转换为自营或受雇工作的permesso di soggiorno；如果你在培训课程或大学注册，可转换为学习许可；或在意大利居住五年后转换为欧盟长期居留permesso di soggiorno（“Carta”）。</p>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-815c-94da-f7f3b9ec0728",
+    "slug": "assistenza-minore-articolo-31",
+    "tipo": "未成年人援助（“Articolo 31”）",
+    "emoji": "🎨",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>未成年人照护permesso di soggiorno是在少年法院批准外籍未成年人的亲属入境或留在意大利、因与儿童成长和福祉相关的严重原因时颁发的。</p>",
+        "index": 0
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期由少年法院确定，通常至少为一年。许可可续签。</p>",
+        "index": 1
+      },
+      {
+        "question": "获得该许可的条件是什么？",
+        "content": "<p>这个许可的基本要求是：</p>\n<ul><li>未成年人必须在意大利境内</li><li>申请人必须是未成年人的亲属（通常是父母）</li><li>必须证明没有亲属的话未成年人会遭受很大痛苦，无论是情感上还是身体上，尤其是如果孩子年幼</li><li>亲属必须提供证明与未成年人之间亲属关系的文件</li><li>证明未成年人经历的文件（学校、活动等）。 </li></ul>",
+        "index": 2
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>申请必须向未成年人居住地区的少年法院提出。不强制要求律师协助：你可以自行提交申请，但建议有法律协助。</p>\n<p><strong>注意</strong>：法院诉讼可能持续数月甚至数年，结果不确定。在等待法院判决期间，你不会有临时permesso di soggiorno。</p>\n<p>获得法院文件后，亲属需要向其居住地区的Questura申请permesso di soggiorno。该许可为电子版。</p>",
+        "index": 3
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<p>向少年法院提交申请时，你需要携带：</p>\n<ul><li>上诉申请书（有模板可用）</li><li>Marca da bollo 27,00€</li><li>未成年人出生证明</li><li>申请家庭成员和未成年人的身份证件</li><li>与未成年人健康问题相关的医疗证明（如有）</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "持有这个permesso di soggiorno我可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>报名参加学校、职业课程或大学</li><li>凭护照在意大利和申根国家自由通行（短期停留最多3个月）</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "许可到期后怎么办？",
+        "content": "<p>你可以续签或转换为其他许可</p>\n<p><strong>注意</strong>：要续签此许可，你必须向少年法院提出新的诉讼。不能在Questura或通过Kit postale续签。</p>\n<p>转换方面，该许可可以转换为：</p>\n<ul><li>工作permesso di soggiorno（自营或受雇）</li><li>在意大利合法居住5年后可申请欧盟长期居留许可</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "少年法院的决定"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "本人亲自",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8111-9dbf-ddee1c7b17cf",
+    "slug": "richiesta-asilo",
+    "tipo": "庇护申请",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>庇护申请permesso di soggiorno（黄色许可）是颁发给在意大利提交了国际保护（庇护）申请并仍在等待最终答复的人的证件 </p>",
+        "index": 0
+      },
+      {
+        "question": "如何申请许可？",
+        "content": "<p>首先，你需要去Questura的移民办公室申请国际保护：他们会采集你的指纹，然后给你一份庇护申请permesso di soggiorno。不需要护照。如果你说你有护照，你必须交给Questura。\n</p>\n<p>任何申请庇护的人都有权获得此许可，它允许你合法留在意大利，直到你的申请有结果。有一些例外情况（请继续阅读）。</p>",
+        "index": 1
+      },
+      {
+        "question": "我有什么权利？",
+        "content": "<ul><li>持正规合同工作（自雇或受雇）：你可以在Questura发给你的带照片许可（“attestato nominativo”）日期起60天后签订劳动合同，该证件在  </li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>在你居住的市镇获得居住登记</li><li>如果你没有足够的钱维持生活，可以去住在一个 <a href=\"/2187355e7f7f814989cbc7ee16321ee8#29a7355e7f7f80e197abfcb177f04f21\">接待中心</a></li></ul>\n<p>持此许可不能出意大利旅行。</p>",
+        "index": 2
+      },
+      {
+        "question": "有效期多长？",
+        "content": "<p>有效期6个月。但即使过期了（这是很常见的情况），在Commissione Territoriale对你的国际保护申请做出决定之前，你仍然是合法居留的。在很多情况下你可以继续留在意大利直到法院做出决定，但不总是如此（这取决于你来自哪个国家、你如何进入意大利，而且即将出台新的法律会进一步限制这项权利）。</p>",
+        "index": 3
+      },
+      {
+        "question": "我可以续签吗？",
+        "content": "<p>庇护申请许可会自动续签，直到Commissione Territoriale对你的国际保护申请作出决定。 </p>\n<p> ⚠️ 在某些情况下，如果你收到了Commissione Territoriale的否定答复，并且例如：(a) 你来自被认为 <strong>如果你已经收到第一次否定答复，并且在想是否会被驱逐或被送入遣返拘留中心（“CPR”），最好立即寻求专业法律帮助。</strong></p>",
+        "index": 4
+      },
+      {
+        "question": "我可以转换为其他许可吗？",
+        "content": "<p>不可以，该permesso di soggiorno不能转换为其他许可，除了家庭原因permesso di soggiorno。</p>\n<p><em>如果你在未满18岁时提交了庇护申请，且收到了最终否定决定（来自Commissione Territoriale或法院），即使你现在已满18岁，也可以将该许可转换为学习、工作或等待就业许可。</em></p>",
+        "index": 5
+      },
+      {
+        "question": "如果我的国际保护申请被拒绝会怎样？",
+        "content": "<p>如果Commissione Territoriale拒绝了你的申请，你可以在律师的帮助下上诉。如果你2025年的收入低于13.500欧元，你的律师可以提起上诉 <strong>免费</strong>。</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "记名证明",
+      "C3表格",
+      "如果你在法院有上诉，请打印法院的电子卷宗（请向你的律师咨询）"
+    ],
+    "rinnovoMethod": "本人亲自",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-811e-bed3-e891a236e515",
+    "slug": "motivi-religiosi",
+    "tipo": "宗教原因",
+    "emoji": "🕊️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>宗教permesso di soggiorno面向在意大利从事与宗教团体相关活动的外国公民。这是一种给以下人员的许可： <strong>宗教人士、传教士、神职人员</strong> 以及由认可的宗教团体派往意大利的人员。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>以下人员可以申请：</p>\n<ul><li>被……派往意大利 <strong>宗教团体</strong> 被认可的</li><li>持有 <strong>有文件证明的宗教任务</strong> （例如：神父、修女、传教士、牧师）</li><li>已获得宗教目的入境签证</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何/在哪里申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong> 在授权邮局提供。</p>\n<p>在 <strong>8天</strong> 从进入意大利起，你必须提交申请。</p>\n<p>要了解需要携带哪些文件，请查阅专门页面：</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">首次申请所需文件</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">续签所需文件</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>从事你的宗教活动</strong> 在意大利</li><li>注册国家卫生服务（SSN）或购买私人医疗保险</li><li>申请户籍登记</li></ul>\n<p>⚠️ <strong>注意：</strong> 凭此许可 <strong>你不能工作</strong> 在签发许可所对应的宗教活动之外。</p>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期取决于宗教任务，并在许可上注明。通常与传教或任务的期限一致。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，如果宗教团体确认你在意大利的任务继续，你可以续签。续签需要宗教团体的新声明。</p>",
+        "index": 5
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>申请时你需要支付：</p>\n<ul><li>一张 bollettino postale，金额为 <strong>80.46€</strong></li><li>一张 marca da bollo，金额为 <strong>16€</strong></li></ul>",
+        "index": 6
+      },
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>宗教permesso di soggiorno面向神职人员、宗教人员、传教士及其他代表经认可的宗教团体在意大利从事宗教活动的人。允许从事与自身宗教事务相关的活动。</p>",
+        "index": 7
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>以下人员可以申请该许可：</p>\n<ul><li>是神职人员（神父、牧师、伊玛目、拉比、僧侣等）</li><li>是宗教修会或教团的成员</li><li>代表意大利认可的宗教团体从事宗教活动</li><li>已收到其宗教组织的正式任命</li><li>持宗教原因签证进入意大利</li></ul>",
+        "index": 8
+      },
+      {
+        "question": "如何/在哪里申请？",
+        "content": "<p>进入意大利之前：</p>\n<ul><li>你需要在你所在国家的意大利领事馆申请宗教目的签证</li></ul>\n<p>到达意大利后：</p>\n<ul><li>入境后8个工作日内，通过Kit postale（意大利邮政）申请permesso di soggiorno</li><li>或者直接去Questura（如有要求）</li></ul>\n<p>所需文件，请参阅专门页面： <strong>https://www.sospermesso.it/documenti-motivi-religiosi-primo.html</strong></p>",
+        "index": 9
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可：</p>\n<ul><li>你可以在意大利从事宗教和事务活动</li><li>你可以举行宗教仪式、典礼和宗教活动</li><li>你可以从事宗教培训和教理活动</li><li>如果你有医疗保险，可以享受医疗服务</li><li><strong>你不能从事宗教活动以外的工作</strong></li></ul>\n<p>⚠️ 注意：你只能从事你任务规定的宗教活动，不能从事其他形式的工作。</p>",
+        "index": 10
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>宗教permesso di soggiorno的有效期不固定，通常为1至2年，取决于宗教任务的期限。如果任务继续，可以续签。</p>",
+        "index": 11
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，如果满足以下条件你可以续签：</p>\n<ul><li>你的宗教任务仍在进行中</li><li>你的宗教组织确认传教任务继续</li><li>你有足够的生活来源（由宗教组织提供）</li><li>你有有效的医疗保险</li></ul>\n<p>续签所需文件，请参阅： <strong>https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html</strong></p>",
+        "index": 12
+      },
+      {
+        "question": "我可以转换为其他许可吗？",
+        "content": "<p>在特定情况下可以转换为其他permesso di soggiorno：</p>\n<ul><li>受雇工作许可（如果你获得工作合同且有可用配额）</li><li>家庭原因许可（如果你有合法居留的意大利或外国配偶/家庭成员）</li><li>学习许可（如果你注册培训课程）</li><li>欧盟长期居留许可（如果你满足收入和居住要求）</li></ul>",
+        "index": 13
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "宗教机构出具的任务性质声明复印件",
+      "生活来源说明（食宿）",
+      "医疗保险或自愿加入SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "宗教机构出具的任务性质证明复印件",
+      "生活来源说明（食宿）",
+      "保险或加入SSN"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-817b-9192-f2f670bff486",
+    "slug": "residenza-elettiva",
+    "tipo": "选择性居留",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>选择性居留permesso di soggiorno适用于想在意大利生活但不工作、靠自身经济资源维持生活的人。这是典型的适用于 <strong>退休人员</strong> 外国人，持有 <strong>收入</strong> 或 <strong>被动收入</strong> 选择意大利作为居住地的。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>以下人员可以申请：</p>\n<ul><li>已获得 <strong>选择性居留签证</strong> 从意大利大使馆或领事馆</li><li>证明你有 <strong>稳定且充足的经济资源</strong> 在不工作的情况下在意大利维持生活（例如：退休金、收入、投资）</li><li>持有 <strong>住房</strong> 在意大利（自有住房或租房合同）</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何/在哪里申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong> 在授权邮局提供。</p>\n<p>在 <strong>8天</strong> 从进入意大利起，你必须提交申请。</p>\n<p>要了解需要携带哪些文件，请查阅页面 <a href=\"https://www.sospermesso.it/documenti-residenza-elettiva-primo.html\">首次办理所需文件</a>。</p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>在意大利稳定居住</strong></li><li>注册国家卫生服务（SSN）或购买私人医疗保险</li><li>申请户籍登记</li></ul>\n<p>⚠️ <strong>注意：</strong> 凭此许可 <strong>你不能工作</strong>。如果你想在意大利工作，你需要将许可转换为其他类型。</p>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为 <strong>1年</strong> 并且可以续签，条件是你继续证明有足够的经济资源。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，你可以通过提交更新的文件来续签，证明你的经济资源和住房可用性。申请通过 <strong>Kit postale</strong>。</p>",
+        "index": 5
+      },
+      {
+        "question": "我可以转换为其他许可吗？",
+        "content": "<p>是的——在 <strong>5年</strong> 的合法居留，你可以申请 <strong>欧盟长期居留 permesso di soggiorno</strong>，它赋予你更多权利且没有到期日。</p>",
+        "index": 6
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>申请时你需要支付：</p>\n<ul><li>一张 bollettino postale，金额为 <strong>30.46€</strong></li><li>一张 marca da bollo，金额为 <strong>16€</strong></li></ul>",
+        "index": 7
+      },
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>选择性居留permesso di soggiorno面向希望在意大利长期居住且不从事工作活动的外国公民。适用于经济独立、拥有足够资源无需工作即可维持生活的人，例如外国退休人员或有固定收入的人。</p>",
+        "index": 8
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>以下人员可以申请该许可：</p>\n<ul><li>有稳定的、可证明的经济资源在意大利维持生活而无需工作</li><li>在意大利拥有合适的住房（自有或租赁）</li><li>在意大利拥有有效的医疗保险</li><li>不打算在意大利从事工作活动（受雇或自营）</li><li>已持选择性居留签证进入意大利</li></ul>",
+        "index": 9
+      },
+      {
+        "question": "如何/在哪里申请？",
+        "content": "<p>进入意大利之前：</p>\n<ul><li>你需要在你所在国家的意大利领事馆申请选择性居留签证</li></ul>\n<p>到达意大利后：</p>\n<ul><li>入境后8个工作日内，通过Kit postale（意大利邮政）申请permesso di soggiorno</li><li>或者直接去Questura（如有要求）</li></ul>\n<p>所需文件，请参阅专门页面： <strong>https://www.sospermesso.it/documenti-residenza-elettiva-primo.html</strong></p>",
+        "index": 10
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可：</p>\n<ul><li>你可以在意大利长期居住</li><li>你可以在申根区自由旅行（有条件）</li><li>如果你有医疗保险，可以享受医疗服务</li><li><strong>你不能工作（无论是受雇还是自营）</strong></li></ul>\n<p>⚠️ 注意：此许可不允许在意大利从事任何类型的工作活动。</p>",
+        "index": 11
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>首次选择性居留permesso di soggiorno的有效期不固定，通常为1年。如果你继续满足经济和住房要求，可以续签。</p>",
+        "index": 12
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，如果满足以下条件你可以续签：</p>\n<ul><li>你仍然有足够的经济资源维持生活</li><li>你在意大利仍然有合适的住房</li><li>你有有效的医疗保险</li><li>你没有从事未经授权的工作</li></ul>\n<p>续签所需文件，请参阅： <strong>https://www.sospermesso.it/documenti-residenza-elettiva-rinnovo.html</strong></p>",
+        "index": 13
+      },
+      {
+        "question": "我可以转换为其他许可吗？",
+        "content": "<p>仅在特定情况下可以转换为其他permesso di soggiorno，例如：</p>\n<ul><li>受雇工作许可（如果你获得工作合同且有可用配额）</li><li>家庭原因许可（如果你有合法居留的意大利或外国配偶/家庭成员）</li><li>欧盟长期居留许可（如果你满足收入和居住要求）</li></ul>\n<p>转换始终需要核实新许可的具体要求。</p>",
+        "index": 14
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "收入来源证明"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "收入来源证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81db-b579-f087dccfc5ff",
+    "slug": "sfruttamento-lavorativo",
+    "tipo": "劳动剥削",
+    "emoji": "📄",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明",
+      "司法机关的提议/意见"
+    ],
+    "primoMethod": "司法机关",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "护照复印件（未过期）",
+      "即将到期的许可",
+      "司法机关的提议/意见"
+    ],
+    "rinnovoMethod": "本人亲自",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8199-8d35-c9a78f06c035",
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "tipo": "人口贩卖受害者的社会保护",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "📄 它是什么以及如何申请",
+        "content": "<p>社会保护permesso di soggiorno涉及遭受暴力或成为卖淫剥削、劳动剥削受害者的外国公民，且其人身安全面临具体危险。</p>\n<p>特殊保护许可的申请方式：</p>\n<ul><li>在针对外国人遭受暴力或严重剥削的事实已启动刑事诉讼程序的情况下，由共和国检察官提出。</li><li>由当地社会服务机构提供；</li><li>由登记在专门 <a href=\"http://www.lavoro.gov.it/temi-e-priorita/immigrazione/focus-on/registro-associazioni-ed-enti/Pagine/default.aspx\">在劳动和社会政策部登记的名册</a> 并获准实施外国人社会援助和保护计划的机构。</li></ul>\n<p>Questura收到申请并核实符合规定条件后，将颁发人道主义permesso di soggiorno。</p>\n<p>获得该许可需要什么条件？</p>\n<ul><li>你必须是暴力或严重剥削的受害者。</li><li>你必须因试图逃离剥削者或因对他们作证而处于危险中。</li><li>你必须参加社会援助和融入计划。</li><li>如果你决定回国，若存在你和家人安全风险，这一点必须被考虑。</li></ul>\n<p>是否需要报案才能获得 permesso di soggiorno？</p>\n<p>不需要。第18条许可实际上可以通过两种方式颁发：</p>\n<ul><li>司法途径：受害者举报剥削者，许可根据检察院的意见颁发。</li><li>社会途径：受害者不举报，但加入由专业机构管理的援助项目。</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "需要什么文件和条件？",
+        "content": "<ul><li>共和国检察官的意见，在检察官就危险的严重性和紧迫性提出指示的情况下；</li><li>外国人参加由地方机构或在劳动部专门登记册上注册并与地方机构签约的私人机构制定的社会援助和融入计划。 </li><li>项目执行机构负责人接受与项目相关的义务。</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "有效期多长？",
+        "content": "<p>该许可有效期为 <strong>6个月</strong>, rinnovabile per 1 anno o per il maggior periodo occorrente per\nmotivi di giustizia. \nPuò essere revocato in caso di interruzione del programma di assistenza ed integrazione sociale o di condotta incompatibile con le finalità dello stesso, segnalate dal procuratore della Repubblica o, per quanto di competenza, dal servizio sociale dell’ente locale, o comunque accertate dal questore, o quando vengono meno le altre condizioni che ne hanno giustificato il rilascio.</p>",
+        "index": 2
+      },
+      {
+        "question": "我可以转换它吗？",
+        "content": "<p>该许可可转换为学习或工作permesso di soggiorno。</p>",
+        "index": 3
+      },
+      {
+        "question": "🔹 Art. 18 TUI（人口贩卖、暴力、严重剥削）",
+        "content": "<ul><li>适用于非常严重的情况（人口贩卖、暴力、现行犯强制逮捕）。</li><li>有效期：6个月 → 可续签。</li><li>有无报案均可（社会保护计划）。</li></ul>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "社会服务的报告/声明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "居住证明",
+      "社会服务报告（如有要求）"
+    ],
+    "rinnovoMethod": "本人亲自",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81fb-b023-f325c2590f70",
+    "slug": "lavoro-artistico",
+    "tipo": "艺术工作",
+    "emoji": "💼",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": null,
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-818b-bc08-eb2cfe23ed3b",
+    "slug": "ricerca-scientifica",
+    "tipo": "科学研究",
+    "emoji": "📖",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>科学研究permesso di soggiorno允许你留在意大利在大学、研究机构或其他经认可的机构从事研究活动。依据移民法第27-ter条。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>如果符合以下条件，你可以申请该许可：</p>\n<ul><li>你与意大利教育部认可的研究机构签有接收协议</li><li>你拥有可以进入博士项目的学历（通常是硕士学位或同等学历）</li><li>你持科学研究签证进入意大利</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请这个许可？",
+        "content": "<p>通过Kit postale申请。</p>\n<p>👉 <a href=\"https://www.sospermesso.it/documenti-ricerca-scientifica-art-27ter-primo.html\"><strong>查看首次办理所需文件清单</strong></a></p>\n<p>👉 <a href=\"https://www.sospermesso.it/documenti-ricerca-scientifica-art-27ter-rinnovo.html\"><strong>查看续签所需文件清单</strong></a></p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>在协议中指定的机构担任研究员</strong></li><li><strong>注册国家卫生服务（SSN）</strong></li><li>申请户籍登记</li><li>从事与研究相关的教学活动</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>该许可有效期与接待协议一致。通常为1至2年，可续签。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，如果接待协议续签或延期，你可以续签。请在到期前通过 Kit postale 提交申请。</p>",
+        "index": 5
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>总费用约为126,46€：</p>\n<ul><li>80.46€ 用于bollettino postale（包含电子许可证的费用）</li><li>30€ 用于寄送Kit postale</li><li>16€ 用于marca da bollo</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": null,
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8187-acc7-e8a61123fd1a",
+    "slug": "figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori",
+    "tipo": "14岁以上与父母同住的未成年子女",
+    "emoji": "👶",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>该permesso di soggiorno面向与父母一起在意大利生活的14岁以上的外籍未成年子女。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>以下人员可以（通过父母）申请：</p>\n<ul><li>他/她 <strong>14岁以上</strong> 且是未成年人</li><li><strong>与父母同住</strong> 在意大利</li><li>至少有一位父/母持有有效的permesso di soggiorno</li></ul>\n<p>14岁以下的未成年人通常被登记在父母的许可上。</p>",
+        "index": 1
+      },
+      {
+        "question": "如何/在哪里申请？",
+        "content": "<p>申请由父母提出。方式可能有所不同：很多情况下直接在以下地方提交： <strong>Questura</strong>。</p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可的未成年人可以：</p>\n<ul><li><strong>上学</strong> （义务教育）</li><li>访问 <strong>国家卫生服务（SSN）</strong></li><li>与家人在意大利合法居住</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期与父母的permesso di soggiorno挂钩。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，只要未成年人与父母同住且未满18岁，许可就可以续签。成年后，可以获得独立的许可。</p>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [],
+    "primoMethod": null,
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": null,
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8172-a133-d654991b0a72",
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "tipo": "UE per soggiornanti di lungo periodo (“Carta di soggiorno”)",
+    "emoji": "🏠",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>È un permesso di soggiorno che non ha scadenza. E’ anche conosciuto come “Carta di soggiorno” ma <strong>注意</strong> 不要将其与欧盟公民家属卡混淆。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请这个许可？",
+        "content": "<p>如果符合以下条件，你可以申请：</p>\n<ul><li>你已在意大利合法居住至少5年</li><li>你持有另一个仍然有效的permesso di soggiorno</li><li>你在过去三年的收入至少为7,000欧元</li><li>你持有至少A2级意大利语水平证书</li></ul>\n<p><strong>注意！ </strong>⚠️ <strong>并非所有permesso di soggiorno都能转换为carta di soggiorno！</strong></p>\n<p>例如，如果你持有以下许可，你不能申请此卡</p>\n<ul><li>学习或职业培训许可</li><li>医疗、特殊保护或临时保护的许可</li><li>庇护申请许可（在等待 Commissione Territoriale 或法院决定期间）</li></ul>\n<p>如果你有疑问， <a href=\"https://sospermesso.typeform.com/conversione\">做我们的测试。</a></p>",
+        "index": 1
+      },
+      {
+        "question": "在意大利的5年居住必须是连续不间断的吗？",
+        "content": "<p>Sì. I 5 anni si contano dalla data del tuo primo permesso di soggiorno e non ci devono essere “buchi” nei tuoi permessi di soggiorno. </p>",
+        "index": 2
+      },
+      {
+        "question": "5年合法居住是如何计算的？",
+        "content": "<p>Nel calcolo dei 5 anni non si contano i periodi in cui avevi un permesso breve o &quot;diplomatico&quot;. Si contano invece i periodi con permesso per studio, formazione, protezione temporanea o umanitaria.</p>",
+        "index": 3
+      },
+      {
+        "question": "申请此许可需要什么意大利语水平？",
+        "content": "<p>你需要证明你的意大利语达到A2水平。这意味着能够在日常情况下理解和交流。如果你在意大利获得了初中或更高学历的毕业证，这就足够了。</p>",
+        "index": 4
+      },
+      {
+        "question": "我可以为在意大利与我同住的家庭成员也申请carta di soggiorno吗？",
+        "content": "<p>是的。你可以为以下原因申请此许可</p>\n<ul><li>需抚养的配偶</li><li>未成年子女（包括仅是配偶的子女、非婚生子女、养子女或由你监护的子女）</li><li>完全残疾（100%）且无法自理的成年被赡养子女</li><li>被赡养的父母</li></ul>\n<p>要将欧盟长期居留许可扩展到家庭成员，你必须：</p>\n<ul><li>Dimostrare di avere una casa adatta, che rispetta le regole sanitarie italiane ed è abbastanza grande per tutti: devi portare in Questura il &quot;<a href=\"/2187355e7f7f8148ac7efe618d4b0ae9\">住房合格证明</a>&quot; dato dal tuo Comune</li><li>有足够的收入。与你同住的家庭成员的收入也计算在内。最低收入按社会补助金额加上每位家庭成员一半的金额计算。如果有2名或以上14岁以下的子女，需要社会补助金额的两倍。</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "欧盟长期居留permesso di soggiorno有效期多长？",
+        "content": "<p>理论上没有到期日（永久有效），但每10年需要更新一次。续签并不总是自动的：Questura 通常会核实是否仍满足所有条件。未成年人每5年续签一次</p>",
+        "index": 6
+      },
+      {
+        "question": "该许可给我哪些权利？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>Entrare e uscire dall’Italia senza visto</li><li>以正式合同工作（自营或受雇）</li><li>可以在另一个欧盟国家停留超过90天，但如果你想长期在另一个欧盟国家工作，需要了解该国的规定，确认这个许可是否足够。</li><li>使用公共行政服务，包括公共住房申请程序</li><li>享有社会救助、社会保障、医疗和教育服务：例如INPS残疾津贴和社会补助</li></ul>",
+        "index": 7
+      },
+      {
+        "question": "在等待许可期间，邮局的收据可以让我工作吗？",
+        "content": "<p>是的，邮局的收据允许你凭正式合同工作（自营或受雇）。</p>",
+        "index": 8
+      },
+      {
+        "question": "如果我通过Kit寄出或带到Questura的文件不齐全怎么办？",
+        "content": "<p>Questura会给你一份补充材料通知，列出缺少的文件。你需要尽快提交所需文件；在此期间，你的申请将暂停处理。</p>",
+        "index": 9
+      },
+      {
+        "question": "在哪些情况下欧盟长期居留许可可能被撤销？",
+        "content": "<p>Se stai fuori dall&#039;Italia e dall’Unione europea per più di 12 mesi di fila</p>",
+        "index": 10
+      },
+      {
+        "question": "持有欧盟长期居留许可，我可以去其他欧洲国家生活吗？",
+        "content": "<p>是的，你可以在申根区其他国家停留，用于学习或工作，甚至超过90天。你的家人也有同样的权利。如果另一个欧洲国家给你发了欧盟长期居留许可，你的意大利许可将被撤销。</p>",
+        "index": 11
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 130.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "最近一年的收入证明文件",
+      "意大利语水平证书（A2级）",
+      "过去5年连续持有permesso di soggiorno的证明"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 130.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81c1-a3f9-f3c9fc4e555b",
+    "slug": "protezione-sociale-vittime-di-violenza-domestica",
+    "tipo": "家庭暴力受害者的社会保护",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>È un permesso di soggiorno speciale per le vittime di “violenza domestica” (violenza fisica, sessuale, psicologica o economica all&#039;interno della famiglia o tra partner o ex-partner, anche se non si vive insieme).</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>该许可颁发给在与家庭暴力相关的严重犯罪刑事诉讼中的受害者，例如：</p>\n<ul><li>家庭虐待</li><li>人身伤害</li><li>女性生殖器切割</li><li>绑架</li><li>性暴力</li><li>跟踪骚扰</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请？",
+        "content": "<p>申请方式 <strong>本人亲自前往 Questura（</strong>不通过 Kit postale），基于：</p>\n<ul><li><strong>司法机关的提议</strong>，根据调查结果</li><li><strong>社会服务报告</strong> 或反暴力中心</li></ul>\n<p>⚠️ <strong>注意：</strong> 部分 Questura 可能会要求提供护照。</p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？",
+        "content": "<ul><li>✅ 你可以 <strong>工作</strong> （受雇或自雇）</li><li>✅ 你可以 <strong>学习</strong> 并报名参加课程和学校</li><li>✅ 你可以注册 <strong>就业中心</strong></li><li>✅ 你可以使用 <strong>社会救助服务</strong></li></ul>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为 <strong>1年</strong> 并且可以续签。</p>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明",
+      "司法机关的提议/意见",
+      "社会服务的报告/声明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "司法机关的提议/意见",
+      "社会服务报告（如有要求）"
+    ],
+    "rinnovoMethod": "本人亲自",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8189-80f1-fd286742e178",
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "tipo": "Lavoro subordinato stagionale (dopo ingresso con visto per “flussi stagionali”)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是给持以下签证进入意大利的人的 permesso di soggiorno <strong>Nulla osta 和受雇工作签证</strong>，通过 <strong>Decreto Flussi</strong>。在签署居留合同并寄出Kit postale后发放。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<ul><li>已获得以下许可的非欧盟公民 <strong>工作 Nulla osta</strong> 通过 Decreto Flussi 的季节性工作</li><li>持以下签证入境意大利的 <strong>受雇工作签证</strong></li><li>持有 <strong>雇主</strong> 在意大利提交了申请的</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong>。</p>\n<ol><li>进入意大利后， <strong>到达后8天内</strong>，前往 <strong>Sportello Unico per l&#039;Immigrazione（移民综合服务窗口）</strong> （在Prefettura）签署 <strong>居留合同</strong></li><li>填写Kit postale（表格1和表格2），然后从指定邮局寄出</li><li>你会收到一个预约，地点在 <strong>Questura</strong> 用于采集指纹</li><li>Questura会告诉你何时来领取你的许可</li></ol>",
+        "index": 2
+      },
+      {
+        "question": "需要什么文件？",
+        "content": "<p>完整的Questura所需文件清单，请访问页面：</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-lavoro-subordinato-a-seguito-di-ingresso-per-flussi-primo.html\">首次申请需要带什么文件</a></li><li><a href=\"https://www.sospermesso.it/documenti-lavoro-subordinato-a-seguito-di-ingresso-per-flussi-rinnovo.html\">续签需要带什么文件</a></li></ul>",
+        "index": 3
+      },
+      {
+        "question": "我有什么权利？",
+        "content": "<ul><li>✅ 你可以 <strong>工作</strong> 作为雇员</li><li>✅ 你可以 <strong>办理户籍登记</strong> 在你居住的市政府</li><li>✅ 你可以注册 <strong>国家卫生服务</strong> 并拥有家庭医生</li><li>✅ 你可以 <strong>在申根区旅行</strong> 持护照（每180天最多90天）</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期取决于工作合同——通常为六个月</p>",
+        "index": 5
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>E’ meglio chiedere la conversione del permesso in un permesso di soggiorno per motivi di lavoro subordinato. Non è necessario un nuovo nullaosta. La richiesta di conversione va presentata alla Questura <strong>到期之前， </strong>和 <strong>Kit postale</strong>。</p>",
+        "index": 6
+      },
+      {
+        "question": "如果我失去工作会怎样？",
+        "content": "<p>如果许可到期时你没有工作，你可以申请 <strong>等待就业</strong> 有效期一年，需证明已在就业中心登记。</p>",
+        "index": 7
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>签发和续签的费用在文件页面中有说明。bollettino postale为 <strong>70.46€</strong> （或80.46€，适用于有效期超过一年的许可）。</p>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "居留合同",
+      "签署居留合同时Prefettura提供的209表格",
+      "入境签证",
+      "住房适宜性证明",
+      "Prefettura的Nulla osta"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "劳动合同",
+      "收入证明（CUD和/或工资单）",
+      "UNILAV证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-816f-92c2-faf1ff9c6d39",
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "tipo": "家庭——与二等亲以内的意大利公民亲属同住",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "Che cos’è questo permesso?",
+        "content": "<p>与意大利公民同居的permesso di soggiorno颁发给以下外国人： <strong>与意大利家人一起住在意大利</strong> 二等以内的亲属（丈夫/妻子；父亲/母亲；儿子/女儿；祖父/祖母；孙子/孙女；兄弟/姐妹）。</p>",
+        "index": 0
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为两年。</p>",
+        "index": 1
+      },
+      {
+        "question": "获得该许可的条件是什么？",
+        "content": "<p>这个许可的两个基本要素是亲属关系证明和共同居住。</p>\n<p>亲属关系：如果你属于以下情况，你有权获得该许可：</p>\n<ul><li>意大利公民的兄弟/姐妹</li><li>意大利公民的配偶（或民事结合伴侣，适用于同性伴侣）</li><li>意大利公民的父/母</li><li>意大利公民的子女（任何年龄）</li><li>意大利公民的祖父/祖母</li><li>意大利公民的孙子/孙女</li></ul>\n<p>共同生活：你必须与你的意大利亲属住在一起。你们必须登记在同一地址，即使不是100%的时间住在一起。</p>",
+        "index": 2
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>你需要向你与意大利公民共同居住地区的Questura提交申请，并附上所有所需文件。你将收到一张收据，凭此可以合法留在意大利直到做出决定。</p>\n<p>在审核阶段，Questura可能会要求你补充提交的文件，并可能进行面谈以核实你与意大利公民的实际同居情况。</p>",
+        "index": 3
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<p> (<a href=\"https://questure.poliziadistato.it/it/Venezia/articolo/214963dcfc880e387930055883\">https://questure.poliziadistato.it/it/Venezia/articolo/214963dcfc880e387930055883</a>)</p>\n<ul><li>Dimostrazione di dimora certa: certificato di stato di famiglia aggiornato oppure dichiarazione di ospitalità vidimata dall’Autorità di P.S. oppure contratto di locazione cointestato e registrato all’Agenzia delle Entrate.</li><li>证明亲属关系的证书（经翻译和认证，或 <em>经海牙认证的</em>)<ul><li>配偶：结婚证明</li><li>子女：出生证明（含父母信息）</li><li>与二等亲内其他亲属团聚：出生证明或家庭证明，能证明意大利公民是你的亲属</li></ul></li><li>意大利亲属的证件复印件</li><li>Attestazione di convivenza (certificato di stato di famiglia del cittadino italiano aggiornato e dichiarazione di ospitalità vidimata dall’Autorità di P.S. per lo straniero oppure contratto di locazione cointestato ad entrambi e registrato all’Agenzia delle entrate)</li><li>如果有的话：旧的permesso di soggiorno和税号</li><li>Marca da bollo 16,00€</li><li>有效护照</li><li>申请人4张证件照，以及需要写入permesso di soggiorno的14岁以下子女各4张证件照（子女必须在面谈时到场）；</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "持有这个permesso di soggiorno我可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>在你居住的市镇获得居住登记</li><li>工作（自营或受雇）</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>Viaggiare nell’area Schengen, se hai un passaporto valido</li><li>报名参加培训课程、学校和大学</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "许可到期后怎么办？",
+        "content": "<p>在到期之前，你可以</p>\n<ul><li>续签 </li><li>转换为其他许可，例如工作（自营或受雇）或学习</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "同居证明（提供接待声明即可）",
+      "证明与意大利公民亲属关系的文件"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "同居证明（提供接待声明即可）",
+      "即将到期的许可",
+      "证明与意大利公民亲属关系的文件"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81be-be60-c5bf1a3ca960",
+    "slug": "integrazione-prosieguo-amministrativo",
+    "tipo": "Integrazione (”Prosieguo amministrativo”)",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "📄 Cos’è e come si chiede",
+        "content": "<ul><li>用于 <strong>continuare l’assistenza dei servizi sociali</strong> 即使成年之后。</li><li>你可以进行 <strong>申请</strong> 至 <strong>未成年人法庭</strong> 你可以自己办理或通过你的 <strong>监护人</strong>。</li><li><strong>不需要律师</strong> 来提交。</li><li>可以申请 <strong>即使之前没有未成年人 permesso di soggiorno</strong>。</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "🪪 permesso di soggiorno",
+        "content": "<p>如果法院批准延续，你可以申请一个 <strong>行政延续 permesso di soggiorno</strong>。</p>\n<ul><li>该许可有效 <strong>最长至21岁</strong>。</li><li>允许 <strong>在意大利合法居住</strong>， <strong>学习</strong>， <strong>工作</strong> 和 <strong>进入SAI接待项目</strong>，即使之前没有被接收过。</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Che cosa deve essere indicato nell’istanza di prosieguo amministrativo?",
+        "content": "<p>Per poter ottenere il prosieguo amministrativo, è necessario che l’interessato a) abbia intrapreso un percorso di inserimento sociale durante la minore età e b) al compimento della maggiore età, necessiti di un supporto prolungato volto al buon esito di tale percorso finalizzato all&#039;autonomia\nNell’istanza, si deve  esporre brevemente il percorso svolto dal minore, dall’arrivo in Italia al momento della presentazione della domanda di prosieguo amministrativo, con particolare attenzione al\npercorso di inserimento sociale intrapreso durante la minore età e alle prospettive successive al compimento della maggiore età, dal punto di vista dell’inserimento scolastico, formativo, lavorativo, dell’accoglienza, della regolarizzazione del soggiorno e di eventuali altri aspetti di inserimento sociale (attività di volontariato, aggregative ecc.).</p>",
+        "index": 2
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明",
+      "少年法院关于行政延续的决定",
+      "未成年许可"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "不适用"
+    ],
+    "rinnovoMethod": "不适用",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-814c-8e37-ec982488497a",
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "tipo": "Lavoro subordinato (dopo ingresso con visto per “flussi”)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是给持以下签证进入意大利的人的 permesso di soggiorno <strong>Nulla osta 和受雇工作签证</strong>，通过 <strong>Decreto Flussi</strong>。在签署居留合同并寄出Kit postale后发放。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<ul><li>已获得以下许可的非欧盟公民 <strong>工作 Nulla osta</strong> 通过 Decreto Flussi</li><li>持以下签证入境意大利的 <strong>受雇工作签证</strong></li><li>持有 <strong>雇主</strong> 在意大利提交了申请的</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong>。</p>\n<ol><li>进入意大利后， <strong>到达后8天内</strong>，前往 <strong>Sportello Unico per l&#039;Immigrazione（移民综合服务窗口）</strong> （在Prefettura）签署 <strong>居留合同</strong></li><li>填写Kit postale（表格1和表格2），然后从指定邮局寄出</li><li>你会收到一个预约，地点在 <strong>Questura</strong> 用于采集指纹</li><li>Questura会告诉你何时来领取你的许可</li></ol>",
+        "index": 2
+      },
+      {
+        "question": "需要什么文件？",
+        "content": "<p>完整的Questura所需文件清单，请访问页面：</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-lavoro-subordinato-a-seguito-di-ingresso-per-flussi-primo.html\">首次申请需要带什么文件</a></li><li><a href=\"https://www.sospermesso.it/documenti-lavoro-subordinato-a-seguito-di-ingresso-per-flussi-rinnovo.html\">续签需要带什么文件</a></li></ul>",
+        "index": 3
+      },
+      {
+        "question": "我有什么权利？",
+        "content": "<ul><li>✅ 你可以 <strong>工作</strong> 作为雇员</li><li>✅ 你可以 <strong>办理户籍登记</strong> 在你居住的市政府</li><li>✅ 你可以注册 <strong>国家卫生服务</strong> 并拥有家庭医生</li><li>✅ 你可以 <strong>在申根区旅行</strong> 持护照（每180天最多90天）</li><li>✅ 你可以申请 <strong>家庭团聚</strong></li></ul>",
+        "index": 4
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期取决于工作合同：</p>\n<ul><li><strong>1年</strong> 固定期限合同</li><li><strong>2年</strong> 无固定期限合同</li><li>季节性工作：请参阅介绍页面</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的。续签申请应尽量在 Questura 提交，最好 <strong>到期之前</strong> 或者无论如何 <strong>60天内</strong> 到期前。申请通过 <strong>Kit postale</strong>。</p>",
+        "index": 6
+      },
+      {
+        "question": "如果我失去工作会怎样？",
+        "content": "<p>如果许可到期时你没有工作，你可以申请 <strong>等待就业</strong> 有效期一年，需证明已在就业中心登记。</p>",
+        "index": 7
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>签发和续签的费用在文件页面中有说明。bollettino postale为 <strong>70.46€</strong> （或80.46€，适用于有效期超过一年的许可）。</p>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "居留合同",
+      "签署居留合同时Prefettura提供的209表格",
+      "入境签证",
+      "住房适宜性证明",
+      "Prefettura的Nulla osta"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "劳动合同",
+      "收入证明（CUD和/或工资单）",
+      "UNILAV证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-813c-966e-d262e35c5c85",
+    "slug": "studio-dopo-ingresso-con-visto",
+    "tipo": "学习（持签证入境后）",
+    "emoji": "📖",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>学习permesso di soggiorno颁发给希望在意大利参加超过3个月的学习课程、大学课程或培训课程的外国人。</p>",
+        "index": 0
+      },
+      {
+        "question": "如何申请许可？",
+        "content": "<p>学习permesso di soggiorno通过Kit postale申请，并附上所需文件。 </p>",
+        "index": 1
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>该许可有效期为六个月至一年。你可以续签以覆盖整个学习课程期间。</p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利/可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>持护照在申根区国家旅行，不超过三个月</li><li>以正式合同从事受雇工作，每年最多1040小时</li><li>注册国家卫生服务（SSN），每年支付至少700欧元的费用，或者购买私人医疗保险。</li><li>申请 <a href=\"/2187355e7f7f819c8fc8fd2ef36a09d1\">家庭团聚</a>，但前提是你有足够的收入和符合法律要求的住房</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "如果我已经在意大利，可以申请该许可吗？",
+        "content": "<p>是的，如果你已经住在意大利并想开始或继续学业，你可以申请。</p>\n<p>要了解你的permesso di soggiorno是否可以转换为学习permesso di soggiorno，请做我们的测试</p>",
+        "index": 4
+      },
+      {
+        "question": "我可以续签吗？",
+        "content": "<p>你必须在许可到期前（或到期后60天内）通过Kit postale向Questura申请续签。你需要附上证明你仍然在读大学或培训课程的文件。</p>\n<p>如果你在大学学习，你可以在正常学制之外最多续签三年。你也可以为攻读专业课程或博士学位而续签。</p>",
+        "index": 5
+      },
+      {
+        "question": "如果我没有通过足够的考试会怎样？",
+        "content": "<p>续签许可，你必须通过：</p>\n<ul><li>大学第一年至少通过一门考试</li><li>其他学年至少通过两门考试</li><li>你不能在超过正常学制三年之后继续注册</li></ul>\n<p>如果你有记录在案的严重健康问题或其他不可抗力原因，即使第一年后只通过了一门考试，也可以续签许可。</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 70.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "经意大利驻外大使馆认证的课程录取证明",
+      "经济担保（银行对账单或奖学金或家庭成员赡养声明）",
+      "医疗保险或自愿加入SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 70.46或80.46€（取决于许可期限）",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "当前学年注册证明",
+      "已通过考试的证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-815a-9dba-f3e8870518f5",
+    "slug": "asilo-status-rifugiato",
+    "tipo": "庇护（难民身份）",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是发给因宗教、政治观点、国籍或因属于某个族群或社会群体而面临迫害风险而逃离本国的人的许可。 </p>",
+        "index": 0
+      },
+      {
+        "question": "如何申请这个许可？",
+        "content": "<p>要获得该许可，你必须：</p>\n<ul><li>申请国际保护（请参阅我们的 <a href=\"/2187355e7f7f814989cbc7ee16321ee8\">指南</a>)</li><li>获得Commissione Territoriale或法院的肯定决定</li><li>凭此肯定决定，前往Questura申请许可</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>你必须亲自前往Questura。</p>",
+        "index": 2
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<p>申请该许可时，你需要携带Commissione Territoriale（或法院）认定你为难民的决定</p>",
+        "index": 3
+      },
+      {
+        "question": "有效期多长？",
+        "content": "<p>该许可有效期为<strong> 5年</strong> 并且可以续签，通常是自动续签，再续5年</p>",
+        "index": 4
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>在你所在的市镇获得居住登记</li><li>合法工作（受雇或自营）</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>报名参加学校、职业课程或大学</li><li>获得经济和住房援助</li><li>在合法居住5年后申请意大利国籍（从提交保护申请之日算起）</li><li>申请与近亲团聚：<ul><li>妻子/丈夫</li><li>未成年子女</li><li>完全丧失行为能力的成年子女</li><li>65岁以上或受抚养的父母</li></ul></li></ul>\n<p>家庭团聚时，你不需要像其他外国人一样证明你有足够大的住房和最低收入。</p>",
+        "index": 5
+      },
+      {
+        "question": "Posso viaggiare fuori dall’Italia?",
+        "content": "<p>Viaggiare liberamente in Italia, andare in altri paesi dell&#039;UE fino a 3 mesi e, con il “titolo di viaggio” (un passaporto che viene dato ai rifugiati), anche in altri paesi del mondo. </p>\n<p><strong>注意！</strong> 你不能前往你的原籍国。如果你这样做，Questura可能会撤销你的permesso di soggiorno。</p>",
+        "index": 6
+      },
+      {
+        "question": "我可以转换该许可吗？",
+        "content": "<p>L&#039;unico permesso in cui ha senso convertire il permesso per asilo è il permesso di soggiorno UE per soggiornanti di lungo periodo (&quot;Carta&quot;), dopo cinque anni di residenza in Italia.</p>\n<p>政治庇护许可不能转换为自营或受雇工作的permesso di soggiorno。</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "Commissione Territoriale或法院的决定"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-818a-84b5-cfeed8c8a0fd",
+    "slug": "attivita-sportiva",
+    "tipo": "体育活动",
+    "emoji": "⚽",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>体育活动permesso di soggiorno允许你留在意大利从事专业或业余体育活动。这是为与意大利体育协会签有合同并获得CONI（意大利国家奥林匹克委员会）授权的外国运动员准备的。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>如果符合以下条件，你可以申请该许可：</p>\n<ul><li>你与一家意大利体育公司签有合同</li><li>你已获得意大利国家奥委会（CONI）的记名同意声明</li><li>你持体育活动签证进入意大利</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请这个许可？",
+        "content": "<p>无论是首次申请还是续签，都通过Kit postale申请。</p>\n<p>👉 <a href=\"https://www.sospermesso.it/documenti-attivita-sportiva-art-27-primo.html\"><strong>查看首次办理所需文件清单</strong></a></p>\n<p>👉 <a href=\"https://www.sospermesso.it/documenti-attivita-sportiva-art-27-rinnovo.html\"><strong>查看续签所需文件清单</strong></a></p>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>从事合同规定的体育活动</strong></li><li><strong>注册国家卫生服务（SSN）</strong></li><li>申请户籍登记</li></ul>\n<p>⚠️ 注意：此许可只允许你从事签发许可时指定的体育活动。</p>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>该许可有效期与你的体育合同一致，最长2年。如果合同续签，你可以续签许可。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，你可以在到期前通过 Kit postale 续签，需提交新的体育合同和CONI确认函。</p>",
+        "index": 5
+      },
+      {
+        "question": "我可以转换为其他许可吗？",
+        "content": "<p>是的，你可以将其转换为受雇工作许可。</p>",
+        "index": 6
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>总费用约为126,46€：</p>\n<ul><li>80.46€ 用于bollettino postale（包含电子许可证的费用）</li><li>30€ 用于寄送Kit postale</li><li>16€ 用于marca da bollo</li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "与体育公司的合同",
+      "意大利国家奥委会（CONI）的记名同意声明",
+      "生活来源说明（食宿）"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "与体育公司的合同",
+      "生活来源说明（食宿）"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81d6-a889-dc9d5d1ca947",
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "tipo": "Famiglia - senza nullaosta per ricongiungimento (”coesione familiare”)",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>家庭团聚permesso di soggiorno是一种你可以直接在意大利申请的团聚类型。适用于想要与已经在意大利的外籍家庭成员一起生活的人。</p>",
+        "index": 0
+      },
+      {
+        "question": "与家庭团聚有什么区别？",
+        "content": "<p>Il familiare che chiede la coesione è già presente in Italia e non vive all’estero come nel caso del ricongiungimento familiare, per questo non è necessario richiedere il nulla-osta al ricongiungimento allo Sportello Unico Immigrazione della Prefettura.</p>",
+        "index": 1
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>其有效期与你已在意大利的家庭成员的permesso di soggiorno相同。</p>",
+        "index": 2
+      },
+      {
+        "question": "获得该许可的条件是什么？",
+        "content": "<p>要获得该许可：</p>\n<ul><li>你的外籍家庭成员必须拥有至少一年有效的permesso di soggiorno或欧盟长期居留permesso di soggiorno</li><li>你必须已经在意大利合法居留（持有效旅游签证也可以）或持有过期不超过12个月的许可</li><li>你需要证明亲属关系</li></ul>\n<p>你可以与以下人员申请家庭团聚：</p>\n<ul><li>你至少18岁的丈夫或妻子（仅限未合法分居的情况）</li><li>你未满18岁的未成年子女（在申请时）</li><li>你的成年子女（如果因严重健康问题无法自立，且由你抚养）</li><li>你65岁以上的父母（如果他们在本国没有其他子女，或其他子女无法帮助他们）</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>你需要通过Kit postale提交申请，然后带到邮局。你可以请求援助机构或法律咨询处帮助你填写表格。</p>",
+        "index": 4
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<ul><li>在邮局领取并寄出Kit postale</li><li>你护照中包含个人信息、续签章和签证的页面复印件</li><li>经翻译和认证的亲属关系证明文件</li><li>房屋转让通知的复印件</li><li>你外国家庭成员的护照复印件（带有个人信息的页面）</li><li>你外国家庭成员的permesso di soggiorno复印件</li><li>你外国家庭成员的收入申报复印件</li><li>由你居住地市政技术办公室出具的住房适宜性证明</li></ul>\n<p><strong>你的家庭成员必须具备：</strong></p>\n<ol><li>符合面积和卫生标准的住房（需要市政府出具的住房合格证明）</li><li>足够的收入（2024年最低收入为6,947.33€，每增加一名家庭成员加一半）</li><li>仅当家属为65岁以上的父母时需要健康保险</li></ol>\n<p>注意！如果你的家庭成员持有 <strong>庇护或辅助保护许可</strong>，不需要收入和住房要求。</p>",
+        "index": 5
+      },
+      {
+        "question": "持有这个permesso di soggiorno我可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li>在你居住的市镇获得居住登记</li><li>以正式合同工作（自营或受雇）</li><li>免费注册国家卫生服务（SSN）并获得家庭医生</li><li>持护照在申根区旅行（短期停留最多3个月）</li><li>报名参加学校、职业课程或大学</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "许可到期后怎么办？",
+        "content": "<p>如果你继续满足条件，可以续签。</p>",
+        "index": 7
+      },
+      {
+        "question": "我可以转换该许可吗？",
+        "content": "<p>是的，这个许可可以转换为：</p>\n<ul><li>工作许可（自营或受雇）</li><li>等待就业许可</li><li>学习许可</li></ul>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "最低收入证明（CUD或工资单或纳税申报或其他）",
+      "住房适宜性证明",
+      "与你进行家庭团聚的家庭成员的permesso di soggiorno复印件",
+      "你的permesso di soggiorno复印件（过期不超过一年）",
+      "证明家庭关系的文件"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "即将到期的许可",
+      "最低收入证明（CUD或工资单或纳税申报或其他）",
+      "住房适宜性证明",
+      "与你进行家庭团聚的家庭成员的permesso di soggiorno复印件",
+      "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-81b5-8c6f-e17a0ca6fee7",
+    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
+    "tipo": "医疗——孕妇或有6个月以下婴儿的母亲",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是为已在意大利的怀孕外国妇女提供的 permesso di soggiorno。法律（移民法 art. 19）禁止驱逐孕妇，从怀孕第三个月起到产后六个月。在此期间，你可以获得医疗 permesso di soggiorno。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<ul><li>怀孕的外国女性（从第三个月起）</li><li>即使你没有有效的permesso di soggiorno或处于非法居留状态</li><li>分娩后，该许可还覆盖婴儿出生后的六个月</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong>。填写表格并从指定邮局寄出。你将收到Questura的预约通知。</p>\n<p>⚠️ <strong>注意：</strong> 对于这种类型的许可，如果你没有接待声明，提供一个住址就应该足够了。Questura 需要一个地址来知道你在哪里。</p>\n<p>⚠️ <strong>注意：</strong> 部分 Questura 可能会以电子格式签发此许可，因此要求支付30.46€的 bollettino postale。</p>",
+        "index": 2
+      },
+      {
+        "question": "需要什么文件？",
+        "content": "<p>完整的Questura所需文件清单，请访问页面 <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-donna-in-stato-di-gravidanza-primo.html\">首次申请需要带什么文件</a>。</p>",
+        "index": 3
+      },
+      {
+        "question": "我有什么权利？",
+        "content": "<ul><li>✅ 你可以 <strong>工作</strong> （受雇或自雇）</li><li>✅ 你可以注册 <strong>国家卫生服务</strong> 并拥有家庭医生</li><li>❌ <strong>不</strong> 凭此许可你可以申请家庭团聚</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为 <strong>1年</strong>。该许可覆盖从怀孕到产后六个月的期间。</p>",
+        "index": 5
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>该许可通常不可续签。到期时，请与法律顾问评估你是否可以获得其他类型的permesso di soggiorno。</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "住宿声明或租赁合同或居住证明",
+      "注明预产期的怀孕证明，或如果已出生则提供出生证明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "不适用"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8177-9c3c-d0d40126f37e",
+    "slug": "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale",
+    "tipo": "Commissione Territoriale或法院作出肯定决定后的特殊保护",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是一种可以在不同情况下颁发的 permesso di soggiorno，例如给那些 <strong>在意大利融合良好的人、非常脆弱的人、或无法返回自己国家的人</strong>。</p>\n<hr>",
+        "index": 0
+      },
+      {
+        "question": "如何申请许可？",
+        "content": "<p>特殊保护permesso di soggiorno可在以下情况下颁发：</p>\n<ul><li>从 <strong>Commissione Territoriale</strong> 在你提交了 <a href=\"/2187355e7f7f814989cbc7ee16321ee8\">国际保护申请</a> (domanda di &quot;asilo&quot;)</li><li>由 <strong>法院</strong> 在 Commissione Territoriale 作出否定决定后（通常法院比 Commissione Territoriale 更容易批准）。如果你已经向法院提起上诉，你肯定已经有律师了，我们建议你向律师咨询。</li></ul>\n<hr>",
+        "index": 1
+      },
+      {
+        "question": "在哪里申请这个许可？",
+        "content": "<p>如果Commissione Territoriale或法院决定你可以获得特殊保护：</p>\n<ul><li>你必须去 <strong>Questura</strong> 用于提交许可申请</li><li>他们会给你一个录指纹的预约</li><li>Questura会告诉你许可何时准备好</li></ul>\n<hr>",
+        "index": 2
+      },
+      {
+        "question": "我可以直接在Questura申请，不提交庇护申请吗？",
+        "content": "<p>从2023年起法律已经改变，直接从Questura获得特殊保护许可变得更加困难。有法院判决认为你可以继续直接向Questura申请，但 <strong>我们建议你向一位好律师寻求帮助</strong>。</p>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "申请需要什么文件？",
+        "content": "<ul><li><strong>Commissione Territoriale的法令</strong> 承认特殊保护的（或法院判决）</li><li><strong>4张证件照</strong> 最近的</li><li><strong>居住证明</strong> 或证明你住所的文件</li></ul>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为 <strong>两年</strong>。</p>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>工作</strong> 凭正式合同（自营或受雇）</li><li><strong>获得居住登记</strong> 在你居住的市政府</li><li><strong>注册国家卫生服务（SSN）</strong> 并拥有家庭医生</li><li><strong>在申根区旅行</strong> 持护照（停留最多3个月）</li><li><strong>报名参加学校、职业课程或大学</strong></li></ul>\n<hr>",
+        "index": 6
+      },
+      {
+        "question": "许可到期后，我可以转换为工作许可吗？",
+        "content": "<p><strong>‼️ Attenzione</strong> 因为2023年法律发生了变化，现在有两种可能：</p>\n<ul><li>如果你 <strong>2023年5月6日之前提交的庇护或特殊保护许可申请</strong>：如果你满足所有要求，你可以将其转换为工作许可（自雇或受雇）。</li><li><strong>如果你在2023年5月6日之后提交了庇护申请或特殊保护许可申请</strong>：你不能将你的许可转换为工作许可</li></ul>\n<p><strong>注意</strong>：为了避免出错，请先向 <a href=\"/2187355e7f7f81e99a9fe39b1b1ffc62\">免费法律援助中心</a>。</p>\n<hr>",
+        "index": 7
+      },
+      {
+        "question": "我可以续签特殊保护许可吗？",
+        "content": "<p>目前我们无法给你一个确定的答案。 </p>\n<ul><li>如果你获得特殊保护许可是因为你 <strong>2023年5月6日之前提交的庇护或特殊保护许可申请</strong>，我们建议你尽可能申请转换为其他类型的许可。只有在没有其他选择时才申请续签。续签期限为一年，之后的情况不确定。</li><li>如果你有<strong> </strong>获得特殊保护许可是因为你提交了 <strong>2023年5月6日之后提交的庇护或特殊保护许可申请</strong>：你可以尝试将你的许可转换为工作许可</li></ul>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "住宿声明或租赁合同或居住证明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 30.46€",
+      "即将到期的许可",
+      "Commissione Territoriale或法院的决定"
+    ],
+    "rinnovoMethod": "本人亲自",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8155-a2f9-fd6deadd7be1",
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "tipo": "家庭——持家庭团聚签证入境后",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "Che cos’è questo permesso di soggiorno?",
+        "content": "<p>E’ il permesso di soggiorno per motivi familiari che viene dato ai familiari entrati in Italia con visto per ricongiungimento familiare. </p>",
+        "index": 0
+      },
+      {
+        "question": "如何申请这个许可？",
+        "content": "<p>你持入境签证进入意大利，在你的家庭成员获得团聚Nulla osta之后。很好。以下是接下来的步骤： </p>\n<ul><li>Entro 8 giorni devi andare allo Sportello Unico per l’Immigrazione della Prefettura del tuo territorio.</li><li>Sportello Unico会给你需要填写的表格。 </li><li>去邮局寄送表格。 </li><li>邮局会给你一个去Questura的预约。</li><li>Vai in Questura il giorno dell’appuntamento. Ti prenderanno le impronte digitali.</li><li>Questura会通知你许可何时准备好。</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "有效期多长？",
+        "content": "<p>有效期取决于申请团聚的家庭成员的情况：</p>\n<ul><li>如果家人具有难民或辅助保护身份，家庭原因的 permesso di soggiorno 有效期为5年。</li><li>如果家人持有长期居留 permesso di soggiorno，家庭原因的 permesso di soggiorno 有效期为2年。</li><li>如果家人持有较短期限的 permesso di soggiorno（例如工作、学习），你的许可将与申请团聚的家人的许可有效期相同。</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利/可以享受什么？",
+        "content": "<p>提交许可申请后，凭邮局收据你可以： </p>\n<ul><li>以正式合同工作</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>每180天可在申根国家旅行最多90天</li><li>Iscriverti all’anagrafe e ottenere la residenza</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "我可以续签吗？",
+        "content": "<p>续签申请必须在许可到期前通过Kit postale提出。</p>\n<p>申请续签时你需要附上：</p>\n<ul><li>申请表（在邮局或 Questura 领取）</li><li>有效护照复印件</li><li>即将到期的 permesso di soggiorno 复印件</li><li>税号</li><li>家庭状况和居住证明</li><li>申请家庭团聚的家人的 permesso di soggiorno（如果是外国人）</li><li>接待声明或租房合同/自有房屋证明</li><li>结婚证明或亲属关系证明（如适用）</li><li>生活来源证明（如需要，如工资单或收入申报）。</li><li>bollettino postale 的付款收据</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "我可以转换它吗？",
+        "content": "<p>在到期之前，你可以将你的许可转换为：</p>\n<ul><li>工作许可（如果你有劳动合同）</li><li>学习许可（如果你注册了课程）</li><li>等待就业许可（如果你之前工作过并正在找新工作）</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "入境签证",
+      "最低收入证明（CUD或工资单或纳税申报或其他）",
+      "住房适宜性证明",
+      "申请家庭团聚的家庭成员的permesso di soggiorno复印件",
+      "证明家庭关系的文件",
+      "家庭团聚Nulla osta"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "即将到期的许可",
+      "最低收入证明（CUD或工资单或纳税申报或其他）",
+      "申请家庭团聚的家庭成员的permesso di soggiorno复印件",
+      "Documento che prova il legame di famiglia (ad esempio \"stato di famiglia\")"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-815a-89d0-ee08665e25d0",
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "tipo": "医疗——6个月以下或即将在意大利出生的婴儿的父亲",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>这是在母亲怀孕或刚分娩时给孩子父亲的 permesso di soggiorno。法律（移民法 art. 19）在这些情况下保护家庭单元。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<ul><li>孩子的外籍父亲（如果与母亲同住）</li><li>⚠️ 如果你是 <strong>已婚并同住</strong> 与母亲在一起的情况下，你可以顺利获得此许可</li><li>⚠️ 如果 <strong>你未婚</strong> 和/或 <strong>你不同住</strong> 与母亲在一起的情况下，获得此许可可能有困难——请咨询 <strong>专业法律建议</strong></li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong>。填写表格并从指定邮局寄出。你将收到Questura的预约通知。</p>",
+        "index": 2
+      },
+      {
+        "question": "需要什么文件？",
+        "content": "<p>完整的Questura所需文件清单，请访问页面 <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-padre-primo.html\">首次申请需要带什么文件</a>。</p>",
+        "index": 3
+      },
+      {
+        "question": "我有什么权利？",
+        "content": "<ul><li>✅ 你可以 <strong>工作</strong> （受雇或自雇）</li><li>✅ 你可以注册 <strong>国家卫生服务</strong> 并拥有家庭医生</li><li>❌ <strong>不</strong> 凭此许可你可以申请家庭团聚</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期为 <strong>1年</strong>。</p>",
+        "index": 5
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>该许可通常不可续签。到期时，请与法律顾问评估你是否可以获得其他类型的permesso di soggiorno。</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "住宿声明或租赁合同或居住证明",
+      "注明预产期的怀孕证明，或如果已出生则提供出生证明",
+      "同居证明或自我声明"
+    ],
+    "primoMethod": "本人亲自",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "不适用"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-810c-8a78-fe8b06286127",
+    "slug": "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi",
+    "tipo": "Lavoro autonomo (dopo ingresso con visto per “flussi”)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "Che cos’è questo permesso?",
+        "content": "<p>这是给那些……的 permesso di soggiorno <strong>独立工作</strong>，即 <strong>没有雇主</strong>, ma svolge un’attività lavorativa o professionale in proprio (ad esempio: commerciante, artigiano, libero professionista, ecc.).</p>\n<p><strong>\n✈️  Se sei su questa pagina è perché sei entrato in Italia con visto per lavoro autonomo</strong></p>\n<ol><li>在 <strong>从你到达意大利起8天内</strong>，填写 <strong>表格1和表格2</strong> (kit postale) e spediscilo all’<strong>邮局</strong> 授权的。</li><li>你会收到一个预约，地点在 <strong>Questura</strong> 用于采集指纹。</li><li>Questura会告诉你何时来领取你的许可。</li><li></li></ol>",
+        "index": 0
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<ul><li>La durata dipende dall’attività che svolgi e dai documenti che presenti, ma di solito è <strong>1至2年</strong>。</li><li>是 <strong>可续签</strong>，前提是你继续从事自营工作并满足所需要求。</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "持有此许可你可以做什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>自主创业</strong> 持有增值税号（个体经营）</li><li><a href=\"/20a7355e7f7f8173bffccbb2a93bae6f\"><strong>作为受雇人员工作（受雇工作）</strong></a></li><li><strong>获得居住登记</strong> 在你居住的市政府</li><li><strong>注册卫生服务</strong> 并拥有家庭医生</li><li><strong>Viaggiare nell’area Schengen</strong> 持护照（每180天最多90天）</li><li><strong>申请家庭团聚</strong></li><li><strong>报名参加课程、学校、大学</strong></li></ul>\n<hr>",
+        "index": 2
+      },
+      {
+        "question": "如果你关闭你的生意会怎样？",
+        "content": "<ul><li>你可以申请一个 <strong>等待就业许可</strong> 续签，但你必须证明你正在寻找其他工作或活动。</li></ul>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "许可到期后，我该怎么办？",
+        "content": "<ul><li>你必须 <strong>申请续签</strong> <strong>到期之前 </strong>或最迟在到期后60天内</li><li>如果 <strong>你符合条件</strong>，你还可以 <strong>转换</strong> 转换为其他类型的许可（学习、家庭、长期居留、受雇工作等）。你必须在到期前申请转换。</li></ul>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "自营工作入境签证",
+      "住房适宜性证明",
+      "从事经济活动的经济条件Nulla osta",
+      "Questura的Nulla osta",
+      "从事活动的经济资源证明"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "即将到期的许可",
+      "最近的收入申报",
+      "增值税号分配证明或企业登记证明"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  }
+]

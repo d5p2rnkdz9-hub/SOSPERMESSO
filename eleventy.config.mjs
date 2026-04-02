@@ -222,6 +222,84 @@ export default function(eleventyConfig) {
     // Directory might not exist yet
   }
 
+  // Safety net for UR document and permit pages
+  const urPagesDir = path.join(process.cwd(), 'ur', 'src', 'pages');
+  try {
+    const urFiles = fs.readdirSync(urPagesDir);
+    const urDocFiles = urFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of urDocFiles) {
+      eleventyConfig.ignores.add(`ur/src/pages/${file}`);
+    }
+    if (urDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${urDocFiles.length} static UR document files (replaced by Liquid templates)`);
+    }
+    const urPermitFiles = urFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of urPermitFiles) {
+      eleventyConfig.ignores.add(`ur/src/pages/${file}`);
+    }
+    if (urPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${urPermitFiles.length} static UR permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
+  // Safety net for FA document and permit pages
+  const faPagesDir = path.join(process.cwd(), 'fa', 'src', 'pages');
+  try {
+    const faFiles = fs.readdirSync(faPagesDir);
+    const faDocFiles = faFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of faDocFiles) {
+      eleventyConfig.ignores.add(`fa/src/pages/${file}`);
+    }
+    if (faDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${faDocFiles.length} static FA document files (replaced by Liquid templates)`);
+    }
+    const faPermitFiles = faFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of faPermitFiles) {
+      eleventyConfig.ignores.add(`fa/src/pages/${file}`);
+    }
+    if (faPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${faPermitFiles.length} static FA permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
+  // Safety net for ZH document and permit pages
+  const zhPagesDir = path.join(process.cwd(), 'zh', 'src', 'pages');
+  try {
+    const zhFiles = fs.readdirSync(zhPagesDir);
+    const zhDocFiles = zhFiles.filter(f =>
+      f.startsWith('documenti-') && f.endsWith('.html')
+    );
+    for (const file of zhDocFiles) {
+      eleventyConfig.ignores.add(`zh/src/pages/${file}`);
+    }
+    if (zhDocFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${zhDocFiles.length} static ZH document files (replaced by Liquid templates)`);
+    }
+    const zhPermitFiles = zhFiles.filter(f =>
+      f.startsWith('permesso-') && f.endsWith('.html')
+    );
+    for (const file of zhPermitFiles) {
+      eleventyConfig.ignores.add(`zh/src/pages/${file}`);
+    }
+    if (zhPermitFiles.length > 0) {
+      console.log(`[eleventy] Ignoring ${zhPermitFiles.length} static ZH permit files (replaced by Liquid templates)`);
+    }
+  } catch (e) {
+    // Directory might not exist yet
+  }
+
   // All document pages are generated via Liquid pagination templates
   // (documents-primo.liquid, documents-rinnovo.liquid).
   // All permit pages are generated via permits.liquid.

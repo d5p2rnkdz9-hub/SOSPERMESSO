@@ -1,0 +1,406 @@
+---
+layout: layouts/base.liquid
+title: "词典"
+lang: zh
+extraStyles: |
+  <style>
+
+      .dictionary-term {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        scroll-margin-top: 200px; /* Must match header height (~190px) */
+      }
+      .dictionary-term:last-child {
+        border-bottom: none;
+      }
+      .dictionary-term:target {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: var(--radius-md);
+        animation: highlight-fade 2s ease-out;
+      }
+      @keyframes highlight-fade {
+        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+      }
+      .dictionary-term h3 {
+        color: var(--accent-purple);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dictionary-term h3 .anchor-link {
+        opacity: 0;
+        font-size: 0.875rem;
+        color: var(--gray-medium);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      .dictionary-term:hover h3 .anchor-link {
+        opacity: 0.6;
+      }
+      .dictionary-term h3 .anchor-link:hover {
+        opacity: 1;
+        color: var(--taxi-yellow-dark);
+      }
+      .dictionary-term p {
+        margin: 0;
+        color: var(--gray-dark);
+      }
+      .dictionary-letter {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--taxi-yellow-dark);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--taxi-yellow);
+        scroll-margin-top: 200px; /* Must match header height (~190px) */
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="index.html" style="color: var(--taxi-yellow-dark);">首页</a> →
+        <span>词典</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">难懂词汇词典</h1>
+        <p class="section-subtitle">用简单的语言解释官僚术语</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="letter-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza（接待） <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>接待申请国际保护的人的中心和设施系统。</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico（被抚养人） <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>在经济上依赖他人的人。例如，一个没有工作的孩子是父母的"a carico"（被抚养人），因为父母支付其饮食、服装和其他费用。</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento（寄养/监护） <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>当未成年人（18岁以下的儿童或青少年）被交由其亲生父母以外的个人、家庭或机构照管时的安排。</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo（庇护） <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>一种国际保护形式，适用于因存在被迫害风险（例如被杀害、酷刑、严重歧视）而无法返回本国的人。另见"Rifugiato"（难民）。</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale（地方卫生局）。管理某一地区医疗和卫生服务的办公机构。在这里您可以注册国家医疗服务并选择家庭医生。</p>
+        </div>
+
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo（实名登记证明） <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
+          <p>申请庇护时 Questura（警察总部）发放的第一份居留许可，在等待发放黄色纸质许可期间使用。它与 C3 表格一起发放。它没有过期日期：在庇护申请审查结束前一直有效。</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="letter-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>在 Questura（警察总部）申请庇护时填写的表格，包含您的个人信息。</p>
+        </div>
+
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti（未决案件） <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
+          <p>证明某人是否有尚未终审判决的刑事诉讼的证明文件。</p>
+        </div>
+
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno（居留卡） <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>一个模糊的术语，可以指两种不同的居留许可：长期居留许可或欧盟公民家属居留卡。</p>
+        </div>
+
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale（犯罪记录） <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
+          <p>包含某人刑事定罪信息的登记册。需向检察院申请。</p>
+        </div>
+
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato（房屋占用声明） <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
+          <p>当您将房屋或房间有偿出租给他人时需要办理的文件。您必须在48小时内将此文件提交给当地警察局。</p>
+        </div>
+
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare（家庭团聚） <a href="#coesione-familiare" class="anchor-link">#</a></h3>
+          <p>允许已在意大利的人获得居留许可，以便与已合法居住在意大利的家庭成员团聚的程序。</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale（税号） <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>每人独有的个人代码，用于在意大利进行身份识别，以及办理工作、就医或签署正式文件等事务。</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale（领土委员会） <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>意大利政府机构，负责决定谁可以获得难民身份、辅助保护、特别保护或医疗许可。</p>
+        </div>
+
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge（配偶） <a href="#coniuge" class="anchor-link">#</a></h3>
+          <p>丈夫或妻子。指与其结婚（婚姻）或建立民事结合关系的人。</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione（转换） <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>将一种居留许可转换为另一种（例如从学习许可转为工作许可），无需返回原籍国。</p>
+        </div>
+
+        <div class="dictionary-term" id="copia-conforme">
+          <h3>Copia conforme（认证副本） <a href="#copia-conforme" class="anchor-link">#</a></h3>
+          <p>文件的复印件上加盖官方印章，证明其与原件完全一致。可在市政厅、公证处或某些情况下在邮局办理。</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="letter-d">D</div>
+
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione（驱逐令） <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
+          <p>Prefettura（省政府）作出的要求您离开意大利的决定。除驱逐外，还可能发出再入境禁令。</p>
+        </div>
+
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità（接待声明） <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
+          <p>由声明人签署的文件，表明其免费接待您在意大利的住所中居住。必须在48小时内提交给警察局。</p>
+        </div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego（拒绝） <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>否定决定。当您的申请被当局拒绝时。</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio（住所） <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>您居住的地址，即使是临时的。</p>
+        </div>
+
+        <!-- I -->
+        <div class="dictionary-letter" id="letter-i">I</div>
+
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa（住房适宜性证明） <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
+          <p>证明房屋适合居住的证明（有足够的空间、安全、具备必要的服务设施）。必须向房屋所在地的市政厅申请。</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="letter-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale（邮局套件） <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>在邮局领取的一套表格，用于申请或续签某些类型的居留许可。</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="letter-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo（印花税票） <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>在烟草店购买并贴在正式文件（如向 Questura 提交的申请）上的税票。价格为16欧元（最常见面值），用于向国家缴纳税款。</p>
+        </div>
+
+        <div class="dictionary-term" id="minore">
+          <h3>Minore（未成年人） <a href="#minore" class="anchor-link">#</a></h3>
+          <p>18岁以下的人。</p>
+        </div>
+
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato（无人陪伴的外国未成年人） <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
+          <p>在意大利没有父母或其他具有法律责任的成年人陪伴的18岁以下人员。</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="letter-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta（许可/批准） <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>办理某事所需的官方许可。例如，"nulla osta al ricongiungimento familiare"（家庭团聚许可）是 Prefettura 批准您将家庭成员带到意大利的许可。</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="letter-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno（居留许可） <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>赋予您在一定时间内合法居住在意大利的权利的文件。</p>
+        </div>
+
+        <div class="dictionary-term" id="prefettura">
+          <h3>Prefettura（省政府） <a href="#prefettura" class="anchor-link">#</a></h3>
+          <p>意大利国家机构，每个省都设有。负责处理公共秩序、安全以及外国人的某些手续，如公民身份和家庭团聚。</p>
+        </div>
+
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale（国际保护） <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
+          <p>意大利给予因返回本国会面临危险而无法回国的人的保护。包括庇护和辅助保护。</p>
+        </div>
+
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo（行政延续） <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
+          <p>允许以未成年人身份抵达意大利的外国青年在年满18岁后继续获得支持的可能性。</p>
+        </div>
+
+        <!-- Q -->
+        <div class="dictionary-letter" id="letter-q">Q</div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura（警察总部） <a href="#questura" class="anchor-link">#</a></h3>
+          <p>设在每个省会城市的国家警察办公室。这是您申请、领取和续签居留许可的地方。设有一个名为"Ufficio Immigrazione"（移民办公室）的窗口。</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="letter-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza（户籍地） <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>您永久居住并在市政厅户籍登记处登记的地址。</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta（收据） <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>证明您提出申请或付款的文件。Questura 收据（cedolino）证明您已申请居留许可，允许您在等待期间留在意大利。</p>
+        </div>
+
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare（家庭团聚） <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
+          <p>允许已持有效居留许可在意大利居住的外国人将某些家庭成员带到意大利的程序。</p>
+        </div>
+
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato（难民） <a href="#rifugiato" class="anchor-link">#</a></h3>
+          <p>因受到迫害而逃离本国，因此可以在意大利获得难民身份的人。</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo（续签） <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>在居留许可到期前延长其有效期的过程。</p>
+        </div>
+
+        <!-- S -->
+        <div class="dictionary-letter" id="letter-s">S</div>
+
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali（社会服务） <a href="#servizi-sociali" class="anchor-link">#</a></h3>
+          <p>帮助困难群体（家庭、老人、残疾人、未成年人）的市政办公室。</p>
+        </div>
+
+        <div class="dictionary-term" id="sportello-unico">
+          <h3>Sportello Unico（一站式服务窗口） <a href="#sportello-unico" class="anchor-link">#</a></h3>
+          <p>Sportello Unico per l'Immigrazione（SUI，移民一站式服务窗口）。Prefettura 下属的办公室，处理外国人的工作手续（许可、居住合同）和家庭团聚事宜。</p>
+        </div>
+
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato（难民身份） <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
+          <p>Commissione Territoriale 或法院认定某人为难民的决定。获得难民身份后，您可以申请庇护居留许可。</p>
+        </div>
+
+        <!-- T -->
+        <div class="dictionary-letter" id="letter-t">T</div>
+
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale（法院） <a href="#tribunale" class="anchor-link">#</a></h3>
+          <p>法官对法律事务作出裁决的场所。</p>
+        </div>
+
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni（少年法院） <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
+          <p>处理18岁以下人员相关法律事务的专门法院。</p>
+        </div>
+
+        <div class="dictionary-term" id="tessera-sanitaria">
+          <h3>Tessera sanitaria（医疗卡） <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
+          <p>允许您使用国家医疗服务（家庭医生、急诊室、药品）的塑料卡。在获得居留许可和户籍登记后，在 ASL 申请。</p>
+        </div>
+
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore（监护人） <a href="#tutore" class="anchor-link">#</a></h3>
+          <p>当父母无法照顾未成年人时，由法官选定的照顾18岁以下年轻人的人。</p>
+        </div>
+
+        <!-- U -->
+        <div class="dictionary-letter" id="letter-u">U</div>
+
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza（庭审/听证） <a href="#udienza" class="anchor-link">#</a></h3>
+          <p>在法院与法官的会面。在99%的情况下，您的律师必须出席。</p>
+        </div>
+
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile（民事结合） <a href="#unione-civile" class="anchor-link">#</a></h3>
+          <p>意大利为同性伴侣提供的法律伴侣关系，类似于婚姻但在法律上有所不同。</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="letter-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto（签证） <a href="#visto" class="anchor-link">#</a></h3>
+          <p>在出发前向您所在国家的意大利大使馆或领事馆申请的进入意大利的授权。有不同类型：旅游签证、学习签证、工作签证、家庭团聚签证。</p>
+        </div>
+
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela（亲属关系） <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
+          <p>两人之间的家庭关系（父母-子女、兄弟姐妹、祖父母-孙辈、叔伯姑姨-侄子女）。</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          有想了解但词典中没有的词汇吗？
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            联系我们
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">您可能还感兴趣</h2>
+      <div class="grid grid-3">
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">所有居留许可</h3>
+        </a>
+        <a href="protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">国际保护</h3>
+        </a>
+        <a href="aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">法律援助</h3>
+        </a>
+      </div>
+    </div>
+  </section>

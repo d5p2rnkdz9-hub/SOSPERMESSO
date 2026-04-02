@@ -1,0 +1,851 @@
+---
+layout: layouts/base.liquid
+title: "免费法律援助"
+lang: zh
+extraStyles: |
+  <style>
+
+      .legal-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+      }
+      .legal-table th, .legal-table td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
+      }
+      .legal-table th {
+        background-color: var(--off-white);
+        font-weight: 600;
+        color: var(--black);
+      }
+      .legal-table tr:hover {
+        background-color: rgba(255, 215, 0, 0.1);
+      }
+      .city-section {
+        margin-bottom: 2rem;
+      }
+      .city-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--accent-purple);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--accent-purple);
+      }
+      @media (max-width: 768px) {
+        .legal-table, .legal-table tbody, .legal-table tr, .legal-table td {
+          display: block;
+        }
+        .legal-table thead {
+          display: none;
+        }
+        .legal-table tr {
+          margin-bottom: 1rem;
+          border: 1px solid #eee;
+          border-radius: 8px;
+          padding: 1rem;
+        }
+        .legal-table td {
+          border: none;
+          padding: 0.25rem 0;
+        }
+        .legal-table td::before {
+          content: attr(data-label);
+          font-weight: 600;
+          display: block;
+          margin-bottom: 0.25rem;
+          color: var(--gray-medium);
+          font-size: 0.875rem;
+        }
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="index.html" style="color: var(--taxi-yellow-dark);">首页</a> →
+        <span>法律援助</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">⚖️</span>
+        <h1 class="page-title">您附近的免费法律援助</h1>
+        <p class="section-subtitle">在您所在的城市寻找免费法律咨询</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 1100px;">
+
+      <!-- BARI -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Bari</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Centro Diurno Area 51</td>
+              <td data-label="地址">Corso Italia 81/83</td>
+              <td data-label="办公时间">每天 8:30-20:30</td>
+              <td data-label="联系方式">080 521 0288 - area51@coopcaps.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Gruppo lavoro rifugiati ONLUS</td>
+              <td data-label="地址">Via Dalmazia, 139</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">gruppolavororifugiati@gmail.com - 080.9242286</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BOLOGNA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Bologna</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Help Desk Migrante</td>
+              <td data-label="地址">Via Stalingrado 12 / Via Sebastiano Serlio 25/2</td>
+              <td data-label="办公时间">周二 15:00-18:00 需预约</td>
+              <td data-label="联系方式">legale@arcacoop.com</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Associazione Xenia</td>
+              <td data-label="地址">Via Marco Polo, 21/23</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">info@xeniabo.org - 0516350774</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Associazione Interculturale Universo APS</td>
+              <td data-label="地址">Piazza XX Settembre, 7</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">helpdesk@universointerculturale.it - 051 8556042 - 392 8147532</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Attivist* Tpo e Labàs</td>
+              <td data-label="地址">Vicolo Bolognetti 4 (Labàs) / Via Casarini 17/4 (Tpo)</td>
+              <td data-label="办公时间">WhatsApp联系</td>
+              <td data-label="联系方式">sportellomigrantitpo@gmail.com - 3534076384</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Associazione Ya Basta!</td>
+              <td data-label="地址">Via Casarini 17/4</td>
+              <td data-label="办公时间">周三 18:00-20:00</td>
+              <td data-label="联系方式">yabasta.bologna@gmail.com - 0510935901</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">MigraBo Lgbtqi</td>
+              <td data-label="地址">Via Polese, 22 (presso Mit)</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">info@migrabo.it - 3791772380</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Sportello Giuridico Mederì</td>
+              <td data-label="地址">Circolo Arci Guernelli, Via Antonio Gandusio 6/A, 40128 Bologna</td>
+              <td data-label="办公时间">周一 20:30-22:30</td>
+              <td data-label="联系方式">sportellomedicogiuridico@xm24.indivia.net</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BOLOGNA PROVINCE -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Bologna省</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Lai-momo</td>
+              <td data-label="地址">（详见网站）</td>
+              <td data-label="办公时间">Punto Migranti 服务窗口</td>
+              <td data-label="联系方式">laimomo.it/sociale_post/sportelli-punto-migranti/</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BRESCIA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Brescia</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">寻求庇护者和难民服务窗口</td>
+              <td data-label="地址">Via Repubblica Argentina, 90</td>
+              <td data-label="办公时间">周一 9-13, 周二 14-17, 周三 14-17</td>
+              <td data-label="联系方式">3371488628 - sportello.brescia@rifugiati.eu</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Centro Migranti ONLUS</td>
+              <td data-label="地址">Via Antiche Mura, 3</td>
+              <td data-label="办公时间">周一/三/五 13:30-17:30, 周二/四 8:30-12:30</td>
+              <td data-label="联系方式">030.42467 - 030.41356 - centromigranti@diocesi.brescia.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CASERTA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Caserta</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Centro Sociale Ex Canapificio</td>
+              <td data-label="地址">Via San Gennaro, 51</td>
+              <td data-label="办公时间">周三 9-13（在 Centro Fernandes），周四 16-18</td>
+              <td data-label="联系方式">3661403138 / 3341694639 - contatti@csaexcanapificio.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Centro Immigrati Campania - Fernandes (Castel Volturno)</td>
+              <td data-label="地址">Via Domitiana, Km 33.500</td>
+              <td data-label="办公时间">周一至五 16-19, 周二/四 9-13</td>
+              <td data-label="联系方式">0823851723 - info@centrofernandes.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CATANIA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Catania</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Progetto diritti</td>
+              <td data-label="地址">Via Coppola, 6</td>
+              <td data-label="办公时间">周二/四 16-19</td>
+              <td data-label="联系方式">3383100216 - 3450182546</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Community Center - Diaconia Valdese</td>
+              <td data-label="地址">Via Giuseppe De Felice, 4</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">349 2952 370 - cataniacenter@diaconiavaldese.org</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FLORENCE -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Florence（佛罗伦萨）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Anelli Mancanti</td>
+              <td data-label="地址">Via Palazzuolo, 8</td>
+              <td data-label="办公时间">每月第1、3、4个周四 19-21</td>
+              <td data-label="联系方式">glianellimancanti@yahoo.it - 055 23 99 533</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GENOVA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Genova（热那亚）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Infopoint Solidaripré</td>
+              <td data-label="地址">Via delle Fontane 11</td>
+              <td data-label="办公时间">周四 18:30-20:30</td>
+              <td data-label="联系方式"><a href="https://www.instagram.com/infopoint_solidaripre" target="_blank" rel="noopener">Instagram @infopoint_solidaripre</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ISOLA D'ARBIA (SI) -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Isola d'Arbia (SI)</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Corte dei Miracoli APS</td>
+              <td data-label="地址">Via della Mercanzia, 44</td>
+              <td data-label="办公时间">周一 16-20, 周四 10-14</td>
+              <td data-label="联系方式">sportellocorte@gmail.com - 3518554636</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MERCENASCO (TO) -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Mercenasco (TO)</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">For.me - Coop Liberi Tutti</td>
+              <td data-label="地址">Via Papa Giovanni XXIII, 2</td>
+              <td data-label="办公时间">周二/四 9:30-12:30 和 14-17</td>
+              <td data-label="联系方式">sportellomercenasco@coopliberitutti.it - 3509934792</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MESTRE (VE) -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Venice/Mestre（威尼斯/梅斯特雷）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Avvocato di strada</td>
+              <td data-label="地址">Via Santa Maria dei Battuti, 1/d</td>
+              <td data-label="办公时间">每月第2、4个周五 15-18</td>
+              <td data-label="联系方式">051 227143</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MILAN -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Milan（米兰）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Naga</td>
+              <td data-label="地址">Via Zamenhof, 7A</td>
+              <td data-label="办公时间">周一/五 9-12/14-17, 周二/三 9-12/14-19, 周四 9-12</td>
+              <td data-label="联系方式">0258102599</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- NAPLES -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Naples（那不勒斯）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Ex OPG - Je So' Pazzo</td>
+              <td data-label="地址">Via Matteo Renato Imbriani, 218</td>
+              <td data-label="办公时间">周四 14-20</td>
+              <td data-label="联系方式">info@jesopazz.org</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">移民权利服务窗口（Associazione Pixel）</td>
+              <td data-label="地址">Via Genova, 19（Piazza Garibaldi 中央车站附近）</td>
+              <td data-label="办公时间">周三/四 15:30-17:30</td>
+              <td data-label="联系方式">0815440115 - sportellolegale@associazionepixel.org</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">权利服务窗口 Poggiomarino（Rete Vesuviana Solidale）</td>
+              <td data-label="地址">Eav Station, Poggiomarino</td>
+              <td data-label="办公时间">周二 9-13/14-19, 周四 14-19</td>
+              <td data-label="联系方式">ya_basta@hotmail.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">权利服务窗口 Scisciano（Rete Vesuviana Solidale）</td>
+              <td data-label="地址">Via Roma, 67 (Eav Station, Scisciano)</td>
+              <td data-label="办公时间">周三 14-19</td>
+              <td data-label="联系方式">340 8627619 - ya_basta@hotmail.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PADUA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Padua（帕多瓦）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">RAR 服务窗口 - 寻求庇护者和难民</td>
+              <td data-label="地址">Vicolo Ponte Molino, 7</td>
+              <td data-label="办公时间">周一至四 9-12 及预约</td>
+              <td data-label="联系方式">sportellorar@comune.padova.it - 0498205997</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Sir - 综合网络服务</td>
+              <td data-label="地址">Via Astichello, 18（二楼）</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">ufficio.migranti@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Open Gates APS</td>
+              <td data-label="地址">Piazza Gasparotto 4 / Via Diego Valeri 9</td>
+              <td data-label="办公时间">周一/三/五 9:30-12:30, 周二/四 15-18</td>
+              <td data-label="联系方式">351 291 3479</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PALERMO -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Palermo（巴勒莫）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Progetto diritti</td>
+              <td data-label="地址">Via Goethe, 22</td>
+              <td data-label="办公时间">周一/三/五 16-19</td>
+              <td data-label="联系方式">3383100216 - 3450182546</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- REGGIO EMILIA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Reggio Emilia</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">外国公民信息办公室</td>
+              <td data-label="地址">Via Gramsci, 34</td>
+              <td data-label="办公时间">发送邮件联系或周四 8:30-9:00</td>
+              <td data-label="联系方式">05221758837 - uis@comune.re.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ROME -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Rome（罗马）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">La Chimera APS</td>
+              <td data-label="地址">Via del Gran Paradiso, 51</td>
+              <td data-label="办公时间">周一 12-15</td>
+              <td data-label="联系方式">347 551 0939</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Centro Astalli</td>
+              <td data-label="地址">Via del Collegio Romano I / Via degli Astalli 14/A</td>
+              <td data-label="办公时间">周一至五 9:30-12/13-15:30</td>
+              <td data-label="联系方式">06 69700306 / 06 69925099 - astalli@jrs.net</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">L'Avvocato dietro l'Angolo (A.d.A.)</td>
+              <td data-label="地址">Via E. Frediani, 22</td>
+              <td data-label="办公时间">周一/三 9-13/14-18, 周二 9-13/15-18, 周四 9-12, 周五 9-13/16-18</td>
+              <td data-label="联系方式">06 64420331 - info@avvocatodietrolangolo.net</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Casa dei diritti sociali ODV</td>
+              <td data-label="地址">Via Giovanni Giolitti, 225</td>
+              <td data-label="办公时间">周一/三/五 10-13/14:30-16:30, 周二/四 14-18:30</td>
+              <td data-label="联系方式">net@dirittisociali.org - 06/4461162 - 06/4464676</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">移民服务窗口 USB</td>
+              <td data-label="地址">Via Giovanni Giolitti, 231（一楼）</td>
+              <td data-label="办公时间">周二 14-18, 周四 11:30-13/14-18:30（仅限预约）</td>
+              <td data-label="联系方式">migranti@usb.it - 340/9651049 - 06/4462030</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">ESC Infomigrante 服务窗口</td>
+              <td data-label="地址">Via dei Volsci, 159</td>
+              <td data-label="办公时间">周二 18-20（需邮件预约）</td>
+              <td data-label="联系方式">sportello.infomigrante@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">A Buon Diritto Onlus</td>
+              <td data-label="地址">Via dei Pisoni 57/59</td>
+              <td data-label="办公时间">仅限预约</td>
+              <td data-label="联系方式">sportelli@abuondiritto.it - 06/85356796</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Progetto diritti</td>
+              <td data-label="地址">Via Ettore Giovenale 79</td>
+              <td data-label="办公时间">周一至五 16:30-19，上午需预约</td>
+              <td data-label="联系方式">segreteria@progettodiritti.it - 06/298777</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">ARCI</td>
+              <td data-label="地址">Viale Giuseppe Stefanini 15</td>
+              <td data-label="办公时间">咨询：周二 15-17:30 / 移民：周二至五 15-17:30</td>
+              <td data-label="联系方式">inforoma@arci.it - sportellisociali.immigrazione@arciroma.it - 06/41734712</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">ARCI</td>
+              <td data-label="地址">Via Stefanini, 15</td>
+              <td data-label="办公时间">周二至五 15-18</td>
+              <td data-label="联系方式">06 41734712 - 06 41734648</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Programma Integra</td>
+              <td data-label="地址">Via San Antonio Maria Gianelli 19-19B</td>
+              <td data-label="办公时间">周二 9-13 免预约，周五需预约</td>
+              <td data-label="联系方式">0645753490 - 0678850299 - comunicazione@programmaintegra.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">ACSE</td>
+              <td data-label="地址">Via del Buon Consiglio, 19</td>
+              <td data-label="办公时间">仅限预约</td>
+              <td data-label="联系方式">06 67 91 669 - segreteria.acse@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Amal for Education</td>
+              <td data-label="地址">Circonvallazione Casilina, 46-48</td>
+              <td data-label="办公时间">周二 10-13, 周六 10-13</td>
+              <td data-label="联系方式">3290596587 - sportello.legale@amaleducation.net</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Astra 19</td>
+              <td data-label="地址">Via Monte Meta, 21</td>
+              <td data-label="办公时间">周五 16:30-19, 周一需预约</td>
+              <td data-label="联系方式">324 6107031 - 339 5425555 - sportello.tuteliamoci@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Baobab Experience Odv</td>
+              <td data-label="地址">Piazzale della Stazione Tiburtina</td>
+              <td data-label="办公时间">周五 16:30起</td>
+              <td data-label="联系方式">baobabexperience@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Caritas</td>
+              <td data-label="地址">Via delle Zoccolette, 19</td>
+              <td data-label="办公时间">周一/二/四/五 9-13</td>
+              <td data-label="联系方式">06 88815300 - centro.stranieri@caritasroma.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Centro Welcome Onlus</td>
+              <td data-label="地址">Via Gaspare Spontini, 15</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">3896535958 - cwelcome@tiscali.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">CIR - 法律和社会服务窗口</td>
+              <td data-label="地址">Via del Velabro, 5</td>
+              <td data-label="办公时间">周一/三 9:30-12:30，其他时间需预约</td>
+              <td data-label="联系方式">06 69 20 01 14 - cir@cir-onlus.org</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">移民与公民权法律诊所</td>
+              <td data-label="地址">Via Ostiense, 139（一楼，1.02室）</td>
+              <td data-label="办公时间">周四 16-19</td>
+              <td data-label="联系方式">lawclinic@uniroma3.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Comunità di Sant'Egidio</td>
+              <td data-label="地址">Via Dandolo, 10</td>
+              <td data-label="办公时间">周三/四/五 17-20</td>
+              <td data-label="联系方式">gentidipace@santegidio.org</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Fondazione Silvano Andolfi</td>
+              <td data-label="地址">Via Adolfo Venturi, 20/22</td>
+              <td data-label="办公时间">周一至五 10-14</td>
+              <td data-label="联系方式">351 5861799 - fondando@tin.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Pensare migrante</td>
+              <td data-label="地址">Via Prenestina, 90</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">351 972453 / 351 088 0660</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Patronato Acli</td>
+              <td data-label="地址">Piazza Sallustio, 3</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">06 5708723 - info@acliroma.it</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Parsec - PRAL 服务窗口</td>
+              <td data-label="地址">Via Catania, 19</td>
+              <td data-label="办公时间">需预约</td>
+              <td data-label="联系方式">3489945653 - parsec.rightjob@gmail.com</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Soleil</td>
+              <td data-label="地址">Via Catania, 89</td>
+              <td data-label="办公时间">周三 10-14 需预约</td>
+              <td data-label="联系方式">3317478346 - soleilparsec@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SIENA -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Siena（锡耶纳）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">Corte dei Miracoli APS</td>
+              <td data-label="地址">Via Roma, 56</td>
+              <td data-label="办公时间">周三 10-13, 周四 14-17, 周六 10:30-12:30 需预约</td>
+              <td data-label="联系方式">sportellocorte@gmail.com - 3518554636</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- TURIN -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Turin（都灵）</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">CSOA Gabrio</td>
+              <td data-label="地址">Via Millio, 42</td>
+              <td data-label="办公时间">周一 18:30-20:00</td>
+              <td data-label="联系方式">3509007929</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Avvocato di strada</td>
+              <td data-label="地址">Via Giovanni Camerana, 10</td>
+              <td data-label="办公时间">每月第一个周四 14:00</td>
+              <td data-label="联系方式">011 534854</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Diaconia Valdese</td>
+              <td data-label="地址">Via Nomaglio, 6</td>
+              <td data-label="办公时间">周二/四 9-13/14-17</td>
+              <td data-label="联系方式">3440214043</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Cecchi Point</td>
+              <td data-label="地址">Via Cecchi, 17</td>
+              <td data-label="办公时间">周二 17-19, 周五 14:30-16:30</td>
+              <td data-label="联系方式">011 19714416</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">API onlus</td>
+              <td data-label="地址">Via Bernardino Lanino 3/A</td>
+              <td data-label="办公时间">需预约，周一 18-20</td>
+              <td data-label="联系方式">320 463 2747 - 333 626 5766</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">Associazione Pais</td>
+              <td data-label="地址">Corso Casale, 97</td>
+              <td data-label="办公时间">仅限预约</td>
+              <td data-label="联系方式">3511279460 - progettoexit@associazionepais.net</td>
+            </tr>
+            <tr>
+              <td data-label="机构名称">UPM - 移民牧灵办公室</td>
+              <td data-label="地址">Via Cottolengo, 22</td>
+              <td data-label="办公时间">周一至四 9-13 免预约，也可预约</td>
+              <td data-label="联系方式">0112462092</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- TRANI -->
+      <div class="card city-section">
+        <h2 class="city-title">🏙️ Trani</h2>
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>机构名称</th>
+              <th>地址</th>
+              <th>办公时间</th>
+              <th>联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="机构名称">移民咨询服务窗口，Comunità Oasi2</td>
+              <td data-label="地址">Via Pedaggio S. Chiara, 57bis</td>
+              <td data-label="办公时间">周一 16-18 及电话联系</td>
+              <td data-label="联系方式">+39 348 796 9739 - sportellokipepeio@oasi2.it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">📍</span>
+        <div>
+          找不到您所在的城市？知道其他未列出的机构？
+          <a href="https://form.typeform.com/to/USx16QN3" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            请告诉我们
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">您可能还感兴趣</h2>
+      <div class="grid grid-3">
+        <a href="protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">国际保护</h3>
+        </a>
+        <a href="database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">所有居留许可</h3>
+        </a>
+        <a href="dizionario.html" class="card card-link card-compact">
+          <span class="card-icon">🔤</span>
+          <h3 class="card-title">词典</h3>
+        </a>
+      </div>
+    </div>
+  </section>

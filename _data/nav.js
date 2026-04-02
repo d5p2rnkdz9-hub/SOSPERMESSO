@@ -279,5 +279,110 @@ module.exports = {
         ]
       }
     ]
+  },
+  ur: {
+    dropdowns: [
+      {
+        label: "معلومات",
+        href: "/ur/#informazioni",
+        items: [
+          { label: "تمام اجازت نامے", href: "/ur/database.html" },
+          { label: "بین الاقوامی تحفظ", href: "/ur/protezione-internazionale.html" },
+          { label: "خاندانی اتحاد", href: "/ur/ricongiungimento-familiare.html" },
+          { label: "قانونی مدد", href: "/ur/aiuto-legale.html" },
+          { label: "لغت", href: "/ur/dizionario.html" }
+        ]
+      },
+      {
+        label: "ٹیسٹ",
+        href: "https://form.typeform.com/to/kt7P9Ejk",
+        external: true,
+        items: [
+          { label: "کیا مجھے اجازت نامہ مل سکتا ہے؟", href: "https://form.typeform.com/to/kt7P9Ejk", external: true },
+          { label: "کیا میں تبدیل کر سکتا ہوں؟", href: "https://form.typeform.com/to/oc9jhdkJ", external: true },
+          { label: "کیا میں تجدید کر سکتا ہوں؟", href: "https://form.typeform.com/to/R7HY8nBp", external: true }
+        ]
+      },
+      {
+        label: "تعاون",
+        href: "https://form.typeform.com/to/USx16QN3",
+        external: true,
+        items: [
+          { label: "مدد کریں", href: "https://form.typeform.com/to/USx16QN3", external: true },
+          { label: "غلطی کی اطلاع دیں", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
+          { label: "رائے دیں", href: "https://form.typeform.com/to/USx16QN3", external: true }
+        ]
+      }
+    ]
+  },
+  fa: {
+    dropdowns: [
+      {
+        label: "اطلاعات",
+        href: "/fa/#informazioni",
+        items: [
+          { label: "همه مجوزها", href: "/fa/database.html" },
+          { label: "حمایت بین‌المللی", href: "/fa/protezione-internazionale.html" },
+          { label: "پیوند خانوادگی", href: "/fa/ricongiungimento-familiare.html" },
+          { label: "کمک حقوقی", href: "/fa/aiuto-legale.html" },
+          { label: "واژه‌نامه", href: "/fa/dizionario.html" }
+        ]
+      },
+      {
+        label: "آزمون‌ها",
+        href: "https://form.typeform.com/to/kt7P9Ejk",
+        external: true,
+        items: [
+          { label: "آیا می‌توانم مجوز بگیرم؟", href: "https://form.typeform.com/to/kt7P9Ejk", external: true },
+          { label: "آیا می‌توانم تبدیل کنم؟", href: "https://form.typeform.com/to/oc9jhdkJ", external: true },
+          { label: "آیا می‌توانم تمدید کنم؟", href: "https://form.typeform.com/to/R7HY8nBp", external: true }
+        ]
+      },
+      {
+        label: "همکاری",
+        href: "https://form.typeform.com/to/USx16QN3",
+        external: true,
+        items: [
+          { label: "کمک کنید", href: "https://form.typeform.com/to/USx16QN3", external: true },
+          { label: "گزارش خطا", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
+          { label: "نظر بدهید", href: "https://form.typeform.com/to/USx16QN3", external: true }
+        ]
+      }
+    ]
+  },
+  zh: {
+    dropdowns: [
+      {
+        label: "信息",
+        href: "/zh/#informazioni",
+        items: [
+          { label: "所有居留许可", href: "/zh/database.html" },
+          { label: "国际保护", href: "/zh/protezione-internazionale.html" },
+          { label: "家庭团聚", href: "/zh/ricongiungimento-familiare.html" },
+          { label: "法律援助", href: "/zh/aiuto-legale.html" },
+          { label: "词典", href: "/zh/dizionario.html" }
+        ]
+      },
+      {
+        label: "测试",
+        href: "https://form.typeform.com/to/kt7P9Ejk",
+        external: true,
+        items: [
+          { label: "我能获得居留许可吗？", href: "https://form.typeform.com/to/kt7P9Ejk", external: true },
+          { label: "我能转换吗？", href: "https://form.typeform.com/to/oc9jhdkJ", external: true },
+          { label: "我能续签吗？", href: "https://form.typeform.com/to/R7HY8nBp", external: true }
+        ]
+      },
+      {
+        label: "合作",
+        href: "https://form.typeform.com/to/USx16QN3",
+        external: true,
+        items: [
+          { label: "帮助我们", href: "https://form.typeform.com/to/USx16QN3", external: true },
+          { label: "报告错误", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
+          { label: "提供反馈", href: "https://form.typeform.com/to/USx16QN3", external: true }
+        ]
+      }
+    ]
   }
 };

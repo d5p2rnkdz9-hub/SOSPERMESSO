@@ -26,6 +26,10 @@ const DATA_FILES = {
   'permits-tr':     '../_data/permitsTr',
   'permits-bn':     '../_data/permitsBn',
   'permits-ru':     '../_data/permitsRu',
+  'permits-ar':     '../_data/permitsAr',
+  'permits-ur':     '../_data/permitsUr',
+  'permits-fa':     '../_data/permitsFa',
+  'permits-zh':     '../_data/permitsZh',
   'prassi-locali':  '../_data/prassiLocali',
 };
 
@@ -55,7 +59,7 @@ async function main() {
   });
 
   if (entries.length === 0) {
-    console.log('No matching data files. Available: it, en, es, fr, tr, bn, prassi');
+    console.log('No matching data files. Available: it, en, es, fr, tr, bn, ru, ar, ur, fa, zh, prassi');
     process.exit(1);
   }
 

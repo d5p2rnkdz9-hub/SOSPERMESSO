@@ -1,0 +1,406 @@
+---
+layout: layouts/base.liquid
+title: "واژه‌نامه"
+lang: fa
+extraStyles: |
+  <style>
+
+      .dictionary-term {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        scroll-margin-top: 200px;
+      }
+      .dictionary-term:last-child {
+        border-bottom: none;
+      }
+      .dictionary-term:target {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: var(--radius-md);
+        animation: highlight-fade 2s ease-out;
+      }
+      @keyframes highlight-fade {
+        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
+        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+      }
+      .dictionary-term h3 {
+        color: var(--accent-purple);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .dictionary-term h3 .anchor-link {
+        opacity: 0;
+        font-size: 0.875rem;
+        color: var(--gray-medium);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      .dictionary-term:hover h3 .anchor-link {
+        opacity: 0.6;
+      }
+      .dictionary-term h3 .anchor-link:hover {
+        opacity: 1;
+        color: var(--taxi-yellow-dark);
+      }
+      .dictionary-term p {
+        margin: 0;
+        color: var(--gray-dark);
+      }
+      .dictionary-letter {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--taxi-yellow-dark);
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--taxi-yellow);
+        scroll-margin-top: 200px;
+      }
+
+  </style>
+---
+
+  <section class="section" style="padding: 1rem 0;">
+    <div class="container">
+      <div style="font-size: 0.875rem; color: var(--gray-medium);">
+        <a href="/fa/index.html" style="color: var(--taxi-yellow-dark);">صفحه اصلی</a> →
+        <span>واژه‌نامه</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="page-header text-center">
+        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <h1 class="page-title">واژه‌نامه کلمات دشوار</h1>
+        <p class="section-subtitle">اصطلاحات اداری با توضیح ساده</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+
+        <!-- A -->
+        <div class="dictionary-letter" id="lettera-a">A</div>
+
+        <div class="dictionary-term" id="accoglienza">
+          <h3>Accoglienza (پذیرش/اسکان) <a href="#accoglienza" class="anchor-link">#</a></h3>
+          <p>سیستم مراکزی که افرادی را که درخواست حمایت بین‌المللی می‌دهند، پذیرش می‌کنند.</p>
+        </div>
+
+        <div class="dictionary-term" id="a-carico">
+          <h3>A carico (تحت تکفل) <a href="#a-carico" class="anchor-link">#</a></h3>
+          <p>شخصی که از نظر اقتصادی به شخص دیگری وابسته است. مثلا فرزندی که کار نمی‌کند "تحت تکفل" والدین خود است زیرا آن‌ها هزینه‌های خوراک، پوشاک و غیره را می‌پردازند.</p>
+        </div>
+
+        <div class="dictionary-term" id="affidamento">
+          <h3>Affidamento (سرپرستی/حضانت) <a href="#affidamento" class="anchor-link">#</a></h3>
+          <p>واگذاری مراقبت از یک فرد زیر سن قانونی (کودک یا نوجوان زیر 18 سال) به شخص، خانواده یا موسسه‌ای غیر از والدین واقعی.</p>
+        </div>
+
+        <div class="dictionary-term" id="asilo">
+          <h3>Asilo (پناهندگی) <a href="#asilo" class="anchor-link">#</a></h3>
+          <p>نوعی حمایت بین‌المللی برای افرادی که نمی‌توانند به کشور خود بازگردند به دلیل خطر آزار و اذیت (مانند کشته شدن، شکنجه یا تبعیض شدید). همچنین به "Rifugiato" (پناهنده) مراجعه کنید.</p>
+        </div>
+
+        <div class="dictionary-term" id="asl">
+          <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
+          <p>Azienda Sanitaria Locale (واحد بهداشتی محلی). اداره‌ای که خدمات پزشکی و بهداشتی یک منطقه را مدیریت می‌کند. اینجا می‌توانید در خدمات بهداشتی ملی ثبت‌نام کنید و پزشک خانواده انتخاب کنید.</p>
+        </div>
+
+        <div class="dictionary-term" id="attestato-nominativo">
+          <h3>Attestato nominativo (گواهی شخصی) <a href="#attestato-nominativo" class="anchor-link">#</a></h3>
+          <p>اولین مدرک اقامتی که Questura هنگام درخواست پناهندگی به شما می‌دهد، تا زمانی که مجوز اقامت با کارت زرد صادر شود. همراه با فرم C3 صادر می‌شود. تاریخ انقضا ندارد: تا پایان بررسی درخواست پناهندگی معتبر باقی می‌ماند.</p>
+        </div>
+
+        <!-- C -->
+        <div class="dictionary-letter" id="lettera-c">C</div>
+
+        <div class="dictionary-term" id="c3">
+          <h3>C3 <a href="#c3" class="anchor-link">#</a></h3>
+          <p>فرمی که برای ارائه درخواست پناهندگی در Questura استفاده می‌شود. حاوی اطلاعات شخصی شماست.</p>
+        </div>
+
+        <div class="dictionary-term" id="carichi-pendenti">
+          <h3>Carichi pendenti (پرونده‌های معلق) <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
+          <p>مدرکی که نشان می‌دهد آیا پرونده‌های کیفری علیه شخصی وجود دارد که هنوز به حکم نهایی نرسیده‌اند.</p>
+        </div>
+
+        <div class="dictionary-term" id="carta-di-soggiorno">
+          <h3>Carta di soggiorno (کارت اقامت) <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>اصطلاحی مبهم که ممکن است به دو نوع مجوز اقامت اشاره کند: مجوز اقامت بلندمدت اتحادیه اروپا یا کارت اقامت برای اعضای خانواده یک شهروند اروپایی.</p>
+        </div>
+
+        <div class="dictionary-term" id="casellario-giudiziale">
+          <h3>Casellario giudiziale (سابقه کیفری) <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
+          <p>سابقه‌ای شامل اطلاعات مربوط به محکومیت‌های کیفری یک شخص. از دادستانی درخواست می‌شود.</p>
+        </div>
+
+        <div class="dictionary-term" id="cessione-di-fabbricato">
+          <h3>Cessione di fabbricato (اطلاع‌رسانی اجاره ملک) <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
+          <p>مدرکی که هنگام اجاره خانه یا اتاق به شخصی باید ارائه شود. باید ظرف 48 ساعت به پلیس محلی تحویل داده شود.</p>
+        </div>
+
+        <div class="dictionary-term" id="coesione-familiare">
+          <h3>Coesione familiare (پیوستگی خانوادگی) <a href="#coesione-familiare" class="anchor-link">#</a></h3>
+          <p>روندی که به شخصی که از قبل در ایتالیا حضور دارد اجازه می‌دهد مجوز اقامت برای ماندن با عضوی از خانواده‌اش که از قبل به صورت قانونی در ایتالیا زندگی می‌کند دریافت کند.</p>
+        </div>
+
+        <div class="dictionary-term" id="codice-fiscale">
+          <h3>Codice Fiscale (کد مالیاتی) <a href="#codice-fiscale" class="anchor-link">#</a></h3>
+          <p>کد شخصی مخصوص هر فرد، در ایتالیا برای شناسایی و انجام اموری مانند کار کردن، مراجعه به پزشک و امضای اسناد رسمی ضروری است.</p>
+        </div>
+
+        <div class="dictionary-term" id="commissione-territoriale">
+          <h3>Commissione Territoriale (کمیسیون منطقه‌ای) <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
+          <p>نهاد دولتی ایتالیا که تصمیم می‌گیرد چه کسی می‌تواند وضعیت پناهنده، حمایت فرعی، حمایت ویژه یا مجوز درمان پزشکی دریافت کند.</p>
+        </div>
+
+        <div class="dictionary-term" id="coniuge">
+          <h3>Coniuge (همسر) <a href="#coniuge" class="anchor-link">#</a></h3>
+          <p>شوهر یا زن. به شخصی اشاره دارد که از طریق ازدواج (عقد نکاح) یا اتحاد مدنی به فرد دیگری متصل است.</p>
+        </div>
+
+        <div class="dictionary-term" id="conversione">
+          <h3>Conversione (تبدیل) <a href="#conversione" class="anchor-link">#</a></h3>
+          <p>تبدیل یک مجوز اقامت به نوع دیگر (مثلا از مجوز تحصیلی به مجوز کار)، بدون نیاز به بازگشت به کشور مبدا.</p>
+        </div>
+
+        <div class="dictionary-term" id="copia-conforme">
+          <h3>Copia conforme (رونوشت برابر اصل) <a href="#copia-conforme" class="anchor-link">#</a></h3>
+          <p>کپی از یک مدرک با مهر رسمی که تایید می‌کند مطابق اصل است. می‌توان آن را در شهرداری، دفتر اسناد رسمی یا در برخی موارد در اداره پست تهیه کرد.</p>
+        </div>
+
+        <!-- D -->
+        <div class="dictionary-letter" id="lettera-d">D</div>
+
+        <div class="dictionary-term" id="decreto-di-espulsione">
+          <h3>Decreto di espulsione (حکم اخراج) <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
+          <p>حکمی که Prefettura صادر می‌کند و به شما اطلاع می‌دهد که باید ایتالیا را ترک کنید. ممکن است همراه با ممنوعیت بازگشت باشد.</p>
+        </div>
+
+        <div class="dictionary-term" id="dichiarazione-di-ospitalita">
+          <h3>Dichiarazione di ospitalità (اعلام میزبانی) <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
+          <p>مدرک امضاشده‌ای که اعلام می‌کند شخصی شما را رایگان در خانه خود در ایتالیا میزبانی می‌کند. باید ظرف 48 ساعت به پلیس ارائه شود.</p>
+        </div>
+
+        <div class="dictionary-term" id="diniego">
+          <h3>Diniego (رد) <a href="#diniego" class="anchor-link">#</a></h3>
+          <p>تصمیم منفی. رد شدن درخواست شما توسط مراجع.</p>
+        </div>
+
+        <div class="dictionary-term" id="domicilio">
+          <h3>Domicilio (اقامتگاه) <a href="#domicilio" class="anchor-link">#</a></h3>
+          <p>آدرسی که در آن زندگی می‌کنید، حتی اگر به صورت موقت باشد.</p>
+        </div>
+
+        <!-- I -->
+        <div class="dictionary-letter" id="lettera-i">I</div>
+
+        <div class="dictionary-term" id="idoneita-alloggiativa">
+          <h3>Idoneità alloggiativa (گواهی مناسب بودن مسکن) <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
+          <p>مدرکی که ثابت می‌کند مسکن مناسب سکونت است (فضای کافی، ایمن، دارای امکانات لازم). از شهرداری منطقه‌ای که مسکن در آن قرار دارد درخواست می‌شود.</p>
+        </div>
+
+        <!-- K -->
+        <div class="dictionary-letter" id="lettera-k">K</div>
+
+        <div class="dictionary-term" id="kit-postale">
+          <h3>Kit postale <a href="#kit-postale" class="anchor-link">#</a></h3>
+          <p>بسته فرم‌هایی که از اداره پست برای درخواست یا تمدید برخی انواع مجوز اقامت تهیه می‌شود.</p>
+        </div>
+
+        <!-- M -->
+        <div class="dictionary-letter" id="lettera-m">M</div>
+
+        <div class="dictionary-term" id="marca-da-bollo">
+          <h3>Marca da bollo (تمبر مالیاتی) <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
+          <p>تمبر مالی که از فروشگاه تنباکو خریداری و بر روی اسناد رسمی مانند درخواست‌های ارائه‌شده به Questura الصاق می‌شود. ارزش آن 16 یورو (رایج‌ترین) است و برای پرداخت مالیات به دولت استفاده می‌شود.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore">
+          <h3>Minore (صغیر/زیر سن قانونی) <a href="#minore" class="anchor-link">#</a></h3>
+          <p>شخصی زیر 18 سال.</p>
+        </div>
+
+        <div class="dictionary-term" id="minore-straniero-non-accompagnato">
+          <h3>Minore straniero non accompagnato (صغیر خارجی بدون همراه) <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
+          <p>شخصی زیر 18 سال که در ایتالیا بدون والدین یا بزرگسال دیگری که قانونا مسئول اوست حضور دارد.</p>
+        </div>
+
+        <!-- N -->
+        <div class="dictionary-letter" id="lettera-n">N</div>
+
+        <div class="dictionary-term" id="nulla-osta">
+          <h3>Nulla osta (مجوز/موافقت) <a href="#nulla-osta" class="anchor-link">#</a></h3>
+          <p>مجوز رسمی مورد نیاز برای انجام کاری. مثلا "nulla osta برای پیوند خانوادگی" چراغ سبز Prefettura برای آوردن اعضای خانواده به ایتالیاست.</p>
+        </div>
+
+        <!-- P -->
+        <div class="dictionary-letter" id="lettera-p">P</div>
+
+        <div class="dictionary-term" id="permesso-di-soggiorno">
+          <h3>Permesso di soggiorno (مجوز اقامت) <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
+          <p>مدرکی که به شما حق زندگی قانونی در ایتالیا برای مدت معین را می‌دهد.</p>
+        </div>
+
+        <div class="dictionary-term" id="prefettura">
+          <h3>Prefettura (استانداری) <a href="#prefettura" class="anchor-link">#</a></h3>
+          <p>اداره دولتی ایتالیا که در هر استان وجود دارد. با نظم عمومی، امنیت و برخی مراحل مربوط به خارجیان مانند تابعیت و پیوند خانوادگی سر و کار دارد.</p>
+        </div>
+
+        <div class="dictionary-term" id="protezione-internazionale">
+          <h3>Protezione internazionale (حمایت بین‌المللی) <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
+          <p>حمایتی که ایتالیا به افرادی ارائه می‌دهد که در صورت بازگشت به کشور خود در خطر خواهند بود. شامل پناهندگی و حمایت فرعی است.</p>
+        </div>
+
+        <div class="dictionary-term" id="prosieguo-amministrativo">
+          <h3>Prosieguo amministrativo (ادامه اداری) <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
+          <p>امکان ماندن یک جوان خارجی که وقتی صغیر بوده وارد ایتالیا شده، همراه با حمایت حتی پس از رسیدن به سن 18 سالگی.</p>
+        </div>
+
+        <!-- Q -->
+        <div class="dictionary-letter" id="lettera-q">Q</div>
+
+        <div class="dictionary-term" id="questura">
+          <h3>Questura (اداره پلیس) <a href="#questura" class="anchor-link">#</a></h3>
+          <p>دفتر پلیس دولتی که در هر مرکز استان وجود دارد. اینجاست که مجوز اقامت درخواست، دریافت و تمدید می‌شود. دارای دفتری به نام "Ufficio Immigrazione" (اداره مهاجرت) است.</p>
+        </div>
+
+        <!-- R -->
+        <div class="dictionary-letter" id="lettera-r">R</div>
+
+        <div class="dictionary-term" id="residenza">
+          <h3>Residenza (اقامت) <a href="#residenza" class="anchor-link">#</a></h3>
+          <p>آدرسی که به صورت دائم در آن زندگی می‌کنید و در دفتر ثبت احوال شهرداری ثبت شده است.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricevuta">
+          <h3>Ricevuta (رسید) <a href="#ricevuta" class="anchor-link">#</a></h3>
+          <p>مدرکی که ثابت می‌کند درخواستی ارائه داده‌اید یا مبلغی پرداخت کرده‌اید. رسید Questura (cedolino) ثابت می‌کند که درخواست مجوز اقامت داده‌اید و به شما اجازه می‌دهد در حین انتظار در ایتالیا بمانید.</p>
+        </div>
+
+        <div class="dictionary-term" id="ricongiungimento-familiare">
+          <h3>Ricongiungimento familiare (پیوند خانوادگی) <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
+          <p>روندی که به یک فرد خارجی ساکن ایتالیا با مجوز اقامت معتبر اجازه می‌دهد برخی اعضای خانواده‌اش را به ایتالیا بیاورد.</p>
+        </div>
+
+        <div class="dictionary-term" id="rifugiato">
+          <h3>Rifugiato (پناهنده) <a href="#rifugiato" class="anchor-link">#</a></h3>
+          <p>شخصی که به دلیل آزار و اذیت از کشور خود گریخته و می‌تواند در ایتالیا وضعیت پناهنده دریافت کند.</p>
+        </div>
+
+        <div class="dictionary-term" id="rinnovo">
+          <h3>Rinnovo (تمدید) <a href="#rinnovo" class="anchor-link">#</a></h3>
+          <p>تمدید اعتبار مجوز اقامت قبل از انقضای آن.</p>
+        </div>
+
+        <!-- S -->
+        <div class="dictionary-letter" id="lettera-s">S</div>
+
+        <div class="dictionary-term" id="servizi-sociali">
+          <h3>Servizi sociali (خدمات اجتماعی) <a href="#servizi-sociali" class="anchor-link">#</a></h3>
+          <p>ادارات شهرداری که به افراد در شرایط دشوار (خانواده‌ها، سالمندان، معلولان، صغیران) کمک می‌کنند.</p>
+        </div>
+
+        <div class="dictionary-term" id="sportello-unico">
+          <h3>Sportello Unico (باجه واحد) <a href="#sportello-unico" class="anchor-link">#</a></h3>
+          <p>Sportello Unico per l'Immigrazione (SUI). دفتر Prefettura که مراحل کاری خارجیان (nulla osta، قرارداد اقامت) و پیوند خانوادگی را مدیریت می‌کند.</p>
+        </div>
+
+        <div class="dictionary-term" id="status-di-rifugiato">
+          <h3>Status di rifugiato (وضعیت پناهنده) <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
+          <p>تصمیم کمیسیون یا دادگاه که شخصی را به عنوان پناهنده به رسمیت می‌شناسد. با وضعیت پناهنده می‌توانید مجوز اقامت پناهندگی درخواست کنید.</p>
+        </div>
+
+        <!-- T -->
+        <div class="dictionary-letter" id="lettera-t">T</div>
+
+        <div class="dictionary-term" id="tribunale">
+          <h3>Tribunale (دادگاه) <a href="#tribunale" class="anchor-link">#</a></h3>
+          <p>مکانی که قاضیان در مسائل حقوقی تصمیم‌گیری می‌کنند.</p>
+        </div>
+
+        <div class="dictionary-term" id="tribunale-per-i-minorenni">
+          <h3>Tribunale per i minorenni (دادگاه اطفال) <a href="#tribunale-per-i-minorenni" class="anchor-link">#</a></h3>
+          <p>دادگاه ویژه‌ای که به مسائل حقوقی مربوط به افراد زیر 18 سال رسیدگی می‌کند.</p>
+        </div>
+
+        <div class="dictionary-term" id="tessera-sanitaria">
+          <h3>Tessera sanitaria (کارت بهداشت) <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
+          <p>کارت پلاستیکی که به شما اجازه استفاده از خدمات بهداشتی ملی (پزشک خانواده، اورژانس، داروها) را می‌دهد. بعد از دریافت مجوز اقامت و ثبت اقامت از ASL درخواست می‌شود.</p>
+        </div>
+
+        <div class="dictionary-term" id="tutore">
+          <h3>Tutore (سرپرست) <a href="#tutore" class="anchor-link">#</a></h3>
+          <p>شخصی که قاضی برای کمک و مراقبت از یک جوان زیر 18 سال، زمانی که والدینش قادر به انجام این کار نیستند، انتخاب می‌کند.</p>
+        </div>
+
+        <!-- U -->
+        <div class="dictionary-letter" id="lettera-u">U</div>
+
+        <div class="dictionary-term" id="udienza">
+          <h3>Udienza (جلسه دادگاه) <a href="#udienza" class="anchor-link">#</a></h3>
+          <p>قرار ملاقات با قاضی در دادگاه. در 99% موارد وکیلتان باید حضور داشته باشد.</p>
+        </div>
+
+        <div class="dictionary-term" id="unione-civile">
+          <h3>Unione civile (اتحاد مدنی) <a href="#unione-civile" class="anchor-link">#</a></h3>
+          <p>ازدواج بین دو نفر از یک جنس در ایتالیا.</p>
+        </div>
+
+        <!-- V -->
+        <div class="dictionary-letter" id="lettera-v">V</div>
+
+        <div class="dictionary-term" id="visto">
+          <h3>Visto (ویزا) <a href="#visto" class="anchor-link">#</a></h3>
+          <p>مجوز ورود به ایتالیا که قبل از سفر از سفارت یا کنسولگری ایتالیا در کشور شما درخواست می‌شود. انواع مختلفی دارد: ویزای گردشگری، تحصیلی، کاری، پیوند خانوادگی.</p>
+        </div>
+
+        <div class="dictionary-term" id="vincolo-di-parentela">
+          <h3>Vincolo di parentela (پیوند خویشاوندی) <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
+          <p>رابطه خانوادگی بین دو نفر (والدین-فرزندان، برادران و خواهران، پدربزرگ و مادربزرگ-نوه‌ها، عمو/دایی-فرزندان خواهر و برادر).</p>
+        </div>
+
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <span class="alert-icon">❓</span>
+        <div>
+          کلمه‌ای وجود دارد که می‌خواهید معنای آن را بدانید؟
+          <a href="https://form.typeform.com/to/G6YT01Vj" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+            به ما بنویسید
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-off-white">
+    <div class="container">
+      <h2 class="text-center mb-lg">شاید برایتان مفید باشد</h2>
+      <div class="grid grid-3">
+        <a href="/fa/database.html" class="card card-link card-compact">
+          <span class="card-icon">📚</span>
+          <h3 class="card-title">همه مجوزها</h3>
+        </a>
+        <a href="/fa/protezione-internazionale.html" class="card card-link card-compact">
+          <span class="card-icon">🛡️</span>
+          <h3 class="card-title">حمایت بین‌المللی</h3>
+        </a>
+        <a href="/fa/aiuto-legale.html" class="card card-link card-compact">
+          <span class="card-icon">⚖️</span>
+          <h3 class="card-title">کمک حقوقی</h3>
+        </a>
+      </div>
+    </div>
+  </section>

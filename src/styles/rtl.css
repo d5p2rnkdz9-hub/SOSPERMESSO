@@ -102,6 +102,46 @@
 }
 
 /* ===============================================
+   URDU FONT STACK (Nastaliq style)
+   =============================================== */
+
+[lang="ur"] {
+  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Urdu Typesetting", "Tahoma", var(--font-primary);
+  line-height: 2.0; /* Nastaliq has extreme ascenders/descenders */
+  letter-spacing: normal !important;
+}
+
+[lang="ur"] h1,
+[lang="ur"] h2,
+[lang="ur"] h3,
+[lang="ur"] h4,
+[lang="ur"] h5,
+[lang="ur"] h6 {
+  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Urdu Typesetting", var(--font-heading);
+  line-height: 1.8;
+}
+
+/* ===============================================
+   FARSI/PERSIAN FONT STACK (Naskh style)
+   =============================================== */
+
+[lang="fa"] {
+  font-family: "Vazirmatn", "Noto Sans Arabic", "Geeza Pro", "Tahoma", var(--font-primary);
+  line-height: 1.8;
+  letter-spacing: normal !important;
+}
+
+[lang="fa"] h1,
+[lang="fa"] h2,
+[lang="fa"] h3,
+[lang="fa"] h4,
+[lang="fa"] h5,
+[lang="fa"] h6 {
+  font-family: "Vazirmatn", "Noto Sans Arabic", "Geeza Pro", var(--font-heading);
+  line-height: 1.5;
+}
+
+/* ===============================================
    HEBREW SUPPORT
    =============================================== */
 

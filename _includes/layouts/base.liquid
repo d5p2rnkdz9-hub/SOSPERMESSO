@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ lang | default: 'it' }}" dir="{% if lang == 'ar' or lang == 'he' %}rtl{% else %}ltr{% endif %}">
+<html lang="{{ lang | default: 'it' }}" dir="{% if lang == 'ar' or lang == 'he' or lang == 'ur' or lang == 'fa' %}rtl{% else %}ltr{% endif %}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +39,9 @@
     {%- assign bnUrl = "/bn" | append: itUrl -%}
     {%- assign ruUrl = "/ru" | append: itUrl -%}
     {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
   {%- elsif urlPrefix == "/fr/" -%}
     {%- assign itUrl = page.url | replace_first: "/fr/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -48,6 +51,9 @@
     {%- assign bnUrl = "/bn" | append: itUrl -%}
     {%- assign ruUrl = "/ru" | append: itUrl -%}
     {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
   {%- elsif urlPrefix == "/es/" -%}
     {%- assign itUrl = page.url | replace_first: "/es/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -57,6 +63,9 @@
     {%- assign bnUrl = "/bn" | append: itUrl -%}
     {%- assign ruUrl = "/ru" | append: itUrl -%}
     {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
   {%- elsif urlPrefix == "/tr/" -%}
     {%- assign itUrl = page.url | replace_first: "/tr/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -66,6 +75,9 @@
     {%- assign bnUrl = "/bn" | append: itUrl -%}
     {%- assign ruUrl = "/ru" | append: itUrl -%}
     {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
   {%- elsif urlPrefix == "/bn/" -%}
     {%- assign itUrl = page.url | replace_first: "/bn/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -75,6 +87,9 @@
     {%- assign bnUrl = page.url -%}
     {%- assign ruUrl = "/ru" | append: itUrl -%}
     {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
   {%- elsif urlPrefix == "/ru/" -%}
     {%- assign itUrl = page.url | replace_first: "/ru/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -84,6 +99,9 @@
     {%- assign bnUrl = "/bn" | append: itUrl -%}
     {%- assign ruUrl = page.url -%}
     {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
   {%- elsif urlPrefix == "/ar/" -%}
     {%- assign itUrl = page.url | replace_first: "/ar/", "/" -%}
     {%- assign enUrl = "/en" | append: itUrl -%}
@@ -93,6 +111,45 @@
     {%- assign bnUrl = "/bn" | append: itUrl -%}
     {%- assign ruUrl = "/ru" | append: itUrl -%}
     {%- assign arUrl = page.url -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
+  {%- elsif urlPrefix == "/ur/" -%}
+    {%- assign itUrl = page.url | replace_first: "/ur/", "/" -%}
+    {%- assign enUrl = "/en" | append: itUrl -%}
+    {%- assign frUrl = "/fr" | append: itUrl -%}
+    {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
+    {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = page.url -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
+  {%- elsif urlPrefix == "/fa/" -%}
+    {%- assign itUrl = page.url | replace_first: "/fa/", "/" -%}
+    {%- assign enUrl = "/en" | append: itUrl -%}
+    {%- assign frUrl = "/fr" | append: itUrl -%}
+    {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
+    {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = page.url -%}
+    {%- assign zhUrl = "/zh" | append: itUrl -%}
+  {%- elsif urlPrefix == "/zh/" -%}
+    {%- assign itUrl = page.url | replace_first: "/zh/", "/" -%}
+    {%- assign enUrl = "/en" | append: itUrl -%}
+    {%- assign frUrl = "/fr" | append: itUrl -%}
+    {%- assign esUrl = "/es" | append: itUrl -%}
+    {%- assign trUrl = "/tr" | append: itUrl -%}
+    {%- assign bnUrl = "/bn" | append: itUrl -%}
+    {%- assign ruUrl = "/ru" | append: itUrl -%}
+    {%- assign arUrl = "/ar" | append: itUrl -%}
+    {%- assign urUrl = "/ur" | append: itUrl -%}
+    {%- assign faUrl = "/fa" | append: itUrl -%}
+    {%- assign zhUrl = page.url -%}
   {%- else -%}
     {%- assign itUrl = page.url -%}
     {%- assign enUrl = "/en" | append: page.url -%}
@@ -102,6 +159,9 @@
     {%- assign bnUrl = "/bn" | append: page.url -%}
     {%- assign ruUrl = "/ru" | append: page.url -%}
     {%- assign arUrl = "/ar" | append: page.url -%}
+    {%- assign urUrl = "/ur" | append: page.url -%}
+    {%- assign faUrl = "/fa" | append: page.url -%}
+    {%- assign zhUrl = "/zh" | append: page.url -%}
   {%- endif -%}
   <link rel="alternate" hreflang="it" href="{{ site.url }}{{ itUrl }}">
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
@@ -111,12 +171,15 @@
   <link rel="alternate" hreflang="bn" href="{{ site.url }}{{ bnUrl }}">
   <link rel="alternate" hreflang="ru" href="{{ site.url }}{{ ruUrl }}">
   <link rel="alternate" hreflang="ar" href="{{ site.url }}{{ arUrl }}">
+  <link rel="alternate" hreflang="ur" href="{{ site.url }}{{ urUrl }}">
+  <link rel="alternate" hreflang="fa" href="{{ site.url }}{{ faUrl }}">
+  <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ zhUrl }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/src/styles/main.css' | url }}">
