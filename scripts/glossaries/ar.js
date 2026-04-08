@@ -1,82 +1,92 @@
 /**
  * AR (Arabic) translation glossary for review-translations.js
  *
- * register: Arabic doesn't have a formal/informal pronoun split like Turkish.
- *           The site uses أنت (anta/anti) forms — no register check needed.
+ * Updated based on professional translator review (2026-04).
+ *
+ * Key principle: Italian terms must NOT appear bare in Arabic text.
+ * They should be replaced with Arabic equivalents, with the Italian
+ * term optionally in parentheses for reference.
+ *
+ * register: Arabic doesn't have formal/informal pronoun split.
  * badTerms: known wrong translations { wrong, correct, source }.
- * preservedTerms: Italian/bureaucratic terms that must NOT be translated.
- * artifactPatterns: additional regex patterns beyond the global defaults.
+ * preservedTerms: Italian terms that may appear in parentheses only.
+ * artifactPatterns: regex patterns for automated checks.
  */
 
 module.exports = {
-  // Arabic doesn't distinguish formal/informal pronouns like European languages.
-  // No register check needed.
   register: null,
 
   badTerms: [
+    // === HYBRID STRUCTURES (bare Italian in Arabic text) ===
+    // These are the #1 issue found by the professional translator.
+    {
+      wrong: 'Soggiorno di Permesso',
+      correct: 'تصريح الإقامة',
+      source: 'hybrid structure',
+      note: 'reversed Italian term left untranslated — must be Arabic',
+    },
+    {
+      wrong: 'contrato',
+      correct: 'contratto',
+      source: 'spelling error',
+      note: 'Italian spelling error: missing double t',
+    },
+
+    // === WRONG ARABIC TRANSLATIONS ===
     {
       wrong: 'مرسوم التدفقات',
-      correct: 'Decreto Flussi',
+      correct: 'نظام تدفقات العمالة (Decreto Flussi)',
       source: 'Decreto Flussi',
-      note: 'literal translation of decree name — must keep Italian proper name',
-    },
-    {
-      wrong: 'مكتب الشرطة',
-      correct: 'Questura',
-      source: 'Questura',
-      note: 'Questura must be preserved as Italian term',
-      preservedViolation: true,
-    },
-    {
-      wrong: 'مكتب المحافظة',
-      correct: 'Prefettura',
-      source: 'Prefettura',
-      note: 'Prefettura must be preserved as Italian term',
-      preservedViolation: true,
-    },
-    {
-      wrong: 'الطابع المالي',
-      correct: 'marca da bollo',
-      source: 'marca da bollo',
-      note: 'Italian bureaucratic term should be preserved',
-    },
-    {
-      wrong: 'الحوالة البريدية',
-      correct: 'bollettino postale',
-      source: 'bollettino postale',
-      note: 'Italian bureaucratic term should be preserved',
-    },
-    {
-      wrong: 'النافذة الواحدة',
-      correct: 'Sportello Unico',
-      source: 'Sportello Unico',
-      note: 'Italian institutional name must be preserved',
-      preservedViolation: true,
-    },
-    {
-      wrong: 'تصريح عدم ممانعة',
-      correct: 'Nulla Osta',
-      source: 'Nulla Osta',
-      note: 'Italian legal term must be preserved',
-      preservedViolation: true,
+      note: 'literal translation — use Arabic description + Italian in parentheses',
     },
     {
       wrong: 'طقم البريد',
-      correct: 'Kit Postale',
+      correct: 'طلب البريد (Kit Postale)',
       source: 'Kit Postale',
-      note: 'Italian term must be preserved — "طقم البريد" is a back-translation',
-      preservedViolation: true,
+      note: 'back-translation — use Arabic description + Italian in parentheses',
     },
     {
-      wrong: 'اللجنة الإقليمية',
-      correct: 'Commissione Territoriale',
-      source: 'Commissione Territoriale',
-      note: 'Italian institutional name must be preserved',
-      preservedViolation: true,
+      wrong: 'تصريح عدم ممانعة',
+      correct: 'تصريح العمل المسبق (Nulla Osta)',
+      source: 'Nulla Osta',
+      note: 'Arabic translation + Italian in parentheses',
+    },
+    {
+      wrong: 'النافذة الواحدة',
+      correct: 'مكتب الهجرة الموحد (Sportello Unico)',
+      source: 'Sportello Unico',
+      note: 'literal translation — use Arabic description + Italian in parentheses',
+    },
+    {
+      wrong: 'مكتب الشرطة',
+      correct: 'مصلحة الشرطة (Questura)',
+      source: 'Questura',
+      note: 'imprecise — use مصلحة الشرطة + (Questura)',
+    },
+    {
+      wrong: 'الطابع المالي',
+      correct: 'طابع ضريبي (Marca da bollo)',
+      source: 'marca da bollo',
+      note: 'Arabic description + Italian in parentheses',
+    },
+    {
+      wrong: 'مكتب المحافظة',
+      correct: 'المحافظة (Prefettura)',
+      source: 'Prefettura',
+      note: 'Arabic description + Italian in parentheses',
+    },
+
+    // === STYLE/REGISTER ISSUES ===
+    {
+      wrong: 'راسلنا',
+      correct: 'تواصل معنا',
+      source: 'contact CTA',
+      note: 'too direct — use more formal register',
     },
   ],
 
-  // These Italian/bureaucratic terms should appear verbatim in the translation.
+  // Italian terms that may appear in parentheses only (not bare in text).
+  // The automated check flags these ONLY when they appear outside parentheses.
   preservedTerms: [
     'Questura',
     'Prefettura',
@@ -95,6 +105,8 @@ module.exports = {
     'Poste Italiane',
     'Permesso di Soggiorno',
     'Carta di Soggiorno',
+    'Carta di soggiorno',
+    'Schengen',
   ],
 
   // Arabic-specific incomplete sentence patterns.
@@ -110,6 +122,16 @@ module.exports = {
     {
       re: /[\u0660-\u0669]/g,
       label: 'Arabic-Indic numeral found — site uses Western numerals (0-9)',
+    },
+    {
+      // Detect bare Italian terms outside parentheses in Arabic text
+      re: /(?<!\()(?:Permesso di Soggiorno|Soggiorno di Permesso)(?!\))/gi,
+      label: 'bare Italian "Permesso di Soggiorno" — must be replaced with تصريح الإقامة',
+    },
+    {
+      // Detect missing separators (taa marbouta directly followed by Arabic letter)
+      re: /ة[\u0627-\u064A]{2,}/g,
+      label: 'possible concatenated words (missing space after taa marbouta)',
     },
   ],
 };
