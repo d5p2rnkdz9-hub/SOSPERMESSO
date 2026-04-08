@@ -112,7 +112,7 @@ const PERMIT_SPECIFIC_FIXES = {
   },
 
   // Incomplete sentence in protezione speciale
-  'protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale': {
+  'protezione-speciale': {
     textReplacements: [
       [
         'বিনামূল্যে আইনি সহায়তা কেন্দ্র ।',

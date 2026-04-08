@@ -742,14 +742,14 @@ extraStyles: |
               </div>
             </div></li>
 
-            {% assign p = permitsEs | where: "slug", "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale" | first %}
+            {% assign p = permitsEs | where: "slug", "protezione-speciale" | first %}
             <li><div class="permit-row">
-              <a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-main"><span class="icon">✨</span><span class="title">Permiso de residencia por proteccion especial</span></a>
+              <a href="permesso-protezione-speciale.html" class="permit-main"><span class="icon">✨</span><span class="title">Permiso de residencia por proteccion especial</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 En construccion</span>
-                {% else %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#cose" class="permit-btn btn-cose">Que es</a>
-                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#primo" class="permit-btn btn-primo">Primera expedicion</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Renovacion no prevista</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#rinnovo" class="permit-btn btn-rinnovo">Renovacion</a>{% endif %}
+                {% else %}<a href="permesso-protezione-speciale.html#cose" class="permit-btn btn-cose">Que es</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#primo" class="permit-btn btn-primo">Primera expedicion</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Renovacion no prevista</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#rinnovo" class="permit-btn btn-rinnovo">Renovacion</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>

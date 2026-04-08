@@ -116,14 +116,14 @@
 .doc-checklist {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: 4px;
 }
 
 .doc-item {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm);
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
   border-radius: var(--radius-sm);
   background: var(--white);
   border: 1px solid var(--gray-light);
@@ -157,9 +157,9 @@
 .doc-checkbox {
   appearance: none;
   -webkit-appearance: none;
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
   border: 2px solid var(--gray-medium);
   border-radius: var(--radius-sm);
   background: var(--white);
@@ -286,7 +286,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: var(--spacing-sm) 0;
+  padding: 0.4rem 0;
   border-bottom: 1px solid var(--gray-light);
 }
 
@@ -356,23 +356,22 @@
   }
 
   .doc-item {
-    padding: var(--spacing-sm) var(--spacing-xs);
+    padding: 0.35rem 0.4rem;
   }
 
-  /* Ensure 44x44px touch target for checkboxes */
+  /* Touch-friendly but compact checkboxes */
   .doc-checkbox {
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
   }
 
   .doc-checkbox:checked::after {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .doc-label {
-    font-size: var(--font-size-base);
-    padding: var(--spacing-xs) 0;
+    font-size: var(--font-size-sm);
   }
 
   .quick-switch-link {

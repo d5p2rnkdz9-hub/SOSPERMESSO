@@ -10,7 +10,7 @@ module.exports = {
     "assistenza-minore": "assistenza-minore-art-31",
     "attesa-occupazione": "attesa-occupazione-art-22",
     "calamita-naturale": "calamita-naturale-art-20-bis",
-    "protezione-speciale": "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-art-32-d-lgs-25-2008",
+    "protezione-speciale": "protezione-speciale-art-32-d-lgs-25-2008",
     "prosieguo-amministrativo": "integrazione-prosieguo-amministrativo",
     "minori-stranieri-affidati": "affidamento-a-familiari-entro-il-quarto-grado",
     "genitore-minore-italiano": "famiglia-per-genitore-di-cittadino-italiano-art-30",
@@ -33,7 +33,7 @@ module.exports = {
     // Old article-number slugs
     "famiglia-motivi-familiari-art-30-dopo-ingresso-con-nullaosta": "famiglia-motivi-familiari-dopo-ingresso-con-nullaosta-per-ricongiungimento-familiare",
     "famiglia-motivi-familiari-art-30-senza-nullaosta-coesione": "famiglia-o-motivi-familiari-senza-nullaosta-per-ricongiungimento-coesione",
-    "protezione-speciale-art-32-d-lgs-25-2008": "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-art-32-d-lgs-25-2008",
+    "protezione-speciale-art-32-d-lgs-25-2008": "protezione-speciale-art-32-d-lgs-25-2008",
 
     // Renamed permits
     "asilo-politico": "asilo-status-rifugiato",

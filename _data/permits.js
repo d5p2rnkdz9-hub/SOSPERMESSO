@@ -106,6 +106,7 @@ async function fetchPermitData(notion) {
       slug: slugify(tipo),
       primoDocuments: page.properties["Doc primo rilascio"]?.multi_select?.map(d => d.name) || [],
       rinnovoDocuments: (page.properties["Doc rinnovo"]?.multi_select?.map(d => d.name) || []).filter(d => d.toLowerCase() !== 'n/a'),
+      rinnovoNotApplicable: (page.properties["Doc rinnovo"]?.multi_select || []).some(d => d.name.toLowerCase() === 'n/a'),
       // Mod fields are multi_select, get first value
       primoMethod: page.properties["Mod primo rilascio"]?.multi_select?.[0]?.name || null,
       rinnovoMethod: page.properties["Mod rinnovo"]?.multi_select?.[0]?.name || null,
@@ -623,6 +624,7 @@ module.exports = async function() {
           costMarcaBolloRinnovo: extractCost(permit.rinnovoDocuments, 'marca da bollo'),
           docNotes: permit.docNotes,
           categoria: permit.categoria,
+          rinnovoNotApplicable: permit.rinnovoNotApplicable || false,
         });
 
       } catch (err) {
@@ -647,6 +649,7 @@ module.exports = async function() {
           costMarcaBolloRinnovo: null,
           docNotes: permit.docNotes || null,
           categoria: permit.categoria || null,
+          rinnovoNotApplicable: permit.rinnovoNotApplicable || false,
         });
       }
     }

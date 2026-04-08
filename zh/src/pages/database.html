@@ -742,14 +742,14 @@ extraStyles: |
               </div>
             </div></li>
 
-            {% assign p = permitsZh | where: "slug", "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale" | first %}
+            {% assign p = permitsZh | where: "slug", "protezione-speciale" | first %}
             <li><div class="permit-row">
-              <a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-main"><span class="icon">✨</span><span class="title">特殊保护（获批准后）</span></a>
+              <a href="permesso-protezione-speciale.html" class="permit-main"><span class="icon">✨</span><span class="title">特殊保护（获批准后）</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 建设中</span>
-                {% else %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#cose" class="permit-btn btn-cose">简介</a>
-                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                {% else %}<a href="permesso-protezione-speciale.html#cose" class="permit-btn btn-cose">简介</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>

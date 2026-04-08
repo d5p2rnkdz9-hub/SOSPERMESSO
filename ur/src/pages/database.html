@@ -742,14 +742,14 @@ extraStyles: |
               </div>
             </div></li>
 
-            {% assign p = permitsUr | where: "slug", "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale" | first %}
+            {% assign p = permitsUr | where: "slug", "protezione-speciale" | first %}
             <li><div class="permit-row">
-              <a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-main"><span class="icon">✨</span><span class="title">خصوصی تحفظ کا اجازت نامہ</span></a>
+              <a href="permesso-protezione-speciale.html" class="permit-main"><span class="icon">✨</span><span class="title">خصوصی تحفظ کا اجازت نامہ</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 زیر تعمیر</span>
-                {% else %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#cose" class="permit-btn btn-cose">یہ کیا ہے</a>
-                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#primo" class="permit-btn btn-primo">اجراء</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">تجدید دستیاب نہیں</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#rinnovo" class="permit-btn btn-rinnovo">تجدید</a>{% endif %}
+                {% else %}<a href="permesso-protezione-speciale.html#cose" class="permit-btn btn-cose">یہ کیا ہے</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#primo" class="permit-btn btn-primo">اجراء</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">تجدید دستیاب نہیں</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#rinnovo" class="permit-btn btn-rinnovo">تجدید</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>

@@ -742,14 +742,14 @@ extraStyles: |
               </div>
             </div></li>
 
-            {% assign p = permits | where: "slug", "protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale" | first %}
+            {% assign p = permits | where: "slug", "protezione-speciale" | first %}
             <li><div class="permit-row">
-              <a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html" class="permit-main"><span class="icon">✨</span><span class="title">Permesso di soggiorno per protezione speciale</span></a>
+              <a href="permesso-protezione-speciale.html" class="permit-main"><span class="icon">✨</span><span class="title">Permesso di soggiorno per protezione speciale</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#cose" class="permit-btn btn-cose">Cos'è</a>
-                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
+                {% else %}<a href="permesso-protezione-speciale.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                  {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
+                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>

@@ -140,6 +140,22 @@
   to = "/permesso-integrazione-prosieguo-amministrativo.html"
   status = 301
 
+# ── RENAMED PERMIT: Protezione speciale (shortened from long name) ──
+[[redirects]]
+  from = "/permesso-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale.html"
+  to = "/permesso-protezione-speciale.html"
+  status = 301
+
+[[redirects]]
+  from = "/documenti-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-primo.html"
+  to = "/documenti-protezione-speciale-primo.html"
+  status = 301
+
+[[redirects]]
+  from = "/documenti-protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale-rinnovo.html"
+  to = "/documenti-protezione-speciale-rinnovo.html"
+  status = 301
+
 # ── OLD DOCUMENT PAGE SLUG REDIRECTS ──
 # Old slugs used different naming (e.g. "a-seguito-di" vs "dopo", "art-27" suffixes)
 # These are catch-alls for old doc URLs that don't match current filenames.

@@ -140,7 +140,7 @@ const PERMIT_SPECIFIC_FIXES = {
     ],
   },
 
-  'protezione-speciale-dopo-decisione-positiva-della-commissione-o-del-tribunale': {
+  'protezione-speciale': {
     textReplacements: [
       // A-3: Complete truncated sentence
       [

@@ -116,10 +116,20 @@ extraStyles: |
     }
 
     .docq-badge-wip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.22rem 0.55rem;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
       font-size: 0.62rem;
+      font-weight: 700;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      border: 1.5px dashed #bbb;
+      background: #f9f9f9;
       color: #bbb;
-      text-align: center;
-      padding: 0.2rem;
     }
 
     /* ── SEARCH + FILTER ── */
@@ -188,6 +198,7 @@ extraStyles: |
       }
       .docq-actions {
         padding-left: 1.7rem;
+        justify-content: flex-start;
       }
       .docq-page-header .page-title {
         font-size: 1.5rem;
@@ -248,10 +259,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧</span>
+                <span class="docq-badge-wip">🚧 In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
@@ -272,10 +283,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧</span>
+                <span class="docq-badge-wip">🚧 In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
@@ -296,10 +307,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧</span>
+                <span class="docq-badge-wip">🚧 In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
@@ -320,10 +331,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧</span>
+                <span class="docq-badge-wip">🚧 In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
