@@ -24,13 +24,13 @@ module.exports = {
         ]
       },
       {
-        label: "Collabora",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "Contattaci",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "Dai una mano", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "Segnala un errore", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "Dai un feedback", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "Segnala un errore", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "Ho un problema legale", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "Voglio contribuire al progetto", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -59,13 +59,13 @@ module.exports = {
         ]
       },
       {
-        label: "Collaborate",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "Contact us",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "Help out", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "Report an error", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "Give feedback", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "Report an error", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "I have a legal problem", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "I want to contribute", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -94,13 +94,13 @@ module.exports = {
         ]
       },
       {
-        label: "Collaborer",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "Nous contacter",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "Aider", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "Signaler une erreur", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "Donner un retour", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "Signaler une erreur", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "J'ai un problème juridique", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "Je veux contribuer au projet", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -129,13 +129,13 @@ module.exports = {
         ]
       },
       {
-        label: "Colaborar",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "Contáctanos",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "Ayudar", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "Reportar un error", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "Dar tu opinión", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "Reportar un error", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "Tengo un problema legal", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "Quiero contribuir al proyecto", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -164,13 +164,13 @@ module.exports = {
         ]
       },
       {
-        label: "İş birliği",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "Bize ulaşın",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "Yardım et", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "Hata bildir", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "Görüş bildir", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "Hata bildir", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "Hukuki bir sorunum var", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "Projeye katkıda bulunmak istiyorum", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -199,13 +199,13 @@ module.exports = {
         ]
       },
       {
-        label: "Сотрудничество",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "Связаться с нами",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "Помочь", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "Сообщить об ошибке", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "Оставить отзыв", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "Сообщить об ошибке", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "У меня юридическая проблема", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "Хочу внести вклад в проект", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -234,13 +234,13 @@ module.exports = {
         ]
       },
       {
-        label: "সহযোগিতা",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "যোগাযোগ করুন",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "সাহায্য করুন", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "ত্রুটি জানান", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "মতামত দিন", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "ত্রুটি জানান", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "আমার আইনি সমস্যা আছে", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "আমি প্রকল্পে অবদান রাখতে চাই", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -269,13 +269,13 @@ module.exports = {
         ]
       },
       {
-        label: "تعاون",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "اتصل بنا",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "ساعدنا", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "أبلغ عن خطأ", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "أعطنا رأيك", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "أبلغ عن خطأ", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "لدي مشكلة قانونية", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "أريد المساهمة في المشروع", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -304,13 +304,13 @@ module.exports = {
         ]
       },
       {
-        label: "تعاون",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "ہم سے رابطہ کریں",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "مدد کریں", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "غلطی کی اطلاع دیں", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "رائے دیں", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "غلطی کی اطلاع دیں", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "مجھے قانونی مسئلہ ہے", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "میں منصوبے میں تعاون کرنا چاہتا ہوں", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -339,13 +339,13 @@ module.exports = {
         ]
       },
       {
-        label: "همکاری",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "تماس با ما",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "کمک کنید", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "گزارش خطا", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "نظر بدهید", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "گزارش خطا", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "مشکل حقوقی دارم", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "می‌خواهم در پروژه مشارکت کنم", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
@@ -374,13 +374,13 @@ module.exports = {
         ]
       },
       {
-        label: "合作",
-        href: "https://form.typeform.com/to/USx16QN3",
+        label: "联系我们",
+        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
         external: true,
         items: [
-          { label: "帮助我们", href: "https://form.typeform.com/to/USx16QN3", external: true },
-          { label: "报告错误", href: "https://form.typeform.com/to/FsqvzdXI", external: true },
-          { label: "提供反馈", href: "https://form.typeform.com/to/USx16QN3", external: true }
+          { label: "报告错误", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
+          { label: "我有法律问题", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
+          { label: "我想为项目贡献", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
         ]
       }
     ]
