@@ -56,7 +56,7 @@
         "icon": "🤙",
         "title": "Posso RINNOVARE il mio permesso?",
         "description": "Controlla se puoi rinnovare il tuo permesso di soggiorno",
-        "url": "https://sospermesso.typeform.com/rinnovo",
+        "url": "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione",
         "cta": "INIZIA IL TEST →"
       }
     ]

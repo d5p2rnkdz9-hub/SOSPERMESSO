@@ -14,7 +14,7 @@ module.exports = {
         ]
       },
       {
-        label: "Test",
+        label: "Test interattivi",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -49,7 +49,7 @@ module.exports = {
         ]
       },
       {
-        label: "Test",
+        label: "Interactive tests",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -84,7 +84,7 @@ module.exports = {
         ]
       },
       {
-        label: "Test",
+        label: "Tests interactifs",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -119,7 +119,7 @@ module.exports = {
         ]
       },
       {
-        label: "Test",
+        label: "Tests interactivos",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -154,7 +154,7 @@ module.exports = {
         ]
       },
       {
-        label: "Test",
+        label: "İnteraktif testler",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -189,7 +189,7 @@ module.exports = {
         ]
       },
       {
-        label: "Тесты",
+        label: "Интерактивные тесты",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -224,7 +224,7 @@ module.exports = {
         ]
       },
       {
-        label: "পরীক্ষা",
+        label: "ইন্টারেক্টিভ পরীক্ষা",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -259,7 +259,7 @@ module.exports = {
         ]
       },
       {
-        label: "اختبارات",
+        label: "اختبارات تفاعلية",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -294,7 +294,7 @@ module.exports = {
         ]
       },
       {
-        label: "ٹیسٹ",
+        label: "انٹرایکٹو ٹیسٹ",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -329,7 +329,7 @@ module.exports = {
         ]
       },
       {
-        label: "آزمون‌ها",
+        label: "آزمون‌های تعاملی",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [
@@ -364,7 +364,7 @@ module.exports = {
         ]
       },
       {
-        label: "测试",
+        label: "互动测试",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,
         items: [

@@ -2217,7 +2217,7 @@
       },
       {
         "question": "Bu izne kimler başvurabilir?",
-        "content": "<p>Şu durumlarda başvurabilirsiniz:</p>\n<ul><li>En az 5 yıldır düzenli olarak İtalya&#039;da yaşıyorsunuz</li><li>Hâlâ geçerli başka bir oturma izniniz var</li><li>Son üç yılda en az 7.000 euro gelirin var</li><li>En az A2 seviyesinde İtalyanca bilgi sertifikan var</li></ul>\n<p><strong>Dikkat! </strong>⚠️ <strong>Tüm oturma izinleri bu karta dönüştürülemez!</strong></p>\n<p>Örneğin, şu izinlere sahipseniz kart başvurusu YAPAMAZSIN:</p>\n<ul><li>Öğrenim veya mesleki eğitim izni</li><li>Tıbbi tedavi, özel koruma veya geçici koruma izni</li><li>Sığınma başvurusu izni (Bölge Komisyonu veya Mahkeme kararını beklerken)</li></ul>\n<p>Şüphen varsa, <a href=\"https://sospermesso.typeform.com/conversione\">testimizi yap.</a></p>",
+        "content": "<p>Şu durumlarda başvurabilirsiniz:</p>\n<ul><li>En az 5 yıldır düzenli olarak İtalya&#039;da yaşıyorsunuz</li><li>Hâlâ geçerli başka bir oturma izniniz var</li><li>Son üç yılda en az 7.000 euro gelirin var</li><li>En az A2 seviyesinde İtalyanca bilgi sertifikan var</li></ul>\n<p><strong>Dikkat! </strong>⚠️ <strong>Tüm oturma izinleri bu karta dönüştürülemez!</strong></p>\n<p>Örneğin, şu izinlere sahipseniz kart başvurusu YAPAMAZSIN:</p>\n<ul><li>Öğrenim veya mesleki eğitim izni</li><li>Tıbbi tedavi, özel koruma veya geçici koruma izni</li><li>Sığınma başvurusu izni (Bölge Komisyonu veya Mahkeme kararını beklerken)</li></ul>\n<p>Şüphen varsa, <a href=\"https://testsospermesso.netlify.app/it/tree/conversione\">testimizi yap.</a></p>",
         "index": 1
       },
       {
