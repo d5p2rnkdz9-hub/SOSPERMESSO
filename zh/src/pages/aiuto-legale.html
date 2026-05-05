@@ -35,6 +35,16 @@ extraStyles: |
         padding-bottom: 0.5rem;
         border-bottom: 2px solid var(--accent-purple);
       }
+      /* ── SEARCH BAR (same style as database.html) ── */
+      .legal-search-wrap { max-width: 900px; margin: 0 auto 1.5rem; }
+      .legal-search-bar { display: flex; align-items: center; gap: 0.75rem; background: white; border: 2px solid #e5e5e5; border-radius: 14px; padding: 0.85rem 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: border-color 0.2s; }
+      .legal-search-bar:focus-within { border-color: #FFD700; box-shadow: 0 2px 12px rgba(255,215,0,0.15); }
+      .legal-search-bar .search-icon { font-size: 1.1rem; flex-shrink: 0; }
+      .legal-search-input { flex: 1; border: none; outline: none; font-size: 1rem; font-family: 'Inter', sans-serif; color: #1A1A1A; background: transparent; }
+      .legal-search-input::placeholder { color: #bbb; }
+      .legal-search-count { font-size: 0.8rem; color: #999; white-space: nowrap; flex-shrink: 0; }
+      .city-section.hidden { display: none; }
+      .legal-no-results { text-align: center; padding: 2rem; color: #999; font-size: 1.1rem; display: none; }
       @media (max-width: 768px) {
         .legal-table, .legal-table tbody, .legal-table tr, .legal-table td {
           display: block;
@@ -86,6 +96,15 @@ extraStyles: |
 
   <section class="section">
     <div class="container" style="max-width: 1100px;">
+
+      <div class="legal-search-wrap">
+        <div class="legal-search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="legal-search-input" placeholder="搜索城市或组织..." autocomplete="off">
+          <span class="legal-search-count"></span>
+        </div>
+      </div>
+      <div class="legal-no-results">未找到结果</div>
 
       <!-- BARI -->
       <div class="card city-section">
@@ -821,7 +840,7 @@ extraStyles: |
         <span class="alert-icon">📍</span>
         <div>
           找不到您所在的城市？知道其他未列出的机构？
-          <a href="https://form.typeform.com/to/USx16QN3" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <a href="https://testsospermesso.netlify.app/it/contattaci/contribuisci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             请告诉我们
           </a>
         </div>
@@ -849,3 +868,26 @@ extraStyles: |
       </div>
     </div>
   </section>
+
+  <script>
+  (function() {
+    var input = document.querySelector('.legal-search-input');
+    var sections = document.querySelectorAll('.city-section');
+    var countEl = document.querySelector('.legal-search-count');
+    var noResults = document.querySelector('.legal-no-results');
+    var total = sections.length;
+    if (!input) return;
+    input.addEventListener('input', function() {
+      var q = this.value.toLowerCase().trim();
+      var visible = 0;
+      sections.forEach(function(sec) {
+        if (!q) { sec.classList.remove('hidden'); visible++; return; }
+        var text = sec.textContent.toLowerCase();
+        if (text.indexOf(q) !== -1) { sec.classList.remove('hidden'); visible++; }
+        else { sec.classList.add('hidden'); }
+      });
+      countEl.textContent = q ? visible + ' / ' + total : '';
+      noResults.style.display = (q && visible === 0) ? 'block' : 'none';
+    });
+  })();
+  </script>
