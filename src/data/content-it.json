@@ -40,7 +40,7 @@
         "icon": "🤞",
         "title": "Posso AVERE un permesso di soggiorno?",
         "description": "Verifica se hai i requisiti per ottenere un permesso di soggiorno in Italia",
-        "url": "https://form.typeform.com/to/kt7P9Ejk",
+        "url": "https://testsospermesso.netlify.app/it/tree",
         "cta": "INIZIA IL TEST →"
       },
       {
@@ -48,7 +48,7 @@
         "icon": "👉",
         "title": "Posso CONVERTIRE il mio permesso?",
         "description": "Scopri se puoi convertire il tuo permesso di soggiorno attuale",
-        "url": "https://form.typeform.com/to/oc9jhdkJ",
+        "url": "https://testsospermesso.netlify.app/it/tree/conversione",
         "cta": "INIZIA IL TEST →"
       },
       {
