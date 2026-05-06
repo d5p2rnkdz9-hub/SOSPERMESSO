@@ -4,7 +4,10 @@
     <nav class="navbar">
       <!-- Logo -->
       <a href="{% if lang == 'fr' %}{{ '/fr/' | url }}{% elsif lang == 'en' %}{{ '/en/' | url }}{% elsif lang == 'es' %}{{ '/es/' | url }}{% elsif lang == 'tr' %}{{ '/tr/' | url }}{% elsif lang == 'bn' %}{{ '/bn/' | url }}{% elsif lang == 'ru' %}{{ '/ru/' | url }}{% else %}{{ '/' | url }}{% endif %}" class="logo">
-        <img src="{{ '/IMAGES/logo-full.png' | url }}" alt="SOS Permesso" class="logo-image" width="1536" height="1024" fetchpriority="high">
+        <picture>
+          <source srcset="{{ '/IMAGES/logo-full.webp' | url }}" type="image/webp">
+          <img src="{{ '/IMAGES/logo-full-600.png' | url }}" alt="SOS Permesso" class="logo-image" width="600" height="400" fetchpriority="high" decoding="async">
+        </picture>
       </a>
 
       <!-- Mobile Menu Toggle -->

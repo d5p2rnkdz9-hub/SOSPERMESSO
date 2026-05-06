@@ -198,3 +198,21 @@
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# ── ASSET CACHING ──
+# Long cache for images, fonts, CSS, JS — these are stable URLs.
+# WhatsApp/Facebook/Twitter unfurl bots benefit from a clean CDN hit on og:image.
+[[headers]]
+  for = "/IMAGES/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, s-maxage=86400"
+
+[[headers]]
+  for = "/src/styles/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/src/scripts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

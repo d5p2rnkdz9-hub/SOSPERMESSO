@@ -179,10 +179,21 @@
   <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ zhUrl }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
 
-  <!-- Fonts -->
+  <!-- Fonts: Latin core on every page, script-specific fonts only when needed -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  {%- if lang == 'ar' -%}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {%- elsif lang == 'ur' -%}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {%- elsif lang == 'fa' -%}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {%- elsif lang == 'bn' -%}
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {%- elsif lang == 'zh' -%}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {%- endif -%}
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/src/styles/main.css' | url }}">
@@ -207,8 +218,8 @@
   {% include "components/footer.liquid" %}
 
   <!-- Scripts -->
-  <script src="{{ '/src/scripts/app.js' | url }}"></script>
-  <script src="{{ '/src/scripts/mobile.js' | url }}"></script>
+  <script src="{{ '/src/scripts/app.js' | url }}" defer></script>
+  <script src="{{ '/src/scripts/mobile.js' | url }}" defer></script>
 
   {% if extraScripts %}{{ extraScripts }}{% endif %}
 
