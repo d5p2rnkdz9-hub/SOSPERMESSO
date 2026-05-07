@@ -1,9 +1,12 @@
 import { createRequire } from 'module';
+import markdownIt from 'markdown-it';
 const require = createRequire(import.meta.url);
 
 // Import template helpers (CommonJS module)
 const helpers = require('./scripts/templates/helpers.js');
 const dizionarioMap = require('./scripts/templates/dizionario-map.json');
+
+const mdRenderer = markdownIt({ html: true, linkify: true, typographer: true });
 
 export default function(eleventyConfig) {
   // Ignore directories and files that shouldn't be processed as templates
@@ -14,6 +17,11 @@ export default function(eleventyConfig) {
   eleventyConfig.ignores.add("NOTION_WEBSITE/**");
   eleventyConfig.ignores.add(".claude/**");
   eleventyConfig.ignores.add(".git/**");
+  eleventyConfig.ignores.add("review-reports/**");
+  eleventyConfig.ignores.add("review-reports */**");
+  eleventyConfig.ignores.add("_cache/**");
+  // public/ is passthrough-copied as static assets — don't process .md inside as templates
+  eleventyConfig.ignores.add("public/**/*.md");
   // Ignore root-level markdown files (documentation, not website content)
   eleventyConfig.ignores.add("*.md");
   eleventyConfig.ignores.add("CLAUDE.md");
@@ -342,6 +350,12 @@ export default function(eleventyConfig) {
    * Usage: {% assign sections = docNotes | parseDocNotes %}
    */
   eleventyConfig.addFilter("parseDocNotes", helpers.parseDocNotes);
+
+  /**
+   * md - Render a markdown string to HTML using markdown-it
+   * Usage in Liquid: {{ regolamento.mdContent | md }}
+   */
+  eleventyConfig.addFilter("md", (str) => mdRenderer.render(str || ""));
 
   /**
    * getSectionBorderColor - Return border color for permit Q&A section cards

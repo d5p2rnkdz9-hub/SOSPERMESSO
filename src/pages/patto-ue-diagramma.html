@@ -1,0 +1,98 @@
+---
+layout: layouts/base.liquid
+title: "Diagramma interattivo Patto UE"
+lang: it
+description: "Diagramma interattivo del Patto UE su Migrazione e Asilo: visualizza screening e procedure di protezione internazionale (Reg. 1356, 1348, 1349, Dir. 2008/115)."
+extraStyles: |
+  <style>
+    .diagram-subtitle { text-align: center !important; }
+    .diagram-iframe-wrap {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border: 2px solid #1A1A1A;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 2.5px 2.5px 0 #1A1A1A;
+      background: var(--white);
+    }
+    .diagram-iframe-wrap iframe {
+      display: block;
+      width: 100%;
+      min-height: 720px;
+      border: 0;
+    }
+    @media (max-width: 768px) {
+      .diagram-iframe-wrap iframe { min-height: 560px; }
+    }
+    .diagram-hints {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--gray-medium);
+      margin-bottom: 1.25rem;
+    }
+    .diagram-hints span { display: inline-flex; align-items: center; gap: 0.35rem; }
+    /* Black-only shadows on this page (override the global yellow even-card hover) */
+    .patto-diagramma .card,
+    .patto-diagramma .card:hover,
+    .patto-diagramma .card:nth-child(even):hover {
+      box-shadow: 2.5px 2.5px 0 #1A1A1A;
+    }
+    .patto-diagramma .card:hover {
+      transform: translate(1.5px, 1.5px);
+      box-shadow: 1.5px 1.5px 0 #1A1A1A;
+    }
+  </style>
+---
+
+  <section class="bg-off-white" style="padding: 2rem 0 1.5rem;">
+    <div class="container" style="max-width: 720px;">
+      <div class="text-center">
+        <h1 class="page-title" style="margin: 0 0 0.5rem;">Diagramma interattivo</h1>
+        <p class="section-subtitle diagram-subtitle" style="margin: 0 0 1.25rem;">Screening e procedure di protezione internazionale — Patto UE Migrazione 2024</p>
+        <p style="margin: 0; color: var(--gray-dark); font-size: 0.95rem;">
+          Il diagramma visualizza le procedure introdotte da:
+          <a href="patto-ue-regolamento-screening.html">Reg. 2024/1356 (screening)</a>,
+          <a href="patto-ue-regolamento-procedure.html">Reg. 2024/1348 (procedure)</a>,
+          <a href="patto-ue-regolamento-rimpatrio-frontiera.html">Reg. 2024/1349 (rimpatrio alla frontiera)</a>
+          e Direttiva 2008/115 (rimpatri).
+        </p>
+        <a href="https://diagrammone-patto.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="margin-top: 1.25rem; background: #FFD700; color: #1A1A1A; border-color: #1A1A1A;">
+          ↗ Apri a schermo intero
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section patto-diagramma" style="padding-top: 1.5rem;">
+    <div class="container">
+
+      <div class="diagram-hints">
+        <span>🖱️ Trascina per muoverti</span>
+        <span>🔍 Wheel / pinch per zoomare</span>
+        <span>👆 Hover per i dettagli</span>
+      </div>
+
+      <div class="diagram-iframe-wrap">
+        <iframe
+          src="https://diagrammone-patto.netlify.app/"
+          title="Diagramma Patto UE — Screening e procedure di protezione internazionale"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="container" style="max-width: 720px; margin-top: 2rem;">
+        <div class="alert alert-info">
+          <span class="alert-icon">📱</span>
+          <div>
+            Su mobile l'esperienza è migliore <a href="https://diagrammone-patto.netlify.app/" target="_blank" rel="noopener"><strong>a schermo intero</strong></a>.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

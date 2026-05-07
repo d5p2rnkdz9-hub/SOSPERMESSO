@@ -14,6 +14,15 @@ module.exports = {
         ]
       },
       {
+        label: "Patto UE",
+        href: "/patto-ue.html",
+        badge: "NUOVO",
+        items: [
+          { label: "I testi normativi", href: "/patto-ue-norme.html" },
+          { label: "Diagramma interattivo", href: "/patto-ue-diagramma.html" }
+        ]
+      },
+      {
         label: "Test interattivi",
         href: "https://testsospermesso.netlify.app/it/tree",
         external: true,

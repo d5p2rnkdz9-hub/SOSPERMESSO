@@ -1,0 +1,65 @@
+---
+layout: layouts/base.liquid
+title: "I testi normativi del Patto UE"
+lang: it
+description: "Tutte le 10 norme del Patto UE su Migrazione e Asilo (2024): direttive e regolamenti con testo integrale in italiano e PDF scaricabili."
+extraStyles: |
+  <style>
+    .norme-subtitle { text-align: center !important; }
+    /* Force all cards on this page to use plain black shadow (override the global yellow even-card hover) */
+    .patto-norme-list .card,
+    .patto-norme-list .card:hover,
+    .patto-norme-list .card:nth-child(even):hover {
+      box-shadow: 2.5px 2.5px 0 #1A1A1A;
+    }
+    .patto-norme-list .card:hover {
+      transform: translate(1.5px, 1.5px);
+      box-shadow: 1.5px 1.5px 0 #1A1A1A;
+    }
+  </style>
+---
+
+  <section class="bg-off-white" style="padding: 2rem 0 1.5rem;">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="page-title" style="margin: 0 0 0.5rem;">I testi normativi del Patto UE</h1>
+        <p class="section-subtitle norme-subtitle" style="margin: 0;">Direttive e regolamenti del Patto UE su Migrazione e Asilo (2024)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container patto-norme-list" style="max-width: 900px;">
+
+      <div class="alert alert-info" style="margin-bottom: 2rem;">
+        <span class="alert-icon">💡</span>
+        <div>
+          Le 10 norme del Patto UE sono state pubblicate nella
+          <a href="https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=OJ:L_202401346" target="_blank" rel="noopener">Gazzetta Ufficiale dell'Unione Europea</a>
+          il 22 maggio 2024.
+        </div>
+      </div>
+
+      {% for r in pattoUe %}
+      <div class="card" style="margin-bottom: 1.25rem;">
+        <div style="font-size: 0.85rem; color: var(--gray-medium); font-weight: 600; letter-spacing: 0.05em;">
+          {{ r.regType | upcase }} (UE) {{ r.regNumber }}
+        </div>
+        <h3 style="margin: 0.25rem 0 0.5rem;">{{ r.title }}</h3>
+        <p style="margin: 0 0 1rem; color: var(--gray-dark);">{{ r.shortDescription }}</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <a href="patto-ue-{{ r.slug }}.html" class="btn btn-primary btn-sm">Leggi il testo →</a>
+          {% if r.pdfPath %}
+          <a href="{{ r.pdfPath }}" class="btn btn-primary btn-sm" download>📄 Scarica PDF</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+
+      <div class="card" style="margin-top: 2.5rem; background: var(--gray-light);">
+        <h3 style="margin-top: 0;">Vai oltre il testo</h3>
+        <p>Per visualizzare in modo interattivo come si incastrano screening, procedura di asilo e rimpatri, prova il <a href="patto-ue-diagramma.html"><strong>diagramma interattivo</strong></a>.</p>
+      </div>
+
+    </div>
+  </section>
