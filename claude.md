@@ -286,7 +286,49 @@ All permit detail pages follow a consistent structure:
 6. Update language switcher, nav, hreflang tags, sitemap
 7. **Run translation quality review** (see below)
 
+### Subagent Translation Pipeline
+
+The "translate within Claude Code subagents" rule above is a manual workflow that wraps `scripts/translate-to-notion.js`. The repo's scripts only handle the bookends; the middle is orchestrated ad-hoc by Claude Code. Files land in `_cache/`:
+
+| File pattern | Produced by | Keep? |
+|---|---|---|
+| `translate-{lang}-texts.json` | `translate-to-notion.js --extract` | **Keep** — record of IT source extracted. |
+| `translate-batch-N.json` (no lang prefix) | Claude Code orchestrator (splits texts.json into 6 chunks) | Delete after merge — pure scratch. |
+| `translate-{lang}-batch-N-M.json` | Parallel subagents (3 × 2 chunks each) | Delete after merge — contents already in `done.json`. |
+| `translate-{lang}-done.json` | Orchestrator merges batch outputs | **Keep** — the file `translate-to-notion.js` reads. **Only recovery path if the target Notion DB is wiped** (no reverse mode exists in the script). |
+| `translate-{lang}-missing.json` | Orchestrator diff of texts.json vs done.json | Delete after retry — pure scratch. |
+| `translate-{lang}-missing-done.json` | Subagent retry pass | Delete after merging into `done.json` — contents already there. |
+| `translate-{lang}-remaining.txt` | Earlier abandoned pass | Delete — pure scratch. |
+
+Workflow:
+1. `node scripts/translate-to-notion.js --lang {code} --extract` — produces `_cache/translate-{lang}-texts.json`.
+2. Split into 6 chunks (`_cache/translate-batch-0.json` ... `5.json`); dispatch 3 parallel Claude Code subagents, each handling 2 chunks; each writes `_cache/translate-{lang}-batch-N-M.json`.
+3. Merge all subagent outputs into `_cache/translate-{lang}-done.json` (`{IT-string: translated-string}` map).
+4. Diff texts.json vs done.json → write missing keys to `_cache/translate-{lang}-missing.json`, dispatch retry subagent, write `_cache/translate-{lang}-missing-done.json`, merge into `done.json`.
+5. `node scripts/translate-to-notion.js --lang {code}` (no `--extract`) — reads `done.json`, writes translated pages to the target Notion DB.
+6. **Cleanup**: delete the scratch files. The patterns `_cache/translate-batch-*.json`, `_cache/translate-*-batch-*.json`, `_cache/translate-*-missing*.json`, `_cache/translate-*-remaining*.txt` are in `.gitignore` so they won't be committed if forgotten — but they still accumulate locally. `rm` them after a run.
+
+`done.json` and `texts.json` are not in `.gitignore` and are committed for cross-machine recovery (the only path back if a target Notion DB is corrupted).
+
 ### Translation Quality Review
+
+The translation review pipeline shares its rules, prompts, and outputs with the sibling project `app/` (Next.js decision-tree app). The canonical home is a sibling directory:
+
+```
+~/Desktop/TECH/SOSpermesso/translations-shared/
+├── glossaries/{lang}.js     ← term rules (register, badTerms, preservedTerms)
+├── prompts/                 ← reusable AI subagent prompt templates
+│   └── ai-review-prompt.md
+└── review-reports/
+    ├── app/                 ← sibling app's review outputs (Next.js decision tree)
+    └── sito-nuovo/          ← THIS project's review outputs
+```
+
+In this project, the following paths are **symlinks** into the shared directory:
+- `Sito_Nuovo/scripts/glossaries/`  → `translations-shared/glossaries/`
+- `Sito_Nuovo/review-reports/`      → `translations-shared/review-reports/sito-nuovo/`
+
+**Do not edit through the symlinks** — edit at the canonical `translations-shared/` location for clarity. Edits via the symlinks land in the shared directory anyway, but path references should use the `translations-shared/` form.
 
 After adding or updating a language, run a quality review:
 
@@ -295,20 +337,24 @@ npm run fetch -- --lang {code}   # refresh cache from Notion
 npm run review -- --lang {code}  # automated checks + AI review payload
 ```
 
-Outputs to `review-reports/` (gitignored):
+Outputs (all under `translations-shared/review-reports/sito-nuovo/`):
 - `{lang}-automated.md` — automated issues (bad terms, register, incomplete sentences, artifacts, duplications)
 - `{lang}-for-ai-review.json` — full Q&A + static page text in batches of 6, ready for parallel AI review agents
+- `{lang}-batch-{N}.txt` — flat-text batches for AI subagents
 
-**Scripts:**
-- `scripts/review-translations.js` — main CLI, works for any language
-- `scripts/glossaries/{lang}.js` — per-language rules: bad terms, register pair (formal/informal pronoun), preserved Italian terms. **Add confirmed mistakes here after each review** so they're caught automatically next time.
+**Scripts (project-local — kept separate from `app/`):**
+- `scripts/review-translations.js` — main CLI, reads Notion cache. The sibling `app/scripts/review-translations.js` does the same job but reads flat JSON instead of Notion cache; the two are kept separate because their inputs differ.
+- `scripts/glossaries/{lang}.js` — symlinked from `translations-shared/glossaries/`. **Add confirmed mistakes here after each review** so they're caught automatically next time, in BOTH projects.
+- `scripts/fix-{lang}-translations.js` — applies `BAD_TERMS` arrays to Notion. App's equivalent fix script reads the same arrays via `require()` so corrections propagate to both products.
 
 **3-phase workflow:**
-1. Automated check (`npm run review`) — catches known bad terms, register violations, dangling sentences, artifacts
-2. AI review (Claude Code subagents, parallel batches from the JSON file) — catches unnatural phrasing, legal term nuance, cultural adaptation failures
-3. Human spot-check by native speaker — final gate, focuses on what AI missed
+1. **Automated check** (`npm run review`) — regex/glossary pass. Catches known bad terms, register violations, dangling sentences, artifacts.
+2. **AI review** — Claude Code subagents read the shared prompt template at `translations-shared/prompts/ai-review-prompt.md` plus the per-batch `.txt` files. Outputs `{lang}-ai-review.md` with CRITICAL/HIGH/MEDIUM/LOW + SYSTEMIC structure. The sibling `app` project uses these as priors for its own review (so don't re-author findings already discovered here).
+3. **Human spot-check** — native speaker, final gate, focuses on what AI missed.
 
-**Glossary format** (`scripts/glossaries/{lang}.js`):
+**Feedback loop:** confirmed bad-term findings get folded back into `translations-shared/glossaries/{lang}.js`. Both projects benefit automatically on the next automated run.
+
+**Glossary format** (`translations-shared/glossaries/{lang}.js`):
 ```js
 module.exports = {
   register: { formal: 'siz', informal: 'sen' },  // null for EN/BN

@@ -13,3 +13,12 @@ _site/
 
 # Translation review reports (generated locally, not committed)
 review-reports/
+
+# Subagent translation pipeline scratch (see CLAUDE.md "Subagent translation pipeline").
+# Only translate-{lang}-done.json + translate-{lang}-texts.json are kept; everything else
+# is intermediate work product that translate-to-notion.js does not need after the
+# Notion write succeeds.
+_cache/translate-batch-*.json
+_cache/translate-*-batch-*.json
+_cache/translate-*-missing*.json
+_cache/translate-*-remaining*.txt
