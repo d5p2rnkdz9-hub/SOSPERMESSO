@@ -5,6 +5,47 @@ lang: it
 extraStyles: |
   <style>
 
+      /* ── MAP ── */
+      .sportelli-map-wrap { max-width: 460px; margin: 0 auto 2rem; padding: 0 0.5rem; }
+      .sportelli-map-frame { position: relative; }
+      .sportelli-map-svg { display: block; width: 100%; height: auto; overflow: visible; }
+      .sportelli-map-svg .it-shadow { fill: var(--black); }
+      .sportelli-map-svg .it-land { fill: #FFFFFF; stroke: var(--black); stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+      .sportelli-marker { cursor: pointer; outline: none; transition: filter 0.18s ease-out; }
+      .sportelli-marker .hit { fill: transparent; }
+      .sportelli-marker .pin-body { transition: transform 0.18s cubic-bezier(.34,1.4,.6,1); transform-box: fill-box; transform-origin: 50% 100%; }
+      .sportelli-marker .pin { fill: #FF5252; stroke: var(--black); stroke-width: 1.4; }
+      .sportelli-marker .pin-dot { fill: white; pointer-events: none; }
+      .sportelli-marker:hover .pin-body,
+      .sportelli-marker:focus-visible .pin-body { transform: translateY(-6px) scale(1.18); }
+      .sportelli-marker:hover .pin,
+      .sportelli-marker:focus-visible .pin { fill: #FF3838; }
+      .sportelli-marker:hover,
+      .sportelli-marker:focus-visible { filter: drop-shadow(0 4px 4px rgba(0,0,0,0.28)); }
+      .sportelli-marker:focus-visible .pin { stroke-width: 2; }
+      .sportelli-popup { position: absolute; background: white; border: 2px solid var(--black); border-radius: 14px; padding: 1rem 1.1rem 0.85rem; box-shadow: var(--shadow-lg); max-width: 280px; min-width: 220px; z-index: 20; display: none; font-family: 'Inter', sans-serif; }
+      .sportelli-popup.visible { display: block; }
+      .sportelli-popup h4 { margin: 0 0 0.6rem; padding-right: 1.5rem; font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: var(--black); }
+      .sportelli-popup .sp-close { position: absolute; top: 0.3rem; right: 0.5rem; background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--gray-medium); padding: 0.15rem 0.4rem; }
+      .sportelli-popup .sp-close:hover { color: var(--black); }
+      .sportelli-popup ul { list-style: none; padding: 0; margin: 0; max-height: 260px; overflow-y: auto; }
+      .sportelli-popup li { padding: 0.55rem 0; border-top: 1px solid #eee; font-size: 0.82rem; }
+      .sportelli-popup li:first-child { border-top: none; padding-top: 0; }
+      .sportelli-popup .sp-name { font-weight: 700; display: block; color: var(--black); }
+      .sportelli-popup .sp-addr { color: #555; display: block; margin: 2px 0; line-height: 1.35; }
+      .sportelli-popup .sp-link { color: var(--accent-purple); text-decoration: none; font-weight: 600; font-size: 0.78rem; }
+      .sportelli-popup .sp-link:hover { text-decoration: underline; }
+      @media (max-width: 768px) {
+        .sportelli-map-wrap { max-width: 360px; }
+        .sportelli-popup { max-width: 240px; min-width: 200px; padding: 0.85rem 0.9rem; }
+      }
+      .title-icon { display: inline-block; margin-right: 0.5rem; font-size: 0.85em; vertical-align: -0.05em; }
+      /* All city boxes: black shadow only (override yellow combo on even cards) */
+      .city-section.card,
+      .city-section.card:nth-child(even) { box-shadow: 3px 3px 0 #1A1A1A; }
+      .city-section.card:hover,
+      .city-section.card:nth-child(even):hover { box-shadow: 1.5px 1.5px 0 #1A1A1A; }
+
       .legal-table {
         width: 100%;
         border-collapse: collapse;
@@ -80,15 +121,31 @@ extraStyles: |
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">⚖️</span>
-        <h1 class="page-title">Aiuto legale gratis vicino a te</h1>
-        <p class="section-subtitle">Trova assistenza legale gratuita nella tua città</p>
+        <h1 class="page-title"><span class="title-icon" aria-hidden="true">⚖️</span>Aiuto legale gratis vicino a te</h1>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container" style="max-width: 1100px;">
+
+      <div class="sportelli-map-wrap">
+        <div class="sportelli-map-frame">
+          <svg class="sportelli-map-svg" id="sportelli-map" viewBox="0 0 500 600" role="img" aria-label="Mappa degli sportelli legali in Italia">
+            <defs>
+              <path id="italy-shape" d="M39.655,116.353L40.899,117.599L43.802,118.939L51.405,117.12L56.104,115.395L59.56,113.477L61.634,113.86L69.098,116.641L71.586,115.203L76.977,111.462L77.807,109.445L81.954,103.389L82.092,101.945L80.295,98.091L80.848,97.319L86.101,93.363L88.727,89.885L91.492,87.564L93.427,87.564L93.98,88.338L94.256,89.982L93.98,96.644L94.809,98.669L98.956,103.485L101.859,106.178L108.632,108.004L108.909,108.965L107.112,112.517L111.259,116.832L111.95,119.897L113.885,121.715L116.512,120.854L117.341,119.131L116.373,116.257L115.544,113.189L115.682,111.462L116.512,109.445L118.309,106.659L123.423,100.115L125.22,96.451L125.635,90.562L125.635,85.919L127.294,84.758L130.888,85.629L131.994,85.532L132.546,88.435L134.067,92.977L135.864,95.294L137.799,95.873L140.149,95.873L145.817,93.074L149.549,91.915L151.622,92.204L152.866,94.136L155.631,99.151L157.152,99.633L158.949,99.055L159.64,98.284L158.949,96.355L158.258,92.204L157.152,88.918L155.769,87.468L155.493,85.435L156.322,81.948L157.29,78.942L159.225,78.166L161.575,77.778L164.478,80.882L167.934,81.948L170.56,81.754L170.975,79.912L170.837,77.875L169.316,75.351L169.592,71.366L171.389,64.062L172.357,64.647L176.228,64.745L180.513,65.135L183.139,68.154L185.766,69.128L189.636,69.42L192.124,69.031L193.368,67.96L194.889,64.452L197.515,60.063L201.8,57.914L208.988,57.426L212.721,56.644L216.453,56.742L219.218,57.426L222.12,57.328L229.585,54.297L237.326,51.851L238.432,52.243L238.57,53.123L237.188,54.884L235.805,57.328L236.773,60.16L241.058,65.719L243.408,70.004L245.758,73.213L249.214,74.865L253.775,75.933L257.646,76.322L261.793,77.487L275.616,80.494L282.666,81.27L288.057,81.464L296.074,83.402L295.245,86.597L293.724,87.371L290.821,89.305L287.504,91.818L284.601,94.715L283.772,97.802L284.601,99.826L285.43,100.5L286.536,99.922L288.057,100.307L290.13,101.367L293.448,102.522L293.586,103.581L292.895,104.928L290.269,107.332L287.919,110.118L287.642,111.75L287.919,112.997L288.748,113.765L292.204,113.381L292.757,114.436L291.098,121.428L291.651,122.671L294.692,123.819L296.904,125.443L301.051,129.931L302.848,133.554L301.604,134.698L298.977,135.364L296.904,134.983L299.254,132.792L293.31,124.966L290.683,124.966L287.089,128.309L277.137,124.87L275.201,126.303L273.819,128.977L270.363,132.315L265.525,133.745L259.996,137.364L254.328,139.932L249.905,141.929L247.417,141.549L251.426,137.364L249.629,137.269L244.376,140.218L241.335,142.784L240.367,146.962L239.399,153.975L241.749,155.773L245.896,164.937L250.873,168.802L249.905,172.569L248.661,175.484L245.62,178.022L242.993,176.142L241.473,176.142L240.367,182.152L242.579,197.874L246.034,208.962L249.49,213.702L257.369,221.216L265.663,225.106L280.592,237.666L288.748,241.536L290.821,243.744L295.798,253.298L300.083,264.378L304.645,281.609L307.962,290.145L314.597,299.653L328.42,313.277L340.861,323.257L352.473,329.356L361.596,330.431L383.022,329.087L386.754,329.625L390.763,331.327L391.592,335.533L390.21,338.393L385.648,341.341L381.087,345.445L380.534,351.058L384.819,354.972L405.554,365.359L426.703,374.034L433.338,378.451L440.941,385.331L459.464,394.745L462.505,399.311L473.84,409.037L478.816,416.64L479.784,422.484L477.434,428.318L476.328,432.492L474.393,436.66L469.555,435.098L464.164,430.84L456.008,413.671L441.079,411.923L438.038,410.611L432.647,407.637L432.37,405.711L430.988,403.257L429.744,402.381L423.938,401.855L420.068,404.659L415.368,411.311L410.115,420.828L404.724,434.75L404.448,440.303L407.351,445.761L416.059,448.789L422.694,453.629L427.118,458.634L427.532,470.687L429.468,477.555L426.565,481.412L420.897,480.47L413.433,482.954L408.042,487.319L405.83,491.508L406.383,502.426L405.277,506.511L395.186,514.329L389.933,522.299L388.551,525.6L386.616,529.406L373.76,529.49L370.857,524.838L370.719,517.977L372.931,513.735L377.631,511.697L380.672,502.851L379.704,496.459L381.64,493.643L383.298,491.678L386.892,490.482L392.007,489.371L392.422,480.384L388.551,476.268L387.169,470.601L385.234,459.927L378.737,446.367L375.281,434.229L372.655,428.231L368.508,425.011L361.043,425.098L357.311,424.227L344.041,415.68L343.211,414.37L343.211,412.185L345.423,408.687L344.041,404.134L342.382,399.75L339.894,395.975L336.991,394.042L331.047,395.273L328.973,396.151L325.241,395.8L322.338,397.468L320.679,397.556L325.241,390.965L323.997,389.47L319.435,386.74L313.215,386.3L311.556,385.948L310.45,387.709L309.344,386.74L309.483,383.833L302.156,370.584L297.318,365.182L294.968,364.207L290.545,365.359L283.081,362.965L278.657,362.433L276.307,363.054L272.575,364.739L270.778,363.675L270.087,361.9L263.452,356.306L255.02,353.194L238.708,335.622L233.732,328.997L223.365,321.731L216.868,311.026L211.477,307.149L203.736,303.99L201.939,304.351L199.589,305.525L197.792,305.705L196.409,304.351L197.792,302.906L199.45,302.274L198.898,298.205L190.051,287.514L184.798,284.154L183.416,281.973L182.31,279.062L181.204,277.242L178.716,276.058L176.642,276.331L173.739,275.602L173.878,270.406L174.431,266.48L174.016,263.098L171.251,254.307L166.275,246.779L163.51,228.805L161.16,223.717L155.769,219.826L143.605,215.559L126.741,203.842L123.147,203.656L112.918,199.087L106.559,198.34L98.403,202.351L88.451,213.609L80.295,225.198L77.392,227.511L67.025,231.485L57.763,233.331L57.625,230.376L57.349,228.158L58.869,225.661L61.495,222.791L63.845,219.085L64.813,216.487L64.398,214.724L63.292,212.123L61.772,211.937L53.063,214.074L50.99,213.516L44.493,210.171L37.581,205.891L34.955,202.91L33.987,199.926L34.679,197.967L34.126,196.099L32.743,193.577L33.987,190.678L36.199,187.027L37.305,184.591L39.102,183.934L39.931,182.434L38.549,176.424L37.72,175.484L36.476,174.732L34.54,174.638L31.223,173.415L28.735,171.345L28.182,168.52L26.938,165.88L24.726,163.333L24.588,160.689L26.938,159.272L30.393,159.177L32.743,159.744L38.134,155.395L40.07,155.016L41.867,154.07L43.249,148.1L44.493,146.297L44.769,145.253L43.664,144.019L39.378,139.742L37.305,135.364L34.264,130.503L31.361,128.309L30.808,126.59L30.67,124.392L31.361,122.576L36.476,119.61ZM247.693,331.147L247.693,330.789L247.279,330.789L247.279,331.058L247.279,331.237ZM249.49,226.216L250.596,223.439L250.181,221.494L247.693,221.865L246.034,224.365L247.14,226.586ZM169.178,281.336L170.422,283.336L170.56,284.517L169.731,285.879L170.145,288.875L166.828,286.333L161.99,287.604L159.087,287.332L158.258,285.153L158.949,283.79L163.51,283.518L165.031,282.882L167.795,283.154ZM305.198,392.109L303.539,392.548L302.571,392.021L302.018,391.229L302.709,389.294L306.165,390.437L306.027,391.493ZM232.764,586.594L230.967,587.093L228.479,585.512L228.341,583.181L228.756,582.432L231.797,583.514L232.626,585.679ZM368.093,515.772L365.466,521.367L364.222,523.484L354.961,537.004L353.993,540.124L353.302,543.493L352.334,546.438L351.09,549.297L349.846,552.826L349.985,556.855L350.537,558.783L351.643,560.124L353.44,561.298L354.823,563.14L352.611,564.898L355.099,568.244L357.034,570.251L357.311,572.256L357.311,574.26L353.164,578.098L351.505,580.099L350.399,582.682L349.985,585.263L350.399,587.592L350.261,589.921L346.114,589.588L341.691,588.175L337.405,588.84L331.185,586.095L328.973,585.679L326.9,584.597L321.647,576.263L317.5,572.673L313.077,569.916L308.515,569.749L303.953,570.084L299.945,568.412L291.789,562.721L283.081,558.113L279.348,555.177L277.689,553.162L275.754,551.818L270.778,550.474L266.216,547.364L264.281,547.195L259.858,547.532L257.646,547.364L255.434,546.27L251.011,542.567L248.246,537.51L247.555,535.317L249.49,529.49L251.84,523.992L253.914,522.383L256.264,521.282L257.784,519.588L259.028,517.638L263.452,523.399L265.525,524.838L267.46,524.5L271.054,522.468L271.331,520.181L275.34,517.214L280.316,517.214L282.666,517.722L283.91,520.35L285.845,521.113L288.057,521.536L295.383,526.531L297.457,527.292L299.53,527.461L305.198,525.346L309.483,524.585L318.606,525.685L323.582,524.415L327.038,524.331L332.014,522.383L335.885,519.164L337.958,518.401L340.032,518.146L345.285,518.316L350.537,519.079L352.749,518.316L354.546,516.196L356.758,515.262L359.108,515.941L365.19,512.291L367.816,512.121L370.305,513.48ZM139.873,383.216L141.808,386.476L146.093,399.75L146.508,402.556L145.678,405.535L144.573,407.549L140.287,414.195L140.979,419.694L142.499,423.094L142.776,426.839L141.946,431.536L139.32,459.927L138.076,464.924L137.246,469.225L134.343,470.601L130.473,469.139L125.773,466.731L123.561,466.903L121.35,467.763L119.553,466.989L117.756,465.612L116.512,475.324L114.3,479.27L111.121,481.755L107.941,481.926L104.762,481.07L102.136,481.07L100.062,479.27L98.403,476.011L95.915,471.975L93.289,467.247L93.012,463.03L92.598,453.629L93.289,451.555L94.395,449.567L94.948,445.328L94.533,441.603L95.362,440.303L96.883,441.603L97.989,441.17L97.85,439.263L98.265,435.792L96.192,432.839L92.874,431.883L92.598,428.84L92.874,425.794L94.671,423.791L95.224,421.177L95.362,412.972L92.874,409.999L92.045,405.448L90.801,402.556L88.589,399.574L86.101,397.205L84.442,394.921L84.165,388.853L84.995,383.745L85.824,381.628L86.654,381.893L89.142,384.45L91.215,384.979L95.224,385.595L99.233,384.802L104.071,382.51L108.771,379.776L115.544,371.558L119.691,369.965L121.903,367.751L122.594,364.827L124.391,364.118L126.464,366.954L129.091,367.22L133.099,369.522L134.758,371.823L136.279,374.476L137.661,375.625L139.182,376.332L139.458,376.95L138.214,377.568L136.832,380.658L137.661,381.54ZM95.639,474.122L93.427,479.013L91.077,475.582L90.939,472.577L91.353,471.718L94.118,473.006ZM88.174,375.183L86.93,377.48L85.133,377.303L85.824,375.625L87.483,372.177L89.556,371.027L90.386,372L89.418,374.034Z"/>
+            </defs>
+            <use href="#italy-shape" class="it-shadow" transform="translate(8 5)"/>
+            <use href="#italy-shape" class="it-land"/>
+            <g id="sportelli-markers"></g>
+          </svg>
+          <div class="sportelli-popup" id="sportelli-popup" role="dialog" aria-modal="false" aria-labelledby="sp-popup-title">
+            <button class="sp-close" type="button" aria-label="Chiudi">&times;</button>
+            <h4 id="sp-popup-title"></h4>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
 
       <div class="legal-search-wrap">
         <div class="legal-search-bar">
@@ -405,7 +462,7 @@ extraStyles: |
             <tr>
               <td data-label="Associazione">Naga</td>
               <td data-label="Indirizzo">Via Zamenhof, 7A</td>
-              <td data-label="Orari">Lun-Ven 9-12/14-17, Mar-Mer 9-12/14-19, Gio 9-12</td>
+              <td data-label="Orari">Lun-Ven 19-21</td>
               <td data-label="Contatto">0258102599</td>
             </tr>
           </tbody>
@@ -859,5 +916,153 @@ extraStyles: |
       countEl.textContent = q ? visible + ' / ' + total : '';
       noResults.style.display = (q && visible === 0) ? 'block' : 'none';
     });
+  })();
+  </script>
+  <script>
+  (function() {
+    function init() {
+      var svg = document.getElementById('sportelli-map');
+      var markersG = document.getElementById('sportelli-markers');
+      var popup = document.getElementById('sportelli-popup');
+      if (!svg || !markersG || !popup) return;
+
+      var LABEL = "Apri in Google Maps";
+
+      var CITY_XY = {"Bari":[417.9,371.2],"Bologna":[205.6,194.4],"Bologna Provincia":[219.8,202],"Brescia":[162.1,137.5],"Caserta":[320.3,373.5],"Catania":[349.2,550.4],"Firenze":[202.2,233.2],"Genova":[113.5,199.2],"Isola d'Arbia (SI)":[205.8,259.8],"Mercenasco (TO)":[73.6,145.7],"Mestre (VE)":[240.2,140.2],"Milano":[122.9,141.8],"Napoli":[317.9,384.7],"Padova":[226.1,144.9],"Palermo":[283.1,520.9],"Reggio Emilia":[178.2,183.4],"Roma":[249.9,331],"Siena":[205.1,257.1],"Torino":[65.2,163.3],"Trani":[400.4,363.1]};
+      var ALIASES = {"Bologne":"Bologna","Bologna Province":"Bologna Provincia","Province de Bologne":"Bologna Provincia","Bologna İli":"Bologna Provincia","Bologna省":"Bologna Provincia","Провинция Болонья":"Bologna Provincia","Catane":"Catania","Florence":"Firenze","Venice/Mestre":"Mestre (VE)","Milan":"Milano","Naples":"Napoli","Padua":"Padova","Padoue":"Padova","Palerme":"Palermo","Rome":"Roma","Sienne":"Siena","Turin":"Torino","Бари":"Bari","Болонья":"Bologna","Брешия":"Brescia","Казерта":"Caserta","Катания":"Catania","Флоренция":"Firenze","Местре (VE)":"Mestre (VE)","Милан":"Milano","Неаполь":"Napoli","Падуя":"Padova","Палермо":"Palermo","Реджо-Эмилия":"Reggio Emilia","Рим":"Roma","Сиена":"Siena","Турин":"Torino","Трани":"Trani"};
+
+      function cleanCity(s) {
+        return s.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu, '')
+                .replace(/[（][^）]*[）]/g, '').trim();
+      }
+      function matchCity(raw) {
+        var key = cleanCity(raw);
+        if (CITY_XY[key]) return key;
+        if (ALIASES[key]) return ALIASES[key];
+        var tokens = key.match(/[A-Za-z][A-Za-z'.\s()]*[A-Za-z)]/g);
+        if (tokens) {
+          for (var i = tokens.length - 1; i >= 0; i--) {
+            var t = tokens[i].trim();
+            if (CITY_XY[t]) return t;
+            if (ALIASES[t]) return ALIASES[t];
+          }
+        }
+        return null;
+      }
+      function esc(s) {
+        return String(s).replace(/[&<>"']/g, function(c) {
+          return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+        });
+      }
+
+      // Collect orgs from existing tables, group by Italian city key
+      var byCity = {};
+      document.querySelectorAll('.city-section').forEach(function(sec) {
+        var titleEl = sec.querySelector('.city-title');
+        if (!titleEl) return;
+        var key = matchCity(titleEl.textContent);
+        if (!key) return;
+        var orgs = [];
+        sec.querySelectorAll('tbody tr').forEach(function(tr) {
+          var tds = tr.querySelectorAll('td');
+          if (tds.length < 2) return;
+          orgs.push({
+            name: tds[0].textContent.trim(),
+            address: tds[1].textContent.trim()
+          });
+        });
+        if (orgs.length) {
+          byCity[key] = {
+            coords: CITY_XY[key],
+            label: titleEl.textContent.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu, '').trim(),
+            orgs: orgs
+          };
+        }
+      });
+
+      // Build SVG markers
+      var NS = 'http://www.w3.org/2000/svg';
+      Object.keys(byCity).forEach(function(city) {
+        var coords = byCity[city].coords;
+        var g = document.createElementNS(NS, 'g');
+        g.setAttribute('class', 'sportelli-marker');
+        g.setAttribute('transform', 'translate(' + coords[0] + ',' + coords[1] + ')');
+        g.setAttribute('role', 'button');
+        g.setAttribute('tabindex', '0');
+        g.setAttribute('aria-label', byCity[city].label);
+        g.setAttribute('data-city', city);
+        g.innerHTML =
+          '<circle class="hit" cx="0" cy="-12" r="18"/>' +
+          '<g class="pin-body">' +
+            '<path class="pin" d="M 0 0 C -7 -4 -10 -9 -10 -14 C -10 -20 -5 -24 0 -24 C 5 -24 10 -20 10 -14 C 10 -9 7 -4 0 0 Z"/>' +
+            '<circle class="pin-dot" cx="0" cy="-15" r="3.4"/>' +
+          '</g>';
+        g.addEventListener('click', function(e) {
+          e.stopPropagation();
+          showPopup(city, g);
+        });
+        g.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            showPopup(city, g);
+          }
+        });
+        markersG.appendChild(g);
+      });
+
+      var titleEl = popup.querySelector('h4');
+      var listEl = popup.querySelector('ul');
+
+      function showPopup(city, markerEl) {
+        var entry = byCity[city];
+        titleEl.textContent = entry.label;
+        listEl.innerHTML = '';
+        entry.orgs.forEach(function(o) {
+          var li = document.createElement('li');
+          var q = encodeURIComponent(o.address + ', ' + entry.label + ', Italia');
+          li.innerHTML =
+            '<span class="sp-name">' + esc(o.name) + '</span>' +
+            '<span class="sp-addr">' + esc(o.address) + '</span>' +
+            '<a class="sp-link" href="https://www.google.com/maps/search/?api=1&query=' + q + '" target="_blank" rel="noopener">' + esc(LABEL) + ' →</a>';
+          listEl.appendChild(li);
+        });
+
+        // Position popup near marker in container coords
+        popup.classList.add('visible');
+        var frame = popup.parentElement;
+        var frameRect = frame.getBoundingClientRect();
+        var markerRect = markerEl.getBoundingClientRect();
+        var pRect = popup.getBoundingClientRect();
+        var anchorX = markerRect.left - frameRect.left + markerRect.width / 2;
+        var anchorY = markerRect.top - frameRect.top;
+        var px = anchorX - pRect.width / 2;
+        var py = anchorY - pRect.height - 14;
+        // Clamp horizontally
+        px = Math.max(8, Math.min(px, frameRect.width - pRect.width - 8));
+        // Flip below if would overflow above
+        if (py < 8) py = markerRect.bottom - frameRect.top + 8;
+        popup.style.left = px + 'px';
+        popup.style.top = py + 'px';
+      }
+
+      function hidePopup() { popup.classList.remove('visible'); }
+
+      popup.querySelector('.sp-close').addEventListener('click', hidePopup);
+      document.addEventListener('click', function(e) {
+        if (!popup.contains(e.target) && !e.target.closest('.sportelli-marker')) {
+          hidePopup();
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') hidePopup();
+      });
+      window.addEventListener('resize', hidePopup);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
   })();
   </script>
