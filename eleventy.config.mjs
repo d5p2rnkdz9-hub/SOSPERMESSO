@@ -352,6 +352,18 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter("parseDocNotes", helpers.parseDocNotes);
 
   /**
+   * jsonString - JSON string literal safe for <script type="application/ld+json">
+   * Usage: "name": {{ permit.tipo | jsonString }}
+   */
+  eleventyConfig.addFilter("jsonString", helpers.jsonString);
+
+  /**
+   * faqJsonLd - FAQPage JSON-LD built from a permit's Q&A sections ('' if none)
+   * Usage: {% assign faq = permit | faqJsonLd %}
+   */
+  eleventyConfig.addFilter("faqJsonLd", helpers.faqJsonLd);
+
+  /**
    * md - Render a markdown string to HTML using markdown-it
    * Usage in Liquid: {{ regolamento.mdContent | md }}
    */

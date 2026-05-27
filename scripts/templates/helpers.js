@@ -4,6 +4,7 @@
  */
 
 const dizionarioMap = require('./dizionario-map.json');
+const cheerio = require('cheerio');
 
 // List of disputed documents that may vary by Questura
 // These documents are sometimes required, sometimes not, depending on the specific Questura
@@ -273,6 +274,38 @@ function formatNotesContent(lines) {
   return html;
 }
 
+/**
+ * jsonString - Serialize a value as a JSON string literal (with surrounding
+ * quotes), safe to embed inside <script type="application/ld+json"> (escapes
+ * "<" so a stray "</script>" in content can't break out of the tag).
+ * Usage: "name": {{ permit.tipo | jsonString }}
+ */
+function jsonString(value) {
+  return JSON.stringify(value == null ? '' : String(value)).replace(/</g, '\\u003c');
+}
+
+/**
+ * faqJsonLd - Build a FAQPage JSON-LD object string from a permit's Q&A
+ * sections. Strips HTML and decodes entities (via cheerio) for clean answer
+ * text. Returns '' when not applicable (placeholder permit or no sections),
+ * so templates can skip emitting an empty <script>.
+ * Usage: {% assign faq = permit | faqJsonLd %}{% if faq != "" %}...{% endif %}
+ */
+function faqJsonLd(permit) {
+  if (!permit || permit.isPlaceholder === true) return '';
+  const sections = Array.isArray(permit.sections) ? permit.sections : [];
+  const mainEntity = sections
+    .map((s) => {
+      const name = (s.question || '').replace(/\s+/g, ' ').trim();
+      const text = cheerio.load(s.content || '').text().replace(/\s+/g, ' ').trim();
+      return { '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } };
+    })
+    .filter((q) => q.name && q.acceptedAnswer.text);
+  if (!mainEntity.length) return '';
+  const obj = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity };
+  return JSON.stringify(obj).replace(/</g, '\\u003c');
+}
+
 module.exports = {
   linkToDizionario,
   getDocumentClass,
@@ -280,5 +313,7 @@ module.exports = {
   escapeHtml,
   normalizeDocumentName,
   parseDocNotes,
+  jsonString,
+  faqJsonLd,
   DISPUTED_DOCUMENTS
 };
