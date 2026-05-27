@@ -1,6 +1,7 @@
 # SOS Permesso — SEO Improvement Plan
 
-*Created 2026-05-27. Status: APPROVED PLAN — not yet executed. IT-focus scope.*
+*Created 2026-05-27. IT-focus scope.*
+*Progress: Phase 1 DONE (commit a13d54a — sitemap-it complete). Phase 2 DONE (permit/document/static title+meta rewrites). Phase 0 = user (GSC, ongoing). Phases 3–6 pending.*
 
 ## Locked decisions
 
