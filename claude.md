@@ -124,12 +124,12 @@ Sito_Nuovo/
 │       └── content-en.json      # English content
 ├── en/                          # English pages (generated from Notion via 11ty)
 │   ├── index.html               # EN homepage (static)
-│   └── src/pages/               # EN static pages + pagination templates
+│   └── src/pages/               # EN static pages + permit pagination template
 │       ├── database.html        # EN database landing (static)
-│       ├── documenti-questura.html # EN documents landing (static)
-│       ├── permits-en.liquid    # EN pagination template for permits
-│       ├── documents-primo-en.liquid  # EN pagination template for primo docs
-│       └── documents-rinnovo-en.liquid # EN pagination template for rinnovo docs
+│       └── permits-en.liquid    # EN pagination template for permits
+│                                # NOTE: translated trees have NO document templates.
+│                                # documenti-*-primo/rinnovo pages AND documenti-questura are IT-ONLY.
+│                                # Document checklists still render inline in each permit page (#primo/#rinnovo).
 ├── scripts/                     # Build scripts (Node.js)
 │   ├── build-documents.js       # Notion → document HTML (legacy, being replaced by 11ty)
 │   ├── build-permits.js         # Notion → permit HTML
@@ -274,10 +274,10 @@ All permit detail pages follow a consistent structure:
 2. Create data files: `_data/permits{Lang}.js` and `_data/documents{Lang}.js`
    - **Hardcode the Notion database ID** (don't use env vars)
    - Slugs must match IT slugs (resolved via IT Page ID mapping)
-3. Create pagination templates in `{lang}/src/pages/`:
-   - `permits-{lang}.liquid`, `documents-primo-{lang}.liquid`, `documents-rinnovo-{lang}.liquid`
-   - Permalink pattern: `{lang}/permesso-{{ permit.slug }}.html` etc.
-4. Create static pages: `{lang}/index.html`, `{lang}/src/pages/database.html`, `{lang}/src/pages/documenti-questura.html`
+3. Create pagination template in `{lang}/src/pages/`:
+   - `permits-{lang}.liquid` only. Permalink pattern: `{lang}/permesso-{{ permit.slug }}.html`.
+   - **Document pages are IT-only.** Do NOT create `documents-primo-{lang}.liquid` / `documents-rinnovo-{lang}.liquid` — the document checklists render inline in the permit pages (#primo/#rinnovo), so translated trees need no separate document templates or `documenti-questura` landing.
+4. Create static pages: `{lang}/index.html`, `{lang}/src/pages/database.html` (NO `documenti-questura.html` — IT-only)
    - **Use root-relative links** (e.g., `database.html`, NOT `src/pages/database.html`)
    - **Use correct Notion-derived slugs** (copy from IT versions, they're the same)
    - **Asset paths** from `{lang}/index.html`: use `IMAGES/...`, `src/styles/...` (no `../` prefix)

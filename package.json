@@ -9,7 +9,6 @@
     "build": "npx @11ty/eleventy",
     "fetch": "node scripts/fetch-notion.js",
     "fetch:build": "node scripts/fetch-notion.js && npx @11ty/eleventy",
-    "build:sitemap": "node scripts/build-sitemap.js",
     "translate:en": "node scripts/translate-batch.js",
     "translate": "node scripts/translate-notion.js",
     "translate:dry": "node scripts/translate-notion.js --dry-run",

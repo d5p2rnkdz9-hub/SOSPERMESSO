@@ -32,6 +32,13 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ slug }}.html"/>
   </url>
   {%- endfor %}
+  <!-- IT-only pages (no translations — emit without hreflang alternates) -->
+  {%- assign itOnlyPages = "documenti-questura,patto-ue,patto-ue-norme,patto-ue-diagramma" | split: "," %}
+  {%- for slug in itOnlyPages %}
+  <url>
+    <loc>{{ site.url }}/{{ slug }}.html</loc>
+  </url>
+  {%- endfor %}
   <!-- Permit pages -->
   {%- for permit in permits %}
   <url>
@@ -45,5 +52,18 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="ru" href="{{ site.url }}/ru/permesso-{{ permit.slug }}.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
   </url>
+  {%- endfor %}
+  <!-- Document pages (primo / rinnovo) — IT only, conditional on document data -->
+  {%- for permit in permits %}
+  {%- if permit.primoDocuments.size > 0 %}
+  <url>
+    <loc>{{ site.url }}/documenti-{{ permit.slug }}-primo.html</loc>
+  </url>
+  {%- endif %}
+  {%- if permit.rinnovoDocuments.size > 0 %}
+  <url>
+    <loc>{{ site.url }}/documenti-{{ permit.slug }}-rinnovo.html</loc>
+  </url>
+  {%- endif %}
   {%- endfor %}
 </urlset>
