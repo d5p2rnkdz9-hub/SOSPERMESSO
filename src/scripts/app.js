@@ -29,7 +29,7 @@ const mobileNavMapping = {
   'Database': '#database',
   'Guide': '#guide',
   'Test': '#test'
-  // Collabora stays as external typeform link
+  // Collabora stays as an external link to the in-house app
 };
 
 if (menuToggle && navWrapper) {
@@ -307,7 +307,8 @@ function trackEvent(eventName, eventData = {}) {
 
 // Track CTA clicks
 document.addEventListener('DOMContentLoaded', () => {
-  const ctaButtons = document.querySelectorAll('a[href*="typeform"]');
+  // Track CTAs that go to the in-house app (formerly tracked Typeform links)
+  const ctaButtons = document.querySelectorAll('a[href*="testsospermesso.netlify.app"]');
 
   ctaButtons.forEach(button => {
     button.addEventListener('click', (e) => {

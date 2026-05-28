@@ -449,12 +449,7 @@ module.exports = {
 ## Integration Points
 
 ### External Services
-1. **Typeform** - Test/Quiz forms
-   - "Posso AVERE un permesso?" - https://form.typeform.com/to/kt7P9Ejk
-   - "Posso CONVERTIRE?" - https://form.typeform.com/to/oc9jhdkJ
-   - "Posso RINNOVARE il permesso?" - https://form.typeform.com/to/R7HY8nBp
-   - "Segnala un errore" - https://form.typeform.com/to/FsqvzdXI
-   - "Dai una mano" / Contatti - https://form.typeform.com/to/USx16QN3
+1. **In-house Next.js app** (testsospermesso.netlify.app) — replaces Typeform entirely. Handles the interactive decision tree (`/it/tree`, `/it/tree/rinnovo`, `/it/tree/conversione`), contact forms (`/it/contattaci/problema-legale`, `/it/contattaci/contribuisci`), and error reporting (`/it/contattaci/segnala-errore`). To be consolidated under `app.sospermesso.it` per SEO-PLAN Phase 5.1.
 
 ### Navigation Structure
 Header navigation includes 4 dropdowns:
@@ -468,9 +463,9 @@ Header navigation includes 4 dropdowns:
    - Poppins: 600, 700, 800
 
 ### Contact & Error Reporting
-- Contact form: Typeform embed (https://form.typeform.com/to/USx16QN3)
-- Error reporting: "Segnala errore" button on all content pages → Typeform (pre-filled with page URL)
-- No custom backend for contact — Typeform handles submissions
+- Contact form: in-house Next.js app (`testsospermesso.netlify.app/it/contattaci/problema-legale` / `…/contribuisci`)
+- Error reporting: "Segnala errore" button on all content pages → in-house app (`…/contattaci/segnala-errore`, pre-filled with page URL)
+- No custom backend on sospermesso.it itself — submissions go to the in-house app on Netlify
 
 ## Future Development
 

@@ -1,7 +1,7 @@
 # SOS Permesso — SEO Improvement Plan
 
 *Created 2026-05-27. IT-focus scope.*
-*Progress: Phase 1 DONE (a13d54a). Phase 2 DONE (b83217e). Phase 3 DONE (ee7323e — JSON-LD). Phase 4 PARTIAL: homepage "ultimo aggiornamento" date updated; protezione-internazionale + ricongiungimento-familiare guides expanded with "Vedi anche" link sections (17 missing permit links added via subagent audit). Hub pages (lavoro/studio/cure) + permit-template E-E-A-T elements still pending. Phase 0 = user (GSC, ongoing). Phases 5–6 pending.*
+*Progress: Phase 1 DONE (a13d54a). Phase 2 DONE (b83217e). Phase 3 DONE (ee7323e — JSON-LD). Phase 4 PARTIAL (f7650fb): homepage date + 17 guide link additions; hub pages + permit-template E-E-A-T still pending. **Phase 6.1+6.2+6.3 DONE**: Typeform replaced with in-house/Netlify wording across all 11 privacy-policy files, claude.md Integration Points + Contact sections updated, residual typeform refs in app.js + contact-form.html cleaned. Phase 0 = user (GSC, ongoing). Phase 5 (off-site) = user lead.*
 
 ## Locked decisions
 

@@ -490,8 +490,8 @@
       submitBtn.querySelector('.btn-loader').style.display = 'flex';
 
       try {
-        // OPTION 1: Send to Typeform webhook
-        const typeformUrl = 'https://testsospermesso.netlify.app/it/contattaci/contribuisci';
+        // OPTION 1: Send to in-house app endpoint
+        const submitUrl = 'https://testsospermesso.netlify.app/it/contattaci/contribuisci';
 
         // OPTION 2: Send to your backend API
         // const response = await fetch('/api/contact', {
