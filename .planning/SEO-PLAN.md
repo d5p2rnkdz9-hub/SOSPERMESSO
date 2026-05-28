@@ -1,7 +1,7 @@
 # SOS Permesso — SEO Improvement Plan
 
 *Created 2026-05-27. IT-focus scope.*
-*Progress: Phase 1 DONE (a13d54a — sitemap-it complete). Phase 2 DONE (b83217e — title+meta rewrites). Phase 3 DONE (JSON-LD: Organization/WebSite sitewide, FAQPage on 38 permits, BreadcrumbList on permits + 70 doc pages). Phase 0 = user (GSC, ongoing). Phases 4–6 pending.*
+*Progress: Phase 1 DONE (a13d54a). Phase 2 DONE (b83217e). Phase 3 DONE (ee7323e — JSON-LD). Phase 4 PARTIAL: homepage "ultimo aggiornamento" date updated; protezione-internazionale + ricongiungimento-familiare guides expanded with "Vedi anche" link sections (17 missing permit links added via subagent audit). Hub pages (lavoro/studio/cure) + permit-template E-E-A-T elements still pending. Phase 0 = user (GSC, ongoing). Phases 5–6 pending.*
 
 ## Locked decisions
 
