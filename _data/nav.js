@@ -25,12 +25,11 @@ module.exports = {
       },
       {
         label: "Test interattivi",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "Posso AVERE un permesso?", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "Posso CONVERTIRE?", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "Posso RINNOVARE il permesso?", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "Posso AVERE un permesso?", href: "https://app.sospermesso.it", external: true },
+          { label: "Posso CONVERTIRE o RINNOVARE?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -56,12 +55,11 @@ module.exports = {
       },
       {
         label: "Interactive tests",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "Can I GET a permit?", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "Can I CONVERT?", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "Can I RENEW my permit?", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "Can I GET a permit?", href: "https://app.sospermesso.it", external: true },
+          { label: "Can I CONVERT or RENEW?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -87,12 +85,11 @@ module.exports = {
       },
       {
         label: "Tests interactifs",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "Puis-je OBTENIR un permis ?", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "Puis-je CONVERTIR ?", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "Puis-je RENOUVELER ?", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "Puis-je OBTENIR un permis ?", href: "https://app.sospermesso.it", external: true },
+          { label: "Puis-je CONVERTIR ou RENOUVELER ?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -118,12 +115,11 @@ module.exports = {
       },
       {
         label: "Tests interactivos",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "¿Puedo OBTENER un permiso?", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "¿Puedo CONVERTIR?", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "¿Puedo RENOVAR mi permiso?", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "¿Puedo OBTENER un permiso?", href: "https://app.sospermesso.it", external: true },
+          { label: "¿Puedo CONVERTIR o RENOVAR?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -149,12 +145,11 @@ module.exports = {
       },
       {
         label: "İnteraktif testler",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "İzin ALABİLİR miyim?", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "DÖNÜŞTÜREBİLİR miyim?", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "YENİLEYEBİLİR miyim?", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "İzin ALABİLİR miyim?", href: "https://app.sospermesso.it", external: true },
+          { label: "DÖNÜŞTÜREBİLİR veya YENİLEYEBİLİR miyim?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -180,12 +175,11 @@ module.exports = {
       },
       {
         label: "Интерактивные тесты",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "Могу ли я ПОЛУЧИТЬ разрешение?", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "Могу ли я КОНВЕРТИРОВАТЬ?", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "Могу ли я ПРОДЛИТЬ?", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "Могу ли я ПОЛУЧИТЬ разрешение?", href: "https://app.sospermesso.it", external: true },
+          { label: "Могу ли я КОНВЕРТИРОВАТЬ или ПРОДЛИТЬ?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -211,12 +205,11 @@ module.exports = {
       },
       {
         label: "ইন্টারেক্টিভ পরীক্ষা",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "আমি কি অনুমতি পেতে পারি?", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "আমি কি রূপান্তর করতে পারি?", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "আমি কি নবায়ন করতে পারি?", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "আমি কি অনুমতি পেতে পারি?", href: "https://app.sospermesso.it", external: true },
+          { label: "আমি কি রূপান্তর বা নবায়ন করতে পারি?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -242,12 +235,11 @@ module.exports = {
       },
       {
         label: "اختبارات تفاعلية",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "هل يمكنني الحصول على تصريح؟", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "هل يمكنني التحويل؟", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "هل يمكنني التجديد؟", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "هل يمكنني الحصول على تصريح؟", href: "https://app.sospermesso.it", external: true },
+          { label: "هل يمكنني التحويل أو التجديد؟", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -273,12 +265,11 @@ module.exports = {
       },
       {
         label: "انٹرایکٹو ٹیسٹ",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "کیا مجھے اجازت نامہ مل سکتا ہے؟", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "کیا میں تبدیل کر سکتا ہوں؟", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "کیا میں تجدید کر سکتا ہوں؟", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "کیا مجھے اجازت نامہ مل سکتا ہے؟", href: "https://app.sospermesso.it", external: true },
+          { label: "کیا میں تبدیل یا تجدید کر سکتا ہوں؟", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -304,12 +295,11 @@ module.exports = {
       },
       {
         label: "آزمون‌های تعاملی",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "آیا می‌توانم مجوز بگیرم؟", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "آیا می‌توانم تبدیل کنم؟", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "آیا می‌توانم تمدید کنم؟", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "آیا می‌توانم مجوز بگیرم؟", href: "https://app.sospermesso.it", external: true },
+          { label: "آیا می‌توانم تبدیل یا تمدید کنم؟", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
@@ -335,12 +325,11 @@ module.exports = {
       },
       {
         label: "互动测试",
-        href: "https://testsospermesso.netlify.app/it/tree",
+        href: "https://app.sospermesso.it",
         external: true,
         items: [
-          { label: "我能获得居留许可吗？", href: "https://testsospermesso.netlify.app/it/tree", external: true },
-          { label: "我能转换吗？", href: "https://testsospermesso.netlify.app/it/tree/conversione", external: true },
-          { label: "我能续签吗？", href: "https://testsospermesso.netlify.app/it/tree/rinnovo-conversione", external: true }
+          { label: "我能获得居留许可吗？", href: "https://app.sospermesso.it", external: true },
+          { label: "我能转换或续签吗？", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
         ]
       },
       {
