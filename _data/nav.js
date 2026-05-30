@@ -35,13 +35,9 @@ module.exports = {
       },
       {
         label: "Contattaci",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "Segnala un errore", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "Ho un problema legale", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "Voglio contribuire al progetto", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -70,13 +66,9 @@ module.exports = {
       },
       {
         label: "Contact us",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "Report an error", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "I have a legal problem", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "I want to contribute", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -105,13 +97,9 @@ module.exports = {
       },
       {
         label: "Nous contacter",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "Signaler une erreur", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "J'ai un problème juridique", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "Je veux contribuer au projet", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -140,13 +128,9 @@ module.exports = {
       },
       {
         label: "Contáctanos",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "Reportar un error", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "Tengo un problema legal", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "Quiero contribuir al proyecto", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -175,13 +159,9 @@ module.exports = {
       },
       {
         label: "Bize ulaşın",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "Hata bildir", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "Hukuki bir sorunum var", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "Projeye katkıda bulunmak istiyorum", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -210,13 +190,9 @@ module.exports = {
       },
       {
         label: "Связаться с нами",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "Сообщить об ошибке", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "У меня юридическая проблема", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "Хочу внести вклад в проект", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -245,13 +221,9 @@ module.exports = {
       },
       {
         label: "যোগাযোগ করুন",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "ত্রুটি জানান", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "আমার আইনি সমস্যা আছে", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "আমি প্রকল্পে অবদান রাখতে চাই", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -280,13 +252,9 @@ module.exports = {
       },
       {
         label: "اتصل بنا",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "أبلغ عن خطأ", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "لدي مشكلة قانونية", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "أريد المساهمة في المشروع", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -315,13 +283,9 @@ module.exports = {
       },
       {
         label: "ہم سے رابطہ کریں",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "غلطی کی اطلاع دیں", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "مجھے قانونی مسئلہ ہے", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "میں منصوبے میں تعاون کرنا چاہتا ہوں", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -350,13 +314,9 @@ module.exports = {
       },
       {
         label: "تماس با ما",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "گزارش خطا", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "مشکل حقوقی دارم", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "می‌خواهم در پروژه مشارکت کنم", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   },
@@ -385,13 +345,9 @@ module.exports = {
       },
       {
         label: "联系我们",
-        href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore",
+        href: "https://app.sospermesso.it/it/contattaci",
         external: true,
-        items: [
-          { label: "报告错误", href: "https://testsospermesso.netlify.app/it/contattaci/segnala-errore", external: true },
-          { label: "我有法律问题", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true },
-          { label: "我想为项目贡献", href: "https://testsospermesso.netlify.app/it/contattaci/contribuisci", external: true }
-        ]
+        items: []
       }
     ]
   }

@@ -4,7 +4,7 @@ module.exports = {
       { label: "Il Progetto", href: "/il-progetto.html" },
       { label: "Chi Siamo", href: "/chi-siamo.html" },
       { label: "Privacy e altro", href: "/privacy-policy.html" },
-      { label: "Contattaci", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true }
+      { label: "Scrivici", href: "mailto:info@sospermesso.it", external: true }
     ]
   },
   en: {
@@ -12,7 +12,7 @@ module.exports = {
       { label: "The Project", href: "/en/il-progetto.html" },
       { label: "About Us", href: "/en/chi-siamo.html" },
       { label: "Privacy and more", href: "/en/privacy-policy.html" },
-      { label: "Contact Us", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true }
+      { label: "Contact Us", href: "mailto:info@sospermesso.it", external: true }
     ]
   },
   fr: {
@@ -20,7 +20,7 @@ module.exports = {
       { label: "Le Projet", href: "/fr/il-progetto.html" },
       { label: "Qui sommes-nous", href: "/fr/chi-siamo.html" },
       { label: "Confidentialité", href: "/fr/privacy-policy.html" },
-      { label: "Contactez-nous", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true }
+      { label: "Contactez-nous", href: "mailto:info@sospermesso.it", external: true }
     ]
   },
   ar: {
@@ -28,7 +28,7 @@ module.exports = {
       { label: "المشروع", href: "/ar/il-progetto.html" },
       { label: "من نحن", href: "/ar/chi-siamo.html" },
       { label: "سياسة الخصوصية", href: "/ar/privacy-policy.html" },
-      { label: "اتصل بنا", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true }
+      { label: "اتصل بنا", href: "mailto:info@sospermesso.it", external: true }
     ]
   },
   ur: {
@@ -36,7 +36,7 @@ module.exports = {
       { label: "پروجیکٹ", href: "/ur/il-progetto.html" },
       { label: "ہمارے بارے میں", href: "/ur/chi-siamo.html" },
       { label: "رازداری پالیسی", href: "/ur/privacy-policy.html" },
-      { label: "ہم سے رابطہ کریں", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true }
+      { label: "ہم سے رابطہ کریں", href: "mailto:info@sospermesso.it", external: true }
     ]
   },
   fa: {
@@ -44,7 +44,7 @@ module.exports = {
       { label: "پروژه", href: "/fa/il-progetto.html" },
       { label: "درباره ما", href: "/fa/chi-siamo.html" },
       { label: "حریم خصوصی", href: "/fa/privacy-policy.html" },
-      { label: "تماس با ما", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true }
+      { label: "تماس با ما", href: "mailto:info@sospermesso.it", external: true }
     ]
   },
   zh: {
@@ -52,7 +52,7 @@ module.exports = {
       { label: "项目介绍", href: "/zh/il-progetto.html" },
       { label: "关于我们", href: "/zh/chi-siamo.html" },
       { label: "隐私政策", href: "/zh/privacy-policy.html" },
-      { label: "联系我们", href: "https://testsospermesso.netlify.app/it/contattaci/problema-legale", external: true }
+      { label: "联系我们", href: "mailto:info@sospermesso.it", external: true }
     ]
   }
 };
