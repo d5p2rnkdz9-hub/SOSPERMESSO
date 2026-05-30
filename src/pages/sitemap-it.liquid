@@ -33,7 +33,7 @@ eleventyExcludeFromCollections: true
   </url>
   {%- endfor %}
   <!-- IT-only pages (no translations — emit without hreflang alternates) -->
-  {%- assign itOnlyPages = "documenti-questura,patto-ue,patto-ue-norme,patto-ue-diagramma" | split: "," %}
+  {%- assign itOnlyPages = "documenti-questura,patto-ue,patto-ue-norme,patto-ue-diagramma,lavorare-in-italia" | split: "," %}
   {%- for slug in itOnlyPages %}
   <url>
     <loc>{{ site.url }}/{{ slug }}.html</loc>
