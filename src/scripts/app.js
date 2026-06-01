@@ -308,7 +308,7 @@ function trackEvent(eventName, eventData = {}) {
 // Track CTA clicks
 document.addEventListener('DOMContentLoaded', () => {
   // Track CTAs that go to the in-house app (formerly tracked Typeform links)
-  const ctaButtons = document.querySelectorAll('a[href*="testsospermesso.netlify.app"]');
+  const ctaButtons = document.querySelectorAll('a[href*="app.sospermesso.it"]');
 
   ctaButtons.forEach(button => {
     button.addEventListener('click', (e) => {

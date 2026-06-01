@@ -221,6 +221,10 @@ extraStyles: |
       box-shadow: 4px 4px 0 var(--hr-black);
     }
 
+    .hr-btn--secondary {
+      background: #FFFFFF;
+    }
+
     .hr-btn:hover {
       transform: translate(2px, 2px);
       box-shadow: 2px 2px 0 var(--hr-black);
@@ -229,6 +233,13 @@ extraStyles: |
     .hr-btn:active {
       transform: translate(4px, 4px);
       box-shadow: 0px 0px 0 var(--hr-black);
+    }
+
+    .hr-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 0;
     }
 
     .hr-badge-soon {
@@ -315,7 +326,10 @@ extraStyles: |
         <p>
           Informazioni e test interattivi sui permessi di soggiorno in Italia.
         </p>
-        <a href="https://app.sospermesso.it" class="hr-btn">Fai il nostro test interattivo →</a>
+        <div class="hr-btn-group">
+          <a href="https://app.sospermesso.it" class="hr-btn">Test interattivo →</a>
+          <a href="database.html" class="hr-btn hr-btn--secondary">Database di permessi →</a>
+        </div>
         <div class="hr-hero-badges">
           <div class="hr-badge">
             <span class="hr-badge-icon">📚</span>
