@@ -403,12 +403,13 @@ if (typeof module !== 'undefined' && module.exports) {
 // ===============================================
 // MOBILE HEADER LANGUAGE SWITCHER
 // ===============================================
-// The header language switcher (components/language-switcher.liquid) is shown
-// only on mobile. Options carry data-lang; we compute the localized URL for the
-// current page in JS (mirrors the Liquid logic in components/nav.liquid).
+// Shown only on mobile. Options carry data-lang; the localized URL for the
+// current page is computed in JS (mirrors the Liquid logic in nav.liquid).
+// Idempotent: a data flag prevents double-binding if this ever runs twice.
 function initLanguageSwitcher() {
   const switcher = document.querySelector('.language-switcher');
-  if (!switcher) return;
+  if (!switcher || switcher.dataset.langWired === '1') return;
+  switcher.dataset.langWired = '1';
 
   const toggle = switcher.querySelector('#language-toggle');
   const options = switcher.querySelectorAll('.language-option');
@@ -453,4 +454,8 @@ function initLanguageSwitcher() {
     if (!switcher.contains(e.target)) switcher.classList.remove('open');
   });
 }
-document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+} else {
+  initLanguageSwitcher();
+}
