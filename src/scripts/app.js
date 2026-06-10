@@ -399,3 +399,58 @@ if (typeof module !== 'undefined' && module.exports) {
     isInViewport
   };
 }
+
+// ===============================================
+// MOBILE HEADER LANGUAGE SWITCHER
+// ===============================================
+// The header language switcher (components/language-switcher.liquid) is shown
+// only on mobile. Options carry data-lang; we compute the localized URL for the
+// current page in JS (mirrors the Liquid logic in components/nav.liquid).
+function initLanguageSwitcher() {
+  const switcher = document.querySelector('.language-switcher');
+  if (!switcher) return;
+
+  const toggle = switcher.querySelector('#language-toggle');
+  const options = switcher.querySelectorAll('.language-option');
+  const PREFIX_RE = /^\/(en|fr|es|tr|bn|ru|ar|ur|fa|zh)(\/|$)/;
+
+  function localizedUrl(target) {
+    let path = window.location.pathname || '/';
+    const m = path.match(PREFIX_RE);
+    if (m) {
+      path = path.slice(m[1].length + 1); // strip "/xx"
+      if (path === '') path = '/';
+    }
+    const hash = window.location.hash || '';
+    if (target === 'it') return path + hash;
+    return '/' + target + (path === '/' ? '/' : path) + hash;
+  }
+
+  // Highlight the current language in the dropdown
+  const current = (window.location.pathname || '/').match(PREFIX_RE);
+  const currentLang = current ? current[1] : 'it';
+  options.forEach(opt => {
+    if (opt.getAttribute('data-lang') === currentLang) opt.classList.add('active-lang');
+  });
+
+  if (toggle) {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      switcher.classList.toggle('open');
+    });
+  }
+
+  options.forEach(opt => {
+    opt.addEventListener('click', () => {
+      const target = opt.getAttribute('data-lang');
+      if (target) window.location.href = localizedUrl(target);
+    });
+  });
+
+  // Close when tapping outside the switcher
+  document.addEventListener('click', (e) => {
+    if (!switcher.contains(e.target)) switcher.classList.remove('open');
+  });
+}
+document.addEventListener('DOMContentLoaded', initLanguageSwitcher);

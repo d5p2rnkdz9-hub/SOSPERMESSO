@@ -1374,3 +1374,10 @@
     height: 50px;
   }
 }
+
+/* Header language switcher: mobile-only.
+   Desktop uses the language item inside the nav menu, so hide this everywhere
+   except on mobile, where mobile-fix.css makes it visible in the header bar. */
+.language-switcher {
+  display: none;
+}
