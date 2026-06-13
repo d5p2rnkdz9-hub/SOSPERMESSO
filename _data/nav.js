@@ -20,7 +20,8 @@ module.exports = {
         badge: "NUOVO",
         items: [
           { label: "I testi normativi", href: "/patto-ue-norme.html" },
-          { label: "Diagramma interattivo", href: "/patto-ue-diagramma.html" }
+          { label: "Diagramma interattivo", href: "/patto-ue-diagramma.html" },
+          { label: "Testi interattivi", href: "/public/patto-interattivo/index.html" }
         ]
       },
       {
