@@ -11,8 +11,9 @@ _site/
 # Notion API response cache
 .notion-cache/
 
-# Translation review reports (generated locally, not committed)
-review-reports/
+# Translation review reports (symlink into ../translations-shared, generated locally,
+# not committed — no trailing slash so the pattern matches the symlink itself)
+review-reports
 
 # Subagent translation pipeline scratch (see CLAUDE.md "Subagent translation pipeline").
 # Only translate-{lang}-done.json + translate-{lang}-texts.json are kept; everything else
