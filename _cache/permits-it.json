@@ -1,5 +1,159 @@
 [
   {
+    "id": "3097355e-7f7f-81bc-adf8-e0f675dcc98b",
+    "slug": "asilo-status-rifugiato",
+    "tipo": "Asilo (status rifugiato)",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "Che cos'è questo permesso?",
+        "content": "<p>È il permesso che viene dato a chi scappa dal proprio paese perché rischia di essere perseguitato per la sua religione, opinione politica, nazionalità, o perché appartiene a un certo gruppo etnico o sociale. </p>",
+        "index": 0
+      },
+      {
+        "question": "Come richiedo questo permesso?",
+        "content": "<p>Per avere questo permesso devi:</p>\n<ul><li>Fare domanda di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a> (vedi la nostra guida)</li><li>Ottenere una decisione positiva dalla <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> o dal <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a></li><li>Con questa decisione positiva, andare in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> per chiedere il permesso</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Dove si chiede questo permesso?",
+        "content": "<p>Devi andare personalmente in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>.</p>",
+        "index": 2
+      },
+      {
+        "question": "Che documenti mi servono per chiederlo?",
+        "content": "<p>Per chiedere il permesso devi portare la decisione della Commissione (o del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>) che ti ha riconosciuto come <a href=\"dizionario.html#rifugiato\" class=\"doc-link\">rifugiato</a></p>",
+        "index": 3
+      },
+      {
+        "question": "Quanto dura?",
+        "content": "<p>Il permesso dura<strong> 5 anni</strong> e può essere rinnovato, di solito in modo automatico, per altri 5 anni</p>",
+        "index": 4
+      },
+      {
+        "question": "Che diritti mi da? A cosa ho accesso?",
+        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Prendere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> nel tuo comune</li><li>Lavorare in modo regolare (lavoro subordinato o autonomo)</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Iscriverti a scuola, un corso professionale, o all&#039;università</li><li>Ricevere aiuti economici e per la casa</li><li>Chiedere la cittadinanza italiana dopo 5 anni di <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> legale (contati dalla data in cui hai fatto domanda di protezione)</li><li>Chiedere il ricongiungimento con i familiari stretti:<ul><li>moglie/marito</li><li>figli minorenni</li><li>figli maggiorenni se totalmente invalidi</li><li>genitori con più di 65 anni o <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></li></ul></li></ul>\n<p>Per il <a href=\"dizionario.html#ricongiungimento-familiare\" class=\"doc-link\">ricongiungimento familiare</a> NON devi dimostrare di avere una casa grande e uno stipendio minimo come gli altri stranieri.</p>",
+        "index": 5
+      },
+      {
+        "question": "Posso viaggiare fuori dall’Italia?",
+        "content": "<p>Viaggiare liberamente in Italia, andare in altri paesi dell&#039;UE fino a 3 mesi e, con il “titolo di viaggio” (un passaporto che viene dato ai rifugiati), anche in altri paesi del mondo. </p>\n<p><strong>ATTENZIONE!</strong> Non puoi viaggiare nel tuo paese d'origine. Se lo fai, la <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> potrebbe toglierti il permesso di soggiorno.</p>",
+        "index": 6
+      },
+      {
+        "question": "Posso convertire questo permesso?",
+        "content": "<p>L'unico permesso in cui ha senso convertire il permesso per <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> è il permesso di soggiorno UE per soggiornanti di lungo periodo (\"Carta\"), dopo cinque anni di <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> in Italia.</p>\n<p>Non è possibile convertire il permesso per <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> politico in permesso di soggiorno per lavoro autonomo o subordinato.</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 30.46 €",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Decisione della Commissione o del Tribunale"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 30.46 €",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Permesso in scadenza",
+      "Decisione della Commissione o del Tribunale"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null,
+    "categoria": "Protezione",
+    "rinnovoNotApplicable": false
+  },
+  {
+    "id": "3097355e-7f7f-8186-9ced-e1bc7d5ae63e",
+    "slug": "protezione-speciale",
+    "tipo": "Protezione speciale",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "Che cos'è questo permesso?",
+        "content": "<p>È un permesso di soggiorno che può essere dato per situazioni anche diverse tra loro, come ad esempio a chi <strong>è bene integrato in Italia, chi è molto vulnerabile, o non può tornare nel suo paese</strong>.</p>\n<hr>",
+        "index": 0
+      },
+      {
+        "question": "Come richiedo il permesso?",
+        "content": "<p>Il permesso di soggiorno per protezione speciale può essere dato:</p>\n<ul><li>Dalla <strong><a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a></strong> dopo che hai fatto domanda di protezione internazionale (domanda di \"<a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a>\")</li><li>Da un <strong><a href=\"dizionario.html#tribunale\" class=\"doc-link\">tribunale</a></strong> dopo decisione negativa della Commissione (di solito i Tribunali lo danno più facilmente che le Commissioni). Se hai già fatto un ricorso in <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>  sicuramente già un avvocato e ti consigliamo di chiedere consigli a lui.</li></ul>\n<hr>",
+        "index": 1
+      },
+      {
+        "question": "Dove si chiede questo permesso?",
+        "content": "<p>Se la <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> o il <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a> decidono che puoi avere la protezione speciale:</p>\n<ul><li>Devi andare in <strong><a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a></strong> per fare la domanda del permesso</li><li>Ti daranno un appuntamento per le impronte digitali</li><li>La <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> ti dirà quando il permesso è pronto</li></ul>\n<hr>",
+        "index": 2
+      },
+      {
+        "question": "Posso chiederlo direttamente in Questura, senza fare domanda di asilo?",
+        "content": "<p>Dal 2023 la legge è cambiata ed è diventato molto più difficile avere un permesso per protezione speciale direttamente dalla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>. Ci sono sentenze di <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a> che dicono che puoi continuare a chiederlo direttamente alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>, ma <strong>ti consigliamo di chiedere aiuto a un bravo avvocato</strong>.</p>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "Che documenti mi servono per chiederlo?",
+        "content": "<ul><li><strong>Decreto della <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a></strong> che riconosce la protezione speciale (o decisione del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">tribunale</a>)</li><li><strong>4 foto tessere</strong> recenti</li><li><strong><a href=\"dizionario.html#residenza\" class=\"doc-link\">Certificato di residenza</a></strong> o documenti che mostrano dove vivi</li></ul>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "Quanto dura questo permesso?",
+        "content": "<p>Ha una validità di <strong>due anni</strong>.</p>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "Che diritti mi da? A cosa ho accesso?",
+        "content": "<p>Con questo permesso puoi:</p>\n<ul><li><strong>Lavorare</strong> con regolare contratto (lavoro autonomo o subordinato)</li><li><strong>Prendere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a></strong> nel Comune dove vivi</li><li><strong>Iscriverti al Servizio Sanitario Nazionale (SSN)</strong> e avere un medico di base</li><li><strong>Viaggiare nell&#039;area Schengen</strong> con passaporto (per soggiorni fino a 3 mesi)</li><li><strong>Iscriverti a scuola, un corso professionale, o all&#039;università</strong></li></ul>\n<hr>",
+        "index": 6
+      },
+      {
+        "question": "Quando il permesso scade, posso convertirlo in permesso per lavoro?",
+        "content": "<p><strong>‼️ Attenzione</strong> perché nel 2023 la legge è cambiata e adesso ci sono due possibilità:</p>\n<ul><li>Se hai fatto <strong>domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale PRIMA del 6 maggio 2023</strong>: puoi convertirlo in permesso per lavoro (autonomo o subordinato), se hai tutti i requisiti.</li><li><strong>Se hai fatto domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale DOPO il 6 maggio 2023</strong>: NON puoi convertire il tuo permesso in permesso per lavoro</li></ul>\n<p><strong>Attenzione</strong>: Per non fare errori, chiedi prima aiuto a un centro di assistenza legale gratuito.</p>\n<hr>",
+        "index": 7
+      },
+      {
+        "question": "Posso rinnovare il permesso per protezione speciale?",
+        "content": "<p>Non possiamo darti una risposta certa al momento. </p>\n<ul><li>Se hai avuto il permesso per protezione speciale perché hai fatto <strong>domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale PRIMA del 6 maggio 2023</strong>, ti consigliamo di chiedere sempre la <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in un altro permesso, se possibile. Chiedi il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> proprio solo se non hai altra scelta. Sarà rinnovato per un anno, e poi non è chiaro cosa succederà.</li><li>Se hai<strong> </strong>avuto il permesso per protezione speciale perché hai fatto <strong>domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale DOPO il 6 maggio 2023</strong>: puoi provare puoi convertire il tuo permesso in permesso per lavoro</li></ul>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 30.46 €",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Decisione della Commissione o del Tribunale"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 30.46 €",
+      "Permesso in scadenza",
+      "Decisione della Commissione o del Tribunale"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": "Attenzione: il rinnovo della protezione speciale è una questione complicata, non è sempre certo che si possa avere e ti consigliamo di chiedere subito un aiuto legale",
+    "categoria": "Protezione",
+    "rinnovoNotApplicable": false
+  },
+  {
     "id": "3097355e-7f7f-8181-8f82-edabf94f6328",
     "slug": "protezione-sociale-vittime-di-tratta",
     "tipo": "Protezione sociale vittime di tratta",
@@ -503,7 +657,8 @@
       "Marca da bollo da 16 €",
       "4 fototessere",
       "Bollettino postale da 30.46 €",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza"
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Decisione della Commissione o del Tribunale"
     ],
     "primoMethod": "personalmente",
     "costBollettinoPrimo": 30.46,
@@ -1860,84 +2015,6 @@
     "rinnovoNotApplicable": false
   },
   {
-    "id": "3097355e-7f7f-8186-9ced-e1bc7d5ae63e",
-    "slug": "protezione-speciale",
-    "tipo": "Protezione speciale",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>È un permesso di soggiorno che può essere dato per situazioni anche diverse tra loro, come ad esempio a chi <strong>è bene integrato in Italia, chi è molto vulnerabile, o non può tornare nel suo paese</strong>.</p>\n<hr>",
-        "index": 0
-      },
-      {
-        "question": "Come richiedo il permesso?",
-        "content": "<p>Il permesso di soggiorno per protezione speciale può essere dato:</p>\n<ul><li>Dalla <strong><a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a></strong> dopo che hai fatto domanda di protezione internazionale (domanda di \"<a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a>\")</li><li>Da un <strong><a href=\"dizionario.html#tribunale\" class=\"doc-link\">tribunale</a></strong> dopo decisione negativa della Commissione (di solito i Tribunali lo danno più facilmente che le Commissioni). Se hai già fatto un ricorso in <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>  sicuramente già un avvocato e ti consigliamo di chiedere consigli a lui.</li></ul>\n<hr>",
-        "index": 1
-      },
-      {
-        "question": "Dove si chiede questo permesso?",
-        "content": "<p>Se la <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> o il <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a> decidono che puoi avere la protezione speciale:</p>\n<ul><li>Devi andare in <strong><a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a></strong> per fare la domanda del permesso</li><li>Ti daranno un appuntamento per le impronte digitali</li><li>La <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> ti dirà quando il permesso è pronto</li></ul>\n<hr>",
-        "index": 2
-      },
-      {
-        "question": "Posso chiederlo direttamente in Questura, senza fare domanda di asilo?",
-        "content": "<p>Dal 2023 la legge è cambiata ed è diventato molto più difficile avere un permesso per protezione speciale direttamente dalla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>. Ci sono sentenze di <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a> che dicono che puoi continuare a chiederlo direttamente alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>, ma <strong>ti consigliamo di chiedere aiuto a un bravo avvocato</strong>.</p>\n<hr>",
-        "index": 3
-      },
-      {
-        "question": "Che documenti mi servono per chiederlo?",
-        "content": "<ul><li><strong>Decreto della <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a></strong> che riconosce la protezione speciale (o decisione del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">tribunale</a>)</li><li><strong>4 foto tessere</strong> recenti</li><li><strong><a href=\"dizionario.html#residenza\" class=\"doc-link\">Certificato di residenza</a></strong> o documenti che mostrano dove vivi</li></ul>\n<hr>",
-        "index": 4
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<p>Ha una validità di <strong>due anni</strong>.</p>\n<hr>",
-        "index": 5
-      },
-      {
-        "question": "Che diritti mi da? A cosa ho accesso?",
-        "content": "<p>Con questo permesso puoi:</p>\n<ul><li><strong>Lavorare</strong> con regolare contratto (lavoro autonomo o subordinato)</li><li><strong>Prendere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a></strong> nel Comune dove vivi</li><li><strong>Iscriverti al Servizio Sanitario Nazionale (SSN)</strong> e avere un medico di base</li><li><strong>Viaggiare nell&#039;area Schengen</strong> con passaporto (per soggiorni fino a 3 mesi)</li><li><strong>Iscriverti a scuola, un corso professionale, o all&#039;università</strong></li></ul>\n<hr>",
-        "index": 6
-      },
-      {
-        "question": "Quando il permesso scade, posso convertirlo in permesso per lavoro?",
-        "content": "<p><strong>‼️ Attenzione</strong> perché nel 2023 la legge è cambiata e adesso ci sono due possibilità:</p>\n<ul><li>Se hai fatto <strong>domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale PRIMA del 6 maggio 2023</strong>: puoi convertirlo in permesso per lavoro (autonomo o subordinato), se hai tutti i requisiti.</li><li><strong>Se hai fatto domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale DOPO il 6 maggio 2023</strong>: NON puoi convertire il tuo permesso in permesso per lavoro</li></ul>\n<p><strong>Attenzione</strong>: Per non fare errori, chiedi prima aiuto a un centro di assistenza legale gratuito.</p>\n<hr>",
-        "index": 7
-      },
-      {
-        "question": "Posso rinnovare il permesso per protezione speciale?",
-        "content": "<p>Non possiamo darti una risposta certa al momento. </p>\n<ul><li>Se hai avuto il permesso per protezione speciale perché hai fatto <strong>domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale PRIMA del 6 maggio 2023</strong>, ti consigliamo di chiedere sempre la <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in un altro permesso, se possibile. Chiedi il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> proprio solo se non hai altra scelta. Sarà rinnovato per un anno, e poi non è chiaro cosa succederà.</li><li>Se hai<strong> </strong>avuto il permesso per protezione speciale perché hai fatto <strong>domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> o di permesso per protezione speciale DOPO il 6 maggio 2023</strong>: puoi provare puoi convertire il tuo permesso in permesso per lavoro</li></ul>",
-        "index": 8
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 30.46 €",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza"
-    ],
-    "primoMethod": "personalmente",
-    "costBollettinoPrimo": 30.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 30.46 €",
-      "Permesso in scadenza",
-      "Decisione della Commissione o del Tribunale"
-    ],
-    "rinnovoMethod": "personalmente",
-    "costBollettinoRinnovo": 30.46,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": "Attenzione: il rinnovo della protezione speciale è una questione complicata, non è sempre certo che si possa avere e ti consigliamo di chiedere subito un aiuto legale",
-    "categoria": "Protezione",
-    "rinnovoNotApplicable": false
-  },
-  {
     "id": "3097355e-7f7f-8190-b348-c5dca206cba7",
     "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
     "tipo": "Cure mediche - donna in stato di gravidanza o con figlio minore di 6 mesi",
@@ -2163,80 +2240,6 @@
     "costMarcaBolloRinnovo": 16,
     "docNotes": null,
     "categoria": "Studio/Lavoro",
-    "rinnovoNotApplicable": false
-  },
-  {
-    "id": "3097355e-7f7f-81bc-adf8-e0f675dcc98b",
-    "slug": "asilo-status-rifugiato",
-    "tipo": "Asilo (status rifugiato)",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>È il permesso che viene dato a chi scappa dal proprio paese perché rischia di essere perseguitato per la sua religione, opinione politica, nazionalità, o perché appartiene a un certo gruppo etnico o sociale. </p>",
-        "index": 0
-      },
-      {
-        "question": "Come richiedo questo permesso?",
-        "content": "<p>Per avere questo permesso devi:</p>\n<ul><li>Fare domanda di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a> (vedi la nostra guida)</li><li>Ottenere una decisione positiva dalla <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> o dal <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a></li><li>Con questa decisione positiva, andare in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> per chiedere il permesso</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Dove si chiede questo permesso?",
-        "content": "<p>Devi andare personalmente in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>.</p>",
-        "index": 2
-      },
-      {
-        "question": "Che documenti mi servono per chiederlo?",
-        "content": "<p>Per chiedere il permesso devi portare la decisione della Commissione (o del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>) che ti ha riconosciuto come <a href=\"dizionario.html#rifugiato\" class=\"doc-link\">rifugiato</a></p>",
-        "index": 3
-      },
-      {
-        "question": "Quanto dura?",
-        "content": "<p>Il permesso dura<strong> 5 anni</strong> e può essere rinnovato, di solito in modo automatico, per altri 5 anni</p>",
-        "index": 4
-      },
-      {
-        "question": "Che diritti mi da? A cosa ho accesso?",
-        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Prendere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> nel tuo comune</li><li>Lavorare in modo regolare (lavoro subordinato o autonomo)</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Iscriverti a scuola, un corso professionale, o all&#039;università</li><li>Ricevere aiuti economici e per la casa</li><li>Chiedere la cittadinanza italiana dopo 5 anni di <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> legale (contati dalla data in cui hai fatto domanda di protezione)</li><li>Chiedere il ricongiungimento con i familiari stretti:<ul><li>moglie/marito</li><li>figli minorenni</li><li>figli maggiorenni se totalmente invalidi</li><li>genitori con più di 65 anni o <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></li></ul></li></ul>\n<p>Per il <a href=\"dizionario.html#ricongiungimento-familiare\" class=\"doc-link\">ricongiungimento familiare</a> NON devi dimostrare di avere una casa grande e uno stipendio minimo come gli altri stranieri.</p>",
-        "index": 5
-      },
-      {
-        "question": "Posso viaggiare fuori dall’Italia?",
-        "content": "<p>Viaggiare liberamente in Italia, andare in altri paesi dell&#039;UE fino a 3 mesi e, con il “titolo di viaggio” (un passaporto che viene dato ai rifugiati), anche in altri paesi del mondo. </p>\n<p><strong>ATTENZIONE!</strong> Non puoi viaggiare nel tuo paese d'origine. Se lo fai, la <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> potrebbe toglierti il permesso di soggiorno.</p>",
-        "index": 6
-      },
-      {
-        "question": "Posso convertire questo permesso?",
-        "content": "<p>L'unico permesso in cui ha senso convertire il permesso per <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> è il permesso di soggiorno UE per soggiornanti di lungo periodo (\"Carta\"), dopo cinque anni di <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> in Italia.</p>\n<p>Non è possibile convertire il permesso per <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> politico in permesso di soggiorno per lavoro autonomo o subordinato.</p>",
-        "index": 7
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 30.46 €",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza"
-    ],
-    "primoMethod": "personalmente",
-    "costBollettinoPrimo": 30.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 30.46 €",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
-      "Permesso in scadenza",
-      "Decisione della Commissione o del Tribunale"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 30.46,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null,
-    "categoria": "Protezione",
     "rinnovoNotApplicable": false
   },
   {
@@ -2682,7 +2685,7 @@
       },
       {
         "question": "Chi può chiedere questo permesso?",
-        "content": "<p>Puoi fare richiesta se:</p>\n<ul><li>Vivi regolarmente in Italia da almeno 5 anni</li><li>Hai un altro permesso di soggiorno ancora valido</li><li>Hai un reddito di almeno 7.000 euro negli ultimi tre anni</li><li>Hai un certificato di conoscenza della lingua italiana di livello almeno A2</li></ul>\n<p><strong>Attenzione! </strong>⚠️ <strong>Non tutti i permessi di soggiorno possono essere convertiti in Carta!</strong></p>\n<p>Ad esempio, NON puoi chiedere la Carta se hai</p>\n<ul><li>Un permesso per studio o formazione professionale</li><li>Un permesso per cure mediche, protezione speciale o protezione temporanea</li><li>Un permesso per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> (mentre aspetti la decisione della Commissione o del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>)</li></ul>\n<p>Se hai dubbi, <a href=\"https://testsospermesso.netlify.app/it/tree/conversione\">fai il nostro test.</a></p>",
+        "content": "<p>Puoi fare richiesta se:</p>\n<ul><li>Vivi regolarmente in Italia da almeno 5 anni</li><li>Hai un altro permesso di soggiorno ancora valido</li><li>Hai un reddito di almeno 7.000 euro negli ultimi tre anni</li><li>Hai un certificato di conoscenza della lingua italiana di livello almeno A2</li></ul>\n<p><strong>Attenzione! </strong>⚠️ <strong>Non tutti i permessi di soggiorno possono essere convertiti in Carta!</strong></p>\n<p>Ad esempio, NON puoi chiedere la Carta se hai</p>\n<ul><li>Un permesso per studio o formazione professionale</li><li>Un permesso per cure mediche, protezione speciale o protezione temporanea</li><li>Un permesso per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> (mentre aspetti la decisione della Commissione o del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>)</li></ul>\n<p>Se hai dubbi, <a href=\"https://sospermesso.typeform.com/conversione\">fai il nostro test.</a></p>",
         "index": 1
       },
       {
