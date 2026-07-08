@@ -92,13 +92,16 @@ Sito_Nuovo/
 │   ├── nav.liquid               # Navigation include (desktop + mobile)
 │   └── language-switcher.liquid # IT/EN toggle include
 ├── _data/                       # 11ty data files
-│   ├── site.js                  # Site metadata (title, URL, etc.)
+│   ├── site.js                  # Site metadata (title, URL, assetVersion hash)
 │   ├── nav.js                   # Navigation structure
 │   ├── footer.js                # Footer data
 │   ├── permits.js               # Notion → IT permit page data (DB ID hardcoded)
-│   ├── permitsEn.js             # Notion → EN permit page data (DB ID hardcoded)
-│   ├── documents.js             # Notion → IT document page data (DB ID hardcoded)
-│   └── documentsEn.js           # Notion → EN document page data (DB ID hardcoded)
+│   ├── permits{Lang}.js         # One per language (En/Fr/Es/Tr/Bn/Ru/Ar/Ur/Fa/Zh)
+│   ├── prassiLocali.js          # Prassi locali (crowdsourced questura notes)
+│   ├── pattoUe.js               # Patto UE reader data
+│   └── eleventyComputed.js      # Global computed data
+│                                # NOTE: no documents*.js — document pages paginate
+│                                # the `permits` data (docs embedded in permit entries)
 ├── _site/                       # BUILD OUTPUT (generated, gitignored)
 │   ├── *.html                   # ALL pages output at ROOT level (flat)
 │   └── en/*.html                # EN pages at en/ prefix (same slugs as IT)
@@ -115,10 +118,14 @@ Sito_Nuovo/
 │   │   ├── components.css       # Component-specific styles
 │   │   ├── animations.css       # Animation definitions
 │   │   ├── mobile.css           # Mobile responsive styles
-│   │   └── mobile-fix.css       # Critical mobile fixes
+│   │   ├── mobile-fix.css       # Critical mobile fixes
+│   │   ├── document-page.css    # Document checklist pages
+│   │   ├── prassi.css           # Prassi locali accordion
+│   │   └── rtl.css / cjk.css / bengali.css  # Per-script styles (AR/UR/FA, ZH, BN)
 │   ├── scripts/                 # Client-side JavaScript
 │   │   ├── app.js               # Main application logic
-│   │   └── mobile.js            # Mobile-specific functionality
+│   │   ├── mobile.js            # Mobile-specific functionality
+│   │   └── prassi.js            # Prassi locali interactions
 │   └── data/                    # Content data (homepage)
 │       ├── content-it.json      # Italian content
 │       └── content-en.json      # English content
@@ -130,17 +137,19 @@ Sito_Nuovo/
 │                                # NOTE: translated trees have NO document templates.
 │                                # documenti-*-primo/rinnovo pages AND documenti-questura are IT-ONLY.
 │                                # Document checklists still render inline in each permit page (#primo/#rinnovo).
-├── scripts/                     # Build scripts (Node.js)
-│   ├── build-documents.js       # Notion → document HTML (legacy, being replaced by 11ty)
-│   ├── build-permits.js         # Notion → permit HTML
-│   ├── build-sitemap.js         # Sitemap generation
-│   ├── notion-client.js         # Notion API client
-│   ├── translation-memory.js    # Translation caching module
-│   └── templates/               # HTML generation templates
-│       ├── primo.js             # First release template (legacy)
-│       ├── rinnovo.js           # Renewal template (legacy)
-│       ├── permesso.js          # Permit page template
-│       └── helpers.js           # Shared template filters (used by 11ty too)
+├── scripts/                     # Build & maintenance scripts (Node.js)
+│   ├── fetch-notion.js          # Notion → _cache/ JSON (npm run fetch)
+│   ├── notion-cache.js          # Notion API response cache (.notion-cache/)
+│   ├── review-translations.js   # Translation quality review (npm run review)
+│   ├── fix-{lang}-translations.js # Apply glossary BAD_TERMS fixes to Notion
+│   ├── translate-to-notion.js   # Subagent pipeline bookends (--extract / write)
+│   ├── extract-for-translation.js # Older no-API pipeline (kept: TR/BN recovery)
+│   ├── push-translations.js     # Older no-API pipeline (reads translation-work/)
+│   ├── audit-content.js         # Content audit (npm run audit)
+│   ├── glossaries/              # SYMLINK → ../../translations-shared/glossaries
+│   └── templates/
+│       ├── helpers.js           # Shared template filters (used by 11ty)
+│       └── dizionario-map.json  # Dizionario term-link map
 └── .planning/                   # Project planning docs
     ├── PROJECT.md               # Current state, milestones, architecture
     ├── BACKLOG.md               # Milestone overview
@@ -259,19 +268,16 @@ All permit detail pages follow a consistent structure:
 - IT pages at root (`/`), EN pages at `/en/`, future languages at `/{lang}/`
 - Language switcher include in base layout (IT ↔ EN toggle)
 - hreflang tags in base layout for SEO (canonical + alternate)
-- Sitemap index architecture: `sitemap-index.xml` → `sitemap-it.xml` + `sitemap-en.xml`
-- Translation memory infrastructure for incremental re-translation
-- **Currently implemented:** IT 🇮🇹, EN 🇬🇧
-- **Future:** FR 🇫🇷, ES 🇪🇸, ZH 🇨🇳 (infrastructure exists, content pending)
+- Sitemap index architecture: `sitemap-index.xml` → per-language `sitemap-{lang}.xml`
+- **Currently implemented:** IT 🇮🇹, EN 🇬🇧, FR 🇫🇷, ES 🇪🇸, TR 🇹🇷, BN 🇧🇩, RU 🇷🇺, AR, UR 🇵🇰, FA, ZH 🇨🇳
 
 ### Adding a New Language (Checklist)
-1. Create Notion translated database via `scripts/translate-notion.js --lang {code}`
+1. Create the empty translated Notion database (e.g. via `scripts/create-translation-dbs.js`)
    - All translated DBs live under **"Traduzioni del Database"** parent page: `30b7355e-7f7f-8184-975d-fb18ca69875c` ([Notion link](https://www.notion.so/sospermesso/Traduzioni-del-Database-30b7355e7f7f8184975dfb18ca69875c))
-   - Add `NOTION_{LANG}_PARENT_PAGE_ID=30b7355e-7f7f-8184-975d-fb18ca69875c` to `.env` (same for all langs)
-   - Script translates from **IT source** (never from another translation), creates DB, returns DB ID
-   - **NO CLAUDE/ANTHROPIC API for translation.** The `translate-notion.js` script calls the paid Anthropic API — do NOT use it. Instead, translate within Claude Code (subagents) and write to Notion via Notion API directly.
-   - After run, hardcode the returned DB ID in `.env` as `NOTION_DATABASE_{LANG}_ID`
-2. Create data files: `_data/permits{Lang}.js` and `_data/documents{Lang}.js`
+   - Always translate from **IT source** (never from another translation)
+   - **NO CLAUDE/ANTHROPIC API for translation.** The old paid-API `translate-notion.js` pipeline was removed in 2026-07 housekeeping. Translate within Claude Code (subagents) via the "Subagent Translation Pipeline" below, which writes to Notion through `scripts/translate-to-notion.js`.
+   - Hardcode the new DB ID in the language's data file (see step 2)
+2. Create data file: `_data/permits{Lang}.js` (no `documents{Lang}.js` — document pages are IT-only)
    - **Hardcode the Notion database ID** (don't use env vars)
    - Slugs must match IT slugs (resolved via IT Page ID mapping)
 3. Create pagination template in `{lang}/src/pages/`:
@@ -325,8 +331,8 @@ The translation review pipeline shares its rules, prompts, and outputs with the 
 ```
 
 In this project, the following paths are **symlinks** into the shared directory:
-- `Sito_Nuovo/scripts/glossaries/`  → `translations-shared/glossaries/`
-- `Sito_Nuovo/review-reports/`      → `translations-shared/review-reports/sito-nuovo/`
+- `Sito_Nuovo/scripts/glossaries/`  → `translations-shared/glossaries/` (committed to git; dangling on Netlify, harmless — nothing in the build reads it)
+- `Sito_Nuovo/review-reports/`      → `translations-shared/review-reports/sito-nuovo/` (gitignored)
 
 **Do not edit through the symlinks** — edit at the canonical `translations-shared/` location for clarity. Edits via the symlinks land in the shared directory anyway, but path references should use the `translations-shared/` form.
 
@@ -530,6 +536,6 @@ All base styles are designed for mobile, then enhanced for larger screens using 
 
 ---
 
-**Last Updated**: 2026-02-07
-**Version**: 3.0
+**Last Updated**: 2026-07-08
+**Version**: 3.1
 **Built with**: 11ty v3.1.2 (Liquid), CSS, JavaScript (Vanilla), Node.js build scripts, Notion API, Netlify
