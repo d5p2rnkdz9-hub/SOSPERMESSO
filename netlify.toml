@@ -200,19 +200,21 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 # ── ASSET CACHING ──
-# Long cache for images, fonts, CSS, JS — these are stable URLs.
-# WhatsApp/Facebook/Twitter unfurl bots benefit from a clean CDN hit on og:image.
+# CSS/JS are referenced with a ?v=<content-hash> query (site.assetVersion), so the
+# URL changes whenever the file changes — safe to cache for a year as immutable.
+# Images keep a 1-day cache (filenames don't carry a hash) + stale-while-revalidate
+# so repeat visits never wait on revalidation.
 [[headers]]
   for = "/IMAGES/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400, s-maxage=86400"
+    Cache-Control = "public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800"
 
 [[headers]]
   for = "/src/styles/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
   for = "/src/scripts/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=31536000, immutable"

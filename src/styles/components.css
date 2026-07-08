@@ -13,7 +13,7 @@
   justify-content: center;
   gap: var(--spacing-xs);
   padding: var(--spacing-sm) var(--spacing-lg);
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', 'Inter Fallback', -apple-system, sans-serif;
   font-size: var(--font-size-base);
   font-weight: 700;
   border: 2px solid #1A1A1A;
@@ -231,7 +231,7 @@
 }
 
 .permit-title-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Poppins Fallback', sans-serif;
   font-weight: 800;
   font-size: 1.4rem;
   margin: 0;
@@ -245,7 +245,7 @@
   justify-content: center;
   padding: 0.4rem 1rem;
   border-radius: 8px;
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', 'Inter Fallback', -apple-system, sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   text-decoration: none;
@@ -309,7 +309,7 @@
   border: 2px solid #1A1A1A;
   background: white;
   color: #1A1A1A;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Inter Fallback', sans-serif;
   font-size: 0.78rem;
   font-weight: 600;
   text-decoration: none;

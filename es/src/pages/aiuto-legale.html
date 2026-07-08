@@ -23,9 +23,9 @@ extraStyles: |
       .sportelli-marker:hover,
       .sportelli-marker:focus-visible { filter: drop-shadow(0 4px 4px rgba(0,0,0,0.28)); }
       .sportelli-marker:focus-visible .pin { stroke-width: 2; }
-      .sportelli-popup { position: absolute; background: white; border: 2px solid var(--black); border-radius: 14px; padding: 1rem 1.1rem 0.85rem; box-shadow: var(--shadow-lg); max-width: 280px; min-width: 220px; z-index: 20; display: none; font-family: 'Inter', sans-serif; }
+      .sportelli-popup { position: absolute; background: white; border: 2px solid var(--black); border-radius: 14px; padding: 1rem 1.1rem 0.85rem; box-shadow: var(--shadow-lg); max-width: 280px; min-width: 220px; z-index: 20; display: none; font-family: 'Inter', 'Inter Fallback', sans-serif; }
       .sportelli-popup.visible { display: block; }
-      .sportelli-popup h4 { margin: 0 0 0.6rem; padding-right: 1.5rem; font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: var(--black); }
+      .sportelli-popup h4 { margin: 0 0 0.6rem; padding-right: 1.5rem; font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-size: 0.95rem; color: var(--black); }
       .sportelli-popup .sp-close { position: absolute; top: 0.3rem; right: 0.5rem; background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--gray-medium); padding: 0.15rem 0.4rem; }
       .sportelli-popup .sp-close:hover { color: var(--black); }
       .sportelli-popup ul { list-style: none; padding: 0; margin: 0; max-height: 260px; overflow-y: auto; }
@@ -81,7 +81,7 @@ extraStyles: |
       .legal-search-bar { display: flex; align-items: center; gap: 0.75rem; background: white; border: 2px solid #e5e5e5; border-radius: 14px; padding: 0.85rem 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: border-color 0.2s; }
       .legal-search-bar:focus-within { border-color: #FFD700; box-shadow: 0 2px 12px rgba(255,215,0,0.15); }
       .legal-search-bar .search-icon { font-size: 1.1rem; flex-shrink: 0; }
-      .legal-search-input { flex: 1; border: none; outline: none; font-size: 1rem; font-family: 'Inter', sans-serif; color: #1A1A1A; background: transparent; }
+      .legal-search-input { flex: 1; border: none; outline: none; font-size: 1rem; font-family: 'Inter', 'Inter Fallback', sans-serif; color: #1A1A1A; background: transparent; }
       .legal-search-input::placeholder { color: #bbb; }
       .legal-search-count { font-size: 0.8rem; color: #999; white-space: nowrap; flex-shrink: 0; }
       .city-section.hidden { display: none; }

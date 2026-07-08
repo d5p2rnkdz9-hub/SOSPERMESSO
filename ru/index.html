@@ -17,9 +17,9 @@ extraStyles: |
     }
     .hr-hero { padding: 4.5rem 0 3.5rem; background: var(--hr-white); }
     .hr-hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
-    .hr-hero h1 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; line-height: 1.15; color: var(--hr-black); margin-bottom: 1rem; }
+    .hr-hero h1 { font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-size: 2.5rem; font-weight: 800; line-height: 1.15; color: var(--hr-black); margin-bottom: 1rem; }
     .hr-hero .hr-highlight { background: linear-gradient(180deg, transparent 50%, var(--hr-yellow) 50%); padding: 0 4px; }
-    .hr-hero p { font-family: 'Inter', -apple-system, sans-serif; font-size: 1.25rem; font-weight: 600; color: var(--hr-gray-dark); line-height: 1.5; margin-bottom: 1.5rem; max-width: 520px; }
+    .hr-hero p { font-family: 'Inter', 'Inter Fallback', -apple-system, sans-serif; font-size: 1.25rem; font-weight: 600; color: var(--hr-gray-dark); line-height: 1.5; margin-bottom: 1.5rem; max-width: 520px; }
     .hr-hero-badges { display: flex; gap: 1.5rem; margin-top: 1.5rem; }
     .hr-badge { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--hr-gray-medium); }
     .hr-badge-icon { width: 28px; height: 28px; background: var(--hr-yellow-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
@@ -28,24 +28,24 @@ extraStyles: |
     .hr-section-yellow { background: var(--hr-yellow); }
     .hr-section-alt { background: var(--hr-gray-light); }
     .hr-container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
-    .hr-section-title { font-family: 'Poppins', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--hr-black); margin-bottom: 2rem; }
+    .hr-section-title { font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--hr-black); margin-bottom: 2rem; }
     .hr-cards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; max-width: 900px; margin: 0 auto; }
     .hr-ucard { background: var(--hr-white); border: 2.5px solid var(--hr-black); border-radius: 16px; padding: 1.35rem 1.5rem; text-decoration: none; color: var(--hr-black); display: flex; align-items: center; gap: 1rem; transition: all 0.12s ease; box-shadow: 4px 4px 0 var(--hr-black); cursor: pointer; }
     .hr-ucard:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--hr-black); }
     .hr-ucard:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--hr-black); }
     .hr-ucard--yellow { background: var(--hr-yellow); }
     .hr-ucard-icon { font-size: 1.75rem; flex-shrink: 0; }
-    .hr-ucard h3 { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 800; margin: 0 0 0.25rem; line-height: 1.3; }
+    .hr-ucard h3 { font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-size: 1rem; font-weight: 800; margin: 0 0 0.25rem; line-height: 1.3; }
     .hr-ucard p { font-size: 0.82rem; color: var(--hr-gray-dark); margin: 0; line-height: 1.4; }
     .hr-ucard--yellow p { color: var(--hr-gray-dark); }
     .hr-tag { display: inline-block; background: var(--hr-black); color: var(--hr-yellow); font-size: 0.6rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.35rem; }
     .hr-ucard-arrow { font-size: 1.3rem; font-weight: 700; margin-left: auto; flex-shrink: 0; color: var(--hr-black); }
-    .hr-btn { display: inline-block; background: var(--hr-yellow); color: var(--hr-black); font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1rem; padding: 0.9rem 2.25rem; border-radius: 14px; text-decoration: none; border: 2.5px solid var(--hr-black); transition: all 0.12s ease; box-shadow: 4px 4px 0 var(--hr-black); }
+    .hr-btn { display: inline-block; background: var(--hr-yellow); color: var(--hr-black); font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-weight: 800; font-size: 1rem; padding: 0.9rem 2.25rem; border-radius: 14px; text-decoration: none; border: 2.5px solid var(--hr-black); transition: all 0.12s ease; box-shadow: 4px 4px 0 var(--hr-black); }
     .hr-btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--hr-black); }
     .hr-btn:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0 var(--hr-black); }
     .hr-badge-soon { position: absolute; top: 12px; right: -30px; background: var(--hr-black); color: var(--hr-yellow); font-size: 0.6rem; font-weight: 700; padding: 4px 36px; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 0.5px; }
     .hr-cta { background: var(--hr-yellow); padding: 2.25rem 0; text-align: center; }
-    .hr-cta p { font-family: 'Inter', -apple-system, sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--hr-black); margin: 0 0 1rem; }
+    .hr-cta p { font-family: 'Inter', 'Inter Fallback', -apple-system, sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--hr-black); margin: 0 0 1rem; }
     .hr-btn-dark { display: inline-block; background: var(--hr-black); color: var(--hr-white); font-weight: 700; font-size: 0.9rem; padding: 0.7rem 1.5rem; border-radius: 10px; text-decoration: none; border: 2px solid var(--hr-black); transition: all 0.15s; }
     .hr-btn-dark:hover { background: var(--hr-gray-dark); transform: translateY(-2px); }
     @media (max-width: 768px) {
@@ -94,7 +94,7 @@ extraStyles: |
       </div>
       <div>
         <picture>
-          <source srcset="../IMAGES/hero-illustration.webp" type="image/webp">
+          <source srcset="../IMAGES/hero-illustration-520.webp 520w, ../IMAGES/hero-illustration-1040.webp 1040w" sizes="(max-width: 768px) 260px, 520px" type="image/webp">
           <img src="../IMAGES/hero-illustration-1200.png" alt="Люди, изучающие документы о видах на жительство" class="hr-hero-image" width="1200" height="800" fetchpriority="high" decoding="async">
         </picture>
       </div>

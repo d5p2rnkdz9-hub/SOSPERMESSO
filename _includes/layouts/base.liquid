@@ -210,33 +210,49 @@
   }
   </script>
 
-  <!-- Fonts: Latin core on every page, script-specific fonts only when needed -->
+  <!-- Fonts: Latin core on every page, script-specific fonts only when needed.
+       Loaded async (media="print" trick) so they never block first paint;
+       metric-adjusted fallbacks in main.css make the swap shift-free. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  {%- if lang == 'ar' -%}
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {%- assign latinFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" -%}
+  <link href="{{ latinFontsUrl }}" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="{{ latinFontsUrl }}" rel="stylesheet"></noscript>
+  {%- assign langFontsUrl = false -%}
+  {%- if lang == 'ar' or lang == 'fa' -%}
+    {%- assign langFontsUrl = "https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" -%}
   {%- elsif lang == 'ur' -%}
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
-  {%- elsif lang == 'fa' -%}
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {%- assign langFontsUrl = "https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" -%}
   {%- elsif lang == 'bn' -%}
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {%- assign langFontsUrl = "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" -%}
   {%- elsif lang == 'zh' -%}
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {%- assign langFontsUrl = "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" -%}
   {%- endif -%}
+  {%- if langFontsUrl %}
+  <link href="{{ langFontsUrl }}" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="{{ langFontsUrl }}" rel="stylesheet"></noscript>
+  {%- endif %}
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/src/styles/main.css' | url }}?v={{ site.assetVersion }}">
   <link rel="stylesheet" href="{{ '/src/styles/components.css' | url }}?v={{ site.assetVersion }}">
-  <link rel="stylesheet" href="{{ '/src/styles/animations.css' | url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ '/src/styles/animations.css' | url }}?v={{ site.assetVersion }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ '/src/styles/mobile.css' | url }}?v={{ site.assetVersion }}">
   <link rel="stylesheet" href="{{ '/src/styles/mobile-fix.css' | url }}?v={{ site.assetVersion }}">
-  <link rel="stylesheet" href="{{ '/src/styles/rtl.css' | url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ '/src/styles/cjk.css' | url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ '/src/styles/bengali.css' | url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ '/src/styles/document-page.css' | url }}">
-  <link rel="stylesheet" href="{{ '/src/styles/prassi.css' | url }}">
+  {%- comment -%} Script-specific CSS loads BLOCKING but only on its own language:
+      loading it async on ar/ur/fa/zh/bn re-flowed the whole page (direction,
+      line-height, font stacks) after first paint — a major CLS source. {%- endcomment -%}
+  {%- if lang == 'ar' or lang == 'ur' or lang == 'fa' or lang == 'he' %}
+  <link rel="stylesheet" href="{{ '/src/styles/rtl.css' | url }}?v={{ site.assetVersion }}">
+  {%- endif %}
+  {%- if lang == 'zh' %}
+  <link rel="stylesheet" href="{{ '/src/styles/cjk.css' | url }}?v={{ site.assetVersion }}">
+  {%- endif %}
+  {%- if lang == 'bn' %}
+  <link rel="stylesheet" href="{{ '/src/styles/bengali.css' | url }}?v={{ site.assetVersion }}">
+  {%- endif %}
+  <link rel="stylesheet" href="{{ '/src/styles/document-page.css' | url }}?v={{ site.assetVersion }}">
+  <link rel="stylesheet" href="{{ '/src/styles/prassi.css' | url }}?v={{ site.assetVersion }}">
 
   {% if extraStyles %}{{ extraStyles }}{% endif %}
 </head>

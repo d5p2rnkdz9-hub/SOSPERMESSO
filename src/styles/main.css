@@ -3,6 +3,27 @@
    Color Palette: Taxi Yellow, Red, White, Black
    =============================================== */
 
+/* Metric-adjusted local fallbacks for the async-loaded webfonts:
+   text first paints in Arial scaled to Inter/Poppins metrics, so the
+   swap to the real font doesn't reflow the page (CLS ≈ 0). */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  ascent-override: 90.20%;
+  descent-override: 22.48%;
+  line-gap-override: 0%;
+  size-adjust: 107.40%;
+}
+
+@font-face {
+  font-family: 'Poppins Fallback';
+  src: local('Arial');
+  ascent-override: 93.77%;
+  descent-override: 31.26%;
+  line-gap-override: 8.93%;
+  size-adjust: 112.16%;
+}
+
 :root {
   /* Primary Colors - BRIGHTER & MORE VIBRANT */
   --taxi-yellow: #FFD700;
@@ -62,8 +83,8 @@
   --spacing-xxl: 4rem;
 
   /* Typography */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-heading: 'Poppins', var(--font-primary);
+  --font-primary: 'Inter', 'Inter Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Poppins', 'Poppins Fallback', var(--font-primary);
 
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;

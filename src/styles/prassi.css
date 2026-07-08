@@ -394,7 +394,7 @@
   justify-content: center;
   gap: var(--spacing-xs);
   padding: var(--spacing-sm) var(--spacing-lg);
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', 'Inter Fallback', -apple-system, sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   border: 2px solid #1A1A1A;
