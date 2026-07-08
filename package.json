@@ -9,12 +9,6 @@
     "build": "npx @11ty/eleventy",
     "fetch": "node scripts/fetch-notion.js",
     "fetch:build": "node scripts/fetch-notion.js && npx @11ty/eleventy",
-    "translate:en": "node scripts/translate-batch.js",
-    "translate": "node scripts/translate-notion.js",
-    "translate:dry": "node scripts/translate-notion.js --dry-run",
-    "translate:fr": "node scripts/translate-notion.js --lang fr",
-    "translate:fr:dry": "node scripts/translate-notion.js --lang fr --dry-run",
-    "tm:stats": "node -e \"const tm = require('./scripts/translation-memory'); (async () => { const m = await tm.loadTranslationMemory('it', 'en'); console.log(tm.getMemoryStats(m)); })();\"",
     "review": "node scripts/review-translations.js",
     "audit": "node scripts/audit-content.js",
     "cache:clear": "node -e \"require('./scripts/notion-cache').clearCache()\""
@@ -32,7 +26,6 @@
   },
   "homepage": "https://github.com/d5p2rnkdz9-hub/SOSPERMESSO#readme",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.72.1",
     "@netlify/blobs": "^10.6.0",
     "@notionhq/client": "^5.8.0",
     "cheerio": "^1.0.0-rc.12",
