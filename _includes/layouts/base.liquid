@@ -253,6 +253,12 @@
   {%- endif %}
   <link rel="stylesheet" href="{{ '/src/styles/document-page.css' | url }}?v={{ site.assetVersion }}">
   <link rel="stylesheet" href="{{ '/src/styles/prassi.css' | url }}?v={{ site.assetVersion }}">
+  {%- comment -%} Chatbot: Italian-only for now — widen this condition (and the
+      STRINGS dict in chatbot.js) to roll out to other languages. {%- endcomment -%}
+  {%- assign pageLang = lang | default: 'it' -%}
+  {%- if pageLang == 'it' %}
+  <link rel="stylesheet" href="{{ '/src/styles/chatbot.css' | url }}?v={{ site.assetVersion }}">
+  {%- endif %}
 
   {% if extraStyles %}{{ extraStyles }}{% endif %}
 </head>
@@ -267,6 +273,9 @@
   <!-- Scripts -->
   <script src="{{ '/src/scripts/app.js' | url }}?v={{ site.assetVersion }}" defer></script>
   <script src="{{ '/src/scripts/mobile.js' | url }}?v={{ site.assetVersion }}" defer></script>
+  {%- if pageLang == 'it' %}
+  <script src="{{ '/src/scripts/chatbot.js' | url }}?v={{ site.assetVersion }}" defer></script>
+  {%- endif %}
 
   {% if extraScripts %}{{ extraScripts }}{% endif %}
 

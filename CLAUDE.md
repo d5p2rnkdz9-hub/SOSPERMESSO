@@ -372,6 +372,23 @@ module.exports = {
 
 **Do NOT** check for absence of preserved terms — a page about family reunification has no reason to mention "C3". Only flag when a *translated form* of a preserved term appears (use `badTerms`).
 
+## Chatbot (floating assistant)
+
+Floating "Fai una domanda" widget on **Italian pages only**, answering permit questions via the Anthropic API, grounded in the site's own content. No RAG: the whole knowledge base rides in a prompt-cached system prompt.
+
+**Architecture:**
+- `scripts/build-chatbot-kb.js` — converts `_cache/permits-it.json` + 9 guide pages into `netlify/functions/chat-kb.mjs` (~184 KB text ≈ 83k tokens). Runs as part of `npm run build`; output is **gitignored** and **deterministic** (byte-identical when inputs unchanged — any byte change busts the Anthropic prompt cache).
+- `netlify/functions/chat.mjs` — Anthropic proxy (`claude-sonnet-5`, thinking disabled, effort low, max_tokens 1024). System prompt = persona + KB with `cache_control: ephemeral` (warm requests read ~83k tokens at 0.1× price — check `cache_read_input_tokens` in function logs). Per-request page context is prefixed to the **last user message**, never put in the system prompt. Streams plain text; JSON fallback via `CHATBOT_NO_STREAM=1`; kill switch `CHATBOT_DISABLED=1`. Rate limits via Netlify Blobs: 30 msg/IP/day + 1500 msg/day global (fails open outside Netlify).
+- `src/scripts/chatbot.js` + `src/styles/chatbot.css` — self-injecting widget (prassi.js pattern), conversation in sessionStorage (max 10 turns), minimal markdown renderer (bold/lists/links only). UI strings in a per-language `STRINGS` dict.
+- Loaded via IT-only conditionals in `base.liquid`; to add a language, extend `STRINGS` and widen the `{% if pageLang == 'it' %}` conditions.
+
+**Requires:** `ANTHROPIC_API_KEY` env var in the Netlify dashboard (Functions scope). Set a monthly spend limit in the Anthropic Console. Cost: ~$0.02/message warm cache, ~$0.21 cold (intro pricing).
+
+**Gotchas learned building it:**
+- `mobile.css` globally sets `input, textarea, button { width: 100% }` under 768px — the widget CSS carries explicit `width: auto` overrides.
+- `app.js` has a document-level click handler that resets `document.body.style.overflow` — scroll lock uses a class on `<html>` (`sosp-chat-lock`) instead of body style.
+- No `netlify` CLI installed locally; local testing uses a small Node harness that serves `_site/` and bridges `/.netlify/functions/chat` to the function module (ask Claude to regenerate it).
+
 ## Mobile Optimization
 
 ### Critical Fixes (mobile-fix.css)

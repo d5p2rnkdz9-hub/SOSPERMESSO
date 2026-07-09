@@ -1,0 +1,337 @@
+/* ===============================================
+   SOS PERMESSO - CHATBOT WIDGET
+   Namespaced under .sosp-chat-*. Uses existing CSS
+   variables (main.css). Grey shadows only.
+   =============================================== */
+
+.sosp-chat {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9990;
+  font-family: var(--font-primary);
+}
+
+/* Scroll lock while the panel is open on mobile (class set on <html>) */
+html.sosp-chat-lock,
+html.sosp-chat-lock body {
+  overflow: hidden;
+}
+
+/* Floating pill button */
+.sosp-chat-fab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.75rem 1.5rem;
+  background: var(--taxi-yellow);
+  color: var(--black);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  border: 2px solid var(--black);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  transition: background var(--transition-fast), box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.sosp-chat-fab-icon {
+  font-size: var(--font-size-xl);
+  line-height: 1;
+}
+
+.sosp-chat-fab:hover,
+.sosp-chat-fab:focus-visible {
+  background: var(--taxi-yellow-dark);
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-2px);
+}
+
+.sosp-chat-open .sosp-chat-fab {
+  display: none;
+}
+
+/* Panel — mobile first: near-fullscreen */
+.sosp-chat-panel {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  z-index: 9991;
+}
+
+.sosp-chat-panel[hidden] {
+  display: none;
+}
+
+/* Header */
+.sosp-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--taxi-yellow);
+  border-bottom: 2px solid var(--black);
+  flex-shrink: 0;
+}
+
+.sosp-chat-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  color: var(--black);
+}
+
+.sosp-chat-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.sosp-chat-reset,
+.sosp-chat-close {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  color: var(--black);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.sosp-chat-reset:hover,
+.sosp-chat-close:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.sosp-chat-close {
+  font-size: var(--font-size-lg);
+  line-height: 1;
+}
+
+/* Messages */
+.sosp-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--off-white);
+  overscroll-behavior: contain;
+}
+
+.sosp-chat-msg {
+  max-width: 85%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+  color: var(--black);
+  overflow-wrap: break-word;
+}
+
+.sosp-chat-msg p {
+  margin: 0 0 0.5rem;
+}
+
+.sosp-chat-msg p:last-child {
+  margin-bottom: 0;
+}
+
+.sosp-chat-msg ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.sosp-chat-msg li {
+  margin-bottom: 0.25rem;
+}
+
+.sosp-chat-msg a {
+  color: var(--black);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.sosp-chat-msg-assistant {
+  align-self: flex-start;
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  box-shadow: var(--shadow-sm);
+  border-bottom-left-radius: var(--radius-sm);
+}
+
+.sosp-chat-msg-user {
+  align-self: flex-end;
+  background: var(--taxi-yellow-light);
+  border-bottom-right-radius: var(--radius-sm);
+}
+
+.sosp-chat-msg-error {
+  align-self: center;
+  background: #fdecea;
+  color: #b3261e;
+  font-size: var(--font-size-xs);
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Typing indicator */
+.sosp-chat-dots {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  height: 1em;
+}
+
+.sosp-chat-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gray-medium);
+  animation: sosp-chat-blink 1.2s infinite ease-in-out;
+}
+
+.sosp-chat-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.sosp-chat-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes sosp-chat-blink {
+  0%,
+  60%,
+  100% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+/* Input row */
+.sosp-chat-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--gray-light);
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.sosp-chat-input {
+  flex: 1;
+  min-height: 44px;
+  max-height: 120px;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-primary);
+  font-size: 16px; /* prevents iOS zoom on focus */
+  line-height: 1.4;
+  color: var(--black);
+  background: var(--white);
+  border: 1px solid var(--gray-medium);
+  border-radius: var(--radius-md);
+  resize: none;
+}
+
+.sosp-chat-input:focus {
+  outline: 2px solid var(--taxi-yellow-dark);
+  outline-offset: 1px;
+  border-color: var(--taxi-yellow-dark);
+}
+
+.sosp-chat-send {
+  min-height: 44px;
+  padding: 0.65rem 1.1rem;
+  background: var(--taxi-yellow);
+  color: var(--black);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  border: 2px solid var(--black);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.sosp-chat-send:hover:not(:disabled) {
+  background: var(--taxi-yellow-dark);
+}
+
+.sosp-chat-send:disabled,
+.sosp-chat-input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Disclaimer + limit notes */
+.sosp-chat-note,
+.sosp-chat-limit {
+  margin: 0;
+  padding: 0.5rem 1rem 0.75rem;
+  font-size: var(--font-size-xs);
+  color: var(--gray-medium);
+  text-align: center;
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.sosp-chat-limit {
+  color: #b3261e;
+  background: var(--off-white);
+  padding-top: 0.75rem;
+}
+
+/* Guard against the global mobile rule in mobile.css
+   (`input, select, textarea, button { width: 100%; margin-bottom: ... }`) */
+.sosp-chat .sosp-chat-fab,
+.sosp-chat .sosp-chat-send,
+.sosp-chat .sosp-chat-reset,
+.sosp-chat .sosp-chat-close {
+  width: auto;
+  margin-bottom: 0;
+}
+
+.sosp-chat .sosp-chat-input {
+  width: auto;
+  min-width: 0;
+  margin-bottom: 0;
+  flex: 1 1 auto;
+}
+
+.sosp-chat .sosp-chat-send {
+  flex: 0 0 auto;
+}
+
+/* Desktop: anchored panel bottom-right */
+@media (min-width: 768px) {
+  .sosp-chat-panel {
+    inset: auto 16px 16px auto;
+    width: 380px;
+    height: min(600px, 80vh);
+    border: 2px solid var(--black);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+  }
+}
+
+@media print {
+  .sosp-chat {
+    display: none;
+  }
+}
