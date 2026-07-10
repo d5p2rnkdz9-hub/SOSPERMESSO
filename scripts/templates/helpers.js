@@ -43,7 +43,10 @@ function linkToDizionario(documentName, lang) {
   for (const term of terms) {
     // Case-insensitive search with word boundaries to avoid partial matches
     // e.g., "Minore" should not match inside "Minorenni"
-    const regex = new RegExp(`\\b(${escapeRegex(term)})\\b`, 'gi');
+    // Short all-caps acronyms (SUI, SAI, CAS, C3, ...) must match case-sensitively:
+    // lowercase "sui" is a preposition, "sai" a verb, "cas" a typo — not the acronym
+    const isAcronym = /^[A-Z0-9]{2,5}$/.test(term);
+    const regex = new RegExp(`\\b(${escapeRegex(term)})\\b`, isAcronym ? 'g' : 'gi');
     let match;
     while ((match = regex.exec(documentName)) !== null) {
       // Check if this position overlaps with an existing replacement

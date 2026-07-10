@@ -312,6 +312,30 @@ export default function(eleventyConfig) {
   // (documents-primo.liquid, documents-rinnovo.liquid).
   // All permit pages are generated via permits.liquid.
 
+  // Dedupe dizionario links: within each <section>, only the first occurrence
+  // of a term keeps its link — repeats are unwrapped to plain text. Common
+  // terms (questura, a carico, coniuge...) recur constantly in Q&A text and
+  // linking every occurrence is noise. Per-section (not per-page) so the
+  // document checklists keep their own links even when the Q&A above already
+  // mentioned the term.
+  eleventyConfig.addTransform("dedupeDizionarioLinks", function (content) {
+    if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) return content;
+    return content
+      .split(/(?=<section\b)/)
+      .map((chunk) => {
+        const seen = new Set();
+        return chunk.replace(
+          /<a href="[^"]*dizionario\.html#([^"]+)" class="doc-link">([^<]*)<\/a>/g,
+          (match, anchor, text) => {
+            if (seen.has(anchor)) return text;
+            seen.add(anchor);
+            return match;
+          }
+        );
+      })
+      .join("");
+  });
+
   // Register Liquid filters for template helpers
   // Used in document page templates for linking to dizionario, formatting, etc.
 
