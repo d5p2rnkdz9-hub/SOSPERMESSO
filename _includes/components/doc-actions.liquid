@@ -1,0 +1,21 @@
+<!-- Share / print actions for standalone document pages -->
+<div class="doc-actions no-print">
+  <button type="button" class="btn btn-outline btn-sm" data-doc-share>Condividi</button>
+  <button type="button" class="btn btn-outline btn-sm" data-doc-print>Stampa o salva PDF</button>
+</div>
+<script>
+(function() {
+  var shareBtn = document.querySelector('[data-doc-share]');
+  var printBtn = document.querySelector('[data-doc-print]');
+  if (printBtn) printBtn.addEventListener('click', function() { window.print(); });
+  if (shareBtn) shareBtn.addEventListener('click', function() {
+    var url = window.location.href.split('#')[0];
+    var title = document.title;
+    if (navigator.share) {
+      navigator.share({ title: title, url: url }).catch(function() {});
+    } else {
+      window.open('https://wa.me/?text=' + encodeURIComponent(title + '\n' + url), '_blank', 'noopener');
+    }
+  });
+})();
+</script>

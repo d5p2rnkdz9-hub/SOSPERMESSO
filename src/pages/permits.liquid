@@ -144,6 +144,26 @@ eleventyExcludeFromCollections: true
 
 {% else %}
 
+  {% if permit.primoDocuments.size > 0 or permit.rinnovoDocuments.size > 0 %}
+  <!-- DOCUMENTS CTA -->
+  <section class="section" style="padding: 1.5rem 0 0;">
+    <div class="container" style="max-width: 700px;">
+      <div class="card" style="text-align: center;">
+        <h2 style="margin-bottom: 0.5rem;">Che documenti ti servono?</h2>
+        <p style="color: var(--gray-medium); margin-bottom: 1rem;">Apri la scheda con la lista completa: puoi spuntarla, condividerla o stamparla.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
+          {% if permit.primoDocuments.size > 0 %}
+          <a href="documenti-{{ permit.slug }}-primo.html" class="btn btn-primary">Prima richiesta</a>
+          {% endif %}
+          {% if permit.rinnovoDocuments.size > 0 %}
+          <a href="documenti-{{ permit.slug }}-rinnovo.html" class="btn btn-primary">Rinnovo</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
   <!-- SECTION: COS'È -->
   <section id="cose" class="section">
     <div class="container" style="max-width: 900px;">

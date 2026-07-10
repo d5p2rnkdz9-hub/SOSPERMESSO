@@ -576,3 +576,27 @@
     size: A4;
   }
 }
+
+/* ============================================
+   DOC ACTIONS (share / print buttons)
+   ============================================ */
+.doc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* mobile.css sets button { width: 100% } under 768px — keep these inline */
+.doc-actions .btn {
+  width: auto;
+}
+
+@media print {
+  .no-print,
+  .report-bar,
+  .sosp-chat {
+    display: none !important;
+  }
+}
