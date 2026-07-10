@@ -13,8 +13,8 @@
   const MAX_USER_TURNS = 10;
   const MAX_INPUT_CHARS = 1000;
 
-  // UI strings per language — extend this dict (and the base.liquid condition)
-  // to roll the widget out to other languages.
+  // UI strings per language. Registers match the site's translations:
+  // FR vous, ES tú, TR siz, RU вы, ZH 你, UR آپ, FA شما, BN আপনি.
   const STRINGS = {
     it: {
       button: 'Fai una domanda',
@@ -31,6 +31,163 @@
       limitReached:
         'Hai raggiunto il limite di messaggi per questa conversazione. Premi "Nuova conversazione" per ricominciare.',
       connectionError: 'Errore di connessione. Controlla la rete e riprova.',
+    },
+    en: {
+      button: 'Ask a question',
+      title: 'SOS Permesso Assistant',
+      greeting:
+        "Hi! I'm the SOS Permesso assistant. I can answer your questions about residence permits in Italy. How can I help you?",
+      disclaimer:
+        'Answers are generated automatically: they are not legal advice. Always double-check important information.',
+      placeholder: 'Write your question…',
+      send: 'Send',
+      sending: 'Sending…',
+      reset: 'New conversation',
+      close: 'Close',
+      limitReached:
+        'You have reached the message limit for this conversation. Press "New conversation" to start again.',
+      connectionError: 'Connection error. Check your internet and try again.',
+    },
+    fr: {
+      button: 'Poser une question',
+      title: 'Assistant SOS Permesso',
+      greeting:
+        "Bonjour ! Je suis l'assistant de SOS Permesso. Je peux répondre à vos questions sur les permis de séjour en Italie. Comment puis-je vous aider ?",
+      disclaimer:
+        "Réponses générées automatiquement : ce n'est pas un conseil juridique. Vérifiez toujours les informations importantes.",
+      placeholder: 'Écrivez votre question…',
+      send: 'Envoyer',
+      sending: 'Envoi…',
+      reset: 'Nouvelle conversation',
+      close: 'Fermer',
+      limitReached:
+        'Vous avez atteint la limite de messages pour cette conversation. Appuyez sur « Nouvelle conversation » pour recommencer.',
+      connectionError: 'Erreur de connexion. Vérifiez votre réseau et réessayez.',
+    },
+    es: {
+      button: 'Haz una pregunta',
+      title: 'Asistente SOS Permesso',
+      greeting:
+        '¡Hola! Soy el asistente de SOS Permesso. Puedo responder a tus preguntas sobre los permisos de residencia en Italia. ¿Cómo puedo ayudarte?',
+      disclaimer:
+        'Respuestas generadas automáticamente: no son un consejo legal. Verifica siempre la información importante.',
+      placeholder: 'Escribe tu pregunta…',
+      send: 'Enviar',
+      sending: 'Enviando…',
+      reset: 'Nueva conversación',
+      close: 'Cerrar',
+      limitReached:
+        'Has alcanzado el límite de mensajes de esta conversación. Pulsa "Nueva conversación" para empezar de nuevo.',
+      connectionError: 'Error de conexión. Comprueba tu red e inténtalo de nuevo.',
+    },
+    tr: {
+      button: 'Soru sorun',
+      title: 'SOS Permesso Asistanı',
+      greeting:
+        "Merhaba! Ben SOS Permesso asistanıyım. İtalya'daki oturma izinleriyle ilgili sorularınızı yanıtlayabilirim. Size nasıl yardımcı olabilirim?",
+      disclaimer:
+        'Yanıtlar otomatik olarak oluşturulur: hukuki danışmanlık değildir. Önemli bilgileri her zaman kontrol edin.',
+      placeholder: 'Sorunuzu yazın…',
+      send: 'Gönder',
+      sending: 'Gönderiliyor…',
+      reset: 'Yeni konuşma',
+      close: 'Kapat',
+      limitReached:
+        'Bu konuşma için mesaj sınırına ulaştınız. Yeniden başlamak için "Yeni konuşma"ya basın.',
+      connectionError: 'Bağlantı hatası. İnternetinizi kontrol edip tekrar deneyin.',
+    },
+    bn: {
+      button: 'প্রশ্ন করুন',
+      title: 'SOS Permesso সহায়ক',
+      greeting:
+        'হ্যালো! আমি SOS Permesso-র সহায়ক। ইতালির বসবাসের অনুমতি (permesso di soggiorno) নিয়ে আপনার প্রশ্নের উত্তর দিতে পারি। আপনাকে কীভাবে সাহায্য করতে পারি?',
+      disclaimer:
+        'উত্তরগুলি স্বয়ংক্রিয়ভাবে তৈরি: এগুলি আইনি পরামর্শ নয়। গুরুত্বপূর্ণ তথ্য সবসময় যাচাই করুন।',
+      placeholder: 'আপনার প্রশ্ন লিখুন…',
+      send: 'পাঠান',
+      sending: 'পাঠানো হচ্ছে…',
+      reset: 'নতুন কথোপকথন',
+      close: 'বন্ধ করুন',
+      limitReached:
+        'এই কথোপকথনের বার্তার সীমায় পৌঁছে গেছেন। আবার শুরু করতে "নতুন কথোপকথন" চাপুন।',
+      connectionError: 'সংযোগে সমস্যা। ইন্টারনেট পরীক্ষা করে আবার চেষ্টা করুন।',
+    },
+    ru: {
+      button: 'Задать вопрос',
+      title: 'Ассистент SOS Permesso',
+      greeting:
+        'Здравствуйте! Я ассистент SOS Permesso. Могу ответить на ваши вопросы о видах на жительство в Италии. Чем могу помочь?',
+      disclaimer:
+        'Ответы создаются автоматически: это не юридическая консультация. Всегда проверяйте важную информацию.',
+      placeholder: 'Напишите ваш вопрос…',
+      send: 'Отправить',
+      sending: 'Отправка…',
+      reset: 'Новый разговор',
+      close: 'Закрыть',
+      limitReached:
+        'Вы достигли лимита сообщений в этом разговоре. Нажмите «Новый разговор», чтобы начать заново.',
+      connectionError: 'Ошибка соединения. Проверьте интернет и попробуйте ещё раз.',
+    },
+    ar: {
+      button: 'اطرح سؤالاً',
+      title: 'مساعد SOS Permesso',
+      greeting:
+        'مرحباً! أنا مساعد SOS Permesso. يمكنني الإجابة عن أسئلتك حول تصاريح الإقامة في إيطاليا. كيف يمكنني مساعدتك؟',
+      disclaimer:
+        'الإجابات مُنشأة تلقائياً: وهي ليست استشارة قانونية. تحقق دائماً من المعلومات المهمة.',
+      placeholder: 'اكتب سؤالك…',
+      send: 'إرسال',
+      sending: 'جارٍ الإرسال…',
+      reset: 'محادثة جديدة',
+      close: 'إغلاق',
+      limitReached:
+        'لقد وصلت إلى الحد الأقصى للرسائل في هذه المحادثة. اضغط على "محادثة جديدة" للبدء من جديد.',
+      connectionError: 'خطأ في الاتصال. تحقق من الإنترنت وحاول مرة أخرى.',
+    },
+    ur: {
+      button: 'سوال پوچھیں',
+      title: 'SOS Permesso اسسٹنٹ',
+      greeting:
+        'السلام علیکم! میں SOS Permesso کا اسسٹنٹ ہوں۔ اٹلی میں رہائشی اجازت ناموں (permesso di soggiorno) کے بارے میں آپ کے سوالات کا جواب دے سکتا ہوں۔ میں آپ کی کیا مدد کر سکتا ہوں؟',
+      disclaimer:
+        'جوابات خودکار طور پر تیار ہوتے ہیں: یہ قانونی مشورہ نہیں ہیں۔ اہم معلومات کی ہمیشہ تصدیق کریں۔',
+      placeholder: 'اپنا سوال لکھیں…',
+      send: 'بھیجیں',
+      sending: 'بھیجا جا رہا ہے…',
+      reset: 'نئی گفتگو',
+      close: 'بند کریں',
+      limitReached:
+        'آپ اس گفتگو میں پیغامات کی حد تک پہنچ گئے ہیں۔ دوبارہ شروع کرنے کے لیے "نئی گفتگو" دبائیں۔',
+      connectionError: 'کنکشن میں خرابی۔ انٹرنیٹ چیک کر کے دوبارہ کوشش کریں۔',
+    },
+    fa: {
+      button: 'سؤال بپرسید',
+      title: 'دستیار SOS Permesso',
+      greeting:
+        'سلام! من دستیار SOS Permesso هستم. می‌توانم به سؤالات شما درباره اجازه اقامت در ایتالیا پاسخ بدهم. چطور می‌توانم کمکتان کنم؟',
+      disclaimer:
+        'پاسخ‌ها به‌صورت خودکار تولید می‌شوند: مشاوره حقوقی نیستند. اطلاعات مهم را همیشه بررسی کنید.',
+      placeholder: 'سؤال خود را بنویسید…',
+      send: 'ارسال',
+      sending: 'در حال ارسال…',
+      reset: 'گفتگوی جدید',
+      close: 'بستن',
+      limitReached:
+        'به حد مجاز پیام‌ها در این گفتگو رسیده‌اید. برای شروع دوباره «گفتگوی جدید» را بزنید.',
+      connectionError: 'خطای اتصال. اینترنت را بررسی کنید و دوباره تلاش کنید.',
+    },
+    zh: {
+      button: '提问',
+      title: 'SOS Permesso 助手',
+      greeting: '你好！我是 SOS Permesso 的助手，可以回答你关于意大利居留许可的问题。有什么可以帮你？',
+      disclaimer: '回答由人工智能自动生成，不构成法律意见。重要信息请务必核实。',
+      placeholder: '请输入你的问题…',
+      send: '发送',
+      sending: '发送中…',
+      reset: '新对话',
+      close: '关闭',
+      limitReached: '本次对话已达到消息数量上限。请点击"新对话"重新开始。',
+      connectionError: '连接出错。请检查网络后重试。',
     },
   };
 

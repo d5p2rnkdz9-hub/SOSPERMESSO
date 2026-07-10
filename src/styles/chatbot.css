@@ -12,6 +12,12 @@
   font-family: var(--font-primary);
 }
 
+/* RTL pages (ar/ur/fa): widget anchors bottom-left */
+[dir='rtl'] .sosp-chat {
+  right: auto;
+  left: 16px;
+}
+
 /* Scroll lock while the panel is open on mobile (class set on <html>) */
 html.sosp-chat-lock,
 html.sosp-chat-lock body {
@@ -317,7 +323,7 @@ html.sosp-chat-lock body {
   flex: 0 0 auto;
 }
 
-/* Desktop: anchored panel bottom-right */
+/* Desktop: anchored panel bottom-right (bottom-left on RTL pages) */
 @media (min-width: 768px) {
   .sosp-chat-panel {
     inset: auto 16px 16px auto;
@@ -327,6 +333,10 @@ html.sosp-chat-lock body {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
     overflow: hidden;
+  }
+
+  [dir='rtl'] .sosp-chat-panel {
+    inset: auto auto 16px 16px;
   }
 }
 
