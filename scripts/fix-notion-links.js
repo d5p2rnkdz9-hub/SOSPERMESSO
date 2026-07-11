@@ -24,6 +24,55 @@ const NOTION_LINK_OVERRIDES = {
   '2187355e7f7f81309acaea84e0903cf8': null,  // anchor fragment
 };
 
+// "Che documenti servono?" Q&A sections in Notion just link the standalone
+// document pages — with pre-flattening slugs that 404 today. The permit
+// template now has its own documents CTA + inline checklists, so these
+// sections are dropped at build time in every language (they still exist in
+// the Notion source and its translations). Matched by exact question text.
+const DOC_SECTION_QUESTIONS = new Set([
+  'che documenti servono?',              // it (left untranslated in some ru pages)
+  'what documents are needed?',          // en
+  'quels documents sont nécessaires ?',  // fr
+  '¿qué documentos se necesitan?',       // es
+  'hangi belgeler gerekli?',             // tr
+  'কী কী কাগজপত্র লাগবে?',                    // bn
+  'چه مدارکی لازم است؟',                   // fa
+  'کون سی دستاویزات درکار ہیں؟',              // ur
+  '需要什么文件？',                        // zh
+]);
+
+// NOTE: exact match on purpose — "📋 Che documenti servono?" (minore-eta-per-msna)
+// is a real document LIST with info not yet in the permit's checklist fields,
+// not the link box; it must survive until that content moves to Notion's Doc fields.
+function isDocumentsSection(question) {
+  const normalized = (question || '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+  return DOC_SECTION_QUESTIONS.has(normalized);
+}
+
+// Old document-page slugs still referenced by Notion Q&A content (written
+// before the flat slug scheme) and by translations made from it. Rewritten
+// to the current slugs at build time so the links stop 404ing.
+const STALE_DOC_SLUGS = {
+  'lavoro-subordinato-a-seguito-di-ingresso-per-flussi': 'lavoro-subordinato-dopo-ingresso-con-visto-per-flussi',
+  'cure-mediche-art-19-padre': 'cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia',
+  'cure-mediche-art-19-donna-in-stato-di-gravidanza': 'cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi',
+  'cure-mediche-dopo-ingresso-con-visto-art-36': 'cure-mediche-dopo-ingresso-con-visto-per-cure-mediche',
+  'apolidia-art-17-d-p-r-n-572-93': 'apolidia',
+  'attivita-sportiva-art-27': 'attivita-sportiva',
+  'ricerca-scientifica-art-27ter': 'ricerca-scientifica',
+  'protezione-sociale-vittime-di-violenza-domestica-art-18-bis': 'protezione-sociale-vittime-di-violenza-domestica',
+};
+
+function fixStaleDocLinks(html) {
+  if (!html || !html.includes('documenti-')) return html;
+  return html.replace(/documenti-([a-z0-9-]+)-(primo|rinnovo)\.html/g, (match, slug, type) =>
+    STALE_DOC_SLUGS[slug] ? `documenti-${STALE_DOC_SLUGS[slug]}-${type}.html` : match
+  );
+}
+
 let notionIdToSlug = {};
 
 /**
@@ -85,11 +134,13 @@ function fixLinksInPermits(permits, langPrefix = '') {
   buildMap(permits);
   return permits.map(p => ({
     ...p,
-    sections: (p.sections || []).map(s => ({
-      ...s,
-      content: fixLinksInHtml(s.content, langPrefix),
-    })),
+    sections: (p.sections || [])
+      .filter(s => !isDocumentsSection(s.question))
+      .map(s => ({
+        ...s,
+        content: fixStaleDocLinks(fixLinksInHtml(s.content, langPrefix)),
+      })),
   }));
 }
 
-module.exports = { buildMap, fixHref, fixLinksInHtml, fixLinksInPermits };
+module.exports = { buildMap, fixHref, fixLinksInHtml, fixLinksInPermits, isDocumentsSection };

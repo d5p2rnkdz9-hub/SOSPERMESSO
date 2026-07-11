@@ -12,6 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
+const { isDocumentsSection } = require('./fix-notion-links');
 
 const ROOT = path.join(__dirname, '..');
 const CACHE_FILE = path.join(ROOT, '_cache', 'permits-it.json');
@@ -60,6 +61,7 @@ function buildPermitBlock(permit) {
   lines.push('');
 
   for (const section of permit.sections || []) {
+    if (isDocumentsSection(section.question)) continue;
     const text = htmlToText(section.content);
     if (!text) continue;
     lines.push(`### ${section.question}`);

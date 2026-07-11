@@ -37,16 +37,12 @@ eleventyExcludeFromCollections: true
         <h1 class="permit-title-text">Permesso per {{ permit.tipo }}</h1>
       </div>
       {% unless permit.isPlaceholder == true %}
+      {%- comment -%} Prassi shortcut lives in the documents CTA card; keep the badge only when that card doesn't render (permits with no document lists) {%- endcomment -%}
+      {% if permit.primoDocuments.size == 0 and permit.rinnovoDocuments.size == 0 %}
       <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; padding: 0.5rem 0 0.75rem;">
-        <a href="#cose" class="tab-badge" onclick="return scrollToSection('cose')">Info</a>
-        {% if permit.primoDocuments.size > 0 %}
-        <a href="#primo" class="tab-badge tab-badge-primo" onclick="return scrollToSection('primo')">Doc primo rilascio</a>
-        {% endif %}
-        {% if permit.rinnovoDocuments.size > 0 %}
-        <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Doc rinnovo</a>
-        {% endif %}
         <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 Prassi locali</a>
       </div>
+      {% endif %}
       {% endunless %}
     </div>
   </div>
@@ -158,6 +154,7 @@ eleventyExcludeFromCollections: true
           {% if permit.rinnovoDocuments.size > 0 %}
           <a href="documenti-{{ permit.slug }}-rinnovo.html" class="btn btn-primary">Rinnovo</a>
           {% endif %}
+          <a href="#prassi-locali" class="btn btn-primary" onclick="return scrollToSection('prassi-locali')">Prassi locali</a>
         </div>
       </div>
     </div>
