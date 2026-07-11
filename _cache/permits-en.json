@@ -1,5 +1,83 @@
 [
   {
+    "id": "30b7355e-7f7f-8161-93ec-f544bdeab146",
+    "slug": "motivi-religiosi",
+    "tipo": "Religious reasons",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "What is this permit?",
+        "content": "<p>The residence permit for religious reasons is intended for foreign citizens who carry out activities related to a religious denomination in Italy. This is a permit for <strong>religious personnel, missionaries, ministers of worship</strong> and people sent to Italy by recognized religious organizations.</p>",
+        "index": 0
+      },
+      {
+        "question": "Who can apply for it?",
+        "content": "<p>The following people can apply:</p>\n<ul><li>Has been sent to Italy by a <strong>religious organization</strong> recognized</li><li>Has <strong>documented religious assignment</strong> (for example: priest, nun, missionary, pastor)</li><li>Has obtained the entry visa for religious reasons</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "How/where do you apply?",
+        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the dedicated pages:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documents for first issue</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documents for renewal</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "What rights does it give me? What do I have access to?",
+        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Carry out your religious activity</strong> in Italy</li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li><li>Apply for residency</li></ul>\n<p>⚠️ <strong>Attention:</strong> with this permit <strong>you CANNOT work</strong> outside the religious activity for which it was issued.</p>",
+        "index": 3
+      },
+      {
+        "question": "How long does this permit last?",
+        "content": "<p>The duration depends on the religious assignment and is indicated in the permit. It usually corresponds to the duration of the mission or assignment.</p>",
+        "index": 4
+      },
+      {
+        "question": "When does it expire and can I renew it?",
+        "content": "<p>Yes, you can renew it if the religious organization confirms that your assignment in Italy continues. For renewal, you need a new declaration from the religious organization.</p>",
+        "index": 5
+      },
+      {
+        "question": "Can I convert it to another permit?",
+        "content": "<p>Conversion to other residence permits is possible in specific cases:</p>\n<ul><li>Permit for employed work (if you obtain an employment contract and quotas are available)</li><li>Permit for family reasons (if you have a spouse or family member who is Italian or a foreigner with a regular permit)</li><li>Permit for study (if you enrol in a training programme)</li><li>EU permit for long-term residents (if you meet the income and residence requirements)</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "How much does it cost?",
+        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>80,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "revenue stamp of 16€",
+      "4 Photos",
+      "Health insurance policy or voluntary enrollment in NHS (SSN)",
+      "postal payment slip for 80.46€",
+      "copy of religious entity declaration certifying the nature of the assignment",
+      "Indication of means of support (board and lodging)",
+      "Copy of passport (not expired)",
+      "Hospitality declaration or rental contract or residence certificate"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "revenue stamp of 16€",
+      "Insurance policy or NHS (SSN) registration",
+      "Indication of means of support (board and lodging)",
+      "4 passport photos",
+      "Postal payment slip for 80.46€",
+      "Copy of passport (not expired)",
+      "copy of religious entity declaration certifying the nature of the assignment",
+      "Hospitality declaration or rental contract or residence certificate"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
     "id": "30b7355e-7f7f-8196-b687-da2a33ec211c",
     "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
     "tipo": "EU permit for long-term residents (\"Residence card\")",
@@ -115,34 +193,14 @@
         "index": 2
       },
       {
-        "question": "What documents are needed?",
-        "content": "<p>For the complete list of documents, go to the page:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-protezione-sociale-vittime-di-violenza-domestica-art-18-bis-primo.html\">What documents to bring — first issue</a></li><li><a href=\"https://www.sospermesso.it/documenti-protezione-sociale-vittime-di-violenza-domestica-art-18-bis-rinnovo.html\">What documents to bring — renewal</a></li></ul>",
-        "index": 3
-      },
-      {
         "question": "What rights does it give me?",
         "content": "<ul><li>✅ You can <strong>work</strong> (employed work or self-employment)</li><li>✅ You can <strong>study</strong> and enroll in courses and schools</li><li>✅ You can register with <strong>employment centers</strong></li><li>✅ You can access <strong>welfare services</strong></li></ul>\n<p>This permit is very useful also because it allows you to remain in Italy during the proceedings against the alleged abuser, so you can be an active participant during the process.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "How long does this permit last?",
         "content": "<p>It lasts <strong>1 year</strong> and is renewable.</p>",
-        "index": 5
-      },
-      {
-        "question": "Can I convert it to another permit?",
-        "content": "<p>Yes, it can be converted to a residence permit for <strong>work</strong> or for <strong>study</strong>.</p>",
-        "index": 6
-      },
-      {
-        "question": "Can the permit be revoked?",
-        "content": "<p>Yes, if the victim has behaviors contrary to the purposes of the permit or if the conditions that justified its issuance are no longer met.</p>",
-        "index": 7
-      },
-      {
-        "question": "If I have the permit, can I be punished for irregular stay?",
-        "content": "<p>No. If you have obtained this permit you cannot be convicted for irregular entry or stay in Italy.</p>",
-        "index": 8
+        "index": 4
       }
     ],
     "isPlaceholder": false,
@@ -759,39 +817,34 @@
     "emoji": "👨‍👩‍👧‍👦",
     "sections": [
       {
-        "question": "What is this residence card?",
-        "content": "<p>It is a residence permit given to non-EU family members of a &quot;dynamic&quot; Italian citizen (i.e., who has lived permanently in another European Union country, typically for work, and who now lives in Italy.</p>",
-        "index": 0
-      },
-      {
         "question": "What is this card?",
         "content": "<p>It is a residence permit given to non-EU family members of a &quot;dynamic&quot; Italian citizen. A &quot;dynamic&quot; Italian citizen is an Italian citizen who has lived or worked in another European Union country other than Italy.</p>",
-        "index": 1
+        "index": 0
       },
       {
         "question": "How long does this card last?",
         "content": "<p>It lasts 5 years and can be renewed. After the first renewal, it becomes permanent.</p>",
-        "index": 2
+        "index": 1
       },
       {
         "question": "Who can apply for this card?",
         "content": "<p>You can apply if you are:</p>\n<ul><li>Wife/husband or civil union partner of the Italian citizen</li><li>Partner who has signed a cohabitation contract, even without marriage or civil union</li><li>Son/daughter up to 21 years old of the Italian citizen or their spouse</li><li>Son/daughter over 21 years old of the &quot;dynamic&quot; Italian citizen or their spouse, but <strong>dependent</strong> (you must show that you live as a dependent: documents from your country of origin, money sent to you from abroad, some Police Headquarters (Questura) also ask for proof that you are a tax dependent of the Italian family member)</li><li>Mother/father of the &quot;dynamic&quot; Italian citizen or their spouse, but <strong>dependent</strong> (you must show that you live as a dependent: documents from your country of origin, money sent to you from abroad, some Police Headquarters (Questura) also ask for proof that you are a tax dependent of the Italian family member)</li><li>Grandmother/grandfather of the &quot;dynamic&quot; Italian citizen or their spouse</li><li>Grandchild (child of children) of the &quot;dynamic&quot; Italian citizen or their spouse up to 21 years old</li><li>Grandchild (child of children) of the &quot;dynamic&quot; Italian citizen or their spouse, over 21 years old and <strong>dependent</strong> (you must show that you live as a dependent: documents from your country of origin, money sent to you from abroad, some Police Headquarters (Questura) also ask for proof that you are a tax dependent of the Italian family member)</li></ul>",
-        "index": 3
+        "index": 2
       },
       {
         "question": "Where do you apply for this card?",
         "content": "<p>You must submit the application to the Police Headquarters (Questura) of the area where you live.</p>\n<p>You must apply within 3 months of entering Italy. If you are already in Italy with another type of visa (tourism, family, etc.), you can change it to a residence card if you meet all the requirements.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "What documents do I need to apply for it?",
         "content": "<ul><li>Valid passport (page with your personal details and expiry dates, any visas and entry/exit stamps)</li><li>Your old residence permit (if you have one)</li><li>Identity document of the Italian citizen</li><li>Hospitality declaration</li><li>Family status certificate of the Italian citizen (issued by the municipality where they live)</li><li>Documents showing the degree of relationship (if they come from abroad they must be translated and legalized/apostilled)</li><li>Documents showing the Italian citizen&#039;s income (Cu/730/Unico) <em>(when it is required that the non-EU family member be dependent on the dynamic Italian family member)</em></li><li>Documents showing that you live as a dependent <em>(when it is required that the non-EU family member be dependent on the dynamic Italian family member)</em></li><li><strong>Documents showing that the Italian citizen has lived in another EU country</strong> (according to art. 23 D.lvo 30 of 2007)</li></ul>",
-        "index": 5
+        "index": 4
       },
       {
         "question": "What can I do with this residence card?",
         "content": "<p>With this card you can:</p>\n<ul><li>Work with a regular contract (self-employment or employed work)</li><li>Enroll in school, a professional course, or university</li><li>Register with the National Health Service (NHS-SSN) and have a general practitioner</li><li>Travel to Schengen countries for up to 90 days every 6 months, if you have a valid passport</li><li>After 5 years you can apply for the permanent residence card</li></ul>",
-        "index": 6
+        "index": 5
       }
     ],
     "isPlaceholder": false,
@@ -1717,79 +1770,6 @@
     "costBollettinoAltPrimo": null,
     "costMarcaBolloPrimo": null,
     "rinnovoDocuments": [],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-8161-93ec-f544bdeab146",
-    "slug": "motivi-religiosi",
-    "tipo": "Religious reasons",
-    "emoji": "📄",
-    "sections": [
-      {
-        "question": "What is this permit?",
-        "content": "<p>The residence permit for religious reasons is intended for foreign citizens who carry out activities related to a religious denomination in Italy. This is a permit for <strong>religious personnel, missionaries, ministers of worship</strong> and people sent to Italy by recognized religious organizations.</p>",
-        "index": 0
-      },
-      {
-        "question": "Who can apply for it?",
-        "content": "<p>The following people can apply:</p>\n<ul><li>Has been sent to Italy by a <strong>religious organization</strong> recognized</li><li>Has <strong>documented religious assignment</strong> (for example: priest, nun, missionary, pastor)</li><li>Has obtained the entry visa for religious reasons</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "How/where do you apply?",
-        "content": "<p>You apply through the <strong>postal KIT</strong> available at authorized post offices.</p>\n<p>Within <strong>8 days</strong> from entering Italy, you must submit the application.</p>\n<p>To know which documents to bring, check the dedicated pages:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documents for first issue</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documents for renewal</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "What rights does it give me? What do I have access to?",
-        "content": "<p>With this permit you can:</p>\n<ul><li><strong>Carry out your religious activity</strong> in Italy</li><li>Register with the National Health Service (NHS (SSN)) or purchase private health insurance</li><li>Apply for residency</li></ul>\n<p>⚠️ <strong>Attention:</strong> with this permit <strong>you CANNOT work</strong> outside the religious activity for which it was issued.</p>",
-        "index": 3
-      },
-      {
-        "question": "How long does this permit last?",
-        "content": "<p>The duration depends on the religious assignment and is indicated in the permit. It usually corresponds to the duration of the mission or assignment.</p>",
-        "index": 4
-      },
-      {
-        "question": "When does it expire and can I renew it?",
-        "content": "<p>Yes, you can renew it if the religious organization confirms that your assignment in Italy continues. For renewal, you need a new declaration from the religious organization.</p>",
-        "index": 5
-      },
-      {
-        "question": "How much does it cost?",
-        "content": "<p>For the application you must pay:</p>\n<ul><li>A postal payment slip of <strong>80,46 €</strong></li><li>A revenue stamp of <strong>16 €</strong></li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "revenue stamp of 16€",
-      "4 Photos",
-      "Health insurance policy or voluntary enrollment in NHS (SSN)",
-      "postal payment slip for 80.46€",
-      "copy of religious entity declaration certifying the nature of the assignment",
-      "Indication of means of support (board and lodging)",
-      "Copy of passport (not expired)",
-      "Hospitality declaration or rental contract or residence certificate"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "revenue stamp of 16€",
-      "Insurance policy or NHS (SSN) registration",
-      "Indication of means of support (board and lodging)",
-      "4 passport photos",
-      "Postal payment slip for 80.46€",
-      "Copy of passport (not expired)",
-      "copy of religious entity declaration certifying the nature of the assignment",
-      "Hospitality declaration or rental contract or residence certificate"
-    ],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,

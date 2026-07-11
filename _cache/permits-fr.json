@@ -1,5 +1,83 @@
 [
   {
+    "id": "30b7355e-7f7f-81d3-95aa-c12521e46ef9",
+    "slug": "motivi-religiosi",
+    "tipo": "Motifs religieux",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "Qu'est-ce que ce titre de séjour ?",
+        "content": "<p>Le titre de séjour pour motifs religieux est destiné aux citoyens étrangers qui exercent des activités liées à une confession religieuse en Italie. Il s&#039;agit d&#039;un titre de séjour pour <strong>religieux, missionnaires, ministres du culte</strong> et personnes envoyées en Italie par des organismes religieux reconnus.</p>",
+        "index": 0
+      },
+      {
+        "question": "Qui peut en faire la demandez ?",
+        "content": "<p>Peuvent en faire la demandez les personnes qui :</p>\n<ul><li>Il a été envoyé en Italie par un <strong>organisme religieux</strong> reconnu</li><li>Dispose d&#039;un <strong>mission religieuse documentée</strong> (par exemple : prêtre, religieuse, missionnaire, pasteur)</li><li>Il a obtenu le visa d&#039;entrée pour motifs religieux</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Comment/où faire la demandez ?",
+        "content": "<p>La demandez se fait via le <strong>kit postal</strong> disponible dans les bureaux de poste habilités.</p>\n<p>Dans un délai de <strong>8 jours</strong> à partir de l&#039;entrée en Italie, vous devez présenter la demande.</p>\n<p>Pour savoir quels documents apporter, consultez les pages dédiées :</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documents pour la première délivrance</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documents pour le renouvellement</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Quels droits cela me donne-t-il ? À quoi ai-je accès ?",
+        "content": "<p>Avec ce titre de séjour vous pouvez :</p>\n<ul><li><strong>Exercer votre activité religieuse</strong> en Italie</li><li>T&#039;inscrire au Service national de santé (SSN) ou souscrire une police d&#039;assurance santé privée</li><li>Demander la résidence</li></ul>\n<p>⚠️ <strong>Attention :</strong> avec ce titre de séjour <strong>tu NE pouvez PAS travailler</strong> en dehors de l&#039;activité religieuse pour laquelle il a été délivré.</p>",
+        "index": 3
+      },
+      {
+        "question": "Combien de temps dure ce titre de séjour ?",
+        "content": "<p>La durée dépend de la mission religieuse et est indiquée dans le titre de séjour. Elle correspond généralement à la durée de la mission ou de la fonction.</p>",
+        "index": 4
+      },
+      {
+        "question": "Quand expire-t-il, puis-je le renouveler ?",
+        "content": "<p>Oui, vous pouvez le renouveler si l&#039;organisme religieux confirme que votre mission en Italie se poursuit. Pour le renouvellement, il faut une nouvelle déclaration de l&#039;organisme religieux.</p>",
+        "index": 5
+      },
+      {
+        "question": "Puis-je le convertir en un autre titre de séjour ?",
+        "content": "<p>La conversion en d&#039;autres titres de séjour est possible dans des cas spécifiques :</p>\n<ul><li>Titre de séjour pour travail salarié (si vous obtenez un contrat de travail et que des quotas sont disponibles)</li><li>Titre de séjour pour motifs familiaux (si vous avez un conjoint ou un membre de famille italien ou étranger en situation régulière)</li><li>Titre de séjour pour études (si vous vous inscrivez à un parcours de formation)</li><li>Titre de séjour UE pour résidents de longue durée (si vous remplissez les conditions de revenu et de résidence)</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "Combien cela coûte-t-il ?",
+        "content": "<p>Pour la demandez vous devez payer :</p>\n<ul><li>Un bordereau de paiement postal de <strong>80,46 €</strong></li><li>Un timbre fiscal de <strong>16 €</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "timbre fiscal de 16€",
+      "4 Photos",
+      "Police d'assurance couverture sanitaire ou inscription volontaire au SSN (Sécurité sociale italienne)",
+      "bordereau de paiement postal de 80.46€",
+      "copie de la déclaration de l'organisme religieux attestant la nature de la fonction",
+      "Indication des moyens de subsistance (nourriture et logement)",
+      "Copie du passeport (non expiré)",
+      "Déclaration d'hébergement ou contrat de location ou certificat de résidence"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "timbre fiscal de 16€",
+      "Police d'assurance ou inscription au SSN (Sécurité sociale italienne)",
+      "Indication des moyens de subsistance (nourriture et logement)",
+      "4 photos d'identité",
+      "Bordereau de paiement postal de 80.46€",
+      "Copie du passeport (non expiré)",
+      "copie de la déclaration de l'organisme religieux attestant la nature de la fonction",
+      "Déclaration d'hébergement ou contrat de location ou certificat de résidence"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
     "id": "30b7355e-7f7f-819a-992e-d750cb2d960f",
     "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
     "tipo": "Titre de séjour UE pour résidents de longue durée (\"Carte de séjour\")",
@@ -115,34 +193,14 @@
         "index": 2
       },
       {
-        "question": "Quels documents sont nécessaires ?",
-        "content": "<p>Pour la liste complète des documents, rendez-vous sur la page :</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-protezione-sociale-vittime-di-violenza-domestica-art-18-bis-primo.html\">Quels documents j&#039;apporte — première délivrance</a></li><li><a href=\"https://www.sospermesso.it/documenti-protezione-sociale-vittime-di-violenza-domestica-art-18-bis-rinnovo.html\">Quels documents j&#039;apporte — renouvellement</a></li></ul>",
-        "index": 3
-      },
-      {
         "question": "Quels droits cela me donne-t-il ?",
         "content": "<ul><li>✅ Vous pouvez <strong>travailler</strong> (travail salarié ou indépendant)</li><li>✅ Vous pouvez <strong>étudier</strong> et vous inscrire à des cours et écoles</li><li>✅ Vous pouvez vous inscrire aux <strong>centres pour l&#039;emploi</strong></li><li>✅ Vous pouvez accéder aux <strong>services d&#039;assistance</strong></li></ul>\n<p>Ce titre de séjour est très utile aussi parce qu&#039;il vous permet de rester en Italie pendant le processus contre le présumé maltraitant, ainsi vous pourras être partie active pendant la procédure.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "Combien de temps dure ce titre de séjour ?",
         "content": "<p>Dure <strong>1 an</strong> et est renouvelable.</p>",
-        "index": 5
-      },
-      {
-        "question": "Puis-je le convertir en un autre titre de séjour ?",
-        "content": "<p>Oui, il peut être converti en titre de séjour pour <strong>travail</strong> ou pour <strong>étude</strong>.</p>",
-        "index": 6
-      },
-      {
-        "question": "Le titre de séjour peut-il être révoqué ?",
-        "content": "<p>Oui, si la victime a des comportements contraires aux objectifs du titre de séjour ou si les conditions qui ont justifié sa délivrance ne sont plus réunies.</p>",
-        "index": 7
-      },
-      {
-        "question": "Si j'ai le titre de séjour, puis-je être puni pour séjour irrégulier ?",
-        "content": "<p>Non. Si vous avez obtenu ce titre de séjour, vous ne pouvez pas être condamné pour entrée ou séjour irrégulier en Italie.</p>",
-        "index": 8
+        "index": 4
       }
     ],
     "isPlaceholder": false,
@@ -759,39 +817,34 @@
     "emoji": "👨‍👩‍👧‍👦",
     "sections": [
       {
-        "question": "Qu'est-ce que cette carte de séjour ?",
-        "content": "<p>C&#039;est un titre de séjour accordé aux membres de famille ressortissants non-UE d&#039;un citoyen italien &quot;dynamique&quot; (c&#039;est-à-dire qui a vécu de manière stable dans un autre pays de l&#039;Union européenne, typiquement pour le travail, et qui vit maintenant en Italie.</p>",
-        "index": 0
-      },
-      {
         "question": "Qu'est-ce que cette carte ?",
         "content": "<p>C&#039;est un titre de séjour accordé aux membres de famille non-UE d&#039;un citoyen italien « dynamique ». Un citoyen italien « dynamique » est un citoyen italien qui a vécu ou travaillé dans un autre pays de l&#039;Union européenne différent de l&#039;Italie.</p>",
-        "index": 1
+        "index": 0
       },
       {
         "question": "Combien de temps dure cette carte ?",
         "content": "<p>Elle dure 5 ans et peut être renouvelée. Après le premier renouvellement, elle devient permanente.</p>",
-        "index": 2
+        "index": 1
       },
       {
         "question": "Qui peut demander cette carte ?",
         "content": "<p>Vous pouvez la demander si vous êtes :</p>\n<ul><li>Épouse/époux ou partenaire uni civilement du citoyen italien</li><li>Partenaire qui a souscrit un contrat de cohabitation, même sans mariage ou union civile</li><li>Fils/fille jusqu&#039;à 21 ans du citoyen italien ou de son conjoint</li><li>Fils/fille de plus de 21 ans du citoyen italien &quot;dynamique&quot; ou de son conjoint, mais <strong>à charge</strong> (tu devez montrer que vous vivez à charge : documents de votre pays d&#039;origine, argent envoyé vers vous de l&#039;étranger, certaines Questure (commissariat principal) demandent aussi la preuve que vous êtes à charge fiscale du membre de la famille italien)</li><li>Mère/père du citoyen italien &quot;dynamique&quot; ou de son conjoint, mais <strong>à charge</strong> (tu devez montrer que vous vivez à charge : documents de votre pays d&#039;origine, argent envoyé vers vous de l&#039;étranger, certaines Questure (commissariat principal) demandent aussi la preuve que vous êtes à charge fiscale du membre de la famille italien)</li><li>Grand-mère/grand-père du citoyen italien &quot;dynamique&quot; ou de son conjoint</li><li>Petit-enfant (enfant des enfants) du citoyen italien &quot;dynamique&quot; ou de son conjoint jusqu&#039;à 21 ans</li><li>Petit-enfant (enfant des enfants) du citoyen italien &quot;dynamique&quot; ou de son conjoint, de plus de 21 ans et <strong>à charge</strong> (tu devez montrer que vous vivez à charge : documents de votre pays d&#039;origine, argent envoyé vers vous de l&#039;étranger, certaines Questure (commissariat principal) demandent aussi la preuve que vous êtes à charge fiscale du membre de la famille italien)</li></ul>",
-        "index": 3
+        "index": 2
       },
       {
         "question": "Où demande-t-on cette carte ?",
         "content": "<p>Vous devez présenter la demandez à la Questure (commissariat principal) de la zone où vous habites.</p>\n<p>Vous devez faire la demandez dans les 3 mois suivant votre entrée en Italie. Si vous êtes déjà en Italie avec un autre type de visa (tourisme, famille, etc.), vous pouvez le changer en carte de séjour si vous remplis toutes les conditions.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "Quels documents me faut-il pour la demander ?",
         "content": "<ul><li>Passeport valide (page avec vos données personnelles et échéances, éventuels visas et tampons d&#039;entrée/sortie)</li><li>Votre ancien titre de séjour (si vous l&#039;as)</li><li>Document d&#039;identité du citoyen italien</li><li>Déclaration d&#039;hébergement</li><li>Certificat d&#039;état de famille du citoyen italien (délivré par la commune où il vit)</li><li>Documents qui montrent le degré de parenté (s&#039;ils viennent de l&#039;étranger ils doivent être traduits et légalisés/apostillés)</li><li>Documents qui montrent les revenus du citoyen italien (Cu/730/Unico) <em>(quand il est requis que le membre de famille non-UE soit à charge du membre de famille italien dynamique)</em></li><li>Documents qui montrent que vous vivez à charge <em>(quand il est requis que le membre de famille non-UE soit à charge du membre de famille italien dynamique)</em></li><li><strong>Documents qui montrent que le citoyen italien a vécu dans un autre Pays UE</strong> (selon l&#039;art 23 D.lvo 30 de 2007)</li></ul>",
-        "index": 5
+        "index": 4
       },
       {
         "question": "Que puis-je faire avec cette carte de séjour ?",
         "content": "<p>Avec cette carte vous pouvez :</p>\n<ul><li>Travailler avec un contrat régulier (travail indépendant ou salarié)</li><li>T&#039;inscrire à l&#039;école, à un cours professionnel, ou à l&#039;université</li><li>T&#039;inscrire au Service national de santé (SSN) et avoir un médecin traitant</li><li>Voyager dans les pays Schengen jusqu&#039;à 90 jours tous les 6 mois, si vous avez un passeport valide</li><li>Après 5 ans vous pouvez demander la carte de séjour permanente</li></ul>",
-        "index": 6
+        "index": 5
       }
     ],
     "isPlaceholder": false,
@@ -2475,79 +2528,6 @@
     "costMarcaBolloPrimo": null,
     "rinnovoDocuments": [],
     "rinnovoMethod": null,
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "30b7355e-7f7f-81d3-95aa-c12521e46ef9",
-    "slug": "motivi-religiosi",
-    "tipo": "Motifs religieux",
-    "emoji": "📄",
-    "sections": [
-      {
-        "question": "Qu'est-ce que ce titre de séjour ?",
-        "content": "<p>Le titre de séjour pour motifs religieux est destiné aux citoyens étrangers qui exercent des activités liées à une confession religieuse en Italie. Il s&#039;agit d&#039;un titre de séjour pour <strong>religieux, missionnaires, ministres du culte</strong> et personnes envoyées en Italie par des organismes religieux reconnus.</p>",
-        "index": 0
-      },
-      {
-        "question": "Qui peut en faire la demandez ?",
-        "content": "<p>Peuvent en faire la demandez les personnes qui :</p>\n<ul><li>Il a été envoyé en Italie par un <strong>organisme religieux</strong> reconnu</li><li>Dispose d&#039;un <strong>mission religieuse documentée</strong> (par exemple : prêtre, religieuse, missionnaire, pasteur)</li><li>Il a obtenu le visa d&#039;entrée pour motifs religieux</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Comment/où faire la demandez ?",
-        "content": "<p>La demandez se fait via le <strong>kit postal</strong> disponible dans les bureaux de poste habilités.</p>\n<p>Dans un délai de <strong>8 jours</strong> à partir de l&#039;entrée en Italie, vous devez présenter la demande.</p>\n<p>Pour savoir quels documents apporter, consultez les pages dédiées :</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documents pour la première délivrance</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documents pour le renouvellement</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Quels droits cela me donne-t-il ? À quoi ai-je accès ?",
-        "content": "<p>Avec ce titre de séjour vous pouvez :</p>\n<ul><li><strong>Exercer votre activité religieuse</strong> en Italie</li><li>T&#039;inscrire au Service national de santé (SSN) ou souscrire une police d&#039;assurance santé privée</li><li>Demander la résidence</li></ul>\n<p>⚠️ <strong>Attention :</strong> avec ce titre de séjour <strong>tu NE pouvez PAS travailler</strong> en dehors de l&#039;activité religieuse pour laquelle il a été délivré.</p>",
-        "index": 3
-      },
-      {
-        "question": "Combien de temps dure ce titre de séjour ?",
-        "content": "<p>La durée dépend de la mission religieuse et est indiquée dans le titre de séjour. Elle correspond généralement à la durée de la mission ou de la fonction.</p>",
-        "index": 4
-      },
-      {
-        "question": "Quand expire-t-il, puis-je le renouveler ?",
-        "content": "<p>Oui, vous pouvez le renouveler si l&#039;organisme religieux confirme que votre mission en Italie se poursuit. Pour le renouvellement, il faut une nouvelle déclaration de l&#039;organisme religieux.</p>",
-        "index": 5
-      },
-      {
-        "question": "Combien cela coûte-t-il ?",
-        "content": "<p>Pour la demandez vous devez payer :</p>\n<ul><li>Un bordereau de paiement postal de <strong>80,46 €</strong></li><li>Un timbre fiscal de <strong>16 €</strong></li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "timbre fiscal de 16€",
-      "4 Photos",
-      "Police d'assurance couverture sanitaire ou inscription volontaire au SSN (Sécurité sociale italienne)",
-      "bordereau de paiement postal de 80.46€",
-      "copie de la déclaration de l'organisme religieux attestant la nature de la fonction",
-      "Indication des moyens de subsistance (nourriture et logement)",
-      "Copie du passeport (non expiré)",
-      "Déclaration d'hébergement ou contrat de location ou certificat de résidence"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "timbre fiscal de 16€",
-      "Police d'assurance ou inscription au SSN (Sécurité sociale italienne)",
-      "Indication des moyens de subsistance (nourriture et logement)",
-      "4 photos d'identité",
-      "Bordereau de paiement postal de 80.46€",
-      "Copie du passeport (non expiré)",
-      "copie de la déclaration de l'organisme religieux attestant la nature de la fonction",
-      "Déclaration d'hébergement ou contrat de location ou certificat de résidence"
-    ],
-    "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": null,

@@ -1,5 +1,83 @@
 [
   {
+    "id": "3217355e-7f7f-81a5-ae42-e02a007b6023",
+    "slug": "motivi-religiosi",
+    "tipo": "Религиозные мотивы",
+    "emoji": "⛪",
+    "sections": [
+      {
+        "question": "Che cos'è questo разрешение (permesso)?",
+        "content": "<p>Il вид на жительство (разрешение (permesso) di soggiorno) per motivi religiosi è destinato a cittadini stranieri che svolgono attività legate a una confessione religiosa in Italia. Si tratta di un разрешение (permesso) per <strong>religiosi, missionari, ministri di culto</strong> e persone inviate in Italia da enti religiosi riconosciuti.</p>",
+        "index": 0
+      },
+      {
+        "question": "Кто может подать заявление?",
+        "content": "<p>Può chiederlo chi:</p>\n<ul><li>È stato inviato in Italia da un <strong>ente religioso</strong> riconosciuto</li><li>Ha un <strong>incarico religioso documentato</strong> (ad esempio: sacerdote, suora, missionario, pastore)</li><li>Ha ottenuto il въездная виза (виза (visto) d&#039;ingresso) per motivi religiosi</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Как/где подать заявление?",
+        "content": "<p>Si chiede tramite il <strong>почтовый пакет (kit postale)</strong> disponibile negli uffici postali abilitati.</p>\n<p>Entro <strong>8 дней</strong> dall&#039;ingresso in Italia, devi presentare la richiesta.</p>\n<p>Per sapere quali documenti portare, consulta le pagine dedicate:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documenti per il primo rilascio</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documenti per il rinnovo</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Che diritti mi dà? A cosa ho accesso?",
+        "content": "<p>Con questo разрешение (permesso) puoi:</p>\n<ul><li><strong>Svolgere la tua attività religiosa</strong> in Italia</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) o stipulare una polizza sanitaria privata</li><li>Chiedere la residenza</li></ul>\n<p>⚠️ <strong>Attenzione:</strong> con questo разрешение (permesso) <strong>NON puoi lavorare</strong> al di fuori dell&#039;attività religiosa per cui è stato rilasciato.</p>",
+        "index": 3
+      },
+      {
+        "question": "Quanto dura questo разрешение (permesso)?",
+        "content": "<p>La durata dipende dall&#039;incarico religioso ed è indicata nel разрешение (permesso). Di solito corrisponde alla durata della missione o dell&#039;incarico.</p>",
+        "index": 4
+      },
+      {
+        "question": "Можно ли продлить по истечении срока?",
+        "content": "<p>Sì, puoi rinnovarlo se l&#039;ente religioso conferma che il tuo incarico in Italia continua. Per il rinnovo serve una nuova декларация (dichiarazione) dell&#039;ente religioso.</p>",
+        "index": 5
+      },
+      {
+        "question": "Можно ли конвертировать его в другое разрешение?",
+        "content": "<p>Конвертация в другие виды на жительство возможна в определённых случаях:</p>\n<ul><li>Разрешение на работу по найму (если вы получите трудовой договор и есть доступные квоты)</li><li>Разрешение по семейным обстоятельствам (если у вас есть супруг(а) или член семьи — гражданин Италии либо иностранец с законным пребыванием)</li><li>Разрешение на учёбу (если вы поступите на программу обучения)</li><li>Разрешение ЕС для долгосрочно проживающих (если вы соответствуете требованиям к доходу и проживанию)</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "Сколько стоит?",
+        "content": "<p>Per la richiesta devi pagare:</p>\n<ul><li>Un почтовый платёж (bollettino postale) da <strong>80,46 €</strong></li><li>Una гербовая марка (marca da bollo) da <strong>16 €</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "marca da bollo da 16€",
+      "4 Foto",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
+      "bollettino postale da 80.46€",
+      "copia dic ente religioso attestante natura incarico",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "marca da bollo da 16€",
+      "Polizza assicurativa o iscrizione SSN",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "4fototessere",
+      "Bollettino postale da 80.46€",
+      "Copia del passaporto (non scaduto)",
+      "copia dic ente religioso attestante natura incarico",
+      "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
     "id": "3217355e-7f7f-8142-9656-d7c7eaabaf2a",
     "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
     "tipo": "Разрешение ЕС для долгосрочных жителей («Carta di soggiorno»)",
@@ -631,11 +709,6 @@
         "question": "E quando il разрешение (permesso) scade? Posso rinnovarlo? Posso convertirlo?",
         "content": "<p>Prima che scada ha due opzioni:</p>\n<ol><li><strong>Rinnovarlo: </strong>la richiesta di rinnovo va presentata preferibilmente <strong>prima della scadenza</strong> o comunque <strong>entro 60 дней</strong> dalla scadenza. La заявление (domanda) si fa con почтовый пакет (kit postale). </li></ol>\n<p><strong>2. Convertirlo: </strong>se hai tutti i requisiti necessari, questo разрешение (permesso) può essere convertito in un вид на жительство (разрешение (permesso) di soggiorno) per:</p>\n<ul><li>Studio</li><li>Ожидание трудоустройства</li><li>Motivi familiari</li><li>Carta per soggiornanti di lungo periodo (se hai almeno 5 лет di residenza)</li></ul>",
         "index": 6
-      },
-      {
-        "question": "Che cos’è questo разрешение (permesso)?",
-        "content": "<p>È un вид на жительство (разрешение (permesso) di soggiorno) per chi <strong>lavora in modo indipendente</strong>, cioè <strong>non ha un datore di lavoro</strong>, ma svolge un’attività lavorativa o professionale in proprio (ad esempio: commerciante, artigiano, libero professionista, ecc.).</p>",
-        "index": 7
       }
     ],
     "isPlaceholder": false,
@@ -746,39 +819,34 @@
     "emoji": "📋",
     "sections": [
       {
-        "question": "Che cos'è questa вид на жительство (carta di soggiorno)?",
-        "content": "<p>È un вид на жительство (разрешение (permesso) di soggiorno) dato ai familiari non comunitari di un cittadino italiano “dinamico” (cioé che ha vissuto stabilmente in un altro paese dell&#039;Unione Europea, tipicamente per lavoro, e che ora vive in Italia.</p>",
-        "index": 0
-      },
-      {
         "question": "Che cos'è questa carta?",
         "content": "<p>È un вид на жительство (разрешение (permesso) di soggiorno) dato ai familiari non comunitari di un cittadino italiano &quot;dinamico&quot;. Un cittadino italiano &quot;dinamico&quot; è un cittadino italiano che ha vissuto o lavorato in un altro Paese dell&#039;Unione Europea diverso dall&#039;Italia.</p>",
-        "index": 1
+        "index": 0
       },
       {
         "question": "Quanto dura questa carta?",
         "content": "<p>Dura 5 лет e può essere rinnovata. Dopo il primo rinnovo, diventa permanente.</p>",
-        "index": 2
+        "index": 1
       },
       {
         "question": "Chi può chiedere questa carta?",
         "content": "<p>Puoi chiederla se sei:</p>\n<ul><li>Moglie/marito o partner unito civilmente del cittadino italiano</li><li>Partner che ha sottoscritto un contratto di convivenza, anche senza matrimonio o unione civile</li><li>Figlio/figlia fino a 21 лет del cittadino italiano o del suo coniuge</li><li>Figlio/figlia con più di 21 лет del cittadino italiano &quot;dinamico&quot; o del suo coniuge, ma <strong>a carico</strong> (devi mostrare che vivi a carico: documenti dal tuo Paese d&#039;origine, soldi mandati a te dall&#039;estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare italiano)</li><li>Mamma/papà del cittadino italiano &quot;dinamico&quot; o del suo coniuge, ma <strong>a carico</strong> (devi mostrare che vivi a carico: documenti dal tuo Paese d&#039;origine, soldi mandati a te dall&#039;estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare italiano)</li><li>Nonna/nonno del cittadino italiano &quot;dinamico&quot; o del suo coniuge</li><li>Nipote (figlio dei figli) del cittadino italiano &quot;dinamico&quot; o del suo coniuge fino a 21 лет</li><li>Nipote (figlio dei figli) del cittadino italiano &quot;dinamico&quot; o del suo coniuge, con più di 21 лет e <strong>a carico</strong> (devi mostrare che vivi a carico: documenti dal tuo Paese d&#039;origine, soldi mandati a te dall&#039;estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare italiano)</li></ul>",
-        "index": 3
+        "index": 2
       },
       {
         "question": "Dove si chiede questa carta?",
         "content": "<p>Devi presentare la заявление (domanda) alla квестура (questura) della zona dove vivi.</p>\n<p>Devi fare la richiesta entro 3 месяцев da quando sei entrato in Italia. Se sei già in Italia con un altro tipo di виза (visto) (turismo, famiglia, ecc.), puoi cambiarlo in вид на жительство (carta di soggiorno) se hai tutti i requisiti.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "Che documenti mi servono per chiederla?",
         "content": "<ul><li>паспорт (passaporto) valido (pagina con i tuoi dati personali e scadenze, eventuali visti e timbri di ingresso/uscita)</li><li>Il tuo vecchio вид на жительство (разрешение (permesso) di soggiorno) (se ce l&#039;hai)</li><li>Documento di identità del cittadino italiano</li><li>декларация (dichiarazione) di ospitalità</li><li>свидетельство (certificato) di stato di famiglia del cittadino italiano (dato dal муниципалитет (comune) dove vive)</li><li>Documenti che mostrano il grado di parentela (se vengono dall&#039;estero devono essere tradotti e legalizzati/apostillati)</li><li>Documenti che mostrano i soldi del cittadino italiano (Cu/730/Unico) <em>(quando è richiesto che il familiare non UE sia a carico del familiare italiano dinamico)</em></li><li>Documenti che mostrano che vivi a carico <em>(quando è richiesto che il familiare non UE sia a carico del familiare italiano dinamico)</em></li><li><strong>Documenti che mostrano che il cittadino italiano ha vissuto in un altro Paese UE</strong> (secondo l&#039;art 23 D.lvo 30 del 2007)</li></ul>",
-        "index": 5
+        "index": 4
       },
       {
         "question": "Cosa posso fare con questa вид на жительство (carta di soggiorno)?",
         "content": "<p>Con questa carta puoi:</p>\n<ul><li>Lavorare con regolare contratto (lavoro autonomo o subordinato)</li><li>Iscriverti a scuola, un corso professionale, o all&#039;università</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Viaggiare nei Paesi Schengen fino a 90 дней ogni 6 месяцев, se hai un паспорт (passaporto) valido</li><li>Dopo 5 лет puoi chiedere la вид на жительство (carta di soggiorno) permanente</li></ul>",
-        "index": 6
+        "index": 5
       }
     ],
     "isPlaceholder": false,
@@ -1901,79 +1969,6 @@
       "Permesso in scadenza",
       "marca da bollo da 16€",
       "Decisione che dà lo status di apolide"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 80.46,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-81a5-ae42-e02a007b6023",
-    "slug": "motivi-religiosi",
-    "tipo": "Религиозные мотивы",
-    "emoji": "⛪",
-    "sections": [
-      {
-        "question": "Che cos'è questo разрешение (permesso)?",
-        "content": "<p>Il вид на жительство (разрешение (permesso) di soggiorno) per motivi religiosi è destinato a cittadini stranieri che svolgono attività legate a una confessione religiosa in Italia. Si tratta di un разрешение (permesso) per <strong>religiosi, missionari, ministri di culto</strong> e persone inviate in Italia da enti religiosi riconosciuti.</p>",
-        "index": 0
-      },
-      {
-        "question": "Кто может подать заявление?",
-        "content": "<p>Può chiederlo chi:</p>\n<ul><li>È stato inviato in Italia da un <strong>ente religioso</strong> riconosciuto</li><li>Ha un <strong>incarico religioso documentato</strong> (ad esempio: sacerdote, suora, missionario, pastore)</li><li>Ha ottenuto il въездная виза (виза (visto) d&#039;ingresso) per motivi religiosi</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Как/где подать заявление?",
-        "content": "<p>Si chiede tramite il <strong>почтовый пакет (kit postale)</strong> disponibile negli uffici postali abilitati.</p>\n<p>Entro <strong>8 дней</strong> dall&#039;ingresso in Italia, devi presentare la richiesta.</p>\n<p>Per sapere quali documenti portare, consulta le pagine dedicate:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documenti per il primo rilascio</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documenti per il rinnovo</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Che diritti mi dà? A cosa ho accesso?",
-        "content": "<p>Con questo разрешение (permesso) puoi:</p>\n<ul><li><strong>Svolgere la tua attività religiosa</strong> in Italia</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) o stipulare una polizza sanitaria privata</li><li>Chiedere la residenza</li></ul>\n<p>⚠️ <strong>Attenzione:</strong> con questo разрешение (permesso) <strong>NON puoi lavorare</strong> al di fuori dell&#039;attività religiosa per cui è stato rilasciato.</p>",
-        "index": 3
-      },
-      {
-        "question": "Quanto dura questo разрешение (permesso)?",
-        "content": "<p>La durata dipende dall&#039;incarico religioso ed è indicata nel разрешение (permesso). Di solito corrisponde alla durata della missione o dell&#039;incarico.</p>",
-        "index": 4
-      },
-      {
-        "question": "Можно ли продлить по истечении срока?",
-        "content": "<p>Sì, puoi rinnovarlo se l&#039;ente religioso conferma che il tuo incarico in Italia continua. Per il rinnovo serve una nuova декларация (dichiarazione) dell&#039;ente religioso.</p>",
-        "index": 5
-      },
-      {
-        "question": "Сколько стоит?",
-        "content": "<p>Per la richiesta devi pagare:</p>\n<ul><li>Un почтовый платёж (bollettino postale) da <strong>80,46 €</strong></li><li>Una гербовая марка (marca da bollo) da <strong>16 €</strong></li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "marca da bollo da 16€",
-      "4 Foto",
-      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN",
-      "bollettino postale da 80.46€",
-      "copia dic ente religioso attestante natura incarico",
-      "Indicazione mezzi sostentamento (vitto e alloggio)",
-      "Copia del passaporto (non scaduto)",
-      "Dichiarazione ospitalità o contratto di affitto o certificato residenza"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": 80.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "marca da bollo da 16€",
-      "Polizza assicurativa o iscrizione SSN",
-      "Indicazione mezzi sostentamento (vitto e alloggio)",
-      "4fototessere",
-      "Bollettino postale da 80.46€",
-      "Copia del passaporto (non scaduto)",
-      "copia dic ente religioso attestante natura incarico",
-      "dichiarazione ospitalità o contrato di affitto o certificato di residenza"
     ],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": 80.46,

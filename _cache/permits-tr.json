@@ -1,5 +1,83 @@
 [
   {
+    "id": "3217355e-7f7f-81ea-9594-caa1418fbe07",
+    "slug": "motivi-religiosi",
+    "tipo": "Dini sebepler",
+    "emoji": "⛪",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Dini sebepler için oturma izni, İtalya&#039;da dini bir cemaate bağlı faaliyetler yürüten yabancı vatandaşlara yöneliktir. Bu izin <strong>din adamları, misyonerler, ibadet görevlileri</strong> ve İtalya&#039;daki tanınmış dini kuruluşlar tarafından gönderilen kişiler içindir.</p>",
+        "index": 0
+      },
+      {
+        "question": "Kimler başvurabilir?",
+        "content": "<p>Başvurabilecek kişiler:</p>\n<ul><li>İtalya&#039;ya tanınmış bir <strong>dini kuruluş</strong> tarafından gönderilmiştir</li><li>İtalya&#039;da bir <strong>belgelenmiş dini görev</strong> (örneğin: rahip, rahibe, misyoner, papaz)</li><li>Dini sebepler için giriş vizesi almıştır</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Nasıl/nerede başvurulur?",
+        "content": "<p>Başvuru <strong>Kit postale</strong> yetkili posta ofislerinde bulunan Kit postale ile yapılır.</p>\n<p>İtalya&#039;ya girişten <strong>8 gün</strong> içinde başvurunuzu sunmalısın.</p>\n<p>Hangi belgelerin gerektiğini öğrenmek için ilgili sayfalara bak:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">İlk düzenleme için belgeler</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Yenileme için belgeler</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Bu izin bana ne haklar verir? Neye erişebilirim?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Dini faaliyetini yürütmek</strong> İtalya&#039;da</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak veya özel sağlık sigortası yaptırmak</li><li>İkametgah kaydı yaptırmak</li></ul>\n<p>⚠️ <strong>Dikkat:</strong> bu izinle <strong>çalışamazsınız</strong> verildiği dini faaliyet dışında.</p>",
+        "index": 3
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>Süresi dini göreve bağlıdır ve izinde belirtilir. Genellikle misyonun veya görevin süresiyle aynıdır.</p>",
+        "index": 4
+      },
+      {
+        "question": "Süresi dolduğunda yenileyebilir miyim?",
+        "content": "<p>Evet, dini kuruluş İtalya&#039;daki görevinin devam ettiğini onaylarsa yenileyebilirsiniz. Yenileme için dini kuruluştan yeni bir beyan gerekir.</p>",
+        "index": 5
+      },
+      {
+        "question": "Başka bir izne dönüştürebilir miyim?",
+        "content": "<p>Başka oturma izinlerine dönüşüm belirli durumlarda mümkündür:</p>\n<ul><li>Bağımlı çalışma izni (bir iş sözleşmesi alırsanız ve kota mevcutsa)</li><li>Aile nedenleriyle izin (İtalyan veya düzenli oturma iznine sahip yabancı bir eşiniz ya da aile üyeniz varsa)</li><li>Öğrenim izni (bir eğitim programına kaydolursanız)</li><li>Uzun süreli ikamet sahipleri için AB izni (gelir ve ikamet koşullarını karşılıyorsanız)</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "Maliyeti ne kadar?",
+        "content": "<p>Başvuru için ödemen gerekenler:</p>\n<ul><li>Posta ödeme makbuzu <strong>80,46 €</strong></li><li>Damga pulu <strong>16 €</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf",
+      "Sağlık sigortası poliçesi veya SSN'ye gönüllü kayıt",
+      "80.46€ posta ödeme makbuzu",
+      "dini kuruluştan görevin niteliğini gösteren belge kopyası",
+      "Geçim araçlarının belirtilmesi (yemek ve barınma)",
+      "Pasaport kopyası (süresi dolmamış)",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "16€ damga pulu",
+      "Sigorta poliçesi veya SSN (İtalyan Sağlık Sistemi) kaydı",
+      "Geçim araçlarının belirtilmesi (yemek ve barınma)",
+      "4 vesikalık fotoğraf",
+      "80.46€ posta ödeme makbuzu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "dini kuruluştan görevin niteliğini gösteren belge kopyası",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
     "id": "39a7355e-7f7f-8142-918d-e65e57d5b5d9",
     "slug": "lavoro-artistico",
     "tipo": "Sanatsal çalışma",
@@ -811,39 +889,34 @@
     "emoji": "👨‍👩‍👧‍👦",
     "sections": [
       {
-        "question": "Bu oturma kartı nedir?",
-        "content": "<p>&quot;Dinamik&quot; bir İtalyan vatandaşının (yani başka bir AB ülkesinde, genellikle iş için sürekli yaşamış ve şimdi İtalya&#039;da yaşayan) AB dışı aile üyelerine verilen bir oturma iznidir.</p>",
-        "index": 0
-      },
-      {
         "question": "Bu kart nedir?",
         "content": "<p>&quot;Dinamik&quot; bir İtalyan vatandaşının AB dışı aile üyelerine verilen bir oturma iznidir. &quot;Dinamik&quot; İtalyan vatandaşı, İtalya dışında başka bir AB ülkesinde yaşamış veya çalışmış bir İtalyan vatandaşıdır.</p>",
-        "index": 1
+        "index": 0
       },
       {
         "question": "Bu kart ne kadar süre geçerlidir?",
         "content": "<p>5 yıl geçerlidir ve yenilenebilir. İlk yenilemeden sonra kalıcı hale gelir.</p>",
-        "index": 2
+        "index": 1
       },
       {
         "question": "Bu kartı kimler başvurabilir?",
         "content": "<p>Eğer şunlardan biriyseniz başvurabilirsiniz:</p>\n<ul><li>İtalyan vatandaşının eşi veya kayıtlı hayat arkadaşı</li><li>Evlilik veya medeni birlik olmadan da birlikte yaşama sözleşmesi imzalamış partner</li><li>İtalyan vatandaşının veya eşinin 21 yaşına kadar olan oğlu/kızı</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşından büyük oğlu/kızı, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin annesi/babası, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin büyükannesi/büyükbabası</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşına kadar olan torunu</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşından büyük ve <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li></ul>",
-        "index": 3
+        "index": 2
       },
       {
         "question": "Bu kart için nereye başvurulur?",
         "content": "<p>Yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura) başvurmalısın.</p>\n<p>İtalya&#039;ya girdikten sonra 3 ay içinde başvurmalısın. Zaten İtalya&#039;da başka bir vize türüyle (turizm, aile vb.) bulunuyorsanız, tüm şartları karşılaman halinde oturma kartına çevirebilirsiniz.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "Başvuru için hangi belgeler gerekli?",
         "content": "<ul><li>Geçerli pasaport (kişisel bilgilerin ve son kullanma tarihlerinin olduğu sayfa, varsa vizeler ve giriş/çıkış damgaları)</li><li>Eski oturma izniniz (varsa)</li><li>İtalyan vatandaşının kimlik belgesi</li><li>Konaklama beyanı</li><li>İtalyan vatandaşının aile durumu belgesi (yaşadığı belediyeden alınır)</li><li>Akrabalık derecesini gösteren belgeler (yurt dışından geliyorsa tercüme edilmiş ve onaylanmış/apostilli olmalıdır)</li><li>İtalyan vatandaşının gelirini gösteren belgeler (Cu/730/Unico) <em>(AB dışı aile üyesinin dinamik İtalyan aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li>Bakmakla yükümlü olunduğunu gösteren belgeler <em>(AB dışı aile üyesinin dinamik İtalyan aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li><strong>İtalyan vatandaşının başka bir AB ülkesinde yaşadığını gösteren belgeler</strong> (art. 23 D.lvo 30 del 2007&#039;ye göre)</li></ul>",
-        "index": 5
+        "index": 4
       },
       {
         "question": "Bu oturma kartıyla ne yapabilirim?",
         "content": "<p>Bu kartla şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli bir pasaportunuz varsa Schengen ülkelerinde her 6 ayda 90 güne kadar seyahat etmek</li><li>5 yıl sonra kalıcı oturma kartına başvurabilirsiniz</li></ul>",
-        "index": 6
+        "index": 5
       }
     ],
     "isPlaceholder": false,
@@ -2424,79 +2497,6 @@
       "30.46€ posta ödeme makbuzu",
       "Süresi dolmak üzere olan izin",
       "Komisyon veya Mahkeme kararı",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-81ea-9594-caa1418fbe07",
-    "slug": "motivi-religiosi",
-    "tipo": "Dini sebepler",
-    "emoji": "⛪",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Dini sebepler için oturma izni, İtalya&#039;da dini bir cemaate bağlı faaliyetler yürüten yabancı vatandaşlara yöneliktir. Bu izin <strong>din adamları, misyonerler, ibadet görevlileri</strong> ve İtalya&#039;daki tanınmış dini kuruluşlar tarafından gönderilen kişiler içindir.</p>",
-        "index": 0
-      },
-      {
-        "question": "Kimler başvurabilir?",
-        "content": "<p>Başvurabilecek kişiler:</p>\n<ul><li>İtalya&#039;ya tanınmış bir <strong>dini kuruluş</strong> tarafından gönderilmiştir</li><li>İtalya&#039;da bir <strong>belgelenmiş dini görev</strong> (örneğin: rahip, rahibe, misyoner, papaz)</li><li>Dini sebepler için giriş vizesi almıştır</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Nasıl/nerede başvurulur?",
-        "content": "<p>Başvuru <strong>Kit postale</strong> yetkili posta ofislerinde bulunan Kit postale ile yapılır.</p>\n<p>İtalya&#039;ya girişten <strong>8 gün</strong> içinde başvurunuzu sunmalısın.</p>\n<p>Hangi belgelerin gerektiğini öğrenmek için ilgili sayfalara bak:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">İlk düzenleme için belgeler</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Yenileme için belgeler</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Bu izin bana ne haklar verir? Neye erişebilirim?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Dini faaliyetini yürütmek</strong> İtalya&#039;da</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak veya özel sağlık sigortası yaptırmak</li><li>İkametgah kaydı yaptırmak</li></ul>\n<p>⚠️ <strong>Dikkat:</strong> bu izinle <strong>çalışamazsınız</strong> verildiği dini faaliyet dışında.</p>",
-        "index": 3
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>Süresi dini göreve bağlıdır ve izinde belirtilir. Genellikle misyonun veya görevin süresiyle aynıdır.</p>",
-        "index": 4
-      },
-      {
-        "question": "Süresi dolduğunda yenileyebilir miyim?",
-        "content": "<p>Evet, dini kuruluş İtalya&#039;daki görevinin devam ettiğini onaylarsa yenileyebilirsiniz. Yenileme için dini kuruluştan yeni bir beyan gerekir.</p>",
-        "index": 5
-      },
-      {
-        "question": "Maliyeti ne kadar?",
-        "content": "<p>Başvuru için ödemen gerekenler:</p>\n<ul><li>Posta ödeme makbuzu <strong>80,46 €</strong></li><li>Damga pulu <strong>16 €</strong></li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf",
-      "Sağlık sigortası poliçesi veya SSN'ye gönüllü kayıt",
-      "80.46€ posta ödeme makbuzu",
-      "dini kuruluştan görevin niteliğini gösteren belge kopyası",
-      "Geçim araçlarının belirtilmesi (yemek ve barınma)",
-      "Pasaport kopyası (süresi dolmamış)",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "16€ damga pulu",
-      "Sigorta poliçesi veya SSN (İtalyan Sağlık Sistemi) kaydı",
-      "Geçim araçlarının belirtilmesi (yemek ve barınma)",
-      "4 vesikalık fotoğraf",
-      "80.46€ posta ödeme makbuzu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "dini kuruluştan görevin niteliğini gösteren belge kopyası",
       "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
     ],
     "rinnovoMethod": "KIT",

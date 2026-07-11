@@ -1,5 +1,83 @@
 [
   {
+    "id": "3357355e-7f7f-811e-bed3-e891a236e515",
+    "slug": "motivi-religiosi",
+    "tipo": "宗教原因",
+    "emoji": "🕊️",
+    "sections": [
+      {
+        "question": "这个许可是什么？",
+        "content": "<p>宗教permesso di soggiorno面向在意大利从事与宗教团体相关活动的外国公民。这是一种给以下人员的许可： <strong>宗教人士、传教士、神职人员</strong> 以及由认可的宗教团体派往意大利的人员。</p>",
+        "index": 0
+      },
+      {
+        "question": "谁可以申请？",
+        "content": "<p>以下人员可以申请：</p>\n<ul><li>被……派往意大利 <strong>宗教团体</strong> 被认可的</li><li>持有 <strong>有文件证明的宗教任务</strong> （例如：神父、修女、传教士、牧师）</li><li>已获得宗教目的入境签证</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "如何/在哪里申请？",
+        "content": "<p>通过以下方式申请： <strong>Kit postale</strong> 在授权邮局提供。</p>\n<p>在 <strong>8天</strong> 从进入意大利起，你必须提交申请。</p>\n<p>要了解需要携带哪些文件，请查阅专门页面：</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">首次申请所需文件</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">续签所需文件</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "我有什么权利？可以享受什么？",
+        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>从事你的宗教活动</strong> 在意大利</li><li>注册国家卫生服务（SSN）或购买私人医疗保险</li><li>申请户籍登记</li></ul>\n<p>⚠️ <strong>注意：</strong> 凭此许可 <strong>你不能工作</strong> 在签发许可所对应的宗教活动之外。</p>",
+        "index": 3
+      },
+      {
+        "question": "该许可有效期多长？",
+        "content": "<p>有效期取决于宗教任务，并在许可上注明。通常与传教或任务的期限一致。</p>",
+        "index": 4
+      },
+      {
+        "question": "到期后可以续签吗？",
+        "content": "<p>是的，如果宗教团体确认你在意大利的任务继续，你可以续签。续签需要宗教团体的新声明。</p>",
+        "index": 5
+      },
+      {
+        "question": "我可以转换为其他许可吗？",
+        "content": "<p>在特定情况下可以转换为其他permesso di soggiorno：</p>\n<ul><li>受雇工作许可（如果你获得工作合同且有可用配额）</li><li>家庭原因许可（如果你有合法居留的意大利或外国配偶/家庭成员）</li><li>学习许可（如果你注册培训课程）</li><li>欧盟长期居留许可（如果你满足收入和居住要求）</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "费用是多少？",
+        "content": "<p>申请时你需要支付：</p>\n<ul><li>一张 bollettino postale，金额为 <strong>80.46€</strong></li><li>一张 marca da bollo，金额为 <strong>16€</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "宗教机构出具的任务性质声明复印件",
+      "生活来源说明（食宿）",
+      "医疗保险或自愿加入SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16€",
+      "4张证件照",
+      "bollettino postale 80.46€",
+      "护照复印件（未过期）",
+      "住宿声明或租赁合同或居住证明",
+      "宗教机构出具的任务性质证明复印件",
+      "生活来源说明（食宿）",
+      "保险或加入SSN"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
     "id": "3357355e-7f7f-8172-a133-d654991b0a72",
     "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
     "tipo": "欧盟长期居留许可（“Carta di soggiorno”）",
@@ -808,26 +886,6 @@
         "question": "许可到期后怎么办？可以续签吗？可以转换吗？",
         "content": "<p>在到期之前有两个选择：</p>\n<ol><li><strong>续签： </strong>续签申请最好在 <strong>到期之前</strong> 或者无论如何 <strong>60天内</strong> 到期前。申请通过 Kit postale 提交。 </li></ol>\n<p><strong>2. 转换： </strong>如果你满足所有必要条件，这个许可可以转换为以下 permesso di soggiorno：</p>\n<ul><li>学习</li><li>待业</li><li>家庭原因</li><li>长期居留卡（如果你有至少5年的居住记录）</li></ul>",
         "index": 6
-      },
-      {
-        "question": "这个许可是什么？",
-        "content": "<p>这是给那些……的 permesso di soggiorno <strong>独立工作</strong>，即 <strong>没有雇主</strong>，但从事独立的工作或专业活动（例如：商人、手工业者、自由职业者等）。</p>",
-        "index": 7
-      },
-      {
-        "question": "该许可有效期多长？",
-        "content": "<ul><li>期限取决于你从事的活动和提交的文件，但通常是 <strong>1至2年</strong>。</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "许可到期后，我该怎么办？",
-        "content": "<ul><li>你必须 <strong>申请续签</strong> <strong>到期之前 </strong>或最迟在到期后60天内</li><li>如果 <strong>你符合条件</strong>，你还可以 <strong>转换</strong> 转换为其他类型的许可（学习、家庭、长期居留、受雇工作等）。你必须在到期前申请转换。</li></ul>",
-        "index": 9
-      },
-      {
-        "question": "如果续签时我失业了怎么办？",
-        "content": "<p>你可以申请颁发 <a href=\"https://www.sospermesso.it/Permesso-di-soggiorno-per-attesa-occupazione-ricerca-lavoro-2187355e7f7f81d38a54d111fa27f45f\">等待就业 permesso di soggiorno</a>，并附上就业中心的登记证明！</p>",
-        "index": 10
       }
     ],
     "isPlaceholder": false,
@@ -938,64 +996,34 @@
     "emoji": "👨‍👩‍👧‍👦",
     "sections": [
       {
-        "question": "这个carta di soggiorno是什么？",
-        "content": "<p>这是发给意大利“动态”公民（即曾在另一个欧盟国家长期居住，通常是为了工作，现在居住在意大利）的非欧盟家庭成员的permesso di soggiorno。</p>",
-        "index": 0
-      },
-      {
         "question": "这张卡是什么？",
         "content": "<p>这是发给</p>",
-        "index": 1
+        "index": 0
       },
       {
         "question": "这张卡有效期多长？",
         "content": "<p>有效期5年，可续签。首次续签后，成为永久性。</p>",
-        "index": 2
+        "index": 1
       },
       {
         "question": "谁可以申请这张卡？",
         "content": "<p>如果你属于以下情况，可以申请：</p>\n<ul><li>意大利公民的配偶或民事结合伴侣</li><li>签订了同居合同的伴侣，即使没有结婚或民事结合</li><li>意大利公民或其配偶的21岁以下的子女</li><li>意大利“动态”公民或其配偶的21岁以上子女，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在意大利家庭成员的税务上是被赡养人）</li><li>意大利“动态”公民或其配偶的父/母，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在意大利家庭成员的税务上是被赡养人）</li><li>意大利“动态”公民或其配偶的祖父/祖母</li><li>意大利“动态”公民或其配偶的21岁以下孙子女</li><li>意大利“动态”公民或其配偶的21岁以上孙子女，且 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在意大利家庭成员的税务上是被赡养人）</li></ul>",
-        "index": 3
+        "index": 2
       },
       {
         "question": "在哪里申请这张卡？",
         "content": "<p>你需要向你居住地区的Questura提交申请。</p>\n<p>你必须在进入意大利后3个月内提出申请。如果你已经持其他类型签证（旅游、家庭等）在意大利，只要满足所有条件，你可以将其更换为carta di soggiorno。</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "申请需要什么文件？",
         "content": "<ul><li>有效护照（含个人信息和有效期的页面、签证及入境/出境章）</li><li>你的旧permesso di soggiorno（如果有的话）</li><li>意大利公民的身份证件</li><li>住宿声明</li><li>意大利公民的家庭状况证明（由其居住地市政府出具）</li><li>证明亲属关系的文件（如果来自国外需经翻译和认证/海牙认证）</li><li>显示意大利公民收入的文件（Cu/730/Unico） <em>（当要求非欧盟家庭成员由</em></li><li>证明你是被赡养人的文件 <em>（当要求非欧盟家庭成员由</em></li><li><strong>证明意大利公民曾在另一个欧盟国家居住的文件</strong> （根据2007年第30号D.lvo第23条）</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "持有这个carta di soggiorno我可以做什么？",
+        "content": "<p>持有这张卡你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>报名参加学校、职业课程或大学</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>持有效护照可每6个月在申根国家旅行最多90天</li><li>5年后你可以申请永久carta di soggiorno</li></ul>",
         "index": 5
-      },
-      {
-        "question": "持有这个carta di soggiorno我可以做什么？",
-        "content": "<p>持有这张卡你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>报名参加学校、职业课程或大学</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>持有效护照可每6个月在申根国家旅行最多90天</li><li>5年后你可以申请永久carta di soggiorno</li></ul>",
-        "index": 6
-      },
-      {
-        "question": "这张卡有效期多长？",
-        "content": "<p>有效期5年，可续签。首次续签后成为永久性。</p>",
-        "index": 7
-      },
-      {
-        "question": "谁可以申请这张卡？",
-        "content": "<p>如果你属于以下情况，可以申请：</p>\n<ul><li>欧盟公民的配偶或民事结合伴侣</li><li>签订了同居合同的伴侣，即使没有结婚或民事结合</li><li>欧盟公民或其配偶的21岁以下的子女</li><li>欧盟公民或其配偶的21岁以上的子女，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li><li>欧盟公民或其配偶的父/母，但 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li><li>欧盟公民或其配偶的祖父/祖母</li><li>欧盟公民或其配偶的孙子女（子女的子女），21岁以下</li><li>欧盟公民或其配偶的孙子女（子女的子女），21岁以上且 <strong>受抚养的</strong> （你需要证明你是被赡养的：原籍国的文件、从国外汇给你的钱，一些Questura还要求证明你在欧盟家庭成员的税务上是被赡养人）</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "在哪里申请这张卡？",
-        "content": "<p>你需要向你居住地区的Questura提交申请。</p>\n<p>你必须在进入意大利后3个月内提出申请。如果你已经持其他类型签证（旅游、家庭等）在意大利，只要满足所有条件，你可以将其更换为carta di soggiorno。</p>",
-        "index": 9
-      },
-      {
-        "question": "申请需要什么文件？",
-        "content": "<ul><li>有效护照（含个人信息和有效期的页面、签证及入境/出境章）</li><li>你的旧permesso di soggiorno（如果有的话）</li><li>欧盟公民的身份证件</li><li>住宿声明</li><li>欧盟公民的家庭状况证明（由其居住地市政府出具）</li><li>证明亲属关系的文件（如果来自国外需经翻译和认证/海牙认证）</li><li>显示欧盟公民收入的文件（Cu/730/Unico） <em>（当要求非欧盟家庭成员由欧盟家庭成员赡养时）</em></li><li>证明你是被赡养人的文件 <em>（当要求非欧盟家庭成员由欧盟家庭成员赡养时）</em></li></ul>",
-        "index": 10
-      },
-      {
-        "question": "持有这个carta di soggiorno我可以做什么？",
-        "content": "<p>持有这张卡你可以：</p>\n<ul><li>以正式合同工作（自营或受雇）</li><li>报名参加学校、职业课程或大学</li><li>注册国家卫生服务（SSN）并获得家庭医生</li><li>持有效护照可每6个月在申根国家旅行最多90天</li><li>5年后你可以申请永久carta di soggiorno</li></ul>",
-        "index": 11
       }
     ],
     "isPlaceholder": false,
@@ -2256,114 +2284,6 @@
     "docNotes": null
   },
   {
-    "id": "3357355e-7f7f-811e-bed3-e891a236e515",
-    "slug": "motivi-religiosi",
-    "tipo": "宗教原因",
-    "emoji": "🕊️",
-    "sections": [
-      {
-        "question": "这个许可是什么？",
-        "content": "<p>宗教permesso di soggiorno面向在意大利从事与宗教团体相关活动的外国公民。这是一种给以下人员的许可： <strong>宗教人士、传教士、神职人员</strong> 以及由认可的宗教团体派往意大利的人员。</p>",
-        "index": 0
-      },
-      {
-        "question": "谁可以申请？",
-        "content": "<p>以下人员可以申请：</p>\n<ul><li>被……派往意大利 <strong>宗教团体</strong> 被认可的</li><li>持有 <strong>有文件证明的宗教任务</strong> （例如：神父、修女、传教士、牧师）</li><li>已获得宗教目的入境签证</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "如何/在哪里申请？",
-        "content": "<p>通过以下方式申请： <strong>Kit postale</strong> 在授权邮局提供。</p>\n<p>在 <strong>8天</strong> 从进入意大利起，你必须提交申请。</p>\n<p>要了解需要携带哪些文件，请查阅专门页面：</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">首次申请所需文件</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">续签所需文件</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "我有什么权利？可以享受什么？",
-        "content": "<p>持有此许可你可以：</p>\n<ul><li><strong>从事你的宗教活动</strong> 在意大利</li><li>注册国家卫生服务（SSN）或购买私人医疗保险</li><li>申请户籍登记</li></ul>\n<p>⚠️ <strong>注意：</strong> 凭此许可 <strong>你不能工作</strong> 在签发许可所对应的宗教活动之外。</p>",
-        "index": 3
-      },
-      {
-        "question": "该许可有效期多长？",
-        "content": "<p>有效期取决于宗教任务，并在许可上注明。通常与传教或任务的期限一致。</p>",
-        "index": 4
-      },
-      {
-        "question": "到期后可以续签吗？",
-        "content": "<p>是的，如果宗教团体确认你在意大利的任务继续，你可以续签。续签需要宗教团体的新声明。</p>",
-        "index": 5
-      },
-      {
-        "question": "费用是多少？",
-        "content": "<p>申请时你需要支付：</p>\n<ul><li>一张 bollettino postale，金额为 <strong>80.46€</strong></li><li>一张 marca da bollo，金额为 <strong>16€</strong></li></ul>",
-        "index": 6
-      },
-      {
-        "question": "这个许可是什么？",
-        "content": "<p>宗教permesso di soggiorno面向神职人员、宗教人员、传教士及其他代表经认可的宗教团体在意大利从事宗教活动的人。允许从事与自身宗教事务相关的活动。</p>",
-        "index": 7
-      },
-      {
-        "question": "谁可以申请？",
-        "content": "<p>以下人员可以申请该许可：</p>\n<ul><li>是神职人员（神父、牧师、伊玛目、拉比、僧侣等）</li><li>是宗教修会或教团的成员</li><li>代表意大利认可的宗教团体从事宗教活动</li><li>已收到其宗教组织的正式任命</li><li>持宗教原因签证进入意大利</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "如何/在哪里申请？",
-        "content": "<p>进入意大利之前：</p>\n<ul><li>你需要在你所在国家的意大利领事馆申请宗教目的签证</li></ul>\n<p>到达意大利后：</p>\n<ul><li>入境后8个工作日内，通过Kit postale（意大利邮政）申请permesso di soggiorno</li><li>或者直接去Questura（如有要求）</li></ul>\n<p>所需文件，请参阅专门页面： <strong>https://www.sospermesso.it/documenti-motivi-religiosi-primo.html</strong></p>",
-        "index": 9
-      },
-      {
-        "question": "我有什么权利？可以享受什么？",
-        "content": "<p>持有此许可：</p>\n<ul><li>你可以在意大利从事宗教和事务活动</li><li>你可以举行宗教仪式、典礼和宗教活动</li><li>你可以从事宗教培训和教理活动</li><li>如果你有医疗保险，可以享受医疗服务</li><li><strong>你不能从事宗教活动以外的工作</strong></li></ul>\n<p>⚠️ 注意：你只能从事你任务规定的宗教活动，不能从事其他形式的工作。</p>",
-        "index": 10
-      },
-      {
-        "question": "该许可有效期多长？",
-        "content": "<p>宗教permesso di soggiorno的有效期不固定，通常为1至2年，取决于宗教任务的期限。如果任务继续，可以续签。</p>",
-        "index": 11
-      },
-      {
-        "question": "到期后可以续签吗？",
-        "content": "<p>是的，如果满足以下条件你可以续签：</p>\n<ul><li>你的宗教任务仍在进行中</li><li>你的宗教组织确认传教任务继续</li><li>你有足够的生活来源（由宗教组织提供）</li><li>你有有效的医疗保险</li></ul>\n<p>续签所需文件，请参阅： <strong>https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html</strong></p>",
-        "index": 12
-      },
-      {
-        "question": "我可以转换为其他许可吗？",
-        "content": "<p>在特定情况下可以转换为其他permesso di soggiorno：</p>\n<ul><li>受雇工作许可（如果你获得工作合同且有可用配额）</li><li>家庭原因许可（如果你有合法居留的意大利或外国配偶/家庭成员）</li><li>学习许可（如果你注册培训课程）</li><li>欧盟长期居留许可（如果你满足收入和居住要求）</li></ul>",
-        "index": 13
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo 16€",
-      "4张证件照",
-      "bollettino postale 80.46€",
-      "护照复印件（未过期）",
-      "住宿声明或租赁合同或居住证明",
-      "宗教机构出具的任务性质声明复印件",
-      "生活来源说明（食宿）",
-      "医疗保险或自愿加入SSN"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": 80.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo 16€",
-      "4张证件照",
-      "bollettino postale 80.46€",
-      "护照复印件（未过期）",
-      "住宿声明或租赁合同或居住证明",
-      "宗教机构出具的任务性质证明复印件",
-      "生活来源说明（食宿）",
-      "保险或加入SSN"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 80.46,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null
-  },
-  {
     "id": "3357355e-7f7f-817b-9192-f2f670bff486",
     "slug": "residenza-elettiva",
     "tipo": "选择性居留",
@@ -2408,41 +2328,6 @@
         "question": "费用是多少？",
         "content": "<p>申请时你需要支付：</p>\n<ul><li>一张 bollettino postale，金额为 <strong>30.46€</strong></li><li>一张 marca da bollo，金额为 <strong>16€</strong></li></ul>",
         "index": 7
-      },
-      {
-        "question": "这个许可是什么？",
-        "content": "<p>选择性居留permesso di soggiorno面向希望在意大利长期居住且不从事工作活动的外国公民。适用于经济独立、拥有足够资源无需工作即可维持生活的人，例如外国退休人员或有固定收入的人。</p>",
-        "index": 8
-      },
-      {
-        "question": "谁可以申请？",
-        "content": "<p>以下人员可以申请该许可：</p>\n<ul><li>有稳定的、可证明的经济资源在意大利维持生活而无需工作</li><li>在意大利拥有合适的住房（自有或租赁）</li><li>在意大利拥有有效的医疗保险</li><li>不打算在意大利从事工作活动（受雇或自营）</li><li>已持选择性居留签证进入意大利</li></ul>",
-        "index": 9
-      },
-      {
-        "question": "如何/在哪里申请？",
-        "content": "<p>进入意大利之前：</p>\n<ul><li>你需要在你所在国家的意大利领事馆申请选择性居留签证</li></ul>\n<p>到达意大利后：</p>\n<ul><li>入境后8个工作日内，通过Kit postale（意大利邮政）申请permesso di soggiorno</li><li>或者直接去Questura（如有要求）</li></ul>\n<p>所需文件，请参阅专门页面： <strong>https://www.sospermesso.it/documenti-residenza-elettiva-primo.html</strong></p>",
-        "index": 10
-      },
-      {
-        "question": "我有什么权利？可以享受什么？",
-        "content": "<p>持有此许可：</p>\n<ul><li>你可以在意大利长期居住</li><li>你可以在申根区自由旅行（有条件）</li><li>如果你有医疗保险，可以享受医疗服务</li><li><strong>你不能工作（无论是受雇还是自营）</strong></li></ul>\n<p>⚠️ 注意：此许可不允许在意大利从事任何类型的工作活动。</p>",
-        "index": 11
-      },
-      {
-        "question": "该许可有效期多长？",
-        "content": "<p>首次选择性居留permesso di soggiorno的有效期不固定，通常为1年。如果你继续满足经济和住房要求，可以续签。</p>",
-        "index": 12
-      },
-      {
-        "question": "到期后可以续签吗？",
-        "content": "<p>是的，如果满足以下条件你可以续签：</p>\n<ul><li>你仍然有足够的经济资源维持生活</li><li>你在意大利仍然有合适的住房</li><li>你有有效的医疗保险</li><li>你没有从事未经授权的工作</li></ul>\n<p>续签所需文件，请参阅： <strong>https://www.sospermesso.it/documenti-residenza-elettiva-rinnovo.html</strong></p>",
-        "index": 13
-      },
-      {
-        "question": "我可以转换为其他许可吗？",
-        "content": "<p>仅在特定情况下可以转换为其他permesso di soggiorno，例如：</p>\n<ul><li>受雇工作许可（如果你获得工作合同且有可用配额）</li><li>家庭原因许可（如果你有合法居留的意大利或外国配偶/家庭成员）</li><li>欧盟长期居留许可（如果你满足收入和居住要求）</li></ul>\n<p>转换始终需要核实新许可的具体要求。</p>",
-        "index": 14
       }
     ],
     "isPlaceholder": false,

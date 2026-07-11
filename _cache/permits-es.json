@@ -1,5 +1,83 @@
 [
   {
+    "id": "3217355e-7f7f-8118-af1c-fa539726af5f",
+    "slug": "motivi-religiosi",
+    "tipo": "Motivos religiosos",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "¿Qué es este permiso?",
+        "content": "<p>El permiso de estadía por motivos religiosos está destinado a ciudadanos extranjeros que realizan actividades relacionadas con una confesión religiosa en Italia. Se trata de un permiso para <strong>religiosos, misioneros, ministros de culto</strong> y personas enviadas a Italia por entidades religiosas reconocidas.</p>",
+        "index": 0
+      },
+      {
+        "question": "¿Quién puede solicitarlo?",
+        "content": "<p>Puede solicitarlo quien:</p>\n<ul><li>Ha sido enviado a Italia por una <strong>entidad religiosa</strong> reconocida</li><li>Tiene un <strong>encargo religioso documentado</strong> (por ejemplo: sacerdote, monja, misionero, pastor)</li><li>Ha obtenido la visa de entrada por motivos religiosos</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "¿Cómo/dónde se solicita?",
+        "content": "<p>Se solicita a través del <strong>kit postal</strong> disponible en las oficinas postales habilitadas.</p>\n<p>Dentro de <strong>8 días</strong> desde la entrada a Italia, debes presentar la solicitud.</p>\n<p>Para saber qué documentos llevar, consulta las páginas dedicadas:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documentos para la primera expedición</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documentos para la renovación</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "¿Qué derechos me otorga? ¿A qué tengo acceso?",
+        "content": "<p>Con este permiso puedes:</p>\n<ul><li><strong>Realizar tu actividad religiosa</strong> en Italia</li><li>Inscribirte en el Servicio Nacional de Salud (SSN) o contratar una póliza sanitaria privada</li><li>Solicitar la residencia</li></ul>\n<p>⚠️ <strong>Atención:</strong> con este permiso <strong>NO puedes trabajar</strong> fuera de la actividad religiosa para la cual fue expedido.</p>",
+        "index": 3
+      },
+      {
+        "question": "¿Cuánto dura este permiso?",
+        "content": "<p>La duración depende del cargo religioso y está indicada en el permiso. Normalmente corresponde a la duración de la misión o del cargo.</p>",
+        "index": 4
+      },
+      {
+        "question": "¿Cuándo vence puedo renovarlo?",
+        "content": "<p>Sí, puedes renovarlo si la entidad religiosa confirma que tu cargo en Italia continúa. Para la renovación se necesita una nueva declaración de la entidad religiosa.</p>",
+        "index": 5
+      },
+      {
+        "question": "¿Puedo convertirlo en otro permiso?",
+        "content": "<p>La conversión a otros permisos de residencia es posible en casos específicos:</p>\n<ul><li>Permiso por trabajo asalariado (si obtienes un contrato de trabajo y hay cupos disponibles)</li><li>Permiso por motivos familiares (si tienes un cónyuge o familiar italiano o extranjero en situación regular)</li><li>Permiso por estudio (si te inscribes en un programa de formación)</li><li>Permiso UE para residentes de larga duración (si cumples los requisitos de ingresos y residencia)</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "¿Cuánto cuesta?",
+        "content": "<p>Para la solicitud debes pagar:</p>\n<ul><li>Un boleta de pago postal (bollettino postale) de <strong>80,46 €</strong></li><li>Un timbre fiscal de <strong>16 €</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "timbre fiscal de 16€",
+      "4 Fotos",
+      "Póliza de seguro de cobertura sanitaria o inscripción voluntaria al SSN (Seguridad Social italiana)",
+      "boletín de pago postal de 80.46€",
+      "copia declaración del ente religioso que certifica la naturaleza del cargo",
+      "Indicación de medios de sustento (comida y alojamiento)",
+      "Copia del pasaporte (no caducado)",
+      "Declaración de hospitalidad o contrato de alquiler o certificado de residencia"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "timbre fiscal de 16€",
+      "Póliza de seguro o inscripción SSN (Seguridad Social italiana)",
+      "Indicación de medios de sustento (comida y alojamiento)",
+      "4 fotos tipo carnet",
+      "Boletín de pago postal de 80.46€",
+      "Copia del pasaporte (no caducado)",
+      "copia declaración del ente religioso que certifica la naturaleza del cargo",
+      "declaración de hospitalidad o contrato de alquiler o certificado de residencia"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
     "id": "3217355e-7f7f-81ca-a4cf-d237b9dcb6dd",
     "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
     "tipo": "Permiso de la UE para residentes de larga duración (\"Tarjeta de residencia\")",
@@ -740,39 +818,34 @@
     "emoji": "👨‍👩‍👧‍👦",
     "sections": [
       {
-        "question": "¿Qué es esta tarjeta de residencia?",
-        "content": "<p>Es un permiso de estadía otorgado a los familiares no comunitarios de un ciudadano italiano &quot;dinámico&quot; (es decir, que ha vivido de forma estable en otro país de la Unión Europea, típicamente por trabajo, y que ahora vive en Italia.</p>",
-        "index": 0
-      },
-      {
         "question": "¿Qué es esta tarjeta?",
         "content": "<p>Es un permiso de estadía otorgado a los familiares no comunitarios de un ciudadano italiano &quot;dinámico&quot;. Un ciudadano italiano &quot;dinámico&quot; es un ciudadano italiano que ha vivido o trabajado en otro país de la Unión Europea distinto de Italia.</p>",
-        "index": 1
+        "index": 0
       },
       {
         "question": "¿Cuánto dura esta tarjeta?",
         "content": "<p>Dura 5 años y puede ser renovada. Después de la primera renovación, se vuelve permanente.</p>",
-        "index": 2
+        "index": 1
       },
       {
         "question": "¿Quién puede solicitar esta tarjeta?",
         "content": "<p>Puedes solicitarla si eres:</p>\n<ul><li>Esposa/esposo o pareja unida civilmente del ciudadano italiano</li><li>Pareja que ha suscrito un contrato de convivencia, incluso sin matrimonio o unión civil</li><li>Hijo/hija hasta 21 años del ciudadano italiano o de su cónyuge</li><li>Hijo/hija con más de 21 años del ciudadano italiano &quot;dinámico&quot; o de su cónyuge, pero <strong>a cargo</strong> (debes demostrar que vives a cargo: documentos de tu país de origen, dinero enviado a ti desde el extranjero, algunas Jefaturas de Policía (Questura) piden también la prueba de que eres carga fiscal del familiar italiano)</li><li>Mamá/papá del ciudadano italiano &quot;dinámico&quot; o de su cónyuge, pero <strong>a cargo</strong> (debes demostrar que vives a cargo: documentos de tu país de origen, dinero enviado a ti desde el extranjero, algunas Jefaturas de Policía (Questura) piden también la prueba de que eres carga fiscal del familiar italiano)</li><li>Abuela/abuelo del ciudadano italiano &quot;dinámico&quot; o de su cónyuge</li><li>Nieto (hijo de los hijos) del ciudadano italiano &quot;dinámico&quot; o de su cónyuge hasta 21 años</li><li>Nieto (hijo de los hijos) del ciudadano italiano &quot;dinámico&quot; o de su cónyuge, con más de 21 años y <strong>a cargo</strong> (debes demostrar que vives a cargo: documentos de tu país de origen, dinero enviado a ti desde el extranjero, algunas Jefaturas de Policía (Questura) piden también la prueba de que eres carga fiscal del familiar italiano)</li></ul>",
-        "index": 3
+        "index": 2
       },
       {
         "question": "¿Dónde se solicita esta tarjeta?",
         "content": "<p>Debes presentar la solicitud en la Oficina de extranjería/migraciones (Questura) de la zona donde vives.</p>\n<p>Debes hacer la solicitud dentro de 3 meses desde que entraste en Italia. Si ya estás en Italia con otro tipo de visado (turismo, familia, etc.), puedes cambiarlo a tarjeta de residencia si tienes todos los requisitos.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "¿Qué documentos necesito para solicitarla?",
         "content": "<ul><li>Pasaporte válido (página con tus datos personales y vencimientos, eventuales visados y sellos de entrada/salida)</li><li>Tu antiguo permiso de estadía (si lo tienes)</li><li>Documento de identidad del ciudadano italiano</li><li>Declaración/constancia de hospedaje</li><li>Certificado de composición familiar del ciudadano italiano (expedido por el ayuntamiento donde vive)</li><li>Documentos que muestran el grado de parentesco (si provienen del extranjero deben ser traducidos y legalizados/apostillados)</li><li>Documentos que muestren los ingresos del ciudadano italiano (Cu/730/Unico) <em>(cuando se requiere que el familiar no comunitario esté a cargo del familiar italiano dinámico)</em></li><li>Documentos que muestran que vives a cargo <em>(cuando se requiere que el familiar no comunitario esté a cargo del familiar italiano dinámico)</em></li><li><strong>Documentos que demuestren que el ciudadano italiano ha vivido en otro país de la UE</strong> (según el art 23 D.lvo 30 del 2007)</li></ul>",
-        "index": 5
+        "index": 4
       },
       {
         "question": "¿Qué puedo hacer con esta tarjeta de residencia?",
         "content": "<p>Con esta tarjeta puedes:</p>\n<ul><li>Trabajar con contrato regular (trabajo autónomo o asalariado)</li><li>Inscribirte en la escuela, un curso profesional, o en la universidad</li><li>Inscribirte en el Servicio Nacional de Salud (SSN) y tener un médico de cabecera</li><li>Viajar a los países Schengen hasta 90 días cada 6 meses, si tienes un pasaporte válido</li><li>Después de 5 años puedes solicitar la tarjeta de residencia permanente</li></ul>",
-        "index": 6
+        "index": 5
       }
     ],
     "isPlaceholder": false,
@@ -2474,79 +2547,6 @@
       "Boletín de pago postal de 30.46",
       "Permiso en vencimiento",
       "Decisión de la comisión o del Tribunal",
-      "declaración de hospitalidad o contrato de alquiler o certificado de residencia"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8118-af1c-fa539726af5f",
-    "slug": "motivi-religiosi",
-    "tipo": "Motivos religiosos",
-    "emoji": "📄",
-    "sections": [
-      {
-        "question": "¿Qué es este permiso?",
-        "content": "<p>El permiso de estadía por motivos religiosos está destinado a ciudadanos extranjeros que realizan actividades relacionadas con una confesión religiosa en Italia. Se trata de un permiso para <strong>religiosos, misioneros, ministros de culto</strong> y personas enviadas a Italia por entidades religiosas reconocidas.</p>",
-        "index": 0
-      },
-      {
-        "question": "¿Quién puede solicitarlo?",
-        "content": "<p>Puede solicitarlo quien:</p>\n<ul><li>Ha sido enviado a Italia por una <strong>entidad religiosa</strong> reconocida</li><li>Tiene un <strong>encargo religioso documentado</strong> (por ejemplo: sacerdote, monja, misionero, pastor)</li><li>Ha obtenido la visa de entrada por motivos religiosos</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "¿Cómo/dónde se solicita?",
-        "content": "<p>Se solicita a través del <strong>kit postal</strong> disponible en las oficinas postales habilitadas.</p>\n<p>Dentro de <strong>8 días</strong> desde la entrada a Italia, debes presentar la solicitud.</p>\n<p>Para saber qué documentos llevar, consulta las páginas dedicadas:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documentos para la primera expedición</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documentos para la renovación</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "¿Qué derechos me otorga? ¿A qué tengo acceso?",
-        "content": "<p>Con este permiso puedes:</p>\n<ul><li><strong>Realizar tu actividad religiosa</strong> en Italia</li><li>Inscribirte en el Servicio Nacional de Salud (SSN) o contratar una póliza sanitaria privada</li><li>Solicitar la residencia</li></ul>\n<p>⚠️ <strong>Atención:</strong> con este permiso <strong>NO puedes trabajar</strong> fuera de la actividad religiosa para la cual fue expedido.</p>",
-        "index": 3
-      },
-      {
-        "question": "¿Cuánto dura este permiso?",
-        "content": "<p>La duración depende del cargo religioso y está indicada en el permiso. Normalmente corresponde a la duración de la misión o del cargo.</p>",
-        "index": 4
-      },
-      {
-        "question": "¿Cuándo vence puedo renovarlo?",
-        "content": "<p>Sí, puedes renovarlo si la entidad religiosa confirma que tu cargo en Italia continúa. Para la renovación se necesita una nueva declaración de la entidad religiosa.</p>",
-        "index": 5
-      },
-      {
-        "question": "¿Cuánto cuesta?",
-        "content": "<p>Para la solicitud debes pagar:</p>\n<ul><li>Un boleta de pago postal (bollettino postale) de <strong>80,46 €</strong></li><li>Un timbre fiscal de <strong>16 €</strong></li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "timbre fiscal de 16€",
-      "4 Fotos",
-      "Póliza de seguro de cobertura sanitaria o inscripción voluntaria al SSN (Seguridad Social italiana)",
-      "boletín de pago postal de 80.46€",
-      "copia declaración del ente religioso que certifica la naturaleza del cargo",
-      "Indicación de medios de sustento (comida y alojamiento)",
-      "Copia del pasaporte (no caducado)",
-      "Declaración de hospitalidad o contrato de alquiler o certificado de residencia"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "timbre fiscal de 16€",
-      "Póliza de seguro o inscripción SSN (Seguridad Social italiana)",
-      "Indicación de medios de sustento (comida y alojamiento)",
-      "4 fotos tipo carnet",
-      "Boletín de pago postal de 80.46€",
-      "Copia del pasaporte (no caducado)",
-      "copia declaración del ente religioso que certifica la naturaleza del cargo",
       "declaración de hospitalidad o contrato de alquiler o certificado de residencia"
     ],
     "rinnovoMethod": "KIT",
