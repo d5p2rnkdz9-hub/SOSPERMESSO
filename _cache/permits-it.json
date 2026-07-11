@@ -1,5 +1,85 @@
 [
   {
+    "id": "3097355e-7f7f-8186-96d5-f3daceac6f93",
+    "slug": "motivi-religiosi",
+    "tipo": "Motivi religiosi",
+    "emoji": "📄",
+    "sections": [
+      {
+        "question": "Che cos'è questo permesso?",
+        "content": "<p>Il permesso di soggiorno per motivi religiosi è destinato a cittadini stranieri che svolgono attività legate a una confessione religiosa in Italia. Si tratta di un permesso per <strong>religiosi, missionari, ministri di culto</strong> e persone inviate in Italia da enti religiosi riconosciuti.</p>",
+        "index": 0
+      },
+      {
+        "question": "Chi può chiederlo?",
+        "content": "<p>Può chiederlo chi:</p>\n<ul><li>È stato inviato in Italia da un <strong>ente religioso</strong> riconosciuto</li><li>Ha un <strong>incarico religioso documentato</strong> (ad esempio: sacerdote, suora, missionario, pastore)</li><li>Ha ottenuto il <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> d'ingresso per motivi religiosi</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Come/dove si chiede?",
+        "content": "<p>Si chiede tramite il <strong><a href=\"dizionario.html#kit-postale\" class=\"doc-link\">KIT postale</a></strong> disponibile negli uffici postali abilitati.</p>\n<p>Entro <strong>8 giorni</strong> dall&#039;ingresso in Italia, devi presentare la richiesta.</p>\n<p>Per sapere quali documenti portare, consulta le pagine dedicate:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documenti per il primo rilascio</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documenti per il rinnovo</a></li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Che diritti mi dà? A cosa ho accesso?",
+        "content": "<p>Con questo permesso puoi:</p>\n<ul><li><strong>Svolgere la tua attività religiosa</strong> in Italia</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) o stipulare una polizza sanitaria privata</li><li>Chiedere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a></li></ul>\n<p>⚠️ <strong>Attenzione:</strong> con questo permesso <strong>NON puoi lavorare</strong> al di fuori dell&#039;attività religiosa per cui è stato rilasciato.</p>",
+        "index": 3
+      },
+      {
+        "question": "Quanto dura questo permesso?",
+        "content": "<p>La durata dipende dall&#039;incarico religioso ed è indicata nel permesso. Di solito corrisponde alla durata della missione o dell&#039;incarico.</p>",
+        "index": 4
+      },
+      {
+        "question": "Quando scade posso rinnovarlo?",
+        "content": "<p>Sì, puoi rinnovarlo se l'ente religioso conferma che il tuo incarico in Italia continua. Per il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> serve una nuova dichiarazione dell'ente religioso.</p>",
+        "index": 5
+      },
+      {
+        "question": "Posso convertirlo in un altro permesso?",
+        "content": "<p>La <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in altri permessi di soggiorno è possibile in casi specifici:</p>\n<ul><li>Permesso per lavoro subordinato (se ottieni un contratto di lavoro e ci sono quote disponibili)</li><li>Permesso per motivi familiari (se hai un <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a> o familiare italiano/straniero regolare)</li><li>Permesso per studio (se ti iscrivi a un percorso di formazione)</li><li>Permesso UE per soggiornanti di lungo periodo (se hai i requisiti di reddito e <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a>)</li></ul>",
+        "index": 6
+      },
+      {
+        "question": "Quanto costa?",
+        "content": "<p>Per la richiesta devi pagare:</p>\n<ul><li>Un bollettino postale da <strong>80,46 €</strong></li><li>Una <a href=\"dizionario.html#marca-da-bollo\" class=\"doc-link\">marca da bollo</a> da <strong>16 €</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 80.46 €",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Copia dichiarazione dell'ente religioso attestante natura incarico",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 80.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 80.46 €",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Copia di ente religioso attestante natura incarico",
+      "Indicazione mezzi sostentamento (vitto e alloggio)",
+      "Polizza assicurativa o iscrizione al SSN"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 80.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null,
+    "categoria": "Studio/Lavoro",
+    "rinnovoNotApplicable": false
+  },
+  {
     "id": "3097355e-7f7f-81bc-adf8-e0f675dcc98b",
     "slug": "asilo-status-rifugiato",
     "tipo": "Asilo (status rifugiato)",
@@ -293,41 +373,6 @@
         "question": "Quanto costa?",
         "content": "<p>Per la richiesta devi pagare:</p>\n<ul><li>Un bollettino postale da <strong>30,46 €</strong></li><li>Una <a href=\"dizionario.html#marca-da-bollo\" class=\"doc-link\">marca da bollo</a> da <strong>16 €</strong></li></ul>",
         "index": 7
-      },
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>Il permesso di soggiorno per <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> elettiva è destinato a cittadini stranieri che desiderano vivere stabilmente in Italia senza svolgere attività lavorativa. È pensato per persone economicamente indipendenti che hanno risorse sufficienti per mantenersi senza lavorare, come pensionati stranieri o persone con rendite.</p>",
-        "index": 8
-      },
-      {
-        "question": "Chi può chiederlo?",
-        "content": "<p>Può chiedere questo permesso chi:</p>\n<ul><li>Ha risorse economiche stabili e documentabili per mantenersi in Italia senza lavorare</li><li>Ha un&#039;abitazione idonea in Italia (di proprietà o in affitto)</li><li>Ha un&#039;assicurazione sanitaria valida in Italia</li><li>Non intende svolgere attività lavorativa in Italia (subordinata o autonoma)</li><li>È già entrato in Italia con un <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> per <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> elettiva</li></ul>",
-        "index": 9
-      },
-      {
-        "question": "Come/dove si chiede?",
-        "content": "<p>Prima di entrare in Italia:</p>\n<ul><li>Devi richiedere un <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> per <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> elettiva presso il Consolato italiano nel tuo Paese</li></ul>\n<p>Una volta in Italia:</p>\n<ul><li>Entro 8 giorni lavorativi dall'ingresso, richiedi il permesso di soggiorno tramite <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">KIT postale</a> (Poste Italiane)</li><li>Oppure direttamente in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>, se richiesto</li></ul>\n<p>Per i documenti necessari, vedi la pagina dedicata: <strong>https://www.sospermesso.it/documenti-<a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a>-elettiva-primo.html</strong></p>",
-        "index": 10
-      },
-      {
-        "question": "Che diritti mi dà? A cosa ho accesso?",
-        "content": "<p>Con questo permesso:</p>\n<ul><li>Puoi vivere stabilmente in Italia</li><li>Puoi viaggiare liberamente nello spazio Schengen (con condizioni)</li><li>Puoi accedere ai servizi sanitari se hai un&#039;assicurazione sanitaria</li><li><strong>NON puoi lavorare (né come dipendente né come autonomo)</strong></li></ul>\n<p>⚠️ Attenzione: questo permesso non consente di svolgere alcun tipo di attività lavorativa in Italia.</p>",
-        "index": 11
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<p>Il primo permesso di soggiorno per <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> elettiva ha una durata variabile, solitamente 1 anno. Può essere rinnovato se continui a soddisfare i requisiti economici e di alloggio.</p>",
-        "index": 12
-      },
-      {
-        "question": "Quando scade posso rinnovarlo?",
-        "content": "<p>Sì, puoi rinnovarlo se:</p>\n<ul><li>Hai ancora risorse economiche sufficienti per mantenerti</li><li>Hai ancora un&#039;abitazione idonea in Italia</li><li>Hai un&#039;assicurazione sanitaria valida</li><li>Non hai svolto attività lavorativa non autorizzata</li></ul>\n<p>Per i documenti necessari per il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a>, vedi: <strong>https://www.sospermesso.it/documenti-<a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a>-elettiva-<a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a>.html</strong></p>",
-        "index": 13
-      },
-      {
-        "question": "Posso convertirlo in un altro permesso?",
-        "content": "<p>La <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in altri permessi di soggiorno è possibile solo in casi specifici, ad esempio:</p>\n<ul><li>Permesso per lavoro subordinato (se ottieni un contratto di lavoro e ci sono quote disponibili)</li><li>Permesso per motivi familiari (se hai un <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a> o familiare italiano/straniero regolare)</li><li>Permesso UE per soggiornanti di lungo periodo (se hai i requisiti di reddito e <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a>)</li></ul>\n<p>La <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> richiede sempre la verifica dei requisiti specifici del nuovo permesso.</p>",
-        "index": 14
       }
     ],
     "isPlaceholder": false,
@@ -351,116 +396,6 @@
       "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
       "Permesso in scadenza",
       "Prova della fonte di reddito"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 80.46,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null,
-    "categoria": "Studio/Lavoro",
-    "rinnovoNotApplicable": false
-  },
-  {
-    "id": "3097355e-7f7f-8186-96d5-f3daceac6f93",
-    "slug": "motivi-religiosi",
-    "tipo": "Motivi religiosi",
-    "emoji": "📄",
-    "sections": [
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>Il permesso di soggiorno per motivi religiosi è destinato a cittadini stranieri che svolgono attività legate a una confessione religiosa in Italia. Si tratta di un permesso per <strong>religiosi, missionari, ministri di culto</strong> e persone inviate in Italia da enti religiosi riconosciuti.</p>",
-        "index": 0
-      },
-      {
-        "question": "Chi può chiederlo?",
-        "content": "<p>Può chiederlo chi:</p>\n<ul><li>È stato inviato in Italia da un <strong>ente religioso</strong> riconosciuto</li><li>Ha un <strong>incarico religioso documentato</strong> (ad esempio: sacerdote, suora, missionario, pastore)</li><li>Ha ottenuto il <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> d'ingresso per motivi religiosi</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Come/dove si chiede?",
-        "content": "<p>Si chiede tramite il <strong><a href=\"dizionario.html#kit-postale\" class=\"doc-link\">KIT postale</a></strong> disponibile negli uffici postali abilitati.</p>\n<p>Entro <strong>8 giorni</strong> dall&#039;ingresso in Italia, devi presentare la richiesta.</p>\n<p>Per sapere quali documenti portare, consulta le pagine dedicate:</p>\n<ul><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-primo.html\">Documenti per il primo rilascio</a></li><li><a href=\"https://www.sospermesso.it/documenti-motivi-religiosi-rinnovo.html\">Documenti per il rinnovo</a></li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Che diritti mi dà? A cosa ho accesso?",
-        "content": "<p>Con questo permesso puoi:</p>\n<ul><li><strong>Svolgere la tua attività religiosa</strong> in Italia</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) o stipulare una polizza sanitaria privata</li><li>Chiedere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a></li></ul>\n<p>⚠️ <strong>Attenzione:</strong> con questo permesso <strong>NON puoi lavorare</strong> al di fuori dell&#039;attività religiosa per cui è stato rilasciato.</p>",
-        "index": 3
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<p>La durata dipende dall&#039;incarico religioso ed è indicata nel permesso. Di solito corrisponde alla durata della missione o dell&#039;incarico.</p>",
-        "index": 4
-      },
-      {
-        "question": "Quando scade posso rinnovarlo?",
-        "content": "<p>Sì, puoi rinnovarlo se l'ente religioso conferma che il tuo incarico in Italia continua. Per il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> serve una nuova dichiarazione dell'ente religioso.</p>",
-        "index": 5
-      },
-      {
-        "question": "Quanto costa?",
-        "content": "<p>Per la richiesta devi pagare:</p>\n<ul><li>Un bollettino postale da <strong>80,46 €</strong></li><li>Una <a href=\"dizionario.html#marca-da-bollo\" class=\"doc-link\">marca da bollo</a> da <strong>16 €</strong></li></ul>",
-        "index": 6
-      },
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>Il permesso di soggiorno per motivi religiosi è destinato a ministri di culto, religiosi, missionari e altre figure che svolgono attività religiose in Italia per conto di confessioni religiose riconosciute. Consente di svolgere attività legate al proprio ministero religioso.</p>",
-        "index": 7
-      },
-      {
-        "question": "Chi può chiederlo?",
-        "content": "<p>Può chiedere questo permesso chi:</p>\n<ul><li>È un ministro di culto (sacerdote, pastore, imam, rabbino, monaco, etc.)</li><li>È un membro di un ordine religioso o congregazione</li><li>Svolge attività religiose per conto di una confessione religiosa riconosciuta in Italia</li><li>Ha ricevuto un incarico ufficiale dalla propria organizzazione religiosa</li><li>È entrato in Italia con un <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> per motivi religiosi</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "Come/dove si chiede?",
-        "content": "<p>Prima di entrare in Italia:</p>\n<ul><li>Devi richiedere un <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> per motivi religiosi presso il Consolato italiano nel tuo Paese</li></ul>\n<p>Una volta in Italia:</p>\n<ul><li>Entro 8 giorni lavorativi dall'ingresso, richiedi il permesso di soggiorno tramite <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">KIT postale</a> (Poste Italiane)</li><li>Oppure direttamente in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>, se richiesto</li></ul>\n<p>Per i documenti necessari, vedi la pagina dedicata: <strong>https://www.sospermesso.it/documenti-motivi-religiosi-primo.html</strong></p>",
-        "index": 9
-      },
-      {
-        "question": "Che diritti mi dà? A cosa ho accesso?",
-        "content": "<p>Con questo permesso:</p>\n<ul><li>Puoi svolgere attività religiose e ministeriali in Italia</li><li>Puoi celebrare riti, cerimonie e funzioni religiose</li><li>Puoi svolgere attività di formazione religiosa e catechesi</li><li>Puoi accedere ai servizi sanitari se hai un&#039;assicurazione sanitaria</li><li><strong>NON puoi svolgere attività lavorative diverse da quelle religiose</strong></li></ul>\n<p>⚠️ Attenzione: puoi svolgere solo le attività religiose previste dal tuo incarico, non altre forme di lavoro.</p>",
-        "index": 10
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<p>Il permesso di soggiorno per motivi religiosi ha una durata variabile, solitamente 1 o 2 anni, a seconda della durata dell&#039;incarico religioso. Può essere rinnovato se l&#039;incarico continua.</p>",
-        "index": 11
-      },
-      {
-        "question": "Quando scade posso rinnovarlo?",
-        "content": "<p>Sì, puoi rinnovarlo se:</p>\n<ul><li>Il tuo incarico religioso è ancora in corso</li><li>La tua organizzazione religiosa conferma la continuazione della missione</li><li>Hai mezzi di sostentamento adeguati (forniti dall&#039;organizzazione religiosa)</li><li>Hai un&#039;assicurazione sanitaria valida</li></ul>\n<p>Per i documenti necessari per il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a>, vedi: <strong>https://www.sospermesso.it/documenti-motivi-religiosi-<a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a>.html</strong></p>",
-        "index": 12
-      },
-      {
-        "question": "Posso convertirlo in un altro permesso?",
-        "content": "<p>La <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in altri permessi di soggiorno è possibile in casi specifici:</p>\n<ul><li>Permesso per lavoro subordinato (se ottieni un contratto di lavoro e ci sono quote disponibili)</li><li>Permesso per motivi familiari (se hai un <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a> o familiare italiano/straniero regolare)</li><li>Permesso per studio (se ti iscrivi a un percorso di formazione)</li><li>Permesso UE per soggiornanti di lungo periodo (se hai i requisiti di reddito e <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a>)</li></ul>",
-        "index": 13
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 80.46 €",
-      "Copia del passaporto (non scaduto)",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
-      "Copia dichiarazione dell'ente religioso attestante natura incarico",
-      "Indicazione mezzi sostentamento (vitto e alloggio)",
-      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": 80.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 80.46 €",
-      "Copia del passaporto (non scaduto)",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
-      "Copia di ente religioso attestante natura incarico",
-      "Indicazione mezzi sostentamento (vitto e alloggio)",
-      "Polizza assicurativa o iscrizione al SSN"
     ],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": 80.46,
@@ -1484,63 +1419,33 @@
     "sections": [
       {
         "question": "Che cos'è questa carta di soggiorno?",
-        "content": "<p>È un permesso di soggiorno dato ai familiari non comunitari di un cittadino italiano “dinamico” (cioé che ha vissuto stabilmente in un altro paese dell&#039;Unione Europea, tipicamente per lavoro, e che ora vive in Italia.</p>",
-        "index": 0
-      },
-      {
-        "question": "Che cos'è questa carta?",
         "content": "<p>È un permesso di soggiorno dato ai familiari non comunitari di un cittadino italiano &quot;dinamico&quot;. Un cittadino italiano &quot;dinamico&quot; è un cittadino italiano che ha vissuto o lavorato in un altro Paese dell&#039;Unione Europea diverso dall&#039;Italia.</p>",
-        "index": 1
+        "index": 0
       },
       {
         "question": "Quanto dura questa carta?",
         "content": "<p>Dura 5 anni e può essere rinnovata. Dopo il primo <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a>, diventa permanente.</p>",
-        "index": 2
+        "index": 1
       },
       {
         "question": "Chi può chiedere questa carta?",
         "content": "<p>Puoi chiederla se sei:</p>\n<ul><li>Moglie/marito o partner unito civilmente del cittadino italiano</li><li>Partner che ha sottoscritto un contratto di convivenza, anche senza matrimonio o <a href=\"dizionario.html#unione-civile\" class=\"doc-link\">unione civile</a></li><li>Figlio/figlia fino a 21 anni del cittadino italiano o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a></li><li>Figlio/figlia con più di 21 anni del cittadino italiano \"dinamico\" o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, ma <strong><a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></strong> (devi mostrare che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a>: documenti dal tuo Paese d'origine, soldi mandati a te dall'estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare italiano)</li><li>Mamma/papà del cittadino italiano \"dinamico\" o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, ma <strong><a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></strong> (devi mostrare che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a>: documenti dal tuo Paese d'origine, soldi mandati a te dall'estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare italiano)</li><li>Nonna/nonno del cittadino italiano \"dinamico\" o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a></li><li>Nipote (figlio dei figli) del cittadino italiano \"dinamico\" o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a> fino a 21 anni</li><li>Nipote (figlio dei figli) del cittadino italiano \"dinamico\" o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, con più di 21 anni e <strong><a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></strong> (devi mostrare che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a>: documenti dal tuo Paese d'origine, soldi mandati a te dall'estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare italiano)</li></ul>",
-        "index": 3
+        "index": 2
       },
       {
         "question": "Dove si chiede questa carta?",
         "content": "<p>Devi presentare la domanda alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> della zona dove vivi.</p>\n<p>Devi fare la richiesta entro 3 mesi da quando sei entrato in Italia. Se sei già in Italia con un altro tipo di <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> (turismo, famiglia, ecc.), puoi cambiarlo in <a href=\"dizionario.html#carta-di-soggiorno\" class=\"doc-link\">carta di soggiorno</a> se hai tutti i requisiti.</p>",
-        "index": 4
+        "index": 3
       },
       {
         "question": "Che documenti mi servono per chiederla?",
         "content": "<ul><li>Passaporto valido (pagina con i tuoi dati personali e scadenze, eventuali visti e timbri di ingresso/uscita)</li><li>Il tuo vecchio permesso di soggiorno (se ce l&#039;hai)</li><li>Documento di identità del cittadino italiano</li><li>Dichiarazione di ospitalità</li><li>Certificato di stato di famiglia del cittadino italiano (dato dal comune dove vive)</li><li>Documenti che mostrano il grado di parentela (se vengono dall&#039;estero devono essere tradotti e legalizzati/apostillati)</li><li>Documenti che mostrano i soldi del cittadino italiano (Cu/730/Unico) <em>(quando è richiesto che il familiare non UE sia <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> del familiare italiano dinamico)</em></li><li>Documenti che mostrano che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> <em>(quando è richiesto che il familiare non UE sia <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> del familiare italiano dinamico)</em></li><li><strong>Documenti che mostrano che il cittadino italiano ha vissuto in un altro Paese UE</strong> (secondo l&#039;art 23 D.lvo 30 del 2007)</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Cosa posso fare con questa carta di soggiorno?",
+        "content": "<p>Con questa carta puoi:</p>\n<ul><li>Lavorare con regolare contratto (lavoro autonomo o subordinato)</li><li>Iscriverti a scuola, un corso professionale, o all&#039;università</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Viaggiare nei Paesi Schengen fino a 90 giorni ogni 6 mesi, se hai un passaporto valido</li><li>Dopo 5 anni puoi chiedere la <a href=\"dizionario.html#carta-di-soggiorno\" class=\"doc-link\">Carta di soggiorno</a> permanente</li></ul>",
         "index": 5
-      },
-      {
-        "question": "Cosa posso fare con questa carta di soggiorno?",
-        "content": "<p>Con questa carta puoi:</p>\n<ul><li>Lavorare con regolare contratto (lavoro autonomo o subordinato)</li><li>Iscriverti a scuola, un corso professionale, o all&#039;università</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Viaggiare nei Paesi Schengen fino a 90 giorni ogni 6 mesi, se hai un passaporto valido</li><li>Dopo 5 anni puoi chiedere la <a href=\"dizionario.html#carta-di-soggiorno\" class=\"doc-link\">Carta di soggiorno</a> permanente</li></ul>",
-        "index": 6
-      },
-      {
-        "question": "Quanto dura questa carta?",
-        "content": "<p>Dura 5 anni e può essere rinnovata. Dopo il primo <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> diventa permanente.</p>",
-        "index": 7
-      },
-      {
-        "question": "Chi può chiedere questa carta?",
-        "content": "<p>Puoi chiederla se sei:</p>\n<ul><li>Moglie/marito o partner unito civilmente del cittadino UE</li><li>Partner che hanno sottoscritto un contratto di convivenza, anche senza matrimonio o <a href=\"dizionario.html#unione-civile\" class=\"doc-link\">unione civile</a></li><li>Figlio/figlia fino a 21 anni del cittadino UE o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a></li><li>Figlio/figlia con più di 21 anni del cittadino UE o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, ma <strong><a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></strong> (devi mostrare che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a>: documenti dal tuo Paese d'origine, soldi mandati a te dall'estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare UE)</li><li>Mamma/papà del cittadino UE o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, ma <strong><a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></strong> (devi mostrare che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a>: documenti dal tuo Paese d'origine, soldi mandati a te dall'estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare UE)</li><li>Nonna/nonno del cittadino UE o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a></li><li>Nipote (figlio dei figli) del cittadino UE o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a> fino a 21 anni</li><li>Nipote (figlio dei figli) del cittadino UE o del suo <a href=\"dizionario.html#coniuge\" class=\"doc-link\">coniuge</a>, con più di 21 anni e <strong><a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a></strong> (devi mostrare che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a>: documenti dal tuo Paese d'origine, soldi mandati a te dall'estero, alcune Questure chiedono anche la prova che sei carico fiscale del familiare UE)</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "Dove si chiede questa carta?",
-        "content": "<p>Devi presentare la domanda alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> della zona dove vivi.</p>\n<p>Devi fare la richiesta entro 3 mesi da quando sei entrato in Italia. Se sei già in Italia con un altro tipo di <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> (turismo, famiglia, ecc.), puoi cambiarlo in <a href=\"dizionario.html#carta-di-soggiorno\" class=\"doc-link\">carta di soggiorno</a> se hai tutti i requisiti.</p>",
-        "index": 9
-      },
-      {
-        "question": "Che documenti mi servono per chiederla?",
-        "content": "<ul><li>Passaporto valido (pagina con i tuoi dati personali e scadenze, eventuali visti e timbri di ingresso/uscita)</li><li>Il tuo vecchio permesso di soggiorno (se ce l&#039;hai)</li><li>Documento di identità del cittadino comunitario</li><li>Dichiarazione di ospitalità</li><li>Certificato di stato di famiglia del cittadino comunitario (dato dal comune dove vive)</li><li>Documenti che mostrano il grado di parentela (se vengono dall&#039;estero devono essere tradotti e legalizzati/apostillati)</li><li>Documenti che mostrano i soldi del cittadino comunitario (Cu/730/Unico) <em>(quando è richiesto che il familiare non UE sia <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> del familiare UE)</em></li><li>Documenti che mostrano che vivi <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> <em>(quando è richiesto che il familiare non UE sia <a href=\"dizionario.html#a-carico\" class=\"doc-link\">a carico</a> del familiare UE)</em></li></ul>",
-        "index": 10
-      },
-      {
-        "question": "Cosa posso fare con questa carta di soggiorno?",
-        "content": "<p>Con questa carta puoi:</p>\n<ul><li>Lavorare con regolare contratto (lavoro autonomo o subordinato)</li><li>Iscriverti a scuola, un corso professionale, o all&#039;università</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Viaggiare nei Paesi Schengen fino a 90 giorni ogni 6 mesi, se hai un passaporto valido</li><li>Dopo 5 anni puoi chiedere la <a href=\"dizionario.html#carta-di-soggiorno\" class=\"doc-link\">Carta di soggiorno</a> permanente</li></ul>",
-        "index": 11
       }
     ],
     "isPlaceholder": false,
@@ -1685,26 +1590,6 @@
         "question": "E quando il permesso scade? Posso rinnovarlo? Posso convertirlo?",
         "content": "<p>Prima che scada ha due opzioni:</p>\n<ol><li><strong>Rinnovarlo: </strong>la richiesta di <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> va presentata preferibilmente <strong>prima della scadenza</strong> o comunque <strong>entro 60 giorni</strong> dalla scadenza. La domanda si fa con <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a>. </li></ol>\n<p><strong>2. Convertirlo: </strong>se hai tutti i requisiti necessari, questo permesso può essere convertito in un permesso di soggiorno per:</p>\n<ul><li>Studio</li><li>Attesa occupazione</li><li>Motivi familiari</li><li>Carta per soggiornanti di lungo periodo (se hai almeno 5 anni di <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a>)</li></ul>",
         "index": 6
-      },
-      {
-        "question": "Che cos’è questo permesso?",
-        "content": "<p>È un permesso di soggiorno per chi <strong>lavora in modo indipendente</strong>, cioè <strong>non ha un datore di lavoro</strong>, ma svolge un’attività lavorativa o professionale in proprio (ad esempio: commerciante, artigiano, libero professionista, ecc.).</p>",
-        "index": 7
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<ul><li>La durata dipende dall’attività che svolgi e dai documenti che presenti, ma di solito è <strong>da 1 a 2 anni</strong>.</li></ul>",
-        "index": 8
-      },
-      {
-        "question": "Quando scade il permesso, cosa faccio?",
-        "content": "<ul><li>Devi <strong>chiedere il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a></strong> <strong>prima della scadenza </strong>o al massimo entro 60 giorni dopo</li><li>Se <strong>hai i requisiti</strong>, puoi anche <strong>convertirlo</strong> in un altro tipo di permesso (studio, famiglia, lungo soggiornanti, lavoro subordinato, ecc.). Devi chiedere la <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> prima della scadenza.</li></ul>",
-        "index": 9
-      },
-      {
-        "question": "Se al momento del rinnovo sono disoccupato?",
-        "content": "<p>Puoi chiedere il rilascio del <a href=\"permesso-attesa-occupazione.html\">permesso di soggiorno per attesa occupazione</a>, allegando l’iscrizione al Centro per l’impiego!</p>",
-        "index": 10
       }
     ],
     "isPlaceholder": false,

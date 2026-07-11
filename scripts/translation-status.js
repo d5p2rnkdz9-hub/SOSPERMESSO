@@ -46,7 +46,7 @@ function main() {
 
   for (const lang of LANGS) {
     const data = load(lang);
-    const entry = { missingRows: [], noSections: [], fewerSections: [], missingNotes: [], sameTitleHint: [] };
+    const entry = { missingRows: [], noSections: [], fewerSections: [], extraSections: [], missingNotes: [], sameTitleHint: [] };
     report.langs[lang] = entry;
     if (!data) {
       entry.error = 'cache file missing — run npm run fetch';
@@ -61,13 +61,14 @@ function main() {
       const trSections = (tr.sections || []).length;
       if (itSections > 0 && trSections === 0) entry.noSections.push(itP.slug);
       else if (trSections < itSections) entry.fewerSections.push(`${itP.slug} (${trSections}/${itSections})`);
+      else if (trSections > itSections && !itP.isPlaceholder) entry.extraSections.push(`${itP.slug} (${trSections}/${itSections})`);
       if (itP.docNotes && itP.docNotes.trim() && !(tr.docNotes && tr.docNotes.trim())) {
         entry.missingNotes.push(itP.slug);
       }
       if (itP.tipo && tr.tipo === itP.tipo && !itP.isPlaceholder) entry.sameTitleHint.push(itP.slug);
     }
     gapCount += entry.missingRows.length + entry.noSections.length
-      + entry.fewerSections.length + entry.missingNotes.length;
+      + entry.fewerSections.length + entry.extraSections.length + entry.missingNotes.length;
   }
 
   if (asJson) {
@@ -77,7 +78,7 @@ function main() {
     for (const lang of LANGS) {
       const e = report.langs[lang];
       if (e.error) { console.log(`${lang.toUpperCase()}: ⚠ ${e.error}`); continue; }
-      const gaps = e.missingRows.length + e.noSections.length + e.fewerSections.length + e.missingNotes.length;
+      const gaps = e.missingRows.length + e.noSections.length + e.fewerSections.length + e.extraSections.length + e.missingNotes.length;
       if (gaps === 0) {
         console.log(`${lang.toUpperCase()}: ✓ complete${e.sameTitleHint.length ? ` (title-identical hint: ${e.sameTitleHint.join(', ')})` : ''}`);
         continue;
@@ -86,6 +87,7 @@ function main() {
       if (e.missingRows.length) console.log(`  missing rows:    ${e.missingRows.join(', ')}`);
       if (e.noSections.length) console.log(`  no sections:     ${e.noSections.join(', ')}`);
       if (e.fewerSections.length) console.log(`  fewer sections:  ${e.fewerSections.join(', ')}`);
+      if (e.extraSections.length) console.log(`  extra sections:  ${e.extraSections.join(', ')} — translated page has MORE Q&A than IT (stale/duplicated runs): rewrite the permit`);
       if (e.missingNotes.length) console.log(`  missing notes:   ${e.missingNotes.join(', ')}`);
       if (e.sameTitleHint.length) console.log(`  title = IT hint: ${e.sameTitleHint.join(', ')}`);
     }
