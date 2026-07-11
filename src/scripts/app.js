@@ -416,6 +416,21 @@ function initLanguageSwitcher() {
   const PREFIX_RE = /^\/(en|fr|es|tr|bn|ru|ar|ur|fa|zh)(\/|$)/;
 
   function localizedUrl(target) {
+    // Prefer the desktop nav's server-rendered links: they account for pages
+    // that have no counterpart in a given language (langSwitchPath).
+    const navLinks = document.querySelectorAll('.nav-language .nav-dropdown a.dropdown-link');
+    for (const link of navLinks) {
+      const code = link.querySelector('.lang-code');
+      if (code && code.textContent.trim().toLowerCase() === target) {
+        let href = link.getAttribute('href');
+        if (href) {
+          const hash = window.location.hash || '';
+          if (hash && href.indexOf('#') === -1) href += hash;
+          return href;
+        }
+      }
+    }
+    // Fallback: mirror the current path onto the target language.
     let path = window.location.pathname || '/';
     const m = path.match(PREFIX_RE);
     if (m) {

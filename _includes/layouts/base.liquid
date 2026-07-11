@@ -169,6 +169,44 @@
     {%- assign faUrl = "/fa" | append: page.url -%}
     {%- assign zhUrl = "/zh" | append: page.url -%}
   {%- endif -%}
+  {%- if langSwitchPath -%}
+  {%- comment -%} Page has no translated counterpart in some/all languages:
+      only emit hreflang for versions that actually exist
+      (it + langSwitchAvailable + x-default). {%- endcomment -%}
+  {%- assign lsAvail = langSwitchAvailable | default: "" %}
+  <link rel="alternate" hreflang="it" href="{{ site.url }}{{ itUrl }}">
+  {%- if lsAvail contains "en" %}
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "fr" %}
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ frUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "es" %}
+  <link rel="alternate" hreflang="es" href="{{ site.url }}{{ esUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "tr" %}
+  <link rel="alternate" hreflang="tr" href="{{ site.url }}{{ trUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "bn" %}
+  <link rel="alternate" hreflang="bn" href="{{ site.url }}{{ bnUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "ru" %}
+  <link rel="alternate" hreflang="ru" href="{{ site.url }}{{ ruUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "ar" %}
+  <link rel="alternate" hreflang="ar" href="{{ site.url }}{{ arUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "ur" %}
+  <link rel="alternate" hreflang="ur" href="{{ site.url }}{{ urUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "fa" %}
+  <link rel="alternate" hreflang="fa" href="{{ site.url }}{{ faUrl }}">
+  {%- endif %}
+  {%- if lsAvail contains "zh" %}
+  <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ zhUrl }}">
+  {%- endif %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
+  {%- else -%}
   <link rel="alternate" hreflang="it" href="{{ site.url }}{{ itUrl }}">
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
   <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ frUrl }}">
@@ -181,6 +219,7 @@
   <link rel="alternate" hreflang="fa" href="{{ site.url }}{{ faUrl }}">
   <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ zhUrl }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ itUrl }}">
+  {%- endif -%}
 
   <!-- Structured data: Organization + WebSite (sitewide) -->
   <script type="application/ld+json">
