@@ -155,6 +155,22 @@
       {%- assign langFaUrl = "/fa" | append: page.url -%}
       {%- assign langZhUrl = "/zh" | append: page.url -%}
     {%- endif -%}
+    {%- comment -%} Pages without translated counterparts: send those languages
+        to langSwitchPath instead of a nonexistent mirrored URL. Languages
+        listed in langSwitchAvailable keep the normal link. {%- endcomment -%}
+    {%- if langSwitchPath -%}
+      {%- assign lsAvail = langSwitchAvailable | default: "" -%}
+      {%- unless lsAvail contains "en" -%}{%- assign langEnUrl = "/en" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "fr" -%}{%- assign langFrUrl = "/fr" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "es" -%}{%- assign langEsUrl = "/es" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "tr" -%}{%- assign langTrUrl = "/tr" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "bn" -%}{%- assign langBnUrl = "/bn" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "ru" -%}{%- assign langRuUrl = "/ru" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "ar" -%}{%- assign langArUrl = "/ar" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "ur" -%}{%- assign langUrUrl = "/ur" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "fa" -%}{%- assign langFaUrl = "/fa" | append: langSwitchPath -%}{%- endunless -%}
+      {%- unless lsAvail contains "zh" -%}{%- assign langZhUrl = "/zh" | append: langSwitchPath -%}{%- endunless -%}
+    {%- endif -%}
     <li class="nav-item has-dropdown nav-language">
       <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
         {% if lang == 'fr' %}🇫🇷 FR{% elsif lang == 'en' %}🇬🇧 EN{% elsif lang == 'es' %}🇪🇸 ES{% elsif lang == 'tr' %}🇹🇷 TR{% elsif lang == 'bn' %}🇧🇩 BN{% elsif lang == 'ru' %}🇷🇺 RU{% elsif lang == 'ar' %}🇸🇦 AR{% elsif lang == 'ur' %}🇵🇰 UR{% elsif lang == 'fa' %}🇮🇷 FA{% elsif lang == 'zh' %}🇨🇳 ZH{% else %}🇮🇹 IT{% endif %}

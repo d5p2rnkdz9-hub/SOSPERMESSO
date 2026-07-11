@@ -32,17 +32,32 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ slug }}.html"/>
   </url>
   {%- endfor %}
-  <!-- FR Permit pages -->
+  <!-- FR Permit pages (alternates only for languages that have the permit) -->
   {%- for permit in permitsFr %}
+  {%- assign enM = permitsEn | where: "slug", permit.slug %}
+  {%- assign esM = permitsEs | where: "slug", permit.slug %}
+  {%- assign trM = permitsTr | where: "slug", permit.slug %}
+  {%- assign bnM = permitsBn | where: "slug", permit.slug %}
+  {%- assign ruM = permitsRu | where: "slug", permit.slug %}
   <url>
     <loc>{{ site.url }}/fr/permesso-{{ permit.slug }}.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
+    {%- if enM.size > 0 %}
     <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/permesso-{{ permit.slug }}.html"/>
+    {%- endif %}
     <xhtml:link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/permesso-{{ permit.slug }}.html"/>
+    {%- if esM.size > 0 %}
     <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/permesso-{{ permit.slug }}.html"/>
+    {%- endif %}
+    {%- if trM.size > 0 %}
     <xhtml:link rel="alternate" hreflang="tr" href="{{ site.url }}/tr/permesso-{{ permit.slug }}.html"/>
+    {%- endif %}
+    {%- if bnM.size > 0 %}
     <xhtml:link rel="alternate" hreflang="bn" href="{{ site.url }}/bn/permesso-{{ permit.slug }}.html"/>
+    {%- endif %}
+    {%- if ruM.size > 0 %}
     <xhtml:link rel="alternate" hreflang="ru" href="{{ site.url }}/ru/permesso-{{ permit.slug }}.html"/>
+    {%- endif %}
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/permesso-{{ permit.slug }}.html"/>
   </url>
   {%- endfor %}

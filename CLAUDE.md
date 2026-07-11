@@ -294,7 +294,15 @@ All permit detail pages follow a consistent structure:
 
 ### Subagent Translation Pipeline
 
-The "translate within Claude Code subagents" rule above is a manual workflow that wraps `scripts/translate-to-notion.js`. The repo's scripts only handle the bookends; the middle is orchestrated ad-hoc by Claude Code. Files land in `_cache/`:
+**The user-facing entrypoint is the `translate` skill** (`.claude/skills/translate/SKILL.md`): the user says "translate" and Claude Code audits gaps with `npm run translations` (`scripts/translation-status.js` — missing rows, missing/fewer sections, missing docNotes per language), fills them via subagents, writes to Notion, refetches caches, rebuilds, verifies. Follow that skill; the notes below are the underlying mechanics.
+
+Key tooling (2026-07):
+- `scripts/translate-to-notion.js` — supports **all 10 languages**, comma-separated `--permit`, and `--missing` (create-only: skips permits already in the target DB). **Danger:** writing an EXISTING permit replaces its blocks; segments absent from `done.json` fall back to Italian — use `--missing` or verify 100% coverage first.
+- `scripts/backfill-doc-notes.js` — updates ONLY the notes property (`Info extra su doc rilascio/rinnovo`, same name in all 11 DBs after 2026-07 normalization) on existing translated pages. Safe path for notes.
+- `npm run translations` — gap report from committed caches; exit 0 = complete.
+- **Never run two Notion jobs concurrently** — rate limiting makes data files return empty arrays that clobber committed caches. Sequential only; check `git diff --stat _cache/` after fetches.
+
+The manual workflow wraps `scripts/translate-to-notion.js`. The repo's scripts only handle the bookends; the middle is orchestrated ad-hoc by Claude Code. Files land in `_cache/`:
 
 | File pattern | Produced by | Keep? |
 |---|---|---|

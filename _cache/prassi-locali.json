@@ -1,21 +1,4 @@
 {
-  "integrazione-prosieguo-amministrativo": [
-    [
-      "Padova",
-      [
-        {
-          "id": "30d7355e-7f7f-8110-bc82-d6249139067a",
-          "city": "Padova",
-          "description": "A Padova il bollettino richiesto è di 50.46 + 32 euro per la spedizione kit",
-          "date": "2026-02-20",
-          "category": "Documenti",
-          "pageSlug": "integrazione-prosieguo-amministrativo",
-          "votiConfermo": 0,
-          "votiNonConfermo": 0
-        }
-      ]
-    ]
-  ],
   "protezione-sussidiaria": [
     [
       "Cuneo",
@@ -27,6 +10,55 @@
           "date": null,
           "category": null,
           "pageSlug": "protezione-sussidiaria",
+          "votiConfermo": 1,
+          "votiNonConfermo": 0
+        }
+      ]
+    ],
+    [
+      "Lecco",
+      [
+        {
+          "id": "37d7355e-7f7f-8167-b3ee-d8bb83e73929",
+          "city": "Lecco",
+          "description": "si richiede tramite prenota facile",
+          "date": null,
+          "category": null,
+          "pageSlug": "protezione-sussidiaria",
+          "votiConfermo": 0,
+          "votiNonConfermo": 0
+        }
+      ]
+    ]
+  ],
+  "famit-per-familiari-di-cittadini-italiani-statici": [
+    [
+      "Torino",
+      [
+        {
+          "id": "3217355e-7f7f-8189-9562-d1e094e610b1",
+          "city": "Torino",
+          "description": "La Questura non riconosce questo permesso di soggiorno a chi non rientra nella nozione di familiari ex art 29 Testo Unico, quindi non a conviventi registrati, o a figli a carico del coniuge",
+          "date": null,
+          "category": null,
+          "pageSlug": "famit-per-familiari-di-cittadini-italiani-statici",
+          "votiConfermo": 1,
+          "votiNonConfermo": 1
+        }
+      ]
+    ]
+  ],
+  "integrazione-prosieguo-amministrativo": [
+    [
+      "Padova",
+      [
+        {
+          "id": "30d7355e-7f7f-8110-bc82-d6249139067a",
+          "city": "Padova",
+          "description": "A Padova il bollettino richiesto è di 50.46 + 32 euro per la spedizione kit",
+          "date": "2026-02-20",
+          "category": "Documenti",
+          "pageSlug": "integrazione-prosieguo-amministrativo",
           "votiConfermo": 0,
           "votiNonConfermo": 0
         }
@@ -59,23 +91,6 @@
           "date": null,
           "category": "Documenti",
           "pageSlug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
-          "votiConfermo": 0,
-          "votiNonConfermo": 0
-        }
-      ]
-    ]
-  ],
-  "famit-per-familiari-di-cittadini-italiani-statici": [
-    [
-      "Torino",
-      [
-        {
-          "id": "3217355e-7f7f-8189-9562-d1e094e610b1",
-          "city": "Torino",
-          "description": "La Questura non riconosce questo permesso di soggiorno a chi non rientra nella nozione di familiari ex art 29 Testo Unico, quindi non a conviventi registrati, o a figli a carico del coniuge",
-          "date": null,
-          "category": null,
-          "pageSlug": "famit-per-familiari-di-cittadini-italiani-statici",
           "votiConfermo": 0,
           "votiNonConfermo": 0
         }

@@ -1,5 +1,170 @@
 [
   {
+    "id": "39a7355e-7f7f-8142-918d-e65e57d5b5d9",
+    "slug": "lavoro-artistico",
+    "tipo": "Sanatsal çalışma",
+    "emoji": "💼",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [],
+    "primoMethod": "KIT (Kit postale)",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": null,
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "39a7355e-7f7f-814f-bb20-d8a9d9bcc92c",
+    "slug": "tirocinio",
+    "tipo": "Staj",
+    "emoji": "📚",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [],
+    "primoMethod": "KIT (Kit postale)",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "dönüştürülmesi koşuluyla yenilenebilir"
+    ],
+    "rinnovoMethod": "dönüştürülmesi koşuluyla yenilenebilir",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": null
+  },
+  {
+    "id": "39a7355e-7f7f-811f-81cb-e8b012bf50b6",
+    "slug": "sfruttamento-lavorativo",
+    "tipo": "Emek sömürüsü",
+    "emoji": "📋",
+    "sections": [],
+    "isPlaceholder": true,
+    "primoDocuments": [
+      "16 € değerinde marca da bollo (damga pulu)",
+      "4 vesikalık fotoğraf",
+      "30.46 € tutarında bollettino postale (posta ödemesi)",
+      "Konaklama beyanı (dichiarazione di ospitalità) veya kira sözleşmesi veya ikametgâh belgesi",
+      "Yargı makamının teklifi/görüşü"
+    ],
+    "primoMethod": "Yargı makamı",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "16 € değerinde marca da bollo (damga pulu)",
+      "4 vesikalık fotoğraf",
+      "Pasaport fotokopisi (süresi geçmemiş)",
+      "Süresi dolmak üzere olan izin",
+      "Yargı makamının teklifi/görüşü"
+    ],
+    "rinnovoMethod": "şahsen",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": "DİKKAT: BAZI QUESTURA'LAR PASAPORT İSTEYEBİLİR\nNOT: BU SAYFA DOĞRULAMA AŞAMASINDADIR\n"
+  },
+  {
+    "id": "3217355e-7f7f-81ff-9cdd-c7653e4b9ca5",
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "tipo": "Uzun süreli ikamet sahipleri için AB oturma izni (\"Oturma kartı\")",
+    "emoji": "🏠",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Süresi dolmayan bir oturma iznidir. &quot;Oturma kartı&quot; olarak da bilinir ama <strong>dikkat</strong> AB vatandaşlarının aile üyeleri için olan kartla karıştırma.</p>",
+        "index": 0
+      },
+      {
+        "question": "Bu izne kimler başvurabilir?",
+        "content": "<p>Şu durumlarda başvurabilirsiniz:</p>\n<ul><li>En az 5 yıldır düzenli olarak İtalya&#039;da yaşıyorsunuz</li><li>Hâlâ geçerli başka bir oturma izniniz var</li><li>Son üç yılda en az 7.000 euro gelirin var</li><li>En az A2 seviyesinde İtalyanca bilgi sertifikan var</li></ul>\n<p><strong>Dikkat! </strong>⚠️ <strong>Tüm oturma izinleri bu karta dönüştürülemez!</strong></p>\n<p>Örneğin, şu izinlere sahipseniz kart başvurusu YAPAMAZSIN:</p>\n<ul><li>Öğrenim veya mesleki eğitim izni</li><li>Tıbbi tedavi, özel koruma veya geçici koruma izni</li><li>Sığınma başvurusu izni (Bölge Komisyonu veya Mahkeme kararını beklerken)</li></ul>\n<p>Şüphen varsa, <a href=\"https://sospermesso.typeform.com/conversione\">testimizi yap.</a></p>",
+        "index": 1
+      },
+      {
+        "question": "İtalya'daki 5 yıllık ikamet kesintisiz mi olmalı?",
+        "content": "<p>Evet. 5 yıl, ilk oturma izninin tarihinden itibaren sayılır ve oturma izinlerinde &quot;boşluk&quot; olmamalıdır. </p>",
+        "index": 2
+      },
+      {
+        "question": "5 yıllık düzenli ikamet nasıl hesaplanır?",
+        "content": "<p>5 yılın hesaplanmasında kısa süreli veya &quot;diplomatik&quot; izin dönemleri sayılmaz. Ancak öğrenim, mesleki eğitim, geçici koruma veya insani yardım izni dönemleri sayılır.</p>",
+        "index": 3
+      },
+      {
+        "question": "Bu izne başvurmak için hangi seviyede İtalyanca bilmeliyim?",
+        "content": "<p>A2 seviyesinde İtalyanca bildiğini kanıtlamalısın. Bu, günlük durumlarda anlayabildiğin ve konuşabildiğin anlamına gelir. İtalya&#039;da ortaokul veya daha yüksek bir diploma aldıysanız, bu yeterlidir.</p>",
+        "index": 4
+      },
+      {
+        "question": "İtalya'da yanımdaki aile üyelerim için de kart başvurusu yapabilir miyim?",
+        "content": "<p>Evet. Bu izne şunlar için başvurabilirsiniz:</p>\n<ul><li>Bakmakla yükümlü olunan eş</li><li>Reşit olmayan çocuklar (sadece eşin çocukları, evlilik dışı doğanlar, evlat edinilmişler veya vesayet altındakiler dahil)</li><li>Tam engelli (%100) olup kendi geçimini sağlayamayan reşit çocuklar</li><li>Bakmakla yükümlü olunan anne-baba</li></ul>\n<p>AB uzun süreli ikamet izninizi aile üyelerine genişletmek için:</p>\n<ul><li>İtalyan sağlık kurallarına uyan ve herkes için yeterince büyük uygun bir evin olduğunu kanıtlamalısın: Emniyet Müdürlüğü&#039;ne (Questura) &quot;<a href=\"/2187355e7f7f8148ac7efe618d4b0ae9\">konut uygunluk belgesi</a>&quot; getirmelisiniz, belediyenden alınır</li><li>Yeterli gelire sahip olmalısın. Seninle birlikte yaşayan aile üyelerinin gelirleri de sayılır. Asgari gelir, sosyal yardım tutarı artı her aile üyesi için yarısı olarak hesaplanır. 14 yaşından küçük 2 veya daha fazla çocuğun varsa, sosyal yardımın iki katı gerekir.</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "Uzun süreli ikamet sahipleri için AB oturma izni ne kadar süre geçerlidir?",
+        "content": "<p>teorik olarak süresi dolmaz (sonsuza kadar geçerlidir), ancak her 10 yılda bir güncellenmesi gerekir. Yenileme her zaman otomatik değildir: Emniyet Müdürlüğü (Questura) genellikle tüm şartların hâlâ karşılanıp karşılanmadığını kontrol eder. Reşit olmayanlar için yenileme her 5 yılda bir yapılır</p>",
+        "index": 6
+      },
+      {
+        "question": "Hangi hakları verir?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Vizesiz İtalya&#039;ya giriş ve çıkış yapabilmek</li><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Başka bir AB ülkesinde 90 günden fazla kalabilmek, ancak başka bir AB ülkesinde kalıcı olarak çalışmak istiyorsanız, bu izniniz yeterli olup olmadığını anlamak için o ülkenin kurallarını öğrenmelisiniz.</li><li>Sosyal konut prosedürleri dahil Kamu Yönetimi hizmetlerinden yararlanmak</li><li>Sosyal yardım, sosyal güvenlik, sağlık hizmeti ve eğitim hizmetlerinden yararlanmak: örneğin, INPS engelli maaşı ve sosyal yardım</li></ul>",
+        "index": 7
+      },
+      {
+        "question": "İzni beklerken, postane makbuzu çalışmama izin verir mi?",
+        "content": "<p>Evet, postane makbuzu düzenli bir sözleşmeyle (bağımsız veya bağımlı çalışma) çalışmana izin verir.</p>",
+        "index": 8
+      },
+      {
+        "question": "Kit ile gönderdiğim veya Emniyet Müdürlüğü'ne (Questura) getirdiğim belgeler eksik olursa ne olur?",
+        "content": "<p>Emniyet Müdürlüğü (Questura) size eksik belgelerin listesiyle bir tamamlama talebi verir. İstenen belgeleri en kısa sürede getirmelisiniz; bu arada başvurunuz beklemede kalır.</p>",
+        "index": 9
+      },
+      {
+        "question": "Uzun süreli ikamet AB oturma izni hangi durumlarda geri alınabilir?",
+        "content": "<p>Avrupa Birliği dışında art arda 12 ay kalırsanız; veya İtalya dışında 6 yıldan fazla kalırsanız.</p>",
+        "index": 10
+      },
+      {
+        "question": "Uzun süreli ikamet AB oturma izniyle, başka bir Avrupa ülkesinde yaşayabilir miyim?",
+        "content": "<p>Evet, başka bir Schengen ülkesinde öğrenim veya iş için 90 günden fazla kalabilirsiniz, o ülkenin kanunlarına uyarak. Aynı hak aile üyelerin için de geçerlidir. Başka bir AB ülkesi size uzun süreli ikamet AB izni verirse, İtalyan izniniz geri alınır.</p>",
+        "index": 11
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Son yılın gelir belgeleri",
+      "A2 seviye dil sertifikası",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Pasaport kopyası (süresi dolmamış)",
+      "4 Fotoğraf",
+      "130.46 posta ödeme makbuzu",
+      "Son 5 yılda kesintisiz oturma iznine sahip olduğunun kanıtı"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 vesikalık fotoğraf",
+      "16€ damga pulu",
+      "30.46€ posta ödeme makbuzu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Bazı Questura'lar, yalnızca kendiniz için başvursanız bile konut uygunluk belgesi (idoneità alloggiativa) ister; yasa bunu istemez ve bir mahkeme büyük olasılıkla size hak verecektir\n\nBazı Questura'lar sabıka kaydı olmadığına dair kanıt ister (adli sicil ve devam eden davalar belgesi - casellario giudiziale e carichi pendenti)\n\nYenileme NOTU: buna güncelleme (aggiornamento) denir (yalnızca fotoğraf vermeniz ve ikamet bilgilerinizi güncellemeniz gerekir). Birçok Questura, yenilemeymiş gibi başka belgeler isteyebilir. Bu yüzden hepsi elinizdeyse, kit'e koyun! Elinizde yoksa yine de güncellemeyi talep edin ve Questura başvurunuzu reddederse hukuki yardıma başvurun.\n\nİlk verilişte gerekli belgeler NOTU\nİzni eşim veya bir ebeveynim için de talep ediyorsam Kit'e hangi belgeleri koymalıyım?\n• Form 1 ve 2: form 2 yalnızca aile üyesinin kendi geliri varsa doldurulur\n• Pasaportunuzun ve oturma izninizin fotokopisi\n• Eşinizin veya ebeveynin pasaportunun ve oturma izninin fotokopisi\n• Savcılıktan (Procura) istenecek adli sicil ve devam eden davalar belgesi\n• İkametgâh belgesi ve aile durumu belgesi (stato di famiglia)\n• Ev ile ilgili belgeler (tapu, kira sözleşmesi veya konaklama beyanı)\n• Belediye tarafından verilen konut uygunluk belgesi\n• Gelir belgeleri (gelir beyannamesi, CUD, maaş bordroları, iş sözleşmesi; aile gelirine katkıda bulunuyorsa aile üyenizinkiler de)\n• A2 seviyesi İtalyanca sertifikası\n\nİzni reşit olmayan çocuklarım için de talep ediyorsam Kit'e hangi belgeleri koymalıyım?\n• Form 1\n• Pasaportunuzun ve oturma izninizin fotokopisi\n• Çocuğunuzun pasaportunun ve oturma izninin fotokopisi\n• İkametgâh belgesi ve aile durumu belgesi (stato di famiglia)\n• Gelir belgeleri (gelir beyannamesi, CUD, maaş bordroları, iş sözleşmesi)\n• Konut uygunluk belgesi\n• Çocuk yasa gereği okula gitmek zorundaysa okul devam belgesi\n• A2 seviyesi İtalyanca sertifikası (çocuğun halihazırda ortaokul veya lise diploması yoksa)\nUnutmayın: 14 yaşından büyük her aile üyesi kendi Kit'ini doldurmalıdır. Çocuğunuz 14 yaşından küçükse, onu kendi Kit'inize ekleyebilirsiniz."
+  },
+  {
     "id": "3217355e-7f7f-81eb-bddc-ef430905ee25",
     "slug": "protezione-sociale-vittime-di-violenza-domestica",
     "tipo": "Aile içi şiddet mağdurları için sosyal koruma",
@@ -57,7 +222,1256 @@
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": null,
-    "docNotes": null
+    "docNotes": "DİKKAT: BAZI QUESTURA'LAR PASAPORT İSTEYEBİLİR\nNOT: BU SAYFA DOĞRULAMA AŞAMASINDADIR\n"
+  },
+  {
+    "id": "3217355e-7f7f-81ba-b7fc-c63f213356ed",
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "tipo": "Aile - ikinci dereceye kadar akraba olan İtalyan vatandaşıyla birlikte yaşayan",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>İtalyan vatandaşlarıyla birlikte yaşayanlar için oturma izni, <strong>İtalya&#039;da İtalyan aile bireyleriyle birlikte yaşayan</strong> ikinci dereceye kadar akraba olan (eş; anne/baba; oğul/kız; büyükanne/büyükbaba; büyükanne/büyükbabanın torunu; erkek kardeş/kız kardeş) yabancılara verilir.</p>",
+        "index": 0
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>İki yıl geçerlidir.</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu izni almak için koşullar nelerdir?",
+        "content": "<p>Bu izin için iki temel unsur akrabalık bağının kanıtı ve birlikte yaşamaktır.</p>\n<p>Akrabalık bağı: Şu kişiyseniz bu izne hakkınız vardır:</p>\n<ul><li>İtalyan vatandaşının erkek kardeşi/kız kardeşi</li><li>İtalyan vatandaşının eşi (veya aynı cinsiyetten kişiler için kayıtlı partneri)</li><li>İtalyan vatandaşının ebeveyni</li><li>İtalyan vatandaşının oğlu/kızı (her yaştan)</li><li>İtalyan vatandaşının büyükannesi/büyükbabası</li><li>İtalyan vatandaşının torunu (çocuğunun çocuğu)</li></ul>\n<p>Birlikte yaşama: İtalyan akrabanızla birlikte yaşamanız gerekir. Aynı adrese kayıtlı olmanız gerekir, her zaman birlikte yaşamasanızız bile.</p>",
+        "index": 2
+      },
+      {
+        "question": "Bu izin nerede talep edilir?",
+        "content": "<p>Başvuruyu, İtalyan vatandaşıyla birlikte yaşadığınız bölgedeki Emniyet Müdürlüğü&#039;ne (Questura) gerekli tüm belgelerle birlikte yapmalısınız. Size karar verilinceye kadar İtalya&#039;da yasal olarak kalmanızı sağlayan bir makbuz verilecektir.</p>\n<p>Değerlendirme sürecinde Emniyet Müdürlüğü (Questura) belgelerinize ek bilgi isteyebilir ve İtalyan vatandaşıyla gerçekten birlikte yaşayıp yaşamadığınızı doğrulamak için görüşme yapabilir.</p>",
+        "index": 3
+      },
+      {
+        "question": "Başvuru için hangi belgeler gerekli?",
+        "content": "<p> (<a href=\"https://questure.poliziadistato.it/it/Venezia/articolo/214963dcfc880e387930055883\">https://questure.poliziadistato.it/it/Venezia/articolo/214963dcfc880e387930055883</a>)</p>\n<ul><li>Kesin ikamet kanıtı: güncel aile durum belgesi veya Emniyet yetkililerince onaylanmış konaklama beyanı veya Gelir İdaresi&#039;ne kayıtlı ortak kira sözleşmesi.</li><li>Akrabalık bağını gösteren belgeler (tercüme edilmiş ve onaylanmış veya <em>apostil&#039;li</em>)<ul><li>Eşler için: evlilik cüzdanı</li><li>Çocuklar için: anne ve baba bilgisi içeren doğum belgesi</li><li>İkinci dereceye kadar diğer akrabalarla birleşme için: İtalyan vatandaşının akrabanız olduğunu gösteren doğum veya aile belgeleri</li></ul></li><li>İtalyan akrabanın kimlik belgesinin kopyası</li><li>Birlikte yaşama belgesi (İtalyan vatandaşının güncel aile durum belgesi ve yabancı için Emniyet yetkililerince onaylanmış konaklama beyanı veya her ikisinin adına Gelir İdaresi&#039;ne kayıtlı ortak kira sözleşmesi)</li><li>Varsa: eski oturma izni ve vergi numarası</li><li>16,00€ damga pulu</li><li>Geçerli pasaport</li><li>Başvuru sahibinin 4 vesikalık fotoğrafı ve oturma iznine kaydedilecek 14 yaşından küçük çocuklar için 4&#039;er vesikalık fotoğraf (çocukların randevu sırasında hazır bulunması gerekir);</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Bu oturma izniyle ne yapabilirim?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Yaşadığın belediyede ikametgâh kaydı yaptırmak</li><li>Çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli pasaportunuz varsa Schengen bölgesinde seyahat etmek</li><li>Meslek kurslarına, okullara ve üniversitelere kaydolmak</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "İznin süresi dolduğunda ne olur?",
+        "content": "<p>Süresi dolmadan önce,</p>\n<ul><li>yenileyebilirsiniz </li><li>başka bir izne dönüştürebilirsiniz, örneğin çalışma (bağımsız veya bağımlı) veya öğrenim</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
+      "4 Fotoğraf",
+      "Birlikte yaşama kanıtı (konaklama beyanı yeterlidir)",
+      "80.46€ posta ödeme makbuzu",
+      "Pasaport kopyası (süresi dolmamış)"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "16€ damga pulu",
+      "4 vesikalık fotoğraf",
+      "Süresi dolmak üzere olan izin",
+      "Pasaport kopyası (süresi dolmamış)",
+      "Birlikte yaşama kanıtı (konaklama beyanı yeterlidir)",
+      "80.46€ posta ödeme makbuzu",
+      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bu tür izin için konaklama beyanınız (dichiarazione di ospitalità) yoksa, bir ikamet adresi bildirmeniz yeterli olmalıdır. Questura'nın nerede olduğunuzu bilmek için bir adrese ihtiyacı vardır\n\nDikkat: pasaportunuz yoksa yine de bu izni talep edin; yasaya göre pasaport istenmemelidir\n\nDikkat: polis normalde İtalyan vatandaşıyla gerçekten birlikte yaşayıp yaşamadığınızı kontrol edecektir"
+  },
+  {
+    "id": "3217355e-7f7f-8103-bfab-e50f52eb27a6",
+    "slug": "integrazione-prosieguo-amministrativo",
+    "tipo": "Entegrasyon (\"İdari devam\")",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "📄 Nedir ve nasıl başvurulur",
+        "content": "<ul><li>Amacı: <strong>sosyal hizmetlerin desteğini sürdürmek</strong> reşit olduktan sonra da.</li><li>Başvuruyu Çocuk Mahkemesi&#039;ne tek başına veya vasin.</li><li>Başvuru için avukata gerek yoktur.</li><li>Talep edilebilir <strong>reşit olmayan yaş izni olmasa bile</strong>.</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "🪪 Oturma izni",
+        "content": "<p>Mahkeme idari devamı onaylarsa, bir <strong>idari devam oturma izni</strong>.</p>\n<ul><li>Bu izin geçerlidir <strong>en fazla 21 yaşına kadar</strong>.</li><li>Şunlara olanak tanır: <strong>İtalya&#039;da yasal olarak yaşamak</strong>, <strong>öğrenim görmek</strong>, <strong>çalışmak</strong> ve <strong>SAI kabul projelerine erişmek</strong>, daha önce kabul edilmemiş olsanızız bile.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "İdari devam başvurusunda neler belirtilmelidir?",
+        "content": "<p>İdari devam elde edebilmek için başvuru sahibinin a) reşit olmadığı dönemde sosyal entegrasyon sürecine başlamış olması ve b) reşit olduğunda, özerkliğe yönelik bu sürecin başarılı sonuçlanması için uzun süreli desteğe ihtiyaç duyması gerekir.\nBaşvuruda, reşit olmayan kişinin İtalya&#039;ya varışından idari devam başvurusunun yapıldığı ana kadar olan süreç kısaca anlatılmalıdır; özellikle reşit olmadığı dönemde başlanan sosyal entegrasyon süreci ve reşit olduktan sonraki beklentiler, okul kaydı, mesleki eğitim, iş, kabul, ikamet düzenlemesi ve diğer sosyal entegrasyon konuları (gönüllülük faaliyetleri, sosyal etkinlikler vb.) açısından detaylandırılmalıdır.</p>",
+        "index": 2
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Fotoğraf",
+      "30.46€ posta ödeme makbuzu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "16€ damga pulu",
+      "Reşit olmayan yaş izni",
+      "Çocuk Mahkemesi'nin idari devam kararı"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bazı Questura'lar pasaport veya konsolosluktan alınan kimlik belgesi (attestazione di identità consolare) isteyebilir"
+  },
+  {
+    "id": "3217355e-7f7f-8129-90bb-ecb788c4fdbe",
+    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
+    "tipo": "Tıbbi tedavi - hamile kadın veya 6 aylıktan küçük çocuğu olan kadın",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Bu, İtalya&#039;da bulunan hamile yabancı kadınlar için verilen bir oturma iznidir. Yasa (T.U. Immigrazione art. 19) hamile kadınların hamileliğin üçüncü ayından doğumdan altı ay sonrasına kadar sınır dışı edilmesini yasaklar. Bu süre için tıbbi tedavi amaçlı oturma izni alabilirsiniz.</p>",
+        "index": 0
+      },
+      {
+        "question": "Kimler başvurabilir?",
+        "content": "<ul><li>Hamile yabancı kadınlar (üçüncü aydan itibaren)</li><li>Geçerli bir oturma izniniz olmasa veya düzensiz durumda olsanız bile</li><li>Doğumdan sonra izin, bebeğin doğumundan sonraki altı ayı da kapsar</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Nasıl başvurulur?",
+        "content": "<p>Başvuru <strong>Kit postale</strong>. Formu doldur ve yetkili postaneden gönderin. Emniyet Müdürlüğü&#039;nde (Questura) bir randevu alacaksınız.</p>\n<p>⚠️ <strong>Dikkat:</strong> bu tür izin için, konaklama beyanın yoksa, bir adres bildirmen yeterli olmalıdır. Emniyet Müdürlüğü&#039;nün (Questura) nerede olduğunu bilmek için bir adrese ihtiyacı var.</p>\n<p>⚠️ <strong>Dikkat:</strong> bazı Emniyet Müdürlükleri (Questura) bu izni elektronik formatta verebilir ve bu nedenle 30,46 € tutarında posta ödeme makbuzu ödemesi isteyebilir.</p>",
+        "index": 2
+      },
+      {
+        "question": "Hangi belgeler gerekli?",
+        "content": "<p>Emniyet Müdürlüğü&#039;ne (Questura) götürülecek belgelerin tam listesi için şu sayfaya gidiniz <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-donna-in-stato-di-gravidanza-primo.html\">Hangi belgeleri getireyim — ilk düzenleme</a>.</p>",
+        "index": 3
+      },
+      {
+        "question": "Bu izin bana ne haklar verir?",
+        "content": "<ul><li>✅ Yapabilirsiniz: <strong>çalışmak</strong> (bağımlı çalışma veya bağımsız çalışma)</li><li>✅ Kaydolabilirsiniz: <strong>Ulusal Sağlık Hizmeti</strong> ve bir aile hekimi edinmek</li><li>❌ <strong>Bu izinle</strong> aile birleşimi başvurusu yapamazsınız</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>Süresi <strong>1 yıl</strong>. İzin, hamilelikten doğumdan altı ay sonrasına kadar olan süreyi kapsar.</p>",
+        "index": 5
+      },
+      {
+        "question": "Süresi dolduğunda yenileyebilir miyim?",
+        "content": "<p>Bu izin genellikle yenilenemez. Süresi dolduğunda, başka bir tür oturma izni alıp alamayacağını bir hukuk uzmanıyla değerlendir.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf",
+      "Tahmini doğum tarihli hamilelik belgesi veya doğmuşsa doğum belgesi",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bu tür izin için konaklama beyanınız (dichiarazione di ospitalità) yoksa, bir ikamet adresi bildirmeniz yeterli olmalıdır. Questura'nın nerede olduğunuzu bilmek için bir adrese ihtiyacı vardır\n\nDikkat: bazı Questura'lar bu izni elektronik formatta verebilir ve bu nedenle 30,46 tutarında bir bollettino postale ödemesi isteyebilir"
+  },
+  {
+    "id": "3217355e-7f7f-8129-862a-ef6b63d03e64",
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "tipo": "Aile - aile birleşimi vizesi ile giriş sonrası",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "Bu oturma izni nedir?",
+        "content": "<p>Bu, aile birleşimi vizesiyle İtalya&#039;ya giren aile üyelerine verilen aile sebepleri oturma iznidir. </p>",
+        "index": 0
+      },
+      {
+        "question": "Bu izni nasıl başvurabilirim?",
+        "content": "<p>Aile üyen aile birleşimi ön izninizi aldıktan sonra giriş vizesiyle İtalya&#039;ya girdiniz. Çok güzel. İşte sonraki adımlar: </p>\n<ul><li>8 gün içinde bölgendeki Valilik&#039;teki (Prefettura) Göç Birimi&#039;ne (Sportello Unico per l&#039;Immigrazione) gitmelisiniz.</li><li>Göç Birimi size doldurman gereken formları verecek. </li><li>Postaneye gidiniz ve formları gönderin. </li><li>Postane size Emniyet Müdürlüğü&#039;nde (Questura) bir randevu verecek.</li><li>Randevu günü Emniyet Müdürlüğü&#039;ne (Questura) gidiniz. Parmak izlerini alacaklar.</li><li>Emniyet Müdürlüğü (Questura) izniniz hazır olduğunda sizi bilgilendirecek.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Ne kadar süre geçerli?",
+        "content": "<p>Süre, aile birleşimini talep eden aile üyesinin durumuna bağlıdır:</p>\n<ul><li>aile üyesi mülteci statüsü veya ikincil korumaya sahipse, aile sebepleri oturma izni 5 yıl sürer.</li><li>aile üyesi uzun süreli ikamet iznine sahipse, aile sebepleri oturma izni 2 yıl sürer.</li><li>aile üyesi daha kısa süreli bir oturma iznine sahipse (örn. çalışma, eğitim için), izin, aile birleşimini talep eden aile üyesinin izniyle aynı süreye sahip olacaktır.</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Bu izin bana ne haklar verir / neye erişebilirim?",
+        "content": "<p>İzin başvurusundan sonra, posta makbuzuyla şunları yapabileceksiniz: </p>\n<ul><li>Düzenli sözleşme ile çalışmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak ve aile hekimi edinmek</li><li>Schengen ülkelerine her 180 günde 90 güne kadar seyahat etmek</li><li>Nüfus müdürlüğüne kayıt olmak ve ikametgah almak</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Yenileyebilir miyim?",
+        "content": "<p>Yenileme başvurusu, izin süresi dolmadan Kit postale aracılığıyla yapılmalıdır.</p>\n<p>Yenileme başvurusunda şunları eklemelisiniz:</p>\n<ul><li>başvuru formu (postaneden veya Emniyet Müdürlüğü&#039;nden temin edilebilir)</li><li>geçerli pasaport kopyası</li><li>süresi dolan oturma izni kopyası</li><li>vergi numarası</li><li>aile durumu ve ikametgah belgesi</li><li>aile birleşimini talep eden aile üyesinin oturma izni (yabancı ise)</li><li>konaklama beyanı veya kira sözleşmesi/mülk belgesi</li><li>evlilik veya akrabalık belgesi (geçerliyse)</li><li>geçim kaynağı kanıtı (istenirse, maaş bordrosu veya gelir beyannamesi gibi).</li><li>posta ödeme makbuzu ödeme belgesi</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Dönüştürebilir miyim?",
+        "content": "<p>Süresi dolmadan, izninizi şunlara dönüştürebilirsiniz:</p>\n<ul><li>çalışma izni (iş sözleşmen varsa)</li><li>eğitim izni (bir kursa kayıtlıysanız)</li><li>iş arama izni (daha önce çalıştıysanız ve yeni iş arıyorsanız)</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "80.46€ posta ödeme makbuzu",
+      "Aile birleşimi ön izni (Nullaosta)",
+      "4 Fotoğraf",
+      "Pasaport kopyası (süresi dolmamış)",
+      "Konut uygunluk belgesi",
+      "Giriş vizesi",
+      "Aile bağını kanıtlayan belge",
+      "Asgari gelir kanıtı (CUD veya maaş bordrosu veya gelir beyannamesi veya diğer)",
+      "Aile birleşimini talep eden aile üyesinin oturma izninin kopyası"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Pasaport kopyası (süresi dolmamış)",
+      "Süresi dolmak üzere olan izin",
+      "80.46€ posta ödeme makbuzu",
+      "4 vesikalık fotoğraf",
+      "16€ damga pulu",
+      "Asgari gelir kanıtı (CUD veya maaş bordrosu veya gelir beyannamesi veya diğer)",
+      "Aile birleşimini talep eden aile üyesinin oturma izninin kopyası",
+      "Aile bağını kanıtlayan belge (örneğin \"aile belgesi\")"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bu izni talep ediyorsanız ve 65 yaşından büyükseniz, sağlık sigortasının bir kopyasını da eklemeniz gerekir\n\nDikkat: ev değiştirdiyseniz, bazı Questura'lar bu iznin yenilenmesi için konut uygunluk belgesi (idoneità alloggiativa) isteyebilir."
+  },
+  {
+    "id": "3217355e-7f7f-81f5-abbd-ecb36d1922f3",
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "tipo": "Tıbbi tedavi - İtalya'da doğmak üzere olan veya 6 aylıktan küçük çocuğun babası",
+    "emoji": "🏥",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Bu, annenin hamile olduğu veya yeni doğum yaptığı durumlarda çocuğun babası için verilen oturma iznidir. Yasa (T.U. Immigrazione art. 19) bu durumlarda aile bütünlüğünü korur.</p>",
+        "index": 0
+      },
+      {
+        "question": "Kimler başvurabilir?",
+        "content": "<ul><li>Anneyle birlikte yaşayan yabancı baba</li><li>⚠️ Eğer <strong>evli ve birlikte yaşıyorsanız</strong> anneyle, bu izni sorunsuz alabilirsiniz</li><li>⚠️ Eğer <strong>evli DEĞİLSEN</strong> ve/veya <strong>birlikte yaşamıyorsanız</strong> anneyle, bu izni almak sorun olabilir — bir <strong>nitelikli hukuki danışmanlık al</strong></li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Nasıl başvurulur?",
+        "content": "<p>Başvuru <strong>Kit postale</strong>. Formu doldur ve yetkili postaneden gönderin. Emniyet Müdürlüğü&#039;nde (Questura) bir randevu alacaksınız.</p>",
+        "index": 2
+      },
+      {
+        "question": "Hangi belgeler gerekli?",
+        "content": "<p>Emniyet Müdürlüğü&#039;ne (Questura) götürülecek belgelerin tam listesi için şu sayfaya gidiniz <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-padre-primo.html\">Hangi belgeleri getireyim — ilk düzenleme</a>.</p>",
+        "index": 3
+      },
+      {
+        "question": "Bu izin bana ne haklar verir?",
+        "content": "<ul><li>✅ Yapabilirsiniz: <strong>çalışmak</strong> (bağımlı çalışma veya bağımsız çalışma)</li><li>✅ Kaydolabilirsiniz: <strong>Ulusal Sağlık Hizmeti</strong> ve bir aile hekimi edinmek</li><li>❌ <strong>Bu izinle</strong> aile birleşimi başvurusu yapamazsınız</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>Süresi <strong>1 yıl</strong>.</p>",
+        "index": 5
+      },
+      {
+        "question": "Süresi dolduğunda yenileyebilir miyim?",
+        "content": "<p>Bu izin genellikle yenilenemez. Süresi dolduğunda, başka bir tür oturma izni alıp alamayacağını bir hukuk uzmanıyla değerlendir.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "4 Fotoğraf",
+      "Tahmini doğum tarihli hamilelik belgesi veya doğmuşsa doğum belgesi",
+      "Birlikte yaşama belgesi veya beyanı"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Çocuğun annesiyle evliyseniz ve birlikte yaşıyorsanız, bu izni sorunsuz alabilirsiniz.\n\nEvli DEĞİLSENİZ ve/veya birlikte YAŞAMIYORSANIZ, bu izni almak sorun olabilir; bu durumda nitelikli hukuki danışmanlık isteyin"
+  },
+  {
+    "id": "3217355e-7f7f-81e7-99a3-d4b760bfa07e",
+    "slug": "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi",
+    "tipo": "Bağımsız çalışma (\"flussi\" vizesiyle giriş sonrası)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Bu oturma izni <strong>bağımsız çalışan</strong>, yani <strong>bir işvereni olmayan</strong>, kendi başına iş veya meslek faaliyeti yürüten kişiler içindir (örneğin: tüccar, zanaatkar, serbest meslek sahibi vb.).</p>\n<p><strong>\n✈️  Bu sayfadaysınız çünkü İtalya&#039;ya bağımsız çalışma vizesiyle girdiniz</strong></p>\n<ol><li>İtalya&#039;ya girişten <strong>İtalya&#039;ya varışından itibaren 8 gün içinde</strong>, şunu doldur: <strong>Modulo 1 ve Modulo 2</strong> (Kit postale) ve yetkili<strong>postaneden</strong> gönderin.</li><li>Parmak izi almak için Emniyet Müdürlüğü&#039;nden (Questura) randevu alacaksınız.</li><li>Emniyet Müdürlüğü (Questura) izninizi ne zaman alacağını size bildirecek.</li><li></li></ol>",
+        "index": 0
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<ul><li>Süre, yürüttüğün faaliyete ve sunduğun belgelere bağlıdır, ama genellikle <strong>1 ila 2 yıl</strong>.</li><li>Bu izin <strong>yenilenebilir</strong>, bağımsız çalışmaya devam ederseniz ve gerekli şartları karşılarsanız.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Bu izinle neler yapabilirsiniz?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Bağımsız çalışmak</strong> vergi numarasıyla</li><li><a href=\"/20a7355e7f7f8173bffccbb2a93bae6f\"><strong>Bağımlı olarak çalışmak (bağımlı çalışma)</strong></a></li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (her 180 günde en fazla 90 gün)</li><li><strong>Aile birleşimi başvurusu yapmak</strong></li><li><strong>Kurslara, okullara, üniversitelere kayıt olmak</strong></li></ul>\n<hr>",
+        "index": 2
+      },
+      {
+        "question": "Faaliyetini kapatırsanız ne olur?",
+        "content": "<ul><li>Bir <strong>iş arama izni</strong> talep edebilirsiniz, ama başka bir iş veya faaliyet aradığını kanıtlamalısın.</li></ul>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "İzin süresi dolduğunda ne yapmalıyım?",
+        "content": "<ul><li>Şunları yapmalısın: <strong>yenileme başvurusu yapmak</strong> <strong>süre dolmadan önce </strong>veya en geç 60 gün sonrasına kadar</li><li>Eğer <strong>şartları karşılıyorsanız</strong>, ayrıca <strong>dönüştürebilirsiniz</strong> başka bir izin türüne (eğitim, aile, uzun süreli ikamet, bağımlı çalışma vb.). Dönüştürme başvurusunu süre dolmadan yapmalısın.</li></ul>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "80.46€ posta ödeme makbuzu",
+      "4 Fotoğraf",
+      "bağımsız çalışma için giriş vizesi",
+      "Emniyet Müdürlüğü (Questura) ön izni (Nullaosta)",
+      "Faaliyeti yürütmek için ekonomik parametreler ön izni (Nullaosta)",
+      "Faaliyetleri yürütmek için ekonomik kaynak kanıtı",
+      "Konut uygunluk belgesi",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "16€ damga pulu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "80.46€ posta ödeme makbuzu",
+      "4 Fotoğraf",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Vergi numarası veya ticaret sicili kayıt belgesi",
+      "Son gelir beyannamesi",
+      "Süresi dolmak üzere olan izin"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Not: bazı faaliyetler için şirket siciline (registro delle imprese) kayıt gerekebilir."
+  },
+  {
+    "id": "3217355e-7f7f-817b-9965-e14a8270b64a",
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "tipo": "İtalya'da bulunan ağır hasta kişi için tıbbi tedavi",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Tıbbi tedavi amaçlı oturma izni, çok <strong>ağır hastalıkları</strong> olan ve <strong>kendi ülkelerinde iyi tedavi edilemeyen</strong>.</p>\n<p>yabancılara verilir. Bu kişiler ülkelerine dönerse sağlıkları çok kötüleşebilir ⚠️ veya hayatlarını kaybedebilirler.</p>",
+        "index": 0
+      },
+      {
+        "question": "Kimler başvurabilir?",
+        "content": "<p>Bu izne başvurabilirsiniz eğer:</p>\n<ul><li><strong>Çok ağır bir hastalığın var</strong> kendi ülkende iyi tedavi edilemeyen</li><li><strong>Zaten İtalya&#039;dasınız</strong> (oturma izniniz olmasa bile)</li><li><strong>İtalyan bir doktor</strong> (devlet hastanesi veya Ulusal Sağlık Hizmeti ile anlaşmalı) hastalığının ağır olduğunu onaylamıştır</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Bu izin nerede talep edilir?",
+        "content": "<p>Şuraya git: <strong>yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura)</strong> ve Göç Ofisi&#039;nden randevu alın.</p>\n<p>Diğer belgelerin yanı sıra tüm tıbbi belgeleri de teslim etmelisiniz.</p>\n<p><strong>⚠️ Uluslararası koruma başvurusu yaptıysan…</strong></p>\n<p>Sığınma başvurunun incelenmesi sırasında, Komisyon veya Mahkeme, hakkın olduğunu düşünürse Emniyet Müdürlüğü&#039;nden (Questura) size bu oturma izninizi vermesini isteyebilir <a href=\"/2187355e7f7f81198cd1c609d77bd25b#2187355e7f7f81309acaea84e0903cf8\">eğer hakkın varsa</a>. </p>",
+        "index": 2
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<ul><li><strong>En fazla 1 yıl</strong> (daha az olabilir, doktorun söylediğine bağlıdır)</li><li><strong>Yenilenebilir</strong> ağır hastalığın devam ettiği ve tedaviye ihtiyacın olduğu sürece</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "✅ Bu izinle ne yapabilirsiniz?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> (düzenli sözleşme ile - bağımsız çalışma veya bağımlı çalışma) 💼</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</strong></li><li><strong>Tıbbi tedavi almak</strong> devlet hastanelerinde ücretsiz</li><li><strong>Nüfus müdürlüğüne kayıt olmak</strong> yaşadığın Belediye&#039;nin</li></ul>\n<p><strong>⚠️ Yapamayacakların:</strong></p>\n<ul><li><strong>İtalya dışına seyahat edemezsiniz</strong> - bu izin sadece İtalya&#039;da geçerlidir</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "İzni nasıl yenilerim?",
+        "content": "<p>Yenilemek için şunları göstermelisiniz:</p>\n<ul><li><strong>Yeni tıbbi rapor</strong> ağır hastalığının hâlâ devam ettiğini onaylayan</li><li>İlk başvurudaki aynı belgeler</li></ul>\n<p><strong>İznin dönüştürülmesi</strong></p>\n<p>Süresi dolduğunda, bu izniniz başka bir izne dönüştürülmesi zordur. </p>\n<p>Mevcut yasaya göre, tıbbi tedavi izni <strong>çalışma iznine</strong> dönüştürülemez <strong>. </strong>Tıbbi tedavi izninizi <strong>Mayıs 2023&#039;ten önce</strong> talep ettiyseniz, çalışma iznine dönüştürmeyi deneyebilirsiniz, ama iyi bir hukuki yardıma ve belki de Mahkeme davasına ihtiyacın olacak. Yakınındaki hukuki yardım merkezlerini ara.</p>\n<p>İtalya&#039;da aile üyelerin varsa, bir izne hakkın olup olmadığını görmek için testimizi yapabilirsiniz <strong>aile sebepleri için oturma izni. </strong>İtalya&#039;da reşit olmayan çocukların varsa, Art. 31 kapsamında bir izin başvurusu yapmayı değerlendirebilirsiniz.</p>",
+        "index": 5
+      },
+      {
+        "question": "Sizin yerine kim başvuru yapabilir?",
+        "content": "<p>Çok hasta olduğun durumda, başvuruyu şunlar yapabilir:</p>\n<ul><li>Bir aile üyesi (vekalet ile)</li><li>Yattığın hastanenin sorumlusu</li><li>Size yardım etmek isteyen herhangi biri</li></ul>\n<p><strong>İznin teslim alınması</strong></p>\n<ul><li>Başvuru yaptığında size bir <strong>makbuz</strong> verirler</li><li>Oturma izni <strong>60 gün içinde hazır olur</strong></li><li>Oturma izni <strong>kağıt</strong> (elektronik değil)</li><li>Vekalet ile başka bir kişi de teslim alabilir</li></ul>\n<p><strong>Önemli fark</strong></p>\n<p>Bu izin şundan farklıdır: <a href=\"/2187355e7f7f81a3a444f6c6bd8a13ae\">İtalya&#039;ya zaten tıbbi tedavi vizesiyle gelenler için tıbbi tedavi oturma izni</a> tıbbi tedavi için. Bu izin, zaten İtalya&#039;da olan ve ülkelerinde tedavi edilemeyecek ciddi bir hastalığı olduğunu keşfeden kişiler içindir.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "4 Fotoğraf",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Hastalığını kanıtlayan tıbbi belgeler (devlet hastanesi veya kamu doktoru)",
+      "Hastalığının kendi ülkende iyi tedavi edilemeyeceğini kanıtlayan belgeler",
+      "16€ damga pulu"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 vesikalık fotoğraf",
+      "16€ damga pulu",
+      "Süresi dolmak üzere olan izin",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Hastalığının kendi ülkende iyi tedavi edilemeyeceğini kanıtlayan belgeler",
+      "Hastalığını kanıtlayan tıbbi belgeler (devlet hastanesi veya kamu doktoru)"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bu tür izin için konaklama beyanınız (dichiarazione di ospitalità) yoksa, bir ikamet adresi bildirmeniz yeterli olmalıdır. Questura'nın nerede olduğunuzu bilmek için bir adrese ihtiyacı vardır\n\nDikkat: bu tür izin için gerekli olmasa da bazı Questura'lar pasaport isteyebilir\n\nDikkat: bazı Questura'lar bu izni elektronik formatta verebilir ve bu nedenle 30,46 tutarında bir bollettino postale ödemesi isteyebilir"
+  },
+  {
+    "id": "3217355e-7f7f-8162-97f8-cd8f8600e066",
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "tipo": "Bağımlı çalışma (başka bir izinden dönüşüm)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Bu sayfadaysanız, bir oturma izniniz var ve onu bağımlı çalışma oturma iznine dönüştürüp dönüştüremeyeceğini merak ediyorsunuz. </p>\n<p>→ Oturma izninizi bağımlı çalışma oturma iznine dönüştürüp dönüştüremeyeceğini öğrenmek için testi yap. </p>\n<p>Bağımlı çalışma oturma izni, eğer <strong>düzenli bir sözleşmeyle bir işverenin yanında bağımlı olarak çalışıyorsanız</strong> verilir. Bu, size maaş ödeyen bir patronun olduğu ve onun çalışanı olduğun anlamına gelir.\n</p>",
+        "index": 0
+      },
+      {
+        "question": "Bu izni almak için koşullar nelerdir?",
+        "content": "<p>Bu izni alabilmek için düzenli bir iş sözleşmesi İtalyan bir işverenle ve maaş bordrosu aylık en az 538 euro olmalıdır.</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu izni nasıl başvurabilirim?",
+        "content": "<p>Postaneden Kit postale ile başvurulur.</p>",
+        "index": 2
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>Süre, sahip olduğun iş sözleşmesinin türüne bağlıdır. Genellikle:</p>\n<ul><li><strong>2 yıl</strong> iş sözleşmen belirli süreliyse (bitiş tarihi varsa)</li><li><strong>3 yıl</strong> iş sözleşmen belirsiz süreliyse (bitiş tarihi yoksa)</li></ul>\n<hr>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "Bu izin bana ne haklar verir?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> düzenli sözleşmeyle (bağımlı veya bağımsız çalışma)</li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (3 aya kadar kalışlar için).</li><li><strong>Okula, meslek kursuna veya üniversiteye kaydolmak</strong></li><li><strong>Aile birleşimi başvurusu yapmak</strong></li></ul>\n<p> ‼️ Başka bir Avrupa ülkesinde çalışamazsınız</p>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "İşimi kaybedersem ne olur?",
+        "content": "<p>İşini kaybederseniz <strong>iznini kaybetmezsiniz</strong> son kullanma tarihine kadar. Şunları yapabilirsiniz:</p>\n<ul><li>Yeni bir iş aramak</li><li>İşsizlik listelerine kaydolmak</li><li>Bir <a href=\"/2187355e7f7f81d38a54d111fa27f45f\">izin başvurusu yapmak </a><a href=\"/2187355e7f7f81d38a54d111fa27f45f\"><strong>iş arama</strong></a> yenileme sırasında</li></ul>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "Peki izin süresi dolduğunda? Yenileyebilir miyim? Dönüştürebilir miyim?",
+        "content": "<p>Süresi dolmadan önce iki seçeneğin var:</p>\n<ol><li><strong>Yenilemek: </strong>yenileme başvurusu tercihen <strong>süre dolmadan önce</strong> veya en geç <strong>60 gün içinde</strong> son kullanma tarihinden önce yapılmalıdır. Başvuru Kit postale ile yapılır. </li></ol>\n<p><strong>2. Dönüştürmek: </strong>gerekli tüm şartları karşılıyorsanız, bu izin şu oturma izinlerine dönüştürülebilir:</p>\n<ul><li>Öğrenim</li><li>İş arama</li><li>Aile sebepleri</li><li>Uzun süreli ikamet sahipleri için oturma kartı (en az 5 yıl ikametiniz varsa)</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "İş sözleşmesi",
+      "İşvereninin kimlik belgesinin kopyası (İtalyan veya Avrupalıysa) veya oturma izninin kopyası (AB dışı vatandaşsa)",
+      "4 Fotoğraf",
+      "Gelir belgesi (CUD ve/veya maaş bordrosu)",
+      "UNILAV belgesi",
+      "80.46€ posta ödeme makbuzu"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 vesikalık fotoğraf",
+      "Pasaport kopyası (süresi dolmamış)",
+      "Süresi dolmak üzere olan izin",
+      "16€ damga pulu",
+      "İş sözleşmesi",
+      "Gelir belgesi (CUD ve/veya maaş bordrosu)",
+      "UNILAV belgesi",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "80.46€ posta ödeme makbuzu"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "NOT: Şu anki izniniz reşit olmayan yaş izniyse, dönüştürme için Bakanlık Müdürlüğü'nün (Direzione ministeriale) art. 32 uyarınca olumlu görüşü gerekir \nNOT: Şu anki izniniz öğrenim izniyse, dönüştürme için Prefettura'dan istenecek Nulla osta gerekir"
+  },
+  {
+    "id": "3217355e-7f7f-81ec-b452-e5599f6611f5",
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "tipo": "AB vatandaşlarının aile üyeleri için oturma kartı",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "Bu oturma kartı nedir?",
+        "content": "<p>İtalya&#039;da yaşayan bir AB vatandaşının AB dışı aile üyelerine verilen bir oturma iznidir.</p>",
+        "index": 0
+      },
+      {
+        "question": "Bu kart ne kadar süre geçerlidir?",
+        "content": "<p>5 yıl geçerlidir ve yenilenebilir. İlk yenilemeden sonra kalıcı hale gelir.</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu kartı kimler başvurabilir?",
+        "content": "<p>Eğer şunlardan biriyseniz başvurabilirsiniz:</p>\n<ul><li>AB vatandaşının eşi veya kayıtlı hayat arkadaşı</li><li>Evlilik veya kayıtlı birliktelik olmadan birlikte yaşama sözleşmesi imzalamış olan partnerler</li><li>AB vatandaşının veya eşinin 21 yaşına kadar olan oğlu/kızı</li><li>AB vatandaşının veya eşinin 21 yaşından büyük oğlu/kızı, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri AB aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>AB vatandaşının veya eşinin annesi/babası, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri AB aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>AB vatandaşının veya eşinin büyükannesi/büyükbabası</li><li>AB vatandaşının veya eşinin 21 yaşına kadar olan torunu</li><li>AB vatandaşının veya eşinin 21 yaşından büyük ve <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri AB aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Bu kart için nereye başvurulur?",
+        "content": "<p>Yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura) başvurmalısın.</p>\n<p>İtalya&#039;ya girdikten sonra 3 ay içinde başvurmalısın. Zaten İtalya&#039;da başka bir vize türüyle (turizm, aile vb.) bulunuyorsanız, tüm şartları karşılaman halinde oturma kartına çevirebilirsiniz.</p>",
+        "index": 3
+      },
+      {
+        "question": "Başvuru için hangi belgeler gerekli?",
+        "content": "<ul><li>Geçerli pasaport (kişisel bilgilerin ve son kullanma tarihlerinin olduğu sayfa, varsa vizeler ve giriş/çıkış damgaları)</li><li>Eski oturma izniniz (varsa)</li><li>AB vatandaşının kimlik belgesi</li><li>Konaklama beyanı</li><li>AB vatandaşının aile durumu belgesi (yaşadığı belediyeden alınır)</li><li>Akrabalık derecesini gösteren belgeler (yurt dışından geliyorsa tercüme edilmiş ve onaylanmış/apostilli olmalıdır)</li><li>AB vatandaşının gelirini gösteren belgeler (Cu/730/Unico) <em>(AB dışı aile üyesinin AB aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li>Bakmakla yükümlü olunduğunu gösteren belgeler <em>(AB dışı aile üyesinin AB aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Bu oturma kartıyla ne yapabilirim?",
+        "content": "<p>Bu kartla şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli bir pasaportunuz varsa Schengen ülkelerinde her 6 ayda 90 güne kadar seyahat etmek</li><li>5 yıl sonra kalıcı oturma kartına başvurabilirsiniz</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
+      "80.46€ posta ödeme makbuzu",
+      "İkametgah belgesi",
+      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı",
+      "Pasaport kopyası (süresi dolmamış)",
+      "4 Fotoğraf"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Süresi dolmak üzere olan izin",
+      "16€ damga pulu",
+      "30.46€ posta ödeme makbuzu",
+      "Aile bağını kanıtlayan belge (örneğin \"aile belgesi\")",
+      "4 vesikalık fotoğraf",
+      "Pasaport kopyası (süresi dolmamış)",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "yenileme notu: beş yıl sonra carta di soggiorno kalıcı hale gelir - yeni kartınızın süresinin en az 10 yıl olduğundan emin olun"
+  },
+  {
+    "id": "3217355e-7f7f-818e-8886-f8e26612bf91",
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "tipo": "\"Dinamik\" İtalyan vatandaşlarının aile üyeleri için oturma kartı",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "Bu oturma kartı nedir?",
+        "content": "<p>&quot;Dinamik&quot; bir İtalyan vatandaşının (yani başka bir AB ülkesinde, genellikle iş için sürekli yaşamış ve şimdi İtalya&#039;da yaşayan) AB dışı aile üyelerine verilen bir oturma iznidir.</p>",
+        "index": 0
+      },
+      {
+        "question": "Bu kart nedir?",
+        "content": "<p>&quot;Dinamik&quot; bir İtalyan vatandaşının AB dışı aile üyelerine verilen bir oturma iznidir. &quot;Dinamik&quot; İtalyan vatandaşı, İtalya dışında başka bir AB ülkesinde yaşamış veya çalışmış bir İtalyan vatandaşıdır.</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu kart ne kadar süre geçerlidir?",
+        "content": "<p>5 yıl geçerlidir ve yenilenebilir. İlk yenilemeden sonra kalıcı hale gelir.</p>",
+        "index": 2
+      },
+      {
+        "question": "Bu kartı kimler başvurabilir?",
+        "content": "<p>Eğer şunlardan biriyseniz başvurabilirsiniz:</p>\n<ul><li>İtalyan vatandaşının eşi veya kayıtlı hayat arkadaşı</li><li>Evlilik veya medeni birlik olmadan da birlikte yaşama sözleşmesi imzalamış partner</li><li>İtalyan vatandaşının veya eşinin 21 yaşına kadar olan oğlu/kızı</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşından büyük oğlu/kızı, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin annesi/babası, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin büyükannesi/büyükbabası</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşına kadar olan torunu</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşından büyük ve <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Bu kart için nereye başvurulur?",
+        "content": "<p>Yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura) başvurmalısın.</p>\n<p>İtalya&#039;ya girdikten sonra 3 ay içinde başvurmalısın. Zaten İtalya&#039;da başka bir vize türüyle (turizm, aile vb.) bulunuyorsanız, tüm şartları karşılaman halinde oturma kartına çevirebilirsiniz.</p>",
+        "index": 4
+      },
+      {
+        "question": "Başvuru için hangi belgeler gerekli?",
+        "content": "<ul><li>Geçerli pasaport (kişisel bilgilerin ve son kullanma tarihlerinin olduğu sayfa, varsa vizeler ve giriş/çıkış damgaları)</li><li>Eski oturma izniniz (varsa)</li><li>İtalyan vatandaşının kimlik belgesi</li><li>Konaklama beyanı</li><li>İtalyan vatandaşının aile durumu belgesi (yaşadığı belediyeden alınır)</li><li>Akrabalık derecesini gösteren belgeler (yurt dışından geliyorsa tercüme edilmiş ve onaylanmış/apostilli olmalıdır)</li><li>İtalyan vatandaşının gelirini gösteren belgeler (Cu/730/Unico) <em>(AB dışı aile üyesinin dinamik İtalyan aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li>Bakmakla yükümlü olunduğunu gösteren belgeler <em>(AB dışı aile üyesinin dinamik İtalyan aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li><strong>İtalyan vatandaşının başka bir AB ülkesinde yaşadığını gösteren belgeler</strong> (art. 23 D.lvo 30 del 2007&#039;ye göre)</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "Bu oturma kartıyla ne yapabilirim?",
+        "content": "<p>Bu kartla şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli bir pasaportunuz varsa Schengen ülkelerinde her 6 ayda 90 güne kadar seyahat etmek</li><li>5 yıl sonra kalıcı oturma kartına başvurabilirsiniz</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
+      "80.46€ posta ödeme makbuzu",
+      "4 Fotoğraf",
+      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı",
+      "Pasaport kopyası (süresi dolmamış)"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Süresi dolmak üzere olan izin",
+      "16€ damga pulu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "4 vesikalık fotoğraf",
+      "80.46€ posta ödeme makbuzu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı",
+      "Aile bağını kanıtlayan belge (örneğin \"aile belgesi\")"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "yenileme notu: beş yıl sonra carta di soggiorno kalıcı hale gelir - yeni kartınızın süresinin en az 10 yıl olduğundan emin olun"
+  },
+  {
+    "id": "3217355e-7f7f-812a-b59e-c7aac390ec01",
+    "slug": "lavoro-autonomo-conversione-da-altro-permesso",
+    "tipo": "Bağımsız çalışma (başka bir izinden dönüşüm)",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Bu sayfadaysanız, bir oturma izniniz var ve onu bağımsız çalışma oturma iznine dönüştürüp dönüştüremeyeceğini merak ediyorsunuz. Örneğin: İtalya&#039;da öğrenim, aile, iş arama vb. için bir izniniz var ve şimdi bağımsız çalışan olarak çalışmak istiyorsunuz.</p>\n<p><em>→ Oturma izninizi bağımsız çalışma oturma iznine dönüştürüp dönüştüremeyeceğini öğrenmek için testi yap</em></p>\n<p>Bu oturma izni <strong>bağımsız çalışan</strong>, yani <strong>bir işvereni olmayan</strong>, kendi başına iş veya meslek faaliyeti yürüten kişiler içindir (örneğin: tüccar, zanaatkar, serbest meslek sahibi vb.).</p>",
+        "index": 0
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<ul><li>Süre, yürüttüğün faaliyete ve sunduğun belgelere bağlıdır, ama genellikle <strong>1 ila 2 yıl</strong>.</li><li>Bu izin <strong>yenilenebilir</strong>, bağımsız çalışmaya devam ederseniz ve gerekli şartları karşılarsanız.</li></ul>\n<hr>",
+        "index": 1
+      },
+      {
+        "question": "Bu izin nerede talep edilir?",
+        "content": "<p>Postanede Kit postale doldurularak başvurulur</p>\n<p><strong>Ne yapmalısın:</strong></p>\n<hr>\n<ol><li>Doldurunuz: <strong>Kit postale</strong> (Modül 1 ve 2) ve yetkili bir postaneden gönderin.</li><li>Parmak izi için Emniyet Müdürlüğü&#039;nden (Questura) randevu alacaksınız.</li><li>Emniyet Müdürlüğü (Questura) dönüşümü kabul ederse, bağımsız çalışma için yeni oturma izninizi alacaksınız.</li></ol>",
+        "index": 2
+      },
+      {
+        "question": "Bu izinle neler yapabilirsiniz?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Bağımsız çalışmak</strong> vergi numarasıyla</li><li><a href=\"/20a7355e7f7f8173bffccbb2a93bae6f\"><strong>Bağımlı olarak çalışmak (bağımlı çalışma)</strong></a></li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (her 180 günde en fazla 90 gün)</li><li><strong>Aile birleşimi başvurusu yapmak</strong></li><li><strong>Kurslara, okullara, üniversitelere kayıt olmak</strong></li></ul>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "Faaliyetini kapatırsanız ne olur?",
+        "content": "<ul><li>Bir <strong>iş arama izni</strong> talep edebilirsiniz, ama başka bir iş veya faaliyet aradığını kanıtlamalısın.</li></ul>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "İzin ne zaman sona erer?",
+        "content": "<ul><li>Şunları yapmalısın: <strong>yenileme başvurusu yapmak</strong> <strong>süre dolmadan önce </strong>veya en geç 60 gün sonrasına kadar</li><li>Eğer <strong>şartları karşılıyorsanız</strong>, ayrıca <strong>dönüştürebilirsiniz</strong> başka bir izin türüne (eğitim, aile, uzun süreli ikamet, bağımlı çalışma vb.). Dönüştürme başvurusunu süre dolmadan yapmalısın.</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "80.46€ posta ödeme makbuzu",
+      "4 Fotoğraf",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Vergi numarası (partita IVA) belgesi veya Ticaret Odası kaydı",
+      "Son gelir beyannamesi"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "16€ damga pulu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "80.46€ posta ödeme makbuzu",
+      "4 Fotoğraf",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Vergi numarası veya ticaret sicili kayıt belgesi",
+      "Son gelir beyannamesi",
+      "Süresi dolmak üzere olan izin"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "NOT: bazı Questura'lar konut uygunluk belgesi (idoneità alloggiativa) isteyebilir"
+  },
+  {
+    "id": "3217355e-7f7f-8164-86e0-da8fd938605c",
+    "slug": "calamita-naturale",
+    "tipo": "Doğal afet",
+    "emoji": "📋",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Doğal afet oturma izni (Art. 20bis, Testo Unico Immigrazione) <strong>ciddi bir acil durum nedeniyle ülkelerine dönemeyen</strong> ⚠️ (depremler, savaşlar, doğal afetler gibi) orada yaşamayı tehlikeli kılan yabancılara verilir.</p>\n<p>Bu izin siyasi sığınma başvurusundan farklıdır ve uluslararası koruma başvurusu yapman gerekmez.</p>",
+        "index": 0
+      },
+      {
+        "question": "Ne zaman başvurabilirim?",
+        "content": "<p>Bu izne başvurabilirsiniz eğer:</p>\n<ul><li>Zaten İtalya&#039;da yaşıyorsunuz</li><li>Ülkende <strong>çok ciddi ve tehlikeli bir durum var</strong> (acil durum, afet, felaket)</li><li>Ülkene <strong>güvenli bir şekilde dönemen mümkün değil</strong></li><li>Ülkendeki durum temel haklarını (yaşam hakkı, özgürlük hakkı, kendi hayatınız hakkında karar verme hakkı) tehlikeye atıyor</li></ul>\n<p>Durum <strong>istisnai ve geçici</strong> ama aynı zamanda çok tehlikeli olmalıdır.</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu izne nasıl ve nerede başvurulur?",
+        "content": "<p>Başvuruyu <strong>yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura)</strong>.</p>\n<p>Doğrudan Emniyet Müdürlüğü&#039;ne (Questura) gidip randevu almalısın</p>\n<p>Başvuru yaptıktan sonra Emniyet Müdürlüğü (Questura) ülkende gerçekten tehlikeli bir durum olup olmadığını kontrol edebilir ve sonra karar verir.</p>",
+        "index": 2
+      },
+      {
+        "question": "📋 Hangi belgeler gerekli?",
+        "content": "<ul><li><strong>Ülkendeki tehlikeli durumu gösteren belgeler</strong>: gazete haberleri, uluslararası kuruluş raporları, ülkende ciddi bir acil durum olduğunu gösteren resmi belgeler</li><li><strong>İtalya&#039;da nasıl geçimini sağladığını gösteren belgelerin kopyası</strong> (varsa): maaş bordrosu, iş sözleşmesi, aldığın yardımlar</li><li><strong>Pasaport</strong> veya benzer belge</li><li><strong>2 fotoğraf</strong></li><li><strong>Damga pulu</strong> 16 euro</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Ne kadar süre geçerli?",
+        "content": "<p>İznin süresi <strong>altı ay, </strong>şartlar devam ederse altı ay daha yenilenebilir </p>",
+        "index": 4
+      },
+      {
+        "question": "✅ Hangi hakları verir? Neye erişebilirim?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Almak: <strong>ikamet kaydı</strong> yaşadığın belediyede</li><li><strong>Çalışmak</strong> (düzenli sözleşmeyle - bağımsız veya bağımlı çalışma)</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</strong></li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li></ul>",
+        "index": 5
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf",
+      "Doğal afet kanıtı",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Süresi dolmak üzere olan izin",
+      "4 vesikalık fotoğraf",
+      "16€ damga pulu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "Doğal afet kanıtı"
+    ],
+    "rinnovoMethod": "şahsen",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bu tür izin için konaklama beyanınız (dichiarazione di ospitalità) yoksa, bir ikamet adresi bildirmeniz yeterli olmalıdır. Questura'nın nerede olduğunuzu bilmek için bir adrese ihtiyacı vardır\n\nDikkat: bazı Questura'lar bu izni elektronik formatta verebilir ve bu nedenle 30,46 tutarında bir bollettino postale ödemesi isteyebilir\n\nDikkat: bazı Questura'lar pasaport isteyebilir"
+  },
+  {
+    "id": "3217355e-7f7f-811e-9fbd-d3a71cdb5efd",
+    "slug": "attesa-occupazione",
+    "tipo": "İş arama",
+    "emoji": "🔍",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>İş arama oturma izni, iş sözleşmen olmasa veya artık olmasa bile İtalya&#039;da kalmana olanak tanır. Genellikle </p>\n<ul><li>şu yabancı işçilere verilir: <strong>işini kaybetmiş</strong> ve yeni bir iş arayan</li><li>18 yaşına ulaşmış ve sabit bir işi olmayan refakatsiz yabancı reşit olmayanlar</li><li>a <strong>yabancı öğrenciler</strong> İtalya&#039;da üniversite bitirmiş ve henüz iş bulamamış olan</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "İş arama oturma iznine nasıl başvurabilirim?",
+        "content": "<p>Şu üç durumdan birindeyseniz bu izne başvurabilirsiniz:</p>\n<ul><li><strong>Bağımsız veya bağımlı çalışma için oturma izniniz var</strong> ama işini kaybettiğin (işten çıkarma veya istifa) veya bağımsız faaliyetiniz sona erdiği için yenileyemiyorsunuz</li><li><strong>Öğrenim iznisiniz var</strong> ve İtalya&#039;da üniversite bitirdiniz (lisans, yüksek lisans, doktora) ama henüz iş bulamadınız. Bu durumlarda önce iş arama iznine, sonra çalışma iznine dönüştürmek tavsiye edilir. Öğrenim izninden doğrudan çalışma iznine geçmek daha zordur</li><li><strong>Reşit olmayan yaş iznisiniz var</strong> ve iş bulmak için biraz daha zaman istiyorsunuz</li></ul>\n<p>⚠️ <em>Dikkat: daha önce hiç oturma izniniz olmadıysa, İtalya&#039;da iş arama izni başvurusu yapamazsınız. Açıkçası: İtalya&#039;ya vizesiz veya turist vizesiyle gelip, iş arama izniyle iş arayamazsınız.</em></p>",
+        "index": 1
+      },
+      {
+        "question": "👉 Bu izne nasıl başvurulur?",
+        "content": "<ul><li>İznin süresi dolmak üzereyse: Kit postale ile başvurunuzu gönderin <strong>Kit postale</strong> süre dolmadan önce</li><li>İznin süresi zaten dolmuşsa: doğrudan Emniyet Müdürlüğü&#039;ne (Questura) gidiniz ve randevu al</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "İzin başvurusundan önce ne yapmalısın?",
+        "content": "<p><strong>1. İş Kurumu&#039;na (Centro per l&#039;Impiego) kaydol</strong></p>\n<ul><li>En yakın İş Kurumu&#039;na (Centro per l&#039;Impiego) git</li><li>Çalışmaya hazır olduğunu beyan et (daha önce yaptığından farklı bir işte bile olsa)</li><li>Size bir <strong>kayıt belgesi</strong> iş arayan kişi olarak verecekler</li></ul>\n<p><strong>İş Kurumu&#039;na (Centro per l&#039;Impiego) kaydolmak için gerekenler:</strong></p>\n<ul><li>Vergi numarası</li><li>Geçerli oturma izni (veya süresi dolmuş ama yenileme makbuzu olan)</li><li>Geçerli kimlik belgesi</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Maliyeti ne kadar?",
+        "content": "<p>Toplam maliyet <strong>116,46€</strong>:</p>\n<ul><li>Elektronik izin için 30,46€</li><li>30€ Kit postale gönderim ücreti</li><li>İznin düzenlenmesi için 40€</li><li>16€ damga pulu</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>İzin genellikle<strong> 1 yıl sürer ve Emniyet Müdürlüklerine göre YENİLENEMEZ.</strong></p>",
+        "index": 5
+      },
+      {
+        "question": "✅ Hangi hakları verir? Neye erişebilirim?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> (bağımsız veya bağımlı çalışma)</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</strong></li><li>İkametgah kaydı yaptırmak </li></ul>",
+        "index": 6
+      },
+      {
+        "question": "Süresi dolunca ne olur?",
+        "content": "<p><strong>İş bulursanız:</strong> izni çalışma iznine (bağımsız veya bağımlı) Kit postale ile dönüştürebilirsiniz</p>\n<p><strong>İş bulamazsanız: </strong>süresi dolmadan önce nitelikli hukuki yardım al</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "İş Kurumu'na (Centro per l'impiego) kayıt",
+      "70.46€ posta ödeme makbuzu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "4 Fotoğraf"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "16€ damga pulu",
+      "Pasaport kopyası (süresi dolmamış)",
+      "4 Fotoğraf",
+      "İş Kurumu'na (Centro per l'impiego) kayıt",
+      "70.46 veya 80.46€ posta ödeme makbuzu (izin süresine bağlı)"
+    ],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Not: öğrenim izniniz varsa ve bu izni talep ediyorsanız, öğrenim sürecini tamamladığınıza dair belgeyi de getirmeniz gerekir \nNot: başka türde bir izniniz varsa, örneğin aile sebepleri izni, iş arama için bu izni talep etmeyi deneyebilirsiniz, ancak yakın zamanda çalıştığınıza dair bir kanıt getirmeniz gerekir (örn. son maaş bordroları)\n\nYenilemeyle ilgili EK NOT: yenilemeyi elde etmek zordur; istisnai durumlarda mümkündür ancak özel bir savunmasızlık durumunun kanıtlanması gerekir (Sosyal Hizmetlerin raporu)"
+  },
+  {
+    "id": "3217355e-7f7f-8156-bf74-cdd955e14156",
+    "slug": "famiglia-genitore-di-cittadino-italiano",
+    "tipo": "Aile - İtalyan vatandaşı çocuğun ebeveyni",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "İtalyan vatandaşı çocuğun ebeveyni için oturma izni nedir?",
+        "content": "<p>Bu, reşit olmayan İtalyan vatandaşı çocukların ebeveynleri için özel bir oturma iznidir.</p>",
+        "index": 0
+      },
+      {
+        "question": "Ne kadar süre geçerli?",
+        "content": "<p>İzin genellikle 2 yıl geçerlidir</p>",
+        "index": 1
+      },
+      {
+        "question": "Hangi şartlar gereklidir?",
+        "content": "<p>Bu izne başvurabilmek için İtalya&#039;da ikamet eden İtalyan vatandaşı reşit olmayan bir çocuğun olmalı ve ebeveyn sorumluluğun devam etmelidir. </p>\n<p>Birlikte yaşama zorunlu değildir. Örneğin reşit olmayan çocuk diğer ebeveynle yaşıyor olsa bile bu izni alabilirsiniz.</p>",
+        "index": 2
+      },
+      {
+        "question": "Bu izin nerede talep edilir?",
+        "content": "<p>Yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura) başvurmalısın.</p>",
+        "index": 3
+      },
+      {
+        "question": "Başvuru için hangi belgeler gerekli?",
+        "content": "<ul><li>İtalyan vatandaşı çocuğun ebeveyni olduğunu gösteren belge</li><li>Çocuğunun İtalya&#039;da nerede yaşadığını gösteren belge</li><li>Ebeveynlik hakkının devam ettiğini gösteren çocuk mahkemesi belgesi</li><li>Geçerli pasaport</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Bu oturma izniyle ne yapabilirim?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız veya bağımlı çalışma)</li><li>Yaşadığın belediyede ikametgâh kaydı yaptırmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli pasaportunuz varsa Schengen bölgesinde seyahat etmek</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "İznin süresi dolduğunda ne olur?",
+        "content": "<p>Süresi dolmadan önce, </p>\n<ul><li>çocuğun reşit olmadığı sürece yenileyebilirsiniz.</li><li>başka bir izne dönüştürebilirsiniz (örneğin çalışma veya öğrenim için)</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Pasaport kopyası (süresi dolmamış)",
+      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
+      "4 Fotoğraf",
+      "16€ damga pulu",
+      "80.46€ posta ödeme makbuzu",
+      "Reşit olmayan çocuğun İtalya'daki ikamet belgesi"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Süresi dolmak üzere olan izin",
+      "16€ damga pulu",
+      "4 vesikalık fotoğraf",
+      "İtalyan vatandaşının kimlik belgesi",
+      "Pasaport kopyası (süresi dolmamış)",
+      "80.46€ posta ödeme makbuzu",
+      "reşit olmayan çocuğun İtalya'daki ikamet belgesi"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bazı Questura'lar ebeveyn olarak sorumluluğunuzun “düşmediğine” (decaduto) dair bir belge isteyebilir. Bu, Çocuk Mahkemesi'nden (Tribunale per i Minorenni) istenen bir belgedir\n\nDikkat: bu izni başka bir izinden dönüştürme yoluyla talep ediyorsanız, başvuru kit ile yapılır"
+  },
+  {
+    "id": "3217355e-7f7f-8111-9d10-fd7f91e9a12e",
+    "slug": "minore-eta-per-msna",
+    "tipo": "Reşit olmama (refakatsiz yabancı çocuklar için)",
+    "emoji": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Reşit olmama oturma izni <strong>18 yaşından küçük yabancı çocuklara</strong> İtalya&#039;da ebeveynleri veya yakın akrabaları olmadan bulunan çocuklara verilir. Belgesiz veya düzensiz şekilde gelmiş olsanız bile bu izin verilir.</p>",
+        "index": 0
+      },
+      {
+        "question": "Kimler başvurabilir?",
+        "content": "<p>Bu izin sadece <strong>reşit olmaman</strong> (18 yaşından küçük olman) ve İtalya&#039;da ebeveynlerinin veya yakın akrabalarının bulunmaması nedeniyle istenebilir.</p>\n<p>Başvuruyu yapabilecek kişiler:</p>\n<ul><li>Reşit olmayan kişinin kendisi (bir avukatınız veya kaldığı merkezin görevlilerinin yardımıyla)</li><li>Bölgedeki sosyal hizmetler</li><li>Vasi <strong>vasiniz</strong> (reşit olmayan kişinin yasal olarak bakımını üstlenen yetişkin kişi)</li></ul>\n<p>Vasi henüz mahkeme tarafından atanmadıysa, başvuruyu reşit olmayan kişinin kaldığı merkezin sorumlusu yapabilir.</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu izin nerede talep edilir?",
+        "content": "<p>Başvuruyu <strong>kaldığın merkezin bulunduğu şehirdeki Emniyet Müdürlüğü&#039;ne (Questura)</strong> sunmalısın.</p>",
+        "index": 2
+      },
+      {
+        "question": "📋 Hangi belgeler gerekli?",
+        "content": "<ul><li><strong>4 vesikalık fotoğraf</strong></li><li><strong>16€ damga pulu</strong></li><li><strong>Konaklama beyanı</strong> merkez sorumlusunun kimlik belgesiyle birlikte</li><li><strong>Vasinin belgesi</strong> Çocuk Mahkemesi tarafından atanan (varsa) veya reşit olmayan kişinin kaldığı merkezin sorumlusunun beyanı</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>İzin <strong>18 yaşına kadar</strong> (reşit oluncaya kadar) geçerlidir.</p>",
+        "index": 4
+      },
+      {
+        "question": "Bu izinle neler yapabilirsiniz?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<p><strong>  ✅ Okula kayıt olabilirsiniz</strong> (ilkokul, ortaokul, lise) başka belgelere gerek kalmadan</p>\n<p><strong>  ✅ Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olabilir ve bir aile hekimi alabilirsiniz</strong> 🏥</p>\n<p><strong>  ✅ 16 yaşından itibaren çalışabilirsiniz</strong> (düzenli sözleşmeyle - bağımsız çalışma veya bağımlı çalışma, çocuk işçiliği kurallarına uyarak)</p>\n<p><strong>  ✅ </strong>bir<strong> reşit olmayanlar için kabul merkezine</strong></p>",
+        "index": 5
+      },
+      {
+        "question": "18 yaşını doldurduğunda ne olur?",
+        "content": "<p>18 yaşını doldurmadan önce, izninizi şu türlere dönüştürebilirsiniz:</p>\n<ul><li><a href=\"/2187355e7f7f81e48862e58bff4681dc\">Çalışma izni</a></li><li><a href=\"/2187355e7f7f81b6a119f485cc340e1c\">Eğitim izni</a></li><li>İş arama izni </li><li>Gerekli şartları karşılıyorsanız aile izni</li><li><a href=\"/2967355e7f7f8006a790da7e5b938d1b\">İdari devam izni</a></li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf",
+      "Önceki izin"
+    ],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bazı Questura'lar fotoğraflı bir kimlik belgenizi isteyebilir (örneğin pasaport veya ülkenizin kimlik kartı ya da doğum belgesi). İtalya'da refakatsiz yabancı çocuk olarak zaten kayıtlıysanız, bu belgeler gerekli değildir\n\nDikkat: bazı Questura'lar ikamet adresi kanıtı isteyebilir (konaklama beyanı veya ikametgâh belgesi)\n\nDikkat: bazı Questura'lar bu izni elektronik formatta verebilir ve bu nedenle 30,46 tutarında bir bollettino postale ödemesi isteyebilir\n\nDikkat: zaten bir vasiniz varsa, vasi atama kararını da getirin.\n\nHer durumda nitelikli hukuki yardım istemenizi öneririz"
+  },
+  {
+    "id": "3217355e-7f7f-8153-966e-ed88ef64662f",
+    "slug": "assistenza-minore-articolo-31",
+    "tipo": "Reşit olmayan kişiye yardım (\"Articolo 31\")",
+    "emoji": "💼",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Reşit olmayan kişiye yardım oturma izni, Çocuk Mahkemesi&#039;nin yabancı uyruklu bir çocuğun büyümesi ve refahıyla ilgili ciddi nedenlerle bir akrabasınızın İtalya&#039;ya girişine veya kalmasına izin vermesi durumunda verilir.</p>",
+        "index": 0
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>Süresi Çocuk Mahkemesi tarafından belirlenir ve genellikle en az bir yıldır. İzin yenilenebilir.</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu izni almak için koşullar nelerdir?",
+        "content": "<p>Bu izin için temel şartlar şunlardır:</p>\n<ul><li>Reşit olmayan kişi İtalya topraklarında bulunmalıdır</li><li>Başvuru sahibi reşit olmayan kişinin bir akrabası olmalıdır (genellikle ebeveyn)</li><li>Akraba olmadan reşit olmayan kişinin hem duygusal hem de fiziksel olarak çok acı çekeceğini kanıtlamak gerekir, özellikle çocuk küçükse</li><li>Akraba, reşit olmayan kişiyle aile bağını gösteren belgeleri sunmalıdır</li><li>Reşit olmayan kişinin yaptığı faaliyetleri kanıtlayan belgeler (okul, etkinlikler vb.). </li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Bu izin nerede talep edilir?",
+        "content": "<p>Başvuru, reşit olmayan kişinin yaşadığı bölgedeki Çocuk Mahkemesi&#039;ne yapılmalıdır. Avukat zorunlu değildir: başvuruyu kendiniz de yapabilirsiniziz, ancak hukuki destek tavsiye edilir.</p>\n<p><strong>DİKKAT</strong>: Mahkeme süreci aylar hatta yıllar sürebilir ve sonuç belirsizdir. Mahkeme kararını beklerken geçici bir oturma izniniz olmayacaktır.</p>\n<p>Mahkeme belgesini aldıktan sonra akrabalar, yaşadıkları bölgedeki Emniyet Müdürlüğü&#039;nden (Questura) oturma izni talep etmelidir. İzin elektronik formattadır.</p>",
+        "index": 3
+      },
+      {
+        "question": "Başvuru için hangi belgeler gerekli?",
+        "content": "<p>Çocuk Mahkemesi&#039;ne başvuru sırasında şunları getirmelisiniz:</p>\n<ul><li>Başvuru dilekçesi (örnek metiniz mevcuttur)</li><li>27,00€ damga pulu</li><li>Reşit olmayan kişinin doğum belgesi</li><li>Başvuru sahibi akrabanın ve reşit olmayan kişinin kimlik belgeleri</li><li>Reşit olmayan kişinin sağlık sorunlarını belgeleyen varsa tıbbi raporlar</li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Bu oturma izniyle ne yapabilirim?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li><li>Pasaportla İtalya ve Schengen ülkelerinde serbestçe dolaşmak (3 aya kadar kısa süreli kalışlar)</li></ul>",
+        "index": 5
+      },
+      {
+        "question": "İznin süresi dolduğunda ne olur?",
+        "content": "<p>Yenileyebilir veya başka bir izne dönüştürebilirsiniz</p>\n<p><strong>DİKKAT</strong>: Bu izni yenilemek için Çocuk Mahkemesi&#039;nde yeni bir dava açmanız gerekir. Emniyet Müdürlüğü&#039;nde (Questura) veya Kit postale ile yenilenemez.</p>\n<p>Dönüştürme için bu izin şunlara değiştirilebilir:</p>\n<ul><li>Çalışma amaçlı oturma izni (bağımsız veya bağımlı)</li><li>İtalya&#039;da 5 yıl düzenli ikamet sonrası AB uzun süreli ikamet izni</li></ul>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "Çocuk Mahkemesi kararı",
+      "80.46€ posta ödeme makbuzu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "4 Fotoğraf",
+      "Pasaport kopyası (süresi dolmamış)"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [],
+    "rinnovoMethod": "şahsen",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: talep ettiğiniz izin yalnızca bir yıllıksa, bollettino 70,46'dır\n\nDikkat: bazı Questura'lar çocukların kimlik belgesini isteyebilir, ancak bu gerekli olmamalıdır\n\nDikkat: bu izin yenilenemez: Çocuk Mahkemesi'nde (Tribunale per i minorenni) yeni bir dava açmak ve yeni bir oturma izni talep etmek gerekir"
+  },
+  {
+    "id": "3217355e-7f7f-8145-aa4d-f7dedcf3bc00",
+    "slug": "richiesta-asilo",
+    "tipo": "Sığınma başvurusu",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Sığınma başvurusu oturma izni (geçici belge - permesso giallo), İtalya&#039;da uluslararası koruma (sığınma) başvurusunda bulunmuş ve henüz kesin bir yanıt bekleyen kişilere verilen bir belgedir </p>",
+        "index": 0
+      },
+      {
+        "question": "İzin başvurusu nasıl yapılır?",
+        "content": "<p>Öncelikle Emniyet Müdürlüğü&#039;nün (Questura) göç bürosuna gidip uluslararası koruma talebinde bulunmalısınız: parmak izleriniz alınacak ve ardından size sığınma başvurusu oturma izni verilecektir. Pasaport gerekmez. Pasaportunuz olduğunu söylerseniz Emniyet Müdürlüğü&#039;ne teslim etmeniz gerekir.\n</p>\n<p>Sığınma başvurusunda bulunan herkes bu izne hak kazanır; bu izin başvurunuz hakkında karar verilinceye kadar İtalya&#039;da yasal olarak kalmanızı sağlar. Bazı istisnalar vardır (okumaya devam ediniz).</p>",
+        "index": 1
+      },
+      {
+        "question": "Bu izin bana ne haklar verir?",
+        "content": "<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma): Emniyet Müdürlüğü&#039;nün (Questura) verdiği fotoğraflı izninizin (&quot;attestato nominativo&quot;) tarihinden 60 gün sonra iş sözleşmesi imzalayabilirsiniz  </li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Yaşadığın belediyede ikametgâh kaydı yaptırmak</li><li>Kendinizi geçindirecek yeterli paranız yoksa, bir <a href=\"/2187355e7f7f814989cbc7ee16321ee8#29a7355e7f7f80e197abfcb177f04f21\">Kabul merkezine</a></li></ul>\n<p>Bu izinle İtalya dışına seyahat edilemez.</p>",
+        "index": 2
+      },
+      {
+        "question": "Ne kadar süre geçerli?",
+        "content": "<p>6 ay sürelidir. Ancak süresi dolmuş olsa bile (çok yaygın bir durum), uluslararası koruma başvurunuz hakkında Bölge Komisyonu karar verene kadar yasal statünüzüz devam eder. Birçok durumda Mahkeme kararına kadar da İtalya&#039;da kalabilirsiniz, ancak her zaman değil (geldiğiniz ülkeye, İtalya&#039;ya nasıl girdiğinize bağlıdır ve yakında bu hakkı daha da kısıtlayacak yeni yasalar gelmektedir).</p>",
+        "index": 3
+      },
+      {
+        "question": "Yenileyebilir miyim?",
+        "content": "<p>Sığınma başvurusu izni, Bölge Komisyonu uluslararası koruma talebiniz hakkında karar verene kadar otomatik olarak yenilenir. </p>\n<p> ⚠️ Bazı durumlarda, Komisyon&#039;dan olumsuz bir yanıt aldıysanız ve örneğin (a) &quot;güvenli&quot; kabul edilen bir ülkeden geliyorsanız; (b) daha önce başka sığınma başvuruları yaptıysanız; (c) suçlardan dolayı polise şikâyet edildiyseniz, oturma izniniz yenilenmeyebilir. <strong>Daha önce ilk olumsuz yanıtı aldıysanız ve sınır dışı edilip edilemeyeceğini veya bir Geri Gönderme Merkezi&#039;ne (&quot;CPR&quot;) konulup konulamayacağını merak ediyorsanız, hemen uzman hukuki yardım almak iyi bir fikirdir.</strong></p>",
+        "index": 4
+      },
+      {
+        "question": "Başka bir izne dönüştürebilir miyim?",
+        "content": "<p>Hayır, bu oturma izni, aile sebepleri için oturma izni dışında başka izinlere dönüştürülemez.</p>\n<p><em>18 yaşından önce sığınma başvurusu yaptıysanız, Komisyon&#039;dan veya Mahkeme&#039;den kesin olumsuz bir karar aldıysanız, şu anda 18 yaşından büyük olsanız bile bu izni eğitim, çalışma veya iş arama iznine dönüştürebilirsiniz.</em></p>",
+        "index": 5
+      },
+      {
+        "question": "Uluslararası koruma başvurum reddedilirse ne olur?",
+        "content": "<p>Bölge Komisyonu başvurunu reddederse, bir avukatın yardımıyla itiraz edebilirsin. 2025 yılında 13.700 Euro&#039;dan az kazandıysan, avukatın itirazı ücretsiz.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "C3 formu",
+      "Kimlik belgesi (attestato nominativo)",
+      "Mahkemede itirazınız varsa; mahkeme dosyasının çıktısı (avukatınıza sorun)",
+      "16€ damga pulu",
+      "4 vesikalık fotoğraf"
+    ],
+    "rinnovoMethod": "şahsen",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: bazı Questura'lar konaklama beyanı (dichiarazione di ospitalità) isteyebilir, ancak yasa bunu şart koşmaz!"
+  },
+  {
+    "id": "3217355e-7f7f-8125-beee-c7e0f9ec6628",
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "tipo": "İnsan ticareti mağdurları için sosyal koruma",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "📄 Nedir ve nasıl başvurulur",
+        "content": "<p>Sosyal koruma amaçlı oturma izni; şiddete maruz kalan veya fuhuş sömürüsü, iş sömürüsü mağduru olan ve güvenliği ciddi tehlike altında olan yabancı vatandaşları kapsar.</p>\n<p>Özel koruma izni şu taraflarca talep edilir:</p>\n<ul><li>Cumhuriyet Savcısı tarafından, yabancıya karşı işlenen şiddet veya ağır sömürü olaylarıyla ilgili ceza davası başlatılmış durumlarda.</li><li>yerel kurumların sosyal hizmetleri tarafından;</li><li>ilgili sicile kayıtlı dernekler, kuruluşlar ve diğer organizasyonlar tarafından <a href=\"http://www.lavoro.gov.it/temi-e-priorita/immigrazione/focus-on/registro-associazioni-ed-enti/Pagine/default.aspx\">Çalışma ve Sosyal Politikalar Bakanlığı nezdindeki sicile kayıtlı</a> ve yabancılara yönelik yardım ve sosyal koruma programları yürütmeye yetkili olanlar.</li></ul>\n<p>Emniyet Müdürlüğü (Questura), başvuruyu aldıktan ve öngörülen koşulların varlığını doğruladıktan sonra, insani nedenlerle oturma izni düzenler.</p>\n<p>Bu izni almak için gerekli şartlar nelerdir?</p>\n<ul><li>Şiddet veya ağır sömürü mağduru olmalısın.</li><li>Sömürücülerden kaçmaya çalıştığın veya onlara karşı tanıklık ettiğin için tehlike altında olmalısın.</li><li>Bir yardım ve sosyal entegrasyon programına katılmalısın.</li><li>Ülkene dönmeye karar verirseniz, sizin ve aile üyelerinin güvenliği için risk varsa, bu durum dikkate alınmalıdır.</li></ul>\n<p>Oturma izni almak için şikayette bulunmak gerekli mi?</p>\n<p>Hayır. Art 18 kapsamındaki izin iki şekilde verilebilir:</p>\n<ul><li>Yargı yolu: mağdur sömürücüleri ihbar eder ve izin Savcılığın görüşüyle verilir.</li><li>Sosyal yol: mağdur ihbar etmez, ancak uzman kuruluşlar tarafından yönetilen bir yardım programına katılır.</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "Hangi belgeler ve şartlar gerekli?",
+        "content": "<ul><li>Cumhuriyet Savcısının görüşü, Savcının tehlikenin ciddiyeti ve güncelliği hakkında bilgi verdiği durumlarda;</li><li>yabancının, yerel kurumlar veya Çalışma Bakanlığı nezdindeki sicile kayıtlı ve yerel kurumla sözleşmeli özel kuruluşlar tarafından hazırlanan yardım ve sosyal entegrasyon programına katılımı. </li><li>programın gerçekleştirileceği yapının sorumlusu tarafından programla bağlantılı yükümlülüklerin kabul edilmesi.</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "Ne kadar süre geçerli?",
+        "content": "<p>İzin <strong>6 ay</strong>, 1 yıl veya adalet nedenleriyle gereken daha uzun süre için yenilenebilir.\nYardım ve sosyal entegrasyon programının kesintiye uğraması veya programın amaçlarıyla bağdaşmayan davranış durumunda, Cumhuriyet Savcısı veya yetkisi dahilinde yerel kurumun sosyal hizmeti tarafından bildirilmesi ya da Emniyet Müdürü tarafından tespit edilmesi halinde veya düzenlenmesini haklı kılan diğer koşulların ortadan kalkması durumunda iptal edilebilir.</p>",
+        "index": 2
+      },
+      {
+        "question": "Dönüştürebilir miyim?",
+        "content": "<p>Bu izin, eğitim veya çalışma amaçlı oturma iznine dönüştürülebilir.</p>",
+        "index": 3
+      },
+      {
+        "question": "🔹 Art. 18 TUI (insanız ticareti, şiddet, ağır sömürü)",
+        "content": "<ul><li>Çok ciddi durumlar için (insanız ticareti, şiddet, suçüstü zorunlu tutuklama).</li><li>Süre: 6 ay → yenilenebilir.</li><li>İhbar ile veya ihbarsız (sosyal koruma programı).</li></ul>",
+        "index": 4
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf",
+      "Pasaport kopyası (süresi dolmamış)",
+      "Sosyal hizmetlerin raporu/beyanı",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
+      "İkametgah belgesi",
+      "30.46€ posta ödeme makbuzu"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "4 vesikalık fotoğraf",
+      "16€ damga pulu",
+      "Süresi dolmak üzere olan izin",
+      "Talep edilmişse sosyal hizmetlerin raporu",
+      "Yargı makamının teklifi/görüşü",
+      "İkametgah belgesi",
+      "30.46€ posta ödeme makbuzu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "rinnovoMethod": "şahsen",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "DİKKAT: BAZI QUESTURA'LAR PASAPORT İSTEYEBİLİR\nNOT: BU SAYFA DOĞRULAMA AŞAMASINDADIR\n"
+  },
+  {
+    "id": "3217355e-7f7f-812c-b2d1-cdecdff6a707",
+    "slug": "protezione-speciale",
+    "tipo": "Bölge Komisyonu veya Mahkemenin olumlu kararından sonra özel koruma",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "Bu izin nedir?",
+        "content": "<p>Bu, farklı durumlar için verilebilen bir oturma iznidir, örneğin <strong>İtalya&#039;ya iyi entegre olmuş, çok savunmasız olan veya ülkesine geri dönemeyen kişiler için</strong>.</p>\n<hr>",
+        "index": 0
+      },
+      {
+        "question": "İzin başvurusu nasıl yapılır?",
+        "content": "<p>Özel koruma oturma izni şu şekillerde verilebilir:</p>\n<ul><li>Şunun tarafından: <strong>Bölge Komisyonu</strong> siz <a href=\"/2187355e7f7f814989cbc7ee16321ee8\">uluslararası koruma başvurusu</a> (&quot;sığınma&quot; başvurusu)</li><li>Bir <strong>mahkeme</strong> Komisyonun olumsuz kararından sonra (genellikle Mahkemeler bunu Komisyonlardan daha kolay verir). Zaten Mahkemede itiraz ettiyseniz mutlaka bir avukatınız vardır ve ona danışmanı tavsiye ederiz.</li></ul>\n<hr>",
+        "index": 1
+      },
+      {
+        "question": "Bu izin nerede talep edilir?",
+        "content": "<p>Bölge Komisyonu veya Mahkeme özel koruma alacağına karar verirse:</p>\n<ul><li>Şuraya gitmelisiniz: <strong>Emniyet Müdürlüğü&#039;ne (Questura)</strong> izin başvurusu yapmak için</li><li>Parmak izi için size bir randevu verecekler</li><li>Emniyet Müdürlüğü (Questura) izin hazır olduğunda sizi bilgilendirecek</li></ul>\n<hr>",
+        "index": 2
+      },
+      {
+        "question": "Sığınma başvurusu yapmadan doğrudan Emniyet Müdürlüğü'nden (Questura) talep edebilir miyim?",
+        "content": "<p>2023&#039;ten itibaren yasa değişti ve özel koruma izninizi doğrudan Emniyet Müdürlüğü&#039;nden (Questura) almak çok daha zor hale geldi. Doğrudan Emniyet Müdürlüğü&#039;nden talep etmeye devam edebileceğini söyleyen Mahkeme kararları var, ama <strong>iyi bir avukattan yardım almını tavsiye ederiz</strong>.</p>\n<hr>",
+        "index": 3
+      },
+      {
+        "question": "Başvuru için hangi belgeler gerekli?",
+        "content": "<ul><li><strong>Bölge Komisyonu Kararı</strong> özel korumayı tanıyan (veya mahkeme kararı)</li><li><strong>4 vesikalık fotoğraf</strong> güncel</li><li><strong>İkametgah belgesi</strong> veya nerede yaşadığını gösteren belgeler</li></ul>\n<hr>",
+        "index": 4
+      },
+      {
+        "question": "Bu izin ne kadar süre geçerlidir?",
+        "content": "<p>Geçerlilik süresi <strong>iki yıl</strong>.</p>\n<hr>",
+        "index": 5
+      },
+      {
+        "question": "Bu izin bana ne haklar veriyor? Nelere erişebilirim?",
+        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> düzenli sözleşme ile (bağımsız çalışma veya bağımlı çalışma)</li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (en fazla 3 aya kadar kalışlar için)</li><li><strong>Okula, meslek kursuna veya üniversiteye kaydolmak</strong></li></ul>\n<hr>",
+        "index": 6
+      },
+      {
+        "question": "İzin süresi dolduğunda, çalışma iznine dönüştürebilir miyim?",
+        "content": "<p><strong>‼️ Dikkat</strong> çünkü 2023&#039;te yasa değişti ve şimdi iki olasılık var:</p>\n<ul><li>Eğer <strong>sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN ÖNCE yaptıysanız</strong>: tüm şartları karşılıyorsanız, çalışma iznine (bağımsız çalışma veya bağımlı çalışma) dönüştürebilirsiniz.</li><li><strong>Sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN SONRA yaptıysanız</strong>: izninizi çalışma iznine dönüştüremezsiniz</li></ul>\n<p>Dikkat: Hata yapmamak için önce yakınınızdaki ücretsiz hukuki yardım merkezine danışınız.</p>\n<hr>",
+        "index": 7
+      },
+      {
+        "question": "Özel koruma izninizi yenileyebilir miyim?",
+        "content": "<p>Şu anda kesin bir cevap veremiyoruz. </p>\n<ul><li>Özel koruma izninizi <strong>sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN ÖNCE yaptıysanız</strong> yaptığın için aldıysanız, mümkünse her zaman başka bir izne dönüştürmeyi talep etmeni öneririz. Yenilemeyi sadece başka seçeneğin yoksa iste. Bir yıl için yenilenecek ve sonra ne olacağı belli değil.</li><li>Eğer<strong> </strong>özel koruma izninizi <strong>sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN SONRA yaptıysanız</strong>: izninizi çalışma iznine dönüştürmeyi deneyebilirsiniz</li></ul>",
+        "index": 8
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "16€ damga pulu",
+      "4 Fotoğraf",
+      "Komisyon veya Mahkeme kararı",
+      "30.46€ posta ödeme makbuzu",
+      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
+    ],
+    "primoMethod": "şahsen",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": null,
+    "rinnovoDocuments": [
+      "Süresi dolmak üzere olan izin",
+      "Komisyon veya Mahkeme kararı",
+      "30.46€ posta ödeme makbuzu",
+      "16€ damga pulu",
+      "4 vesikalık fotoğraf"
+    ],
+    "rinnovoMethod": "şahsen",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": null,
+    "docNotes": "Dikkat: özel korumanın (protezione speciale) yenilenmesi karmaşık bir konudur; her zaman alınabileceği kesin değildir, bu yüzden hemen hukuki yardım istemenizi öneririz"
   },
   {
     "id": "3217355e-7f7f-8182-908e-dbbed59dbe3a",
@@ -146,77 +1560,6 @@
     "docNotes": null
   },
   {
-    "id": "3217355e-7f7f-81ba-b7fc-c63f213356ed",
-    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
-    "tipo": "Aile - ikinci dereceye kadar akraba olan İtalyan vatandaşıyla birlikte yaşayan",
-    "emoji": "👨‍👩‍👧‍👦",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>İtalyan vatandaşlarıyla birlikte yaşayanlar için oturma izni, <strong>İtalya&#039;da İtalyan aile bireyleriyle birlikte yaşayan</strong> ikinci dereceye kadar akraba olan (eş; anne/baba; oğul/kız; büyükanne/büyükbaba; büyükanne/büyükbabanın torunu; erkek kardeş/kız kardeş) yabancılara verilir.</p>",
-        "index": 0
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>İki yıl geçerlidir.</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu izni almak için koşullar nelerdir?",
-        "content": "<p>Bu izin için iki temel unsur akrabalık bağının kanıtı ve birlikte yaşamaktır.</p>\n<p>Akrabalık bağı: Şu kişiyseniz bu izne hakkınız vardır:</p>\n<ul><li>İtalyan vatandaşının erkek kardeşi/kız kardeşi</li><li>İtalyan vatandaşının eşi (veya aynı cinsiyetten kişiler için kayıtlı partneri)</li><li>İtalyan vatandaşının ebeveyni</li><li>İtalyan vatandaşının oğlu/kızı (her yaştan)</li><li>İtalyan vatandaşının büyükannesi/büyükbabası</li><li>İtalyan vatandaşının torunu (çocuğunun çocuğu)</li></ul>\n<p>Birlikte yaşama: İtalyan akrabanızla birlikte yaşamanız gerekir. Aynı adrese kayıtlı olmanız gerekir, her zaman birlikte yaşamasanızız bile.</p>",
-        "index": 2
-      },
-      {
-        "question": "Bu izin nerede talep edilir?",
-        "content": "<p>Başvuruyu, İtalyan vatandaşıyla birlikte yaşadığınız bölgedeki Emniyet Müdürlüğü&#039;ne (Questura) gerekli tüm belgelerle birlikte yapmalısınız. Size karar verilinceye kadar İtalya&#039;da yasal olarak kalmanızı sağlayan bir makbuz verilecektir.</p>\n<p>Değerlendirme sürecinde Emniyet Müdürlüğü (Questura) belgelerinize ek bilgi isteyebilir ve İtalyan vatandaşıyla gerçekten birlikte yaşayıp yaşamadığınızı doğrulamak için görüşme yapabilir.</p>",
-        "index": 3
-      },
-      {
-        "question": "Başvuru için hangi belgeler gerekli?",
-        "content": "<p> (<a href=\"https://questure.poliziadistato.it/it/Venezia/articolo/214963dcfc880e387930055883\">https://questure.poliziadistato.it/it/Venezia/articolo/214963dcfc880e387930055883</a>)</p>\n<ul><li>Kesin ikamet kanıtı: güncel aile durum belgesi veya Emniyet yetkililerince onaylanmış konaklama beyanı veya Gelir İdaresi&#039;ne kayıtlı ortak kira sözleşmesi.</li><li>Akrabalık bağını gösteren belgeler (tercüme edilmiş ve onaylanmış veya <em>apostil&#039;li</em>)<ul><li>Eşler için: evlilik cüzdanı</li><li>Çocuklar için: anne ve baba bilgisi içeren doğum belgesi</li><li>İkinci dereceye kadar diğer akrabalarla birleşme için: İtalyan vatandaşının akrabanız olduğunu gösteren doğum veya aile belgeleri</li></ul></li><li>İtalyan akrabanın kimlik belgesinin kopyası</li><li>Birlikte yaşama belgesi (İtalyan vatandaşının güncel aile durum belgesi ve yabancı için Emniyet yetkililerince onaylanmış konaklama beyanı veya her ikisinin adına Gelir İdaresi&#039;ne kayıtlı ortak kira sözleşmesi)</li><li>Varsa: eski oturma izni ve vergi numarası</li><li>16,00€ damga pulu</li><li>Geçerli pasaport</li><li>Başvuru sahibinin 4 vesikalık fotoğrafı ve oturma iznine kaydedilecek 14 yaşından küçük çocuklar için 4&#039;er vesikalık fotoğraf (çocukların randevu sırasında hazır bulunması gerekir);</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Bu oturma izniyle ne yapabilirim?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Yaşadığın belediyede ikametgâh kaydı yaptırmak</li><li>Çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli pasaportunuz varsa Schengen bölgesinde seyahat etmek</li><li>Meslek kurslarına, okullara ve üniversitelere kaydolmak</li></ul>",
-        "index": 5
-      },
-      {
-        "question": "İznin süresi dolduğunda ne olur?",
-        "content": "<p>Süresi dolmadan önce,</p>\n<ul><li>yenileyebilirsiniz </li><li>başka bir izne dönüştürebilirsiniz, örneğin çalışma (bağımsız veya bağımlı) veya öğrenim</li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
-      "4 Fotoğraf",
-      "Birlikte yaşama kanıtı (konaklama beyanı yeterlidir)",
-      "80.46€ posta ödeme makbuzu",
-      "Pasaport kopyası (süresi dolmamış)"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "16€ damga pulu",
-      "4 vesikalık fotoğraf",
-      "Süresi dolmak üzere olan izin",
-      "Pasaport kopyası (süresi dolmamış)",
-      "Birlikte yaşama kanıtı (konaklama beyanı yeterlidir)",
-      "80.46€ posta ödeme makbuzu",
-      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "3217355e-7f7f-8166-85e5-d58d3f386774",
     "slug": "studio-conversione-da-altro-permesso",
     "tipo": "Öğrenim (başka bir izinden dönüştürme)",
@@ -287,48 +1630,6 @@
       "Mali güvence (banka hesap özeti veya burs veya sizi destekleyen aile bireylerinin beyanı)"
     ],
     "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8103-bfab-e50f52eb27a6",
-    "slug": "integrazione-prosieguo-amministrativo",
-    "tipo": "Entegrasyon (\"İdari devam\")",
-    "emoji": "📋",
-    "sections": [
-      {
-        "question": "📄 Nedir ve nasıl başvurulur",
-        "content": "<ul><li>Amacı: <strong>sosyal hizmetlerin desteğini sürdürmek</strong> reşit olduktan sonra da.</li><li>Başvuruyu Çocuk Mahkemesi&#039;ne tek başına veya vasin.</li><li>Başvuru için avukata gerek yoktur.</li><li>Talep edilebilir <strong>reşit olmayan yaş izni olmasa bile</strong>.</li></ul>",
-        "index": 0
-      },
-      {
-        "question": "🪪 Oturma izni",
-        "content": "<p>Mahkeme idari devamı onaylarsa, bir <strong>idari devam oturma izni</strong>.</p>\n<ul><li>Bu izin geçerlidir <strong>en fazla 21 yaşına kadar</strong>.</li><li>Şunlara olanak tanır: <strong>İtalya&#039;da yasal olarak yaşamak</strong>, <strong>öğrenim görmek</strong>, <strong>çalışmak</strong> ve <strong>SAI kabul projelerine erişmek</strong>, daha önce kabul edilmemiş olsanızız bile.</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "İdari devam başvurusunda neler belirtilmelidir?",
-        "content": "<p>İdari devam elde edebilmek için başvuru sahibinin a) reşit olmadığı dönemde sosyal entegrasyon sürecine başlamış olması ve b) reşit olduğunda, özerkliğe yönelik bu sürecin başarılı sonuçlanması için uzun süreli desteğe ihtiyaç duyması gerekir.\nBaşvuruda, reşit olmayan kişinin İtalya&#039;ya varışından idari devam başvurusunun yapıldığı ana kadar olan süreç kısaca anlatılmalıdır; özellikle reşit olmadığı dönemde başlanan sosyal entegrasyon süreci ve reşit olduktan sonraki beklentiler, okul kaydı, mesleki eğitim, iş, kabul, ikamet düzenlemesi ve diğer sosyal entegrasyon konuları (gönüllülük faaliyetleri, sosyal etkinlikler vb.) açısından detaylandırılmalıdır.</p>",
-        "index": 2
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "4 Fotoğraf",
-      "30.46€ posta ödeme makbuzu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "16€ damga pulu",
-      "Reşit olmayan yaş izni",
-      "Çocuk Mahkemesi'nin idari devam kararı"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [],
-    "rinnovoMethod": "n/a",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": null,
@@ -421,68 +1722,6 @@
     "docNotes": null
   },
   {
-    "id": "3217355e-7f7f-8153-966e-ed88ef64662f",
-    "slug": "assistenza-minore-articolo-31",
-    "tipo": "Reşit olmayan kişiye yardım (\"Articolo 31\")",
-    "emoji": "💼",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Reşit olmayan kişiye yardım oturma izni, Çocuk Mahkemesi&#039;nin yabancı uyruklu bir çocuğun büyümesi ve refahıyla ilgili ciddi nedenlerle bir akrabasınızın İtalya&#039;ya girişine veya kalmasına izin vermesi durumunda verilir.</p>",
-        "index": 0
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>Süresi Çocuk Mahkemesi tarafından belirlenir ve genellikle en az bir yıldır. İzin yenilenebilir.</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu izni almak için koşullar nelerdir?",
-        "content": "<p>Bu izin için temel şartlar şunlardır:</p>\n<ul><li>Reşit olmayan kişi İtalya topraklarında bulunmalıdır</li><li>Başvuru sahibi reşit olmayan kişinin bir akrabası olmalıdır (genellikle ebeveyn)</li><li>Akraba olmadan reşit olmayan kişinin hem duygusal hem de fiziksel olarak çok acı çekeceğini kanıtlamak gerekir, özellikle çocuk küçükse</li><li>Akraba, reşit olmayan kişiyle aile bağını gösteren belgeleri sunmalıdır</li><li>Reşit olmayan kişinin yaptığı faaliyetleri kanıtlayan belgeler (okul, etkinlikler vb.). </li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Bu izin nerede talep edilir?",
-        "content": "<p>Başvuru, reşit olmayan kişinin yaşadığı bölgedeki Çocuk Mahkemesi&#039;ne yapılmalıdır. Avukat zorunlu değildir: başvuruyu kendiniz de yapabilirsiniziz, ancak hukuki destek tavsiye edilir.</p>\n<p><strong>DİKKAT</strong>: Mahkeme süreci aylar hatta yıllar sürebilir ve sonuç belirsizdir. Mahkeme kararını beklerken geçici bir oturma izniniz olmayacaktır.</p>\n<p>Mahkeme belgesini aldıktan sonra akrabalar, yaşadıkları bölgedeki Emniyet Müdürlüğü&#039;nden (Questura) oturma izni talep etmelidir. İzin elektronik formattadır.</p>",
-        "index": 3
-      },
-      {
-        "question": "Başvuru için hangi belgeler gerekli?",
-        "content": "<p>Çocuk Mahkemesi&#039;ne başvuru sırasında şunları getirmelisiniz:</p>\n<ul><li>Başvuru dilekçesi (örnek metiniz mevcuttur)</li><li>27,00€ damga pulu</li><li>Reşit olmayan kişinin doğum belgesi</li><li>Başvuru sahibi akrabanın ve reşit olmayan kişinin kimlik belgeleri</li><li>Reşit olmayan kişinin sağlık sorunlarını belgeleyen varsa tıbbi raporlar</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Bu oturma izniyle ne yapabilirim?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li><li>Pasaportla İtalya ve Schengen ülkelerinde serbestçe dolaşmak (3 aya kadar kısa süreli kalışlar)</li></ul>",
-        "index": 5
-      },
-      {
-        "question": "İznin süresi dolduğunda ne olur?",
-        "content": "<p>Yenileyebilir veya başka bir izne dönüştürebilirsiniz</p>\n<p><strong>DİKKAT</strong>: Bu izni yenilemek için Çocuk Mahkemesi&#039;nde yeni bir dava açmanız gerekir. Emniyet Müdürlüğü&#039;nde (Questura) veya Kit postale ile yenilenemez.</p>\n<p>Dönüştürme için bu izin şunlara değiştirilebilir:</p>\n<ul><li>Çalışma amaçlı oturma izni (bağımsız veya bağımlı)</li><li>İtalya&#039;da 5 yıl düzenli ikamet sonrası AB uzun süreli ikamet izni</li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Çocuk Mahkemesi kararı",
-      "80.46€ posta ödeme makbuzu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "4 Fotoğraf",
-      "Pasaport kopyası (süresi dolmamış)"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [],
-    "rinnovoMethod": "şahsen",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "3217355e-7f7f-81b7-a121-d7834d2d19b2",
     "slug": "studio-dopo-ingresso-con-visto",
     "tipo": "Öğrenim (vize ile giriş sonrası)",
@@ -550,132 +1789,6 @@
       "Mevcut akademik yıla kayıt belgesi"
     ],
     "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8145-aa4d-f7dedcf3bc00",
-    "slug": "richiesta-asilo",
-    "tipo": "Sığınma başvurusu",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Sığınma başvurusu oturma izni (geçici belge - permesso giallo), İtalya&#039;da uluslararası koruma (sığınma) başvurusunda bulunmuş ve henüz kesin bir yanıt bekleyen kişilere verilen bir belgedir </p>",
-        "index": 0
-      },
-      {
-        "question": "İzin başvurusu nasıl yapılır?",
-        "content": "<p>Öncelikle Emniyet Müdürlüğü&#039;nün (Questura) göç bürosuna gidip uluslararası koruma talebinde bulunmalısınız: parmak izleriniz alınacak ve ardından size sığınma başvurusu oturma izni verilecektir. Pasaport gerekmez. Pasaportunuz olduğunu söylerseniz Emniyet Müdürlüğü&#039;ne teslim etmeniz gerekir.\n</p>\n<p>Sığınma başvurusunda bulunan herkes bu izne hak kazanır; bu izin başvurunuz hakkında karar verilinceye kadar İtalya&#039;da yasal olarak kalmanızı sağlar. Bazı istisnalar vardır (okumaya devam ediniz).</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu izin bana ne haklar verir?",
-        "content": "<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma): Emniyet Müdürlüğü&#039;nün (Questura) verdiği fotoğraflı izninizin (&quot;attestato nominativo&quot;) tarihinden 60 gün sonra iş sözleşmesi imzalayabilirsiniz  </li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Yaşadığın belediyede ikametgâh kaydı yaptırmak</li><li>Kendinizi geçindirecek yeterli paranız yoksa, bir <a href=\"/2187355e7f7f814989cbc7ee16321ee8#29a7355e7f7f80e197abfcb177f04f21\">Kabul merkezine</a></li></ul>\n<p>Bu izinle İtalya dışına seyahat edilemez.</p>",
-        "index": 2
-      },
-      {
-        "question": "Ne kadar süre geçerli?",
-        "content": "<p>6 ay sürelidir. Ancak süresi dolmuş olsa bile (çok yaygın bir durum), uluslararası koruma başvurunuz hakkında Bölge Komisyonu karar verene kadar yasal statünüzüz devam eder. Birçok durumda Mahkeme kararına kadar da İtalya&#039;da kalabilirsiniz, ancak her zaman değil (geldiğiniz ülkeye, İtalya&#039;ya nasıl girdiğinize bağlıdır ve yakında bu hakkı daha da kısıtlayacak yeni yasalar gelmektedir).</p>",
-        "index": 3
-      },
-      {
-        "question": "Yenileyebilir miyim?",
-        "content": "<p>Sığınma başvurusu izni, Bölge Komisyonu uluslararası koruma talebiniz hakkında karar verene kadar otomatik olarak yenilenir. </p>\n<p> ⚠️ Bazı durumlarda, Komisyon&#039;dan olumsuz bir yanıt aldıysanız ve örneğin (a) &quot;güvenli&quot; kabul edilen bir ülkeden geliyorsanız; (b) daha önce başka sığınma başvuruları yaptıysanız; (c) suçlardan dolayı polise şikâyet edildiyseniz, oturma izniniz yenilenmeyebilir. <strong>Daha önce ilk olumsuz yanıtı aldıysanız ve sınır dışı edilip edilemeyeceğini veya bir Geri Gönderme Merkezi&#039;ne (&quot;CPR&quot;) konulup konulamayacağını merak ediyorsanız, hemen uzman hukuki yardım almak iyi bir fikirdir.</strong></p>",
-        "index": 4
-      },
-      {
-        "question": "Başka bir izne dönüştürebilir miyim?",
-        "content": "<p>Hayır, bu oturma izni, aile sebepleri için oturma izni dışında başka izinlere dönüştürülemez.</p>\n<p><em>18 yaşından önce sığınma başvurusu yaptıysanız, Komisyon&#039;dan veya Mahkeme&#039;den kesin olumsuz bir karar aldıysanız, şu anda 18 yaşından büyük olsanız bile bu izni eğitim, çalışma veya iş arama iznine dönüştürebilirsiniz.</em></p>",
-        "index": 5
-      },
-      {
-        "question": "Uluslararası koruma başvurum reddedilirse ne olur?",
-        "content": "<p>Bölge Komisyonu başvurunu reddederse, bir avukatın yardımıyla itiraz edebilirsin. 2025 yılında 13.700 Euro&#039;dan az kazandıysan, avukatın itirazı ücretsiz.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "C3 formu",
-      "Kimlik belgesi (attestato nominativo)",
-      "Mahkemede itirazınız varsa; mahkeme dosyasının çıktısı (avukatınıza sorun)",
-      "16€ damga pulu",
-      "4 vesikalık fotoğraf"
-    ],
-    "rinnovoMethod": "şahsen",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8111-9d10-fd7f91e9a12e",
-    "slug": "minore-eta-per-msna",
-    "tipo": "Reşit olmama (refakatsiz yabancı çocuklar için)",
-    "emoji": "👨‍👩‍👧‍👦",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Reşit olmama oturma izni <strong>18 yaşından küçük yabancı çocuklara</strong> İtalya&#039;da ebeveynleri veya yakın akrabaları olmadan bulunan çocuklara verilir. Belgesiz veya düzensiz şekilde gelmiş olsanız bile bu izin verilir.</p>",
-        "index": 0
-      },
-      {
-        "question": "Kimler başvurabilir?",
-        "content": "<p>Bu izin sadece <strong>reşit olmaman</strong> (18 yaşından küçük olman) ve İtalya&#039;da ebeveynlerinin veya yakın akrabalarının bulunmaması nedeniyle istenebilir.</p>\n<p>Başvuruyu yapabilecek kişiler:</p>\n<ul><li>Reşit olmayan kişinin kendisi (bir avukatınız veya kaldığı merkezin görevlilerinin yardımıyla)</li><li>Bölgedeki sosyal hizmetler</li><li>Vasi <strong>vasiniz</strong> (reşit olmayan kişinin yasal olarak bakımını üstlenen yetişkin kişi)</li></ul>\n<p>Vasi henüz mahkeme tarafından atanmadıysa, başvuruyu reşit olmayan kişinin kaldığı merkezin sorumlusu yapabilir.</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu izin nerede talep edilir?",
-        "content": "<p>Başvuruyu <strong>kaldığın merkezin bulunduğu şehirdeki Emniyet Müdürlüğü&#039;ne (Questura)</strong> sunmalısın.</p>",
-        "index": 2
-      },
-      {
-        "question": "📋 Hangi belgeler gerekli?",
-        "content": "<ul><li><strong>4 vesikalık fotoğraf</strong></li><li><strong>16€ damga pulu</strong></li><li><strong>Konaklama beyanı</strong> merkez sorumlusunun kimlik belgesiyle birlikte</li><li><strong>Vasinin belgesi</strong> Çocuk Mahkemesi tarafından atanan (varsa) veya reşit olmayan kişinin kaldığı merkezin sorumlusunun beyanı</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>İzin <strong>18 yaşına kadar</strong> (reşit oluncaya kadar) geçerlidir.</p>",
-        "index": 4
-      },
-      {
-        "question": "Bu izinle neler yapabilirsiniz?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<p><strong>  ✅ Okula kayıt olabilirsiniz</strong> (ilkokul, ortaokul, lise) başka belgelere gerek kalmadan</p>\n<p><strong>  ✅ Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olabilir ve bir aile hekimi alabilirsiniz</strong> 🏥</p>\n<p><strong>  ✅ 16 yaşından itibaren çalışabilirsiniz</strong> (düzenli sözleşmeyle - bağımsız çalışma veya bağımlı çalışma, çocuk işçiliği kurallarına uyarak)</p>\n<p><strong>  ✅ </strong>bir<strong> reşit olmayanlar için kabul merkezine</strong></p>",
-        "index": 5
-      },
-      {
-        "question": "18 yaşını doldurduğunda ne olur?",
-        "content": "<p>18 yaşını doldurmadan önce, izninizi şu türlere dönüştürebilirsiniz:</p>\n<ul><li><a href=\"/2187355e7f7f81e48862e58bff4681dc\">Çalışma izni</a></li><li><a href=\"/2187355e7f7f81b6a119f485cc340e1c\">Eğitim izni</a></li><li>İş arama izni </li><li>Gerekli şartları karşılıyorsanız aile izni</li><li><a href=\"/2967355e7f7f8006a790da7e5b938d1b\">İdari devam izni</a></li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf",
-      "Önceki izin"
-    ],
-    "rinnovoMethod": "n/a",
     "costBollettinoRinnovo": null,
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": null,
@@ -829,7 +1942,7 @@
     "id": "3217355e-7f7f-8153-bfe5-d51651974dbd",
     "slug": "affidamento-a-familiari-entro-il-quarto-grado",
     "tipo": "Dördüncü dereceye kadar akrabaya emanet",
-    "emoji": "👪",
+    "emoji": "📋",
     "sections": [
       {
         "question": "Bu izin nedir?",
@@ -944,7 +2057,7 @@
     "id": "3217355e-7f7f-815c-b733-dc78110f8234",
     "slug": "residenza-elettiva",
     "tipo": "İsteğe bağlı ikamet",
-    "emoji": "🏡",
+    "emoji": "📋",
     "sections": [
       {
         "question": "Bu izin nedir?",
@@ -1320,147 +2433,10 @@
     "docNotes": null
   },
   {
-    "id": "3217355e-7f7f-8129-90bb-ecb788c4fdbe",
-    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
-    "tipo": "Tıbbi tedavi - hamile kadın veya 6 aylıktan küçük çocuğu olan kadın",
-    "emoji": "🏥",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Bu, İtalya&#039;da bulunan hamile yabancı kadınlar için verilen bir oturma iznidir. Yasa (T.U. Immigrazione art. 19) hamile kadınların hamileliğin üçüncü ayından doğumdan altı ay sonrasına kadar sınır dışı edilmesini yasaklar. Bu süre için tıbbi tedavi amaçlı oturma izni alabilirsiniz.</p>",
-        "index": 0
-      },
-      {
-        "question": "Kimler başvurabilir?",
-        "content": "<ul><li>Hamile yabancı kadınlar (üçüncü aydan itibaren)</li><li>Geçerli bir oturma izniniz olmasa veya düzensiz durumda olsanız bile</li><li>Doğumdan sonra izin, bebeğin doğumundan sonraki altı ayı da kapsar</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Nasıl başvurulur?",
-        "content": "<p>Başvuru <strong>Kit postale</strong>. Formu doldur ve yetkili postaneden gönderin. Emniyet Müdürlüğü&#039;nde (Questura) bir randevu alacaksınız.</p>\n<p>⚠️ <strong>Dikkat:</strong> bu tür izin için, konaklama beyanın yoksa, bir adres bildirmen yeterli olmalıdır. Emniyet Müdürlüğü&#039;nün (Questura) nerede olduğunu bilmek için bir adrese ihtiyacı var.</p>\n<p>⚠️ <strong>Dikkat:</strong> bazı Emniyet Müdürlükleri (Questura) bu izni elektronik formatta verebilir ve bu nedenle 30,46 € tutarında posta ödeme makbuzu ödemesi isteyebilir.</p>",
-        "index": 2
-      },
-      {
-        "question": "Hangi belgeler gerekli?",
-        "content": "<p>Emniyet Müdürlüğü&#039;ne (Questura) götürülecek belgelerin tam listesi için şu sayfaya gidiniz <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-donna-in-stato-di-gravidanza-primo.html\">Hangi belgeleri getireyim — ilk düzenleme</a>.</p>",
-        "index": 3
-      },
-      {
-        "question": "Bu izin bana ne haklar verir?",
-        "content": "<ul><li>✅ Yapabilirsiniz: <strong>çalışmak</strong> (bağımlı çalışma veya bağımsız çalışma)</li><li>✅ Kaydolabilirsiniz: <strong>Ulusal Sağlık Hizmeti</strong> ve bir aile hekimi edinmek</li><li>❌ <strong>Bu izinle</strong> aile birleşimi başvurusu yapamazsınız</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>Süresi <strong>1 yıl</strong>. İzin, hamilelikten doğumdan altı ay sonrasına kadar olan süreyi kapsar.</p>",
-        "index": 5
-      },
-      {
-        "question": "Süresi dolduğunda yenileyebilir miyim?",
-        "content": "<p>Bu izin genellikle yenilenemez. Süresi dolduğunda, başka bir tür oturma izni alıp alamayacağını bir hukuk uzmanıyla değerlendir.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf",
-      "Tahmini doğum tarihli hamilelik belgesi veya doğmuşsa doğum belgesi",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-812c-b2d1-cdecdff6a707",
-    "slug": "protezione-speciale",
-    "tipo": "Bölge Komisyonu veya Mahkemenin olumlu kararından sonra özel koruma",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Bu, farklı durumlar için verilebilen bir oturma iznidir, örneğin <strong>İtalya&#039;ya iyi entegre olmuş, çok savunmasız olan veya ülkesine geri dönemeyen kişiler için</strong>.</p>\n<hr>",
-        "index": 0
-      },
-      {
-        "question": "İzin başvurusu nasıl yapılır?",
-        "content": "<p>Özel koruma oturma izni şu şekillerde verilebilir:</p>\n<ul><li>Şunun tarafından: <strong>Bölge Komisyonu</strong> siz <a href=\"/2187355e7f7f814989cbc7ee16321ee8\">uluslararası koruma başvurusu</a> (&quot;sığınma&quot; başvurusu)</li><li>Bir <strong>mahkeme</strong> Komisyonun olumsuz kararından sonra (genellikle Mahkemeler bunu Komisyonlardan daha kolay verir). Zaten Mahkemede itiraz ettiyseniz mutlaka bir avukatınız vardır ve ona danışmanı tavsiye ederiz.</li></ul>\n<hr>",
-        "index": 1
-      },
-      {
-        "question": "Bu izin nerede talep edilir?",
-        "content": "<p>Bölge Komisyonu veya Mahkeme özel koruma alacağına karar verirse:</p>\n<ul><li>Şuraya gitmelisiniz: <strong>Emniyet Müdürlüğü&#039;ne (Questura)</strong> izin başvurusu yapmak için</li><li>Parmak izi için size bir randevu verecekler</li><li>Emniyet Müdürlüğü (Questura) izin hazır olduğunda sizi bilgilendirecek</li></ul>\n<hr>",
-        "index": 2
-      },
-      {
-        "question": "Sığınma başvurusu yapmadan doğrudan Emniyet Müdürlüğü'nden (Questura) talep edebilir miyim?",
-        "content": "<p>2023&#039;ten itibaren yasa değişti ve özel koruma izninizi doğrudan Emniyet Müdürlüğü&#039;nden (Questura) almak çok daha zor hale geldi. Doğrudan Emniyet Müdürlüğü&#039;nden talep etmeye devam edebileceğini söyleyen Mahkeme kararları var, ama <strong>iyi bir avukattan yardım almını tavsiye ederiz</strong>.</p>\n<hr>",
-        "index": 3
-      },
-      {
-        "question": "Başvuru için hangi belgeler gerekli?",
-        "content": "<ul><li><strong>Bölge Komisyonu Kararı</strong> özel korumayı tanıyan (veya mahkeme kararı)</li><li><strong>4 vesikalık fotoğraf</strong> güncel</li><li><strong>İkametgah belgesi</strong> veya nerede yaşadığını gösteren belgeler</li></ul>\n<hr>",
-        "index": 4
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>Geçerlilik süresi <strong>iki yıl</strong>.</p>\n<hr>",
-        "index": 5
-      },
-      {
-        "question": "Bu izin bana ne haklar veriyor? Nelere erişebilirim?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> düzenli sözleşme ile (bağımsız çalışma veya bağımlı çalışma)</li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (en fazla 3 aya kadar kalışlar için)</li><li><strong>Okula, meslek kursuna veya üniversiteye kaydolmak</strong></li></ul>\n<hr>",
-        "index": 6
-      },
-      {
-        "question": "İzin süresi dolduğunda, çalışma iznine dönüştürebilir miyim?",
-        "content": "<p><strong>‼️ Dikkat</strong> çünkü 2023&#039;te yasa değişti ve şimdi iki olasılık var:</p>\n<ul><li>Eğer <strong>sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN ÖNCE yaptıysanız</strong>: tüm şartları karşılıyorsanız, çalışma iznine (bağımsız çalışma veya bağımlı çalışma) dönüştürebilirsiniz.</li><li><strong>Sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN SONRA yaptıysanız</strong>: izninizi çalışma iznine dönüştüremezsiniz</li></ul>\n<p>Dikkat: Hata yapmamak için önce yakınınızdaki ücretsiz hukuki yardım merkezine danışınız.</p>\n<hr>",
-        "index": 7
-      },
-      {
-        "question": "Özel koruma izninizi yenileyebilir miyim?",
-        "content": "<p>Şu anda kesin bir cevap veremiyoruz. </p>\n<ul><li>Özel koruma izninizi <strong>sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN ÖNCE yaptıysanız</strong> yaptığın için aldıysanız, mümkünse her zaman başka bir izne dönüştürmeyi talep etmeni öneririz. Yenilemeyi sadece başka seçeneğin yoksa iste. Bir yıl için yenilenecek ve sonra ne olacağı belli değil.</li><li>Eğer<strong> </strong>özel koruma izninizi <strong>sığınma veya özel koruma başvurusunu 6 Mayıs 2023&#039;TEN SONRA yaptıysanız</strong>: izninizi çalışma iznine dönüştürmeyi deneyebilirsiniz</li></ul>",
-        "index": 8
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf",
-      "Komisyon veya Mahkeme kararı",
-      "30.46€ posta ödeme makbuzu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Süresi dolmak üzere olan izin",
-      "Komisyon veya Mahkeme kararı",
-      "30.46€ posta ödeme makbuzu",
-      "16€ damga pulu",
-      "4 vesikalık fotoğraf"
-    ],
-    "rinnovoMethod": "şahsen",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "3217355e-7f7f-81ea-9594-caa1418fbe07",
     "slug": "motivi-religiosi",
     "tipo": "Dini sebepler",
-    "emoji": "🙏",
+    "emoji": "⛪",
     "sections": [
       {
         "question": "Bu izin nedir?",
@@ -1530,551 +2506,10 @@
     "docNotes": null
   },
   {
-    "id": "3217355e-7f7f-8125-beee-c7e0f9ec6628",
-    "slug": "protezione-sociale-vittime-di-tratta",
-    "tipo": "İnsan ticareti mağdurları için sosyal koruma",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "📄 Nedir ve nasıl başvurulur",
-        "content": "<p>Sosyal koruma amaçlı oturma izni; şiddete maruz kalan veya fuhuş sömürüsü, iş sömürüsü mağduru olan ve güvenliği ciddi tehlike altında olan yabancı vatandaşları kapsar.</p>\n<p>Özel koruma izni şu taraflarca talep edilir:</p>\n<ul><li>Cumhuriyet Savcısı tarafından, yabancıya karşı işlenen şiddet veya ağır sömürü olaylarıyla ilgili ceza davası başlatılmış durumlarda.</li><li>yerel kurumların sosyal hizmetleri tarafından;</li><li>ilgili sicile kayıtlı dernekler, kuruluşlar ve diğer organizasyonlar tarafından <a href=\"http://www.lavoro.gov.it/temi-e-priorita/immigrazione/focus-on/registro-associazioni-ed-enti/Pagine/default.aspx\">Çalışma ve Sosyal Politikalar Bakanlığı nezdindeki sicile kayıtlı</a> ve yabancılara yönelik yardım ve sosyal koruma programları yürütmeye yetkili olanlar.</li></ul>\n<p>Emniyet Müdürlüğü (Questura), başvuruyu aldıktan ve öngörülen koşulların varlığını doğruladıktan sonra, insani nedenlerle oturma izni düzenler.</p>\n<p>Bu izni almak için gerekli şartlar nelerdir?</p>\n<ul><li>Şiddet veya ağır sömürü mağduru olmalısın.</li><li>Sömürücülerden kaçmaya çalıştığın veya onlara karşı tanıklık ettiğin için tehlike altında olmalısın.</li><li>Bir yardım ve sosyal entegrasyon programına katılmalısın.</li><li>Ülkene dönmeye karar verirseniz, sizin ve aile üyelerinin güvenliği için risk varsa, bu durum dikkate alınmalıdır.</li></ul>\n<p>Oturma izni almak için şikayette bulunmak gerekli mi?</p>\n<p>Hayır. Art 18 kapsamındaki izin iki şekilde verilebilir:</p>\n<ul><li>Yargı yolu: mağdur sömürücüleri ihbar eder ve izin Savcılığın görüşüyle verilir.</li><li>Sosyal yol: mağdur ihbar etmez, ancak uzman kuruluşlar tarafından yönetilen bir yardım programına katılır.</li></ul>",
-        "index": 0
-      },
-      {
-        "question": "Hangi belgeler ve şartlar gerekli?",
-        "content": "<ul><li>Cumhuriyet Savcısının görüşü, Savcının tehlikenin ciddiyeti ve güncelliği hakkında bilgi verdiği durumlarda;</li><li>yabancının, yerel kurumlar veya Çalışma Bakanlığı nezdindeki sicile kayıtlı ve yerel kurumla sözleşmeli özel kuruluşlar tarafından hazırlanan yardım ve sosyal entegrasyon programına katılımı. </li><li>programın gerçekleştirileceği yapının sorumlusu tarafından programla bağlantılı yükümlülüklerin kabul edilmesi.</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Ne kadar süre geçerli?",
-        "content": "<p>İzin <strong>6 ay</strong>, 1 yıl veya adalet nedenleriyle gereken daha uzun süre için yenilenebilir.\nYardım ve sosyal entegrasyon programının kesintiye uğraması veya programın amaçlarıyla bağdaşmayan davranış durumunda, Cumhuriyet Savcısı veya yetkisi dahilinde yerel kurumun sosyal hizmeti tarafından bildirilmesi ya da Emniyet Müdürü tarafından tespit edilmesi halinde veya düzenlenmesini haklı kılan diğer koşulların ortadan kalkması durumunda iptal edilebilir.</p>",
-        "index": 2
-      },
-      {
-        "question": "Dönüştürebilir miyim?",
-        "content": "<p>Bu izin, eğitim veya çalışma amaçlı oturma iznine dönüştürülebilir.</p>",
-        "index": 3
-      },
-      {
-        "question": "🔹 Art. 18 TUI (insanız ticareti, şiddet, ağır sömürü)",
-        "content": "<ul><li>Çok ciddi durumlar için (insanız ticareti, şiddet, suçüstü zorunlu tutuklama).</li><li>Süre: 6 ay → yenilenebilir.</li><li>İhbar ile veya ihbarsız (sosyal koruma programı).</li></ul>",
-        "index": 4
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf",
-      "Pasaport kopyası (süresi dolmamış)",
-      "Sosyal hizmetlerin raporu/beyanı",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "İkametgah belgesi",
-      "30.46€ posta ödeme makbuzu"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 vesikalık fotoğraf",
-      "16€ damga pulu",
-      "Süresi dolmak üzere olan izin",
-      "Talep edilmişse sosyal hizmetlerin raporu",
-      "Yargı makamının teklifi/görüşü",
-      "İkametgah belgesi",
-      "30.46€ posta ödeme makbuzu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
-    ],
-    "rinnovoMethod": "şahsen",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8129-862a-ef6b63d03e64",
-    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
-    "tipo": "Aile - aile birleşimi vizesi ile giriş sonrası",
-    "emoji": "💼",
-    "sections": [
-      {
-        "question": "Bu oturma izni nedir?",
-        "content": "<p>Bu, aile birleşimi vizesiyle İtalya&#039;ya giren aile üyelerine verilen aile sebepleri oturma iznidir. </p>",
-        "index": 0
-      },
-      {
-        "question": "Bu izni nasıl başvurabilirim?",
-        "content": "<p>Aile üyen aile birleşimi ön izninizi aldıktan sonra giriş vizesiyle İtalya&#039;ya girdiniz. Çok güzel. İşte sonraki adımlar: </p>\n<ul><li>8 gün içinde bölgendeki Valilik&#039;teki (Prefettura) Göç Birimi&#039;ne (Sportello Unico per l&#039;Immigrazione) gitmelisiniz.</li><li>Göç Birimi size doldurman gereken formları verecek. </li><li>Postaneye gidiniz ve formları gönderin. </li><li>Postane size Emniyet Müdürlüğü&#039;nde (Questura) bir randevu verecek.</li><li>Randevu günü Emniyet Müdürlüğü&#039;ne (Questura) gidiniz. Parmak izlerini alacaklar.</li><li>Emniyet Müdürlüğü (Questura) izniniz hazır olduğunda sizi bilgilendirecek.</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Ne kadar süre geçerli?",
-        "content": "<p>Süre, aile birleşimini talep eden aile üyesinin durumuna bağlıdır:</p>\n<ul><li>aile üyesi mülteci statüsü veya ikincil korumaya sahipse, aile sebepleri oturma izni 5 yıl sürer.</li><li>aile üyesi uzun süreli ikamet iznine sahipse, aile sebepleri oturma izni 2 yıl sürer.</li><li>aile üyesi daha kısa süreli bir oturma iznine sahipse (örn. çalışma, eğitim için), izin, aile birleşimini talep eden aile üyesinin izniyle aynı süreye sahip olacaktır.</li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Bu izin bana ne haklar verir / neye erişebilirim?",
-        "content": "<p>İzin başvurusundan sonra, posta makbuzuyla şunları yapabileceksiniz: </p>\n<ul><li>Düzenli sözleşme ile çalışmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak ve aile hekimi edinmek</li><li>Schengen ülkelerine her 180 günde 90 güne kadar seyahat etmek</li><li>Nüfus müdürlüğüne kayıt olmak ve ikametgah almak</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Yenileyebilir miyim?",
-        "content": "<p>Yenileme başvurusu, izin süresi dolmadan Kit postale aracılığıyla yapılmalıdır.</p>\n<p>Yenileme başvurusunda şunları eklemelisiniz:</p>\n<ul><li>başvuru formu (postaneden veya Emniyet Müdürlüğü&#039;nden temin edilebilir)</li><li>geçerli pasaport kopyası</li><li>süresi dolan oturma izni kopyası</li><li>vergi numarası</li><li>aile durumu ve ikametgah belgesi</li><li>aile birleşimini talep eden aile üyesinin oturma izni (yabancı ise)</li><li>konaklama beyanı veya kira sözleşmesi/mülk belgesi</li><li>evlilik veya akrabalık belgesi (geçerliyse)</li><li>geçim kaynağı kanıtı (istenirse, maaş bordrosu veya gelir beyannamesi gibi).</li><li>posta ödeme makbuzu ödeme belgesi</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Dönüştürebilir miyim?",
-        "content": "<p>Süresi dolmadan, izninizi şunlara dönüştürebilirsiniz:</p>\n<ul><li>çalışma izni (iş sözleşmen varsa)</li><li>eğitim izni (bir kursa kayıtlıysanız)</li><li>iş arama izni (daha önce çalıştıysanız ve yeni iş arıyorsanız)</li></ul>",
-        "index": 5
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "80.46€ posta ödeme makbuzu",
-      "Aile birleşimi ön izni (Nullaosta)",
-      "4 Fotoğraf",
-      "Pasaport kopyası (süresi dolmamış)",
-      "Konut uygunluk belgesi",
-      "Giriş vizesi",
-      "Aile bağını kanıtlayan belge",
-      "Asgari gelir kanıtı (CUD veya maaş bordrosu veya gelir beyannamesi veya diğer)",
-      "Aile birleşimini talep eden aile üyesinin oturma izninin kopyası"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Pasaport kopyası (süresi dolmamış)",
-      "Süresi dolmak üzere olan izin",
-      "80.46€ posta ödeme makbuzu",
-      "4 vesikalık fotoğraf",
-      "16€ damga pulu",
-      "Asgari gelir kanıtı (CUD veya maaş bordrosu veya gelir beyannamesi veya diğer)",
-      "Aile birleşimini talep eden aile üyesinin oturma izninin kopyası",
-      "Aile bağını kanıtlayan belge (örneğin \"aile belgesi\")"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-81f5-abbd-ecb36d1922f3",
-    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
-    "tipo": "Tıbbi tedavi - İtalya'da doğmak üzere olan veya 6 aylıktan küçük çocuğun babası",
-    "emoji": "🏥",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Bu, annenin hamile olduğu veya yeni doğum yaptığı durumlarda çocuğun babası için verilen oturma iznidir. Yasa (T.U. Immigrazione art. 19) bu durumlarda aile bütünlüğünü korur.</p>",
-        "index": 0
-      },
-      {
-        "question": "Kimler başvurabilir?",
-        "content": "<ul><li>Anneyle birlikte yaşayan yabancı baba</li><li>⚠️ Eğer <strong>evli ve birlikte yaşıyorsanız</strong> anneyle, bu izni sorunsuz alabilirsiniz</li><li>⚠️ Eğer <strong>evli DEĞİLSEN</strong> ve/veya <strong>birlikte yaşamıyorsanız</strong> anneyle, bu izni almak sorun olabilir — bir <strong>nitelikli hukuki danışmanlık al</strong></li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Nasıl başvurulur?",
-        "content": "<p>Başvuru <strong>Kit postale</strong>. Formu doldur ve yetkili postaneden gönderin. Emniyet Müdürlüğü&#039;nde (Questura) bir randevu alacaksınız.</p>",
-        "index": 2
-      },
-      {
-        "question": "Hangi belgeler gerekli?",
-        "content": "<p>Emniyet Müdürlüğü&#039;ne (Questura) götürülecek belgelerin tam listesi için şu sayfaya gidiniz <a href=\"https://www.sospermesso.it/documenti-cure-mediche-art-19-padre-primo.html\">Hangi belgeleri getireyim — ilk düzenleme</a>.</p>",
-        "index": 3
-      },
-      {
-        "question": "Bu izin bana ne haklar verir?",
-        "content": "<ul><li>✅ Yapabilirsiniz: <strong>çalışmak</strong> (bağımlı çalışma veya bağımsız çalışma)</li><li>✅ Kaydolabilirsiniz: <strong>Ulusal Sağlık Hizmeti</strong> ve bir aile hekimi edinmek</li><li>❌ <strong>Bu izinle</strong> aile birleşimi başvurusu yapamazsınız</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>Süresi <strong>1 yıl</strong>.</p>",
-        "index": 5
-      },
-      {
-        "question": "Süresi dolduğunda yenileyebilir miyim?",
-        "content": "<p>Bu izin genellikle yenilenemez. Süresi dolduğunda, başka bir tür oturma izni alıp alamayacağını bir hukuk uzmanıyla değerlendir.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "4 Fotoğraf",
-      "Tahmini doğum tarihli hamilelik belgesi veya doğmuşsa doğum belgesi",
-      "Birlikte yaşama belgesi veya beyanı"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-81e7-99a3-d4b760bfa07e",
-    "slug": "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi",
-    "tipo": "Bağımsız çalışma (\"flussi\" vizesiyle giriş sonrası)",
-    "emoji": "💼",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Bu oturma izni <strong>bağımsız çalışan</strong>, yani <strong>bir işvereni olmayan</strong>, kendi başına iş veya meslek faaliyeti yürüten kişiler içindir (örneğin: tüccar, zanaatkar, serbest meslek sahibi vb.).</p>\n<p><strong>\n✈️  Bu sayfadaysınız çünkü İtalya&#039;ya bağımsız çalışma vizesiyle girdiniz</strong></p>\n<ol><li>İtalya&#039;ya girişten <strong>İtalya&#039;ya varışından itibaren 8 gün içinde</strong>, şunu doldur: <strong>Modulo 1 ve Modulo 2</strong> (Kit postale) ve yetkili<strong>postaneden</strong> gönderin.</li><li>Parmak izi almak için Emniyet Müdürlüğü&#039;nden (Questura) randevu alacaksınız.</li><li>Emniyet Müdürlüğü (Questura) izninizi ne zaman alacağını size bildirecek.</li><li></li></ol>",
-        "index": 0
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<ul><li>Süre, yürüttüğün faaliyete ve sunduğun belgelere bağlıdır, ama genellikle <strong>1 ila 2 yıl</strong>.</li><li>Bu izin <strong>yenilenebilir</strong>, bağımsız çalışmaya devam ederseniz ve gerekli şartları karşılarsanız.</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Bu izinle neler yapabilirsiniz?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Bağımsız çalışmak</strong> vergi numarasıyla</li><li><a href=\"/20a7355e7f7f8173bffccbb2a93bae6f\"><strong>Bağımlı olarak çalışmak (bağımlı çalışma)</strong></a></li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (her 180 günde en fazla 90 gün)</li><li><strong>Aile birleşimi başvurusu yapmak</strong></li><li><strong>Kurslara, okullara, üniversitelere kayıt olmak</strong></li></ul>\n<hr>",
-        "index": 2
-      },
-      {
-        "question": "Faaliyetini kapatırsanız ne olur?",
-        "content": "<ul><li>Bir <strong>iş arama izni</strong> talep edebilirsiniz, ama başka bir iş veya faaliyet aradığını kanıtlamalısın.</li></ul>\n<hr>",
-        "index": 3
-      },
-      {
-        "question": "İzin süresi dolduğunda ne yapmalıyım?",
-        "content": "<ul><li>Şunları yapmalısın: <strong>yenileme başvurusu yapmak</strong> <strong>süre dolmadan önce </strong>veya en geç 60 gün sonrasına kadar</li><li>Eğer <strong>şartları karşılıyorsanız</strong>, ayrıca <strong>dönüştürebilirsiniz</strong> başka bir izin türüne (eğitim, aile, uzun süreli ikamet, bağımlı çalışma vb.). Dönüştürme başvurusunu süre dolmadan yapmalısın.</li></ul>",
-        "index": 4
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "80.46€ posta ödeme makbuzu",
-      "4 Fotoğraf",
-      "bağımsız çalışma için giriş vizesi",
-      "Emniyet Müdürlüğü (Questura) ön izni (Nullaosta)",
-      "Faaliyeti yürütmek için ekonomik parametreler ön izni (Nullaosta)",
-      "Faaliyetleri yürütmek için ekonomik kaynak kanıtı",
-      "Konut uygunluk belgesi",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "16€ damga pulu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "80.46€ posta ödeme makbuzu",
-      "4 Fotoğraf",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Vergi numarası veya ticaret sicili kayıt belgesi",
-      "Son gelir beyannamesi",
-      "Süresi dolmak üzere olan izin"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-817b-9965-e14a8270b64a",
-    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
-    "tipo": "İtalya'da bulunan ağır hasta kişi için tıbbi tedavi",
-    "emoji": "💼",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Tıbbi tedavi amaçlı oturma izni, çok <strong>ağır hastalıkları</strong> olan ve <strong>kendi ülkelerinde iyi tedavi edilemeyen</strong>.</p>\n<p>yabancılara verilir. Bu kişiler ülkelerine dönerse sağlıkları çok kötüleşebilir ⚠️ veya hayatlarını kaybedebilirler.</p>",
-        "index": 0
-      },
-      {
-        "question": "Kimler başvurabilir?",
-        "content": "<p>Bu izne başvurabilirsiniz eğer:</p>\n<ul><li><strong>Çok ağır bir hastalığın var</strong> kendi ülkende iyi tedavi edilemeyen</li><li><strong>Zaten İtalya&#039;dasınız</strong> (oturma izniniz olmasa bile)</li><li><strong>İtalyan bir doktor</strong> (devlet hastanesi veya Ulusal Sağlık Hizmeti ile anlaşmalı) hastalığının ağır olduğunu onaylamıştır</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "Bu izin nerede talep edilir?",
-        "content": "<p>Şuraya git: <strong>yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura)</strong> ve Göç Ofisi&#039;nden randevu alın.</p>\n<p>Diğer belgelerin yanı sıra tüm tıbbi belgeleri de teslim etmelisiniz.</p>\n<p><strong>⚠️ Uluslararası koruma başvurusu yaptıysan…</strong></p>\n<p>Sığınma başvurunun incelenmesi sırasında, Komisyon veya Mahkeme, hakkın olduğunu düşünürse Emniyet Müdürlüğü&#039;nden (Questura) size bu oturma izninizi vermesini isteyebilir <a href=\"/2187355e7f7f81198cd1c609d77bd25b#2187355e7f7f81309acaea84e0903cf8\">eğer hakkın varsa</a>. </p>",
-        "index": 2
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<ul><li><strong>En fazla 1 yıl</strong> (daha az olabilir, doktorun söylediğine bağlıdır)</li><li><strong>Yenilenebilir</strong> ağır hastalığın devam ettiği ve tedaviye ihtiyacın olduğu sürece</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "✅ Bu izinle ne yapabilirsiniz?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> (düzenli sözleşme ile - bağımsız çalışma veya bağımlı çalışma) 💼</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</strong></li><li><strong>Tıbbi tedavi almak</strong> devlet hastanelerinde ücretsiz</li><li><strong>Nüfus müdürlüğüne kayıt olmak</strong> yaşadığın Belediye&#039;nin</li></ul>\n<p><strong>⚠️ Yapamayacakların:</strong></p>\n<ul><li><strong>İtalya dışına seyahat edemezsiniz</strong> - bu izin sadece İtalya&#039;da geçerlidir</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "İzni nasıl yenilerim?",
-        "content": "<p>Yenilemek için şunları göstermelisiniz:</p>\n<ul><li><strong>Yeni tıbbi rapor</strong> ağır hastalığının hâlâ devam ettiğini onaylayan</li><li>İlk başvurudaki aynı belgeler</li></ul>\n<p><strong>İznin dönüştürülmesi</strong></p>\n<p>Süresi dolduğunda, bu izniniz başka bir izne dönüştürülmesi zordur. </p>\n<p>Mevcut yasaya göre, tıbbi tedavi izni <strong>çalışma iznine</strong> dönüştürülemez <strong>. </strong>Tıbbi tedavi izninizi <strong>Mayıs 2023&#039;ten önce</strong> talep ettiyseniz, çalışma iznine dönüştürmeyi deneyebilirsiniz, ama iyi bir hukuki yardıma ve belki de Mahkeme davasına ihtiyacın olacak. Yakınındaki hukuki yardım merkezlerini ara.</p>\n<p>İtalya&#039;da aile üyelerin varsa, bir izne hakkın olup olmadığını görmek için testimizi yapabilirsiniz <strong>aile sebepleri için oturma izni. </strong>İtalya&#039;da reşit olmayan çocukların varsa, Art. 31 kapsamında bir izin başvurusu yapmayı değerlendirebilirsiniz.</p>",
-        "index": 5
-      },
-      {
-        "question": "Sizin yerine kim başvuru yapabilir?",
-        "content": "<p>Çok hasta olduğun durumda, başvuruyu şunlar yapabilir:</p>\n<ul><li>Bir aile üyesi (vekalet ile)</li><li>Yattığın hastanenin sorumlusu</li><li>Size yardım etmek isteyen herhangi biri</li></ul>\n<p><strong>İznin teslim alınması</strong></p>\n<ul><li>Başvuru yaptığında size bir <strong>makbuz</strong> verirler</li><li>Oturma izni <strong>60 gün içinde hazır olur</strong></li><li>Oturma izni <strong>kağıt</strong> (elektronik değil)</li><li>Vekalet ile başka bir kişi de teslim alabilir</li></ul>\n<p><strong>Önemli fark</strong></p>\n<p>Bu izin şundan farklıdır: <a href=\"/2187355e7f7f81a3a444f6c6bd8a13ae\">İtalya&#039;ya zaten tıbbi tedavi vizesiyle gelenler için tıbbi tedavi oturma izni</a> tıbbi tedavi için. Bu izin, zaten İtalya&#039;da olan ve ülkelerinde tedavi edilemeyecek ciddi bir hastalığı olduğunu keşfeden kişiler içindir.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "4 Fotoğraf",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Hastalığını kanıtlayan tıbbi belgeler (devlet hastanesi veya kamu doktoru)",
-      "Hastalığının kendi ülkende iyi tedavi edilemeyeceğini kanıtlayan belgeler",
-      "16€ damga pulu"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 vesikalık fotoğraf",
-      "16€ damga pulu",
-      "Süresi dolmak üzere olan izin",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Hastalığının kendi ülkende iyi tedavi edilemeyeceğini kanıtlayan belgeler",
-      "Hastalığını kanıtlayan tıbbi belgeler (devlet hastanesi veya kamu doktoru)"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8162-97f8-cd8f8600e066",
-    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
-    "tipo": "Bağımlı çalışma (başka bir izinden dönüşüm)",
-    "emoji": "💼",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Bu sayfadaysanız, bir oturma izniniz var ve onu bağımlı çalışma oturma iznine dönüştürüp dönüştüremeyeceğini merak ediyorsunuz. </p>\n<p>→ Oturma izninizi bağımlı çalışma oturma iznine dönüştürüp dönüştüremeyeceğini öğrenmek için testi yap. </p>\n<p>Bağımlı çalışma oturma izni, eğer <strong>düzenli bir sözleşmeyle bir işverenin yanında bağımlı olarak çalışıyorsanız</strong> verilir. Bu, size maaş ödeyen bir patronun olduğu ve onun çalışanı olduğun anlamına gelir.\n</p>",
-        "index": 0
-      },
-      {
-        "question": "Bu izni almak için koşullar nelerdir?",
-        "content": "<p>Bu izni alabilmek için düzenli bir iş sözleşmesi İtalyan bir işverenle ve maaş bordrosu aylık en az 538 euro olmalıdır.</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu izni nasıl başvurabilirim?",
-        "content": "<p>Postaneden Kit postale ile başvurulur.</p>",
-        "index": 2
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>Süre, sahip olduğun iş sözleşmesinin türüne bağlıdır. Genellikle:</p>\n<ul><li><strong>2 yıl</strong> iş sözleşmen belirli süreliyse (bitiş tarihi varsa)</li><li><strong>3 yıl</strong> iş sözleşmen belirsiz süreliyse (bitiş tarihi yoksa)</li></ul>\n<hr>\n<hr>",
-        "index": 3
-      },
-      {
-        "question": "Bu izin bana ne haklar verir?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> düzenli sözleşmeyle (bağımlı veya bağımsız çalışma)</li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (3 aya kadar kalışlar için).</li><li><strong>Okula, meslek kursuna veya üniversiteye kaydolmak</strong></li><li><strong>Aile birleşimi başvurusu yapmak</strong></li></ul>\n<p> ‼️ Başka bir Avrupa ülkesinde çalışamazsınız</p>\n<hr>",
-        "index": 4
-      },
-      {
-        "question": "İşimi kaybedersem ne olur?",
-        "content": "<p>İşini kaybederseniz <strong>iznini kaybetmezsiniz</strong> son kullanma tarihine kadar. Şunları yapabilirsiniz:</p>\n<ul><li>Yeni bir iş aramak</li><li>İşsizlik listelerine kaydolmak</li><li>Bir <a href=\"/2187355e7f7f81d38a54d111fa27f45f\">izin başvurusu yapmak </a><a href=\"/2187355e7f7f81d38a54d111fa27f45f\"><strong>iş arama</strong></a> yenileme sırasında</li></ul>\n<hr>",
-        "index": 5
-      },
-      {
-        "question": "Peki izin süresi dolduğunda? Yenileyebilir miyim? Dönüştürebilir miyim?",
-        "content": "<p>Süresi dolmadan önce iki seçeneğin var:</p>\n<ol><li><strong>Yenilemek: </strong>yenileme başvurusu tercihen <strong>süre dolmadan önce</strong> veya en geç <strong>60 gün içinde</strong> son kullanma tarihinden önce yapılmalıdır. Başvuru Kit postale ile yapılır. </li></ol>\n<p><strong>2. Dönüştürmek: </strong>gerekli tüm şartları karşılıyorsanız, bu izin şu oturma izinlerine dönüştürülebilir:</p>\n<ul><li>Öğrenim</li><li>İş arama</li><li>Aile sebepleri</li><li>Uzun süreli ikamet sahipleri için oturma kartı (en az 5 yıl ikametiniz varsa)</li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "İş sözleşmesi",
-      "İşvereninin kimlik belgesinin kopyası (İtalyan veya Avrupalıysa) veya oturma izninin kopyası (AB dışı vatandaşsa)",
-      "4 Fotoğraf",
-      "Gelir belgesi (CUD ve/veya maaş bordrosu)",
-      "UNILAV belgesi",
-      "80.46€ posta ödeme makbuzu"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 vesikalık fotoğraf",
-      "Pasaport kopyası (süresi dolmamış)",
-      "Süresi dolmak üzere olan izin",
-      "16€ damga pulu",
-      "İş sözleşmesi",
-      "Gelir belgesi (CUD ve/veya maaş bordrosu)",
-      "UNILAV belgesi",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "80.46€ posta ödeme makbuzu"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-81ec-b452-e5599f6611f5",
-    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
-    "tipo": "AB vatandaşlarının aile üyeleri için oturma kartı",
-    "emoji": "🇪🇺",
-    "sections": [
-      {
-        "question": "Bu oturma kartı nedir?",
-        "content": "<p>İtalya&#039;da yaşayan bir AB vatandaşının AB dışı aile üyelerine verilen bir oturma iznidir.</p>",
-        "index": 0
-      },
-      {
-        "question": "Bu kart ne kadar süre geçerlidir?",
-        "content": "<p>5 yıl geçerlidir ve yenilenebilir. İlk yenilemeden sonra kalıcı hale gelir.</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu kartı kimler başvurabilir?",
-        "content": "<p>Eğer şunlardan biriyseniz başvurabilirsiniz:</p>\n<ul><li>AB vatandaşının eşi veya kayıtlı hayat arkadaşı</li><li>Evlilik veya kayıtlı birliktelik olmadan birlikte yaşama sözleşmesi imzalamış olan partnerler</li><li>AB vatandaşının veya eşinin 21 yaşına kadar olan oğlu/kızı</li><li>AB vatandaşının veya eşinin 21 yaşından büyük oğlu/kızı, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri AB aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>AB vatandaşının veya eşinin annesi/babası, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri AB aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>AB vatandaşının veya eşinin büyükannesi/büyükbabası</li><li>AB vatandaşının veya eşinin 21 yaşına kadar olan torunu</li><li>AB vatandaşının veya eşinin 21 yaşından büyük ve <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri AB aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Bu kart için nereye başvurulur?",
-        "content": "<p>Yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura) başvurmalısın.</p>\n<p>İtalya&#039;ya girdikten sonra 3 ay içinde başvurmalısın. Zaten İtalya&#039;da başka bir vize türüyle (turizm, aile vb.) bulunuyorsanız, tüm şartları karşılaman halinde oturma kartına çevirebilirsiniz.</p>",
-        "index": 3
-      },
-      {
-        "question": "Başvuru için hangi belgeler gerekli?",
-        "content": "<ul><li>Geçerli pasaport (kişisel bilgilerin ve son kullanma tarihlerinin olduğu sayfa, varsa vizeler ve giriş/çıkış damgaları)</li><li>Eski oturma izniniz (varsa)</li><li>AB vatandaşının kimlik belgesi</li><li>Konaklama beyanı</li><li>AB vatandaşının aile durumu belgesi (yaşadığı belediyeden alınır)</li><li>Akrabalık derecesini gösteren belgeler (yurt dışından geliyorsa tercüme edilmiş ve onaylanmış/apostilli olmalıdır)</li><li>AB vatandaşının gelirini gösteren belgeler (Cu/730/Unico) <em>(AB dışı aile üyesinin AB aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li>Bakmakla yükümlü olunduğunu gösteren belgeler <em>(AB dışı aile üyesinin AB aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Bu oturma kartıyla ne yapabilirim?",
-        "content": "<p>Bu kartla şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli bir pasaportunuz varsa Schengen ülkelerinde her 6 ayda 90 güne kadar seyahat etmek</li><li>5 yıl sonra kalıcı oturma kartına başvurabilirsiniz</li></ul>",
-        "index": 5
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
-      "80.46€ posta ödeme makbuzu",
-      "İkametgah belgesi",
-      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı",
-      "Pasaport kopyası (süresi dolmamış)",
-      "4 Fotoğraf"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Süresi dolmak üzere olan izin",
-      "16€ damga pulu",
-      "30.46€ posta ödeme makbuzu",
-      "Aile bağını kanıtlayan belge (örneğin \"aile belgesi\")",
-      "4 vesikalık fotoğraf",
-      "Pasaport kopyası (süresi dolmamış)",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-818e-8886-f8e26612bf91",
-    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
-    "tipo": "\"Dinamik\" İtalyan vatandaşlarının aile üyeleri için oturma kartı",
-    "emoji": "🇮🇹",
-    "sections": [
-      {
-        "question": "Bu oturma kartı nedir?",
-        "content": "<p>&quot;Dinamik&quot; bir İtalyan vatandaşının (yani başka bir AB ülkesinde, genellikle iş için sürekli yaşamış ve şimdi İtalya&#039;da yaşayan) AB dışı aile üyelerine verilen bir oturma iznidir.</p>",
-        "index": 0
-      },
-      {
-        "question": "Bu kart nedir?",
-        "content": "<p>&quot;Dinamik&quot; bir İtalyan vatandaşının AB dışı aile üyelerine verilen bir oturma iznidir. &quot;Dinamik&quot; İtalyan vatandaşı, İtalya dışında başka bir AB ülkesinde yaşamış veya çalışmış bir İtalyan vatandaşıdır.</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu kart ne kadar süre geçerlidir?",
-        "content": "<p>5 yıl geçerlidir ve yenilenebilir. İlk yenilemeden sonra kalıcı hale gelir.</p>",
-        "index": 2
-      },
-      {
-        "question": "Bu kartı kimler başvurabilir?",
-        "content": "<p>Eğer şunlardan biriyseniz başvurabilirsiniz:</p>\n<ul><li>İtalyan vatandaşının eşi veya kayıtlı hayat arkadaşı</li><li>Evlilik veya medeni birlik olmadan da birlikte yaşama sözleşmesi imzalamış partner</li><li>İtalyan vatandaşının veya eşinin 21 yaşına kadar olan oğlu/kızı</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşından büyük oğlu/kızı, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin annesi/babası, ancak <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin büyükannesi/büyükbabası</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşına kadar olan torunu</li><li>&quot;Dinamik&quot; İtalyan vatandaşının veya eşinin 21 yaşından büyük ve <strong>bakmakla yükümlü olunan</strong> (bakmakla yükümlü olunduğunu göstermelisiniz: menşe ülkenden belgeler, yurt dışından size gönderilen paralar, bazı Emniyet Müdürlükleri İtalyan aile üyesinin vergi mükellefiyetinde olduğunun kanıtını da ister)</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Bu kart için nereye başvurulur?",
-        "content": "<p>Yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura) başvurmalısın.</p>\n<p>İtalya&#039;ya girdikten sonra 3 ay içinde başvurmalısın. Zaten İtalya&#039;da başka bir vize türüyle (turizm, aile vb.) bulunuyorsanız, tüm şartları karşılaman halinde oturma kartına çevirebilirsiniz.</p>",
-        "index": 4
-      },
-      {
-        "question": "Başvuru için hangi belgeler gerekli?",
-        "content": "<ul><li>Geçerli pasaport (kişisel bilgilerin ve son kullanma tarihlerinin olduğu sayfa, varsa vizeler ve giriş/çıkış damgaları)</li><li>Eski oturma izniniz (varsa)</li><li>İtalyan vatandaşının kimlik belgesi</li><li>Konaklama beyanı</li><li>İtalyan vatandaşının aile durumu belgesi (yaşadığı belediyeden alınır)</li><li>Akrabalık derecesini gösteren belgeler (yurt dışından geliyorsa tercüme edilmiş ve onaylanmış/apostilli olmalıdır)</li><li>İtalyan vatandaşının gelirini gösteren belgeler (Cu/730/Unico) <em>(AB dışı aile üyesinin dinamik İtalyan aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li>Bakmakla yükümlü olunduğunu gösteren belgeler <em>(AB dışı aile üyesinin dinamik İtalyan aile üyesine bakmakla yükümlü olması gerektiğinde)</em></li><li><strong>İtalyan vatandaşının başka bir AB ülkesinde yaşadığını gösteren belgeler</strong> (art. 23 D.lvo 30 del 2007&#039;ye göre)</li></ul>",
-        "index": 5
-      },
-      {
-        "question": "Bu oturma kartıyla ne yapabilirim?",
-        "content": "<p>Bu kartla şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli bir pasaportunuz varsa Schengen ülkelerinde her 6 ayda 90 güne kadar seyahat etmek</li><li>5 yıl sonra kalıcı oturma kartına başvurabilirsiniz</li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
-      "80.46€ posta ödeme makbuzu",
-      "4 Fotoğraf",
-      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı",
-      "Pasaport kopyası (süresi dolmamış)"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Süresi dolmak üzere olan izin",
-      "16€ damga pulu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "4 vesikalık fotoğraf",
-      "80.46€ posta ödeme makbuzu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Yeterli ekonomik kaynaklara sahip olduğunun kanıtı",
-      "Aile bağını kanıtlayan belge (örneğin \"aile belgesi\")"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
     "id": "3217355e-7f7f-81ee-ac2f-c317168ca916",
     "slug": "apolidia",
     "tipo": "Vatansızlık",
-    "emoji": "🌐",
+    "emoji": "📋",
     "sections": [
       {
         "question": "Bu izin nedir?",
@@ -2130,167 +2565,6 @@
       "Süresi dolmak üzere olan izin",
       "16€ damga pulu",
       "Vatansız statüsü veren karar"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-812a-b59e-c7aac390ec01",
-    "slug": "lavoro-autonomo-conversione-da-altro-permesso",
-    "tipo": "Bağımsız çalışma (başka bir izinden dönüşüm)",
-    "emoji": "💼",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Bu sayfadaysanız, bir oturma izniniz var ve onu bağımsız çalışma oturma iznine dönüştürüp dönüştüremeyeceğini merak ediyorsunuz. Örneğin: İtalya&#039;da öğrenim, aile, iş arama vb. için bir izniniz var ve şimdi bağımsız çalışan olarak çalışmak istiyorsunuz.</p>\n<p><em>→ Oturma izninizi bağımsız çalışma oturma iznine dönüştürüp dönüştüremeyeceğini öğrenmek için testi yap</em></p>\n<p>Bu oturma izni <strong>bağımsız çalışan</strong>, yani <strong>bir işvereni olmayan</strong>, kendi başına iş veya meslek faaliyeti yürüten kişiler içindir (örneğin: tüccar, zanaatkar, serbest meslek sahibi vb.).</p>",
-        "index": 0
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<ul><li>Süre, yürüttüğün faaliyete ve sunduğun belgelere bağlıdır, ama genellikle <strong>1 ila 2 yıl</strong>.</li><li>Bu izin <strong>yenilenebilir</strong>, bağımsız çalışmaya devam ederseniz ve gerekli şartları karşılarsanız.</li></ul>\n<hr>",
-        "index": 1
-      },
-      {
-        "question": "Bu izin nerede talep edilir?",
-        "content": "<p>Postanede Kit postale doldurularak başvurulur</p>\n<p><strong>Ne yapmalısın:</strong></p>\n<hr>\n<ol><li>Doldurunuz: <strong>Kit postale</strong> (Modül 1 ve 2) ve yetkili bir postaneden gönderin.</li><li>Parmak izi için Emniyet Müdürlüğü&#039;nden (Questura) randevu alacaksınız.</li><li>Emniyet Müdürlüğü (Questura) dönüşümü kabul ederse, bağımsız çalışma için yeni oturma izninizi alacaksınız.</li></ol>",
-        "index": 2
-      },
-      {
-        "question": "Bu izinle neler yapabilirsiniz?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Bağımsız çalışmak</strong> vergi numarasıyla</li><li><a href=\"/20a7355e7f7f8173bffccbb2a93bae6f\"><strong>Bağımlı olarak çalışmak (bağımlı çalışma)</strong></a></li><li><strong>İkametgah kaydı yaptırmak</strong> yaşadığın belediyede</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne kayıt olmak</strong> ve bir aile hekimi edinmek</li><li><strong>Schengen bölgesinde seyahat etmek</strong> pasaportla (her 180 günde en fazla 90 gün)</li><li><strong>Aile birleşimi başvurusu yapmak</strong></li><li><strong>Kurslara, okullara, üniversitelere kayıt olmak</strong></li></ul>\n<hr>",
-        "index": 3
-      },
-      {
-        "question": "Faaliyetini kapatırsanız ne olur?",
-        "content": "<ul><li>Bir <strong>iş arama izni</strong> talep edebilirsiniz, ama başka bir iş veya faaliyet aradığını kanıtlamalısın.</li></ul>\n<hr>",
-        "index": 4
-      },
-      {
-        "question": "İzin ne zaman sona erer?",
-        "content": "<ul><li>Şunları yapmalısın: <strong>yenileme başvurusu yapmak</strong> <strong>süre dolmadan önce </strong>veya en geç 60 gün sonrasına kadar</li><li>Eğer <strong>şartları karşılıyorsanız</strong>, ayrıca <strong>dönüştürebilirsiniz</strong> başka bir izin türüne (eğitim, aile, uzun süreli ikamet, bağımlı çalışma vb.). Dönüştürme başvurusunu süre dolmadan yapmalısın.</li></ul>",
-        "index": 5
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "80.46€ posta ödeme makbuzu",
-      "4 Fotoğraf",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Vergi numarası (partita IVA) belgesi veya Ticaret Odası kaydı",
-      "Son gelir beyannamesi"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "16€ damga pulu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "80.46€ posta ödeme makbuzu",
-      "4 Fotoğraf",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Vergi numarası veya ticaret sicili kayıt belgesi",
-      "Son gelir beyannamesi",
-      "Süresi dolmak üzere olan izin"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-81ff-9cdd-c7653e4b9ca5",
-    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
-    "tipo": "Uzun süreli ikamet sahipleri için AB oturma izni (\"Oturma kartı\")",
-    "emoji": "🏠",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Süresi dolmayan bir oturma iznidir. &quot;Oturma kartı&quot; olarak da bilinir ama <strong>dikkat</strong> AB vatandaşlarının aile üyeleri için olan kartla karıştırma.</p>",
-        "index": 0
-      },
-      {
-        "question": "Bu izne kimler başvurabilir?",
-        "content": "<p>Şu durumlarda başvurabilirsiniz:</p>\n<ul><li>En az 5 yıldır düzenli olarak İtalya&#039;da yaşıyorsunuz</li><li>Hâlâ geçerli başka bir oturma izniniz var</li><li>Son üç yılda en az 7.000 euro gelirin var</li><li>En az A2 seviyesinde İtalyanca bilgi sertifikan var</li></ul>\n<p><strong>Dikkat! </strong>⚠️ <strong>Tüm oturma izinleri bu karta dönüştürülemez!</strong></p>\n<p>Örneğin, şu izinlere sahipseniz kart başvurusu YAPAMAZSIN:</p>\n<ul><li>Öğrenim veya mesleki eğitim izni</li><li>Tıbbi tedavi, özel koruma veya geçici koruma izni</li><li>Sığınma başvurusu izni (Bölge Komisyonu veya Mahkeme kararını beklerken)</li></ul>\n<p>Şüphen varsa, <a href=\"https://testsospermesso.netlify.app/it/tree/conversione\">testimizi yap.</a></p>",
-        "index": 1
-      },
-      {
-        "question": "İtalya'daki 5 yıllık ikamet kesintisiz mi olmalı?",
-        "content": "<p>Evet. 5 yıl, ilk oturma izninin tarihinden itibaren sayılır ve oturma izinlerinde &quot;boşluk&quot; olmamalıdır. </p>",
-        "index": 2
-      },
-      {
-        "question": "5 yıllık düzenli ikamet nasıl hesaplanır?",
-        "content": "<p>5 yılın hesaplanmasında kısa süreli veya &quot;diplomatik&quot; izin dönemleri sayılmaz. Ancak öğrenim, mesleki eğitim, geçici koruma veya insani yardım izni dönemleri sayılır.</p>",
-        "index": 3
-      },
-      {
-        "question": "Bu izne başvurmak için hangi seviyede İtalyanca bilmeliyim?",
-        "content": "<p>A2 seviyesinde İtalyanca bildiğini kanıtlamalısın. Bu, günlük durumlarda anlayabildiğin ve konuşabildiğin anlamına gelir. İtalya&#039;da ortaokul veya daha yüksek bir diploma aldıysanız, bu yeterlidir.</p>",
-        "index": 4
-      },
-      {
-        "question": "İtalya'da yanımdaki aile üyelerim için de kart başvurusu yapabilir miyim?",
-        "content": "<p>Evet. Bu izne şunlar için başvurabilirsiniz:</p>\n<ul><li>Bakmakla yükümlü olunan eş</li><li>Reşit olmayan çocuklar (sadece eşin çocukları, evlilik dışı doğanlar, evlat edinilmişler veya vesayet altındakiler dahil)</li><li>Tam engelli (%100) olup kendi geçimini sağlayamayan reşit çocuklar</li><li>Bakmakla yükümlü olunan anne-baba</li></ul>\n<p>AB uzun süreli ikamet izninizi aile üyelerine genişletmek için:</p>\n<ul><li>İtalyan sağlık kurallarına uyan ve herkes için yeterince büyük uygun bir evin olduğunu kanıtlamalısın: Emniyet Müdürlüğü&#039;ne (Questura) &quot;<a href=\"/2187355e7f7f8148ac7efe618d4b0ae9\">konut uygunluk belgesi</a>&quot; getirmelisiniz, belediyenden alınır</li><li>Yeterli gelire sahip olmalısın. Seninle birlikte yaşayan aile üyelerinin gelirleri de sayılır. Asgari gelir, sosyal yardım tutarı artı her aile üyesi için yarısı olarak hesaplanır. 14 yaşından küçük 2 veya daha fazla çocuğun varsa, sosyal yardımın iki katı gerekir.</li></ul>",
-        "index": 5
-      },
-      {
-        "question": "Uzun süreli ikamet sahipleri için AB oturma izni ne kadar süre geçerlidir?",
-        "content": "<p>teorik olarak süresi dolmaz (sonsuza kadar geçerlidir), ancak her 10 yılda bir güncellenmesi gerekir. Yenileme her zaman otomatik değildir: Emniyet Müdürlüğü (Questura) genellikle tüm şartların hâlâ karşılanıp karşılanmadığını kontrol eder. Reşit olmayanlar için yenileme her 5 yılda bir yapılır</p>",
-        "index": 6
-      },
-      {
-        "question": "Hangi hakları verir?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Vizesiz İtalya&#039;ya giriş ve çıkış yapabilmek</li><li>Düzenli sözleşmeyle çalışmak (bağımsız çalışma veya bağımlı çalışma)</li><li>Başka bir AB ülkesinde 90 günden fazla kalabilmek, ancak başka bir AB ülkesinde kalıcı olarak çalışmak istiyorsanız, bu izniniz yeterli olup olmadığını anlamak için o ülkenin kurallarını öğrenmelisiniz.</li><li>Sosyal konut prosedürleri dahil Kamu Yönetimi hizmetlerinden yararlanmak</li><li>Sosyal yardım, sosyal güvenlik, sağlık hizmeti ve eğitim hizmetlerinden yararlanmak: örneğin, INPS engelli maaşı ve sosyal yardım</li></ul>",
-        "index": 7
-      },
-      {
-        "question": "İzni beklerken, postane makbuzu çalışmama izin verir mi?",
-        "content": "<p>Evet, postane makbuzu düzenli bir sözleşmeyle (bağımsız veya bağımlı çalışma) çalışmana izin verir.</p>",
-        "index": 8
-      },
-      {
-        "question": "Kit ile gönderdiğim veya Emniyet Müdürlüğü'ne (Questura) getirdiğim belgeler eksik olursa ne olur?",
-        "content": "<p>Emniyet Müdürlüğü (Questura) size eksik belgelerin listesiyle bir tamamlama talebi verir. İstenen belgeleri en kısa sürede getirmelisiniz; bu arada başvurunuz beklemede kalır.</p>",
-        "index": 9
-      },
-      {
-        "question": "Uzun süreli ikamet AB oturma izni hangi durumlarda geri alınabilir?",
-        "content": "<p>Avrupa Birliği dışında art arda 12 ay kalırsanız; veya İtalya dışında 6 yıldan fazla kalırsanız.</p>",
-        "index": 10
-      },
-      {
-        "question": "Uzun süreli ikamet AB oturma izniyle, başka bir Avrupa ülkesinde yaşayabilir miyim?",
-        "content": "<p>Evet, başka bir Schengen ülkesinde öğrenim veya iş için 90 günden fazla kalabilirsiniz, o ülkenin kanunlarına uyarak. Aynı hak aile üyelerin için de geçerlidir. Başka bir AB ülkesi size uzun süreli ikamet AB izni verirse, İtalyan izniniz geri alınır.</p>",
-        "index": 11
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "Son yılın gelir belgeleri",
-      "A2 seviye dil sertifikası",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Pasaport kopyası (süresi dolmamış)",
-      "4 Fotoğraf",
-      "130.46 posta ödeme makbuzu",
-      "Son 5 yılda kesintisiz oturma iznine sahip olduğunun kanıtı"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "4 vesikalık fotoğraf",
-      "16€ damga pulu",
-      "30.46€ posta ödeme makbuzu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
     ],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
@@ -2366,209 +2640,6 @@
       "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
       "30.46€ posta ödeme makbuzu",
       "Sağlık sigortası poliçesi veya SSN'ye gönüllü kayıt"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8164-86e0-da8fd938605c",
-    "slug": "calamita-naturale",
-    "tipo": "Doğal afet",
-    "emoji": "📋",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>Doğal afet oturma izni (Art. 20bis, Testo Unico Immigrazione) <strong>ciddi bir acil durum nedeniyle ülkelerine dönemeyen</strong> ⚠️ (depremler, savaşlar, doğal afetler gibi) orada yaşamayı tehlikeli kılan yabancılara verilir.</p>\n<p>Bu izin siyasi sığınma başvurusundan farklıdır ve uluslararası koruma başvurusu yapman gerekmez.</p>",
-        "index": 0
-      },
-      {
-        "question": "Ne zaman başvurabilirim?",
-        "content": "<p>Bu izne başvurabilirsiniz eğer:</p>\n<ul><li>Zaten İtalya&#039;da yaşıyorsunuz</li><li>Ülkende <strong>çok ciddi ve tehlikeli bir durum var</strong> (acil durum, afet, felaket)</li><li>Ülkene <strong>güvenli bir şekilde dönemen mümkün değil</strong></li><li>Ülkendeki durum temel haklarını (yaşam hakkı, özgürlük hakkı, kendi hayatınız hakkında karar verme hakkı) tehlikeye atıyor</li></ul>\n<p>Durum <strong>istisnai ve geçici</strong> ama aynı zamanda çok tehlikeli olmalıdır.</p>",
-        "index": 1
-      },
-      {
-        "question": "Bu izne nasıl ve nerede başvurulur?",
-        "content": "<p>Başvuruyu <strong>yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura)</strong>.</p>\n<p>Doğrudan Emniyet Müdürlüğü&#039;ne (Questura) gidip randevu almalısın</p>\n<p>Başvuru yaptıktan sonra Emniyet Müdürlüğü (Questura) ülkende gerçekten tehlikeli bir durum olup olmadığını kontrol edebilir ve sonra karar verir.</p>",
-        "index": 2
-      },
-      {
-        "question": "📋 Hangi belgeler gerekli?",
-        "content": "<ul><li><strong>Ülkendeki tehlikeli durumu gösteren belgeler</strong>: gazete haberleri, uluslararası kuruluş raporları, ülkende ciddi bir acil durum olduğunu gösteren resmi belgeler</li><li><strong>İtalya&#039;da nasıl geçimini sağladığını gösteren belgelerin kopyası</strong> (varsa): maaş bordrosu, iş sözleşmesi, aldığın yardımlar</li><li><strong>Pasaport</strong> veya benzer belge</li><li><strong>2 fotoğraf</strong></li><li><strong>Damga pulu</strong> 16 euro</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Ne kadar süre geçerli?",
-        "content": "<p>İznin süresi <strong>altı ay, </strong>şartlar devam ederse altı ay daha yenilenebilir </p>",
-        "index": 4
-      },
-      {
-        "question": "✅ Hangi hakları verir? Neye erişebilirim?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Almak: <strong>ikamet kaydı</strong> yaşadığın belediyede</li><li><strong>Çalışmak</strong> (düzenli sözleşmeyle - bağımsız veya bağımlı çalışma)</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</strong></li><li>Okula, meslek kursuna veya üniversiteye kaydolmak</li></ul>",
-        "index": 5
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "4 Fotoğraf",
-      "Doğal afet kanıtı",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Süresi dolmak üzere olan izin",
-      "4 vesikalık fotoğraf",
-      "16€ damga pulu",
-      "Konaklama beyanı veya kira sözleşmesi veya ikametgâh belgesi",
-      "Doğal afet kanıtı"
-    ],
-    "rinnovoMethod": "şahsen",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-811e-9fbd-d3a71cdb5efd",
-    "slug": "attesa-occupazione",
-    "tipo": "İş arama",
-    "emoji": "🔍",
-    "sections": [
-      {
-        "question": "Bu izin nedir?",
-        "content": "<p>İş arama oturma izni, iş sözleşmen olmasa veya artık olmasa bile İtalya&#039;da kalmana olanak tanır. Genellikle </p>\n<ul><li>şu yabancı işçilere verilir: <strong>işini kaybetmiş</strong> ve yeni bir iş arayan</li><li>18 yaşına ulaşmış ve sabit bir işi olmayan refakatsiz yabancı reşit olmayanlar</li><li>a <strong>yabancı öğrenciler</strong> İtalya&#039;da üniversite bitirmiş ve henüz iş bulamamış olan</li></ul>",
-        "index": 0
-      },
-      {
-        "question": "İş arama oturma iznine nasıl başvurabilirim?",
-        "content": "<p>Şu üç durumdan birindeyseniz bu izne başvurabilirsiniz:</p>\n<ul><li><strong>Bağımsız veya bağımlı çalışma için oturma izniniz var</strong> ama işini kaybettiğin (işten çıkarma veya istifa) veya bağımsız faaliyetiniz sona erdiği için yenileyemiyorsunuz</li><li><strong>Öğrenim iznisiniz var</strong> ve İtalya&#039;da üniversite bitirdiniz (lisans, yüksek lisans, doktora) ama henüz iş bulamadınız. Bu durumlarda önce iş arama iznine, sonra çalışma iznine dönüştürmek tavsiye edilir. Öğrenim izninden doğrudan çalışma iznine geçmek daha zordur</li><li><strong>Reşit olmayan yaş iznisiniz var</strong> ve iş bulmak için biraz daha zaman istiyorsunuz</li></ul>\n<p>⚠️ <em>Dikkat: daha önce hiç oturma izniniz olmadıysa, İtalya&#039;da iş arama izni başvurusu yapamazsınız. Açıkçası: İtalya&#039;ya vizesiz veya turist vizesiyle gelip, iş arama izniyle iş arayamazsınız.</em></p>",
-        "index": 1
-      },
-      {
-        "question": "👉 Bu izne nasıl başvurulur?",
-        "content": "<ul><li>İznin süresi dolmak üzereyse: Kit postale ile başvurunuzu gönderin <strong>Kit postale</strong> süre dolmadan önce</li><li>İznin süresi zaten dolmuşsa: doğrudan Emniyet Müdürlüğü&#039;ne (Questura) gidiniz ve randevu al</li></ul>",
-        "index": 2
-      },
-      {
-        "question": "İzin başvurusundan önce ne yapmalısın?",
-        "content": "<p><strong>1. İş Kurumu&#039;na (Centro per l&#039;Impiego) kaydol</strong></p>\n<ul><li>En yakın İş Kurumu&#039;na (Centro per l&#039;Impiego) git</li><li>Çalışmaya hazır olduğunu beyan et (daha önce yaptığından farklı bir işte bile olsa)</li><li>Size bir <strong>kayıt belgesi</strong> iş arayan kişi olarak verecekler</li></ul>\n<p><strong>İş Kurumu&#039;na (Centro per l&#039;Impiego) kaydolmak için gerekenler:</strong></p>\n<ul><li>Vergi numarası</li><li>Geçerli oturma izni (veya süresi dolmuş ama yenileme makbuzu olan)</li><li>Geçerli kimlik belgesi</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Maliyeti ne kadar?",
-        "content": "<p>Toplam maliyet <strong>116,46€</strong>:</p>\n<ul><li>Elektronik izin için 30,46€</li><li>30€ Kit postale gönderim ücreti</li><li>İznin düzenlenmesi için 40€</li><li>16€ damga pulu</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Bu izin ne kadar süre geçerlidir?",
-        "content": "<p>İzin genellikle<strong> 1 yıl sürer ve Emniyet Müdürlüklerine göre YENİLENEMEZ.</strong></p>",
-        "index": 5
-      },
-      {
-        "question": "✅ Hangi hakları verir? Neye erişebilirim?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li><strong>Çalışmak</strong> (bağımsız veya bağımlı çalışma)</li><li><strong>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</strong></li><li>İkametgah kaydı yaptırmak </li></ul>",
-        "index": 6
-      },
-      {
-        "question": "Süresi dolunca ne olur?",
-        "content": "<p><strong>İş bulursanız:</strong> izni çalışma iznine (bağımsız veya bağımlı) Kit postale ile dönüştürebilirsiniz</p>\n<p><strong>İş bulamazsanız: </strong>süresi dolmadan önce nitelikli hukuki yardım al</p>",
-        "index": 7
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "16€ damga pulu",
-      "İş Kurumu'na (Centro per l'impiego) kayıt",
-      "70.46€ posta ödeme makbuzu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "4 Fotoğraf"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "16€ damga pulu",
-      "Pasaport kopyası (süresi dolmamış)",
-      "4 Fotoğraf",
-      "İş Kurumu'na (Centro per l'impiego) kayıt",
-      "70.46 veya 80.46€ posta ödeme makbuzu (izin süresine bağlı)"
-    ],
-    "rinnovoMethod": "n/a",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": null,
-    "docNotes": null
-  },
-  {
-    "id": "3217355e-7f7f-8156-bf74-cdd955e14156",
-    "slug": "famiglia-genitore-di-cittadino-italiano",
-    "tipo": "Aile - İtalyan vatandaşı çocuğun ebeveyni",
-    "emoji": "👨‍👩‍👧‍👦",
-    "sections": [
-      {
-        "question": "İtalyan vatandaşı çocuğun ebeveyni için oturma izni nedir?",
-        "content": "<p>Bu, reşit olmayan İtalyan vatandaşı çocukların ebeveynleri için özel bir oturma iznidir.</p>",
-        "index": 0
-      },
-      {
-        "question": "Ne kadar süre geçerli?",
-        "content": "<p>İzin genellikle 2 yıl geçerlidir</p>",
-        "index": 1
-      },
-      {
-        "question": "Hangi şartlar gereklidir?",
-        "content": "<p>Bu izne başvurabilmek için İtalya&#039;da ikamet eden İtalyan vatandaşı reşit olmayan bir çocuğun olmalı ve ebeveyn sorumluluğun devam etmelidir. </p>\n<p>Birlikte yaşama zorunlu değildir. Örneğin reşit olmayan çocuk diğer ebeveynle yaşıyor olsa bile bu izni alabilirsiniz.</p>",
-        "index": 2
-      },
-      {
-        "question": "Bu izin nerede talep edilir?",
-        "content": "<p>Yaşadığın bölgenin Emniyet Müdürlüğü&#039;ne (Questura) başvurmalısın.</p>",
-        "index": 3
-      },
-      {
-        "question": "Başvuru için hangi belgeler gerekli?",
-        "content": "<ul><li>İtalyan vatandaşı çocuğun ebeveyni olduğunu gösteren belge</li><li>Çocuğunun İtalya&#039;da nerede yaşadığını gösteren belge</li><li>Ebeveynlik hakkının devam ettiğini gösteren çocuk mahkemesi belgesi</li><li>Geçerli pasaport</li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Bu oturma izniyle ne yapabilirim?",
-        "content": "<p>Bu izinle şunları yapabilirsiniz:</p>\n<ul><li>Düzenli sözleşmeyle çalışmak (bağımsız veya bağımlı çalışma)</li><li>Yaşadığın belediyede ikametgâh kaydı yaptırmak</li><li>Ulusal Sağlık Hizmeti&#039;ne (SSN) kaydolmak ve bir aile hekimi edinmek</li><li>Geçerli pasaportunuz varsa Schengen bölgesinde seyahat etmek</li></ul>",
-        "index": 5
-      },
-      {
-        "question": "İznin süresi dolduğunda ne olur?",
-        "content": "<p>Süresi dolmadan önce, </p>\n<ul><li>çocuğun reşit olmadığı sürece yenileyebilirsiniz.</li><li>başka bir izne dönüştürebilirsiniz (örneğin çalışma veya öğrenim için)</li></ul>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Pasaport kopyası (süresi dolmamış)",
-      "İtalyan vatandaşıyla akrabalık bağını kanıtlayan belge",
-      "4 Fotoğraf",
-      "16€ damga pulu",
-      "80.46€ posta ödeme makbuzu",
-      "Reşit olmayan çocuğun İtalya'daki ikamet belgesi"
-    ],
-    "primoMethod": "şahsen",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": null,
-    "rinnovoDocuments": [
-      "Süresi dolmak üzere olan izin",
-      "16€ damga pulu",
-      "4 vesikalık fotoğraf",
-      "İtalyan vatandaşının kimlik belgesi",
-      "Pasaport kopyası (süresi dolmamış)",
-      "80.46€ posta ödeme makbuzu",
-      "reşit olmayan çocuğun İtalya'daki ikamet belgesi"
     ],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
