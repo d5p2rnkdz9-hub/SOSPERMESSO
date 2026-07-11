@@ -8,11 +8,16 @@
  * 3. Writes translated pages to the target Notion database
  *
  * Usage:
- *   node scripts/translate-to-notion.js --lang ur     # Write Urdu translations
- *   node scripts/translate-to-notion.js --lang fa     # Write Farsi translations
- *   node scripts/translate-to-notion.js --lang zh     # Write Chinese translations
- *   node scripts/translate-to-notion.js --lang ur --extract  # Extract text to translate
- *   node scripts/translate-to-notion.js --lang ur --permit studio  # Single permit
+ *   node scripts/translate-to-notion.js --lang en --extract            # Extract text to translate
+ *   node scripts/translate-to-notion.js --lang en                      # Write translations
+ *   node scripts/translate-to-notion.js --lang en --permit tirocinio,lavoro-artistico  # Only these permits
+ *   node scripts/translate-to-notion.js --lang en --extract --missing  # Only permits absent from the target DB
+ *   node scripts/translate-to-notion.js --lang en --missing            # Write only absent permits
+ *
+ * DANGER: writing an EXISTING permit replaces its blocks with translations from
+ * _cache/translate-{lang}-done.json; any text missing from that map is written
+ * in Italian. For incremental work always use --missing or a tight --permit
+ * filter, and make sure done.json covers every extracted segment first.
  */
 require('dotenv').config();
 const { Client } = require('@notionhq/client');
@@ -27,12 +32,34 @@ const NOTION_DELAY = 350;
 const MAX_BLOCKS_PER_APPEND = 100;
 
 const LANG_CONFIG = {
+  en: { dbId: 'c1dc0271-f1f4-4147-9464-391884f4dfad', name: 'English' },
+  fr: { dbId: 'b7955daa-3da7-4a0c-ac9d-0bbe4ba7d70e', name: 'French' },
+  es: { dbId: '93ad8b71-73e7-499b-83bc-a1975bda89dd', name: 'Spanish' },
+  tr: { dbId: '49d77cd7-b4c7-4c8a-a731-40b6315bc29e', name: 'Turkish' },
+  bn: { dbId: '552940da-0783-46dd-9094-b5a2f2e8276d', name: 'Bengali' },
+  ru: { dbId: '133cab29-7903-44be-b1c5-551563451fa8', name: 'Russian' },
+  ar: { dbId: '39c16853-a650-4ab6-8cba-36e08a69fab8', name: 'Arabic' },
   ur: { dbId: '42ef74d0-62cf-4c3e-b5d8-eafd4b2155b8', name: 'Urdu' },
   fa: { dbId: 'e350cb8e-515c-45f6-8c72-13175ab574d1', name: 'Farsi' },
   zh: { dbId: 'e78a1d6a-a450-48ec-98dc-459f8a90ca32', name: 'Chinese' },
 };
 
+// Notes property (same name in the IT source DB and — after the 2026-07
+// normalization — in every translated DB).
+const NOTES_PROP = 'Info extra su doc rilascio/rinnovo';
+
 function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// Retry transient network/rate-limit failures (Notion API flakiness)
+async function withRetry(fn, label, attempts = 4) {
+  for (let i = 1; ; i++) {
+    try { return await fn(); } catch (err) {
+      if (i >= attempts) throw err;
+      console.warn(`  … ${label || 'request'} failed (${err.code || err.message}), retry ${i}/${attempts - 1} in ${i * 3}s`);
+      await delay(i * 3000);
+    }
+  }
+}
 
 function slugify(name) {
   if (!name) return null;
@@ -45,11 +72,13 @@ function slugify(name) {
 // ── CLI ──
 function parseArgs() {
   const args = process.argv.slice(2);
-  const opts = { lang: null, extract: false, permit: null };
+  const opts = { lang: null, extract: false, permits: null, missing: false };
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--lang') opts.lang = args[++i];
     if (args[i] === '--extract') opts.extract = true;
-    if (args[i] === '--permit') opts.permit = args[++i];
+    if (args[i] === '--permit') opts.permits = args[++i].split(',').map(s => s.trim()).filter(Boolean);
+    if (args[i] === '--missing') opts.missing = true;
+    if (args[i] === '--force') opts.force = true;
   }
   return opts;
 }
@@ -60,11 +89,11 @@ async function fetchDatabasePages(notion, databaseId) {
   let hasMore = true;
   let startCursor;
   while (hasMore) {
-    const response = await notion.search({
+    const response = await withRetry(() => notion.search({
       filter: { property: 'object', value: 'page' },
       start_cursor: startCursor,
       page_size: 100,
-    });
+    }), 'search');
     const dbPages = response.results.filter(page =>
       page.parent?.database_id === databaseId ||
       page.parent?.data_source_id === databaseId
@@ -237,13 +266,25 @@ function flattenChildrenForWrite(blocks) {
 async function main() {
   const opts = parseArgs();
   if (!opts.lang || !LANG_CONFIG[opts.lang]) {
-    console.error('Usage: node scripts/translate-to-notion.js --lang <ur|fa|zh> [--extract] [--permit <slug>]');
+    console.error(`Usage: node scripts/translate-to-notion.js --lang <${Object.keys(LANG_CONFIG).join('|')}> [--extract] [--permit <slug,slug,...>] [--missing]`);
     process.exit(1);
   }
 
   const lang = opts.lang;
   const config = LANG_CONFIG[lang];
   const notion = new Client({ auth: process.env.NOTION_API_KEY });
+
+  // Step 0 (--missing): find which IT pages already exist in the target DB
+  let existingPages = null;
+  let existingItIds = null;
+  if (opts.missing) {
+    console.log(`[translate] Fetching existing ${lang.toUpperCase()} pages to skip...`);
+    existingPages = await fetchDatabasePages(notion, config.dbId);
+    existingItIds = new Set(existingPages.map(p =>
+      (p.properties?.['IT Page ID']?.rich_text || []).map(s => s.plain_text).join('')
+    ).filter(Boolean));
+    console.log(`[translate] Target DB has ${existingItIds.size} pages with IT Page ID`);
+  }
 
   // Step 1: Get IT permit pages
   console.log('[translate] Fetching IT permit pages...');
@@ -254,7 +295,8 @@ async function main() {
       if (tipo.startsWith('[DUPLICATE]')) return false;
       const slug = slugify(tipo);
       if (slug && slug.startsWith('duplicate-')) return false;
-      if (opts.permit && !slug.includes(opts.permit)) return false;
+      if (opts.permits && !opts.permits.some(f => slug.includes(f))) return false;
+      if (existingItIds && existingItIds.has(p.id)) return false;
       return true;
     })
     .map(p => ({
@@ -298,7 +340,7 @@ async function main() {
     const rm = props['Mod rinnovo']?.multi_select?.[0]?.name;
     if (pm) allTexts.add(pm);
     if (rm) allTexts.add(rm);
-    const notes = (props['Info extra su doc rilascio']?.rich_text || []).map(s => s.plain_text).join('');
+    const notes = (props[NOTES_PROP]?.rich_text || []).map(s => s.plain_text).join('');
     if (notes) allTexts.add(notes);
   }
 
@@ -331,7 +373,6 @@ async function main() {
 
   // Step 5: Write translated pages
   let written = 0;
-  let existingPages = null;
   for (const permit of itPages) {
     const blocks = permitBlocks[permit.id];
     const props = permit.properties;
@@ -344,7 +385,7 @@ async function main() {
     const rinnovoDocNames = (props['Doc rinnovo']?.multi_select || []).map(d => d.name);
     const primoMethod = props['Mod primo rilascio']?.multi_select?.[0]?.name;
     const rinnovoMethod = props['Mod rinnovo']?.multi_select?.[0]?.name;
-    const notes = (props['Info extra su doc rilascio']?.rich_text || []).map(s => s.plain_text).join('');
+    const notes = (props[NOTES_PROP]?.rich_text || []).map(s => s.plain_text).join('');
 
     const translatedProps = {
       'Name': { title: [{ text: { content: tr(permit.tipo) } }] },
@@ -355,9 +396,24 @@ async function main() {
       'IT Page ID': { rich_text: [{ text: { content: permit.id } }] },
     };
     if (notes) {
-      translatedProps['Info extra su doc rilascio/rinnovo'] = {
+      translatedProps[NOTES_PROP] = {
         rich_text: [{ text: { content: tr(notes) } }],
       };
+    }
+
+    // Safety: refuse to write a permit whose text isn't fully covered by the
+    // translation map — untranslated segments would land in Notion in Italian.
+    const permitTexts = new Set([permit.tipo]);
+    for (const t of extractTextFromBlocks(blocks)) permitTexts.add(t);
+    for (const d of primoDocNames) permitTexts.add(d);
+    for (const d of rinnovoDocNames) permitTexts.add(d);
+    if (primoMethod) permitTexts.add(primoMethod);
+    if (rinnovoMethod) permitTexts.add(rinnovoMethod);
+    if (notes) permitTexts.add(notes);
+    const missingTexts = [...permitTexts].filter(t => !translations[t]);
+    if (missingTexts.length && !opts.force) {
+      console.warn(`  ⚠ ${permit.slug}: ${missingTexts.length} untranslated segment(s) — SKIPPED (use --force to write anyway). First missing: "${missingTexts[0].slice(0, 70)}"`);
+      continue;
     }
 
     // Translate blocks

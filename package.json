@@ -11,6 +11,7 @@
     "fetch": "node scripts/fetch-notion.js",
     "fetch:build": "node scripts/fetch-notion.js && npx @11ty/eleventy",
     "review": "node scripts/review-translations.js",
+    "translations": "node scripts/translation-status.js",
     "audit": "node scripts/audit-content.js",
     "cache:clear": "node -e \"require('./scripts/notion-cache').clearCache()\""
   },

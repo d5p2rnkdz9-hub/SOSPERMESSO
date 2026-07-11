@@ -2418,7 +2418,7 @@
       },
       {
         "question": "🪪 Il permesso di soggiorno",
-        "content": "<p>Se il <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a> approva il prosieguo, puoi chiedere un <strong>permesso di soggiorno per <a href=\"dizionario.html#prosieguo-amministrativo\" class=\"doc-link\">prosieguo amministrativo</a></strong>.</p>\n<ul><li>Questo permesso è valido <strong>fino, al massimo, al compimento dei 21 anni</strong>.</li><li>Permette di <strong>vivere regolarmente in Italia</strong>, <strong>studiare</strong>, <strong>lavorare</strong> e <strong>accedere ai progetti di <a href=\"dizionario.html#accoglienza\" class=\"doc-link\">accoglienza</a> SAI</strong>, anche se non si era accolti prima.</li></ul>",
+        "content": "<p>Se il <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a> approva il prosieguo, puoi chiedere un <strong>permesso di soggiorno per <a href=\"dizionario.html#prosieguo-amministrativo\" class=\"doc-link\">prosieguo amministrativo</a></strong>.</p>\n<ul><li>Questo permesso è valido <strong>fino, al massimo, al compimento dei 21 anni</strong>.</li><li>Permette di <strong>vivere regolarmente in Italia</strong>, <strong>studiare</strong>, <strong>lavorare</strong> e <strong>accedere ai progetti di <a href=\"dizionario.html#accoglienza\" class=\"doc-link\">accoglienza</a> <a href=\"dizionario.html#sai\" class=\"doc-link\">SAI</a></strong>, anche se non si era accolti prima.</li></ul>",
         "index": 1
       },
       {
