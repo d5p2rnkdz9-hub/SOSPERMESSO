@@ -396,8 +396,14 @@ async function main() {
       'IT Page ID': { rich_text: [{ text: { content: permit.id } }] },
     };
     if (notes) {
+      // Notion caps a single rich_text text.content at 2000 chars — chunk longer notes.
+      const translatedNote = tr(notes);
+      const noteChunks = [];
+      for (let i = 0; i < translatedNote.length; i += 2000) {
+        noteChunks.push(translatedNote.slice(i, i + 2000));
+      }
       translatedProps[NOTES_PROP] = {
-        rich_text: [{ text: { content: tr(notes) } }],
+        rich_text: noteChunks.map(c => ({ text: { content: c } })),
       };
     }
 
