@@ -32,3 +32,4 @@ data-pipeline/.venv/
 data-pipeline/**/__pycache__/
 data-pipeline/data/*.db-shm
 data-pipeline/data/*.db-wal
+data-pipeline/data/classify/batch-*.json
