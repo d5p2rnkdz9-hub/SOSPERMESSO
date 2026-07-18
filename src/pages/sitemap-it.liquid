@@ -45,6 +45,15 @@ eleventyExcludeFromCollections: true
     <loc>{{ site.url }}/patto-ue-{{ regolamento.slug }}.html</loc>
   </url>
   {%- endfor %}
+  <!-- Giurisprudenza e circolari (IT only) -->
+  <url>
+    <loc>{{ site.url }}/banca-dati.html</loc>
+  </url>
+  {%- for lp in legale.permitPages %}
+  <url>
+    <loc>{{ site.url }}/giurisprudenza-{{ lp.slug }}.html</loc>
+  </url>
+  {%- endfor %}
   <!-- Permit pages (alternates only for languages that have the permit) -->
   {%- for permit in permits %}
   {%- assign enM = permitsEn | where: "slug", permit.slug %}

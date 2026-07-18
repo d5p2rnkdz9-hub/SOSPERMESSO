@@ -50,7 +50,7 @@
     }
     if (state.q) {
       var hay = (d.titolo + ' ' + (d.oggetto || '') + ' ' + (d.tema || '') + ' ' +
-        (d.ente || '') + ' ' + (d.numero || '')).toLowerCase();
+        (d.ente || '') + ' ' + (d.numero || '') + ' ' + (d.t || '')).toLowerCase();
       var terms = state.q.toLowerCase().split(/\s+/);
       for (var t = 0; t < terms.length; t++) {
         if (terms[t] && hay.indexOf(terms[t]) === -1) return false;

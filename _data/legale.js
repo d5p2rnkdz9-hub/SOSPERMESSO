@@ -81,6 +81,8 @@ module.exports = function () {
       numero: rec.numero || null,
       titolo: displayTitle(rec),
       oggetto: truncate(rec.oggetto, 260),
+      // testo cercabile (non mostrato) — chiave breve per contenere il fetch
+      t: rec.ricerca || '',
       tema: cls.tema || null,
       esito: rec.esito || null,
       permessi: cls.permessi, // [{slug, rilevanza}]

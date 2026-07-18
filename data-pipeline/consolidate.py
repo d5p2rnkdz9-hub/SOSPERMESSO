@@ -71,6 +71,36 @@ def clean_title(filename: str) -> str:
     return re.sub(r"\s{2,}", " ", t).strip()
 
 
+RICERCA_LEN = 600  # lunghezza max del testo cercabile per documento
+
+
+def scraped_search_text(testo_plain: str | None) -> str:
+    """Testo cercabile per doc scrapati: rimuove il chrome del sito
+    (immigrazione.biz antepone ~500 char di nav/login/ads) e tronca."""
+    text = re.sub(r"\s+", " ", testo_plain or "").strip()
+    idx = text[:900].rfind("push({});")
+    if idx >= 0:
+        stripped = text[idx + len("push({});") :].strip()
+        if len(stripped) >= 50:
+            text = stripped
+    return text[:RICERCA_LEN]
+
+
+def kb_search_text(path: Path, extra: list[str]) -> str:
+    """Testo cercabile per doc KB: questioni secondarie + corpo (senza frontmatter)."""
+    try:
+        raw = path.read_text(encoding="utf-8")
+    except Exception:
+        raw = ""
+    if raw.startswith("---"):
+        parts = raw.split("---", 2)
+        raw = parts[2] if len(parts) == 3 else raw
+    body = re.sub(r"\s+", " ", raw).strip()
+    prefix = " ".join(e for e in extra if e).strip()
+    combined = (prefix + " — " + body) if prefix else body
+    return combined[:RICERCA_LEN]
+
+
 def load_circolari() -> list[dict]:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -90,6 +120,7 @@ def load_circolari() -> list[dict]:
             "numero": r["numero_protocollo"] or None,
             "titolo": r["titolo"] or "",
             "oggetto": r["oggetto"] or None,
+            "ricerca": scraped_search_text(text),
             "temi": [],
             "permessi": [],
             "esito": None,
@@ -130,10 +161,17 @@ def load_kb(kb_root: Path) -> tuple[list[dict], int]:
             continue
 
         legal_issue = fm.get("legal_issue")
+        secondary = []
         if isinstance(legal_issue, dict):
             oggetto = legal_issue.get("main")
+            sec = legal_issue.get("secondary")
+            if isinstance(sec, list):
+                secondary = [str(s) for s in sec]
         else:
             oggetto = legal_issue if isinstance(legal_issue, str) else None
+        spec = fm.get("specific_issues")
+        if isinstance(spec, list):
+            secondary.extend(str(s) for s in spec)
 
         temi = []
         if fm.get("chatbot_id"):
@@ -157,6 +195,7 @@ def load_kb(kb_root: Path) -> tuple[list[dict], int]:
             "numero": str(fm.get("case_number")) if fm.get("case_number") else None,
             "titolo": clean_title(fm.get("filename_original") or p.stem),
             "oggetto": oggetto,
+            "ricerca": kb_search_text(p, secondary),
             "temi": temi,
             "permessi": [],
             "esito": fm.get("favorable_to") or None,
