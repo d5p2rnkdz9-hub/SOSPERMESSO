@@ -1,0 +1,75 @@
+---
+layout: layouts/base.liquid
+title: "Giurisprudenza e circolari sui permessi di soggiorno | SOS Permesso"
+lang: it
+langSwitchPath: /database.html
+description: "Banca dati di sentenze, ordinanze e circolari ministeriali in materia di permessi di soggiorno, con ricerca e filtri per tipo di permesso, anno e tipo di atto."
+---
+<link rel="stylesheet" href="src/styles/legale.css?v={{ site.assetVersion }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Giurisprudenza e circolari", "item": "{{ site.url }}/giurisprudenza-circolari.html" }
+  ]
+}
+</script>
+
+<main class="leg-page" id="leg-app">
+  <nav class="breadcrumb" aria-label="Percorso">
+    <a href="index.html">Home</a> ›
+    <span aria-current="page">Giurisprudenza e circolari</span>
+  </nav>
+
+  <header class="leg-header">
+    <h1 class="leg-title">Giurisprudenza e circolari</h1>
+    <p class="leg-subtitle">
+      Banca dati per operatori: {{ legale.stats.sentenze }} decisioni e
+      {{ legale.stats.circolari }} atti amministrativi in materia di permessi di soggiorno.
+    </p>
+  </header>
+
+  <div class="leg-disclaimer">
+    <strong>Sezione per operatori.</strong> Questa banca dati raccoglie decisioni
+    giurisprudenziali e prassi amministrativa utili a chi assiste persone straniere
+    (avvocati, sportelli, associazioni). Non sostituisce la consulenza legale: per il
+    tuo caso concreto <a href="aiuto-legale.html">cerca un aiuto legale gratuito</a>.
+    Alcuni documenti sono catalogati senza collegamento al testo integrale.
+  </div>
+
+  <div class="leg-filters" id="leg-filters" hidden>
+    <input class="leg-search" type="search" id="leg-f-q"
+      placeholder="Cerca per parole chiave (es. rinnovo ricevuta, art. 31, conversione)"
+      aria-label="Cerca nella banca dati">
+    <select id="leg-f-tipo" aria-label="Tipo di documento">
+      <option value="">Tutti i documenti</option>
+      <option value="giurisprudenza">Sentenze e ordinanze</option>
+      <option value="atti">Circolari e altri atti</option>
+    </select>
+    <select id="leg-f-permesso" aria-label="Permesso di soggiorno">
+      <option value="">Tutti i permessi</option>
+      {%- for p in legale.permitOptions %}
+      <option value="{{ p.slug }}">{{ p.tipo }}</option>
+      {%- endfor %}
+    </select>
+    <select id="leg-f-anno" aria-label="Anno">
+      <option value="">Tutti gli anni</option>
+    </select>
+  </div>
+
+  <p id="leg-loading">Caricamento della banca dati…</p>
+  <p class="leg-count" id="leg-count"></p>
+  <ul class="leg-list" id="leg-list"></ul>
+  <p class="leg-empty" id="leg-empty" hidden>
+    Nessun documento trovato con questi filtri. Prova ad allargare la ricerca.
+  </p>
+  <button class="leg-more" id="leg-more" type="button" hidden>Mostra altri</button>
+
+  <script type="application/json" id="leg-permits-json">{
+    {%- for p in legale.permitOptions %}{% if forloop.index0 > 0 %},{% endif %}{{ p.slug | jsonString }}: {{ p.tipo | jsonString }}{% endfor -%}
+  }</script>
+  <script src="src/scripts/legale-db.js?v={{ site.assetVersion }}" defer></script>
+</main>

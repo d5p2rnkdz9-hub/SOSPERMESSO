@@ -11,6 +11,7 @@ function assetVersion() {
     'src/scripts/mobile.js',
     'src/scripts/prassi.js',
     'src/scripts/chatbot.js',
+    'src/scripts/legale-db.js',
     'src/styles/main.css',
     'src/styles/components.css',
     'src/styles/mobile.css',
@@ -22,6 +23,7 @@ function assetVersion() {
     'src/styles/document-page.css',
     'src/styles/prassi.css',
     'src/styles/chatbot.css',
+    'src/styles/legale.css',
   ];
   const hash = crypto.createHash('md5');
   for (const f of files) {

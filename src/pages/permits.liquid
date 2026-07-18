@@ -569,6 +569,22 @@ eleventyExcludeFromCollections: true
 
 {% endif %}
 
+  {%- assign legPage = legale.permitBySlug[permit.slug] %}
+  {%- if legPage %}
+  <!-- PER OPERATORI: GIURISPRUDENZA E CIRCOLARI -->
+  <section class="section">
+    <div class="container" style="max-width: 700px;">
+      <div style="background: white; border: 2px solid #1A1A1A; border-radius: 12px; padding: 1rem 1.2rem; box-shadow: var(--shadow-sm);">
+        <p style="margin: 0 0 0.3rem; font-weight: 700; font-family: 'Poppins', sans-serif;">Sei un operatore o un avvocato?</p>
+        <p style="margin: 0; font-size: 0.95rem;">
+          Consulta <a href="giurisprudenza-{{ permit.slug }}.html">giurisprudenza e circolari su questo permesso</a>
+          ({{ legPage.sentenze.size }} decisioni, {{ legPage.circolari.size }} atti).
+        </p>
+      </div>
+    </div>
+  </section>
+  {%- endif %}
+
   <!-- SEGNALA ERRORE -->
   <div class="report-bar">
     <a href="https://app.sospermesso.it/it/contattaci" target="_blank" rel="noopener" class="report-btn">

@@ -1,0 +1,243 @@
+/* ── Sezione "Giurisprudenza e circolari" (per operatori) ──
+   Stile brutalista coerente con documenti-questura: bordi neri netti,
+   ombra dura offset, niente icone, niente glow colorati. */
+
+.leg-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.leg-page .breadcrumb {
+  font-size: 0.9rem;
+  color: var(--gray-medium, #757575);
+  margin: 1.2rem 0 0;
+}
+
+.leg-page .breadcrumb a {
+  color: inherit;
+}
+
+.leg-header {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+.leg-header .leg-title {
+  font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 0.4rem;
+  color: var(--black, #1A1A1A);
+}
+
+.leg-header .leg-subtitle {
+  color: var(--gray-medium, #757575);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Avviso "per operatori" */
+.leg-disclaimer {
+  background: #FFFDF0;
+  border: 2px solid var(--black, #1A1A1A);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 1.5rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* ── Barra filtri ── */
+.leg-filters {
+  background: white;
+  border: 2.5px solid var(--black, #1A1A1A);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 var(--black, #1A1A1A);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+
+@media (min-width: 700px) {
+  .leg-filters {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  .leg-filters .leg-search {
+    grid-column: 1 / -1;
+  }
+}
+
+.leg-filters input[type="search"],
+.leg-filters select {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 2px solid var(--black, #1A1A1A);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 16px; /* evita zoom iOS */
+  background: white;
+  color: var(--black, #1A1A1A);
+}
+
+.leg-filters input[type="search"]:focus,
+.leg-filters select:focus {
+  outline: 3px solid var(--taxi-yellow, #FFD700);
+  outline-offset: 1px;
+}
+
+.leg-count {
+  font-size: 0.9rem;
+  color: var(--gray-medium, #757575);
+  margin: 0 0 0.8rem;
+}
+
+/* ── Lista documenti ── */
+.leg-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.leg-item {
+  background: white;
+  border: 2px solid var(--black, #1A1A1A);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  box-shadow: var(--shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.leg-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.7rem;
+  align-items: center;
+  font-size: 0.78rem;
+  margin-bottom: 0.35rem;
+}
+
+.leg-badge {
+  display: inline-block;
+  font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 0.68rem;
+  padding: 0.15rem 0.5rem;
+  border: 1.5px solid var(--black, #1A1A1A);
+  border-radius: 6px;
+  background: var(--gray-light, #F5F5F5);
+  color: var(--black, #1A1A1A);
+}
+
+.leg-badge--sentenza { background: #E8F1FB; }
+.leg-badge--circolare { background: #FFF6D6; }
+.leg-badge--esito-fav { background: #E6F4EA; }
+.leg-badge--esito-sfav { background: #FBEAEA; }
+.leg-badge--esito-misto { background: #F0EAFB; }
+
+.leg-item-date {
+  color: var(--gray-medium, #757575);
+}
+
+.leg-item-title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 0.25rem;
+  color: var(--black, #1A1A1A);
+}
+
+.leg-item-title a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--taxi-yellow-dark, #FFC107);
+  text-underline-offset: 2px;
+}
+
+.leg-item-title a:hover {
+  background: var(--taxi-yellow-light, #FFF176);
+}
+
+.leg-item-oggetto {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 0.4rem;
+}
+
+.leg-item-permits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.leg-permit-chip {
+  font-size: 0.75rem;
+  padding: 0.12rem 0.5rem;
+  border: 1.5px solid #ccc;
+  border-radius: 999px;
+  background: var(--off-white, #FAFAFA);
+  color: #444;
+  text-decoration: none;
+}
+
+.leg-permit-chip:hover {
+  border-color: var(--black, #1A1A1A);
+  background: var(--taxi-yellow-light, #FFF176);
+  color: var(--black, #1A1A1A);
+}
+
+.leg-more {
+  display: block;
+  margin: 0 auto 2.5rem;
+  padding: 0.7rem 1.6rem;
+  font: inherit;
+  font-weight: 700;
+  background: var(--taxi-yellow, #FFD700);
+  border: 2.5px solid var(--black, #1A1A1A);
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 var(--black, #1A1A1A);
+  cursor: pointer;
+}
+
+.leg-more:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--black, #1A1A1A);
+}
+
+.leg-empty {
+  text-align: center;
+  color: var(--gray-medium, #757575);
+  padding: 2rem 0;
+}
+
+/* ── Pagina per-permesso ── */
+.leg-section-title {
+  font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2rem 0 0.9rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--taxi-yellow, #FFD700);
+}
+
+.leg-backlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0 0.5rem;
+  font-size: 0.92rem;
+}
+
+.leg-backlinks a {
+  color: var(--black, #1A1A1A);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

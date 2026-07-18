@@ -1,0 +1,92 @@
+---
+pagination:
+  data: legale.permitPages
+  size: 1
+  alias: lp
+permalink: "giurisprudenza-{{ lp.slug }}.html"
+layout: layouts/base.liquid
+lang: it
+langSwitchPath: /database.html
+eleventyComputed:
+  title: "Giurisprudenza e circolari: {{ lp.tipo }} | SOS Permesso"
+  description: "Sentenze, ordinanze e circolari rilevanti per il permesso di soggiorno per {{ lp.tipo }}: banca dati per operatori con esiti e riferimenti."
+eleventyExcludeFromCollections: true
+---
+<link rel="stylesheet" href="src/styles/legale.css?v={{ site.assetVersion }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Database permessi", "item": "{{ site.url }}/database.html" },
+    { "@type": "ListItem", "position": 3, "name": {{ lp.tipo | jsonString }}, "item": "{{ site.url }}/permesso-{{ lp.slug }}.html" },
+    { "@type": "ListItem", "position": 4, "name": "Giurisprudenza e circolari", "item": "{{ site.url }}/giurisprudenza-{{ lp.slug }}.html" }
+  ]
+}
+</script>
+
+<main class="leg-page">
+  <nav class="breadcrumb" aria-label="Percorso">
+    <a href="index.html">Home</a> ›
+    <a href="database.html">Database permessi</a> ›
+    <a href="permesso-{{ lp.slug }}.html">{{ lp.tipo }}</a> ›
+    <span aria-current="page">Giurisprudenza e circolari</span>
+  </nav>
+
+  <header class="leg-header">
+    <h1 class="leg-title">Giurisprudenza e circolari</h1>
+    <p class="leg-subtitle">Permesso di soggiorno per {{ lp.tipo }}</p>
+  </header>
+
+  <div class="leg-disclaimer">
+    <strong>Sezione per operatori.</strong> Selezione di decisioni e prassi
+    amministrativa rilevanti per questo permesso. Non sostituisce la consulenza
+    legale: per il tuo caso concreto
+    <a href="aiuto-legale.html">cerca un aiuto legale gratuito</a>.
+  </div>
+
+  <div class="leg-backlinks">
+    <a href="permesso-{{ lp.slug }}.html">← Torna alla scheda del permesso</a>
+    <a href="giurisprudenza-circolari.html?permesso={{ lp.slug }}">Cerca tutti i documenti su questo permesso →</a>
+  </div>
+
+  {%- if lp.sentenze.size > 0 %}
+  <h2 class="leg-section-title">Sentenze e ordinanze</h2>
+  <ul class="leg-list">
+    {%- for d in lp.sentenze %}
+    <li class="leg-item">
+      <div class="leg-item-meta">
+        <span class="leg-badge leg-badge--sentenza">{{ d.tipo }}</span>
+        {%- case d.esito %}
+        {%- when 'ricorrente' %}<span class="leg-badge leg-badge--esito-fav">favorevole allo straniero</span>
+        {%- when 'ministero', 'questura', 'commissione_territoriale' %}<span class="leg-badge leg-badge--esito-sfav">favorevole alla PA</span>
+        {%- when 'misto', 'parzialmente_accolto' %}<span class="leg-badge leg-badge--esito-misto">esito misto</span>
+        {%- endcase %}
+        {%- if d.data %}<span class="leg-item-date">{{ d.data | date: "%d/%m/%Y" }}</span>{% endif %}
+      </div>
+      <p class="leg-item-title">{% if d.url %}<a href="{{ d.url }}" target="_blank" rel="noopener nofollow">{{ d.titolo | escapeHtml }}</a>{% else %}{{ d.titolo | escapeHtml }}{% endif %}</p>
+      {%- if d.oggetto %}<p class="leg-item-oggetto">{{ d.oggetto | escapeHtml }}</p>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {%- if lp.circolari.size > 0 %}
+  <h2 class="leg-section-title">Circolari e altri atti</h2>
+  <ul class="leg-list">
+    {%- for d in lp.circolari %}
+    <li class="leg-item">
+      <div class="leg-item-meta">
+        <span class="leg-badge leg-badge--circolare">{{ d.tipo }}</span>
+        {%- if d.data %}<span class="leg-item-date">{{ d.data | date: "%d/%m/%Y" }}</span>{% endif %}
+        {%- if d.ente %}<span>{{ d.ente | escapeHtml }}</span>{% endif %}
+      </div>
+      <p class="leg-item-title">{% if d.url %}<a href="{{ d.url }}" target="_blank" rel="noopener nofollow">{{ d.titolo | escapeHtml }}</a>{% else %}{{ d.titolo | escapeHtml }}{% endif %}</p>
+      {%- if d.oggetto %}<p class="leg-item-oggetto">{{ d.oggetto | escapeHtml }}</p>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+</main>
