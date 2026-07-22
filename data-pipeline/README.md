@@ -7,7 +7,7 @@ recuperato nel repo principale a luglio 2026. Base dati per la futura sezione
 
 ## Contenuto
 
-- `cli.py` — entrypoint: `init`, `scrape <source> --start N --end M`, `stats`
+- `cli.py` — entrypoint: `init`, `scrape <source> --start N --end M`, `sync-biz` (incrementale), `stats`
 - `db.py` — schema SQLite + connessione (`data/circolari.db`)
 - `sources/immigrazione_biz.py`, `sources/permessidisoggiorno.py` — scraper per i due aggregatori
 - `sources/common.py` — client HTTP (httpx), rate limiter, parsing condiviso (selectolax)
@@ -47,7 +47,7 @@ Governo (57), Cassazione (39), Min. Infrastrutture (33), TAR Lazio (32).
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 python cli.py stats
-python cli.py scrape immigrazione_biz --start 1270 --end 1400   # aggiornamento incrementale
+python cli.py sync-biz          # aggiornamento incrementale immigrazione.biz (auto-rileva i nuovi id)
 ```
 
 Lo scrape è ripartente: `fetch_log` traccia gli id già processati.

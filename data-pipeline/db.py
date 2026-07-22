@@ -81,32 +81,36 @@ def already_seen(conn: sqlite3.Connection, source: str, source_id: str) -> bool:
     return cur.fetchone() is not None
 
 
+_INSERT_COLUMNS = [
+    "source", "source_id", "source_url",
+    "titolo", "data_pubblicazione", "ente_emittente", "tipo_documento",
+    "numero_protocollo", "oggetto", "testo_html", "testo_plain", "pdf_url",
+    "included_in_corpus", "raw_html",
+]
+
+
 def insert_circolare(conn: sqlite3.Connection, record: dict) -> None:
+    # The slim repo DB drops the heavy testo_html / raw_html columns
+    # (they only live in the full backup DB) — insert what the table has.
+    table_cols = {
+        row[1] for row in conn.execute("PRAGMA table_info(circolari)")
+    }
+    cols = [c for c in _INSERT_COLUMNS if c in table_cols]
+    params = {
+        "included_in_corpus": 1,
+        "tipo_documento": None,
+        "numero_protocollo": None,
+        "oggetto": None,
+        "testo_html": None,
+        "testo_plain": None,
+        "pdf_url": None,
+        "raw_html": None,
+        **record,
+    }
     conn.execute(
-        """
-        INSERT OR IGNORE INTO circolari (
-            source, source_id, source_url,
-            titolo, data_pubblicazione, ente_emittente, tipo_documento,
-            numero_protocollo, oggetto, testo_html, testo_plain, pdf_url,
-            included_in_corpus, raw_html
-        ) VALUES (
-            :source, :source_id, :source_url,
-            :titolo, :data_pubblicazione, :ente_emittente, :tipo_documento,
-            :numero_protocollo, :oggetto, :testo_html, :testo_plain, :pdf_url,
-            :included_in_corpus, :raw_html
-        )
-        """,
-        {
-            "included_in_corpus": 1,
-            "tipo_documento": None,
-            "numero_protocollo": None,
-            "oggetto": None,
-            "testo_html": None,
-            "testo_plain": None,
-            "pdf_url": None,
-            "raw_html": None,
-            **record,
-        },
+        f"INSERT OR IGNORE INTO circolari ({', '.join(cols)}) "
+        f"VALUES ({', '.join(':' + c for c in cols)})",
+        {c: params.get(c) for c in cols},
     )
 
 
