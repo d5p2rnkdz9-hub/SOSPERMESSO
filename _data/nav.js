@@ -7,7 +7,6 @@ module.exports = {
         items: [
           { label: "Tutti i permessi", href: "/database.html" },
           { label: "Che documenti porto?", href: "/documenti-questura.html" },
-          { label: "Giurisprudenza e circolari", href: "/banca-dati" },
           { label: "Protezione internazionale", href: "/protezione-internazionale.html" },
           { label: "Ricongiungimento familiare", href: "/ricongiungimento-familiare.html" },
           { label: "Lavorare in Italia", href: "/lavorare-in-italia.html" },

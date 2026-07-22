@@ -190,6 +190,27 @@
   to = "/fr/database.html"
   status = 301
 
+# ── GIURISPRUDENZA E CIRCOLARI (unpublished, pending self-hosted rebuild) ──
+[[redirects]]
+  from = "/banca-dati"
+  to = "/database.html"
+  status = 302
+
+[[redirects]]
+  from = "/banca-dati.html"
+  to = "/database.html"
+  status = 302
+
+[[redirects]]
+  from = "/giurisprudenza-*"
+  to = "/database.html"
+  status = 302
+
+[[redirects]]
+  from = "/legale-db.json"
+  to = "/database.html"
+  status = 302
+
 # ── SECURITY HEADERS ──
 [[headers]]
   for = "/*"
