@@ -1,0 +1,850 @@
+[
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Lazio 18.2.2026 n.1046 ord.cautelare - Flussi idoneita alloggiativa sopravvenuta.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Lazio 18.2.2026 n.1046 ord.cautelare - Flussi idoneita alloggiativa sopravvenuta.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-02-18",
+  "ente": "TAR Lazio, Roma",
+  "numero": "1046/2026 (RG 13015/2025)",
+  "titolo": "Tar lazio 17.2.26 Cautelare FLUSSI con idoneita alloggiativa SOPRAVVENUTA ok",
+  "oggetto": "Tutela cautelare avverso la revoca del nullaosta in procedura flussi: rilevanza delle sopravvenienze favorevoli (certificato di idoneità alloggiativa successivo all'istanza e all'atto, asseverazione tardivamente prodotta) ai fini del riesame.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4337
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Lazio 22.4.2026 n.7264 - Flussi redditi prospettiva e sola richiesta idoneita alloggio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Lazio 22.4.2026 n.7264 - Flussi redditi prospettiva e sola richiesta idoneita alloggio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-04-22",
+  "ente": "TAR Lazio, Roma",
+  "numero": "7264/2026 (RG 12270/2024)",
+  "titolo": "Tar Lazio aprile 2026 FLUSSI si redditi in prospettiva e basta richiesta idoneita allog.",
+  "oggetto": "Revoca del nullaosta in procedura flussi: parametri di valutazione della capacità economica del datore (utile vs fatturato vs prospettiva) e regime probatorio dell'idoneità alloggiativa (richiesta sufficiente ex art. 35 DPR 394/1999).",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4128
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Liguria 549_2026 FLUSSI revoca nulla osta redditi datore in prospettiva e insoluti diffidabili sanabili.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Liguria 549_2026 FLUSSI revoca nulla osta redditi datore in prospettiva e insoluti diffidabili sanabili.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-05-04",
+  "ente": "TAR Liguria",
+  "numero": "00549/2026 REG.PROV.COLL. (R.G. 00707/2025)",
+  "titolo": "ACCOGLIMENTO SENTENZA TAR LIGURIA REDDITI DATORE DI LAVORO FLUSSI",
+  "oggetto": "Legittimità della revoca del nulla osta all'ingresso per lavoro subordinato (decreto flussi) fondata su asseverazione del professionista, insoluti contributivi e insufficienza reddituale del datore di lavoro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3399
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Lombardia -7-02-2025 Flussi durata max procedimento contratto soggiorno 180 gg da richiesta lavoratore OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Lombardia -7-02-2025 Flussi durata max procedimento contratto soggiorno 180 gg da richiesta lavoratore OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-02-06",
+  "ente": "Tribunale Amministrativo Regionale per la Lombardia",
+  "numero": "416/2025",
+  "titolo": "TAR Lombardia -7-02-2025 Flussi durata max procedimento contratto soggiorno 180 gg da richiesta lavoratore",
+  "oggetto": "Termine di conclusione del procedimento amministrativo per la sottoscrizione del contratto di soggiorno",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3528
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Milano 10.10.24 Cautelare Sospensiva rigetto kit pds Flussi senza datore ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Milano 10.10.24 Cautelare Sospensiva rigetto kit pds Flussi senza datore ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale_amministrativo",
+  "data": "2024-10-10",
+  "ente": "TAR Lombardia - Milano",
+  "numero": "01144/2024",
+  "titolo": "TAR Milano 10.10.24 Cautelare Sospensiva rigetto kit pds Flussi senza datore ok",
+  "oggetto": "Rilascio del permesso per attesa occupazione al lavoratore entrato da flussi a seguito di rinuncia del datore all'assunzione",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3102
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Milano 20.2.25-conversione stagionale fuori flussi con effetto retroattivo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Milano 20.2.25-conversione stagionale fuori flussi con effetto retroattivo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-02-19",
+  "ente": "Tribunale Amministrativo Regionale per la Lombardia",
+  "numero": "188/2025",
+  "titolo": "TAR Milano 20.2.25-conversione stagionale fuori flussi con effetto retroattivo",
+  "oggetto": "Legittimità del diniego di conversione del permesso di soggiorno stagionale in permesso per lavoro subordinato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2768
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Napoli 27.4.2026 n. 2652 - annullamento revoca, buona fede del lavoratore, nuovo rapporto di lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Napoli 27.4.2026 n. 2652 - annullamento revoca, buona fede del lavoratore, nuovo rapporto di lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-04-27",
+  "ente": "TAR Campania",
+  "numero": "2652/2026 (RG 4106/2025)",
+  "titolo": "TAR Napoli 27.4.2026 n. 2652 - annullamento revoca, buona fede del lavoratore, nuovo rapporto di lavoro",
+  "oggetto": "Annullamento della revoca del nulla osta al lavoro subordinato per buona fede del lavoratore straniero che, in costanza di nulla osta efficace, è stato assunto da altro datore di lavoro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3003
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Napoli 27.4.2026 n. 2653 - annullamento revoca nulla osta, mancata comunicazione preavviso di rigetto, mancata istruttoria, nuovo lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Napoli 27.4.2026 n. 2653 - annullamento revoca nulla osta, mancata comunicazione preavviso di rigetto, mancata istruttoria, nuovo lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-04-27",
+  "ente": "TAR Campania",
+  "numero": "2653/2026 (RG 4110/2025)",
+  "titolo": "TAR Napoli 27.4.2026 n. 2653 - annullamento revoca nulla osta, mancata comunicazione preavviso di rigetto, mancata istruttoria, nuovo lavoro",
+  "oggetto": "Annullamento della revoca del nulla osta al lavoro subordinato per difetto di partecipazione (preavviso non comunicato al difensore) e per buona fede del lavoratore assunto da altro datore",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3165
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Piemonete conversione cure mediche _lavoro presentato prima di piantedosi II Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Piemonete conversione cure mediche _lavoro presentato prima di piantedosi II Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-04-29",
+  "ente": "TAR Piemonte - Sezione Prima",
+  "numero": "1821/2024",
+  "titolo": "TAR Piemonete conversione cure mediche lavoro presentato prima di piantedosi II",
+  "oggetto": "Convertibilita del permesso di soggiorno per cure mediche in permesso per lavoro nel regime transitorio del D.L. 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4390
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Piemonte 9.3.23 richima C.Giust. Lungo Sogg. risorse anche se disoccupato se ha guadagnato e prognosi positiva OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Piemonte 9.3.23 richima C.Giust. Lungo Sogg. risorse anche se disoccupato se ha guadagnato e prognosi positiva OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2023-03-09",
+  "ente": "Tribunale Amministrativo Regionale per il Piemonte",
+  "numero": "668/2022",
+  "titolo": "TAR Piemonte 9.3.23 richima C.Giust. Lungo Sogg. risorse anche se disoccupato se ha guadagnato e prognosi positiva OK",
+  "oggetto": "Requisiti per il rilascio del permesso UE per soggiornanti di lungo periodo e interpretazione del requisito reddituale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4944
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Veneto 165_2026 FLUSSI no attesa occupazione senza contratto soggiorno ma annullamento per nuovo lavoro sopravvenuto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Veneto 165_2026 FLUSSI no attesa occupazione senza contratto soggiorno ma annullamento per nuovo lavoro sopravvenuto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-01-21",
+  "ente": "TAR Veneto",
+  "numero": "00165/2026 REG.PROV.COLL. (R.G. 02424/2025)",
+  "titolo": "TAR Veneto 21.1.26 FLUSSI SENZA DATORE si PDS attesa occupa. NO colpa e altro lavoro circolare 2007 OK",
+  "oggetto": "Legittimità della revoca del nulla osta al lavoro subordinato (decreto flussi) quando il datore di lavoro non perfeziona il contratto di soggiorno e il lavoratore (incolpevole) reperisce nuova occupazione - rapporto tra revoca, permesso per attesa occupazione e sopravvenienza fattuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6434
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Veneto silenzio conferma nulla osta (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Veneto silenzio conferma nulla osta (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-04-24",
+  "ente": "TAR Veneto",
+  "numero": "911/2026 (RG 345/2026)",
+  "titolo": "TAR Veneto silenzio conferma nulla osta (1)",
+  "oggetto": "Illegittimità del silenzio-inadempimento serbato dallo Sportello Unico per l'Immigrazione nel procedimento di conferma del nulla osta al lavoro stagionale sospeso ex art. 3, comma 2, D.L. 145/2024",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3077
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR piemonte maggio2020 REDDITI per PDS lungo sogg. non rileva irregolarita contributiva e si prognostico.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR piemonte maggio2020 REDDITI per PDS lungo sogg. non rileva irregolarita contributiva e si prognostico.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2020-04-29",
+  "ente": "Tribunale Amministrativo Regionale per il Piemonte",
+  "numero": "217/2020",
+  "titolo": "TAR piemonte maggio2020 REDDITI per PDS lungo sogg. non rileva irregolarita contributiva e si prognostico",
+  "oggetto": "Requisiti reddituali per il rilascio del permesso UE per soggiornanti di lungo periodo e valutazione di nuovi elementi sopraggiunti",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4059
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_154_2025.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_Genova_ord_154_2025.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-06-23",
+  "ente": "TAR Liguria",
+  "numero": "674/2025",
+  "titolo": "TAR Genova ord 154 2025",
+  "oggetto": "Possibilita' di rilascio del permesso di soggiorno per attesa occupazione a fronte della revoca del nulla osta per mancata formalizzazione del rapporto di lavoro da parte del datore",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2303
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_155_2025.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_Genova_ord_155_2025.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-06-23",
+  "ente": "TAR Liguria",
+  "numero": "677/2025",
+  "titolo": "TAR Genova ord 155 2025",
+  "oggetto": "Possibilita' di rilascio del permesso di soggiorno per attesa occupazione a fronte della revoca del nulla osta per mancata formalizzazione del rapporto di lavoro da parte del datore",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2549
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_161_2025.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_Genova_ord_161_2025.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-06-23",
+  "ente": "Tribunale Amministrativo Regionale per la Liguria",
+  "numero": "679/2025",
+  "titolo": "TAR Genova ord 161 2025",
+  "oggetto": "Legittimita della revoca del nulla osta al lavoro subordinato rilasciato nell'ambito dei decreti flussi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 1720
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_162_2025.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_Genova_ord_162_2025.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-06-23",
+  "ente": "Tribunale Amministrativo Regionale per la Liguria",
+  "numero": "675/2025",
+  "titolo": "TAR Genova ord 162 2025",
+  "oggetto": "Legittimita della revoca del nulla osta al lavoro subordinato rilasciato nell'ambito dei decreti flussi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 1841
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Liguria_ord_250_2025.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_Liguria_ord_250_2025.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-10-06",
+  "ente": "Tribunale Amministrativo Regionale per la Liguria",
+  "numero": "1067/2025",
+  "titolo": "TAR Liguria ord 250 2025",
+  "oggetto": "Applicabilita temporale del termine decadenziale di 7 giorni per la conferma della richiesta di nulla osta introdotto dal DL 145/2024",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2289
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Milano_15_2026.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_Milano_15_2026.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-01-07",
+  "ente": "Tribunale Amministrativo Regionale per la Lombardia",
+  "numero": "15/2026",
+  "titolo": "TAR Milano 15 2026",
+  "oggetto": "Possibilita di ottenere il permesso di soggiorno o il permesso per attesa occupazione in assenza di contratto di soggiorno con il datore di lavoro originario indicato nel nulla osta",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3388
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_NAPOLI_2911.2021 computo 5 anni PDS Lungo soggiornanti con PDS UMANITARI OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_NAPOLI_2911.2021 computo 5 anni PDS Lungo soggiornanti con PDS UMANITARI OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-03-09",
+  "ente": "Tribunale Amministrativo Regionale della Campania",
+  "numero": "3412/2020",
+  "titolo": "TAR NAPOLI 2911.2021 computo 5 anni PDS Lungo soggiornanti con PDS UMANITARI",
+  "oggetto": "Computabilità del periodo di soggiorno con permesso per motivi umanitari nel quinquennio per il rilascio del permesso UE per soggiornanti di lungo periodo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3340
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Napoli_5760_2025.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR_Napoli_5760_2025.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-07-30",
+  "ente": "Tribunale Amministrativo Regionale per la Campania",
+  "numero": "1251/2025",
+  "titolo": "TAR Napoli 5760 2025",
+  "oggetto": "Legittimita della revoca del nulla osta al lavoro in caso di inerzia della PA nella convocazione delle parti e di sopravvenuta indisponibilita del datore di lavoro originario",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3748
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar 19.2.25 Cautelare immediato rilascio visto per Paesi sospensi da flussi automatici.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar 19.2.25 Cautelare immediato rilascio visto per Paesi sospensi da flussi automatici.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-02-19",
+  "ente": "TAR Lazio",
+  "numero": "13553/2024 REG.RIC.",
+  "titolo": "Tar 19.2.25 Cautelare immediato rilascio visto per Paesi sospensi da flussi automatici",
+  "oggetto": "La sospensione dei nulla osta da flussi per Bangladesh, Pakistan e Sri Lanka non si estende al visto per cure mediche e cede alla conferma dello Sportello Unico",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   },
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 2991
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Bari ott.2021 SANTORIA Ateco NON tassativi ratio favorevole a emersione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Bari ott.2021 SANTORIA Ateco NON tassativi ratio favorevole a emersione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-02-26",
+  "ente": "Cassazione Civile Sezione I",
+  "numero": "17470/2024",
+  "titolo": "Tar Bari ott.2021 SANTORIA Ateco NON tassativi ratio favorevole a emersione",
+  "oggetto": "Criteri per il riconoscimento dello status di rifugiato per persecuzioni religiose legate all'ateismo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4524
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania 15.7.25 PDS attesa occupazione FLUSSI con nuovo datore mai firmato quello iniziale OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Campania 15.7.25 PDS attesa occupazione FLUSSI con nuovo datore mai firmato quello iniziale OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale_amministrativo",
+  "data": "2025-07-15",
+  "ente": "TAR Campania - Napoli",
+  "numero": "00809/2025",
+  "titolo": "Tar Campania 15.7.25 PDS attesa occupazione FLUSSI con nuovo datore mai firmato quello iniziale OK",
+  "oggetto": "La PA non può revocare il nulla osta addossando al lavoratore le conseguenze della propria inerzia pluriennale nella convocazione per il contratto di soggiorno",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3134
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania 5.5..25 FLUSSI PDS ATTESA OCCUPAIZONE PER RITARDO PA CON INDISPONIBILITA DATORE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Campania 5.5..25 FLUSSI PDS ATTESA OCCUPAIZONE PER RITARDO PA CON INDISPONIBILITA DATORE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-05-05",
+  "ente": "TAR Campania",
+  "numero": "04819/2024",
+  "titolo": "Tar Campania 5.5..25 FLUSSI PDS ATTESA OCCUPAIZONE PER RITARDO PA CON INDISPONIBILITA DATORE OK",
+  "oggetto": "Legittimità della revoca del nulla osta al lavoro subordinato a fronte di sopravvenuto inserimento lavorativo del cittadino straniero",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3256
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania 9.1.2024 PDS Attesa occup. Flussi STAGIONALI OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Campania 9.1.2024 PDS Attesa occup. Flussi STAGIONALI OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-01-09",
+  "ente": "TAR Campania",
+  "numero": "119/2024",
+  "titolo": "Tar Campania 9.1.2024 PDS Attesa occup. Flussi STAGIONALI OK",
+  "oggetto": "Diritto al rilascio del permesso di soggiorno per attesa occupazione in caso di indisponibilità sopravvenuta del datore di lavoro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4618
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania genn. 25 Cautelare FLUSSI Buona fede legittimo affidamento lavoratore che lavora OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Campania genn. 25 Cautelare FLUSSI Buona fede legittimo affidamento lavoratore che lavora OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale_amministrativo",
+  "data": "2025-01-23",
+  "ente": "TAR Campania - Napoli",
+  "numero": "06602/2024",
+  "titolo": "Tar Campania genn. 25 Cautelare FLUSSI Buona fede legittimo affidamento lavoratore che lavora",
+  "oggetto": "La buona fede del lavoratore e un nuovo rapporto di lavoro in corso ostano alla revoca del nulla osta da flussi",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2703
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Emilia 10.10.2024 Conversione PDS Stagionale ANCHE SE SCADUTO ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Emilia 10.10.2024 Conversione PDS Stagionale ANCHE SE SCADUTO ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-10-10",
+  "ente": "Tribunale Amministrativo Regionale per l'Emilia Romagna",
+  "numero": "305/2024",
+  "titolo": "Tar Emilia 10.10.2024 Conversione PDS Stagionale ANCHE SE SCADUTO ok",
+  "oggetto": "Sussistenza di termine perentorio per istanza di conversione permesso di soggiorno da lavoro stagionale a lavoro subordinato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4602
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lazio Latina 20.10.24 Sospende rigetto pds FLUSSI STAGIONALI con contratto senza nullaosta-1.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Lazio Latina 20.10.24 Sospende rigetto pds FLUSSI STAGIONALI con contratto senza nullaosta-1.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-10-16",
+  "ente": "Tribunale Amministrativo Regionale per il Lazio - Sezione Staccata di Latina",
+  "numero": "403/2024",
+  "titolo": "Tar Lazio Latina 20.10.24 Sospende rigetto pds FLUSSI STAGIONALI con contratto senza nullaosta-1",
+  "oggetto": "Legittimità del diniego di permesso di soggiorno per lavoro subordinato stagionale in presenza di contratto regolarmente sottoscritto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2274
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lazio marzo2020 SI Convertibilita da RELIGIOSO a Studio art.39 comma 5 BIS OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Lazio marzo2020 SI Convertibilita da RELIGIOSO a Studio art.39 comma 5 BIS OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2020-03-20",
+  "ente": "TAR Lazio",
+  "numero": "3501/2020",
+  "titolo": "Tar Lazio marzo2020 SI Convertibilita da RELIGIOSO a Studio art.39 comma 5 BIS OK OK",
+  "oggetto": "Obbligo di valutazione del permesso UE per soggiornanti di lungo periodo in caso di diniego di conversione del permesso per motivi religiosi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "motivi-religiosi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   },
+   {
+    "slug": "studio-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4821
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lazio nov.2024 Conversione stagionale anche dopo scadenza del PDS OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Lazio nov.2024 Conversione stagionale anche dopo scadenza del PDS OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-11-18",
+  "ente": "Tribunale Amministrativo Regionale per il Lazio",
+  "numero": "20424/2024",
+  "titolo": "Tar Lazio nov.2024 Conversione stagionale anche dopo scadenza del PDS OK",
+  "oggetto": "Conversione del permesso di soggiorno per lavoro stagionale in permesso per lavoro subordinato dopo la scadenza del titolo originario",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4294
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Liguria 8.5.24 Flussi errore Codice ATECO si cambio datore OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Liguria 8.5.24 Flussi errore Codice ATECO si cambio datore OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale_amministrativo",
+  "data": "2024-05-08",
+  "ente": "TAR Liguria - Genova",
+  "numero": "00500/2023",
+  "titolo": "Tar Liguria 8.5.24 Flussi errore Codice ATECO si cambio datore OK",
+  "oggetto": "Revoca del nulla osta per codice ATECO non ammesso e obbligo di concedere al lavoratore in buona fede un termine per reperire un nuovo datore",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4114
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lombardia 20.12.24 Conversione attesa sanatoria in Residenza elettiva OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Lombardia 20.12.24 Conversione attesa sanatoria in Residenza elettiva OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2023-12-20",
+  "ente": "Tribunale Amministrativo Regionale per la Lombardia",
+  "numero": "03130/2023",
+  "titolo": "Tar Lombardia 20.12.24 Conversione attesa sanatoria in Residenza elettiva OK",
+  "oggetto": "Necessità del visto specifico per rilascio permesso di soggiorno per residenza elettiva in caso di straniero già regolarmente soggiornante",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "residenza-elettiva",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4574
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lombardia dic. RESIDENZA ELETTIVA si senza visto ma regolare con richiesta sanatoria ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Lombardia dic. RESIDENZA ELETTIVA si senza visto ma regolare con richiesta sanatoria ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2023-12-20",
+  "ente": "Tribunale Amministrativo Regionale per la Lombardia",
+  "numero": "3130/2023",
+  "titolo": "Tar Lombardia dic. RESIDENZA ELETTIVA si senza visto ma regolare con richiesta sanatoria",
+  "oggetto": "Necessità del visto specifico per il rilascio del permesso di soggiorno per residenza elettiva a soggetto già regolarmente soggiornante",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "residenza-elettiva",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4293
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar MIlano febbr.2024 pds ATTESA OCCUPAIZONE SANATORIA rinunica del DATORE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar MIlano febbr.2024 pds ATTESA OCCUPAIZONE SANATORIA rinunica del DATORE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-02-28",
+  "ente": "Tribunale Amministrativo Regionale per la Lombardia",
+  "numero": "00140/2024",
+  "titolo": "Tar MIlano febbr.2024 pds ATTESA OCCUPAIZONE SANATORIA rinunica del DATORE",
+  "oggetto": "Diritto al permesso di soggiorno per attesa occupazione del lavoratore straniero in caso di rinuncia del datore di lavoro all'assunzione dopo regolare ingresso in Italia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3020
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Milano 15.12.25 FLUSSI sospensiva per SENZA DATORE motivata possibile pds attesa occupazione ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Milano 15.12.25 FLUSSI sospensiva per SENZA DATORE motivata possibile pds attesa occupazione ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale_amministrativo",
+  "data": "2025-12-11",
+  "ente": "TAR Lombardia - Milano",
+  "numero": "04316/2025",
+  "titolo": "Tar Milano 15.12.25 FLUSSI sospensiva per SENZA DATORE motivata possibile pds attesa occupazione ok",
+  "oggetto": "Sospensione cautelare della revoca del nulla osta per rinuncia del datore, stante il contrasto giurisprudenziale sul pds attesa occupazione nei flussi",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3867
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Milano2020 rinnovo pds lavoro per prospettive reddituali e legami art.5 c.5.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Milano2020 rinnovo pds lavoro per prospettive reddituali e legami art.5 c.5.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2020-02-28",
+  "ente": "TAR Lombardia - Milano, Sezione Terza",
+  "numero": "00387/2020 REG.PROV.COLL. - 00155/2020 REG.RIC.",
+  "titolo": "Tar Milano2020 rinnovo pds lavoro per prospettive reddituali e legami art.5 c.5",
+  "oggetto": "Rinnovo del permesso per lavoro con reddito sotto la soglia dell'assegno sociale e valutazione dei legami familiari ex art. 5 comma 5 TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3083
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Palermo maggio2020 NO revoca pds lungo soggiornante per reddito o alloggio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Palermo maggio2020 NO revoca pds lungo soggiornante per reddito o alloggio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2020-04-21",
+  "ente": "TAR Sicilia",
+  "numero": "00805/2020",
+  "titolo": "Tar Palermo maggio2020 NO revoca pds lungo soggiornante per reddito o alloggio",
+  "oggetto": "Limiti alla revoca del permesso UE per soggiornanti di lungo periodo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3618
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Sicilia 2017 Rinnovo pds AUTONOMO con irregolarita fiscale SI.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Sicilia 2017 Rinnovo pds AUTONOMO con irregolarita fiscale SI.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2017-09-20",
+  "ente": "TAR Sicilia - Palermo",
+  "numero": "N. 01895/2017 REG.RIC. - N. 01186/2017 REG.PROV.CAU.",
+  "titolo": "Tar Sicilia 2017 Rinnovo pds AUTONOMO con irregolarita fiscale SI",
+  "oggetto": "Rinnovo del permesso per lavoro autonomo in presenza di irregolarita fiscale e onere della Questura di accertare l'insufficienza reddituale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-autonomo-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2606
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Sicilia 2020 RESIDENZA ELETTIVA qualsiasi reddito anche proveniente ESTERO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Sicilia 2020 RESIDENZA ELETTIVA qualsiasi reddito anche proveniente ESTERO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2020-01-13",
+  "ente": "Tribunale Amministrativo Regionale per la Sicilia",
+  "numero": "236/2020",
+  "titolo": "Tar Sicilia 2020 RESIDENZA ELETTIVA qualsiasi reddito anche proveniente ESTERO",
+  "oggetto": "Normativa applicabile per il rilascio del permesso di soggiorno per residenza elettiva",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "residenza-elettiva",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3259
+ }
+]

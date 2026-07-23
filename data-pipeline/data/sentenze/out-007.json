@@ -1,0 +1,370 @@
+[
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma giugno 24 Effetto sospnsivo automat e 30 gg per Mancato rispetto accelerata da Manifesta diversa da POS.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 19.6.2024, n. 24672/2024 — sospensione automatica e termine ordinario per violazione della procedura accelerata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Massima tratta dalla sezione 'Principi e ragionamento giuridico'; nessun dato personale in chiaro nel testo."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma ordinanza 700 28.02.23 - accesso procedura figlia minore con cert. nascita OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 28.2.2023, n. 5346/2023 — diritto della figlia minore alla formalizzazione della domanda d'asilo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma ordinanza 700 respingimento slovenia accesso alla procedura art.10 c.3 e reingresso in Italia OK OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 18.1.2021, n. 56420/2020 — illegittimità dei respingimenti informali in Slovenia e diritto al reingresso in Italia",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib venezia 23.05.2019 art.700 obbligo accettare reiterata.md",
+  "titolo_pubblico": "Trib. Venezia, ordinanza 23.5.2019, n. 338/2019 — obbligo della Questura di formalizzare la domanda d'asilo reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib,Bologna sett.2024 Sospensiva automatica no accelerata violazione termine da MANIFESTAZIONE OK OK.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 6.9.2024 — sospensione automatica per violazione dei termini tra manifestazione e formalizzazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Numero di provvedimento non indicato nel documento."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bari genn.2024 700 Formalizzare domanda pericolo espulsione.md",
+  "titolo_pubblico": "Trib. Bari, ordinanza 20.11.2023, n. 11822/2023 — obbligo di formalizzare con urgenza la domanda d'asilo per pericolo di espulsione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bologna 21.11.24 No irreperibilita senza BUSTA RACCOMANDATA.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 21.11.2024, n. 14809-1/2024 — sospensione automatica per mancata prova della notifica nella procedura accelerata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bologna giugno 2023 NO MANIF.INFOND. se Commssione valuta la credibilita Ok.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 6.7.2023, n. 9017-1/2023 — esclusa la manifesta infondatezza se la Commissione valuta la credibilità nel merito",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bologna giugno 2023 RINVIO PREGIUDIZIALE CASSAZIONE su perentorieta termini e oneri PROCEDURA ACCELERATA.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 11.6.2023, n. 5751-1/2023 — rinvio pregiudiziale alla Cassazione su perentorietà dei termini della procedura accelerata",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente ('AYOUB ADNAN') riportato in chiaro nei metadati/frontmatter del documento (campo parties.appellant)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il nome del ricorrente compare in chiaro solo nel frontmatter YAML, non nel corpo della massima; va rimosso/anonimizzato in fase di redazione prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Firenze 22.3.2024 Procedure accelerate SENZA RITARDO formalizzazione è 10 gg + pec va bene OK OK OK.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 22.3.2024, n. 10437/2022 — validità della manifestazione di volontà d'asilo tramite PEC e decorrenza dei termini",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Mi 09.02.2023 SI accesso protezione diretta anche per DUBLINATI OK.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 9.2.2023, n. 39151/2022 — diritto dei richiedenti dublinati alla protezione speciale diretta al Questore",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Napoli 13.12.2024 Mancato rispetto termini domanda reiterata nella formalizzazione sospensiva automatica OK.md",
+  "titolo_pubblico": "Trib. Napoli, decreto 13.12.2024, n. 26620-1/2024 — sospensione automatica per mancato rispetto termini nella domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Napoli marzo 2024 MAX 16 GG tra manifestazione e c3 senno salta procedura accelerata oK OK.md",
+  "titolo_pubblico": "Trib. Napoli, decreto 25.3.2024, n. 6119-1/2024 — termine massimo di 16 giorni tra manifestazione di volontà e formalizzazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Napoli n. 9071 12.4.2023 sospensiva mancato rispetto termini reiterata decisione.md",
+  "titolo_pubblico": "Trib. Napoli, decreto 12.4.2023, n. 9071/2023 — sospensione per mancato rispetto termini nella domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30_2007 Allarga nozione CARICO OK OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 10.9.2025, n. R.G. 38117/2025 — visto d'ingresso urgente per ricongiungimento familiare con parenti palestinesi a Gaza",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30_2007 OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 9.9.2025, n. R.G. 37790-1/2025 — visto d'ingresso per ricongiungimento familiare con coniuge palestinese a Gaza",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 20.6.2024 Sospensiva automatica mancata proced. Accel.DOMANDA REITERATA OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 19.6.2024, n. 24693/2024 — sospensione automatica per mancato rispetto della procedura accelerata su domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente ('Gul Abdulkadir') riportato in chiaro nei metadati/frontmatter del documento (campo parties.appellant)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il nome del ricorrente compare in chiaro solo nel frontmatter YAML, non nel corpo della massima; va rimosso/anonimizzato in fase di redazione prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 22.7.25 SOSPENSIVA AUTOMATICA no ACCELERATA  domanda presentata in CPR ma NO CONVALIDA. OK OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 22.7.2025, n. 32514-1/2025 — sospensione automatica per mancata convalida del trattenimento in CPR Albania",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 57829-2022 Mancato rispetto TERMINI PROCED.ACCELERATE REITERATA SOSPENSIVA AUTOMATICA OK OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 10.10.2022, n. 57829/2022 — sospensione automatica per mancato rispetto del termine di 5 giorni su domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 7.9.22 700 Accesso procedura Asilo OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 7.9.2022, n. RG 45379/2022 — diritto di accesso alla procedura d'asilo per neomaggiorenne ex MSNA",
+  "contenuto": "massima",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "Data di nascita specifica del ricorrente (05.04.2004) indicata nei metadati, combinata con la nazionalità tunisina"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Caso limite: data di nascita esatta + nazionalità nei metadati, nessun nome. Corpo della massima privo di dati personali."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma PDF nov.2018 Decreto 700 formalizzazione no impedimento domicilio e DNA criptato.md",
+  "titolo_pubblico": "Trib. Roma, decreto 21.11.2018, n. RG 72238/2018 — illegittimità del rifiuto di formalizzazione per domicilio inadeguato e richiesta di test del DNA",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma marzo2019 art.700 obbligo di formalizzare domanda asilo questura roma.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 26.2.2019, n. R.G. 29724/2018 — obbligo della Questura di formalizzare la domanda d'asilo ex art. 700 c.p.c.",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Salerno 24.10.25 DEDADE ACCELERATA x ritardo notifica decisione OK OK.md",
+  "titolo_pubblico": "Trib. Salerno, decreto 24.10.2025, n. R.G. 7178-1/2025 — sospensione automatica per ritardo nella notifica della decisione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Torino 5.02.2025 NO Irreperibilita solo da VESTANET senza raccomandata o senza PEC a COmmissione.md",
+  "titolo_pubblico": "Trib. Torino, decreto 5.2.2025, n. R.G. 4656/2023 — insufficienza della videata Vestanet a provare la notifica e riconoscimento per vittima di tratta",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Torino marzo 2023 in reclamo conferma diritto formalizzaizone domanda asilo.md",
+  "titolo_pubblico": "Trib. Torino, ordinanza 1.3.2023, n. RG 599/2023 — conferma in reclamo dell'obbligo di formalizzare la domanda entro termine ragionevole",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Torino si formalizzaz. autonoma a 18 anni anche durante ricorso con madre.md",
+  "titolo_pubblico": "Trib. Torino, ordinanza 13.1.2023, n. RG 23213/2021 — diritto del figlio neomaggiorenne a domanda autonoma di protezione internazionale",
+  "contenuto": "massima",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "Data di nascita specifica del ricorrente (19.05.2002) indicata nei metadati, combinata con la nazionalità armena"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Caso limite: data di nascita esatta + nazionalità nei metadati, nessun nome. Corpo della massima privo di dati personali."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Trento febbr.24 NO MANIFESTA INFONDATEZZA SE SOLLEVI QUESTIONE ATTINENTE OK OK OK.md",
+  "titolo_pubblico": "Trib. Trento, decreto 9.2.2024 — esclusa la manifesta infondatezza se il richiedente solleva questioni attinenti alla protezione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Numero di ruolo non indicato nel documento ('R.G. /2024')."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Venezia 21.02.2024 Anticipo per accesso procedura asilo per periculum in re ipsa OK.md",
+  "titolo_pubblico": "Trib. Venezia, ordinanza 21.2.2024, n. RG 1811/2024 — anticipo della formalizzazione della domanda per ritardo di 8 mesi della Questura",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna 11.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK OK.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 10.5.2024, n. R.G. 6420-1/2024 — sospensione automatica per superamento del termine 3+10 giorni di formalizzazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna 2023 GAttuso rinvio PREGIUDIZIALE Cass. per effetto mancato rispetto termini in proced.accellerata.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 11.6.2023, n. 5751-1/2023 — rinvio pregiudiziale alla Cassazione sul mancato rispetto dei termini della procedura accelerata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Stesso procedimento (R.G. 5751-1/2023) della massima 'kb:...RINVIO PREGIUDIZIALE CASSAZIONE su perentorieta termini e oneri...md' in questo stesso manifest, tratta però da un file diverso della KB; in questo file il ricorrente è indicato genericamente ('Richiedente'), senza nome in chiaro."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna 4.4.25 NO EFFETTI PROCEDURA ACCELERATA con RITARDO FORMALIZZAZIONE OK OK.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 4.4.2025, n. R.G. 3905-1/2025 — mancata giustificazione del ritardo di formalizzazione e ripristino della sospensione automatica",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna marzo 2025 PROCEDURE ACCELERATE NO EFFETTI se manca in motivazione tempi proced. OK.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 28.3.2025, n. R.G. 3234-1/2025 — obbligo di indicare in motivazione tutte le date della procedura accelerata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna ott.2023 No Manifesta infondatezza se giudizio credibilita e Paese origine sicura sollevato GRAVI MOTIVI OK.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 13.10.2023, n. R.G. 12732-1/2023 — sospensione per manifesta infondatezza quando il richiedente da Paese sicuro invoca gravi motivi",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Catania marzo2022 Sospensiva 35 bis per TUNISIA situazione politica.md",
+  "titolo_pubblico": "Trib. Catania, decreto 11.2.2022, n. R.G. 359/2022 — sospensione per deterioramento della situazione politica in Tunisia",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 13.4.2023, n. 3964/2023 — diritto al permesso per richiesta asilo dopo sospensione del diniego di protezione speciale",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Firenze 20.9.23 Tunisia NO PAESE ORIGINE SICURA e Giud valuta POS nella sua complessita no categoria OK OK OK.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 20.9.2023, n. R.G. 9787/2023 — disapplicazione del decreto ministeriale che include la Tunisia tra i paesi sicuri",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Firenze 23.5.24 MINNITI DUBLINO dopo C.Giust.23.11.23 SEMPRE COMPETENZA PER SPECIALE OK OK OK.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 23.5.2024, n. R.G. 9183/2022 — competenza sulla protezione speciale dopo la sentenza CGUE sul sistema Dublino",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Firenze Agosto2021 effetto sospensivo AUTOMATICO per mancato rispetto termini procedura accelerata OK OK OK.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 26.7.2021, n. R.G. 8150/2021 — sospensione automatica ex lege per domanda reiterata dichiarata manifestamente infondata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Genova 20.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK OK.md",
+  "titolo_pubblico": "Trib. Genova, decreto 20.5.2024, n. R.G. 3124/2024 — decadenza dalla procedura accelerata per mancato rispetto del termine di formalizzazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Milano 15.10.24 REITERATA Effetto sospensivo AUTOMATICO No rispetto termine tra manifestazione e formalizzazione.md",
+  "titolo_pubblico": "Trib. Milano, decreto 14.10.2024, n. 38547-1/2023 — effetto sospensivo automatico per mancato rispetto dei termini su domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "biz:1002",
+    "oggetto": "Corresponsione dell'assegno per il nucleo familiare, nuovi livelli reddituali 1° luglio 2016 - 30 giugno 2017",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "92"
+  },
+  {
+    "id": "biz:1003",
+    "oggetto": "Ucraina, accordo di reciprocità in materia di conversione di patenti di guida",
+    "ente": "Ministero delle Infrastrutture e dei Trasporti",
+    "numero": "11645"
+  },
+  {
+    "id": "biz:1004",
+    "oggetto": "Legge 76/2016 sulle unioni civili, prime indicazioni sugli adempimenti anagrafici in materia di convivenze di fatto",
+    "ente": "Ministero dell'Interno",
+    "numero": "7"
+  },
+  {
+    "id": "biz:1005",
+    "oggetto": "Calendario delle festività ebraiche",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:1006",
+    "oggetto": "Assegno per il nucleo familiare, nuovi livelli reddituali per il periodo 1° luglio 2016 - 30 giugno 2017",
+    "ente": "INAIL",
+    "numero": "22"
+  },
+  {
+    "id": "biz:1007",
+    "oggetto": "Protocollo d'intesa Ministero dell'Interno-Confindustria sui procedimenti dello Sportello Unico per l'Immigrazione, ingresso lavoratori altamente qualificati e Carta blu UE",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:1008",
+    "oggetto": "Entrata in vigore dell'accordo Italia-Russia sul riconoscimento reciproco dei titoli di studio",
+    "ente": "Ministero degli Affari Esteri",
+    "numero": ""
+  },
+  {
+    "id": "biz:1009",
+    "oggetto": "Procedimenti degli Sportelli Unici per l'Immigrazione, documentazione per l'ingresso fuori quota ex artt. 27 e 27-quater d.lgs. 286/98",
+    "ente": "Ministero dell'Interno e Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "3303"
+  },
+  {
+    "id": "biz:1010",
+    "oggetto": "Firma e applicazione provvisoria dell'accordo di esenzione da visto per soggiorni brevi UE-Perù",
+    "ente": "Ministero dell'Interno",
+    "numero": "3261"
+  },
+  {
+    "id": "biz:1011",
+    "oggetto": "Tempi di accoglienza all'interno dello SPRAR",
+    "ente": "Ministero dell'Interno",
+    "numero": "DDCmb/n.3371vp/16"
+  },
+  {
+    "id": "biz:1012",
+    "oggetto": "Quesito su lavoratori richiedenti protezione internazionale ed asilo politico",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "14751"
+  },
+  {
+    "id": "biz:1013",
+    "oggetto": "Legge 76/2016 sulle unioni civili, disposizioni transitorie per la tenuta dei registri dello stato civile",
+    "ente": "Ministero dell'Interno",
+    "numero": "15"
+  },
+  {
+    "id": "biz:1014",
+    "oggetto": "Legge 76/2016 sulle unioni civili, indicazioni operative per il rilascio del nulla osta al ricongiungimento familiare",
+    "ente": "Ministero dell'Interno",
+    "numero": "3511"
+  },
+  {
+    "id": "biz:1015",
+    "oggetto": "Contributo una tantum per bambini nati nel 2014 in famiglie a basso reddito, carta acquisti",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "3407"
+  },
+  {
+    "id": "biz:1016",
+    "oggetto": "Nigeria, certificazione di nascita, problematiche",
+    "ente": "Ministero dell'Interno",
+    "numero": "14"
+  },
+  {
+    "id": "biz:1017",
+    "oggetto": "Attivazione di una help line telefonica per minori migranti da parte di Save the Children Italia",
+    "ente": "Ministero dell'Interno",
+    "numero": "3523"
+  },
+  {
+    "id": "biz:1018",
+    "oggetto": "Lituania, rilascio certificati di stato civile ai cittadini lituani",
+    "ente": "Ministero dell'Interno",
+    "numero": "16"
+  },
+  {
+    "id": "biz:1019",
+    "oggetto": "Contributo a carico dello straniero per il rilascio e il rinnovo del permesso di soggiorno, sospensione cautelare del decreto di annullamento",
+    "ente": "Ministero dell'Interno",
+    "numero": "38650"
+  },
+  {
+    "id": "biz:1020",
+    "oggetto": "Rinnovo del permesso di soggiorno per attesa occupazione ex art. 22, comma 11, d.lgs. 286/98",
+    "ente": "Ministero dell'Interno",
+    "numero": "4084"
+  },
+  {
+    "id": "biz:1021",
+    "oggetto": "Rinnovo del permesso di soggiorno per attesa occupazione ex art. 22, comma 11, d.lgs. 286/98",
+    "ente": "Ministero dell'Interno",
+    "numero": "40579"
+  },
+  {
+    "id": "biz:1022",
+    "oggetto": "Convenzione Italia-Jugoslavia in materia di assicurazioni sociali, chiarimenti sulle prestazioni pensionistiche",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "3726"
+  },
+  {
+    "id": "biz:1023",
+    "oggetto": "Sentenza del Consiglio di Stato di conferma dell'annullamento del D.M. 6.10.2011 sul contributo per il permesso di soggiorno",
+    "ente": "Ministero dell'Interno",
+    "numero": "43699"
+  },
+  {
+    "id": "biz:1024",
+    "oggetto": "Regole per l'avvio di un sistema di ripartizione graduale e sostenibile dei richiedenti asilo e rifugiati attraverso lo SPRAR",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:1025",
+    "oggetto": "Richiedenti protezione internazionale nei centri di accoglienza temporanea, iscrizione anagrafica e rilascio carta d'identità",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:1026",
+    "oggetto": "Revoca del permesso di soggiorno per richiesta asilo in caso di rigetto dell'istanza di protezione internazionale, chiarimenti operativi",
+    "ente": "Ministero dell'Interno",
+    "numero": "31404"
+  },
+  {
+    "id": "biz:1027",
+    "oggetto": "Attuazione della direttiva 2014/36/UE sulle condizioni di ingresso e soggiorno dei lavoratori stagionali di Paesi terzi",
+    "ente": "Ministero dell'Interno",
+    "numero": "4725"
+  },
+  {
+    "id": "biz:1028",
+    "oggetto": "Sentenza del Consiglio di Stato n. 4487/2016, richieste di rimborso del contributo versato per il permesso di soggiorno",
+    "ente": "Ministero dell'Interno",
+    "numero": "43896"
+  },
+  {
+    "id": "biz:1029",
+    "oggetto": "Assegno di natalità, ulteriori istruzioni sui titoli di soggiorno utili per ottenerlo",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "214"
+  },
+  {
+    "id": "biz:1030",
+    "oggetto": "Documenti di identità personale ed autenticazione di fotografie",
+    "ente": "Ministero dell'Interno",
+    "numero": "3"
+  },
+  {
+    "id": "biz:1031",
+    "oggetto": "Fotografie da apporre sulla patente di guida",
+    "ente": "Ministero delle Infrastrutture e dei Trasporti",
+    "numero": "23176"
+  },
+  {
+    "id": "biz:1032",
+    "oggetto": "Attuazione della direttiva 2014/36/UE sulle condizioni di ingresso e soggiorno dei lavoratori stagionali di Paesi terzi",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "37"
+  },
+  {
+    "id": "biz:1033",
+    "oggetto": "Attività di rintraccio dei cittadini stranieri irregolari sul territorio nazionale ai fini del rimpatrio",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:1034",
+    "oggetto": "Iscrizioni alle scuole dell'infanzia e alle scuole di ogni ordine e grado per l'anno scolastico 2017/2018",
+    "ente": "Ministero dell'Istruzione, dell'Università e della Ricerca",
+    "numero": "10"
+  },
+  {
+    "id": "biz:1035",
+    "oggetto": "Importo dei contributi dovuti per l'anno 2017 per i lavoratori domestici",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "13"
+  },
+  {
+    "id": "biz:1036",
+    "oggetto": "Programmazione transitoria dei flussi di ingresso dei lavoratori non comunitari per l'anno 2016",
+    "ente": "Ministero dell'Interno",
+    "numero": "5146"
+  },
+  {
+    "id": "biz:1037",
+    "oggetto": "Attuazione della direttiva 2014/66/UE sulle condizioni di ingresso e soggiorno per trasferimenti intra-societari",
+    "ente": "Ministero dell'Interno e Ministero del Lavoro e delle Politiche Sociali",
+    "numero": ""
+  },
+  {
+    "id": "biz:1038",
+    "oggetto": "Programmazione transitoria dei flussi di ingresso dei lavoratori non comunitari per l'anno 2017",
+    "ente": "Ministero dell'Interno e Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "943"
+  },
+  {
+    "id": "biz:1039",
+    "oggetto": "Procedure per l'ingresso, il soggiorno e l'immatricolazione ai corsi di formazione superiore in Italia per l'anno accademico 2017-2018",
+    "ente": "Ministero dell'Istruzione",
+    "numero": ""
+  },
+  {
+    "id": "biz:1040",
+    "oggetto": "Attuazione della direttiva 2014/66/UE sulle condizioni di ingresso e soggiorno per trasferimenti intra-societari",
+    "ente": "Ministero dell'Interno e Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "517"
+  },
+  {
+    "id": "biz:1041",
+    "oggetto": "Premio di 800 euro per la nascita o l'adozione di un minore",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "39"
+  },
+  {
+    "id": "biz:1042",
+    "oggetto": "Incentivo Occupazione Giovani, indicazioni operative ed istruzioni contabili",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "40"
+  },
+  {
+    "id": "biz:1043",
+    "oggetto": "Incentivo occupazione SUD del Programma Operativo Nazionale, indicazioni operative ed istruzioni contabili",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "41"
+  },
+  {
+    "id": "biz:1044",
+    "oggetto": "Assegno per il nucleo familiare e assegno di maternità concessi dai Comuni, rivalutazione per l'anno 2017",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "55"
+  },
+  {
+    "id": "biz:1045",
+    "oggetto": "Premio di 800 euro per la nascita o l'adozione di un minore",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "61"
+  },
+  {
+    "id": "biz:1046",
+    "oggetto": "Stranieri richiedenti protezione internazionale, assistenza sanitaria nelle more del riconoscimento",
+    "ente": "Ministero della Salute",
+    "numero": "7404"
+  },
+  {
+    "id": "biz:1047",
+    "oggetto": "Stranieri richiedenti protezione internazionale, attribuzione del codice fiscale da parte di Questura o Polizia di frontiera con procedura telematica",
+    "ente": "Agenzia delle Entrate",
+    "numero": "8"
+  },
+  {
+    "id": "biz:1048",
+    "oggetto": "Attribuzione territoriale delle quote per la programmazione transitoria dei flussi di ingresso dei lavoratori non comunitari per l'anno 2017",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "6"
+  },
+  {
+    "id": "biz:1049",
+    "oggetto": "Legge 76/2016 sulle unioni civili, risvolti in materia di obbligo assicurativo per artigiani e commercianti",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "66"
+  },
+  {
+    "id": "biz:1050",
+    "oggetto": "Georgia, entrata in vigore dell'accordo per l'esenzione del visto d'ingresso per breve soggiorno in area Schengen",
+    "ente": "Ministero dell'Interno",
+    "numero": "1323"
+  },
+  {
+    "id": "biz:1051",
+    "oggetto": "Modifiche al regolamento CE 539/2001, esenzione dell'obbligo di visto d'ingresso per breve soggiorno per i cittadini della Georgia",
+    "ente": "Ministero degli Affari Esteri",
+    "numero": "MAE00490652017"
+  },
+  {
+    "id": "biz:1052",
+    "oggetto": "Ripartizione tra le Federazioni Sportive nazionali del numero di atleti stranieri non appartenenti all'Unione Europea, stagione 2016/2017",
+    "ente": "Ministero dell'Interno",
+    "numero": "1422"
+  },
+  {
+    "id": "biz:1053",
+    "oggetto": "Permesso di soggiorno per minore età, esclusione dell'obbligo di esibizione del passaporto se non disponibile",
+    "ente": "Ministero dell'Interno",
+    "numero": "10337"
+  },
+  {
+    "id": "biz:1054",
+    "oggetto": "Legge 76/2016 sulle unioni civili, adeguamento delle disposizioni sull'ordinamento dello stato civile",
+    "ente": "Ministero dell'Interno",
+    "numero": "3"
+  },
+  {
+    "id": "biz:1055",
+    "oggetto": "Condizioni di ingresso e soggiorno dei cittadini di Paesi terzi per lavoratori stagionali e trasferimenti intra-societari, indicazioni operative",
+    "ente": "Ispettorato Nazionale del Lavoro",
+    "numero": "3464"
+  },
+  {
+    "id": "biz:1056",
+    "oggetto": "Premio di 800 euro per la nascita o l'adozione di un minore, rilascio dell'applicazione per la domanda telematica",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "78"
+  },
+  {
+    "id": "biz:1057",
+    "oggetto": "Riacquisto della cittadinanza italiana ai sensi dell'art. 13 della legge 91/1992",
+    "ente": "Ministero dell'Interno",
+    "numero": "3638"
+  },
+  {
+    "id": "biz:1058",
+    "oggetto": "Iscrizione anagrafica dei richiedenti protezione internazionale ex art. 8, D.L. 13/2017",
+    "ente": "Ministero dell'Interno",
+    "numero": "5"
+  },
+  {
+    "id": "biz:1059",
+    "oggetto": "Formulari plurilingue di stato civile rilasciati dalle rappresentanze diplomatico-consolari di Macedonia",
+    "ente": "Ministero dell'Interno",
+    "numero": "6"
+  },
+  {
+    "id": "biz:1060",
+    "oggetto": "Corresponsione dell'assegno per il nucleo familiare, nuovi livelli reddituali per il periodo 1° luglio 2017 - 30 giugno 2018",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "87"
+  },
+  {
+    "id": "biz:1061",
+    "oggetto": "Trasmissione delle comunicazioni sull'afflusso di cittadini stranieri sul territorio italiano",
+    "ente": "Ministero dell'Interno",
+    "numero": "5085"
+  },
+  {
+    "id": "biz:1062",
+    "oggetto": "Estensione dell'Accordo SEE alla Repubblica di Croazia",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "95"
+  },
+  {
+    "id": "biz:1063",
+    "oggetto": "Nuovo importo per il rilascio e il rinnovo del permesso di soggiorno",
+    "ente": "Ministero dell'Interno",
+    "numero": "18780"
+  },
+  {
+    "id": "biz:1064",
+    "oggetto": "D.L. 13/2017 sull'accelerazione dei procedimenti in materia di protezione internazionale, indicazioni operative per il nulla osta al ricongiungimento familiare",
+    "ente": "Ministero dell'Interno",
+    "numero": "2805"
+  },
+  {
+    "id": "biz:1065",
+    "oggetto": "Richiedenti protezione internazionale, utilizzo del codice fiscale numerico nelle denunce individuali Uniemens",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "3151"
+  },
+  {
+    "id": "biz:1066",
+    "oggetto": "Disposizioni operative su quattro vaccinazioni raccomandate per i minori, inclusi i minori stranieri non accompagnati",
+    "ente": "Ministero della Salute",
+    "numero": "25146"
+  },
+  {
+    "id": "biz:1067",
+    "oggetto": "Anno scolastico 2017-2018, disposizioni operative su quattro vaccinazioni raccomandate per i minori, inclusi i minori stranieri non accompagnati",
+    "ente": "Ministero della Salute",
+    "numero": "25233"
+  },
+  {
+    "id": "biz:1068",
+    "oggetto": "Disposizioni operative sul D.L. 73/2017 su quattro vaccinazioni raccomandate per i minori, inclusi i minori stranieri non accompagnati",
+    "ente": "Ministero della Salute",
+    "numero": "26382"
+  },
+  {
+    "id": "biz:1069",
+    "oggetto": "Rifugiati, esenzione ticket sanitario, condizioni di non occupazione ex art. 19, comma 7, d.lgs. 150/2015",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "5090"
+  },
+  {
+    "id": "biz:1070",
+    "oggetto": "Sistema di accoglienza dei richiedenti asilo e rifugiati, procedure di ammissione al finanziamento e inserimento nella rete SPRAR",
+    "ente": "Ministero dell'Interno",
+    "numero": "123548"
+  },
+  {
+    "id": "biz:1071",
+    "oggetto": "Condizioni di ingresso e soggiorno per trasferimenti intra-societari ex d.lgs. 253/2016, risposte a quesiti",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "3161"
+  },
+  {
+    "id": "biz:1072",
+    "oggetto": "Cittadino straniero UE o extracomunitario, patente di guida al seguito, contestazione artt. 180 C.d.S.",
+    "ente": "Ministero dell'Interno",
+    "numero": "300/A/8581/17/106/15"
+  },
+  {
+    "id": "biz:1073",
+    "oggetto": "D.Lgs. 147/2017, disposizioni per l'introduzione di una misura nazionale di contrasto alla povertà",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "172"
+  },
+  {
+    "id": "biz:1074",
+    "oggetto": "Programmazione transitoria dei flussi di ingresso dei lavoratori non comunitari per l'anno 2018",
+    "ente": "Ministero dell'Interno e Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "169"
+  },
+  {
+    "id": "biz:1075",
+    "oggetto": "Test di conoscenza della lingua italiana, protocolli d'intesa con i Comuni, implementazione dei procedimenti",
+    "ente": "Ministero dell'Interno",
+    "numero": "120"
+  },
+  {
+    "id": "biz:1076",
+    "oggetto": "Attribuzione territoriale delle quote per la programmazione transitoria dei flussi di ingresso dei lavoratori non comunitari per l'anno 2018",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "463"
+  },
+  {
+    "id": "biz:1077",
+    "oggetto": "Attribuzione territoriale delle quote per la programmazione transitoria dei flussi di ingresso dei lavoratori non comunitari per l'anno 2018",
+    "ente": "Ministero dell'Interno",
+    "numero": "502"
+  },
+  {
+    "id": "biz:1078",
+    "oggetto": "Premio di 800 euro per la nascita o l'adozione di un minore, estensione a tutte le future madri regolarmente presenti in Italia",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "661"
+  },
+  {
+    "id": "biz:1079",
+    "oggetto": "Assegno per il nucleo familiare e assegno di maternità concessi dai Comuni, rivalutazione per l'anno 2018",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "35"
+  },
+  {
+    "id": "biz:1080",
+    "oggetto": "Minori stranieri non accompagnati, istituzione presso i Tribunali per i minorenni del registro delle tutele",
+    "ente": "Ministero di Grazia e Giustizia",
+    "numero": "40356"
+  },
+  {
+    "id": "biz:1081",
+    "oggetto": "Procedure per l'ingresso, il soggiorno e l'immatricolazione degli studenti richiedenti visto per l'anno accademico 2018-2019",
+    "ente": "Ministero dell'Istruzione, dell'Università e della Ricerca",
+    "numero": ""
+  },
+  {
+    "id": "biz:1082",
+    "oggetto": "Tesseramento minori stranieri, applicazione della legge di bilancio 2018",
+    "ente": "FIGC - Federazione Italiana Giuoco Calcio",
+    "numero": "16219/SS"
+  },
+  {
+    "id": "biz:1083",
+    "oggetto": "Disciplina degli ingressi e permessi di soggiorno degli sportivi non appartenenti alla UE",
+    "ente": "CONI",
+    "numero": "10244"
+  },
+  {
+    "id": "biz:1084",
+    "oggetto": "Premio di 800 euro per la nascita o l'adozione di un minore",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "39"
+  },
+  {
+    "id": "biz:1085",
+    "oggetto": "D.Lgs. 147/2017 sulla misura nazionale di contrasto alla povertà, modifiche introdotte dal reddito di inclusione",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "57"
+  },
+  {
+    "id": "biz:1086",
+    "oggetto": "Art. 26-bis del Testo Unico Immigrazione, ingresso e soggiorno per investitori",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:1087",
+    "oggetto": "Permesso di soggiorno per motivi familiari, svolgimento di attività lavorativa nelle more del rilascio",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "4079"
+  },
+  {
+    "id": "biz:1088",
+    "oggetto": "Richiesta di chiarimenti sui criteri di accesso al Reddito di Inclusione",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "5070"
+  },
+  {
+    "id": "biz:1089",
+    "oggetto": "Disciplina degli ingressi e permessi di soggiorno degli sportivi non appartenenti alla UE",
+    "ente": "CONI - Comitato Olimpico Nazionale Italiano",
+    "numero": "10244/15"
+  },
+  {
+    "id": "biz:1090",
+    "oggetto": "Cittadini extracomunitari richiedenti lo status di rifugiato, iscrizione al CPI, stato di disoccupazione e accesso alle politiche attive del lavoro",
+    "ente": "ANPAL - Agenzia Nazionale Politiche Attive del Lavoro",
+    "numero": ""
+  },
+  {
+    "id": "biz:1091",
+    "oggetto": "Corresponsione dell'assegno per il nucleo familiare, nuovi livelli reddituali per il periodo 1° luglio 2018 - 30 giugno 2019",
+    "ente": "INPS - Istituto Nazionale Previdenza Sociale",
+    "numero": "68"
+  },
+  {
+    "id": "biz:1092",
+    "oggetto": "Bolivia, entrata in vigore della Convenzione dell'Aja del 1961 sull'abolizione della legalizzazione degli atti pubblici stranieri",
+    "ente": "Ministero dell'Interno",
+    "numero": "11"
+  },
+  {
+    "id": "biz:1093",
+    "oggetto": "Marocco, Convenzione dell'Aja del 1961 sulla soppressione della legalizzazione degli atti pubblici stranieri",
+    "ente": "Ministero dell'Interno",
+    "numero": "10"
+  },
+  {
+    "id": "biz:1094",
+    "oggetto": "Il riconoscimento della protezione internazionale e la tutela umanitaria",
+    "ente": "Ministero dell'Interno",
+    "numero": "8819"
+  },
+  {
+    "id": "biz:1095",
+    "oggetto": "Cittadini non comunitari richiedenti e titolari di protezione internazionale, accesso ai servizi e alle misure di politica attiva del lavoro",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali e ANPAL",
+    "numero": "10569"
+  },
+  {
+    "id": "biz:1096",
+    "oggetto": "Notificazione degli atti delle Commissioni Territoriali per il riconoscimento della protezione internazionale e della Commissione Nazionale per il diritto di asilo",
+    "ente": "Ministero dell'Interno",
+    "numero": "6300"
+  },
+  {
+    "id": "biz:1097",
+    "oggetto": "Notificazione degli atti delle Commissioni Territoriali per il riconoscimento della protezione internazionale ex d.l. 23/2017 conv. l. 46/2017",
+    "ente": "Ministero dell'Interno",
+    "numero": "6389"
+  },
+  {
+    "id": "biz:1098",
+    "oggetto": "Occupazione arbitraria di immobili, indirizzi",
+    "ente": "Ministero dell'Interno",
+    "numero": "59445"
+  },
+  {
+    "id": "biz:1099",
+    "oggetto": "D.L. 113/2018, art. 13 sull'iscrizione anagrafica per i richiedenti protezione internazionale",
+    "ente": "Ministero dell'Interno",
+    "numero": "15"
+  },
+  {
+    "id": "biz:1100",
+    "oggetto": "D.L. 113/2018, modifiche in materia di cittadinanza, contributo di 250 euro",
+    "ente": "Ministero dell'Interno",
+    "numero": "7132"
+  },
+  {
+    "id": "biz:1101",
+    "oggetto": "Decreto immigrazione e sicurezza, D.L. 113/2018 recante disposizioni urgenti in materia di protezione internazionale e immigrazione",
+    "ente": "Ministero dell'Interno",
+    "numero": "83744"
+  }
+]

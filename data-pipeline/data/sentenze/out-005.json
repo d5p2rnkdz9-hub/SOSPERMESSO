@@ -1,0 +1,368 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.roma 8.3.24 Sospensiva RADICAMENTO 8 CEDU manifest.infondata post Piantedosi II ok ok ok.md",
+  "titolo_pubblico": "Trib. Roma, decreto 6.3.2024, n. 8473/2024 — sospensiva del diniego per radicamento lavorativo e sportivo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Massima con principi di diritto su sospensiva ex art. 35bis co. 4 e rapporto con proroga trattenimento; ricorrente indicato solo come 'anonimizzato'."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 22.11.2023 — permesso provvisorio per inespellibile richiedente asilo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Numero di procedimento non indicato nei metadati ma decisione chiaramente identificabile per data, organo e oggetto."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.torino febbr.24 giovane tunisino ASILO per maltrattametni durante minore eta OK.md",
+  "titolo_pubblico": "Trib. Torino, decreto 22.1.2024, n. 8899/2023 — status di rifugiato per maltrattamenti subiti da minore",
+  "contenuto": "massima",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "data di nascita (16.9.2000) e città di nascita (Sfax) del ricorrente, riportate nei metadati (parties.appellant)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Nessun nome, ma la combinazione di data e luogo di nascita nei metadati è un caso limite da valutare in redazione: consigliata rimozione o generalizzazione prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.venezia 2023 prot.speciale su art. 8 CEDU domanda aprile 2023.md",
+  "titolo_pubblico": "Trib. Venezia, sentenza 14.11.2023, n. 7410/2023 — protezione speciale per integrazione e vita familiare ex art. 8 CEDU",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[OMISSIS]'."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib_Firenze_29.6.23 Pakistan_Status Tratta_sfruttamento_lavorativo_AMBIENTE OK.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 29.6.2023, n. 6142/2019 — status di rifugiato per vittima pakistana di tratta e vulnerabilità climatica",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib_Min_trieste pds art.18 comma 6 con messa alla prova e comp. trib e PM.md",
+  "titolo_pubblico": "Trib. Min. Trieste, sentenza 20.9.2005 — permesso per protezione sociale a minore dopo messa alla prova",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Imputato minore indicato con 'XXXX'."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tribunale Firenze_17.luglio 24 TRATTA ASILO BANGLADESG INDEBITAMENTO STIGMA SOCIALE OK OK.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 17.7.2024, n. 9362/2022 — status di rifugiato per vittima bangladese di tratta e debt bondage",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "nome e cognome del ricorrente in chiaro nei metadati: 'MD MIAZI'"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Gate bloccante: il nome del ricorrente compare per esteso nel campo parties.appellant. Va rimosso/anonimizzato prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tribunale di Torino - STATUS RIFUGIATO BANGLADESH CON DEBITO QUASI INTERAMENTE SALDATO.md",
+  "titolo_pubblico": "Trib. Torino, decreto 23.2.2026, n. 11871/2024 — status di rifugiato per vittima bangladese di tratta con debito quasi saldato",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/accesso prot speciale senza passaporto.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 10.3.2022, n. 6261/2022 — accesso alla protezione speciale senza passaporto",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come '[OMISSIS]'."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/camerun 2026 prot sussidiaria vittima la moglie.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 6.5.2026, n. 7331/2024 — protezione sussidiaria per vittima camerunense di matrimonio forzato del coniuge",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/cass 2026 su manifestazione e normativa vigente.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 18.5.2026, n. 14851/2026 — rilevanza della manifestazione di volontà di asilo per la disciplina applicabile nel tempo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/decreto gambia.md",
+  "titolo_pubblico": "Trib. Napoli, decreto 11.1.2023, n. 964/2019 — status di rifugiato per ex talibé gambiano vittima di sfruttamento minorile",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/marabutto trib bologna dicembre 2018 umanitaria senegal.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 27.12.2018, n. 17890/2017 — protezione umanitaria per ex talibé senegalese vittima di sfruttamento",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/provvedimento 12.7.2019 prot. speciale el salvador prot. speciale parere contrario UNHCR.md",
+  "titolo_pubblico": "Comm. terr. Torino, provvedimento 12.7.2019, n. 2019-0123736 — esclusione dallo status di rifugiato e protezione speciale per ex membro di gang salvadoregno",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/sentenza sussidiaria no pasaporto.md",
+  "titolo_pubblico": "Trib. Napoli, ordinanza 27.2.2019, n. 35170/2018 — illegittimità della richiesta di passaporto per il rilascio della protezione sussidiaria",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/status rifugiato  ex minore talibé.md",
+  "titolo_pubblico": "Comm. terr. Napoli, decisione 23.1.2020 — status di rifugiato per ex talibé senegalese vittima di sfruttamento minorile",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/status rifugiato maltrattamenti.md",
+  "titolo_pubblico": "Comm. terr. Torino, decisione 12.12.2019, n. 216403/19 — status di rifugiato per minore guineano nato fuori dal matrimonio vittima di violenze",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/trib civile guinea neomaggiorenne paese di transito.md",
+  "titolo_pubblico": "Trib. Roma, decreto 13.4.2026, n. 41877/2024 — protezione sussidiaria per rischio etnico e tratta subita nel paese di transito",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/tribunale-modena-7-02-2020+1-- (1).md",
+  "titolo_pubblico": "Trib. Modena, decreto 7.2.2020, n. 463/2020 — iscrizione anagrafica della convivenza con familiare di cittadino UE",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parti indicate come 'dati omessi'."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Appello Roma giugno 2021 riscarmento danni per mancato accesso domanda di asilo v.foglio notizia incompleto.md",
+  "titolo_pubblico": "C. App. Roma, sentenza 1.6.2021, n. 1289/2020 — risarcimento per mancato accesso alla procedura di asilo dopo respingimento",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/C.Giust 58-2023 termini impugnazione ed effettivita diritto difesa ok.md",
+  "titolo_pubblico": "CGUE, ottava sezione, ordinanza 27.9.2023, C-58/23 — termine di 3 giorni per ricorrere e diritto di difesa effettivo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato con iniziali (Y.N.), ammesse."
+ },
+ {
+  "id": "kb:asilo_2_procedure/C.Giust 651-2019 termini impugnazione inammissibilità ed effettivita diritto difesa ok.md",
+  "titolo_pubblico": "CGUE, prima sezione, sentenza 9.9.2020, C-651/19 — compatibilità del termine di 10 giorni per il ricorso contro la domanda reiterata inammissibile",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato con iniziali (JP), ammesse."
+ },
+ {
+  "id": "kb:asilo_2_procedure/C.Giustizia giugno2020 Obbligo giudice Trasmettere Manifestazione Volonta Asilo per formalizzazione.md",
+  "titolo_pubblico": "CGUE, quarta sezione, sentenza 25.6.2020, C-36/20 PPU — obbligo del giudice di trasmettere la manifestazione di volontà di asilo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato con iniziali (VL), ammesse."
+ },
+ {
+  "id": "kb:asilo_2_procedure/CASS 33398_24-18.12.24 da RINVIO PREGIUDIZIALE POS disapplicazione del decreto ante legge POS OK.md",
+  "titolo_pubblico": "Cass. civ., sentenza 19.12.2024, n. 33398/2024 — sindacabilità giurisdizionale della designazione di paese di origine sicuro",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/CAss.aprile2020 art.35 bis riduzione a 15 gg per trattenuti e nei casi di effettiva procedura accelerata.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 25.3.2020, n. 7520/2020 — ambito del termine dimezzato di 15 giorni per la procedura accelerata",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "nome e cognome del ricorrente in chiaro nei metadati: 'Shafqat Zaheer Hussain'"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Gate bloccante: nome completo del ricorrente in chiaro nel campo parties.appellant. Va rimosso/anonimizzato prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_2_procedure/CGUE_14012021_322_19 accesso lavoro.md",
+  "titolo_pubblico": "CGUE, quarta sezione, sentenza 14.1.2021, C-322/19 e C-385/19 — diritto di accesso al lavoro per richiedenti in procedura Dublino",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrenti indicati con iniziali, ammesse."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass 2005 art 10 solo per accedere in italia.md",
+  "titolo_pubblico": "Cass. civ., sentenza 25.11.2005, n. 75028/2005 — contenuto del diritto di asilo costituzionale rispetto allo status di rifugiato",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass 2717-2022- nuovi elementi anche speciale in giudizio OK.md",
+  "titolo_pubblico": "Cass. civ., sez. lavoro, sentenza 28.1.2022, n. 2717/2022 — nuovi elementi e protezione speciale nella domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass 6374-2022- Sulla inammissibilita il Giudice deve decidere nel merito del diritto e non sulla ammissibilita OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 25.2.2022, n. 6374/2022 — obbligo di decidere nel merito del diritto e non solo sull'ammissibilità della domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 12444_2025 NO EFFETTI ACCELERATA manifesta infondatezza senza previo avviso di accelerata ok.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 11.5.2025, n. 12444/2025 — niente effetti della procedura accelerata senza previo avviso al richiedente",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 18311 del 2021 obbligo audizione del richiedente anche non richiesta come cooperazione istruttoria OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 25.6.2021, n. 18311/2021 — presupposti dell'audizione del richiedente come cooperazione istruttoria",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 2009 Libera forma domanda asilo obbligo di prenderla.md",
+  "titolo_pubblico": "Cass. civ., sentenza 27.10.2009 — obbligo di ricevere la domanda di asilo presentata in forma libera",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Numero e sezione non indicati nei metadati, ma decisione chiaramente identificabile da massime citate e oggetto."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 24573 2020. audizione vittime di tratta sempre necessario anche se mancano elementi di fondatezza. 24573 2020.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 5.11.2020, n. 11206/2019 — obbligo di audizione per indizi di tratta anche senza allegazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il titolo originale del file cita 'Cass. 24573/2020' ma il case_number nei metadati è 11206/2019: usato il dato dei metadati."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 32070-23 Informativa asilo allo sbarco EFFETTIVA e per TUTTI no clausole stile OK OK OK.md",
+  "titolo_pubblico": "Cass. civ., sentenza 20.11.2023, n. 32070/2023 — informativa effettiva sulla protezione internazionale per tutti gli stranieri negli hotspot",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 37275-2022 si REITERATA ANCHE SOLO PROTEZIONE SPECIALE OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 20.12.2022, n. 37275/2022 — ammissibilità della domanda reiterata fondata solo su protezione speciale",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 5.4.2024 invio Sez.Unite RESPINGIMENTO INDIRETTO E SPECIALE OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 23.4.2024, n. 10194/2020 — rinvio alle Sezioni Unite su clausola discrezionale Dublino e protezione speciale",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza interlocutoria di rimessione alle Sezioni Unite, non decide nel merito ma indica le questioni e le ragioni sottese."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 5797 2024 Trattenmento OBBGLIGO INFORMATIVA HOTSPOT DETTAGLIATO OK OK.md",
+  "titolo_pubblico": "Cass. civ., sentenza 5.3.2024, n. 5797/2024 — obbligo di informativa dettagliata sulla protezione internazionale negli hotspot",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza gemella della n. 32070/2023, stessi principi di diritto."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. SU 11399-24 29.4.24 Accelerate TERMINE PERENTORIO e Manifesta infodatezza non sospende solo con accelerate OK OK OK.md",
+  "titolo_pubblico": "Cass. SS.UU., sentenza 29.4.2024, n. 11399/2024 — perentorietà dei termini della procedura accelerata e sospensione automatica",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.11713-2025 DUBLINO E ART. 19 ANCHE PRIMO COMMA elementi anche da C3 e successivi atti ok ok.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 5.5.2025, n. 11713/2025 — clausola discrezionale Dublino e protezione nazionale valutata anche da elementi C3",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.15757 2025 NO convalida con rinvio TRATTENIMENTO mancata informativa da tempo in Italia ok ok.md",
+  "titolo_pubblico": "Cass. civ., sentenza 22.4.2025, n. 15757/2025 — mancata informativa sull'asilo come vizio della convalida del trattenimento",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ }
+]

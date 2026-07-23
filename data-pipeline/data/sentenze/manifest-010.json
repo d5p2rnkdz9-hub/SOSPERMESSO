@@ -1,0 +1,743 @@
+[
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/TAR Lazio 85_17 residenza fittizia_rinnovo pds (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/TAR Lazio 85_17 residenza fittizia_rinnovo pds (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2017-01-10",
+  "ente": "TAR Lazio - Roma",
+  "numero": "13550/2016 R.R. - 85/2017 R.Prov.Cau.",
+  "titolo": "TAR Lazio 85 17 residenza fittizia rinnovo pds (1)",
+  "oggetto": "Rinnovo permesso di soggiorno per soggetto senza fissa dimora con residenza elettiva presso associazione di volontariato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "residenza-elettiva",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2208
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tar Bologna cautelare marzo 2022 TITOLO di viaggio con SUSSIDIARIA no ostativi precedenti penali.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tar Bologna cautelare marzo 2022 TITOLO di viaggio con SUSSIDIARIA no ostativi precedenti penali.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2022-03-09",
+  "ente": "TAR Emilia-Romagna - Bologna",
+  "numero": "107/2022 R.R. - 128/2022 R.Prov.Cau.",
+  "titolo": "Tar Bologna cautelare marzo 2022 TITOLO di viaggio con SUSSIDIARIA no ostativi precedenti penali",
+  "oggetto": "Rilascio del documento di viaggio ex art. 24 D.Lgs. 251/2007 al titolare di protezione sussidiaria nonostante precedenti penali",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2525
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tar Palermo dic.2021 Titolo viaggio a sussidiaria per pericoli risultano da verbale commissione OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tar Palermo dic.2021 Titolo viaggio a sussidiaria per pericoli risultano da verbale commissione OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-12-06",
+  "ente": "TAR Sicilia - Palermo",
+  "numero": "REG.RIC. 1871/2021 - REG.PROV.COLL. 3382/2021",
+  "titolo": "Tar Palermo dic.2021 Titolo viaggio a sussidiaria per pericoli risultano da verbale commissione OK",
+  "oggetto": "Diritto al rilascio del titolo di viaggio per stranieri al titolare di protezione sussidiaria ex art. 24, comma 2, d.lgs. 251/2007",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3873
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tar marche 2021 sospensiva conversione asilo lavoro OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tar marche 2021 sospensiva conversione asilo lavoro OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-10-21",
+  "ente": "TAR Marche",
+  "numero": "REG.RIC. 449/2021 - REG.PROV.CAU. 314/2021",
+  "titolo": "Tar marche 2021 sospensiva conversione asilo lavoro",
+  "oggetto": "Conversione del permesso di soggiorno per asilo politico in permesso di soggiorno per lavoro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2478
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tr. Vicenza - ordinanza -iscrizione SSN familiari cittadino UE.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tr. Vicenza - ordinanza -iscrizione SSN familiari cittadino UE.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-09-01",
+  "ente": "Tribunale di Vicenza",
+  "numero": "1424/2019",
+  "titolo": "Tr. Vicenza - ordinanza -iscrizione SSN familiari cittadino UE",
+  "oggetto": "Diritto all'iscrizione obbligatoria e gratuita al SSN per familiare extracomunitario di cittadino italiano titolare di carta di soggiorno permanente ex D.Lgs. 30/2007",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4177
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tri. Cagliari2019 no passapo. rilascio UMANIT.art.9c.6 Cass.4890-19 OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tri. Cagliari2019 no passapo. rilascio UMANIT.art.9c.6 Cass.4890-19 OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-04-08",
+  "ente": "Tribunale di Cagliari",
+  "numero": "R.G. 9769/2018",
+  "titolo": "Tri. Cagliari2019 no passapo. rilascio UMANIT.art.9c.6 Cass.4890-19",
+  "oggetto": "Rilascio del permesso di soggiorno per motivi umanitari senza previa esibizione del passaporto ex art. 9, comma 6, D.P.R. 394/1999",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 1
+   },
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5823
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib CIvitavecchia aprile 2024 Assegno invalidita con PDS meno di un anno OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib CIvitavecchia aprile 2024 Assegno invalidita con PDS meno di un anno OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-18",
+  "ente": "Tribunale di Civitavecchia",
+  "numero": "R.G. 2371/2023",
+  "titolo": "Trib CIvitavecchia aprile 2024 Assegno invalidita con PDS meno di un anno",
+  "oggetto": "Diritto all'assegno mensile di invalidità civile per straniero con permesso di soggiorno di durata inferiore a un anno al momento della domanda — interpretazione costituzionalmente orientata dell'art. 41, comma 1, d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5318
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Catania ord 01-11-2019 RG 12686-2019 iscrizione anagrafica richiedente asilo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib Catania ord 01-11-2019 RG 12686-2019 iscrizione anagrafica richiedente asilo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-11-01",
+  "ente": "Tribunale di Catania",
+  "numero": "12686/2019",
+  "titolo": "Iscrizione Anagrafica richiedente asilo - Comune di Catania",
+  "oggetto": "Diritto del richiedente asilo all'iscrizione anagrafica dopo il D.L. 113/2018",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4943
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib NA_18.02.2024 iscrizione anagrafica cedolino_DOMANDA PROT. SPECIALE DIRETTA QUESTORE OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib NA_18.02.2024 iscrizione anagrafica cedolino_DOMANDA PROT. SPECIALE DIRETTA QUESTORE OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-18",
+  "ente": "Tribunale di Napoli",
+  "numero": "2071/2024",
+  "titolo": "Trib NA 18.02.2024 iscrizione anagrafica cedolino DOMANDA PROT. SPECIALE DIRETTA QUESTORE OK OK",
+  "oggetto": "Diritto all'iscrizione anagrafica del richiedente protezione speciale con domanda diretta al Questore in possesso del solo cedolino",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3901
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Roma apertura CC Albano 2020 richiedente asilo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib Roma apertura CC Albano 2020 richiedente asilo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-12-21",
+  "ente": "Tribunale ordinario di Roma",
+  "numero": "64733/2020",
+  "titolo": "Trib Roma apertura CC Albano 2020 richiedente asilo",
+  "oggetto": "Diritto del richiedente asilo all'apertura del conto corrente di base presso Poste Italiane con la sola ricevuta di formalizzazione della domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3875
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Roma nov. 2025 CORREZIONE DATI A COMMISSIONE E QUESTURA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib Roma nov. 2025 CORREZIONE DATI A COMMISSIONE E QUESTURA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-14",
+  "ente": "Tribunale di Roma",
+  "numero": "27079/2025",
+  "titolo": "Trib Roma nov. 2025 CORREZIONE DATI A COMMISSIONE E QUESTURA",
+  "oggetto": "Correzione delle generalita errate nel decreto di riconoscimento della protezione sussidiaria e nel permesso di soggiorno elettronico",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2383
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Spoleto sent 1giu23 assegno sociale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib Spoleto sent 1giu23 assegno sociale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-06-01",
+  "ente": "Tribunale civile di Spoleto",
+  "numero": "376/2021",
+  "titolo": "Trib Spoleto sent 1giu23 assegno sociale",
+  "oggetto": "Diritto all'assegno sociale ex art. 3 c. 6 L. 335/1995 per familiare extracomunitario di cittadino UE titolare di carta di soggiorno ex art. 10 D.Lgs. 30/2007",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3842
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib bologna 2023 iscrizione anagrafica e cedolino protezione speciale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib bologna 2023 iscrizione anagrafica e cedolino protezione speciale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-04-07",
+  "ente": "Tribunale di Bologna",
+  "numero": "4051/2023",
+  "titolo": "Trib bologna 2023 iscrizione anagrafica e cedolino protezione speciale",
+  "oggetto": "Diritto all'iscrizione anagrafica del richiedente protezione speciale sulla base della sola ricevuta di presentazione dell'istanza ex art. 19 D.Lgs 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4994
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Bologna 13.2.2023 RG 12960-2022 codice fiscale richiedente protezione speciale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Bologna 13.2.2023 RG 12960-2022 codice fiscale richiedente protezione speciale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-02-13",
+  "ente": "Tribunale di Bologna",
+  "numero": "12960/2022",
+  "titolo": "31. Trib. Bologna 13.2.2023 codice fiscale",
+  "oggetto": "Diritto del richiedente protezione speciale (istanza diretta al Questore ex art. 19 commi 1.1 e 1.2 TUI) ad ottenere l'attribuzione del codice fiscale e una ricevuta equiparabile al permesso di soggiorno per richiesta asilo, idonea a consentire iscrizione SSN, lavoro e accesso ai diritti del richied",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5811
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Bologna 15.3.2024 residenza richiedente con richiesta protezione speciale OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Bologna 15.3.2024 residenza richiedente con richiesta protezione speciale OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-15",
+  "ente": "Tribunale di Bologna",
+  "numero": "1924/2024",
+  "titolo": "Trib. Bologna 15.3.2024 residenza richiedente con richiesta protezione speciale",
+  "oggetto": "Diritto all'iscrizione anagrafica del richiedente protezione speciale con domanda diretta al Questore mediante applicazione analogica dell'art. 4 d.lgs. 142/2015",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 6062
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Brescia ord. 23.8.2016 Assegno maternita discriminazione cittadina marocchina OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Brescia ord. 23.8.2016 Assegno maternita discriminazione cittadina marocchina OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-08-23",
+  "ente": "Tribunale di Brescia",
+  "numero": "513/2016",
+  "titolo": "XXX-INPS-1-TRIB.-BRESCIA-ORD.-DEL-23.8.16-1",
+  "oggetto": "Carattere discriminatorio del diniego dell'assegno di maternita ex art. 74 d.lgs. 151/2001 a cittadina extracomunitaria titolare di permesso per motivi familiari ma non di permesso CE lungo soggiornanti",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 6256
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. FI 27.5.2019 per residenza MInistero no liticonsorzio necessario ma volontario.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. FI 27.5.2019 per residenza MInistero no liticonsorzio necessario ma volontario.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-05-27",
+  "ente": "Tribunale di Firenze",
+  "numero": "4571/2019",
+  "titolo": "Trib. FI 27.5.2019 per residenza MInistero no liticonsorzio necessario ma volontario",
+  "oggetto": "Insussistenza del litisconsorzio necessario del Ministero dell'Interno nelle controversie sull'iscrizione anagrafica dei richiedenti asilo e conseguente inammissibilita del reclamo proposto dal Ministero come litisconsorte pretermesso",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4816
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Firenze 23.5.2025 Assegno mensile assistenza con PDS cure mediche inferiore a un anno OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Firenze 23.5.2025 Assegno mensile assistenza con PDS cure mediche inferiore a un anno OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-05-23",
+  "ente": "Tribunale di Firenze",
+  "numero": "2195/2024",
+  "titolo": "assegno mensile assistenza e permesso inf 1 anno",
+  "oggetto": "Diritto all'assegno mensile di assistenza ex art. 13 l. 118/1971 per straniero titolare di permesso di soggiorno per cure mediche di durata inferiore a un anno ma rinnovato continuativamente per oltre 4 anni",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4009
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Monza 23.12.2023 RG 6993-2023 continuità anagrafica cancellazione irreperibilità.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Monza 23.12.2023 RG 6993-2023 continuità anagrafica cancellazione irreperibilità.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-12-23",
+  "ente": "Tribunale di Monza",
+  "numero": "6993/2023",
+  "titolo": "Trib. Monza 23.12.2023 RG 6993-2023 continuità anagrafica cancellazione irreperibilità",
+  "oggetto": "Illegittimità della cancellazione anagrafica per irreperibilità disposta senza ripetuti accertamenti e senza comunicazione di avvio del procedimento",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4265
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Napoli febb.2019 art. 700 sussidiaria no pasaport.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Napoli febb.2019 art. 700 sussidiaria no pasaport.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-02-27",
+  "ente": "Tribunale di Napoli",
+  "numero": "35170/2018",
+  "titolo": "Trib. Napoli febb.2019 art. 700 sussidiaria no pasaport",
+  "oggetto": "Rilascio del permesso di soggiorno per protezione sussidiaria senza passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2384
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Padova 575 2022 SI assegno sociale con residenza DI FATTO.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Padova 575 2022 SI assegno sociale con residenza DI FATTO.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-10-25",
+  "ente": "Tribunale di Padova",
+  "numero": "949/2022",
+  "titolo": "Trib. Padova 575 2022 SI assegno sociale con residenza DI FATTO",
+  "oggetto": "Diritto all'assegno sociale nonostante buco anagrafico per cancellazione per irreperibilità",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3131
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Palermo dic. 2017 si pds umanitario senza passapo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Palermo dic. 2017 si pds umanitario senza passapo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2017-12-21",
+  "ente": "Tribunale di Palermo",
+  "numero": "15122/2017",
+  "titolo": "Trib. Palermo dic. 2017 si pds umanitario senza passapo",
+  "oggetto": "Rilascio del permesso di soggiorno per motivi umanitari senza passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3657
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Roma 15.4.25 RIPRISTINO RESIDENZA BUCO CANCELLATO Bile ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Roma 15.4.25 RIPRISTINO RESIDENZA BUCO CANCELLATO Bile ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-04-15",
+  "ente": "Tribunale di Roma",
+  "numero": "16870/2024",
+  "titolo": "Trib. Roma 15.4.25 RIPRISTINO RESIDENZA BUCO CANCELLATO Bile ok",
+  "oggetto": "Ripristino dell'iscrizione anagrafica dopo cancellazione per irreperibilità mediante prova della dimora abituale effettiva",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3932
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Roma luglio 2025 ATTESTATO NOMINATIVO OK PER CONTO BASE POSTE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Roma luglio 2025 ATTESTATO NOMINATIVO OK PER CONTO BASE POSTE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-03-25",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "R.G. 1610/2025",
+  "titolo": "Trib. Roma luglio 2025 ATTESTATO NOMINATIVO OK PER CONTO BASE POSTE",
+  "oggetto": "Diritto del richiedente asilo all'apertura di un conto corrente di base presso Poste Italiane esibendo l'attestato nominativo (ricevuta ex art. 4, comma 3, d.lgs. 142/2015) munito di fotografia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3963
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Roma maggio2019 prima  iscrizione anagrafica con PDS senza passaporto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Roma maggio2019 prima  iscrizione anagrafica con PDS senza passaporto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-05-28",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "R.G. 21290/2019",
+  "titolo": "Trib. Roma maggio2019 prima iscrizione anagrafica con PDS senza passaporto",
+  "oggetto": "Diritto all'iscrizione anagrafica dello straniero titolare di permesso di soggiorno per motivi umanitari in assenza di passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5217
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Torino 10.12.2204 AUU Assegno unico con residenza di fatto OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib. Torino 10.12.2204 AUU Assegno unico con residenza di fatto OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-12-10",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "R.G.L. 7499/2024",
+  "titolo": "Trib. Torino 10.12.2204 AUU Assegno unico con residenza di fatto",
+  "oggetto": "Diritto all'assegno unico universale per cittadina extracomunitaria: il requisito della residenza biennale in Italia (art. 3 d.lgs. 230/2021) può essere provato con la residenza di fatto, non solo con l'iscrizione anagrafica",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5681
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.-BG-ordinanza-9.7.2020-est.-Cassia QLC pd ue lgs.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.-BG-ordinanza-9.7.2020-est.-Cassia QLC pd ue lgs.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-07-09",
+  "ente": "Tribunale di Bergamo",
+  "numero": "107/2020",
+  "titolo": "Trib.-BG-ordinanza-9.7.2020-est.-Cassia QLC pd ue lgs",
+  "oggetto": "Questione di legittimità costituzionale dell'art. 2 c. 1 lett. a) D.L. 4/2019 (reddito di cittadinanza) nella parte in cui esclude i titolari di permesso unico lavoro o di permesso di soggiorno di almeno un anno",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5785
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Catania Agosto 2022 postpay evolution a richied. asilo no passaporto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Catania Agosto 2022 postpay evolution a richied. asilo no passaporto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-08-02",
+  "ente": "Tribunale di Catania",
+  "numero": "R.G. 9410/2022",
+  "titolo": "Trib.Catania Agosto 2022 postpay evolution a richied. asilo no passaporto",
+  "oggetto": "Diritto del richiedente asilo al rilascio della carta prepagata Postepay Evolution con il solo permesso di soggiorno, senza passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3553
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Modena luglio 2025 Annulla Cancellazione residenza per Mancata prova di ripetuti controlli ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Modena luglio 2025 Annulla Cancellazione residenza per Mancata prova di ripetuti controlli ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-07-18",
+  "ente": "Tribunale di Modena",
+  "numero": "RG 1179/2024",
+  "titolo": "Trib.Modena luglio 2025 Annulla Cancellazione residenza per Mancata prova di ripetuti controlli",
+  "oggetto": "Illegittimità della cancellazione anagrafica per irreperibilità in assenza di ripetuti accertamenti opportunamente intervallati",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3452
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Nola gennaio 2025 Annulla Cancellazione residenza per mancata notifica ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Nola gennaio 2025 Annulla Cancellazione residenza per mancata notifica ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-01-02",
+  "ente": "Tribunale di Nola",
+  "numero": "RGAC 787/2023",
+  "titolo": "Trib.Nola gennaio 2025 Annulla Cancellazione residenza per mancata notifica",
+  "oggetto": "Illegittimità della cancellazione anagrafica per irreperibilità in assenza di comunicazione di avvio del procedimento e di provvedimento formale notificato",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4210
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 14.10.25 CORREZIONE DATI ANAGRAFICI ORDINE A COMMISSIONE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Roma 14.10.25 CORREZIONE DATI ANAGRAFICI ORDINE A COMMISSIONE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-14",
+  "ente": "Tribunale di Roma",
+  "numero": "RG 27079/2025",
+  "titolo": "Trib.Roma 14.10.25 CORREZIONE DATI ANAGRAFICI ORDINE A COMMISSIONE",
+  "oggetto": "Correzione dei dati anagrafici errati nel decreto di riconoscimento della protezione sussidiaria e nel permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2692
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 27.9.2022 Reddito cittadinanza con residenza DI FATTO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Roma 27.9.2022 Reddito cittadinanza con residenza DI FATTO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-09-27",
+  "ente": "Tribunale di Roma",
+  "numero": "Proc. 34474/2021",
+  "titolo": "Trib.Roma 27.9.2022 Reddito cittadinanza con residenza DI FATTO OK",
+  "oggetto": "Il requisito della residenza decennale per il reddito di cittadinanza va inteso in senso sostanziale come presenza effettiva sul territorio, non come iscrizione anagrafica formale",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3980
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 31.1.22 Attivazione Postepay Card Roma Capitale Bonus covid 19.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Roma 31.1.22 Attivazione Postepay Card Roma Capitale Bonus covid 19.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-01-27",
+  "ente": "Tribunale di Roma",
+  "numero": "63219/2021",
+  "titolo": "Trib.Roma 31.1.22 Attivazione Postepay Card Roma Capitale Bonus covid 19",
+  "oggetto": "Diritto del richiedente asilo all'attivazione di carta prepagata Postepay con il solo permesso di soggiorno provvisorio",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3273
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 6.6.23 RISARCIMENTO mancata accoglienza da no formalizzazione nonostante appunt. lontano OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Roma 6.6.23 RISARCIMENTO mancata accoglienza da no formalizzazione nonostante appunt. lontano OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-06-06",
+  "ente": "Tribunale di Roma",
+  "numero": "12187/2020",
+  "titolo": "Trib.Roma 6.6.23 RISARCIMENTO mancata accoglienza da no formalizzazione nonostante appunt. lontano OK OK",
+  "oggetto": "Risarcimento danni patrimoniali e non patrimoniali per mancata accoglienza derivante dal ritardo nella formalizzazione della domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6545
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma ott.2019 si matrimonio richiedente asilo senza nulal osta e pass in questura.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Roma ott.2019 si matrimonio richiedente asilo senza nulal osta e pass in questura.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-10-08",
+  "ente": "Tribunale di Roma",
+  "numero": "13659/2019",
+  "titolo": "Trib.Roma ott.2019 si matrimonio richiedente asilo senza nulal osta e pass in questura",
+  "oggetto": "Diritto del richiedente asilo a contrarre matrimonio in assenza di nulla osta ex art. 116 c.c. e di passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2822
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Romanov.2019 iscrizione anagr.richiedente asilo SI.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Romanov.2019 iscrizione anagr.richiedente asilo SI.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-11-25",
+  "ente": "Tribunale di Roma",
+  "numero": "62244/2019",
+  "titolo": "Trib.Romanov.2019 iscrizione anagr.richiedente asilo SI",
+  "oggetto": "Diritto del richiedente asilo all'iscrizione anagrafica dopo il d.l. 113/2018 (decreto Salvini)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4472
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Torino 1134_2022 reddito di cittadinanza ANCHE CON PRESENZA PROVATA senza iscrizione anagrafica.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.Torino 1134_2022 reddito di cittadinanza ANCHE CON PRESENZA PROVATA senza iscrizione anagrafica.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-07-14",
+  "ente": "Tribunale di Torino",
+  "numero": "906/2022",
+  "titolo": "Trib.Torino 1134 2022 reddito di cittadinanza ANCHE CON PRESENZA PROVATA senza iscrizione anagrafica",
+  "oggetto": "Illegittimita della revoca del reddito di cittadinanza per mancanza del requisito di 10 anni di residenza anagrafica quando la residenza effettiva e provata",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3702
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.brescia marzo2022 cautelare Rinnovo SUSSIDIARIA SENZA PASSAPORTO.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Trib.brescia marzo2022 cautelare Rinnovo SUSSIDIARIA SENZA PASSAPORTO.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-03-10",
+  "ente": "Tribunale di Brescia",
+  "numero": "RG 1440/2022",
+  "titolo": "Trib.brescia marzo2022 cautelare Rinnovo SUSSIDIARIA SENZA PASSAPORTO",
+  "oggetto": "Illegittimita della richiesta di esibizione del passaporto ai fini del rinnovo del permesso di soggiorno per protezione sussidiaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4718
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/TribRoma 1642_2022 Apertura CONTO CORRENTE BASE con ATTESTAZIONE richeista asilo perche non scade OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/TribRoma 1642_2022 Apertura CONTO CORRENTE BASE con ATTESTAZIONE richeista asilo perche non scade OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-08-06",
+  "ente": "Tribunale di Roma",
+  "numero": "Repert. 16142/2022",
+  "titolo": "TribRoma 1642 2022 Apertura CONTO CORRENTE BASE con ATTESTAZIONE richeista asilo perche non scade OK",
+  "oggetto": "Diritto dei richiedenti protezione internazionale all'apertura di un conto corrente base presso Poste Italiane esibendo l'attestazione di formalizzazione della domanda di asilo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3852
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale di Benevento 15.03.2022 antidiscriminatorio ASL tessera sanitaria.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tribunale di Benevento 15.03.2022 antidiscriminatorio ASL tessera sanitaria.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-03-15",
+  "ente": "Tribunale di Benevento",
+  "numero": "R.G. 3039/2021",
+  "titolo": "Tribunale di Benevento 15.03.2022 antidiscriminatorio ASL tessera sanitaria",
+  "oggetto": "Discriminazione nella durata della tessera sanitaria rilasciata a titolari di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3650
+ }
+]

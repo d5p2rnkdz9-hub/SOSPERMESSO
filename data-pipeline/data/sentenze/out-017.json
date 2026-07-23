@@ -1,0 +1,372 @@
+[
+ {
+  "id": "kb:imm_1_famiglia_minori/ricorso Giulia 2022 nullaosta  per familiare a seguito da ricongiungimento familiare ok ok.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 10.7.2022 — ingresso al seguito del familiare esteso al ricongiungimento familiare per minori afghani",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi dei principi giuridici (interpretazione estensiva art. 29 c.4 TUI, superiore interesse del minore, art. 25 Codice visti UE, art. 10 c.3 Cost.). Nessun nome di parte, solo riferimento a nazionalità afghana e condizione di orfani minori Hazara, dato rilevante per il tema e non identificativo."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/temp_nosig_Trib.Monza 17.4.24 COPPIE FATTO NON DISCRIM. ITA L. SU UE 234_12.md",
+  "titolo_pubblico": "Trib. Milano, sentenza 17.4.2024, n. 4206/2024 — iscrizione anagrafica del convivente di fatto straniero senza permesso di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Provvedimento del Tribunale di Milano (non di Monza: Monza è solo il Comune resistente/Ufficiale d'anagrafe). Sintesi dei principi su iscrizione anagrafica del convivente di fatto e applicazione del d.lgs. 30/2007 per non discriminazione. Nessun dato personale in chiaro, solo il nome del giudice estensore (non rilevante ai fini dell'anonimizzazione)."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib fi coesione fam sentenza.md",
+  "titolo_pubblico": "Trib. Firenze, sentenza 15.12.2025, n. 10116/2025 — coesione familiare non richiede il requisito dei due anni di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi del principio: il requisito biennale ex art. 28-bis TUI (introdotto da D.L. 145/2024) non si applica al permesso per motivi familiari ex art. 30 TUI. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib firenze 2025 coesione familiare assenza soggiorno biennale.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 19.6.2025, n. 6641/2025 — sospensiva del diniego di protezione speciale per tutela dell'unità familiare",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi dei principi su tutela cautelare (fumus e periculum) e sugli effetti della sospensiva del diniego di protezione speciale, con richiamo art. 8 CEDU. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib milano 2021 PDS famiglia sorella Citt Italiano convivenza no coabitazione.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 15.10.2021, n. 5169/2021 — permesso familiare tra fratelli conviventi con cittadino italiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi del principio sulla convivenza effettiva/comunione di vita richiesta per il permesso familiare tra fratelli maggiorenni ex art. 19 c.2 TUI. Solo nazionalità venezuelana indicata, non identificativa. Nessun nome di parte."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib_to_ord_17082021.md",
+  "titolo_pubblico": "Trib. Torino, ordinanza 17.5.2021, n. 21607/2019 — ricongiungimento del genitore ultrasessantacinquenne per figli malati rimasti in patria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi del principio sul superamento del limite dei 65 anni per il ricongiungimento del genitore a carico e sulla rilevanza della patologia invalidante del figlio in patria. Il testo pubblicabile (corpo del documento) non riporta nomi né dati anagrafici della ricorrente; questi compaiono solo nei metadati di schedatura interna (frontmatter), non nel contenuto destinato alla pubblicazione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/1. Ricorso 10.7.24 FEDE mancata risposta Prefettura convocazione contratto soggiorno flussi ok ok.md",
+  "titolo_pubblico": "TAR Lazio, sentenza 10.7.2024 — silenzio-inadempimento della Prefettura sulla convocazione per il contratto di soggiorno nella procedura flussi",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi dei principi su obbligo di provvedere e natura procedimentale della convocazione per contratto di soggiorno. Solo nazionalità bengalese indicata, non identificativa. Nessun nome di parte."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/C. Stato aprile 2018 rinnovo pds lavoro giudizio prognostico su reddito.md",
+  "titolo_pubblico": "Cons. Stato, sentenza 10.10.2017, n. 4694/2017 — giudizio prognostico sul reddito per il rinnovo del permesso per lavoro subordinato",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Param Jit Singh (nome e cognome completi del ricorrente, indicati nei metadati/frontmatter del file)"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il corpo del testo (sintesi dei principi) non riporta il nome, ma il file contiene nei metadati 'parties.ricorrente: Param Jit Singh (cittadino indiano)' — nome e cognome completi in chiaro. Da rimuovere/redigere prima della pubblicazione. Nota: la data del titolo manifest ('aprile 2018') non corrisponde alla data della decisione riportata nel testo (10.10.2017); usato il dato verificato nel file."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/C.Stato 2.4.25 VISTO da flussi OBBLIGO PA NASCE DA RICHIESTA APPUNTAMENTO NO IMPORTA PIATTAFORMA ok ok ok.md",
+  "titolo_pubblico": "Cons. Stato, sentenza 2.4.2025, n. 2819/2025 — obbligo della PA di provvedere sulla richiesta di appuntamento per visto da decreto flussi",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi dei principi su obbligo di provvedere e irrilevanza dell'interposizione di piattaforme informatiche esternalizzate. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/C.Stato2018 NO convertibilita Religione a Lavoro e ragionamento generale su tipicita convertibilita lavoro.md",
+  "titolo_pubblico": "Cons. Stato, sentenza 24.1.2018, n. 476/2018 — inammissibilità della conversione del permesso religioso in permesso per lavoro subordinato",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi dei principi su tipicità dei poteri amministrativi e tassatività delle ipotesi di conversione del titolo di soggiorno. Nessun nome di parte, solo qualifica 'cittadina indiana (ex religiosa)'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/CAss.28201_2021 Inespellibilita SEMPRE PDS no terza via OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 14.10.2021, n. 28201 — permesso per motivi familiari al fratello convivente con cittadino italiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome della parte resistente/ricorrente in Cassazione: Rosario Saverio Mercedes (presente nel campo 'parties' del frontmatter, non nel corpo della sintesi)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il testo pubblicabile (sintesi dei principi) non contiene il nome; va rimosso/non riportato dal frontmatter in fase di redazione finale. Decisione chiara e ben identificabile (Cass. 28201/2021)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/CGUE 3.10.2019 REDDITO QUALSIASI ANCHE DA TERZO O FAMILIARE PDS LUngo sogg. MA STABILE OK OK.md",
+  "titolo_pubblico": "CGUE, sentenza 3.10.2019, causa C-302/18 — risorse anche di terzi per lo status di soggiornante di lungo periodo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cass 15796_2025 Bangladesh debito tratta sfruttamento lavorativo paese transito disastro climatico.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 3.4.2026, n. 8309/2026 — protezione per indicatori di tratta e sfruttamento lavorativo di cittadino bengalese",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato con sole iniziali (M.B.), conforme alla regola di anonimizzazione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 30.9.2019, n. 14573 — obbligo di motivazione sulle cure disponibili nel paese d'origine per inespellibilità per motivi di salute",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata genericamente come 'cittadino marocchino (anonimizzato)'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cass.306.22 Carta soggiorno anche con errore domanda amministrat. NO FORMALISMI.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 30.6.2022, n. 20856 — carta di soggiorno per familiare di cittadino UE anche senza specifica domanda amministrativa",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il file contiene solo principi di diritto estratti (massima), non il testo integrale. Parte appellante descritta genericamente in metadata (\"cittadino brasiliano figlio di cittadina italiana\"), nessun nome proprio nel testo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/CdS Sez. III sentenza 19 febbraio 2019 n. 1156.md",
+  "titolo_pubblico": "Cons. Stato, sentenza 19.2.2019, n. 1156 — conversione del permesso per lavoro stagionale in subordinato oltre i termini",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome della ricorrente in chiaro nei metadati del file: \"Modiane Helene Diouf\""
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il corpo del documento (principi di diritto) non contiene dati personali, ma il frontmatter YAML riporta il nome completo della ricorrente in campo 'parties.appellant'. Va rimosso/anonimizzato prima della pubblicazione. Anche il campo 'filename_original' contiene un URL tecnico poco leggibile, irrilevante ai fini privacy."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons. Stato 11.10.02024 Convertibilita cure mediche prima richiesta prima di Piantedosi II OK.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, ordinanza 11.10.2024, n. 7020 — convertibilità del permesso cure mediche in lavoro nel regime transitorio D.L. 20/2023",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Appellante indicato come 'Appellante (anonimizzato)' nei metadati; nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 03180_24 Flussi Ordina Prefettura di CONVOCARE OK OK.md",
+  "titolo_pubblico": "TAR Campania, ordinanza cautelare 19.3.2025, n. 569 — irragionevole revoca del nulla osta lavoro dopo due anni di inerzia della PA",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Nonostante l'id/nome file richiami 'Cons.Stato', il provvedimento è in realtà un'ordinanza cautelare del TAR Campania (sez. VI), R.G. 00809/2025, prov. cautelare 00569/2025. Ricorrente indicato genericamente come 'lavoratore straniero'. Nessun dato personale."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 11.7.25 Sospensiva FLUSSI no contratto originario Promessa assunzione e Ripensamento datore ok.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, ordinanza 10.7.2025, n. 4948 — permesso per attesa occupazione dopo revoca del nulla osta per fatto del datore",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino straniero'. Nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 12.12.24 sospende revova flussi datore probabile privo ab origine.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, ordinanza 5.12.2024, n. 8527 — tutela del lavoratore in buona fede dopo revoca del nulla osta per irreperibilità del datore",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'lavoratore straniero del settore alberghiero'. Nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 15.4.25 VI sezione PDS LUNGO SOGG. si conteggia periodo pds attesa asilo anche perche ritardo OK OK.md",
+  "titolo_pubblico": "Cons. Stato, sez. VI, sentenza 3.4.2025, n. 3222 — computo del periodo come richiedente asilo per il permesso UE di lungo soggiorno",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime/principi di diritto (sezione 'Principi e ragionamento giuridico'), nessun dato personale: le parti sono indicate genericamente come 'richiedente protezione internazionale' e uffici pubblici."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 1977-25 10.3.2025 FLUSSI SUBENTRO STESSO DATORE DIVERSA DITTA.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, sentenza 6.3.2025, n. 1977 — revoca nulla osta lavoro stagionale per diniego di subentro aziendale senza preavviso",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime, nessun dato personale in chiaro; parti indicate come 'lavoratore straniero stagionale' e uffici pubblici."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 218 SI Convertibilita da RELIGIOSO a PDS LUNGO SOGGIORNANTE OK OK.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, sentenza 16.7.2018, n. 4317 — non convertibilità del permesso per motivi religiosi in permesso per studio",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime; parte indicata genericamente come 'cittadina indiana ex religiosa', nessun dato identificativo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 24.3.25 Flussi stagion. non circol 2007_ attesa occup. sempre necessario primo contratto NO NO NO.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, sentenza 24.3.2025, n. 2403 — niego permesso per attesa occupazione a chi non ha mai stipulato un contratto di lavoro stagionale",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime, nessun dato personale; menzionati solo giudici estensori/presidente (non rilevanti ai fini anonimizzazione)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 29.4.25 Termine breve per stipula Contratto soggiorno FLUSSI no 180 gg. Ok Ok.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, sentenza 6.3.2025, n. 3645 — natura provvedimentale della convocazione per il contratto di soggiorno e termini brevi per provvedere",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime; parte indicata come 'cittadino straniero richiedente contratto di soggiorno', nessun dato identificativo. Data nel metadato ('2025-03-06') diverge dal nome file ('29.4.25'): usata la data nei metadati strutturati del record."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 3 settembre GRECO FLUSSI mai pds senza contratto con primo datore NO NO NO.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, sentenza 19.6.2025, n. 7186 — niego permesso per attesa occupazione se il contratto con il primo datore non è mai stato stipulato",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime; parte indicata come 'cittadino indiano', nessun dato identificativo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 4.10.2024 CAutelare Flussi No Ambasciata giudizio su Requisiti Datore OK.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, ordinanza cautelare 4.10.2024, n. 6874 — la valutazione dei requisiti economici del datore compete allo Sportello Unico, non all'Ambasciata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Provvedimento cautelare, non sentenza di merito, ma decisione comprensibile con estremi identificabili. Solo massime, nessun dato personale (parti non individuate nel testo)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 6423_2022 Revoca PDS lungo soggiorn SOLO pericolosita concreta no automatismi ostativi ok buchi di reddito OK OK.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, sentenza 22.7.2022, n. 6423 — revoca del permesso UE di lungo soggiorno per pericolosità sociale, no automatismi con le condanne penali",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'cittadino senegalese', nazionalità riportata perché rilevante al contesto ma non identificativa individualmente. Il campo case_number nei metadati ('04146/2018') non coincide con il numero '6423/2022' indicato nel nome file: usato quest'ultimo, coerente con il titolo del documento e più specifico."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato cautelare 4694-24_sospende revova flussi datore irreperibile probabile privo ab origine OK.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, ordinanza cautelare 10.12.2024, n. 8527 — sospesa la revoca del nulla osta per irreperibilità del datore, salva la buona fede del lavoratore",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Provvedimento cautelare con estremi identificabili. Nessun dato personale, parte non individuata nel testo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato genn.2021 Flussi 2012 si pds attesa occup datore non firma CONTRATTO SOGGIORNO OK.md",
+  "titolo_pubblico": "Cons. Stato, sez. III, sentenza 7.1.2021, n. 167 — diritto al permesso per attesa occupazione se il contratto di soggiorno non è stipulato per indisponibilità del datore",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime, nessun dato personale. Numero decisione indicato nei metadati come '167/2021 R.Prov.Coll.' (n. 930/2014 R.G. il ricorso originario)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons_Stato_ord_3500_2025.md",
+  "titolo_pubblico": "Cons. Stato, ordinanza 26.9.2025, n. 6947/2025 — diniego permesso attesa occupazione per rapporto di lavoro mai esistito",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il file contiene solo la sezione 'Principi e ragionamento giuridico' (massime), non il testo integrale. Parti indicate genericamente come 'cittadino straniero (dati oscurati)'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Consiglio_di_Stato_n._3884_del_2016.md",
+  "titolo_pubblico": "Cons. Stato, sentenza 15.9.2016, n. 3884/2016 — conversione permesso stagionale in lavoro subordinato dopo scadenza del titolo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime di principio; parte identificata genericamente come 'cittadino del Bangladesh', nessun nome proprio."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/EIUS - Consiglio di Stato, sezione III, sentenza 7 giugno 2023, n. 5604.md",
+  "titolo_pubblico": "Cons. Stato, sentenza 7.6.2023, n. 5604/2023 — conversione permesso stagionale in lavoro subordinato oltre la scadenza del titolo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime di principio; parte identificata genericamente come 'cittadino indiano'. Il nome del relatore (Corradino, giudice) non è dato personale rilevante."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Erased_PDF TAR Molise 297 23 Ric..md",
+  "titolo_pubblico": "TAR Molise, ordinanza 10.1.2024, n. 297/2023 — sospensione della revoca del nulla osta per difetto di motivazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime di principio; parte indicata genericamente come 'ricorrente (straniero)'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Ordinanza tar lazio asseverazione.md",
+  "titolo_pubblico": "TAR Lazio, ordinanza 3.3.2026, n. 1494/2026 — riesame della revoca del nulla osta flussi per mancata asseverazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime di principio; nessun dato identificativo di parti private presente nel documento."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Bologna 834 2022 computo 5 anni x lungo soggiornate con qualsiasi pds salvo brevi soggiorni ok ok.md",
+  "titolo_pubblico": "TAR Bologna, sentenza 28.9.2022, n. 113/2022 — computo dei periodi di protezione umanitaria per il lungo soggiorno UE",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime di principio; parte indicata genericamente come 'cittadino gambiano', nessun nome proprio. Nome del giudice relatore non rilevante."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Campania 1041_2026 Cautelare FLUSSI archiviazione per mancata firma digitale datore buona fede lavoratore.md",
+  "titolo_pubblico": "TAR Campania, ordinanza 23.4.2026, n. 1041/2026 — sospensione dell'archiviazione del nulla osta per mancata firma digitale del datore",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime di principio; parte indicata genericamente come 'lavoratore straniero (omissato)'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Campania 2200_2026 FLUSSI revoca nulla osta disconoscimento datore lavoratore incolpevole nuova occupazione.md",
+  "titolo_pubblico": "TAR Campania, sentenza 1.4.2026, n. 2200/2026 — annullamento della revoca del nulla osta flussi per lavoratore incolpevole",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente riportati per esteso nei metadati del file: 'Saidul Matubber, cittadino del Bangladesh'"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il testo delle massime non menziona il nome, ma i metadati (frontmatter) del file riportano il nome completo del ricorrente: da omettere/redigere prima della pubblicazione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Campania 30.3.2026 n.2135 - Buona fede lavoratore vs datore fittizio.md",
+  "titolo_pubblico": "TAR Campania, sentenza 30.3.2026, n. 2135/2026 — divieto di presunzione assoluta di complicità del lavoratore con il datore fittizio",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente riportati per esteso nei metadati del file: 'Ibrahim Marong (cittadino Gambia)'"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il testo delle massime non menziona il nome, ma i metadati (frontmatter) del file riportano il nome completo del ricorrente: da omettere/redigere prima della pubblicazione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Emilia-Romagna Parma 16.2.2026 n.83 - Lavoro in nero con datore iniziale flussi.md",
+  "titolo_pubblico": "TAR Parma, sentenza 16.2.2026, n. 83/2026 — revoca del contratto di soggiorno illegittima nonostante l'irregolarità contributiva del datore",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Solo massime di principio; parte indicata genericamente come 'lavoratore straniero (generalità oscurate)'."
+ }
+]

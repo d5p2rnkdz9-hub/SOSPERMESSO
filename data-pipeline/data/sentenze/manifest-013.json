@@ -1,0 +1,809 @@
+[
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass. 24.1.23 Agevolazioni probatorie su tutto e anche al FAMILIARE di titolare.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass. 24.1.23 Agevolazioni probatorie su tutto e anche al FAMILIARE di titolare.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-01-24",
+  "ente": "Corte di Cassazione",
+  "numero": "2168/2023",
+  "titolo": "Cass. 24.1.23 Agevolazioni probatorie su tutto e anche al FAMILIARE di titolare",
+  "oggetto": "Estensione delle agevolazioni probatorie dell'art. 29-bis d.lgs. 286/1998 oltre la prova del vincolo familiare",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4094
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass. Sez. Un. n. 15750-2019 - su non automatismo dei reati .md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass. Sez. Un. n. 15750-2019 - su non automatismo dei reati .md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2019-06-12",
+  "ente": "Cassazione Sezioni Unite Civili",
+  "numero": "15750/2019",
+  "titolo": "Cass. Sez. Un. n. 15750-2019 - su non automatismo dei reati",
+  "oggetto": "Se nell'autorizzazione ex art. 31 comma 3 t.u. immigrazione il comportamento incompatibile del familiare rilevi solo per la revoca o anche per il diniego iniziale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5029
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass. n. 1563 del 23.01.2020 - su non automatismo dei reati .md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass. n. 1563 del 23.01.2020 - su non automatismo dei reati .md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-01-23",
+  "ente": "Cassazione Civile Sezione VI",
+  "numero": "1563/2020",
+  "titolo": "Cass. n. 1563 del 23.01.2020 - su non automatismo dei reati",
+  "oggetto": "Automatismo del diniego dell'autorizzazione ex art. 31 comma 3 D.Lgs. 286/1998 per familiari di minori con procedimenti penali pendenti",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4117
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass. n. 24476-2015 - autorizzazione alla madre sola di minore di soli due anni.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass. n. 24476-2015 - autorizzazione alla madre sola di minore di soli due anni.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2015-12-02",
+  "ente": "Cassazione civile",
+  "numero": "24476/2015",
+  "titolo": "Cass. n. 24476-2015 - autorizzazione alla madre sola di minore di soli due anni",
+  "oggetto": "Interpretazione estensiva art. 31, comma 3, T.U.I. per autorizzazione permanenza genitore straniero nell'interesse superiore del minore",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3353
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass. n. 33362 del 17.12.2019 - sent. negativa su unità familiare.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass. n. 33362 del 17.12.2019 - sent. negativa su unità familiare.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-12-17",
+  "ente": "Cassazione civile Sezione Prima",
+  "numero": "33362/2019",
+  "titolo": "Cass. n. 33362 del 17.12.2019 - sent. negativa su unità familiare",
+  "oggetto": "Sindacabilità in Cassazione della valutazione dei gravi motivi per permesso di soggiorno temporaneo ex art. 31 comma 3 D.Lgs. 286/1998",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4453
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass. ord. 13104 del 15.05.2019 - pds motivi familiari e regolare soggiorno richiedente protezione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass. ord. 13104 del 15.05.2019 - pds motivi familiari e regolare soggiorno richiedente protezione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-05-15",
+  "ente": "Corte di Cassazione",
+  "numero": "13104/2019",
+  "titolo": "Cass. ordinanza n. 13104 del 15.5.2019 (1) (1)",
+  "oggetto": "Se la pendenza del giudizio sulla domanda di protezione internazionale renda regolarmente soggiornante lo straniero che, in tale arco temporale, chieda il permesso di soggiorno per motivi familiari ai sensi dell'art. 30, comma 1, lett. b), D.Lgs. 286/1998 per coesione con il coniuge regolarmente sog",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4196
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.11.11.2020 Ricong fratello affidato con atto notarile OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.11.11.2020 Ricong fratello affidato con atto notarile OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-10-14",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "33922/2018",
+  "titolo": "Cass.11.11.2020 Ricong fratello affidato con atto notarile OK OK",
+  "oggetto": "Interpretazione estensiva dell'art. 29 t.u. imm. per affidamento privatistico di fratello minore ai fini del ricongiungimento familiare",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "affidamento-a-familiari-entro-il-quarto-grado",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4940
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.11955 2020 No Coppie di fatto Obbligo motivaz Legami famil. anche senza ricong. Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.11955 2020 No Coppie di fatto Obbligo motivaz Legami famil. anche senza ricong. Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-06-19",
+  "ente": "Corte di Cassazione",
+  "numero": "11955/2020",
+  "titolo": "Cass.11955 2020 No Coppie di fatto Obbligo motivaz Legami famil. anche senza ricong.",
+  "oggetto": "Applicazione tutela rafforzata art. 13, comma 2 bis TUI a straniero con legami familiari senza richiesta formale ricongiungimento",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4872
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.1714.2001 si ricongiungimento con pds famiglia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.1714.2001 si ricongiungimento con pds famiglia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2001-02-07",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "1714/2001",
+  "titolo": "Cass.1714.2001 si ricongiungimento con pds famiglia",
+  "oggetto": "Se il ricongiungimento familiare possa essere chiesto anche da straniero con permesso per motivi familiari o solo da titolari di permessi per lavoro, studio, asilo o motivi religiosi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3913
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.17504_21 protezione speciale MSNA ingresso minore vulnerabilita.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.17504_21 protezione speciale MSNA ingresso minore vulnerabilita.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-02-17",
+  "ente": "Corte di Cassazione",
+  "numero": "17504/2021",
+  "titolo": "Cass.17504 21 protezione speciale MSNA ingresso minore vulnerabilita",
+  "oggetto": "Valutazione della protezione umanitaria per minore straniero con particolare riferimento alla condizione di vulnerabilità",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6449
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.2020 SI espulsione coppia di fatto NON registrata.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.2020 SI espulsione coppia di fatto NON registrata.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-09-07",
+  "ente": "Corte di Cassazione",
+  "numero": "18565/2020",
+  "titolo": "Cass.2020 SI espulsione coppia di fatto NON registrata",
+  "oggetto": "Limiti al potere di espulsione in presenza di relazione affettiva con cittadina italiana non formalizzata",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3242
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.2020 Zorzella accertamento eta illegit. senza margine errore e multidisciplinarieta.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.2020 Zorzella accertamento eta illegit. senza margine errore e multidisciplinarieta.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-12-05",
+  "ente": "Cassazione Civile",
+  "numero": "5228/2019",
+  "titolo": "Cass.2020 Zorzella accertamento eta illegit. senza margine errore e multidisciplinarieta",
+  "oggetto": "Accertamento dell'età del minore straniero non accompagnato e applicazione della presunzione di minore età in caso di dubbio",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4211
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.2020 art.31 c.3 si pds anche un solo geitore e in forma stabile per integrazione dei figli.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.2020 art.31 c.3 si pds anche un solo geitore e in forma stabile per integrazione dei figli.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-06-25",
+  "ente": "Cassazione Civile",
+  "numero": "20055/2019",
+  "titolo": "Cass.2020 art.31 c.3 si pds anche un solo geitore e in forma stabile per integrazione dei figli",
+  "oggetto": "Presupposti per autorizzazione permanenza genitori stranieri per gravi motivi connessi sviluppo psicofisico figli minori ex art. 31 d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5195
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.2020 convivenza si per divieto espulsionie e conversione da altro pds ma no per carta e ricongingimento e coesione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.2020 convivenza si per divieto espulsionie e conversione da altro pds ma no per carta e ricongingimento e coesione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-02-27",
+  "ente": "Corte di Cassazione",
+  "numero": "5378/2020",
+  "titolo": "Cass.2020 convivenza si per divieto espulsionie e conversione da altro pds ma no per carta e ricongingimento e coesione",
+  "oggetto": "Requisiti per il mantenimento del permesso di soggiorno per ricongiungimento familiare con cittadino italiano",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3886
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.28201-21convivenza fratello italiano SI pds e non solo inespellibilita.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.28201-21convivenza fratello italiano SI pds e non solo inespellibilita.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-07-06",
+  "ente": "Cassazione Civile",
+  "numero": "17989/2020",
+  "titolo": "Cass.28201-21convivenza fratello italiano SI pds e non solo inespellibilita",
+  "oggetto": "Diritto del fratello di cittadino italiano a richiedere permesso soggiorno per motivi familiari in presenza di convivenza effettiva",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4776
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.30342_2021 RICONGIUNGIMENTO come coesione fam. esclusa SOLO per pericolo ATTUALE E CONCRETO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.30342_2021 RICONGIUNGIMENTO come coesione fam. esclusa SOLO per pericolo ATTUALE E CONCRETO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-10-27",
+  "ente": "Cassazione Civile",
+  "numero": "30342/2021",
+  "titolo": "Cass.30342 2021 RICONGIUNGIMENTO come coesione fam. esclusa SOLO per pericolo ATTUALE E CONCRETO OK",
+  "oggetto": "Criteri di valutazione della pericolosità sociale nel ricongiungimento familiare dopo le modifiche del d.lgs. 5/2007",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4438
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.31.8.22 No divieto espulsione COPPIE FATTO ma si obbgligo motivaz. ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.31.8.22 No divieto espulsione COPPIE FATTO ma si obbgligo motivaz. ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-08-31",
+  "ente": "Corte di Cassazione Civile",
+  "numero": "25653/2022",
+  "titolo": "Cass.31.8.22 No divieto espulsione COPPIE FATTO ma si obbgligo motivaz. ok",
+  "oggetto": "Obbligo di valutazione dei legami familiari nei procedimenti di espulsione anche quando non si applica il divieto assoluto dell'art. 19 d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5496
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.31.8.22 Rilevante per Espulsione CONVIVENZA CON CITTAD.STRANIERO COMMA 2 BIS ART.13.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.31.8.22 Rilevante per Espulsione CONVIVENZA CON CITTAD.STRANIERO COMMA 2 BIS ART.13.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-08-31",
+  "ente": "Cassazione Civile",
+  "numero": "25653/2022",
+  "titolo": "Cass.31.8.22 Rilevante per Espulsione CONVIVENZA CON CITTAD.STRANIERO COMMA 2 BIS ART.13",
+  "oggetto": "Valutazione legami familiari con stranieri ai fini dell'espulsione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4594
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.44182 2016 NO espulsione coppia di fatto art.19 convivente cirinna come coniuge OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.44182 2016 NO espulsione coppia di fatto art.19 convivente cirinna come coniuge OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2016-10-18",
+  "ente": "Corte di Cassazione",
+  "numero": "44182/2016",
+  "titolo": "Cass.44182 2016 NO espulsione coppia di fatto art.19 convivente cirinna come coniuge OK OK",
+  "oggetto": "Se il contratto di convivenza ex legge 76/2016 sia equiparabile al matrimonio ai fini del divieto di espulsione dell'art. 19 d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3627
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.74272020 convivenza fratelli apre alla convivenza senza coabitazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.74272020 convivenza fratelli apre alla convivenza senza coabitazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-01-14",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "780/2019",
+  "titolo": "Cass.74272020 convivenza fratelli apre alla convivenza senza coabitazione",
+  "oggetto": "Permesso di soggiorno per motivi familiari tra fratelli maggiorenni non conviventi",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3976
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.9199 2019 Affidamento di fatto no poteri di rappresentanza quindi msna e quindi sempre nomina tutore. Trib.min. competente perche msna.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.9199 2019 Affidamento di fatto no poteri di rappresentanza quindi msna e quindi sempre nomina tutore. Trib.min. competente perche msna.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-04-03",
+  "ente": "Corte di Cassazione",
+  "numero": "9199/2019",
+  "titolo": "Cass.9199 2019 Affidamento di fatto no poteri di rappresentanza quindi msna e quindi sempre nomina tutore. Trib.min. competente perche msna",
+  "oggetto": "Definizione di minore straniero non accompagnato e requisiti per la qualificazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3564
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.Pen.2022 determinazione eta del TRIB.Minorenni vincolante per giudice penale e competenza.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.Pen.2022 determinazione eta del TRIB.Minorenni vincolante per giudice penale e competenza.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-11-10",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "3322/2021",
+  "titolo": "Cass.Pen.2022 determinazione eta del TRIB.Minorenni vincolante per giudice penale e competenza",
+  "oggetto": "Efficacia vincolante in sede penale del provvedimento di attribuzione età emesso dal Tribunale per i Minorenni",
+  "esito": "neutrale",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3404
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.dic.2019 Illeg.Espulsione minore con accertamento eta con polso Contrarioa ZAMPA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.dic.2019 Illeg.Espulsione minore con accertamento eta con polso Contrarioa ZAMPA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-10-23",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "23373/2018",
+  "titolo": "Cass.dic.2019 Illeg.Espulsione minore con accertamento eta con polso Contrarioa ZAMPA",
+  "oggetto": "Validità dell'accertamento dell'età di minore straniero non accompagnato mediante esami radiologici senza rispetto delle garanzie procedurali",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3265
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass.sett.2019 VISTO ricongiungimento familiare COMPETENZA ROMA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass.sett.2019 VISTO ricongiungimento familiare COMPETENZA ROMA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-09-19",
+  "ente": "Corte di Cassazione Civile",
+  "numero": "23412/2019",
+  "titolo": "Cass.sett.2019 VISTO ricongiungimento familiare COMPETENZA ROMA",
+  "oggetto": "Competenza territoriale per impugnazione diniego visto d'ingresso per ricongiungimento familiare",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3978
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cass_20127_2021_Ricongiungimento_Rifugiato_Genitori.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cass_20127_2021_Ricongiungimento_Rifugiato_Genitori.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-02-09",
+  "ente": "Corte di Cassazione - Terza Sezione Civile",
+  "numero": "20127/2021",
+  "titolo": "Cass.20127-21 Ricong.RIFUGIATO Genitori con figli conviventi senza mezzi o ultra65 anche non a carico del rifug",
+  "oggetto": "Interpretazione dell'art. 29 lett. d) TUI sul ricongiungimento del rifugiato con i genitori a carico in assenza di altri figli capaci di sostentamento",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3107
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cassazione-23316-2018-art-30tui-irregolarità-bis.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cassazione-23316-2018-art-30tui-irregolarità-bis.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2018-09-27",
+  "ente": "Corte di Cassazione",
+  "numero": "23316/2018",
+  "titolo": "Cassazione-23316-2018-art-30tui-irregolarità-bis",
+  "oggetto": "Interpretazione del requisito di regolarità del soggiorno per il ricongiungimento familiare in presenza di domanda di protezione internazionale pendente",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4593
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cassazione_15750-2019.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cassazione_15750-2019.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2019-05-07",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "24817/2016",
+  "titolo": "Cassazione 15750-2019",
+  "oggetto": "Interpretazione dell'art. 31, comma 3, t.u. immigrazione: rilevanza dei comportamenti incompatibili del familiare ai fini del diniego iniziale dell'autorizzazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4913
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cassazione_2020_3876 Convivenza di fatto senza residenza OK OK oK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cassazione_2020_3876 Convivenza di fatto senza residenza OK OK oK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-12-05",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "26055/2018",
+  "titolo": "Cassazione 2020 3876 Convivenza di fatto senza residenza OK OK oK",
+  "oggetto": "Documentazione necessaria per il rilascio della carta di soggiorno UE al genitore extracomunitario di minore cittadino dell'Unione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4656
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Conclusioni C-200.02 Zhu Chen.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Conclusioni C-200.02 Zhu Chen.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2004-05-18",
+  "ente": "Corte di Giustizia delle Comunità Europee",
+  "numero": "C-200/02",
+  "titolo": "Conclusioni C-200.02 Zhu Chen",
+  "oggetto": "Diritto di soggiorno di cittadina comunitaria minore e diritto derivato della madre cittadina di Stato terzo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5431
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cons.Stato 17.6.2020 Pericolosita sociale in concreto art.5 anche per pds altro con legmai familiari OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cons.Stato 17.6.2020 Pericolosita sociale in concreto art.5 anche per pds altro con legmai familiari OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2020-06-17",
+  "ente": "Consiglio di Stato",
+  "numero": "00615/2020",
+  "titolo": "Cons.Stato 17.6.2020 Pericolosita sociale in concreto art.5 anche per pds altro con legmai familiari OK",
+  "oggetto": "Bilanciamento tra sicurezza pubblica e tutela legami familiari nel diniego rinnovo permesso soggiorno per condanne ex art. 380 c.p.p.",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4918
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cons.Stato 2022 n. 6413 revoca PDS Lungo Soggiornati NO per Rapina senza un concreto bilanciamento.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cons.Stato 2022 n. 6413 revoca PDS Lungo Soggiornati NO per Rapina senza un concreto bilanciamento.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2022-07-21",
+  "ente": "Consiglio di Stato",
+  "numero": "06413/2022",
+  "titolo": "Cons.Stato 2022 n. 6413 revoca PDS Lungo Soggiornati NO per Rapina senza un concreto bilanciamento",
+  "oggetto": "Revoca permesso UE per soggiornanti di lungo periodo in presenza di condanne penali",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5251
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cons.Stato maggio2020 Parere dell EX COMITAO per MSNA NON vincolante OK OK oK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cons.Stato maggio2020 Parere dell EX COMITAO per MSNA NON vincolante OK OK oK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2020-06-01",
+  "ente": "Consiglio di Stato",
+  "numero": "3431/2020",
+  "titolo": "Cons.Stato maggio2020 Parere dell EX COMITAO per MSNA NON vincolante OK OK oK",
+  "oggetto": "Natura vincolante o meno del parere del Ministero del lavoro nella conversione del permesso di soggiorno da minore età a lavoro subordinato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3351
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Cons.Stato2525 2021 MSNA conversione PARERE non vincolante ma integrabile se negativo OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Cons.Stato2525 2021 MSNA conversione PARERE non vincolante ma integrabile se negativo OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2021-03-18",
+  "ente": "Consiglio di Stato",
+  "numero": "02525/2021",
+  "titolo": "Cons.Stato2525 2021 MSNA conversione PARERE non vincolante ma integrabile se negativo OK",
+  "oggetto": "Natura vincolante del parere ministeriale per conversione permesso soggiorno minori sottoposti a tutela",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4211
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Consiglio di Stato del 14.04.2015 - coversione art. 31 in permesso di lungo periodo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Consiglio di Stato del 14.04.2015 - coversione art. 31 in permesso di lungo periodo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2015-02-26",
+  "ente": "Consiglio di Stato",
+  "numero": "09150/2014",
+  "titolo": "Consiglio di Stato del 14.04.2015 - coversione art. 31 in permesso di lungo periodo",
+  "oggetto": "Computabilità del permesso per assistenza minori ai fini del rilascio del permesso UE per soggiornanti di lungo periodo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   },
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3618
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Consiglio di Stato, 6.9.2024, n. 7449 parere DG non vincolante e necessità valutazione percorso neomaggiorenni.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Consiglio di Stato, 6.9.2024, n. 7449 parere DG non vincolante e necessità valutazione percorso neomaggiorenni.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2024-09-06",
+  "ente": "Consiglio di Stato",
+  "numero": "7449/2024",
+  "titolo": "Consiglio di Stato, 6.9.2024, n. 7449 parere DG non vincolante e necessità valutazione percorso neomaggiorenni",
+  "oggetto": "Conversione permesso di soggiorno per minore età in permesso per lavoro subordinato e rilevanza elementi di integrazione sopravvenuti",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4631
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Corte App. Torino 8.1.2025 rich. prosieguo amm. anche da maggiorenni.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Corte App. Torino 8.1.2025 rich. prosieguo amm. anche da maggiorenni.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2025-01-08",
+  "ente": "Corte d'Appello di Torino",
+  "numero": "355/2024",
+  "titolo": "Corte App. Torino 8.1.2025 rich. prosieguo amm. anche da maggiorenni",
+  "oggetto": "Termini di presentazione della domanda di prosieguo amministrativo per minori stranieri non accompagnati ex art. 13 L. 47/2017",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "integrazione-prosieguo-amministrativo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2899
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Corte Giust. 1.8.22 RICONGIUNG. MINORE RIFUGIATO minore al momento della domanda di asilo ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Corte Giust. 1.8.22 RICONGIUNG. MINORE RIFUGIATO minore al momento della domanda di asilo ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2022-08-01",
+  "ente": "Corte di Giustizia dell'Unione Europea - Terza Sezione",
+  "numero": "C-279/20",
+  "titolo": "Corte Giust. 1.8.22 RICONGIUNG. MINORE RIFUGIATO minore al momento della domanda di asilo ok",
+  "oggetto": "Data rilevante per valutare status minore del figlio di rifugiato ai fini ricongiungimento familiare",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4645
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Corte Giust. 30.1.2024 Si ricongiungimento di sorella disabile per MINORE RIFUGIATO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Corte Giust. 30.1.2024 Si ricongiungimento di sorella disabile per MINORE RIFUGIATO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2024-01-30",
+  "ente": "Corte di Giustizia dell'Unione Europea (Grande Sezione)",
+  "numero": "C-560/20",
+  "titolo": "Corte Giust. 30.1.2024 Si ricongiungimento di sorella disabile per MINORE RIFUGIATO OK",
+  "oggetto": "Ricongiungimento familiare rifugiato minore non accompagnato diventato maggiorenne durante procedura",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5088
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Corte Giustizia 2020 ricongiungimento con coniuge UE ci vuole reddito o dipendenza. non sufficiente essere coniugi.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Corte Giustizia 2020 ricongiungimento con coniuge UE ci vuole reddito o dipendenza. non sufficiente essere coniugi.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2020-02-27",
+  "ente": "Corte di Giustizia dell'Unione Europea (Quinta Sezione)",
+  "numero": "C-836/18",
+  "titolo": "Corte Giustizia 2020 ricongiungimento con coniuge UE ci vuole reddito o dipendenza. non sufficiente essere coniugi",
+  "oggetto": "Interpretazione dell'articolo 20 TFUE in relazione al ricongiungimento familiare di cittadino extracomunitario con cittadino UE che non ha mai esercitato libertà di circolazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4547
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Corte Giustizia Causa C-519 2018 Hivatal Riconging. A CARICO su elementi indiziari OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Corte Giustizia Causa C-519 2018 Hivatal Riconging. A CARICO su elementi indiziari OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2019-12-12",
+  "ente": "Corte di giustizia dell'Unione europea",
+  "numero": "C-519/18",
+  "titolo": "Corte Giustizia Causa C-519 2018 Hivatal Riconging. A CARICO su elementi indiziari OK",
+  "oggetto": "Interpretazione dell'art. 10, par. 2, Direttiva 2003/86/CE sui requisiti per il ricongiungimento familiare di rifugiati con familiari non previsti dall'art. 4",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5141
+ }
+]

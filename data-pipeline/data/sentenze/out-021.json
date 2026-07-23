@@ -1,0 +1,182 @@
+[
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib. Roma 4.7.25 614 bis 30 euro giorno per ritatdo rilascio pds gia ordinato attesa asilo ok ok ok.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 4.7.2025, n. 3721-2/2025 — astreinte per ritardo nel rilascio del pds richiesta asilo già ordinato",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": ["Nome e cognome del ricorrente in chiaro nei metadati (Bhuiyan Md Sujon)", "Data di nascita del ricorrente (20.02.1995) nei metadati"],
+  "qualita": "pubblicabile",
+  "nota": "Decisione chiara e ben identificata (misura ex art. 614-bis c.p.c. per inadempimento di ordine cautelare di rilascio pds). Il corpo del testo non riporta dati personali, ma i metadati di frontmatter contengono nome completo e data di nascita del ricorrente: da redigere prima della pubblicazione."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib. Roma maggio2020 rinnovo pds BILANCIAMENTO VITA PRIVATA CEDU no famliari con reato OK OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 22.3.2020, n. RG 43954/2019 — rinnovo pds e bilanciamento vita privata CEDU con condanna per stupefacenti",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come anonimizzato, solo nazionalità (senegalese) indicata. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Ancona 24.11.2021 Assegno invalidita con pds cure di 6 mesi perche presente non occasionale in Italia OK OK OK.md",
+  "titolo_pubblico": "Trib. Ancona, sentenza 24.11.2021, n. 118/2021 — assegno invalidità civile con pds cure mediche di durata infrannuale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato solo come straniero extracomunitario di nazionalità algerina, nessun dato identificativo."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 13.4.2023, n. 3964/2023 — rilascio pds richiesta asilo da sospensiva del diniego di protezione speciale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come [Omissis]. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Lecce dic.2019 Per inespellibili sempre PDS no terzium genus.md",
+  "titolo_pubblico": "Trib. Lecce, sentenza 13.9.2019, n. 4759/2018 — obbligo di rilascio del pds a inespellibile per motivi familiari",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come [anonimizzato] con sola nazionalità (americano, coniuge di cittadina italiana). Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Lucca 2024 pesnione con pds cure ingeriore a un anno OK.md",
+  "titolo_pubblico": "Trib. Lucca, sentenza 6.2.2024, n. 36/2023 — pensione di inabilità civile con pds cure mediche di durata infrannuale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come straniero extracomunitario, dati oscurati. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma 13.12.24 RISARCIMENTO DANNI DA RITARDO RILASCIO PDS 2043 danno anche morale e cautelare rilascio pds OK OK.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 13.12.2024, n. 9806/2024 — risarcimento del danno da ritardo nel rilascio del pds per asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come [anonimizzata], solo nazionalità (congolese) e condizione della figlia minore indicate senza altri dati identificativi diretti. Decisione di merito nel medesimo procedimento cautelare pubblicato nel manifest (n. 9806/2024, provv. 29.3.2024)."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma 19.6.2024 Dies a Quo per lrilascio PDS KIT POSTALE OK OK  .md",
+  "titolo_pubblico": "Trib. Roma, sentenza 19.6.2024, n. 17086/2024 — silenzio-inadempimento della Questura sul rilascio del pds per protezione speciale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come [anonimizzato], solo nazionalità (indiano) indicata. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma 25.11.22 APOLIDIA Bosnia prima 1995 e anche senza atto nascita OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 25.11.2022, n. 19421/2022 — riconoscimento status di apolide a donna di origine rom bosniaca nata in Italia",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": ["Data di nascita della ricorrente (7.7.1979) nei metadati", "Città di nascita della ricorrente (Modena) nei metadati"],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come 'anonimizzato' ma i metadati di frontmatter riportano città e data di nascita esatte, combinazione potenzialmente identificativa se incrociata con altre informazioni (origine rom, madre già dichiarata apolide). Da valutare in redazione."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma dic.2023 ritardo ordina conclusione procedimento rinnovo protezione speciale.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 2.1.2024, n. 49996/2023 — silenzio della Questura sul rinnovo del pds per protezione speciale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino bangladese'. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma luglio 2025 REVOCA SUSSIDIARIA reati stupefacenti ma espiato NO ATTUALE Pericolo ok.md",
+  "titolo_pubblico": "Trib. Roma, decreto 28.3.2025, n. 36154/2023 — illegittima revoca automatica della protezione sussidiaria per reati in materia di stupefacenti",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino nigeriano (Delta State)'. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma marzo 2024 rilascio pds in via cautelare a risarcimento per ritardo OK OK.md",
+  "titolo_pubblico": "Trib. Roma, provvedimento presidenziale 29.3.2024, n. 9806/2024 — rilascio cautelare urgente del pds per asilo per ritardo della Questura",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come [anonimizzata], solo nazionalità (congolese) e condizione della figlia minore indicate. Fase cautelare dello stesso procedimento definito con la sentenza n. 9806/2024 del 13.12.2024 già presente nel manifest."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma2019 APOLIDIA minore solo senza ricordi con testmone casa famiglia OK.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 13.7.2018, n. 80126/2015 — riconoscimento status di apolide a minore non accompagnato privo di documenti",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come anonimizzato, di presunta provenienza ex-jugoslava. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma5.5.21 Apolidia Bosnia nato prima del 1995 OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 28.5.2021, n. 17558/20 — riconoscimento status di apolide a donna di origine bosniaca nata in Italia",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": ["Nome di battesimo 'Lilia' riportato nei metadati nonostante l'indicazione '(anonimizzato)'"],
+  "qualita": "pubblicabile",
+  "nota": "Il campo parties.appellant riporta il nome 'Lilia (anonimizzato)': è un solo nome proprio, senza cognome né altri dati identificativi nel corpo del testo, ma va comunque rimosso in redazione essendo un'incongruenza rispetto all'anonimizzazione dichiarata."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Trieste gennaio 2024 pds attesa Apolidia in attesa di giudizio OK.md",
+  "titolo_pubblico": "Trib. Trieste, ordinanza 5.2.2024, n. 5576/2023 — pds provvisorio in pendenza del giudizio di accertamento dell'apolidia originaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": ["Nome 'Azbì' riportato nei metadati nonostante l'indicazione '(anonimizzato)'"],
+  "qualita": "pubblicabile",
+  "nota": "Il campo parties.appellant riporta il nome 'Azbì (anonimizzato)': nome proprio isolato, senza cognome, ma da rimuovere in redazione per coerenza con l'anonimizzazione dichiarata; il corpo del testo non contiene ulteriori dati identificativi."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.civ. Napoli nov.2024 Ammette al patrocinio innanzi al TAR dopo rigetto di quest ultimo OK OK.md",
+  "titolo_pubblico": "Trib. Napoli, sentenza 13.11.2024, n. 23423/2023 — ammissione al gratuito patrocinio per il giudizio TAR dopo rigetto per mancata notifica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'straniero richiedente gratuito patrocinio'. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 21.9.2023, n. 9425/2023 — pds provvisorio dopo sospensiva dell'allontanamento, esclusa la terza via",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'straniero'. Nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 22.11.2023 — pds provvisorio per straniero inespellibile convivente con familiari italiani, esclusa la terza via",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino tunisino'. Nessun dato personale in chiaro. Numero di ruolo assente nei metadati (case_number vuoto)."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tribunale di Milano, ord. 9 maggio 2019 apolidia  a persona con identita incerta II.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 9.5.2019, n. 58486/2017 — riconoscimento status di apolide a donna di origine rom rumena con identità incerta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": ["Città di nascita della ricorrente (Segarcea, Romania) nei metadati", "Data di nascita della ricorrente (15.08.1989) nei metadati"],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come 'anonimizzata' ma i metadati riportano città e data di nascita esatte, combinazione potenzialmente identificativa (unita all'origine rom e alla presenza di un figlio nato in Italia). Da valutare in redazione."
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/sent cass SSUU n. 17876_2025 Procura NON tradotta va bene OK.md",
+  "titolo_pubblico": "Cass. SS.UU., sentenza 2.7.2025, n. 17876/2025 — la traduzione della procura estera non è requisito di validità dell'atto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": ["Nome e cognome della ricorrente in chiaro nei metadati (Oberti-Oberti Jole Edvige)", "Nome e cognome dei controricorrenti in chiaro nei metadati (Noli Angelo, Galletto Savoretti Giuseppe)"],
+  "qualita": "pubblicabile",
+  "nota": "Decisione di principio delle Sezioni Unite su questione processuale (traduzione della procura alle liti rilasciata all'estero), di interesse generale anche per il contenzioso in materia di immigrazione; il merito riguarda una querela di falso su inventario ereditario tra privati, estranea al tema immigrazione ma la massima di diritto è comunque rilevante. I metadati riportano i nomi completi delle parti private, da rimuovere in redazione prima della pubblicazione."
+ }
+]

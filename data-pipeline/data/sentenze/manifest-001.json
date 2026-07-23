@@ -1,0 +1,894 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass. ott.2018 pds sfrutt.lavorativo diritto soggettivo Giudice supera Parere PM.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass. ott.2018 pds sfrutt.lavorativo diritto soggettivo Giudice supera Parere PM.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2018-12-11",
+  "ente": "Corte di Cassazione, Sezioni Unite",
+  "numero": "32044/2018",
+  "titolo": "Cass. ott.2018 pds sfrutt.lavorativo diritto soggettivo Giudice supera Parere PM",
+  "oggetto": "Natura giuridica della situazione soggettiva del richiedente il permesso di soggiorno per particolare sfruttamento lavorativo ex art. 22 comma 12-quater TUI: diritto soggettivo e giurisdizione del giudice ordinario",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6039
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass. pen. 19225 2012 Scriminante 54 per FALSE GENERALITA vittima di tratta OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass. pen. 19225 2012 Scriminante 54 per FALSE GENERALITA vittima di tratta OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2012-05-21",
+  "ente": "Corte di Cassazione, Sezione III Penale",
+  "numero": "19225/2012",
+  "titolo": "Cass. pen. 19225 2012 Scriminante 54 per FALSE GENERALITA vittima di tratta OK",
+  "oggetto": "Applicabilità della scriminante dello stato di necessità (art. 54 c.p.) alla vittima di tratta che fornisce false generalità alle autorità",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4206
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-09-30",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "14573/2019",
+  "titolo": "Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine",
+  "oggetto": "Obbligo di motivazione del giudice sulla possibilità di cure nel paese di origine in caso di espulsione di straniero affetto da patologia psichiatrica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3240
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2020 reati non automaticametne ostativi per umanitaria.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.2020 reati non automaticametne ostativi per umanitaria.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-06-10",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "10359/2018",
+  "titolo": "Cass.2020 reati non automaticametne ostativi per umanitaria",
+  "oggetto": "I precedenti penali non sono automaticamente ostativi al rilascio del permesso di soggiorno per motivi umanitari",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4666
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2020 rilevanti le torture in LIBIA per umanitaria.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.2020 rilevanti le torture in LIBIA per umanitaria.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-08-25",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "20213/2019",
+  "titolo": "Cass.2020 rilevanti le torture in LIBIA per umanitaria",
+  "oggetto": "Rilevanza delle violenze subite in Libia (paese di transito) ai fini della protezione umanitaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5107
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2021 prot.umanitaria a vittima di tratta con indicatori ma non DICE NULLA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.2021 prot.umanitaria a vittima di tratta con indicatori ma non DICE NULLA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-01-27",
+  "ente": "Corte di Cassazione, Seconda Sezione Civile",
+  "numero": "1750/2021",
+  "titolo": "Cass.2021 prot.umanitaria a vittima di tratta con indicatori ma non DICE NULLA",
+  "oggetto": "Riconoscimento della protezione umanitaria a presunta vittima di tratta che non riconosce esplicitamente la propria condizione di sfruttamento",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5763
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2021 sussidiaria anche per pericolo di vita derviante da DISASTRO AMBIENTALE.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.2021 sussidiaria anche per pericolo di vita derviante da DISASTRO AMBIENTALE.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-02-24",
+  "ente": "Corte di Cassazione",
+  "numero": "5022/2021",
+  "titolo": "Cass.2021 sussidiaria anche per pericolo di vita derviante da DISASTRO AMBIENTALE",
+  "oggetto": "Rilevanza del disastro ambientale e del cambiamento climatico ai fini della protezione umanitaria e sussidiaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "calamita-naturale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4725
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2558-2020 Umanitario per ragioni di salute.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.2558-2020 Umanitario per ragioni di salute.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-02-04",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "33872/2018",
+  "titolo": "Cass.2558-2020 Umanitario per ragioni di salute",
+  "oggetto": "La vulnerabilità derivante da gravi condizioni di salute come presupposto autonomo per la protezione umanitaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6286
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.25734-21 protezione umanitaria paesi transito vulnerabilita comparazione attenuata.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.25734-21 protezione umanitaria paesi transito vulnerabilita comparazione attenuata.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-03-09",
+  "ente": "Corte Suprema di Cassazione, Terza Sezione Civile",
+  "numero": "25734/2021",
+  "titolo": "Cass.25734-21 PROTEZIONE SPEC. Paesi di transito e lavoro grande rilievo. meno paese di origine OK",
+  "oggetto": "Rilevanza delle esperienze nel Paese di transito (Libia) ai fini della protezione umanitaria e principio di comparazione attenuata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5302
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.26.4.2024 Bangladesh USURA OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.26.4.2024 Bangladesh USURA OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2024-04-26",
+  "ente": "Corte di Cassazione",
+  "numero": "16232/2023",
+  "titolo": "Cass.26.4.2024 Bangladesh USURA OK",
+  "oggetto": "Obbligo del giudice di valutare la condizione di vittima di usura ai fini della protezione internazionale e complementare",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4462
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.271_2022 causa esclusione status reati NON AUTOMATICA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.271_2022 causa esclusione status reati NON AUTOMATICA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-04-28",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "22050/2019",
+  "titolo": "Cass.271 2022 causa esclusione status reati NON AUTOMATICA",
+  "oggetto": "Non automaticita della causa di esclusione dallo status di rifugiato per condanna penale: necessita di valutazione individuale della pericolosita (art. 12 d.lgs. 251/2007)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3788
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.29.12.21 Asilo e TRATTA con storia CONTRADDITTORIA OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.29.12.21 Asilo e TRATTA con storia CONTRADDITTORIA OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-12-29",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "41863/2021",
+  "titolo": "Cass.29.12.21 Asilo e TRATTA con storia CONTRADDITTORIA OK",
+  "oggetto": "Criteri di valutazione della credibilità delle dichiarazioni della richiedente asilo vittima di tratta alla luce delle linee guida UNHCR",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5471
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.29460.2019 Sez.Unitenov.2019 Umanitaria no retroat.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.29460.2019 Sez.Unitenov.2019 Umanitaria no retroat.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2019-11-13",
+  "ente": "Corte Suprema di Cassazione, Sezioni Unite Civili",
+  "numero": "29460/2019",
+  "titolo": "Cass.29460.2019 Sez.Unitenov.2019 Umanitaria no retroat",
+  "oggetto": "Regime intertemporale del d.l. 113/2018 in materia di protezione umanitaria e principi per la valutazione comparativa ai fini del riconoscimento della protezione umanitaria",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 7435
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.3393_23 Doppio BINARIO art. 18 obter dicta ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.3393_23 Doppio BINARIO art. 18 obter dicta ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-02-03",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "3393/2023",
+  "titolo": "Cass.3393 23 Doppio BINARIO art. 18 obter dicta",
+  "oggetto": "Regime protettivo della vittima di sfruttamento lavorativo: alternatività dei presupposti di denuncia e collaborazione processuale ex art. 22 comma 12-quater d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5968
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.676_2022 Vittime Tratta Asilo o speciale non sussidiaria VEROSIMIGLIANZA in un dato luogo e tempo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.676_2022 Vittime Tratta Asilo o speciale non sussidiaria VEROSIMIGLIANZA in un dato luogo e tempo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-01-12",
+  "ente": "Corte di Cassazione",
+  "numero": "676/2022",
+  "titolo": "Cass.676 2022 Vittime Tratta Asilo o speciale non sussidiaria VEROSIMIGLIANZA in un dato luogo e tempo",
+  "oggetto": "Criteri di valutazione della credibilita' e riconoscimento della protezione internazionale per vittime di tratta a scopo di prostituzione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 7972
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.6964_2023 Cambiamenti Climatici Pakistan rilevanti per Protezione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.6964_2023 Cambiamenti Climatici Pakistan rilevanti per Protezione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-03-08",
+  "ente": "Corte di Cassazione",
+  "numero": "6964/2023",
+  "titolo": "Cass.6964 2023 Cambiamenti Climatici Pakistan rilevanti per Protezione",
+  "oggetto": "Obbligo del giudice di merito di esaminare le ragioni climatiche e ambientali dedotte dal richiedente ai fini di tutte le forme di protezione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "calamita-naturale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 2849
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.SEZ UNITE 24413-2021 Umanitaria art. 8 COMPARAZIONE ATTENUATA art. 8 in aert. 3 e 2 OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.SEZ UNITE 24413-2021 Umanitaria art. 8 COMPARAZIONE ATTENUATA art. 8 in aert. 3 e 2 OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2021-09-09",
+  "ente": "Corte di Cassazione - Sezioni Unite Civili",
+  "numero": "24413/2021",
+  "titolo": "Cass.SEZ UNITE 24413-2021 Umanitaria art. 8 COMPARAZIONE ATTENUATA art. 8 in aert. 3 e 2 OK OK",
+  "oggetto": "Criteri della valutazione comparativa ai fini del riconoscimento della protezione umanitaria e principio della comparazione attenuata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 7551
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.dic. BANGLADESH Asilo COLORE PELLE E MINORE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.dic. BANGLADESH Asilo COLORE PELLE E MINORE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-12-03",
+  "ente": "Corte di Cassazione",
+  "numero": "25778/2024",
+  "titolo": "Cass.dic. BANGLADESH Asilo COLORE PELLE E MINORE",
+  "oggetto": "Discriminazione fondata sul colore della pelle (colorismo) come presupposto per il riconoscimento dello status di rifugiato o della protezione sussidiaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5585
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.dic.2019 Prot. Umanitaria per figlio verso adozione mite CEDU art. 8 OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.dic.2019 Prot. Umanitaria per figlio verso adozione mite CEDU art. 8 OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-12-09",
+  "ente": "Corte di Cassazione",
+  "numero": "4246/2018",
+  "titolo": "Cass.dic.2019 Prot. Umanitaria per figlio verso adozione mite CEDU art. 8 OK OK",
+  "oggetto": "Protezione umanitaria per genitore straniero con figlio minore in Italia in vista di adozione mite ex art. 44 lett. d) L. 184/1983 - obbligo di bilanciamento ex art. 8 CEDU",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 8896
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.sett.2019 pds sfrutt.art.22 trib.civ questore no discrez. dal giudice anche senza parere pm.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass.sett.2019 pds sfrutt.art.22 trib.civ questore no discrez. dal giudice anche senza parere pm.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-09-20",
+  "ente": "Corte di Cassazione",
+  "numero": "23456/2019",
+  "titolo": "Cass.sett.2019 pds sfrutt.art.22 trib.civ questore no discrez. dal giudice anche senza parere pm",
+  "oggetto": "Giurisdizione del giudice ordinario sul permesso di soggiorno per particolare sfruttamento lavorativo ex art. 22 comma 12-quater TUI e autonomia del giudice rispetto al parere del PM",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4756
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass7218-2022 umanitaria integraz.lavorativa con lavoro breve per covid OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass7218-2022 umanitaria integraz.lavorativa con lavoro breve per covid OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-03-08",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "22837/2020",
+  "titolo": "Cass7218-2022 umanitaria integraz.lavorativa con lavoro breve per covid",
+  "oggetto": "Rilevanza dell'integrazione sociolavorativa e degli effetti della pandemia Covid-19 sui rapporti di lavoro ai fini della protezione umanitaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4284
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass_4.8.23 Statsu vittima di tratta anche senza AMMISSIONE e anche per rischio di Discriminazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass_4.8.23 Statsu vittima di tratta anche senza AMMISSIONE e anche per rischio di Discriminazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-08-04",
+  "ente": "Corte di Cassazione",
+  "numero": "4135/2022",
+  "titolo": "Cass 4.8.23 Statsu vittima di tratta anche senza AMMISSIONE e anche per rischio di Discriminazione",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittime di tratta anche senza esplicita ammissione di prostituzione e anche per rischio di discriminazione nel paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6976
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass_SSUU_29460-19.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cass_SSUU_29460-19.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2019-09-24",
+  "ente": "Corte Suprema di Cassazione Sezioni Unite Civili",
+  "numero": "29460/2019",
+  "titolo": "Cass SSUU 29460-19",
+  "oggetto": "Regime intertemporale del decreto legge n. 113/2018 in materia di protezione umanitaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5608
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cassazione n. 27205-2025 dell'11.10.2025  (2).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cassazione n. 27205-2025 dell'11.10.2025  (2).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-10-11",
+  "ente": "Corte di Cassazione",
+  "numero": "27205/2025",
+  "titolo": "Cassazione n. 27205-2025 dell'11.10.2025 (2)",
+  "oggetto": "Riconoscimento dello status di rifugiato a vittima di tratta a fini di sfruttamento sessuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4691
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cassazione n. 7283-2024 del 19.03.2024 (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cassazione n. 7283-2024 del 19.03.2024 (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2024-03-19",
+  "ente": "Corte di Cassazione",
+  "numero": "7283/2024",
+  "titolo": "Cassazione n. 7283-2024 del 19.03.2024 (1)",
+  "oggetto": "Status di rifugiato per donna vittima di tratta: il rischio di persecuzione va oltre il re-trafficking",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5310
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cassazione2020 accert.vulnerabilita e valutazione paese di origine.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cassazione2020 accert.vulnerabilita e valutazione paese di origine.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-02-14",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "35342/2018",
+  "titolo": "Cassazione2020 accert.vulnerabilita e valutazione paese di origine",
+  "oggetto": "Accertamento della vulnerabilita e principio di comparazione attenuata nella protezione umanitaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4566
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale Egitto Malattia psichiatrica.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale Egitto Malattia psichiatrica.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-09-12",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Bologna - Sezione 2",
+  "numero": "PR0003233",
+  "titolo": "Comm. Bologna.2019 Protezione speciale Egitto Malattia psichiatrica",
+  "oggetto": "Riconoscimento della protezione speciale ex art. 19 comma 1.1 D.Lgs. 286/1998 per cittadino egiziano affetto da schizofrenia paranoide, in ragione dell'inadeguatezza del sistema sanitario psichiatrico nel Paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3559
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale MALI epatite b cure non accessibili economicamente.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale MALI epatite b cure non accessibili economicamente.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2018-12-17",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Bologna - Sezione Bologna I",
+  "numero": "PR0002352",
+  "titolo": "Comm. Bologna.2019 Protezione speciale MALI epatite b cure non accessibili economicamente",
+  "oggetto": "Riconoscimento della protezione speciale ex art. 19, commi 1 e 1.1 D.Lgs. 286/1998 per cittadino maliano affetto da epatite B cronica, in ragione dell'inaccessibilita economica delle cure nel Paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3632
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale Nigeria Tratta no minaccie rientro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale Nigeria Tratta no minaccie rientro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-08-09",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Bologna - Sezione Bologna 1",
+  "numero": "PR0003640",
+  "titolo": "Comm. Bologna.2019 Protezione speciale Nigeria Tratta no minaccie rientro",
+  "oggetto": "Riconoscimento della protezione speciale ex art. 19, comma 1.1 D.Lgs. 286/1998 per vittima di tratta nigeriana, nonostante l'assenza di minacce concrete in caso di rientro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3757
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Terr.2019 Perugia_protezione speciale Pakistan Kasmir Annoso conflitto criptata.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm. Terr.2019 Perugia_protezione speciale Pakistan Kasmir Annoso conflitto criptata.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-09-06",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Perugia",
+  "numero": null,
+  "titolo": "Comm. Terr.2019 Perugia protezione speciale Pakistan Kasmir Annoso conflitto criptata",
+  "oggetto": "Riconoscimento della protezione speciale ex art. 19, comma 1.1 D.Lgs. 286/1998 per cittadino pakistano proveniente da Kotli (Azad Kashmir), in ragione dell'annoso conflitto tra Pakistan e India e della volatilita della situazione di sicurezza nella regione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4010
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Ancona status per tratta pakistano adulto indebitato per la partenza e sfruttato in Italia OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm.Ancona status per tratta pakistano adulto indebitato per la partenza e sfruttato in Italia OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2020-11-02",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Ancona",
+  "numero": null,
+  "titolo": "Comm.Ancona status per tratta pakistano adulto indebitato per la partenza e sfruttato in Italia OK",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima di tratta internazionale finalizzata allo sfruttamento lavorativo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   },
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3335
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Caserta maggio2022 sussidiaria ESCLUDE PROTEZIONE INTERNA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm.Caserta maggio2022 sussidiaria ESCLUDE PROTEZIONE INTERNA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-04-20",
+  "ente": "Commissione Territoriale di Caserta",
+  "numero": "NA21695",
+  "titolo": "Comm.Caserta maggio2022 sussidiaria ESCLUDE PROTEZIONE INTERNA",
+  "oggetto": "Riconoscimento della protezione sussidiaria ex art. 14 lett. c) D.Lgs. 251/2007 con esclusione dell'alternativa di protezione interna (IFA)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3886
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Napoli Guineana Vittima Tratta matrimonbio forzato MGF OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm.Napoli Guineana Vittima Tratta matrimonbio forzato MGF OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2023-11-13",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione di Napoli",
+  "numero": null,
+  "titolo": "Comm.Napoli Guineana Vittima Tratta matrimonbio forzato MGF",
+  "oggetto": "Riconoscimento dello status di rifugiato per donna vittima di tratta, matrimonio forzato, violenza domestica e persecuzione di genere",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4416
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Territoriale 2020 status a minore GHANA tratta con promessa giuramento debito sfruttamento lavorativo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm.Territoriale 2020 status a minore GHANA tratta con promessa giuramento debito sfruttamento lavorativo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2020-02-24",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione 1 di Napoli",
+  "numero": "NA0014882",
+  "titolo": "Comm.Territoriale 2020 status a minore GHANA tratta con promessa giuramento debito sfruttamento lavorativo",
+  "oggetto": "Riconoscimento dello status di rifugiato per minore vittima di tratta degli esseri umani con reclutamento tramite promessa, giuramento e debito",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4150
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Territoriale TORINO II 2020 Tratta minore Bangladesh sfruttamento lavorativo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm.Territoriale TORINO II 2020 Tratta minore Bangladesh sfruttamento lavorativo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2020-10-12",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Torino/Torino 2",
+  "numero": "CN0004004",
+  "titolo": "Comm.Territoriale TORINO II 2020 Tratta minore Bangladesh sfruttamento lavorativo",
+  "oggetto": "Riconoscimento dello status di rifugiato per minore vittima di tratta internazionale finalizzata allo sfruttamento lavorativo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5269
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Torino 2023 NIger. Nessuna protezione non credibilita minaccie in Nig.e attuale collocazione sfruttatori.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm.Torino 2023 NIger. Nessuna protezione non credibilita minaccie in Nig.e attuale collocazione sfruttatori.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-10-28",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Torino",
+  "numero": "NA0020373",
+  "titolo": "Comm.Torino 2023 NIger. Nessuna protezione non credibilita minaccie in Nig.e attuale collocazione sfruttatori",
+  "oggetto": "Diniego di protezione internazionale a richiedente nigeriana per non credibilita delle dichiarazioni in materia di tratta e sfruttamento",
+  "esito": "commissione_territoriale",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4028
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.terr.Salerno2020 status rifugiato minore vittima di tratta scopo lavorativo GHANA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Comm.terr.Salerno2020 status rifugiato minore vittima di tratta scopo lavorativo GHANA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-24",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione 1 di Napoli",
+  "numero": null,
+  "titolo": "Comm.terr.Salerno2020 status rifugiato minore vittima di tratta scopo lavorativo GHANA",
+  "oggetto": "Riconoscimento dello status di rifugiato a minore vittima di tratta a scopo lavorativo dal Ghana in quanto appartenente a un determinato gruppo sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4764
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commisione Napoli 2022 Status Nigeria Uomo tratta accattonaggio Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Commisione Napoli 2022 Status Nigeria Uomo tratta accattonaggio Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2022-10-12",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione di Napoli",
+  "numero": "N.0003372/2022",
+  "titolo": "Commisione Napoli 2022 Status Nigeria Uomo tratta accattonaggio",
+  "oggetto": "Riconoscimento dello status di rifugiato a vittima di tratta di esseri umani dalla Nigeria sfruttata nell'accattonaggio in Italia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4607
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commisione Napoli 2023 Status Ivoriana 1994 matrimonio forzato Isolamento e  sfrutt.domestico Tunisia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Commisione Napoli 2023 Status Ivoriana 1994 matrimonio forzato Isolamento e  sfrutt.domestico Tunisia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2023-07-03",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione di Napoli",
+  "numero": null,
+  "titolo": "Commisione Napoli 2023 Status Ivoriana 1994 matrimonio forzato Isolamento e sfrutt.domestico Tunisia",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna ivoriana vittima di matrimonio forzato e di tratta internazionale a scopo di sfruttamento lavorativo domestico in Tunisia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4320
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commisisone Napoli 1 marzo 2021 con Dedalus Bangladesh giovane usura SUSSIDIARIA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Commisisone Napoli 1 marzo 2021 con Dedalus Bangladesh giovane usura SUSSIDIARIA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2021-03-08",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione 1 di Napoli",
+  "numero": "NA0019013",
+  "titolo": "Commisisone Napoli 1 marzo 2021 con Dedalus Bangladesh giovane usura SUSSIDIARIA",
+  "oggetto": "Riconoscimento della protezione sussidiaria per vittima di debt bondage legato a prestito usurario in Bangladesh",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4254
+ }
+]

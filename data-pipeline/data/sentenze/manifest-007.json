@@ -1,0 +1,782 @@
+[
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma giugno 24 Effetto sospnsivo automat e 30 gg per Mancato rispetto accelerata da Manifesta diversa da POS.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib Roma giugno 24 Effetto sospnsivo automat e 30 gg per Mancato rispetto accelerata da Manifesta diversa da POS.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-06-19",
+  "ente": "Tribunale di Roma",
+  "numero": "24672/2024",
+  "titolo": "Trib Roma giugno 24 Effetto sospnsivo automat e 30 gg per Mancato rispetto accelerata da Manifesta diversa da POS",
+  "oggetto": "Effetto sospensivo automatico e termini ordinari di 30 giorni per impugnazione in caso di violazione dei termini perentori della procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3135
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma ordinanza 700 28.02.23 - accesso procedura figlia minore con cert. nascita OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib Roma ordinanza 700 28.02.23 - accesso procedura figlia minore con cert. nascita OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-02-28",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "5346/2023",
+  "titolo": "Trib Roma ordinanza 700 28.02.23 - accesso procedura figlia minore con cert. nascita OK",
+  "oggetto": "Diritto della figlia minore della richiedente asilo alla formalizzazione della domanda di protezione internazionale sulla base del certificato di nascita",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3668
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma ordinanza 700 respingimento slovenia accesso alla procedura art.10 c.3 e reingresso in Italia OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib Roma ordinanza 700 respingimento slovenia accesso alla procedura art.10 c.3 e reingresso in Italia OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-01-18",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "56420/2020",
+  "titolo": "Trib Roma ordinanza 700 respingimento slovenia accesso alla procedura art.10 c.3 e reingresso in Italia OK OK",
+  "oggetto": "Illegittimita delle riammissioni informali in Slovenia e diritto al reingresso in Italia per presentare domanda di protezione internazionale ex art. 10 comma 3 Costituzione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 9155
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib venezia 23.05.2019 art.700 obbligo accettare reiterata.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib venezia 23.05.2019 art.700 obbligo accettare reiterata.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-05-23",
+  "ente": "Tribunale di Venezia",
+  "numero": "338/2019",
+  "titolo": "Trib venezia 23.05.2019 art.700 obbligo accettare reiterata",
+  "oggetto": "Obbligo della Questura di formalizzare domanda di protezione internazionale reiterata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3428
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib,Bologna sett.2024 Sospensiva automatica no accelerata violazione termine da MANIFESTAZIONE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib,Bologna sett.2024 Sospensiva automatica no accelerata violazione termine da MANIFESTAZIONE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-09-06",
+  "ente": "Tribunale di Bologna",
+  "numero": "non indicato",
+  "titolo": "Trib,Bologna sett.2024 Sospensiva automatica no accelerata violazione termine da MANIFESTAZIONE OK",
+  "oggetto": "Sospensione automatica per violazione dei termini della procedura accelerata nella fase tra manifestazione di volontà e formalizzazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4189
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bari genn.2024 700 Formalizzare domanda pericolo espulsione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Bari genn.2024 700 Formalizzare domanda pericolo espulsione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-11-20",
+  "ente": "Tribunale Ordinario di Bari",
+  "numero": "11822/2023",
+  "titolo": "Trib. Bari genn.2024 700 Formalizzare domanda pericolo espulsione",
+  "oggetto": "Obbligo della Questura di formalizzare la domanda di protezione internazionale con urgenza per pericolo di espulsione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3478
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bologna 21.11.24 No irreperibilita senza BUSTA RACCOMANDATA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Bologna 21.11.24 No irreperibilita senza BUSTA RACCOMANDATA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-11-21",
+  "ente": "Tribunale di Bologna",
+  "numero": "14809-1/2024",
+  "titolo": "Trib. Bologna 21.11.24 No irreperibilita senza BUSTA RACCOMANDATA",
+  "oggetto": "Sospensione automatica per violazione dei termini della procedura accelerata e mancata prova della notifica (busta raccomandata)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3562
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bologna giugno 2023 NO MANIF.INFOND. se Commssione valuta la credibilita Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Bologna giugno 2023 NO MANIF.INFOND. se Commssione valuta la credibilita Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-07-06",
+  "ente": "Tribunale di Bologna",
+  "numero": "9017-1/2023",
+  "titolo": "Trib. Bologna giugno 2023 NO MANIF.INFOND. se Commssione valuta la credibilita",
+  "oggetto": "Non può dichiararsi la manifesta infondatezza quando la CT ha effettuato una valutazione di credibilità nel merito",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3074
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Bologna giugno 2023 RINVIO PREGIUDIZIALE CASSAZIONE su perentorieta termini e oneri PROCEDURA ACCELERATA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Bologna giugno 2023 RINVIO PREGIUDIZIALE CASSAZIONE su perentorieta termini e oneri PROCEDURA ACCELERATA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-06-11",
+  "ente": "Tribunale di Bologna",
+  "numero": "5751-1/2023",
+  "titolo": "Trib. Bologna giugno 2023 RINVIO PREGIUDIZIALE CASSAZIONE su perentorieta termini e oneri PROCEDURA ACCELERATA",
+  "oggetto": "Rinvio pregiudiziale alla Cassazione sulla perentorietà dei termini delle procedure accelerate e sulla ripartizione degli oneri probatori",
+  "esito": "neutrale",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3339
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Firenze 22.3.2024 Procedure accelerate SENZA RITARDO formalizzazione è 10 gg + pec va bene OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Firenze 22.3.2024 Procedure accelerate SENZA RITARDO formalizzazione è 10 gg + pec va bene OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-22",
+  "ente": "Tribunale di Firenze",
+  "numero": "10437/2022",
+  "titolo": "Trib. Firenze 22.3.2024 Procedure accelerate SENZA RITARDO formalizzazione è 10 gg + pec va bene OK OK",
+  "oggetto": "Validità della manifestazione di volontà di protezione internazionale tramite PEC del legale e conseguenze sulla decorrenza dei termini della procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5981
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Mi 09.02.2023 SI accesso protezione diretta anche per DUBLINATI OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Mi 09.02.2023 SI accesso protezione diretta anche per DUBLINATI OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-02-09",
+  "ente": "Tribunale di Milano",
+  "numero": "39151/2022",
+  "titolo": "Trib. Mi 09.02.2023 SI accesso protezione diretta anche per DUBLINATI",
+  "oggetto": "Diritto dei soggetti dublinati a presentare domanda di protezione speciale direttamente al Questore ex art. 19 TUI",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3113
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Napoli 13.12.2024 Mancato rispetto termini domanda reiterata nella formalizzazione sospensiva automatica OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Napoli 13.12.2024 Mancato rispetto termini domanda reiterata nella formalizzazione sospensiva automatica OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-12-13",
+  "ente": "Tribunale di Napoli",
+  "numero": "26620-1/2024",
+  "titolo": "Trib. Napoli 13.12.2024 Mancato rispetto termini domanda reiterata nella formalizzazione sospensiva automatica",
+  "oggetto": "Sospensione automatica per mancato rispetto termini procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2345
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Napoli marzo 2024 MAX 16 GG tra manifestazione e c3 senno salta procedura accelerata oK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Napoli marzo 2024 MAX 16 GG tra manifestazione e c3 senno salta procedura accelerata oK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-25",
+  "ente": "Tribunale di Napoli",
+  "numero": "6119-1/2024",
+  "titolo": "Trib. Napoli marzo 2024 MAX 16 GG tra manifestazione e c3 senno salta procedura accelerata oK",
+  "oggetto": "Sospensione automatica per mancato rispetto termini procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2097
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Napoli n. 9071 12.4.2023 sospensiva mancato rispetto termini reiterata decisione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Napoli n. 9071 12.4.2023 sospensiva mancato rispetto termini reiterata decisione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-04-12",
+  "ente": "Tribunale di Napoli",
+  "numero": "9071/2023",
+  "titolo": "Trib. Napoli n. 9071 12.4.2023 sospensiva mancato rispetto termini reiterata decisione",
+  "oggetto": "Sospensione automatica per mancato rispetto termini procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 1967
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30_2007 Allarga nozione CARICO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30_2007 Allarga nozione CARICO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-09-10",
+  "ente": "Tribunale di Roma",
+  "numero": "R.G. 38117/2025",
+  "titolo": "Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30 2007 Allarga nozione CARICO OK",
+  "oggetto": "Rilascio urgente di visto d'ingresso per ricongiungimento familiare ex art. 3 d.lgs. 30/2007 a favore di familiari di cittadino italiano residenti a Gaza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5054
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30_2007 OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30_2007 OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-09-09",
+  "ente": "Tribunale di Roma",
+  "numero": "R.G. 37790-1/2025",
+  "titolo": "Trib. Roma 10.9.25 INAUDITA GAZA Familiare art. 3 30 2007",
+  "oggetto": "Rilascio di visto d'ingresso per ricongiungimento familiare ex art. 3 d.lgs. 30/2007 a favore di familiari di cittadini italiani residenti a Gaza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4369
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 20.6.2024 Sospensiva automatica mancata proced. Accel.DOMANDA REITERATA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma 20.6.2024 Sospensiva automatica mancata proced. Accel.DOMANDA REITERATA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-06-19",
+  "ente": "Tribunale di Roma",
+  "numero": "24693/2024",
+  "titolo": "Trib. Roma 20.6.2024 Sospensiva automatica mancata proced. Accel.DOMANDA REITERATA",
+  "oggetto": "Sospensione automatica del provvedimento della Commissione territoriale per mancato rispetto della procedura accelerata nella domanda reiterata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3758
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 22.7.25 SOSPENSIVA AUTOMATICA no ACCELERATA  domanda presentata in CPR ma NO CONVALIDA. OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma 22.7.25 SOSPENSIVA AUTOMATICA no ACCELERATA  domanda presentata in CPR ma NO CONVALIDA. OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-07-22",
+  "ente": "Tribunale di Roma",
+  "numero": "32514-1/2025",
+  "titolo": "Trib. Roma 22.7.25 SOSPENSIVA AUTOMATICA no ACCELERATA domanda presentata in CPR ma NO CONVALIDA. OK",
+  "oggetto": "Sospensione automatica del provvedimento di diniego per mancata convalida del trattenimento che aveva fondato la procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3315
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 57829-2022 Mancato rispetto TERMINI PROCED.ACCELERATE REITERATA SOSPENSIVA AUTOMATICA OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma 57829-2022 Mancato rispetto TERMINI PROCED.ACCELERATE REITERATA SOSPENSIVA AUTOMATICA OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-10-10",
+  "ente": "Tribunale di Roma",
+  "numero": "57829/2022",
+  "titolo": "Trib. Roma 57829-2022 Mancato rispetto TERMINI PROCED.ACCELERATE REITERATA SOSPENSIVA AUTOMATICA OK",
+  "oggetto": "Sospensione automatica del provvedimento di inammissibilità per mancato rispetto del termine di 5 giorni nella procedura accelerata per domanda reiterata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3479
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma 7.9.22 700 Accesso procedura Asilo OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma 7.9.22 700 Accesso procedura Asilo OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-09-07",
+  "ente": "Tribunale di Roma",
+  "numero": "RG 45379/2022",
+  "titolo": "Trib. Roma 7.9.22 700 Accesso procedura Asilo OK",
+  "oggetto": "Diritto del richiedente asilo all'accesso alla procedura di protezione internazionale e obbligo della Questura di formalizzare la domanda",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5487
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma PDF nov.2018 Decreto 700 formalizzazione no impedimento domicilio e DNA criptato.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma PDF nov.2018 Decreto 700 formalizzazione no impedimento domicilio e DNA criptato.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2018-11-21",
+  "ente": "Tribunale di Roma",
+  "numero": "RG 72238/2018",
+  "titolo": "Trib. Roma PDF nov.2018 Decreto 700 formalizzazione no impedimento domicilio e DNA criptato",
+  "oggetto": "Diritto alla formalizzazione della domanda di protezione internazionale: illegittimita del rifiuto fondato su inadeguatezza del domicilio e richiesta di test del DNA",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4284
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Roma marzo2019 art.700 obbligo di formalizzare domanda asilo questura roma.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Roma marzo2019 art.700 obbligo di formalizzare domanda asilo questura roma.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-02-26",
+  "ente": "Tribunale di Roma",
+  "numero": "R.G. 29724/2018",
+  "titolo": "Trib. Roma marzo2019 art.700 obbligo di formalizzare domanda asilo questura roma",
+  "oggetto": "Obbligo della Questura di formalizzare la domanda di protezione internazionale ex art. 700 c.p.c.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3459
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Salerno 24.10.25 DEDADE ACCELERATA x ritardo notifica decisione OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Salerno 24.10.25 DEDADE ACCELERATA x ritardo notifica decisione OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-24",
+  "ente": "Tribunale di Salerno",
+  "numero": "R.G. 2025/7178-1",
+  "titolo": "Trib. Salerno 24.10.25 DEDADE ACCELERATA x ritardo notifica decisione OK",
+  "oggetto": "Sospensione automatica del provvedimento impugnato per mancato rispetto della procedura accelerata a causa di ritardo nella notifica della decisione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3925
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Torino 5.02.2025 NO Irreperibilita solo da VESTANET senza raccomandata o senza PEC a COmmissione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Torino 5.02.2025 NO Irreperibilita solo da VESTANET senza raccomandata o senza PEC a COmmissione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-02-05",
+  "ente": "Tribunale di Torino",
+  "numero": "R.G. 4656/2023",
+  "titolo": "Trib. Torino 5.02.2025 NO Irreperibilita solo da VESTANET senza raccomandata o senza PEC a COmmissione",
+  "oggetto": "Insufficienza della videata VESTANET per provare la notifica del provvedimento di diniego e dichiarazione di irreperibilità",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2877
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Torino marzo 2023 in reclamo conferma diritto formalizzaizone domanda asilo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Torino marzo 2023 in reclamo conferma diritto formalizzaizone domanda asilo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-03-01",
+  "ente": "Tribunale di Torino",
+  "numero": "RG 599/2023",
+  "titolo": "Trib. Torino marzo 2023 in reclamo conferma diritto formalizzaizone domanda asilo",
+  "oggetto": "Conferma in reclamo del diritto alla formalizzazione della domanda di protezione internazionale e obbligo della Questura di organizzarsi entro un termine ragionevole",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4269
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Torino si formalizzaz. autonoma a 18 anni anche durante ricorso con madre.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Torino si formalizzaz. autonoma a 18 anni anche durante ricorso con madre.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-01-13",
+  "ente": "Tribunale di Torino",
+  "numero": "RG 23213/2021",
+  "titolo": "Trib. Torino si formalizzaz. autonoma a 18 anni anche durante ricorso con madre",
+  "oggetto": "Diritto del figlio divenuto maggiorenne di presentare domanda autonoma di protezione internazionale, anche durante la pendenza del ricorso giurisdizionale della madre",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4416
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Trento febbr.24 NO MANIFESTA INFONDATEZZA SE SOLLEVI QUESTIONE ATTINENTE OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Trento febbr.24 NO MANIFESTA INFONDATEZZA SE SOLLEVI QUESTIONE ATTINENTE OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-09",
+  "ente": "Tribunale di Trento",
+  "numero": "R.G. /2024",
+  "titolo": "Trib. Trento febbr.24 NO MANIFESTA INFONDATEZZA SE SOLLEVI QUESTIONE ATTINENTE OK OK",
+  "oggetto": "Impossibilità di dichiarare la manifesta infondatezza quando il richiedente ha sollevato questioni attinenti ai presupposti della protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3418
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib. Venezia 21.02.2024 Anticipo per accesso procedura asilo per periculum in re ipsa OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib. Venezia 21.02.2024 Anticipo per accesso procedura asilo per periculum in re ipsa OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-21",
+  "ente": "Tribunale di Venezia",
+  "numero": "RG 1811/2024",
+  "titolo": "Trib. Venezia 21.02.2024 Anticipo per accesso procedura asilo per periculum in re ipsa",
+  "oggetto": "Anticipo della formalizzazione della domanda di protezione internazionale rispetto all'appuntamento fissato dalla Questura con 8 mesi di ritardo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3190
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna 11.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Bologna 11.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-05-10",
+  "ente": "Tribunale di Bologna",
+  "numero": "R.G. 6420-1/2024",
+  "titolo": "Trib.Bologna 11.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK",
+  "oggetto": "Sospensione automatica per superamento del termine 3+10 giorni tra presentazione e formalizzazione della domanda e mancata comunicazione esame preliminare",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2998
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna 2023 GAttuso rinvio PREGIUDIZIALE Cass. per effetto mancato rispetto termini in proced.accellerata.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Bologna 2023 GAttuso rinvio PREGIUDIZIALE Cass. per effetto mancato rispetto termini in proced.accellerata.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-06-11",
+  "ente": "Tribunale di Bologna",
+  "numero": "R.G. 5751-1/2023",
+  "titolo": "Trib.Bologna 2023 GAttuso rinvio PREGIUDIZIALE Cass. per effetto mancato rispetto termini in proced.accellerata",
+  "oggetto": "Rinvio pregiudiziale alla Cassazione sulla questione se il mancato rispetto dei termini della procedura accelerata determini la sospensione automatica del provvedimento impugnato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3138
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna 4.4.25 NO EFFETTI PROCEDURA ACCELERATA con RITARDO FORMALIZZAZIONE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Bologna 4.4.25 NO EFFETTI PROCEDURA ACCELERATA con RITARDO FORMALIZZAZIONE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-04-04",
+  "ente": "Tribunale di Bologna",
+  "numero": "R.G. 3905-1/2025",
+  "titolo": "Trib.Bologna 4.4.25 NO EFFETTI PROCEDURA ACCELERATA con RITARDO FORMALIZZAZIONE OK",
+  "oggetto": "Effetti del ritardo nella formalizzazione della domanda di protezione internazionale sulla validità della procedura accelerata e sulla sospensione automatica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5079
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna marzo 2025 PROCEDURE ACCELERATE NO EFFETTI se manca in motivazione tempi proced. OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Bologna marzo 2025 PROCEDURE ACCELERATE NO EFFETTI se manca in motivazione tempi proced. OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-03-28",
+  "ente": "Tribunale di Bologna",
+  "numero": "R.G. 3234-1/2025",
+  "titolo": "Trib.Bologna marzo 2025 PROCEDURE ACCELERATE NO EFFETTI se manca in motivazione tempi proced.",
+  "oggetto": "Requisiti formali del provvedimento della Commissione per derogare alla sospensione automatica: obbligo di indicare nella motivazione tutte le date della procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5143
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Bologna ott.2023 No Manifesta infondatezza se giudizio credibilita e Paese origine sicura sollevato GRAVI MOTIVI OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Bologna ott.2023 No Manifesta infondatezza se giudizio credibilita e Paese origine sicura sollevato GRAVI MOTIVI OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-10-13",
+  "ente": "Tribunale di Bologna",
+  "numero": "R.G. 12732-1/2023",
+  "titolo": "Trib.Bologna ott.2023 No Manifesta infondatezza se giudizio credibilita e Paese origine sicura sollevato GRAVI MOTIVI",
+  "oggetto": "Sospensione del provvedimento per manifesta infondatezza quando il richiedente da POS ha invocato gravi motivi e vi sono profili di vulnerabilità",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 1972
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Catania marzo2022 Sospensiva 35 bis per TUNISIA situazione politica.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Catania marzo2022 Sospensiva 35 bis per TUNISIA situazione politica.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-02-11",
+  "ente": "Tribunale di Catania",
+  "numero": "R.G. 359/2022",
+  "titolo": "Trib.Catania marzo2022 Sospensiva 35 bis per TUNISIA situazione politica",
+  "oggetto": "Sospensione dell'efficacia esecutiva del provvedimento per deterioramento della situazione democratica in Tunisia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 1871
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-04-13",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "3964/2023",
+  "titolo": "Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO",
+  "oggetto": "Diritto al rilascio del permesso di soggiorno per richiesta asilo a seguito di sospensione cautelare del diniego di protezione speciale disposto dalla Questura",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2915
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Firenze 20.9.23 Tunisia NO PAESE ORIGINE SICURA e Giud valuta POS nella sua complessita no categoria OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Firenze 20.9.23 Tunisia NO PAESE ORIGINE SICURA e Giud valuta POS nella sua complessita no categoria OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-09-20",
+  "ente": "Tribunale di Firenze",
+  "numero": "R.G. 9787/2023",
+  "titolo": "Trib.Firenze 20.9.23 Tunisia NO PAESE ORIGINE SICURA e Giud valuta POS nella sua complessita no categoria OK OK",
+  "oggetto": "Disapplicazione del D.M. 17.3.2023 nella parte in cui include la Tunisia tra i Paesi di origine sicuri per sopravvenuto deterioramento delle condizioni democratiche",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2572
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Firenze 23.5.24 MINNITI DUBLINO dopo C.Giust.23.11.23 SEMPRE COMPETENZA PER SPECIALE OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Firenze 23.5.24 MINNITI DUBLINO dopo C.Giust.23.11.23 SEMPRE COMPETENZA PER SPECIALE OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-05-23",
+  "ente": "Tribunale di Firenze",
+  "numero": "R.G. 9183/2022",
+  "titolo": "Trib.Firenze 23.5.24 MINNITI DUBLINO dopo C.Giust.23.11.23 SEMPRE COMPETENZA PER SPECIALE OK OK",
+  "oggetto": "Rapporto tra Regolamento Dublino III e tutela giurisdizionale del diritto alla protezione complementare nazionale dopo CGUE 30.11.2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4272
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Firenze Agosto2021 effetto sospensivo AUTOMATICO per mancato rispetto termini procedura accelerata OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Firenze Agosto2021 effetto sospensivo AUTOMATICO per mancato rispetto termini procedura accelerata OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-07-26",
+  "ente": "Tribunale di Firenze",
+  "numero": "R.G. 8150/2021",
+  "titolo": "Trib.Firenze Agosto2021 effetto sospensivo AUTOMATICO per mancato rispetto termini procedura accelerata OK OK",
+  "oggetto": "Sospensione automatica ex lege per mancato rispetto dei termini della procedura accelerata nella domanda reiterata dichiarata manifestamente infondata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2822
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Genova 20.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Genova 20.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-05-20",
+  "ente": "Tribunale di Genova",
+  "numero": "R.G. 3124/2024",
+  "titolo": "Trib.Genova 20.5.24 Salta PROCED ACCELERATA anche MANCATO TERMINE 10 PIU 3 FORMALIZZAZIONE OK OK",
+  "oggetto": "Mancato rispetto del termine di formalizzazione (art. 26 comma 2-bis d.lgs. 25/2008) come causa di decadenza dalla procedura accelerata e ripristino della sospensione automatica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4692
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Milano 15.10.24 REITERATA Effetto sospensivo AUTOMATICO No rispetto termine tra manifestazione e formalizzazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Milano 15.10.24 REITERATA Effetto sospensivo AUTOMATICO No rispetto termine tra manifestazione e formalizzazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-14",
+  "ente": "Tribunale di Milano",
+  "numero": "38547-1/2023",
+  "titolo": "Trib.Milano 15.10.24 REITERATA Effetto sospensivo AUTOMATICO No rispetto termine tra manifestazione e formalizzazione",
+  "oggetto": "Effetto sospensivo automatico del ricorso contro provvedimento di manifesta infondatezza su domanda reiterata per mancato rispetto dei termini della procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3915
+ }
+]

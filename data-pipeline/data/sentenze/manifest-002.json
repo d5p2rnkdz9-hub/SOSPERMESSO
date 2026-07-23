@@ -1,0 +1,857 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commiss. Torino genn.2023 scarna prot. sussidiaria no tratta Bangladesh sfruttamento non collegato ma USURA diffusa.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Commiss. Torino genn.2023 scarna prot. sussidiaria no tratta Bangladesh sfruttamento non collegato ma USURA diffusa.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2023-01-05",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Torino/Novara",
+  "numero": null,
+  "titolo": "Commiss. Torino genn.2023 scarna prot. sussidiaria no tratta Bangladesh sfruttamento non collegato ma USURA diffusa",
+  "oggetto": "Riconoscimento della protezione sussidiaria per vittima di debt bondage legato a usura diffusa in Bangladesh",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4013
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commissione Caserta 2019 giovane Bangladesh debito casa Asilo schiavitù OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Commissione Caserta 2019 giovane Bangladesh debito casa Asilo schiavitù OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2019-08-21",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Caserta",
+  "numero": "TA0003531",
+  "titolo": "Commissione Caserta 2019 giovane Bangladesh debito casa Asilo schiavitù",
+  "oggetto": "Riconoscimento status di rifugiato a giovane bangladese vittima di tratta e schiavitù del debito (debt bondage), in quanto appartenente a determinato gruppo sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4392
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commissione Napoli 15.4.22 tratta Camerun in algeria e libia OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Commissione Napoli 15.4.22 tratta Camerun in algeria e libia OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2022-04-15",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione di Napoli",
+  "numero": null,
+  "titolo": "Commissione Napoli 15.4.22 tratta Camerun in algeria e libia",
+  "oggetto": "Riconoscimento status di rifugiato a donna camerunense vittima di tratta internazionale a scopo di sfruttamento sessuale e perseguitata per orientamento sessuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4344
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commsione lecce 2023 solo prot.Speciale NO rischio di Retrafficking per non provate aggressioni a familiari.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Commsione lecce 2023 solo prot.Speciale NO rischio di Retrafficking per non provate aggressioni a familiari.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2023-04-21",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Lecce",
+  "numero": "NA0020649",
+  "titolo": "Commsione lecce 2023 solo prot.Speciale NO rischio di Retrafficking per non provate aggressioni a familiari",
+  "oggetto": "Diniego della protezione internazionale ma riconoscimento della protezione speciale a donna nigeriana vittima di tratta, per insussistenza del rischio attuale di re-trafficking ma vulnerabilita soggettiva complessiva",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5314
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cons.Stato 17.6.2020 Pericolosita sociale in concreto art.5 anche per pds altro con legmai familiari OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Cons.Stato 17.6.2020 Pericolosita sociale in concreto art.5 anche per pds altro con legmai familiari OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2020-06-17",
+  "ente": "Consiglio di Stato",
+  "numero": "00615/2020",
+  "titolo": "Cons.Stato 17.6.2020 Pericolosita sociale in concreto art.5 anche per pds altro con legmai familiari OK",
+  "oggetto": "Bilanciamento tra sicurezza pubblica e tutela legami familiari nel diniego rinnovo permesso soggiorno per condanne ex art. 380 c.p.p.",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4954
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Corte Giust. giugno 2024 GRUPPO SOCIALE STATUS DONNE PER PARITA DI GENERE VISSUTA IN UE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Corte Giust. giugno 2024 GRUPPO SOCIALE STATUS DONNE PER PARITA DI GENERE VISSUTA IN UE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2024-06-11",
+  "ente": "Corte di Giustizia dell'Unione Europea (Grande Sezione)",
+  "numero": "C-646/21",
+  "titolo": "Corte Giust. giugno 2024 GRUPPO SOCIALE STATUS DONNE PER PARITA DI GENERE VISSUTA IN UE",
+  "oggetto": "Le donne minori che si identificano nel valore della parita di genere maturato durante il soggiorno in UE possono costituire un gruppo sociale ai fini dello status di rifugiato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4154
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/DECISIONE STATUS su Parere Dedalus 2023 con PRESUNZIONI CAMERUN Donna OKK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/DECISIONE STATUS su Parere Dedalus 2023 con PRESUNZIONI CAMERUN Donna OKK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2023-04-20",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno",
+  "numero": "SA0008540",
+  "titolo": "DECISIONE STATUS su Parere Dedalus 2023 con PRESUNZIONI CAMERUN Donna OKK",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna camerunense vittima di tratta a scopo di sfruttamento sessuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4105
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Decisione CT Napoli 2022 Status Marocco madre celibe OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Decisione CT Napoli 2022 Status Marocco madre celibe OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2022-11-11",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione di Napoli",
+  "numero": "non indicato",
+  "titolo": "Decisione CT Napoli 2022 Status Marocco madre celibe",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna marocchina madre celibe per rischio di persecuzione derivante dalla criminalizzazione delle relazioni extraconiugali e dallo stigma sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4356
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Decisione CT Napoli Status Pakistan vittima tratta sfruttamento lavorativo e estorsione dallo Zio OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Decisione CT Napoli Status Pakistan vittima tratta sfruttamento lavorativo e estorsione dallo Zio OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2022-09-05",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione di Napoli",
+  "numero": "non indicato",
+  "titolo": "Decisione CT Napoli Status Pakistan vittima tratta sfruttamento lavorativo e estorsione dallo Zio",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino pakistano vittima di tratta internazionale e sfruttamento lavorativo ad opera dello zio materno in Italia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   },
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4237
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Decisione CT Napoli status accattonaggio nigeriano 12.4.2022.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Decisione CT Napoli status accattonaggio nigeriano 12.4.2022.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2022-02-23",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione di Napoli",
+  "numero": null,
+  "titolo": "Decisione CT Napoli status accattonaggio nigeriano 12.4.2022",
+  "oggetto": "Riconoscimento dello status di rifugiato a vittima di tratta di esseri umani dalla Nigeria sfruttata nell'accattonaggio in Italia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3961
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/GDP ott.22 sosp.misure altern. per domanda prot.spec..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/GDP ott.22 sosp.misure altern. per domanda prot.spec..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "giudice_pace",
+  "data": "2022-10-07",
+  "ente": "Giudice di Pace di Milano",
+  "numero": "62983/2019",
+  "titolo": "GDP ott.22 sosp.misure altern. per domanda prot.spec.",
+  "oggetto": "Revoca della misura alternativa al trattenimento in pendenza di domanda di protezione speciale ex art. 19 TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 1761
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/GIP Catania 2021 Scriminante 54  Sfruttamento Prostituz. vittiima Tratta Donna Nig. richiama CEPU OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/GIP Catania 2021 Scriminante 54  Sfruttamento Prostituz. vittiima Tratta Donna Nig. richiama CEPU OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-10-07",
+  "ente": "Tribunale di Catania - GIP/GUP",
+  "numero": "6485/2018 R.G.N.R. - 497/2019 R.G.G.IP.",
+  "titolo": "GIP Catania 2021 Scriminante 54 Sfruttamento Prostituz. vittiima Tratta Donna Nig. richiama CEPU OK",
+  "oggetto": "Applicabilita della scriminante dello stato di necessita ex art. 54 c.p. a vittime di tratta che commettono reati di sfruttamento della prostituzione",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5285
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Giud. Pace nov.2024 Sfruttamento lavorativo rilievo art. 19 vulnerabilita INESPELLIBILITA DECRETO EPSULSIONE ANNULLATO.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Giud. Pace nov.2024 Sfruttamento lavorativo rilievo art. 19 vulnerabilita INESPELLIBILITA DECRETO EPSULSIONE ANNULLATO.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "giudice_pace",
+  "data": "2024-08-01",
+  "ente": "Giudice di Pace di Biella",
+  "numero": "202/2024 R.G.",
+  "titolo": "Giud. Pace nov.2024 Sfruttamento lavorativo rilievo art. 19 vulnerabilita INESPELLIBILITA DECRETO EPSULSIONE ANNULLATO",
+  "oggetto": "Inespellibilita del cittadino straniero vittima di sfruttamento lavorativo ex art. 19, c. 1.1, D.Lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2492
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Giudice pace Milano 3.12.25 NON CONVALIDA richiesta non formalizzata 18 ter.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Giudice pace Milano 3.12.25 NON CONVALIDA richiesta non formalizzata 18 ter.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "giudice_pace",
+  "data": "2025-12-03",
+  "ente": "Giudice di Pace di Milano",
+  "numero": "49865/2025",
+  "titolo": "Giudice pace Milano 3.12.25 NON CONVALIDA richiesta non formalizzata 18 ter",
+  "oggetto": "Non convalida del trattenimento per mancata formalizzazione dell'istanza ex art. 18-ter TUI e mancato rilascio della ricevuta valente come permesso di soggiorno provvisorio",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3113
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Ordinanza Trib min. Nap detenzine richiama art. 18 OMAR.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Ordinanza Trib min. Nap detenzine richiama art. 18 OMAR.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-05-22",
+  "ente": "Tribunale di Sorveglianza presso il Tribunale per i Minorenni di Napoli",
+  "numero": "39/19 Ord. - 24/2019 SIUS",
+  "titolo": "Ordinanza Trib min. Nap detenzine richiama art. 18 OMAR",
+  "oggetto": "Applicazione della detenzione domiciliare in comunità ex art. 47-ter L. 354/75 con attivazione del programma di assistenza e integrazione sociale ex art. 18 comma 6 T.U. Immigrazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3528
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Parere Trib Min Napoli OMAR giugno2018 art.18 c.6 MESSA ALLA PROVA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Parere Trib Min Napoli OMAR giugno2018 art.18 c.6 MESSA ALLA PROVA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-06-03",
+  "ente": "Tribunale per i Minorenni di Napoli",
+  "numero": "proc. penale n. 23844/18 - proc. penale n. 22017/18",
+  "titolo": "Parere Trib Min Napoli OMAR giugno2018 art.18 c.6 MESSA ALLA PROVA",
+  "oggetto": "Interpretazione estensiva dell'art. 18, comma 6, TU Immigrazione: applicabilita anche allo straniero il cui reato si e estinto per esito positivo della messa alla prova, non solo a chi ha espiato una pena detentiva",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3403
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Riconoscimento status genere CAvorio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Riconoscimento status genere CAvorio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-21",
+  "ente": "Tribunale di Torino",
+  "numero": "2635/2025",
+  "titolo": "Riconoscimento status genere CAvorio",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna vittima di matrimonio forzato, violenza domestica e MGF in Costa d'Avorio per appartenenza a particolare gruppo sociale legato al genere",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4232
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Riconoscimento status matrimonio forzato e tratta CAvorio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Riconoscimento status matrimonio forzato e tratta CAvorio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-02-25",
+  "ente": "Tribunale di Torino",
+  "numero": "7419/2025",
+  "titolo": "Riconoscimento status matrimonio forzato e tratta CAvorio",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna ivoriana vittima di matrimonio forzato e di tratta a scopo di sfruttamento lavorativo, con rischio di re-trafficking",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3749
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Riconoscimento status rifugiato vittima tratta e rischio retrafficking BANGLADESH.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Riconoscimento status rifugiato vittima tratta e rischio retrafficking BANGLADESH.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-13",
+  "ente": "Tribunale di Torino",
+  "numero": "24600/2022",
+  "titolo": "Riconoscimento status rifugiato vittima tratta e rischio retrafficking BANGLADESH",
+  "oggetto": "Riconoscimento dello status di rifugiato a uomo bengalese vittima di tratta a scopo di sfruttamento lavorativo per vincolo debitorio (debt bondage), con rischio di re-trafficking",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4396
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Status curda turca.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Status curda turca.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-03-17",
+  "ente": "Tribunale di Torino",
+  "numero": "1433/2025",
+  "titolo": "Status curda turca",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna curda turca per le discriminazioni e persecuzioni subite per appartenenza etnica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3592
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Status curdo turcopdf.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Status curdo turcopdf.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-03-17",
+  "ente": "Tribunale di Torino",
+  "numero": "1434/25",
+  "titolo": "Status curdo turcopdf",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino turco di etnia curda, simpatizzante (non iscritto) del partito di opposizione HDP, per timore di persecuzione etnico-politica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3410
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Status donna camerunense vittima di violenze e tratta (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Status donna camerunense vittima di violenze e tratta (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-09-23",
+  "ente": "Tribunale di Milano",
+  "numero": "40037/2018",
+  "titolo": "Status donna camerunense vittima di violenze e tratta (1)",
+  "oggetto": "Riconoscimento status di rifugiato a donna camerunense vittima di violenza di genere, matrimonio forzato e tratta, con applicazione della credibilità parziale o frazionata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 6854
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Status minore Gambia talibé - oscurata_compressed.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Status minore Gambia talibé - oscurata_compressed.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2019-11-15",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione 1 di Napoli",
+  "numero": null,
+  "titolo": "Status minore Gambia talibé - oscurata compressed",
+  "oggetto": "Riconoscimento dello status di rifugiato a minore gambiano ex talibé, vittima di sfruttamento, accattonaggio forzato e maltrattamenti nella scuola coranica, per appartenenza al particolare gruppo sociale dei minori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3641
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Status minore Senegal talibé - oscurata_compressed.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Status minore Senegal talibé - oscurata_compressed.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2020-01-23",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Salerno - Sezione 1 di Napoli",
+  "numero": null,
+  "titolo": "Status minore Senegal talibé - oscurata compressed",
+  "oggetto": "Riconoscimento dello status di rifugiato a minore senegalese ex talibé, vittima di accattonaggio forzato e maltrattamenti nella scuola coranica, per appartenenza al particolare gruppo sociale dei minori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3539
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TAR BS 318-2021 conversione uman.-lavoro prima volta NO PASSAP..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TAR BS 318-2021 conversione uman.-lavoro prima volta NO PASSAP..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-09-28",
+  "ente": "TAR Lombardia - Brescia",
+  "numero": "505/2021 R.R. - 318/2021 R.P.C.",
+  "titolo": "TAR BS 318-2021 conversione uman.-lavoro prima volta NO PASSAP.",
+  "oggetto": "Conversione del permesso di soggiorno per motivi umanitari in permesso per lavoro senza passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3500
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TAR Palermo sent. 440.2024 SI CONVERSIONE SPECIALE lavoro 19 e 32 uguali ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TAR Palermo sent. 440.2024 SI CONVERSIONE SPECIALE lavoro 19 e 32 uguali ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-02-06",
+  "ente": "TAR Sicilia - Palermo",
+  "numero": "95/2024 R.R. - 440/2024 R.P.C.",
+  "titolo": "TAR Palermo sent. 440.2024 SI CONVERSIONE SPECIALE lavoro 19 e 32 uguali ok",
+  "oggetto": "Convertibilita del permesso di soggiorno per protezione speciale in permesso per lavoro subordinato nel regime transitorio del d.l. 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3540
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TAR.Tosc.feb_24conv.spec..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TAR.Tosc.feb_24conv.spec..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-02-16",
+  "ente": "TAR Toscana",
+  "numero": "191/2024 R.R.",
+  "titolo": "TAR.Tosc.feb 24conv.spec.",
+  "oggetto": "Sospensione cautelare monocratica del rigetto della conversione del permesso di protezione speciale in permesso per lavoro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2164
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TAR.Trent.29_24conv.spec..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TAR.Trent.29_24conv.spec..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-02-26",
+  "ente": "T.R.G.A. Trento",
+  "numero": "12/2024",
+  "titolo": "TAR.Trent.29 24conv.spec.",
+  "oggetto": "Convertibilita del permesso di soggiorno per protezione speciale in permesso per lavoro subordinato nel regime transitorio del d.l. 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3839
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TAR.Venet.marz_24conv.spec..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TAR.Venet.marz_24conv.spec..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-03-27",
+  "ente": "T.A.R. Veneto",
+  "numero": "193/2024",
+  "titolo": "TAR.Venet.marz 24conv.spec.",
+  "oggetto": "Convertibilita del permesso di soggiorno per protezione speciale in permesso per lavoro nel regime transitorio del d.l. 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2500
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TM Bolzano 7.4.22 Decreto affidamento e riconoscimento tutela a responsabile orfanotrofio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TM Bolzano 7.4.22 Decreto affidamento e riconoscimento tutela a responsabile orfanotrofio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-04-06",
+  "ente": "Tribunale per i Minorenni di Bolzano",
+  "numero": "37-22 R. Tutele / 101-22 VG",
+  "titolo": "TM Bolzano 7.4.22 Decreto affidamento e riconoscimento tutela a responsabile orfanotrofio",
+  "oggetto": "Riconoscimento della qualifica di tutore del responsabile di un orfanotrofio di tipo familiare ucraino ai sensi della Convenzione dell'Aja del 1996 e della legge ucraina",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5592
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TRIB. RM - 071022 700 si al pds con sospensiva nelle more del rinnovo speciale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TRIB. RM - 071022 700 si al pds con sospensiva nelle more del rinnovo speciale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-10-07",
+  "ente": "Tribunale di Roma",
+  "numero": "36219/2022",
+  "titolo": "TRIB. RM - 071022 700 si al pds con sospensiva nelle more del rinnovo speciale",
+  "oggetto": "Ammissibilita del ricorso ex art. 700 c.p.c. per ottenere il rilascio di un permesso di soggiorno provvisorio nelle more del giudizio sul diniego di rinnovo del permesso per motivi umanitari",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3663
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TRib.Roma nov.2020 conversione da umanitaria a lavoro competenza Tribunale ordinario.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TRib.Roma nov.2020 conversione da umanitaria a lavoro competenza Tribunale ordinario.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-11-20",
+  "ente": "Tribunale di Roma",
+  "numero": null,
+  "titolo": "TRib.Roma nov.2020 conversione da umanitaria a lavoro competenza Tribunale ordinario",
+  "oggetto": "Diritto di accesso alla procedura di conversione del permesso di soggiorno per motivi umanitari nonostante iscrizione anagrafica presso indirizzo virtuale (via fittizia per senza fissa dimora)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4177
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tar Bologna febbr.2024 cautelare convertibilita SPECIALE Lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Tar Bologna febbr.2024 cautelare convertibilita SPECIALE Lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-02-07",
+  "ente": "TAR Emilia Romagna - Bologna",
+  "numero": "41/2024 R.R.",
+  "titolo": "Tar Bologna febbr.2024 cautelare convertibilita SPECIALE Lavoro",
+  "oggetto": "Convertibilita del permesso di soggiorno per protezione speciale in permesso per motivi di lavoro dopo il DL Cutro n. 50/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 1998
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tar Toscana 13.3.2024 cautelare SI Conversione pds cure mediche prima piantedosi II in Lavoro OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Tar Toscana 13.3.2024 cautelare SI Conversione pds cure mediche prima piantedosi II in Lavoro OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-03-13",
+  "ente": "Tribunale Amministrativo Regionale per la Toscana",
+  "numero": "232/2024 REG.RIC.",
+  "titolo": "Tar Toscana 13.3.2024 cautelare SI Conversione pds cure mediche prima piantedosi II in Lavoro",
+  "oggetto": "Conversione del permesso di soggiorno per cure mediche in permesso per lavoro subordinato/attesa occupazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 2929
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tar Veneto 1812_22 convertibilità pds prot. spec. al Questore OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Tar Veneto 1812_22 convertibilità pds prot. spec. al Questore OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2022-11-28",
+  "ente": "TAR Veneto",
+  "numero": "1345/2022 R.R.",
+  "titolo": "Tar Veneto 1812 22 convertibilità pds prot. spec. al Questore OK",
+  "oggetto": "Convertibilita in permesso per lavoro subordinato del permesso di soggiorno per protezione speciale rilasciato direttamente dal Questore ai sensi dell'art. 19 comma 1.2 TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3777
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/TarAnc.8.3.24Conv.Speciale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/TarAnc.8.3.24Conv.Speciale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-03-08",
+  "ente": "TAR Marche",
+  "numero": "87/2024 R.R.",
+  "titolo": "TarAnc.8.3.24Conv.Speciale",
+  "oggetto": "Convertibilita del permesso per protezione speciale in permesso per lavoro subordinato alla luce della disciplina transitoria dell'art. 7 DL 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3470
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tri,Pen.Roma II su non punibilita.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Tri,Pen.Roma II su non punibilita.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-04-26",
+  "ente": "Tribunale di Roma",
+  "numero": "3524/19 RGNR - 1323/20 RGDIB",
+  "titolo": "Tri,Pen.Roma II su non punibilita",
+  "oggetto": "Inapplicabilità dello stato di necessità (art. 54 c.p.) a vittima di tratta nigeriana imputata di detenzione di stupefacenti quando il pericolo derivi da credenze religiose e riti juju",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3289
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tri,Pen.Roma su non punibilita.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Tri,Pen.Roma su non punibilita.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-03-01",
+  "ente": "Tribunale Penale di Roma",
+  "numero": "21160/2021 RNR - 792/2022 RGGIP",
+  "titolo": "Tri,Pen.Roma su non punibilita",
+  "oggetto": "Inapplicabilità dello stato di necessità (art. 54 c.p.) alla corriere di droga vittima di tratta nigeriana e limiti della partecipazione del corriere al reato associativo ex art. 74 DPR 309/90",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 6554
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Firenze_4.sett24 Tratta Bangladesh INDEBITAMENTO poverta estrema e CAMBIAMENTO CLIMATICO OKOK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib Firenze_4.sett24 Tratta Bangladesh INDEBITAMENTO poverta estrema e CAMBIAMENTO CLIMATICO OKOK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-09-04",
+  "ente": "Tribunale di Firenze",
+  "numero": "9509/2022 R.G.",
+  "titolo": "Trib Firenze 4.sett24 Tratta Bangladesh INDEBITAMENTO poverta estrema e CAMBIAMENTO CLIMATICO OKOK",
+  "oggetto": "Riconoscimento dello status di rifugiato a vittima bengalese di tratta per sfruttamento lavorativo in Italia, con debito migratorio e rischio di re-trafficking",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5969
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Messina 2017 rifugiato tratta no denuncia OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib Messina 2017 rifugiato tratta no denuncia OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2017-07-14",
+  "ente": "Tribunale di Messina",
+  "numero": "316/2017",
+  "titolo": "Trib Messina 2017 rifugiato tratta no denuncia",
+  "oggetto": "Riconoscimento dello status di rifugiato a vittima di tratta di esseri umani proveniente dalla Nigeria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5601
+ }
+]

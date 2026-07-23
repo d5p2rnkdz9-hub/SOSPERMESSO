@@ -1,0 +1,814 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Perugia 14.1.2026 sussidiaria induista Bangladesh violenze settarie.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib Perugia 14.1.2026 sussidiaria induista Bangladesh violenze settarie.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-01-14",
+  "ente": "Tribunale di Perugia",
+  "numero": "2353/2025",
+  "titolo": "Trib Perugia genn.2026 sussidiaria Bangladesh INDU",
+  "oggetto": "Riconoscimento della protezione sussidiaria ex art. 14, lett. b) d.lgs. 251/2007 al cittadino bengalese di religione induista esposto al rischio di violenze settarie diffuse e socialmente tollerate, in assenza di efficace tutela statale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6005
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Perugia 27.2.2024 Asilo PAKISTANO sfruttamento pakistan e italia debito OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib Perugia 27.2.2024 Asilo PAKISTANO sfruttamento pakistan e italia debito OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-27",
+  "ente": "Tribunale di Perugia",
+  "numero": "2571/2023 R.G.",
+  "titolo": "Trib Perugia 27.2.2024 Asilo PAKISTANO sfruttamento pakistan e italia debito",
+  "oggetto": "Riconoscimento della protezione sussidiaria ex art. 14 co. 1 lett. b) D.Lgs. 251/2007 per vittima di debt bondage (schiavitu per debiti) in Pakistan",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4727
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Roma 2.5.22 protez.speciale ART.5 c.9 no problem rinuncia e buona su vita privata OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib Roma 2.5.22 protez.speciale ART.5 c.9 no problem rinuncia e buona su vita privata OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-05-02",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "RG 33672/2021",
+  "titolo": "Trib Roma 2.5.22 protez.speciale ART.5 c.9 no problem rinuncia e buona su vita privata OK",
+  "oggetto": "Riconoscimento protezione speciale ex art. 32 c. 3 d.lgs. 25/08 per tutela vita privata ex art. 8 CEDU",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5181
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Roma2021 prot.speciale per torture in Libia e riabilitazione in Italia fuori art.8.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib Roma2021 prot.speciale per torture in Libia e riabilitazione in Italia fuori art.8.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-12-15",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "RG non indicato (ricorso depositato 3.4.2019)",
+  "titolo": "Trib Roma2021 prot.speciale per torture in Libia e riabilitazione in Italia fuori art.8",
+  "oggetto": "Protezione speciale per vittima di tortura in Libia con diritto alla riabilitazione in Italia, fondata su Convenzione contro la tortura e non su art. 8 CEDU",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4057
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib TO 24.5.2022 sfrutt.lav. estrema poverta P.O in 19 c. e 1.1. come PERICOLO di PREGIUDIZIO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib TO 24.5.2022 sfrutt.lav. estrema poverta P.O in 19 c. e 1.1. come PERICOLO di PREGIUDIZIO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-05-24",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "RG 2945/2022",
+  "titolo": "Trib TO 24.5.2022 sfrutt.lav. estrema poverta P.O in 19 c. e 1.1. come PERICOLO di PREGIUDIZIO",
+  "oggetto": "Protezione speciale per vittima di sfruttamento lavorativo ex art. 19 commi 1 e 1.1 d.lgs. 286/98",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4916
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Torino 27.10.25 RICONGIUNGIMENTO CON PROTEZIONE SPECIALE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib Torino 27.10.25 RICONGIUNGIMENTO CON PROTEZIONE SPECIALE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-27",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "14114/2025",
+  "titolo": "Trib Torino 27.10.25 RICONGIUNGIMENTO CON PROTEZIONE SPECIALE OK",
+  "oggetto": "Se il permesso di soggiorno per protezione speciale conferisca il diritto al ricongiungimento familiare dopo la riforma dell'art. 28 TUI del 2024",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6003
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib-Milano-29.09.2025 status di rifugiato donna nigeriana - sulla fondatezza del timore attuale  (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib-Milano-29.09.2025 status di rifugiato donna nigeriana - sulla fondatezza del timore attuale  (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-09-29",
+  "ente": "Tribunale di Milano",
+  "numero": "5377/2020",
+  "titolo": "Trib-Milano-29.09.2025 status di rifugiato donna nigeriana - sulla fondatezza del timore attuale (1)",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna nigeriana vittima di tratta nonostante la negazione della stessa e la reticenza nel racconto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4774
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Ancona pds art. 18 con parere negativo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Ancona pds art. 18 con parere negativo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-01-22",
+  "ente": "Tribunale Ordinario di Ancona",
+  "numero": "5511/2025",
+  "titolo": "Trib. Ancona pds art. 18 con parere negativo",
+  "oggetto": "Rilascio del permesso di soggiorno per protezione sociale ex art. 18 D.Lgs. 286/98 nonostante parere negativo del Pubblico Ministero",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   },
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5122
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Bologna 17.10.2024_STATUS nigeriana Tratta Viol.Domenstica e STIGMA ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Bologna 17.10.2024_STATUS nigeriana Tratta Viol.Domenstica e STIGMA ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-17",
+  "ente": "Tribunale di Bologna",
+  "numero": "5979/2022 R.G.",
+  "titolo": "Trib. Bologna 17.10.2024 STATUS nigeriana Tratta Viol.Domenstica e STIGMA ok",
+  "oggetto": "Riconoscimento dello status di rifugiata a donna nigeriana vittima di tratta a scopo di sfruttamento sessuale, matrimonio forzato e violenza domestica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5014
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Bologna 6.5.21 PROT.SPECIALE diritto presentazione domanda OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Bologna 6.5.21 PROT.SPECIALE diritto presentazione domanda OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-05-06",
+  "ente": "Tribunale di Bologna",
+  "numero": "RG 3246/2021",
+  "titolo": "Trib. Bologna 6.5.21 PROT.SPECIALE diritto presentazione domanda OK OK",
+  "oggetto": "Diritto alla presentazione diretta della domanda di protezione speciale ex art. 19 c. 1.2 TUI alla Questura",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3187
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Bologna 9.12.2022 sospensiva studente straniero in Ucraina vita privata in italia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Bologna 9.12.2022 sospensiva studente straniero in Ucraina vita privata in italia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-12-09",
+  "ente": "Tribunale di Bologna",
+  "numero": "14313/2022",
+  "titolo": "Trib. Bologna 9.12.2022 sospensiva studente straniero in Ucraina vita privata in italia",
+  "oggetto": "Sospensione cautelare del diniego di protezione speciale per tutela della vita privata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2813
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Brescia 23.7.2021 Protez.spec. DIRITTO SALUTE in art. 5 c.6 OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Brescia 23.7.2021 Protez.spec. DIRITTO SALUTE in art. 5 c.6 OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-07-23",
+  "ente": "Tribunale di Brescia",
+  "numero": "14628/2018",
+  "titolo": "Trib. Brescia 23.7.2021 Protez.spec. DIRITTO SALUTE in art. 5 c.6 OK",
+  "oggetto": "Riconoscimento della protezione speciale per tutela del diritto alla salute e della vita privata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4638
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Brescia 29.6.22 Prot.Speciale 19 c.1.1. per ogni pericolo PREGIUDIZIO DIRITTI FONDAMENTALI.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Brescia 29.6.22 Prot.Speciale 19 c.1.1. per ogni pericolo PREGIUDIZIO DIRITTI FONDAMENTALI.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-06-29",
+  "ente": "Tribunale di Brescia",
+  "numero": "4878/2021",
+  "titolo": "Trib. Brescia 29.6.22 Prot.Speciale 19 c.1.1. per ogni pericolo PREGIUDIZIO DIRITTI FONDAMENTALI",
+  "oggetto": "Protezione speciale per divieto di refoulement verso Stato con rischio di pregiudizio a diritti fondamentali",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5462
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Genova 22.12.2023 prot. suss lett. c nato in libia equiparazione ad apolide.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Genova 22.12.2023 prot. suss lett. c nato in libia equiparazione ad apolide.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-12-22",
+  "ente": "Tribunale di Genova",
+  "numero": "4828/2022",
+  "titolo": "Trib. Genova 22.12.2023 prot. suss lett. c nato in libia equiparazione ad apolide",
+  "oggetto": "Equiparazione ad apolide del richiedente privo di cittadinanza certa e riconoscimento della protezione sussidiaria ex art. 14 lett. c) con riferimento alla Libia come paese di residenza abituale",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "apolidia",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5609
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Milano - cause esclusione sussidiaria.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Milano - cause esclusione sussidiaria.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-08-11",
+  "ente": "Tribunale di Milano",
+  "numero": "RG 8601/2020",
+  "titolo": "Trib. Milano - cause esclusione sussidiaria",
+  "oggetto": "Inapplicabilita delle cause di esclusione dalla protezione sussidiaria ex art. 16 d.lgs. 251/2007 in assenza di prove individualizzate e affidabili sulla pericolosita del richiedente",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6132
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Milano 1.08.2023 Status Bengalese Debito Gruppo Socliale ex minore orfano venditore di strada OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Milano 1.08.2023 Status Bengalese Debito Gruppo Socliale ex minore orfano venditore di strada OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-08-01",
+  "ente": "Tribunale di Milano",
+  "numero": "11096/2019 R.G.",
+  "titolo": "Trib. Milano 1.08.2023 Status Bengalese Debito Gruppo Socliale ex minore orfano venditore di strada OK",
+  "oggetto": "Riconoscimento dello status di rifugiato per appartenenza ai gruppi sociali degli ex bambini di strada, orfani e vittime di schiavitu lavorativa e tratta in Bangladesh",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6975
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Milano 10.2.2021 ASILO Pakistano in SCHIAVITU LAVORATIVA in Pakistan come milioni di pakistani OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Milano 10.2.2021 ASILO Pakistano in SCHIAVITU LAVORATIVA in Pakistan come milioni di pakistani OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-02-10",
+  "ente": "Tribunale di Milano",
+  "numero": "MMP/2018 R.G.A.C.",
+  "titolo": "Trib. Milano 10.2.2021 ASILO Pakistano in SCHIAVITU LAVORATIVA in Pakistan come milioni di pakistani",
+  "oggetto": "Riconoscimento dello status di rifugiato per appartenenza al gruppo sociale delle vittime di schiavitu lavorativa in Pakistan",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4920
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Napoli 2.4.2025 - Sospensione domanda reiterata Pakistan art.19 c.1.1 TUI.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Napoli 2.4.2025 - Sospensione domanda reiterata Pakistan art.19 c.1.1 TUI.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-04-02",
+  "ente": "Tribunale di Napoli",
+  "numero": null,
+  "titolo": "6931178s",
+  "oggetto": "Istanza di sospensione dell'efficacia esecutiva del provvedimento di rigetto della domanda reiterata di protezione internazionale di cittadino pakistano, ai sensi dell'art. 35-bis, commi 4 e 5, d.lgs. 25/2008, in fase di esecuzione di allontanamento",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4368
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma 22.02.2018 per rifugiato COESIONE SENZA PREVIO PDS.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Roma 22.02.2018 per rifugiato COESIONE SENZA PREVIO PDS.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2018-02-22",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "16064/2017",
+  "titolo": "Trib. Roma 22.02.2018 per rifugiato COESIONE SENZA PREVIO PDS",
+  "oggetto": "Rilascio permesso di soggiorno per motivi familiari a coniuge di rifugiato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3204
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma 30.6.2025 - Status rifugiato bangladese vittima tratta sfruttamento lavorativo re-trafficking.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Roma 30.6.2025 - Status rifugiato bangladese vittima tratta sfruttamento lavorativo re-trafficking.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-06-30",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "45477/2024",
+  "titolo": "Trib. Roma - Riconoscimento Status cittadino bangladese (oscurata)",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino del Bangladesh quale vittima di tratta a fini di sfruttamento lavorativo, con rischio di re-trafficking in caso di rimpatrio, in ragione dell'appartenenza al particolare gruppo sociale delle vittime di tratta per sfruttamento lavorativo. Decisione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 9386
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma 9.6.25 Speciale Bangladesh POVERTA INEMENDABILE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Roma 9.6.25 Speciale Bangladesh POVERTA INEMENDABILE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-06-09",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "18872/2023",
+  "titolo": "Trib. Roma 9.6.25 Speciale Bangladesh POVERTA INEMENDABILE",
+  "oggetto": "Riconoscimento della protezione speciale per integrazione lavorativa e rischio di violazione della vita privata in caso di rimpatrio verso il Bangladesh in condizioni di poverta inemendabile",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6062
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma umanitaria con rimessione in termini aprile2020.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Roma umanitaria con rimessione in termini aprile2020.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-12-02",
+  "ente": "Tribunale di Roma",
+  "numero": "29951/2019",
+  "titolo": "Trib. Roma umanitaria con rimessione in termini aprile2020",
+  "oggetto": "Riconoscimento della protezione umanitaria con rimessione in termini per mancata traduzione del diniego",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4963
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Salerno 19.10.2022 UOMO Nigeria status per tratta con debito rito e sfruttamento in Libia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Salerno 19.10.2022 UOMO Nigeria status per tratta con debito rito e sfruttamento in Libia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-10-19",
+  "ente": "Tribunale di Salerno",
+  "numero": "11731/2019 RG",
+  "titolo": "Trib. Salerno 19.10.2022 UOMO Nigeria status per tratta con debito rito e sfruttamento in Libia",
+  "oggetto": "Riconoscimento dello status di rifugiato a uomo nigeriano vittima di tratta a scopo di sfruttamento lavorativo con rito juju e debito",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6291
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Salerno ott. 2025 asilo uomo vittima tratta accattonaggio OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Salerno ott. 2025 asilo uomo vittima tratta accattonaggio OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-20",
+  "ente": "Tribunale di Salerno",
+  "numero": "8283/2023 RG",
+  "titolo": "Trib. Salerno ott. 2025 asilo uomo vittima tratta accattonaggio OK",
+  "oggetto": "Riconoscimento dello status di rifugiato a uomo nigeriano vittima di tratta per sfruttamento lavorativo e accattonaggio forzato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6963
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 13.10.2025 gambia status ex msna art. 9, comma 2 bis D. Lgs. 251 07 e sospetto omosex.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Torino 13.10.2025 gambia status ex msna art. 9, comma 2 bis D. Lgs. 251 07 e sospetto omosex.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-13",
+  "ente": "Tribunale di Torino",
+  "numero": "10917/23",
+  "titolo": "Trib. Torino 13.10.2025 gambia status ex msna art. 9, comma 2 bis D. Lgs. 251 07 e sospetto omosex",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino gambiano per orientamento sessuale a lui imputato (omosessualità attribuita pur non essendo omosessuale) e maltrattamenti familiari subiti da minore",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4365
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 13.5.2022 status guinea per maltrattamenti subiti da minore.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Torino 13.5.2022 status guinea per maltrattamenti subiti da minore.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-05-13",
+  "ente": "Tribunale di Torino",
+  "numero": "21099/2019",
+  "titolo": "Trib. Torino 13.5.2022 status guinea per maltrattamenti subiti da minore",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino guineano per appartenenza al particolare gruppo sociale dei bambini orfani vittime di violenza domestica e sfruttamento",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4860
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 2.5.2023 prot speciale disastro ambientale delta state.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Torino 2.5.2023 prot speciale disastro ambientale delta state.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-05-02",
+  "ente": "Tribunale di Torino",
+  "numero": "13382/2021",
+  "titolo": "Trib. Torino 2.5.2023 prot speciale disastro ambientale delta state",
+  "oggetto": "Riconoscimento della protezione speciale per disastro ambientale nel Delta del Niger (Delta State, Nigeria) e integrazione socio-economica in Italia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "calamita-naturale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5640
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 23.2.2026 - Status rifugiato motivi imperativi maltrattamenti minore Costa Avorio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Torino 23.2.2026 - Status rifugiato motivi imperativi maltrattamenti minore Costa Avorio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-02-23",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "4509/2024",
+  "titolo": "Status di Rifugiato motivi imperativi maltrattamenti minore",
+  "oggetto": "Riconoscimento dello status di rifugiato ai sensi dell'art. 1A Convenzione di Ginevra a cittadino della Costa d'Avorio per persecuzioni subite durante la minore età, applicando i 'motivi imperativi derivanti da precedenti persecuzioni' (art. 9, comma 2-bis, d.lgs. 251/2007) e considerando il minore ",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6140
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino aprile 2024 STATUS Bangladesh tratta libia debito retrafficking Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Torino aprile 2024 STATUS Bangladesh tratta libia debito retrafficking Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-04",
+  "ente": "Tribunale di Torino",
+  "numero": "3459/2023 RG",
+  "titolo": "Trib. Torino aprile 2024 STATUS Bangladesh tratta libia debito retrafficking",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino del Bangladesh vittima di tratta a scopo di sfruttamento lavorativo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5141
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Venezia dic. 2021 STATUS sfruttamento in attivita illecite no esclusione automatica.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib. Venezia dic. 2021 STATUS sfruttamento in attivita illecite no esclusione automatica.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-12-23",
+  "ente": "Tribunale di Venezia",
+  "numero": "4646/2021 RG",
+  "titolo": "Trib. Venezia dic. 2021 STATUS sfruttamento in attivita illecite no esclusione automatica",
+  "oggetto": "Riconoscimento dello status di rifugiato a vittima di tratta per sfruttamento in attivita illecite nonostante precedenti penali",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5424
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bari 2018 Status per tratta Ghana Giovane debito e riduzione schiavitu in Libia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bari 2018 Status per tratta Ghana Giovane debito e riduzione schiavitu in Libia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-10-18",
+  "ente": "Tribunale di Bari",
+  "numero": "7743/2018",
+  "titolo": "Trib.Bari 2018 Status per tratta Ghana Giovane debito e riduzione schiavitu in Libia",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima minorenne di tratta con riduzione in schiavitù e debito in Libia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4466
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bari2021 BElluccio Art.18 bis decreto cautelare inaudita altera parte con PARERE SFAVOREVOLE DEL P.M..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bari2021 BElluccio Art.18 bis decreto cautelare inaudita altera parte con PARERE SFAVOREVOLE DEL P.M..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-01-18",
+  "ente": "Tribunale di Bari",
+  "numero": "38/2021",
+  "titolo": "Trib.Bari2021 BElluccio Art.18 bis decreto cautelare inaudita altera parte con PARERE SFAVOREVOLE DEL P.M.",
+  "oggetto": "Rilascio del permesso di soggiorno ex art. 18-bis d.lgs. 286/1998 per vittima di violenza domestica nonostante parere sfavorevole del P.M.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-violenza-domestica",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4302
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bol.29.12.21 Si domanda prot.spec senza PASSAP..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bol.29.12.21 Si domanda prot.spec senza PASSAP..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-12-29",
+  "ente": "Tribunale di Bologna",
+  "numero": "15058/2021",
+  "titolo": "Trib.Bol.29.12.21 Si domanda prot.spec senza PASSAP.",
+  "oggetto": "Diritto alla formalizzazione della domanda di protezione speciale ex art. 19 comma 1.1 TUI anche in assenza di passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3863
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna 15.2.2023 Protez.Spec AL QUESTORE CONVERTIBILE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bologna 15.2.2023 Protez.Spec AL QUESTORE CONVERTIBILE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-02-15",
+  "ente": "Tribunale di Bologna",
+  "numero": "10573/2022",
+  "titolo": "Trib.Bologna 15.2.2023 Protez.Spec AL QUESTORE CONVERTIBILE",
+  "oggetto": "Riconoscimento della protezione speciale per radicamento e vita privata ex art. 19 comma 1.1 d.lgs. 286/98 come riformato dal d.l. 130/2020, con convertibilità in permesso di lavoro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6058
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna 17.2.22 ex art.700 presentazione domanda PDS cure mediche SENZA PASSAPORTO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bologna 17.2.22 ex art.700 presentazione domanda PDS cure mediche SENZA PASSAPORTO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-02-17",
+  "ente": "Tribunale Ordinario di Bologna",
+  "numero": "945/2022",
+  "titolo": "Trib.Bologna 17.2.22 ex art.700 presentazione domanda PDS cure mediche SENZA PASSAPORTO",
+  "oggetto": "Diritto alla presentazione della domanda di permesso di soggiorno per cure mediche senza passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4713
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna 7076_2021 STATUS VEDOVA Nigeriana.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bologna 7076_2021 STATUS VEDOVA Nigeriana.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-10-07",
+  "ente": "Tribunale di Bologna",
+  "numero": "2019/7076",
+  "titolo": "Trib.Bologna 7076 2021 STATUS VEDOVA Nigeriana",
+  "oggetto": "Riconoscimento dello status di rifugiata per donna nigeriana vedova perseguitata dalla famiglia del marito per rifiuto di sottomissione ai rituali di vedovanza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 7455
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna dic.2024 Asilo Tratta sfruttamento Lavorativo uomo Costa avorio 25 anni Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bologna dic.2024 Asilo Tratta sfruttamento Lavorativo uomo Costa avorio 25 anni Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-11-08",
+  "ente": "Tribunale di Bologna",
+  "numero": "14970/2022",
+  "titolo": "Trib.Bologna dic.2024 Asilo Tratta sfruttamento Lavorativo uomo Costa avorio 25 anni",
+  "oggetto": "Riconoscimento dello status di rifugiato per uomo vittima di tratta a scopo di sfruttamento lavorativo e riduzione in schiavitù",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4892
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna marzo 2024 CONVERSIONE SPECIALE LAVORO sospensiva con pds OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bologna marzo 2024 CONVERSIONE SPECIALE LAVORO sospensiva con pds OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-07",
+  "ente": "Tribunale di Bologna",
+  "numero": "2716/2024",
+  "titolo": "Trib.Bologna marzo 2024 CONVERSIONE SPECIALE LAVORO sospensiva con pds",
+  "oggetto": "Sospensione cautelare del provvedimento di rifiuto di conversione del permesso per protezione speciale in permesso di lavoro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2752
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna2020 ART.18 Percorso SOCIALE OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Bologna2020 ART.18 Percorso SOCIALE OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-03-03",
+  "ente": "Tribunale di Bologna",
+  "numero": "20892/2019",
+  "titolo": "Trib.Bologna2020 ART.18 Percorso SOCIALE OK OK",
+  "oggetto": "Diritto al rilascio del permesso di soggiorno per protezione sociale ex art. 18 TUI tramite percorso sociale senza necessità del parere del P.M.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4846
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Brescia 2017 Umanitari aper debito da usura Bengalese adulto OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Brescia 2017 Umanitari aper debito da usura Bengalese adulto OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2018-01-16",
+  "ente": "Tribunale di Brescia",
+  "numero": "14904/2017",
+  "titolo": "Trib.Brescia 2017 Umanitari aper debito da usura Bengalese adulto OK",
+  "oggetto": "Riconoscimento della protezione umanitaria per cittadino bengalese vittima di usura e violenze da creditori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4572
+ }
+]

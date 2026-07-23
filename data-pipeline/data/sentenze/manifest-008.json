@@ -1,0 +1,798 @@
+[
+ {
+  "id": "kb:asilo_2_procedure/Trib.Milano 28.03.23 accesso registrazione domanda asilo perciculum epsulsione OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Milano 28.03.23 accesso registrazione domanda asilo perciculum epsulsione OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-03-28",
+  "ente": "Tribunale di Milano",
+  "numero": "8683/2023 R.G.",
+  "titolo": "Trib.Milano 28.03.23 accesso registrazione domanda asilo perciculum epsulsione",
+  "oggetto": "Diritto alla registrazione formale della domanda di protezione internazionale presso la Questura",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4023
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Milano 38944_21 seconda reiterata deve andare sempre in commissione no inammissibilita questura OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Milano 38944_21 seconda reiterata deve andare sempre in commissione no inammissibilita questura OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-10-18",
+  "ente": "Tribunale di Milano",
+  "numero": "38944/2021",
+  "titolo": "Trib.Milano 38944 21 seconda reiterata deve andare sempre in commissione no inammissibilita questura",
+  "oggetto": "Obbligo della Questura di ricevere la seconda domanda reiterata di protezione internazionale e trasmetterla alla Commissione Territoriale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3663
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Milano13.11.2019 disapplicazione del 29 bis reiterata strumentale no competenza questore si esame preliminare.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Milano13.11.2019 disapplicazione del 29 bis reiterata strumentale no competenza questore si esame preliminare.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-11-13",
+  "ente": "Tribunale di Milano",
+  "numero": "00000/2019",
+  "titolo": "Trib.Milano13.11.2019 disapplicazione del 29 bis reiterata strumentale no competenza questore si esame preliminare",
+  "oggetto": "Disapplicazione dell'art. 29 bis d.lgs. 25/2008 per contrasto con la Direttiva 2013/32/UE",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3657
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Napoli 10.11.23 illegittimo attestazione espellibilita in rigetto dom,anda asilo presentata prima del Dl 20_23 OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Napoli 10.11.23 illegittimo attestazione espellibilita in rigetto dom,anda asilo presentata prima del Dl 20_23 OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-11-10",
+  "ente": "Tribunale di Napoli",
+  "numero": "22908/2023",
+  "titolo": "Trib.Napoli 10.11.23 illegittimo attestazione espellibilita in rigetto dom,anda asilo presentata prima del Dl 20 23",
+  "oggetto": "Illegittimità della dichiarazione di manifesta infondatezza e dell'attestazione di espellibilità quando la domanda di protezione internazionale è stata presentata prima dell'entrata in vigore del D.L. 20/2023 e non sono stati rispettati i termini della procedura accelerata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4532
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Napoli 22.01.2025 remissione termini 35 bis mancata PEC commissione questura.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Napoli 22.01.2025 remissione termini 35 bis mancata PEC commissione questura.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-01-22",
+  "ente": "Tribunale di Napoli",
+  "numero": "406-1/2025",
+  "titolo": "Trib.Napoli, 22.01.2025, REMISSIONE TERMINI 35 bis MANCATA PEC DA COMMISSIONE A QUESTURA per irreperibile e domicilio inidoneo OK",
+  "oggetto": "Remissione in termini per mancato perfezionamento della notifica del provvedimento della CT al richiedente irreperibile",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3650
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Palermo giugno 2024 Procedura accelerata Manifesta infondatezza termini perentori.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Palermo giugno 2024 Procedura accelerata Manifesta infondatezza termini perentori.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-05-30",
+  "ente": "Tribunale di Palermo",
+  "numero": "6582/2024",
+  "titolo": "Trib.Palermo giugno 2024 Procedura accelerata Manifesta INFONDATEZZA NO P.O.TERMINI PERENTORI",
+  "oggetto": "Sospensione automatica per mancato rispetto dei termini della procedura accelerata in caso di manifesta infondatezza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2630
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Palermo maggio2020 Illegittimo respingimento differito per mancata informativa asilo Ok OK oK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Palermo maggio2020 Illegittimo respingimento differito per mancata informativa asilo Ok OK oK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-01-20",
+  "ente": "Tribunale di Palermo",
+  "numero": "9376/2019 R.G.",
+  "titolo": "Trib.Palermo maggio2020 Illegittimo respingimento differito per mancata informativa asilo Ok OK oK",
+  "oggetto": "Illegittimità del respingimento differito per mancata informativa sulla possibilità di presentare domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5182
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 18.6.25 DOMANDA DI ASILO CON ALTRO PDS OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 18.6.25 DOMANDA DI ASILO CON ALTRO PDS OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-06-18",
+  "ente": "Tribunale di Roma",
+  "numero": "342/2025 R.G.",
+  "titolo": "Trib.Roma 18.6.25 DOMANDA DI ASILO CON ALTRO PDS OK OK",
+  "oggetto": "Diritto a formalizzare domanda reiterata di protezione internazionale senza dover rinunciare alla protezione speciale già riconosciuta",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3271
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 2.11.22 700 FORMALIZZAZIONE domanda asilo questura deve organizzarsi ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 2.11.22 700 FORMALIZZAZIONE domanda asilo questura deve organizzarsi ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-11-02",
+  "ente": "Tribunale di Roma",
+  "numero": "47051/2022 R.G.",
+  "titolo": "Trib.Roma 2.11.22 700 FORMALIZZAZIONE domanda asilo questura deve organizzarsi",
+  "oggetto": "Obbligo dell'amministrazione di predisporre un'organizzazione adeguata per la formalizzazione della domanda di protezione internazionale nei tempi di legge",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6535
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 21.10.24 Sospensiva automatica violazione termini accelerata anche per inammissibilita da reiterata.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 21.10.24 Sospensiva automatica violazione termini accelerata anche per inammissibilita da reiterata.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-21",
+  "ente": "Tribunale di Roma",
+  "numero": "41922/2024",
+  "titolo": "Trib.Roma 21.10.24 Sospensiva automat. x violazione termini accelerata ANCHE X INAMMISSIBILITA DA REITERATA OK",
+  "oggetto": "Sospensione automatica per violazione termini procedura accelerata estesa anche alle decisioni di inammissibilità da domanda reiterata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3559
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 23.2.2024 700 accesso asilo questura vulnerabile ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 23.2.2024 700 accesso asilo questura vulnerabile ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-23",
+  "ente": "Tribunale di Roma",
+  "numero": "6820/2024 R.G.",
+  "titolo": "Trib.Roma 23.2.2024 700 accesso asilo questura vulnerabile",
+  "oggetto": "Formalizzazione urgente inaudita altera parte della domanda di protezione internazionale per soggetti vulnerabili di fronte a tempi di attesa superiori a un anno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6225
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 27.3.23 Accesso alla domanda Asilo periculum espulsione einterruzione percorso sanitario OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 27.3.23 Accesso alla domanda Asilo periculum espulsione einterruzione percorso sanitario OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-03-27",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "11812/2023",
+  "titolo": "Trib.Roma 27.3.23 Accesso alla domanda Asilo periculum espulsione einterruzione percorso sanitario",
+  "oggetto": "Diritto alla formalizzazione della domanda di protezione internazionale tramite ricorso ex art. 700 c.p.c.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5492
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 3.03.2025 Procedura accelerata sospensiva automatica troppo tempo formalizzazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 3.03.2025 Procedura accelerata sospensiva automatica troppo tempo formalizzazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-03-03",
+  "ente": "Tribunale di Roma",
+  "numero": "7387/2025",
+  "titolo": "Trib.Roma 3.03.2025 Proceura accelerata SOSPENSIVA AUTOMATICA troppo tempo per formalizzazione al piu presto OK",
+  "oggetto": "Sospensione automatica per mancato rispetto dei termini della procedura accelerata: ritardo nella formalizzazione e nella decisione della CT su domanda reiterata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3026
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 9.10.2018 29 bis reiterata strumentale no competenza Questura.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 9.10.2018 29 bis reiterata strumentale no competenza Questura.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-10-07",
+  "ente": "Tribunale di Roma",
+  "numero": "20786/2019",
+  "titolo": "Trib.Roma 9.10.2018 29 bis reiterata strumentale no competenza Questura",
+  "oggetto": "Incompetenza della Questura a dichiarare irricevibile una domanda reiterata ex art. 29-bis d.lgs. 25/2008",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3378
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma 9.10.2024 art. 35 bis competete teritoriale tribunale della strutura emergenza fresso_redacted.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma 9.10.2024 art. 35 bis competete teritoriale tribunale della strutura emergenza fresso_redacted.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-09",
+  "ente": "Tribunale di Roma",
+  "numero": "22188/2021",
+  "titolo": "Trib.Roma 9.10.2024 art. 35 bis competete teritoriale tribunale della strutura emergenza fresso redacted",
+  "oggetto": "Competenza territoriale del tribunale del luogo della struttura di accoglienza/emergenza ex art. 4, comma 3, D.L. 13/2017",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4892
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma Crisa agosto23 700 Accesso Formalizzazione 1 anno attesa troppo almeno per vulenerabili.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma Crisa agosto23 700 Accesso Formalizzazione 1 anno attesa troppo almeno per vulenerabili.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-08-30",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "37712/2023",
+  "titolo": "Trib.Roma Crisa agosto23 700 Accesso Formalizzazione 1 anno attesa troppo almeno per vulenerabili",
+  "oggetto": "Illegittimità dell'attesa di circa un anno per la formalizzazione della domanda di asilo, specialmente per soggetti vulnerabili",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4744
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma febbr.2024 700 COLLA accesso immediato domanda asilo per vittima violenza OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma febbr.2024 700 COLLA accesso immediato domanda asilo per vittima violenza OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-23",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "6820/2024",
+  "titolo": "Trib.Roma febbr.2024 700 COLLA accesso immediato domanda asilo per vittima violenza OK",
+  "oggetto": "Formalizzazione urgente inaudita altera parte della domanda di protezione internazionale per vittima di violenza domestica con figlia minore autistica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5596
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma inaudita altera parte art.700 accesso alla procedura di asilo genn.2020.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma inaudita altera parte art.700 accesso alla procedura di asilo genn.2020.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-01-30",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "cronol. 2283/2020",
+  "titolo": "Trib.Roma inaudita altera parte art.700 accesso alla procedura di asilo genn.2020",
+  "oggetto": "Diritto alla formalizzazione della domanda di protezione internazionale con provvedimento inaudita altera parte, in presenza di impossibilità di accesso alla Questura",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4784
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma marzo 2023 Accesso asilo nonostante appuntamento fissato Questura OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma marzo 2023 Accesso asilo nonostante appuntamento fissato Questura OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-03-31",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "7365/2023",
+  "titolo": "Trib.Roma marzo 2023 Accesso asilo nonostante appuntamento fissato Questura OK",
+  "oggetto": "Diritto alla formalizzazione immediata della domanda di protezione internazionale nonostante un appuntamento già fissato dalla Questura a mesi di distanza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6704
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-03-11",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "1580/2020",
+  "titolo": "Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK",
+  "oggetto": "Illegittimità del rifiuto del permesso di soggiorno per cure mediche ex art. 19 comma 2 lett. d-bis d.lgs. 286/98 in caso di grave patologia cronica (epatite B con cirrosi epatica) e indisponibilità del farmaco salvavita nel paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4674
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma nov.2019 obbligo a ricevere reiterata plurima trattenimento e competenza Trib..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma nov.2019 obbligo a ricevere reiterata plurima trattenimento e competenza Trib..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-11-25",
+  "ente": "Tribunale di Roma",
+  "numero": "72914/2019",
+  "titolo": "Trib.Roma nov.2019 obbligo a ricevere reiterata plurima trattenimento e competenza Trib.",
+  "oggetto": "Obbligo della Questura di ricevere domanda reiterata e illegittimita del trattenimento senza convalida del Tribunale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3768
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma2020 visto umanitario RE810.09art.25 reingresso per reiterata retrafficking.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma2020 visto umanitario RE810.09art.25 reingresso per reiterata retrafficking.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-11",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "63898/2019",
+  "titolo": "Trib.Roma2020 visto umanitario RE810.09art.25 reingresso per reiterata retrafficking",
+  "oggetto": "Diritto al reingresso in Italia tramite visto umanitario ex art. 25 Reg. CE 810/2009 per presentare domanda reiterata di protezione internazionale dopo rimpatrio illegittimo durante trattenimento non convalidato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4228
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Roma2022 sosp.art.35 Tunisia No Paese sicuro LGBT.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Roma2022 sosp.art.35 Tunisia No Paese sicuro LGBT.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-10-07",
+  "ente": "Tribunale di Roma",
+  "numero": "60806/2022",
+  "titolo": "Trib.Roma2022 sosp.art.35 Tunisia No Paese sicuro LGBT",
+  "oggetto": "Sospensione del provvedimento di manifesta infondatezza per richiedente proveniente da Tunisia che lamenta persecuzioni per orientamento sessuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3364
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Torino 4.8.25 DISCRIMINAZIONE ACCESSO FILA ASILO con piano rimozione modello Milano OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Torino 4.8.25 DISCRIMINAZIONE ACCESSO FILA ASILO con piano rimozione modello Milano OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-08-04",
+  "ente": "Tribunale di Torino",
+  "numero": "RG 9257/2025",
+  "titolo": "Trib.Torino 4.8.25 DISCRIMINAZIONE ACCESSO FILA ASILO con piano rimozione modello Milano OK",
+  "oggetto": "Discriminazione nell'accesso alla formalizzazione della domanda di protezione internazionale presso la Questura di Torino",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5016
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Trento Marzo 2024 DUBLINO CLAUS. DISCREZION. COMPET.ITALIA X PROTEZIONE SPECIALE OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Trento Marzo 2024 DUBLINO CLAUS. DISCREZION. COMPET.ITALIA X PROTEZIONE SPECIALE OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-29",
+  "ente": "Tribunale di Trento",
+  "numero": "MRD023",
+  "titolo": "Trib.Trento Marzo 2024 DUBLINO CLAUS. DISCREZION. COMPET.ITALIA X PROTEZIONE SPECIALE OK OK",
+  "oggetto": "Il giudice puo e deve applicare la clausola discrezionale dell'art. 17 Reg. Dublino III quando l'Amministrazione omette di esaminare i presupposti della protezione speciale nel procedimento Dublino",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 8205
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Trieste 2020 NON convalida per obbligo di informativa asilo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Trieste 2020 NON convalida per obbligo di informativa asilo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-09-02",
+  "ente": "Tribunale di Trieste",
+  "numero": "RG 2723/2020",
+  "titolo": "Trib.Trieste 2020 NON convalida per obbligo di informativa asilo",
+  "oggetto": "Non convalida del trattenimento per mancato adempimento dell'obbligo di informativa sull'asilo ex art. 10-ter d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3074
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Trieste 9.12.24 Sospensiva automatica per MANIFESTA INFONDATEZZA accellerata termini non rispettati OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Trieste 9.12.24 Sospensiva automatica per MANIFESTA INFONDATEZZA accellerata termini non rispettati OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-12-09",
+  "ente": "Tribunale di Trieste",
+  "numero": "6414-1/2024",
+  "titolo": "Trib.Trieste 9.12.24 Sospensiva automatica per MANIFESTA INFONDATEZZA accellerata termini non rispettati",
+  "oggetto": "Estensione del principio di sospensione automatica del provvedimento per violazione dei termini della procedura accelerata a tutte le ipotesi di manifesta infondatezza, non solo ai casi di provenienza da Paese di origine sicuro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5123
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Trieste marzo 24 Cenno Obiter inammissibiita no solo presidente ma collegiale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Trieste marzo 24 Cenno Obiter inammissibiita no solo presidente ma collegiale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-01",
+  "ente": "Tribunale di Trieste",
+  "numero": "ROIO",
+  "titolo": "Trib.Trieste marzo 24 Cenno Obiter inammissibiita no solo presidente ma collegiale",
+  "oggetto": "Accoglimento dell'istanza di sospensione dell'efficacia del provvedimento di inammissibilita della domanda reiterata per sussistenza di fumus di legittimita (nuovi elementi sulla situazione del Paese di origine)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3524
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.Venezia giugno 2020 per reiterata conta data della manifestazione volonta e non formalizzazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.Venezia giugno 2020 per reiterata conta data della manifestazione volonta e non formalizzazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-06-04",
+  "ente": "Tribunale di Venezia",
+  "numero": "RG 5894/2019",
+  "titolo": "Trib.Vnezia giugno 2020 per reiterata conta data della manifestazione volonta e non formalizzazione",
+  "oggetto": "Ammissibilità della domanda reiterata di protezione internazionale e data rilevante per determinare la normativa applicabile ratione temporis",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5399
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.cagliari nov.2022 sosp.art.35 Tunisia No Paese sicuro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.cagliari nov.2022 sosp.art.35 Tunisia No Paese sicuro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-11-03",
+  "ente": "Tribunale di Cagliari",
+  "numero": "RG 6970-1/2022",
+  "titolo": "Trib.cagliari nov.2022 sosp.art.35 Tunisia No Paese sicuro",
+  "oggetto": "Sospensione dell'efficacia esecutiva del provvedimento di rigetto per manifesta infondatezza ex art. 35-bis comma 4 d.lgs. 25/2008 in relazione a richiedente asilo tunisino",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4015
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-09-21",
+  "ente": "Tribunale Ordinario di Firenze",
+  "numero": "9425/2023",
+  "titolo": "Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA",
+  "oggetto": "Sospensione del provvedimento di rigetto del permesso di soggiorno familiare e diritto al rilascio del permesso provvisorio nelle more del giudizio per evitare il limbo giuridico del soggetto inespellibile ma privo di titolo di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4447
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-11-22",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": null,
+  "titolo": "Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta",
+  "oggetto": "Diritto al rilascio del permesso provvisorio di soggiorno per richiesta asilo in favore di soggetto inespellibile ex art. 19 d.lgs. 286/98 e rifiuto dell'astreinte ex art. 614-bis c.p.c. per inadempimento della Questura",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3779
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib.torino luglio 2023 Reclamo a 700 Obbligo formalizzazione domanda asilo NO importa carenza personale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Trib.torino luglio 2023 Reclamo a 700 Obbligo formalizzazione domanda asilo NO importa carenza personale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-07-17",
+  "ente": "Tribunale di Torino",
+  "numero": "RG 11030/2023",
+  "titolo": "Trib.torino luglio 2023 Reclamo a 700 Obbligo formalizzazione domanda asilo NO importa carenza personale",
+  "oggetto": "Diritto alla formalizzazione della domanda di protezione speciale in tempi ragionevoli e obbligo della Questura di riceverla nonostante difficolta organizzative",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4575
+ },
+ {
+  "id": "kb:asilo_2_procedure/TribCatania2021 sospensiva art.35 Tunisia per COVID OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/TribCatania2021 sospensiva art.35 Tunisia per COVID OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-23",
+  "ente": "Tribunale Ordinario di Catania",
+  "numero": "15248/2020",
+  "titolo": "TribCatania2021 sospensiva art.35 Tunisia per COVID",
+  "oggetto": "Sospensione dell'efficacia esecutiva del provvedimento di rigetto della domanda di protezione internazionale per emergenza sanitaria COVID-19",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3042
+ },
+ {
+  "id": "kb:asilo_2_procedure/TribTorino maggio 2024 DIVENTI RICHIEDENTI CON RICHIESTA E PRIMA DI FORMALIZZAZIONE.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/TribTorino maggio 2024 DIVENTI RICHIEDENTI CON RICHIESTA E PRIMA DI FORMALIZZAZIONE.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-05-27",
+  "ente": "Tribunale di Torino",
+  "numero": "RG 9938/2023",
+  "titolo": "TribTorino maggio 2024 DIVENTI RICHIEDENTI CON RICHIESTA E PRIMA DI FORMALIZZAZIONE",
+  "oggetto": "Impugnazione del diniego di protezione internazionale per manifesta infondatezza con contestazione della procedura accelerata per paese di origine sicuro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4030
+ },
+ {
+  "id": "kb:asilo_2_procedure/TribTorino2021 domanda di asilo SI in Carcere.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/TribTorino2021 domanda di asilo SI in Carcere.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-12-03",
+  "ente": "Tribunale di Torino",
+  "numero": "reclamo ex art. 669 terdecies c.p.c. avverso ord. 4.4.2020",
+  "titolo": "TribTorino2021 domanda di asilo SI in Carcere",
+  "oggetto": "Diritto del detenuto a presentare domanda di protezione internazionale dal carcere e obbligo della Questura di riceverla",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4753
+ },
+ {
+  "id": "kb:asilo_2_procedure/Tribunale di Firenze 29.03.23 effetto sospensivo automatico per manifesta infond.e Paese origSIcura SENZA RISPETTO TERMINI OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Tribunale di Firenze 29.03.23 effetto sospensivo automatico per manifesta infond.e Paese origSIcura SENZA RISPETTO TERMINI OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-03-30",
+  "ente": "Tribunale di Firenze",
+  "numero": null,
+  "titolo": "Tribunale di Firenze 29.03.23 effetto sospensivo automatico per manifesta infond.e Paese origSIcura SENZA RISPETTO TERMINI",
+  "oggetto": "Effetto sospensivo automatico del ricorso giurisdizionale quando la procedura accelerata non ha rispettato i termini previsti dalla legge",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4581
+ },
+ {
+  "id": "kb:asilo_2_procedure/Verbale Caso di reiterata 2019 con umanitaria in appoggio alla prima domanda del 2011.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Verbale Caso di reiterata 2019 con umanitaria in appoggio alla prima domanda del 2011.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-11-19",
+  "ente": "Commissione Territoriale per il Riconoscimento della Protezione Internazionale di Torino - Sezione di Genova",
+  "numero": null,
+  "titolo": "Verbale Caso di reiterata 2019 con umanitaria in appoggio alla prima domanda del 2011",
+  "oggetto": "Ammissibilita della domanda reiterata di protezione internazionale e riconoscimento della protezione umanitaria per gravi condizioni di salute",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3741
+ },
+ {
+  "id": "kb:asilo_2_procedure/trib Torino 10-10-2023 Tunisia sospensiva paese sicuro art 35 bis con richiami alla situazione genrale OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/trib Torino 10-10-2023 Tunisia sospensiva paese sicuro art 35 bis con richiami alla situazione genrale OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-10-10",
+  "ente": "Tribunale di Torino",
+  "numero": "16810/23",
+  "titolo": "trib Torino 10-10-2023 Tunisia sospensiva paese sicuro art 35 bis con richiami alla situazione genrale",
+  "oggetto": "Sospensione dell'efficacia esecutiva del provvedimento di diniego protezione internazionale per cittadino tunisino proveniente da paese di origine sicuro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2659
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/App.Palermo 6.2.25 Rinvio Corte Giustizia Convalida Trattenimento in Frontiera.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/App.Palermo 6.2.25 Rinvio Corte Giustizia Convalida Trattenimento in Frontiera.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2025-02-06",
+  "ente": "Corte di Appello di Palermo",
+  "numero": "RG 229/2025",
+  "titolo": "App.Palermo 6.2.25 Rinvio Corte Giustizia Convalida Trattenimento in Frontiera",
+  "oggetto": "Rinvio pregiudiziale alla CGUE sulla compatibilità tra designazione dell'Egitto come paese di origine sicuro e condizioni sostanziali dell'Allegato I Direttiva 2013/32, nel contesto della convalida del trattenimento in frontiera",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6918
+ }
+]

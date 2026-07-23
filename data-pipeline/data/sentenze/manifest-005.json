@@ -1,0 +1,818 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.roma 8.3.24 Sospensiva RADICAMENTO 8 CEDU manifest.infondata post Piantedosi II ok ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.roma 8.3.24 Sospensiva RADICAMENTO 8 CEDU manifest.infondata post Piantedosi II ok ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-06",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "8473/2024",
+  "titolo": "Trib.roma 8.3.24 Sospensiva RADICAMENTO 8 CEDU manifest.infondata post Piantedosi II ok ok",
+  "oggetto": "Sospensione dell'efficacia esecutiva del diniego di protezione internazionale dichiarato manifestamente infondato, in ragione del radicamento sul territorio (attivita sportiva e lavorativa)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3535
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-11-22",
+  "ente": "Tribunale di Roma",
+  "numero": "non indicato",
+  "titolo": "Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta",
+  "oggetto": "Il soggetto inespellibile ex art. 19 d.lgs. 286/98 ha diritto al rilascio del permesso di soggiorno provvisorio per richiesta asilo, non potendo essere al contempo inespellibile e irregolare",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3190
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.torino febbr.24 giovane tunisino ASILO per maltrattametni durante minore eta OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.torino febbr.24 giovane tunisino ASILO per maltrattametni durante minore eta OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-01-22",
+  "ente": "Tribunale di Torino",
+  "numero": "8899/2023",
+  "titolo": "Trib.torino febbr.24 giovane tunisino ASILO per maltrattametni durante minore eta",
+  "oggetto": "Riconoscimento dello status di rifugiato per maltrattamenti subiti durante la minore età da parte del genitore",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4817
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.venezia 2023 prot.speciale su art. 8 CEDU domanda aprile 2023.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.venezia 2023 prot.speciale su art. 8 CEDU domanda aprile 2023.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-11-14",
+  "ente": "Tribunale di Venezia",
+  "numero": "RG 7410/2023",
+  "titolo": "Trib.venezia 2023 prot.speciale su art. 8 CEDU domanda aprile 2023",
+  "oggetto": "Riconoscimento della protezione speciale ex art. 19 TUI per integrazione socioeconomica e tutela della vita privata e familiare ai sensi dell'art. 8 CEDU",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4003
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib_Firenze_29.6.23 Pakistan_Status Tratta_sfruttamento_lavorativo_AMBIENTE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib_Firenze_29.6.23 Pakistan_Status Tratta_sfruttamento_lavorativo_AMBIENTE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-06-29",
+  "ente": "Tribunale di Firenze",
+  "numero": "6142/2019",
+  "titolo": "Trib Firenze 29.6.23 Pakistan Status Tratta sfruttamento lavorativo AMBIENTE",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima di tratta a scopo di sfruttamento lavorativo con vulnerabilità climatica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5863
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib_Min_trieste pds art.18 comma 6 con messa alla prova e comp. trib e PM.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib_Min_trieste pds art.18 comma 6 con messa alla prova e comp. trib e PM.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2005-09-20",
+  "ente": "Tribunale per i Minorenni di Trieste",
+  "numero": "1134/00 R.N.R. e 986/02 R.N.R.",
+  "titolo": "Trib Min trieste pds art.18 comma 6 con messa alla prova e comp. trib e PM",
+  "oggetto": "Applicabilità dell'art. 18, comma 6, D.Lgs. 286/1998 (permesso di soggiorno per protezione sociale) al minore straniero che ha completato con esito positivo la messa alla prova",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   },
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4859
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tribunale Firenze_17.luglio 24 TRATTA ASILO BANGLADESG INDEBITAMENTO STIGMA SOCIALE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Tribunale Firenze_17.luglio 24 TRATTA ASILO BANGLADESG INDEBITAMENTO STIGMA SOCIALE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-07-17",
+  "ente": "Tribunale di Firenze",
+  "numero": "9362/2022",
+  "titolo": "Tribunale Firenze 17.luglio 24 TRATTA ASILO BANGLADESG INDEBITAMENTO STIGMA SOCIALE OK",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima di tratta a scopo di sfruttamento lavorativo proveniente dal Bangladesh, con indebitamento e stigma sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5911
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Tribunale di Torino - STATUS RIFUGIATO BANGLADESH CON DEBITO QUASI INTERAMENTE SALDATO.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Tribunale di Torino - STATUS RIFUGIATO BANGLADESH CON DEBITO QUASI INTERAMENTE SALDATO.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-02-23",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "11871/2024",
+  "titolo": "Tribunale di Torino - STATUS RIFUGIATO BANGLADESH CON DEBITO QUASI INTERAMENTE SALDATO",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino bangladese vittima di tratta lavorativa con debt bondage quasi interamente saldato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5554
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/accesso prot speciale senza passaporto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/accesso prot speciale senza passaporto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-03-10",
+  "ente": "Tribunale di Roma",
+  "numero": "RG 6261/2022",
+  "titolo": "accesso prot speciale senza passaporto",
+  "oggetto": "Diritto di accesso alla procedura di protezione speciale ex art. 19 commi 1.1 e 1.2 TUI senza passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5463
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/camerun 2026 prot sussidiaria vittima la moglie.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/camerun 2026 prot sussidiaria vittima la moglie.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-05-06",
+  "ente": "Tribunale di Bologna",
+  "numero": "7331/2024 R.G.",
+  "titolo": "camerun 2026 prot sussidiaria vittima la moglie",
+  "oggetto": "Riconoscimento della protezione sussidiaria ex art. 14 lett. b) D.lgs. 251/2007 al coniuge della vittima di matrimonio forzato, esposto a violenze e arresto arbitrario da parte di un soggetto inserito nell'apparato statale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5041
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/cass 2026 su manifestazione e normativa vigente.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/cass 2026 su manifestazione e normativa vigente.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2026-05-18",
+  "ente": "Corte di Cassazione",
+  "numero": "14851/2026 (R.G. 18531/2025)",
+  "titolo": "cass 2026 su manifestazione e normativa vigente",
+  "oggetto": "Individuazione del momento genetico della domanda di protezione internazionale ai fini della disciplina applicabile nel tempo: rilevanza della manifestazione di volontà anche non formalizzata (tempus regit actum)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5220
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/decreto gambia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/decreto gambia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-01-11",
+  "ente": "Tribunale di Napoli",
+  "numero": "964/2019 R.G.",
+  "titolo": "decreto gambia",
+  "oggetto": "Riconoscimento dello status di rifugiato per appartenenza al particolare gruppo sociale dei minori abbandonati, vittime di sfruttamento e maltrattamenti come talibé nelle scuole coraniche (daara) in Gambia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4501
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/marabutto trib bologna dicembre 2018 umanitaria senegal.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/marabutto trib bologna dicembre 2018 umanitaria senegal.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2018-12-27",
+  "ente": "Tribunale di Bologna",
+  "numero": "17890/2017 R.G. (cronol. 5135/2018)",
+  "titolo": "marabutto trib bologna dicembre 2018 umanitaria senegal",
+  "oggetto": "Riconoscimento del permesso di soggiorno per motivi umanitari (art. 5, comma 6, TUI) a ex talibé senegalese, vittima di sfruttamento e maltrattamenti da minore, con esclusione delle forme maggiori di protezione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5382
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/provvedimento 12.7.2019 prot. speciale el salvador prot. speciale parere contrario UNHCR.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/provvedimento 12.7.2019 prot. speciale el salvador prot. speciale parere contrario UNHCR.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-07-12",
+  "ente": "Commissione Territoriale di Torino",
+  "numero": "n. 2019-0123736",
+  "titolo": "provvedimento 12.7.2019 prot. speciale el salvador prot. speciale parere contrario UNHCR",
+  "oggetto": "Esclusione dallo status di rifugiato per reati commessi e contestuale riconoscimento della protezione speciale per rispetto del principio di non refoulement",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4901
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/sentenza sussidiaria no pasaporto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/sentenza sussidiaria no pasaporto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-02-27",
+  "ente": "Tribunale di Napoli",
+  "numero": "RG 35170/2018",
+  "titolo": "sentenza sussidiaria no pasaporto",
+  "oggetto": "Illegittimita della richiesta di passaporto come condizione per il rilascio del permesso di soggiorno per protezione sussidiaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2593
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/status rifugiato  ex minore talibé.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/status rifugiato  ex minore talibé.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2020-01-23",
+  "ente": "Commissione Territoriale per il riconoscimento della protezione internazionale di Napoli",
+  "numero": null,
+  "titolo": "status rifugiato ex minore talibé",
+  "oggetto": "Riconoscimento dello status di rifugiato a ex talibé senegalese per appartenenza al particolare gruppo sociale dei minori, vittime di sfruttamento, accattonaggio forzato e maltrattamenti nella scuola coranica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3650
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/status rifugiato maltrattamenti.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/status rifugiato maltrattamenti.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "commissione_territoriale",
+  "data": "2019-12-12",
+  "ente": "Commissione Territoriale di Torino/Torino 2",
+  "numero": "216403/19",
+  "titolo": "status rifugiato maltrattamenti",
+  "oggetto": "Riconoscimento dello status di rifugiato per appartenenza al gruppo sociale dei minori nati fuori dal matrimonio e vittime di gravi violenze fisiche e traumi psicologici",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3569
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/trib civile guinea neomaggiorenne paese di transito.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/trib civile guinea neomaggiorenne paese di transito.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-04-13",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "41877/2024",
+  "titolo": "trib civile guinea neomaggiorenne paese di transito",
+  "oggetto": "Riconoscimento della protezione sussidiaria ex art. 14, lett. b), D.Lgs. 251/2007 per rischio di danno grave da violenze interetniche e da tratta subita nel paese di transito",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4802
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/tribunale-modena-7-02-2020+1-- (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/tribunale-modena-7-02-2020+1-- (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-07",
+  "ente": "Tribunale di Modena",
+  "numero": "463/2020",
+  "titolo": "tribunale-modena-7-02-2020+1-- (1)",
+  "oggetto": "Diritto all'iscrizione anagrafica e registrazione della convivenza di fatto per partner extracomunitario privo di permesso di soggiorno con cittadino UE, alla luce della Direttiva 2004/38/CE e della legge 76/2016",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3733
+ },
+ {
+  "id": "kb:asilo_2_procedure/Appello Roma giugno 2021 riscarmento danni per mancato accesso domanda di asilo v.foglio notizia incompleto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Appello Roma giugno 2021 riscarmento danni per mancato accesso domanda di asilo v.foglio notizia incompleto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2021-06-01",
+  "ente": "Corte d'Appello di Roma",
+  "numero": "1289/2020 N.R.G.",
+  "titolo": "Appello Roma giugno 2021 riscarmento danni per mancato accesso domanda di asilo v.foglio notizia incompleto",
+  "oggetto": "Risarcimento del danno non patrimoniale per mancato accesso alla procedura di protezione internazionale causato da respingimento illegittimo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3898
+ },
+ {
+  "id": "kb:asilo_2_procedure/C.Giust 58-2023 termini impugnazione ed effettivita diritto difesa ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/C.Giust 58-2023 termini impugnazione ed effettivita diritto difesa ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2023-09-27",
+  "ente": "Corte di Giustizia dell'Unione Europea, Ottava Sezione",
+  "numero": "C-58/23",
+  "titolo": "C.Giust 58-2023 termini impugnazione ed effettivita diritto difesa",
+  "oggetto": "Compatibilità con il diritto UE di un termine di 3 giorni per il ricorso contro il diniego di protezione internazionale in procedura accelerata per manifesta infondatezza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3803
+ },
+ {
+  "id": "kb:asilo_2_procedure/C.Giust 651-2019 termini impugnazione inammissibilità ed effettivita diritto difesa ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/C.Giust 651-2019 termini impugnazione inammissibilità ed effettivita diritto difesa ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2020-09-09",
+  "ente": "Corte di Giustizia dell'Unione Europea, Prima Sezione",
+  "numero": "C-651/19",
+  "titolo": "C.Giust 651-2019 termini impugnazione inammissibilità ed effettivita diritto difesa",
+  "oggetto": "Compatibilità con il diritto UE di un termine di 10 giorni di calendario per il ricorso contro la decisione di irricevibilità di una domanda reiterata di protezione internazionale",
+  "esito": "neutrale",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4512
+ },
+ {
+  "id": "kb:asilo_2_procedure/C.Giustizia giugno2020 Obbligo giudice Trasmettere Manifestazione Volonta Asilo per formalizzazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/C.Giustizia giugno2020 Obbligo giudice Trasmettere Manifestazione Volonta Asilo per formalizzazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2020-06-25",
+  "ente": "Corte di Giustizia dell'Unione Europea - Quarta Sezione",
+  "numero": "C-36/20 PPU",
+  "titolo": "C.Giustizia giugno2020 Obbligo giudice Trasmettere Manifestazione Volonta Asilo per formalizzazione",
+  "oggetto": "Accesso alla procedura di protezione internazionale: nozione di 'altre autorita' competenti a ricevere domande ex art. 6 direttiva 2013/32/UE",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5548
+ },
+ {
+  "id": "kb:asilo_2_procedure/CASS 33398_24-18.12.24 da RINVIO PREGIUDIZIALE POS disapplicazione del decreto ante legge POS OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/CASS 33398_24-18.12.24 da RINVIO PREGIUDIZIALE POS disapplicazione del decreto ante legge POS OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2024-12-19",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "RG 14533/2024 (n. 33398/2024)",
+  "titolo": "CASS 33398 24-18.12.24 da RINVIO PREGIUDIZIALE POS disapplicazione del decreto ante legge POS",
+  "oggetto": "Sindacabilita giurisdizionale della designazione di paese di origine sicuro e potere di disapplicazione del decreto ministeriale da parte del giudice ordinario",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 8936
+ },
+ {
+  "id": "kb:asilo_2_procedure/CAss.aprile2020 art.35 bis riduzione a 15 gg per trattenuti e nei casi di effettiva procedura accelerata.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/CAss.aprile2020 art.35 bis riduzione a 15 gg per trattenuti e nei casi di effettiva procedura accelerata.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-03-25",
+  "ente": "Corte di Cassazione, Sezione Prima Civile",
+  "numero": "7520/2020",
+  "titolo": "CAss.aprile2020 art.35 bis riduzione a 15 gg per trattenuti e nei casi di effettiva procedura accelerata",
+  "oggetto": "Ambito di applicazione del termine dimezzato di 15 giorni per impugnare il diniego di protezione internazionale ex art. 35-bis, comma 2, d.lgs. 25/2008",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2984
+ },
+ {
+  "id": "kb:asilo_2_procedure/CGUE_14012021_322_19 accesso lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/CGUE_14012021_322_19 accesso lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2021-01-14",
+  "ente": "Corte di Giustizia dell'Unione Europea, Quarta Sezione",
+  "numero": "C-322/19, C-385/19",
+  "titolo": "CGUE 14012021 322 19 accesso lavoro",
+  "oggetto": "Diritto di accesso al mercato del lavoro per richiedenti protezione internazionale oggetto di decisione di trasferimento Dublino III",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 7265
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass 2005 art 10 solo per accedere in italia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass 2005 art 10 solo per accedere in italia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2005-11-25",
+  "ente": "Corte di Cassazione",
+  "numero": "75028/2005",
+  "titolo": "Cass 2005 art 10 solo per accedere in italia",
+  "oggetto": "Natura e contenuto del diritto di asilo ex art. 10 Cost. comma 3 rispetto allo status di rifugiato",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4235
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass 2717-2022- nuovi elementi anche speciale in giudizio OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass 2717-2022- nuovi elementi anche speciale in giudizio OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-01-28",
+  "ente": "Corte di Cassazione",
+  "numero": "2717/2022",
+  "titolo": "Cass 2717-2022- nuovi elementi anche speciale in giudizio",
+  "oggetto": "Domanda reiterata di protezione internazionale: ammissibilità di nuovi elementi e riconoscimento protezione speciale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4289
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass 6374-2022- Sulla inammissibilita il Giudice deve decidere nel merito del diritto e non sulla ammissibilita OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass 6374-2022- Sulla inammissibilita il Giudice deve decidere nel merito del diritto e non sulla ammissibilita OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-02-25",
+  "ente": "Corte di Cassazione",
+  "numero": "6374/2022",
+  "titolo": "Cass 6374-2022- Sulla inammissibilita il Giudice deve decidere nel merito del diritto e non sulla ammissibilita OK",
+  "oggetto": "Domanda reiterata dichiarata inammissibile: il giudice deve pronunciarsi nel merito del diritto soggettivo e non limitarsi alla verifica di ammissibilità",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3793
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 12444_2025 NO EFFETTI ACCELERATA manifesta infondatezza senza previo avviso di accelerata ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 12444_2025 NO EFFETTI ACCELERATA manifesta infondatezza senza previo avviso di accelerata ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-05-11",
+  "ente": "Corte di Cassazione",
+  "numero": "12444/2025",
+  "titolo": "Cass. 12444 2025 NO EFFETTI ACCELERATA manifesta infondatezza senza previo avviso di accelerata",
+  "oggetto": "Procedura accelerata: riespansione del modello ordinario per mancato previo avviso della procedura accelerata e notifica tardiva del provvedimento",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5321
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 18311 del 2021 obbligo audizione del richiedente anche non richiesta come cooperazione istruttoria OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 18311 del 2021 obbligo audizione del richiedente anche non richiesta come cooperazione istruttoria OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-06-25",
+  "ente": "Corte di Cassazione",
+  "numero": "18311/2021",
+  "titolo": "Cass. 18311 del 2021 obbligo audizione del richiedente anche non richiesta come cooperazione istruttoria OK",
+  "oggetto": "Obbligo di audizione del richiedente protezione internazionale in sede giurisdizionale: presupposti, limiti e sindacato in cassazione",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5310
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 2009 Libera forma domanda asilo obbligo di prenderla.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 2009 Libera forma domanda asilo obbligo di prenderla.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2009-10-27",
+  "ente": "Corte di Cassazione",
+  "numero": null,
+  "titolo": "Cass. 2009 Libera forma domanda asilo obbligo di prenderla",
+  "oggetto": "Obbligo dell'Amministrazione di ricevere la domanda di protezione internazionale presentata in forma libera dallo straniero clandestino",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4357
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 24573 2020. audizione vittime di tratta sempre necessario anche se mancano elementi di fondatezza. 24573 2020.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 24573 2020. audizione vittime di tratta sempre necessario anche se mancano elementi di fondatezza. 24573 2020.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2020-11-05",
+  "ente": "Corte di Cassazione",
+  "numero": "11206/2019",
+  "titolo": "Cass. 24573 2020. audizione vittime di tratta sempre necessario anche se mancano elementi di fondatezza. 24573 2020",
+  "oggetto": "Obbligo del giudice di procedere all'audizione personale della richiedente asilo quando emergano indizi di tratta di esseri umani, anche in difetto di allegazione o in presenza di allegazione contraria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5884
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 32070-23 Informativa asilo allo sbarco EFFETTIVA e per TUTTI no clausole stile OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 32070-23 Informativa asilo allo sbarco EFFETTIVA e per TUTTI no clausole stile OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-11-20",
+  "ente": "Corte di Cassazione",
+  "numero": "32070/2023",
+  "titolo": "Cass. 32070-23 Informativa asilo allo sbarco EFFETTIVA e per TUTTI no clausole stile OK OK",
+  "oggetto": "Obbligo di informativa sulla protezione internazionale ex art. 10-ter TUI per tutti gli stranieri condotti presso punti di crisi (hotspot)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6412
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 37275-2022 si REITERATA ANCHE SOLO PROTEZIONE SPECIALE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 37275-2022 si REITERATA ANCHE SOLO PROTEZIONE SPECIALE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-12-20",
+  "ente": "Corte di Cassazione",
+  "numero": "37275/2022",
+  "titolo": "Cass. 37275-2022 si REITERATA ANCHE SOLO PROTEZIONE SPECIALE",
+  "oggetto": "Ammissibilità della domanda reiterata fondata esclusivamente su nuovi elementi riconducibili alla protezione speciale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3415
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 5.4.2024 invio Sez.Unite RESPINGIMENTO INDIRETTO E SPECIALE OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 5.4.2024 invio Sez.Unite RESPINGIMENTO INDIRETTO E SPECIALE OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2024-04-23",
+  "ente": "Corte di Cassazione",
+  "numero": "10194/2020",
+  "titolo": "Cass. 5.4.2024 invio Sez.Unite RESPINGIMENTO INDIRETTO E SPECIALE",
+  "oggetto": "Sindacabilità giurisdizionale della clausola di discrezionalità ex art. 17 Reg. Dublino III e rapporto tra protezione nazionale (speciale) e decisione di trasferimento",
+  "esito": "neutrale",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6933
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. 5797 2024 Trattenmento OBBGLIGO INFORMATIVA HOTSPOT DETTAGLIATO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. 5797 2024 Trattenmento OBBGLIGO INFORMATIVA HOTSPOT DETTAGLIATO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2024-03-05",
+  "ente": "Corte di Cassazione",
+  "numero": "5797/2024",
+  "titolo": "Cass. 5797 2024 Trattenmento OBBGLIGO INFORMATIVA HOTSPOT DETTAGLIATO OK",
+  "oggetto": "Obbligo di informativa dettagliata sulla protezione internazionale ex art. 10-ter TUI negli hotspot e conseguenze sulla convalida del trattenimento",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6041
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass. SU 11399-24 29.4.24 Accelerate TERMINE PERENTORIO e Manifesta infodatezza non sospende solo con accelerate OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass. SU 11399-24 29.4.24 Accelerate TERMINE PERENTORIO e Manifesta infodatezza non sospende solo con accelerate OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2024-04-29",
+  "ente": "Corte di Cassazione - Sezioni Unite",
+  "numero": "11399/2024",
+  "titolo": "Cass. SU 11399-24 29.4.24 Accelerate TERMINE PERENTORIO e Manifesta infodatezza non sospende solo con accelerate OK OK",
+  "oggetto": "Perentorieta dei termini della procedura accelerata in materia di protezione internazionale e conseguenze sulla sospensione automatica del provvedimento di manifesta infondatezza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5304
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.11713-2025 DUBLINO E ART. 19 ANCHE PRIMO COMMA elementi anche da C3 e successivi atti ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass.11713-2025 DUBLINO E ART. 19 ANCHE PRIMO COMMA elementi anche da C3 e successivi atti ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-05-05",
+  "ente": "Corte di Cassazione",
+  "numero": "11713/2025",
+  "titolo": "Cass.11713-2025 DUBLINO E ART. 19 ANCHE PRIMO COMMA elementi anche da C3 e successivi atti ok",
+  "oggetto": "Sindacabilita del rifiuto tacito di esercitare la clausola discrezionale ex art. 17 Reg. Dublino III in relazione alla protezione nazionale (art. 19 d.lgs. 286/1998) e obbligo di valutare elementi dalla domanda di protezione internazionale (C3) e atti successivi",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6490
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.15757 2025 NO convalida con rinvio TRATTENIMENTO mancata informativa da tempo in Italia ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_2_procedure/Cass.15757 2025 NO convalida con rinvio TRATTENIMENTO mancata informativa da tempo in Italia ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-04-22",
+  "ente": "Corte di Cassazione",
+  "numero": "15757/2025",
+  "titolo": "Cass.15757 2025 NO convalida con rinvio TRATTENIMENTO mancata informativa da tempo in Italia ok",
+  "oggetto": "Mancata informativa sulla protezione internazionale come vizio della convalida del trattenimento anche per straniero gia presente in Italia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5479
+ }
+]

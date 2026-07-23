@@ -1,0 +1,741 @@
+[
+ {
+  "id": "kb:asilo_3_trattenimento/App.Roma 26.2.25 Respinge opposizione SOSPENSIVA dopo NON CONVALIDA tratten. No proced. Accelerata OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/App.Roma 26.2.25 Respinge opposizione SOSPENSIVA dopo NON CONVALIDA tratten. No proced. Accelerata OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2025-02-26",
+  "ente": "Corte d'Appello di Roma",
+  "numero": "811/2025 R.G.",
+  "titolo": "App.Roma 26.2.25 Respinge opposizione SOSPENSIVA dopo NON CONVALIDA tratten. No proced. Accelerata",
+  "oggetto": "Rigetto del reclamo ministeriale contro la sospensiva del diniego in procedura accelerata di frontiera: la procedura resta di frontiera da paese sicuro anche se la CT ha valutato nel merito",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5058
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/AppTorino aprile 2025 NO convalida TRATTENIMENTO mancata informativa da tempo in Italia OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/AppTorino aprile 2025 NO convalida TRATTENIMENTO mancata informativa da tempo in Italia OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2025-04-18",
+  "ente": "Corte d'Appello di Torino",
+  "numero": "427/2025 R.G.",
+  "titolo": "AppTorino aprile 2025 NO convalida TRATTENIMENTO mancata informativa da tempo in Italia",
+  "oggetto": "Legittimità del trattenimento ex art. 6 comma 3 d.lgs. 142/2015 quando il richiedente non ha ricevuto adeguata informativa sulla facoltà di presentare domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4409
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/C.App.Torino giugno 2025 No informativa NO CONVALIDA trattenimento OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/C.App.Torino giugno 2025 No informativa NO CONVALIDA trattenimento OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2025-06-12",
+  "ente": "Corte d'Appello di Torino",
+  "numero": "719/2025 R.G.",
+  "titolo": "C.App.Torino giugno 2025 No informativa NO CONVALIDA trattenimento OK",
+  "oggetto": "Validità del trattenimento secondario del richiedente asilo in assenza di informativa sulla protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4743
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/CASS 15117-2021.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/CASS 15117-2021.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-02-26",
+  "ente": "Corte di Cassazione",
+  "numero": "15117/2021",
+  "titolo": "CASS 15117-2021",
+  "oggetto": "Nozione di convivenza ostativa all'espulsione ex art. 19 comma 2 lett. c) TUI per parente entro il secondo grado di cittadino italiano",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2838
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/CASS.PEN.34134 2021 Espulsione MISURA ALTERANAT. No con x vita privata e familiare OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/CASS.PEN.34134 2021 Espulsione MISURA ALTERANAT. No con x vita privata e familiare OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-09-15",
+  "ente": "Corte di Cassazione",
+  "numero": "34134/2021",
+  "titolo": "CASS.PEN.34134 2021 Espulsione MISURA ALTERANAT. No con x vita privata e familiare",
+  "oggetto": "Rilevanza del diritto al rispetto della vita privata e familiare come causa ostativa all'espulsione quale misura alternativa alla detenzione ex art. 16 comma 5 TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5142
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 12592 2023 Convalida illeg. x Resping. Illeg. Senza Informativa.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass. 12592 2023 Convalida illeg. x Resping. Illeg. Senza Informativa.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-05-10",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "12592/2023",
+  "titolo": "Cass. 12592 2023 Convalida illeg. x Resping. Illeg. Senza Informativa",
+  "oggetto": "Illegittimita della convalida del trattenimento quando il decreto di respingimento presupposto e nullo per omessa informativa sulla possibilita di presentare domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4125
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 20930_22 il semplice ritardo della richiesta di rinnovo spontaneo pds non autorizza espulsionie automatica OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass. 20930_22 il semplice ritardo della richiesta di rinnovo spontaneo pds non autorizza espulsionie automatica OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-06-30",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "20930/2022",
+  "titolo": "Cass. 20930 22 il semplice ritardo della richiesta di rinnovo spontaneo pds non autorizza espulsionie automatica",
+  "oggetto": "Il semplice ritardo nella presentazione della richiesta di rinnovo del permesso di soggiorno non autorizza l'espulsione automatica: la pendenza del procedimento di rinnovo esclude l'irregolarita del soggiorno",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 2608
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 21716 2022 il GDP impugnazione espulsione ha dovere di cooperazione istruttoria deve valutare i divieti di espulsione OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass. 21716 2022 il GDP impugnazione espulsione ha dovere di cooperazione istruttoria deve valutare i divieti di espulsione OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-07-08",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "21716/2022 (RG 22077/2021)",
+  "titolo": "Cass. 21716 2022 il GDP impugnazione espulsione ha dovere di cooperazione istruttoria deve valutare i divieti di espulsione OK",
+  "oggetto": "Obbligo del giudice di pace di esaminare d'ufficio i divieti di espulsione ex art. 19 TUI in sede di opposizione al decreto espulsivo, con dovere di cooperazione istruttoria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4259
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 22097 2023 CPR rigetta ma dichiara inespellibile durante attesa sospensiva in cassazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass. 22097 2023 CPR rigetta ma dichiara inespellibile durante attesa sospensiva in cassazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-07-24",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "22097/2023 (RG 4028/2022)",
+  "titolo": "Cass. 22097 2023 CPR rigetta ma dichiara inespellibile durante attesa sospensiva in cassazione",
+  "oggetto": "Durata dell'effetto sospensivo del trattenimento durante la pendenza del ricorso in cassazione avverso il rigetto della protezione internazionale e possibilità di richiesta di sospensiva",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4865
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 3.3.2023 6 giorni per formalizzare domanda di asilo e cessazione al momento del rigetto sospensiva salvo motivi art. 14 ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass. 3.3.2023 6 giorni per formalizzare domanda di asilo e cessazione al momento del rigetto sospensiva salvo motivi art. 14 ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-07-13",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "28789/2020",
+  "titolo": "Cass. 3.3.2023 6 giorni per formalizzare domanda di asilo e cessazione al momento del rigetto sospensiva salvo motivi art. 14",
+  "oggetto": "Termine perentorio di 6 giorni lavorativi per la registrazione della domanda di protezione internazionale presentata dallo straniero trattenuto — conseguenze sulla legittimita del trattenimento e della sua proroga",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5808
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.13514_2025 espulsione misura alternativa LIMITE CON BILANCIAMENTO VITA PRIVATA ART. 19 OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass.13514_2025 espulsione misura alternativa LIMITE CON BILANCIAMENTO VITA PRIVATA ART. 19 OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-01-23",
+  "ente": "Corte di Cassazione, Prima Sezione Penale",
+  "numero": "13514/2025",
+  "titolo": "Cass.13514 2025 espulsione misura alternativa LIMITE CON BILANCIAMENTO VITA PRIVATA ART. 19",
+  "oggetto": "Obbligo di bilanciamento tra espulsione come misura alternativa alla detenzione e diritto al rispetto della vita privata e familiare ex art. 8 CEDU, anche dopo l'abrogazione parziale dell'art. 19 co. 1.1 d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5582
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.16529_25 Trattenimento INFORMATIVA PRIMO INGRESSO O CONTATTO PRIMA DI ESPULSIONE CHIARA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass.16529_25 Trattenimento INFORMATIVA PRIMO INGRESSO O CONTATTO PRIMA DI ESPULSIONE CHIARA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-05-02",
+  "ente": "Corte di Cassazione, Prima Sezione Penale",
+  "numero": "16529/2025",
+  "titolo": "Cass.16529 25 Trattenimento INFORMATIVA PRIMO INGRESSO O CONTATTO PRIMA DI ESPULSIONE CHIARA",
+  "oggetto": "Ambito di applicazione dell'obbligo di informativa ex art. 10-ter d.lgs. 286/1998: limitato al primo ingresso o primo contatto con le autorita, non applicabile a straniero gia presente in Italia da anni",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5669
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.17604_2021 NO ESPULSIONE MARITO IN GRAVIDANZA salvo espulsione MINISTERIALE no prefettizio con bilanciamento.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass.17604_2021 NO ESPULSIONE MARITO IN GRAVIDANZA salvo espulsione MINISTERIALE no prefettizio con bilanciamento.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-06-21",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "17604/2021",
+  "titolo": "Cass.17604 2021 NO ESPULSIONE MARITO IN GRAVIDANZA salvo espulsione MINISTERIALE no prefettizio con bilanciamento",
+  "oggetto": "Divieto di espulsione del marito convivente della donna in stato di gravidanza ai sensi dell'art. 19 co. 2 lett. d) d.lgs. 286/1998 come integrato dalla C. Cost. 376/2000: il potere espulsivo del prefetto e sospeso, residuando solo l'espulsione ministeriale per ragioni di ordine pubblico e sicurezza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4397
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.17640-21 il marito non espellibile durante gravidanza.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass.17640-21 il marito non espellibile durante gravidanza.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-06-22",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "17640/2021",
+  "titolo": "Cass.17640-21 il marito non espellibile durante gravidanza",
+  "oggetto": "Divieto di espulsione del marito convivente della donna in gravidanza ai sensi dell'art. 19 comma 2 lett. d) TUI, come esteso dalla Corte Costituzionale con sentenza 376/2000",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4868
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.44182 2016 NO espulsione coppia di fatto art.19 convivente cirinna come coniuge OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass.44182 2016 NO espulsione coppia di fatto art.19 convivente cirinna come coniuge OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2016-10-18",
+  "ente": "Corte di Cassazione, Sezione Penale",
+  "numero": "44182/2016",
+  "titolo": "Cass.44182 2016 NO espulsione coppia di fatto art.19 convivente cirinna come coniuge OK OK",
+  "oggetto": "La convivenza more uxorio riconosciuta con contratto di convivenza ex legge 76/2016 (legge Cirinna) e' ostativa all'espulsione come misura alternativa alla detenzione ai sensi dell'art. 19, comma 2, lett. c) d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3967
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.5521 2021 Espulsione solo 60 gg dopo SCARCERAZIONE.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Cass.5521 2021 Espulsione solo 60 gg dopo SCARCERAZIONE.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-03-01",
+  "ente": "Corte di Cassazione",
+  "numero": "5521/2021",
+  "titolo": "Cass.5521 2021 Espulsione solo 60 gg dopo SCARCERAZIONE",
+  "oggetto": "Legittimità del decreto di espulsione emesso nei confronti di straniero detenuto il giorno stesso della scarcerazione",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4444
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Trib. Torino 14.10.2022 prot. speciale condanna per grave reato valorizzazione percorso in carcere.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Trib. Torino 14.10.2022 prot. speciale condanna per grave reato valorizzazione percorso in carcere.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-10-14",
+  "ente": "Tribunale di Torino, IX sezione civile",
+  "numero": "RG 9582/2022",
+  "titolo": "Trib. Torino 14.10.2022 prot. speciale condanna per grave reato valorizzazione percorso in carcere",
+  "oggetto": "Rilascio di permesso di soggiorno per protezione speciale a straniero condannato per reato grave (violenza sessuale) che ha completato un percorso riabilitativo in carcere",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5040
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Trib.Roma 2021 espulsione competenza trib.civ in presenza art.31 OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Trib.Roma 2021 espulsione competenza trib.civ in presenza art.31 OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-08-03",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "RG 47847/2021",
+  "titolo": "Trib.Roma 2021 espulsione competenza trib.civ in presenza art.31",
+  "oggetto": "Competenza del tribunale ordinario (e non del giudice di pace) per impugnazione espulsione in pendenza di procedimento ex art. 31, co. 3, TU immigrazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3019
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Trib.Roma II sez..5035-24 Risarc.danni Ingiusto CPR come detenzione PER OBBLIGO INFORMAZ.FRONTIERA OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_3_trattenimento/Trib.Roma II sez..5035-24 Risarc.danni Ingiusto CPR come detenzione PER OBBLIGO INFORMAZ.FRONTIERA OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-27",
+  "ente": "Tribunale di Roma",
+  "numero": "RG 71224/2022",
+  "titolo": "Trib.Roma II sez..5035-24 Risarc.danni Ingiusto CPR come detenzione PER OBBLIGO INFORMAZ.FRONTIERA OK",
+  "oggetto": "Risarcimento danni per ingiusto trattenimento in CPR derivante dalla violazione dell'obbligo di informativa sulla protezione internazionale al momento dello sbarco",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5196
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/2019_8_8_Tribunale-Bologna-iscrizione-anagfrafica-reclamo-inammissibilita-Ministero-2.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/2019_8_8_Tribunale-Bologna-iscrizione-anagfrafica-reclamo-inammissibilita-Ministero-2.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-08-01",
+  "ente": "Tribunale di Bologna - Sezione specializzata immigrazione",
+  "numero": "7626/2019 R.G. (riunito 7819/2019)",
+  "titolo": "2019 8 8 Tribunale-Bologna-iscrizione-anagfrafica-reclamo-inammissibilita-Ministero-2",
+  "oggetto": "Inammissibilita del reclamo cautelare proposto dal Ministero dell'Interno e dall'Avvocatura dello Stato per il Sindaco quale Ufficiale di Governo contro l'ordinanza che ordinava l'iscrizione anagrafica della richiedente asilo dopo il DL 113/2018",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4732
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/23-872 osc..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/23-872 osc..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-07-07",
+  "ente": "Tribunale di Monza",
+  "numero": "8623/21 R.G. - 872/23 Reg. Sent.",
+  "titolo": "23-872 osc.",
+  "oggetto": "Insussistenza dell'elemento soggettivo del reato di falsa dichiarazione per ottenere il reddito di cittadinanza da parte di titolare di protezione sussidiaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 2763
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/6112299.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/6112299.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-03-07",
+  "ente": "Tribunale di Napoli",
+  "numero": "20573/2022 R.G.N.R. - 21144/2022 R.G.G.I.P. - 488/2023 Reg. Sent.",
+  "titolo": "6112299",
+  "oggetto": "Insussistenza dell'elemento soggettivo del reato di falsa dichiarazione per ottenere il reddito di cittadinanza in relazione al requisito della residenza decennale",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3478
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ASGI+APN c MAECI sent 3619-25 rg 3097-2025 trib milano sez lavoro copia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/ASGI+APN c MAECI sent 3619-25 rg 3097-2025 trib milano sez lavoro copia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-08-04",
+  "ente": "Tribunale di Milano",
+  "numero": "R.G. 3097/2025",
+  "titolo": "ASGI+APN c MAECI sent 3619-25 rg 3097-2025 trib milano sez lavoro copia",
+  "oggetto": "Discriminazione nell'accesso al pubblico impiego per requisito di cittadinanza italiana nel bando di concorso MAECI per area Assistenti",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5783
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Accoglimento SASSI pds cure mediche 1 anno.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Accoglimento SASSI pds cure mediche 1 anno.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-25",
+  "ente": "Tribunale di Roma",
+  "numero": "R.G. 31613/2024",
+  "titolo": "Accoglimento SASSI pds cure mediche 1 anno",
+  "oggetto": "Diritto al rilascio del permesso di soggiorno per cure mediche di durata annuale ex art. 19, co. 2, lett. d-bis, d.lgs. 286/1998 in luogo del rinnovo trimestrale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3516
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/App. Brescia 10.12.2025 RG 388-2025 codice fiscale richiedente protezione speciale El Hyani.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/App. Brescia 10.12.2025 RG 388-2025 codice fiscale richiedente protezione speciale El Hyani.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2025-12-10",
+  "ente": "Corte d'Appello di Brescia",
+  "numero": "388/2025",
+  "titolo": "Corte Appello Brescia - accoglimento appello EL HYANI (1)",
+  "oggetto": "Diritto del richiedente protezione speciale (istanza diretta al Questore ex art. 19 c. 1.2 TUI) all'attribuzione di codice fiscale numerico provvisorio collegato ai dati anagrafici corretti al momento della formalizzazione della domanda, equiparato al richiedente protezione internazionale; competenz",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6667
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/App. Venezia 2026 RG 1453-2025 ERP disapplica T.U. requisito biennale permesso unico lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/App. Venezia 2026 RG 1453-2025 ERP disapplica T.U. requisito biennale permesso unico lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2026-02-18",
+  "ente": "Corte d'Appello di Venezia",
+  "numero": "1453/2025",
+  "titolo": "App. Venezia marzo 26 CASA POOPLARE disapplica T.U. pds 2 anni e lavoro in corso OK",
+  "oggetto": "Discriminatorietà del requisito di permesso di soggiorno biennale per accesso alle graduatorie di edilizia residenziale pubblica (ERP) imposto dall'art. 40 c.6 d.lgs. 286/98 nei confronti dei titolari di permesso unico lavoro UE infra-biennale, e obbligo della Pubblica Amministrazione di disapplicar",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 8358
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Appello Venezia 138_2022 Discriminz. Iscrizione SSNA genitori stranieri a carico di italiano ACCORDO STATO REGIONI VINCOLANTE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Appello Venezia 138_2022 Discriminz. Iscrizione SSNA genitori stranieri a carico di italiano ACCORDO STATO REGIONI VINCOLANTE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2022-04-15",
+  "ente": "Corte d'Appello di Venezia",
+  "numero": "RG 429/2020",
+  "titolo": "Appello Venezia 138 2022 Discriminz. Iscrizione SSNA genitori stranieri a carico di italiano ACCORDO STATO REGIONI VINCOLANTE OK",
+  "oggetto": "Diritto all'iscrizione obbligatoria al SSN per genitori stranieri ultrasessantacinquenni a carico di cittadino italiano",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 2
+   },
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6179
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/CORTE COST.19-2022 REDDITO CITTAD. legittimo chiedere il PDS lungo soggiornante.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/CORTE COST.19-2022 REDDITO CITTAD. legittimo chiedere il PDS lungo soggiornante.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_costituzionale",
+  "data": "2022-01-25",
+  "ente": "Corte Costituzionale",
+  "numero": "19/2022",
+  "titolo": "CORTE COST.19-2022 REDDITO CITTAD. legittimo chiedere il PDS lungo soggiornante",
+  "oggetto": "Legittimita costituzionale del requisito del permesso di soggiorno UE per soggiornanti di lungo periodo ai fini dell'accesso al reddito di cittadinanza",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5749
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Cass.Pen2022 Reddito Cittadinanza no reato falsa testimon. se comunque dovuto OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Cass.Pen2022 Reddito Cittadinanza no reato falsa testimon. se comunque dovuto OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-12-21",
+  "ente": "Corte di Cassazione",
+  "numero": "44366/2021",
+  "titolo": "Cass.Pen2022 Reddito Cittadinanza no reato falsa testimon. se comunque dovuto",
+  "oggetto": "Configurabilita del reato ex art. 7 D.L. 4/2019 in caso di omissione di informazioni nella domanda di reddito di cittadinanza quando il beneficio sarebbe stato comunque dovuto",
+  "esito": "ministero",
+  "permessi": [],
+  "kb_size": 4779
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Cons.Stato2020 titolo di viaggio a protezione umanitaria.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Cons.Stato2020 titolo di viaggio a protezione umanitaria.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2020-02-27",
+  "ente": "Consiglio di Stato",
+  "numero": "528/2020",
+  "titolo": "Cons.Stato2020 titolo di viaggio a protezione umanitaria",
+  "oggetto": "Diritto al titolo di viaggio per titolari di protezione umanitaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2648
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/DOC180723-18072023170638.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/DOC180723-18072023170638.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-01-30",
+  "ente": "Tribunale di Verona",
+  "numero": "RG 3959/2021 NR; RG 3376/2022 Dib.; Sent. 330/2023",
+  "titolo": "DOC180723-18072023170638",
+  "oggetto": "Reato di false dichiarazioni per ottenimento indebito del Reddito di Cittadinanza (art. 7 co. 1 D.L. 4/2019) — requisito di residenza decennale per cittadini stranieri",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4197
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/K.H. (OMAGHE) - INPS - C-747-22 - SENTENZA DEL 7.5.26 (2).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/K.H. (OMAGHE) - INPS - C-747-22 - SENTENZA DEL 7.5.26 (2).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2026-05-07",
+  "ente": "Corte di Giustizia dell'Unione Europea",
+  "numero": "C-747/22",
+  "titolo": "K.H. (OMAGHE) - INPS - C-747-22 - SENTENZA DEL 7.5.26 (2)",
+  "oggetto": "Compatibilità con gli artt. 26 e 29 della direttiva 2011/95/UE del requisito di residenza decennale (di cui gli ultimi due anni continuativi) per il reddito di cittadinanza, applicato a un beneficiario di protezione sussidiaria",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6618
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/KELLINY + 1 - REGIONE LOMBARDIA - sentenza Corte Cost. 97-2026_fd del 5.6.26.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/KELLINY + 1 - REGIONE LOMBARDIA - sentenza Corte Cost. 97-2026_fd del 5.6.26.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_costituzionale",
+  "data": "2026-06-05",
+  "ente": "Corte Costituzionale",
+  "numero": "97/2026",
+  "titolo": "KELLINY + 1 - REGIONE LOMBARDIA - sentenza Corte Cost. 97-2026 fd del 5.6.26",
+  "oggetto": "Iscrizione obbligatoria e gratuita al SSN (art. 34, comma 1, d.lgs. 286/1998) per gli stranieri titolari di permesso per residenza elettiva derivante dalla conversione del permesso per lavoro o famiglia a seguito del riconoscimento della pensione di inabilità civile",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "residenza-elettiva",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6074
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/N. 04596_2015 REG.RIC_ conversione senza pds minore eta.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/N. 04596_2015 REG.RIC_ conversione senza pds minore eta.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2016-02-04",
+  "ente": "TAR Campania",
+  "numero": "RG 4596/2015",
+  "titolo": "N. 04596 2015 REG.RIC conversione senza pds minore eta",
+  "oggetto": "Silenzio inadempimento della Questura sull'istanza di rilascio del permesso di soggiorno ex art. 32 comma 1 e 1-bis TUI per ex minore affidato/sotto tutela",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "minore-eta-per-msna",
+    "rilevanza": 3
+   },
+   {
+    "slug": "integrazione-prosieguo-amministrativo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4238
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Ordinanza Anonima (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Ordinanza Anonima (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-07-10",
+  "ente": "Tribunale di Napoli Nord",
+  "numero": "RG 6283/2019",
+  "titolo": "Ordinanza Anonima (1)",
+  "oggetto": "Diritto del richiedente asilo all'iscrizione al SSN senza iscrizione anagrafica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3479
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Parere Commissione nazionale accesso si decisione Commissione Asilo ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Parere Commissione nazionale accesso si decisione Commissione Asilo ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-02-02",
+  "ente": "Commissione per l'Accesso ai Documenti Amministrativi - Presidenza del Consiglio dei Ministri",
+  "numero": "Decisione n. 80/2023",
+  "titolo": "Parere Commissione nazionale accesso si decisione Commissione Asilo ok",
+  "oggetto": "Diritto di accesso del difensore al provvedimento di diniego del permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3057
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Provvedimento accoglimento reclamo ADI chieti moglie del titolare di status.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Provvedimento accoglimento reclamo ADI chieti moglie del titolare di status.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-06-10",
+  "ente": "Tribunale di Chieti",
+  "numero": "R.G. 573/2025",
+  "titolo": "Provvedimento accoglimento reclamo ADI chieti moglie del titolare di status",
+  "oggetto": "Diritto all'assegno di inclusione (ADI) per il familiare del titolare di protezione internazionale con permesso di soggiorno per motivi familiari",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3667
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Ricorso 2021 accoglienza SAI a ROMA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Ricorso 2021 accoglienza SAI a ROMA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-04-22",
+  "ente": "Tribunale Civile di Roma",
+  "numero": "Ricorso ex art. 19-ter d.lgs 150/2011",
+  "titolo": "Ricorso 2021 accoglienza SAI a ROMA",
+  "oggetto": "Diritto all'inserimento nel sistema di accoglienza SAI per titolari di permesso di soggiorno per cure mediche ex art. 19 co. 2 lett. d-bis TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4660
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Sentenza CGUE 151-24.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Sentenza CGUE 151-24.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2026-03-05",
+  "ente": "Corte di Giustizia dell'Unione Europea (Prima Sezione)",
+  "numero": "C-151/24",
+  "titolo": "Sentenza CGUE 151-24",
+  "oggetto": "Applicabilita della parita di trattamento ex direttiva 2011/98/UE alle prestazioni speciali in denaro di carattere non contributivo (assegno sociale)",
+  "esito": "ministero",
+  "permessi": [],
+  "kb_size": 5195
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Sentenza napoli sospensione prestazione inps.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Sentenza napoli sospensione prestazione inps.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-05-20",
+  "ente": "Tribunale di Napoli Nord",
+  "numero": "R.G. 1216/2025",
+  "titolo": "Sentenza napoli sospensione prestazione inps",
+  "oggetto": "Diritto alla conservazione delle prestazioni di invalidita civile durante le more del rinnovo del permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 2732
+ }
+]

@@ -1,0 +1,362 @@
+[
+ {
+  "id": "kb:asilo_2_procedure/Cass.18518-21 effetti accelerata solo con rispetto termini e proc.accelerata MANIF. infond.solo con accel.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 30.6.2021, n. 18518/2021 — termine dimezzato di impugnazione solo se procedura accelerata effettivamente seguita",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.20028-2023 Domanda asilo RISPETTO termine formalizzazione per validita proc. accell. OK OK.md",
+  "titolo_pubblico": "Cass. civ., sentenza 13.7.2023, n. 20028/2023 — obbligo di registrazione della domanda d'asilo entro 3 giorni e trattenimento illegittimo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.2019 Procura orale ok per atti non negoziali con messa in mora.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 20.2.2020, n. 4280/2020 — validità della procura orale per la domanda amministrativa all'INPS",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": ["Nome e cognome del ricorrente principale (Albano Giuseppe) riportato nel campo 'parties' del frontmatter del file"],
+  "qualita": "pubblicabile",
+  "nota": "Il nome compare solo nei metadati di processing, non nel testo del principio di diritto; va rimosso prima della pubblicazione. La decisione riguarda un procedimento INPS (assegno amianto) e non un caso di asilo in senso proprio, ma è rilevante per analogia sulla forma della procura applicabile anche alle procedure di accesso alla protezione internazionale."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.2020 giudice onoraro no audizione richidente solo togato.md",
+  "titolo_pubblico": "Cass. civ., sentenza 3.11.2020, n. 24362/2020 — invalidità della subdelega dell'audizione del richiedente asilo al giudice onorario",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.2020 manifestazione volonta asilo si diventa richiedenti.md",
+  "titolo_pubblico": "Cass. civ., sentenza 17.9.2020, n. 1779/2020 — la manifestazione di volontà di chiedere asilo preclude l'espulsione del richiedente",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.21584-20 obbligo di audizione Fatti Nuovi_Istanza salvo manifest.infondat.Esigenze di approfond.Giudice OK OK OK.md",
+  "titolo_pubblico": "Cass. civ., sentenza 9.10.2020, n. 21584/2020 — limiti all'obbligo di audizione del richiedente asilo in assenza di videoregistrazione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.25.06.2019 25113 argomenti OK Manifesta infondatezza Credibilita e Prove.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 25.6.2019, n. 13726/2018 — termine dimezzato di impugnazione inapplicabile se la manifesta infondatezza è dichiarata in procedura ordinaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": ["Nome e cognome del ricorrente (Seydi Moussa) riportato nel campo 'parties' del frontmatter del file"],
+  "qualita": "pubblicabile",
+  "nota": "Il nome compare solo nei metadati di processing, non nel testo del principio di diritto; va rimosso prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.30.1.2025 mancata istruttoria GDP su INFORMATIVA asilo in HOTSPOT OK OK_redacted.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 3.3.2025, n. 5566/2025 — obbligo di informativa effettiva sull'asilo allo sbarco e nullità del respingimento",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.37301-21 nuove prove in giudizio art. 35 bis se fissata udienza di comparizione delle parti OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 15.9.2021, n. 17853/2020 — ammissibilità di nuovi documenti in udienza nel rito camerale per protezione internazionale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": ["Nome e cognome del ricorrente (Diarrassouba Issa) riportato nel campo 'parties' del frontmatter del file"],
+  "qualita": "pubblicabile",
+  "nota": "Il nome compare solo nei metadati di processing, non nel testo del principio di diritto; va rimosso prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.6551-2022 obbligo audizione giudiziale se richiesta per superare incongruenze OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 28.2.2022, n. 6551/2022 — obbligo di audizione giudiziale se richiesta per superare incongruenze nel racconto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.6745_2021 PROCEd. ACCELERATE solo se INFORMAZIONE E TERMINI OK OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 10.3.2021, n. 15559/2019 — la procedura accelerata e la dimidiazione dei termini valgono solo se adottate ab initio",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": ["Nome e cognome del ricorrente (Ceesay Sambujang) riportato nel campo 'parties' del frontmatter del file"],
+  "qualita": "pubblicabile",
+  "nota": "Il nome compare solo nei metadati di processing, non nel testo del principio di diritto; va rimosso prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.7546 2020 Asilo autonomia giudizio-beneficio dubbio-contraddizioni superabili.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 31.3.2020, n. 7546/2020 — valutazione complessiva della credibilità e beneficio del dubbio per il richiedente asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.maggio2020 Audizione sempre salvo insanabile infodatezza e con dichiarazioni.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 20.5.2020 — obbligo di fissare l'udienza e disporre l'audizione personale in assenza di videoregistrazione del colloquio",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.nov.2020 Paesi Origine sicura oneri di allegazione rafforzati solo domande successive al 113 2018.md",
+  "titolo_pubblico": "Cass. civ., sentenza 11.11.2020 — la designazione di paesi di origine sicuri non si applica retroattivamente ai ricorsi già pendenti",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.ord.interlocutoria giugno2020 verrastro su reiterata 29 bis tempo automaticita significato espulsione.md",
+  "titolo_pubblico": "Cass. civ., ordinanza interlocutoria 1.6.2020 — questioni nomofilattiche sulla domanda reiterata presentata in fase di esecuzione dell'espulsione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Si tratta di un'ordinanza interlocutoria che rimette la causa a pubblica udienza senza decidere nel merito: utile per inquadrare il problema giuridico ma priva di un principio di diritto definitivo."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass.ott.2019 audizione in giudizio per nuovi elementi sufficientemente distinti e significativi.md",
+  "titolo_pubblico": "Cass. civ., sentenza 23.10.2019 — obbligo di audizione per nuovi elementi di fatto distinti e significativi nel giudizio d'asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass_10221_2023_impugnare_parere_commissione_senza_rigetto_questura.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 18.4.2023, n. 19720/2022 — impugnabilità del parere della commissione territoriale sulla protezione speciale senza previo diniego del questore",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cass_28201_2021_inespellibilita_sempre_PDS_no_terza_via.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 14.10.2021, n. 17989/2020 — l'inespellibilità del familiare di cittadino italiano fonda il diritto al permesso di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cassazione 2020-doppio foglio notizie illegittimo OK OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 25.6.2020, n. 18189/2020 — competenza della sezione specializzata per il trattenimento e irrilevanza del foglio notizie contraddittorio",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Cassazione 23021-2020 contrazione termini manifesta infondatezza solo con procedura accelerata.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 21.10.2020, n. 23021/2020 — il dimezzamento dei termini di ricorso vale solo se la procedura era accelerata sin dall'inizio",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/CdA Torino - rispetto termini e weekend_ocr.md",
+  "titolo_pubblico": "C. App. Torino, decreto 9.9.2025, n. 1110/2025 — sospensione automatica del rigetto per mancato rispetto dei termini della procedura accelerata",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Corte Suprema UK 2023 UKSC 42 Ruanda non e paese terzo sicuro.md",
+  "titolo_pubblico": "UK Supreme Court, sentenza 15.11.2023, UKSC 42/2023 — il Ruanda non è paese terzo sicuro per il trasferimento dei richiedenti asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Decisione di un tribunale straniero (Regno Unito), non italiana; rilevante come precedente comparato in materia di paesi terzi sicuri. Il nome 'AAA' è uno pseudonimo processuale standard nel sistema britannico, non un dato identificativo reale."
+ },
+ {
+  "id": "kb:asilo_2_procedure/GDP Milano maggio2021 HOTSPOT questura con ammissione illegittimo OK OK.md",
+  "titolo_pubblico": "Giud. pace Milano, decreto 2.5.2021, n. 9760/2021 — illegittima l'espulsione di chi ha manifestato volontà di chiedere asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/GDPSiracusa annulla respingimento inflitto dopo Quarantena senza informazioni OK.md",
+  "titolo_pubblico": "Giud. pace Siracusa, ordinanza 1.3.2021, n. 2728/2020 — respingimento illegittimo per carenza di motivazione e mancata informativa dopo la quarantena",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/GIud.Pace Bolzano maggio2019 29 bis no irret. Imminenza OK OK.md",
+  "titolo_pubblico": "Giud. pace Bolzano, ordinanza 1.5.2019 — annullamento dell'espulsione per mancanza di imminenza dell'allontanamento e irretroattività della riforma",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Giud.Pace Roma 10.05.2019 NO convalida per incompetenza reiterata art.29 bis.md",
+  "titolo_pubblico": "Giud. pace Roma, ordinanza 10.5.2019 — incompetenza del giudice di pace a convalidare il trattenimento per domanda reiterata",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Testo di lettura parziale per la scarsa qualità della scansione OCR di un originale manoscritto; il principio è comunque individuabile ma la motivazione risulta incompleta."
+ },
+ {
+  "id": "kb:asilo_2_procedure/MILANO 700 inibitoria presentazione domanda di PI_Via Cagni ACCESSO..md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 7.4.2023, n. 10745/2023 — diritto alla formalizzazione della domanda di asilo anche tramite PEC del legale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/MILANO INIBITORIA presentazione domanda di PI_viaCagni_2 ACCESSO.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 5.4.2023, n. 6778/2023 — obbligo della questura di formalizzare la domanda di asilo entro dieci giorni",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/TRIB BO rg 601_2024 diritto al lavoro 60 giorni dalla manifestazione e non da c3 ok.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 20.2.2024, n. 601/2024 — il diritto al lavoro del richiedente asilo decorre dai 60 giorni dalla manifestazione di volontà",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Tib Bologna 700 accesso asilo e accoglienza e pds richiesta OK OK.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 26.1.2023, n. 14518/2022 — diritto alla formalizzazione della domanda di asilo, al permesso provvisorio e all'accoglienza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Bologna Rinvio Pregiudiziale CGUE 29-10-2024 POS Gattuso DL 158 DL 158.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 29.10.2024, n. 14572/2024 — rinvio pregiudiziale alla CGUE sui paesi di origine sicuri e la procedura accelerata",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Brescia maggio 2024 NO IRREPERIBILITA con notifica a indirrizzo diverso da quello indicato.md",
+  "titolo_pubblico": "Trib. Brescia, decreto 2.4.2024, n. 3513/2024 — invalida la notifica per irreperibilità se l'indirizzo non è quello dichiarato in questura",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Catania 14.11.2024 per irreperibilita necessaria prova notifica postale NO suff schermata vestanet. OK.md",
+  "titolo_pubblico": "Trib. Catania, decreto 14.11.2024, n. 5763/2024 — la schermata VESTANET non prova il perfezionamento della notifica per irreperibilità",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Firenze genn.2020 sospende art. 35 bis Senegale Omosessualita No Paese Orgine SIcuro per categoria.md",
+  "titolo_pubblico": "Trib. Firenze, decreto 3.1.2020, n. 110/2020 — illegittima la manifesta infondatezza se il richiedente appartiene a categoria esclusa dal paese sicuro",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Ge-RG 7201-2021-COMPETENZA TERRITORIALE DIMORA PER REITERATA OK OK.md",
+  "titolo_pubblico": "Trib. Genova, decreto 25.1.2022, n. 7201/2021 — la competenza territoriale per la domanda reiterata segue il luogo di dimora, non la circolare",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma 2022 sospensiva automatica per mancato rispetto termini accellerata.md",
+  "titolo_pubblico": "Trib. Roma, decreto 3.5.2022, n. 31071/2022 — il mancato rispetto dei termini della procedura accelerata comporta la sospensione automatica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma 7.2.25 Obbligo Questura recarsi in CARCERE  per formalizzare asilo.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 6.2.2025, n. 51554/2024 — obbligo della questura di recarsi in carcere per formalizzare la domanda di asilo del detenuto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma 8.10.2025 Reiterata plurima TERZA DOMANDA DIRITTO FORMALIZZAIZONE reingresso OK OK.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 7.10.2025, n. 19587/2025 — diritto al reingresso per formalizzare la terza domanda di asilo dopo un rimpatrio illegittimo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma 8.10.2025 Visto umanitario reingresso SECONDA REITERATA con nuovi elementi protezione speciale OK OK OK.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 7.10.2025, n. 19587/2025 — visto umanitario per il reingresso del richiedente rimpatriato durante la seconda domanda reiterata",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Il numero di provvedimento riportato nei metadati (19587/2025) coincide con quello del record precedente relativo alla terza domanda reiterata, pur trattandosi di una vicenda distinta (seconda domanda reiterata); verificare gli estremi esatti prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_2_procedure/Trib Roma N.R.G.477-2024 Accogliemento 700 rilascio visto di ingresso per rimpatrio illegittimo.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 17.5.2024, n. 477/2024 — diritto al visto d'ingresso per il richiedente asilo rimpatriato illegittimamente",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ }
+]

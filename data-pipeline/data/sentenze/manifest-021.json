@@ -1,0 +1,366 @@
+[
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib. Roma 4.7.25 614 bis 30 euro giorno per ritatdo rilascio pds gia ordinato attesa asilo ok ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib. Roma 4.7.25 614 bis 30 euro giorno per ritatdo rilascio pds gia ordinato attesa asilo ok ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-07-04",
+  "ente": "Tribunale di Roma",
+  "numero": "3721-2/2025",
+  "titolo": "Trib. Roma 4.7.25 614 bis 30 euro giorno per ritatdo rilascio pds gia ordinato attesa asilo ok ok",
+  "oggetto": "Applicazione dell'art. 614-bis c.p.c. (misura coercitiva indiretta) per ritardo nell'esecuzione dell'ordine di rilascio del permesso di soggiorno per richiesta di asilo già emesso dal giudice ordinario",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4801
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib. Roma maggio2020 rinnovo pds BILANCIAMENTO VITA PRIVATA CEDU no famliari con reato OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib. Roma maggio2020 rinnovo pds BILANCIAMENTO VITA PRIVATA CEDU no famliari con reato OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-03-22",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "RG 43954/2019",
+  "titolo": "Trib. Roma maggio2020 rinnovo pds BILANCIAMENTO VITA PRIVATA CEDU no famliari con reato OK OK",
+  "oggetto": "Rinnovo permesso di soggiorno in presenza di condanna penale per stupefacenti (art. 73 comma 5 DPR 309/1990): bilanciamento tra automatismo ostativo e tutela della vita privata ex art. 8 CEDU in assenza di legami familiari in Italia",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 6972
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Ancona 24.11.2021 Assegno invalidita con pds cure di 6 mesi perche presente non occasionale in Italia OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Ancona 24.11.2021 Assegno invalidita con pds cure di 6 mesi perche presente non occasionale in Italia OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-11-24",
+  "ente": "Tribunale di Ancona",
+  "numero": "118/2021 RG",
+  "titolo": "Trib.Ancona 24.11.2021 Assegno invalidita con pds cure di 6 mesi perche presente non occasionale in Italia OK OK",
+  "oggetto": "Diritto all'assegno mensile di invalidità civile per straniero titolare di permesso di soggiorno per cure mediche di durata infrannuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5346
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-04-13",
+  "ente": "Tribunale di Roma",
+  "numero": "3964/2023",
+  "titolo": "Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO",
+  "oggetto": "La sospensione cautelare del provvedimento di rifiuto della protezione speciale comporta il diritto al rilascio del permesso di soggiorno per richiesta di asilo, indipendentemente dalla procedura prescelta",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3976
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Lecce dic.2019 Per inespellibili sempre PDS no terzium genus.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Lecce dic.2019 Per inespellibili sempre PDS no terzium genus.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-09-13",
+  "ente": "Tribunale di Lecce",
+  "numero": "4759/2018",
+  "titolo": "Trib.Lecce dic.2019 Per inespellibili sempre PDS no terzium genus",
+  "oggetto": "Obbligo di rilascio del permesso di soggiorno al soggetto inespellibile per motivi familiari in assenza di passaporto valido al momento dell'istanza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5170
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Lucca 2024 pesnione con pds cure ingeriore a un anno OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Lucca 2024 pesnione con pds cure ingeriore a un anno OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-06",
+  "ente": "Tribunale di Lucca",
+  "numero": "36/2023 RG",
+  "titolo": "Trib.Lucca 2024 pesnione con pds cure ingeriore a un anno",
+  "oggetto": "Diritto alla pensione di inabilità civile per straniero titolare di permesso di soggiorno per cure mediche di durata inferiore ad un anno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4004
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma 13.12.24 RISARCIMENTO DANNI DA RITARDO RILASCIO PDS 2043 danno anche morale e cautelare rilascio pds OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma 13.12.24 RISARCIMENTO DANNI DA RITARDO RILASCIO PDS 2043 danno anche morale e cautelare rilascio pds OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-12-13",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "9806/2024",
+  "titolo": "Trib.Roma 13.12.24 RISARCIMENTO DANNI DA RITARDO RILASCIO PDS 2043 danno anche morale e cautelare rilascio pds OK",
+  "oggetto": "Responsabilità aquiliana della PA (art. 2043 c.c.) per ritardo illegittimo di 12 mesi nel rilascio del permesso di soggiorno per asilo, con conseguente risarcimento del danno patrimoniale e non patrimoniale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 7970
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma 19.6.2024 Dies a Quo per lrilascio PDS KIT POSTALE OK OK  .md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma 19.6.2024 Dies a Quo per lrilascio PDS KIT POSTALE OK OK  .md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-06-19",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "17086/2024",
+  "titolo": "Trib.Roma 19.6.2024 Dies a Quo per lrilascio PDS KIT POSTALE OK",
+  "oggetto": "Illegittimità del silenzio-inadempimento della Questura di Roma sulla domanda di rilascio del permesso di soggiorno per protezione speciale, con ordine giudiziale di conclusione del procedimento entro 30 giorni",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3820
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma 25.11.22 APOLIDIA Bosnia prima 1995 e anche senza atto nascita OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma 25.11.22 APOLIDIA Bosnia prima 1995 e anche senza atto nascita OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-11-25",
+  "ente": "Tribunale di Roma",
+  "numero": "19421/2022 RG",
+  "titolo": "Trib.Roma 25.11.22 APOLIDIA Bosnia prima 1995 e anche senza atto nascita OK",
+  "oggetto": "Riconoscimento dello status di apolide a donna nata in Italia, priva di certificato di nascita, di origine rom, con madre già dichiarata apolide e padre originario della ex-Jugoslavia (Bosnia)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "apolidia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5491
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma dic.2023 ritardo ordina conclusione procedimento rinnovo protezione speciale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma dic.2023 ritardo ordina conclusione procedimento rinnovo protezione speciale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-01-02",
+  "ente": "Tribunale di Roma",
+  "numero": "49996/2023",
+  "titolo": "Trib.Roma dic.2023 ritardo ordina conclusione procedimento rinnovo protezione speciale",
+  "oggetto": "Silenzio-inadempimento della Questura su domanda di rinnovo/conversione permesso di soggiorno per protezione speciale presentata da oltre due anni",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5305
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma luglio 2025 REVOCA SUSSIDIARIA reati stupefacenti ma espiato NO ATTUALE Pericolo ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma luglio 2025 REVOCA SUSSIDIARIA reati stupefacenti ma espiato NO ATTUALE Pericolo ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-03-28",
+  "ente": "Tribunale di Roma",
+  "numero": "36154/2023",
+  "titolo": "Trib.Roma luglio 2025 REVOCA SUSSIDIARIA reati stupefacenti ma espiato NO ATTUALE Pericolo",
+  "oggetto": "Illegittimità della revoca automatica della protezione sussidiaria fondata sulla sola condanna definitiva per reati in materia di stupefacenti, senza valutazione individualizzata dell'attualità della pericolosità sociale al momento della revoca",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5305
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma marzo 2024 rilascio pds in via cautelare a risarcimento per ritardo OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma marzo 2024 rilascio pds in via cautelare a risarcimento per ritardo OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-29",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "9806/2024",
+  "titolo": "Trib.Roma marzo 2024 rilascio pds in via cautelare a risarcimento per ritardo OK",
+  "oggetto": "Tutela cautelare urgente ex art. 700 c.p.c. inaudita altera parte per ottenere il rilascio del permesso di soggiorno per asilo a titolare di status di rifugiato riconosciuto dalla Commissione territoriale, in caso di ritardo illegittimo della Questura",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5176
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma2019 APOLIDIA minore solo senza ricordi con testmone casa famiglia OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma2019 APOLIDIA minore solo senza ricordi con testmone casa famiglia OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2018-07-13",
+  "ente": "Tribunale di Roma",
+  "numero": "80126/2015 RG",
+  "titolo": "Trib.Roma2019 APOLIDIA minore solo senza ricordi con testmone casa famiglia",
+  "oggetto": "Riconoscimento dello status di apolide a minore non accompagnato giunto in Italia abbandonato in infanzia, senza documenti né ricordi di origine, di presunta provenienza ex-yugoslava",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "apolidia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4339
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Roma5.5.21 Apolidia Bosnia nato prima del 1995 OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Roma5.5.21 Apolidia Bosnia nato prima del 1995 OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-05-28",
+  "ente": "Tribunale di Roma",
+  "numero": "17558/20 RG",
+  "titolo": "Trib.Roma5.5.21 Apolidia Bosnia nato prima del 1995 OK",
+  "oggetto": "Riconoscimento dello status di apolide a donna di origine bosniaca nata in Italia, mai registrata in Bosnia, con genitori dichiarati decaduti dalla responsabilità genitoriale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "apolidia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4885
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.Trieste gennaio 2024 pds attesa Apolidia in attesa di giudizio OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.Trieste gennaio 2024 pds attesa Apolidia in attesa di giudizio OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-05",
+  "ente": "Tribunale di Trieste",
+  "numero": "5576/2023 RG",
+  "titolo": "Trib.Trieste gennaio 2024 pds attesa Apolidia in attesa di giudizio",
+  "oggetto": "Diritto al permesso di soggiorno provvisorio in pendenza del procedimento giurisdizionale di accertamento dello status di apolide (apolidia originaria)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "apolidia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5350
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.civ. Napoli nov.2024 Ammette al patrocinio innanzi al TAR dopo rigetto di quest ultimo OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.civ. Napoli nov.2024 Ammette al patrocinio innanzi al TAR dopo rigetto di quest ultimo OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-11-13",
+  "ente": "Tribunale di Napoli",
+  "numero": "23423/2023",
+  "titolo": "Trib.civ. Napoli nov.2024 Ammette al patrocinio innanzi al TAR dopo rigetto di quest ultimo OK",
+  "oggetto": "Ammissione al patrocinio a spese dello Stato per giudizio innanzi al TAR, dopo dichiarazione di inammissibilità dell'istanza da parte dello stesso TAR per mancata notifica dell'istanza all'amministrazione resistente",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5891
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-09-21",
+  "ente": "Tribunale di Firenze",
+  "numero": "9425/2023",
+  "titolo": "Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA",
+  "oggetto": "Se, a seguito di sospensiva giurisdizionale del provvedimento di allontanamento, la Questura debba rilasciare un permesso di soggiorno provvisorio, anche in assenza di espressa previsione legislativa",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4717
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-11-22",
+  "ente": "Tribunale di Roma",
+  "numero": null,
+  "titolo": "Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta",
+  "oggetto": "Ordine di rilascio di permesso di soggiorno provvisorio a favore di straniero inespellibile ex art. 19 TUI (convivente con moglie e figlia cittadine italiane), il cui provvedimento di allontanamento è stato sospeso in via giurisdizionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3976
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tribunale di Milano, ord. 9 maggio 2019 apolidia  a persona con identita incerta II.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tribunale di Milano, ord. 9 maggio 2019 apolidia  a persona con identita incerta II.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-05-07",
+  "ente": "Tribunale di Milano",
+  "numero": "58486/2017 RG",
+  "titolo": "Tribunale di Milano, ord. 9 maggio 2019 apolidia a persona con identita incerta II",
+  "oggetto": "Riconoscimento dello status di apolide a donna di origine rom nata in Romania ma mai registrata all'anagrafe, incapace di produrre il certificato di nascita",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "apolidia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4809
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/sent cass SSUU n. 17876_2025 Procura NON tradotta va bene OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/sent cass SSUU n. 17876_2025 Procura NON tradotta va bene OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2025-07-02",
+  "ente": "Corte di Cassazione",
+  "numero": "n. 17876/2025",
+  "titolo": "sent cass SSUU n. 17876 2025 Procura NON tradotta va bene",
+  "oggetto": "Se la traduzione in lingua italiana della procura rilasciata all'estero e dell'attività certificativa integri un requisito di validità dell'atto ai fini della costituzione in giudizio in Italia (artt. 122 e 123 c.p.c.)",
+  "esito": "neutrale",
+  "permessi": [],
+  "kb_size": 8903
+ }
+]

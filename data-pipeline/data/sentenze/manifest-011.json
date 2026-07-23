@@ -1,0 +1,751 @@
+[
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale di Padova 21.3.2022 assegno invalidità civile richiedenti asilo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tribunale di Padova 21.3.2022 assegno invalidità civile richiedenti asilo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-03-21",
+  "ente": "Tribunale di Padova",
+  "numero": "R.G. 1535/2021",
+  "titolo": "Tribunale di Padova 21.3.2022 assegno invalidità civile richiedenti asilo",
+  "oggetto": "Diritto all'assegno di invalidita civile per cittadino straniero titolare di permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 2155
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale-di-Bergamo-est.-Bertoncini-ord.-26-novembre-2015-XXX-avv.ti-Guariso-e-Lavanna-c.-Comune-di-Azzano-San-Paolo-avv.-Nozza-e-INPS-avv.-Imparato.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tribunale-di-Bergamo-est.-Bertoncini-ord.-26-novembre-2015-XXX-avv.ti-Guariso-e-Lavanna-c.-Comune-di-Azzano-San-Paolo-avv.-Nozza-e-INPS-avv.-Imparato.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2015-11-26",
+  "ente": "Tribunale di Bergamo",
+  "numero": "R.G. 1710/2015",
+  "titolo": "Tribunale-di-Bergamo-est.-Bertoncini-ord.-26-novembre-2015-XXX-avv.ti-Guariso-e-Lavanna-c.-Comune-di-Azzano-San-Paolo-avv.-Nozza-e-INPS-avv.-Imparato",
+  "oggetto": "Questione di legittimita costituzionale dell'art. 74 d.lgs. 151/2001 nella parte in cui limita l'assegno di maternita ai soli stranieri titolari di permesso di soggiorno di lungo periodo",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5586
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale-di-Bergamo-ordinanza-del-15-aprile-2016-est.-Azzolini-XXX-avv.ti-Guariso-e-Traina-c.-INPS-avv.to-Collerone.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/Tribunale-di-Bergamo-ordinanza-del-15-aprile-2016-est.-Azzolini-XXX-avv.ti-Guariso-e-Traina-c.-INPS-avv.to-Collerone.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-04-15",
+  "ente": "Tribunale di Bergamo",
+  "numero": "R.G. 2820/2015",
+  "titolo": "Tribunale-di-Bergamo-ordinanza-del-15-aprile-2016-est.-Azzolini-XXX-avv.ti-Guariso-e-Traina-c.-INPS-avv.to-Collerone",
+  "oggetto": "Diritto al bonus bebe (art. 1 co. 125 L. 190/2014) per straniera con permesso di soggiorno per motivi familiari, priva di lungo soggiorno, alla luce della direttiva 2011/98/UE",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4769
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/assegno.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/assegno.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-12-11",
+  "ente": "Tribunale di Piacenza",
+  "numero": "16/2015",
+  "titolo": "assegno",
+  "oggetto": "Diritto all'assegno sociale per straniero titolare di permesso di soggiorno per motivi familiari, privo di permesso di lungo periodo, alla luce della Direttiva 2011/98/UE",
+  "esito": "misto",
+  "permessi": [],
+  "kb_size": 4596
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus b ebe.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/bonus b ebe.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-12-01",
+  "ente": "Tribunale di Milano",
+  "numero": "9003/2016",
+  "titolo": "bonus b ebe",
+  "oggetto": "Diritto all'assegno di natalita (bonus bebe) per straniera titolare di permesso di soggiorno per motivi di lavoro, priva di permesso di lungo periodo, alla luce della Direttiva 2011/98/UE",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5277
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus bebe.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/bonus bebe.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2016-11-08",
+  "ente": "Corte d'Appello di Brescia",
+  "numero": "151/2016",
+  "titolo": "bonus bebe",
+  "oggetto": "Diritto all'assegno per il nucleo familiare (ANF) per familiari di straniero soggiornante di lungo periodo residenti all'estero, alla luce della Direttiva 2003/109/CE",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5130
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus bebè al titolare permesso unico lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/bonus bebè al titolare permesso unico lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-12-09",
+  "ente": "Tribunale di Milano",
+  "numero": "3562/2016",
+  "titolo": "bonus bebè al titolare permesso unico lavoro",
+  "oggetto": "Diritto all'assegno di natalita (bonus bebe) per straniero titolare di permesso di soggiorno per motivi di lavoro, privo di permesso di lungo periodo, alla luce della Direttiva 2011/98/UE",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3910
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus bebè titolare permesso motivi familiari.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/bonus bebè titolare permesso motivi familiari.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-12-05",
+  "ente": "Tribunale di Milano",
+  "numero": "6765/2016",
+  "titolo": "bonus bebè titolare permesso motivi familiari",
+  "oggetto": "Diritto all'assegno di natalita (bonus bebe) per straniera titolare di permesso di soggiorno per motivi familiari (valido anche come permesso unico lavoro), priva di permesso di lungo periodo, alla luce della Direttiva 2011/98/UE",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4249
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/cass-civ-sez-lavoro-sent-data-ud-18-01-2023-06-06-.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/cass-civ-sez-lavoro-sent-data-ud-18-01-2023-06-06-.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-06-06",
+  "ente": "Corte di Cassazione",
+  "numero": "15827/2023",
+  "titolo": "cass-civ-sez-lavoro-sent-data-ud-18-01-2023-06-06-",
+  "oggetto": "Assegno sociale allo straniero: prova del requisito del soggiorno legale continuativo decennale in Italia e sindacabilità in cassazione dell'accertamento di fatto sul radicamento territoriale",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4986
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/cass-civ-sez-lavoro-sent-data-ud-18-01-2023-13-03-.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/cass-civ-sez-lavoro-sent-data-ud-18-01-2023-13-03-.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-03-13",
+  "ente": "Corte di Cassazione",
+  "numero": "7229/2023",
+  "titolo": "cass-civ-sez-lavoro-sent-data-ud-18-01-2023-13-03-",
+  "oggetto": "Compatibilità del requisito del soggiorno legale continuativo decennale per l'assegno sociale (art. 20, comma 10, D.L. 112/2008) con il divieto di discriminazione ex art. 14 CEDU e con il diritto UE (direttiva 2011/98/UE e Reg. CE 883/2004)",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5519
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/cass-pen-sez-vi-sent-data-ud-10-02-2026-12-05-2026.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/cass-pen-sez-vi-sent-data-ud-10-02-2026-12-05-2026.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2026-05-12",
+  "ente": "Corte di Cassazione",
+  "numero": "17045/2026",
+  "titolo": "cass-pen-sez-vi-sent-data-ud-10-02-2026-12-05-2026",
+  "oggetto": "Indebita percezione di erogazioni pubbliche (art. 316-ter c.p.) per riscossione dell'assegno sociale in difetto del requisito della residenza effettiva in Italia della beneficiaria trasferita all'estero",
+  "esito": "ministero",
+  "permessi": [],
+  "kb_size": 5167
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ord. Trib. Torino 6.11.2024 xxx_INPS (RDC comunitaria).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/ord. Trib. Torino 6.11.2024 xxx_INPS (RDC comunitaria).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-11-06",
+  "ente": "Tribunale di Torino",
+  "numero": "RGL 1186/2022",
+  "titolo": "ord. Trib. Torino 6.11.2024 xxx INPS (RDC comunitaria)",
+  "oggetto": "Discriminatorietà del requisito di residenza decennale per il reddito di cittadinanza nei confronti di cittadini comunitari",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4384
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ordinanza_tribunale_tv_15_09_22 SSN familiari di genitori IT.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/ordinanza_tribunale_tv_15_09_22 SSN familiari di genitori IT.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-09-15",
+  "ente": "Tribunale di Treviso",
+  "numero": "RG 676/2022",
+  "titolo": "ordinanza tribunale tv 15 09 22 SSN familiari di genitori IT",
+  "oggetto": "Diritto all'iscrizione obbligatoria al SSN per familiari stranieri conviventi a carico di cittadino italiano con permesso ex art. 19 co. 2 lett. c) TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4148
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/pronuncia_40_2025 richiedenti asilo e Assegno temporaneo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/pronuncia_40_2025 richiedenti asilo e Assegno temporaneo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_costituzionale",
+  "data": "2025-04-10",
+  "ente": "Corte Costituzionale",
+  "numero": "Sentenza 40/2025",
+  "titolo": "pronuncia 40 2025 richiedenti asilo e Assegno temporaneo",
+  "oggetto": "Legittimita costituzionale dell'esclusione dei richiedenti asilo dal godimento dell'assegno temporaneo per figli minori (art. 1 c. 1 lett. a n. 1 DL 79/2021)",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6878
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso VITTORIA marzo 2024 IYENGE continuità residenza irreperibilita.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/ricorso VITTORIA marzo 2024 IYENGE continuità residenza irreperibilita.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-07",
+  "ente": "Tribunale di Roma",
+  "numero": null,
+  "titolo": "ricorso VITTORIA marzo 2024 IYENGE continuità residenza irreperibilita",
+  "oggetto": "Annullamento della cancellazione anagrafica per irreperibilità e ripristino della continuità della residenza per titolare di status di rifugiato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5344
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso al Giudice tutelare art. 317 cc ABIOLA nov.2021 apertura conto corrente e passaporto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/ricorso al Giudice tutelare art. 317 cc ABIOLA nov.2021 apertura conto corrente e passaporto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-12-01",
+  "ente": "Tribunale di Roma - Ufficio del Giudice Tutelare",
+  "numero": null,
+  "titolo": "ricorso al Giudice tutelare art. 317 cc ABIOLA nov.2021 apertura conto corrente e passaporto",
+  "oggetto": "Autorizzazione al rilascio del titolo di viaggio per stranieri e apertura conto corrente per minori rifugiati ai sensi dell'art. 317 c.c. in caso di lontananza del padre",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4054
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso giulia AUUF marzo 2024 residenza di fatto Agheyisi Florida.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/ricorso giulia AUUF marzo 2024 residenza di fatto Agheyisi Florida.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-19",
+  "ente": "Tribunale di Roma - Sezione Lavoro",
+  "numero": null,
+  "titolo": "ricorso giulia AUUF marzo 2024 residenza di fatto Agheyisi Florida",
+  "oggetto": "Diritto all'Assegno Unico Universale (AUU) per titolari di protezione umanitaria/casi speciali e interpretazione del requisito della residenza biennale come presenza di fatto sul territorio",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5767
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso giulia febbr.2024 Assegno Unico AUUF residenza fatto e pds attesa occupazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/ricorso giulia febbr.2024 Assegno Unico AUUF residenza fatto e pds attesa occupazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": null,
+  "ente": "Tribunale di Roma - Sezione Lavoro",
+  "numero": null,
+  "titolo": "ricorso giulia febbr.2024 Assegno Unico AUUF residenza fatto e pds attesa occupazione",
+  "oggetto": "Diritto all'Assegno Unico Universale per titolari di permesso di soggiorno per attesa occupazione e interpretazione del requisito della residenza come presenza di fatto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5822
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/s-comune-genova-cda-genova-rg-437-del-2015-ord-rinvio-cge-01-08-2016.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/s-comune-genova-cda-genova-rg-437-del-2015-ord-rinvio-cge-01-08-2016.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2016-08-01",
+  "ente": "Corte d'Appello di Genova",
+  "numero": "RG 437/2015",
+  "titolo": "s-comune-genova-cda-genova-rg-437-del-2015-ord-rinvio-cge-01-08-2016",
+  "oggetto": "Compatibilità della normativa italiana sull'assegno ai nuclei familiari con almeno tre figli minori con il principio di parità di trattamento ex art. 12 Direttiva 2011/98/UE",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4888
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sent. C. App. Torino 19.6.2026 XXX c. INPS (rdc) (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/sent. C. App. Torino 19.6.2026 XXX c. INPS (rdc) (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2026-06-19",
+  "ente": "Corte d'Appello di Torino",
+  "numero": "R.G.L. 28/2025",
+  "titolo": "sent. C. App. Torino 19.6.2026 XXX c. INPS (rdc) (1)",
+  "oggetto": "Legittimità della revoca del reddito di cittadinanza a un rifugiato per mancanza del requisito di residenza decennale, alla luce degli artt. 26 e 29 dir. 2011/95/UE",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5960
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sent. C. app. Torino 16.6.2026 xxx c. INPS (rdc) (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/sent. C. app. Torino 16.6.2026 xxx c. INPS (rdc) (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2026-06-16",
+  "ente": "Corte d'Appello di Torino",
+  "numero": "R.G. 516/2025 (sent. n. 280/2026)",
+  "titolo": "sent. C. app. Torino 16.6.2026 xxx c. INPS (rdc) (1)",
+  "oggetto": "Natura discriminatoria della revoca del reddito di cittadinanza a una rifugiata per mancanza del requisito di pregressa residenza, anche quinquennale, alla luce degli artt. 26 e 29 dir. 2011/95/UE",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 7236
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sentenza GIP TRib. Torino 7.12.2022 grave trascuratezza vs dolo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/sentenza GIP TRib. Torino 7.12.2022 grave trascuratezza vs dolo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-12-07",
+  "ente": "Tribunale di Torino",
+  "numero": "RGNRO 7153/2021 - RG GIP 8879/2022",
+  "titolo": "sentenza GIP TRib. Torino 7.12.2022 grave trascuratezza vs dolo",
+  "oggetto": "Esclusione del dolo nel reato di falsa dichiarazione per ottenere il reddito di cittadinanza da parte di cittadino straniero titolare di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3864
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sentenza Pinzauti pensione sociale e residenza di fatto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/sentenza Pinzauti pensione sociale e residenza di fatto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-10-12",
+  "ente": "Tribunale di Urbino",
+  "numero": "203/2021",
+  "titolo": "sentenza Pinzauti pensione sociale e residenza di fatto",
+  "oggetto": "L'iscrizione anagrafica non è requisito costitutivo per il diritto all'assegno sociale; è sufficiente la residenza effettiva intesa come dimora abituale nel territorio italiano",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 3974
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib bologna su diritto iscrizione anagrafica.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/trib bologna su diritto iscrizione anagrafica.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-05-02",
+  "ente": "Tribunale di Bologna",
+  "numero": "5022/2019",
+  "titolo": "trib bologna su diritto iscrizione anagrafica",
+  "oggetto": "Diritto del richiedente asilo all'iscrizione anagrafica dopo l'abrogazione dell'art. 5-bis D.Lgs 142/2015 (art. 13 D.L. 113/2018)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4461
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib civile roma residenza e pds.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/trib civile roma residenza e pds.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-02-09",
+  "ente": "Tribunale di Roma",
+  "numero": "47354/2015",
+  "titolo": "trib civile roma residenza e pds",
+  "oggetto": "Rinnovo del permesso di soggiorno per protezione umanitaria e iscrizione anagrafica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3127
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib civile su residenza e rinnovo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/trib civile su residenza e rinnovo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2016-10-07",
+  "ente": "Tribunale di Roma",
+  "numero": "60649/2015",
+  "titolo": "trib civile su residenza e rinnovo",
+  "oggetto": "Diniego di rinnovo del permesso di soggiorno per motivi umanitari per mancata prova dell'iscrizione anagrafica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3012
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib roma inaudita altera parte conto corrente.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/trib roma inaudita altera parte conto corrente.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-06-14",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "32695/2022",
+  "titolo": "trib roma inaudita altera parte conto corrente",
+  "oggetto": "Diritto del richiedente asilo all'apertura del conto corrente di base con ricevuta ex art. 4 comma 3 d.lgs. 142/2015",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3688
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib trieste iscrizione rich. asilo retroattiva.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_4_diritti_accoglienza/trib trieste iscrizione rich. asilo retroattiva.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-07-28",
+  "ente": "Tribunale di Trieste",
+  "numero": "470/2021",
+  "titolo": "trib trieste iscrizione rich. asilo retroattiva",
+  "oggetto": "Decorrenza retroattiva dell'iscrizione anagrafica del richiedente asilo dalla prima domanda (29.11.2019), respinta in base a norma poi dichiarata incostituzionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4262
+ },
+ {
+  "id": "kb:diritto_del_mare/GDPSiracusa annulla respingimento inflitto dopo Quarantena senza informazioni OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/diritto_del_mare/GDPSiracusa annulla respingimento inflitto dopo Quarantena senza informazioni OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "giudice_pace",
+  "data": "2021-03-01",
+  "ente": "Giudice di Pace di Siracusa",
+  "numero": "2728/2020 R.G.",
+  "titolo": "GDPSiracusa annulla respingimento inflitto dopo Quarantena senza informazioni",
+  "oggetto": "Annullamento decreto di respingimento emesso dopo quarantena senza adeguata informazione sul diritto alla protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 2913
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/10. Tribunale MIlano - ord. 2022.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/10. Tribunale MIlano - ord. 2022.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-02-14",
+  "ente": "Tribunale Ordinario di Milano",
+  "numero": "37249/2021",
+  "titolo": "10. Tribunale MIlano - ord. 2022",
+  "oggetto": "Diritto all'iscrizione anagrafica del partner extracomunitario convivente di fatto con cittadino italiano",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5515
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/13. Tribunale Urbino ord. 2021.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/13. Tribunale Urbino ord. 2021.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-01-21",
+  "ente": "Tribunale di Urbino",
+  "numero": "812/2020",
+  "titolo": "13. Tribunale Urbino ord. 2021",
+  "oggetto": "Diritto di soggiorno ope legis del partner extracomunitario di cittadino italiano e accertamento della stabile convivenza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3607
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2004.307 Zhu Chen.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/2004.307 Zhu Chen.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2004-10-19",
+  "ente": "Corte di giustizia dell'Unione europea",
+  "numero": "C-200/02",
+  "titolo": "2004.307 Zhu Chen",
+  "oggetto": "Diritto di soggiorno di cittadino UE minorenne e genitore cittadino Stato terzo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-genitore-di-cittadino-italiano",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4602
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2014.2450 McCarthy.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/2014.2450 McCarthy.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2014-12-18",
+  "ente": "Corte di Giustizia dell'Unione europea (Grande Sezione)",
+  "numero": "C-202/13",
+  "titolo": "2014.2450 McCarthy",
+  "oggetto": "Compatibilità con diritto UE di normativa nazionale che impone permesso preventivo a familiari non UE già titolari di carta di soggiorno valida",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4878
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2016.659.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/2016.659.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2016-09-08",
+  "ente": "Corte di Giustizia dell'Unione Europea",
+  "numero": "C-133/15",
+  "titolo": "2016.659",
+  "oggetto": "Se l'art. 20 TFUE osti al diniego del soggiorno a genitore cittadino Stato terzo con custodia effettiva di minore cittadino UE quando è presente l'altro genitore cittadino dello Stato membro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-genitore-di-cittadino-italiano",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4780
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2017.862 Lounes.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/2017.862 Lounes.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2017-11-14",
+  "ente": "Corte di Giustizia dell'Unione Europea (Grande Sezione)",
+  "numero": "C-165/16",
+  "titolo": "2017.862 Lounes",
+  "oggetto": "Diritto di soggiorno derivato per familiari cittadini Stati terzi di cittadini UE con doppia cittadinanza acquisita dopo esercizio libertà circolazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4903
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2018.385 Coman Hamilton.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/2018.385 Coman Hamilton.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2018-06-05",
+  "ente": "Corte di Giustizia dell'Unione Europea (Grande Sezione)",
+  "numero": "C-673/16",
+  "titolo": "2018.385 Coman Hamilton",
+  "oggetto": "Riconoscimento matrimoni same-sex ai fini diritto soggiorno derivato nell'UE",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4576
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2019.809 Bajtari.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/2019.809 Bajtari.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2019-10-02",
+  "ente": "Corte di Giustizia dell'Unione Europea (Prima Sezione)",
+  "numero": "C-93/18",
+  "titolo": "2019.809 Bajtari",
+  "oggetto": "Se i redditi da attività lavorativa illegale possano dimostrare la disponibilità di risorse sufficienti ai sensi dell'art. 7 della direttiva 2004/38",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4899
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/31. Trib. Busto Arsizio 2022.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/31. Trib. Busto Arsizio 2022.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-06-15",
+  "ente": "Tribunale di Busto Arsizio",
+  "numero": "2411/2022",
+  "titolo": "31. Trib. Busto Arsizio 2022",
+  "oggetto": "Diritto all'iscrizione nel registro delle convivenze del partner extracomunitario senza permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2661
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/33. Trib. Rovigo 2022.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/33. Trib. Rovigo 2022.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-02-17",
+  "ente": "Tribunale Ordinario di Rovigo",
+  "numero": "2043/2021",
+  "titolo": "33. Trib. Rovigo 2022",
+  "oggetto": "Iscrizione anagrafica del partner extracomunitario in attesa del permesso di soggiorno e distinzione tra regolarità del soggiorno e titolo di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4599
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/34. Trib. Catania 2021.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/34. Trib. Catania 2021.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-01-03",
+  "ente": "Tribunale di Catania",
+  "numero": "RG n.d. (ricorso ex art. 700 c.p.c. del 30/08/2021)",
+  "titolo": "34. Trib. Catania 2021",
+  "oggetto": "Diritto all'iscrizione anagrafica del partner extracomunitario convivente di fatto con cittadino italiano",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3601
+ }
+]

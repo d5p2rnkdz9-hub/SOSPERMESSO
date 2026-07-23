@@ -1,0 +1,369 @@
+[
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Lazio 18.2.2026 n.1046 ord.cautelare - Flussi idoneita alloggiativa sopravvenuta.md",
+  "titolo_pubblico": "TAR Lazio, ordinanza cautelare 18.2.2026, n. 1046 — sopravvenienze favorevoli e idoneità alloggiativa nella revoca del nullaosta flussi",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del lavoratore ricorrente (campo parties.appellant)",
+   "Nome e cognome del datore di lavoro istante (campo parties.appellant)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Nella sezione metadati (parties.appellant) compaiono i nomi per esteso del lavoratore e del datore di lavoro, non presenti invece nel corpo del testo pubblicabile; vanno oscurati prima della pubblicazione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Lazio 22.4.2026 n.7264 - Flussi redditi prospettiva e sola richiesta idoneita alloggio.md",
+  "titolo_pubblico": "TAR Lazio, sentenza 22.4.2026, n. 7264 — capacità economica del datore e idoneità alloggiativa nella procedura flussi",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Liguria 549_2026 FLUSSI revoca nulla osta redditi datore in prospettiva e insoluti diffidabili sanabili.md",
+  "titolo_pubblico": "TAR Liguria, sentenza 4.5.2026, n. 549 — revoca del nulla osta flussi per redditi del datore e insoluti contributivi sanabili",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '(omissato)' nei metadati."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Lombardia -7-02-2025 Flussi durata max procedimento contratto soggiorno 180 gg da richiesta lavoratore OK.md",
+  "titolo_pubblico": "TAR Lombardia, sentenza 6.2.2025, n. 416 — termine di 180 giorni per la sottoscrizione del contratto di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorso dichiarato inammissibile (proposto prima dello spirare del termine); pubblicabile perché chiarisce il termine applicabile al procedimento."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Milano 10.10.24 Cautelare Sospensiva rigetto kit pds Flussi senza datore ok ok.md",
+  "titolo_pubblico": "TAR Lombardia (Milano), ordinanza cautelare 10.10.2024, n. 1144 — permesso per attesa occupazione dopo rinuncia del datore in procedura flussi",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[OMISSIS]'; i nomi degli avvocati difensori non costituiscono dato personale rilevante."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Milano 20.2.25-conversione stagionale fuori flussi con effetto retroattivo.md",
+  "titolo_pubblico": "TAR Lombardia (Milano), ordinanza 19.2.2025, n. 188 — conversione del permesso stagionale in lavoro subordinato e mancato riscontro della Questura",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Napoli 27.4.2026 n. 2652 - annullamento revoca, buona fede del lavoratore, nuovo rapporto di lavoro.md",
+  "titolo_pubblico": "TAR Campania (Napoli), sentenza 27.4.2026, n. 2652 — buona fede del lavoratore e annullamento della revoca del nulla osta dopo nuova assunzione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Napoli 27.4.2026 n. 2653 - annullamento revoca nulla osta, mancata comunicazione preavviso di rigetto, mancata istruttoria, nuovo lavoro.md",
+  "titolo_pubblico": "TAR Campania (Napoli), sentenza 27.4.2026, n. 2653 — difetto di comunicazione del preavviso al difensore e buona fede del lavoratore",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Piemonete conversione cure mediche _lavoro presentato prima di piantedosi II Ok.md",
+  "titolo_pubblico": "TAR Piemonte, sentenza 29.4.2025, n. 1821 — conversione del permesso per cure mediche in lavoro nel regime transitorio del D.L. 20/2023",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come 'anonimizzato'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Piemonte 9.3.23 richima C.Giust. Lungo Sogg. risorse anche se disoccupato se ha guadagnato e prognosi positiva OK OK.md",
+  "titolo_pubblico": "TAR Piemonte, sentenza 9.3.2023, n. 668 — valutazione prospettica del reddito ai fini del permesso UE per soggiornanti di lungo periodo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente descritta solo come 'cittadina albanese soggiornante di lungo periodo', nessun dato identificativo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Veneto 165_2026 FLUSSI no attesa occupazione senza contratto soggiorno ma annullamento per nuovo lavoro sopravvenuto.md",
+  "titolo_pubblico": "TAR Veneto, sentenza 21.1.2026, n. 165 — revoca nulla osta flussi, buona fede del lavoratore e nuova occupazione sopravvenuta",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Massima con ampio richiamo a precedenti conformi (Cons. Stato, altri TAR); nessun dato personale, parti indicate come 'omissato'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Veneto silenzio conferma nulla osta (1).md",
+  "titolo_pubblico": "TAR Veneto, sentenza 24.4.2026, n. 911 — silenzio-inadempimento dello sportello unico sulla conferma del nulla osta stagionale",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Nessuna indicazione delle parti nel testo disponibile (solo frontmatter e principi); nessun dato personale presente."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR piemonte maggio2020 REDDITI per PDS lungo sogg. non rileva irregolarita contributiva e si prognostico.md",
+  "titolo_pubblico": "TAR Piemonte, sentenza 29.4.2020, n. 217 — requisito reddituale per il permesso UE di lungo periodo e valutazione prognostica",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Massima chiara su irrilevanza dell'irregolarità contributiva INPS e necessità di giudizio prognostico; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_154_2025.md",
+  "titolo_pubblico": "TAR Liguria, ordinanza cautelare 23.6.2025, n. 674 — sospensione della revoca del nulla osta per possibile permesso attesa occupazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza cautelare breve; parti indicate come 'cittadino extracomunitario (dati oscurati)', nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_155_2025.md",
+  "titolo_pubblico": "TAR Liguria, ordinanza cautelare 23.6.2025, n. 677 — sospensione della revoca del nulla osta, ordinanza gemella della n. 154/2025",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza gemella della n. 154/2025 (stesso collegio, stessa motivazione); nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_161_2025.md",
+  "titolo_pubblico": "TAR Liguria, ordinanza cautelare 23.6.2025, n. 679 — sospensione della revoca del nulla osta al lavoro subordinato nei decreti flussi",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Motivazione molto generica (fumus e periculum affermati senza dettagli fattuali specifici del caso); pubblicabile ma di scarso valore informativo autonomo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Genova_ord_162_2025.md",
+  "titolo_pubblico": "TAR Liguria, ordinanza cautelare 23.6.2025, n. 675 — sospensione della revoca del nulla osta, ordinanza gemella della n. 161/2025",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Ordinanza gemella della n. 161/2025, stessa motivazione generica priva di dettagli fattuali specifici."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Liguria_ord_250_2025.md",
+  "titolo_pubblico": "TAR Liguria, ordinanza cautelare 6.10.2025, n. 1067 — irretroattività del termine di 7 giorni per la conferma del nulla osta (DL 145/2024)",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Principio chiaro sull'applicabilità temporale del DL 145/2024; nessun dato personale in chiaro (parti 'omissis')."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Milano_15_2026.md",
+  "titolo_pubblico": "TAR Lombardia, Milano, sentenza 7.1.2026, n. 15 — nulla osta legato allo specifico datore di lavoro, no fungibilità e rigetto del permesso attesa occupazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Decisione sfavorevole al ricorrente (orientamento restrittivo su fungibilità del datore), utile per completezza informativa; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_NAPOLI_2911.2021 computo 5 anni PDS Lungo soggiornanti con PDS UMANITARI OK.md",
+  "titolo_pubblico": "TAR Campania, Napoli, sentenza 9.3.2021, n. 3412/2020 — computabilità del periodo con permesso umanitario nel quinquennio per il permesso UE di lungo periodo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Principio chiaro su interpretazione combinata art. 9 co. 3 e 5 TUI; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR_Napoli_5760_2025.md",
+  "titolo_pubblico": "TAR Napoli, sentenza 30.7.2025, n. 1251/2025 — revoca nulla osta lavoro illegittima per inerzia della PA",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Sukhbir Singh (nome e cognome del ricorrente, in frontmatter/metadati)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Metadati YAML del file contengono nome e cognome del ricorrente (Sukhbir Singh); il corpo del testo usa correttamente 'il ricorrente'. Va redatto il campo parties.appellant prima della pubblicazione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar 19.2.25 Cautelare immediato rilascio visto per Paesi sospensi da flussi automatici.md",
+  "titolo_pubblico": "TAR Lazio, ordinanza cautelare 19.2.2025 — immediato rilascio di visto per cure mediche nonostante sospensione flussi",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente identificato solo come 'cittadino pakistano', nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Bari ott.2021 SANTORIA Ateco NON tassativi ratio favorevole a emersione.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 26.2.2025, n. 17470/2024 — status di rifugiato per persecuzione religiosa legata all'ateismo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il nome del file richiama un'altra decisione (sanatoria Ateco a Bari), ma il contenuto effettivo riguarda un'ordinanza di Cassazione civile su persecuzione religiosa e ateismo (cittadino marocchino, non nominato). Titolo pubblico basato sul contenuto reale del file, non sul nome del file."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania 15.7.25 PDS attesa occupazione FLUSSI con nuovo datore mai firmato quello iniziale OK OK.md",
+  "titolo_pubblico": "TAR Napoli, sentenza 15.7.2025, n. 00809/2025 — revoca nulla osta lavoro illegittima per inerzia della PA nella convocazione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[OMISSIS]' nei metadati, già anonimizzato. Nome dell'avvocato difensore presente (Alessandro Ferrara) ma non rileva come dato personale ai sensi delle regole (avvocati esclusi)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania 5.5..25 FLUSSI PDS ATTESA OCCUPAIZONE PER RITARDO PA CON INDISPONIBILITA DATORE OK OK.md",
+  "titolo_pubblico": "TAR Campania, sentenza 5.5.2025, n. 04819/2024 — revoca nulla osta lavoro illegittima per sopravvenuto inserimento lavorativo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino straniero titolare di nulla osta', nessun dato identificativo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania 9.1.2024 PDS Attesa occup. Flussi STAGIONALI OK OK.md",
+  "titolo_pubblico": "TAR Campania Salerno, sentenza 9.1.2024, n. 119/2024 — permesso per attesa occupazione per indisponibilità del datore stagionale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente, nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Campania genn. 25 Cautelare FLUSSI Buona fede legittimo affidamento lavoratore che lavora OK.md",
+  "titolo_pubblico": "TAR Napoli, ordinanza cautelare 23.1.2025, n. 06602/2024 — sospesa la revoca del nulla osta per buona fede del lavoratore",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Md Masud (nome e cognome del ricorrente, in frontmatter/metadati)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Metadati YAML riportano nome e cognome del ricorrente (Md Masud); il corpo del testo non lo menziona, usa 'lo straniero'/'il ricorrente'. Da redigere il campo ricorrente prima della pubblicazione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Emilia 10.10.2024 Conversione PDS Stagionale ANCHE SE SCADUTO ok ok.md",
+  "titolo_pubblico": "TAR Emilia Romagna, sentenza 10.10.2024, n. 305/2024 — nessun termine perentorio per convertire il permesso stagionale scaduto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato solo come 'cittadino indiano', nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lazio Latina 20.10.24 Sospende rigetto pds FLUSSI STAGIONALI con contratto senza nullaosta-1.md",
+  "titolo_pubblico": "TAR Lazio Latina, ordinanza cautelare 16.10.2024, n. 403/2024 — sospeso il diniego di permesso per lavoro stagionale con contratto regolare",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino straniero'; presente solo il nome dell'avvocato difensore (Giulia Crescini), escluso dalle regole di anonimizzazione. Data effettiva del provvedimento 16.10.2024, diversa da quella richiamata nel nome del file (20.10.24)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lazio marzo2020 SI Convertibilita da RELIGIOSO a Studio art.39 comma 5 BIS OK OK OK.md",
+  "titolo_pubblico": "TAR Lazio, sentenza 20.3.2020, n. 3501/2020 — conversione da permesso religioso a studio ed esame del permesso UE di lungo periodo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata solo come 'cittadina straniera ex religiosa', nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lazio nov.2024 Conversione stagionale anche dopo scadenza del PDS OK OK.md",
+  "titolo_pubblico": "TAR Lazio, sentenza 18.11.2024, n. 20424 — conversione del permesso stagionale in lavoro subordinato anche dopo la scadenza",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Massima strutturata (principi e ragionamento giuridico), nessun testo integrale. Ricorrente è una società (i PRIDE SAS), non un dato personale."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Liguria 8.5.24 Flussi errore Codice ATECO si cambio datore OK OK.md",
+  "titolo_pubblico": "TAR Liguria, sentenza 8.5.2024, n. 322 — revoca nulla osta per codice ATECO non ammesso e tutela del lavoratore in buona fede",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come [OMISSIS]; presente solo il nome dell'avvocato difensore (dato non personale ai fini della regola)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lombardia 20.12.24 Conversione attesa sanatoria in Residenza elettiva OK OK.md",
+  "titolo_pubblico": "TAR Lombardia, sentenza 20.12.2023, n. 3130 — visto non necessario per residenza elettiva a chi è già regolarmente soggiornante",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il titolo originale del file ('conversione attesa sanatoria') non corrisponde al contenuto effettivo, che riguarda il visto per residenza elettiva dopo regolarizzazione ex art. 103 d.l. 34/2020; titolo pubblico riformulato di conseguenza."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Lombardia dic. RESIDENZA ELETTIVA si senza visto ma regolare con richiesta sanatoria ok.md",
+  "titolo_pubblico": "TAR Lombardia, sentenza 20.12.2023, n. 3130 — visto non necessario per residenza elettiva a chi è già regolarmente soggiornante",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "scartare",
+  "nota": "Documento duplicato del record precedente: stesso TAR (Lombardia, Sez. IV), stessa data (20.12.2023), stesso numero (3130/2023), stesso estensore e principio di diritto pressoché identico. Da scartare per evitare doppia pubblicazione della medesima decisione."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar MIlano febbr.2024 pds ATTESA OCCUPAIZONE SANATORIA rinunica del DATORE OK.md",
+  "titolo_pubblico": "TAR Lombardia, ordinanza 28.2.2024, n. 140 — permesso per attesa occupazione in caso di rinuncia del datore di lavoro",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza cautelare; ricorrente indicato solo come 'lavoratore straniero', nessun dato identificativo."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Milano 15.12.25 FLUSSI sospensiva per SENZA DATORE motivata possibile pds attesa occupazione ok ok.md",
+  "titolo_pubblico": "TAR Lombardia, ordinanza cautelare 11.12.2025, n. 1383 — sospensione della revoca del nulla osta flussi, contrasto su attesa occupazione",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come [OMISSIS]; presente solo il nome dell'avvocato difensore. Il testo dà atto di un contrasto giurisprudenziale interno al Consiglio di Stato sull'applicabilità del permesso per attesa occupazione ai flussi."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Milano2020 rinnovo pds lavoro per prospettive reddituali e legami art.5 c.5.md",
+  "titolo_pubblico": "TAR Lombardia, sentenza 28.2.2020, n. 387 — rinnovo del permesso per lavoro, reddito insufficiente ma legami familiari rilevanti",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come 'cittadina boliviana (OMISSIS)'; nazionalità presente ma nessun nome. Menzionata figlia minore nata in Italia senza dati identificativi ulteriori."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Palermo maggio2020 NO revoca pds lungo soggiornante per reddito o alloggio.md",
+  "titolo_pubblico": "TAR Sicilia, sentenza 21.4.2020, n. 805 — niente revoca del permesso UE per lungo soggiornanti per motivi economici",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente descritta solo genericamente come 'cittadina straniera titolare di permesso UE per soggiornanti di lungo periodo'."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Sicilia 2017 Rinnovo pds AUTONOMO con irregolarita fiscale SI.md",
+  "titolo_pubblico": "TAR Sicilia, ordinanza 20.9.2017 — l'irregolarità fiscale non preclude il rinnovo del permesso per lavoro autonomo",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[omissis]'. Ordinanza cautelare con accoglimento parziale (riesame disposto)."
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Sicilia 2020 RESIDENZA ELETTIVA qualsiasi reddito anche proveniente ESTERO OK.md",
+  "titolo_pubblico": "TAR Sicilia, sentenza 13.1.2020, n. 236 — residenza elettiva, reddito valido anche se proveniente dall'estero",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente descritto solo come 'cittadino turco', nazionalità rilevante per il caso ma nessun nome."
+ }
+]

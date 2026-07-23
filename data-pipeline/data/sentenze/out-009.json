@@ -1,0 +1,386 @@
+[
+ {
+  "id": "kb:asilo_3_trattenimento/App.Roma 26.2.25 Respinge opposizione SOSPENSIVA dopo NON CONVALIDA tratten. No proced. Accelerata OK.md",
+  "titolo_pubblico": "C. App. Roma, decreto 26.2.2025, n. 811/2025 — sospensiva del diniego in procedura accelerata di frontiera",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parti già anonimizzate nei metadati (richiedente asilo albanese, non nominato). Sintesi discorsiva dei principi, non testo integrale."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/AppTorino aprile 2025 NO convalida TRATTENIMENTO mancata informativa da tempo in Italia OK.md",
+  "titolo_pubblico": "C. App. Torino, decreto 18.4.2025, n. 427/2025 — non convalida del trattenimento per mancata informativa sull'asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato solo come 'cittadino egiziano (anonimizzato)'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/C.App.Torino giugno 2025 No informativa NO CONVALIDA trattenimento OK OK.md",
+  "titolo_pubblico": "C. App. Torino, decreto 12.6.2025, n. 719/2025 — non convalida del trattenimento per omessa informativa sulla protezione internazionale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[anonimizzato] - cittadino tunisino'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/CASS 15117-2021.md",
+  "titolo_pubblico": "Cass. civ., sentenza 26.2.2021, n. 15117 — nozione di convivenza ostativa all'espulsione per parente di cittadino italiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente non nominato, solo 'cittadino marocchino'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/CASS.PEN.34134 2021 Espulsione MISURA ALTERANAT. No con x vita privata e familiare OK.md",
+  "titolo_pubblico": "Cass. pen., sentenza 15.9.2021, n. 34134 — bilanciamento tra espulsione alternativa alla detenzione e vita privata e familiare",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro nei metadati del file: Braka Ervis"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il nome del ricorrente compare in chiaro nel front matter (campo 'appellant'), ma non nel corpo del testo pubblicabile; da rimuovere/anonimizzare in fase di redazione prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 12592 2023 Convalida illeg. x Resping. Illeg. Senza Informativa.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 10.5.2023, n. 12592 — nullità della convalida del trattenimento per omessa informativa sull'asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come 'straniero trattenuto (cittadino tunisino)', nessun nome."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 20930_22 il semplice ritardo della richiesta di rinnovo spontaneo pds non autorizza espulsionie automatica OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 30.6.2022, n. 20930 — il ritardo nel rinnovo del permesso non giustifica l'espulsione automatica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro nei metadati del file: Shaban Ahmed"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il nome del ricorrente compare in chiaro nel front matter (campo 'appellant'); da anonimizzare prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 21716 2022 il GDP impugnazione espulsione ha dovere di cooperazione istruttoria deve valutare i divieti di espulsione OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 8.7.2022, n. 21716 — obbligo del giudice di pace di valutare d'ufficio i divieti di espulsione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[Omesso] - cittadino iracheno di etnia curda'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 22097 2023 CPR rigetta ma dichiara inespellibile durante attesa sospensiva in cassazione.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 24.7.2023, n. 22097 — durata dell'effetto sospensivo del trattenimento in pendenza di ricorso per cassazione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[Omesso] - cittadino tunisino'. Esito sfavorevole al ricorrente ma decisione comunque rilevante e pubblicabile."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass. 3.3.2023 6 giorni per formalizzare domanda di asilo e cessazione al momento del rigetto sospensiva salvo motivi art. 14 ok.md",
+  "titolo_pubblico": "Cass. civ., sentenza 13.7.2023, n. 28789/2020 — termine di sei giorni per la registrazione della domanda di asilo del trattenuto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato con sole iniziali 'X.K. (cittadino tunisino)'. Numero di ruolo 28789/2020 riportato nei metadati come 'case_number' pur essendo sentenza del 2023: dato riportato come da fonte."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.13514_2025 espulsione misura alternativa LIMITE CON BILANCIAMENTO VITA PRIVATA ART. 19 OK.md",
+  "titolo_pubblico": "Cass. pen., sentenza 23.1.2025, n. 13514 — bilanciamento tra espulsione alternativa alla detenzione e vita privata e familiare dopo la riforma del 2023",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino senegalese condannato'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.16529_25 Trattenimento INFORMATIVA PRIMO INGRESSO O CONTATTO PRIMA DI ESPULSIONE CHIARA OK.md",
+  "titolo_pubblico": "Cass. pen., sentenza 2.5.2025, n. 16529 — limiti dell'obbligo di informativa sulla protezione internazionale al primo ingresso",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente non nominato. Esito sfavorevole al ricorrente ma principio di diritto rilevante per la sezione giurisprudenza."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.17604_2021 NO ESPULSIONE MARITO IN GRAVIDANZA salvo espulsione MINISTERIALE no prefettizio con bilanciamento.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 21.6.2021, n. 17604 — divieto di espulsione del marito convivente della donna in gravidanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro nei metadati del file: El Omaataqui Abdelfattah"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il nome del ricorrente compare in chiaro nel front matter (campo 'appellant'); da anonimizzare prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.17640-21 il marito non espellibile durante gravidanza.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 22.6.2021, n. 17640 — non espellibilità del marito convivente durante la gravidanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Decisione gemella/companion di Cass. 17604/2021 (stesso principio), qui ricorrente non nominato ('Ricorrente - cittadino marocchino')."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.44182 2016 NO espulsione coppia di fatto art.19 convivente cirinna come coniuge OK OK OK.md",
+  "titolo_pubblico": "Cass. pen., sentenza 18.10.2016, n. 44182 — convivenza di fatto ex legge Cirinnà ostativa all'espulsione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato con sole iniziali 'Z.A.'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Cass.5521 2021 Espulsione solo 60 gg dopo SCARCERAZIONE.md",
+  "titolo_pubblico": "Cass. civ., sentenza 1.3.2021, n. 5521 — decorrenza del termine di 60 giorni per l'espulsione dello straniero scarcerato",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente non nominato, solo 'cittadino tunisino'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Trib. Torino 14.10.2022 prot. speciale condanna per grave reato valorizzazione percorso in carcere.md",
+  "titolo_pubblico": "Trib. Torino, decreto 14.10.2022 — protezione speciale a condannato per grave reato dopo percorso rieducativo in carcere",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come 'anonimizzato, cittadino marocchino'."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Trib.Roma 2021 espulsione competenza trib.civ in presenza art.31 OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 3.8.2021 — competenza del tribunale ordinario per l'impugnazione dell'espulsione in presenza di procedimento a tutela dei minori",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro nei metadati del file: Arapaj Ziadet"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il nome del ricorrente compare in chiaro nel front matter (campo 'appellant'); da anonimizzare prima della pubblicazione. Il caso coinvolge anche figli minori, ma senza ulteriori dati identificativi nel corpo del testo."
+ },
+ {
+  "id": "kb:asilo_3_trattenimento/Trib.Roma II sez..5035-24 Risarc.danni Ingiusto CPR come detenzione PER OBBLIGO INFORMAZ.FRONTIERA OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 27.3.2024 — risarcimento per ingiusto trattenimento in CPR per omessa informativa alla frontiera",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente non nominato, solo 'cittadino tunisino'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/2019_8_8_Tribunale-Bologna-iscrizione-anagfrafica-reclamo-inammissibilita-Ministero-2.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 1.8.2019 — inammissibilità del reclamo ministeriale contro l'iscrizione anagrafica di richiedente asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parti sono enti pubblici (Ministero dell'Interno, Sindaco di Bologna quale Ufficiale di Governo); la richiedente asilo non è mai nominata."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/23-872 osc..md",
+  "titolo_pubblico": "Trib. Monza, sentenza 7.7.2023, n. 872/2023 — insussistenza del dolo nella domanda di reddito di cittadinanza di un protetto sussidiario",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Imputato indicato solo come 'cittadino nigeriano, anonimizzato'; nessun dato personale in chiaro nel testo."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/6112299.md",
+  "titolo_pubblico": "Trib. Napoli, sentenza 7.3.2023, n. 488/2023 — assenza di dolo nella falsa dichiarazione di residenza per il reddito di cittadinanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Rankoth Pedige Rasika Ranasingha (nome e cognome dell'imputata, campo 'appellant' dei metadati)"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il corpo del testo (sezione 'Principi e ragionamento giuridico') non riporta il nome, ma i metadati YAML in testa al file lo riportano per esteso: va redatto prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ASGI+APN c MAECI sent 3619-25 rg 3097-2025 trib milano sez lavoro copia.md",
+  "titolo_pubblico": "Trib. Milano, sez. lavoro, sentenza 4.8.2025 — discriminazione per cittadinanza in un concorso pubblico MAECI",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parti sono enti (ASGI, Avvocati per Niente ODV, MAECI); nessun dato personale di persona fisica privata."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Accoglimento SASSI pds cure mediche 1 anno.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 25.10.2024 — permesso per cure mediche di durata annuale anziché trimestrale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Sassi Riadh (nome e cognome del ricorrente, campo 'appellant' e nel nome del file stesso)"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il nome del ricorrente compare nei metadati YAML (non nel corpo discorsivo) e anche nel nome del file originale; va redatto prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/App. Brescia 10.12.2025 RG 388-2025 codice fiscale richiedente protezione speciale El Hyani.md",
+  "titolo_pubblico": "C. App. Brescia, sentenza 10.12.2025, n. 388/2025 — codice fiscale provvisorio per richiedente protezione speciale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "El Hyani Abdelhalim (nome e cognome dell'appellante, nei metadati e nel nome del file)"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Nome e cognome del ricorrente presenti nei metadati YAML e nel nome file originale; il corpo discorsivo non li ripete ma vanno comunque redatti prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/App. Venezia 2026 RG 1453-2025 ERP disapplica T.U. requisito biennale permesso unico lavoro.md",
+  "titolo_pubblico": "C. App. Venezia, sentenza 18.2.2026, n. 1453/2025 — accesso all'edilizia popolare per titolare di permesso lavoro infra-biennale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata solo come 'cittadina extracomunitaria (anonimizzata)'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Appello Venezia 138_2022 Discriminz. Iscrizione SSNA genitori stranieri a carico di italiano ACCORDO STATO REGIONI VINCOLANTE OK OK.md",
+  "titolo_pubblico": "C. App. Venezia, sez. lavoro, sentenza 15.4.2022 — iscrizione SSN per genitori stranieri a carico di cittadino italiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parti indicate genericamente ('genitori albanesi di cittadino italiano' + ASGI, ASL/Regione); nessun nome proprio di persona fisica privata."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/CORTE COST.19-2022 REDDITO CITTAD. legittimo chiedere il PDS lungo soggiornante.md",
+  "titolo_pubblico": "Corte cost., sentenza 25.1.2022, n. 19/2022 — legittimità del requisito del permesso di lungo soggiorno per il reddito di cittadinanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata con le sole iniziali ('L. E., cittadina nigeriana'); iniziali sono ammesse dalla regola di anonimizzazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Cass.Pen2022 Reddito Cittadinanza no reato falsa testimon. se comunque dovuto OK.md",
+  "titolo_pubblico": "Cass. pen., sentenza 21.12.2021, n. 44366/2021 — insussistenza del reato di omissione informazioni per il reddito di cittadinanza dovuto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Imputata indicata come 'Imputata (omissis)'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Cons.Stato2020 titolo di viaggio a protezione umanitaria.md",
+  "titolo_pubblico": "Cons. Stato, ordinanza 27.2.2020, n. 528/2020 — titolo di viaggio per titolare di protezione umanitaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'ricorrente (cittadino maliano)'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/DOC180723-18072023170638.md",
+  "titolo_pubblico": "Trib. Verona, sentenza 30.1.2023 — residenza effettiva anziché anagrafica per il requisito decennale del reddito di cittadinanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Imputato indicato come '[omissis]'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/K.H. (OMAGHE) - INPS - C-747-22 - SENTENZA DEL 7.5.26 (2).md",
+  "titolo_pubblico": "CGUE, sentenza 7.5.2026, causa C-747/22 — reddito di cittadinanza per beneficiario di protezione sussidiaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "Nel corpo del testo il ricorrente è indicato solo con le iniziali 'O.O.', ma il nome del file originale riporta 'K.H. (OMAGHE)', iniziali diverse accompagnate da un termine tra parentesi che potrebbe essere un cognome collegabile alla persona: potenziale via di re-identificazione tramite il nome file/metadato."
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Discrepanza fra le iniziali usate nel testo (O.O.) e quelle/il termine nel nome del file ('K.H. (OMAGHE)'): va verificato se 'OMAGHE' sia un cognome reale prima di considerare il documento anonimizzato."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/KELLINY + 1 - REGIONE LOMBARDIA - sentenza Corte Cost. 97-2026_fd del 5.6.26.md",
+  "titolo_pubblico": "Corte cost., sentenza 5.6.2026, n. 97/2026 — iscrizione al SSN per straniero disabile titolare di residenza elettiva",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "Nel corpo del testo i ricorrenti sono indicati con le sole iniziali ('D.W.N. K.' e 'A. M.'), ma il nome del file originale contiene il cognome per esteso 'KELLINY', potenzialmente ricollegabile a una delle iniziali (K.)."
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il nome del file rivela un cognome per esteso ('Kelliny') abbinabile alle iniziali usate nel testo: possibile via di re-identificazione, da verificare prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/N. 04596_2015 REG.RIC_ conversione senza pds minore eta.md",
+  "titolo_pubblico": "TAR Campania, sentenza 4.2.2016 — silenzio della Questura sul permesso per ex minore straniero non accompagnato",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Milon Md (nome e cognome del ricorrente, ex minore non accompagnato, campo 'appellant' dei metadati)"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Nome e cognome del ricorrente (ex minore straniero, soggetto vulnerabile) presenti nei metadati YAML; va redatto prima della pubblicazione, con particolare attenzione data la minore età pregressa del soggetto."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Ordinanza Anonima (1).md",
+  "titolo_pubblico": "Trib. Napoli Nord, ordinanza 10.7.2019 — iscrizione al SSN del richiedente asilo senza iscrizione anagrafica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come '[Ricorrente anonimizzato] - cittadino nigeriano'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Parere Commissione nazionale accesso si decisione Commissione Asilo ok ok.md",
+  "titolo_pubblico": "Comm. accesso documenti amministrativi, decisione 2.2.2023, n. 80/2023 — accesso del difensore al diniego di permesso di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Assane Ba (nome e cognome del richiedente/cliente, campo 'appellant' dei metadati)"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il nome del difensore (Avv. Salvatore Fachile) non conta come dato personale essendo un professionista nell'esercizio delle sue funzioni; il nome del cliente 'Assane Ba' va invece redatto prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Provvedimento accoglimento reclamo ADI chieti moglie del titolare di status.md",
+  "titolo_pubblico": "Trib. Chieti, ordinanza 10.6.2025 — assegno di inclusione per il familiare di un titolare di protezione internazionale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Muqishta Fahrhije (nome e cognome della ricorrente, campo 'appellant' dei metadati)"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Nome e cognome della ricorrente presenti nei metadati YAML; il corpo discorsivo non li ripete ma vanno redatti prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Ricorso 2021 accoglienza SAI a ROMA.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 22.4.2021 — accoglienza nel sistema SAI per titolare di permesso per cure mediche",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'cittadino gambiano (titolare PDS cure mediche)'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Sentenza CGUE 151-24.md",
+  "titolo_pubblico": "CGUE, sentenza 5.3.2026, causa C-151/24 — esclusione dell'assegno sociale dalla parità di trattamento del permesso unico",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte privata indicata con le sole iniziali 'V.M.'; iniziali ammesse dalla regola di anonimizzazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Sentenza napoli sospensione prestazione inps.md",
+  "titolo_pubblico": "Trib. Napoli Nord, sez. lavoro, sentenza 20.5.2025 — continuità dell'invalidità civile durante il rinnovo del permesso di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata con la sola iniziale 'A. (cittadina nigeriana, titolare pensione invalidità civile)'; iniziale ammessa dalla regola di anonimizzazione."
+ }
+]

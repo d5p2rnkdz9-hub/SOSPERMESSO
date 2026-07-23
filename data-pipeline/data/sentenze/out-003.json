@@ -1,0 +1,370 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Perugia 14.1.2026 sussidiaria induista Bangladesh violenze settarie.md",
+  "titolo_pubblico": "Trib. Perugia, decreto 14.1.2026, n. 2353/2025 — protezione sussidiaria per induista bengalese esposto a violenze settarie",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente anonimizzato in modo esplicito nei metadati; nel testo non compaiono dati identificativi."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Perugia 27.2.2024 Asilo PAKISTANO sfruttamento pakistan e italia debito OK.md",
+  "titolo_pubblico": "Trib. Perugia, decreto 27.2.2024, n. 2571/2023 — protezione sussidiaria per vittima pakistana di debt bondage intergenerazionale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Roma 2.5.22 protez.speciale ART.5 c.9 no problem rinuncia e buona su vita privata OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 2.5.2022, n. 33672/2021 — protezione speciale per tutela della vita privata di cittadino gambiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Roma2021 prot.speciale per torture in Libia e riabilitazione in Italia fuori art.8.md",
+  "titolo_pubblico": "Trib. Roma, decreto 15.12.2020 — protezione speciale per vittima di tortura in Libia con diritto alla riabilitazione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib TO 24.5.2022 sfrutt.lav. estrema poverta P.O in 19 c. e 1.1. come PERICOLO di PREGIUDIZIO OK.md",
+  "titolo_pubblico": "Trib. Torino, ordinanza 24.5.2022, n. 2945/2022 — protezione speciale per sfruttamento lavorativo e povertà estrema in Guinea-Bissau",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib Torino 27.10.25 RICONGIUNGIMENTO CON PROTEZIONE SPECIALE OK OK.md",
+  "titolo_pubblico": "Trib. Torino, sentenza 27.10.2025, n. 14114/2025 — diritto al ricongiungimento familiare per titolare di protezione speciale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib-Milano-29.09.2025 status di rifugiato donna nigeriana - sulla fondatezza del timore attuale  (1).md",
+  "titolo_pubblico": "Trib. Milano, decreto 29.9.2025, n. 5377/2020 — status di rifugiata per donna nigeriana vittima di tratta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Ancona pds art. 18 con parere negativo.md",
+  "titolo_pubblico": "Trib. Ancona, sentenza 22.1.2026, n. 5511/2025 — protezione sociale per vittima di sfruttamento lavorativo nonostante parere negativo del PM",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente riportato in chiaro nei metadati: Ayoub El Hamli"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il campo parties.appellant riporta il nome e cognome per esteso del ricorrente ('Ayoub El Hamli') anziché un'indicazione anonimizzata. Va redatto (es. sostituito con iniziali o 'omissis') prima della pubblicazione; il resto del contenuto è pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Bologna 17.10.2024_STATUS nigeriana Tratta Viol.Domenstica e STIGMA ok ok.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 17.10.2024, n. 5979/2022 — status di rifugiata per donna nigeriana vittima di tratta e violenza domestica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Bologna 6.5.21 PROT.SPECIALE diritto presentazione domanda OK OK OK.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 6.5.2021, n. 3246/2021 — diritto alla presentazione diretta in Questura della domanda di protezione speciale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Bologna 9.12.2022 sospensiva studente straniero in Ucraina vita privata in italia.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 9.12.2022, n. 14313/2022 — sospensione del diniego di protezione speciale per studente in fuga dalla guerra in Ucraina",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Brescia 23.7.2021 Protez.spec. DIRITTO SALUTE in art. 5 c.6 OK OK.md",
+  "titolo_pubblico": "Trib. Brescia, decreto 23.7.2021, n. 14628/2018 — protezione speciale per tutela della salute psichica e della vita privata",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Brescia 29.6.22 Prot.Speciale 19 c.1.1. per ogni pericolo PREGIUDIZIO DIRITTI FONDAMENTALI.md",
+  "titolo_pubblico": "Trib. Brescia, decreto 29.6.2022, n. 4878/2021 — protezione speciale per rischio di tortura in caso di rimpatrio in Tanzania",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Genova 22.12.2023 prot. suss lett. c nato in libia equiparazione ad apolide.md",
+  "titolo_pubblico": "Trib. Genova, decreto 22.12.2023, n. 4828/2022 — equiparazione ad apolide e protezione sussidiaria per conflitto in Libia",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Milano - cause esclusione sussidiaria.md",
+  "titolo_pubblico": "Trib. Milano, decreto 11.8.2020, n. 8601/2020 — inapplicabilità delle cause di esclusione dalla protezione sussidiaria per cittadino libico",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Milano 1.08.2023 Status Bengalese Debito Gruppo Socliale ex minore orfano venditore di strada OK OK.md",
+  "titolo_pubblico": "Trib. Milano, decreto 1.8.2023, n. 11096/2019 — status di rifugiato per ex bambino di strada bengalese vittima di tratta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Milano 10.2.2021 ASILO Pakistano in SCHIAVITU LAVORATIVA in Pakistan come milioni di pakistani OK.md",
+  "titolo_pubblico": "Trib. Milano, decreto 10.2.2021 — status di rifugiato per vittima pakistana di schiavitù lavorativa",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Napoli 2.4.2025 - Sospensione domanda reiterata Pakistan art.19 c.1.1 TUI.md",
+  "titolo_pubblico": "Trib. Napoli, decreto 2.4.2025 — sospensione dell'esecuzione del diniego per cittadino pakistano esposto a crisi climatica ed economica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma 22.02.2018 per rifugiato COESIONE SENZA PREVIO PDS.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 22.2.2018, n. 16064/2017 — permesso per motivi familiari a coniuge di rifugiato senza previo nulla osta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma 30.6.2025 - Status rifugiato bangladese vittima tratta sfruttamento lavorativo re-trafficking.md",
+  "titolo_pubblico": "Trib. Roma, decreto 30.6.2025, n. 45477/2024 — status di rifugiato per cittadino bengalese vittima di tratta lavorativa in Libia",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il campo appellant riporta anno di nascita generico (1.1.1982, verosimile data convenzionale) senza nome; non costituisce dato identificativo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma 9.6.25 Speciale Bangladesh POVERTA INEMENDABILE OK.md",
+  "titolo_pubblico": "Trib. Roma, decreto 9.6.2025, n. 18872/2023 — protezione speciale per integrazione lavorativa e povertà inemendabile in Bangladesh",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Roma umanitaria con rimessione in termini aprile2020.md",
+  "titolo_pubblico": "Trib. Roma, decreto 2.12.2019, n. 29951/2019 — protezione umanitaria per vittima di violenza domestica con rimessione in termini",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Salerno 19.10.2022 UOMO Nigeria status per tratta con debito rito e sfruttamento in Libia.md",
+  "titolo_pubblico": "Trib. Salerno, decreto 19.10.2022, n. 11731/2019 — status di rifugiato per uomo nigeriano vittima di tratta con rito juju",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Salerno ott. 2025 asilo uomo vittima tratta accattonaggio OK OK.md",
+  "titolo_pubblico": "Trib. Salerno, decreto 20.10.2025, n. 8283/2023 — status di rifugiato per uomo nigeriano vittima di tratta e accattonaggio forzato",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 13.10.2025 gambia status ex msna art. 9, comma 2 bis D. Lgs. 251 07 e sospetto omosex.md",
+  "titolo_pubblico": "Trib. Torino, decreto 13.10.2025, n. 10917/2023 — status di rifugiato per orientamento sessuale attribuito a ex minore gambiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 13.5.2022 status guinea per maltrattamenti subiti da minore.md",
+  "titolo_pubblico": "Trib. Torino, decreto 13.5.2022, n. 21099/2019 — status di rifugiato per ex minore guineano orfano vittima di violenza domestica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 2.5.2023 prot speciale disastro ambientale delta state.md",
+  "titolo_pubblico": "Trib. Torino, ordinanza 2.5.2023, n. 13382/2021 — protezione speciale per disastro ambientale nel Delta del Niger",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino 23.2.2026 - Status rifugiato motivi imperativi maltrattamenti minore Costa Avorio.md",
+  "titolo_pubblico": "Trib. Torino, decreto 23.2.2026, n. 4509/2024 — status di rifugiato per motivi imperativi da persecuzioni subite durante la minore età",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente riportato in chiaro: KOUAME Konan Daniel",
+   "Luogo di nascita: Bouake",
+   "Data di nascita: 03.05.2000"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il campo parties.appellant riporta nome e cognome per esteso, città e data di nascita del ricorrente, con nota interna del file che segnala 'identificativo presente nel documento'. Va integralmente redatto prima della pubblicazione; il contenuto giuridico è altrimenti pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Torino aprile 2024 STATUS Bangladesh tratta libia debito retrafficking Ok.md",
+  "titolo_pubblico": "Trib. Torino, decreto 4.3.2024, n. 3459/2023 — status di rifugiato per cittadino bengalese vittima di tratta lavorativa",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib. Venezia dic. 2021 STATUS sfruttamento in attivita illecite no esclusione automatica.md",
+  "titolo_pubblico": "Trib. Venezia, decreto 23.12.2021, n. 4646/2021 — status di rifugiato per vittima tunisina di tratta nonostante precedenti penali",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bari 2018 Status per tratta Ghana Giovane debito e riduzione schiavitu in Libia.md",
+  "titolo_pubblico": "Trib. Bari, decreto 18.10.2019, n. 7743/2018 — status di rifugiato per minore ghanese vittima di tratta e riduzione in schiavitù",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bari2021 BElluccio Art.18 bis decreto cautelare inaudita altera parte con PARERE SFAVOREVOLE DEL P.M..md",
+  "titolo_pubblico": "Trib. Bari, decreto 18.1.2021, n. 38/2021 — permesso per vittima di violenza domestica nonostante parere negativo del PM",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il nome 'BElluccio' nel filename originale è verosimilmente il nome del difensore, non del ricorrente; nel testo la ricorrente è indicata solo genericamente."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bol.29.12.21 Si domanda prot.spec senza PASSAP..md",
+  "titolo_pubblico": "Trib. Bologna, decreto 29.12.2021, n. 15058/2021 — diritto alla formalizzazione della domanda di protezione speciale senza passaporto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il testo cita il nome dell'avvocato difensore (Zorzella Nazzarena), non conteggiato come dato personale del ricorrente."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna 15.2.2023 Protez.Spec AL QUESTORE CONVERTIBILE OK.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 15.2.2023, n. 10573/2022 — protezione speciale per radicamento sociale convertibile in permesso di lavoro",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il testo cita il nome dell'avvocato difensore (Vandelli Maria Elisabetta), non conteggiato come dato personale del ricorrente."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna 17.2.22 ex art.700 presentazione domanda PDS cure mediche SENZA PASSAPORTO OK.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 17.2.2022, n. 945/2022 — permesso per cure mediche a padre convivente di neonato senza passaporto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna 7076_2021 STATUS VEDOVA Nigeriana.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 7.10.2021, n. 7076/2019 — status di rifugiata per vedova nigeriana perseguitata per rifiuto dei rituali di vedovanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna dic.2024 Asilo Tratta sfruttamento Lavorativo uomo Costa avorio 25 anni Ok.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 8.11.2024, n. 14970/2022 — status di rifugiato per uomo ivoriano vittima di tratta e riduzione in schiavitù",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna marzo 2024 CONVERSIONE SPECIALE LAVORO sospensiva con pds OK.md",
+  "titolo_pubblico": "Trib. Bologna, decreto 7.3.2024, n. 2716/2024 — sospensione del diniego di conversione della protezione speciale in permesso di lavoro",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome del ricorrente riportato in chiaro nei metadati: MD Selim"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il campo parties.appellant riporta un nome verosimilmente reale ('MD Selim') anziché un'indicazione anonimizzata. Va redatto prima della pubblicazione; il resto del contenuto è pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Bologna2020 ART.18 Percorso SOCIALE OK OK OK.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 3.3.2020, n. 20892/2019 — permesso per protezione sociale tramite percorso sociale per vittima albanese di tratta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Brescia 2017 Umanitari aper debito da usura Bengalese adulto OK OK.md",
+  "titolo_pubblico": "Trib. Brescia, sentenza 16.1.2018, n. 14904/2017 — protezione umanitaria per vittima bengalese di usura",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ }
+]

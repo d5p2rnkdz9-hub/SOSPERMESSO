@@ -1,0 +1,368 @@
+[
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/TAR Lazio 85_17 residenza fittizia_rinnovo pds (1).md",
+  "titolo_pubblico": "TAR Lazio, ordinanza cautelare 10.1.2017, n. 85/2017 — riesame rinnovo pds per residenza elettiva presso associazione di volontariato",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tar Bologna cautelare marzo 2022 TITOLO di viaggio con SUSSIDIARIA no ostativi precedenti penali.md",
+  "titolo_pubblico": "TAR Bologna, ordinanza cautelare 9.3.2022, n. 128/2022 — titolo di viaggio a titolare di protezione sussidiaria nonostante precedenti penali",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tar Palermo dic.2021 Titolo viaggio a sussidiaria per pericoli risultano da verbale commissione OK OK.md",
+  "titolo_pubblico": "TAR Palermo, sentenza 6.12.2021, n. 3382/2021 — titolo di viaggio al titolare di protezione sussidiaria impossibilitato a rivolgersi al Paese d'origine",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte ricorrente indicata come '-OMISSIS-', nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tar marche 2021 sospensiva conversione asilo lavoro OK.md",
+  "titolo_pubblico": "TAR Marche, ordinanza cautelare 21.10.2021, n. 314/2021 — obbligo di riesame della conversione da asilo politico a lavoro",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": ""
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tr. Vicenza - ordinanza -iscrizione SSN familiari cittadino UE.md",
+  "titolo_pubblico": "Trib. Vicenza, ordinanza 1.9.2020, n. 1424/2019 — iscrizione SSN per familiare extracomunitario di cittadino italiano",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata solo come 'ricorrente (cittadina nigeriana)', nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tri. Cagliari2019 no passapo. rilascio UMANIT.art.9c.6 Cass.4890-19 OK.md",
+  "titolo_pubblico": "Trib. Cagliari, ordinanza 8.4.2019, R.G. 9769/2018 — rilascio del permesso umanitario senza previa esibizione del passaporto",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come '-OMISSIS-'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib CIvitavecchia aprile 2024 Assegno invalidita con PDS meno di un anno OK.md",
+  "titolo_pubblico": "Trib. Civitavecchia, sentenza 18.4.2024, R.G. 2371/2023 — assegno di invalidità civile con permesso di soggiorno infrannuale",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro nei metadati: Sadiki Fatmir"
+  ],
+  "qualita": "da_rivedere",
+  "nota": "Il campo 'parties.appellant' riporta nome e cognome per esteso del ricorrente ('Sadiki Fatmir'); va redatto prima della pubblicazione. Il corpo del principio di diritto non contiene invece dati personali."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Catania ord 01-11-2019 RG 12686-2019 iscrizione anagrafica richiedente asilo.md",
+  "titolo_pubblico": "Trib. Catania, ordinanza 1.11.2019, n. 12686/2019 — iscrizione anagrafica del richiedente asilo dopo il d.l. 113/2018",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata genericamente come 'richiedente asilo (Nigeria)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib NA_18.02.2024 iscrizione anagrafica cedolino_DOMANDA PROT. SPECIALE DIRETTA QUESTORE OK OK OK.md",
+  "titolo_pubblico": "Trib. Napoli, ordinanza 18.3.2024, n. 2071/2024 — iscrizione anagrafica del richiedente protezione speciale con solo cedolino",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'cittadino russo (anonimizzato)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Roma apertura CC Albano 2020 richiedente asilo.md",
+  "titolo_pubblico": "Trib. Roma, decreto 21.12.2020, n. 64733/2020 — apertura del conto corrente di base per richiedente asilo presso Poste Italiane",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'richiedente asilo (cittadino colombiano)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Roma nov. 2025 CORREZIONE DATI A COMMISSIONE E QUESTURA OK.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 14.10.2025, n. 27079/2025 — correzione delle generalità errate nel decreto di protezione sussidiaria e nel permesso di soggiorno",
+  "contenuto": "massima",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro nei metadati: Rehman Gul"
+  ],
+  "qualita": "scartare",
+  "nota": "Duplicato: stesso provvedimento (Trib. Roma n. 27079/2025, 14.10.2025) presente nel corpus in versione già anonimizzata ('Trib.Roma 14.10.25 CORREZIONE DATI ANAGRAFICI ORDINE A COMMISSIONE OK.md'), da preferire. Questo file riporta inoltre il nome del ricorrente in chiaro nei metadati ('Rehman Gul'): se comunque riutilizzato, va redatto."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib Spoleto sent 1giu23 assegno sociale.md",
+  "titolo_pubblico": "Trib. Spoleto, sentenza 1.6.2023, n. 376/2021 — assegno sociale per familiare extracomunitario di cittadino UE con carta di soggiorno",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'eredi della ricorrente originaria (cittadina albanese)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib bologna 2023 iscrizione anagrafica e cedolino protezione speciale.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 7.4.2023, n. 4051/2023 — iscrizione anagrafica del richiedente protezione speciale con sola ricevuta d'istanza",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'richiedente protezione speciale (cittadino albanese)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Bologna 13.2.2023 RG 12960-2022 codice fiscale richiedente protezione speciale.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 13.2.2023, n. 12960/2022 — codice fiscale e ricevuta equiparabile al permesso per richiedente protezione speciale",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'cittadino tunisino richiedente protezione speciale'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Bologna 15.3.2024 residenza richiedente con richiesta protezione speciale OK.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 15.3.2024, n. 1924/2024 — iscrizione anagrafica del richiedente protezione speciale in applicazione analogica",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'cittadino ghanese (anonimizzato)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Brescia ord. 23.8.2016 Assegno maternita discriminazione cittadina marocchina OK.md",
+  "titolo_pubblico": "Trib. Brescia, ordinanza 23.8.2016, n. 513/2016 — discriminazione nel diniego dell'assegno di maternità a cittadina marocchina",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come '[cittadina marocchina] (anonimizzata)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. FI 27.5.2019 per residenza MInistero no liticonsorzio necessario ma volontario.md",
+  "titolo_pubblico": "Trib. Firenze, ordinanza 27.5.2019, n. 4571/2019 — litisconsorzio non necessario del Ministero nelle controversie anagrafiche",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Controparte indicata come 'cittadino straniero (anonimizzato)'; reclamante è il Ministero dell'Interno."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Firenze 23.5.2025 Assegno mensile assistenza con PDS cure mediche inferiore a un anno OK.md",
+  "titolo_pubblico": "Trib. Firenze, sentenza 23.5.2025, n. 2195/2024 — assegno di assistenza con permesso per cure mediche infrannuale rinnovato",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come '[cittadina straniera] (anonimizzata)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Monza 23.12.2023 RG 6993-2023 continuità anagrafica cancellazione irreperibilità.md",
+  "titolo_pubblico": "Trib. Monza, sentenza 23.12.2023, n. 6993/2023 — illegittimità della cancellazione anagrafica per irreperibilità senza ripetuti accertamenti",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'cittadino egiziano (titolare PDS soggiornanti di lungo periodo)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Napoli febb.2019 art. 700 sussidiaria no pasaport.md",
+  "titolo_pubblico": "Trib. Napoli, ordinanza 27.2.2019, n. 35170/2018 — rilascio del permesso per protezione sussidiaria senza passaporto",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata come 'ricorrente (cittadina nigeriana)'."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Padova 575 2022 SI assegno sociale con residenza DI FATTO.md",
+  "titolo_pubblico": "Trib. Padova, sentenza 25.10.2022 — assegno sociale con residenza di fatto nonostante buco anagrafico",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza del lavoro. Il requisito del soggiorno decennale per l'assegno sociale va provato con la residenza effettiva, non con la sola iscrizione anagrafica; irrilevante l'allontanamento temporaneo, richiamando Cass. 17397/2016."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Palermo dic. 2017 si pds umanitario senza passapo.md",
+  "titolo_pubblico": "Trib. Palermo, ordinanza 21.12.2017 — permesso di soggiorno umanitario senza esibizione del passaporto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "La Questura non può subordinare la ricezione dell'istanza per motivi umanitari al possesso del passaporto; giurisdizione del giudice ordinario (Cass. SS.UU. 11535/2009)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Roma 15.4.25 RIPRISTINO RESIDENZA BUCO CANCELLATO Bile ok ok.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 15.4.2025 — ripristino dell'iscrizione anagrafica dopo cancellazione per irreperibilità",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ripristino senza soluzione di continuità dell'iscrizione anagrafica quando sia provata la dimora abituale effettiva nel periodo di cancellazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Roma luglio 2025 ATTESTATO NOMINATIVO OK PER CONTO BASE POSTE OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 25.3.2025 — conto corrente base con attestato nominativo per richiedente asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il rifiuto di Poste Italiane di aprire il conto base al richiedente asilo munito di attestato nominativo con foto è discriminatorio ex art. 126-noviesdecies TUB."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Roma maggio2019 prima  iscrizione anagrafica con PDS senza passaporto.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 28.5.2019 — iscrizione anagrafica con permesso di soggiorno senza passaporto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il permesso di soggiorno è documento di riconoscimento idoneo all'iscrizione anagrafica anche in assenza di passaporto; distinzione tra documento di identificazione e titolo di viaggio."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib. Torino 10.12.2204 AUU Assegno unico con residenza di fatto OK.md",
+  "titolo_pubblico": "Trib. Torino, sentenza 10.12.2024 — assegno unico universale con residenza di fatto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il requisito biennale di residenza per l'assegno unico può essere provato con la dimora abituale di fatto, non necessariamente con l'iscrizione anagrafica; condanna INPS ex art. 96 co. 3 c.p.c."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.-BG-ordinanza-9.7.2020-est.-Cassia QLC pd ue lgs.md",
+  "titolo_pubblico": "Trib. Bergamo, ordinanza 9.7.2020 — rimessione alla Consulta sull'esclusione dal reddito di cittadinanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza di rimessione alla Corte Costituzionale della questione di legittimità dell'esclusione dal reddito di cittadinanza dei titolari di permesso unico lavoro o di soggiorno annuale."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Catania Agosto 2022 postpay evolution a richied. asilo no passaporto.md",
+  "titolo_pubblico": "Trib. Catania, ordinanza 2.8.2022 — carta prepagata Postepay senza passaporto per richiedente asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il rifiuto di Poste Italiane di rilasciare la carta prepagata con IBAN al richiedente asilo munito di permesso di soggiorno, per mancanza del passaporto, è discriminatorio."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Modena luglio 2025 Annulla Cancellazione residenza per Mancata prova di ripetuti controlli ok.md",
+  "titolo_pubblico": "Trib. Modena, sentenza 18.7.2025 — annullamento della cancellazione anagrafica per accertamenti insufficienti",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Nullità della cancellazione per irreperibilità se non preceduta da ripetuti accertamenti opportunamente intervallati (almeno un anno secondo Circolare ISTAT 21/90)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Nola gennaio 2025 Annulla Cancellazione residenza per mancata notifica ok.md",
+  "titolo_pubblico": "Trib. Nola, ordinanza 2.1.2025 — annullamento della cancellazione anagrafica per mancata notifica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Illegittima la cancellazione anagrafica priva di un formale provvedimento conclusivo notificato ex art. 143 c.p.c.; ripristino della residenza per il periodo cancellato."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 14.10.25 CORREZIONE DATI ANAGRAFICI ORDINE A COMMISSIONE OK.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 14.10.2025 — correzione dei dati anagrafici nel permesso per protezione sussidiaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordine alla Commissione Territoriale e alla Questura di correggere le generalità errate nel decreto di protezione sussidiaria e nel permesso elettronico, per silenzio-inadempimento della Commissione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 27.9.2022 Reddito cittadinanza con residenza DI FATTO OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 27.9.2022 — reddito di cittadinanza con residenza di fatto per cittadina comunitaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il requisito decennale di residenza va inteso come presenza effettiva; l'obbligo di iscrizione anagrafica formale per i comunitari integra discriminazione indiretta."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 31.1.22 Attivazione Postepay Card Roma Capitale Bonus covid 19.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 27.1.2022 — attivazione Postepay per bonus covid a richiedente asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il permesso di soggiorno provvisorio per richiesta asilo è documento di riconoscimento idoneo all'attivazione della carta prepagata già emessa da Roma Capitale per il bonus spesa covid."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma 6.6.23 RISARCIMENTO mancata accoglienza da no formalizzazione nonostante appunt. lontano OK OK OK.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 6.6.2023 — risarcimento per mancata accoglienza da ritardo nella formalizzazione della domanda d'asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Responsabilità risarcitoria del Ministero per la prassi della Questura di Roma che, ritardando la formalizzazione, ha precluso l'accesso all'accoglienza; liquidazione equitativa del danno patrimoniale e non patrimoniale."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Roma ott.2019 si matrimonio richiedente asilo senza nulal osta e pass in questura.md",
+  "titolo_pubblico": "Trib. Roma, decreto 8.10.2019 — matrimonio di richiedente asilo senza nulla osta e passaporto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome della ricorrente in chiaro nei metadati (campo 'appellant'): Mateya Yovbak"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Diritto al matrimonio del richiedente asilo anche senza nulla osta ex art. 116 c.c. e senza passaporto, identità accertabile tramite permesso di soggiorno e documento comunale. ATTENZIONE: il file sorgente riporta nome e cognome della ricorrente in chiaro nei metadati (non nel corpo del testo) — titolo pubblico e contenuto qui prodotti non li riprendono, ma il file originale necessita redazione prima di qualsiasi ulteriore uso."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Romanov.2019 iscrizione anagr.richiedente asilo SI.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 25.11.2019 — iscrizione anagrafica di richiedente asilo dopo il decreto Salvini",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il d.l. 113/2018 ha abrogato solo la procedura semplificata di iscrizione, non il diritto del richiedente asilo a iscriversi in via ordinaria; l'iscrizione anagrafica ha rilievo costituzionale."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.Torino 1134_2022 reddito di cittadinanza ANCHE CON PRESENZA PROVATA senza iscrizione anagrafica.md",
+  "titolo_pubblico": "Trib. Torino, sentenza 14.7.2022 — reddito di cittadinanza con presenza provata senza iscrizione anagrafica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Illegittima la revoca del reddito di cittadinanza per mancanza di iscrizione anagrafica quando la presenza decennale effettiva sia provata con riscontri oggettivi (Circolare Min. Lavoro 3803/2020)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Trib.brescia marzo2022 cautelare Rinnovo SUSSIDIARIA SENZA PASSAPORTO.md",
+  "titolo_pubblico": "Trib. Brescia, ordinanza 10.3.2022 — rinnovo del permesso per protezione sussidiaria senza passaporto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il rinnovo del permesso per protezione sussidiaria non può essere subordinato all'esibizione del passaporto, distinto dal titolo di viaggio; nessuna discrezionalità della Questura (Cass. SS.UU. 11535/2009)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/TribRoma 1642_2022 Apertura CONTO CORRENTE BASE con ATTESTAZIONE richeista asilo perche non scade OK OK.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 6.8.2022 — conto corrente base con attestazione di richiesta asilo non ancora scaduta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Il permesso provvisorio ex art. 4 co. 3 d.lgs. 142/2015 non è soggetto al termine semestrale del comma 1 e resta valido fino alla decisione sulla domanda, legittimando l'apertura del conto base."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale di Benevento 15.03.2022 antidiscriminatorio ASL tessera sanitaria.md",
+  "titolo_pubblico": "Trib. Benevento, ordinanza 15.3.2022 — durata della tessera sanitaria pari a quella del permesso di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Discriminatoria la circolare regionale che limita a un anno la validità della tessera sanitaria dei titolari di protezione internazionale, in contrasto con l'art. 34 TUI e l'art. 42 DPR 394/1999."
+ }
+]

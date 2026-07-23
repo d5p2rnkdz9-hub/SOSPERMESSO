@@ -1,0 +1,383 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass. ott.2018 pds sfrutt.lavorativo diritto soggettivo Giudice supera Parere PM.md",
+  "titolo_pubblico": "Cass. SS.UU., sentenza 11.12.2018, n. 32044/2018 — permesso per sfruttamento lavorativo come diritto soggettivo, parere PM non vincolante",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "John Augustine (nome del ricorrente, riportato in chiaro nei metadati del documento)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza SS.UU. su natura giuridica del permesso ex art. 22 co. 12-quater TUI; il corpo del testo (principi e ragionamento) non riporta nomi, ma i metadati in frontmatter indicano il nome per esteso del ricorrente da rimuovere in fase di redazione."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass. pen. 19225 2012 Scriminante 54 per FALSE GENERALITA vittima di tratta OK OK.md",
+  "titolo_pubblico": "Cass. pen., sentenza 21.5.2012, n. 19225/2012 — scriminante dello stato di necessità per false generalità di vittima di tratta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato solo con iniziale (\"D.\"), nessun altro dato personale identificativo presente nel testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 30.9.2019, n. 14573/2019 — motivazione apparente sulle cure disponibili nel paese d'origine (Marocco)",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente già anonimizzato nei metadati (\"cittadino marocchino (anonimizzato)\"); nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2020 reati non automaticametne ostativi per umanitaria.md",
+  "titolo_pubblico": "Cass. civ., sentenza 10.6.2020, n. 10359/2018 — precedenti penali non automaticamente ostativi al permesso umanitario",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Chaieb Imed (nome del ricorrente/parte privata, riportato in chiaro nei metadati del documento)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il corpo del testo (principi e ragionamento) non riporta nomi propri, ma il frontmatter indica per esteso il nominativo della parte privata da rimuovere in fase di redazione."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2020 rilevanti le torture in LIBIA per umanitaria.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 25.8.2020, n. 20213/2019 — rilevanza delle torture subite in Libia per la protezione umanitaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Degbe Koukou (nome del ricorrente, riportato in chiaro nei metadati del documento)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il corpo del testo non riporta nomi propri, ma il frontmatter indica per esteso il nominativo del ricorrente da rimuovere in fase di redazione."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2021 prot.umanitaria a vittima di tratta con indicatori ma non DICE NULLA OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 27.1.2021, n. 1750/2021 — protezione umanitaria a vittima di tratta nigeriana anche senza autoriconoscimento",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Lucky Franca (nome della ricorrente, riportato in chiaro nei metadati del documento)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il corpo del testo non riporta nomi propri (si parla solo di \"la richiedente\"/\"la donna\"), ma il frontmatter indica per esteso il nominativo della ricorrente da rimuovere in fase di redazione."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2021 sussidiaria anche per pericolo di vita derviante da DISASTRO AMBIENTALE.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 24.2.2021, n. 5022/2021 — protezione sussidiaria per pericolo di vita da disastro ambientale nel Delta del Niger",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente già indicato come anonimizzato nei metadati; nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.2558-2020 Umanitario per ragioni di salute.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 4.2.2020, n. 33872/2018 — protezione umanitaria per gravi condizioni di salute, non surrogabile dal permesso per cure mediche",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Baako Isaac (nome del ricorrente, riportato in chiaro nei metadati del documento)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il corpo del testo non riporta nomi propri, ma il frontmatter indica per esteso il nominativo del ricorrente da rimuovere in fase di redazione."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.25734-21 protezione umanitaria paesi transito vulnerabilita comparazione attenuata.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 9.3.2021, n. 25734/2021 — comparazione attenuata per vulnerabilità da vessazioni subite in Libia (cittadino maliano)",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come \"cittadino del Mali\" nei metadati; nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.26.4.2024 Bangladesh USURA OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 26.4.2024, n. 16232/2023 — obbligo di indagine su vittima di usura nel paese d'origine (Bangladesh)",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come \"cittadino bangladese (oscurato)\" nei metadati; nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.271_2022 causa esclusione status reati NON AUTOMATICA OK.md",
+  "titolo_pubblico": "Cass. civ., sentenza 28.4.2022, n. 22050/2019 — non automaticità dell'esclusione dallo status di rifugiato per condanna penale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza sez. II civ. Cass. Il testo riportato è una sintesi strutturata dei principi di diritto (nessun testo integrale del provvedimento); nomi delle parti presenti solo nei metadati, assenti dal corpo pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.29.12.21 Asilo e TRATTA con storia CONTRADDITTORIA OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 29.12.2021, n. 41863/2021 — credibilità del racconto contraddittorio della vittima di tratta nigeriana",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza Cass. I sez. civ. Sintesi strutturata dei principi; iniziali della ricorrente (E.D.) presenti solo nei metadati, non nel testo pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.29460.2019 Sez.Unitenov.2019 Umanitaria no retroat.md",
+  "titolo_pubblico": "Cass. SS.UU., sentenza 13.11.2019, n. 29460/2019 — irretroattività dell'abolizione della protezione umanitaria e valutazione comparativa",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza delle Sezioni Unite Civili. Esito indicato come 'misto' nel manifest (ricorso del Ministero accolto, ma principio di irretroattività favorevole al richiedente confermato). Nome del ricorrente presente solo nei metadati."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.3393_23 Doppio BINARIO art. 18 obter dicta ok.md",
+  "titolo_pubblico": "Cass. civ., sentenza 3.2.2023, n. 3393/2023 — alternatività tra denuncia e collaborazione nel permesso per sfruttamento lavorativo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza Cass. I sez. civ. Nome del ricorrente presente solo nei metadati, non nel corpo pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.676_2022 Vittime Tratta Asilo o speciale non sussidiaria VEROSIMIGLIANZA in un dato luogo e tempo.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 12.1.2022, n. 676/2022 — status di rifugiato per vittime di tratta a scopo di prostituzione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza Cass. I sez. civ. Nessun nome della ricorrente nel testo (indicata come 'cittadina nigeriana')."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.6964_2023 Cambiamenti Climatici Pakistan rilevanti per Protezione.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 8.3.2023, n. 6964/2023 — rilevanza dei cambiamenti climatici ai fini di tutte le forme di protezione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza Cass. I sez. civ. Ricorrente già anonimizzato nei metadati; nessun dato personale nel testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.SEZ UNITE 24413-2021 Umanitaria art. 8 COMPARAZIONE ATTENUATA art. 8 in aert. 3 e 2 OK OK OK.md",
+  "titolo_pubblico": "Cass. SS.UU., sentenza 9.9.2021, n. 24413/2021 — comparazione attenuata e rilievo dell'art. 8 CEDU nella protezione umanitaria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza delle Sezioni Unite Civili. Ricorso del Ministero rigettato (esito favorevole al richiedente pakistano). Nessun nome nel corpo del testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.dic. BANGLADESH Asilo COLORE PELLE E MINORE OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 3.12.2025, n. 25778/2024 — discriminazione per colore della pelle e violenza domestica su minore bengalese",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza Cass. I sez. civ. Riguarda un minore vittima di violenza domestica e discriminazione razziale (colorismo); nessun nome nel testo pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.dic.2019 Prot. Umanitaria per figlio verso adozione mite CEDU art. 8 OK OK OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 9.12.2019, n. 32041/2019 — protezione umanitaria per il genitore in vista di adozione mite del figlio minore",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza Cass. I sez. civ. Il manifest riporta come 'numero' il case_number di merito (4246/2018); il numero della decisione di Cassazione risulta 32041/2019 dai metadati del file — usato nel titolo pubblico per correttezza. Iniziali del ricorrente (K.N.) presenti solo nei metadati."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass.sett.2019 pds sfrutt.art.22 trib.civ questore no discrez. dal giudice anche senza parere pm.md",
+  "titolo_pubblico": "Cass. civ., sentenza 20.9.2019, n. 23456/2019 — giurisdizione ordinaria e ruolo attivo del giudice nel permesso per sfruttamento lavorativo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sentenza Cass. I sez. civ. Nome del ricorrente presente solo nei metadati, non nel testo pubblicabile."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass7218-2022 umanitaria integraz.lavorativa con lavoro breve per covid OK.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 8.3.2022, n. 22837/2020 — protezione umanitaria, integrazione lavorativa e sospensione per covid",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte ricorrente indicata come '[omissis]' nei metadati; nessun dato personale in chiaro nel testo."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass_4.8.23 Statsu vittima di tratta anche senza AMMISSIONE e anche per rischio di Discriminazione.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 4.8.2023, n. 4135/2022 — status di rifugiato per vittima di tratta nigeriana senza ammissione di prostituzione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata genericamente come 'cittadina nigeriana'; nessun dato identificativo in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cass_SSUU_29460-19.md",
+  "titolo_pubblico": "Cass. SS.UU., sentenza 13.11.2019, n. 29460/2019 — protezione umanitaria e irretroattività del decreto sicurezza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del cittadino straniero controparte del giudizio: 'Ceesay Alhagie' (campo parties.respondent nei metadati)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il testo del principio di diritto è anonimo, ma i metadati riportano il nome per esteso del richiedente ('Ceesay Alhagie') — va rimosso prima della pubblicazione. Nota inoltre discrepanza: il campo 'date' del file indica 2019-09-24, mentre il manifest indica 2019-11-13 (data usata per il titolo, coerente con la data nota della sentenza SS.UU. n. 29460/2019)."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cassazione n. 27205-2025 dell'11.10.2025  (2).md",
+  "titolo_pubblico": "Cass. civ., ordinanza 11.10.2025, n. 27205/2025 — status di rifugiato per vittima di tratta a fini di sfruttamento sessuale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come 'cittadina nigeriana, oscurata'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cassazione n. 7283-2024 del 19.03.2024 (1).md",
+  "titolo_pubblico": "Cass. civ., ordinanza 19.3.2024, n. 7283/2024 — status di rifugiato oltre il rischio di re-trafficking per vittima di tratta",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come 'cittadina nigeriana, oscurata'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Cassazione2020 accert.vulnerabilita e valutazione paese di origine.md",
+  "titolo_pubblico": "Cass. civ., ordinanza 14.2.2020, n. 35342/2018 — comparazione attenuata e vulnerabilità per violenze subite in transito",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte ricorrente indicata come '[omissis]'; nessun dato personale in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale Egitto Malattia psichiatrica.md",
+  "titolo_pubblico": "Comm. Terr. Bologna, decreto 12.9.2019, n. PR0003233 — protezione speciale per malattia psichiatrica grave, cittadino egiziano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Richiedente indicato genericamente come 'cittadino egiziano'; nessun dato identificativo in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale MALI epatite b cure non accessibili economicamente.md",
+  "titolo_pubblico": "Comm. Terr. Bologna, decreto 17.12.2018, n. PR0002352 — protezione speciale per inaccessibilità economica delle cure, cittadino maliano con epatite B",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Richiedente indicato genericamente come 'cittadino maliano'; nessun dato identificativo in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Bologna.2019 Protezione speciale Nigeria Tratta no minaccie rientro.md",
+  "titolo_pubblico": "Comm. Terr. Bologna, decreto 9.8.2019, n. PR0003640 — protezione speciale per vittima di tratta nigeriana senza minacce attuali al rientro",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Richiedente indicata genericamente come 'cittadina nigeriana'; nessun dato identificativo in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm. Terr.2019 Perugia_protezione speciale Pakistan Kasmir Annoso conflitto criptata.md",
+  "titolo_pubblico": "Comm. Terr. Perugia, decreto 6.9.2019 — protezione speciale per cittadino pakistano dell'Azad Kashmir in ragione del conflitto regionale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Numero di provvedimento assente nei metadati (case_number vuoto); identificabilità comunque garantita da ente, data e oggetto specifico. Richiedente indicato genericamente come 'cittadino pakistano'; nessun dato identificativo in chiaro."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Ancona status per tratta pakistano adulto indebitato per la partenza e sfruttato in Italia OK OK.md",
+  "titolo_pubblico": "Comm. terr. Ancona, decreto 2.11.2020 — status di rifugiato per tratta pakistana a scopo di sfruttamento lavorativo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come 'Cittadino pakistano (anonimizzato)'. Riconosciuto status di rifugiato per appartenenza al gruppo sociale delle vittime di tratta (sfruttamento lavorativo, non sessuale, su richiedente adulto maschio)."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Caserta maggio2022 sussidiaria ESCLUDE PROTEZIONE INTERNA.md",
+  "titolo_pubblico": "Comm. terr. Caserta, decreto 20.4.2022 — protezione sussidiaria per violenza indiscriminata in Mali, IFA esclusa",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato genericamente come 'Richiedente (anonimizzato)'. Sussidiaria riconosciuta ex art. 14 lett. c) nonostante parziale inattendibilità del racconto personale, per violenza indiscriminata oggettiva nella zona di origine e impossibilità di IFA."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Napoli Guineana Vittima Tratta matrimonbio forzato MGF OK.md",
+  "titolo_pubblico": "Comm. terr. Salerno (sez. Napoli), decreto 13.11.2023 — status di rifugiata guineana per tratta e persecuzione di genere",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come 'Cittadina guineana (anonimizzata)'. Doppia appartenenza a gruppo sociale (vittime di violenza domestica e vittime di tratta) e compelling reasons ex art. 1C(5) Convenzione di Ginevra."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Territoriale 2020 status a minore GHANA tratta con promessa giuramento debito sfruttamento lavorativo.md",
+  "titolo_pubblico": "Comm. terr. Salerno (sez. Napoli), decreto 24.2.2020 — status di rifugiato per minore ghanese vittima di tratta lavorativa",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro: SALIFU Naziru"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il campo 'parties.appellant' riporta il nome e cognome reale del minore ricorrente (SALIFU Naziru), da rimuovere/redigere prima della pubblicazione; il corpo del testo non lo cita. Decisione di merito chiara e ben motivata."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Territoriale TORINO II 2020 Tratta minore Bangladesh sfruttamento lavorativo.md",
+  "titolo_pubblico": "Comm. terr. Torino, decreto 12.10.2020 — status di rifugiato per minore bengalese vittima di tratta lavorativa",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro: SHEIKH Junayed"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il campo 'parties.appellant' riporta nome e cognome reale del minore ricorrente (SHEIKH Junayed), da redigere prima della pubblicazione; il corpo del testo non lo cita. Contiene anche citazione di precedente CEDU (Chowdury e altri c. Grecia, 2017) rilevante per art. 4 CEDU."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.Torino 2023 NIger. Nessuna protezione non credibilita minaccie in Nig.e attuale collocazione sfruttatori.md",
+  "titolo_pubblico": "Comm. terr. Torino, decreto 28.10.2022 — diniego per non credibilità di vicenda di tratta nigeriana",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata come 'Richiedente (Nigeria)'. Decisione di rigetto (diniego): provenienza da zona a rischio tratta non basta se il racconto specifico è incoerente; esclusa anche sussidiaria (assenza violenza indiscriminata a Benin City) e protezione speciale (difetto di radicamento)."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Comm.terr.Salerno2020 status rifugiato minore vittima di tratta scopo lavorativo GHANA.md",
+  "titolo_pubblico": "Comm. terr. Salerno (sez. Napoli), decreto 24.2.2020 — status di rifugiato a minore ghanese, valutazione di credibilità",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come 'Richiedente (Ghana, minore)'; giudice relatore Dr.ssa Roda citata (non è dato personale del ricorrente). Stessa data e materia del record precedente (Comm.Territoriale 2020 GHANA) ma fascicolo distinto: qui l'accento è sulla valutazione di credibilità e sulle fonti COI (USDOS, UNODC)."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commisione Napoli 2022 Status Nigeria Uomo tratta accattonaggio Ok.md",
+  "titolo_pubblico": "Comm. terr. Salerno (sez. Napoli), decreto 12.10.2022 — status di rifugiato per vittima di tratta nigeriana sfruttata nell'accattonaggio",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato come 'Richiedente anonimizzato (cittadino nigeriano, nato a Benin City, Edo State)' — solo città di provenienza, nessuna data di nascita o nome: non identificativo. Riconoscimento status pur con dichiarazioni non credibili su orientamento sessuale, fondato sulla tratta autonomamente accertata; richiama CGUE C-148/13 e ss."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commisione Napoli 2023 Status Ivoriana 1994 matrimonio forzato Isolamento e  sfrutt.domestico Tunisia.md",
+  "titolo_pubblico": "Comm. terr. Salerno (sez. Napoli), decreto 3.7.2023 — status di rifugiata ivoriana per matrimonio forzato e tratta in Tunisia",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "Combinazione luogo e anno di nascita: 'nata nel 1994 a Kossou, sotto-prefettura di Toumbokro' (nessun nome, ma dato molto specifico e potenzialmente identificativo se incrociato con altre fonti)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Nessun nome presente, ma il dettaglio combinato di anno di nascita e villaggio/sotto-prefettura di provenienza è insolitamente specifico: consigliata generalizzazione (es. solo Paese/regione) in fase di redazione, per analogia col caso limite città+data di nascita."
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Commisisone Napoli 1 marzo 2021 con Dedalus Bangladesh giovane usura SUSSIDIARIA.md",
+  "titolo_pubblico": "Comm. terr. Salerno (sez. Napoli), decreto 8.3.2021 — protezione sussidiaria per debt bondage da usura in Bangladesh",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Nome e cognome del ricorrente in chiaro: MOHAMMED Abul Faysal",
+   "Data di nascita esatta del ricorrente: 07/12/1987"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il campo 'parties.appellant' riporta nome, cognome e data di nascita esatta del ricorrente — combinazione fortemente identificativa da redigere integralmente prima della pubblicazione; il corpo del testo non li cita. Sussidiaria riconosciuta ex art. 14 lett. b) per rischio di trattamenti inumani da parte del creditore usuraio."
+ }
+]

@@ -1,0 +1,830 @@
+[
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib Torino 27.10.25 RICONGIUNGIMENTO CON PROTEZIONE SPECIALE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib Torino 27.10.25 RICONGIUNGIMENTO CON PROTEZIONE SPECIALE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-27",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "14114/2025",
+  "titolo": "Trib Torino 27.10.25 RICONGIUNGIMENTO CON PROTEZIONE SPECIALE OK",
+  "oggetto": "Se il permesso di soggiorno per protezione speciale conferisca il diritto al ricongiungimento familiare dopo la riforma dell'art. 28 TUI del 2024",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5560
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib milano 3901_2026 convivenza citt italiano.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib milano 3901_2026 convivenza citt italiano.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-05-11",
+  "ente": "Tribunale di Milano",
+  "numero": "10929/2025 R.G.",
+  "titolo": "Trib milano 3901 2026 convivenza citt italiano",
+  "oggetto": "Diritto del familiare convivente di fatto di cittadino italiano all'iscrizione anagrafica e alla registrazione del contratto di convivenza senza necessità di previo permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4642
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib to TO - irregolare OK per Carta UE.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib to TO - irregolare OK per Carta UE.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-09-19",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "R.G. 6673/2025",
+  "titolo": "Trib to TO - irregolare OK per Carta UE",
+  "oggetto": "Diritto al rilascio della carta di soggiorno per familiare di cittadino UE nonostante l'irregolarita' del soggiorno al momento della domanda",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4305
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib-VE-10122021 reddito coesione (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib-VE-10122021 reddito coesione (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-12-10",
+  "ente": "Tribunale Ordinario di Venezia",
+  "numero": "5454/2020",
+  "titolo": "Trib-VE-10122021 reddito coesione (1)",
+  "oggetto": "Requisito reddituale per il rilascio del permesso di soggiorno per coesione familiare: valutazione prospettica e in concreto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4337
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Benevento 19.01.22 registrazione PATTO CONVIVENZA no 116 no residenza OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Benevento 19.01.22 registrazione PATTO CONVIVENZA no 116 no residenza OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-01-19",
+  "ente": "Tribunale di Benevento",
+  "numero": "4387/2021",
+  "titolo": "Trib. Benevento 19.01.22 registrazione PATTO CONVIVENZA no 116 no residenza OK OK",
+  "oggetto": "Registrazione anagrafica del patto di convivenza tra cittadino italiano e straniero extracomunitario",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4668
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Bologna 2.10.2024 coesione familiare con MANIFESTAZIONE ASILO NO PDS OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Bologna 2.10.2024 coesione familiare con MANIFESTAZIONE ASILO NO PDS OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-02",
+  "ente": "Tribunale Ordinario di Bologna",
+  "numero": "11057/2023",
+  "titolo": "Trib. Bologna 2.10.2024 coesione familiare con MANIFESTAZIONE ASILO NO PDS OK",
+  "oggetto": "Diritto al permesso di soggiorno per coesione familiare dello straniero irregolare con legami familiari effettivi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4119
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Bologna 26.12.2023 contratto convivenza e iscrizione anagrafica cittadino extra eu con ita OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Bologna 26.12.2023 contratto convivenza e iscrizione anagrafica cittadino extra eu con ita OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-12-26",
+  "ente": "Tribunale Ordinario di Bologna",
+  "numero": "11960/2023",
+  "titolo": "Trib. Bologna 26.12.2023 contratto convivenza e iscrizione anagrafica cittadino extra eu con ita",
+  "oggetto": "Iscrizione anagrafica per convivenza di fatto di cittadino extracomunitario con visto turistico",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4236
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Firenze nov.21_Carta a convivente cittadino italiano no residenza con contratto OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Firenze nov.21_Carta a convivente cittadino italiano no residenza con contratto OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-11-26",
+  "ente": "Tribunale Ordinario di Firenze",
+  "numero": "r.g. non specificato/2021",
+  "titolo": "Trib. Firenze nov.21 Carta a convivente cittadino italiano no residenza con contratto OK",
+  "oggetto": "Requisiti per il rilascio della carta di soggiorno per familiare di cittadino italiano - necessità della registrazione anagrafica del contratto di convivenza",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4125
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Firenzeù17 03.2025 Coppie di Fatto ISCRZIONE ANAGRAFICA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Firenzeù17 03.2025 Coppie di Fatto ISCRZIONE ANAGRAFICA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-03-17",
+  "ente": "Tribunale di Firenze",
+  "numero": "646/2025",
+  "titolo": "Trib. Firenzeù17 03.2025 Coppie di Fatto ISCRZIONE ANAGRAFICA 20260116 171820",
+  "oggetto": "Diritto all'iscrizione anagrafica e registrazione convivenza di fatto del partner extracomunitario di cittadino UE in attesa di permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5831
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Milano 26.3.2025 Agevola art. 3 Dlgs 30_2007 nipote di italiano.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Milano 26.3.2025 Agevola art. 3 Dlgs 30_2007 nipote di italiano.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-03-26",
+  "ente": "Tribunale Ordinario di Milano",
+  "numero": "25795/2023",
+  "titolo": "Trib. Milano 26.3.2025 Agevola art. 3 Dlgs 30 2007 nipote di italiano",
+  "oggetto": "Diritto al permesso di soggiorno per motivi familiari del nipote di cittadina italiana in presenza di convivenza e dipendenza economica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3036
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Roma 14.10.25 Ordina appuntamento ambascaita per incertezza sine die del portale e 614 bis OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Roma 14.10.25 Ordina appuntamento ambascaita per incertezza sine die del portale e 614 bis OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-10-14",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "14644/2025",
+  "titolo": "Trib. Roma 14.10.25 Ordina appuntamento ambascaita per incertezza sine die del portale e 614 bis",
+  "oggetto": "Violazione del diritto al ricongiungimento familiare per impossibilità di accesso ai servizi consolari",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3292
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Roma 15.4.24 Visto famliare UE controllo solo legame familiare NO A CARICO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Roma 15.4.24 Visto famliare UE controllo solo legame familiare NO A CARICO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-15",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "37866/2023",
+  "titolo": "Trib. Roma 15.4.24 Visto famliare UE controllo solo legame familiare NO A CARICO OK",
+  "oggetto": "Diniego di visto di ingresso per genitori di cittadina italiana",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-genitore-di-cittadino-italiano",
+    "rilevanza": 2
+   },
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3950
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Roma 20.01.2024 ricongiungimento rifugiata genitori infra65enni con altro figlio studente OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Roma 20.01.2024 ricongiungimento rifugiata genitori infra65enni con altro figlio studente OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-01-20",
+  "ente": "Tribunale ordinario di Roma",
+  "numero": "21787/2023",
+  "titolo": "Trib. Roma 20.01.2024 ricongiungimento rifugiata genitori infra65enni con altro figlio studente OK",
+  "oggetto": "Ricongiungimento familiare con genitori infrasessantacinquenni quando presente altro figlio nel paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4285
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Roma 22.02.2018 per rifugiato COESIONE SENZA PREVIO PDS.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Roma 22.02.2018 per rifugiato COESIONE SENZA PREVIO PDS.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2018-02-22",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "16064/2017",
+  "titolo": "Trib. Roma 22.02.2018 per rifugiato COESIONE SENZA PREVIO PDS",
+  "oggetto": "Rilascio permesso di soggiorno per motivi familiari a coniuge di rifugiato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3108
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Roma 27.04.2026 ricongiungimento Gaza rifugiata visto inaudita altera parte.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Roma 27.04.2026 ricongiungimento Gaza rifugiata visto inaudita altera parte.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-04-27",
+  "ente": "Tribunale di Roma",
+  "numero": "544/2026",
+  "titolo": "2177117s",
+  "oggetto": "Diritto al rilascio del visto di ingresso per ricongiungimento familiare in favore dei familiari (marito e quattro figli minori) di rifugiata residente in Italia, bloccati a Gaza, a fronte dell'inerzia dell'amministrazione consolare e prefettizia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4350
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Roma 30.9.24 Visto famliare UE controllo solo legame familiare NO A CARICO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Roma 30.9.24 Visto famliare UE controllo solo legame familiare NO A CARICO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-09-30",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "4810/2024",
+  "titolo": "Trib. Roma 30.9.24 Visto famliare UE controllo solo legame familiare NO A CARICO OK",
+  "oggetto": "Competenze degli uffici consolari nel rilascio di visti per ricongiungimento familiare e limiti della valutazione dei requisiti sostanziali",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3725
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Roma 8446-2024 Ricongiung. Pakistan Afghanistan Documenti facilitati cooperazione ambasciata ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Roma 8446-2024 Ricongiung. Pakistan Afghanistan Documenti facilitati cooperazione ambasciata ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-05-15",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "55341/2023",
+  "titolo": "Trib. Roma 8446-2024 Ricongiung. Pakistan Afghanistan Documenti facilitati cooperazione ambasciata",
+  "oggetto": "Ricongiungimento familiare per titolari di protezione internazionale con documentazione alternativa per provare il decesso del genitore",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4153
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Torino 16357  COPPIA FATTO STATICI si 30_07 pds 5 anni Statici sempre uguali a dinami OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Torino 16357  COPPIA FATTO STATICI si 30_07 pds 5 anni Statici sempre uguali a dinami OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-04-09",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "16357/24",
+  "titolo": "Trib. Torino 16357 COPPIA FATTO STATICI si 30 07 pds 5 anni Statici sempre uguali a dinami OK",
+  "oggetto": "Interpretazione art. 23 co. 1-bis D.lgs. 30/2007 su permessi per familiari di cittadini italiani 'statici' e portata del richiamo al TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3524
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Torino 16357_2025 COPPIA FATTO STATICI si 30_07 pds 5 anni Statici sempre uguali a dinami OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Torino 16357_2025 COPPIA FATTO STATICI si 30_07 pds 5 anni Statici sempre uguali a dinami OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-04-09",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "16357/24",
+  "titolo": "Trib. Torino 16357 2025 COPPIA FATTO STATICI si 30 07 pds 5 anni Statici sempre uguali a dinami OK",
+  "oggetto": "Interpretazione dell'art. 23 comma 1-bis D.Lgs. 30/2007 sui permessi di soggiorno per familiari di cittadini UE statici",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4013
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Torino N. R.G. 15629_2024 NO applicazione dlgs 30 07 ai familiari statici.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Torino N. R.G. 15629_2024 NO applicazione dlgs 30 07 ai familiari statici.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-12-13",
+  "ente": "Tribunale di Torino",
+  "numero": "15629/2024 R.G.",
+  "titolo": "Trib. Torino N. R.G. 15629 2024 NO applicazione dlgs 30 07 ai familiari statici",
+  "oggetto": "Inapplicabilità del d.lgs. 30/2007 al familiare di cittadino italiano 'statico' che non ha esercitato il diritto di libera circolazione, e legittimità dell'espulsione prefettizia ex art. 13 TUI",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4563
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib. Venezia ALTRO FAMILIARE di UE art. 3 Agevola pds a NIPOTE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib. Venezia ALTRO FAMILIARE di UE art. 3 Agevola pds a NIPOTE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-07-24",
+  "ente": "Tribunale Ordinario di Venezia",
+  "numero": "3126/2024",
+  "titolo": "Trib. Venezia ALTRO FAMILIARE di UE art. 3 Agevola pds a NIPOTE OK",
+  "oggetto": "Rilascio permesso soggiorno per motivi familiari a nipote di cittadino italiano 'statico' ex art. 23 comma 1bis D.Lgs. 30/2007",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4831
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Bari 14993_15 ricong. Matrim fittizio da provare no diversita culturale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Bari 14993_15 ricong. Matrim fittizio da provare no diversita culturale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2015-11-27",
+  "ente": "Tribunale Ordinario di Bari",
+  "numero": "1248/2015",
+  "titolo": "Trib.Bari 14993 15 ricong. Matrim fittizio da provare no diversita culturale",
+  "oggetto": "Ricongiungimento familiare del rifugiato - Valutazione matrimonio di comodo e differenze culturali",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4350
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Benevento 19.1.22 contratto convivenza registrato VS COMUNE no residenza no pds no NULLAOSTA OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Benevento 19.1.22 contratto convivenza registrato VS COMUNE no residenza no pds no NULLAOSTA OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-01-19",
+  "ente": "Tribunale di Benevento",
+  "numero": "4387/2021",
+  "titolo": "Trib.Benevento 19.1.22 contratto convivenza registrato VS COMUNE no residenza no pds no NULLAOSTA OK",
+  "oggetto": "Diritto alla registrazione anagrafica del patto di convivenza tra cittadino italiano e straniero extracomunitario privo di permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5213
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Bologna marzo2020 sospensiva per pds famiglia per coppia di fatto con contratto convivenza senza residenza.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Bologna marzo2020 sospensiva per pds famiglia per coppia di fatto con contratto convivenza senza residenza.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-03",
+  "ente": "Tribunale Ordinario di Bologna",
+  "numero": "21280/2019",
+  "titolo": "Trib.Bologna marzo2020 sospensiva per pds famiglia per coppia di fatto con contratto convivenza senza residenza",
+  "oggetto": "Idoneità del contratto di convivenza ex l. 76/2016 come documentazione ufficiale per permesso soggiorno motivi familiari",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4055
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Catania  gennaio 2024 ordina Comune Registrare Coppia di fatto con Italiano OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Catania  gennaio 2024 ordina Comune Registrare Coppia di fatto con Italiano OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-01-01",
+  "ente": "Tribunale di Catania",
+  "numero": "/2023",
+  "titolo": "Trib.Catania gennaio 2024 ordina Comune Registrare Coppia di fatto con Italiano",
+  "oggetto": "Necessità del permesso di soggiorno per l'iscrizione anagrafica e registrazione del contratto di convivenza del partner extracomunitario di cittadino italiano",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4755
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Civ.Roma 15.7.24 Pds RICONGIUNG. Responsabile Questura x silenzio Prefettura OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Civ.Roma 15.7.24 Pds RICONGIUNG. Responsabile Questura x silenzio Prefettura OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-07-12",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "23364-1/2024",
+  "titolo": "Trib.Civ.Roma 15.7.24 Pds RICONGIUNG. Responsabile Questura x silenzio Prefettura OK",
+  "oggetto": "Silenzio inadempimento dell'amministrazione nel procedimento di rilascio permesso di soggiorno per ricongiungimento familiare",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3502
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Firenze 23.10.24 COesione familiare con CONVIVENTE no matrimonio OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Firenze 23.10.24 COesione familiare con CONVIVENTE no matrimonio OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-15",
+  "ente": "Tribunale Ordinario di Firenze",
+  "numero": "10450/2024",
+  "titolo": "Trib.Firenze 23.10.24 COesione familiare con CONVIVENTE no matrimonio OK",
+  "oggetto": "Rilascio del permesso di soggiorno per motivi familiari a convivente di titolare di protezione sussidiaria in assenza di matrimonio formale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3251
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Foggia 22.11.22 COPPIA DI FATTO contratto di convivenza OBBLIGO COMUNE ISCRIZINE anagrafica ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Foggia 22.11.22 COPPIA DI FATTO contratto di convivenza OBBLIGO COMUNE ISCRIZINE anagrafica ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-11-30",
+  "ente": "Tribunale Ordinario di Foggia",
+  "numero": "5493/2022",
+  "titolo": "Trib.Foggia 22.11.22 COPPIA DI FATTO contratto di convivenza OBBLIGO COMUNE ISCRIZINE anagrafica",
+  "oggetto": "Natura costitutiva o ricognitiva della dichiarazione anagrafica per la convivenza di fatto e possibilità di registrazione contratto senza permesso soggiorno del partner straniero",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5072
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Milano 2020 ritardo rientro in Italia no effetto automatico con motivi di famiglia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Milano 2020 ritardo rientro in Italia no effetto automatico con motivi di famiglia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-11-06",
+  "ente": "Tribunale di Milano",
+  "numero": "29742/2020",
+  "titolo": "Trib.Milano 2020 ritardo rientro in Italia no effetto automatico con motivi di famiglia",
+  "oggetto": "Bilanciamento tra decadenza automatica per assenza prolungata e diritto all'unità familiare nel rinnovo permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 2
+   },
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4634
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Milano2020 pds coesione familiare da visto turistico e un anno di ritardo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Milano2020 pds coesione familiare da visto turistico e un anno di ritardo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-11",
+  "ente": "Tribunale di Milano",
+  "numero": "28780/2019",
+  "titolo": "Trib.Milano2020 pds coesione familiare da visto turistico e un anno di ritardo",
+  "oggetto": "Irricevibilità dell'istanza di permesso di soggiorno per motivi familiari per tardiva presentazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3606
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.MilanoAprile2021 concetto di agevola anche in corte giustizia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.MilanoAprile2021 concetto di agevola anche in corte giustizia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-04-25",
+  "ente": "Tribunale Ordinario di Milano",
+  "numero": "11914/2021",
+  "titolo": "Trib.MilanoAprile2021 concetto di agevola anche in corte giustizia",
+  "oggetto": "Diritto all'iscrizione anagrafica del partner extracomunitario in coppia di fatto senza permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4937
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.MilanoAprile2021 residenza senza pds con contratto di convivenza e concetto di agevola.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.MilanoAprile2021 residenza senza pds con contratto di convivenza e concetto di agevola.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-04-25",
+  "ente": "Tribunale Ordinario di Milano",
+  "numero": "11914/2021",
+  "titolo": "Trib.MilanoAprile2021 residenza senza pds con contratto di convivenza e concetto di agevola",
+  "oggetto": "Iscrizione anagrafica di convivenza di fatto con partner extracomunitario privo di permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5234
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Min.Palermo 2017 art.31 senza passaporto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Min.Palermo 2017 art.31 senza passaporto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2017-09-26",
+  "ente": "Tribunale per i minorenni di Palermo",
+  "numero": "2227/2017",
+  "titolo": "Trib.Min.Palermo 2017 art.31 senza passaporto",
+  "oggetto": "Competenza del Tribunale per i minorenni nell'ordinare l'esecuzione dei propri decreti per il rilascio di permessi di soggiorno per assistenza minori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3657
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Minorenni 2021 ART.31 si per procedimento decadenza art.700.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Minorenni 2021 ART.31 si per procedimento decadenza art.700.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-04-13",
+  "ente": "Tribunale per i Minorenni del Piemonte e Valle d'Aosta",
+  "numero": "532/2021",
+  "titolo": "Trib.Minorenni 2021 ART.31 si per procedimento decadenza art.700",
+  "oggetto": "Autorizzazione alla permanenza per motivi umanitari della madre straniera irregolare nell'interesse dei figli minori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "assistenza-minore-articolo-31",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2894
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Monza 17.4.24 COPPIE FATTO NON DISCRIM. ITA L. SU UE 234_12.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Monza 17.4.24 COPPIE FATTO NON DISCRIM. ITA L. SU UE 234_12.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-17",
+  "ente": "Tribunale Ordinario di Milano",
+  "numero": "4206/2024",
+  "titolo": "Trib.Monza 17.4.24 COPPIE FATTO NON DISCRIM. ITA L. SU UE 234 12",
+  "oggetto": "Diritto all'iscrizione anagrafica del partner straniero in convivenza di fatto con cittadino italiano senza permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4747
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Monza2021 ordina iscrizione anagrafgica con contratto di CONVIVENZA tra ita e visto turistico OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Monza2021 ordina iscrizione anagrafgica con contratto di CONVIVENZA tra ita e visto turistico OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-08-06",
+  "ente": "Tribunale di Monza",
+  "numero": "6455/2021",
+  "titolo": "Trib.Monza2021 ordina iscrizione anagrafgica con contratto di CONVIVENZA tra ita e visto turistico OK",
+  "oggetto": "Iscrizione anagrafica del partner extracomunitario in relazione stabile con cittadino italiano senza permesso di soggiorno preventivo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4330
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Palermo 2023 reclamo si residenza con contratto di convivenza OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Palermo 2023 reclamo si residenza con contratto di convivenza OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-01-27",
+  "ente": "Tribunale di Palermo",
+  "numero": "8015/2022",
+  "titolo": "Trib.Palermo 2023 reclamo si residenza con contratto di convivenza",
+  "oggetto": "Ammissibilità del contratto di convivenza ex L. 76/2016 come documentazione ufficiale per iscrizione anagrafica partner straniero",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4967
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Palermo aprile2020 carta soggiorno per familiare ITALIANO senza redditi.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Palermo aprile2020 carta soggiorno per familiare ITALIANO senza redditi.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-03-05",
+  "ente": "Tribunale di Palermo",
+  "numero": "654/2019",
+  "titolo": "Trib.Palermo aprile2020 carta soggiorno per familiare ITALIANO senza redditi",
+  "oggetto": "Applicabilità dei requisiti reddituali previsti dal d.lgs. 30/2007 per il rilascio della carta di soggiorno permanente ai familiari di cittadini italiani",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 3
+   },
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-italiani-dinamici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3177
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Roma 19.7.24 Ricongiungimento fratelli + onere prova attenuato rifugiati+DNA extrema ratio OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Roma 19.7.24 Ricongiungimento fratelli + onere prova attenuato rifugiati+DNA extrema ratio OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-07-19",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "21309/2024",
+  "titolo": "Trib.Roma 19.7.24 Ricongiungimento fratelli + onere prova attenuato rifugiati+DNA extrema ratio OK",
+  "oggetto": "Diniego visti ricongiungimento familiare per insufficiente documentazione di titolare protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4742
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/Trib.Roma 20.1.24 RICONGIUNGIMENTO rifugiato padre e SUOCERA senza richiamo ric.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/Trib.Roma 20.1.24 RICONGIUNGIMENTO rifugiato padre e SUOCERA senza richiamo ric.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-01-20",
+  "ente": "Tribunale di Roma",
+  "numero": "28522/2024",
+  "titolo": "Trib.Roma 20.1.24 RICONGIUNGIMENTO rifugiato padre e SUOCERA senza richiamo ric",
+  "oggetto": "Ricongiungimento familiare per rifugiati con congiunti non ordinariamente ricongiungibili",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4847
+ }
+]

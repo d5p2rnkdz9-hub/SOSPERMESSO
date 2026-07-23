@@ -1,0 +1,842 @@
+[
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Brescia 25.3.2025 700 formalizzazione accesso ricevuta ART. 18 TER OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Brescia 25.3.2025 700 formalizzazione accesso ricevuta ART. 18 TER OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-03-24",
+  "ente": "Tribunale di Brescia",
+  "numero": "713-1/2025",
+  "titolo": "Trib.Brescia 25.3.2025 700 formalizzazione accesso ricevuta ART. 18 TER OK OK",
+  "oggetto": "Diritto alla formalizzazione della domanda di permesso di soggiorno per casi speciali ex art. 18/18-ter/22 comma 12-quater d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   },
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-violenza-domestica",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4104
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Catania 2019 no automatismo per revoca sussidiaria per reati gravi.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Catania 2019 no automatismo per revoca sussidiaria per reati gravi.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-02-15",
+  "ente": "Tribunale di Catania",
+  "numero": "RG 13254/2017",
+  "titolo": "Trib.Catania 2019 no automatismo per revoca sussidiaria per reati gravi",
+  "oggetto": "La revoca della protezione sussidiaria per condanna a reati ex art. 407, comma 2, lett. a) c.p.p. richiede valutazione individuale della pericolosita sociale e non opera in modo automatico",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3516
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Catanzaro 18.2.2021 Bengalese Sfruttamento Libia Inganno e debito Gruppo sociale TRATTA Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Catanzaro 18.2.2021 Bengalese Sfruttamento Libia Inganno e debito Gruppo sociale TRATTA Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-02-18",
+  "ente": "Tribunale di Catanzaro",
+  "numero": "6346/2018",
+  "titolo": "Trib.Catanzaro 18.2.2021 Bengalese Sfruttamento Libia Inganno e debito Gruppo sociale TRATTA",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima di tratta finalizzata allo sfruttamento lavorativo dal Bangladesh alla Libia e poi in Italia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5046
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-04-13",
+  "ente": "Tribunale di Roma",
+  "numero": "3964/2023",
+  "titolo": "Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO",
+  "oggetto": "La sospensione del provvedimento di rifiuto della protezione speciale comporta il diritto al rilascio del permesso di soggiorno per richiesta di asilo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3086
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Cuneo2022 pds motivi salute SENEGAL ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Cuneo2022 pds motivi salute SENEGAL ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-04-14",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "R.G. Imm. [omissis]",
+  "titolo": "Trib.Cuneo2022 pds motivi salute SENEGAL ok",
+  "oggetto": "Rinnovo del permesso di soggiorno per cure mediche per cittadino affetto da HIV in relazione all'effettiva accessibilita delle cure nel Paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4982
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Firen24 RICEZCONVSpec.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Firen24 RICEZCONVSpec.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-15",
+  "ente": "Tribunale di Firenze",
+  "numero": "12514/2023",
+  "titolo": "Trib.Firen24 RICEZCONVSpec",
+  "oggetto": "Diritto alla presentazione della domanda di conversione del permesso per protezione speciale in permesso di lavoro nonostante la circolare ministeriale del 1 giugno 2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5958
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Firenze 6.3.24 sospensiva per radicamento speciale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Firenze 6.3.24 sospensiva per radicamento speciale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-06",
+  "ente": "Tribunale di Firenze",
+  "numero": "2346/2024",
+  "titolo": "Trib.Firenze 6.3.24 sospensiva per radicamento speciale",
+  "oggetto": "Sospensione dell'esecutivita' del provvedimento di rigetto della protezione internazionale per manifesta infondatezza, in ragione del radicamento socio-lavorativo ai fini della protezione speciale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3341
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Firenze Eugenio Alfano genn.2020 Art.18 No parere PM Superabile sempre OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Firenze Eugenio Alfano genn.2020 Art.18 No parere PM Superabile sempre OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-01-08",
+  "ente": "Tribunale di Firenze",
+  "numero": "11257/2019",
+  "titolo": "Trib.Firenze Eugenio Alfano genn.2020 Art.18 No parere PM Superabile sempre OK OK",
+  "oggetto": "Riconoscimento del diritto al permesso di soggiorno per protezione sociale ex art. 18 d.lgs. 286/1998 per vittima di tratta a scopo di sfruttamento sessuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5776
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Firenze_giugno 2023 BANGLA DEBITO tratta scopo sfruttamento lavorativo e accenni ambientali.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Firenze_giugno 2023 BANGLA DEBITO tratta scopo sfruttamento lavorativo e accenni ambientali.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-05-03",
+  "ente": "Tribunale di Firenze",
+  "numero": "16935/2019",
+  "titolo": "Trib.Firenze giugno 2023 BANGLA DEBITO tratta scopo sfruttamento lavorativo e accenni ambientali",
+  "oggetto": "Riconoscimento dello status di rifugiato per cittadino bengalese vittima di tratta a scopo di sfruttamento lavorativo, con nesso tra vulnerabilità climatica, debito migratorio e tratta",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6072
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Milano 4.7.22 si rinnovo pds protez.Speciale senza passaporto con precedente pds.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Milano 4.7.22 si rinnovo pds protez.Speciale senza passaporto con precedente pds.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-07-04",
+  "ente": "Tribunale di Milano",
+  "numero": "13135/2022",
+  "titolo": "Trib.Milano 4.7.22 si rinnovo pds protez.Speciale senza passaporto con precedente pds",
+  "oggetto": "Ammissibilita' della domanda di rinnovo del permesso di soggiorno per protezione speciale (casi speciali) senza passaporto, utilizzando il precedente permesso di soggiorno per richiesta asilo come documento equipollente",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4097
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Milano dic.21 SOSPENDE rigetto prot.spec.Questore in CPR OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Milano dic.21 SOSPENDE rigetto prot.spec.Questore in CPR OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-12-20",
+  "ente": "Tribunale di Milano",
+  "numero": "42845/2021",
+  "titolo": "Trib.Milano dic.21 SOSPENDE rigetto prot.spec.Questore in CPR",
+  "oggetto": "Sospensione del provvedimento di inammissibilita' della domanda di protezione speciale emesso dalla Questura nei confronti di soggetto trattenuto in CPR",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2719
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Milano giugno 2024 Speciale per malattia pelle con MEDCOI EUAA OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Milano giugno 2024 Speciale per malattia pelle con MEDCOI EUAA OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-01-29",
+  "ente": "Tribunale di Milano",
+  "numero": "RG non indicato (n. cronol. non leggibile)",
+  "titolo": "Trib.Milano giugno 2024 Speciale per malattia pelle con MEDCOI EUAA OK",
+  "oggetto": "Riconoscimento della protezione speciale per malattia dermatologica cronica (orticaria colinergica) con cure inaccessibili nel paese di origine per ragioni economiche, alla luce del report MedCOI EUAA",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 7107
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Milano sett.2019 Stats a psichiatric Gambia OK OK OK e residenza abituale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Milano sett.2019 Stats a psichiatric Gambia OK OK OK e residenza abituale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-07-03",
+  "ente": "Tribunale di Milano",
+  "numero": "50610/2017",
+  "titolo": "Trib.Milano sett.2019 Stats a psichiatric Gambia OK OK OK e residenza abituale",
+  "oggetto": "Riconoscimento dello status di rifugiato per appartenenza a particolare gruppo sociale (malati mentali) nel Gambia, con valutazione del paese di residenza abituale in caso di cittadinanza incerta",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5792
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Napoli febbr.2020 pds cure mediche oridnanza su 700 su gravita malattia Nigeria OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Napoli febbr.2020 pds cure mediche oridnanza su 700 su gravita malattia Nigeria OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-14",
+  "ente": "Tribunale di Napoli",
+  "numero": "132/2020",
+  "titolo": "Trib.Napoli febbr.2020 pds cure mediche oridnanza su 700 su gravita malattia Nigeria",
+  "oggetto": "Rilascio del permesso di soggiorno per cure mediche ex art. 19 comma 2 lett. d-bis per cardiomiopatia dilatativa grave",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3945
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Napoli maggio2021 Protezione specile direttamente al QUESTORE ordina il rilascio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Napoli maggio2021 Protezione specile direttamente al QUESTORE ordina il rilascio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-05-24",
+  "ente": "Tribunale di Napoli",
+  "numero": "11264/2021",
+  "titolo": "Trib.Napoli maggio2021 Protezione specile direttamente al QUESTORE ordina il rilascio",
+  "oggetto": "Ammissibilita della domanda di protezione speciale presentata direttamente al Questore ex art. 19, co. 1.1 e 1.2 d.lgs. 286/1998",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3644
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Pal.24 700 CONVSPEC.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Pal.24 700 CONVSPEC.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-01-09",
+  "ente": "Tribunale di Palermo",
+  "numero": "53/2024",
+  "titolo": "Trib.Pal.24 700 CONVSPEC",
+  "oggetto": "Conversione del permesso di soggiorno per protezione speciale in permesso di soggiorno per lavoro subordinato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2014
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma 14.2.2024 Accesso Protezione speciale SI PEC SI DA Protez.Temporanea UCRAINI.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma 14.2.2024 Accesso Protezione speciale SI PEC SI DA Protez.Temporanea UCRAINI.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-02-14",
+  "ente": "Tribunale di Roma",
+  "numero": "37931/2023",
+  "titolo": "Trib.Roma 14.2.2024 Accesso Protezione speciale SI PEC SI DA Protez.Temporanea UCRAINI",
+  "oggetto": "Accesso alla procedura di protezione speciale per titolari di protezione temporanea ucraina e validita della domanda presentata tramite PEC",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5232
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma 2021 Bengalsese sfruttamento Libia Debito tratta.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma 2021 Bengalsese sfruttamento Libia Debito tratta.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-11-10",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "45924/2019",
+  "titolo": "Trib.Roma 2021 Bengalsese sfruttamento Libia Debito tratta",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima di tratta a fini di sfruttamento lavorativo proveniente dal Bangladesh",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4606
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma 21.7.23 Status ragazzo Bengalese TRATTA Debito Usuraio e sfruttamento in diversi paesi INDICATORI OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma 21.7.23 Status ragazzo Bengalese TRATTA Debito Usuraio e sfruttamento in diversi paesi INDICATORI OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-07-28",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "10182/2023",
+  "titolo": "Trib.Roma 21.7.23 Status ragazzo Bengalese TRATTA Debito Usuraio e sfruttamento in diversi paesi INDICATORI OK OK",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima di tratta a scopo di sfruttamento lavorativo con schiavitu da debito (bonded labour)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5613
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma 9.6.23 VISTO art. 10 Cost. o art. 25 per rimpatrio illegitt. richiedente asilo OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma 9.6.23 VISTO art. 10 Cost. o art. 25 per rimpatrio illegitt. richiedente asilo OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-06-09",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "RG 20121/2023",
+  "titolo": "Trib.Roma 9.6.23 VISTO art. 10 Cost. o art. 25 per rimpatrio illegitt. richiedente asilo OK OK",
+  "oggetto": "Diritto del richiedente asilo illegittimamente rimpatriato al reingresso sul territorio italiano per registrare la domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6932
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma Asilo madre ai minori PREVALE INTERESSE MINORI SU NORME ASILO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma Asilo madre ai minori PREVALE INTERESSE MINORI SU NORME ASILO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-06-21",
+  "ente": "Tribunale ordinario di Roma",
+  "numero": "35413/2021 R.G.",
+  "titolo": "Trib.Roma Asilo madre ai minori PREVALE INTERESSE MINORI SU NORME ASILO OK",
+  "oggetto": "Riconoscimento status di rifugiato a minori con doppia cittadinanza (egiziana e statunitense), figli di madre titolare di status di rifugiata",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5022
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma aprile 2024 BILE sospensiva e pds attesa asilo per PROTEZ. SPECIALE.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma aprile 2024 BILE sospensiva e pds attesa asilo per PROTEZ. SPECIALE.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-05",
+  "ente": "Tribunale di Roma",
+  "numero": "RG 12884/2024",
+  "titolo": "Trib.Roma aprile 2024 BILE sospensiva e pds attesa asilo per PROTEZ. SPECIALE",
+  "oggetto": "Diritto al rilascio del permesso di soggiorno per richiesta di asilo a seguito della sospensione dell'efficacia del diniego di protezione speciale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3338
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma giugno2020 Tratta riconosce status e DIRITTO AL PROGRAMMA ART.18 OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma giugno2020 Tratta riconosce status e DIRITTO AL PROGRAMMA ART.18 OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-04-29",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "RW/2018",
+  "titolo": "Trib.Roma giugno2020 Tratta riconosce status e DIRITTO AL PROGRAMMA ART.18 OK OK",
+  "oggetto": "Riconoscimento dello status di rifugiato a donna nigeriana vittima di tratta a fini di sfruttamento sessuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5169
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma maggio 2024 cautelare art. 5 comma 9 protezione speciale implicita-3.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma maggio 2024 cautelare art. 5 comma 9 protezione speciale implicita-3.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-05-07",
+  "ente": "Tribunale di Roma",
+  "numero": "13029/2024",
+  "titolo": "Trib.Roma maggio 2024 cautelare art. 5 comma 9 protezione speciale implicita-3",
+  "oggetto": "Obbligo della Questura di valutare il rilascio di un diverso permesso di soggiorno (protezione speciale o coesione familiare) in sede di revoca del permesso UE per soggiornanti di lungo periodo, ai sensi degli artt. 5 co. 9 e 9 co. 9 TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5539
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma maggio2020 provvedimento 700 PDS motivi di salute presentato via pec durante corona.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma maggio2020 provvedimento 700 PDS motivi di salute presentato via pec durante corona.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-05-25",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "21277/2020",
+  "titolo": "Trib.Roma maggio2020 provvedimento 700 PDS motivi di salute presentato via pec durante corona",
+  "oggetto": "Rilascio permesso di soggiorno per cure mediche mediante ricorso d'urgenza ex art. 700 c.p.c. con istanza presentata via PEC durante emergenza COVID-19",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3323
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma maggio2022 PDS CURE Mediche con ricostruzione di varie tipoligie cure mediche.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma maggio2022 PDS CURE Mediche con ricostruzione di varie tipoligie cure mediche.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-04-27",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "4497/2022",
+  "titolo": "Trib.Roma maggio2022 PDS CURE Mediche con ricostruzione di varie tipoligie cure mediche",
+  "oggetto": "Riconoscimento del permesso di soggiorno per cure mediche ex art. 19, comma 2, lett. d-bis, d.lgs. 286/98 per diabete mellito insulino-trattato in fase di scompenso",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4839
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-03-11",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "1580/2020",
+  "titolo": "Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK",
+  "oggetto": "Rilascio permesso di soggiorno per cure mediche per cirrosi epatica da epatite B cronica con farmaco salvavita tenofovir inaccessibile nel paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4866
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma nov.2019 competenza giud.ordinario er conversioneda umanitario.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma nov.2019 competenza giud.ordinario er conversioneda umanitario.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-11-20",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": null,
+  "titolo": "Trib.Roma nov.2019 competenza giud.ordinario er conversioneda umanitario",
+  "oggetto": "Competenza del giudice ordinario sulla conversione del permesso di soggiorno per motivi umanitari e diritto di accesso alla procedura nonostante iscrizione anagrafica presso indirizzo virtuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4144
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma nov.22 700 Accesso prot. spec. diretta periculum in se.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma nov.22 700 Accesso prot. spec. diretta periculum in se.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-11-23",
+  "ente": "Tribunale di Roma",
+  "numero": "69777/2022",
+  "titolo": "Trib.Roma nov.22 700 Accesso prot. spec. diretta periculum in se",
+  "oggetto": "Diritto di accesso alla formalizzazione dell'istanza di protezione speciale: la Questura non puo rifiutare la formalizzazione per mancanza del passaporto quando lo straniero dispone di altro documento equipollente (carta consolare)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2946
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma ott. condanan 50 eu giorno per mancata esecuzione rilascio pds speciale e atti al PM OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma ott. condanan 50 eu giorno per mancata esecuzione rilascio pds speciale e atti al PM OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-10-02",
+  "ente": "Tribunale di Roma",
+  "numero": "16073-3/2023",
+  "titolo": "Trib.Roma ott. condanan 50 eu giorno per mancata esecuzione rilascio pds speciale e atti al PM",
+  "oggetto": "Esecuzione forzata dell'ordine giudiziale di rilascio del permesso di soggiorno per richiesta asilo: condanna ex art. 614 bis c.p.c. (astreinte) per l'inadempimento della Questura e trasmissione degli atti al PM per omessa ottemperanza a provvedimento giurisdizionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4865
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma ott.24 ricorso 700 VISTO REINGRESSO richiedente espulso prima 15 gg OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma ott.24 ricorso 700 VISTO REINGRESSO richiedente espulso prima 15 gg OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-10-17",
+  "ente": "Tribunale di Roma",
+  "numero": "37676/2024",
+  "titolo": "Trib.Roma ott.24 ricorso 700 VISTO REINGRESSO richiedente espulso prima 15 gg OK",
+  "oggetto": "Diritto al visto di reingresso in Italia per richiedente asilo illegittimamente rimpatriato prima dello spirare del termine per impugnare il provvedimento di inammissibilita della domanda reiterata di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6472
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Roma2020 visto umanitario RE810.09art.25 reingresso per reiterata retrafficking.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Roma2020 visto umanitario RE810.09art.25 reingresso per reiterata retrafficking.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-11",
+  "ente": "Tribunale di Roma",
+  "numero": "63898/2019",
+  "titolo": "Trib.Roma2020 visto umanitario RE810.09art.25 reingresso per reiterata retrafficking",
+  "oggetto": "Ordine al MAE di consentire il reingresso in Italia di vittima di tratta illegittimamente rimpatriata, mediante visto ex art. 25 Reg. CE 810/2009, per presentare domanda reiterata di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3782
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Salerno marzo 24 Speciale dopo piantedosi II rimane ART. 8 IN ART.5C.6 RADICAMENTO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Salerno marzo 24 Speciale dopo piantedosi II rimane ART. 8 IN ART.5C.6 RADICAMENTO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-26",
+  "ente": "Tribunale Ordinario di Salerno",
+  "numero": "2153/24",
+  "titolo": "Trib.Salerno marzo 24 Speciale dopo piantedosi II rimane ART. 8 IN ART.5C.6 RADICAMENTO",
+  "oggetto": "Sospensione dell'efficacia esecutiva del diniego di protezione internazionale dichiarato manifestamente infondato, in ragione del radicamento socio-lavorativo e della persistenza della tutela ex art. 8 CEDU nell'art. 5 c.6 TUI dopo il decreto Cutro",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4521
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Sassari 26.4.24 Convertibilita Cure mediche gia richiesto al Piantedosi II OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Sassari 26.4.24 Convertibilita Cure mediche gia richiesto al Piantedosi II OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-26",
+  "ente": "Tribunale di Cagliari",
+  "numero": "1769/2024",
+  "titolo": "Trib.Sassari 26.4.24 Convertibilita Cure mediche gia richiesto al Piantedosi II OK",
+  "oggetto": "Convertibilita del permesso di soggiorno per cure mediche ex art. 19, comma 2, lett. d-bis in permesso per motivi di lavoro dopo l'entrata in vigore del d.l. 20/2023 (c.d. decreto Cutro)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4299
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Torino 24.12.24 Status Bengalese SFRUTTAMENTO IN LIBIA rischio di retrafficking.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Torino 24.12.24 Status Bengalese SFRUTTAMENTO IN LIBIA rischio di retrafficking.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-12-23",
+  "ente": "Tribunale di Torino",
+  "numero": "68/2024",
+  "titolo": "Trib.Torino 24.12.24 Status Bengalese SFRUTTAMENTO IN LIBIA rischio di retrafficking",
+  "oggetto": "Riconoscimento dello status di rifugiato per vittima di tratta a scopo di sfruttamento lavorativo proveniente dal Bangladesh con schiavitu da debito",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4930
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Torino giugno 2023 TUNISIA SUSSIDIARIA per CARCERE trattamenti disumani.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Torino giugno 2023 TUNISIA SUSSIDIARIA per CARCERE trattamenti disumani.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-05-10",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "24587/21",
+  "titolo": "Trib.Torino giugno 2023 TUNISIA SUSSIDIARIA per CARCERE trattamenti disumani",
+  "oggetto": "Riconoscimento della protezione sussidiaria ex art. 14 lett. b) d.lgs. 251/2007 per rischio di trattamenti inumani e degradanti nelle carceri tunisine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4206
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Torino luglio 2024 domanda reieterata post cutro PROTEZIONE SPECIALE per SFRUTT.LAVORATIVO no denuncia ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Torino luglio 2024 domanda reieterata post cutro PROTEZIONE SPECIALE per SFRUTT.LAVORATIVO no denuncia ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-07-08",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "4957/2024",
+  "titolo": "Trib.Torino luglio 2024 domanda reieterata post cutro PROTEZIONE SPECIALE per SFRUTT.LAVORATIVO no denuncia",
+  "oggetto": "Riconoscimento della protezione speciale post D.L. 20/2023 (decreto Cutro) per sfruttamento lavorativo in Italia quale condizione di vulnerabilita",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 2
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 7284
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Torino marzo2020 Savio art.18 percorso sociale no denuncia.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Torino marzo2020 Savio art.18 percorso sociale no denuncia.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-03-05",
+  "ente": "Tribunale di Torino",
+  "numero": "3409/2019",
+  "titolo": "Trib.Torino marzo2020 Savio art.18 percorso sociale no denuncia",
+  "oggetto": "Rilascio del permesso di soggiorno per protezione sociale ex art. 18 D.Lgs. 286/1998 senza necessità di denuncia penale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4466
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.Ven. genn.23 pds valido more giudizio su Prot.Spec.Questore.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.Ven. genn.23 pds valido more giudizio su Prot.Spec.Questore.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-01-31",
+  "ente": "Tribunale di Venezia",
+  "numero": null,
+  "titolo": "Trib.Ven. genn.23 pds valido more giudizio su Prot.Spec.Questore",
+  "oggetto": "Attuazione del provvedimento cautelare di sospensione del diniego di protezione speciale mediante rilascio di un titolo di soggiorno provvisorio",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3332
+ },
+ {
+  "id": "kb:asilo_1_protezione_vulnerabilita/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/asilo_1_protezione_vulnerabilita/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-09-21",
+  "ente": "Tribunale di Firenze",
+  "numero": "9425/2023",
+  "titolo": "Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA",
+  "oggetto": "Chi impugna il diniego di rinnovo del permesso di soggiorno per ragioni familiari e risulta inespellibile ha diritto al rilascio di un permesso di soggiorno provvisorio nelle more del giudizio, per non trovarsi in un limbo giuridico",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3627
+ }
+]

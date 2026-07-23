@@ -1,0 +1,824 @@
+[
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Toscana 13.3.2024 cautelare SI Conversione pds cure mediche prima piantedosi II in Lavoro OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Toscana 13.3.2024 cautelare SI Conversione pds cure mediche prima piantedosi II in Lavoro OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-03-13",
+  "ente": "Tribunale Amministrativo Regionale per la Toscana",
+  "numero": "232/2024 REG.RIC.",
+  "titolo": "Tar Toscana 13.3.2024 cautelare SI Conversione pds cure mediche prima piantedosi II in Lavoro",
+  "oggetto": "Conversione del permesso di soggiorno per cure mediche in permesso per lavoro subordinato/attesa occupazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 2866
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Toscana 2017 lavoro autonomo indifferente evasione fiscale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Toscana 2017 lavoro autonomo indifferente evasione fiscale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2018-11-27",
+  "ente": "TAR Toscana - Firenze",
+  "numero": "N. 01538/2018 REG.PROV.COLL. - N. 00650/2018 REG.RIC.",
+  "titolo": "Tar Toscana 2017 lavoro autonomo indifferente evasione fiscale",
+  "oggetto": "Diniego di rinnovo del permesso per lavoro autonomo fondato sull'evasione fiscale e impossibilita di dedurne l'inesistenza del reddito documentato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-autonomo-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-autonomo-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2928
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar Toscana genn.2024 FLUSSI STAGIONALE convertibili lavoro con 3 mesi anche senza 13 giornate OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar Toscana genn.2024 FLUSSI STAGIONALE convertibili lavoro con 3 mesi anche senza 13 giornate OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2023-12-19",
+  "ente": "Tribunale Amministrativo Regionale per la Toscana",
+  "numero": "01380/2023",
+  "titolo": "Tar Toscana genn.2024 FLUSSI STAGIONALE convertibili lavoro con 3 mesi anche senza 13 giornate",
+  "oggetto": "Conversione del permesso di soggiorno stagionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2243
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar veneto dic, 2024 cautelare FLUSSI pds attesa occupazione per cessata azienda.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar veneto dic, 2024 cautelare FLUSSI pds attesa occupazione per cessata azienda.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-12-11",
+  "ente": "Tribunale Amministrativo Regionale per il Veneto",
+  "numero": "01465/2024",
+  "titolo": "Tar veneto dic, 2024 cautelare FLUSSI pds attesa occupazione per cessata azienda",
+  "oggetto": "Rilascio del permesso di soggiorno per attesa occupazione in caso di rinuncia del datore di lavoro durante la procedura di emersione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4115
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Tar.Marche 2019 conversione in quota di pds stagionale con soli 3 mesi di lavoro stagionale 39 gg agricolo in 3 mesi.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Tar.Marche 2019 conversione in quota di pds stagionale con soli 3 mesi di lavoro stagionale 39 gg agricolo in 3 mesi.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2019-11-08",
+  "ente": "TAR Marche - Ancona",
+  "numero": "N. 00688/2019 REG.PROV.COLL. - N. 00323/2019 REG.RIC.",
+  "titolo": "Tar.Marche 2019 conversione in quota di pds stagionale con soli 3 mesi di lavoro stagionale 39 gg agricolo in 3 mesi",
+  "oggetto": "Requisito trimestrale (39 giornate agricole) per la conversione del permesso stagionale in permesso per lavoro subordinato in quota",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3137
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib Torino 4.12.2024 pds salute con diritto LAVORO sempre OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib Torino 4.12.2024 pds salute con diritto LAVORO sempre OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-12-04",
+  "ente": "Tribunale di Torino - Sezione Nona Civile",
+  "numero": "14676/2024",
+  "titolo": "Trib Torino 4.12.2024 pds salute con diritto LAVORO sempre OK",
+  "oggetto": "Diritto al lavoro del titolare di permesso di soggiorno per cure mediche ex art. 19 co. 2 lett. d-bis TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4760
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib. Roma 19.04.2024 pds cure no 6 mesi ma 1 Anno.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib. Roma 19.04.2024 pds cure no 6 mesi ma 1 Anno.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-19",
+  "ente": "Tribunale di Roma - Diciottesima Sezione Civile",
+  "numero": "12179/2024",
+  "titolo": "Trib. Roma 19.04.2024 pds cure no 6 mesi ma 1 Anno",
+  "oggetto": "Durata annuale del permesso di soggiorno per cure mediche ex art. 19 co. 2 lett. d-bis TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3159
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Bologna 17.2.22 ex art.700 presentazione domanda PDS cure mediche SENZA PASSAPORTO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Bologna 17.2.22 ex art.700 presentazione domanda PDS cure mediche SENZA PASSAPORTO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-02-17",
+  "ente": "Tribunale Ordinario di Bologna",
+  "numero": "945/2022",
+  "titolo": "Trib.Bologna 17.2.22 ex art.700 presentazione domanda PDS cure mediche SENZA PASSAPORTO",
+  "oggetto": "Diritto alla presentazione della domanda di permesso di soggiorno per cure mediche senza passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4455
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Bologna giugno Cure mediche Convertibile lavoro applica previgente normativa OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Bologna giugno Cure mediche Convertibile lavoro applica previgente normativa OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-03-01",
+  "ente": "Tribunale di Bologna - Sezione Specializzata Immigrazione",
+  "numero": "13340/2022",
+  "titolo": "Trib.Bologna giugno Cure mediche Convertibile lavoro applica previgente normativa",
+  "oggetto": "Diritto al permesso di soggiorno per cure mediche ex art. 19 co. 2 lett. d-bis TUI, convertibile in permesso per lavoro, applicando disciplina previgente al D.L. 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5770
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-04-13",
+  "ente": "Tribunale di Roma",
+  "numero": "3964/2023",
+  "titolo": "Trib.Civ. 13.4.23 SOSPENSIVA prot. spec. diretta Questura RILASCIO PDS ATTESA ASILO",
+  "oggetto": "Rilascio PDS per richiesta di asilo a seguito di sospensione giudiziaria del diniego di protezione speciale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2828
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Cuneo2022 pds motivi salute SENEGAL ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Cuneo2022 pds motivi salute SENEGAL ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-04-14",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "R.G. Imm. [omissis]",
+  "titolo": "Trib.Cuneo2022 pds motivi salute SENEGAL ok",
+  "oggetto": "Rinnovo del permesso di soggiorno per cure mediche per cittadino affetto da HIV in relazione all'effettiva accessibilita delle cure nel Paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4319
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Napoli febbr.2020 pds cure mediche oridnanza su 700 su gravita malattia Nigeria OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Napoli febbr.2020 pds cure mediche oridnanza su 700 su gravita malattia Nigeria OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-14",
+  "ente": "Tribunale di Napoli",
+  "numero": "132/2020",
+  "titolo": "Trib.Napoli febbr.2020 pds cure mediche oridnanza su 700 su gravita malattia Nigeria",
+  "oggetto": "Rilascio del permesso di soggiorno per cure mediche ex art. 19 comma 2 lett. d-bis per cardiomiopatia dilatativa grave",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3531
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Pal.24 700 CONVSPEC.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Pal.24 700 CONVSPEC.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-01-09",
+  "ente": "Tribunale di Palermo",
+  "numero": "53/2024",
+  "titolo": "Trib.Pal.24 700 CONVSPEC",
+  "oggetto": "Ordine alla Questura di fissare appuntamento per la conversione del permesso di soggiorno per protezione speciale in permesso per lavoro subordinato mediante ricorso d'urgenza ex art. 700 c.p.c.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2075
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Roma 12.2.2026 - Status rifugiato tratta Bangladesh schiavitu da debito.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Roma 12.2.2026 - Status rifugiato tratta Bangladesh schiavitu da debito.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-02-12",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "RG 37481/2024",
+  "titolo": "Trib.Roma 12.2.26 Tratta Asilo Bangladesh debito e schiavitu anche paese transito e indicatori",
+  "oggetto": "Riconoscimento dello status di rifugiato a cittadino bengalese vittima di tratta a scopo di sfruttamento lavorativo e di schiavitù da debito, con rilevanza degli sfruttamenti subiti anche nei paesi di transito (Iraq, Grecia) e in Italia, e applicazione degli indicatori di tratta UNHCR/OIL.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   },
+   {
+    "slug": "sfruttamento-lavorativo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 6500
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Roma 14.6.24 PDS gravidanza SENZA PASSAPORTO e no Terza via Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Roma 14.6.24 PDS gravidanza SENZA PASSAPORTO e no Terza via Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-06-14",
+  "ente": "Tribunale di Roma - XVIII Sezione Civile Specializzata Immigrazione",
+  "numero": "17834/2024",
+  "titolo": "Trib.Roma 14.6.24 PDS gravidanza SENZA PASSAPORTO e no Terza via",
+  "oggetto": "Diritto al rilascio del permesso di soggiorno per cure mediche/gravidanza ex artt. 19 co. 2 lett. d) TUI e 28 co. 1 lett. c) DPR 394/99 anche in assenza di passaporto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4590
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Roma agosto 2023 Reingresso con Lungo soggiornate anche dpo un anno permanenza estero Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Roma agosto 2023 Reingresso con Lungo soggiornate anche dpo un anno permanenza estero Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-07-21",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "12859/2023",
+  "titolo": "Trib.Roma agosto 2023 Reingresso con Lungo soggiornate anche dpo un anno permanenza estero",
+  "oggetto": "Diritto al reingresso del titolare di permesso UE per soggiornanti di lungo periodo e necessità del visto",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4765
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Roma maggio2020 provvedimento 700 PDS motivi di salute presentato via pec durante corona.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Roma maggio2020 provvedimento 700 PDS motivi di salute presentato via pec durante corona.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-05-25",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "21277/2020",
+  "titolo": "Trib.Roma maggio2020 provvedimento 700 PDS motivi di salute presentato via pec durante corona",
+  "oggetto": "Rilascio permesso di soggiorno per cure mediche mediante ricorso d'urgenza ex art. 700 c.p.c. con istanza presentata via PEC durante emergenza COVID-19",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3158
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Roma maggio2022 PDS CURE Mediche con ricostruzione di varie tipoligie cure mediche.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Roma maggio2022 PDS CURE Mediche con ricostruzione di varie tipoligie cure mediche.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-04-27",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "4497/2022",
+  "titolo": "Trib.Roma maggio2022 PDS CURE Mediche con ricostruzione di varie tipoligie cure mediche",
+  "oggetto": "Riconoscimento del permesso di soggiorno per cure mediche ex art. 19, comma 2, lett. d-bis, d.lgs. 286/98 per diabete mellito insulino-trattato in fase di scompenso",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "cure-mediche-dopo-ingresso-con-visto-per-cure-mediche",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4492
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-03-11",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": "1580/2020",
+  "titolo": "Trib.Roma marzo2021 CURE MEDICHE Ebatite B Senegal farmaco salvavita a pagamento OK OK",
+  "oggetto": "Rilascio permesso di soggiorno per cure mediche per cirrosi epatica da epatite B cronica con farmaco salvavita tenofovir inaccessibile nel paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4773
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.Sassari 26.4.24 Convertibilita Cure mediche gia richiesto al Piantedosi II OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.Sassari 26.4.24 Convertibilita Cure mediche gia richiesto al Piantedosi II OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-26",
+  "ente": "Tribunale di Cagliari",
+  "numero": "1769/2024",
+  "titolo": "Trib.Sassari 26.4.24 Convertibilita Cure mediche gia richiesto al Piantedosi II OK",
+  "oggetto": "Convertibilita del permesso di soggiorno per cure mediche ex art. 19, comma 2, lett. d-bis in permesso per motivi di lavoro dopo l'entrata in vigore del d.l. 20/2023 (c.d. decreto Cutro)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4632
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-09-21",
+  "ente": "Tribunale di Firenze",
+  "numero": "9425/2023",
+  "titolo": "Trib.firenze sett.23 SI pds da sospensiva NO TERZA VIA",
+  "oggetto": "Rilascio di permesso di soggiorno provvisorio in pendenza del giudizio di impugnazione del diniego di rinnovo del permesso per motivi familiari, senza necessita di ricorso ex art. 700 c.p.c. (terza via)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3790
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-11-22",
+  "ente": "Tribunale Ordinario di Roma",
+  "numero": null,
+  "titolo": "Trib.roma febbr.2024 COLLA No terza via pds provvisorio inespellibile e coercizione indiretta",
+  "oggetto": "Ordine alla Questura di rilascio del permesso di soggiorno provvisorio per richiesta asilo a soggetto inespellibile ex art. 19 comma 1 d.lgs. 286/98 in pendenza di giudizio di impugnazione del diniego di permesso per coesione familiare",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3872
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/cons_stato_ord_7128_2023_visto_studio_mezzi_sussistenza_conto_corrente.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/cons_stato_ord_7128_2023_visto_studio_mezzi_sussistenza_conto_corrente.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2023-09-25",
+  "ente": "Consiglio di Stato - Sezione Quarta",
+  "numero": "R.G. 7128/2023",
+  "titolo": "Cons.Stato sett.2023 Visto STUDIO ok alle somme sul conto corrente OK",
+  "oggetto": "Dimostrazione dei mezzi di sussistenza per il visto di studio mediante somme disponibili sul conto corrente dell'interessato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3238
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/cons_stato_sez_iii_ord_2074_2025_conversione_cure_mediche_lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/cons_stato_sez_iii_ord_2074_2025_conversione_cure_mediche_lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_di_stato",
+  "data": "2025-06-09",
+  "ente": "Consiglio di Stato",
+  "numero": "946/2025 R.G. - 2074/2025 R.P.C.",
+  "titolo": "Consiglio STato. -conversione cure mediche lavoro",
+  "oggetto": "Convertibilità del permesso di soggiorno da cure mediche a lavoro per istanze presentate prima del d.l. 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3559
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_brescia_932_2022_rinnovo_pds_studio_giustificato_motivo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_brescia_932_2022_rinnovo_pds_studio_giustificato_motivo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2022-10-11",
+  "ente": "TAR Lombardia - Sezione staccata di Brescia",
+  "numero": "115/2022",
+  "titolo": "TAR Bs 10.10.22 si rinnovo pds STUDIO senza esami con giustificato motivo",
+  "oggetto": "Rinnovo del permesso per studio senza il superamento delle verifiche di profitto in presenza di giustificato motivo (pandemia Covid-19)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2897
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_latina_13_01_2025_sospensione_revoca_nullaosta_flussi_non_colpevolezza.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_latina_13_01_2025_sospensione_revoca_nullaosta_flussi_non_colpevolezza.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale_amministrativo",
+  "data": "2025-01-13",
+  "ente": "TAR Lazio - Sezione staccata di Latina",
+  "numero": "738/2024",
+  "titolo": "Tar latina sospensione revoca nullaosta FLUSSI Principio NOn colpevolezza",
+  "oggetto": "Sospensione cautelare della revoca del nulla osta per lavoro stagionale (flussi) fondata sulla mancata sottoscrizione del contratto di soggiorno non imputabile al lavoratore",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2674
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_lazio_12503_2025_visto_studio_rischio_migratorio_fideiussione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_lazio_12503_2025_visto_studio_rischio_migratorio_fideiussione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-06-24",
+  "ente": "TAR Lazio - Roma",
+  "numero": "2227/2025",
+  "titolo": "Tar Lazio 24.6.25 Visto Studio No rischio MIgratorio se non imminente+fideiussione associazione",
+  "oggetto": "Visto di studio, rischio migratorio non imminente e validita della garanzia finanziaria prestata da terzi diversi dai genitori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4991
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_lazio_2021_visto_studio_garanzia_fratello_duplicato.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_lazio_2021_visto_studio_garanzia_fratello_duplicato.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-06-07",
+  "ente": "TAR Lazio",
+  "numero": "04983/2021",
+  "titolo": "Tar Lazio giugno2021 Cautelare VISTO STUDIO si garanzia economica dal FRATELLO",
+  "oggetto": "Validita della garanzia economica per il visto di studio prestata dal fratello residente in Italia e illegittimita della circolare MIUR che la limita ai genitori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3051
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_lazio_2021_visto_studio_garanzia_fratello_ze.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_lazio_2021_visto_studio_garanzia_fratello_ze.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-06-07",
+  "ente": "TAR Lazio",
+  "numero": "04983/2021",
+  "titolo": "Tar Lazio ZE ZE giugno2021 Cautelare VISTO STUDIO si garanzia economica dal FRATELLO",
+  "oggetto": "Validita della garanzia economica per il visto di studio prestata dal fratello residente in Italia e illegittimita della circolare MIUR che la limita ai genitori",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3141
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_milano_ord_1110_2023_conversione_studio_lavoro_extraquote.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_milano_ord_1110_2023_conversione_studio_lavoro_extraquote.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2023-12-01",
+  "ente": "TAR Lombardia - Milano",
+  "numero": "2152/2023",
+  "titolo": "TAR Milano 1.12.2023 conversione pds studio lavoro no quote si legge vigente alla risposta",
+  "oggetto": "Conversione del permesso per studio in permesso per lavoro al di fuori delle quote del decreto flussi ex art. 6 TUI come modificato dal D.L. 75/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-autonomo-conversione-da-altro-permesso",
+    "rilevanza": 2
+   },
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2849
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_perugia_6_08_2024_flussi_reddito_impresa_30000.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_perugia_6_08_2024_flussi_reddito_impresa_30000.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale_amministrativo",
+  "data": "2024-08-06",
+  "ente": "TAR Umbria",
+  "numero": "305/2024",
+  "titolo": "Tar Perugia 6.08.2024 FLUSSI reddito impresa 30.000 anche meno con prospettive miglioramento oK",
+  "oggetto": "Soglia reddituale di 30.000 euro per il nulla osta al lavoro nei flussi, non automaticamente preclusiva e valutabile in chiave prognostica",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5385
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tar_piemonte_1199_2021_pds_studio_corso_diverso_fungibilita.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tar_piemonte_1199_2021_pds_studio_corso_diverso_fungibilita.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-12-23",
+  "ente": "TAR Piemonte",
+  "numero": "130/2021",
+  "titolo": "TAR Piemonte23.12.21 si rilascio e non solo rinnovo pds STUDIO con corso diverso dal visto OK",
+  "oggetto": "Rilascio del permesso per studio in caso di iscrizione a un corso universitario diverso da quello indicato nel visto di ingresso (fungibilita dei corsi)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3814
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/trib_torino_2025_antidiscriminazione_visti_studio_iran.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/trib_torino_2025_antidiscriminazione_visti_studio_iran.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-11-07",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "19223-1/2025",
+  "titolo": "Trib.Torino 8.11.25 ANTIDISCRIMINAZIONE VISTI STUDIO RITARDO singolo e Asgi OK",
+  "oggetto": "Carattere discriminatorio ex art. 43 TUI del sistema di prenotazione dei visti di studio per studenti iraniani e legittimazione ad agire dell'ASGI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3853
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/tribunale-modena-7-02-2020+1-- (1).md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/tribunale-modena-7-02-2020+1-- (1).md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2020-02-07",
+  "ente": "Tribunale di Modena",
+  "numero": "463/2020",
+  "titolo": "tribunale-modena-7-02-2020+1-- (1)",
+  "oggetto": "Diritto all'iscrizione anagrafica e registrazione della convivenza di fatto per partner extracomunitario privo di permesso di soggiorno con cittadino UE, alla luce della Direttiva 2004/38/CE e della legge 76/2016",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3733
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/App ROma 9.1.2020 Risarcimento danni equitativo ritardo visto ricongiungimento familiare (1)-output.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/App ROma 9.1.2020 Risarcimento danni equitativo ritardo visto ricongiungimento familiare (1)-output.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2020-01-09",
+  "ente": "Corte d'Appello di Roma",
+  "numero": "3091/2017",
+  "titolo": "App ROma 9.1.2020 Risarcimento danni equitativo ritardo visto ricongiungimento familiare (1)-output",
+  "oggetto": "Risarcimento del danno non patrimoniale per illegittimo diniego del visto di ingresso per ricongiungimento familiare da parte dell'Ambasciata italiana",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4644
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/App.Catania agosto2022 per TITOLO VIAGGIO no stesse cause ostatice tipo multe di PASSAPORTO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/App.Catania agosto2022 per TITOLO VIAGGIO no stesse cause ostatice tipo multe di PASSAPORTO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_appello",
+  "data": "2022-02-24",
+  "ente": "Corte di Assise di Appello di Catania",
+  "numero": "N. 18/21 SIGE - N. 2/16 RG. AA",
+  "titolo": "App.Catania agosto2022 per TITOLO VIAGGIO no stesse cause ostatice tipo multe di PASSAPORTO OK",
+  "oggetto": "Applicabilità delle cause ostative al rilascio del passaporto (art. 3, lett. d), L. 1185/1967) al rilascio del titolo di viaggio per il titolare di protezione sussidiaria ai sensi dell'art. 24 d.lgs. 251/2007, con particolare riferimento al mancato pagamento di una multa penale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5961
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Appello Cons.Stato GInevra 2024 silenzio indennizzo rilascio pds 10 mesi.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Appello Cons.Stato GInevra 2024 silenzio indennizzo rilascio pds 10 mesi.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2024-02-27",
+  "ente": "Consiglio di Stato",
+  "numero": "RG 10779/2023 (appello avverso TAR Lazio n. 17942/2023)",
+  "titolo": "Appello Cons.Stato GInevra 2024 silenzio indennizzo rilascio pds 10 mesi",
+  "oggetto": "Diritto all'indennizzo da mero ritardo ex art. 2-bis, co. 1-bis, L. 241/1990 per il ritardo di 10 mesi nel rilascio del permesso di soggiorno (termine di legge: 60 giorni ex art. 5, co. 9, d.lgs. 286/1998), con contestazione della sentenza TAR Lazio che aveva respinto la domanda sostenendo la necess",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 6193
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/C.Stato 10225_2023 reato stupefacente no AUTOMATISMO OSTATIVO CON REQUISITI LUNGO SOGGIORN. OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/C.Stato 10225_2023 reato stupefacente no AUTOMATISMO OSTATIVO CON REQUISITI LUNGO SOGGIORN. OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2023-11-28",
+  "ente": "Consiglio di Stato",
+  "numero": "1414/2023 REG.RIC.",
+  "titolo": "C.Stato 10225 2023 reato stupefacente no AUTOMATISMO OSTATIVO CON REQUISITI LUNGO SOGGIORN. OK",
+  "oggetto": "Se l'automatismo preclusivo al rinnovo del permesso di soggiorno per reati ostativi ex art. 4 c.3 d.lgs. 286/1998 ceda il passo a una valutazione discrezionale della pericolosità sociale in concreto per il cittadino straniero che abbia maturato i requisiti per il permesso di soggiorno UE per soggior",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5695
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/C.Stato 20.1.23 per rilascio PDS Rilevanza fatto post ricorso es RIABILITAIZIONE.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/C.Stato 20.1.23 per rilascio PDS Rilevanza fatto post ricorso es RIABILITAIZIONE.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2023-01-20",
+  "ente": "Consiglio di Stato",
+  "numero": "4149/2020 REG.RIC.",
+  "titolo": "C.Stato 20.1.23 per rilascio PDS Rilevanza fatto post ricorso es RIABILITAIZIONE",
+  "oggetto": "Rilevanza nel giudizio amministrativo di sopravvenienze favorevoli al ricorrente (in particolare la riabilitazione penale) intervenute dopo l'adozione del provvedimento di revoca del permesso di soggiorno per lungo soggiornanti, ai fini della rivalutazione della pericolosità sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6085
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/CAss.Ott.2019 Diritto e obbligo chiedere rinnovo pds in CARCERE e si convivenza prima di arresto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/CAss.Ott.2019 Diritto e obbligo chiedere rinnovo pds in CARCERE e si convivenza prima di arresto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-10-17",
+  "ente": "Corte di Cassazione",
+  "numero": "50487/2019",
+  "titolo": "CAss.Ott.2019 Diritto e obbligo chiedere rinnovo pds in CARCERE e si convivenza prima di arresto",
+  "oggetto": "Legittimità dell'espulsione ex art. 16 comma 5 TUI come sanzione alternativa alla detenzione di straniero con permesso di soggiorno scaduto e non rinnovato durante la carcerazione",
+  "esito": "questura",
+  "permessi": [],
+  "kb_size": 5785
+ }
+]

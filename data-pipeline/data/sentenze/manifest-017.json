@@ -1,0 +1,846 @@
+[
+ {
+  "id": "kb:imm_1_famiglia_minori/ricorso Giulia 2022 nullaosta  per familiare a seguito da ricongiungimento familiare ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/ricorso Giulia 2022 nullaosta  per familiare a seguito da ricongiungimento familiare ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-07-10",
+  "ente": "Tribunale Civile di Roma",
+  "numero": "non specificato",
+  "titolo": "ricorso Giulia 2022 nullaosta per familiare a seguito da ricongiungimento familiare ok",
+  "oggetto": "Interpretazione estensiva art. 29, c. 4, d.lgs. 286/98 per applicare l'ingresso del familiare al seguito anche ai titolari di visto per ricongiungimento familiare",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5146
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/temp_nosig_Trib.Monza 17.4.24 COPPIE FATTO NON DISCRIM. ITA L. SU UE 234_12.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/temp_nosig_Trib.Monza 17.4.24 COPPIE FATTO NON DISCRIM. ITA L. SU UE 234_12.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-17",
+  "ente": "Tribunale Ordinario di Milano, Prima Civile",
+  "numero": "n. 4206/2024 (R.G. 41723/2023)",
+  "titolo": "temp nosig Trib.Monza 17.4.24 COPPIE FATTO NON DISCRIM. ITA L. SU UE 234 12",
+  "oggetto": "Diritto all'iscrizione anagrafica del partner straniero convivente di fatto con cittadino italiano senza permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6576
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib fi coesione fam sentenza.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/trib fi coesione fam sentenza.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-12-15",
+  "ente": "Tribunale Ordinario di Firenze",
+  "numero": "10116/2025",
+  "titolo": "trib fi coesione fam sentenza",
+  "oggetto": "Requisito dei due anni di soggiorno legale ininterrotto per la coesione familiare: inapplicabilità dell'art. 28-bis TUI al permesso ex art. 30 TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2914
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib firenze 2025 coesione familiare assenza soggiorno biennale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/trib firenze 2025 coesione familiare assenza soggiorno biennale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-06-19",
+  "ente": "Tribunale di Firenze",
+  "numero": "6641/2025",
+  "titolo": "trib firenze 2025 coesione familiare assenza soggiorno biennale",
+  "oggetto": "Istanza di sospensiva del decreto di rigetto della domanda di rilascio del permesso di soggiorno per protezione speciale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3263
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib milano 2021 PDS famiglia sorella Citt Italiano convivenza no coabitazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/trib milano 2021 PDS famiglia sorella Citt Italiano convivenza no coabitazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-10-15",
+  "ente": "Tribunale Ordinario di Milano",
+  "numero": "5169/2021",
+  "titolo": "trib milano 2021 PDS famiglia sorella Citt Italiano convivenza no coabitazione",
+  "oggetto": "Revoca del permesso di soggiorno per motivi familiari per mancata convivenza con sorella cittadina italiana",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4518
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/trib_to_ord_17082021.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_1_famiglia_minori/trib_to_ord_17082021.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2021-05-17",
+  "ente": "Tribunale Ordinario di Torino",
+  "numero": "21607/2019",
+  "titolo": "trib to ord 17082021",
+  "oggetto": "Ricongiungimento familiare di genitore under 65 con figli in patria impossibilitati al sostentamento per gravi motivi di salute",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3205
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/1. Ricorso 10.7.24 FEDE mancata risposta Prefettura convocazione contratto soggiorno flussi ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/1. Ricorso 10.7.24 FEDE mancata risposta Prefettura convocazione contratto soggiorno flussi ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-07-10",
+  "ente": "Tribunale Amministrativo Regionale per il Lazio - Roma",
+  "numero": "10.7.24",
+  "titolo": "1. Ricorso 10.7.24 FEDE mancata risposta Prefettura convocazione contratto soggiorno flussi ok",
+  "oggetto": "Illegittimità del silenzio-inadempimento della Prefettura sulla richiesta di convocazione per sottoscrizione contratto di soggiorno nella procedura flussi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5296
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/C. Stato aprile 2018 rinnovo pds lavoro giudizio prognostico su reddito.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/C. Stato aprile 2018 rinnovo pds lavoro giudizio prognostico su reddito.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2017-10-10",
+  "ente": "Consiglio di Stato - Sezione Terza",
+  "numero": "N. 04694/2017 REG.PROV.COLL. - N. 05623/2017 REG.RIC.",
+  "titolo": "C. Stato aprile 2018 rinnovo pds lavoro giudizio prognostico su reddito",
+  "oggetto": "Valutazione del requisito reddituale per il rinnovo del permesso per lavoro subordinato come giudizio prognostico",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2952
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/C.Stato 2.4.25 VISTO da flussi OBBLIGO PA NASCE DA RICHIESTA APPUNTAMENTO NO IMPORTA PIATTAFORMA ok ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/C.Stato 2.4.25 VISTO da flussi OBBLIGO PA NASCE DA RICHIESTA APPUNTAMENTO NO IMPORTA PIATTAFORMA ok ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_di_stato",
+  "data": "2025-04-02",
+  "ente": "Consiglio di Stato",
+  "numero": "2819/2025",
+  "titolo": "C.Stato 2.4.25 VISTO da flussi OBBLIGO PA NASCE DA RICHIESTA APPUNTAMENTO NO IMPORTA PIATTAFORMA ok ok",
+  "oggetto": "Silenzio-inadempimento della PA sulla richiesta di appuntamento per visto da decreto flussi indipendentemente dalla piattaforma",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3216
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/C.Stato2018 NO convertibilita Religione a Lavoro e ragionamento generale su tipicita convertibilita lavoro.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/C.Stato2018 NO convertibilita Religione a Lavoro e ragionamento generale su tipicita convertibilita lavoro.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2018-01-24",
+  "ente": "Consiglio di Stato",
+  "numero": "476/2018",
+  "titolo": "C.Stato2018 NO convertibilita Religione a Lavoro e ragionamento generale su tipicita convertibilita lavoro",
+  "oggetto": "Conversione del permesso di soggiorno per motivi religiosi in permesso per lavoro subordinato",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "motivi-religiosi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4867
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/CAss.28201_2021 Inespellibilita SEMPRE PDS no terza via OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/CAss.28201_2021 Inespellibilita SEMPRE PDS no terza via OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-10-14",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "28201/2021",
+  "titolo": "CAss.28201 2021 Inespellibilita SEMPRE PDS no terza via OK",
+  "oggetto": "Diritto al permesso di soggiorno per motivi familiari del parente collaterale convivente con cittadino italiano ex art. 19, comma 2, lett. c) TUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4720
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/CGUE 3.10.2019 REDDITO QUALSIASI ANCHE DA TERZO O FAMILIARE PDS LUngo sogg. MA STABILE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/CGUE 3.10.2019 REDDITO QUALSIASI ANCHE DA TERZO O FAMILIARE PDS LUngo sogg. MA STABILE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2019-10-03",
+  "ente": "Corte di Giustizia dell'Unione Europea (Terza Sezione)",
+  "numero": "C-302/18",
+  "titolo": "CGUE 3.10.2019 REDDITO QUALSIASI ANCHE DA TERZO O FAMILIARE PDS LUngo sogg. MA STABILE OK",
+  "oggetto": "Interpretazione della nozione di 'risorse stabili e regolari' per l'acquisizione dello status di soggiornante di lungo periodo UE e possibilità di considerare risorse provenienti da terzi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5338
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cass 15796_2025 Bangladesh debito tratta sfruttamento lavorativo paese transito disastro climatico.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cass 15796_2025 Bangladesh debito tratta sfruttamento lavorativo paese transito disastro climatico.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2026-04-03",
+  "ente": "Corte di Cassazione",
+  "numero": "8309/2026 (R.G. 15796/2025)",
+  "titolo": "Cass.3 aprile 2026 BANGLADESH Debito indicatore tratta e Disastro climatico OK",
+  "oggetto": "Obbligo del giudice di valutare unitariamente, alla luce delle Linee Guida UNHCR, gli indicatori di tratta per sfruttamento lavorativo (vincolo debitorio, asservimento nel paese di transito, lavoro irregolare in Italia) anche in presenza di disastro climatico nel paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   },
+   {
+    "slug": "protezione-sociale-vittime-di-tratta",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6978
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2019-09-30",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "14573/2019",
+  "titolo": "Cass.2020 normativa ante Salvini gdp doveva spiegare perche le cure erano possibili nel paese origine",
+  "oggetto": "Obbligo di motivazione del giudice sulla possibilità di cure nel paese di origine in caso di espulsione di straniero affetto da patologia psichiatrica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3029
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cass.306.22 Carta soggiorno anche con errore domanda amministrat. NO FORMALISMI.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cass.306.22 Carta soggiorno anche con errore domanda amministrat. NO FORMALISMI.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-06-30",
+  "ente": "Corte Suprema di Cassazione",
+  "numero": "20856/2022",
+  "titolo": "Cass.306.22 Carta soggiorno anche con errore domanda amministrat. NO FORMALISMI",
+  "oggetto": "Riconoscimento della carta di soggiorno per familiare straniero di cittadino UE quando richiesto solo il rinnovo del permesso per motivi familiari",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "carta-di-soggiorno-per-familiari-di-cittadini-ue",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5169
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/CdS Sez. III sentenza 19 febbraio 2019 n. 1156.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/CdS Sez. III sentenza 19 febbraio 2019 n. 1156.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2019-02-19",
+  "ente": "Consiglio di Stato",
+  "numero": "1156/2019",
+  "titolo": "https:::mdp.giustizia-amministrativa.it:visualizza:?nodeRef=&amp=&schema=cds&amp=&nrg=201810415&amp=&nomeFile=201901156 23.html&amp=&subDir=Provvedimenti",
+  "oggetto": "Conversione del permesso di soggiorno per lavoro stagionale in permesso per lavoro subordinato e obbligo di preavviso di rigetto ex art. 10-bis l. 241/1990",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4920
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons. Stato 11.10.02024 Convertibilita cure mediche prima richiesta prima di Piantedosi II OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons. Stato 11.10.02024 Convertibilita cure mediche prima richiesta prima di Piantedosi II OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2024-10-11",
+  "ente": "Consiglio di Stato - Sezione Terza",
+  "numero": "7020/2024",
+  "titolo": "Cons. Stato 11.10.02024 Convertibilita cure mediche prima richiesta prima di Piantedosi II",
+  "oggetto": "Convertibilita del permesso di soggiorno per cure mediche in permesso per lavoro nel regime transitorio del D.L. 20/2023",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3081
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 03180_24 Flussi Ordina Prefettura di CONVOCARE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 03180_24 Flussi Ordina Prefettura di CONVOCARE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-03-20",
+  "ente": "TAR Campania",
+  "numero": "00809/2025 REG.RIC.",
+  "titolo": "Cons.Stato 03180 24 Flussi Ordina Prefettura di CONVOCARE OK",
+  "oggetto": "Irragionevolezza della revoca del nulla osta lavoro per decorso abnorme del tempo imputabile all'inerzia della PA",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2751
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 11.7.25 Sospensiva FLUSSI no contratto originario Promessa assunzione e Ripensamento datore ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 11.7.25 Sospensiva FLUSSI no contratto originario Promessa assunzione e Ripensamento datore ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2025-07-10",
+  "ente": "Consiglio di Stato",
+  "numero": "04948/2025",
+  "titolo": "Cons.Stato 11.7.25 Sospensiva FLUSSI no contratto originario Promessa assunzione e Ripensamento datore",
+  "oggetto": "Rilascio permesso per attesa occupazione dopo revoca nulla osta per fatto del datore di lavoro nel decreto flussi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3556
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 12.12.24 sospende revova flussi datore probabile privo ab origine.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 12.12.24 sospende revova flussi datore probabile privo ab origine.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2024-12-05",
+  "ente": "Consiglio di Stato",
+  "numero": "08527/2024",
+  "titolo": "Cons.Stato 12.12.24 sospende revova flussi datore probabile privo ab origine",
+  "oggetto": "Revoca del nulla osta al lavoro subordinato per irreperibilità del datore di lavoro e tutela del lavoratore straniero di buona fede",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2920
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 15.4.25 VI sezione PDS LUNGO SOGG. si conteggia periodo pds attesa asilo anche perche ritardo OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 15.4.25 VI sezione PDS LUNGO SOGG. si conteggia periodo pds attesa asilo anche perche ritardo OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2025-04-03",
+  "ente": "Consiglio di Stato",
+  "numero": "03222/2025",
+  "titolo": "Cons.Stato 15.4.25 VI sezione PDS LUNGO SOGG. si conteggia periodo pds attesa asilo anche perche ritardo OK",
+  "oggetto": "Computabilità dei periodi di soggiorno come richiedente asilo nel quinquennio per il permesso UE di lungo periodo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   },
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5231
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 1977-25 10.3.2025 FLUSSI SUBENTRO STESSO DATORE DIVERSA DITTA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 1977-25 10.3.2025 FLUSSI SUBENTRO STESSO DATORE DIVERSA DITTA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2025-03-06",
+  "ente": "Consiglio di Stato",
+  "numero": "01977/2025",
+  "titolo": "Cons.Stato 1977-25 10.3.2025 FLUSSI SUBENTRO STESSO DATORE DIVERSA DITTA",
+  "oggetto": "Legittimità della revoca del nulla-osta per lavoro stagionale a seguito del diniego di richiesta di subentro aziendale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3438
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 218 SI Convertibilita da RELIGIOSO a PDS LUNGO SOGGIORNANTE OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 218 SI Convertibilita da RELIGIOSO a PDS LUNGO SOGGIORNANTE OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2018-07-16",
+  "ente": "Consiglio di Stato",
+  "numero": "4317/2018",
+  "titolo": "Cons.Stato 218 SI Convertibilita da RELIGIOSO a PDS LUNGO SOGGIORNANTE OK",
+  "oggetto": "Possibilità di conversione del permesso di soggiorno per motivi religiosi in permesso per studio dopo cessazione dei presupposti religiosi",
+  "esito": "misto",
+  "permessi": [
+   {
+    "slug": "motivi-religiosi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "studio-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4226
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 24.3.25 Flussi stagion. non circol 2007_ attesa occup. sempre necessario primo contratto NO NO NO.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 24.3.25 Flussi stagion. non circol 2007_ attesa occup. sempre necessario primo contratto NO NO NO.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_di_stato",
+  "data": "2025-03-24",
+  "ente": "Consiglio di Stato",
+  "numero": "n. 2403/2025 REG.PROV.COLL.",
+  "titolo": "Cons.Stato 24.3.25 Flussi stagion. non circol 2007 attesa occup. sempre necessario primo contratto NO NO NO",
+  "oggetto": "Il permesso per attesa occupazione presuppone un rapporto di lavoro instaurato e non spetta a chi non ha mai stipulato contratto",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3541
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 29.4.25 Termine breve per stipula Contratto soggiorno FLUSSI no 180 gg. Ok Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 29.4.25 Termine breve per stipula Contratto soggiorno FLUSSI no 180 gg. Ok Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2025-03-06",
+  "ente": "Consiglio di Stato",
+  "numero": "03645/2025",
+  "titolo": "Cons.Stato 29.4.25 Termine breve per stipula Contratto soggiorno FLUSSI no 180 gg. Ok",
+  "oggetto": "Natura giuridica della convocazione per stipula contratto di soggiorno e termini per provvedere",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4132
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 3 settembre GRECO FLUSSI mai pds senza contratto con primo datore NO NO NO.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 3 settembre GRECO FLUSSI mai pds senza contratto con primo datore NO NO NO.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2025-06-19",
+  "ente": "Consiglio di Stato",
+  "numero": "7186/2025",
+  "titolo": "Cons.Stato 3 settembre GRECO FLUSSI mai pds senza contratto con primo datore NO NO NO",
+  "oggetto": "Presupposti per il rilascio del permesso di soggiorno per attesa occupazione in caso di mancata sottoscrizione del contratto di soggiorno",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4146
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 4.10.2024 CAutelare Flussi No Ambasciata giudizio su Requisiti Datore OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 4.10.2024 CAutelare Flussi No Ambasciata giudizio su Requisiti Datore OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_di_stato",
+  "data": "2024-10-04",
+  "ente": "Consiglio di Stato",
+  "numero": "6874/2024 R.G. - 3678/2024 R.Prov.Cau.",
+  "titolo": "Cons.Stato 4.10.2024 CAutelare Flussi No Ambasciata giudizio su Requisiti Datore",
+  "oggetto": "La valutazione dei requisiti economici del datore di lavoro è riservata allo Sportello Unico e non compete all'Ambasciata",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2839
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato 6423_2022 Revoca PDS lungo soggiorn SOLO pericolosita concreta no automatismi ostativi ok buchi di reddito OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato 6423_2022 Revoca PDS lungo soggiorn SOLO pericolosita concreta no automatismi ostativi ok buchi di reddito OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2022-07-22",
+  "ente": "Consiglio di Stato",
+  "numero": "04146/2018",
+  "titolo": "Cons.Stato 6423 2022 Revoca PDS lungo soggiorn SOLO pericolosita concreta no automatismi ostativi ok buchi di reddito OK",
+  "oggetto": "Revoca permesso UE per soggiornanti di lungo periodo e valutazione pericolosità sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5493
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato cautelare 4694-24_sospende revova flussi datore irreperibile probabile privo ab origine OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato cautelare 4694-24_sospende revova flussi datore irreperibile probabile privo ab origine OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_di_stato",
+  "data": "2024-12-10",
+  "ente": "Consiglio di Stato",
+  "numero": "8527/2024 R.G. - 4694/2024 R.Prov.Cau.",
+  "titolo": "Cons.Stato cautelare 4694-24 sospende revova flussi datore irreperibile probabile privo ab origine",
+  "oggetto": "La buona fede del lavoratore straniero osta alla revoca del nulla osta per irregolarità del datore resosi irreperibile",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2641
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons.Stato genn.2021 Flussi 2012 si pds attesa occup datore non firma CONTRATTO SOGGIORNO OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons.Stato genn.2021 Flussi 2012 si pds attesa occup datore non firma CONTRATTO SOGGIORNO OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_di_stato",
+  "data": "2021-01-07",
+  "ente": "Consiglio di Stato",
+  "numero": "930/2014 R.G. - 167/2021 R.Prov.Coll.",
+  "titolo": "Cons.Stato genn.2021 Flussi 2012 si pds attesa occup datore non firma CONTRATTO SOGGIORNO",
+  "oggetto": "Diritto al permesso per attesa occupazione quando il contratto di soggiorno non è stipulato per indisponibilità del datore di lavoro",
+  "esito": null,
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2963
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Cons_Stato_ord_3500_2025.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Cons_Stato_ord_3500_2025.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2025-09-26",
+  "ente": "Consiglio di Stato",
+  "numero": "6947/2025",
+  "titolo": "Cons Stato ord 3500 2025",
+  "oggetto": "Impossibilita' del rilascio del permesso per attesa occupazione in caso di inesistenza ab origine del rapporto di lavoro nella procedura decreto flussi",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3490
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Consiglio_di_Stato_n._3884_del_2016.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Consiglio_di_Stato_n._3884_del_2016.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2016-09-15",
+  "ente": "Consiglio di Stato",
+  "numero": "3884/2016",
+  "titolo": "Consiglio di Stato n. 3884 del 2016",
+  "oggetto": "Conversione del permesso di soggiorno per lavoro stagionale in permesso per lavoro subordinato dopo la scadenza del titolo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3171
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/EIUS - Consiglio di Stato, sezione III, sentenza 7 giugno 2023, n. 5604.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/EIUS - Consiglio di Stato, sezione III, sentenza 7 giugno 2023, n. 5604.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2023-06-07",
+  "ente": "Consiglio di Stato",
+  "numero": "5604/2023",
+  "titolo": "EIUS - Consiglio di Stato, sezione III, sentenza 7 giugno 2023, n. 5604",
+  "oggetto": "Conversione del permesso di soggiorno per lavoro stagionale in permesso per lavoro subordinato dopo la scadenza del titolo da convertire",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3994
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Erased_PDF TAR Molise 297 23 Ric..md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Erased_PDF TAR Molise 297 23 Ric..md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-01-10",
+  "ente": "Tribunale Amministrativo Regionale per il Molise",
+  "numero": "297/2023",
+  "titolo": "Erased PDF TAR Molise 297 23 Ric.",
+  "oggetto": "Revoca del nulla osta all'ingresso per lavoro subordinato ex art. 22 D.lgs. 286/1998: obbligo di motivazione sulle osservazioni dell'interessato",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 2350
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/Ordinanza tar lazio asseverazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/Ordinanza tar lazio asseverazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-03-03",
+  "ente": "TAR Lazio",
+  "numero": "1494/2026 RG",
+  "titolo": "Ordinanza tar lazio asseverazione",
+  "oggetto": "Revoca del nulla osta al lavoro subordinato (flussi 2021) per mancato deposito dell'asseverazione: tutela cautelare e riesame con nuova convocazione presso lo SUI",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 2723
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Bologna 834 2022 computo 5 anni x lungo soggiornate con qualsiasi pds salvo brevi soggiorni ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Bologna 834 2022 computo 5 anni x lungo soggiornate con qualsiasi pds salvo brevi soggiorni ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2022-09-28",
+  "ente": "TAR Emilia Romagna Bologna",
+  "numero": "113/2022",
+  "titolo": "TAR Bologna 834 2022 computo 5 anni x lungo soggiornate con qualsiasi pds salvo brevi soggiorni ok",
+  "oggetto": "Computabilità dei periodi di soggiorno per protezione internazionale e umanitaria ai fini del rilascio del permesso UE per soggiornanti di lungo periodo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4040
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Campania 1041_2026 Cautelare FLUSSI archiviazione per mancata firma digitale datore buona fede lavoratore.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Campania 1041_2026 Cautelare FLUSSI archiviazione per mancata firma digitale datore buona fede lavoratore.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-04-23",
+  "ente": "TAR Campania",
+  "numero": "01041/2026 REG.PROV.CAU. (R.G. 01774/2026)",
+  "titolo": "ACCOGLIMENTO CAUTELARE TAR CAMPANIA - FLUSSI",
+  "oggetto": "Legittimità dell'archiviazione della pratica di nulla osta al lavoro subordinato (decreto flussi) per mancata firma digitale del datore di lavoro, a fronte di documentata volontà assuntiva della parte datoriale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 3692
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Campania 2200_2026 FLUSSI revoca nulla osta disconoscimento datore lavoratore incolpevole nuova occupazione.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Campania 2200_2026 FLUSSI revoca nulla osta disconoscimento datore lavoratore incolpevole nuova occupazione.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-04-01",
+  "ente": "TAR Campania",
+  "numero": "02200/2026 REG.PROV.COLL. (R.G. 04668/2025)",
+  "titolo": "Tar Campania 31 marzo 2026 Flussi con disconoscimento datore PDS LAvoratore incolpevole",
+  "oggetto": "Legittimità della revoca del nulla osta per lavoro subordinato (decreto flussi) e del rigetto del permesso per attesa occupazione quando le inadempienze (mancata stipula contratto soggiorno, disconoscimento dell'istanza) sono esclusivamente imputabili al datore di lavoro originario e il lavoratore h",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "attesa-occupazione",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5023
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Campania 30.3.2026 n.2135 - Buona fede lavoratore vs datore fittizio.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Campania 30.3.2026 n.2135 - Buona fede lavoratore vs datore fittizio.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-03-30",
+  "ente": "TAR Campania, Napoli",
+  "numero": "2135/2026 (RG 2016/2025)",
+  "titolo": "Tar Campania30.3.2026 Presunzione buona fede NON complicita lavoratore con falso del datore",
+  "oggetto": "Diniego di rinnovo del permesso di soggiorno per lavoro subordinato fondato sulla fittizietà del datore: onere della prova della buona fede del lavoratore e divieto di presunzioni assolute di complicità.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   },
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5331
+ },
+ {
+  "id": "kb:imm_2_lavoro_studio/TAR Emilia-Romagna Parma 16.2.2026 n.83 - Lavoro in nero con datore iniziale flussi.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_2_lavoro_studio/TAR Emilia-Romagna Parma 16.2.2026 n.83 - Lavoro in nero con datore iniziale flussi.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-02-16",
+  "ente": "TAR Emilia-Romagna, sezione staccata di Parma",
+  "numero": "83/2026 (RG 54/2024)",
+  "titolo": "Tar Emilia 12.2.26 Va bene anche il lavoro in nero con il datore iniziale FLUSSI OK",
+  "oggetto": "Legittimità della revoca del contratto di soggiorno per asserita mancata instaurazione del rapporto di lavoro: rilevanza dell'effettivo svolgimento del rapporto pur in assenza di regolarizzazione contributiva da parte del datore, e mezzi di prova in capo al lavoratore.",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4900
+ }
+]

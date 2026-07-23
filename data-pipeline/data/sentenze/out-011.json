@@ -1,0 +1,373 @@
+[
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale di Padova 21.3.2022 assegno invalidità civile richiedenti asilo.md",
+  "titolo_pubblico": "Trib. Padova, sentenza 21.3.2022, R.G. 1535/2021 — assegno di invalidità civile e spese per soccombenza virtuale dell'INPS",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi dei soli principi (cessazione materia del contendere e soccombenza virtuale); ricorrente anonimizzato."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale-di-Bergamo-est.-Bertoncini-ord.-26-novembre-2015-XXX-avv.ti-Guariso-e-Lavanna-c.-Comune-di-Azzano-San-Paolo-avv.-Nozza-e-INPS-avv.-Imparato.md",
+  "titolo_pubblico": "Trib. Bergamo, ordinanza 26.11.2015, R.G. 1710/2015 — rimessione alla Consulta su assegno di maternità limitato ai lungosoggiornanti",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Saadaoui Souad — nome e cognome della ricorrente (parte privata) nei metadati del file (campo parties.appellant)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Testo della sintesi anonimizzato, ma il frontmatter riporta il nome completo della ricorrente: da redigere prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/Tribunale-di-Bergamo-ordinanza-del-15-aprile-2016-est.-Azzolini-XXX-avv.ti-Guariso-e-Traina-c.-INPS-avv.to-Collerone.md",
+  "titolo_pubblico": "Trib. Bergamo, ordinanza 15.4.2016, R.G. 2820/2015 — bonus bebè alla titolare di permesso per motivi familiari senza lungo soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente anonimizzata (XXX); compaiono solo giudici e avvocati, non rilevanti come dati personali."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/assegno.md",
+  "titolo_pubblico": "Trib. Piacenza, ordinanza 11.12.2016, n. 16/2015 — assegno sociale al titolare di permesso per motivi familiari via direttiva 2011/98/UE",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Accoglimento parziale: riconosciuto l'assegno sociale, rigettata la domanda antidiscriminatoria. Ricorrente anonimizzato."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus b ebe.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 1.12.2016, n. 9003/2016 — bonus bebè alla lavoratrice straniera senza permesso di lungo periodo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente anonimizzata (cittadina salvadoregna)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus bebe.md",
+  "titolo_pubblico": "C. App. Brescia, sentenza 8.11.2016, n. 151/2016 — ANF al lungosoggiornante per familiari residenti all'estero",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Nome file fuorviante ('bonus bebe'): la decisione riguarda l'assegno per il nucleo familiare (ANF). Rigettato l'appello INPS."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus bebè al titolare permesso unico lavoro.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 9.12.2016, n. 3562/2016 — bonus bebè al titolare di permesso unico lavoro",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Motivazione per relationem all'ordinanza Trib. Milano 9003/2016. Ricorrente anonimizzato (cittadino turco)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/bonus bebè titolare permesso motivi familiari.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 5.12.2016, n. 6765/2016 — bonus bebè alla titolare di permesso per motivi familiari da ricongiungimento",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente anonimizzata (cittadina egiziana)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/cass-civ-sez-lavoro-sent-data-ud-18-01-2023-06-06-.md",
+  "titolo_pubblico": "Cass. civ., sentenza 6.6.2023, n. 15827 — soggiorno decennale per l'assegno sociale: accertamento di fatto non sindacabile in cassazione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte privata indicata come A.A. (anonimizzata secondo lo standard Cassazione)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/cass-civ-sez-lavoro-sent-data-ud-18-01-2023-13-03-.md",
+  "titolo_pubblico": "Cass. civ., sentenza 13.3.2023, n. 7229 — legittimità del requisito di soggiorno decennale per l'assegno sociale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorso della titolare di protezione sussidiaria rigettato. Parte anonimizzata (A.A.)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/cass-pen-sez-vi-sent-data-ud-10-02-2026-12-05-2026.md",
+  "titolo_pubblico": "Cass. pen., sentenza 12.5.2026, n. 17045 — indebita percezione dell'assegno sociale per residenza effettiva all'estero",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Imputato anonimizzato (A.A.). Menzione del trasferimento della beneficiaria in Venezuela senza dati identificativi."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ord. Trib. Torino 6.11.2024 xxx_INPS (RDC comunitaria).md",
+  "titolo_pubblico": "Trib. Torino, ordinanza 6.11.2024, R.G.L. 1186/2022 — reddito di cittadinanza a cittadina comunitaria: residenza decennale discriminatoria",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente anonimizzata. Riferimenti a vicende familiari (coniuge in Brasile, stato di abbandono) privi di elementi identificativi."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ordinanza_tribunale_tv_15_09_22 SSN familiari di genitori IT.md",
+  "titolo_pubblico": "Trib. Treviso, ordinanza 15.9.2022, R.G. 676/2022 — iscrizione obbligatoria al SSN della familiare a carico di cittadino italiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente anonimizzata (cittadina albanese, sorella convivente a carico di cittadino italiano)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/pronuncia_40_2025 richiedenti asilo e Assegno temporaneo.md",
+  "titolo_pubblico": "Corte cost., sentenza 10.4.2025, n. 40 — legittima l'esclusione dei richiedenti asilo dall'assegno temporaneo per figli minori",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte privata indicata con sole iniziali (R.U. E.) e nazionalità: nessun dato identificativo diretto."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso VITTORIA marzo 2024 IYENGE continuità residenza irreperibilita.md",
+  "titolo_pubblico": "Trib. Roma, decreto 7.3.2024 — annullamento della cancellazione anagrafica per irreperibilità di rifugiata",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "IYENGE — cognome della ricorrente nel nome del file (nel testo compare solo 'Sig.ra I.')"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Numero di R.G. assente; estremi comunque identificabili (Trib. Roma, decreto 7.3.2024). Il cognome della parte compare solo nel filename: non pubblicare il nome file originale."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso al Giudice tutelare art. 317 cc ABIOLA nov.2021 apertura conto corrente e passaporto.md",
+  "titolo_pubblico": "Trib. Roma (Giud. tutelare), decreto 1.12.2021 — titolo di viaggio e conto corrente per minori rifugiati con padre all'estero",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "ABIOLA — nome/cognome della famiglia ricorrente nel nome del file (nel testo compaiono solo iniziali A.A.Y. e A.I.)",
+   "riferimenti a minore disabile beneficiario l. 104/1992 e a vicende di violenza domestica/matrimonio forzato (categorie particolari, ma senza identificativi nel testo)"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Numero di procedimento assente. Il nome della famiglia compare solo nel filename: non pubblicare il nome file originale."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso giulia AUUF marzo 2024 residenza di fatto Agheyisi Florida.md",
+  "titolo_pubblico": "Trib. Roma, sentenza 19.2.2024 — assegno unico universale a titolare di casi speciali: residenza come presenza di fatto",
+  "contenuto": "sintesi",
+  "anonimizzazione": "dubbio",
+  "dati_personali": [
+   "Agheyisi Florida — nome e cognome della ricorrente nel nome del file (nel testo compare solo 'Sig.ra A.F.')"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Numero di R.G. assente; estremi identificabili (Trib. Roma, Sez. lavoro, 19.2.2024). Nome completo della parte solo nel filename: non pubblicare il nome file originale."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/ricorso giulia febbr.2024 Assegno Unico AUUF residenza fatto e pds attesa occupazione.md",
+  "titolo_pubblico": "Trib. Roma, sentenza febbraio 2024 — assegno unico universale al titolare di permesso per attesa occupazione",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Estremi incompleti: manca il giorno esatto della decisione (solo '2024-02') e il numero di R.G. Parte anonimizzata (Sig.ra H.L., cittadina ucraina)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/s-comune-genova-cda-genova-rg-437-del-2015-ord-rinvio-cge-01-08-2016.md",
+  "titolo_pubblico": "C. App. Genova, ordinanza 1.8.2016, R.G. 437/2015 — rinvio pregiudiziale alla CGUE sull'ANF ai titolari di permesso unico lavoro",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ordinanza di rinvio pregiudiziale ex art. 267 TFUE (da cui la causa CGUE Martinez Silva C-449/16). Ricorrente anonimizzata."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sent. C. App. Torino 19.6.2026 XXX c. INPS (rdc) (1).md",
+  "titolo_pubblico": "C. App. Torino, sentenza 19.6.2026, R.G.L. 28/2025 — reddito di cittadinanza al rifugiato: illegittimo il requisito di residenza decennale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Applica CGUE C-747/22 (7.5.2026). Parte anonimizzata (cittadino siriano rifugiato)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sent. C. app. Torino 16.6.2026 xxx c. INPS (rdc) (1).md",
+  "titolo_pubblico": "C. App. Torino, sentenza 16.6.2026, n. 280/2026 — reddito di cittadinanza alla rifugiata: vietato anche il requisito di residenza quinquennale",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte anonimizzata (cittadina nigeriana rifugiata). Estremi completi (R.G. 516/2025, sent. n. 280/2026)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sentenza GIP TRib. Torino 7.12.2022 grave trascuratezza vs dolo.md",
+  "titolo_pubblico": "Trib. Torino (GIP), sentenza 7.12.2022 — assoluzione per difetto di dolo nella falsa dichiarazione per il reddito di cittadinanza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Imputato anonimizzato. Sentenza penale di assoluzione (art. 530 c.p.p.); numeri di ruolo presenti (RGNR 7153/2021, RG GIP 8879/2022) ma non abbinabili a persona identificata nel testo."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/sentenza Pinzauti pensione sociale e residenza di fatto.md",
+  "titolo_pubblico": "Trib. Urbino, sentenza 12.10.2023, n. 203/2021 — assegno sociale: basta la residenza effettiva, non serve l'iscrizione anagrafica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "nomi_in_chiaro",
+  "dati_personali": [
+   "Pinzauti Livio — nome e cognome del ricorrente (parte privata) nei metadati e nel nome del file"
+  ],
+  "qualita": "pubblicabile",
+  "nota": "Il testo della sintesi non ripete il nome, ma frontmatter e filename riportano il nome completo del ricorrente: da redigere prima della pubblicazione."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib bologna su diritto iscrizione anagrafica.md",
+  "titolo_pubblico": "Trib. Bologna, ordinanza 2.5.2019, n. 5022/2019 — iscrizione anagrafica del richiedente asilo dopo il decreto sicurezza",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato solo come richiedente asilo cittadino della Guinea."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib civile roma residenza e pds.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 9.2.2016, n. 47354/2015 — rinnovo del permesso umanitario senza obbligo di alloggio o iscrizione anagrafica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parte indicata con sole iniziali (F.J., cittadino gambiano)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib civile su residenza e rinnovo.md",
+  "titolo_pubblico": "Trib. Roma, ordinanza 7.10.2016, n. 60649/2015 — illegittimo subordinare il rinnovo del permesso umanitario all'iscrizione anagrafica",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente anonimizzato (cittadino del Mali)."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib roma inaudita altera parte conto corrente.md",
+  "titolo_pubblico": "Trib. Roma, decreto 14.6.2022, n. 32695/2022 — diritto del richiedente asilo al conto corrente di base con la ricevuta C3",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Decreto cautelare inaudita altera parte contro Poste Italiane. Ricorrente anonimizzato."
+ },
+ {
+  "id": "kb:asilo_4_diritti_accoglienza/trib trieste iscrizione rich. asilo retroattiva.md",
+  "titolo_pubblico": "Trib. Trieste, ordinanza 28.7.2023, n. 470/2021 — iscrizione anagrafica retroattiva del richiedente asilo dopo Corte cost. 186/2020",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicato solo come richiedente asilo cittadino del Kosovo."
+ },
+ {
+  "id": "kb:diritto_del_mare/GDPSiracusa annulla respingimento inflitto dopo Quarantena senza informazioni OK.md",
+  "titolo_pubblico": "Giud. pace Siracusa, ordinanza 1.3.2021, R.G. 2728/2020 — annullato il respingimento notificato dopo la quarantena senza informativa sull'asilo",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente con dati oscurati."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/10. Tribunale MIlano - ord. 2022.md",
+  "titolo_pubblico": "Trib. Milano, ordinanza 14.2.2022, n. 37249/2021 — iscrizione anagrafica del partner convivente di cittadino italiano senza permesso di soggiorno",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parti indicate solo come cittadino italiano e compagna argentina."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/13. Tribunale Urbino ord. 2021.md",
+  "titolo_pubblico": "Trib. Urbino, ordinanza 21.1.2021, n. 812/2020 — soggiorno ope legis del partner extracomunitario di cittadino italiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Parti indicate solo come coppia di fatto (cittadino italiano e partner extracomunitaria)."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2004.307 Zhu Chen.md",
+  "titolo_pubblico": "CGUE, sentenza 19.10.2004, C-200/02 (Zhu e Chen) — soggiorno del genitore extracomunitario che custodisce un minore cittadino UE",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Zhu e Chen è la denominazione ufficiale e pubblica della causa CGUE: non costituisce dato personale da redigere."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2014.2450 McCarthy.md",
+  "titolo_pubblico": "CGUE, sentenza 18.12.2014, C-202/13 (McCarthy) — niente permesso preventivo per familiari non UE con carta di soggiorno valida",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "McCarthy è la denominazione ufficiale della causa CGUE."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2016.659.md",
+  "titolo_pubblico": "CGUE, conclusioni AG 8.9.2016, C-133/15 (Chavez-Vilchez) — soggiorno del genitore extracomunitario con custodia effettiva di minore cittadino UE",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Il documento contiene le conclusioni dell'Avvocato Generale Szpunar, non la sentenza (che è CGUE 10.5.2017, C-133/15). Il manifest lo classifica come sentenza: decidere se pubblicarlo come conclusioni AG o sostituirlo con la sentenza."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2017.862 Lounes.md",
+  "titolo_pubblico": "CGUE, sentenza 14.11.2017, C-165/16 (Lounes) — soggiorno derivato del familiare di cittadino UE naturalizzato nello Stato ospitante",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Lounes è la denominazione ufficiale della causa CGUE."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2018.385 Coman Hamilton.md",
+  "titolo_pubblico": "CGUE, sentenza 5.6.2018, C-673/16 (Coman) — riconoscimento del matrimonio same-sex ai fini del soggiorno derivato",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Coman è la denominazione ufficiale della causa CGUE."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/2019.809 Bajtari.md",
+  "titolo_pubblico": "CGUE, sentenza 2.10.2019, C-93/18 (Bajratari) — risorse sufficienti del minore cittadino UE anche da lavoro irregolare del genitore",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Denominazione ufficiale della causa: Bajratari (nel filename scritta 'Bajtari')."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/31. Trib. Busto Arsizio 2022.md",
+  "titolo_pubblico": "Trib. Busto Arsizio, ordinanza 15.6.2022, n. 2411/2022 — iscrizione nel registro delle convivenze senza permesso di soggiorno",
+  "contenuto": "massima",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Sintesi breve dei soli principi. Parti indicate solo come coppia di fatto."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/33. Trib. Rovigo 2022.md",
+  "titolo_pubblico": "Trib. Rovigo, ordinanza 17.2.2022, n. 2043/2021 — iscrizione anagrafica della partner extracomunitaria in attesa del permesso",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "pubblicabile",
+  "nota": "Ricorrente indicata solo come cittadina nigeriana convivente con cittadino italiano."
+ },
+ {
+  "id": "kb:imm_1_famiglia_minori/34. Trib. Catania 2021.md",
+  "titolo_pubblico": "Trib. Catania, ordinanza 2021 — iscrizione anagrafica della partner extracomunitaria convivente di cittadino italiano",
+  "contenuto": "sintesi",
+  "anonimizzazione": "ok",
+  "dati_personali": [],
+  "qualita": "da_rivedere",
+  "nota": "Estremi incerti: data indicata come 3.1.2021 ma il ricorso ex art. 700 c.p.c. risulta del 30.8.2021 (la decisione è quindi verosimilmente di fine 2021); numero di R.G. non disponibile. Parti anonimizzate."
+ }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "biz:602",
+    "oggetto": "Contratto integrativo nazionale scuola. Effetti sulla programmazione delle attività scolastiche a.s. 1999-2000",
+    "ente": "",
+    "numero": ""
+  },
+  {
+    "id": "biz:603",
+    "oggetto": "D.P.C.M. 10.10.2011 recante la determinazione del limite massimo annuale di ingresso degli sportivi stranieri",
+    "ente": "Ministero dell'Interno",
+    "numero": "8219"
+  },
+  {
+    "id": "biz:604",
+    "oggetto": "Ingressi e permessi di soggiorno degli sportivi extracomunitari",
+    "ente": "CONI",
+    "numero": "3101"
+  },
+  {
+    "id": "biz:605",
+    "oggetto": "Nuovo regolamento di attuazione del testo unico sull'immigrazione. Disciplina degli ingressi degli sportivi stranieri",
+    "ente": "CONI",
+    "numero": "2024"
+  },
+  {
+    "id": "biz:606",
+    "oggetto": "Registrazione del nome dei cittadini egiziani",
+    "ente": "Ministero dell'Interno",
+    "numero": "14627"
+  },
+  {
+    "id": "biz:607",
+    "oggetto": "Iscrizione anagrafica di cittadini egiziani e cittadine tunisine",
+    "ente": "Ministero dell'Interno",
+    "numero": "16"
+  },
+  {
+    "id": "biz:608",
+    "oggetto": "Chiarimenti sulla corretta registrazione anagrafica delle cittadine tunisine",
+    "ente": "Ministero dell'Interno",
+    "numero": "13"
+  },
+  {
+    "id": "biz:609",
+    "oggetto": "Libera circolazione e soggiorno dei cittadini UE. Risorse economiche sufficienti al soggiorno",
+    "ente": "Ministero dell'Interno",
+    "numero": "7"
+  },
+  {
+    "id": "biz:610",
+    "oggetto": "Pubblicazioni di matrimonio e affissioni per modifica di nome o cognome sui siti comunali",
+    "ente": "Ministero dell'Interno",
+    "numero": "13"
+  },
+  {
+    "id": "biz:611",
+    "oggetto": "Pubblicazioni di matrimonio e affissioni per modifica di nome o cognome sui siti comunali",
+    "ente": "Ministero dell'Interno",
+    "numero": "1"
+  },
+  {
+    "id": "biz:612",
+    "oggetto": "Pubblicazioni online di matrimonio e avviso cambio nome o cognome. Blocco sistema informatico comunale",
+    "ente": "Ministero dell'Interno",
+    "numero": "26"
+  },
+  {
+    "id": "biz:613",
+    "oggetto": "Applicabilità dell'art. 98 comma 2 del D.P.R. n. 396/2000. Cambio cognome per cittadinanza",
+    "ente": "Ministero dell'Interno",
+    "numero": "397"
+  },
+  {
+    "id": "biz:614",
+    "oggetto": "Legalizzazione documenti. Problematiche su atti già legalizzati da Ambasciata e Consolati italiani in Cina",
+    "ente": "Ministero dell'Interno",
+    "numero": "11"
+  },
+  {
+    "id": "biz:615",
+    "oggetto": "Ingresso di Bulgaria e Romania in UE. Legalizzazione documenti e trascrizione sentenze di separazione e divorzio",
+    "ente": "Ministero dell'Interno",
+    "numero": "25"
+  },
+  {
+    "id": "biz:616",
+    "oggetto": "Ingresso di Bulgaria e Romania nell'Unione Europea. Legalizzazione documenti",
+    "ente": "Ministero dell'Interno",
+    "numero": "22"
+  },
+  {
+    "id": "biz:617",
+    "oggetto": "Regolamento CE 2201/2003. Trascrizione delle sentenze di separazione e divorzio. Richiesta di traduzione in italiano",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:618",
+    "oggetto": "Falsificazione di atti nella procedura per il riconoscimento della cittadinanza italiana",
+    "ente": "Ministero dell'Interno",
+    "numero": "26"
+  },
+  {
+    "id": "biz:619",
+    "oggetto": "Interpretazione degli articoli 34 e 35 del D.P.R. n. 396/2000. Scelta dell'indicazione del nome",
+    "ente": "Ministero dell'Interno",
+    "numero": "27"
+  },
+  {
+    "id": "biz:620",
+    "oggetto": "Trascrizione atti di nascita dai Paesi di cultura spagnola e correzione del cognome mediante annotazione",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:621",
+    "oggetto": "Ricorsi avverso i provvedimenti di autorizzazione o diniego al cambiamento del nome e/o cognome",
+    "ente": "Ministero dell'Interno",
+    "numero": "66"
+  },
+  {
+    "id": "biz:622",
+    "oggetto": "Attribuzione del cognome ai sensi del comma 2 dell'art. 98 del D.P.R. n. 396/2000. Chiarimenti applicativi",
+    "ente": "Ministero dell'Interno",
+    "numero": "14"
+  },
+  {
+    "id": "biz:623",
+    "oggetto": "Limite territoriale alla celebrazione di matrimoni da parte di ministri di culto diversi da quello cattolico",
+    "ente": "Ministero dell'Interno",
+    "numero": "6"
+  },
+  {
+    "id": "biz:624",
+    "oggetto": "Certificato di divorzio australiano e riconoscimento ex art. 64 della L. n. 218/95",
+    "ente": "Ministero dell'Interno",
+    "numero": "48"
+  },
+  {
+    "id": "biz:625",
+    "oggetto": "Informazioni esplicite relative al certificato di divorzio australiano",
+    "ente": "Ministero dell'Interno",
+    "numero": "40"
+  },
+  {
+    "id": "biz:626",
+    "oggetto": "Riacquisto della cittadinanza italiana. Procedura di iscrizione anagrafica",
+    "ente": "Ministero dell'Interno",
+    "numero": "14"
+  },
+  {
+    "id": "biz:627",
+    "oggetto": "Conversione dei certificati di formazione professionale ADR rilasciati da autorità estera",
+    "ente": "Ministero delle Infrastrutture e dei Trasporti",
+    "numero": "23044"
+  },
+  {
+    "id": "biz:628",
+    "oggetto": "Sospensione patenti di cittadini turchi",
+    "ente": "Ministero dell'Interno",
+    "numero": "300/A/3624/11/111/84/2/18"
+  },
+  {
+    "id": "biz:629",
+    "oggetto": "Nuove modalità di presentazione della richiesta di assegni familiari ai piccoli coltivatori diretti",
+    "ente": "Istituto Nazionale della Previdenza Sociale",
+    "numero": "149"
+  },
+  {
+    "id": "biz:630",
+    "oggetto": "Comunicazioni obbligatorie in caso di assunzione di lavoratore non comunitario regolarmente soggiornante in Italia",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "4773"
+  },
+  {
+    "id": "biz:631",
+    "oggetto": "Repubblica Slovacca. Nuovo certificato di nulla osta ai fini del matrimonio in Italia per i cittadini slovacchi",
+    "ente": "Ministero dell'Interno",
+    "numero": "29"
+  },
+  {
+    "id": "biz:632",
+    "oggetto": "Emergenza umanitaria per l'afflusso di cittadini del Nord Africa. Iscrizione schedario popolazione temporanea",
+    "ente": "Ministero dell'Interno",
+    "numero": "30"
+  },
+  {
+    "id": "biz:633",
+    "oggetto": "Attuazione delle previsioni contenute nell'articolo 32 del decreto legislativo 286/98 e successive modificazioni",
+    "ente": "Ministero dell'Interno",
+    "numero": "7672"
+  },
+  {
+    "id": "biz:634",
+    "oggetto": "Attuazione delle previsioni contenute nell'articolo 32 del decreto legislativo 286/98 e successive modificazioni",
+    "ente": "Ministero dell'Interno",
+    "numero": "8708"
+  },
+  {
+    "id": "biz:635",
+    "oggetto": "Accesso ai centri",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:636",
+    "oggetto": "Rinnovo del permesso di soggiorno di cittadini stranieri in stato di detenzione",
+    "ente": "Ministero dell'Interno",
+    "numero": "1421/12b10/2007"
+  },
+  {
+    "id": "biz:637",
+    "oggetto": "Rinuncia alla protezione internazionale",
+    "ente": "Ministero dell'Interno",
+    "numero": "2707"
+  },
+  {
+    "id": "biz:638",
+    "oggetto": "Assegno nucleo lavoratori domestici. Esclusività telematica delle domande",
+    "ente": "Istituto Nazionale della Previdenza Sociale",
+    "numero": "166"
+  },
+  {
+    "id": "biz:639",
+    "oggetto": "Flussi di ingresso dei lavoratori extracomunitari stagionali 2011. Comunicazione di conferma assunzione",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "9508"
+  },
+  {
+    "id": "biz:640",
+    "oggetto": "Chiarimenti sulla trascrizione del divorzio consensuale emesso in Brasile",
+    "ente": "Ministero dell'Interno",
+    "numero": "32"
+  },
+  {
+    "id": "biz:641",
+    "oggetto": "Domanda di disoccupazione per lavoratori rimpatriati e frontalieri italiani in Svizzera",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "172"
+  },
+  {
+    "id": "biz:642",
+    "oggetto": "Presentazione telematica delle domande di indennità di disoccupazione e assegno familiare per lavoratori agricoli",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "173"
+  },
+  {
+    "id": "biz:643",
+    "oggetto": "Emergenza Nord Africa. Ricongiungimento familiare dei migranti presenti sul territorio nazionale. Procedura operativa",
+    "ente": "Ministero dell'Interno",
+    "numero": "5798"
+  },
+  {
+    "id": "biz:644",
+    "oggetto": "Regolamento sull'accordo di integrazione tra lo straniero e lo Stato. Prime indicazioni operative",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:645",
+    "oggetto": "Comunicazioni obbligatorie in caso di assunzione di lavoratore straniero regolarmente soggiornante in Italia",
+    "ente": "Ministero dell'Interno",
+    "numero": "113"
+  },
+  {
+    "id": "biz:646",
+    "oggetto": "Proroga dello stato di emergenza umanitaria al 31.12.2012. Minori stranieri non accompagnati",
+    "ente": "Presidenza del Consiglio dei Ministri",
+    "numero": "7163"
+  },
+  {
+    "id": "biz:647",
+    "oggetto": "Articolo 15 della legge 12 novembre 2011, n. 183. Norme in materia di certificati e dichiarazioni sostitutive",
+    "ente": "Ministero dell'Interno",
+    "numero": "16056"
+  },
+  {
+    "id": "biz:648",
+    "oggetto": "Legge 12 novembre 2011, n. 183 recante disposizioni per la formazione del bilancio annuale e pluriennale dello Stato",
+    "ente": "Ministero dell'Interno",
+    "numero": "512"
+  },
+  {
+    "id": "biz:649",
+    "oggetto": "Titoli di viaggio in favore di cittadini somali",
+    "ente": "Ministero dell'Interno",
+    "numero": "8710"
+  },
+  {
+    "id": "biz:650",
+    "oggetto": "Contributo per il rilascio e il rinnovo del permesso di soggiorno",
+    "ente": "CGIL",
+    "numero": ""
+  },
+  {
+    "id": "biz:651",
+    "oggetto": "Decreto 6 ottobre 2011. Contributo per il rilascio e il rinnovo del permesso di soggiorno. Istruzioni operative",
+    "ente": "Ministero dell'Interno",
+    "numero": "400"
+  },
+  {
+    "id": "biz:652",
+    "oggetto": "Serbia. Cessazione della validità dei vecchi passaporti non biometrici",
+    "ente": "Ministero dell'Interno",
+    "numero": "113"
+  },
+  {
+    "id": "biz:653",
+    "oggetto": "Studenti con cittadinanza non italiana negli istituti di istruzione secondaria di secondo grado. Esami di Stato",
+    "ente": "Ministero dell'Istruzione, dell'Università e della Ricerca",
+    "numero": ""
+  },
+  {
+    "id": "biz:654",
+    "oggetto": "Iscrizioni ai nidi, alle sezioni primavera e alle scuole dell'infanzia. Anno educativo 2012/2013",
+    "ente": "Comune di Milano",
+    "numero": "4"
+  },
+  {
+    "id": "biz:655",
+    "oggetto": "Interpretazione del D.L. n. 317/1987. Estensione dell'applicabilità ai lavoratori cittadini extracomunitari",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "995"
+  },
+  {
+    "id": "biz:656",
+    "oggetto": "Importo dei contributi dovuti per l'anno 2012 per i lavoratori domestici",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "17"
+  },
+  {
+    "id": "biz:657",
+    "oggetto": "Comunicazione all'autorità di pubblica sicurezza della cessione di fabbricato dopo locazione o vendita",
+    "ente": "Ministero dell'Interno",
+    "numero": "557"
+  },
+  {
+    "id": "biz:658",
+    "oggetto": "Regime transitorio in materia di accesso al mercato del lavoro dei cittadini di Romania e Bulgaria",
+    "ente": "Ministero dell'Interno",
+    "numero": "728"
+  },
+  {
+    "id": "biz:659",
+    "oggetto": "Indennità di disoccupazione ordinaria con requisiti normali e ridotti ai lavoratori dello spettacolo",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "22"
+  },
+  {
+    "id": "biz:660",
+    "oggetto": "Art. 15 comma 2 lettera c) DPR n. 304/04. Richiesta al questore di applicazione dell'art. 5 comma 6 del testo unico",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:661",
+    "oggetto": "Permesso di soggiorno per motivi umanitari. Parere sull'applicazione dell'art. 34 comma 4 del d.lgs. 251/2007",
+    "ente": "Ministero dell'Interno",
+    "numero": ""
+  },
+  {
+    "id": "biz:662",
+    "oggetto": "Regime transitorio in materia di accesso al mercato del lavoro dei cittadini di Romania e Bulgaria",
+    "ente": "Ministero dell'Interno",
+    "numero": "864"
+  },
+  {
+    "id": "biz:663",
+    "oggetto": "Rivalutazione delle pensioni per l'anno 2012",
+    "ente": "Istituto Nazionale della Previdenza Sociale",
+    "numero": "10"
+  },
+  {
+    "id": "biz:664",
+    "oggetto": "Limite minimo di retribuzione giornaliera 2012 e aggiornamento valori per il calcolo delle contribuzioni",
+    "ente": "Istituto Nazionale della Previdenza Sociale",
+    "numero": "21"
+  },
+  {
+    "id": "biz:665",
+    "oggetto": "Assegni familiari e quote di maggiorazione di pensione per l'anno 2012",
+    "ente": "Istituto Nazionale della Previdenza Sociale",
+    "numero": "25"
+  },
+  {
+    "id": "biz:666",
+    "oggetto": "Revisione dell'anagrafe della popolazione residente a seguito del quindicesimo censimento generale",
+    "ente": "Ministero dell'Interno",
+    "numero": "3"
+  },
+  {
+    "id": "biz:667",
+    "oggetto": "Nuove disposizioni in materia di scadenza dei documenti d'identità e di riconoscimento",
+    "ente": "Ministero dell'Interno",
+    "numero": "2"
+  },
+  {
+    "id": "biz:668",
+    "oggetto": "Art. 40 D.L. 20 gennaio 2012, n. 1. Disposizioni in materia di carta d'identità",
+    "ente": "Ministero dell'Interno",
+    "numero": "1"
+  },
+  {
+    "id": "biz:669",
+    "oggetto": "Assegno per il nucleo familiare e assegno di maternità concessi dai Comuni. Rivalutazione per l'anno 2012",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "29"
+  },
+  {
+    "id": "biz:670",
+    "oggetto": "Decreto-legge 9 febbraio 2012, n. 5 recante disposizioni urgenti in materia di semplificazione e di sviluppo",
+    "ente": "Ministero dell'Interno",
+    "numero": "1253"
+  },
+  {
+    "id": "biz:671",
+    "oggetto": "Comunicazioni obbligatorie in caso di assunzione di lavoratore straniero regolarmente soggiornante in Italia",
+    "ente": "Ministero dell'Interno",
+    "numero": "9172"
+  },
+  {
+    "id": "biz:672",
+    "oggetto": "Comunicazioni inerenti alcune sedi consolari in Belgio",
+    "ente": "Ministero dell'Interno",
+    "numero": "3076"
+  },
+  {
+    "id": "biz:673",
+    "oggetto": "Art. 15 c.1 legge 183/2011. Certificati e dichiarazioni sostitutive. Istruzioni per gli ufficiali di stato civile",
+    "ente": "Ministero dell'Interno",
+    "numero": "2830"
+  },
+  {
+    "id": "biz:674",
+    "oggetto": "Matrimoni celebrati in Italia da cittadini degli Stati Uniti d'America",
+    "ente": "Ministero degli Affari Esteri",
+    "numero": ""
+  },
+  {
+    "id": "biz:675",
+    "oggetto": "Regolamento concernente la disciplina dell'accordo di integrazione tra lo straniero e lo Stato. Indicazioni operative",
+    "ente": "Ministero dell'Interno",
+    "numero": "1583"
+  },
+  {
+    "id": "biz:676",
+    "oggetto": "Linee di indirizzo per l'applicazione del D.P.R. 14 settembre 2011, n. 179. Accordo di integrazione",
+    "ente": "Ministero dell'Interno",
+    "numero": "1542"
+  },
+  {
+    "id": "biz:677",
+    "oggetto": "Conversione di patenti di guida. Ecuador",
+    "ente": "Ministero delle Infrastrutture e dei Trasporti",
+    "numero": "5808"
+  },
+  {
+    "id": "biz:678",
+    "oggetto": "Documenti individuali per l'espatrio dei minori",
+    "ente": "Ministero dell'Interno",
+    "numero": "3505"
+  },
+  {
+    "id": "biz:679",
+    "oggetto": "Assunzione presso rappresentanze diplomatico-consolari e organismi internazionali di stranieri con permesso lavorativo",
+    "ente": "Ministero dell'Interno",
+    "numero": "2000"
+  },
+  {
+    "id": "biz:680",
+    "oggetto": "Rapporto di lavoro dei dipendenti di Ambasciate, Consolati e Organismi internazionali in Italia",
+    "ente": "Ministero degli Affari Esteri",
+    "numero": ""
+  },
+  {
+    "id": "biz:681",
+    "oggetto": "D.P.R. 14 settembre 2011, n. 179 recante il regolamento sull'accordo di integrazione tra lo straniero e lo Stato",
+    "ente": "Ministero dell'Interno",
+    "numero": "1869"
+  },
+  {
+    "id": "biz:682",
+    "oggetto": "Programmazione transitoria dei flussi di ingresso dei lavoratori extracomunitari stagionali per l'anno 2012",
+    "ente": "Ministero dell'Interno",
+    "numero": "1960"
+  },
+  {
+    "id": "biz:683",
+    "oggetto": "Domanda telematica di trattamento per il rimpatrio dei lavoratori provenienti da paesi extracomunitari",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "42"
+  },
+  {
+    "id": "biz:684",
+    "oggetto": "D.P.C.M. 13 marzo 2012 su flussi stagionali extracomunitari. Attribuzione territoriale delle quote",
+    "ente": "Ministero del Lavoro e delle Politiche Sociali",
+    "numero": "2848"
+  },
+  {
+    "id": "biz:685",
+    "oggetto": "Decreto 6 ottobre 2011. Contributo per permesso di soggiorno. Chiarimenti sull'imponibilità",
+    "ente": "Ministero dell'Interno",
+    "numero": "2655"
+  },
+  {
+    "id": "biz:686",
+    "oggetto": "Conversione di patenti di guida. Uruguay",
+    "ente": "Ministero delle Infrastrutture e dei Trasporti",
+    "numero": "104946/23.18.01"
+  },
+  {
+    "id": "biz:687",
+    "oggetto": "Importo dell'assegno sociale per l'anno 2012",
+    "ente": "Ministero dell'Interno",
+    "numero": "2583"
+  },
+  {
+    "id": "biz:688",
+    "oggetto": "Ambito di applicazione delle novelle introdotte dall'art. 15, legge 183 del 2011 in materia di certificazione",
+    "ente": "Presidenza del Consiglio dei Ministri",
+    "numero": "3/12"
+  },
+  {
+    "id": "biz:689",
+    "oggetto": "Decreto-legge 9 febbraio 2012, n. 5, convertito in legge 4 aprile 2012, n. 35. Cambio di residenza in tempo reale",
+    "ente": "Ministero dell'Interno",
+    "numero": "9"
+  },
+  {
+    "id": "biz:690",
+    "oggetto": "Convenzione dell'Aja sulla protezione dei minori e la cooperazione in materia di adozione internazionale",
+    "ente": "Presidenza del Consiglio dei Ministri",
+    "numero": "DAS/715/UC/710"
+  },
+  {
+    "id": "biz:691",
+    "oggetto": "Certificazioni e documenti. Attestato di idoneità alloggiativa per il ricongiungimento familiare",
+    "ente": "Ministero dell'Interno",
+    "numero": "3462"
+  },
+  {
+    "id": "biz:692",
+    "oggetto": "Proroga misure umanitarie di protezione temporanea per l'afflusso di cittadini dei Paesi del Nord Africa",
+    "ente": "Ministero dell'Interno",
+    "numero": "4098"
+  },
+  {
+    "id": "biz:693",
+    "oggetto": "D.P.C.M. 13.03.2012. Ingresso lavoratori extracomunitari per lavoro stagionale",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "8854"
+  },
+  {
+    "id": "biz:694",
+    "oggetto": "Articolo 15, legge 12 novembre 2011, n. 183. Norme in materia di certificati e dichiarazioni sostitutive",
+    "ente": "Ministero dell'Interno",
+    "numero": "6198"
+  },
+  {
+    "id": "biz:695",
+    "oggetto": "Assegno nucleo familiare con tre figli ai cittadini extracomunitari soggiornanti di lungo periodo",
+    "ente": "Istituto Nazionale Previdenza Sociale",
+    "numero": "8468"
+  },
+  {
+    "id": "biz:696",
+    "oggetto": "Art. 21 D.L. 6.12.2011, n. 201. Integrazione organizzativa nel periodo transitorio delle funzioni dell'ENPALS soppresso",
+    "ente": "INPS",
+    "numero": "78"
+  },
+  {
+    "id": "biz:697",
+    "oggetto": "Assegno per il nucleo familiare. Nuovi livelli reddituali 1° luglio 2012-30 giugno 2013",
+    "ente": "INPS",
+    "numero": "79"
+  },
+  {
+    "id": "biz:698",
+    "oggetto": "Contributo per il rilascio e il rinnovo del permesso di soggiorno",
+    "ente": "Patronato INCA",
+    "numero": "5"
+  },
+  {
+    "id": "biz:699",
+    "oggetto": "Falsi riconoscimenti di paternità e obblighi degli ufficiali dello stato civile",
+    "ente": "Ministero dell'Interno",
+    "numero": "7165"
+  },
+  {
+    "id": "biz:700",
+    "oggetto": "Legittimazione ad agire delle associazioni nelle cause antidiscriminazione e contributo unificato",
+    "ente": "Ministero della Giustizia",
+    "numero": "28"
+  },
+  {
+    "id": "biz:701",
+    "oggetto": "Situazioni in Mali. Rapporto UNHCR del 16 maggio 2012",
+    "ente": "Ministero dell'Interno",
+    "numero": "4369"
+  }
+]

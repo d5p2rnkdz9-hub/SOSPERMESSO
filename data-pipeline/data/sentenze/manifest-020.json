@@ -1,0 +1,740 @@
+[
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass. 14159_2017 coniuge e parente 2 grado di itlaino espulsione solo per art.13 c.1.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass. 14159_2017 coniuge e parente 2 grado di itlaino espulsione solo per art.13 c.1.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2017-06-07",
+  "ente": "Corte di Cassazione",
+  "numero": "14159/2017",
+  "titolo": "Cass. 14159 2017 coniuge e parente 2 grado di itlaino espulsione solo per art.13 c.1",
+  "oggetto": "Regime giuridico applicabile al primo rilascio del permesso di soggiorno per motivi familiari per coniuge straniero di cittadino italiano già sottoposto a provvedimento espulsivo e parametri di valutazione della pericolosità sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   },
+   {
+    "slug": "famit-per-familiari-di-cittadini-italiani-statici",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5005
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass. 16-06-2025- inespellibilita padre non sposato di nascituro con meno 6 mesi.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass. 16-06-2025- inespellibilita padre non sposato di nascituro con meno 6 mesi.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2025-06-16",
+  "ente": "Corte di Cassazione",
+  "numero": "16079/2025",
+  "titolo": "Cass. 16-06-2025- inespellibilita padre non sposato di nascituro con meno 6 mesi",
+  "oggetto": "Applicabilità del divieto temporaneo di espulsione ex art. 19 comma 2 lett. d) d.lgs. 286/1998 al padre non coniugato, convivente more uxorio con la madre di un neonato di età inferiore ai sei mesi",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5024
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass. 17966 2024 Spese legali compensabili solo reciproca soccombenza o reale novita OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass. 17966 2024 Spese legali compensabili solo reciproca soccombenza o reale novita OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2024-07-01",
+  "ente": "Corte di Cassazione",
+  "numero": "17966/2024",
+  "titolo": "Cass. 17966 2024 Spese legali compensabili solo reciproca soccombenza o reale novita",
+  "oggetto": "Presupposti per la compensazione delle spese di lite ex art. 92 comma 2 c.p.c.: se la 'particolarità della controversia' e le 'oscillazioni della giurisprudenza di merito' costituiscano ragioni idonee a giustificare la compensazione in assenza di soccombenza reciproca o assoluta novità della questio",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4301
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass. 21716 2022 il GDP per convalida ha dovere di cooperazione istruttoria deve valutare i divieti di espulsione OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass. 21716 2022 il GDP per convalida ha dovere di cooperazione istruttoria deve valutare i divieti di espulsione OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-07-08",
+  "ente": "Corte di Cassazione",
+  "numero": "21716/2022",
+  "titolo": "Cass. 21716 2022 il GDP per convalida ha dovere di cooperazione istruttoria deve valutare i divieti di espulsione OK",
+  "oggetto": "Obbligo del Giudice di Pace, in sede di opposizione al decreto di espulsione, di esaminare d'ufficio il rischio di esposizione a trattamenti inumani ex art. 19 TUI, indipendentemente dalla presentazione di una domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4672
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass. 28146 23 Espulsione Dovere cooperaz.istruttoria GDP su radicamento art. 10 comma 1.1. OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass. 28146 23 Espulsione Dovere cooperaz.istruttoria GDP su radicamento art. 10 comma 1.1. OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2023-07-10",
+  "ente": "Corte di Cassazione",
+  "numero": "28146/2023",
+  "titolo": "Cass. 28146 23 Espulsione Dovere cooperaz.istruttoria GDP su radicamento art. 10 comma 1.1. OK",
+  "oggetto": "Dovere di cooperazione istruttoria del GDP sull'art. 19 TUI (incluso comma 1.1 su vita privata e familiare) in sede di opposizione al respingimento differito, anche quando lo straniero non ha presentato domanda di protezione internazionale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 5186
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass.14.1124 REMISSIONE TERMINI protez speciale LINGUA CONOSCIUTA e errore termine impugn. OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass.14.1124 REMISSIONE TERMINI protez speciale LINGUA CONOSCIUTA e errore termine impugn. OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2024-12-24",
+  "ente": "Corte di Cassazione, Prima Sezione Civile",
+  "numero": "23484/2023",
+  "titolo": "Cass.14.1124 REMISSIONE TERMINI protez speciale LINGUA CONOSCIUTA e errore termine impugn. OK",
+  "oggetto": "Se l'errata indicazione del termine per proporre ricorso al Tribunale contenuta nel provvedimento di rigetto della Questura (60 giorni invece dei 30 giorni previsti dalla legge) costituisce causa di scusabilità dell'errore e dà diritto alla restituzione in termini (art. 153 c.p.c.)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6234
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass.2021 Espulsione del convivente citt.ita entro 2 grado solo con ESPULSIONE MINISTERIALE no prefettizia OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass.2021 Espulsione del convivente citt.ita entro 2 grado solo con ESPULSIONE MINISTERIALE no prefettizia OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2021-07-14",
+  "ente": "Corte di Cassazione",
+  "numero": "38014/2019",
+  "titolo": "Cass.2021 Espulsione del convivente citt.ita entro 2 grado solo con ESPULSIONE MINISTERIALE no prefettizia OK",
+  "oggetto": "Inespellibilità dello straniero convivente con parente entro il secondo grado di nazionalità italiana: la deroga è ammessa solo con espulsione ministeriale ex art. 13 comma 1 TUI, non con espulsione prefettizia ex art. 13 comma 2",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5269
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass.3437_2022 con domanda asilo successiva ESPULSIONE SOSPESA ma non nulla.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass.3437_2022 con domanda asilo successiva ESPULSIONE SOSPESA ma non nulla.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione",
+  "data": "2022-02-03",
+  "ente": "Corte di Cassazione",
+  "numero": "3437/2022",
+  "titolo": "Cass.3437 2022 con domanda asilo successiva ESPULSIONE SOSPESA ma non nulla",
+  "oggetto": "Effetti della domanda di protezione internazionale proposta dopo l'adozione del decreto di espulsione: sospensione dell'efficacia del decreto ma non sopravvenuta invalidità",
+  "esito": "ministero",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3693
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cass.Sez.UN 23.5.2023 Regolamento competenza del TRIB.ORDINARIO anche per rigetto ammissione gratuito al TAR.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cass.Sez.UN 23.5.2023 Regolamento competenza del TRIB.ORDINARIO anche per rigetto ammissione gratuito al TAR.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2023-07-17",
+  "ente": "Corte di Cassazione Sezioni Unite Civili",
+  "numero": "20501/2023",
+  "titolo": "Cass.Sez.UN 23.5.2023 Regolamento competenza del TRIB.ORDINARIO anche per rigetto ammissione gratuito al TAR",
+  "oggetto": "Giurisdizione sulla opposizione avverso il rigetto dell'ammissione al gratuito patrocinio (patrocinio a spese dello Stato) disposto in sede di giudizio amministrativo: spetta al giudice ordinario, non al giudice amministrativo",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 6418
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cassazione-a-Sezioni-Unite-sentenza-8236-del-2020 giurisdizione risarcimento danno lesione legittimo affidamento.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cassazione-a-Sezioni-Unite-sentenza-8236-del-2020 giurisdizione risarcimento danno lesione legittimo affidamento.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cassazione_sezioni_unite",
+  "data": "2020-04-08",
+  "ente": "Corte di Cassazione Sezioni Unite Civili",
+  "numero": "8236/2020",
+  "titolo": "Cassazione-a-Sezioni-Unite-sentenza-8236-del-2020 giurisdizione risarcimento danno lesione legittimo affidamento",
+  "oggetto": "Giurisdizione del giudice ordinario per le domande di risarcimento del danno da lesione dell'affidamento del privato nella correttezza del comportamento della pubblica amministrazione, anche in assenza di un provvedimento amministrativo ampliativo e anche in materia di giurisdizione esclusiva del gi",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 7640
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cons.Stato 11044_2023 Si Residenza Fittizia convenzionale per PDS OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cons.Stato 11044_2023 Si Residenza Fittizia convenzionale per PDS OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2022-12-16",
+  "ente": "Consiglio di Stato",
+  "numero": "11044/2022",
+  "titolo": "Cons.Stato 11044 2023 Si Residenza Fittizia convenzionale per PDS OK",
+  "oggetto": "L'iscrizione anagrafica nella cosiddetta 'via fittizia' (via virtuale convenzionale istituita dai Comuni per persone senza fissa dimora) è idonea ai fini del rilascio o rinnovo del permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5999
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cons.Stato 13.7.2022 Titolo viaggio x Sussidiaria e Umanitaria no impossibilita ma impossibilita di fatto.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cons.Stato 13.7.2022 Titolo viaggio x Sussidiaria e Umanitaria no impossibilita ma impossibilita di fatto.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2022-07-13",
+  "ente": "Consiglio di Stato",
+  "numero": "5947/2022",
+  "titolo": "Cons.Stato 13.7.2022 Titolo viaggio x Sussidiaria e Umanitaria no impossibilita ma impossibilita di fatto",
+  "oggetto": "Condizioni per il rilascio del titolo di viaggio ex art. 24 d.lgs. 251/2007 ai titolari di protezione sussidiaria e protezione umanitaria: il requisito dell'impossibilità di ottenere il passaporto va inteso in senso ampio, includendo l'impossibilità di fatto dovuta alla burocrazia del paese d'origin",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5159
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cons.Stato 2013 Fotosegnalamento è identificazione. utilizzabile per rinnovo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cons.Stato 2013 Fotosegnalamento è identificazione. utilizzabile per rinnovo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2013-01-31",
+  "ente": "Consiglio di Stato",
+  "numero": "609/2013",
+  "titolo": "Cons.Stato 2013 Fotosegnalamento è identificazione. utilizzabile per rinnovo",
+  "oggetto": "I rilievi dattiloscopici (impronte digitali/fotosegnalamento) dello straniero non rientrano tra i documenti esclusi dal diritto di accesso ex art. 24 L. 241/1990 e devono essere ostesi all'interessato che ne faccia richiesta",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 4460
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cons.Stato 2019 si rinnovo pds senza passaporto con Carta identita equipollente.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cons.Stato 2019 si rinnovo pds senza passaporto con Carta identita equipollente.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2019-12-11",
+  "ente": "Consiglio di Stato",
+  "numero": "8423/2019",
+  "titolo": "Cons.Stato 2019 si rinnovo pds senza passaporto con Carta identita equipollente",
+  "oggetto": "Se il rinnovo del permesso di soggiorno UE per soggiornanti di lungo periodo possa essere accordato allo straniero che non possiede il passaporto in corso di validità ma è in possesso di carta d'identità rilasciata dal Comune italiano (documento equipollente)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4021
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Cons.Stato_7525_2021 Ritardo giusiticabile art.5 c.5 anche per fatti successivi scadenza ma precedenti alla fine giudizio PDS STUDIO OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Cons.Stato_7525_2021 Ritardo giusiticabile art.5 c.5 anche per fatti successivi scadenza ma precedenti alla fine giudizio PDS STUDIO OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2021-11-11",
+  "ente": "Consiglio di Stato",
+  "numero": "7525/2021",
+  "titolo": "Cons.Stato 7525 2021 Ritardo giusiticabile art.5 c.5 anche per fatti successivi scadenza ma precedenti alla fine giudizio PDS STUDIO OK",
+  "oggetto": "Se la scadenza del permesso di soggiorno per studio prima della presentazione dell'istanza di conversione in permesso per lavoro impedisca la conversione ex art. 14 comma 6 D.P.R. 394/1999",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "studio-dopo-ingresso-con-visto",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 6794
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Consiglio di Stato giugno2020 valida integrazione cambio tipologia pds prima della notifica del rigetto OK OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Consiglio di Stato giugno2020 valida integrazione cambio tipologia pds prima della notifica del rigetto OK OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2020-07-06",
+  "ente": "Consiglio di Stato",
+  "numero": "4327/2020",
+  "titolo": "Consiglio di Stato giugno2020 valida integrazione cambio tipologia pds prima della notifica del rigetto OK OK",
+  "oggetto": "Validità dell'istanza di conversione del permesso di soggiorno da umanitario a lavoro subordinato presentata prima della notifica del diniego di rinnovo",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-conversione-da-altro-permesso",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5771
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/KELLINY + 1 - REGIONE LOMBARDIA - sentenza Corte Cost. 97-2026_fd del 5.6.26.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/KELLINY + 1 - REGIONE LOMBARDIA - sentenza Corte Cost. 97-2026_fd del 5.6.26.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "corte_costituzionale",
+  "data": "2026-06-05",
+  "ente": "Corte Costituzionale",
+  "numero": "97/2026",
+  "titolo": "KELLINY + 1 - REGIONE LOMBARDIA - sentenza Corte Cost. 97-2026 fd del 5.6.26",
+  "oggetto": "Iscrizione obbligatoria e gratuita al SSN (art. 34, comma 1, d.lgs. 286/1998) per gli stranieri titolari di permesso per residenza elettiva derivante dalla conversione del permesso per lavoro o famiglia a seguito del riconoscimento della pensione di inabilità civile",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "residenza-elettiva",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6082
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/N. 08119_2012 REG.RIC_.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/N. 08119_2012 REG.RIC_.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "consiglio_stato",
+  "data": "2013-01-31",
+  "ente": "Consiglio di Stato",
+  "numero": "RG 8119/2012 — Prov.Coll. 609/2013",
+  "titolo": "N. 08119 2012 REG.RIC",
+  "oggetto": "Diritto di accesso alla scheda dattiloscopica (impronte digitali) da parte del richiedente protezione internazionale ai fini del gratuito patrocinio",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "richiesta-asilo",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 4662
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/SENTENZA DELLA CORTE (Quarta Sezione)  4 marzo 2021.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/SENTENZA DELLA CORTE (Quarta Sezione)  4 marzo 2021.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "cgue",
+  "data": "2021-03-04",
+  "ente": "Corte di Giustizia dell'Unione Europea (CGUE)",
+  "numero": "C-193/19",
+  "titolo": "SENTENZA DELLA CORTE (Quarta Sezione) 4 marzo 2021",
+  "oggetto": "Interpretazione dell'art. 25 par. 1 CAAS e del Codice frontiere Schengen in relazione al rilascio/rinnovo di titolo di soggiorno per ricongiungimento familiare a cittadino di paese terzo segnalato nel SIS ai fini della non ammissione e la cui identità non è comprovata con documento di viaggio valido",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5398
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/T.A.R.-Lazio-n.-4597-2021 indennizzo mero ritardo.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/T.A.R.-Lazio-n.-4597-2021 indennizzo mero ritardo.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-04-20",
+  "ente": "TAR Lazio",
+  "numero": "2865/2020",
+  "titolo": "T.A.R.-Lazio-n.-4597-2021 indennizzo mero ritardo",
+  "oggetto": "Natura giuridica e presupposti dell'indennizzo per mero ritardo ex art. 2-bis l. 241/1990: se sorga automaticamente dalla violazione del termine o richieda la prova di un pregiudizio ulteriore",
+  "esito": "ministero",
+  "permessi": [],
+  "kb_size": 4633
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/TAR Marche 24.11.25 CLASS ACTION RITARDI PROTEZIONE SPECIALE ACCOGLIE 180 GG MAX.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/TAR Marche 24.11.25 CLASS ACTION RITARDI PROTEZIONE SPECIALE ACCOGLIE 180 GG MAX.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-11-21",
+  "ente": "TAR Marche",
+  "numero": "454/2024",
+  "titolo": "TAR Marche 24.11.25 CLASS ACTION RITARDI PROTEZIONE SPECIALE ACCOGLIE 180 GG MAX",
+  "oggetto": "Violazione sistematica dei termini procedimentali per il rilascio del permesso di soggiorno per protezione speciale: azione di classe ex d.lgs. 198/2009 per ripristino della funzione amministrativa",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5815
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/TAR Piemonte ord 53-2026 lungo soggiornanti reddito borsa dottorato.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/TAR Piemonte ord 53-2026 lungo soggiornanti reddito borsa dottorato.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-01-29",
+  "ente": "TAR Piemonte",
+  "numero": "53/2026",
+  "titolo": "Tar Piemonte 29.1.26 LUNGO SOGGIORNANTI REDDITO anche borsa studio ok",
+  "oggetto": "Ammissibilità ai fini del permesso UE per soggiornanti di lungo periodo del titolare di permesso per asilo che percepisca reddito da dottorato di ricerca: l'esclusione ex art. 9, comma 3, lett. a), d.lgs. 286/1998 si applica alla tipologia del titolo di soggiorno (studio/formazione/ricerca), non all",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   },
+   {
+    "slug": "asilo-status-rifugiato",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3639
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/TAR Veneto 220-2026 lungo soggiornanti revoca no rivalutazione residenza convenzionale.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/TAR Veneto 220-2026 lungo soggiornanti revoca no rivalutazione residenza convenzionale.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2026-01-26",
+  "ente": "TAR Veneto",
+  "numero": "220/2026",
+  "titolo": "TAR-Veneto apriule 2026 LUNGO SOGGIORNANTI rinnovo no rivalutazione si resid. convenzionale",
+  "oggetto": "Limiti tassativi alla revoca del permesso UE per soggiornanti di lungo periodo ex art. 9, comma 7, d.lgs. 286/1998. Irrilevanza dell'iscrizione anagrafica e del reddito ai fini della revoca (a differenza del rilascio del permesso ordinario)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5799
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/TAR Veneto 30.4.2024 PDS Dies a quo kit no convocazione OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/TAR Veneto 30.4.2024 PDS Dies a quo kit no convocazione OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-04-30",
+  "ente": "TAR Veneto",
+  "numero": "288/2024",
+  "titolo": "TAR Veneto 30.4.2024 PDS Dies a quo kit no convocazione",
+  "oggetto": "Dies a quo del termine di conclusione del procedimento per il rilascio del permesso di soggiorno: se decorra dalla presentazione dell'istanza tramite kit postale o dalla convocazione presso la Questura per i rilievi fotodattiloscopici",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 5117
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tar Lazio 30.9.71 SI ACCESSO PROVVEDIMENTO RIGETTO pds anche se non è notifica in parte ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tar Lazio 30.9.71 SI ACCESSO PROVVEDIMENTO RIGETTO pds anche se non è notifica in parte ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-09-30",
+  "ente": "TAR Lazio",
+  "numero": "6410/2025 RG",
+  "titolo": "Tar Lazio 30.9.71 SI ACCESSO PROVVEDIMENTO RIGETTO pds anche se non è notifica in parte",
+  "oggetto": "Diritto di accesso agli atti del procedimento di rinnovo del permesso di soggiorno quando il provvedimento conclusivo non è stato ancora notificato a mani dell'interessato",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4106
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tar Lazio 6.8.24 Durata del pds si computa dal RILASCIO E NON DA RICHIESTA OK ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tar Lazio 6.8.24 Durata del pds si computa dal RILASCIO E NON DA RICHIESTA OK ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-08-06",
+  "ente": "TAR Lazio",
+  "numero": "8150/2023",
+  "titolo": "Tar Lazio 6.8.24 Durata del pds si computa dal RILASCIO E NON DA RICHIESTA OK",
+  "oggetto": "Durata del permesso di soggiorno per protezione speciale ex art. 32 co. 3 d.lgs. 25/2008: se vada computata dal momento del rilascio effettivo o dalla presentazione della domanda di formalizzazione",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4303
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tar Roma 27.12.2022 SI PROCURA NON LEGALIZZATA per impossibilita nel paese origine es. Pakistan OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tar Roma 27.12.2022 SI PROCURA NON LEGALIZZATA per impossibilita nel paese origine es. Pakistan OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2022-12-27",
+  "ente": "TAR Lazio",
+  "numero": "10648/2022 RG",
+  "titolo": "Tar Roma 27.12.2022 SI PROCURA NON LEGALIZZATA per impossibilita nel paese origine es. Pakistan OK",
+  "oggetto": "Ammissibilità della procura alle liti rilasciata all'estero senza legalizzazione consolare quando l'Ambasciata italiana nel paese di origine ha limitato le funzioni notarili ai soli cittadini italiani",
+  "esito": "ministero",
+  "permessi": [],
+  "kb_size": 3687
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tar Roma 5.9.2024 INDENNIZO ritardo rigetta ma chiarisce la poszione del tar.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tar Roma 5.9.2024 INDENNIZO ritardo rigetta ma chiarisce la poszione del tar.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-09-05",
+  "ente": "TAR Lazio - Roma",
+  "numero": "16116/2024",
+  "titolo": "Tar Roma 5.9.2024 INDENNIZO ritardo rigetta ma chiarisce la poszione del tar",
+  "oggetto": "Indennizzo da mero ritardo nella conclusione del procedimento di rilascio del permesso di soggiorno (art. 2-bis, comma 1-bis, L. 241/90 vs art. 28 D.L. 69/2013)",
+  "esito": "misto",
+  "permessi": [],
+  "kb_size": 5636
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tar Veneto 28.10.204 TITOLO DI VIAGGIO sempre quando impossibile avere passaporto circolare 1961 ok ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tar Veneto 28.10.204 TITOLO DI VIAGGIO sempre quando impossibile avere passaporto circolare 1961 ok ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2024-10-28",
+  "ente": "TAR Veneto",
+  "numero": "2508/2024",
+  "titolo": "Tar Veneto 28.10.204 TITOLO DI VIAGGIO sempre quando impossibile avere passaporto circolare 1961 ok",
+  "oggetto": "Diritto al titolo di viaggio per stranieri titolari di protezione speciale nell'impossibilità di ottenere il passaporto dal paese di origine",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 6164
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tar Veneto ott.2025 Decizione Algoritmo IA solo se è prevista da legge sennò ci vuole atto motivato OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tar Veneto ott.2025 Decizione Algoritmo IA solo se è prevista da legge sennò ci vuole atto motivato OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2025-10-21",
+  "ente": "TAR Veneto",
+  "numero": "1488/2025 RG (riunito con 1689/2025 RG)",
+  "titolo": "Tar Veneto ott.2025 Decizione Algoritmo IA solo se è prevista da legge sennò ci vuole atto motivato",
+  "oggetto": "Illegittimità della revoca automatica (algoritmica) del nulla osta al lavoro subordinato generata da un sistema informatico senza adozione di un formale provvedimento amministrativo motivato, in assenza di base legale espressa per la decisione amministrativa algoritmica",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 7818
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tar. Lazio 18227_2023 Reati OStativi NO automatici se requisiti lungo soggiorn. Ok.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tar. Lazio 18227_2023 Reati OStativi NO automatici se requisiti lungo soggiorn. Ok.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2023-12-05",
+  "ente": "TAR Lazio - Roma",
+  "numero": "18227/2023",
+  "titolo": "Tar. Lazio 18227 2023 Reati OStativi NO automatici se requisiti lungo soggiorn.",
+  "oggetto": "Illegittimità del diniego automatico di rinnovo del permesso di soggiorno per lavoro a seguito di condanna per reato di cui all'art. 73, comma 5, DPR 309/1990 (piccolo spaccio), senza valutazione in concreto della pericolosità sociale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "lavoro-subordinato-dopo-ingresso-con-visto-per-flussi",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 5833
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/TarToscana2021 NUOVO obbligo PA sempre 10 bis.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/TarToscana2021 NUOVO obbligo PA sempre 10 bis.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tar",
+  "data": "2021-04-28",
+  "ente": "TAR Toscana",
+  "numero": "216/2021 RG",
+  "titolo": "TarToscana2021 NUOVO obbligo PA sempre 10 bis",
+  "oggetto": "Obbligo incondizionato di comunicare il preavviso di rigetto ex art. 10 bis L. 241/1990 prima di adottare un provvedimento negativo in materia di permesso di soggiorno, dopo la riforma del D.L. 76/2020 che ha escluso l'applicabilità della sanatoria ex art. 21-octies, comma 2, L. 241/1990 ai provvedi",
+  "esito": "ricorrente",
+  "permessi": [],
+  "kb_size": 4290
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Tri,Brescia 2022 Apolidia bengalese vissuto in strada.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Tri,Brescia 2022 Apolidia bengalese vissuto in strada.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2022-09-08",
+  "ente": "Tribunale di Brescia",
+  "numero": "670/2020 RG",
+  "titolo": "Tri,Brescia 2022 Apolidia bengalese vissuto in strada",
+  "oggetto": "Riconoscimento dello status di apolide a persona di presumibile origine bangladese senza documenti, abbandonata in infanzia",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "apolidia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4098
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib CIvitavecchia aprile 2024 Assegno invalidita con PDS meno di un anno OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib CIvitavecchia aprile 2024 Assegno invalidita con PDS meno di un anno OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-04-18",
+  "ente": "Tribunale di Civitavecchia",
+  "numero": "2371/2023 RG",
+  "titolo": "Trib CIvitavecchia aprile 2024 Assegno invalidita con PDS meno di un anno",
+  "oggetto": "Diritto dello straniero titolare di permesso di soggiorno per cure mediche di durata infrannuale all'assegno mensile di invalidità civile ex art. 13 l. 118/1971",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4933
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib Firenze 5990-2025 protezione speciale diretta al Questore post DL 20.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib Firenze 5990-2025 protezione speciale diretta al Questore post DL 20.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-04-08",
+  "ente": "Tribunale di Firenze",
+  "numero": "5990/2025",
+  "titolo": "Trib. Firenze 8.4.2026 pro. speciale diretta post DL 20",
+  "oggetto": "Ammissibilità dell'istanza diretta al Questore di rilascio del permesso di soggiorno per protezione speciale ex art. 19, c. 1 e 1.1, d.lgs. 286/1998, anche dopo l'abrogazione dell'art. 19, c. 1.2 ad opera del DL 20/2023 (L. 50/2023) e indipendentemente dalla pendenza di procedura Dublino",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 10112
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib Lecce marzo 2023 700 ripristino pensione sospensa per rinnovo pds OK OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib Lecce marzo 2023 700 ripristino pensione sospensa per rinnovo pds OK OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2023-06-01",
+  "ente": "Tribunale di Lecce",
+  "numero": "20/2023 RG",
+  "titolo": "Trib Lecce marzo 2023 700 ripristino pensione sospensa per rinnovo pds OK",
+  "oggetto": "Diritto alla continuità della pensione di inabilità civile nelle more del rinnovo del permesso di soggiorno",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-sussidiaria",
+    "rilevanza": 2
+   }
+  ],
+  "kb_size": 3311
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib Palermo 2845-2026 protezione speciale art 8 CEDU post DL 20 musicista USA.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib Palermo 2845-2026 protezione speciale art 8 CEDU post DL 20 musicista USA.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2026-04-23",
+  "ente": "Tribunale di Palermo",
+  "numero": "2845/2026",
+  "titolo": "tribunale palermo sentenza sentenza n.2845 2026 - Copia",
+  "oggetto": "Riconoscimento del diritto al permesso di soggiorno per protezione speciale ex art. 19, c. 1 e 1.1, d.lgs. 286/1998, anche dopo le modifiche del DL 20/2023 (L. 50/2023), valorizzando l'integrazione e i legami sociali ex art. 8 CEDU",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 7682
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib lav Perugia sent 12gen24 assegno invalidita con PDS salute inferiore a un anno OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib lav Perugia sent 12gen24 assegno invalidita con PDS salute inferiore a un anno OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2024-01-12",
+  "ente": "Tribunale di Perugia",
+  "numero": "459/2023 RG",
+  "titolo": "Trib lav Perugia sent 12gen24 assegno invalidita con PDS salute inferiore a un anno",
+  "oggetto": "Diritto alla pensione di inabilità civile per straniero titolare di permesso di soggiorno per cure mediche di durata infrannuale",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 5296
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib. Bologna 2025 IRRICEVIBILITA solo senza merito e con visio manifesto OK.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib. Bologna 2025 IRRICEVIBILITA solo senza merito e con visio manifesto OK.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2025-01-01",
+  "ente": "Tribunale di Bologna",
+  "numero": "RG 9273/2025",
+  "titolo": "Trib. Bologna 2025 IRRICEVIBILITA solo senza merito e con visio manifesto",
+  "oggetto": "Distinzione tra irricevibilità e rigetto nel procedimento di richiesta di permesso di soggiorno per cure mediche (art. 19 TUI); limiti alla pronuncia di irricevibilità da parte della PA",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia",
+    "rilevanza": 3
+   },
+   {
+    "slug": "protezione-speciale",
+    "rilevanza": 1
+   }
+  ],
+  "kb_size": 3817
+ },
+ {
+  "id": "kb:imm_3_procedure_permessi_espulsioni/Trib. Milano, 29.10.2019, apolidia a persona con identita incerta I.md",
+  "path": "/Users/albertopasquero/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3/imm_3_procedure_permessi_espulsioni/Trib. Milano, 29.10.2019, apolidia a persona con identita incerta I.md",
+  "tipo": "sentenza",
+  "tipo_dettaglio": "tribunale",
+  "data": "2019-10-29",
+  "ente": "Tribunale di Milano",
+  "numero": "4444/2018 RG",
+  "titolo": "Trib. Milano, 29.10.2019, apolidia a persona con identita incerta I",
+  "oggetto": "Riconoscimento dello status di apolide a persona con identità incerta e documenti irregolari, coinvolgente pluralità di ordinamenti nazionali (Canada, Paesi Bassi, Messico, Italia)",
+  "esito": "ricorrente",
+  "permessi": [
+   {
+    "slug": "apolidia",
+    "rilevanza": 3
+   }
+  ],
+  "kb_size": 4446
+ }
+]
