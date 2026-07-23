@@ -1,0 +1,42 @@
+/* ===============================================
+   CIRCOLARI PAGES (self-hosted full text)
+   Metadata box + full-text typography for
+   circolare-{slug}.html pages.
+   =============================================== */
+
+.circolare-meta-box {
+  margin-bottom: 0;
+}
+
+.circolare-meta-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-md);
+  margin: 0;
+}
+
+.circolare-meta-row dt {
+  font-size: var(--font-size-sm);
+  color: var(--gray-medium);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.circolare-meta-row dd {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--gray-dark);
+  font-weight: 500;
+}
+
+.circolare-text p {
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+  color: var(--gray-dark);
+}
+
+.circolare-text p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,79 @@
+---
+pagination:
+  data: circolari
+  size: 1
+  alias: circolare
+permalink: "{{ circolare.slug }}.html"
+layout: layouts/base.liquid
+lang: it
+robots: "noindex"
+eleventyComputed:
+  title: "{{ circolare.titolo_pubblico }} | SOS Permesso"
+  description: "{{ circolare.titolo_pubblico }} — testo integrale della circolare, ricavato da fonte pubblica a scopo informativo."
+eleventyExcludeFromCollections: true
+---
+
+  <!-- Breadcrumb (pagina non ancora collegata dalla navigazione: nessun link "indice") -->
+  <section class="section" style="padding: 1rem 0 0;">
+    <div class="container" style="max-width: 800px;">
+      <p style="font-size: 0.85rem; color: var(--gray-medium);">
+        <a href="{{ '/' | url }}">Home</a> &nbsp;&rsaquo;&nbsp; Circolari
+      </p>
+    </div>
+  </section>
+
+  <!-- PAGE HEADER -->
+  <section class="section" style="padding-top: 0.5rem;">
+    <div class="container" style="max-width: 800px;">
+      <h1 style="font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-weight: 800; margin-bottom: 1rem;">
+        {{ circolare.titolo_pubblico }}
+      </h1>
+
+      <!-- METADATA BOX -->
+      <div class="card circolare-meta-box">
+        <dl class="circolare-meta-list">
+          {% if circolare.ente %}
+          <div class="circolare-meta-row">
+            <dt>Ente</dt>
+            <dd>{{ circolare.ente }}</dd>
+          </div>
+          {% endif %}
+          {% if circolare.numero %}
+          <div class="circolare-meta-row">
+            <dt>Numero</dt>
+            <dd>{{ circolare.numero }}</dd>
+          </div>
+          {% endif %}
+          {% if circolare.dataLeggibile %}
+          <div class="circolare-meta-row">
+            <dt>Data</dt>
+            <dd>{{ circolare.dataLeggibile }}</dd>
+          </div>
+          {% endif %}
+          {% if circolare.tema %}
+          <div class="circolare-meta-row">
+            <dt>Tema</dt>
+            <dd>{{ circolare.tema }}</dd>
+          </div>
+          {% endif %}
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL TEXT -->
+  <section class="section" style="padding-top: 0.5rem;">
+    <div class="container" style="max-width: 800px;">
+      <div class="card circolare-text">
+        {% for paragrafo in circolare.testo %}
+        <p>{{ paragrafo }}</p>
+        {% endfor %}
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 1.5rem;">
+        <div>
+          Testo ricavato da fonte pubblica a scopo informativo. In caso di discrepanze fa fede il testo originale dell'amministrazione.
+        </div>
+      </div>
+    </div>
+  </section>

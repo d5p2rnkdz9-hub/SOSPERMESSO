@@ -24,6 +24,7 @@ function assetVersion() {
     'src/styles/prassi.css',
     'src/styles/chatbot.css',
     'src/styles/legale.css',
+    'src/styles/circolari.css',
   ];
   const hash = crypto.createHash('md5');
   for (const f of files) {
