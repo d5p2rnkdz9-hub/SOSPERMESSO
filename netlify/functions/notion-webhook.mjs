@@ -1,11 +1,95 @@
 // Netlify Function v2.0 - Notion Webhook Handler
-// Verifies Notion webhook signatures and triggers Netlify rebuild on content changes
+// Verifies Notion webhook signatures and triggers Netlify rebuild on content changes.
+// Also emails info@sospermesso.it (via Resend) when a new entry lands in the
+// watched submission databases (quesiti legali, contatti ricevuti, prassi locali).
 
 import crypto from 'crypto';
 import { getStore } from '@netlify/blobs';
 
 // 30-minute debounce window for build triggers
 const DEBOUNCE_WINDOW_MS = 30 * 60 * 1000;
+
+// Databases watched for new-entry email notifications. Keys are normalized
+// (dashless) IDs; each database is listed under BOTH its database_id and its
+// data_source_id because webhook payloads may carry either depending on the
+// API version of the subscription.
+// NOT watched on purpose: "Risposte APP avere/convertire" (tree analytics).
+const WATCHED_DATABASES = {
+  // QUESITI LEGALI SOSPERMESSO (app form /contattaci/problema-legale)
+  '30d7355e7f7f800cbee7c653dce65f1d': 'Nuovo quesito legale',
+  '30d7355e7f7f80728c69000b2d894562': 'Nuovo quesito legale',
+  // Contatti ricevuti (app form /contattaci/contribuisci)
+  '2f47355e7f7f80a4bed8d867abec2271': 'Nuovo contatto ricevuto',
+  '2f47355e7f7f805999e4000bb687d886': 'Nuovo contatto ricevuto',
+  // Prassi Locali (site form → submit-prassi function)
+  '3027355e7f7f80f6957ec3107a5f7aa4': 'Nuova prassi locale',
+  '3027355e7f7f80148d06000b5aa04d2e': 'Nuova prassi locale',
+  // Segnalazioni errori ricevute (app form /contattaci/segnala-errore)
+  '2f47355e7f7f8072aedcf43229874199': 'Nuova segnalazione errore',
+  '2f47355e7f7f804ab4ce000b42f7a827': 'Nuova segnalazione errore',
+};
+
+const normalizeId = (id) => (id || '').replace(/-/g, '').toLowerCase();
+
+function formatProperty(prop) {
+  switch (prop.type) {
+    case 'title': return prop.title.map((t) => t.plain_text).join('');
+    case 'rich_text': return prop.rich_text.map((t) => t.plain_text).join('');
+    case 'email': return prop.email;
+    case 'phone_number': return prop.phone_number;
+    case 'url': return prop.url;
+    case 'select': return prop.select?.name;
+    case 'multi_select': return prop.multi_select.map((o) => o.name).join(', ');
+    case 'status': return prop.status?.name;
+    case 'date': return prop.date?.start;
+    case 'number': return prop.number != null ? String(prop.number) : null;
+    case 'checkbox': return prop.checkbox ? 'Sì' : 'No';
+    default: return null;
+  }
+}
+
+async function fetchPageSummary(pageId) {
+  const res = await fetch(`https://api.notion.com/v1/pages/${pageId}`, {
+    headers: {
+      'Authorization': `Bearer ${process.env.NOTION_API_KEY}`,
+      'Notion-Version': '2022-06-28'
+    }
+  });
+  if (!res.ok) {
+    throw new Error(`Notion pages.retrieve failed: ${res.status}`);
+  }
+  const page = await res.json();
+  const lines = [];
+  for (const [name, prop] of Object.entries(page.properties || {})) {
+    const value = formatProperty(prop);
+    if (value) lines.push(`${name}: ${value}`);
+  }
+  return { lines, url: page.url };
+}
+
+async function sendNotificationEmail({ subject, lines, url, pageId }) {
+  const to = process.env.NOTIFY_EMAIL || 'info@sospermesso.it';
+  const from = process.env.RESEND_FROM || 'SOS Permesso <notifiche@sospermesso.it>';
+  const text = [
+    subject,
+    '',
+    ...(lines.length ? lines : ['(contenuto non disponibile — apri la pagina in Notion)']),
+    '',
+    url ? `Apri in Notion: ${url}` : `Pagina Notion: ${pageId}`,
+  ].join('\n');
+
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ from, to, subject: `${subject} — SOS Permesso`, text })
+  });
+  if (!res.ok) {
+    throw new Error(`Resend send failed: ${res.status} ${await res.text()}`);
+  }
+}
 
 export default async (req, context) => {
   // Only accept POST method
@@ -73,6 +157,75 @@ export default async (req, context) => {
     // Handle content update events
     if (payload.type === 'event') {
       const eventType = payload.event?.type;
+
+      // Email notification for new entries in watched submission databases
+      if (eventType === 'page.created') {
+        const parent = payload.data?.parent || {};
+        const parentId = normalizeId(parent.id || parent.data_source_id || parent.database_id);
+        const subject = WATCHED_DATABASES[parentId];
+        const pageId = payload.entity?.id;
+
+        if (!subject || !pageId) {
+          console.log('[notion-webhook] page.created ignored (parent not watched):', parentId);
+          return new Response(JSON.stringify({ message: 'Event ignored' }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        }
+
+        if (!process.env.RESEND_API_KEY) {
+          // Permanent misconfiguration: log loudly but return 200 so Notion
+          // doesn't retry forever / suspend the subscription.
+          console.error('[notion-webhook] RESEND_API_KEY not configured — notification skipped');
+          return new Response(JSON.stringify({ error: 'Email not configured' }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        }
+
+        // Dedupe (Notion retries deliveries). Fail open if Blobs unavailable.
+        const dedupeKey = `notified-${normalizeId(pageId)}`;
+        let store = null;
+        try {
+          store = getStore('webhook-state');
+          if (await store.get(dedupeKey)) {
+            console.log('[notion-webhook] Already notified for page:', pageId);
+            return new Response(JSON.stringify({ message: 'Already notified' }), {
+              status: 200,
+              headers: { 'Content-Type': 'application/json' }
+            });
+          }
+          await store.set(dedupeKey, new Date().toISOString());
+        } catch (blobError) {
+          console.warn('[notion-webhook] Blobs unavailable, skipping dedupe:', blobError.message);
+        }
+
+        let summary = { lines: [], url: null };
+        try {
+          summary = await fetchPageSummary(pageId);
+        } catch (notionError) {
+          // Still notify with just the page link
+          console.error('[notion-webhook] Could not fetch page content:', notionError.message);
+        }
+
+        try {
+          await sendNotificationEmail({ subject, lines: summary.lines, url: summary.url, pageId });
+        } catch (emailError) {
+          console.error('[notion-webhook] Email send failed:', emailError.message);
+          // Clear the dedupe marker and return 500 so Notion retries later
+          try { if (store) await store.delete(dedupeKey); } catch { /* best effort */ }
+          return new Response(JSON.stringify({ error: 'Email send failed' }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        }
+
+        console.log('[notion-webhook] Notification sent:', subject, pageId);
+        return new Response(JSON.stringify({ message: 'Notification sent' }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' }
+        });
+      }
 
       // Trigger rebuild for content or schema changes
       if (eventType === 'page.content_updated' || eventType === 'data_source.schema_updated') {

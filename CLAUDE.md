@@ -397,6 +397,23 @@ Floating "Fai una domanda" widget on **all 11 languages**, answering permit ques
 - `app.js` has a document-level click handler that resets `document.body.style.overflow` — scroll lock uses a class on `<html>` (`sosp-chat-lock`) instead of body style.
 - No `netlify` CLI installed locally; local testing uses a small Node harness that serves `_site/` and bridges `/.netlify/functions/chat` to the function module (ask Claude to regenerate it).
 
+## Email Notifications (Notion → Resend)
+
+`netlify/functions/notion-webhook.mjs` — besides triggering rebuilds — emails `info@sospermesso.it` (via Resend) when a **new entry** lands in one of the watched Notion submission databases:
+
+| Database | database_id | Source |
+|---|---|---|
+| QUESITI LEGALI SOSPERMESSO | `30d7355e7f7f800cbee7c653dce65f1d` | app form `/contattaci/problema-legale` |
+| Contatti ricevuti | `2f47355e7f7f80a4bed8d867abec2271` | app form `/contattaci/contribuisci` |
+| Prassi Locali | `3027355e7f7f80f6957ec3107a5f7aa4` | site form → `submit-prassi.mjs` |
+| Segnalazioni errori ricevute | `2f47355e7f7f8072aedcf43229874199` | app form `/contattaci/segnala-errore` |
+
+Deliberately **NOT** watched: "Risposte APP avere/convertire" (tree analytics). Each watched DB is matched by both `database_id` and `data_source_id` (webhook payloads may carry either). To watch another DB, add both its IDs to `WATCHED_DATABASES` in the function.
+
+- **Netlify env:** `RESEND_API_KEY` (required), plus existing `NOTION_API_KEY` (page content fetch) and `NOTION_WEBHOOK_SECRET`. Optional: `NOTIFY_EMAIL` (default `info@sospermesso.it`), `RESEND_FROM` (default `notifiche@sospermesso.it` — domain must be verified in Resend; DNS records go in **Netlify DNS**, not Squarespace).
+- **Notion side:** the integration's webhook subscription must include the `page.created` event type, and the integration must have access to the three DBs.
+- Dedupe per page via Netlify Blobs (`webhook-state` store, fails open); email send failure returns 500 so Notion retries delivery.
+
 ## Mobile Optimization
 
 ### Critical Fixes (mobile-fix.css)
