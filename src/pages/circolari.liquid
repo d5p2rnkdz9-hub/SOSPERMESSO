@@ -6,18 +6,18 @@ pagination:
 permalink: "{{ circolare.slug }}.html"
 layout: layouts/base.liquid
 lang: it
-robots: "noindex"
 eleventyComputed:
   title: "{{ circolare.titolo_pubblico }} | SOS Permesso"
   description: "{{ circolare.titolo_pubblico }} — testo integrale della circolare, ricavato da fonte pubblica a scopo informativo."
 eleventyExcludeFromCollections: true
 ---
 
-  <!-- Breadcrumb (pagina non ancora collegata dalla navigazione: nessun link "indice") -->
+  <!-- Breadcrumb -->
   <section class="section" style="padding: 1rem 0 0;">
     <div class="container" style="max-width: 800px;">
       <p style="font-size: 0.85rem; color: var(--gray-medium);">
-        <a href="{{ '/' | url }}">Home</a> &nbsp;&rsaquo;&nbsp; Circolari
+        <a href="{{ '/' | url }}">Home</a> &nbsp;&rsaquo;&nbsp;
+        <a href="{{ '/circolari.html' | url }}">Circolari</a>
       </p>
     </div>
   </section>
@@ -75,5 +75,9 @@ eleventyExcludeFromCollections: true
           Testo ricavato da fonte pubblica a scopo informativo. In caso di discrepanze fa fede il testo originale dell'amministrazione.
         </div>
       </div>
+
+      <p style="margin-top: 1.5rem;">
+        <a href="{{ '/circolari.html' | url }}">&larr; Tutte le circolari</a>
+      </p>
     </div>
   </section>

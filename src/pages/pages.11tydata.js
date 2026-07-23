@@ -11,8 +11,8 @@ module.exports = {
       // Don't override permalink for pagination templates (permits.liquid, documents-*.liquid)
       // They define their own permalink in front matter
       if (data.pagination) return data.permalink;
-      // Preserve explicit .xml permalinks (sitemap templates)
-      if (typeof data.permalink === 'string' && data.permalink.endsWith('.xml')) return data.permalink;
+      // Preserve explicit .xml / .json permalinks (sitemap and JSON data templates)
+      if (typeof data.permalink === 'string' && (data.permalink.endsWith('.xml') || data.permalink.endsWith('.json'))) return data.permalink;
       return `${data.page.fileSlug}.html`;
     },
     langSwitchPath: (data) => {

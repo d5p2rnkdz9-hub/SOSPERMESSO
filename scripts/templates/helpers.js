@@ -309,6 +309,15 @@ function faqJsonLd(permit) {
   return JSON.stringify(obj).replace(/</g, '\\u003c');
 }
 
+/**
+ * jsonify - Serialize any value (object/array) as raw JSON, safe to embed in
+ * an HTML document (escapes "<" so a stray "</script>" can't break out).
+ * Usage: {{ someArray | jsonify }}
+ */
+function jsonify(value) {
+  return JSON.stringify(value == null ? null : value).replace(/</g, '\\u003c');
+}
+
 module.exports = {
   linkToDizionario,
   getDocumentClass,
@@ -317,6 +326,7 @@ module.exports = {
   normalizeDocumentName,
   parseDocNotes,
   jsonString,
+  jsonify,
   faqJsonLd,
   DISPUTED_DOCUMENTS
 };

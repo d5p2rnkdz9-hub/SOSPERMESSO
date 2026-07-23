@@ -7,6 +7,7 @@ module.exports = {
         items: [
           { label: "Tutti i permessi", href: "/database.html" },
           { label: "Che documenti porto?", href: "/documenti-questura.html" },
+          { label: "Circolari e prassi amministrativa", href: "/circolari.html" },
           { label: "Protezione internazionale", href: "/protezione-internazionale.html" },
           { label: "Ricongiungimento familiare", href: "/ricongiungimento-familiare.html" },
           { label: "Lavorare in Italia", href: "/lavorare-in-italia.html" },
@@ -16,13 +17,9 @@ module.exports = {
       },
       {
         label: "Patto UE",
-        href: "/patto-ue.html",
+        href: "https://www.sospatto.it",
         badge: "NUOVO",
-        items: [
-          { label: "I testi normativi", href: "/patto-ue-norme.html" },
-          { label: "Diagramma interattivo", href: "/patto-ue-diagramma.html" },
-          { label: "Testi interattivi", href: "/public/patto-interattivo/index.html" }
-        ]
+        external: true
       },
       {
         label: "Test interattivi",

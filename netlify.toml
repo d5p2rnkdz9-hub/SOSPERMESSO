@@ -190,15 +190,15 @@
   to = "/fr/database.html"
   status = 301
 
-# ── GIURISPRUDENZA E CIRCOLARI (unpublished, pending self-hosted rebuild) ──
+# ── GIURISPRUDENZA E CIRCOLARI (old banca-dati URL, superseded by /circolari.html) ──
 [[redirects]]
   from = "/banca-dati"
-  to = "/database.html"
+  to = "/circolari.html"
   status = 302
 
 [[redirects]]
   from = "/banca-dati.html"
-  to = "/database.html"
+  to = "/circolari.html"
   status = 302
 
 [[redirects]]

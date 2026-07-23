@@ -1,0 +1,73 @@
+---
+layout: layouts/base.liquid
+title: "Circolari e prassi amministrativa sui permessi di soggiorno | SOS Permesso"
+lang: it
+langSwitchPath: /database.html
+description: "Testi integrali di circolari ministeriali e prassi amministrativa in materia di permessi di soggiorno, con ricerca full-text e filtri per ente, anno e permesso."
+---
+<link rel="stylesheet" href="src/styles/legale.css?v={{ site.assetVersion }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Circolari e prassi amministrativa", "item": "{{ site.url }}/circolari.html" }
+  ]
+}
+</script>
+
+<main class="leg-page" id="circ-app">
+  <nav class="breadcrumb" aria-label="Percorso">
+    <a href="index.html">Home</a> ›
+    <span aria-current="page">Circolari</span>
+  </nav>
+
+  <header class="leg-header">
+    <h1 class="leg-title">Circolari e prassi amministrativa</h1>
+    <p class="leg-subtitle">
+      {{ circolariDb.size }} circolari e atti amministrativi in materia di permessi di soggiorno,
+      pubblicati con testo integrale self-hosted.
+    </p>
+  </header>
+
+  <div class="leg-disclaimer">
+    <strong>Testi integrali, non consulenza legale.</strong> Questa sezione raccoglie
+    circolari ministeriali e altra prassi amministrativa utile a chi assiste persone
+    straniere (avvocati, sportelli, associazioni) o vuole approfondire un caso concreto.
+    Non sostituisce la consulenza legale: per il tuo caso specifico
+    <a href="aiuto-legale.html">cerca un aiuto legale gratuito</a>.
+  </div>
+
+  <div class="leg-filters" id="circ-filters" hidden>
+    <input class="leg-search" type="search" id="circ-f-q"
+      placeholder="Cerca per parole chiave (es. ricongiungimento, INPS 2020)"
+      aria-label="Cerca nelle circolari">
+    <select id="circ-f-ente" aria-label="Ente">
+      <option value="">Tutti gli enti</option>
+    </select>
+    <select id="circ-f-permesso" aria-label="Permesso di soggiorno">
+      <option value="">Tutti i permessi</option>
+      {%- for p in circolariPermitOptions %}
+      <option value="{{ p.slug }}">{{ p.tipo }}</option>
+      {%- endfor %}
+    </select>
+    <select id="circ-f-anno" aria-label="Anno">
+      <option value="">Tutti gli anni</option>
+    </select>
+  </div>
+
+  <p id="circ-loading">Caricamento delle circolari…</p>
+  <p class="leg-count" id="circ-count"></p>
+  <ul class="leg-list" id="circ-list"></ul>
+  <p class="leg-empty" id="circ-empty" hidden>
+    Nessun documento trovato con questi filtri. Prova ad allargare la ricerca.
+  </p>
+  <button class="leg-more" id="circ-more" type="button" hidden>Mostra altri</button>
+
+  <script type="application/json" id="circ-permits-json">{
+    {%- for p in circolariPermitOptions %}{% if forloop.index0 > 0 %},{% endif %}{{ p.slug | jsonString }}: {{ p.tipo | jsonString }}{% endfor -%}
+  }</script>
+  <script src="src/scripts/circolari-db.js?v={{ site.assetVersion }}" defer></script>
+</main>

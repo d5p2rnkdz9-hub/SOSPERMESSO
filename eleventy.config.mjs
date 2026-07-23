@@ -382,6 +382,12 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter("jsonString", helpers.jsonString);
 
   /**
+   * jsonify - raw JSON serialization of an object/array, safe for inline <script>
+   * Usage: {{ someArray | jsonify }}
+   */
+  eleventyConfig.addFilter("jsonify", helpers.jsonify);
+
+  /**
    * faqJsonLd - FAQPage JSON-LD built from a permit's Q&A sections ('' if none)
    * Usage: {% assign faq = permit | faqJsonLd %}
    */

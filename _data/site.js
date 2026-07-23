@@ -12,6 +12,7 @@ function assetVersion() {
     'src/scripts/prassi.js',
     'src/scripts/chatbot.js',
     'src/scripts/legale-db.js',
+    'src/scripts/circolari-db.js',
     'src/styles/main.css',
     'src/styles/components.css',
     'src/styles/mobile.css',
