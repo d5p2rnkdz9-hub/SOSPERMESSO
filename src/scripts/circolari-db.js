@@ -14,7 +14,7 @@
     if (permitsEl) permitNames = JSON.parse(permitsEl.textContent);
   } catch (e) { /* select permessi resta vuota */ }
 
-  var state = { q: '', ente: '', permesso: '', anno: '', shown: PAGE };
+  var state = { q: '', ente: '', permesso: '', anno: '', fulltext: false, shown: PAGE };
   var docs = [];
 
   function esc(s) {
@@ -29,6 +29,34 @@
     return p.length === 3 ? p[2] + '/' + p[1] + '/' + p[0] : iso;
   }
 
+  // Ricerca a due livelli: di default (mirata) matcha solo su titolo/oggetto/
+  // tema/ente/numero. Con la checkbox "cerca anche nel testo" attiva, include
+  // anche l'estratto di testo integrale `t`. Il rank distingue le fasce per
+  // l'ordinamento dei risultati: 0 = match in titolo/oggetto, 1 = match in
+  // tema/ente/numero, 2 = match solo nel testo (richiede fulltext attivo).
+  function queryRank(d, terms) {
+    var titleHay = (d.titolo + ' ' + (d.oggetto || '')).toLowerCase();
+    var metaHay = ((d.tema || '') + ' ' + (d.ente || '') + ' ' + (d.numero || '')).toLowerCase();
+    var titleHit = true, metaHit = true;
+    for (var i = 0; i < terms.length; i++) {
+      if (!terms[i]) continue;
+      if (titleHay.indexOf(terms[i]) === -1) titleHit = false;
+      if (metaHay.indexOf(terms[i]) === -1) metaHit = false;
+    }
+    if (titleHit) return 0;
+    if (metaHit) return 1;
+
+    if (state.fulltext) {
+      var fullHay = titleHay + ' ' + metaHay + ' ' + (d.t || '').toLowerCase();
+      var fullHit = true;
+      for (var j = 0; j < terms.length; j++) {
+        if (terms[j] && fullHay.indexOf(terms[j]) === -1) { fullHit = false; break; }
+      }
+      if (fullHit) return 2;
+    }
+    return -1; // nessun match
+  }
+
   function matches(d) {
     if (state.anno && d.anno !== state.anno) return false;
     if (state.ente && d.ente !== state.ente) return false;
@@ -40,12 +68,11 @@
       if (!hit && !d.trasversale) return false;
     }
     if (state.q) {
-      var hay = (d.titolo + ' ' + (d.oggetto || '') + ' ' + (d.tema || '') + ' ' +
-        (d.ente || '') + ' ' + (d.numero || '') + ' ' + (d.t || '')).toLowerCase();
       var terms = state.q.toLowerCase().split(/\s+/);
-      for (var t = 0; t < terms.length; t++) {
-        if (terms[t] && hay.indexOf(terms[t]) === -1) return false;
-      }
+      d._rank = queryRank(d, terms);
+      if (d._rank === -1) return false;
+    } else {
+      d._rank = 0;
     }
     return true;
   }
@@ -75,6 +102,13 @@
 
   function render() {
     var hits = docs.filter(matches);
+    if (state.q) {
+      // Fascia di rilevanza crescente, poi data discendente dentro ogni fascia.
+      hits.sort(function (a, b) {
+        if (a._rank !== b._rank) return a._rank - b._rank;
+        return (b.data || '').localeCompare(a.data || '');
+      });
+    }
     var countEl = document.getElementById('circ-count');
     countEl.textContent = hits.length === 1 ? '1 documento trovato' : hits.length + ' documenti trovati';
 
@@ -132,6 +166,13 @@
     bind('circ-f-ente', 'ente');
     var permSel = bind('circ-f-permesso', 'permesso');
     bind('circ-f-anno', 'anno');
+
+    var fulltextEl = document.getElementById('circ-f-fulltext');
+    fulltextEl.addEventListener('change', function () {
+      state.fulltext = fulltextEl.checked;
+      state.shown = PAGE;
+      render();
+    });
 
     // preselezione da URL (?permesso=slug)
     var m = window.location.search.match(/[?&]permesso=([^&]+)/);

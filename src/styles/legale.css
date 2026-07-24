@@ -88,6 +88,34 @@
   outline-offset: 1px;
 }
 
+/* Checkbox "cerca anche nel testo" — sobria, nessuna icona/glow. */
+.leg-fulltext-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray-dark, #2D2D2D);
+  cursor: pointer;
+  /* mobile.css forza width:100% su input/button sotto 768px: la label non è
+     un input né un button, ma il checkbox interno sì — annulliamolo qui. */
+  width: auto;
+}
+
+.leg-fulltext-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin: 0;
+  accent-color: var(--black, #1A1A1A);
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .leg-filters .leg-fulltext-toggle {
+    grid-column: 1 / -1;
+  }
+}
+
 .leg-count {
   font-size: 0.9rem;
   color: var(--gray-medium, #757575);

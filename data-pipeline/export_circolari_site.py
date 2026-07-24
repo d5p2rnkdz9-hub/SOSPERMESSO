@@ -215,6 +215,33 @@ def load_meta_overrides() -> dict[str, dict]:
     return overrides
 
 
+# Normalizzazione varianti dello stesso ente emittente (stesso ente, denominazione
+# diversa nel tempo o refuso di scraping). Verificato con una query di conteggio
+# sul campo `ente` di _cache/circolari-site.json (1272 righe). Non tocca gli enti
+# "doppi" (es. "Ministero dell'Interno e Ministero del Lavoro...") né altre varianti
+# non elencate: quelle restano come sono nel DB.
+ENTE_NORMALIZZAZIONE = {
+    "Istituto Nazionale Previdenza Sociale": "INPS",
+    "INPS - Istituto Nazionale Previdenza Sociale": "INPS",
+    "Istituto Nazionale della Previdenza Sociale": "INPS",
+    "Istituto Nazionale di Previdenza Sociale": "INPS",
+    "Ministero del Lavoro e delle Politiche Sociali": "Ministero del Lavoro",
+    "Ministero del Lavoro e della Previdenza Sociale": "Ministero del Lavoro",
+    "Ministero del Lavoro, della Salute e delle Politiche Sociali": "Ministero del Lavoro",
+    "Ministero delle Infrastrutture": "Ministero delle Infrastrutture e dei Trasporti",
+    "Ministero dell'Istruzione, dell'Università e della Ricerca": "Ministero dell'Istruzione",
+    "Ministero della Pubblica Istruzione": "Ministero dell'Istruzione",
+    "Ministero della Sanità": "Ministero della Salute",
+    "Ministero di Grazia e Giustizia": "Ministero della Giustizia",
+}
+
+
+def normalize_ente(ente: str | None) -> str | None:
+    if not ente:
+        return ente
+    return ENTE_NORMALIZZAZIONE.get(ente.strip(), ente)
+
+
 def build_titolo_pubblico(ente: str | None, numero: str | None, data_it: str | None, oggetto: str | None) -> str:
     ente_clean = (ente or "").strip()
     numero_clean = (numero or "").strip()
@@ -280,7 +307,7 @@ def main() -> int:
         override = meta_overrides.get(biz_key, {})
         classif = classificazione.get(biz_key, {})
 
-        ente = fix_mojibake(override.get("ente") or row["ente_emittente"])
+        ente = normalize_ente(fix_mojibake(override.get("ente") or row["ente_emittente"]))
         numero = override.get("numero") or row["numero_protocollo"]
         oggetto = fix_mojibake(override.get("oggetto") or row["oggetto"])
 
