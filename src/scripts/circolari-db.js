@@ -16,6 +16,8 @@
 
   var state = { q: '', ente: '', permesso: '', anno: '', fulltext: false, shown: PAGE };
   var docs = [];
+  var fulltextIndex = null;   // slug → testo integrale minuscolo (lazy)
+  var fulltextLoading = false;
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -46,8 +48,8 @@
     if (titleHit) return 0;
     if (metaHit) return 1;
 
-    if (state.fulltext) {
-      var fullHay = titleHay + ' ' + metaHay + ' ' + (d.t || '').toLowerCase();
+    if (state.fulltext && fulltextIndex) {
+      var fullHay = titleHay + ' ' + metaHay + ' ' + (fulltextIndex[d.slug] || '');
       var fullHit = true;
       for (var j = 0; j < terms.length; j++) {
         if (terms[j] && fullHay.indexOf(terms[j]) === -1) { fullHit = false; break; }
@@ -171,6 +173,28 @@
     fulltextEl.addEventListener('change', function () {
       state.fulltext = fulltextEl.checked;
       state.shown = PAGE;
+      // L'indice full-text è pesante: lo scarichiamo solo alla prima attivazione.
+      if (state.fulltext && !fulltextIndex && !fulltextLoading) {
+        fulltextLoading = true;
+        var countEl = document.getElementById('circ-count');
+        countEl.textContent = 'Caricamento del testo integrale delle circolari…';
+        fetch('circolari-fulltext.json')
+          .then(function (r) {
+            if (!r.ok) throw new Error(r.status);
+            return r.json();
+          })
+          .then(function (idx) {
+            fulltextIndex = idx;
+            render();
+          })
+          .catch(function () {
+            fulltextLoading = false;
+            fulltextEl.checked = false;
+            state.fulltext = false;
+            render();
+          });
+        return;
+      }
       render();
     });
 

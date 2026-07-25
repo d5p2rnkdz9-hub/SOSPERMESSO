@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { normalizeEnte } = require('../scripts/normalize-ente');
 
 const CACHE_PATH = path.join(__dirname, '..', '_cache', 'circolari-site.json');
 
@@ -25,7 +26,7 @@ module.exports = function () {
     const index = circolari.map((c) => ({
       slug: c.slug,
       titolo: c.titolo_pubblico,
-      ente: c.ente || null,
+      ente: normalizeEnte(c.ente) || null,
       numero: c.numero || null,
       data: c.data || null,
       anno: c.data ? c.data.slice(0, 4) : null,
@@ -33,8 +34,9 @@ module.exports = function () {
       tema: c.tema || null,
       permessi: c.permessi || [],
       trasversale: !!c.trasversale,
-      // testo cercabile (non mostrato) — chiave breve per contenere il fetch
-      t: truncate((c.testo || []).join(' '), 600),
+      // il testo integrale cercabile vive in circolari-fulltext.json
+      // (_data/circolariFulltext.js), caricato dal client solo quando la
+      // checkbox "cerca anche nel testo" viene attivata.
     }));
 
     // Ordina per data decrescente (più recenti prima) per il rendering di default
