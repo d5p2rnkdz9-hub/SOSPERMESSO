@@ -1,0 +1,292 @@
+/* =====================================================
+   SOS PERMESSO — VERSIONE PRO (operatori CAF/patronati/sportelli)
+
+   Attivata con data-mode="pro" su <html>: script inline in base.liquid
+   la applica pre-paint leggendo localStorage('sos-mode') o il cookie
+   sos_mode condiviso con app.sospermesso.it. Il toggle è in header
+   (#pro-toggle, logica in app.js).
+
+   Filosofia: layout IDENTICO, palette shiftata — navy al posto del
+   giallo brand, giallo che resta come accento — con transizione smooth.
+   ===================================================== */
+
+/* ---- Smooth color morph durante il toggle (app.js aggiunge la classe
+        per ~450ms attorno allo swap di data-mode) ---- */
+html.mode-transition,
+html.mode-transition *,
+html.mode-transition *::before,
+html.mode-transition *::after {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    fill 0.35s ease,
+    stroke 0.35s ease !important;
+}
+
+/* ---- Palette PRO ---- */
+html[data-mode="pro"] {
+  --pro-navy: #1B3A5C;
+  --pro-navy-dark: #12283F;
+  --pro-navy-light: #35597F;
+  --pro-gold: #FFD75A;
+  --pro-bg: #F2F5F9;
+
+  /* Ciò che usa le variabili brand segue automaticamente */
+  --taxi-yellow: #1B3A5C;
+  --taxi-yellow-light: #35597F;
+  --taxi-yellow-dark: #12283F;
+  --taxi-yellow-bright: #2C5282;
+  --off-white: #F2F5F9;
+}
+
+html[data-mode="pro"] body {
+  background-color: var(--pro-bg);
+}
+
+/* ---- Override mirati per componenti con colori hardcoded ---- */
+html[data-mode="pro"] .btn-primary {
+  background: var(--pro-navy);
+  color: var(--pro-gold);
+  border-color: var(--pro-navy-dark);
+  box-shadow: 2.5px 2.5px 0 var(--pro-navy-dark);
+}
+
+html[data-mode="pro"] .btn-primary:hover {
+  background: var(--pro-navy-light);
+  color: var(--pro-gold);
+}
+
+/* Homepage refresh (index.html, variabili scoped --hr-*) */
+html[data-mode="pro"] .home-refresh {
+  --hr-yellow: #1b3a5c;
+  --hr-yellow-light: #e7edf5;
+  --hr-yellow-bright: #2c5282;
+}
+
+/* Testo oro sui bottoni/card che diventano navy; i secondari restano chiari */
+html[data-mode="pro"] .hr-btn {
+  color: #ffd75a;
+}
+
+html[data-mode="pro"] .hr-btn--secondary {
+  color: #1a1a1a;
+}
+
+html[data-mode="pro"] .hr-ucard--yellow {
+  color: #ffffff;
+}
+
+/* L'evidenziatore giallo resta giallo: è accento, non brand */
+html[data-mode="pro"] .hr-hero .hr-highlight {
+  background: linear-gradient(180deg, transparent 50%, #ffd700 50%);
+}
+
+/* =====================================================
+   TOGGLE "PRO" IN HEADER
+   ===================================================== */
+.pro-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  /* mobile.css imposta button { width: 100% } sotto i 768px */
+  width: auto !important;
+  flex: 0 0 auto;
+  padding: 0.3rem 0.8rem;
+  border: 2px solid #1a1a1a;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #1a1a1a;
+  transition: all 150ms ease-in-out;
+}
+
+.pro-toggle:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 #1a1a1a;
+}
+
+.pro-toggle[aria-pressed="true"] {
+  background: #1b3a5c;
+  color: #ffd75a;
+  border-color: #12283f;
+}
+
+/* =====================================================
+   MACCHINARIO .pro-only — contenuti visibili solo in PRO
+   ===================================================== */
+.pro-only {
+  display: none !important;
+}
+
+html[data-mode="pro"] .pro-only {
+  display: block !important;
+}
+
+.pro-only-inline {
+  display: none !important;
+}
+
+html[data-mode="pro"] .pro-only-inline {
+  display: inline-flex !important;
+}
+
+/* =====================================================
+   SCHEDA PRO (sezione #pro nelle pagine permesso)
+   ===================================================== */
+.pro-section .pro-card {
+  background: #ffffff;
+  border: 2px solid var(--pro-navy-dark, #12283f);
+  border-inline-start: 6px solid var(--pro-navy, #1b3a5c);
+  border-radius: 12px;
+  box-shadow: 3px 3px 0 var(--pro-navy-dark, #12283f);
+  padding: 1.5rem;
+}
+
+.pro-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.pro-pill {
+  display: inline-block;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: var(--pro-navy, #1b3a5c);
+  color: var(--pro-gold, #ffd75a);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pro-pill-outline {
+  background: transparent;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  cursor: help;
+}
+
+.pro-updated {
+  margin-inline-start: auto;
+  font-size: 0.78rem;
+  color: var(--gray-medium, #757575);
+}
+
+.pro-card h3 {
+  font-size: 1rem;
+  margin: 1.25rem 0 0.4rem;
+}
+
+.pro-card p,
+.pro-card li {
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.pro-card ul {
+  padding-inline-start: 1.2rem;
+  margin: 0.25rem 0;
+}
+
+.pro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1.5rem;
+  margin: 0.9rem 0;
+  font-size: 0.92rem;
+}
+
+.pro-grid .pro-grid-full {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  .pro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pro-note {
+  background: var(--gray-light, #f5f5f5);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+}
+
+.pro-note h3 {
+  margin-top: 0;
+}
+
+.pro-refs {
+  list-style: disc;
+}
+
+.pro-refs a {
+  color: #1565c0;
+  font-weight: 600;
+}
+
+/* Sentenze: teaser visibile, resto sfocato dietro il paywall (demo) */
+.pro-sentenza {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.pro-sentenza-head span {
+  color: var(--gray-medium, #757575);
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin-inline-start: 0.4rem;
+}
+
+.pro-blur {
+  filter: blur(3.5px);
+  user-select: none;
+}
+
+.pro-lock-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(26, 26, 26, 0.55);
+  background: transparent;
+  border: 1px solid rgba(26, 26, 26, 0.3);
+  border-radius: 6px;
+  cursor: not-allowed;
+}
+
+.pro-disclaimer {
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  font-size: 0.78rem !important;
+  color: var(--gray-medium, #757575);
+}
+
+/* Chip PRO nelle righe del database */
+.pro-chip {
+  align-items: center;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: #1b3a5c;
+  color: #ffd75a !important;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}

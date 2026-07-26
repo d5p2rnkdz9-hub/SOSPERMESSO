@@ -474,3 +474,44 @@ if (document.readyState === 'loading') {
 } else {
   initLanguageSwitcher();
 }
+
+// ===============================================
+// VERSIONE PRO (operatori) — toggle in header
+// Stato per-device: localStorage 'sos-mode' + cookie sos_mode condiviso
+// con app.sospermesso.it. Il data-mode è già applicato pre-paint da uno
+// script inline in base.liquid; qui gestiamo solo click e stato ARIA.
+// ===============================================
+
+(function initProToggle() {
+  const btn = document.getElementById('pro-toggle');
+  if (!btn) return;
+
+  const root = document.documentElement;
+  const isPro = () => root.getAttribute('data-mode') === 'pro';
+  const render = () => btn.setAttribute('aria-pressed', String(isPro()));
+
+  render();
+
+  btn.addEventListener('click', () => {
+    const next = isPro() ? 'persona' : 'pro';
+
+    // Smooth color morph: transizioni forzate per la durata dello swap
+    root.classList.add('mode-transition');
+    setTimeout(() => root.classList.remove('mode-transition'), 450);
+
+    if (next === 'pro') {
+      root.setAttribute('data-mode', 'pro');
+    } else {
+      root.removeAttribute('data-mode');
+    }
+
+    try { localStorage.setItem('sos-mode', next); } catch (e) { /* storage off */ }
+
+    // Cookie condiviso cross-sottodominio (fallisce in locale, va bene)
+    const base = 'sos_mode=' + next + '; path=/; max-age=31536000; SameSite=Lax';
+    document.cookie = base;
+    document.cookie = base + '; domain=.sospermesso.it';
+
+    render();
+  });
+})();

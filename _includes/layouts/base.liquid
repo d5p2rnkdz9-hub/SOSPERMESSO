@@ -295,6 +295,11 @@
   <link rel="stylesheet" href="{{ '/src/styles/prassi.css' | url }}?v={{ site.assetVersion }}">
   <link rel="stylesheet" href="{{ '/src/styles/chatbot.css' | url }}?v={{ site.assetVersion }}">
   <link rel="stylesheet" href="{{ '/src/styles/circolari.css' | url }}?v={{ site.assetVersion }}">
+  <link rel="stylesheet" href="{{ '/src/styles/pro.css' | url }}?v={{ site.assetVersion }}">
+
+  <!-- Versione PRO: applicata pre-paint (localStorage con fallback sul cookie
+       sos_mode condiviso con app.sospermesso.it) — nessun flash al load -->
+  <script>try{var m=localStorage.getItem('sos-mode');if(!m){var c=document.cookie.match(/(?:^|; )sos_mode=([^;]*)/);m=c&&c[1]}if(m==='pro')document.documentElement.setAttribute('data-mode','pro')}catch(e){}</script>
 
 
   {% if extraStyles %}{{ extraStyles }}{% endif %}

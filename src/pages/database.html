@@ -521,7 +521,7 @@ extraStyles: |
               <a href="permesso-studio-dopo-ingresso-con-visto.html" class="permit-main"><span class="icon">📖</span><span class="title">Permesso per studio (dopo ingresso con visto)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-studio-dopo-ingresso-con-visto.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-studio-dopo-ingresso-con-visto.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -533,7 +533,7 @@ extraStyles: |
               <a href="permesso-studio-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">📖</span><span class="title">Permesso per studio (conversione da altro permesso)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-studio-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-studio-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -545,7 +545,7 @@ extraStyles: |
               <a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html" class="permit-main"><span class="icon">💼</span><span class="title">Permesso per lavoro subordinato (dopo ingresso con visto per flussi)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -557,7 +557,7 @@ extraStyles: |
               <a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">💼</span><span class="title">Permesso per lavoro subordinato (conversione da altro permesso)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -569,7 +569,7 @@ extraStyles: |
               <a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html" class="permit-main"><span class="icon">🌾</span><span class="title">Permesso per lavoro subordinato stagionale (dopo ingresso con visto per flussi stagionali)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -581,7 +581,7 @@ extraStyles: |
               <a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html" class="permit-main"><span class="icon">🏢</span><span class="title">Permesso per lavoro autonomo (dopo ingresso con visto per flussi)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -593,7 +593,7 @@ extraStyles: |
               <a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html" class="permit-main"><span class="icon">🏢</span><span class="title">Permesso per lavoro autonomo (conversione da altro permesso)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -605,7 +605,7 @@ extraStyles: |
               <a href="permesso-lavoro-artistico.html" class="permit-main"><span class="icon">🎭</span><span class="title">Permesso per lavoro artistico</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-lavoro-artistico.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-lavoro-artistico.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-artistico.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-artistico.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -617,7 +617,7 @@ extraStyles: |
               <a href="permesso-ricerca-scientifica.html" class="permit-main"><span class="icon">🔬</span><span class="title">Permesso per ricerca scientifica</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-ricerca-scientifica.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-ricerca-scientifica.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-ricerca-scientifica.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-ricerca-scientifica.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -629,7 +629,7 @@ extraStyles: |
               <a href="permesso-tirocinio.html" class="permit-main"><span class="icon">📋</span><span class="title">Permesso per tirocinio</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-tirocinio.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-tirocinio.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-tirocinio.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-tirocinio.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -641,7 +641,7 @@ extraStyles: |
               <a href="permesso-attivita-sportiva.html" class="permit-main"><span class="icon">⚽</span><span class="title">Permesso per attività sportiva</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-attivita-sportiva.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-attivita-sportiva.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-attivita-sportiva.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-attivita-sportiva.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -653,7 +653,7 @@ extraStyles: |
               <a href="permesso-motivi-religiosi.html" class="permit-main"><span class="icon">🕊️</span><span class="title">Permesso per motivi religiosi</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-motivi-religiosi.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-motivi-religiosi.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-motivi-religiosi.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-motivi-religiosi.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -665,7 +665,7 @@ extraStyles: |
               <a href="permesso-residenza-elettiva.html" class="permit-main"><span class="icon">🏡</span><span class="title">Permesso per residenza elettiva</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-residenza-elettiva.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-residenza-elettiva.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-residenza-elettiva.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-residenza-elettiva.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -677,7 +677,7 @@ extraStyles: |
               <a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html" class="permit-main"><span class="icon">🇪🇺</span><span class="title">Permesso UE per soggiornanti di lungo periodo ("Carta")</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -689,7 +689,7 @@ extraStyles: |
               <a href="permesso-attesa-occupazione.html" class="permit-main"><span class="icon">🔍</span><span class="title">Permesso di soggiorno per attesa occupazione ("ricerca lavoro")</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-attesa-occupazione.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-attesa-occupazione.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -711,7 +711,7 @@ extraStyles: |
               <a href="permesso-richiesta-asilo.html" class="permit-main"><span class="icon">🟨</span><span class="title">Permesso di soggiorno per richiesta asilo ("permesso giallo")</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-richiesta-asilo.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-richiesta-asilo.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -723,7 +723,7 @@ extraStyles: |
               <a href="permesso-asilo-status-rifugiato.html" class="permit-main"><span class="icon">🛡️</span><span class="title">Permesso di soggiorno per asilo (status di rifugiato)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-asilo-status-rifugiato.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-asilo-status-rifugiato.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -735,7 +735,7 @@ extraStyles: |
               <a href="permesso-protezione-sussidiaria.html" class="permit-main"><span class="icon">🔰</span><span class="title">Permesso di soggiorno per protezione sussidiaria</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -747,7 +747,7 @@ extraStyles: |
               <a href="permesso-protezione-speciale.html" class="permit-main"><span class="icon">✨</span><span class="title">Permesso di soggiorno per protezione speciale</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-protezione-speciale.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-protezione-speciale.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -759,7 +759,7 @@ extraStyles: |
               <a href="permesso-protezione-sociale-vittime-di-tratta.html" class="permit-main"><span class="icon">🆘</span><span class="title">Permesso per protezione sociale (vittime di tratta)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -771,7 +771,7 @@ extraStyles: |
               <a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html" class="permit-main"><span class="icon">🛑</span><span class="title">Permesso per protezione sociale (vittime di violenza domestica)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -783,7 +783,7 @@ extraStyles: |
               <a href="permesso-sfruttamento-lavorativo.html" class="permit-main"><span class="icon">⚠️</span><span class="title">Permesso per sfruttamento lavorativo</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-sfruttamento-lavorativo.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-sfruttamento-lavorativo.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-sfruttamento-lavorativo.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-sfruttamento-lavorativo.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -795,7 +795,7 @@ extraStyles: |
               <a href="permesso-apolidia.html" class="permit-main"><span class="icon">🌐</span><span class="title">Permesso per apolidia</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-apolidia.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-apolidia.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-apolidia.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-apolidia.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -807,7 +807,7 @@ extraStyles: |
               <a href="permesso-minore-eta-per-msna.html" class="permit-main"><span class="icon">👶</span><span class="title">Permesso di soggiorno per minore età</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-minore-eta-per-msna.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-minore-eta-per-msna.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -819,7 +819,7 @@ extraStyles: |
               <a href="permesso-calamita-naturale.html" class="permit-main"><span class="icon">🌋</span><span class="title">Permesso di soggiorno per calamità naturale</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-calamita-naturale.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-calamita-naturale.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-calamita-naturale.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-calamita-naturale.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -831,7 +831,7 @@ extraStyles: |
               <a href="permesso-integrazione-prosieguo-amministrativo.html" class="permit-main"><span class="icon">📄</span><span class="title">Permesso di soggiorno per prosieguo amministrativo</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-integrazione-prosieguo-amministrativo.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-integrazione-prosieguo-amministrativo.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -853,7 +853,7 @@ extraStyles: |
               <a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html" class="permit-main"><span class="icon">🤰</span><span class="title">Donna in stato di gravidanza o con figlio minore di 6 mesi</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -865,7 +865,7 @@ extraStyles: |
               <a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html" class="permit-main"><span class="icon">👨‍👶</span><span class="title">Padre di bambino minore di 6 mesi o che sta per nascere</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -877,7 +877,7 @@ extraStyles: |
               <a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html" class="permit-main"><span class="icon">💊</span><span class="title">Cure mediche dopo ingresso con visto per cure mediche</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -889,7 +889,7 @@ extraStyles: |
               <a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html" class="permit-main"><span class="icon">🏥</span><span class="title">Persona gravemente malata che si trova già in Italia</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -911,7 +911,7 @@ extraStyles: |
               <a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="permit-main"><span class="icon">🧑‍🤝‍🧑</span><span class="title">Famiglia dopo ingresso con visto per ricongiungimento familiare</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -923,7 +923,7 @@ extraStyles: |
               <a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="permit-main"><span class="icon">💑</span><span class="title">Coesione familiare (senza nullaosta)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -935,7 +935,7 @@ extraStyles: |
               <a href="permesso-famiglia-genitore-di-cittadino-italiano.html" class="permit-main"><span class="icon">🇮🇹</span><span class="title">Genitore di cittadino italiano</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -947,7 +947,7 @@ extraStyles: |
               <a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html" class="permit-main"><span class="icon">👵</span><span class="title">Convivente con parente cittadino italiano entro il secondo grado</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -959,7 +959,7 @@ extraStyles: |
               <a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html" class="permit-main"><span class="icon">👨‍👧</span><span class="title">Figlio minore di più di 14 anni che vive con i genitori</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -971,7 +971,7 @@ extraStyles: |
               <a href="permesso-assistenza-minore-articolo-31.html" class="permit-main"><span class="icon">🧒</span><span class="title">Permesso per assistenza minore (art. 31)</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-assistenza-minore-articolo-31.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-assistenza-minore-articolo-31.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-assistenza-minore-articolo-31.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-assistenza-minore-articolo-31.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -983,7 +983,7 @@ extraStyles: |
               <a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html" class="permit-main"><span class="icon">👦</span><span class="title">Affidamento a familiari entro il quarto grado</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -995,7 +995,7 @@ extraStyles: |
               <a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html" class="permit-main"><span class="icon">🫂</span><span class="title">Familiari di persone con status di rifugiato o protezione sussidiaria</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -1007,7 +1007,7 @@ extraStyles: |
               <a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html" class="permit-main"><span class="icon">🏠</span><span class="title">FAMIT per familiari di cittadini italiani "statici"</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -1019,7 +1019,7 @@ extraStyles: |
               <a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html" class="permit-main"><span class="icon">🇪🇺</span><span class="title">Carta di soggiorno per familiare di cittadino UE</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -1031,7 +1031,7 @@ extraStyles: |
               <a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html" class="permit-main"><span class="icon">🚀</span><span class="title">Carta di soggiorno per familiare di cittadino italiano "dinamico"</span></a>
               <div class="permit-actions">
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">🚧 In costruzione</span>
-                {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#cose" class="permit-btn btn-cose">Cos'è</a>
+                {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#cose" class="permit-btn btn-cose">Cos'è</a>{% if proContent.permits[p.slug] %}<a href="permesso-{{ p.slug }}.html#pro" class="permit-btn pro-chip pro-only-inline">PRO</a>{% endif %}
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#primo" class="permit-btn btn-primo">Primo rilascio</a>{% endif %}
                   {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">Rinnovo non previsto</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#rinnovo" class="permit-btn btn-rinnovo">Rinnovo</a>{% endif %}
                 {% endif %}
@@ -1072,6 +1072,7 @@ extraStyles: |
       var coseBtn = actions.querySelector('.btn-cose');
       var primoBtn = actions.querySelector('.btn-primo');
       var rinnovoBtn = actions.querySelector('.btn-rinnovo');
+      var proChip = actions.querySelector('.pro-chip');
       var wipBadge = actions.querySelector('.permit-badge-wip');
 
       // If WIP, leave as-is
@@ -1087,6 +1088,10 @@ extraStyles: |
       if (coseBtn) {
         coseBtn.textContent = 'Info';
         infoCell.appendChild(coseBtn);
+      }
+      if (proChip) {
+        // Scheda PRO: visibile solo in versione PRO (classe pro-only-inline)
+        infoCell.appendChild(proChip);
       }
       row.appendChild(infoCell);
 

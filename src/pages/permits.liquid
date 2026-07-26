@@ -161,6 +161,102 @@ eleventyExcludeFromCollections: true
   </section>
   {% endif %}
 
+  {%- assign proScheda = proContent.permits[permit.slug] -%}
+  {% if proScheda %}
+  <!-- SECTION: SCHEDA PRO (visibile solo in Versione PRO, vedi pro.css) -->
+  <section id="pro" class="section pro-only pro-section" style="padding: 1.5rem 0 0;">
+    <div class="container" style="max-width: 900px;">
+      <div class="pro-card">
+        <div class="pro-card-head">
+          <span class="pro-pill">Scheda PRO</span>
+          {% if proContent.draft %}<span class="pro-pill pro-pill-outline" title="Contenuto in bozza: in attesa di validazione legale">Bozza</span>{% endif %}
+          <span class="pro-updated">agg. {{ proScheda.aggiornato_al }}</span>
+        </div>
+
+        <p>{{ proScheda.sintesi.descrizione }}</p>
+        <p><strong>Base giuridica:</strong> {{ proScheda.sintesi.base_giuridica }}</p>
+
+        <div class="pro-grid">
+          <div><strong>Durata</strong><br>{{ proScheda.sintesi.durata }}</div>
+          <div><strong>Rinnovo</strong><br>{{ proScheda.sintesi.rinnovo }}</div>
+          <div class="pro-grid-full"><strong>Convertibilità</strong><br>{{ proScheda.sintesi.convertibilita }}</div>
+        </div>
+
+        {% if proScheda.sintesi.requisiti.size > 0 %}
+        <h3>Requisiti</h3>
+        <ul>
+          {% for r in proScheda.sintesi.requisiti %}<li>{{ r }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if proScheda.sintesi.note_operative.size > 0 %}
+        <div class="pro-note">
+          <h3>Note operative</h3>
+          <ul>
+            {% for n in proScheda.sintesi.note_operative %}<li>{{ n }}</li>{% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if proScheda.norme.size > 0 %}
+        <h3>Norme di riferimento</h3>
+        <ul class="pro-refs">
+          {% for n in proScheda.norme %}
+          <li>
+            {% if n.url %}<a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">{{ n.fonte }}, {{ n.estremi }}</a>{% else %}<strong>{{ n.fonte }}, {{ n.estremi }}</strong>{% endif %}
+            — {{ n.oggetto }}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if proScheda.sentenze.size > 0 %}
+        <h3>⚖️ Giurisprudenza essenziale</h3>
+        <div class="pro-sentenze">
+          {% for s in proScheda.sentenze %}
+          <div class="pro-sentenza">
+            <p class="pro-sentenza-head"><strong>{{ s.corte }}, {{ s.estremi }}</strong><span>{{ s.data }}</span></p>
+            <p class="pro-sentenza-massima">{{ s.massima | slice: 0, 140 }}{% if s.massima.size > 140 %}<span class="pro-blur" aria-hidden="true">{{ s.massima | slice: 140, 400 }}</span>{% endif %}</p>
+            <button type="button" class="pro-lock-btn" disabled title="Disponibile con l'abbonamento PRO (in arrivo)">🔒 Massima integrale e rilevanza operativa — PRO</button>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if proScheda.circolari.size > 0 %}
+        <h3>Circolari chiave</h3>
+        <ul class="pro-refs">
+          {% for c in proScheda.circolari %}
+          <li><strong>{{ c.ente }} {{ c.estremi }}</strong>{% if c.data and c.data != '' %} ({{ c.data }}){% endif %} — {{ c.oggetto }}{% if c.url %} <a href="{{ c.url }}" target="_blank" rel="noopener noreferrer">testo</a>{% endif %}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {%- assign circCount = 0 -%}
+        {%- capture circolariCollegate -%}
+        {%- for c in circolariDb -%}
+          {%- if circCount < 5 -%}
+            {%- for pc in c.permessi -%}
+              {%- if pc.slug == permit.slug -%}
+                <li><a href="{{ c.slug }}.html">{{ c.ente }}{% if c.numero %} n. {{ c.numero }}{% endif %}{% if c.data %} del {{ c.data }}{% endif %}</a> — {{ c.oggetto | truncate: 120 }}</li>
+                {%- assign circCount = circCount | plus: 1 -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- endcapture -%}
+        {% if circolariCollegate != '' %}
+        <h3>📄 Circolari collegate a questo permesso</h3>
+        <ul class="pro-refs">{{ circolariCollegate }}</ul>
+        <p><a href="circolari-db.html">Cerca tra tutte le circolari →</a></p>
+        {% endif %}
+
+        <p class="pro-disclaimer">Contenuti informativi per operatori professionali, non consulenza legale.{% if proContent.draft %} Bozza in corso di validazione: verificare sempre i riferimenti prima dell'uso in pratica.{% endif %}</p>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
   <!-- SECTION: COS'È -->
   <section id="cose" class="section">
     <div class="container" style="max-width: 900px;">
