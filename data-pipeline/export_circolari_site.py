@@ -126,6 +126,56 @@ def clean_body(raw: str | None) -> str:
     return text.strip()
 
 
+# Abbreviazioni giuridiche/burocratiche italiane che nel testo grezzo terminano
+# con un punto ma non chiudono la frase: la sentence-split regex (basata su
+# [.!?] seguito da maiuscola/cifra) le tratta erroneamente come fine periodo,
+# spezzando ad es. "previste dall'art." | "35 del Decreto legislativo...".
+# Catalogo verificato su un campione di _cache/circolari-site.json (vedi
+# data/normalize-report.md): ~3200 paragrafi su 11132 (~29%) terminavano con
+# una di queste abbreviazioni troncate.
+_ABBREV_WORDS = [
+    "art", "artt", "n", "nn", "co", "commi", "d.lgs", "d.l", "d.p.r", "d.p.c.m",
+    "d.m", "l", "lett", "all", "cap", "par", "pag", "prot", "dott", "dott.ssa",
+    "avv", "on", "sig", "sig.ra", "ecc", "v", "cfr", "ss", "succ", "mod", "reg",
+    "delib", "circ", "sez", "ord", "sent",
+]
+# Le più lunghe prima, per evitare che una forma più corta (es. "d.l") mangi
+# il match di una più lunga e specifica (es. "d.lgs") nella stessa alternanza.
+_ABBREV_ALT = "|".join(re.escape(w) for w in sorted(_ABBREV_WORDS, key=len, reverse=True))
+_ABBREV_END_RE = re.compile(rf"(?i)\b(?:{_ABBREV_ALT})\.$")
+# Sigle puntate generiche non elencate sopra (es. "U.E.", "S.S.N.", "T.U.",
+# "D.P.R." è già coperta ma resta innocuo un doppio match): due o più lettere
+# singole separate da punto, fino alla fine della frase candidata.
+_SIGLA_END_RE = re.compile(r"\b(?:[A-Za-z]\.){2,}$")
+
+
+def _ends_with_truncated_abbrev(sentence: str) -> bool:
+    s = sentence.rstrip()
+    return bool(_ABBREV_END_RE.search(s) or _SIGLA_END_RE.search(s))
+
+
+def _starts_with_digit(sentence: str) -> bool:
+    s = sentence.lstrip()
+    return bool(s) and s[0].isdigit()
+
+
+def _merge_false_sentence_splits(sentences: list[str]) -> list[str]:
+    """Ricongiunge frasi separate erroneamente dalla sentence-split regex:
+    (1) la frase precedente termina con un'abbreviazione troncata (es. "art.",
+        "D.P.R.", "n."): non era mai fine periodo, solo un punto abbreviativo;
+    (2) la frase successiva inizia con una cifra: in italiano giuridico
+        formale un nuovo periodo non inizia quasi mai con un numero grezzo,
+        è quasi sempre il proseguimento di una citazione numerica (numero di
+        legge, articolo, anno) troncata dal punto abbreviativo precedente."""
+    merged: list[str] = []
+    for sentence in sentences:
+        if merged and (_ends_with_truncated_abbrev(merged[-1]) or _starts_with_digit(sentence)):
+            merged[-1] = f"{merged[-1]} {sentence}"
+        else:
+            merged.append(sentence)
+    return merged
+
+
 def paragraphize(text: str) -> list[str]:
     """Spezza il testo ripulito (senza a-capo affidabili, lo scraping li ha
     appiattiti) in paragrafi ragionevoli usando la punteggiatura come euristica:
@@ -147,6 +197,7 @@ def paragraphize(text: str) -> list[str]:
     sentences = [s.strip() for s in sentences if s.strip()]
     if not sentences:
         return [text]
+    sentences = _merge_false_sentence_splits(sentences)
 
     paragraphs: list[str] = []
     current: list[str] = []
