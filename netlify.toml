@@ -211,6 +211,12 @@
   to = "/database.html"
   status = 302
 
+# ── TESTI COORDINATI INTERATTIVI (spostati da /public/patto-interattivo/) ──
+[[redirects]]
+  from = "/public/patto-interattivo/*"
+  to = "/patto-interattivo/:splat"
+  status = 301
+
 # ── SECURITY HEADERS ──
 [[headers]]
   for = "/*"

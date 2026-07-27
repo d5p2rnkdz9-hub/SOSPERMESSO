@@ -22,6 +22,20 @@ module.exports = {
         external: true
       },
       {
+        // Testi coordinati interattivi (bundle in public/patto-interattivo).
+        // Solo IT: sono testi di legge italiani, non tradotti.
+        // Nessun badge sull'etichetta: con "Patto UE NUOVO" accanto la barra si
+        // affollava e le voci andavano a capo. Il badge sta sulla voce nuova.
+        label: "Normativa",
+        href: "/normativa.html",
+        items: [
+          { label: "Testo unico immigrazione (D.Lgs. 286/98)", href: "/normativa.html#dlgs-286-1998", badge: "NUOVO" },
+          { label: "Procedure di protezione internazionale (D.Lgs. 25/2008)", href: "/normativa.html#dlgs-25-2008" },
+          { label: "Accoglienza (D.Lgs. 142/2015)", href: "/normativa.html#dlgs-142-2015" },
+          { label: "Qualifiche (D.Lgs. 251/2007)", href: "/normativa.html#dlgs-251-2007" }
+        ]
+      },
+      {
         label: "Test interattivi",
         href: "/#test",
         items: [

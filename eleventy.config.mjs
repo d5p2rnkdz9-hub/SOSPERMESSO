@@ -20,8 +20,11 @@ export default function(eleventyConfig) {
   eleventyConfig.ignores.add("review-reports/**");
   eleventyConfig.ignores.add("review-reports */**");
   eleventyConfig.ignores.add("_cache/**");
-  // public/ is passthrough-copied as static assets — don't process .md inside as templates
-  eleventyConfig.ignores.add("public/**/*.md");
+  // public/ is passthrough-copied as static assets — nothing inside is a template.
+  // (Le .html del bundle patto-interattivo venivano renderizzate come Liquid:
+  //  inutile e fragile, sono testi di legge da 700 KB con graffe potenzialmente
+  //  ambigue. Il passthrough più sotto è l'unica cosa che li porta in _site.)
+  eleventyConfig.ignores.add("public/**");
   // Ignore root-level markdown files (documentation, not website content)
   eleventyConfig.ignores.add("*.md");
   eleventyConfig.ignores.add("CLAUDE.md");
@@ -433,7 +436,13 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/components");
   eleventyConfig.addPassthroughCopy("src/data");
   eleventyConfig.addPassthroughCopy("IMAGES");
-  eleventyConfig.addPassthroughCopy("public");
+  // public/ resta a /public/... (i PDF e gli .md del Patto sono linkati così in
+  // _data/pattoUe.js), tranne il bundle dei testi coordinati interattivi: quello
+  // sale a /patto-interattivo/... perché è una mini-app con link relativi fra i
+  // testi (../dlgs-25-2008/index.html) e URL pubblici da citare.
+  eleventyConfig.addPassthroughCopy({ "public/patto-ue": "public/patto-ue" });
+  eleventyConfig.addPassthroughCopy({ "public/assets": "public/assets" });
+  eleventyConfig.addPassthroughCopy({ "public/patto-interattivo": "patto-interattivo" });
 
   // Note: EN site uses IT assets via absolute paths (/src/styles, etc.)
   // No separate en/src/styles, en/src/scripts, etc. directories exist
