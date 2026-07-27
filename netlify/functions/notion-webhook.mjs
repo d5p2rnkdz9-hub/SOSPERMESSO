@@ -104,6 +104,30 @@ export default async (req, context) => {
     // Read raw body
     const body = await req.text();
 
+    let payload;
+    try {
+      payload = JSON.parse(body);
+    } catch {
+      console.warn('[notion-webhook] Body is not valid JSON');
+      return new Response(JSON.stringify({ error: 'Invalid JSON' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    // Endpoint verification. Notion POSTs { verification_token } once when the
+    // subscription is created; that request is UNSIGNED by design (the token it
+    // delivers is itself the future signing secret), so it must be handled
+    // before the signature check. Copy the logged token into both the Notion UI
+    // and the NOTION_WEBHOOK_SECRET env var.
+    if (payload.verification_token) {
+      console.log('[notion-webhook] Verification token received:', payload.verification_token);
+      return new Response(JSON.stringify({ message: 'Verification token received' }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
     // Get signature from header
     const signature = req.headers.get('x-notion-signature');
     if (!signature) {
@@ -141,23 +165,13 @@ export default async (req, context) => {
       });
     }
 
-    // Parse payload
-    const payload = JSON.parse(body);
-    console.log('[notion-webhook] Event received:', payload.type, payload.event?.type || '');
+    // Notion carries the event type at the TOP level of the payload
+    // (e.g. "page.created"). The nested { type: 'event', event: { type } }
+    // shape is tolerated too, in case a future API version wraps it.
+    const eventType = payload.type === 'event' ? payload.event?.type : payload.type;
+    console.log('[notion-webhook] Event received:', eventType);
 
-    // Handle verification challenge
-    if (payload.type === 'url_verification') {
-      console.log('[notion-webhook] Verification challenge received');
-      return new Response(JSON.stringify({ challenge: payload.challenge }), {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' }
-      });
-    }
-
-    // Handle content update events
-    if (payload.type === 'event') {
-      const eventType = payload.event?.type;
-
+    if (eventType) {
       // Email notification for new entries in watched submission databases
       if (eventType === 'page.created') {
         const parent = payload.data?.parent || {};
