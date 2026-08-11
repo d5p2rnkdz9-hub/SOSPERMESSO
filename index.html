@@ -302,6 +302,115 @@ extraStyles: |
       transform: translateY(-2px);
     }
 
+    /* ── MACRO ACCORDION (disambiguazione per intenzione) ── */
+    .hr-macros {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .hr-macro {
+      background: var(--hr-white);
+      border: 2.5px solid var(--hr-black);
+      border-radius: 16px;
+      box-shadow: 4px 4px 0 var(--hr-black);
+    }
+
+    .hr-macro summary {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.35rem 1.5rem;
+      cursor: pointer;
+      list-style: none;
+      border-radius: 14px;
+    }
+
+    .hr-macro summary::-webkit-details-marker { display: none; }
+
+    .hr-macro summary:focus-visible {
+      outline: 3px solid var(--hr-black);
+      outline-offset: 2px;
+    }
+
+    .hr-macro-title {
+      display: block;
+      font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .hr-macro-sub {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--hr-gray-dark);
+      margin-top: 0.15rem;
+    }
+
+    .hr-macro-chevron {
+      margin-left: auto;
+      flex-shrink: 0;
+      width: 12px;
+      height: 12px;
+      border-right: 3px solid var(--hr-black);
+      border-bottom: 3px solid var(--hr-black);
+      transform: rotate(45deg) translate(-2px, -2px);
+      transition: transform 0.15s ease;
+    }
+
+    .hr-macro[open] > summary .hr-macro-chevron {
+      transform: rotate(-135deg) translate(-3px, -3px);
+    }
+
+    .hr-macro-panel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.85rem;
+      padding: 0.25rem 1.5rem 1.5rem;
+    }
+
+    .hr-mini {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      background: var(--hr-white);
+      border: 2px solid var(--hr-black);
+      border-radius: 12px;
+      padding: 0.85rem 1.1rem;
+      text-decoration: none;
+      color: var(--hr-black);
+      font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      transition: all 0.12s ease;
+      box-shadow: 2px 2px 0 var(--hr-black);
+    }
+
+    .hr-mini:hover {
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0 var(--hr-black);
+      color: var(--hr-black);
+    }
+
+    .hr-mini--test {
+      grid-column: 1 / -1;
+      background: var(--hr-yellow);
+    }
+
+    .hr-mini-note {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .hr-hero { padding: 3rem 0 2.5rem; }
@@ -316,6 +425,13 @@ extraStyles: |
       .hr-cards-grid { grid-template-columns: 1fr; }
       .hr-btn { width: 100%; text-align: center; }
       .hr-ucard-arrow { display: none; }
+      .hr-macro summary { padding: 1.1rem 1.25rem; }
+      .hr-macro-panel {
+        grid-template-columns: 1fr;
+        padding: 0.15rem 1.1rem 1.1rem;
+      }
+      .hr-mini-note { display: none; }
+      .hr-mini--test .hr-mini-note { display: inline; }
     }
 
     @media (max-width: 480px) {
@@ -363,124 +479,98 @@ extraStyles: |
     </div>
   </section>
 
-  <!-- INFORMAZIONI (first section) -->
+  <!-- COME POSSIAMO AIUTARTI (macro-schede di disambiguazione) -->
   <section class="hr-section" id="informazioni">
     <div class="hr-container">
-      <h2 class="hr-section-title"><span class="hr-tag" style="font-size: 0.75rem; padding: 5px 12px; letter-spacing: 2px;">Informazioni</span></h2>
-      <div class="hr-cards-grid">
+      <h2 class="hr-section-title"><span class="hr-tag" style="font-size: 0.75rem; padding: 5px 12px; letter-spacing: 2px;">Come possiamo aiutarti?</span></h2>
 
-        <a href="database.html" class="hr-ucard">
-          <span class="hr-ucard-icon">🔍</span>
-          <div>
-            <h3>Tutti i permessi</h3>
-            <p>Cerca nel database di tutti i permessi di soggiorno in Italia</p>
-          </div>
-        </a>
+      <div class="hr-macros">
 
-        <a href="documenti-questura.html" class="hr-ucard">
-          <span class="hr-ucard-icon">📋</span>
-          <div>
-            <h3>Che documenti porto?</h3>
-            <p>Trova la lista dei documenti da portare in Questura per il tuo permesso</p>
+        <details class="hr-macro" id="test" name="hr-macro">
+          <summary>
+            <span>
+              <span class="hr-macro-title">Voglio un permesso</span>
+              <span class="hr-macro-sub">Non ho ancora un permesso di soggiorno</span>
+            </span>
+            <span class="hr-macro-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="hr-macro-panel">
+            <a href="https://app.sospermesso.it" target="_blank" rel="noopener" class="hr-mini hr-mini--test">
+              <span>Posso avere un permesso?</span>
+              <span class="hr-mini-note">Fai il test →</span>
+            </a>
+            <a href="protezione-internazionale.html" class="hr-mini">
+              <span>Protezione internazionale</span>
+            </a>
+            <a href="lavorare-in-italia.html" class="hr-mini">
+              <span>Lavorare in Italia</span>
+            </a>
+            <a href="ricongiungimento-familiare.html" class="hr-mini">
+              <span>Ricongiungimento familiare</span>
+            </a>
+            <a href="decreto-flussi.html" class="hr-mini">
+              <span>Decreto flussi</span>
+              <span class="hr-mini-note">In arrivo</span>
+            </a>
           </div>
-        </a>
+        </details>
 
-        <a href="database.html?go=costi" class="hr-ucard">
-          <span class="hr-ucard-icon">💰</span>
-          <div>
-            <h3>Quanto costa il permesso?</h3>
-            <p>Bollettini, marche da bollo e costi per ogni tipo di permesso</p>
+        <details class="hr-macro" name="hr-macro">
+          <summary>
+            <span>
+              <span class="hr-macro-title">Ho già un permesso</span>
+              <span class="hr-macro-sub">Rinnovo, conversione, documenti, tempi</span>
+            </span>
+            <span class="hr-macro-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="hr-macro-panel">
+            <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" target="_blank" rel="noopener" class="hr-mini hr-mini--test">
+              <span>Posso rinnovare o convertire?</span>
+              <span class="hr-mini-note">Fai il test →</span>
+            </a>
+            <a href="documenti-questura.html" class="hr-mini">
+              <span>Documenti Questura</span>
+            </a>
+            <a href="database.html?go=costi" class="hr-mini">
+              <span>Costi</span>
+            </a>
+            <a href="controlla-permesso.html" class="hr-mini">
+              <span>Controlla se è pronto</span>
+            </a>
           </div>
-        </a>
+        </details>
 
-        <a href="ricongiungimento-familiare.html" class="hr-ucard">
-          <span class="hr-ucard-icon">👨‍👩‍👧</span>
-          <div>
-            <h3>Posso portare qui la mia famiglia?</h3>
-            <p>Guida al ricongiungimento familiare in Italia</p>
+        <details class="hr-macro" name="hr-macro">
+          <summary>
+            <span>
+              <span class="hr-macro-title">Mi serve aiuto da una persona</span>
+              <span class="hr-macro-sub">Sportelli gratuiti e contatti</span>
+            </span>
+            <span class="hr-macro-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="hr-macro-panel">
+            <a href="aiuto-legale.html" class="hr-mini">
+              <span>Assistenza legale gratis</span>
+            </a>
+            <a href="https://app.sospermesso.it/it/contattaci" target="_blank" rel="noopener" class="hr-mini">
+              <span>Contattaci</span>
+            </a>
           </div>
-        </a>
-
-        <a href="protezione-internazionale.html" class="hr-ucard">
-          <span class="hr-ucard-icon">🛡️</span>
-          <div>
-            <h3>Protezione internazionale</h3>
-            <p>Come chiedere asilo in Italia e come funziona la procedura</p>
-          </div>
-        </a>
-
-        <a href="lavorare-in-italia.html" class="hr-ucard">
-          <span class="hr-ucard-icon">💼</span>
-          <div>
-            <h3>Lavorare in Italia</h3>
-            <p>Tutti i permessi di soggiorno per lavoro: subordinato, autonomo, stagionale, tirocinio</p>
-          </div>
-        </a>
-
-        <a href="aiuto-legale.html" class="hr-ucard">
-          <span class="hr-ucard-icon">⚖️</span>
-          <div>
-            <h3>Assistenza legale gratis</h3>
-            <p>Sportelli e associazioni con assistenza legale gratuita vicino a te</p>
-          </div>
-        </a>
-
-        <a href="controlla-permesso.html" class="hr-ucard">
-          <span class="hr-ucard-icon">👀</span>
-          <div>
-            <h3>Controlla se il tuo permesso è pronto</h3>
-            <p>Verifica online lo stato della tua pratica in Questura</p>
-          </div>
-        </a>
-
-        <a href="dizionario.html" class="hr-ucard">
-          <span class="hr-ucard-icon">🔤</span>
-          <div>
-            <h3>Dizionario</h3>
-            <p>Termini burocratici spiegati in modo semplice</p>
-          </div>
-        </a>
-
-        <a href="decreto-flussi.html" class="hr-ucard" style="overflow: hidden; position: relative;">
-          <span class="hr-badge-soon">In arrivo</span>
-          <span class="hr-ucard-icon">💼</span>
-          <div>
-            <h3>Decreto flussi</h3>
-            <p>Come funziona l'ingresso per lavoro</p>
-          </div>
-        </a>
+        </details>
 
       </div>
+
     </div>
   </section>
 
-  <!-- TEST INTERATTIVI -->
-  <section id="test" class="hr-section hr-section-alt">
-    <div class="hr-container">
-      <h2 class="hr-section-title"><span class="hr-tag" style="font-size: 0.75rem; padding: 5px 12px; letter-spacing: 2px;">Test interattivi</span></h2>
-      <div class="hr-cards-grid">
-
-        <a href="https://app.sospermesso.it" target="_blank" rel="noopener" class="hr-ucard hr-ucard--yellow">
-          <span class="hr-ucard-icon">🤞</span>
-          <div>
-            <h3>Posso avere un permesso?</h3>
-            <p>Rispondi a poche domande e scopri quali permessi puoi chiedere</p>
-          </div>
-          <span class="hr-ucard-arrow">→</span>
-        </a>
-
-        <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" target="_blank" rel="noopener" class="hr-ucard hr-ucard--yellow">
-          <span class="hr-ucard-icon">🔄</span>
-          <div>
-            <h3>Posso rinnovare o convertire?</h3>
-            <p>Verifica se puoi rinnovare o cambiare il tuo permesso di soggiorno</p>
-          </div>
-          <span class="hr-ucard-arrow">→</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
+  <script>
+    (function () {
+      if (location.hash === '#test' || location.hash === '#informazioni') {
+        var d = document.getElementById('test');
+        if (d && d.tagName === 'DETAILS') d.open = true;
+      }
+    })();
+  </script>
 
 
 </div>

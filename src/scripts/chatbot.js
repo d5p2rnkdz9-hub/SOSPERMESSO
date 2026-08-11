@@ -18,6 +18,7 @@
   const STRINGS = {
     it: {
       button: 'Fai una domanda',
+      teaser: 'Ciao! Hai una domanda sui permessi di soggiorno?',
       title: 'Assistente SOS Permesso',
       greeting:
         "Ciao! Sono l'assistente di SOS Permesso. Posso rispondere alle tue domande sui permessi di soggiorno in Italia. Come posso aiutarti?",
@@ -34,6 +35,7 @@
     },
     en: {
       button: 'Ask a question',
+      teaser: 'Hi! Do you have a question about residence permits?',
       title: 'SOS Permesso Assistant',
       greeting:
         "Hi! I'm the SOS Permesso assistant. I can answer your questions about residence permits in Italy. How can I help you?",
@@ -50,6 +52,7 @@
     },
     fr: {
       button: 'Poser une question',
+      teaser: 'Bonjour ! Une question sur les permis de séjour ?',
       title: 'Assistant SOS Permesso',
       greeting:
         "Bonjour ! Je suis l'assistant de SOS Permesso. Je peux répondre à vos questions sur les permis de séjour en Italie. Comment puis-je vous aider ?",
@@ -66,6 +69,7 @@
     },
     es: {
       button: 'Haz una pregunta',
+      teaser: '¡Hola! ¿Tienes una pregunta sobre los permisos de residencia?',
       title: 'Asistente SOS Permesso',
       greeting:
         '¡Hola! Soy el asistente de SOS Permesso. Puedo responder a tus preguntas sobre los permisos de residencia en Italia. ¿Cómo puedo ayudarte?',
@@ -82,6 +86,7 @@
     },
     tr: {
       button: 'Soru sorun',
+      teaser: 'Merhaba! Oturma izinleriyle ilgili bir sorunuz mu var?',
       title: 'SOS Permesso Asistanı',
       greeting:
         "Merhaba! Ben SOS Permesso asistanıyım. İtalya'daki oturma izinleriyle ilgili sorularınızı yanıtlayabilirim. Size nasıl yardımcı olabilirim?",
@@ -98,6 +103,7 @@
     },
     bn: {
       button: 'প্রশ্ন করুন',
+      teaser: 'হ্যালো! বসবাসের অনুমতি নিয়ে কোনো প্রশ্ন আছে?',
       title: 'SOS Permesso সহায়ক',
       greeting:
         'হ্যালো! আমি SOS Permesso-র সহায়ক। ইতালির বসবাসের অনুমতি (permesso di soggiorno) নিয়ে আপনার প্রশ্নের উত্তর দিতে পারি। আপনাকে কীভাবে সাহায্য করতে পারি?',
@@ -114,6 +120,7 @@
     },
     ru: {
       button: 'Задать вопрос',
+      teaser: 'Здравствуйте! Есть вопрос о виде на жительство?',
       title: 'Ассистент SOS Permesso',
       greeting:
         'Здравствуйте! Я ассистент SOS Permesso. Могу ответить на ваши вопросы о видах на жительство в Италии. Чем могу помочь?',
@@ -130,6 +137,7 @@
     },
     ar: {
       button: 'اطرح سؤالاً',
+      teaser: 'مرحباً! هل لديك سؤال عن تصاريح الإقامة؟',
       title: 'مساعد SOS Permesso',
       greeting:
         'مرحباً! أنا مساعد SOS Permesso. يمكنني الإجابة عن أسئلتك حول تصاريح الإقامة في إيطاليا. كيف يمكنني مساعدتك؟',
@@ -146,6 +154,7 @@
     },
     ur: {
       button: 'سوال پوچھیں',
+      teaser: 'السلام علیکم! کیا آپ کا رہائشی اجازت ناموں کے بارے میں کوئی سوال ہے؟',
       title: 'SOS Permesso اسسٹنٹ',
       greeting:
         'السلام علیکم! میں SOS Permesso کا اسسٹنٹ ہوں۔ اٹلی میں رہائشی اجازت ناموں (permesso di soggiorno) کے بارے میں آپ کے سوالات کا جواب دے سکتا ہوں۔ میں آپ کی کیا مدد کر سکتا ہوں؟',
@@ -162,6 +171,7 @@
     },
     fa: {
       button: 'سؤال بپرسید',
+      teaser: 'سلام! درباره اجازه اقامت سؤالی دارید؟',
       title: 'دستیار SOS Permesso',
       greeting:
         'سلام! من دستیار SOS Permesso هستم. می‌توانم به سؤالات شما درباره اجازه اقامت در ایتالیا پاسخ بدهم. چطور می‌توانم کمکتان کنم؟',
@@ -178,6 +188,7 @@
     },
     zh: {
       button: '提问',
+      teaser: '你好！有关于居留许可的问题吗？',
       title: 'SOS Permesso 助手',
       greeting: '你好！我是 SOS Permesso 的助手，可以回答你关于意大利居留许可的问题。有什么可以帮你？',
       disclaimer: '回答由人工智能自动生成，不构成法律意见。重要信息请务必核实。',
@@ -281,6 +292,14 @@
     var root = document.createElement('div');
     root.className = 'sosp-chat';
     root.innerHTML =
+      '<div class="sosp-chat-teaser" hidden>' +
+      '<button type="button" class="sosp-chat-teaser-text">' +
+      escapeHtml(T.teaser || STRINGS.it.teaser) +
+      '</button>' +
+      '<button type="button" class="sosp-chat-teaser-close" aria-label="' +
+      escapeHtml(T.close) +
+      '">✕</button>' +
+      '</div>' +
       '<button type="button" class="sosp-chat-fab" aria-expanded="false" aria-controls="sosp-chat-panel">' +
       '<span class="sosp-chat-fab-icon" aria-hidden="true">🤖</span>' +
       escapeHtml(T.button) +
@@ -319,6 +338,9 @@
     document.body.appendChild(root);
 
     els.root = root;
+    els.teaser = root.querySelector('.sosp-chat-teaser');
+    els.teaserText = root.querySelector('.sosp-chat-teaser-text');
+    els.teaserClose = root.querySelector('.sosp-chat-teaser-close');
     els.fab = root.querySelector('.sosp-chat-fab');
     els.panel = root.querySelector('.sosp-chat-panel');
     els.messages = root.querySelector('.sosp-chat-messages');
@@ -329,6 +351,8 @@
     els.close = root.querySelector('.sosp-chat-close');
 
     els.fab.addEventListener('click', openPanel);
+    els.teaserText.addEventListener('click', openPanel);
+    els.teaserClose.addEventListener('click', dismissTeaser);
     els.close.addEventListener('click', closePanel);
     els.reset.addEventListener('click', resetConversation);
     els.form.addEventListener('submit', onSubmit);
@@ -353,7 +377,44 @@
     return window.matchMedia('(max-width: 767px)').matches;
   }
 
+  // ===============================================
+  // TEASER (proactive nudge above the FAB)
+  // Shows a few seconds after load; reappears on each
+  // page until the visitor dismisses it or opens the
+  // chat (flag kept per tab in sessionStorage).
+  // ===============================================
+  var TEASER_KEY = 'sosp_chat_teaser_v1';
+
+  function teaserDone() {
+    try {
+      return sessionStorage.getItem(TEASER_KEY) === '1';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function markTeaserDone() {
+    try {
+      sessionStorage.setItem(TEASER_KEY, '1');
+    } catch (e) {
+      /* storage unavailable — teaser will just show again */
+    }
+  }
+
+  function maybeShowTeaser() {
+    if (teaserDone() || messages.length > 0) return;
+    setTimeout(function () {
+      if (els.panel.hidden && !teaserDone()) els.teaser.hidden = false;
+    }, 3000);
+  }
+
+  function dismissTeaser() {
+    els.teaser.hidden = true;
+    markTeaserDone();
+  }
+
   function openPanel() {
+    dismissTeaser();
     els.panel.hidden = false;
     els.fab.setAttribute('aria-expanded', 'true');
     els.root.classList.add('sosp-chat-open');
@@ -537,6 +598,7 @@
     loadState();
     injectWidget();
     updateInputState();
+    maybeShowTeaser();
   }
 
   if (document.readyState === 'loading') {
