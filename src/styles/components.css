@@ -1671,6 +1671,12 @@
   color: var(--black, #1A1A1A);
 }
 
+/* Patto UE — stesso blu del logo SOS Patto altrove sul sito */
+.nav-cta--blue {
+  background: #1a4fb4;
+  color: #FFFFFF;
+}
+
 .nav-cta:hover,
 .nav-cta:focus-visible {
   transform: translate(1.5px, 1.5px);
@@ -1679,6 +1685,7 @@
 
 .nav-cta--yellow:hover { background: #FFEB3B; }
 .nav-cta--outline:hover { background: var(--gray-light, #F5F5F5); }
+.nav-cta--blue:hover { background: #2f63c7; }
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .nav-cta { padding: 0.5rem 0.85rem; }

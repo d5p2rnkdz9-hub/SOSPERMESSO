@@ -2,37 +2,28 @@ module.exports = {
   it: {
     dropdowns: [
       {
-        label: "Info",
-        href: "/#informazioni",
-        items: [
-          { label: "Tutti i permessi", href: "/database.html" },
-          { label: "Che documenti porto?", href: "/documenti-questura.html" },
-          { label: "Circolari e prassi amministrativa", href: "/circolari.html" },
-          { label: "Protezione internazionale", href: "/protezione-internazionale.html" },
-          { label: "Ricongiungimento familiare", href: "/ricongiungimento-familiare.html" },
-          { label: "Lavorare in Italia", href: "/lavorare-in-italia.html" },
-          { label: "Aiuto legale", href: "/aiuto-legale.html" },
-          { label: "Dizionario", href: "/dizionario.html" }
-        ]
-      },
-      {
-        // Testi coordinati interattivi (bundle in public/patto-interattivo).
-        // Solo IT: sono testi di legge italiani, non tradotti.
-        // Nessun badge sull'etichetta: con "SOS Patto NUOVO" accanto la barra si
-        // affollava e le voci andavano a capo. Il badge sta sulla voce nuova.
-        label: "Normativa",
+        // Testi coordinati interattivi (bundle in public/patto-interattivo)
+        // + circolari e prassi amministrativa. Solo IT: contenuto italiano
+        // non tradotto. "Info" è stato tolto dalla barra: i suoi altri item
+        // (permessi, protezione, ricongiungimento, lavoro, aiuto legale,
+        // dizionario) sono ora raggiungibili dalla home e dalla barra stessa
+        // (Patto UE, Aiuto legale gratis in home, Dizionario in home).
+        label: "Leggi e circolari",
         href: "/normativa.html",
         items: [
           { label: "Testo unico immigrazione (D.Lgs. 286/98)", href: "/normativa.html#dlgs-286-1998", badge: "NUOVO" },
           { label: "Procedure di protezione internazionale (D.Lgs. 25/2008)", href: "/normativa.html#dlgs-25-2008" },
           { label: "Accoglienza (D.Lgs. 142/2015)", href: "/normativa.html#dlgs-142-2015" },
-          { label: "Qualifiche (D.Lgs. 251/2007)", href: "/normativa.html#dlgs-251-2007" }
+          { label: "Qualifiche (D.Lgs. 251/2007)", href: "/normativa.html#dlgs-251-2007" },
+          { label: "Circolari e prassi amministrativa", href: "/circolari.html" }
         ]
       },
       {
-        label: "Fai il test",
-        href: "/#test",
-        cta: "yellow",
+        label: "Patto UE",
+        href: "https://www.sospatto.it",
+        external: true,
+        cta: "blue",
+        badge: "NUOVO",
         items: []
       },
       {
@@ -58,12 +49,6 @@ module.exports = {
         ]
       },
       {
-        label: "Take the test",
-        href: "/en/#test",
-        cta: "yellow",
-        items: []
-      },
-      {
         label: "Contact us",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
@@ -84,12 +69,6 @@ module.exports = {
           { label: "Aide juridique", href: "/fr/aiuto-legale.html" },
           { label: "Dictionnaire", href: "/fr/dizionario.html" }
         ]
-      },
-      {
-        label: "Faire le test",
-        href: "/fr/#test",
-        cta: "yellow",
-        items: []
       },
       {
         label: "Nous contacter",
@@ -114,12 +93,6 @@ module.exports = {
         ]
       },
       {
-        label: "Haz el test",
-        href: "/es/#test",
-        cta: "yellow",
-        items: []
-      },
-      {
         label: "Contáctanos",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
@@ -140,12 +113,6 @@ module.exports = {
           { label: "Hukuki yardım", href: "/tr/aiuto-legale.html" },
           { label: "Sözlük", href: "/tr/dizionario.html" }
         ]
-      },
-      {
-        label: "Testi yap",
-        href: "/tr/#test",
-        cta: "yellow",
-        items: []
       },
       {
         label: "Bize ulaşın",
@@ -170,12 +137,6 @@ module.exports = {
         ]
       },
       {
-        label: "Пройти тест",
-        href: "/ru/#test",
-        cta: "yellow",
-        items: []
-      },
-      {
         label: "Связаться с нами",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
@@ -196,12 +157,6 @@ module.exports = {
           { label: "আইনি সহায়তা", href: "/bn/aiuto-legale.html" },
           { label: "অভিধান", href: "/bn/dizionario.html" }
         ]
-      },
-      {
-        label: "পরীক্ষা দিন",
-        href: "/bn/#test",
-        cta: "yellow",
-        items: []
       },
       {
         label: "যোগাযোগ করুন",
@@ -226,12 +181,6 @@ module.exports = {
         ]
       },
       {
-        label: "قم بالاختبار",
-        href: "/ar/#test",
-        cta: "yellow",
-        items: []
-      },
-      {
         label: "اتصل بنا",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
@@ -252,12 +201,6 @@ module.exports = {
           { label: "قانونی مدد", href: "/ur/aiuto-legale.html" },
           { label: "لغت", href: "/ur/dizionario.html" }
         ]
-      },
-      {
-        label: "ٹیسٹ دیں",
-        href: "/ur/#test",
-        cta: "yellow",
-        items: []
       },
       {
         label: "ہم سے رابطہ کریں",
@@ -282,12 +225,6 @@ module.exports = {
         ]
       },
       {
-        label: "آزمون را انجام دهید",
-        href: "/fa/#test",
-        cta: "yellow",
-        items: []
-      },
-      {
         label: "تماس با ما",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
@@ -308,12 +245,6 @@ module.exports = {
           { label: "法律援助", href: "/zh/aiuto-legale.html" },
           { label: "词典", href: "/zh/dizionario.html" }
         ]
-      },
-      {
-        label: "参加测试",
-        href: "/zh/#test",
-        cta: "yellow",
-        items: []
       },
       {
         label: "联系我们",
