@@ -63,6 +63,50 @@ extraStyles: |
       .hr-hero h1 { font-size: 1.6rem; }
       .hr-ucard { padding: 1.1rem 1.25rem; }
     }
+
+    /* ── DUE TASTI GEMELLI (test "avere" / "rinnovare") ── */
+    .hr-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      max-width: 560px;
+    }
+
+    .hr-btn--twin {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+      padding: 1rem 1.1rem;
+      text-wrap: balance;
+    }
+
+    .hr-btn-eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.72;
+      margin-bottom: 0.3rem;
+    }
+
+    .hr-btn--secondary {
+      background: #FFFFFF;
+    }
+
+    .hr-btn--wide {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hr-btn-group { max-width: none; }
+      .hr-btn--twin { flex-basis: 100%; }
+    }
   </style>
 ---
 
@@ -78,9 +122,13 @@ extraStyles: |
           <span class="hr-highlight" style="font-weight: 400;">Просто.</span><span style="font-weight: 400;"> Полно. Актуально.</span>
         </h1>
         <p>
-          Информация и интерактивные тесты о видах на жительство в Италии.
+          Ответьте на несколько вопросов и узнайте, что вы можете сделать.
         </p>
-        <a href="https://app.sospermesso.it" class="hr-btn">Пройди наш интерактивный тест →</a>
+        <div class="hr-btn-group">
+          <a href="https://app.sospermesso.it" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">У меня нет разрешения</span>Могу ли я его получить?</a>
+          <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">У меня уже есть разрешение</span>Могу ли я продлить или конвертировать его?</a>
+          <a href="database.html" class="hr-btn hr-btn--secondary hr-btn--wide">Все разрешения (база данных) →</a>
+        </div>
         <div class="hr-hero-badges">
           <div class="hr-badge">
             <span class="hr-badge-icon">📚</span>

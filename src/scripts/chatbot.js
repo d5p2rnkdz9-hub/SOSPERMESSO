@@ -17,7 +17,8 @@
   // FR vous, ES tú, TR siz, RU вы, ZH 你, UR آپ, FA شما, BN আপনি.
   const STRINGS = {
     it: {
-      button: 'Fai una domanda',
+      button: 'Chiedi al nostro chatbot',
+      buttonQuestion: 'Hai una domanda sui permessi di soggiorno?',
       teaser: 'Ciao! Hai una domanda sui permessi di soggiorno?',
       title: 'Assistente SOS Permesso',
       greeting:
@@ -34,7 +35,8 @@
       connectionError: 'Errore di connessione. Controlla la rete e riprova.',
     },
     en: {
-      button: 'Ask a question',
+      button: 'Ask our chatbot',
+      buttonQuestion: 'Do you have a question about residence permits?',
       teaser: 'Hi! Do you have a question about residence permits?',
       title: 'SOS Permesso Assistant',
       greeting:
@@ -51,7 +53,8 @@
       connectionError: 'Connection error. Check your internet and try again.',
     },
     fr: {
-      button: 'Poser une question',
+      button: 'Demande à notre chatbot',
+      buttonQuestion: 'Une question sur les permis de séjour ?',
       teaser: 'Bonjour ! Une question sur les permis de séjour ?',
       title: 'Assistant SOS Permesso',
       greeting:
@@ -68,7 +71,8 @@
       connectionError: 'Erreur de connexion. Vérifiez votre réseau et réessayez.',
     },
     es: {
-      button: 'Haz una pregunta',
+      button: 'Pregunta a nuestro chatbot',
+      buttonQuestion: '¿Tienes una pregunta sobre los permisos de residencia?',
       teaser: '¡Hola! ¿Tienes una pregunta sobre los permisos de residencia?',
       title: 'Asistente SOS Permesso',
       greeting:
@@ -85,7 +89,8 @@
       connectionError: 'Error de conexión. Comprueba tu red e inténtalo de nuevo.',
     },
     tr: {
-      button: 'Soru sorun',
+      button: 'Chatbot\'umuza sorun',
+      buttonQuestion: 'Oturma izinleriyle ilgili bir sorunuz mu var?',
       teaser: 'Merhaba! Oturma izinleriyle ilgili bir sorunuz mu var?',
       title: 'SOS Permesso Asistanı',
       greeting:
@@ -102,7 +107,8 @@
       connectionError: 'Bağlantı hatası. İnternetinizi kontrol edip tekrar deneyin.',
     },
     bn: {
-      button: 'প্রশ্ন করুন',
+      button: 'আমাদের চ্যাটবটকে জিজ্ঞাসা করুন',
+      buttonQuestion: 'বসবাসের অনুমতি নিয়ে কোনো প্রশ্ন আছে?',
       teaser: 'হ্যালো! বসবাসের অনুমতি নিয়ে কোনো প্রশ্ন আছে?',
       title: 'SOS Permesso সহায়ক',
       greeting:
@@ -119,7 +125,8 @@
       connectionError: 'সংযোগে সমস্যা। ইন্টারনেট পরীক্ষা করে আবার চেষ্টা করুন।',
     },
     ru: {
-      button: 'Задать вопрос',
+      button: 'Спросите нашего чат-бота',
+      buttonQuestion: 'Есть вопрос о виде на жительство?',
       teaser: 'Здравствуйте! Есть вопрос о виде на жительство?',
       title: 'Ассистент SOS Permesso',
       greeting:
@@ -136,7 +143,8 @@
       connectionError: 'Ошибка соединения. Проверьте интернет и попробуйте ещё раз.',
     },
     ar: {
-      button: 'اطرح سؤالاً',
+      button: 'اسأل روبوت الدردشة لدينا',
+      buttonQuestion: 'هل لديك سؤال عن تصاريح الإقامة؟',
       teaser: 'مرحباً! هل لديك سؤال عن تصاريح الإقامة؟',
       title: 'مساعد SOS Permesso',
       greeting:
@@ -153,7 +161,8 @@
       connectionError: 'خطأ في الاتصال. تحقق من الإنترنت وحاول مرة أخرى.',
     },
     ur: {
-      button: 'سوال پوچھیں',
+      button: 'ہمارے چیٹ بوٹ سے پوچھیں',
+      buttonQuestion: 'کیا آپ کا رہائشی اجازت ناموں کے بارے میں کوئی سوال ہے؟',
       teaser: 'السلام علیکم! کیا آپ کا رہائشی اجازت ناموں کے بارے میں کوئی سوال ہے؟',
       title: 'SOS Permesso اسسٹنٹ',
       greeting:
@@ -170,7 +179,8 @@
       connectionError: 'کنکشن میں خرابی۔ انٹرنیٹ چیک کر کے دوبارہ کوشش کریں۔',
     },
     fa: {
-      button: 'سؤال بپرسید',
+      button: 'از ربات چت ما بپرسید',
+      buttonQuestion: 'درباره اجازه اقامت سؤالی دارید؟',
       teaser: 'سلام! درباره اجازه اقامت سؤالی دارید؟',
       title: 'دستیار SOS Permesso',
       greeting:
@@ -187,7 +197,8 @@
       connectionError: 'خطای اتصال. اینترنت را بررسی کنید و دوباره تلاش کنید.',
     },
     zh: {
-      button: '提问',
+      button: '问问我们的聊天机器人',
+      buttonQuestion: '有关于居留许可的问题吗？',
       teaser: '你好！有关于居留许可的问题吗？',
       title: 'SOS Permesso 助手',
       greeting: '你好！我是 SOS Permesso 的助手，可以回答你关于意大利居留许可的问题。有什么可以帮你？',
@@ -292,6 +303,7 @@
     var root = document.createElement('div');
     root.className = 'sosp-chat';
     root.innerHTML =
+      '<div class="sosp-chat-dock">' +
       '<div class="sosp-chat-teaser" hidden>' +
       '<button type="button" class="sosp-chat-teaser-text">' +
       escapeHtml(T.teaser || STRINGS.it.teaser) +
@@ -302,8 +314,16 @@
       '</div>' +
       '<button type="button" class="sosp-chat-fab" aria-expanded="false" aria-controls="sosp-chat-panel">' +
       '<span class="sosp-chat-fab-icon" aria-hidden="true">🤖</span>' +
+      '<span class="sosp-chat-fab-text">' +
+      '<span class="sosp-chat-fab-question">' +
+      escapeHtml(T.buttonQuestion || '') +
+      '</span>' +
+      '<span class="sosp-chat-fab-cta">' +
       escapeHtml(T.button) +
+      '</span>' +
+      '</span>' +
       '</button>' +
+      '</div>' +
       '<section class="sosp-chat-panel" id="sosp-chat-panel" role="dialog" aria-label="' +
       escapeHtml(T.title) +
       '" hidden>' +

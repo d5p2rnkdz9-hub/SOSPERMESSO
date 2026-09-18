@@ -221,17 +221,32 @@ extraStyles: |
       box-shadow: 4px 4px 0 var(--hr-black);
     }
 
-    .hr-btn--test {
-      line-height: 1.25;
+    /* Due tasti gemelli: stessa misura, stesso giallo, nessuno è "il principale" */
+    .hr-btn--twin {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
+      line-height: 1.2;
+      padding: 1rem 1.1rem;
+      text-wrap: balance;
     }
 
-    .hr-btn-sub {
+    .hr-btn-eyebrow {
       display: block;
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 700;
-      letter-spacing: 1px;
-      margin-top: 0.2rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.72;
+      margin-bottom: 0.3rem;
+    }
+
+    .hr-btn--wide {
+      flex: 1 1 100%;
+      text-align: center;
     }
 
     .hr-btn--secondary {
@@ -251,8 +266,10 @@ extraStyles: |
     .hr-btn-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
       margin-top: 0;
+      max-width: 560px;
+      scroll-margin-top: 120px;
     }
 
     .hr-badge-soon {
@@ -411,9 +428,78 @@ extraStyles: |
       white-space: nowrap;
     }
 
+    /* ── VISITA ANCHE (SOS Patto) ── */
+    .hr-visit {
+      max-width: 900px;
+      margin: 2rem auto 0;
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+      padding: 1rem 1.25rem;
+      border: 2px dashed var(--hr-gray-medium);
+      border-radius: 16px;
+      color: var(--hr-black);
+      text-decoration: none;
+      background: var(--hr-white);
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .hr-visit:hover {
+      border-color: var(--hr-black);
+      transform: translateY(-2px);
+    }
+
+    .hr-visit-logo {
+      flex: none;
+      width: 3.4rem;
+      height: 3.4rem;
+      display: grid;
+      place-items: center;
+      background: #1a4fb4;
+      color: var(--hr-white);
+      font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+      font-weight: 800;
+      font-size: 0.7rem;
+      line-height: 1.05;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .hr-visit-label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--hr-gray-medium);
+    }
+
+    .hr-visit-title {
+      display: block;
+      font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .hr-visit-text {
+      display: block;
+      font-size: 0.92rem;
+      color: var(--hr-gray-dark);
+      line-height: 1.4;
+    }
+
+    .hr-visit-arrow {
+      margin-left: auto;
+      font-size: 1.3rem;
+      font-weight: 700;
+      flex: none;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .hr-hero { padding: 3rem 0 2.5rem; }
+      .hr-visit { align-items: flex-start; }
+      .hr-visit-arrow { display: none; }
       .hr-hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -424,6 +510,8 @@ extraStyles: |
       .hr-hero-image { max-width: 260px; order: -1; }
       .hr-cards-grid { grid-template-columns: 1fr; }
       .hr-btn { width: 100%; text-align: center; }
+      .hr-btn-group { max-width: none; }
+      .hr-btn--twin { flex-basis: 100%; }
       .hr-ucard-arrow { display: none; }
       .hr-macro summary { padding: 1.1rem 1.25rem; }
       .hr-macro-panel {
@@ -453,11 +541,12 @@ extraStyles: |
           <span class="hr-highlight" style="font-weight: 400;">Facile.</span><span style="font-weight: 400;"> Completa. Aggiornata.</span>
         </h1>
         <p>
-          Informazioni e test interattivi sui permessi di soggiorno in Italia.
+          Rispondi a poche domande e scopri cosa puoi fare.
         </p>
-        <div class="hr-btn-group">
-          <a href="https://app.sospermesso.it" class="hr-btn hr-btn--test">Posso avere/rinnovare un permesso?<span class="hr-btn-sub">(FAI IL TEST) →</span></a>
-          <a href="database.html" class="hr-btn hr-btn--secondary">Database di permessi →</a>
+        <div class="hr-btn-group" id="test">
+          <a href="https://app.sospermesso.it" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">Non ho un permesso</span>Posso averlo?</a>
+          <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">Ho già un permesso</span>Posso rinnovarlo o convertirlo?</a>
+          <a href="database.html" class="hr-btn hr-btn--secondary hr-btn--wide">Tutti i permessi (database) →</a>
         </div>
         <div class="hr-hero-badges">
           <div class="hr-badge">
@@ -486,7 +575,7 @@ extraStyles: |
 
       <div class="hr-macros">
 
-        <details class="hr-macro" id="test" name="hr-macro">
+        <details class="hr-macro" id="macro-voglio" name="hr-macro">
           <summary>
             <span>
               <span class="hr-macro-title">Voglio un permesso</span>
@@ -500,16 +589,16 @@ extraStyles: |
               <span class="hr-mini-note">Fai il test →</span>
             </a>
             <a href="protezione-internazionale.html" class="hr-mini">
-              <span>Protezione internazionale</span>
+              <span>Ho diritto alla protezione internazionale?</span>
             </a>
             <a href="lavorare-in-italia.html" class="hr-mini">
-              <span>Lavorare in Italia</span>
+              <span>Posso lavorare in Italia?</span>
             </a>
             <a href="ricongiungimento-familiare.html" class="hr-mini">
-              <span>Ricongiungimento familiare</span>
+              <span>Posso portare qui la mia famiglia?</span>
             </a>
             <a href="decreto-flussi.html" class="hr-mini">
-              <span>Decreto flussi</span>
+              <span>Posso entrare con il decreto flussi?</span>
               <span class="hr-mini-note">In arrivo</span>
             </a>
           </div>
@@ -529,13 +618,13 @@ extraStyles: |
               <span class="hr-mini-note">Fai il test →</span>
             </a>
             <a href="documenti-questura.html" class="hr-mini">
-              <span>Documenti Questura</span>
+              <span>Che documenti porto in Questura?</span>
             </a>
             <a href="database.html?go=costi" class="hr-mini">
-              <span>Costi</span>
+              <span>Quanto costa il mio permesso?</span>
             </a>
             <a href="controlla-permesso.html" class="hr-mini">
-              <span>Controlla se è pronto</span>
+              <span>Il mio permesso è pronto?</span>
             </a>
           </div>
         </details>
@@ -550,23 +639,33 @@ extraStyles: |
           </summary>
           <div class="hr-macro-panel">
             <a href="aiuto-legale.html" class="hr-mini">
-              <span>Assistenza legale gratis</span>
+              <span>Dove trovo aiuto legale gratuito?</span>
             </a>
             <a href="https://app.sospermesso.it/it/contattaci" target="_blank" rel="noopener" class="hr-mini">
-              <span>Contattaci</span>
+              <span>Come vi contatto?</span>
             </a>
           </div>
         </details>
 
       </div>
 
+      <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="hr-visit">
+        <span class="hr-visit-logo" aria-hidden="true">SOS<br>Patto</span>
+        <span>
+          <span class="hr-visit-label">Visita anche</span>
+          <span class="hr-visit-title">SOS Patto</span>
+          <span class="hr-visit-text">Il nuovo Patto europeo su migrazione e asilo, spiegato norma per norma.</span>
+        </span>
+        <span class="hr-visit-arrow" aria-hidden="true">→</span>
+      </a>
+
     </div>
   </section>
 
   <script>
     (function () {
-      if (location.hash === '#test' || location.hash === '#informazioni') {
-        var d = document.getElementById('test');
+      if (location.hash === '#informazioni') {
+        var d = document.getElementById('macro-voglio');
         if (d && d.tagName === 'DETAILS') d.open = true;
       }
     })();

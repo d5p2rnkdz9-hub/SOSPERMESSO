@@ -16,15 +16,9 @@ module.exports = {
         ]
       },
       {
-        label: "Patto UE",
-        href: "https://www.sospatto.it",
-        badge: "NUOVO",
-        external: true
-      },
-      {
         // Testi coordinati interattivi (bundle in public/patto-interattivo).
         // Solo IT: sono testi di legge italiani, non tradotti.
-        // Nessun badge sull'etichetta: con "Patto UE NUOVO" accanto la barra si
+        // Nessun badge sull'etichetta: con "SOS Patto NUOVO" accanto la barra si
         // affollava e le voci andavano a capo. Il badge sta sulla voce nuova.
         label: "Normativa",
         href: "/normativa.html",
@@ -36,17 +30,16 @@ module.exports = {
         ]
       },
       {
-        label: "Test interattivi",
+        label: "Fai il test",
         href: "/#test",
-        items: [
-          { label: "Posso AVERE un permesso?", href: "https://app.sospermesso.it", external: true },
-          { label: "Posso CONVERTIRE o RINNOVARE?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "Contattaci",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -65,17 +58,16 @@ module.exports = {
         ]
       },
       {
-        label: "Interactive tests",
+        label: "Take the test",
         href: "/en/#test",
-        items: [
-          { label: "Can I GET a permit?", href: "https://app.sospermesso.it", external: true },
-          { label: "Can I CONVERT or RENEW?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "Contact us",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -94,17 +86,16 @@ module.exports = {
         ]
       },
       {
-        label: "Tests interactifs",
+        label: "Faire le test",
         href: "/fr/#test",
-        items: [
-          { label: "Puis-je OBTENIR un permis ?", href: "https://app.sospermesso.it", external: true },
-          { label: "Puis-je CONVERTIR ou RENOUVELER ?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "Nous contacter",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -123,17 +114,16 @@ module.exports = {
         ]
       },
       {
-        label: "Tests interactivos",
+        label: "Haz el test",
         href: "/es/#test",
-        items: [
-          { label: "¿Puedo OBTENER un permiso?", href: "https://app.sospermesso.it", external: true },
-          { label: "¿Puedo CONVERTIR o RENOVAR?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "Contáctanos",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -152,17 +142,16 @@ module.exports = {
         ]
       },
       {
-        label: "İnteraktif testler",
+        label: "Testi yap",
         href: "/tr/#test",
-        items: [
-          { label: "İzin ALABİLİR miyim?", href: "https://app.sospermesso.it", external: true },
-          { label: "DÖNÜŞTÜREBİLİR veya YENİLEYEBİLİR miyim?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "Bize ulaşın",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -181,17 +170,16 @@ module.exports = {
         ]
       },
       {
-        label: "Интерактивные тесты",
+        label: "Пройти тест",
         href: "/ru/#test",
-        items: [
-          { label: "Могу ли я ПОЛУЧИТЬ разрешение?", href: "https://app.sospermesso.it", external: true },
-          { label: "Могу ли я КОНВЕРТИРОВАТЬ или ПРОДЛИТЬ?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "Связаться с нами",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -210,17 +198,16 @@ module.exports = {
         ]
       },
       {
-        label: "ইন্টারেক্টিভ পরীক্ষা",
+        label: "পরীক্ষা দিন",
         href: "/bn/#test",
-        items: [
-          { label: "আমি কি অনুমতি পেতে পারি?", href: "https://app.sospermesso.it", external: true },
-          { label: "আমি কি রূপান্তর বা নবায়ন করতে পারি?", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "যোগাযোগ করুন",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -239,17 +226,16 @@ module.exports = {
         ]
       },
       {
-        label: "اختبارات تفاعلية",
+        label: "قم بالاختبار",
         href: "/ar/#test",
-        items: [
-          { label: "هل يمكنني الحصول على تصريح؟", href: "https://app.sospermesso.it", external: true },
-          { label: "هل يمكنني التحويل أو التجديد؟", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "اتصل بنا",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -268,17 +254,16 @@ module.exports = {
         ]
       },
       {
-        label: "انٹرایکٹو ٹیسٹ",
+        label: "ٹیسٹ دیں",
         href: "/ur/#test",
-        items: [
-          { label: "کیا مجھے اجازت نامہ مل سکتا ہے؟", href: "https://app.sospermesso.it", external: true },
-          { label: "کیا میں تبدیل یا تجدید کر سکتا ہوں؟", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "ہم سے رابطہ کریں",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -297,17 +282,16 @@ module.exports = {
         ]
       },
       {
-        label: "آزمون‌های تعاملی",
+        label: "آزمون را انجام دهید",
         href: "/fa/#test",
-        items: [
-          { label: "آیا می‌توانم مجوز بگیرم؟", href: "https://app.sospermesso.it", external: true },
-          { label: "آیا می‌توانم تبدیل یا تمدید کنم؟", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "تماس با ما",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]
@@ -326,17 +310,16 @@ module.exports = {
         ]
       },
       {
-        label: "互动测试",
+        label: "参加测试",
         href: "/zh/#test",
-        items: [
-          { label: "我能获得居留许可吗？", href: "https://app.sospermesso.it", external: true },
-          { label: "我能转换或续签吗？", href: "https://app.sospermesso.it/it/tree/rinnovo-conversione", external: true }
-        ]
+        cta: "yellow",
+        items: []
       },
       {
         label: "联系我们",
         href: "https://app.sospermesso.it/it/contattaci",
         external: true,
+        cta: "outline",
         items: []
       }
     ]

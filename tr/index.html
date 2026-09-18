@@ -298,6 +298,50 @@ extraStyles: |
       .hr-hero h1 { font-size: 1.6rem; }
       .hr-ucard { padding: 1.1rem 1.25rem; }
     }
+
+    /* ── DUE TASTI GEMELLI (test "avere" / "rinnovare") ── */
+    .hr-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      max-width: 560px;
+    }
+
+    .hr-btn--twin {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+      padding: 1rem 1.1rem;
+      text-wrap: balance;
+    }
+
+    .hr-btn-eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.72;
+      margin-bottom: 0.3rem;
+    }
+
+    .hr-btn--secondary {
+      background: #FFFFFF;
+    }
+
+    .hr-btn--wide {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hr-btn-group { max-width: none; }
+      .hr-btn--twin { flex-basis: 100%; }
+    }
   </style>
 ---
 
@@ -313,9 +357,13 @@ extraStyles: |
           <span class="hr-highlight" style="font-weight: 400;">Kolay.</span><span style="font-weight: 400;"> Kapsamlı. Güncel.</span>
         </h1>
         <p>
-          İtalya'daki oturma izinleri hakkında bilgi ve interaktif testler.
+          Birkaç soruya cevap ver, ne yapabileceğini öğren.
         </p>
-        <a href="https://app.sospermesso.it" class="hr-btn">İnteraktif testimizi yap →</a>
+        <div class="hr-btn-group">
+          <a href="https://app.sospermesso.it" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">İznim yok</span>Alabilir miyim?</a>
+          <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">Zaten iznim var</span>Yenileyebilir veya dönüştürebilir miyim?</a>
+          <a href="database.html" class="hr-btn hr-btn--secondary hr-btn--wide">Tüm izinler (veri tabanı) →</a>
+        </div>
         <div class="hr-hero-badges">
           <div class="hr-badge">
             <span class="hr-badge-icon">📚</span>

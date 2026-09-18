@@ -291,6 +291,50 @@ extraStyles: |
       .hr-hero h1 { font-size: 1.6rem; }
       .hr-ucard { padding: 1.1rem 1.25rem; }
     }
+
+    /* ── DUE TASTI GEMELLI (test "avere" / "rinnovare") ── */
+    .hr-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      max-width: 560px;
+    }
+
+    .hr-btn--twin {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+      padding: 1rem 1.1rem;
+      text-wrap: balance;
+    }
+
+    .hr-btn-eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.72;
+      margin-bottom: 0.3rem;
+    }
+
+    .hr-btn--secondary {
+      background: #FFFFFF;
+    }
+
+    .hr-btn--wide {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hr-btn-group { max-width: none; }
+      .hr-btn--twin { flex-basis: 100%; }
+    }
   </style>
 ---
 
@@ -305,9 +349,13 @@ extraStyles: |
           <span class="hr-highlight" style="font-weight: 400;">简单。</span><span style="font-weight: 400;">全面。最新。</span>
         </h1>
         <p>
-          关于意大利居留许可的信息和互动测试。
+          回答几个问题，了解你能做什么。
         </p>
-        <a href="https://app.sospermesso.it" class="hr-btn">参加我们的互动测试 &rarr;</a>
+        <div class="hr-btn-group">
+          <a href="https://app.sospermesso.it" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">我没有居留许可</span>我能获得吗？</a>
+          <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">我已有居留许可</span>我能续签或转换吗？</a>
+          <a href="database.html" class="hr-btn hr-btn--secondary hr-btn--wide">所有居留许可（数据库）→</a>
+        </div>
         <div class="hr-hero-badges">
           <div class="hr-badge">
             <span class="hr-badge-icon">📚</span>

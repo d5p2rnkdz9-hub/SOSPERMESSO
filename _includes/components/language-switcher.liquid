@@ -60,73 +60,73 @@
 <div class="language-switcher">
   <button class="language-button" id="language-toggle">
     {% if lang == 'fr' %}
-    <span id="current-language">FR 🇫🇷</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/fr.svg' | url }}" alt="" width="30" height="20">FR</span>
     {% elsif lang == 'en' %}
-    <span id="current-language">EN 🇬🇧</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/gb.svg' | url }}" alt="" width="30" height="20">EN</span>
     {% elsif lang == 'es' %}
-    <span id="current-language">ES 🇪🇸</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/es.svg' | url }}" alt="" width="30" height="20">ES</span>
     {% elsif lang == 'tr' %}
-    <span id="current-language">TR 🇹🇷</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/tr.svg' | url }}" alt="" width="30" height="20">TR</span>
     {% elsif lang == 'bn' %}
-    <span id="current-language">BN 🇧🇩</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/bd.svg' | url }}" alt="" width="30" height="20">BN</span>
     {% elsif lang == 'ru' %}
-    <span id="current-language">RU 🇷🇺</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/ru.svg' | url }}" alt="" width="30" height="20">RU</span>
     {% elsif lang == 'ar' %}
-    <span id="current-language">AR 🇸🇦</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/sa.svg' | url }}" alt="" width="30" height="20">AR</span>
     {% elsif lang == 'ur' %}
-    <span id="current-language">UR 🇵🇰</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/pk.svg' | url }}" alt="" width="30" height="20">UR</span>
     {% elsif lang == 'fa' %}
-    <span id="current-language">FA 🇮🇷/🇦🇫</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/ir.svg' | url }}" alt="" width="30" height="20"><img class="flag" src="{{ '/IMAGES/flags/af.svg' | url }}" alt="" width="30" height="20">FA</span>
     {% elsif lang == 'zh' %}
-    <span id="current-language">ZH 🇨🇳</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/cn.svg' | url }}" alt="" width="30" height="20">ZH</span>
     {% else %}
-    <span id="current-language">IT 🇮🇹</span>
+    <span id="current-language"><img class="flag" src="{{ '/IMAGES/flags/it.svg' | url }}" alt="" width="30" height="20">IT</span>
     {% endif %}
     <span>▾</span>
   </button>
   <div class="language-dropdown" id="language-dropdown">
     <div class="language-option" data-lang="it">
-      <span>🇮🇹</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/it.svg' | url }}" alt="" width="30" height="20"></span>
       <span>Italiano</span>
     </div>
     <div class="language-option" data-lang="en">
-      <span>🇬🇧</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/gb.svg' | url }}" alt="" width="30" height="20"></span>
       <span>English</span>
     </div>
     <div class="language-option" data-lang="fr">
-      <span>🇫🇷</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/fr.svg' | url }}" alt="" width="30" height="20"></span>
       <span>Français</span>
     </div>
     <div class="language-option" data-lang="es">
-      <span>🇪🇸</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/es.svg' | url }}" alt="" width="30" height="20"></span>
       <span>Español</span>
     </div>
     <div class="language-option" data-lang="tr">
-      <span>🇹🇷</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/tr.svg' | url }}" alt="" width="30" height="20"></span>
       <span>Türkçe</span>
     </div>
     <div class="language-option" data-lang="bn">
-      <span>🇧🇩</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/bd.svg' | url }}" alt="" width="30" height="20"></span>
       <span>বাংলা</span>
     </div>
     <div class="language-option" data-lang="ru">
-      <span>🇷🇺</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/ru.svg' | url }}" alt="" width="30" height="20"></span>
       <span>Русский</span>
     </div>
     <div class="language-option" data-lang="ar">
-      <span>🇸🇦</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/sa.svg' | url }}" alt="" width="30" height="20"></span>
       <span>العربية</span>
     </div>
     <div class="language-option" data-lang="ur">
-      <span>🇵🇰</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/pk.svg' | url }}" alt="" width="30" height="20"></span>
       <span>اردو</span>
     </div>
     <div class="language-option" data-lang="fa">
-      <span>🇮🇷/🇦🇫</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/ir.svg' | url }}" alt="" width="30" height="20"><img class="flag" src="{{ '/IMAGES/flags/af.svg' | url }}" alt="" width="30" height="20"></span>
       <span>فارسی</span>
     </div>
     <div class="language-option" data-lang="zh">
-      <span>🇨🇳</span>
+      <span><img class="flag" src="{{ '/IMAGES/flags/cn.svg' | url }}" alt="" width="30" height="20"></span>
       <span>中文</span>
     </div>
   </div>

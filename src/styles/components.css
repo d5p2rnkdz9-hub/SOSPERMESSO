@@ -766,6 +766,16 @@
   box-shadow: 1px 1px 0 #1A1A1A;
 }
 
+/* Variante blu (voce "SOS Patto") */
+.nav-badge-blue {
+  background: #42A5F5;
+}
+
+.nav-link:hover .nav-badge-blue,
+.dropdown-link:hover .nav-badge-blue {
+  background: #64B5F6;
+}
+
 /* ===============================================
    LANGUAGE SWITCHER IN NAV
    =============================================== */
@@ -1631,3 +1641,72 @@
     height: 50px;
   }
 }
+
+/* ===============================================
+   NAV: tasti azione (destra) — "Fai il test" giallo e "Contattaci" bordato.
+   Regola del menu: a sinistra i contenuti (tendine), a destra le azioni (tasti).
+   =============================================== */
+.nav-item--cta:first-of-type,
+.nav-item.has-dropdown + .nav-item--cta {
+  margin-inline-start: 0.5rem;
+}
+
+.nav-cta {
+  font-weight: 700;
+  border: 2px solid var(--black, #1A1A1A);
+  border-radius: 50px;
+  padding: 0.6rem 1.15rem;
+  box-shadow: 2.5px 2.5px 0 var(--black, #1A1A1A);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  white-space: nowrap;
+}
+
+.nav-cta--yellow {
+  background: #FFD700;
+  color: #1A1A1A;
+}
+
+.nav-cta--outline {
+  background: var(--white, #FFFFFF);
+  color: var(--black, #1A1A1A);
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  transform: translate(1.5px, 1.5px);
+  box-shadow: 1px 1px 0 var(--black, #1A1A1A);
+}
+
+.nav-cta--yellow:hover { background: #FFEB3B; }
+.nav-cta--outline:hover { background: var(--gray-light, #F5F5F5); }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .nav-cta { padding: 0.5rem 0.85rem; }
+}
+
+@media (min-width: 769px) and (max-width: 950px) {
+  .nav-cta { padding: 0.4rem 0.65rem; }
+}
+
+@media (max-width: 768px) {
+  .nav-item--cta { margin-inline-start: 0; }
+  .nav-menu .nav-link.nav-cta {
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 3px 3px 0 var(--black, #1A1A1A);
+  }
+}
+
+/* Bandierine SVG (le emoji delle bandiere non esistono su Windows) */
+.flag {
+  display: inline-block;
+  width: 1.25em;
+  height: 0.9em;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+  vertical-align: -0.1em;
+  margin-inline-end: 0.4em;
+  object-fit: cover;
+  flex: none;
+}
+.flag + .flag { margin-inline-start: -0.25em; }

@@ -5,18 +5,18 @@
     {% for dropdown in navData.dropdowns %}
     {% if dropdown.items.size > 0 %}
     <li class="nav-item has-dropdown">
-      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link" aria-haspopup="true" aria-expanded="false"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}{% if dropdown.badge %} <span class="nav-badge">{{ dropdown.badge }}</span>{% endif %}</a>
+      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link" aria-haspopup="true" aria-expanded="false"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}{% if dropdown.badge %} <span class="nav-badge{% if dropdown.badgeStyle %} nav-badge-{{ dropdown.badgeStyle }}{% endif %}">{{ dropdown.badge }}</span>{% endif %}</a>
       <ul class="nav-dropdown" role="menu">
         {% for item in dropdown.items %}
         <li role="none">
-          <a href="{% if item.external %}{{ item.href }}{% else %}{{ item.href | url }}{% endif %}" class="dropdown-link" role="menuitem"{% if item.external %} target="_blank"{% endif %}>{{ item.label }}{% if item.badge %} <span class="nav-badge">{{ item.badge }}</span>{% endif %}</a>
+          <a href="{% if item.external %}{{ item.href }}{% else %}{{ item.href | url }}{% endif %}" class="dropdown-link" role="menuitem"{% if item.external %} target="_blank"{% endif %}>{{ item.label }}{% if item.badge %} <span class="nav-badge{% if item.badgeStyle %} nav-badge-{{ item.badgeStyle }}{% endif %}">{{ item.badge }}</span>{% endif %}</a>
         </li>
         {% endfor %}
       </ul>
     </li>
     {% else %}
-    <li class="nav-item">
-      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}{% if dropdown.badge %} <span class="nav-badge">{{ dropdown.badge }}</span>{% endif %}</a>
+    <li class="nav-item{% if dropdown.cta %} nav-item--cta{% endif %}">
+      <a href="{% if dropdown.external %}{{ dropdown.href }}{% else %}{{ dropdown.href | url }}{% endif %}" class="nav-link{% if dropdown.cta %} nav-cta nav-cta--{{ dropdown.cta }}{% endif %}"{% if dropdown.external %} target="_blank"{% endif %}>{{ dropdown.label }}{% if dropdown.badge %} <span class="nav-badge{% if dropdown.badgeStyle %} nav-badge-{{ dropdown.badgeStyle }}{% endif %}">{{ dropdown.badge }}</span>{% endif %}</a>
     </li>
     {% endif %}
     {% endfor %}
@@ -173,20 +173,20 @@
     {%- endif -%}
     <li class="nav-item has-dropdown nav-language">
       <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
-        {% if lang == 'fr' %}🇫🇷 FR{% elsif lang == 'en' %}🇬🇧 EN{% elsif lang == 'es' %}🇪🇸 ES{% elsif lang == 'tr' %}🇹🇷 TR{% elsif lang == 'bn' %}🇧🇩 BN{% elsif lang == 'ru' %}🇷🇺 RU{% elsif lang == 'ar' %}🇸🇦 AR{% elsif lang == 'ur' %}🇵🇰 UR{% elsif lang == 'fa' %}🇮🇷 FA{% elsif lang == 'zh' %}🇨🇳 ZH{% else %}🇮🇹 IT{% endif %}
+        {% if lang == 'fr' %}<img class="flag" src="{{ '/IMAGES/flags/fr.svg' | url }}" alt="" width="30" height="20"> FR{% elsif lang == 'en' %}<img class="flag" src="{{ '/IMAGES/flags/gb.svg' | url }}" alt="" width="30" height="20"> EN{% elsif lang == 'es' %}<img class="flag" src="{{ '/IMAGES/flags/es.svg' | url }}" alt="" width="30" height="20"> ES{% elsif lang == 'tr' %}<img class="flag" src="{{ '/IMAGES/flags/tr.svg' | url }}" alt="" width="30" height="20"> TR{% elsif lang == 'bn' %}<img class="flag" src="{{ '/IMAGES/flags/bd.svg' | url }}" alt="" width="30" height="20"> BN{% elsif lang == 'ru' %}<img class="flag" src="{{ '/IMAGES/flags/ru.svg' | url }}" alt="" width="30" height="20"> RU{% elsif lang == 'ar' %}<img class="flag" src="{{ '/IMAGES/flags/sa.svg' | url }}" alt="" width="30" height="20"> AR{% elsif lang == 'ur' %}<img class="flag" src="{{ '/IMAGES/flags/pk.svg' | url }}" alt="" width="30" height="20"> UR{% elsif lang == 'fa' %}<img class="flag" src="{{ '/IMAGES/flags/ir.svg' | url }}" alt="" width="30" height="20"><img class="flag" src="{{ '/IMAGES/flags/af.svg' | url }}" alt="" width="30" height="20"> FA{% elsif lang == 'zh' %}<img class="flag" src="{{ '/IMAGES/flags/cn.svg' | url }}" alt="" width="30" height="20"> ZH{% else %}<img class="flag" src="{{ '/IMAGES/flags/it.svg' | url }}" alt="" width="30" height="20"> IT{% endif %}
       </a>
       <ul class="nav-dropdown" role="menu">
-        <li role="none"><a href="{{ langItUrl }}" class="dropdown-link{% if lang == 'it' %} active-lang{% endif %}" role="menuitem">🇮🇹 <span class="lang-code">IT</span><span class="lang-name"> Italiano</span></a></li>
-        <li role="none"><a href="{{ langEnUrl }}" class="dropdown-link{% if lang == 'en' %} active-lang{% endif %}" role="menuitem">🇬🇧 <span class="lang-code">EN</span><span class="lang-name"> English</span></a></li>
-        <li role="none"><a href="{{ langFrUrl }}" class="dropdown-link{% if lang == 'fr' %} active-lang{% endif %}" role="menuitem">🇫🇷 <span class="lang-code">FR</span><span class="lang-name"> Français</span></a></li>
-        <li role="none"><a href="{{ langEsUrl }}" class="dropdown-link{% if lang == 'es' %} active-lang{% endif %}" role="menuitem">🇪🇸 <span class="lang-code">ES</span><span class="lang-name"> Español</span></a></li>
-        <li role="none"><a href="{{ langTrUrl }}" class="dropdown-link{% if lang == 'tr' %} active-lang{% endif %}" role="menuitem">🇹🇷 <span class="lang-code">TR</span><span class="lang-name"> Türkçe</span></a></li>
-        <li role="none"><a href="{{ langBnUrl }}" class="dropdown-link{% if lang == 'bn' %} active-lang{% endif %}" role="menuitem">🇧🇩 <span class="lang-code">BN</span><span class="lang-name"> বাংলা</span></a></li>
-        <li role="none"><a href="{{ langRuUrl }}" class="dropdown-link{% if lang == 'ru' %} active-lang{% endif %}" role="menuitem">🇷🇺 <span class="lang-code">RU</span><span class="lang-name"> Русский</span></a></li>
-        <li role="none"><a href="{{ langArUrl }}" class="dropdown-link{% if lang == 'ar' %} active-lang{% endif %}" role="menuitem">🇸🇦 <span class="lang-code">AR</span><span class="lang-name"> العربية</span></a></li>
-        <li role="none"><a href="{{ langUrUrl }}" class="dropdown-link{% if lang == 'ur' %} active-lang{% endif %}" role="menuitem">🇵🇰 <span class="lang-code">UR</span><span class="lang-name"> اردو</span></a></li>
-        <li role="none"><a href="{{ langFaUrl }}" class="dropdown-link{% if lang == 'fa' %} active-lang{% endif %}" role="menuitem">🇮🇷/🇦🇫 <span class="lang-code">FA</span><span class="lang-name"> فارسی</span></a></li>
-        <li role="none"><a href="{{ langZhUrl }}" class="dropdown-link{% if lang == 'zh' %} active-lang{% endif %}" role="menuitem">🇨🇳 <span class="lang-code">ZH</span><span class="lang-name"> 中文</span></a></li>
+        <li role="none"><a href="{{ langItUrl }}" class="dropdown-link{% if lang == 'it' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/it.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">IT</span><span class="lang-name"> Italiano</span></a></li>
+        <li role="none"><a href="{{ langEnUrl }}" class="dropdown-link{% if lang == 'en' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/gb.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">EN</span><span class="lang-name"> English</span></a></li>
+        <li role="none"><a href="{{ langFrUrl }}" class="dropdown-link{% if lang == 'fr' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/fr.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">FR</span><span class="lang-name"> Français</span></a></li>
+        <li role="none"><a href="{{ langEsUrl }}" class="dropdown-link{% if lang == 'es' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/es.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">ES</span><span class="lang-name"> Español</span></a></li>
+        <li role="none"><a href="{{ langTrUrl }}" class="dropdown-link{% if lang == 'tr' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/tr.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">TR</span><span class="lang-name"> Türkçe</span></a></li>
+        <li role="none"><a href="{{ langBnUrl }}" class="dropdown-link{% if lang == 'bn' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/bd.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">BN</span><span class="lang-name"> বাংলা</span></a></li>
+        <li role="none"><a href="{{ langRuUrl }}" class="dropdown-link{% if lang == 'ru' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/ru.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">RU</span><span class="lang-name"> Русский</span></a></li>
+        <li role="none"><a href="{{ langArUrl }}" class="dropdown-link{% if lang == 'ar' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/sa.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">AR</span><span class="lang-name"> العربية</span></a></li>
+        <li role="none"><a href="{{ langUrUrl }}" class="dropdown-link{% if lang == 'ur' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/pk.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">UR</span><span class="lang-name"> اردو</span></a></li>
+        <li role="none"><a href="{{ langFaUrl }}" class="dropdown-link{% if lang == 'fa' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/ir.svg' | url }}" alt="" width="30" height="20"><img class="flag" src="{{ '/IMAGES/flags/af.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">FA</span><span class="lang-name"> فارسی</span></a></li>
+        <li role="none"><a href="{{ langZhUrl }}" class="dropdown-link{% if lang == 'zh' %} active-lang{% endif %}" role="menuitem"><img class="flag" src="{{ '/IMAGES/flags/cn.svg' | url }}" alt="" width="30" height="20"> <span class="lang-code">ZH</span><span class="lang-name"> 中文</span></a></li>
       </ul>
     </li>
   </ul>

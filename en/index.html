@@ -291,6 +291,50 @@ extraStyles: |
       .hr-hero h1 { font-size: 1.6rem; }
       .hr-ucard { padding: 1.1rem 1.25rem; }
     }
+
+    /* ── DUE TASTI GEMELLI (test "avere" / "rinnovare") ── */
+    .hr-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      max-width: 560px;
+    }
+
+    .hr-btn--twin {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+      padding: 1rem 1.1rem;
+      text-wrap: balance;
+    }
+
+    .hr-btn-eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.72;
+      margin-bottom: 0.3rem;
+    }
+
+    .hr-btn--secondary {
+      background: #FFFFFF;
+    }
+
+    .hr-btn--wide {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hr-btn-group { max-width: none; }
+      .hr-btn--twin { flex-basis: 100%; }
+    }
   </style>
 ---
 
@@ -305,9 +349,13 @@ extraStyles: |
           <span class="hr-highlight" style="font-weight: 400;">Easy.</span><span style="font-weight: 400;"> Complete. Up to date.</span>
         </h1>
         <p>
-          Information and interactive tests about residence permits in Italy.
+          Answer a few questions and find out what you can do.
         </p>
-        <a href="https://app.sospermesso.it" class="hr-btn">Take our interactive test →</a>
+        <div class="hr-btn-group">
+          <a href="https://app.sospermesso.it" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">I don't have a permit</span>Can I get one?</a>
+          <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">I already have a permit</span>Can I renew or convert it?</a>
+          <a href="database.html" class="hr-btn hr-btn--secondary hr-btn--wide">All permits (database) →</a>
+        </div>
         <div class="hr-hero-badges">
           <div class="hr-badge">
             <span class="hr-badge-icon">📚</span>
