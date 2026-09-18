@@ -22,8 +22,9 @@ module.exports = {
         label: "Patto UE",
         href: "https://www.sospatto.it",
         external: true,
-        cta: "blue",
+        cta: "outline",
         badge: "NUOVO",
+        badgeStyle: "blue",
         items: []
       },
       {
