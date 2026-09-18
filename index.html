@@ -243,11 +243,7 @@ extraStyles: |
     }
 
     .hr-btn--wide {
-      flex: 1 1 100%;
-      text-align: center;
-    }
-
-    .hr-btn--pair {
+      grid-column: 1 / -1;
       text-align: center;
     }
 
@@ -508,8 +504,7 @@ extraStyles: |
         <div class="hr-btn-group" id="test">
           <a href="https://app.sospermesso.it" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">Non ho un permesso</span>Posso averlo?</a>
           <a href="https://app.sospermesso.it/it/tree/rinnovo-conversione" class="hr-btn hr-btn--twin"><span class="hr-btn-eyebrow">Ho già un permesso</span>Posso rinnovarlo o convertirlo?</a>
-          <a href="database.html" class="hr-btn hr-btn--secondary hr-btn--pair">Tutti i permessi (database) →</a>
-          <a href="dizionario.html" class="hr-btn hr-btn--secondary hr-btn--pair">Dizionario →</a>
+          <a href="database.html" class="hr-btn hr-btn--secondary hr-btn--wide">Tutti i permessi (database) →</a>
         </div>
         <div class="hr-hero-badges">
           <div class="hr-badge">
@@ -595,6 +590,11 @@ extraStyles: |
 
         <a href="aiuto-legale.html" class="hr-macro hr-macro--link">
           <span class="hr-macro-title">Aiuto legale gratis</span>
+          <span class="hr-macro-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="dizionario.html" class="hr-macro hr-macro--link">
+          <span class="hr-macro-title">Dizionario</span>
           <span class="hr-macro-arrow" aria-hidden="true">→</span>
         </a>
 
