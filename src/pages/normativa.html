@@ -1,13 +1,14 @@
 ---
 layout: layouts/base.liquid
-title: "Normativa italiana: testi coordinati con il d.l. 100/2026 | SOS Permesso"
+title: "Leggi italiane e circolari sull'immigrazione | SOS Permesso"
 lang: it
 langSwitchPath: /database.html
-description: "I testi coordinati e interattivi delle norme italiane sull'immigrazione dopo il d.l. 100/2026: Testo unico immigrazione (D.Lgs. 286/98), procedure, accoglienza e qualifiche, con le modifiche evidenziate articolo per articolo."
+description: "I testi coordinati e interattivi delle norme italiane sull'immigrazione dopo il d.l. 100/2026 (Testo unico immigrazione, procedure, accoglienza e qualifiche) e le circolari e la prassi amministrativa sui permessi di soggiorno."
 extraStyles: |
   <style>
     .norm-head { max-width: 780px; }
-    .norm-head h1 {
+    .norm-head h1,
+    .norm-head h2 {
       font-family: var(--font-heading);
       font-size: 2.1rem;
       font-weight: 800;
@@ -79,25 +80,9 @@ extraStyles: |
     }
     .norm-go { font-weight: 700; margin-top: auto; }
 
-    .norm-note {
-      border-inline-start: 4px solid var(--taxi-yellow-dark);
-      background: var(--gray-light);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      padding: 1rem 1.25rem;
-      margin-top: 2.5rem;
-      max-width: 780px;
-    }
-    .norm-note h2 {
-      font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 800;
-      margin: 0 0 0.5rem;
-    }
-    .norm-note p { margin: 0 0 0.6rem; line-height: 1.6; }
-    .norm-note p:last-child { margin-bottom: 0; }
-
     @media (max-width: 480px) {
-      .norm-head h1 { font-size: 1.6rem; }
+      .norm-head h1,
+      .norm-head h2 { font-size: 1.6rem; }
     }
   </style>
 ---
@@ -107,7 +92,7 @@ extraStyles: |
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
-    { "@type": "ListItem", "position": 2, "name": "Normativa italiana", "item": "{{ site.url }}/normativa.html" }
+    { "@type": "ListItem", "position": 2, "name": "Leggi italiane", "item": "{{ site.url }}/normativa.html" }
   ]
 }
 </script>
@@ -115,7 +100,7 @@ extraStyles: |
 <section class="section bg-off-white" style="padding: 2.5rem 0 2rem;">
   <div class="container">
     <div class="norm-head">
-      <h1>Normativa italiana</h1>
+      <h1>Leggi italiane</h1>
       <p>
         Le norme italiane sull'immigrazione nella versione coordinata con il
         <strong>{{ normativa.decreto.label }}</strong> ({{ normativa.decreto.nota }}), il decreto che
@@ -128,7 +113,7 @@ extraStyles: |
   </div>
 </section>
 
-<section class="section" style="padding-top: 2.5rem;">
+<section class="section" style="padding: 2.5rem 0;">
   <div class="container">
     <div class="norm-grid">
       {%- for t in normativa.testi %}
@@ -140,27 +125,31 @@ extraStyles: |
       </a>
       {%- endfor %}
     </div>
+  </div>
+</section>
 
-    <p style="text-align: center; margin: 2rem 0;">
-      <a href="/circolari.html" class="btn btn-primary">Circolari e prassi amministrativa →</a>
-    </p>
+<section class="section bg-off-white" style="padding: 2.5rem 0 2rem;">
+  <div class="container">
+    <div class="norm-head">
+      <h2>Circolari e prassi amministrative</h2>
+      <p>
+        {{ circolariDb.size }} circolari e atti amministrativi in materia di permessi di soggiorno,
+        con testo integrale, ricerca full-text e filtri per ente, anno e permesso.
+      </p>
+      <span class="norm-verifica">{{ circolariDb.size }} circolari raccolte</span>
+    </div>
+  </div>
+</section>
 
-    <div class="norm-note">
-      <h2>Come si legge un testo coordinato</h2>
-      <p>
-        Ogni testo è consultabile articolo per articolo: il sommario laterale porta all'articolo che
-        cerchi e i rinvii interni (ad altri articoli, ai regolamenti UE o agli altri decreti) si aprono
-        in un pannello di lettura, senza perdere il punto in cui eri.
-      </p>
-      <p>
-        Il testo coordinato serve a leggere la norma come risulta <em>dopo</em> le modifiche: non
-        sostituisce la Gazzetta Ufficiale, che resta il riferimento ufficiale. Il d.l. 100/2026 è
-        {{ normativa.decreto.nota }}, quindi il testo può ancora cambiare in sede di conversione.
-      </p>
-      <p>
-        I testi europei del Patto UE sono raccolti su
-        <a href="https://www.sospatto.it" target="_blank" rel="noopener">sospatto.it</a>.
-      </p>
+<section class="section" style="padding: 2.5rem 0;">
+  <div class="container">
+    <div class="norm-grid">
+      <a href="/circolari.html" class="norm-card">
+        <span class="norm-tag">Circolari</span>
+        <h2>Circolari e prassi amministrativa</h2>
+        <span class="norm-coord">Testo integrale, ricerca full-text e filtri per ente, anno e permesso</span>
+        <span class="norm-go">Consulta le circolari →</span>
+      </a>
     </div>
   </div>
 </section>
