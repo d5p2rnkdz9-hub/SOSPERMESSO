@@ -10,6 +10,7 @@ module.exports = {
         // (Patto UE, Aiuto legale gratis in home, Dizionario in home).
         label: "Leggi e circolari",
         href: "/normativa.html",
+        cta: "outline",
         items: [
           { label: "Testo unico immigrazione (D.Lgs. 286/98)", href: "/normativa.html#dlgs-286-1998", badge: "NUOVO" },
           { label: "Procedure di protezione internazionale (D.Lgs. 25/2008)", href: "/normativa.html#dlgs-25-2008" },
