@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BUNDLE = path.join(__dirname, '..', 'public', 'patto-interattivo');
-const SLUGS = ['dlgs-286-1998', 'dlgs-25-2008', 'dlgs-142-2015', 'dlgs-251-2007'];
+const SLUGS = ['dlgs-286-1998', 'dlgs-25-2008', 'dlgs-142-2015', 'dlgs-251-2007', 'dl-100-2026', 'dlgs-115-2026'];
 
 const FROM = '<a class="home" href="../index.html">&#8962; Patto UE</a>';
 const TO = '<a class="home" href="/normativa.html">&#8962; SOS Permesso</a>';
