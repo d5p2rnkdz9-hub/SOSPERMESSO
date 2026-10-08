@@ -1,0 +1,26 @@
+<!-- @dsCard group="Contenuti" height=230 subtitle="Guide passo passo" -->
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&amp;display=swap">
+<style>
+body{margin:0;background:var(--sp-paper);color:var(--sp-ink);font-family:var(--font-display)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;padding:24px}
+a{display:flex;flex-direction:column;gap:14px;min-height:150px;box-sizing:border-box;padding:20px;background:var(--sp-white);border:var(--border-ui) solid var(--sp-ink);border-radius:var(--radius-lg);box-shadow:var(--sticker);text-decoration:none;color:var(--sp-ink)}
+a:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--sp-ink)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tag{font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border:2px solid var(--sp-ink);border-radius:var(--radius-sm)}
+.soon{font-weight:700;font-size:12px;padding:3px 10px;border:2px dashed var(--sp-ink);border-radius:var(--radius-pill)}
+.q{font-weight:800;font-size:20px;line-height:1.2}
+.cta{margin-top:auto;font-weight:700;font-size:15px;text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--sp-yellow);text-underline-offset:4px}
+</style>
+</head>
+<body>
+<div class="grid">
+<a href="#"><div class="top"><span class="tag" style="background:var(--cat-protection)">Protezione</span></div><span class="q">Ho diritto alla protezione internazionale?</span><span class="cta">Leggi la guida</span></a>
+<a href="#"><div class="top"><span class="tag" style="background:var(--cat-work)">Lavoro</span><span class="soon">In arrivo</span></div><span class="q">Posso entrare con il decreto flussi?</span><span class="cta">Come funziona</span></a>
+<a href="#"><div class="top"><span class="tag" style="background:var(--sp-yellow)">Pratiche</span></div><span class="q">Il mio permesso è pronto?</span><span class="cta">Controlla lo stato</span></a>
+</div>
+</body>
+</html>

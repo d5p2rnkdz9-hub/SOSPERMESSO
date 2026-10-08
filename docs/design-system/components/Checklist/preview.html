@@ -1,0 +1,38 @@
+<!-- @dsCard group="Contenuti" height=420 subtitle="Documenti per il primo rilascio, con avanzamento" -->
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--sp-paper);color:var(--sp-ink);font-family:var(--font-body)}
+.wrap{padding:24px;max-width:560px}
+.box{background:var(--sp-white);border:var(--border-ui) solid var(--sp-ink);border-radius:var(--radius-lg);overflow:hidden}
+.head{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:var(--sp-yellow);border-bottom:var(--border-ui) solid var(--sp-ink);font-family:var(--font-display);font-weight:700}
+.head strong{font-size:18px}.head span{font-size:15px}
+.bar{height:12px;background:var(--sp-paper);border-bottom:2px solid var(--sp-ink)}
+.fill{height:100%;background:var(--state-success);border-right:2px solid var(--sp-ink)}
+label{display:flex;align-items:center;gap:14px;min-height:56px;padding:4px 20px;border-bottom:1.5px solid var(--sp-rule);font-size:17px;cursor:pointer}
+input{width:24px;height:24px;accent-color:var(--sp-ink);flex-shrink:0;margin:0}
+input:checked+span{text-decoration:line-through;color:var(--sp-muted)}
+.foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:14px 20px;background:var(--state-warning-tint);font-size:15px}
+.chip{font-family:var(--font-display);font-weight:700;font-size:13px;padding:3px 10px;border:2px solid var(--sp-ink);border-radius:var(--radius-pill);background:var(--sp-white)}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="box">
+<div class="head"><strong>Primo rilascio</strong><span id="count">2 di 4 pronti</span></div>
+<div class="bar"><div class="fill" id="fill" style="width:50%"></div></div>
+<label><input type="checkbox" checked><span>Passaporto valido</span></label>
+<label><input type="checkbox" checked><span>Kit postale compilato</span></label>
+<label><input type="checkbox"><span>Marca da bollo da 16 €</span></label>
+<label><input type="checkbox"><span>4 fototessere</span></label>
+<div class="foot"><span class="chip">Kit postale</span><span>Costi: [bollettino] + marca da bollo 16 €</span></div>
+</div></div>
+<script>
+const boxes=[...document.querySelectorAll('input')];
+const upd=()=>{const n=boxes.filter(b=>b.checked).length;document.getElementById('count').textContent=n+' di '+boxes.length+' pronti';document.getElementById('fill').style.width=(n/boxes.length*100)+'%';};
+boxes.forEach(b=>b.addEventListener('change',upd));
+</script>
+</body>
+</html>

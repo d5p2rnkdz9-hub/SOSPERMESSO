@@ -1,0 +1,50 @@
+/* Generato da tokens.json (solo per aprire le preview dei componenti in locale).
+   Il sito usa i token di src/styles/main.css. */
+:root {
+  --sp-yellow: #FFD400;
+  --sp-ink: #141414;
+  --sp-red: #D62828;
+  --sp-paper: #FFFDF5;
+  --sp-white: #FFFFFF;
+  --sp-muted: #5A5A5A;
+  --sp-rule: #E6E1D3;
+  --cat-work: #4D9FFF;
+  --cat-work-tint: #E4F0FF;
+  --cat-protection: #FF8A3D;
+  --cat-protection-tint: #FFEBDD;
+  --cat-health: #22B8A0;
+  --cat-health-tint: #DCF5F0;
+  --cat-family: #A98BF5;
+  --cat-family-tint: #EEE8FE;
+  --state-success: #1F9D55;
+  --state-success-tint: #E3F6EA;
+  --state-warning: #F5A300;
+  --state-warning-tint: #FFF4D6;
+  --state-error-tint: #FDE5E5;
+  --state-info: #2D7FF9;
+  --state-info-tint: #E4EEFF;
+  --badge-new: #4D9FFF;
+  --font-display: Poppins, "Poppins Fallback", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", Inter, system-ui, sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+  --border-ui: 2.5px;
+  --border-chip: 2px;
+  --border-print: 3px;
+  --sticker-sm: 3px 3px 0 #141414;
+  --sticker: 4px 4px 0 #141414;
+  --sticker-md: 5px 5px 0 #141414;
+  --sticker-lg: 9px 9px 0 #141414;
+  --focus-ring: 0 0 0 4px #FFD400;
+}

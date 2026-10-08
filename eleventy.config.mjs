@@ -20,6 +20,8 @@ export default function(eleventyConfig) {
   eleventyConfig.ignores.add("review-reports/**");
   eleventyConfig.ignores.add("review-reports */**");
   eleventyConfig.ignores.add("_cache/**");
+  // Copia del design system «Adesivo» (riferimento, non va pubblicata sul sito)
+  eleventyConfig.ignores.add("docs/**");
   // public/ is passthrough-copied as static assets — nothing inside is a template.
   // (Le .html del bundle patto-interattivo venivano renderizzate come Liquid:
   //  inutile e fragile, sono testi di legge da 700 KB con graffe potenzialmente

@@ -1,0 +1,25 @@
+<!-- @dsCard group="Contenuti" height=330 subtitle="Da sapere · Attenzione · Scadenza" -->
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Atkinson+Hyperlegible:wght@400&amp;display=swap">
+<style>
+body{margin:0;background:var(--sp-paper);color:var(--sp-ink);font-family:var(--font-body)}
+.wrap{display:flex;flex-direction:column;gap:14px;padding:24px;max-width:640px}
+.al{display:flex;gap:14px;padding:18px 20px;border:var(--border-ui) solid var(--sp-ink);border-radius:16px;font-size:16px;line-height:1.5}
+.al strong{display:block;font-family:var(--font-display);font-size:17px}
+.al svg{flex-shrink:0}
+.info{background:var(--state-info-tint)}
+.warn{background:var(--state-warning-tint)}
+.due{background:var(--sp-red);color:var(--sp-white);box-shadow:var(--sticker-md)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="al info"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2D7FF9" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg><div><strong>Da sapere</strong>Il cedolino della Questura vale come permesso finché aspetti la card.</div></div>
+<div class="al warn"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"></path><path d="M12 10v4M12 17v.5"></path></svg><div><strong>Attenzione</strong>Le prassi possono cambiare da Questura a Questura.</div></div>
+<div class="al due"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6M12 16.5v.5"></path></svg><div><strong>Scadenza</strong>Chiedi il rinnovo almeno 60 giorni prima della scadenza.</div></div>
+</div>
+</body>
+</html>

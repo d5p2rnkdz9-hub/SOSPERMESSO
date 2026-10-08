@@ -1,0 +1,26 @@
+<!-- @dsCard group="Navigazione" height=120 subtitle="Menu principale con selettore lingua" -->
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&amp;display=swap">
+<style>
+body{margin:0;background:var(--sp-white);font-family:var(--font-display)}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:24px;font-weight:700;font-size:17px;color:var(--sp-ink)}
+.pill{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;background:var(--sp-white);border:var(--border-ui) solid var(--sp-ink);border-radius:var(--radius-pill);box-shadow:var(--sticker);text-decoration:none;color:var(--sp-ink)}
+.pill:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--sp-ink)}
+.pill:focus-visible{outline:none;box-shadow:var(--sticker),var(--focus-ring)}
+.new{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--badge-new);border:2px solid var(--sp-ink);padding:1px 8px;border-radius:var(--radius-pill)}
+.lang{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 12px;background:none;border:0;font:inherit;color:var(--sp-ink);cursor:pointer}
+.flag{display:block;border:1px solid #D0D0D0;border-radius:3px}
+</style>
+</head>
+<body>
+<nav aria-label="Principale">
+<a class="pill" href="#">Leggi e circolari <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5h6L5 7z" fill="#5A5A5A"></path></svg></a>
+<a class="pill" href="#">Patto UE <span class="new">Nuovo</span></a>
+<a class="pill" href="#">Contattaci</a>
+<button class="lang" type="button" aria-label="Lingua: italiano. Cambia lingua"><svg class="flag" width="27" height="18" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#009246"></rect><rect x="10" width="10" height="20" fill="#FFFFFF"></rect><rect x="20" width="10" height="20" fill="#CE2B37"></rect></svg>IT <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5h6L5 7z" fill="#5A5A5A"></path></svg></button>
+</nav>
+</body>
+</html>
