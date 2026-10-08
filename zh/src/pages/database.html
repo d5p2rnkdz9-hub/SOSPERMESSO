@@ -70,7 +70,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-studio-dopo-ingresso-con-visto.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-dopo-ingresso-con-visto.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -82,7 +82,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-studio-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-studio-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -94,7 +94,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -106,7 +106,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -118,7 +118,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-subordinato-stagionale-dopo-ingresso-con-visto-per-flussi-stagionali.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -130,7 +130,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-dopo-ingresso-con-visto-per-flussi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -142,7 +142,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-autonomo-conversione-da-altro-permesso.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -154,7 +154,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-lavoro-artistico.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-lavoro-artistico.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-artistico.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-lavoro-artistico.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -166,7 +166,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-ricerca-scientifica.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-ricerca-scientifica.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-ricerca-scientifica.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-ricerca-scientifica.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -178,7 +178,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-tirocinio.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-tirocinio.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-tirocinio.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-tirocinio.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -190,7 +190,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-attivita-sportiva.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-attivita-sportiva.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-attivita-sportiva.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-attivita-sportiva.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -202,7 +202,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-motivi-religiosi.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-motivi-religiosi.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-motivi-religiosi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-motivi-religiosi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -214,7 +214,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-residenza-elettiva.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-residenza-elettiva.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-residenza-elettiva.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-residenza-elettiva.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -226,7 +226,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -238,7 +238,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-attesa-occupazione.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-attesa-occupazione.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -260,7 +260,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-richiesta-asilo.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-richiesta-asilo.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -272,7 +272,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-asilo-status-rifugiato.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-asilo-status-rifugiato.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -284,7 +284,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -296,7 +296,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-protezione-speciale.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-speciale.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -308,7 +308,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-tratta.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -320,7 +320,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -332,7 +332,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-sfruttamento-lavorativo.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-sfruttamento-lavorativo.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-sfruttamento-lavorativo.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-sfruttamento-lavorativo.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -344,7 +344,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-apolidia.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-apolidia.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-apolidia.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-apolidia.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -356,7 +356,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-minore-eta-per-msna.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-minore-eta-per-msna.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -368,7 +368,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-calamita-naturale.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-calamita-naturale.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-calamita-naturale.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-calamita-naturale.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -380,7 +380,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-integrazione-prosieguo-amministrativo.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-integrazione-prosieguo-amministrativo.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -402,7 +402,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-donna-in-stato-di-gravidanza-o-con-figlio-minore-di-6-mesi.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -414,7 +414,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-padre-di-bambino-minore-di-6-mesi-o-che-sta-per-nascere-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -426,7 +426,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-dopo-ingresso-con-visto-per-cure-mediche.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -438,7 +438,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -460,7 +460,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -472,7 +472,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -484,7 +484,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-genitore-di-cittadino-italiano.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -496,7 +496,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famiglia-convivente-con-parente-cittadino-italiano-entro-il-secondo-grado.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -508,7 +508,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-figlio-minore-di-piu-di-14-anni-che-vive-con-i-genitori.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -520,7 +520,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-assistenza-minore-articolo-31.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-assistenza-minore-articolo-31.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-assistenza-minore-articolo-31.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-assistenza-minore-articolo-31.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -532,7 +532,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -544,7 +544,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -556,7 +556,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-famit-per-familiari-di-cittadini-italiani-statici.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -568,7 +568,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -580,7 +580,7 @@ dbPage: true
                 {% if p.isPlaceholder %}<span class="permit-badge-wip">建设中</span>
                 {% else %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#cose" class="permit-btn btn-cose">简介</a>
                   {% if p.primoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#primo" class="permit-btn btn-primo">首次</a>{% endif %}
-                  {% if p.rinnovoNonApplicabile %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
+                  {% assign itp = permits | where: "slug", p.slug | first %}{% if itp.rinnovoNotApplicable %}<span class="permit-badge-na">不适用续签</span>{% elsif p.rinnovoDocuments.size > 0 %}<a href="permesso-carta-di-soggiorno-per-familiari-di-italiani-dinamici.html#rinnovo" class="permit-btn btn-rinnovo">续签</a>{% endif %}
                 {% endif %}
               </div>
             </div></li>
@@ -755,10 +755,5 @@ dbPage: true
     }
   })();
   </script>
-
-  <!-- Floating test button -->
-  <a href="https://app.sospermesso.it" target="_blank" rel="noopener" class="fab-test">
-    <span>想知道您是否能获得许可？<strong>参加测试</strong></span>
-  </a>
 
   <!-- FOOTER -->

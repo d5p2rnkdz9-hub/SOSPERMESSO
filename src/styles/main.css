@@ -18,10 +18,10 @@
 @font-face {
   font-family: 'Poppins Fallback';
   src: local('Arial');
-  ascent-override: 93.77%;
-  descent-override: 31.26%;
-  line-gap-override: 8.93%;
-  size-adjust: 112.16%;
+  ascent-override: 92.55%;
+  descent-override: 30.85%;
+  line-gap-override: 8.81%;
+  size-adjust: 113.64%; /* tarato sui titoli reali in Poppins 700/800 (ott 2026) */
 }
 
 :root {
@@ -277,12 +277,14 @@ a:hover {
   color: inherit;
 }
 
-/* Content links - visible teal color with underline */
+/* Content links - visible teal color with underline.
+   :where() tiene la specificità di «li a»: i pulsanti (.btn) e le voci di menu
+   restano coi loro colori. */
 .card a:not(.card-link):not(.btn),
-.alert a:not(.btn),
-p a:not(.btn),
-li a:not(.btn),
-.content a:not(.btn) {
+.alert a:where(:not(.btn)),
+p a:where(:not(.btn)),
+li a:where(:not(.btn)),
+.content a:where(:not(.btn)) {
   color: #1A6B5F;
   text-decoration: underline;
   text-decoration-color: rgba(26, 107, 95, 0.3);
@@ -290,10 +292,10 @@ li a:not(.btn),
 }
 
 .card a:not(.card-link):not(.btn):hover,
-.alert a:not(.btn):hover,
-p a:not(.btn):hover,
-li a:not(.btn):hover,
-.content a:not(.btn):hover {
+.alert a:where(:not(.btn)):hover,
+p a:where(:not(.btn)):hover,
+li a:where(:not(.btn)):hover,
+.content a:where(:not(.btn)):hover {
   color: var(--sp-ink);
   text-decoration-color: var(--sp-yellow);
   text-decoration-thickness: 3px;

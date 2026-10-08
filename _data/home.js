@@ -1,9 +1,9 @@
-// Testi della home (fase 4 design system «Adesivo», ott 2026).
+// Testi della home (design system «Adesivo», ott 2026).
 // Struttura condivisa: _includes/components/home.liquid, stili in src/styles/home.css.
 // IT è la fonte. Le altre lingue riusano le frasi già tradotte della vecchia home;
-// le chiavi che mancano (titoli di sezione nuovi, "Per approfondire", ecc.) ricadono
-// sull'italiano nel template: vanno tradotte qui (vedi elenco in fondo alla fase 4).
-// I chip "Pratiche"/"Lavoro" e il badge "Nuovo" senza traduzione vengono omessi.
+// le chiavi nuove (findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta di
+// kit postale e controlla permesso) sono una BOZZA da far rivedere a madrelingua (_bozza).
+// Una chiave mancante ricade sull'italiano nel template.
 // catItems: [slug, etichetta breve]; nelle altre lingue l'etichetta è il nome del
 // permesso dai dati Notion della lingua, senza la parte tra parentesi.
 module.exports = {
@@ -229,23 +229,29 @@ module.exports = {
         "color": "yellow",
         "q": "What documents do I need?",
         "cta": "Find out which documents to bring to the Questura for your permit",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "Practical"
       },
       {
         "color": "yellow",
         "q": "Postal kit and other forms",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "Practical",
+        "cta": "Forms step by step"
       },
       {
         "color": "yellow",
         "q": "How much does the permit cost?",
         "cta": "Postal orders, revenue stamps and costs for each type of permit",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "Practical"
       },
       {
         "color": "yellow",
         "q": "Check if your residence permit is ready",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "Practical",
+        "cta": "Check the status"
       }
     ],
     "legal": {
@@ -257,15 +263,23 @@ module.exports = {
       "desc": "Bureaucratic terms explained in simple language →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "Learn more:",
+      "circolari": "Circulars",
+      "normativa": "Consolidated legislation",
+      "nuovo": "New"
     },
     "final": {
       "sub": "Answer a few questions and find out what you can do.",
       "noTitle": "I don't have a permit",
       "noAction": "Can I get one? →",
       "haveTitle": "I already have a permit",
-      "haveAction": "Can I renew or convert it? →"
-    }
+      "haveAction": "Can I renew or convert it? →",
+      "title": "Not sure where to start?"
+    },
+    "findTitle": "Find your permit",
+    "guidesTitle": "Step-by-step guides",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "fr": {
     "badge": "41+ Permis · Mis à jour 2025",
@@ -314,23 +328,29 @@ module.exports = {
         "color": "yellow",
         "q": "Quels documents me faut-il ?",
         "cta": "Découvrez quels documents apporter à la Questura pour votre permis",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "Démarches"
       },
       {
         "color": "yellow",
         "q": "Kit postal et autres formulaires",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "Démarches",
+        "cta": "Formulaires pas à pas"
       },
       {
         "color": "yellow",
         "q": "Combien coûte le permis ?",
         "cta": "Bulletins, timbres fiscaux et coûts pour chaque type de permis",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "Démarches"
       },
       {
         "color": "yellow",
         "q": "Vérifier si votre titre de séjour est prêt",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "Démarches",
+        "cta": "Vérifier l'état"
       }
     ],
     "legal": {
@@ -342,15 +362,23 @@ module.exports = {
       "desc": "Termes bureaucratiques expliqués simplement →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "Pour en savoir plus :",
+      "circolari": "Circulaires",
+      "normativa": "Textes de loi consolidés",
+      "nuovo": "Nouveau"
     },
     "final": {
       "sub": "Réponds à quelques questions et découvre ce que tu peux faire.",
       "noTitle": "Je n'ai pas de permis",
       "noAction": "Puis-je en obtenir un ? →",
       "haveTitle": "J'ai déjà un permis",
-      "haveAction": "Puis-je le renouveler ou le convertir ? →"
-    }
+      "haveAction": "Puis-je le renouveler ou le convertir ? →",
+      "title": "Vous ne savez pas par où commencer ?"
+    },
+    "findTitle": "Trouvez votre permis",
+    "guidesTitle": "Guides pas à pas",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "es": {
     "badge": "41+ Permisos · Actualizada 2025",
@@ -399,23 +427,29 @@ module.exports = {
         "color": "yellow",
         "q": "¿Qué documentos necesito?",
         "cta": "Descubre qué documentos llevar a la Questura para tu permiso",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "Trámites"
       },
       {
         "color": "yellow",
         "q": "Kit postal y otros formularios",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "Trámites",
+        "cta": "Formularios paso a paso"
       },
       {
         "color": "yellow",
         "q": "¿Cuánto cuesta el permiso?",
         "cta": "Boletines, sellos fiscales y costos para cada tipo de permiso",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "Trámites"
       },
       {
         "color": "yellow",
         "q": "Verifica si tu permesso di soggiorno esta listo",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "Trámites",
+        "cta": "Consulta el estado"
       }
     ],
     "legal": {
@@ -427,15 +461,23 @@ module.exports = {
       "desc": "Términos burocráticos explicados de forma sencilla →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "Para saber más:",
+      "circolari": "Circulares",
+      "normativa": "Normativa consolidada",
+      "nuovo": "Nuevo"
     },
     "final": {
       "sub": "Responde a pocas preguntas y descubre qué puedes hacer.",
       "noTitle": "No tengo permiso",
       "noAction": "¿Puedo obtenerlo? →",
       "haveTitle": "Ya tengo un permiso",
-      "haveAction": "¿Puedo renovarlo o convertirlo? →"
-    }
+      "haveAction": "¿Puedo renovarlo o convertirlo? →",
+      "title": "¿No sabes por dónde empezar?"
+    },
+    "findTitle": "Encuentra tu permiso",
+    "guidesTitle": "Guías paso a paso",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "tr": {
     "badge": "41+ İzin · 2025 Güncel",
@@ -484,23 +526,29 @@ module.exports = {
         "color": "yellow",
         "q": "Hangi belgeler gerekli?",
         "cta": "İzniniz için Questura'ya hangi belgeleri götüreceğinizi öğrenin",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "İşlemler"
       },
       {
         "color": "yellow",
         "q": "Kit postale ve diğer formlar",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "İşlemler",
+        "cta": "Adım adım formlar"
       },
       {
         "color": "yellow",
         "q": "İzin ne kadar?",
         "cta": "Her izin türü için posta havaleleri, damga pulları ve maliyetler",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "İşlemler"
       },
       {
         "color": "yellow",
         "q": "Oturma izninizin hazır olup olmadığını kontrol edin",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "İşlemler",
+        "cta": "Durumu kontrol edin"
       }
     ],
     "legal": {
@@ -512,15 +560,23 @@ module.exports = {
       "desc": "Bürokratik terimler basit bir dille açıklandı →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "Daha fazla bilgi:",
+      "circolari": "Genelgeler",
+      "normativa": "Birleştirilmiş mevzuat",
+      "nuovo": "Yeni"
     },
     "final": {
       "sub": "Birkaç soruya cevap ver, ne yapabileceğini öğren.",
       "noTitle": "İznim yok",
       "noAction": "Alabilir miyim? →",
       "haveTitle": "Zaten iznim var",
-      "haveAction": "Yenileyebilir veya dönüştürebilir miyim? →"
-    }
+      "haveAction": "Yenileyebilir veya dönüştürebilir miyim? →",
+      "title": "Nereden başlayacağınızı bilmiyor musunuz?"
+    },
+    "findTitle": "İzninizi bulun",
+    "guidesTitle": "Adım adım rehberler",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ru": {
     "badge": "41+ Разрешений · Обновлено 2025",
@@ -569,23 +625,29 @@ module.exports = {
         "color": "yellow",
         "q": "Какие документы нужны?",
         "cta": "Узнайте, какие документы принести в Квестуру для вашего разрешения",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "Процедуры"
       },
       {
         "color": "yellow",
         "q": "Почтовый комплект и другие формы",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "Процедуры",
+        "cta": "Формы шаг за шагом"
       },
       {
         "color": "yellow",
         "q": "Сколько стоит разрешение?",
         "cta": "Почтовые переводы, гербовые марки и стоимость для каждого типа разрешения",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "Процедуры"
       },
       {
         "color": "yellow",
         "q": "Проверьте, готово ли ваше разрешение на проживание",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "Процедуры",
+        "cta": "Проверьте статус"
       }
     ],
     "legal": {
@@ -597,15 +659,23 @@ module.exports = {
       "desc": "Бюрократические термины, объяснённые простым языком →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "Подробнее:",
+      "circolari": "Циркуляры",
+      "normativa": "Сводное законодательство",
+      "nuovo": "Новое"
     },
     "final": {
       "sub": "Ответьте на несколько вопросов и узнайте, что вы можете сделать.",
       "noTitle": "У меня нет разрешения",
       "noAction": "Могу ли я его получить? →",
       "haveTitle": "У меня уже есть разрешение",
-      "haveAction": "Могу ли я продлить или конвертировать его? →"
-    }
+      "haveAction": "Могу ли я продлить или конвертировать его? →",
+      "title": "Не знаете, с чего начать?"
+    },
+    "findTitle": "Найдите своё разрешение",
+    "guidesTitle": "Пошаговые руководства",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "bn": {
     "badge": "৪১+ অনুমতি · ২০২৫ আপডেটেড",
@@ -654,23 +724,29 @@ module.exports = {
         "color": "yellow",
         "q": "কোন নথিপত্র প্রয়োজন?",
         "cta": "আপনার অনুমতির জন্য Questura-তে কোন নথি নিয়ে যেতে হবে জানুন",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "প্রক্রিয়া"
       },
       {
         "color": "yellow",
         "q": "কিট পোস্তালে ও অন্যান্য ফর্ম",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "প্রক্রিয়া",
+        "cta": "ধাপে ধাপে ফর্ম"
       },
       {
         "color": "yellow",
         "q": "অনুমতির খরচ কত?",
         "cta": "প্রতিটি ধরনের অনুমতির জন্য পোস্টাল অর্ডার, রাজস্ব স্ট্যাম্প ও খরচ",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "প্রক্রিয়া"
       },
       {
         "color": "yellow",
         "q": "আপনার বসবাসের অনুমতি তৈরি হয়েছে কিনা পরীক্ষা করুন",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "প্রক্রিয়া",
+        "cta": "অবস্থা দেখুন"
       }
     ],
     "legal": {
@@ -682,15 +758,23 @@ module.exports = {
       "desc": "আমলাতান্ত্রিক পরিভাষা সহজ ভাষায় ব্যাখ্যা করা হয়েছে →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "আরও জানুন:",
+      "circolari": "সার্কুলার",
+      "normativa": "সমন্বিত আইন",
+      "nuovo": "নতুন"
     },
     "final": {
       "sub": "কয়েকটি প্রশ্নের উত্তর দিন এবং জানুন আপনি কী করতে পারেন।",
       "noTitle": "আমার অনুমতি নেই",
       "noAction": "আমি কি পেতে পারি? →",
       "haveTitle": "আমার ইতিমধ্যে অনুমতি আছে",
-      "haveAction": "আমি কি নবায়ন বা রূপান্তর করতে পারি? →"
-    }
+      "haveAction": "আমি কি নবায়ন বা রূপান্তর করতে পারি? →",
+      "title": "কোথা থেকে শুরু করবেন বুঝতে পারছেন না?"
+    },
+    "findTitle": "আপনার অনুমতি খুঁজুন",
+    "guidesTitle": "ধাপে ধাপে গাইড",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ar": {
     "badge": "41+ تصريح · محدّث 2025",
@@ -739,23 +823,29 @@ module.exports = {
         "color": "yellow",
         "q": "ما هي الوثائق المطلوبة؟",
         "cta": "اكتشف الوثائق التي يجب تقديمها في مصلحة الشرطة (Questura) لتصريحك",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "إجراءات"
       },
       {
         "color": "yellow",
         "q": "طلب البريد (Kit Postale) ونماذج أخرى",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "إجراءات",
+        "cta": "النماذج خطوة بخطوة"
       },
       {
         "color": "yellow",
         "q": "كم يكلف التصريح؟",
         "cta": "الحوالات البريدية والطوابع والتكاليف لكل نوع من التصاريح",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "إجراءات"
       },
       {
         "color": "yellow",
         "q": "تحقق مما إذا كان تصريح إقامتك جاهزا",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "إجراءات",
+        "cta": "تحقق من الحالة"
       }
     ],
     "legal": {
@@ -767,15 +857,23 @@ module.exports = {
       "desc": "شرح المصطلحات البيروقراطية بلغة بسيطة →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "للمزيد:",
+      "circolari": "التعاميم",
+      "normativa": "النصوص القانونية الموحّدة",
+      "nuovo": "جديد"
     },
     "final": {
       "sub": "أجب عن بعض الأسئلة واكتشف ما يمكنك فعله.",
       "noTitle": "ليس لدي تصريح",
       "noAction": "هل يمكنني الحصول عليه؟ →",
       "haveTitle": "لدي تصريح بالفعل",
-      "haveAction": "هل يمكنني تجديده أو تحويله؟ →"
-    }
+      "haveAction": "هل يمكنني تجديده أو تحويله؟ →",
+      "title": "لا تعرف من أين تبدأ؟"
+    },
+    "findTitle": "ابحث عن تصريحك",
+    "guidesTitle": "أدلة خطوة بخطوة",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ur": {
     "badge": "41+ اجازت نامے · 2025 تازہ کاری",
@@ -824,23 +922,29 @@ module.exports = {
         "color": "yellow",
         "q": "کون سی دستاویزات درکار ہیں؟",
         "cta": "جانیں کہ اپنے اجازت نامے کے لیے Questura میں کون سی دستاویزات لے کر جائیں",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "کارروائیاں"
       },
       {
         "color": "yellow",
         "q": "Kit postale اور دیگر فارم",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "کارروائیاں",
+        "cta": "مرحلہ وار فارم"
       },
       {
         "color": "yellow",
         "q": "اجازت نامے کی لاگت کتنی ہے؟",
         "cta": "ہر قسم کے اجازت نامے کے لیے پوسٹل آرڈرز، ریونیو اسٹیمپ اور اخراجات",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "کارروائیاں"
       },
       {
         "color": "yellow",
         "q": "چیک کریں کہ آپ کا اجازت نامہ تیار ہے یا نہیں",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "کارروائیاں",
+        "cta": "حالت چیک کریں"
       }
     ],
     "legal": {
@@ -852,15 +956,23 @@ module.exports = {
       "desc": "بیوروکریٹک اصطلاحات آسان زبان میں →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "مزید جانیں:",
+      "circolari": "سرکلرز",
+      "normativa": "مربوط قوانین",
+      "nuovo": "نیا"
     },
     "final": {
       "sub": "چند سوالات کے جواب دیں اور جانیں کہ آپ کیا کر سکتے ہیں۔",
       "noTitle": "میرے پاس اجازت نامہ نہیں ہے",
       "noAction": "کیا مجھے مل سکتا ہے؟ →",
       "haveTitle": "میرے پاس پہلے سے اجازت نامہ ہے",
-      "haveAction": "کیا میں اس کی تجدید یا تبدیلی کر سکتا ہوں؟ →"
-    }
+      "haveAction": "کیا میں اس کی تجدید یا تبدیلی کر سکتا ہوں؟ →",
+      "title": "معلوم نہیں کہاں سے شروع کریں؟"
+    },
+    "findTitle": "اپنا اجازت نامہ تلاش کریں",
+    "guidesTitle": "مرحلہ وار رہنمائی",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "fa": {
     "badge": "+41 مجوز · به‌روزرسانی 2025",
@@ -909,23 +1021,29 @@ module.exports = {
         "color": "yellow",
         "q": "چه مدارکی لازم است؟",
         "cta": "بفهمید چه مدارکی باید به Questura برای مجوز خود ببرید",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "امور اداری"
       },
       {
         "color": "yellow",
         "q": "Kit postale و فرم‌های دیگر",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "امور اداری",
+        "cta": "فرم‌ها گام‌به‌گام"
       },
       {
         "color": "yellow",
         "q": "هزینه مجوز چقدر است؟",
         "cta": "حواله‌های پستی، تمبرهای مالیاتی و هزینه‌ها برای هر نوع مجوز",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "امور اداری"
       },
       {
         "color": "yellow",
         "q": "بررسی کنید که آیا مجوز اقامت شما آماده است",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "امور اداری",
+        "cta": "وضعیت را بررسی کنید"
       }
     ],
     "legal": {
@@ -937,15 +1055,23 @@ module.exports = {
       "desc": "اصطلاحات اداری به زبان ساده توضیح داده شده →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "برای اطلاعات بیشتر:",
+      "circolari": "بخشنامه‌ها",
+      "normativa": "قوانین تلفیقی",
+      "nuovo": "جدید"
     },
     "final": {
       "sub": "به چند سؤال پاسخ دهید و بدانید چه کاری می‌توانید انجام دهید.",
       "noTitle": "مجوز ندارم",
       "noAction": "آیا می‌توانم بگیرم؟ →",
       "haveTitle": "مجوز دارم",
-      "haveAction": "آیا می‌توانم تمدید یا تبدیل کنم؟ →"
-    }
+      "haveAction": "آیا می‌توانم تمدید یا تبدیل کنم؟ →",
+      "title": "نمی‌دانید از کجا شروع کنید؟"
+    },
+    "findTitle": "مجوز خود را پیدا کنید",
+    "guidesTitle": "راهنماهای گام‌به‌گام",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "zh": {
     "badge": "41+ 种许可 · 2025年更新",
@@ -994,23 +1120,29 @@ module.exports = {
         "color": "yellow",
         "q": "需要哪些文件？",
         "cta": "了解您需要带到Questura的文件",
-        "href": "database.html?go=documenti"
+        "href": "database.html?go=documenti",
+        "tag": "办事手续"
       },
       {
         "color": "yellow",
         "q": "Kit postale 和其他表格",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "tag": "办事手续",
+        "cta": "分步填写表格"
       },
       {
         "color": "yellow",
         "q": "居留许可费用是多少？",
         "cta": "每种居留许可的汇款单、印花税和费用",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "tag": "办事手续"
       },
       {
         "color": "yellow",
         "q": "查看您的居留许可是否已准备好",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "tag": "办事手续",
+        "cta": "查询办理状态"
       }
     ],
     "legal": {
@@ -1022,14 +1154,22 @@ module.exports = {
       "desc": "用简单语言解释的官僚术语 →"
     },
     "more": {
-      "patto": "Patto UE"
+      "patto": "Patto UE",
+      "label": "了解更多：",
+      "circolari": "通告",
+      "normativa": "综合法规",
+      "nuovo": "新"
     },
     "final": {
       "sub": "回答几个问题，了解你能做什么。",
       "noTitle": "我没有居留许可",
       "noAction": "我能获得吗？ →",
       "haveTitle": "我已有居留许可",
-      "haveAction": "我能续签或转换吗？ →"
-    }
+      "haveAction": "我能续签或转换吗？ →",
+      "title": "不知道从哪里开始？"
+    },
+    "findTitle": "查找您的居留许可",
+    "guidesTitle": "分步指南",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
   }
 };

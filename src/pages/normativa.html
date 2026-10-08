@@ -38,16 +38,19 @@ extraStyles: |
       background: var(--white);
       border: 2.5px solid var(--black);
       border-radius: 16px;
-      box-shadow: 4px 4px 0 var(--black);
+      box-shadow: var(--sticker);
       padding: 1.3rem 1.4rem;
       text-decoration: none;
       color: var(--black);
       transition: transform 0.12s ease, box-shadow 0.12s ease;
     }
-    .norm-card:hover,
+    .norm-card:hover {
+      transform: var(--sticker-lift);
+      box-shadow: var(--sticker-hover);
+    }
     .norm-card:focus-visible {
-      transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0 var(--black);
+      outline: none;
+      box-shadow: var(--sticker), var(--focus-ring);
     }
     .norm-card--evidenza { background: #FFFDF3; }
     .norm-tag {

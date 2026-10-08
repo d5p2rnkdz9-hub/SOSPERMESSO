@@ -23,7 +23,7 @@ extraStyles: |
       .sportelli-marker:hover,
       .sportelli-marker:focus-visible { filter: drop-shadow(0 4px 4px rgba(0,0,0,0.28)); }
       .sportelli-marker:focus-visible .pin { stroke-width: 2; }
-      .sportelli-popup { position: absolute; background: white; border: 2px solid var(--black); border-radius: 14px; padding: 1rem 1.1rem 0.85rem; box-shadow: var(--shadow-lg); max-width: 280px; min-width: 220px; z-index: 20; display: none; font-family: var(--font-primary); }
+      .sportelli-popup { position: absolute; background: white; border: 2px solid var(--black); border-radius: 14px; padding: 1rem 1.1rem 0.85rem; box-shadow: var(--sticker); max-width: 280px; min-width: 220px; z-index: 20; display: none; font-family: var(--font-primary); }
       .sportelli-popup.visible { display: block; }
       .sportelli-popup h4 { margin: 0 0 0.6rem; padding-right: 1.5rem; font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-size: 0.95rem; color: var(--black); }
       .sportelli-popup .sp-close { position: absolute; top: 0.3rem; right: 0.5rem; background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--gray-medium); padding: 0.15rem 0.4rem; }
@@ -42,9 +42,9 @@ extraStyles: |
       .title-icon { display: inline-block; margin-right: 0.5rem; font-size: 0.85em; vertical-align: -0.05em; }
       /* All city boxes: black shadow only (override yellow combo on even cards) */
       .city-section.card,
-      .city-section.card:nth-child(even) { box-shadow: 3px 3px 0 #141414; }
+      .city-section.card:nth-child(even) { box-shadow: var(--sticker-md); }
       .city-section.card:hover,
-      .city-section.card:nth-child(even):hover { box-shadow: 1.5px 1.5px 0 #141414; }
+      .city-section.card:nth-child(even):hover { box-shadow: var(--sticker-md); }
 
       .legal-table {
         width: 100%;
@@ -78,8 +78,8 @@ extraStyles: |
       }
       /* ── SEARCH BAR (same style as database.html) ── */
       .legal-search-wrap { max-width: 900px; margin: 0 auto 1.5rem; }
-      .legal-search-bar { display: flex; align-items: center; gap: 0.75rem; background: white; border: 2px solid #e5e5e5; border-radius: 14px; padding: 0.85rem 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: border-color 0.2s; }
-      .legal-search-bar:focus-within { border-color: #FFD400; box-shadow: 0 2px 12px rgba(255,212,0,0.15); }
+      .legal-search-bar { display: flex; align-items: center; gap: 0.75rem; background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink); border-radius: var(--radius-pill); padding: 0.85rem 1.25rem; box-shadow: var(--sticker); }
+      .legal-search-bar:focus-within { box-shadow: var(--sticker), var(--focus-ring); }
       .legal-search-bar .search-icon { font-size: 1.1rem; flex-shrink: 0; }
       .legal-search-input { flex: 1; border: none; outline: none; font-size: 1rem; font-family: var(--font-primary); color: #141414; background: transparent; }
       .legal-search-input::placeholder { color: #bbb; }

@@ -42,40 +42,48 @@ When checking Notion:
 | **Notion "Database permessi"** | Permit page content (Q&A sections) |
 | **Notion "Documenti Questura"** | Document requirement content |
 
-## Design Philosophy
+## Design Philosophy — design system «SOSpermesso — Adesivo» (ott 2026)
 
-- **Bright & Colorful**: Vibrant color palette with gradients to create a friendly, welcoming atmosphere
-- **Mobile-First**: Optimized for mobile devices with responsive design throughout
-- **Accessible**: Clear typography, simple language, and intuitive navigation
-- **Cartoon-Style**: Friendly graphics including an adorable lighthouse mascot and paperwork illustrations
-- **Multilingual**: Architecture supports multiple languages (IT, EN, FR, ES, ZH)
+Source of truth: https://claude.ai/artifact/VsgC5Qtuj4iLQV5HoUmYnc (README, tokens.json,
+components NavPill/TestCard/CategoryCard/PermitCard/GuideCard/Checklist/Alert/Stamp, 20 line
+icons). Approved home mockup: https://claude.ai/artifact/7qB7JS7HT1Y2z6zgNDz7rv (Home.dc.html).
 
-## Color Palette
+- **Sticker style**: 2.5px `--sp-ink` borders + solid offset shadows (`--sticker-sm/…/lg`),
+  no gradients, no glows. Hover = `--sticker-lift` (−3px) + bigger shadow; pressed =
+  `--sticker-press`; focus = `--focus-ring` (yellow ring + thin ink ring, visible on yellow too).
+- **One colour, one meaning**: yellow = act, red = warning/deadline, the four category colours
+  orient the permit database. Text on any bright colour is always `--sp-ink`.
+- **Line icons, not emoji**: `{% render "components/icon.liquid", name: "…", size: N %}`
+  (currentColor, always with text next to it). Emoji left only inside running text.
+- **RTL**: shadows and lift mirror automatically via `--sx` (1 in LTR, −1 in `rtl.css`).
+  Always use the tokens, never hardcode `Npx Npx 0 #141414`.
+- **Mobile-first**, 44px touch targets, body 17px desktop / 16px mobile.
 
-### Primary Colors
-- **Taxi Yellow**: #FFD700 (main brand color)
-  - Light: #FFF176
-  - Dark: #FFC107
-  - Bright: #FFEB3B
-- **Lighthouse Red**: #FF5252 (accent color)
-  - Dark: #E02B2B
-  - Bright: #FF6B6B
+## Color Palette (tokens in `src/styles/main.css`)
 
-### Accent Colors (Bright & Vibrant)
-- **Blue**: #42A5F5 / #64B5F6
-- **Teal**: #26A69A / #4DB6AC
-- **Orange**: #FF9800 / #FFB74D
-- **Purple**: #AB47BC / #BA68C8
-- **Pink**: #EC407A / #F06292
-- **Green**: #66BB6A / #81C784
+| Token | Value | Use |
+|---|---|---|
+| `--sp-yellow` | #FFD400 | brand, CTA, hero |
+| `--sp-ink` | #141414 | text, borders, shadows, stamp |
+| `--sp-red` | #D62828 | alerts/deadlines only (white text 6.8:1) |
+| `--sp-paper` | #FFFDF5 | page background |
+| `--sp-white` | #FFFFFF | cards, fields |
+| `--sp-muted` | #5A5A5A | lightest grey allowed for text |
+| `--sp-rule` | #E6E1D3 | thin dividers inside cards |
+| `--cat-work` / `-tint` | #4D9FFF / #E4F0FF | Studio/Lavoro |
+| `--cat-protection` / `-tint` | #FF8A3D / #FFEBDD | Protezione |
+| `--cat-health` / `-tint` | #22B8A0 / #DCF5F0 | Cure mediche, Aiuto legale block |
+| `--cat-family` / `-tint` | #A98BF5 / #EEE8FE | Motivi familiari, Dizionario block |
+| `--state-success/warning/info` (+ `-tint`), `--state-error-tint` | see tokens.json | checklist, alerts |
 
-### Neutrals
-- Black: #1A1A1A
-- Gray Dark: #2D2D2D
-- Gray Medium: #757575
-- Gray Light: #F5F5F5
-- White: #FFFFFF
-- Off-white: #FAFAFA
+Legacy variables (`--taxi-yellow*`, `--lighthouse-red*`, `--accent-*`, `--success`…) still
+exist but point to the new values — prefer the `--sp-*`/`--cat-*`/`--state-*` names in new code.
+Never use the category colours (or yellow) as **text** colour: contrast fails.
+
+**Fonts**: Poppins 700/800 (`--font-display`/`--font-heading`) for headings, buttons, nav,
+labels; Atkinson Hyperlegible 400/700 (`--font-primary`/`--font-body`) for body text; Noto
+fonts for ar/ur/fa/bn/zh. Metric-adjusted `Atkinson Fallback` / `Poppins Fallback` faces keep
+CLS ≈ 0 — re-tune them if you change fonts.
 
 ## Project Structure
 
@@ -181,18 +189,19 @@ Output goes to _site/ (ALL pages at root level, EN at en/ prefix) and deploys to
   - Sway animation on hover
 - Fully responsive (scales from 400px to 180px on landscape mobile)
 
-### 2. Colorful Gradient Cards
-- Each card has:
-  - Subtle gradient background
-  - Rainbow gradient top border (visible on hover)
-  - Golden glow shadow on hover
-  - Scale and lift animation
-- Category sections have unique gradient backgrounds
+### 2. Home (all 11 languages share one structure)
+- `_includes/components/home.liquid` + strings in `_data/home.js` (IT is the source; missing
+  keys in a language fall back to IT) + `src/styles/home.css` (front matter `homePage: true`).
+- Order: hero (badge, H1 with the «Facile» stamp, twin TestCards) → «Trova il tuo permesso»
+  (4 CategoryCards → `database.html?cat=…`) → «Guide passo passo» (GuideCards) → Aiuto legale /
+  Dizionario blocks + links → final yellow block with the twin TestCards.
+- The two tests always appear together («un test non compare mai da solo»).
 
-### 3. Vibrant Gradient Buttons
-- Primary buttons: Yellow gradient with golden glow
-- Secondary buttons: Red gradient with red glow
-- Smooth hover transitions with scale and shadow effects
+### 3. Database & permit pages
+- Database (`dbPage: true`, `src/styles/database.css`): one PermitCard per permit, colour from
+  the section's `data-category`; placeholders dashed; `?cat=` and `?go=` deep links.
+- Permit pages: Checklist (yellow header + counter, whole row is a `<label>`), Alert
+  (`.alert-info` / `.alert-warning` / `.alert-danger`), costs box — styles in `document-page.css`.
 
 ### 4. Contact Form Modal
 - Accessible modal with backdrop blur
@@ -253,13 +262,13 @@ All permit detail pages follow a consistent structure:
 + Additional permit-specific Q&A from Notion
 
 ### Database Categories (database.html)
-- **📋 STUDIO/LAVORO** (Warm gradient)
+- **STUDIO/LAVORO** (`--cat-work`, blue)
   - Study, Employed work, Self-employment, EU long-term, Job seeking
-- **🛡️ PROTEZIONE** (Orange-Pink gradient)
+- **PROTEZIONE** (`--cat-protection`, orange)
   - Asylum request, Refugee status, Subsidiary protection, Special protection, Minors, Natural disaster, Administrative continuation
-- **🏥 CURE MEDICHE** (Blue-Green gradient)
+- **CURE MEDICHE** (`--cat-health`, teal)
   - Pregnancy, Medical treatment, Serious health reasons
-- **👨‍👩‍👧‍👦 MOTIVI FAMILIARI** (Teal-Yellow gradient)
+- **MOTIVI FAMILIARI** (`--cat-family`, violet)
   - Family reunification, Family cohesion, Parent of Italian minor, Relatives of Italians, Minor assistance, EU family member, "Famit" permit, Family residence card, Refugee family members
 
 ## Multilingual System
@@ -458,46 +467,11 @@ the bundle must stay in one directory.
 
 ## Components Deep Dive
 
-### Card Component
-```css
-.card {
-  background: linear-gradient(135deg, #FFFFFF 0%, #FAFAFA 100%);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.card::before {
-  /* Rainbow gradient top border (visible on hover) */
-  background: linear-gradient(90deg,
-    var(--taxi-yellow) 0%,
-    var(--accent-orange) 25%,
-    var(--accent-pink) 50%,
-    var(--accent-purple) 75%,
-    var(--accent-blue) 100%);
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.3);
-}
-```
-
-### Button Component
-```css
-.btn-primary {
-  background: linear-gradient(135deg,
-    var(--taxi-yellow-bright) 0%,
-    var(--taxi-yellow) 100%);
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
-}
-```
+See the design system artifact for the canonical specs. In code:
+- Buttons `.btn` / `.btn-primary` / `.btn-secondary`: pill, `--border-ui`, `--sticker`.
+- Cards `.card`: `--radius-lg`, `--sticker-md`; only clickable cards (`a.card`) lift on hover.
+- Alerts `.alert-*`: tint background + ink border, never a coloured left-only border.
+- Home components: `.ha-*` in `home.css`; database: `.permit-*` in `database.css`.
 
 ## Animations
 
@@ -538,7 +512,7 @@ tuned in three steps below 1200px (`components.css`, "Desktop stretto"): five dr
 plus the language switcher only fit at reduced logo/label size.
 
 2. **Google Fonts**
-   - Inter: 400, 500, 600, 700
+   - Atkinson Hyperlegible: 400, 700
    - Poppins: 600, 700, 800
 
 ### Contact & Error Reporting
@@ -611,9 +585,9 @@ All base styles are designed for mobile, then enhanced for larger screens using 
 - Mobile-optimized images and animations
 
 ## Credits & Resources
-- Icons: Emoji unicode characters
-- Fonts: Google Fonts (Inter, Poppins)
-- Color inspiration: Material Design color palette
+- Icons: 20 line icons of the «Adesivo» design system (`_includes/components/icon.liquid`)
+- Fonts: Google Fonts (Atkinson Hyperlegible, Poppins)
+- Colours: design system «SOSpermesso — Adesivo» (Oct 2026)
 - Lighthouse mascot: Custom SVG illustration
 - Paperwork illustrations: Custom SVG illustrations
 
