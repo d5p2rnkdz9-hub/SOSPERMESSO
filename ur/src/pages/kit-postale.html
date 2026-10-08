@@ -7,7 +7,7 @@ lang: ur
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ur/index.html" style="color: var(--taxi-yellow-dark);">ہوم پیج</a> →
+        <a href="/ur/index.html" class="link-ink">ہوم پیج</a> →
         <span>Kit postale</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: ur
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">📩</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "kit-postale", size: 40 %}</span>
         <h1 class="page-title">Kit postale اور دیگر فارم</h1>
         <p class="section-subtitle">اپنے معاملات کے لیے ضروری فارم ڈاؤن لوڈ کریں</p>
       </div>
@@ -32,7 +32,7 @@ lang: ur
         <p>یہ وہ دستاویز ہے جو جمع کرانی ہوتی ہے جب آپ کسی غیر ملکی شخص کو اپنے گھر میں <strong>مفت</strong> ٹھہراتے ہیں (جیسے دوست، رشتہ دار یا کوئی شخص جس کی آپ مدد کر رہے ہیں)۔ کرایہ نہیں لیا جاتا۔</p>
         <p>شخص کے آپ کے گھر آنے کے <strong>48 گھنٹوں</strong> کے اندر پولیس (Commissariato یا Questura) جانا ہوتا ہے۔ وہ آپ کو بھرنے کے لیے ایک فارم دیں گے اور آپ کی دستاویز پر مہر لگائیں گے۔</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/10/dichiarazione_ospitalita_stranieri.pdf" target="_blank" class="btn btn-primary btn-sm">
               فارم ڈاؤن لوڈ کریں
@@ -47,7 +47,7 @@ lang: ur
         <p>یہ وہ دستاویز ہے جو جمع کرانی ہوتی ہے جب آپ کسی شخص کو <strong>پیسوں کے بدلے</strong> گھر یا کمرہ <strong>کرایے پر دیتے ہیں</strong>۔ شخص آپ کی جائیداد میں رہنے کے لیے آپ کو کرایہ دیتا ہے۔</p>
         <p>شخص کے وہاں رہنا شروع کرنے کے <strong>48 گھنٹوں</strong> کے اندر مقامی پولیس (Vigili) یا Commissariato کو جمع کرانی ہوتی ہے۔ یہ اطالوی اور غیر ملکی دونوں کے لیے قانون کے تحت لازمی ہے۔</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/09/modulo_cessione_fabbricato.pdf" target="_blank" class="btn btn-primary btn-sm">
               فارم ڈاؤن لوڈ کریں
@@ -61,7 +61,7 @@ lang: ur
         <h2>🏡 رہائش کا اعلامیہ (Dichiarazione di residenza)</h2>
         <p>یہ وہ فارم ہے جو آپ جس میونسپلٹی میں رہتے ہیں وہاں کے سول رجسٹر میں اندراج کے لیے استعمال ہوتا ہے۔</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://dait.interno.gov.it/documenti/circ-009-servdemo-27-04-2012-modulo-residenza.pdf" target="_blank" class="btn btn-primary btn-sm">
               فارم ڈاؤن لوڈ کریں
@@ -93,7 +93,7 @@ lang: ur
           <li>ادائیگی کے لیے پوسٹل آرڈر</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">⚠️</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div>
             <strong>توجہ:</strong> تمام اجازت نامے Kit postale کے ذریعے نہیں مانگے جاتے۔ کچھ کی درخواست براہ راست Questura میں دی جاتی ہے۔ اس اجازت نامے کا صفحہ چیک کریں جو آپ سے متعلق ہے۔
           </div>
@@ -101,7 +101,7 @@ lang: ur
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           کیا آپ کو فارموں کے بارے میں مدد چاہیے؟
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -118,15 +118,15 @@ lang: ur
       <h2 class="text-center mb-lg">آپ کے لیے مفید ہو سکتا ہے</h2>
       <div class="grid grid-3">
         <a href="/ur/controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">اجازت نامے کی جانچ</h3>
         </a>
         <a href="/ur/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">قانونی مدد</h3>
         </a>
         <a href="/ur/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">تمام اجازت نامے</h3>
         </a>
       </div>

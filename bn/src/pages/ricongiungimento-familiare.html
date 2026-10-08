@@ -7,7 +7,7 @@ lang: bn
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/bn/index.html" style="color: var(--taxi-yellow-dark);">হোম</a> →
+        <a href="/bn/index.html" class="link-ink">হোম</a> →
         <span>পারিবারিক পুনর্মিলন (Ricongiungimento Familiare)</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: bn
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "famiglia", size: 40 %}</span>
         <h1 class="page-title">পারিবারিক পুনর্মিলনের গাইড</h1>
         <p class="section-subtitle">কিভাবে আপনার পরিবারকে ইতালিতে আনবেন</p>
       </div>
@@ -71,7 +71,7 @@ lang: bn
         </ul>
         <p>👉 যত বেশি মানুষ আনতে চান, তত বেশি আয় থাকতে হবে।</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>আপনি যদি <a href="/bn/permesso-asilo-status-rifugiato.html">শরণার্থী মর্যাদা (status di rifugiato)</a> বা <a href="/bn/permesso-protezione-sussidiaria.html">সহায়ক সুরক্ষা (protezione sussidiaria)</a> পেয়ে থাকেন, তাহলে পারিবারিক পুনর্মিলনের জন্য অন্যান্য বিদেশিদের মতো ন্যূনতম আয় প্রমাণ করতে হবে না।</div>
         </div>
       </div>
@@ -84,7 +84,7 @@ lang: bn
           <li>ভাড়ার <strong>চুক্তির কপি</strong> বা বাড়ি আপনার মালিকানায় আছে এমন প্রমাণ</li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>আপনি যদি <a href="/bn/permesso-asilo-status-rifugiato.html">শরণার্থী মর্যাদা (status di rifugiato)</a> বা <a href="/bn/permesso-protezione-sussidiaria.html">সহায়ক সুরক্ষা (protezione sussidiaria)</a> পেয়ে থাকেন, তাহলে পারিবারিক পুনর্মিলনের জন্য অন্যান্য বিদেশিদের মতো বড় বাড়ি থাকার প্রমাণ দিতে হবে না।</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ lang: bn
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           পারিবারিক পুনর্মিলন সম্পর্কে আরও প্রশ্ন আছে?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -143,15 +143,15 @@ lang: bn
       <h2 class="text-center mb-lg">আপনার আরও আগ্রহ থাকতে পারে</h2>
       <div class="grid grid-3">
         <a href="/bn/permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">পুনর্মিলনের অনুমতি</h3>
         </a>
         <a href="/bn/permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">💑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">পারিবারিক ঐক্য (Coesione familiare)</h3>
         </a>
         <a href="/bn/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">সকল অনুমতি</h3>
         </a>
       </div>

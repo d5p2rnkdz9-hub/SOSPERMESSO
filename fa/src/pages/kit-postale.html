@@ -7,7 +7,7 @@ lang: fa
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/fa/index.html" style="color: var(--taxi-yellow-dark);">صفحه اصلی</a> →
+        <a href="/fa/index.html" class="link-ink">صفحه اصلی</a> →
         <span>Kit postale</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: fa
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">📩</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "kit-postale", size: 40 %}</span>
         <h1 class="page-title">Kit postale و فرم‌های دیگر</h1>
         <p class="section-subtitle">فرم‌های مورد نیاز برای مراحل اداری خود را دانلود کنید</p>
       </div>
@@ -32,7 +32,7 @@ lang: fa
         <p>مدرکی است که هنگام میزبانی از یک فرد خارجی در خانه‌تان <strong>به صورت رایگان</strong> (مثلا دوست، فامیل یا شخصی که به او کمک می‌کنید) باید ارائه دهید. پرداخت اجاره‌ای وجود ندارد.</p>
         <p>باید ظرف <strong>48 ساعت</strong> از رسیدن فرد به خانه‌تان به پلیس (Commissariato یا Questura) مراجعه کنید. آن‌ها فرمی به شما می‌دهند تا پر کنید و مدرکتان را مهر می‌زنند.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/10/dichiarazione_ospitalita_stranieri.pdf" target="_blank" class="btn btn-primary btn-sm">
               دانلود فرم
@@ -47,7 +47,7 @@ lang: fa
         <p>مدرکی است که هنگام <strong>اجاره</strong> خانه یا اتاق به کسی <strong>در ازای دریافت پول</strong> باید ارائه دهید. فرد به شما اجاره می‌پردازد تا در ملک شما زندگی کند.</p>
         <p>باید ظرف <strong>48 ساعت</strong> از شروع سکونت فرد، مدرک را به پلیس محلی (Vigili) یا Commissariato تحویل دهید. این طبق قانون برای ایتالیایی‌ها و خارجیان به یک اندازه الزامی است.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/09/modulo_cessione_fabbricato.pdf" target="_blank" class="btn btn-primary btn-sm">
               دانلود فرم
@@ -61,7 +61,7 @@ lang: fa
         <h2>🏡 اعلام اقامت (Dichiarazione di residenza)</h2>
         <p>فرمی است که برای ثبت‌نام در دفتر ثبت احوال شهرداری محل سکونت شما استفاده می‌شود.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://dait.interno.gov.it/documenti/circ-009-servdemo-27-04-2012-modulo-residenza.pdf" target="_blank" class="btn btn-primary btn-sm">
               دانلود فرم
@@ -93,7 +93,7 @@ lang: fa
           <li>حواله برای پرداخت</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">⚠️</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div>
             <strong>توجه:</strong> همه مجوزها از طریق Kit postale درخواست نمی‌شوند. برخی مستقیما در Questura درخواست می‌شوند. صفحه مجوز مورد نظر خود را بررسی کنید.
           </div>
@@ -101,7 +101,7 @@ lang: fa
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           درباره فرم‌ها کمک نیاز دارید؟
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -118,15 +118,15 @@ lang: fa
       <h2 class="text-center mb-lg">شاید برایتان مفید باشد</h2>
       <div class="grid grid-3">
         <a href="/fa/controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">بررسی مجوز</h3>
         </a>
         <a href="/fa/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">کمک حقوقی</h3>
         </a>
         <a href="/fa/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">همه مجوزها</h3>
         </a>
       </div>

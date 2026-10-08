@@ -7,7 +7,7 @@ lang: ar
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ar/index.html" style="color: var(--taxi-yellow-dark);">الصفحة الرئيسية</a> →
+        <a href="/ar/index.html" class="link-ink">الصفحة الرئيسية</a> →
         <span>طلب البريد (Kit Postale)</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: ar
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">📩</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "kit-postale", size: 40 %}</span>
         <h1 class="page-title">طلب البريد (Kit Postale) ونماذج أخرى</h1>
         <p class="section-subtitle">حمّل النماذج اللازمة لإجراءاتك</p>
       </div>
@@ -32,7 +32,7 @@ lang: ar
         <p>هو المستند الذي يجب تقديمه عندما تستضيف شخصا أجنبيا في منزلك <strong>مجانا</strong> (مثل صديق أو قريب أو شخص تساعده). لا يوجد دفع إيجار.</p>
         <p>يجب الذهاب إلى مصلحة الشرطة (Commissariato أو Questura) خلال <strong>48 ساعة</strong> من وصول الشخص إلى منزلك. سيعطونك نموذجا لملئه ويختمون مستندك.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/10/dichiarazione_ospitalita_stranieri.pdf" target="_blank" class="btn btn-primary btn-sm">
               حمّل النموذج
@@ -47,7 +47,7 @@ lang: ar
         <p>هو المستند الذي يجب تقديمه عندما <strong>تؤجر</strong> منزلا أو غرفة لشخص <strong>مقابل مبلغ مالي</strong>. الشخص يدفع لك إيجارا للسكن في عقارك.</p>
         <p>يجب تقديمه إلى الشرطة المحلية (Vigili) أو مفوضية الشرطة (Commissariato) خلال <strong>48 ساعة</strong> من بدء الشخص السكن هناك. هذا إلزامي بموجب القانون للإيطاليين والأجانب على حد سواء.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/09/modulo_cessione_fabbricato.pdf" target="_blank" class="btn btn-primary btn-sm">
               حمّل النموذج
@@ -61,7 +61,7 @@ lang: ar
         <h2>🏡 إعلان الإقامة (Dichiarazione di residenza)</h2>
         <p>هو النموذج المستخدم للتسجيل في السجل المدني للبلدية التي تعيش فيها.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://dait.interno.gov.it/documenti/circ-009-servdemo-27-04-2012-modulo-residenza.pdf" target="_blank" class="btn btn-primary btn-sm">
               حمّل النموذج
@@ -93,7 +93,7 @@ lang: ar
           <li>حوالة للدفع</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">⚠️</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div>
             <strong>انتبه:</strong> ليس كل التصاريح تُطلب عبر طلب البريد (Kit Postale). بعضها يُطلب مباشرة في مصلحة الشرطة (Questura). تحقق من صفحة التصريح الذي يهمك.
           </div>
@@ -101,7 +101,7 @@ lang: ar
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           هل تحتاج مساعدة بخصوص النماذج؟
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -118,15 +118,15 @@ lang: ar
       <h2 class="text-center mb-lg">قد يهمك أيضا</h2>
       <div class="grid grid-3">
         <a href="/ar/controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">التحقق من التصريح</h3>
         </a>
         <a href="/ar/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">المساعدة القانونية</h3>
         </a>
         <a href="/ar/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">جميع التصاريح</h3>
         </a>
       </div>

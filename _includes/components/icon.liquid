@@ -1,0 +1,29 @@
+{%- comment -%}
+  Icone a linea del design system «Adesivo» (griglia 24, tratto 2px, currentColor).
+  Uso: {% render "components/icon.liquid", name: "documenti", size: 24 %}
+  Le icone sono decorative (aria-hidden): mettere sempre il testo accanto.
+{%- endcomment -%}
+{%- assign size = size | default: 24 -%}{%- assign stroke = stroke | default: 2 -%}
+<svg class="icon icon-{{ name }}{% if class %} {{ class }}{% endif %}" width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ stroke }}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+{%- case name -%}
+{%- when "aiuto-legale" -%}<path d="M12 3v18M7 21h10M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"/>
+{%- when "attenzione" -%}<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17v.5"/>
+{%- when "cerca" -%}<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>
+{%- when "chevron" -%}<path d="M9 6l6 6-6 6"/>
+{%- when "costi" -%}<path d="M17 6.5A7 7 0 1 0 17 17.5"/><path d="M4 10h9M4 14h9"/>
+{%- when "cure-mediche" -%}<path d="M20.8 8.6a5 5 0 0 0-8.8-3.2 5 5 0 0 0-8.8 3.2c0 5.4 8.8 11 8.8 11s8.8-5.6 8.8-11z"/><path d="M6 11h3l1.5-2 2 4 1.5-2h4"/>
+{%- when "dizionario" -%}<path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M4 17a3 3 0 0 1 3-3h11M8 8h6"/>
+{%- when "documenti" -%}<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>
+{%- when "famiglia" -%}<circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 5 5.5"/>
+{%- when "freccia" -%}<path d="M5 12h14M13 6l6 6-6 6"/>
+{%- when "info" -%}<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>
+{%- when "kit-postale" -%}<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+{%- when "lavoro" -%}<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/>
+{%- when "lingua" -%}<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+{%- when "protezione" -%}<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>
+{%- when "questura" -%}<path d="M3 21h18M5 21V10M19 21V10M9 21v-6h6v6M2 10l10-6 10 6z"/>
+{%- when "rinnovo" -%}<path d="M20 11a8 8 0 0 0-14.6-4.5M4 5v4h4"/><path d="M4 13a8 8 0 0 0 14.6 4.5M20 19v-4h-4"/>
+{%- when "spunta" -%}<path d="m5 12 5 5 9-10"/>
+{%- when "studio" -%}<path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/>
+{%- when "tempo" -%}<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+{%- endcase -%}</svg>

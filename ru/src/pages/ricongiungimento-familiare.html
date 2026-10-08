@@ -7,7 +7,7 @@ lang: ru
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ru/index.html" style="color: var(--taxi-yellow-dark);">Главная</a> →
+        <a href="/ru/index.html" class="link-ink">Главная</a> →
         <span>Воссоединение семьи</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: ru
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "famiglia", size: 40 %}</span>
         <h1 class="page-title">Руководство по воссоединению семьи</h1>
         <p class="section-subtitle">Как привезти свою семью в Италию</p>
       </div>
@@ -71,7 +71,7 @@ lang: ru
         </ul>
         <p>👉 Чем больше людей вы хотите привезти, тем выше должен быть ваш доход.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>Если вы получили <a href="/ru/permesso-asilo-status-rifugiato.html">статус беженца</a> или <a href="/ru/permesso-protezione-sussidiaria.html">субсидиарную защиту</a>, для воссоединения семьи вам НЕ НУЖНО подтверждать минимальный доход, как другим иностранцам.</div>
         </div>
       </div>
@@ -84,7 +84,7 @@ lang: ru
           <li>Копия <strong>договора аренды</strong> или документа, подтверждающего право собственности на жилье</li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>Если вы получили <a href="/ru/permesso-asilo-status-rifugiato.html">статус беженца</a> или <a href="/ru/permesso-protezione-sussidiaria.html">субсидиарную защиту</a>, для воссоединения семьи вам НЕ НУЖНО подтверждать наличие большого жилья, как другим иностранцам.</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ lang: ru
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Есть другие вопросы о воссоединении семьи?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -143,15 +143,15 @@ lang: ru
       <h2 class="text-center mb-lg">Вам может быть интересно</h2>
       <div class="grid grid-3">
         <a href="/ru/permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Разрешение на воссоединение семьи</h3>
         </a>
         <a href="/ru/permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">💑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Воссоединение на территории</h3>
         </a>
         <a href="/ru/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Все разрешения</h3>
         </a>
       </div>

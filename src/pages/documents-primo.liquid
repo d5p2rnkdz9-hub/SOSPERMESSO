@@ -32,14 +32,14 @@ eleventyExcludeFromCollections: true
   <section class="section bg-off-white" style="padding: 1.5rem 0;">
     <div class="container">
       <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
-        <span style="font-size: 2.5rem;">{{ permit.emoji }}</span>
+        {%- case permit.categoria -%}{%- when "Studio/Lavoro" -%}{%- assign catIcon = "lavoro" -%}{%- when "Protezione" -%}{%- assign catIcon = "protezione" -%}{%- when "Cure Mediche" -%}{%- assign catIcon = "cure-mediche" -%}{%- when "Motivi Familiari" -%}{%- assign catIcon = "famiglia" -%}{%- else -%}{%- assign catIcon = "documenti" -%}{%- endcase -%}<span class="permit-title-emoji">{% render "components/icon.liquid", name: catIcon, size: 28 %}</span>
         <div style="text-align: center;">
           <h1 class="page-title" style="font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-weight: 800; margin-bottom: 0.25rem;">Primo rilascio</h1>
           <p style="color: var(--gray-medium); margin: 0; font-size: 0.95rem;">Permesso per {{ permit.tipo }}</p>
         </div>
       </div>
       <div class="no-print" style="text-align: center; margin-top: 0.75rem;">
-        <a href="permesso-{{ permit.slug }}.html" style="color: var(--accent-blue); font-size: 0.9rem;">← Vedi tutte le info su questo permesso</a>
+        <a href="permesso-{{ permit.slug }}.html" style="color: var(--sp-ink); font-size: 0.9rem; text-decoration: underline; text-decoration-color: var(--sp-yellow); text-decoration-thickness: 3px;">← Vedi tutte le info su questo permesso</a>
       </div>
       {% include "components/doc-actions.liquid" %}
     </div>
@@ -53,21 +53,21 @@ eleventyExcludeFromCollections: true
       {%- assign primoMethodLower = permit.primoMethod | downcase -%}
       {%- if primoMethodLower contains 'kit' -%}
         {%- assign primoCalloutClass = 'callout-kit' -%}
-        {%- assign primoCalloutIcon = '📮' -%}
+        {%- assign primoCalloutIcon = 'kit-postale' -%}
         {%- assign primoCalloutText = 'Invia tramite KIT alle Poste (non devi andare in Questura)' -%}
       {%- else -%}
         {%- assign primoCalloutClass = 'callout-questura' -%}
-        {%- assign primoCalloutIcon = '🏛️' -%}
+        {%- assign primoCalloutIcon = 'questura' -%}
         {%- assign primoCalloutText = 'Porta i documenti in Questura (non puoi usare il KIT postale)' -%}
       {%- endif -%}
       <div class="submission-callout {{ primoCalloutClass }}" style="margin-bottom: 1.5rem;">
-        <span class="callout-icon">{{ primoCalloutIcon }}</span>
+        <span class="callout-icon">{% render "components/icon.liquid", name: primoCalloutIcon, size: 28 %}</span>
         <div class="callout-text">{{ primoCalloutText }}</div>
       </div>
 
       <!-- CHECKLIST -->
       <div class="card">
-        <h3>📋 Documenti necessari</h3>
+        <h3 class="checklist-title">Documenti necessari</h3>
         <p class="checklist-intro">Spunta i documenti che hai già preparato. I tuoi progressi vengono salvati automaticamente.</p>
 
         <div class="doc-checklist" data-permit="{{ permit.slug }}-primo">
@@ -76,13 +76,13 @@ eleventyExcludeFromCollections: true
             {%- assign docClass = normalizedDoc | getDocumentClass -%}
             {%- assign docLabel = normalizedDoc | linkToDizionario: lang -%}
             {%- assign disputed = normalizedDoc | isDisputed -%}
-          <div class="{{ docClass }}">
+          <label class="{{ docClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-{{ permit.slug }}-primo-{{ forloop.index0 }}"
                    data-doc="{{ normalizedDoc | escapeHtml }}">
             <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>{% endif %}</span>
-          </div>
+          </label>
           {%- endfor -%}
         </div>
 
@@ -95,7 +95,7 @@ eleventyExcludeFromCollections: true
       </div>
 
       <div class="alert alert-warning" style="margin-top: 1rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. <a href="permesso-{{ permit.slug }}.html#prassi-locali">Vedi le prassi locali →</a>
         </div>
@@ -104,7 +104,7 @@ eleventyExcludeFromCollections: true
       {%- assign notesSections = permit.docNotes | parseDocNotes -%}
       {%- if notesSections.size > 0 -%}
       <div style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">📝 Informazioni aggiuntive sui documenti</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "info", size: 24 %} Informazioni aggiuntive sui documenti</h3>
         {%- for section in notesSections -%}
         <div class="card" style="margin-bottom: 1rem;">
           <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
@@ -116,7 +116,7 @@ eleventyExcludeFromCollections: true
 
       {%- if permit.costBollettinoPrimo or permit.costMarcaBolloPrimo -%}
       <div style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">💰 Quanto costa?</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "costi", size: 24 %} Quanto costa?</h3>
         <div class="card">
           <ul class="costi-list">
             {%- if permit.costBollettinoPrimo -%}
@@ -206,17 +206,17 @@ eleventyExcludeFromCollections: true
       <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
       <div class="grid grid-3">
         <a href="permesso-{{ permit.slug }}.html" class="card card-link card-compact">
-          <span class="card-icon">📄</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">Info su questo permesso</h3>
         </a>
         {% if permit.rinnovoDocuments.size > 0 %}
         <a href="documenti-{{ permit.slug }}-rinnovo.html" class="card card-link card-compact">
-          <span class="card-icon">🔄</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "rinnovo", size: 36 %}</span>
           <h3 class="card-title">Documenti per il rinnovo</h3>
         </a>
         {% endif %}
         <a href="documenti-questura.html" class="card card-link card-compact">
-          <span class="card-icon">📋</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "questura", size: 36 %}</span>
           <h3 class="card-title">Tutti i documenti</h3>
         </a>
       </div>
@@ -226,7 +226,7 @@ eleventyExcludeFromCollections: true
   <!-- SEGNALA ERRORE -->
   <div class="report-bar">
     <a href="https://app.sospermesso.it/it/contattaci" target="_blank" rel="noopener" class="report-btn">
-      <span>🚩</span> Segnala un errore in questa pagina
+      {% render "components/icon.liquid", name: "attenzione", size: 18 %} Segnala un errore in questa pagina
     </a>
   </div>
 

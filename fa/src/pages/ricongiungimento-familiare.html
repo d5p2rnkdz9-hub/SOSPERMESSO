@@ -7,7 +7,7 @@ lang: fa
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/fa/index.html" style="color: var(--taxi-yellow-dark);">صفحه اصلی</a> →
+        <a href="/fa/index.html" class="link-ink">صفحه اصلی</a> →
         <span>پیوند خانوادگی</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: fa
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "famiglia", size: 40 %}</span>
         <h1 class="page-title">راهنمای پیوند خانوادگی</h1>
         <p class="section-subtitle">چگونه خانواده خود را به ایتالیا بیاورید</p>
       </div>
@@ -71,7 +71,7 @@ lang: fa
         </ul>
         <p>👉 هرچه بخواهید افراد بیشتری بیاورید، درآمدتان باید بالاتر باشد.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>اگر <a href="/fa/permesso-asilo-status-rifugiato.html">وضعیت پناهنده</a> یا <a href="/fa/permesso-protezione-sussidiaria.html">حمایت فرعی</a> دارید، نیازی به اثبات حداقل درآمد برای پیوند خانوادگی مانند سایر خارجیان ندارید.</div>
         </div>
       </div>
@@ -84,7 +84,7 @@ lang: fa
           <li>کپی <strong>قرارداد اجاره</strong> یا مدرکی که مالکیت مسکن را ثابت کند</li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>اگر <a href="/fa/permesso-asilo-status-rifugiato.html">وضعیت پناهنده</a> یا <a href="/fa/permesso-protezione-sussidiaria.html">حمایت فرعی</a> دارید، نیازی به اثبات مسکن بزرگ برای پیوند خانوادگی مانند سایر خارجیان ندارید.</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ lang: fa
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           سوال دیگری درباره پیوند خانوادگی دارید؟
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -143,15 +143,15 @@ lang: fa
       <h2 class="text-center mb-lg">شاید برایتان مفید باشد</h2>
       <div class="grid grid-3">
         <a href="/fa/permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">مجوز پیوند خانوادگی</h3>
         </a>
         <a href="/fa/permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">💑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">پیوستگی خانوادگی</h3>
         </a>
         <a href="/fa/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">همه مجوزها</h3>
         </a>
       </div>

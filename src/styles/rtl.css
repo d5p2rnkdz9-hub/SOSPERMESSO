@@ -10,6 +10,7 @@
 /* Set direction multiplier for RTL mode */
 [dir="rtl"] {
   --text-x-direction: -1;
+  --sx: -1; /* ombre «adesivo» e sollevamento specchiati (token in main.css) */
   direction: rtl;
   unicode-bidi: embed;
 }
@@ -50,6 +51,7 @@
 /* Directional icons that should mirror in RTL */
 [dir="rtl"] .icon-arrow,
 [dir="rtl"] .icon-chevron,
+[dir="rtl"] .icon-freccia,
 [dir="rtl"] .icon-back,
 [dir="rtl"] .icon-forward,
 [dir="rtl"] .mirror-rtl {
@@ -81,7 +83,7 @@
 
 /* Shadow direction adaptation */
 [dir="rtl"] .card:hover {
-  box-shadow: calc(-12px * 1) 40px rgba(255, 215, 0, 0.3);
+  box-shadow: calc(-12px * 1) 40px rgba(255, 212, 0, 0.3);
 }
 
 /* ===============================================
@@ -164,4 +166,66 @@
 .rtl-content {
   direction: rtl;
   unicode-bidi: isolate;
+}
+
+
+/* ===============================================
+   DESIGN SYSTEM «ADESIVO» — interlinea dei titoletti Poppins
+   Arabo e farsi: segni diacritici sopra e sotto.
+   =============================================== */
+[lang="ar"] .ha-testcard-q,
+[lang="ar"] .ha-testcard-a,
+[lang="ar"] .ha-guide-q,
+[lang="ar"] .ha-guide-cta,
+[lang="ar"] .ha-cat-head,
+[lang="ar"] .ha-tool-title,
+[lang="ar"] .ha-eyebrow,
+[lang="ar"] .permit-main .title,
+[lang="ar"] .permit-cat,
+[lang="ar"] .checklist-title,
+[lang="ar"] .callout-text,
+[lang="ar"] .db-filter-badge,
+[lang="fa"] .ha-testcard-q,
+[lang="fa"] .ha-testcard-a,
+[lang="fa"] .ha-guide-q,
+[lang="fa"] .ha-guide-cta,
+[lang="fa"] .ha-cat-head,
+[lang="fa"] .ha-tool-title,
+[lang="fa"] .ha-eyebrow,
+[lang="fa"] .permit-main .title,
+[lang="fa"] .permit-cat,
+[lang="fa"] .checklist-title,
+[lang="fa"] .callout-text,
+[lang="fa"] .db-filter-badge {
+  line-height: 1.6;
+}
+
+/* Il timbro e i titoli display (line-height 1 in latino) devono respirare */
+[lang="ar"] .ha-h1, [lang="fa"] .ha-h1 {
+  line-height: 1.6;
+}
+
+
+/* ===============================================
+   DESIGN SYSTEM «ADESIVO» — interlinea dei titoletti Poppins
+   Urdu Nastaliq: ascendenti e discendenti molto alti.
+   =============================================== */
+[lang="ur"] .ha-testcard-q,
+[lang="ur"] .ha-testcard-a,
+[lang="ur"] .ha-guide-q,
+[lang="ur"] .ha-guide-cta,
+[lang="ur"] .ha-cat-head,
+[lang="ur"] .ha-tool-title,
+[lang="ur"] .ha-eyebrow,
+[lang="ur"] .permit-main .title,
+[lang="ur"] .permit-cat,
+[lang="ur"] .checklist-title,
+[lang="ur"] .callout-text,
+[lang="ur"] .db-filter-badge {
+  line-height: 2;
+}
+
+/* Il timbro e i titoli display (line-height 1 in latino) devono respirare */
+[lang="ur"] .ha-h1 {
+  line-height: 2;
 }

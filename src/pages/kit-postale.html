@@ -8,7 +8,7 @@ description: "Cos'è il kit postale (kit giallo) per il permesso di soggiorno, d
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">📩</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "kit-postale", size: 40 %}</span>
         <h1 class="page-title">Kit postale e altri moduli</h1>
         <p class="section-subtitle">Scarica i moduli necessari per la tua pratica</p>
       </div>
@@ -24,7 +24,7 @@ description: "Cos'è il kit postale (kit giallo) per il permesso di soggiorno, d
         <p>È un documento che fai quando <strong>ospiti gratuitamente</strong> una persona straniera in casa tua (per esempio un amico, un parente, qualcuno che aiuti). Non c'è pagamento di affitto.</p>
         <p>Devi andare alla Polizia (Commissariato o Questura) <strong>entro 48 ore</strong> da quando la persona arriva a casa tua. Ti danno un modulo da compilare e poi ti timbrano il documento.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/10/dichiarazione_ospitalita_stranieri.pdf" target="_blank" class="btn btn-primary btn-sm">
               Scarica il modulo
@@ -39,7 +39,7 @@ description: "Cos'è il kit postale (kit giallo) per il permesso di soggiorno, d
         <p>È un documento che fai quando <strong>affitti</strong> casa o una stanza a qualcuno <strong>dietro pagamento</strong>. La persona ti paga un affitto per vivere nella tua proprietà.</p>
         <p>Devi presentarlo alla Polizia locale (Vigili urbani) o al Commissariato <strong>entro 48 ore</strong> da quando la persona inizia a vivere lì. È obbligatorio per legge sia per italiani che per stranieri.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/09/modulo_cessione_fabbricato.pdf" target="_blank" class="btn btn-primary btn-sm">
               Scarica il modulo
@@ -53,7 +53,7 @@ description: "Cos'è il kit postale (kit giallo) per il permesso di soggiorno, d
         <h2>🏡 Dichiarazione di residenza</h2>
         <p>È il modulo per chiedere l'iscrizione all'anagrafe del Comune dove vivi.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://dait.interno.gov.it/documenti/circ-009-servdemo-27-04-2012-modulo-residenza.pdf" target="_blank" class="btn btn-primary btn-sm">
               Scarica il modulo
@@ -85,7 +85,7 @@ description: "Cos'è il kit postale (kit giallo) per il permesso di soggiorno, d
           <li>Bollettino per il pagamento</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">⚠️</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div>
             <strong>Attenzione:</strong> Non tutti i permessi si richiedono con il kit postale. Alcuni si richiedono direttamente in Questura. Controlla nella pagina del permesso che ti interessa.
           </div>
@@ -93,7 +93,7 @@ description: "Cos'è il kit postale (kit giallo) per il permesso di soggiorno, d
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Hai bisogno di aiuto con i moduli?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -110,15 +110,15 @@ description: "Cos'è il kit postale (kit giallo) per il permesso di soggiorno, d
       <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
       <div class="grid grid-3">
         <a href="documenti-questura.html" class="card card-link card-compact">
-          <span class="card-icon">📌</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">Documenti Questura</h3>
         </a>
         <a href="controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Controlla permesso</h3>
         </a>
         <a href="database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tutti i permessi</h3>
         </a>
       </div>

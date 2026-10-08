@@ -8,7 +8,7 @@ description: "Guida alla protezione internazionale in Italia: cos'è l'asilo, ch
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🛡️</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
         <h1 class="page-title">Guida alla protezione internazionale</h1>
         <p class="section-subtitle">Tutto quello che devi sapere sulla richiesta di asilo in Italia</p>
       </div>
@@ -19,7 +19,7 @@ description: "Guida alla protezione internazionale in Italia: cos'è l'asilo, ch
     <div class="container" style="max-width: 900px;">
 
       <div class="alert alert-warning" style="margin-bottom: 2rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>Attenzione:</strong> i contenuti di questa pagina si applicano solo a chi ha
           presentato la domanda di protezione internazionale <strong>prima del 12 giugno 2026</strong>.
@@ -58,7 +58,7 @@ description: "Guida alla protezione internazionale in Italia: cos'è l'asilo, ch
           <li>prendere la patente di guida 🚗</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">❗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div><strong>Non puoi viaggiare fuori dall'Italia</strong> fino alla fine della procedura, e non puoi <strong>convertire questo permesso in permesso per lavoro</strong>.</div>
         </div>
       </div>
@@ -161,7 +161,7 @@ description: "Guida alla protezione internazionale in Italia: cos'è l'asilo, ch
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">📜</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
         <div>
           <strong>La tua storia è unica.</strong> Non è uguale a quella dei tuoi amici o parenti. Le leggi cambiano spesso, quindi cerca sempre un aiuto legale aggiornato.
           <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -178,15 +178,15 @@ description: "Guida alla protezione internazionale in Italia: cos'è l'asilo, ch
       <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
       <div class="grid grid-3">
         <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
-          <span class="card-icon">🟨</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">Permesso richiesta asilo</h3>
         </a>
         <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
-          <span class="card-icon">🛡️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">Status di rifugiato</h3>
         </a>
         <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
-          <span class="card-icon">🔰</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">Protezione sussidiaria</h3>
         </a>
       </div>

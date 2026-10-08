@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
   <div class="permit-sticky-header" id="permit-tab-bar">
     <div class="container">
       <div class="permit-title-row">
-        <span class="permit-title-emoji">{{ permit.emoji }}</span>
+        {%- assign itPermit = permits | where: "slug", permit.slug | first -%}{%- case itPermit.categoria -%}{%- when "Studio/Lavoro" -%}{%- assign catIcon = "lavoro" -%}{%- when "Protezione" -%}{%- assign catIcon = "protezione" -%}{%- when "Cure Mediche" -%}{%- assign catIcon = "cure-mediche" -%}{%- when "Motivi Familiari" -%}{%- assign catIcon = "famiglia" -%}{%- else -%}{%- assign catIcon = "documenti" -%}{%- endcase -%}<span class="permit-title-emoji">{% render "components/icon.liquid", name: catIcon, size: 28 %}</span>
         <h1 class="permit-title-text">{{ permit.tipo }}-এর অনুমতি</h1>
       </div>
       {% unless permit.isPlaceholder == true %}
@@ -28,7 +28,7 @@ eleventyExcludeFromCollections: true
         {% if permit.rinnovoDocuments.size > 0 %}
         <a href="#rinnovo" class="tab-badge tab-badge-rinnovo" onclick="return scrollToSection('rinnovo')">Doc নবায়ন</a>
         {% endif %}
-        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 স্থানীয় অনুশীলন</a>
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">{% render "components/icon.liquid", name: "questura", size: 20 %} স্থানীয় অনুশীলন</a>
       </div>
       {% endunless %}
     </div>
@@ -108,7 +108,7 @@ eleventyExcludeFromCollections: true
   <section class="section">
     <div class="container" style="max-width: 900px;">
       <div class="card text-center" style="padding: 3rem;">
-        <span style="font-size: 4rem;">{{ permit.emoji }}</span>
+        <span class="placeholder-icon">{% render "components/icon.liquid", name: "documenti", size: 64 %}</span>
         <h2 style="margin: 1rem 0;">বিষয়বস্তু শীঘ্রই আসছে</h2>
         <p style="color: var(--gray-medium); max-width: 500px; margin: 0 auto 1.5rem;">
           আমরা এই বসবাসের অনুমতি সম্পর্কে তথ্য সম্পূর্ণ করতে কাজ করছি।
@@ -130,7 +130,7 @@ eleventyExcludeFromCollections: true
     <div class="container" style="max-width: 900px;">
       {% for section in permit.sections %}
       <!-- Section {{ forloop.index }}: {{ section.question }} -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }};">
+      <div class="card qa-card">
         <h2>{{ section.question }}</h2>
         {{ section.content }}
       </div>
@@ -143,27 +143,27 @@ eleventyExcludeFromCollections: true
   <!-- SECTION: প্রথম ইস্যু -->
   <section id="primo" class="section bg-off-white">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 1.5rem;">📋 প্রথম ইস্যু</h2>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">{% render "components/icon.liquid", name: "documenti", size: 30 %} প্রথম ইস্যু</h2>
 
       <!-- SUBMISSION METHOD CALLOUT -->
       {%- assign primoMethodLower = permit.primoMethod | downcase -%}
       {%- if primoMethodLower contains 'kit' -%}
         {%- assign primoCalloutClass = 'callout-kit' -%}
-        {%- assign primoCalloutIcon = '📮' -%}
+        {%- assign primoCalloutIcon = 'kit-postale' -%}
         {%- assign primoCalloutText = 'কিট পোস্তালে (KIT postale) দিয়ে পাঠান (কুয়েস্তুরায় যেতে হবে না)' -%}
       {%- else -%}
         {%- assign primoCalloutClass = 'callout-questura' -%}
-        {%- assign primoCalloutIcon = '🏛️' -%}
+        {%- assign primoCalloutIcon = 'questura' -%}
         {%- assign primoCalloutText = 'কুয়েস্তুরায় (Questura) নথি নিয়ে যান (কিট পোস্তালে ব্যবহার করা যাবে না)' -%}
       {%- endif -%}
       <div class="submission-callout {{ primoCalloutClass }}" style="margin-bottom: 1.5rem;">
-        <span class="callout-icon">{{ primoCalloutIcon }}</span>
+        <span class="callout-icon">{% render "components/icon.liquid", name: primoCalloutIcon, size: 28 %}</span>
         <div class="callout-text">{{ primoCalloutText }}</div>
       </div>
 
       <!-- CHECKLIST -->
       <div class="card">
-        <h3>📋 প্রয়োজনীয় নথিপত্র</h3>
+        <h3 class="checklist-title">প্রয়োজনীয় নথিপত্র</h3>
         <p class="checklist-intro">আপনার কাছে যে নথি প্রস্তুত আছে সেগুলো চিহ্নিত করুন। আপনার অগ্রগতি স্বয়ংক্রিয়ভাবে সংরক্ষিত হবে।</p>
 
         <div class="doc-checklist" data-permit="{{ permit.slug }}-primo-bn">
@@ -172,13 +172,13 @@ eleventyExcludeFromCollections: true
             {%- assign docClass = normalizedDoc | getDocumentClass -%}
             {%- assign docLabel = normalizedDoc | escapeHtml -%}
             {%- assign disputed = normalizedDoc | isDisputed -%}
-          <div class="{{ docClass }}">
+          <label class="{{ docClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-{{ permit.slug }}-primo-bn-{{ forloop.index0 }}"
                    data-doc="{{ normalizedDoc | escapeHtml }}">
             <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(কুয়েস্তুরা অনুযায়ী ভিন্ন হতে পারে)</span>{% endif %}</span>
-          </div>
+          </label>
           {%- endfor -%}
         </div>
 
@@ -191,7 +191,7 @@ eleventyExcludeFromCollections: true
       </div>
 
       <div class="alert alert-warning" style="margin-top: 1rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>দ্রষ্টব্য:</strong> প্রয়োজনীয় নথি এক কুয়েস্তুরা থেকে অন্যটিতে ভিন্ন হতে পারে।
         </div>
@@ -200,7 +200,7 @@ eleventyExcludeFromCollections: true
       {%- assign notesSections = permit.docNotes | parseDocNotes -%}
       {%- if notesSections.size > 0 -%}
       <div style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">📝 নথিপত্র সম্পর্কে অতিরিক্ত তথ্য</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "info", size: 24 %} নথিপত্র সম্পর্কে অতিরিক্ত তথ্য</h3>
         {%- for section in notesSections -%}
         <div class="card" style="margin-bottom: 1rem;">
           <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
@@ -212,7 +212,7 @@ eleventyExcludeFromCollections: true
 
       {%- if permit.costBollettinoPrimo or permit.costMarcaBolloPrimo -%}
       <div id="primo-quanto-costa" style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">💰 খরচ কত?</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "costi", size: 24 %} খরচ কত?</h3>
         <div class="card">
           <ul class="costi-list">
             {%- if permit.costBollettinoPrimo -%}
@@ -258,39 +258,39 @@ eleventyExcludeFromCollections: true
   <!-- SECTION: নবায়ন -->
   <section id="rinnovo" class="section">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 1.5rem;">🔄 নবায়ন</h2>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">{% render "components/icon.liquid", name: "rinnovo", size: 30 %} নবায়ন</h2>
 
       <!-- SUBMISSION METHOD CALLOUT -->
       {%- assign rinnovoMethodLower = permit.rinnovoMethod | downcase -%}
       {%- if rinnovoMethodLower contains 'kit' -%}
         {%- assign rinnovoCalloutClass = 'callout-kit' -%}
-        {%- assign rinnovoCalloutIcon = '📮' -%}
+        {%- assign rinnovoCalloutIcon = 'kit-postale' -%}
         {%- assign rinnovoCalloutText = 'কিট পোস্তালে (KIT postale) দিয়ে পাঠান (কুয়েস্তুরায় যেতে হবে না)' -%}
       {%- else -%}
         {%- assign rinnovoCalloutClass = 'callout-questura' -%}
-        {%- assign rinnovoCalloutIcon = '🏛️' -%}
+        {%- assign rinnovoCalloutIcon = 'questura' -%}
         {%- assign rinnovoCalloutText = 'কুয়েস্তুরায় (Questura) নথি নিয়ে যান (কিট পোস্তালে ব্যবহার করা যাবে না)' -%}
       {%- endif -%}
       <div class="submission-callout {{ rinnovoCalloutClass }}" style="margin-bottom: 1rem;">
-        <span class="callout-icon">{{ rinnovoCalloutIcon }}</span>
+        <span class="callout-icon">{% render "components/icon.liquid", name: rinnovoCalloutIcon, size: 28 %}</span>
         <div class="callout-text">{{ rinnovoCalloutText }}</div>
       </div>
 
       {%- if permit.slug contains 'attesa-occupazione' -%}
       <!-- DISPUTED RENEWAL WARNING -->
-      <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px; margin-bottom: 1rem;">
-        <span class="alert-icon">⚠️</span>
+      <div class="alert alert-danger">
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>সতর্কতা:</strong> চাকরি খোঁজার অনুমতির নবায়ন বিতর্কিত। কিছু কুয়েস্তুরা এটি প্রত্যাখ্যান করে। এগিয়ে যাওয়ার আগে একজন আইনজীবী বা আইনি সহায়তা কেন্দ্রে পরামর্শ নেওয়ার পরামর্শ দিই।
           <br><br>
-          <a href="/bn/aiuto-legale.html" style="color: #E53935; font-weight: 600;">→ আপনার এলাকায় আইনি সহায়তা খুঁজুন</a>
+          <a href="/bn/aiuto-legale.html">→ আপনার এলাকায় আইনি সহায়তা খুঁজুন</a>
         </div>
       </div>
       {%- endif -%}
 
       <!-- REMINDER ALERT -->
       <div class="alert alert-info" style="margin-bottom: 1rem;">
-        <span class="alert-icon">📅</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "tempo", size: 26 %}</span>
         <div>
           <strong>মনে রাখুন:</strong> নবায়নের আবেদন <strong>মেয়াদ শেষ হওয়ার আগে</strong> বা সর্বোচ্চ মেয়াদ শেষ হওয়ার <strong>৬০ দিনের মধ্যে</strong> জমা দিতে হবে।
         </div>
@@ -298,7 +298,7 @@ eleventyExcludeFromCollections: true
 
       <!-- CHECKLIST -->
       <div class="card">
-        <h3>📋 প্রয়োজনীয় নথিপত্র</h3>
+        <h3 class="checklist-title">প্রয়োজনীয় নথিপত্র</h3>
         <p class="checklist-intro">আপনার কাছে যে নথি প্রস্তুত আছে সেগুলো চিহ্নিত করুন। আপনার অগ্রগতি স্বয়ংক্রিয়ভাবে সংরক্ষিত হবে।</p>
 
         {%- assign commonDocName = "Copia permesso precedente (o denuncia smarrimento)" -%}
@@ -308,13 +308,13 @@ eleventyExcludeFromCollections: true
 
         <div class="doc-checklist" data-permit="{{ permit.slug }}-rinnovo-bn">
           <!-- Common document always first -->
-          <div class="{{ commonDocClass }}">
+          <label class="{{ commonDocClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-{{ permit.slug }}-rinnovo-bn-0"
                    data-doc="{{ commonDocNormalized | escapeHtml }}">
             <span class="doc-label">{{ commonDocLabel }}</span>
-          </div>
+          </label>
 
           {%- for docItem in permit.rinnovoDocuments -%}
             {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
@@ -324,13 +324,13 @@ eleventyExcludeFromCollections: true
               {%- assign docLabel = normalizedDoc | escapeHtml -%}
               {%- assign disputed = normalizedDoc | isDisputed -%}
               {%- assign idx = forloop.index -%}
-          <div class="{{ docClass }}">
+          <label class="{{ docClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-{{ permit.slug }}-rinnovo-bn-{{ idx }}"
                    data-doc="{{ normalizedDoc | escapeHtml }}">
             <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(কুয়েস্তুরা অনুযায়ী ভিন্ন হতে পারে)</span>{% endif %}</span>
-          </div>
+          </label>
             {%- endunless -%}
           {%- endfor -%}
         </div>
@@ -345,7 +345,7 @@ eleventyExcludeFromCollections: true
       </div>
 
       <div class="alert alert-warning" style="margin-top: 1rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>দ্রষ্টব্য:</strong> প্রয়োজনীয় নথি এক কুয়েস্তুরা থেকে অন্যটিতে ভিন্ন হতে পারে।
         </div>
@@ -355,7 +355,7 @@ eleventyExcludeFromCollections: true
         {%- assign rinnovoNotesSections = permit.docNotes | parseDocNotes -%}
         {%- if rinnovoNotesSections.size > 0 -%}
         <div style="margin-top: 1.5rem;">
-          <h3 style="text-align: center; margin-bottom: 1rem;">📝 নথিপত্র সম্পর্কে অতিরিক্ত তথ্য</h3>
+          <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "info", size: 24 %} নথিপত্র সম্পর্কে অতিরিক্ত তথ্য</h3>
           {%- for section in rinnovoNotesSections -%}
           <div class="card" style="margin-bottom: 1rem;">
             <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
@@ -368,7 +368,7 @@ eleventyExcludeFromCollections: true
 
       {%- if permit.costBollettinoRinnovo or permit.costMarcaBolloRinnovo -%}
       <div id="rinnovo-quanto-costa" style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">💰 নবায়নের খরচ কত?</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "costi", size: 24 %} নবায়নের খরচ কত?</h3>
         <div class="card">
           <ul class="costi-list">
             {%- if permit.costBollettinoRinnovo -%}
@@ -413,7 +413,7 @@ eleventyExcludeFromCollections: true
   <!-- PRASSI LOCALI ACCORDION -->
   <section class="section prassi-section bg-off-white" id="prassi-locali">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 0.5rem;">📍 স্থানীয় অনুশীলন (Prassi locali)</h2>
+      <h2 style="text-align: center; margin-bottom: 0.5rem;">{% render "components/icon.liquid", name: "questura", size: 20 %} স্থানীয় অনুশীলন (Prassi locali)</h2>
       <p style="text-align: center; color: var(--gray-medium); margin-bottom: 1rem; font-size: 0.9rem;">কুয়েস্তুরার অনুশীলন সম্পর্কে সম্প্রদায়ের শেয়ার করা অভিজ্ঞতা</p>
 
       {% assign pagePrassi = prassiLocali[permit.slug] %}
@@ -453,7 +453,6 @@ eleventyExcludeFromCollections: true
       {% else %}
         <div class="prassi-accordion">
           <div class="prassi-accordion-empty">
-            <span style="font-size: 1.5rem;">📭</span>
             <p>এখনো কোনো রিপোর্ট নেই</p>
             <button class="btn btn-primary prassi-submit-btn btn-sm" onclick="openPrassiModal('https://sospermesso.it/bn/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
               প্রথম শেয়ার করুন
@@ -520,7 +519,7 @@ eleventyExcludeFromCollections: true
   <section class="section">
     <div class="container" style="max-width: 700px;">
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           {{ permit.tipo }}-এর অনুমতি সম্পর্কে আরও প্রশ্ন আছে?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -536,7 +535,7 @@ eleventyExcludeFromCollections: true
   <!-- SEGNALA ERRORE -->
   <div class="report-bar">
     <a href="https://app.sospermesso.it/it/contattaci" target="_blank" rel="noopener" class="report-btn">
-      <span>🚩</span> Segnala un errore in questa pagina
+      {% render "components/icon.liquid", name: "attenzione", size: 18 %} Segnala un errore in questa pagina
     </a>
   </div>
 
@@ -546,15 +545,15 @@ eleventyExcludeFromCollections: true
       <h2 class="text-center mb-lg">আপনার আরও আগ্রহ থাকতে পারে</h2>
       <div class="grid grid-3">
         <a href="/bn/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">সকল অনুমতি</h3>
         </a>
         <a href="/bn/dizionario.html" class="card card-link card-compact">
-          <span class="card-icon">📖</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "dizionario", size: 36 %}</span>
           <h3 class="card-title">অভিধান</h3>
         </a>
         <a href="/bn/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">আইনি সহায়তা</h3>
         </a>
       </div>

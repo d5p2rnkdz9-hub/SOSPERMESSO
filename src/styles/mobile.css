@@ -126,9 +126,11 @@
     transform: none;
   }
 
-  .card:active {
-    transform: scale(0.98);
-    transition: transform 0.1s ease;
+  /* Adesivo: alla pressione la card «scende» sull'ombra */
+  a.card:active {
+    transform: var(--sticker-press);
+    box-shadow: var(--sticker-pressed);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
   }
 
   /* Better spacing for card grids */
@@ -249,13 +251,8 @@
 
 @media (max-width: 768px) {
   .alert {
-    flex-direction: column;
-    text-align: center;
-    padding: var(--spacing-md);
-  }
-
-  .alert-icon {
-    margin-bottom: var(--spacing-xs);
+    gap: 12px;
+    padding: 16px;
   }
 
   .alert .btn {
@@ -379,7 +376,7 @@
   /* Keep only simple transitions */
   .card,
   .btn {
-    transition: background-color var(--transition-fast);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
   }
 }
 
@@ -417,8 +414,6 @@
 
 @media (max-width: 768px) {
   /* Add touch feedback */
-  .btn:active,
-  .card:active,
   .nav-link:active {
     opacity: 0.8;
   }
@@ -505,8 +500,10 @@
 
 @media (max-width: 768px) {
   /* Larger focus indicators for keyboard navigation */
+  /* Stesso focus di main.css (contorno inchiostro + alone giallo): un contorno
+     solo giallo sparirebbe sui fondi gialli */
   *:focus-visible {
-    outline: 3px solid var(--taxi-yellow);
+    outline: 3px solid var(--sp-ink);
     outline-offset: 2px;
   }
 

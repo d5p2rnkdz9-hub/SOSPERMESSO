@@ -14,7 +14,7 @@ extraStyles: |
       .sportelli-marker { cursor: pointer; outline: none; transition: filter 0.18s ease-out; }
       .sportelli-marker .hit { fill: transparent; }
       .sportelli-marker .pin-body { transition: transform 0.18s cubic-bezier(.34,1.4,.6,1); transform-box: fill-box; transform-origin: 50% 100%; }
-      .sportelli-marker .pin { fill: #FF5252; stroke: var(--black); stroke-width: 1.4; }
+      .sportelli-marker .pin { fill: #D62828; stroke: var(--black); stroke-width: 1.4; }
       .sportelli-marker .pin-dot { fill: white; pointer-events: none; }
       .sportelli-marker:hover .pin-body,
       .sportelli-marker:focus-visible .pin-body { transform: translateY(-6px) scale(1.18); }
@@ -23,7 +23,7 @@ extraStyles: |
       .sportelli-marker:hover,
       .sportelli-marker:focus-visible { filter: drop-shadow(0 4px 4px rgba(0,0,0,0.28)); }
       .sportelli-marker:focus-visible .pin { stroke-width: 2; }
-      .sportelli-popup { position: absolute; background: white; border: 2px solid var(--black); border-radius: 14px; padding: 1rem 1.1rem 0.85rem; box-shadow: var(--shadow-lg); max-width: 280px; min-width: 220px; z-index: 20; display: none; font-family: 'Inter', 'Inter Fallback', sans-serif; }
+      .sportelli-popup { position: absolute; background: white; border: 2px solid var(--black); border-radius: 14px; padding: 1rem 1.1rem 0.85rem; box-shadow: var(--shadow-lg); max-width: 280px; min-width: 220px; z-index: 20; display: none; font-family: var(--font-primary); }
       .sportelli-popup.visible { display: block; }
       .sportelli-popup h4 { margin: 0 0 0.6rem; padding-right: 1.5rem; font-family: 'Poppins', 'Poppins Fallback', sans-serif; font-size: 0.95rem; color: var(--black); }
       .sportelli-popup .sp-close { position: absolute; top: 0.3rem; right: 0.5rem; background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--gray-medium); padding: 0.15rem 0.4rem; }
@@ -33,7 +33,7 @@ extraStyles: |
       .sportelli-popup li:first-child { border-top: none; padding-top: 0; }
       .sportelli-popup .sp-name { font-weight: 700; display: block; color: var(--black); }
       .sportelli-popup .sp-addr { color: #555; display: block; margin: 2px 0; line-height: 1.35; }
-      .sportelli-popup .sp-link { color: var(--accent-purple); text-decoration: none; font-weight: 600; font-size: 0.78rem; }
+      .sportelli-popup .sp-link { color: var(--sp-ink); text-decoration: none; font-weight: 600; font-size: 0.78rem; }
       .sportelli-popup .sp-link:hover { text-decoration: underline; }
       @media (max-width: 768px) {
         .sportelli-map-wrap { max-width: 360px; }
@@ -42,9 +42,9 @@ extraStyles: |
       .title-icon { display: inline-block; margin-right: 0.5rem; font-size: 0.85em; vertical-align: -0.05em; }
       /* All city boxes: black shadow only (override yellow combo on even cards) */
       .city-section.card,
-      .city-section.card:nth-child(even) { box-shadow: 3px 3px 0 #1A1A1A; }
+      .city-section.card:nth-child(even) { box-shadow: 3px 3px 0 #141414; }
       .city-section.card:hover,
-      .city-section.card:nth-child(even):hover { box-shadow: 1.5px 1.5px 0 #1A1A1A; }
+      .city-section.card:nth-child(even):hover { box-shadow: 1.5px 1.5px 0 #141414; }
 
       .legal-table {
         width: 100%;
@@ -63,7 +63,7 @@ extraStyles: |
         color: var(--black);
       }
       .legal-table tr:hover {
-        background-color: rgba(255, 215, 0, 0.1);
+        background-color: rgba(255, 212, 0, 0.1);
       }
       .city-section {
         margin-bottom: 2rem;
@@ -71,7 +71,7 @@ extraStyles: |
       .city-title {
         font-size: 1.25rem;
         font-weight: 600;
-        color: var(--accent-purple);
+        color: var(--sp-ink);
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
         border-bottom: 2px solid var(--accent-purple);
@@ -79,9 +79,9 @@ extraStyles: |
       /* ── SEARCH BAR (same style as database.html) ── */
       .legal-search-wrap { max-width: 900px; margin: 0 auto 1.5rem; }
       .legal-search-bar { display: flex; align-items: center; gap: 0.75rem; background: white; border: 2px solid #e5e5e5; border-radius: 14px; padding: 0.85rem 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: border-color 0.2s; }
-      .legal-search-bar:focus-within { border-color: #FFD700; box-shadow: 0 2px 12px rgba(255,215,0,0.15); }
+      .legal-search-bar:focus-within { border-color: #FFD400; box-shadow: 0 2px 12px rgba(255,212,0,0.15); }
       .legal-search-bar .search-icon { font-size: 1.1rem; flex-shrink: 0; }
-      .legal-search-input { flex: 1; border: none; outline: none; font-size: 1rem; font-family: 'Inter', 'Inter Fallback', sans-serif; color: #1A1A1A; background: transparent; }
+      .legal-search-input { flex: 1; border: none; outline: none; font-size: 1rem; font-family: var(--font-primary); color: #141414; background: transparent; }
       .legal-search-input::placeholder { color: #bbb; }
       .legal-search-count { font-size: 0.8rem; color: #999; white-space: nowrap; flex-shrink: 0; }
       .city-section.hidden { display: none; }
@@ -119,7 +119,7 @@ extraStyles: |
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/tr/index.html" style="color: var(--taxi-yellow-dark);">Ana Sayfa</a> →
+        <a href="/tr/index.html" class="link-ink">Ana Sayfa</a> →
         <span>Hukuki Yardım</span>
       </div>
     </div>
@@ -128,7 +128,7 @@ extraStyles: |
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <h1 class="page-title"><span class="title-icon" aria-hidden="true">⚖️</span>Yakınınızdaki ücretsiz hukuki yardım</h1>
+        <h1 class="page-title"><span class="title-icon" aria-hidden="true">{% render "components/icon.liquid", name: "aiuto-legale", size: 28 %}</span>Yakınınızdaki ücretsiz hukuki yardım</h1>
       </div>
     </div>
   </section>
@@ -156,7 +156,7 @@ extraStyles: |
 
       <div class="legal-search-wrap">
         <div class="legal-search-bar">
-          <span class="search-icon">🔍</span>
+          <span class="search-icon">{% render "components/icon.liquid", name: "cerca", size: 22 %}</span>
           <input type="text" class="legal-search-input" placeholder="Bir şehir veya kuruluş ara..." autocomplete="off">
           <span class="legal-search-count"></span>
         </div>
@@ -841,7 +841,7 @@ extraStyles: |
       </div>
 
       <div class="alert alert-info" style="margin-top: 2rem;">
-        <span class="alert-icon">📍</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
         <div>
           Şehrinizi bulamıyor musunuz? Eksik olan bir dernek biliyor musunuz?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -858,15 +858,15 @@ extraStyles: |
       <h2 class="text-center mb-lg">İlginizi çekebilir</h2>
       <div class="grid grid-3">
         <a href="/tr/protezione-internazionale.html" class="card card-link card-compact">
-          <span class="card-icon">🛡️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">Uluslararası koruma</h3>
         </a>
         <a href="/tr/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tüm izinler</h3>
         </a>
         <a href="/tr/dizionario.html" class="card card-link card-compact">
-          <span class="card-icon">🔤</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "dizionario", size: 36 %}</span>
           <h3 class="card-title">Sözlük</h3>
         </a>
       </div>

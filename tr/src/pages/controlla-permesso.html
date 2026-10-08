@@ -7,7 +7,7 @@ lang: tr
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/tr/index.html" style="color: var(--taxi-yellow-dark);">Ana Sayfa</a> →
+        <a href="/tr/index.html" class="link-ink">Ana Sayfa</a> →
         <span>İzin Kontrolü</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: tr
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">👀</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "cerca", size: 40 %}</span>
         <h1 class="page-title">Oturma izninizin hazır olup olmadığını kontrol edin</h1>
         <p class="section-subtitle">İşleminizin durumunu çevrimiçi doğrulayın</p>
       </div>
@@ -36,7 +36,7 @@ lang: tr
           <li><strong>Vergi kimlik numaranız (codice fiscale)</strong></li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">🔗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "freccia", size: 26 %}</span>
           <div>
             <a href="https://www.portaleimmigrazione.it/ELI2ImmigrazioneWEB/Pagine/StartPage.aspx" target="_blank" class="btn btn-primary">
               Göç Portalına git
@@ -79,14 +79,14 @@ lang: tr
       </div>
 
       <div class="alert alert-warning" style="margin-bottom: 2rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>Dikkat:</strong> İşleminiz uzun süredir "işlemde" görünüyorsa, herhangi bir sorun olmadığını doğrulamak için Questura'ya veya bir yardım derneğine başvurun.
         </div>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           İşleminizi kontrol etmekte sorun mu yaşıyorsunuz?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -103,15 +103,15 @@ lang: tr
       <h2 class="text-center mb-lg">İlginizi çekebilir</h2>
       <div class="grid grid-3">
         <a href="/tr/kit-postale.html" class="card card-link card-compact">
-          <span class="card-icon">📩</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "kit-postale", size: 36 %}</span>
           <h3 class="card-title">Posta kiti</h3>
         </a>
         <a href="/tr/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">Hukuki yardım</h3>
         </a>
         <a href="/tr/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tüm izinler</h3>
         </a>
       </div>

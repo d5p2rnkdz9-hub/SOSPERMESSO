@@ -7,7 +7,7 @@ lang: bn
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/bn/index.html" style="color: var(--taxi-yellow-dark);">হোম</a> →
+        <a href="/bn/index.html" class="link-ink">হোম</a> →
         <span>কিট পোস্তালে (Kit Postale)</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: bn
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">📩</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "kit-postale", size: 40 %}</span>
         <h1 class="page-title">কিট পোস্তালে ও অন্যান্য ফর্ম</h1>
         <p class="section-subtitle">আপনার প্রয়োজনীয় ফর্মগুলো ডাউনলোড করুন</p>
       </div>
@@ -32,7 +32,7 @@ lang: bn
         <p>এটি এমন একটি নথি যা আপনি তৈরি করেন যখন আপনি <strong>বিনামূল্যে আপনার বাড়িতে</strong> একজন বিদেশি ব্যক্তিকে আশ্রয় দেন (যেমন বন্ধু, আত্মীয়, বা আপনি যাকে সাহায্য করছেন)। কোনো ভাড়া পরিশোধ হয় না।</p>
         <p>ব্যক্তি আপনার বাড়িতে আসার <strong>৪৮ ঘণ্টার মধ্যে</strong> আপনাকে পুলিশে (Commissariato বা Questura) যেতে হবে। তারা আপনাকে পূরণ করার জন্য একটি ফর্ম দেবে এবং তারপর নথিতে সীল লাগাবে।</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/10/dichiarazione_ospitalita_stranieri.pdf" target="_blank" class="btn btn-primary btn-sm">
               ফর্ম ডাউনলোড করুন
@@ -47,7 +47,7 @@ lang: bn
         <p>এটি এমন একটি নথি যা আপনি তৈরি করেন যখন আপনি <strong>অর্থের বিনিময়ে</strong> কাউকে বাড়ি বা ঘর <strong>ভাড়া</strong> দেন। ব্যক্তি আপনার সম্পত্তিতে বাস করার জন্য ভাড়া দেয়।</p>
         <p>ব্যক্তি সেখানে বসবাস শুরু করার <strong>৪৮ ঘণ্টার মধ্যে</strong> আপনাকে স্থানীয় পুলিশে (Vigili urbani) বা কমিসারিয়াতোতে জমা দিতে হবে। এটি ইতালীয় ও বিদেশি উভয়ের জন্য আইন অনুযায়ী বাধ্যতামূলক।</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/09/modulo_cessione_fabbricato.pdf" target="_blank" class="btn btn-primary btn-sm">
               ফর্ম ডাউনলোড করুন
@@ -61,7 +61,7 @@ lang: bn
         <h2>🏡 বসবাসের ঘোষণা (Dichiarazione di residenza)</h2>
         <p>এটি আপনি যে পৌরসভায় (Comune) বাস করেন সেখানে পৌর নিবন্ধনে (anagrafe) নাম লেখানোর জন্য ফর্ম।</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://dait.interno.gov.it/documenti/circ-009-servdemo-27-04-2012-modulo-residenza.pdf" target="_blank" class="btn btn-primary btn-sm">
               ফর্ম ডাউনলোড করুন
@@ -93,7 +93,7 @@ lang: bn
           <li>পরিশোধের বুলেটিন</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">⚠️</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div>
             <strong>সতর্কতা:</strong> সব অনুমতি কিট পোস্তালে দিয়ে আবেদন করা হয় না। কিছু সরাসরি কুয়েস্তুরায় (Questura) আবেদন করতে হয়। আপনি যে অনুমতির জন্য আগ্রহী সেটির পৃষ্ঠায় দেখুন।
           </div>
@@ -101,7 +101,7 @@ lang: bn
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           ফর্মগুলো নিয়ে সাহায্য দরকার?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -118,15 +118,15 @@ lang: bn
       <h2 class="text-center mb-lg">আপনার আরও আগ্রহ থাকতে পারে</h2>
       <div class="grid grid-3">
         <a href="/bn/controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">অনুমতি পরীক্ষা করুন</h3>
         </a>
         <a href="/bn/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">আইনি সহায়তা</h3>
         </a>
         <a href="/bn/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">সকল অনুমতি</h3>
         </a>
       </div>

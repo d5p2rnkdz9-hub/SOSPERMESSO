@@ -58,29 +58,24 @@ html[data-mode="pro"] .btn-primary:hover {
   color: var(--pro-gold);
 }
 
-/* Homepage refresh (index.html, variabili scoped --hr-*) */
-html[data-mode="pro"] .home-refresh {
-  --hr-yellow: #1b3a5c;
-  --hr-yellow-light: #e7edf5;
-  --hr-yellow-bright: #2c5282;
-}
-
-/* Testo oro sui bottoni/card che diventano navy; i secondari restano chiari */
-html[data-mode="pro"] .hr-btn {
-  color: #ffd75a;
-}
-
-html[data-mode="pro"] .hr-btn--secondary {
-  color: #1a1a1a;
-}
-
-html[data-mode="pro"] .hr-ucard--yellow {
+/* Home «Adesivo» (_includes/components/home.liquid): in PRO i blocchi gialli
+   diventano navy con testo bianco; card bianche, timbro e chip restano uguali. */
+html[data-mode="pro"] .ha-hero,
+html[data-mode="pro"] .ha-final {
+  background: var(--pro-navy);
   color: #ffffff;
 }
 
-/* L'evidenziatore giallo resta giallo: è accento, non brand */
-html[data-mode="pro"] .hr-hero .hr-highlight {
-  background: linear-gradient(180deg, transparent 50%, #ffd700 50%);
+html[data-mode="pro"] .ha-hero .ha-h1,
+html[data-mode="pro"] .ha-hero .ha-sub,
+html[data-mode="pro"] .ha-final .ha-h2,
+html[data-mode="pro"] .ha-final-text p {
+  color: #ffffff;
+}
+
+html[data-mode="pro"] .ha-hero .ha-stamp {
+  background: var(--pro-gold);
+  color: #141414;
 }
 
 /* =====================================================
@@ -94,21 +89,21 @@ html[data-mode="pro"] .hr-hero .hr-highlight {
   width: auto !important;
   flex: 0 0 auto;
   padding: 0.3rem 0.8rem;
-  border: 2px solid #1a1a1a;
+  border: 2px solid #141414;
   border-radius: 999px;
   background: #ffffff;
-  color: #1a1a1a;
+  color: #141414;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   cursor: pointer;
-  box-shadow: 2px 2px 0 #1a1a1a;
+  box-shadow: 2px 2px 0 #141414;
   transition: all 150ms ease-in-out;
 }
 
 .pro-toggle:hover {
   transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0 #1a1a1a;
+  box-shadow: 1px 1px 0 #141414;
 }
 
 .pro-toggle[aria-pressed="true"] {
@@ -170,8 +165,8 @@ html[data-mode="pro"] .pro-only-inline {
 
 .pro-pill-outline {
   background: transparent;
-  color: #1a1a1a;
-  border: 2px solid #1a1a1a;
+  color: #141414;
+  border: 2px solid #141414;
   cursor: help;
 }
 

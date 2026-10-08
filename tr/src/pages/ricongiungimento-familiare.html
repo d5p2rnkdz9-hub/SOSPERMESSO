@@ -7,7 +7,7 @@ lang: tr
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/tr/index.html" style="color: var(--taxi-yellow-dark);">Ana Sayfa</a> →
+        <a href="/tr/index.html" class="link-ink">Ana Sayfa</a> →
         <span>Aile Birleşimi</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: tr
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "famiglia", size: 40 %}</span>
         <h1 class="page-title">Aile birleşimi rehberi</h1>
         <p class="section-subtitle">Ailenizi İtalya'ya nasıl getirirsiniz</p>
       </div>
@@ -71,7 +71,7 @@ lang: tr
         </ul>
         <p>👉 Ne kadar çok kişi getirmek isterseniz, gelirinizin o kadar yüksek olması gerekir.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div><a href="/tr/permesso-asilo-status-rifugiato.html">Mülteci statüsü</a> veya <a href="/tr/permesso-protezione-sussidiaria.html">ikincil koruma</a> aldıysanız, aile birleşimi için diğer yabancılar gibi asgari gelir kanıtlamanız GEREKMEZ.</div>
         </div>
       </div>
@@ -84,7 +84,7 @@ lang: tr
           <li><strong>Kira sözleşmesinin</strong> veya evin size ait olduğunu gösteren belgenin bir kopyası</li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div><a href="/tr/permesso-asilo-status-rifugiato.html">Mülteci statüsü</a> veya <a href="/tr/permesso-protezione-sussidiaria.html">ikincil koruma</a> aldıysanız, aile birleşimi için diğer yabancılar gibi büyük bir ev kanıtlamanız GEREKMEZ.</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ lang: tr
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Aile birleşimi hakkında başka sorularınız mı var?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -143,15 +143,15 @@ lang: tr
       <h2 class="text-center mb-lg">İlginizi çekebilir</h2>
       <div class="grid grid-3">
         <a href="/tr/permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Aile birleşimi izni</h3>
         </a>
         <a href="/tr/permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">💑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Aile bütünlüğü</h3>
         </a>
         <a href="/tr/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tüm izinler</h3>
         </a>
       </div>

@@ -7,7 +7,7 @@ lang: bn
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/bn/index.html" style="color: var(--taxi-yellow-dark);">হোম</a> →
+        <a href="/bn/index.html" class="link-ink">হোম</a> →
         <span>আন্তর্জাতিক সুরক্ষা (Protezione Internazionale)</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: bn
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🛡️</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
         <h1 class="page-title">আন্তর্জাতিক সুরক্ষার গাইড</h1>
         <p class="section-subtitle">ইতালিতে আশ্রয় (asilo) আবেদন সম্পর্কে আপনার যা জানা দরকার</p>
       </div>
@@ -56,7 +56,7 @@ lang: bn
           <li>ড্রাইভিং লাইসেন্স (patente di guida) নিতে পারবেন 🚗</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">❗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div><strong>প্রক্রিয়া শেষ না হওয়া পর্যন্ত আপনি ইতালির বাইরে যেতে পারবেন না</strong>, এবং আপনি <strong>এই অনুমতিকে কাজের অনুমতিতে রূপান্তর করতে পারবেন না</strong>।</div>
         </div>
       </div>
@@ -159,7 +159,7 @@ lang: bn
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">📜</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
         <div>
           <strong>আপনার গল্প অনন্য।</strong> এটি আপনার বন্ধু বা আত্মীয়দের মতো নয়। আইন প্রায়ই পরিবর্তন হয়, তাই সবসময় হালনাগাদ আইনি সহায়তা নিন।
           <a href="/bn/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -176,15 +176,15 @@ lang: bn
       <h2 class="text-center mb-lg">আপনার আরও আগ্রহ থাকতে পারে</h2>
       <div class="grid grid-3">
         <a href="/bn/permesso-richiesta-asilo.html" class="card card-link card-compact">
-          <span class="card-icon">🟨</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">আশ্রয় আবেদনের অনুমতি</h3>
         </a>
         <a href="/bn/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
-          <span class="card-icon">🛡️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">শরণার্থী মর্যাদা</h3>
         </a>
         <a href="/bn/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
-          <span class="card-icon">🔰</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">সহায়ক সুরক্ষা</h3>
         </a>
       </div>

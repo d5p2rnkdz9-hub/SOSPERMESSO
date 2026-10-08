@@ -80,3 +80,28 @@
   word-break: normal !important;
   overflow-wrap: break-word;
 }
+
+
+/* ===============================================
+   DESIGN SYSTEM «ADESIVO» — interlinea dei titoletti Poppins
+   Le legature bengalesi scendono sotto la riga: servono 1.55.
+   =============================================== */
+[lang="bn"] .ha-testcard-q,
+[lang="bn"] .ha-testcard-a,
+[lang="bn"] .ha-guide-q,
+[lang="bn"] .ha-guide-cta,
+[lang="bn"] .ha-cat-head,
+[lang="bn"] .ha-tool-title,
+[lang="bn"] .ha-eyebrow,
+[lang="bn"] .permit-main .title,
+[lang="bn"] .permit-cat,
+[lang="bn"] .checklist-title,
+[lang="bn"] .callout-text,
+[lang="bn"] .db-filter-badge {
+  line-height: 1.55;
+}
+
+/* Il timbro e i titoli display (line-height 1 in latino) devono respirare */
+[lang="bn"] .ha-h1 {
+  line-height: 1.55;
+}

@@ -7,7 +7,7 @@ lang: fr
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="index.html" style="color: var(--taxi-yellow-dark);">Accueil</a> →
+        <a href="index.html" class="link-ink">Accueil</a> →
         <span>Regroupement familial</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: fr
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "famiglia", size: 40 %}</span>
         <h1 class="page-title">Guide du regroupement familial</h1>
         <p class="section-subtitle">Comment faire venir votre famille en Italie</p>
       </div>
@@ -71,7 +71,7 @@ lang: fr
         </ul>
         <p>👉 Plus vous souhaitez faire venir de personnes, plus votre revenu doit être élevé.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>Si vous avez obtenu le <a href="permesso-asilo-status-rifugiato.html">statut de réfugié</a> ou la <a href="permesso-protezione-sussidiaria.html">protection subsidiaire</a>, pour le regroupement familial vous N'AVEZ PAS besoin de prouver que vous avez un salaire minimum comme les autres étrangers.</div>
         </div>
       </div>
@@ -84,7 +84,7 @@ lang: fr
           <li>Une copie du <strong>contrat de location</strong> ou du document indiquant que vous êtes propriétaire du logement</li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>Si vous avez obtenu le <a href="permesso-asilo-status-rifugiato.html">statut de réfugié</a> ou la <a href="permesso-protezione-sussidiaria.html">protection subsidiaire</a>, pour le regroupement familial vous N'AVEZ PAS besoin de prouver que vous avez un grand logement comme les autres étrangers.</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ lang: fr
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Vous avez d'autres questions sur le regroupement familial ?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -143,15 +143,15 @@ lang: fr
       <h2 class="text-center mb-lg">Cela pourrait aussi vous intéresser</h2>
       <div class="grid grid-3">
         <a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Permis de regroupement</h3>
         </a>
         <a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">💑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Cohésion familiale</h3>
         </a>
         <a href="database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tous les permis</h3>
         </a>
       </div>

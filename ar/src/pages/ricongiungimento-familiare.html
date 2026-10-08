@@ -7,7 +7,7 @@ lang: ar
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ar/index.html" style="color: var(--taxi-yellow-dark);">الصفحة الرئيسية</a> →
+        <a href="/ar/index.html" class="link-ink">الصفحة الرئيسية</a> →
         <span>لم شمل الأسرة</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: ar
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "famiglia", size: 40 %}</span>
         <h1 class="page-title">دليل لم شمل الأسرة</h1>
         <p class="section-subtitle">كيف تُحضر عائلتك إلى إيطاليا</p>
       </div>
@@ -71,7 +71,7 @@ lang: ar
         </ul>
         <p>👉 كلما أردت إحضار عدد أكبر من الأشخاص، كلما وجب أن يكون دخلك أعلى.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>إذا حصلت على <a href="/ar/permesso-asilo-status-rifugiato.html">صفة اللاجئ</a> أو <a href="/ar/permesso-protezione-sussidiaria.html">الحماية الفرعية</a>، فلا يُطلب منك إثبات حد أدنى من الدخل للم شمل الأسرة كما هو الحال مع الأجانب الآخرين.</div>
         </div>
       </div>
@@ -84,7 +84,7 @@ lang: ar
           <li>نسخة من <strong>عقد الإيجار</strong> أو مستند يثبت ملكيتك للمسكن</li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>إذا حصلت على <a href="/ar/permesso-asilo-status-rifugiato.html">صفة اللاجئ</a> أو <a href="/ar/permesso-protezione-sussidiaria.html">الحماية الفرعية</a>، فلا يُطلب منك إثبات مسكن كبير للم شمل الأسرة كما هو الحال مع الأجانب الآخرين.</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ lang: ar
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           هل لديك أسئلة أخرى عن لم شمل الأسرة؟
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -143,15 +143,15 @@ lang: ar
       <h2 class="text-center mb-lg">قد يهمك أيضا</h2>
       <div class="grid grid-3">
         <a href="/ar/permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">تصريح لم شمل الأسرة</h3>
         </a>
         <a href="/ar/permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">💑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">التماسك الأسري</h3>
         </a>
         <a href="/ar/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">جميع التصاريح</h3>
         </a>
       </div>

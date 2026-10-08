@@ -258,3 +258,28 @@ em:lang(ko),
   word-break: normal;
   overflow-wrap: break-word;
 }
+
+
+/* ===============================================
+   DESIGN SYSTEM «ADESIVO» — interlinea dei titoletti Poppins
+   I caratteri cinesi sono più alti del latino: 1.45 evita righe che si toccano.
+   =============================================== */
+[lang="zh"] .ha-testcard-q,
+[lang="zh"] .ha-testcard-a,
+[lang="zh"] .ha-guide-q,
+[lang="zh"] .ha-guide-cta,
+[lang="zh"] .ha-cat-head,
+[lang="zh"] .ha-tool-title,
+[lang="zh"] .ha-eyebrow,
+[lang="zh"] .permit-main .title,
+[lang="zh"] .permit-cat,
+[lang="zh"] .checklist-title,
+[lang="zh"] .callout-text,
+[lang="zh"] .db-filter-badge {
+  line-height: 1.45;
+}
+
+/* Il timbro e i titoli display (line-height 1 in latino) devono respirare */
+[lang="zh"] .ha-h1 {
+  line-height: 1.45;
+}

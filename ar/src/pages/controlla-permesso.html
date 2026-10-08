@@ -7,7 +7,7 @@ lang: ar
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ar/index.html" style="color: var(--taxi-yellow-dark);">الصفحة الرئيسية</a> →
+        <a href="/ar/index.html" class="link-ink">الصفحة الرئيسية</a> →
         <span>التحقق من التصريح</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: ar
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">👀</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "cerca", size: 40 %}</span>
         <h1 class="page-title">تحقق مما إذا كان تصريح إقامتك جاهزا</h1>
         <p class="section-subtitle">تحقق من حالة طلبك عبر الإنترنت</p>
       </div>
@@ -36,7 +36,7 @@ lang: ar
           <li><strong>الرقم الضريبي (codice fiscale)</strong></li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">🔗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "freccia", size: 26 %}</span>
           <div>
             <a href="https://www.portaleimmigrazione.it/ELI2ImmigrazioneWEB/Pagine/StartPage.aspx" target="_blank" class="btn btn-primary">
               انتقل إلى بوابة الهجرة
@@ -79,14 +79,14 @@ lang: ar
       </div>
 
       <div class="alert alert-warning" style="margin-bottom: 2rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>انتبه:</strong> إذا ظل طلبك "قيد المعالجة" لفترة طويلة، تواصل مع Questura أو جمعية مساعدة للتأكد من عدم وجود مشكلة.
         </div>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           هل تواجه صعوبة في التحقق من طلبك؟
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -103,15 +103,15 @@ lang: ar
       <h2 class="text-center mb-lg">قد يهمك أيضا</h2>
       <div class="grid grid-3">
         <a href="/ar/kit-postale.html" class="card card-link card-compact">
-          <span class="card-icon">📩</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "kit-postale", size: 36 %}</span>
           <h3 class="card-title">Kit postale</h3>
         </a>
         <a href="/ar/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">المساعدة القانونية</h3>
         </a>
         <a href="/ar/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">جميع التصاريح</h3>
         </a>
       </div>

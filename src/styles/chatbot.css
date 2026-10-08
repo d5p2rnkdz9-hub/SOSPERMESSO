@@ -46,10 +46,10 @@
   line-height: 1.4;
   text-align: start;
   padding: 0.75rem 1rem;
-  border: 2px solid var(--black);
+  border: var(--border-ui) solid var(--sp-ink);
   border-radius: var(--radius-lg);
   border-bottom-right-radius: 4px;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--sticker);
   cursor: pointer;
 }
 
@@ -67,9 +67,9 @@
   color: var(--black);
   font-size: 12px;
   line-height: 1;
-  border: 2px solid var(--black);
+  border: var(--border-chip) solid var(--sp-ink);
   border-radius: 50%;
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
   cursor: pointer;
 }
 
@@ -132,12 +132,12 @@ html.sosp-chat-lock body {
   gap: 0.75rem;
   max-width: min(320px, calc(100vw - 32px));
   padding: 0.75rem 1.5rem 0.75rem 1.15rem;
-  background: var(--taxi-yellow);
-  color: var(--black);
-  font-family: var(--font-primary);
-  border: 2.5px solid var(--black);
-  border-radius: 26px;
-  box-shadow: 4px 4px 0 var(--black);
+  background: var(--sp-yellow);
+  color: var(--sp-ink);
+  font-family: var(--font-display);
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--sticker);
   cursor: pointer;
   text-align: start;
   transition: background var(--transition-fast), box-shadow var(--transition-fast),
@@ -201,11 +201,21 @@ html.sosp-chat-lock body {
   90% { transform: rotate(-5deg) translateY(0); }
 }
 
-.sosp-chat-fab:hover,
+/* Adesivo: al passaggio si solleva, premuto scende; focus = anello giallo */
+.sosp-chat-fab:hover {
+  box-shadow: var(--sticker-hover);
+  transform: var(--sticker-lift);
+}
+
+.sosp-chat-fab:active {
+  box-shadow: var(--sticker-pressed);
+  transform: var(--sticker-press);
+}
+
 .sosp-chat-fab:focus-visible {
-  background: var(--taxi-yellow-dark);
-  box-shadow: 2px 2px 0 var(--black);
-  transform: translate(2px, 2px);
+  outline: 3px solid var(--sp-ink);
+  outline-offset: 2px;
+  box-shadow: var(--sticker), 0 0 0 9px var(--sp-yellow);
 }
 
 .sosp-chat-fab:hover .sosp-chat-fab-icon {
@@ -276,8 +286,8 @@ html.sosp-chat-lock body {
   justify-content: space-between;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  background: var(--taxi-yellow);
-  border-bottom: 2px solid var(--black);
+  background: var(--sp-yellow);
+  border-bottom: var(--border-ui) solid var(--sp-ink);
   flex-shrink: 0;
 }
 
@@ -328,7 +338,7 @@ html.sosp-chat-lock body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  background: var(--off-white);
+  background: var(--sp-paper);
   overscroll-behavior: contain;
 }
 
@@ -367,22 +377,23 @@ html.sosp-chat-lock body {
 
 .sosp-chat-msg-assistant {
   align-self: flex-start;
-  background: var(--white);
-  border: 1px solid var(--gray-light);
-  box-shadow: var(--shadow-sm);
+  background: var(--sp-white);
+  border: var(--border-chip) solid var(--sp-ink);
   border-bottom-left-radius: var(--radius-sm);
 }
 
 .sosp-chat-msg-user {
   align-self: flex-end;
-  background: var(--taxi-yellow-light);
+  background: var(--sp-yellow);
+  border: var(--border-chip) solid var(--sp-ink);
   border-bottom-right-radius: var(--radius-sm);
 }
 
 .sosp-chat-msg-error {
   align-self: center;
-  background: #fdecea;
-  color: #b3261e;
+  background: var(--state-error-tint);
+  color: var(--sp-ink);
+  border: var(--border-chip) solid var(--sp-red);
   font-size: var(--font-size-xs);
   max-width: 100%;
   text-align: center;
@@ -429,8 +440,8 @@ html.sosp-chat-lock body {
   align-items: flex-end;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  border-top: 1px solid var(--gray-light);
-  background: var(--white);
+  border-top: var(--border-chip) solid var(--sp-ink);
+  background: var(--sp-white);
   flex-shrink: 0;
 }
 
@@ -444,15 +455,14 @@ html.sosp-chat-lock body {
   line-height: 1.4;
   color: var(--black);
   background: var(--white);
-  border: 1px solid var(--gray-medium);
+  border: var(--border-chip) solid var(--sp-ink);
   border-radius: var(--radius-md);
   resize: none;
 }
 
 .sosp-chat-input:focus {
-  outline: 2px solid var(--taxi-yellow-dark);
-  outline-offset: 1px;
-  border-color: var(--taxi-yellow-dark);
+  outline: none;
+  box-shadow: var(--focus-ring);
 }
 
 .sosp-chat-send {
@@ -460,17 +470,19 @@ html.sosp-chat-lock body {
   padding: 0.65rem 1.1rem;
   background: var(--taxi-yellow);
   color: var(--black);
-  font-family: var(--font-primary);
+  font-family: var(--font-display);
   font-size: var(--font-size-sm);
   font-weight: 700;
-  border: 2px solid var(--black);
+  border: var(--border-ui) solid var(--sp-ink);
   border-radius: var(--radius-full);
+  box-shadow: var(--sticker-sm);
   cursor: pointer;
-  transition: background var(--transition-fast);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .sosp-chat-send:hover:not(:disabled) {
-  background: var(--taxi-yellow-dark);
+  transform: var(--sticker-lift-sm);
+  box-shadow: var(--sticker-sm-hover);
 }
 
 .sosp-chat-send:disabled,
@@ -530,9 +542,9 @@ html.sosp-chat-lock body {
     inset: auto 16px 16px auto;
     width: 380px;
     height: min(600px, 80vh);
-    border: 2px solid var(--black);
+    border: var(--border-ui) solid var(--sp-ink);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--sticker-lg);
     overflow: hidden;
   }
 

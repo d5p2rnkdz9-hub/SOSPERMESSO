@@ -34,8 +34,8 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   font-size: var(--font-size-sm);
   font-weight: 500;
-  color: var(--accent-teal);
-  background: rgba(38, 166, 154, 0.1);
+  color: var(--sp-ink);
+  background: var(--cat-health-tint);
   border-radius: var(--radius-full);
   transition: all var(--transition-fast);
   text-decoration: none;
@@ -59,7 +59,7 @@
   font-family: var(--font-heading);
   font-size: var(--font-size-lg);
   font-weight: 600;
-  color: var(--accent-teal);
+  color: var(--sp-ink);
   margin-bottom: var(--spacing-sm);
   padding-bottom: var(--spacing-xs);
   border-bottom: 2px solid var(--accent-teal);
@@ -69,20 +69,13 @@
    PRACTICE CARDS
    ----------------------------------------------- */
 
+/* Esperienza segnalata: card piatta (non è cliccabile), contorno sp-ink */
 .prassi-card {
-  background: var(--white);
+  background: var(--sp-white);
   border-radius: var(--radius-md);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: var(--border-chip) solid var(--sp-ink);
   padding: var(--spacing-md);
   margin-bottom: var(--spacing-sm);
-  border-left: 4px solid var(--accent-teal);
-  transition: all var(--transition-base);
-}
-
-.prassi-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(38, 166, 154, 0.15);
-  border-left-color: var(--accent-teal-bright);
 }
 
 .prassi-card:last-child {
@@ -116,8 +109,8 @@
 }
 
 .prassi-category-tag {
-  background: rgba(38, 166, 154, 0.1);
-  color: var(--accent-teal);
+  background: var(--cat-health-tint);
+  color: var(--sp-ink);
   padding: 2px 8px;
   border-radius: var(--radius-sm);
   font-weight: 500;
@@ -139,7 +132,7 @@
 
 /* Static vote display (before JS enhancement) */
 .vote-confermo {
-  color: var(--success);
+  color: var(--sp-ink);
   font-weight: 500;
 }
 
@@ -178,12 +171,12 @@
 }
 
 .vote-confermo-btn {
-  border-color: var(--accent-teal);
-  color: var(--accent-teal);
+  border-color: var(--sp-ink);
+  color: var(--sp-ink);
 }
 
 .vote-confermo-btn:hover:not(:disabled) {
-  background: rgba(38, 166, 154, 0.1);
+  background: var(--cat-health-tint);
 }
 
 .vote-confermo-btn.voted {
@@ -274,15 +267,14 @@
    ----------------------------------------------- */
 
 .prassi-accordion {
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: var(--white);
-  border: 2px solid #1A1A1A;
-  box-shadow: 3px 3px 0 #1A1A1A;
+  background: var(--sp-white);
+  border: var(--border-ui) solid var(--sp-ink);
 }
 
 .prassi-accordion-item {
-  border-bottom: 1px solid var(--gray-light);
+  border-bottom: 1.5px solid var(--sp-rule);
 }
 
 .prassi-accordion-item:last-child {
@@ -293,11 +285,12 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0.85rem 1rem;
-  background: var(--white);
+  min-height: 56px;
+  padding: 0.85rem 1.25rem;
+  background: var(--sp-white);
   border: none;
   cursor: pointer;
-  font-family: var(--font-primary);
+  font-family: var(--font-display);
   font-size: var(--font-size-base);
   text-align: left;
   transition: background var(--transition-fast);
@@ -305,17 +298,17 @@
 }
 
 .prassi-accordion-header:hover {
-  background: var(--gray-light);
+  background: var(--sp-paper);
 }
 
 .prassi-accordion-header:focus-visible {
-  outline: 2px solid var(--accent-teal);
-  outline-offset: -2px;
+  outline: none;
+  box-shadow: inset 0 0 0 4px var(--sp-yellow);
 }
 
 .prassi-accordion-city {
-  font-weight: 600;
-  color: #1A1A1A;
+  font-weight: 700;
+  color: #141414;
   flex: 1;
 }
 
@@ -328,15 +321,15 @@
   padding: 0 0.4rem;
   font-size: var(--font-size-xs);
   font-weight: 700;
-  background: #FFD700;
-  color: #1A1A1A;
-  border: 1.5px solid #1A1A1A;
+  background: #FFD400;
+  color: #141414;
+  border: var(--border-chip) solid var(--sp-ink);
   border-radius: var(--radius-full);
 }
 
 .prassi-accordion-chevron {
   font-size: 0.85rem;
-  color: var(--gray-medium);
+  color: var(--sp-ink);
   transition: transform 0.2s ease;
 }
 
@@ -393,31 +386,29 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-xs);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  font-family: 'Inter', 'Inter Fallback', -apple-system, sans-serif;
-  font-size: 0.85rem;
+  min-height: 44px;
+  padding: 0.6rem var(--spacing-lg);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
   font-weight: 700;
-  border: 2px solid #1A1A1A;
-  border-radius: 8px;
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: var(--radius-pill);
   cursor: pointer;
-  transition: all 0.12s ease;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
   text-decoration: none;
-  box-shadow: 2.5px 2.5px 0 #1A1A1A;
-  background: #FFD700;
-  color: #1A1A1A;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  box-shadow: var(--sticker);
+  background: var(--sp-yellow);
+  color: var(--sp-ink);
 }
 
 .prassi-submit-btn:hover {
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0 #1A1A1A;
-  background: #FFEB3B;
+  transform: var(--sticker-lift);
+  box-shadow: var(--sticker-hover);
 }
 
 .prassi-submit-btn:active {
-  transform: translate(2px, 2px);
-  box-shadow: 0 0 0 #1A1A1A;
+  transform: var(--sticker-press);
+  box-shadow: var(--sticker-pressed);
 }
 
 /* -----------------------------------------------

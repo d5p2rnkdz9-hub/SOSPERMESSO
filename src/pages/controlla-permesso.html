@@ -8,7 +8,7 @@ description: "Come controllare se il tuo permesso di soggiorno è pronto: verifi
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">👀</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "cerca", size: 40 %}</span>
         <h1 class="page-title">Controlla se il tuo permesso di soggiorno è pronto</h1>
         <p class="section-subtitle">Verifica online lo stato della tua pratica</p>
       </div>
@@ -28,7 +28,7 @@ description: "Come controllare se il tuo permesso di soggiorno è pronto: verifi
           <li>Il tuo <strong>codice fiscale</strong></li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">🔗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "freccia", size: 26 %}</span>
           <div>
             <a href="https://www.portaleimmigrazione.it/ELI2ImmigrazioneWEB/Pagine/StartPage.aspx" target="_blank" class="btn btn-primary">
               Vai al Portale Immigrazione
@@ -47,7 +47,7 @@ description: "Come controllare se il tuo permesso di soggiorno è pronto: verifi
           <li><strong>Codice numerico</strong></li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">🔗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "freccia", size: 26 %}</span>
           <div>
             <a href="https://questure.poliziadistato.it/stranieri/" target="_blank" class="btn btn-primary">
               Vai al sito della Polizia di Stato
@@ -79,14 +79,14 @@ description: "Come controllare se il tuo permesso di soggiorno è pronto: verifi
       </div>
 
       <div class="alert alert-warning" style="margin-bottom: 2rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>Attenzione:</strong> Se la tua pratica risulta "in lavorazione" da molto tempo, contatta la Questura o un'associazione di aiuto per verificare che non ci siano problemi.
         </div>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Hai problemi a controllare la tua pratica?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -103,15 +103,15 @@ description: "Come controllare se il tuo permesso di soggiorno è pronto: verifi
       <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
       <div class="grid grid-3">
         <a href="kit-postale.html" class="card card-link card-compact">
-          <span class="card-icon">📩</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "kit-postale", size: 36 %}</span>
           <h3 class="card-title">Kit postale</h3>
         </a>
         <a href="documenti-questura.html" class="card card-link card-compact">
-          <span class="card-icon">📌</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">Documenti Questura</h3>
         </a>
         <a href="aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">Aiuto legale</h3>
         </a>
       </div>

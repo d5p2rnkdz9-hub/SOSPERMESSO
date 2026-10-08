@@ -1,0 +1,651 @@
+/* ===============================================
+   HOME — design system «Adesivo» (ott 2026)
+   Markup: _includes/components/home.liquid · testi: _data/home.js
+   Componenti: Stamp, TestCard, CategoryCard, GuideCard, ToolBlock.
+   =============================================== */
+
+.home-adesivo {
+  color: var(--sp-ink);
+}
+
+.ha-wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.home-adesivo a {
+  color: var(--sp-ink);
+  text-decoration: none;
+}
+
+.ha-h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.ha-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Stato «adesivo» condiviso dagli elementi cliccabili della home */
+.ha-testcard,
+.ha-guide,
+.ha-tool,
+.ha-link-pill,
+.ha-cat {
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.ha-testcard:focus-visible,
+.ha-guide:focus-visible,
+.ha-tool:focus-visible,
+.ha-link-pill:focus-visible {
+  outline: none;
+  box-shadow: var(--sticker), var(--focus-ring);
+}
+
+/* ── HERO ── */
+.ha-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--sp-yellow);
+  border-bottom: var(--border-print) solid var(--sp-ink);
+}
+
+.ha-hero-blob {
+  position: absolute;
+  inset-inline-end: -80px;
+  top: -80px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: var(--cat-protection);
+  border: var(--border-print) solid var(--sp-ink);
+}
+
+.ha-hero-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px 56px;
+  padding-top: 64px;
+  padding-bottom: 72px;
+}
+
+.ha-hero-text {
+  flex: 999 1 520px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.ha-hero-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 14px;
+  background: var(--sp-white);
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: var(--radius-pill);
+}
+
+.ha-hero-badge .ha-ok {
+  color: var(--state-success);
+  flex-shrink: 0;
+}
+
+.ha-h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  color: var(--sp-ink);
+}
+
+/* Stamp: parola chiave bianca su inchiostro, ruotata, senza punto né doppio bordo */
+.ha-stamp {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 22px 12px;
+  background: var(--sp-ink);
+  color: var(--sp-white);
+  border-radius: var(--radius-md);
+  transform: rotate(-5deg);
+  transform-origin: left center;
+  letter-spacing: -0.02em;
+}
+
+.ha-sub {
+  margin: 0;
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  max-width: 34rem;
+}
+
+.ha-tests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  max-width: 640px;
+  scroll-margin-top: 140px;
+}
+
+/* TestCard */
+.ha-testcard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 22px;
+  background: var(--sp-white);
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--sticker-md);
+}
+
+.ha-testcard:hover {
+  transform: var(--sticker-lift);
+  box-shadow: var(--sticker-md-hover);
+}
+
+.ha-testcard:active {
+  transform: var(--sticker-press);
+  box-shadow: var(--sticker-pressed);
+}
+
+.ha-testcard:focus-visible {
+  box-shadow: var(--sticker-md), var(--focus-ring);
+}
+
+.ha-testcard-q {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.ha-testcard-a {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.ha-hero-art {
+  flex: 1 1 340px;
+  min-width: 0;
+  max-width: 480px;
+  background: var(--sp-white);
+  border: var(--border-print) solid var(--sp-ink);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--sticker-lg);
+  overflow: hidden;
+  transform: rotate(1.5deg);
+}
+
+.ha-hero-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+/* ── SEZIONI ── */
+.ha-section {
+  padding: 64px 0 24px;
+}
+
+.ha-section .ha-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.ha-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ha-more-link {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: var(--sp-yellow) !important;
+  text-underline-offset: 5px;
+}
+
+/* ── CategoryCard ── */
+/* 4 colonne, 2×2 o 1: mai una scheda sola su una riga */
+.ha-cats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+@media (min-width: 1100px) {
+  .ha-cats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .ha-cats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ha-cat {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--sticker-md);
+}
+
+.ha-cat-head {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-bottom: var(--border-ui) solid var(--sp-ink);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.ha-cat-head:hover span {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+.ha-cat-list {
+  list-style: none;
+  margin: 0;
+  padding: 12px 14px 16px;
+}
+
+.ha-cat-list li {
+  margin: 0;
+}
+
+.home-adesivo .ha-cat-list a {
+  color: var(--sp-ink);
+  text-decoration: none;
+}
+
+.ha-cat-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.ha-cat-list a .icon {
+  flex-shrink: 0;
+}
+
+.ha-cat-list a:hover span {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.ha-cat--work { background: var(--cat-work-tint); }
+.ha-cat--work .ha-cat-head { background: var(--cat-work); }
+.ha-cat--protection { background: var(--cat-protection-tint); }
+.ha-cat--protection .ha-cat-head { background: var(--cat-protection); }
+.ha-cat--health { background: var(--cat-health-tint); }
+.ha-cat--health .ha-cat-head { background: var(--cat-health); }
+.ha-cat--family { background: var(--cat-family-tint); }
+.ha-cat--family .ha-cat-head { background: var(--cat-family); }
+
+/* ── GuideCard ── */
+.ha-guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.ha-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 150px;
+  padding: 20px;
+  background: var(--sp-white);
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--sticker);
+}
+
+.ha-guide:hover {
+  transform: var(--sticker-lift);
+  box-shadow: var(--sticker-hover);
+}
+
+.ha-guide:active {
+  transform: var(--sticker-press);
+  box-shadow: var(--sticker-pressed);
+}
+
+.ha-guide-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ha-chip {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: var(--border-chip) solid var(--sp-ink);
+  border-radius: var(--radius-sm);
+}
+
+.ha-chip--protection { background: var(--cat-protection); }
+.ha-chip--family { background: var(--cat-family); }
+.ha-chip--work { background: var(--cat-work); }
+.ha-chip--yellow { background: var(--sp-yellow); }
+
+.ha-soon {
+  margin-inline-start: auto;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: var(--border-chip) dashed var(--sp-ink);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.ha-guide-q {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.ha-guide-cta {
+  margin-top: auto;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--sp-yellow);
+  text-underline-offset: 4px;
+}
+
+/* ── ToolBlock ── */
+.ha-section--tools {
+  padding-top: 56px;
+}
+
+.ha-section--tools .ha-wrap {
+  gap: 22px;
+}
+
+.ha-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+}
+
+.ha-tool {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 28px;
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: 22px;
+  box-shadow: var(--sticker-block);
+}
+
+.ha-tool:hover {
+  transform: var(--sticker-lift);
+  box-shadow: var(--sticker-block-hover);
+}
+
+.ha-tool:focus-visible {
+  box-shadow: var(--sticker-block), var(--focus-ring);
+}
+
+.ha-tool--legal { background: var(--cat-health); }
+.ha-tool--dict { background: var(--cat-family); }
+
+.ha-tool-icon {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sp-white);
+  border: var(--border-ui) solid var(--sp-ink);
+  border-radius: 50%;
+}
+
+.ha-tool-text {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ha-tool-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.ha-tool-desc {
+  font-size: 17px;
+}
+
+.ha-tool-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.ha-tool-chips span {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 2px 10px;
+  background: var(--sp-white);
+  border: var(--border-chip) solid var(--sp-ink);
+  border-radius: var(--radius-pill);
+}
+
+.ha-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.ha-links-label {
+  color: var(--sp-muted);
+}
+
+.ha-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  background: var(--sp-white);
+  border: var(--border-chip) solid var(--sp-ink);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--sticker-sm);
+}
+
+.ha-link-pill:hover {
+  transform: var(--sticker-lift);
+  box-shadow: var(--sticker-sm-hover);
+}
+
+.ha-new {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--sp-red);
+  color: var(--sp-white);
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+}
+
+/* ── Riepilogo finale ── */
+.ha-section--final {
+  padding: 64px 0 88px;
+}
+
+.ha-final {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px 48px;
+  padding: clamp(24px, 4vw, 48px);
+  background: var(--sp-yellow);
+  border: var(--border-print) solid var(--sp-ink);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--sticker-final);
+}
+
+.ha-final-text {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ha-final-text p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.ha-tests--final {
+  flex: 999 1 480px;
+  max-width: none;
+}
+
+.ha-tests--final .ha-testcard-q {
+  font-size: 21px;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .ha-wrap {
+    padding: 0 16px;
+  }
+
+  .ha-hero-grid {
+    padding-top: 40px;
+    padding-bottom: 48px;
+    gap: 32px;
+  }
+
+  .ha-hero-blob {
+    width: 180px;
+    height: 180px;
+    inset-inline-end: -70px;
+    top: -70px;
+  }
+
+  .ha-sub {
+    font-size: 1.125rem;
+  }
+
+  .ha-tests {
+    grid-template-columns: 1fr;
+  }
+
+  .ha-hero-art {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .ha-section {
+    padding-top: 48px;
+  }
+
+  .ha-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .ha-tool {
+    padding: 22px;
+  }
+
+  .ha-tool-title {
+    font-size: 22px;
+  }
+
+  .ha-tests--final {
+    flex-basis: 100%;
+  }
+}
+
+/* RTL: il timbro ruota dall'altro lato, le frecce puntano a sinistra */
+[dir="rtl"] .ha-stamp {
+  transform: rotate(5deg);
+  transform-origin: right center;
+}
+
+[dir="rtl"] .ha-hero-art {
+  transform: rotate(-1.5deg);
+}
+
+[dir="rtl"] .ha-arrow,
+[dir="rtl"] .ha-cat-list .icon {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ha-testcard,
+  .ha-guide,
+  .ha-tool,
+  .ha-link-pill {
+    transition: none;
+  }
+}

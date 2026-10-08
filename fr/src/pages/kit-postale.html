@@ -7,7 +7,7 @@ lang: fr
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="index.html" style="color: var(--taxi-yellow-dark);">Accueil</a> →
+        <a href="index.html" class="link-ink">Accueil</a> →
         <span>Kit postal</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: fr
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">📩</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "kit-postale", size: 40 %}</span>
         <h1 class="page-title">Kit postal et autres formulaires</h1>
         <p class="section-subtitle">Téléchargez les formulaires nécessaires pour votre demande</p>
       </div>
@@ -32,7 +32,7 @@ lang: fr
         <p>C'est un document que vous déposez lorsque vous <strong>hébergez gratuitement une personne étrangère</strong> chez vous (par exemple un ami, un proche, quelqu'un que vous aidez). Il n'y a pas de loyer.</p>
         <p>Vous devez vous rendre à la Police (Poste de police ou Questura/Préfecture de police) <strong>dans les 48 heures</strong> suivant l'arrivée de la personne à votre domicile. Ils vous remettront un formulaire à remplir et tamponneront ensuite le document.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/10/dichiarazione_ospitalita_stranieri.pdf" target="_blank" class="btn btn-primary btn-sm">
               Télécharger le formulaire
@@ -47,7 +47,7 @@ lang: fr
         <p>C'est un document que vous déposez lorsque vous <strong>louez</strong> une maison ou une chambre à quelqu'un <strong>contre paiement</strong>. La personne vous paie un loyer pour vivre dans votre bien.</p>
         <p>Vous devez le soumettre à la Police locale (Police Municipale) ou au Poste de police <strong>dans les 48 heures</strong> suivant l'installation de la personne. C'est obligatoire par la loi pour les Italiens et les étrangers.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/09/modulo_cessione_fabbricato.pdf" target="_blank" class="btn btn-primary btn-sm">
               Télécharger le formulaire
@@ -61,7 +61,7 @@ lang: fr
         <h2>🏡 Déclaration de résidence</h2>
         <p>C'est le formulaire pour demander l'inscription au registre de la population (anagrafe) de la Mairie où vous habitez.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://dait.interno.gov.it/documenti/circ-009-servdemo-27-04-2012-modulo-residenza.pdf" target="_blank" class="btn btn-primary btn-sm">
               Télécharger le formulaire
@@ -93,7 +93,7 @@ lang: fr
           <li>Un bulletin de versement</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">⚠️</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div>
             <strong>Attention :</strong> Tous les permis ne se demandent pas avec le kit postal. Certains doivent être demandés directement à la Questura (Préfecture de police). Vérifiez sur la page du permis qui vous intéresse.
           </div>
@@ -101,7 +101,7 @@ lang: fr
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Avez-vous besoin d'aide avec les formulaires ?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -118,15 +118,15 @@ lang: fr
       <h2 class="text-center mb-lg">Cela pourrait aussi vous intéresser</h2>
       <div class="grid grid-3">
         <a href="documenti-questura.html" class="card card-link card-compact">
-          <span class="card-icon">📌</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">Documents de la Questura</h3>
         </a>
         <a href="controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Vérifier le permis</h3>
         </a>
         <a href="database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tous les permis</h3>
         </a>
       </div>

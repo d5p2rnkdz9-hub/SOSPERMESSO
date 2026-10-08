@@ -4,15 +4,15 @@
    =============================================== */
 
 /* Metric-adjusted local fallbacks for the async-loaded webfonts:
-   text first paints in Arial scaled to Inter/Poppins metrics, so the
-   swap to the real font doesn't reflow the page (CLS ≈ 0). */
+   text first paints in Arial scaled to Atkinson Hyperlegible/Poppins
+   metrics, so the swap to the real font doesn't reflow the page (CLS ≈ 0). */
 @font-face {
-  font-family: 'Inter Fallback';
+  font-family: 'Atkinson Fallback';
   src: local('Arial');
-  ascent-override: 90.20%;
-  descent-override: 22.48%;
+  ascent-override: 95.43%;
+  descent-override: 29.13%;
   line-gap-override: 0%;
-  size-adjust: 107.40%;
+  size-adjust: 99.55%;
 }
 
 @font-face {
@@ -25,54 +25,107 @@
 }
 
 :root {
-  /* Primary Colors - BRIGHTER & MORE VIBRANT */
-  --taxi-yellow: #FFD700;
-  --taxi-yellow-light: #FFF176;
-  --taxi-yellow-dark: #FFC107;
-  --taxi-yellow-bright: #FFEB3B;
+  /* ===== Design system «Adesivo» (ott 2026) — sorgente: tokens.json ===== */
+  --sp-yellow: #FFD400;
+  --sp-yellow-tint: #FFF4C2;
+  --sp-ink: #141414;
+  --sp-red: #D62828;
+  --sp-paper: #FFFDF5;
+  --sp-white: #FFFFFF;
+  --sp-muted: #5A5A5A;
+  --sp-rule: #E6E1D3;
 
-  /* Lighthouse Red - MORE VIBRANT */
-  --lighthouse-red: #FF5252;
-  --lighthouse-red-dark: #E02B2B;
-  --lighthouse-red-bright: #FF6B6B;
+  /* Categorie di permesso (testo sopra: sempre sp-ink) */
+  --cat-work: #4D9FFF;
+  --cat-work-tint: #E4F0FF;
+  --cat-protection: #FF8A3D;
+  --cat-protection-tint: #FFEBDD;
+  --cat-health: #22B8A0;
+  --cat-health-tint: #DCF5F0;
+  --cat-family: #A98BF5;
+  --cat-family-tint: #EEE8FE;
+
+  /* Stati */
+  --state-success: #1F9D55;
+  --state-success-tint: #E3F6EA;
+  --state-warning: #F5A300;
+  --state-warning-tint: #FFF4D6;
+  --state-error-tint: #FDE5E5;
+  --state-info: #2D7FF9;
+  --state-info-tint: #E4EEFF;
+  --badge-new: #4D9FFF;
+
+  /* Effetto adesivo: contorno + ombra piena */
+  --border-ui: 2.5px;
+  --border-chip: 2px;
+  --border-print: 3px;
+  /* --sx = direzione dell'ombra: 1 in LTR, -1 in RTL (rtl.css). In RTL
+     l'adesivo «cade» a sinistra e si solleva verso destra. */
+  --sx: 1;
+  --sticker-sm: calc(3px * var(--sx)) 3px 0 var(--sp-ink);
+  --sticker: calc(4px * var(--sx)) 4px 0 var(--sp-ink);
+  --sticker-md: calc(5px * var(--sx)) 5px 0 var(--sp-ink);
+  --sticker-lg: calc(9px * var(--sx)) 9px 0 var(--sp-ink);
+  --sticker-sm-hover: calc(6px * var(--sx)) 6px 0 var(--sp-ink);  /* sticker-sm + 3px */
+  --sticker-hover: calc(7px * var(--sx)) 7px 0 var(--sp-ink);     /* sticker + 3px */
+  --sticker-md-hover: calc(8px * var(--sx)) 8px 0 var(--sp-ink);  /* sticker-md + 3px */
+  --sticker-block: calc(6px * var(--sx)) 6px 0 var(--sp-ink);     /* blocchi strumenti */
+  --sticker-block-hover: calc(9px * var(--sx)) 9px 0 var(--sp-ink);
+  --sticker-final: calc(8px * var(--sx)) 8px 0 var(--sp-ink);     /* riepilogo finale */
+  --sticker-pressed: calc(1px * var(--sx)) 1px 0 var(--sp-ink);
+  --sticker-lift: translate(calc(-3px * var(--sx)), -3px);
+  --sticker-lift-sm: translate(calc(-2px * var(--sx)), -2px);
+  --sticker-press: translate(calc(3px * var(--sx)), 3px);
+  /* Anello giallo (design system) + filo nero esterno: resta visibile anche sui fondi gialli */
+  --focus-ring: 0 0 0 4px var(--sp-yellow), 0 0 0 7px var(--sp-ink);
+
+  /* ===== Variabili storiche, riallineate ai nuovi token ===== */
+  /* Primary */
+  --taxi-yellow: #FFD400;
+  --taxi-yellow-light: #FFF4C2;
+  --taxi-yellow-dark: #E6BF00;
+  --taxi-yellow-bright: #FFD400;
+
+  /* Lighthouse Red → sp-red (contrasto 6,8:1 con il bianco) */
+  --lighthouse-red: #D62828;
+  --lighthouse-red-dark: #B01F1F;
+  --lighthouse-red-bright: #D62828;
 
   /* Neutrals */
-  --black: #1A1A1A;
+  --black: #141414;
   --gray-dark: #2D2D2D;
-  --gray-medium: #757575;
-  --gray-light: #F5F5F5;
+  --gray-medium: #5A5A5A;
+  --gray-light: #F5F2E8;
   --white: #FFFFFF;
-  --off-white: #FAFAFA;
+  --off-white: #FFFDF5;
 
-  /* Accent Colors - BRIGHT & COLORFUL PALETTE */
-  --accent-blue: #42A5F5;
-  --accent-blue-bright: #64B5F6;
-  --accent-teal: #26A69A;
-  --accent-teal-bright: #4DB6AC;
-  --accent-orange: #FF9800;
-  --accent-orange-bright: #FFB74D;
-  --accent-purple: #AB47BC;
-  --accent-purple-bright: #BA68C8;
-  --accent-pink: #EC407A;
-  --accent-pink-bright: #F06292;
-  --accent-green: #66BB6A;
-  --accent-green-bright: #81C784;
+  /* Accenti → quattro colori di categoria */
+  --accent-blue: var(--cat-work);
+  --accent-blue-bright: var(--cat-work);
+  --accent-teal: var(--cat-health);
+  --accent-teal-bright: var(--cat-health);
+  --accent-orange: var(--cat-protection);
+  --accent-orange-bright: var(--cat-protection);
+  --accent-purple: var(--cat-family);
+  --accent-purple-bright: var(--cat-family);
+  --accent-pink: var(--cat-family);
+  --accent-pink-bright: var(--cat-family);
+  --accent-green: var(--state-success);
+  --accent-green-bright: var(--state-success);
+  --accent-teal-light: var(--cat-health-tint);
+  --accent-coral: var(--cat-protection);
+  --accent-coral-light: var(--cat-protection-tint);
+  --accent-mint: var(--state-success-tint);
 
-  /* Warm Palette Additions */
-  --accent-teal-light: #80CBC4;
-  --accent-coral: #FF7F7F;
-  --accent-coral-light: #FFA5A5;
-  --accent-mint: #A5D6A7;
-
-  /* Semantic Colors - BRIGHTER */
-  --success: #66BB6A;
-  --success-bright: #81C784;
-  --warning: #FFA726;
-  --warning-bright: #FFB74D;
-  --error: #EF5350;
-  --error-bright: #E57373;
-  --info: #42A5F5;
-  --info-bright: #64B5F6;
+  /* Semantic → stati */
+  --success: var(--state-success);
+  --success-bright: var(--state-success);
+  --warning: var(--state-warning);
+  --warning-bright: var(--state-warning);
+  --error: var(--sp-red);
+  --error-bright: var(--sp-red);
+  --info: var(--state-info);
+  --info-bright: var(--state-info);
 
   /* Spacing System */
   --spacing-xs: 0.5rem;
@@ -83,7 +136,9 @@
   --spacing-xxl: 4rem;
 
   /* Typography */
-  --font-primary: 'Inter', 'Inter Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-primary: 'Atkinson Hyperlegible', 'Atkinson Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: var(--font-primary);
+  --font-display: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
   --font-heading: 'Poppins', 'Poppins Fallback', var(--font-primary);
 
   --font-size-xs: 0.75rem;
@@ -97,9 +152,11 @@
   --font-size-5xl: 3rem;
 
   /* Border Radius */
-  --radius-sm: 0.5rem;
-  --radius-md: 1rem;
-  --radius-lg: 1.5rem;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
   --radius-full: 9999px;
 
   /* Shadows */
@@ -158,8 +215,23 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--black);
-  background-color: var(--white);
+  background-color: var(--sp-paper);
   overflow-x: hidden;
+}
+
+/* Testo corrente 17px su desktop, 16px su mobile (evita lo zoom di iOS) */
+@media (min-width: 769px) {
+  body {
+    font-size: 1.0625rem;
+  }
+}
+
+/* Focus da tastiera: anello giallo + contorno inchiostro, leggibile su ogni fondo.
+   I componenti «adesivo» lo sostituiscono con box-shadow (sticker + focus-ring). */
+:focus-visible {
+  outline: 3px solid var(--sp-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--sp-yellow);
 }
 
 /* ===============================================
@@ -202,15 +274,15 @@ a {
 }
 
 a:hover {
-  color: var(--taxi-yellow-dark);
+  color: inherit;
 }
 
 /* Content links - visible teal color with underline */
 .card a:not(.card-link):not(.btn),
-.alert a,
-p a,
-li a,
-.content a {
+.alert a:not(.btn),
+p a:not(.btn),
+li a:not(.btn),
+.content a:not(.btn) {
   color: #1A6B5F;
   text-decoration: underline;
   text-decoration-color: rgba(26, 107, 95, 0.3);
@@ -218,12 +290,13 @@ li a,
 }
 
 .card a:not(.card-link):not(.btn):hover,
-.alert a:hover,
-p a:hover,
-li a:hover,
-.content a:hover {
-  color: var(--taxi-yellow-dark);
-  text-decoration-color: var(--taxi-yellow-dark);
+.alert a:not(.btn):hover,
+p a:not(.btn):hover,
+li a:not(.btn):hover,
+.content a:not(.btn):hover {
+  color: var(--sp-ink);
+  text-decoration-color: var(--sp-yellow);
+  text-decoration-thickness: 3px;
 }
 
 strong {

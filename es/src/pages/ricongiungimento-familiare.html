@@ -7,7 +7,7 @@ lang: es
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="index.html" style="color: var(--taxi-yellow-dark);">Inicio</a> →
+        <a href="index.html" class="link-ink">Inicio</a> →
         <span>Reunificación familiar</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: es
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🧑‍🤝‍🧑</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "famiglia", size: 40 %}</span>
         <h1 class="page-title">Guía de la reunificación familiar</h1>
         <p class="section-subtitle">Cómo traer a tu familia a Italia</p>
       </div>
@@ -71,7 +71,7 @@ lang: es
         </ul>
         <p>👉 Cuantas más personas quieras traer, más alto debe ser tu ingreso.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>Si has obtenido el <a href="permesso-asilo-status-rifugiato.html">status di rifugiato</a> o la <a href="permesso-protezione-sussidiaria.html">protezione sussidiaria</a>, para el ricongiungimento familiare NO necesitas demostrar que tienes un salario mínimo como los demás extranjeros.</div>
         </div>
       </div>
@@ -84,7 +84,7 @@ lang: es
           <li>Una copia del <strong>contrato de alquiler</strong> o del documento que certifique que la casa es tuya</li>
         </ul>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">💡</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
           <div>Si has obtenido el <a href="permesso-asilo-status-rifugiato.html">status di rifugiato</a> o la <a href="permesso-protezione-sussidiaria.html">protezione sussidiaria</a>, para el ricongiungimento familiare NO necesitas demostrar que tienes una casa grande como los demás extranjeros.</div>
         </div>
       </div>
@@ -126,7 +126,7 @@ lang: es
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           ¿Tienes más preguntas sobre el ricongiungimento familiare?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -143,15 +143,15 @@ lang: es
       <h2 class="text-center mb-lg">También te puede interesar</h2>
       <div class="grid grid-3">
         <a href="permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">🧑‍🤝‍🧑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Permiso por ricongiungimento</h3>
         </a>
         <a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html" class="card card-link card-compact">
-          <span class="card-icon">💑</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "famiglia", size: 36 %}</span>
           <h3 class="card-title">Coesione familiare</h3>
         </a>
         <a href="database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Todos los permisos</h3>
         </a>
       </div>

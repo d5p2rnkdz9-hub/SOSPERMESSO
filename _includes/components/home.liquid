@@ -1,0 +1,169 @@
+{%- comment -%}
+  Home condivisa da tutte le 11 lingue (design system «Adesivo», approvato ott 2026).
+  Testi: _data/home.js (IT fonte; le chiavi mancanti in una lingua ricadono sull'IT).
+  Stili: src/styles/home.css (caricato da base.liquid quando la pagina ha homePage: true).
+  I link relativi (database.html, permesso-*.html, …) restano nella cartella della lingua.
+{%- endcomment -%}
+{%- assign t = home[lang] | default: home.it -%}
+{%- assign ti = home.it -%}
+{%- case lang -%}
+  {%- when "en" -%}{%- assign plist = permitsEn -%}
+  {%- when "fr" -%}{%- assign plist = permitsFr -%}
+  {%- when "es" -%}{%- assign plist = permitsEs -%}
+  {%- when "tr" -%}{%- assign plist = permitsTr -%}
+  {%- when "ru" -%}{%- assign plist = permitsRu -%}
+  {%- when "bn" -%}{%- assign plist = permitsBn -%}
+  {%- when "ar" -%}{%- assign plist = permitsAr -%}
+  {%- when "ur" -%}{%- assign plist = permitsUr -%}
+  {%- when "fa" -%}{%- assign plist = permitsFa -%}
+  {%- when "zh" -%}{%- assign plist = permitsZh -%}
+  {%- else -%}{%- assign plist = permits -%}
+{%- endcase -%}
+{%- assign appNo = "https://app.sospermesso.it" -%}
+{%- assign appHave = "https://app.sospermesso.it/it/tree/rinnovo-conversione" -%}
+
+<div class="home-adesivo">
+
+  <!-- HERO -->
+  <section class="ha-hero">
+    <span class="ha-hero-blob" aria-hidden="true"></span>
+    <div class="ha-wrap ha-hero-grid">
+      <div class="ha-hero-text">
+        <span class="ha-hero-badge">{% render "components/icon.liquid", name: "spunta", size: 16, stroke: 3, class: "ha-ok" %}{{ t.badge | default: ti.badge }}</span>
+        <h1 class="ha-h1">{{ t.lead | default: ti.lead }} <span class="ha-stamp">{{ t.stamp | default: ti.stamp }}</span></h1>
+        <p class="ha-sub">{{ t.sub | default: ti.sub }}</p>
+        <div class="ha-tests" id="test">
+          <a href="{{ appNo }}" class="ha-testcard">
+            <span class="ha-eyebrow">{{ t.test.noEyebrow | default: ti.test.noEyebrow }}</span>
+            <span class="ha-testcard-q">{{ t.test.noQ | default: ti.test.noQ }} <span class="ha-arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a href="{{ appHave }}" class="ha-testcard">
+            <span class="ha-eyebrow">{{ t.test.haveEyebrow | default: ti.test.haveEyebrow }}</span>
+            <span class="ha-testcard-q">{{ t.test.haveQ | default: ti.test.haveQ }} <span class="ha-arrow" aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="ha-hero-art">
+        <picture>
+          <source srcset="/IMAGES/hero-illustration-520.webp 520w, /IMAGES/hero-illustration-1040.webp 1040w" sizes="(max-width: 768px) 300px, 480px" type="image/webp">
+          <img src="/IMAGES/hero-illustration-1200.png" alt="{{ t.heroAlt | default: ti.heroAlt }}" width="1200" height="800" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- TROVA IL TUO PERMESSO -->
+  <section class="ha-section" id="informazioni">
+    <div class="ha-wrap">
+      <div class="ha-section-head">
+        <h2 class="ha-h2">{{ t.findTitle | default: ti.findTitle }}</h2>
+        <a href="database.html" class="ha-more-link">{{ t.seeAll | default: ti.seeAll }}</a>
+      </div>
+      <div class="ha-cats">
+        {%- assign catKeys = "work,protection,health,family" | split: "," -%}
+        {%- for ck in catKeys -%}
+          {%- case ck -%}
+            {%- when "work" -%}{%- assign dbcat = "studio-lavoro" -%}{%- assign cicon = "lavoro" -%}
+            {%- when "protection" -%}{%- assign dbcat = "protezione" -%}{%- assign cicon = "protezione" -%}
+            {%- when "health" -%}{%- assign dbcat = "cure-mediche" -%}{%- assign cicon = "cure-mediche" -%}
+            {%- else -%}{%- assign dbcat = "famiglia" -%}{%- assign cicon = "famiglia" -%}
+          {%- endcase %}
+        <div class="ha-cat ha-cat--{{ ck }}">
+          <a href="database.html?cat={{ dbcat }}" class="ha-cat-head">
+            {% render "components/icon.liquid", name: cicon, size: 30 %}
+            <span>{{ t.cats[ck] | default: ti.cats[ck] }}</span>
+          </a>
+          <ul class="ha-cat-list">
+            {%- for item in ti.catItems[ck] -%}
+              {%- assign slug = item[0] -%}
+              {%- if lang == "it" -%}
+                {%- assign label = item[1] -%}
+              {%- else -%}
+                {%- assign p = plist | where: "slug", slug | first -%}
+                {%- assign label = p.tipo | split: " (" | first | split: "（" | first -%}
+              {%- endif -%}
+              {%- if label %}
+            <li><a href="permesso-{{ slug }}.html">{% render "components/icon.liquid", name: "chevron", size: 16, stroke: 3 %}<span>{{ label }}</span></a></li>
+              {%- endif -%}
+            {%- endfor %}
+          </ul>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDE PASSO PASSO -->
+  <section class="ha-section">
+    <div class="ha-wrap">
+      <h2 class="ha-h2">{{ t.guidesTitle | default: ti.guidesTitle }}</h2>
+      <div class="ha-guides">
+        {%- assign guides = t.guides | default: ti.guides -%}
+        {%- for g in guides %}
+        <a href="{{ g.href }}" class="ha-guide">
+          {%- if g.tag or g.soon %}
+          <span class="ha-guide-top">
+            {%- if g.tag %}<span class="ha-chip ha-chip--{{ g.color }}">{{ g.tag }}</span>{% endif -%}
+            {%- if g.soon %}<span class="ha-soon">{{ t.soon | default: ti.soon }}</span>{% endif -%}
+          </span>
+          {%- endif %}
+          <span class="ha-guide-q">{{ g.q }}</span>
+          <span class="ha-guide-cta">{% if g.cta %}{{ g.cta }}{% else %}<span aria-hidden="true">→</span>{% endif %}</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- STRUMENTI: aiuto legale + dizionario -->
+  <section class="ha-section ha-section--tools">
+    <div class="ha-wrap">
+      <div class="ha-tools">
+        <a href="aiuto-legale.html" class="ha-tool ha-tool--legal">
+          <span class="ha-tool-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
+          <span class="ha-tool-text">
+            <span class="ha-tool-title">{{ t.legal.title | default: ti.legal.title }}</span>
+            <span class="ha-tool-desc">{{ t.legal.desc | default: ti.legal.desc }}</span>
+          </span>
+        </a>
+        <a href="dizionario.html" class="ha-tool ha-tool--dict">
+          <span class="ha-tool-icon">{% render "components/icon.liquid", name: "dizionario", size: 36 %}</span>
+          <span class="ha-tool-text">
+            <span class="ha-tool-title">{{ t.dict.title | default: ti.dict.title }}</span>
+            <span class="ha-tool-desc">{{ t.dict.desc | default: ti.dict.desc }}</span>
+            <span class="ha-tool-chips" lang="it"><span>Cedolino</span><span>Nulla osta</span><span>Conversione</span></span>
+          </span>
+        </a>
+      </div>
+      <div class="ha-links">
+        <span class="ha-links-label">{{ t.more.label | default: ti.more.label }}</span>
+        <a href="/circolari.html" class="ha-link-pill">{{ t.more.circolari | default: ti.more.circolari }}</a>
+        <a href="/normativa.html" class="ha-link-pill">{{ t.more.normativa | default: ti.more.normativa }}</a>
+        <a href="https://www.sospatto.it" class="ha-link-pill" target="_blank" rel="noopener">{{ t.more.patto | default: ti.more.patto }}{% if t.more.nuovo %} <span class="ha-new">{{ t.more.nuovo }}</span>{% endif %}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIEPILOGO FINALE -->
+  <section class="ha-section ha-section--final">
+    <div class="ha-wrap">
+      <div class="ha-final">
+        <div class="ha-final-text">
+          <h2 class="ha-h2">{{ t.final.title | default: ti.final.title }}</h2>
+          <p>{{ t.final.sub | default: ti.final.sub }}</p>
+        </div>
+        <div class="ha-tests ha-tests--final">
+          <a href="{{ appNo }}" class="ha-testcard">
+            <span class="ha-testcard-q">{{ t.final.noTitle | default: ti.final.noTitle }}</span>
+            <span class="ha-testcard-a">{{ t.final.noAction | default: ti.final.noAction }}</span>
+          </a>
+          <a href="{{ appHave }}" class="ha-testcard">
+            <span class="ha-testcard-q">{{ t.final.haveTitle | default: ti.final.haveTitle }}</span>
+            <span class="ha-testcard-a">{{ t.final.haveAction | default: ti.final.haveAction }}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

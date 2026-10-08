@@ -25,10 +25,10 @@ extraStyles: |
     /* ── MAIN CONTAINER (brutalist) ── */
     .docq-container {
       background: white;
-      border: 2.5px solid #1A1A1A;
+      border: 2.5px solid #141414;
       border-radius: 16px;
       padding: 0;
-      box-shadow: 4px 4px 0 #1A1A1A;
+      box-shadow: 4px 4px 0 #141414;
       max-width: 900px;
       margin: 0 auto;
       overflow: hidden;
@@ -43,7 +43,7 @@ extraStyles: |
       letter-spacing: 1.5px;
       padding: 0.6rem 1rem;
       margin-bottom: 0;
-      color: #1A1A1A;
+      color: #141414;
       border-bottom: 2px solid #eee;
       background: #fafafa;
     }
@@ -65,7 +65,7 @@ extraStyles: |
       transition: background 0.12s;
     }
     .docq-row:hover {
-      background: rgba(255, 215, 0, 0.05);
+      background: rgba(255, 212, 0, 0.05);
     }
 
     .docq-main {
@@ -78,10 +78,10 @@ extraStyles: |
     }
     .docq-main .icon { font-size: 1.1rem; flex-shrink: 0; }
     .docq-main .title {
-      font-family: 'Inter', 'Inter Fallback', -apple-system, sans-serif;
+      font-family: var(--font-primary);
       font-weight: 500;
       font-size: 0.85rem;
-      color: #1A1A1A;
+      color: #141414;
     }
 
     /* ── BUTTONS (brutalist) ── */
@@ -97,23 +97,23 @@ extraStyles: |
       justify-content: center;
       padding: 0.22rem 0.55rem;
       border-radius: 6px;
-      font-family: 'Inter', 'Inter Fallback', sans-serif;
+      font-family: var(--font-primary);
       font-size: 0.62rem;
       font-weight: 700;
       text-decoration: none;
       transition: all 0.12s ease;
-      border: 1.5px solid #1A1A1A;
-      box-shadow: 1.5px 1.5px 0 #1A1A1A;
+      border: 1.5px solid #141414;
+      box-shadow: 1.5px 1.5px 0 #141414;
       white-space: nowrap;
       text-transform: uppercase;
       letter-spacing: 0.3px;
       background: white;
-      color: #1A1A1A;
+      color: #141414;
     }
     .docq-btn:hover {
       transform: translate(1px, 1px);
-      box-shadow: 0.5px 0.5px 0 #1A1A1A;
-      background: #FFD700;
+      box-shadow: 0.5px 0.5px 0 #141414;
+      background: #FFD400;
     }
 
     .docq-badge-wip {
@@ -122,7 +122,7 @@ extraStyles: |
       justify-content: center;
       padding: 0.22rem 0.55rem;
       border-radius: 6px;
-      font-family: 'Inter', 'Inter Fallback', sans-serif;
+      font-family: var(--font-primary);
       font-size: 0.62rem;
       font-weight: 700;
       white-space: nowrap;
@@ -130,7 +130,7 @@ extraStyles: |
       letter-spacing: 0.3px;
       border: 1.5px dashed #bbb;
       background: #f9f9f9;
-      color: #bbb;
+      color: var(--sp-muted);
     }
 
     /* ── SEARCH + FILTER ── */
@@ -143,24 +143,24 @@ extraStyles: |
       align-items: center;
       gap: 0.75rem;
       background: white;
-      border: 2px solid #1A1A1A;
+      border: 2px solid #141414;
       border-radius: 12px;
       padding: 0.75rem 1rem;
       margin-bottom: 1rem;
-      box-shadow: 3px 3px 0 #1A1A1A;
+      box-shadow: 3px 3px 0 #141414;
     }
     .docq-search-bar:focus-within {
-      border-color: #FFD700;
-      box-shadow: 3px 3px 0 #FFD700;
+      border-color: #FFD400;
+      box-shadow: 3px 3px 0 #FFD400;
     }
     .docq-search-bar .search-icon { font-size: 1.1rem; flex-shrink: 0; }
     .docq-search-input {
       flex: 1; border: none; outline: none;
-      font-size: 0.95rem; font-family: 'Inter', 'Inter Fallback', sans-serif;
-      color: #1A1A1A; background: transparent;
+      font-size: 0.95rem; font-family: var(--font-primary);
+      color: #141414; background: transparent;
     }
     .docq-search-input::placeholder { color: #bbb; }
-    .docq-search-count { font-size: 0.78rem; color: #999; white-space: nowrap; flex-shrink: 0; }
+    .docq-search-count { font-size: 0.78rem; color: var(--sp-muted); white-space: nowrap; flex-shrink: 0; }
 
     .docq-filters {
       display: grid;
@@ -170,20 +170,20 @@ extraStyles: |
     .docq-filter-badge {
       display: flex; align-items: center; justify-content: center;
       gap: 0.5rem; padding: 0.85rem 1rem;
-      border-radius: 10px; border: 2.5px solid #1A1A1A;
+      border-radius: 10px; border: 2.5px solid #141414;
       background: white; font-family: 'Poppins', 'Poppins Fallback', sans-serif;
-      font-size: 0.88rem; font-weight: 700; color: #1A1A1A;
+      font-size: 0.88rem; font-weight: 700; color: #141414;
       cursor: pointer; transition: all 0.12s ease;
-      box-shadow: 3px 3px 0 #1A1A1A;
+      box-shadow: 3px 3px 0 #141414;
     }
     .docq-filter-badge:hover {
       transform: translate(1.5px, 1.5px);
-      box-shadow: 1.5px 1.5px 0 #1A1A1A;
+      box-shadow: 1.5px 1.5px 0 #141414;
     }
     .docq-filter-badge.active {
-      background: #FFD700;
+      background: #FFD400;
       transform: translate(3px, 3px);
-      box-shadow: 0 0 0 #1A1A1A;
+      box-shadow: 0 0 0 #141414;
     }
     .docq-filter-badge .badge-emoji { font-size: 1.15rem; }
 
@@ -207,7 +207,7 @@ extraStyles: |
       .docq-filters { gap: 0.5rem; }
       .docq-filter-badge {
         padding: 0.7rem 0.75rem; font-size: 0.8rem;
-        box-shadow: 2.5px 2.5px 0 #1A1A1A;
+        box-shadow: 2.5px 2.5px 0 #141414;
       }
       .docq-filter-badge.active { transform: translate(2.5px, 2.5px); }
     }
@@ -218,29 +218,29 @@ extraStyles: |
   <section class="section bg-off-white">
     <div class="container">
       <div class="docq-page-header">
-        <span class="page-icon">📋</span>
+        <span class="page-icon">{% render "components/icon.liquid", name: "documenti", size: 40 %}</span>
         <h1 class="page-title">Che documenti porto?</h1>
       </div>
 
       <!-- SEARCH + FILTER -->
       <div class="docq-search-wrap">
         <div class="docq-search-bar">
-          <span class="search-icon">🔍</span>
+          <span class="search-icon">{% render "components/icon.liquid", name: "cerca", size: 22 %}</span>
           <input type="text" class="docq-search-input" placeholder="Cerca un permesso..." autocomplete="off">
           <span class="docq-search-count"></span>
         </div>
         <div class="docq-filters">
           <button class="docq-filter-badge" data-filter="studio-lavoro">
-            <span class="badge-emoji">📋</span> Studio / Lavoro
+            <span class="badge-emoji">{% render "components/icon.liquid", name: "documenti", size: 20 %}</span> Studio / Lavoro
           </button>
           <button class="docq-filter-badge" data-filter="protezione">
-            <span class="badge-emoji">🛡️</span> Protezione
+            <span class="badge-emoji">{% render "components/icon.liquid", name: "protezione", size: 20 %}</span> Protezione
           </button>
           <button class="docq-filter-badge" data-filter="cure-mediche">
-            <span class="badge-emoji">🏥</span> Cure Mediche
+            <span class="badge-emoji">{% render "components/icon.liquid", name: "cure-mediche", size: 20 %}</span> Cure Mediche
           </button>
           <button class="docq-filter-badge" data-filter="famiglia">
-            <span class="badge-emoji">👨‍👩‍👧</span> Famiglia
+            <span class="badge-emoji">{% render "components/icon.liquid", name: "famiglia", size: 20 %}</span> Famiglia
           </button>
         </div>
       </div>
@@ -260,10 +260,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
@@ -284,10 +284,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
@@ -308,10 +308,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
@@ -332,10 +332,10 @@ extraStyles: |
             </a>
             <div class="docq-actions">
               {% if p.isPlaceholder == true %}
-                <span class="docq-badge-wip">🚧 In costruzione</span>
+                <span class="docq-badge-wip">In costruzione</span>
               {% else %}
-                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
-                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">🚧 In costruzione</span>{% endif %}
+                {% if p.primoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-primo.html" class="docq-btn">Primo rilascio</a>{% else %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
+                {% if p.rinnovoDocuments.size > 0 %}<a href="documenti-{{ p.slug }}-rinnovo.html" class="docq-btn">Rinnovo</a>{% elsif p.rinnovoNotApplicable != true %}<span class="docq-badge-wip">In costruzione</span>{% endif %}
               {% endif %}
             </div>
           </div></li>
@@ -429,15 +429,15 @@ extraStyles: |
       <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
       <div class="grid grid-3">
         <a href="database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tutti i permessi</h3>
         </a>
         <a href="dizionario.html" class="card card-link card-compact">
-          <span class="card-icon">📖</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "dizionario", size: 36 %}</span>
           <h3 class="card-title">Dizionario</h3>
         </a>
         <a href="https://app.sospermesso.it" class="card card-link card-compact" target="_blank" rel="noopener">
-          <span class="card-icon">🧪</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Posso avere un permesso?</h3>
         </a>
       </div>

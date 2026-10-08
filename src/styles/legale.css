@@ -28,7 +28,7 @@
   font-size: 2rem;
   font-weight: 800;
   margin: 0 0 0.4rem;
-  color: var(--black, #1A1A1A);
+  color: var(--black, #141414);
 }
 
 .leg-header .leg-subtitle {
@@ -40,7 +40,7 @@
 /* Avviso "per operatori" */
 .leg-disclaimer {
   background: #FFFDF0;
-  border: 2px solid var(--black, #1A1A1A);
+  border: 2px solid var(--black, #141414);
   border-radius: 12px;
   padding: 0.9rem 1.1rem;
   margin: 0 0 1.5rem;
@@ -51,9 +51,9 @@
 /* ── Barra filtri ── */
 .leg-filters {
   background: white;
-  border: 2.5px solid var(--black, #1A1A1A);
+  border: 2.5px solid var(--black, #141414);
   border-radius: 14px;
-  box-shadow: 4px 4px 0 var(--black, #1A1A1A);
+  box-shadow: 4px 4px 0 var(--black, #141414);
   padding: 1rem;
   margin-bottom: 1.5rem;
   display: grid;
@@ -74,17 +74,17 @@
 .leg-filters select {
   width: 100%;
   padding: 0.55rem 0.7rem;
-  border: 2px solid var(--black, #1A1A1A);
+  border: 2px solid var(--black, #141414);
   border-radius: 8px;
   font: inherit;
   font-size: 16px; /* evita zoom iOS */
   background: white;
-  color: var(--black, #1A1A1A);
+  color: var(--black, #141414);
 }
 
 .leg-filters input[type="search"]:focus,
 .leg-filters select:focus {
-  outline: 3px solid var(--taxi-yellow, #FFD700);
+  outline: 3px solid var(--taxi-yellow, #FFD400);
   outline-offset: 1px;
 }
 
@@ -106,7 +106,7 @@
   height: 18px;
   min-width: 18px;
   margin: 0;
-  accent-color: var(--black, #1A1A1A);
+  accent-color: var(--black, #141414);
   cursor: pointer;
 }
 
@@ -134,7 +134,7 @@
 
 .leg-item {
   background: white;
-  border: 2px solid var(--black, #1A1A1A);
+  border: 2px solid var(--black, #141414);
   border-radius: 12px;
   padding: 0.9rem 1.1rem;
   box-shadow: var(--shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.1));
@@ -157,10 +157,10 @@
   letter-spacing: 0.8px;
   font-size: 0.68rem;
   padding: 0.15rem 0.5rem;
-  border: 1.5px solid var(--black, #1A1A1A);
+  border: 1.5px solid var(--black, #141414);
   border-radius: 6px;
   background: var(--gray-light, #F5F5F5);
-  color: var(--black, #1A1A1A);
+  color: var(--black, #141414);
 }
 
 .leg-badge--sentenza { background: #E8F1FB; }
@@ -178,13 +178,13 @@
   font-size: 1rem;
   line-height: 1.4;
   margin: 0 0 0.25rem;
-  color: var(--black, #1A1A1A);
+  color: var(--black, #141414);
 }
 
 .leg-item-title a {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--taxi-yellow-dark, #FFC107);
+  text-decoration-color: var(--taxi-yellow-dark, #E6BF00);
   text-underline-offset: 2px;
 }
 
@@ -217,9 +217,9 @@
 }
 
 .leg-permit-chip:hover {
-  border-color: var(--black, #1A1A1A);
+  border-color: var(--black, #141414);
   background: var(--taxi-yellow-light, #FFF176);
-  color: var(--black, #1A1A1A);
+  color: var(--black, #141414);
 }
 
 .leg-more {
@@ -228,16 +228,16 @@
   padding: 0.7rem 1.6rem;
   font: inherit;
   font-weight: 700;
-  background: var(--taxi-yellow, #FFD700);
-  border: 2.5px solid var(--black, #1A1A1A);
+  background: var(--taxi-yellow, #FFD400);
+  border: 2.5px solid var(--black, #141414);
   border-radius: 10px;
-  box-shadow: 3px 3px 0 var(--black, #1A1A1A);
+  box-shadow: 3px 3px 0 var(--black, #141414);
   cursor: pointer;
 }
 
 .leg-more:hover {
   transform: translate(1px, 1px);
-  box-shadow: 2px 2px 0 var(--black, #1A1A1A);
+  box-shadow: 2px 2px 0 var(--black, #141414);
 }
 
 .leg-empty {
@@ -253,7 +253,7 @@
   font-weight: 700;
   margin: 2rem 0 0.9rem;
   padding-bottom: 0.4rem;
-  border-bottom: 3px solid var(--taxi-yellow, #FFD700);
+  border-bottom: 3px solid var(--taxi-yellow, #FFD400);
 }
 
 .leg-backlinks {
@@ -265,7 +265,7 @@
 }
 
 .leg-backlinks a {
-  color: var(--black, #1A1A1A);
+  color: var(--black, #141414);
   text-decoration: underline;
   text-underline-offset: 2px;
 }

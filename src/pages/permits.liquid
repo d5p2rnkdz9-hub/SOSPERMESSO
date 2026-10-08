@@ -33,14 +33,14 @@ eleventyExcludeFromCollections: true
   <div class="permit-sticky-header" id="permit-tab-bar">
     <div class="container">
       <div class="permit-title-row">
-        <span class="permit-title-emoji">{{ permit.emoji }}</span>
+        {%- assign itPermit = permits | where: "slug", permit.slug | first -%}{%- case itPermit.categoria -%}{%- when "Studio/Lavoro" -%}{%- assign catIcon = "lavoro" -%}{%- when "Protezione" -%}{%- assign catIcon = "protezione" -%}{%- when "Cure Mediche" -%}{%- assign catIcon = "cure-mediche" -%}{%- when "Motivi Familiari" -%}{%- assign catIcon = "famiglia" -%}{%- else -%}{%- assign catIcon = "documenti" -%}{%- endcase -%}<span class="permit-title-emoji">{% render "components/icon.liquid", name: catIcon, size: 28 %}</span>
         <h1 class="permit-title-text">Permesso per {{ permit.tipo }}</h1>
       </div>
       {% unless permit.isPlaceholder == true %}
       {%- comment -%} Prassi shortcut lives in the documents CTA card; keep the badge only when that card doesn't render (permits with no document lists) {%- endcomment -%}
       {% if permit.primoDocuments.size == 0 and permit.rinnovoDocuments.size == 0 %}
       <div class="permit-tab-badges" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; padding: 0.5rem 0 0.75rem;">
-        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">📍 Prassi locali</a>
+        <a href="#prassi-locali" class="tab-badge tab-badge-prassi" onclick="return scrollToSection('prassi-locali')">{% render "components/icon.liquid", name: "questura", size: 20 %} Prassi locali</a>
       </div>
       {% endif %}
       {% endunless %}
@@ -122,7 +122,7 @@ eleventyExcludeFromCollections: true
   <section class="section">
     <div class="container" style="max-width: 900px;">
       <div class="card text-center" style="padding: 3rem;">
-        <span style="font-size: 4rem;">{{ permit.emoji }}</span>
+        <span class="placeholder-icon">{% render "components/icon.liquid", name: "documenti", size: 64 %}</span>
         <h2 style="margin: 1rem 0;">Contenuto in arrivo</h2>
         <p style="color: var(--gray-medium); max-width: 500px; margin: 0 auto 1.5rem;">
           Stiamo ancora lavorando per completare le informazioni
@@ -211,13 +211,13 @@ eleventyExcludeFromCollections: true
         {% endif %}
 
         {% if proScheda.sentenze.size > 0 %}
-        <h3>⚖️ Giurisprudenza essenziale</h3>
+        <h3>{% render "components/icon.liquid", name: "aiuto-legale", size: 22 %} Giurisprudenza essenziale</h3>
         <div class="pro-sentenze">
           {% for s in proScheda.sentenze %}
           <div class="pro-sentenza">
             <p class="pro-sentenza-head"><strong>{{ s.corte }}, {{ s.estremi }}</strong><span>{{ s.data }}</span></p>
             <p class="pro-sentenza-massima">{{ s.massima | slice: 0, 140 }}{% if s.massima.size > 140 %}<span class="pro-blur" aria-hidden="true">{{ s.massima | slice: 140, 400 }}</span>{% endif %}</p>
-            <button type="button" class="pro-lock-btn" disabled title="Disponibile con l'abbonamento PRO (in arrivo)">🔒 Massima integrale e rilevanza operativa — PRO</button>
+            <button type="button" class="pro-lock-btn" disabled title="Disponibile con l'abbonamento PRO (in arrivo)">Massima integrale e rilevanza operativa — PRO</button>
           </div>
           {% endfor %}
         </div>
@@ -246,7 +246,7 @@ eleventyExcludeFromCollections: true
         {%- endfor -%}
         {%- endcapture -%}
         {% if circolariCollegate != '' %}
-        <h3>📄 Circolari collegate a questo permesso</h3>
+        <h3>{% render "components/icon.liquid", name: "documenti", size: 22 %} Circolari collegate a questo permesso</h3>
         <ul class="pro-refs">{{ circolariCollegate }}</ul>
         <p><a href="circolari-db.html">Cerca tra tutte le circolari →</a></p>
         {% endif %}
@@ -262,7 +262,7 @@ eleventyExcludeFromCollections: true
     <div class="container" style="max-width: 900px;">
       {% for section in permit.sections %}
       <!-- Section {{ forloop.index }}: {{ section.question }} -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid {{ forloop.index0 | getSectionBorderColor: section.question }};">
+      <div class="card qa-card">
         <h2>{{ section.question }}</h2>
         {{ section.content }}
       </div>
@@ -275,27 +275,27 @@ eleventyExcludeFromCollections: true
   <!-- SECTION: PRIMO RILASCIO -->
   <section id="primo" class="section bg-off-white">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 1.5rem;">📋 Primo rilascio</h2>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">{% render "components/icon.liquid", name: "documenti", size: 30 %} Primo rilascio</h2>
 
       <!-- SUBMISSION METHOD CALLOUT -->
       {%- assign primoMethodLower = permit.primoMethod | downcase -%}
       {%- if primoMethodLower contains 'kit' -%}
         {%- assign primoCalloutClass = 'callout-kit' -%}
-        {%- assign primoCalloutIcon = '📮' -%}
+        {%- assign primoCalloutIcon = 'kit-postale' -%}
         {%- assign primoCalloutText = 'Invia tramite KIT alle Poste (non devi andare in Questura)' -%}
       {%- else -%}
         {%- assign primoCalloutClass = 'callout-questura' -%}
-        {%- assign primoCalloutIcon = '🏛️' -%}
+        {%- assign primoCalloutIcon = 'questura' -%}
         {%- assign primoCalloutText = 'Porta i documenti in Questura (non puoi usare il KIT postale)' -%}
       {%- endif -%}
       <div class="submission-callout {{ primoCalloutClass }}" style="margin-bottom: 1.5rem;">
-        <span class="callout-icon">{{ primoCalloutIcon }}</span>
+        <span class="callout-icon">{% render "components/icon.liquid", name: primoCalloutIcon, size: 28 %}</span>
         <div class="callout-text">{{ primoCalloutText }}</div>
       </div>
 
       <!-- CHECKLIST -->
       <div class="card">
-        <h3>📋 Documenti necessari</h3>
+        <h3 class="checklist-title">Documenti necessari</h3>
         <p class="checklist-intro">Spunta i documenti che hai già preparato. I tuoi progressi vengono salvati automaticamente.</p>
 
         <div class="doc-checklist" data-permit="{{ permit.slug }}-primo">
@@ -304,13 +304,13 @@ eleventyExcludeFromCollections: true
             {%- assign docClass = normalizedDoc | getDocumentClass -%}
             {%- assign docLabel = normalizedDoc | linkToDizionario: lang -%}
             {%- assign disputed = normalizedDoc | isDisputed -%}
-          <div class="{{ docClass }}">
+          <label class="{{ docClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-{{ permit.slug }}-primo-{{ forloop.index0 }}"
                    data-doc="{{ normalizedDoc | escapeHtml }}">
             <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>{% endif %}</span>
-          </div>
+          </label>
           {%- endfor -%}
         </div>
 
@@ -323,7 +323,7 @@ eleventyExcludeFromCollections: true
       </div>
 
       <div class="alert alert-warning" style="margin-top: 1rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. Vedi se ci sono info specifiche nella sezione 'Prassi locali'.
         </div>
@@ -332,7 +332,7 @@ eleventyExcludeFromCollections: true
       {%- assign notesSections = permit.docNotes | parseDocNotes -%}
       {%- if notesSections.size > 0 -%}
       <div style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">📝 Informazioni aggiuntive sui documenti</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "info", size: 24 %} Informazioni aggiuntive sui documenti</h3>
         {%- for section in notesSections -%}
         <div class="card" style="margin-bottom: 1rem;">
           <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
@@ -344,7 +344,7 @@ eleventyExcludeFromCollections: true
 
       {%- if permit.costBollettinoPrimo or permit.costMarcaBolloPrimo -%}
       <div id="primo-quanto-costa" style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">💰 Quanto costa?</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "costi", size: 24 %} Quanto costa?</h3>
         <div class="card">
           <ul class="costi-list">
             {%- if permit.costBollettinoPrimo -%}
@@ -390,39 +390,39 @@ eleventyExcludeFromCollections: true
   <!-- SECTION: RINNOVO -->
   <section id="rinnovo" class="section">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 1.5rem;">🔄 Rinnovo</h2>
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">{% render "components/icon.liquid", name: "rinnovo", size: 30 %} Rinnovo</h2>
 
       <!-- SUBMISSION METHOD CALLOUT -->
       {%- assign rinnovoMethodLower = permit.rinnovoMethod | downcase -%}
       {%- if rinnovoMethodLower contains 'kit' -%}
         {%- assign rinnovoCalloutClass = 'callout-kit' -%}
-        {%- assign rinnovoCalloutIcon = '📮' -%}
+        {%- assign rinnovoCalloutIcon = 'kit-postale' -%}
         {%- assign rinnovoCalloutText = 'Invia tramite KIT alle Poste (non devi andare in Questura)' -%}
       {%- else -%}
         {%- assign rinnovoCalloutClass = 'callout-questura' -%}
-        {%- assign rinnovoCalloutIcon = '🏛️' -%}
+        {%- assign rinnovoCalloutIcon = 'questura' -%}
         {%- assign rinnovoCalloutText = 'Porta i documenti in Questura (non puoi usare il KIT postale)' -%}
       {%- endif -%}
       <div class="submission-callout {{ rinnovoCalloutClass }}" style="margin-bottom: 1rem;">
-        <span class="callout-icon">{{ rinnovoCalloutIcon }}</span>
+        <span class="callout-icon">{% render "components/icon.liquid", name: rinnovoCalloutIcon, size: 28 %}</span>
         <div class="callout-text">{{ rinnovoCalloutText }}</div>
       </div>
 
       {%- if permit.slug contains 'attesa-occupazione' -%}
       <!-- DISPUTED RENEWAL WARNING -->
-      <div class="alert alert-danger" style="background: #FFF0F0; border: 1.5px solid #E53935; border-radius: 8px; margin-bottom: 1rem;">
-        <span class="alert-icon">⚠️</span>
+      <div class="alert alert-danger">
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>Attenzione:</strong> Il rinnovo del permesso per attesa occupazione è controverso. Alcune Questure lo negano. Ti consigliamo di rivolgerti a un avvocato o sportello legale prima di procedere.
           <br><br>
-          <a href="aiuto-legale.html" style="color: #E53935; font-weight: 600;">→ Trova aiuto legale nella tua zona</a>
+          <a href="aiuto-legale.html">→ Trova aiuto legale nella tua zona</a>
         </div>
       </div>
       {%- endif -%}
 
       <!-- RICORDA ALERT -->
       <div class="alert alert-info" style="margin-bottom: 1rem;">
-        <span class="alert-icon">📅</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "tempo", size: 26 %}</span>
         <div>
           <strong>Ricorda:</strong> La richiesta di rinnovo va presentata preferibilmente <strong>prima della scadenza</strong> o comunque <strong>entro 60 giorni</strong> dalla scadenza.
         </div>
@@ -430,7 +430,7 @@ eleventyExcludeFromCollections: true
 
       <!-- CHECKLIST -->
       <div class="card">
-        <h3>📋 Documenti necessari</h3>
+        <h3 class="checklist-title">Documenti necessari</h3>
         <p class="checklist-intro">Spunta i documenti che hai già preparato. I tuoi progressi vengono salvati automaticamente.</p>
 
         {%- assign commonDocName = "Copia permesso precedente (o denuncia smarrimento)" -%}
@@ -440,13 +440,13 @@ eleventyExcludeFromCollections: true
 
         <div class="doc-checklist" data-permit="{{ permit.slug }}-rinnovo">
           <!-- Common document always first -->
-          <div class="{{ commonDocClass }}">
+          <label class="{{ commonDocClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-{{ permit.slug }}-rinnovo-0"
                    data-doc="{{ commonDocNormalized | escapeHtml }}">
             <span class="doc-label">{{ commonDocLabel }}</span>
-          </div>
+          </label>
 
           {%- for docItem in permit.rinnovoDocuments -%}
             {%- assign normalizedDoc = docItem | normalizeDocumentName -%}
@@ -456,13 +456,13 @@ eleventyExcludeFromCollections: true
               {%- assign docLabel = normalizedDoc | linkToDizionario: lang -%}
               {%- assign disputed = normalizedDoc | isDisputed -%}
               {%- assign idx = forloop.index -%}
-          <div class="{{ docClass }}">
+          <label class="{{ docClass }}">
             <input type="checkbox"
                    class="doc-checkbox"
                    id="doc-{{ permit.slug }}-rinnovo-{{ idx }}"
                    data-doc="{{ normalizedDoc | escapeHtml }}">
             <span class="doc-label">{{ docLabel }}{% if disputed %}<span class="disputed-note">(potrebbe dipendere dalla Questura)</span>{% endif %}</span>
-          </div>
+          </label>
             {%- endunless -%}
           {%- endfor -%}
         </div>
@@ -477,7 +477,7 @@ eleventyExcludeFromCollections: true
       </div>
 
       <div class="alert alert-warning" style="margin-top: 1rem;">
-        <span class="alert-icon">⚠️</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
         <div>
           <strong>Nota:</strong> I documenti richiesti possono variare da Questura a Questura. Vedi se ci sono info specifiche nella sezione 'Prassi locali'.
         </div>
@@ -487,7 +487,7 @@ eleventyExcludeFromCollections: true
         {%- assign rinnovoNotesSections = permit.docNotes | parseDocNotes -%}
         {%- if rinnovoNotesSections.size > 0 -%}
         <div style="margin-top: 1.5rem;">
-          <h3 style="text-align: center; margin-bottom: 1rem;">📝 Informazioni aggiuntive sui documenti</h3>
+          <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "info", size: 24 %} Informazioni aggiuntive sui documenti</h3>
           {%- for section in rinnovoNotesSections -%}
           <div class="card" style="margin-bottom: 1rem;">
             <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">{{ section.question | escapeHtml }}</h4>
@@ -500,7 +500,7 @@ eleventyExcludeFromCollections: true
 
       {%- if permit.costBollettinoRinnovo or permit.costMarcaBolloRinnovo -%}
       <div id="rinnovo-quanto-costa" style="margin-top: 1.5rem;">
-        <h3 style="text-align: center; margin-bottom: 1rem;">💰 Quanto costa il rinnovo?</h3>
+        <h3 style="text-align: center; margin-bottom: 1rem;">{% render "components/icon.liquid", name: "costi", size: 24 %} Quanto costa il rinnovo?</h3>
         <div class="card">
           <ul class="costi-list">
             {%- if permit.costBollettinoRinnovo -%}
@@ -545,7 +545,7 @@ eleventyExcludeFromCollections: true
   <!-- PRASSI LOCALI ACCORDION -->
   <section class="section prassi-section bg-off-white" id="prassi-locali">
     <div class="container" style="max-width: 700px;">
-      <h2 style="text-align: center; margin-bottom: 0.5rem;">📍 Prassi locali</h2>
+      <h2 style="text-align: center; margin-bottom: 0.5rem;">{% render "components/icon.liquid", name: "questura", size: 20 %} Prassi locali</h2>
       <p style="text-align: center; color: var(--gray-medium); margin-bottom: 1rem; font-size: 0.9rem;">Esperienze condivise dalla community sulle pratiche delle Questure</p>
 
       {% assign pagePrassi = prassiLocali[permit.slug] %}
@@ -585,7 +585,6 @@ eleventyExcludeFromCollections: true
       {% else %}
         <div class="prassi-accordion">
           <div class="prassi-accordion-empty">
-            <span style="font-size: 1.5rem;">📭</span>
             <p>Nessuna segnalazione finora</p>
             <button class="btn btn-primary prassi-submit-btn btn-sm" onclick="openPrassiModal('https://sospermesso.it/permesso-{{ permit.slug }}.html', '{{ permit.slug }}')">
               Sii il primo a condividere
@@ -652,7 +651,7 @@ eleventyExcludeFromCollections: true
   <section class="section">
     <div class="container" style="max-width: 700px;">
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Hai altre domande sul permesso per {{ permit.tipo }}?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -668,7 +667,7 @@ eleventyExcludeFromCollections: true
   <!-- SEGNALA ERRORE -->
   <div class="report-bar">
     <a href="https://app.sospermesso.it/it/contattaci" target="_blank" rel="noopener" class="report-btn">
-      <span>🚩</span> Segnala un errore in questa pagina
+      {% render "components/icon.liquid", name: "attenzione", size: 18 %} Segnala un errore in questa pagina
     </a>
   </div>
 
@@ -678,15 +677,15 @@ eleventyExcludeFromCollections: true
       <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
       <div class="grid grid-3">
         <a href="database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tutti i permessi</h3>
         </a>
         <a href="documenti-questura.html" class="card card-link card-compact">
-          <span class="card-icon">📋</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "questura", size: 36 %}</span>
           <h3 class="card-title">Documenti Questura</h3>
         </a>
         <a href="dizionario.html" class="card card-link card-compact">
-          <span class="card-icon">📖</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "dizionario", size: 36 %}</span>
           <h3 class="card-title">Dizionario</h3>
         </a>
       </div>

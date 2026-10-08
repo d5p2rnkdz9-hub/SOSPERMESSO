@@ -11,7 +11,7 @@
 
 @media (max-width: 768px) {
   /* Force visibility of all content that JS hides for animations */
-  .card,
+  .card:not(a:active),
   .section-header,
   .alert,
   .slide-up,
@@ -380,9 +380,10 @@
      ALERT MOBILE FIX
      =============================================== */
 
+  /* Alert «Adesivo»: icona accanto al testo anche su mobile */
   .alert {
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: flex-start;
     text-align: start;
     padding: 1rem;
     width: 100%;

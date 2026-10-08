@@ -255,7 +255,7 @@
        metric-adjusted fallbacks in main.css make the swap shift-free. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  {%- assign latinFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" -%}
+  {%- assign latinFontsUrl = "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Poppins:wght@600;700;800&display=swap" -%}
   <link href="{{ latinFontsUrl }}" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="{{ latinFontsUrl }}" rel="stylesheet"></noscript>
   {%- assign langFontsUrl = false -%}
@@ -285,6 +285,9 @@
   {%- if lang == 'ar' or lang == 'ur' or lang == 'fa' or lang == 'he' %}
   <link rel="stylesheet" href="{{ '/src/styles/rtl.css' | url }}?v={{ site.assetVersion }}">
   {%- endif %}
+  {%- if dbPage %}
+  <link rel="stylesheet" href="{{ '/src/styles/database.css' | url }}?v={{ site.assetVersion }}">
+  {%- endif %}
   {%- if lang == 'zh' %}
   <link rel="stylesheet" href="{{ '/src/styles/cjk.css' | url }}?v={{ site.assetVersion }}">
   {%- endif %}
@@ -302,6 +305,9 @@
   <script>try{var m=localStorage.getItem('sos-mode');if(!m){var c=document.cookie.match(/(?:^|; )sos_mode=([^;]*)/);m=c&&c[1]}if(m==='pro')document.documentElement.setAttribute('data-mode','pro')}catch(e){}</script>
 
 
+  {%- if homePage %}
+  <link rel="stylesheet" href="{{ '/src/styles/home.css' | url }}?v={{ site.assetVersion }}">
+  {%- endif %}
   {% if extraStyles %}{{ extraStyles }}{% endif %}
 </head>
 <body>

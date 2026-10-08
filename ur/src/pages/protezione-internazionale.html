@@ -7,7 +7,7 @@ lang: ur
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ur/index.html" style="color: var(--taxi-yellow-dark);">ہوم پیج</a> →
+        <a href="/ur/index.html" class="link-ink">ہوم پیج</a> →
         <span>بین الاقوامی تحفظ</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: ur
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🛡️</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
         <h1 class="page-title">بین الاقوامی تحفظ کی گائیڈ</h1>
         <p class="section-subtitle">اٹلی میں پناہ کی درخواست کے بارے میں وہ سب کچھ جو آپ کو جاننا ضروری ہے</p>
       </div>
@@ -56,7 +56,7 @@ lang: ur
           <li>ڈرائیونگ لائسنس حاصل کر سکتے ہیں 🚗</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">❗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div><strong>آپ طریقہ کار مکمل ہونے تک اٹلی سے باہر سفر نہیں کر سکتے</strong> اور <strong>آپ اس اجازت نامے کو ورک پرمٹ میں تبدیل نہیں کر سکتے</strong>۔</div>
         </div>
       </div>
@@ -159,7 +159,7 @@ lang: ur
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">📜</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
         <div>
           <strong>آپ کی کہانی منفرد ہے۔</strong> یہ آپ کے دوستوں یا رشتہ داروں کی کہانی جیسی نہیں ہے۔ قوانین مسلسل بدلتے رہتے ہیں، اس لیے ہمیشہ تازہ ترین قانونی مدد تلاش کریں۔
           <a href="/ur/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -176,15 +176,15 @@ lang: ur
       <h2 class="text-center mb-lg">آپ کے لیے مفید ہو سکتا ہے</h2>
       <div class="grid grid-3">
         <a href="/ur/permesso-richiesta-asilo.html" class="card card-link card-compact">
-          <span class="card-icon">🟨</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">پناہ کی درخواست کا اجازت نامہ</h3>
         </a>
         <a href="/ur/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
-          <span class="card-icon">🛡️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">پناہ گزین کی حیثیت</h3>
         </a>
         <a href="/ur/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
-          <span class="card-icon">🔰</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">ذیلی تحفظ</h3>
         </a>
       </div>

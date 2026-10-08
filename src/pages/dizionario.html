@@ -16,7 +16,7 @@ extraStyles: |
         border-bottom: none;
       }
       .dictionary-term:target {
-        background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+        background: var(--sp-yellow-tint);
         margin-left: -1rem;
         margin-right: -1rem;
         padding-left: 1rem;
@@ -25,11 +25,11 @@ extraStyles: |
         animation: highlight-fade 2s ease-out;
       }
       @keyframes highlight-fade {
-        0% { background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%); }
-        100% { background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%); }
+        0% { background: var(--sp-yellow); }
+        100% { background: var(--sp-yellow-tint); }
       }
       .dictionary-term h3 {
-        color: var(--accent-purple);
+        color: var(--sp-ink);
         margin-bottom: 0.5rem;
         display: flex;
         align-items: center;
@@ -47,7 +47,7 @@ extraStyles: |
       }
       .dictionary-term h3 .anchor-link:hover {
         opacity: 1;
-        color: var(--taxi-yellow-dark);
+        color: var(--sp-ink);
       }
       .dictionary-term p {
         margin: 0;
@@ -56,7 +56,7 @@ extraStyles: |
       .dictionary-letter {
         font-size: 1.5rem;
         font-weight: 700;
-        color: var(--taxi-yellow-dark);
+        color: var(--sp-ink);
         margin: 2rem 0 1rem;
         padding-bottom: 0.5rem;
         border-bottom: 3px solid var(--taxi-yellow);
@@ -69,7 +69,7 @@ extraStyles: |
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🔤</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "dizionario", size: 40 %}</span>
         <h1 class="page-title">Dizionario di parole difficili</h1>
         <p class="section-subtitle">Termini burocratici spiegati in modo semplice</p>
       </div>
@@ -391,7 +391,7 @@ extraStyles: |
       </div>
 
       <div class="alert alert-info" style="margin-top: 2rem;">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Manca una parola che vorresti capire?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -408,15 +408,15 @@ extraStyles: |
       <h2 class="text-center mb-lg">Potrebbero interessarti anche</h2>
       <div class="grid grid-3">
         <a href="database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tutti i permessi</h3>
         </a>
         <a href="protezione-internazionale.html" class="card card-link card-compact">
-          <span class="card-icon">🛡️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">Protezione internazionale</h3>
         </a>
         <a href="aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">Aiuto legale</h3>
         </a>
       </div>

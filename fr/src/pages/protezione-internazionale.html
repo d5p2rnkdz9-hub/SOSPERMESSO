@@ -7,7 +7,7 @@ lang: fr
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="index.html" style="color: var(--taxi-yellow-dark);">Accueil</a> →
+        <a href="index.html" class="link-ink">Accueil</a> →
         <span>Protection internationale</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: fr
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">🛡️</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
         <h1 class="page-title">Guide de la protection internationale</h1>
         <p class="section-subtitle">Tout ce que vous devez savoir pour demander l'asile en Italie</p>
       </div>
@@ -56,7 +56,7 @@ lang: fr
           <li>obtenir un permis de conduire 🚗</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">❗</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div><strong>Vous ne pouvez pas voyager hors d'Italie</strong> jusqu'à la fin de la procédure, et vous ne pouvez pas <strong>convertir ce permis en permis de travail</strong>.</div>
         </div>
       </div>
@@ -159,7 +159,7 @@ lang: fr
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">📜</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
         <div>
           <strong>Votre histoire est unique.</strong> Elle n'est pas la même que celle de vos amis ou proches. Les lois changent souvent, cherchez donc toujours une aide juridique à jour.
           <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -176,15 +176,15 @@ lang: fr
       <h2 class="text-center mb-lg">Cela pourrait aussi vous intéresser</h2>
       <div class="grid grid-3">
         <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
-          <span class="card-icon">🟨</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">Permis de demande d'asile</h3>
         </a>
         <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
-          <span class="card-icon">🛡️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">Statut de réfugié</h3>
         </a>
         <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
-          <span class="card-icon">🔰</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">Protection subsidiaire</h3>
         </a>
       </div>

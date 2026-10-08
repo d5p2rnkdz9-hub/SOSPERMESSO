@@ -7,7 +7,7 @@ lang: tr
   <section class="section" style="padding: 1rem 0;">
     <div class="container">
       <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/tr/index.html" style="color: var(--taxi-yellow-dark);">Ana Sayfa</a> →
+        <a href="/tr/index.html" class="link-ink">Ana Sayfa</a> →
         <span>Posta Kiti</span>
       </div>
     </div>
@@ -16,7 +16,7 @@ lang: tr
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
-        <span class="page-icon" style="font-size: 4rem;">📩</span>
+        <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "kit-postale", size: 40 %}</span>
         <h1 class="page-title">Kit postale ve diğer formlar</h1>
         <p class="section-subtitle">İşleminiz için gerekli formları indirin</p>
       </div>
@@ -32,7 +32,7 @@ lang: tr
         <p>Yabancı bir kişiyi <strong>ücretsiz olarak</strong> evinizde misafir ettiğinizde yapmanız gereken belgedir (örneğin bir arkadaş, akraba veya yardım ettiğiniz biri). Kira ödemesi yoktur.</p>
         <p>Kişi evinize geldikten sonraki <strong>48 saat içinde</strong> Polise (Komiserlık veya Questura) gitmelisiniz. Size dolduracağınız bir form verirler ve belgenizi damgalarlar.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/10/dichiarazione_ospitalita_stranieri.pdf" target="_blank" class="btn btn-primary btn-sm">
               Formu indir
@@ -47,7 +47,7 @@ lang: tr
         <p>Birine <strong>ücretli olarak</strong> ev veya oda <strong>kiraladığınızda</strong> yapmanız gereken belgedir. Kişi mülkünüzde yaşamak için size kira öder.</p>
         <p>Kişi orada yaşamaya başladıktan sonraki <strong>48 saat içinde</strong> yerel Polise (Zabıta) veya Komiserlığe sunulmalıdır. Hem İtalyanlar hem de yabancılar için yasa gereği zorunludur.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://www.poliziadistato.it/statics/09/modulo_cessione_fabbricato.pdf" target="_blank" class="btn btn-primary btn-sm">
               Formu indir
@@ -61,7 +61,7 @@ lang: tr
         <h2>🏡 İkametgah beyanı</h2>
         <p>Yaşadığınız Belediyenin nüfus kütüğüne kaydolmak için kullanılan formdur.</p>
         <div class="alert alert-info" style="margin-top: 1rem;">
-          <span class="alert-icon">📥</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
           <div>
             <a href="https://dait.interno.gov.it/documenti/circ-009-servdemo-27-04-2012-modulo-residenza.pdf" target="_blank" class="btn btn-primary btn-sm">
               Formu indir
@@ -93,7 +93,7 @@ lang: tr
           <li>Ödeme için havale</li>
         </ul>
         <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">⚠️</span>
+          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
           <div>
             <strong>Dikkat:</strong> Tüm izinler Kit postale ile talep edilmez. Bazıları doğrudan Questura'da talep edilir. İlgilendiğiniz izin sayfasından kontrol edin.
           </div>
@@ -101,7 +101,7 @@ lang: tr
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">❓</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "info", size: 26 %}</span>
         <div>
           Formlarla ilgili yardıma mı ihtiyacınız var?
           <a href="https://app.sospermesso.it/it/contattaci" target="_blank" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
@@ -118,15 +118,15 @@ lang: tr
       <h2 class="text-center mb-lg">İlginizi çekebilir</h2>
       <div class="grid grid-3">
         <a href="/tr/controlla-permesso.html" class="card card-link card-compact">
-          <span class="card-icon">👀</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">İzin kontrolü</h3>
         </a>
         <a href="/tr/aiuto-legale.html" class="card card-link card-compact">
-          <span class="card-icon">⚖️</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 36 %}</span>
           <h3 class="card-title">Hukuki yardım</h3>
         </a>
         <a href="/tr/database.html" class="card card-link card-compact">
-          <span class="card-icon">📚</span>
+          <span class="card-icon">{% render "components/icon.liquid", name: "cerca", size: 36 %}</span>
           <h3 class="card-title">Tüm izinler</h3>
         </a>
       </div>
