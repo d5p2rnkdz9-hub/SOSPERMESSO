@@ -1,5 +1,145 @@
 [
   {
+    "id": "3357355e-7f7f-81e3-b28d-e28fdbbd0d81",
+    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
+    "tipo": "پناہ گزین کی حیثیت یا ذیلی تحفظ رکھنے والے افراد کے خاندانی افراد",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "یہ پرمٹ کیا ہے؟",
+        "content": "<p>یہ ان غیر ملکی خاندان کے افراد کے لیے permesso di soggiorno ہے جن کے رشتہ دار نے اٹلی میں پناہ گزین کا درجہ یا ذیلی تحفظ حاصل کیا ہے۔ اگر آپ کے شریک حیات، والدین یا بچے کو بین الاقوامی تحفظ حاصل ہے تو آپ ان کے ساتھ رہنے کے لیے یہ اجازت نامہ مانگ سکتے ہیں۔</p>",
+        "index": 0
+      },
+      {
+        "question": "کون درخواست دے سکتا ہے؟",
+        "content": "<p>بین الاقوامی تحفظ کے حاملین (پناہ گزین یا ذیلی تحفظ) کے غیر ملکی رشتہ دار اس کی درخواست کر سکتے ہیں:</p>\n<ul><li>شریک حیات یا سول یونین پارٹنر</li><li>غیر شادی شدہ نابالغ بچے (شریک حیات کے بھی)</li><li>زیر کفالت والدین، اگر اصل ملک میں ان کے دیگر بچے نہ ہوں</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "یہ permesso di soggiorno کیسے حاصل کیا جائے؟",
+        "content": "<p>اس کی درخواست کے ذریعے کی جاتی ہے <strong>Kit postale</strong>: آپ فارم پُر کریں، مجاز ڈاک خانے میں جمع کرائیں اور Questura میں ملاقات کی تاریخ حاصل کریں۔</p>\n<p>کون سی دستاویزات لانی ہیں جاننے کے لیے، یہ صفحہ دیکھیں <strong>میں کون سی دستاویزات لاؤں</strong></p>\n<p>➡️ <u><strong>پہلی بار اجرا کے لیے دستاویزات</strong></u></p>",
+        "index": 2
+      },
+      {
+        "question": "مجھے کون سے حقوق ملتے ہیں؟ مجھے کس چیز تک رسائی ہے؟",
+        "content": "<p>اس permesso di soggiorno کے ساتھ آپ یہ کر سکتے ہیں:</p>\n<ul><li><strong>کام کرنا</strong> (ملازمت یا خود مختار)</li><li><strong>قومی صحت سروس (SSN) میں اندراج کرنا</strong> اور فیملی ڈاکٹر رکھنا</li><li>بلدیاتی رہائشی اندراج کروائیں</li><li>سماجی اور تعلیمی خدمات تک رسائی</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "یہ اجازت نامہ کتنے عرصے تک درست ہوتا ہے؟",
+        "content": "<p>مدت ہے <strong>5 سال</strong>۔</p>",
+        "index": 4
+      },
+      {
+        "question": "جب میعاد ختم ہو تو کیا میں تجدید کر سکتا ہوں؟",
+        "content": "<p>ہاں، آپ اسے تجدید کر سکتے ہیں۔ آپ کو میعاد ختم ہونے سے پہلے تجدید کی درخواست دینی ہوگی۔ اگر آپ کے خاندان کے فرد کا بین الاقوامی تحفظ کا درجہ برقرار ہے اور خاندانی رشتہ ابھی بھی موجود ہے تو اجازت نامہ تجدید ہو جائے گا۔</p>",
+        "index": 5
+      },
+      {
+        "question": "کیا میں اسے کسی اور اجازت نامے میں تبدیل کر سکتا ہوں؟",
+        "content": "<p>اس permesso di soggiorno کے ساتھ آپ کام کر سکتے ہیں، لہذا وقت کے ساتھ آپ ملازمت یا خود مختار کام کے permesso di soggiorno کی شرائط پوری کر سکتے ہیں۔ 5 سال کی باقاعدہ رہائش کے بعد آپ طویل مدتی رہائشیوں کے لیے EU permesso di soggiorno کی درخواست بھی دے سکتے ہیں۔</p>",
+        "index": 6
+      },
+      {
+        "question": "اس کی لاگت کتنی ہے؟",
+        "content": "<p>درخواست کے اخراجات یہ ہیں:</p>\n<ul><li><strong>bollettino postale: 70,46€</strong> (الیکٹرانک permesso di soggiorno کی لاگت شامل ہے)</li><li><strong>Marca da bollo: 16€</strong></li></ul>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16 € کا",
+      "4 پاسپورٹ سائز تصاویر",
+      "رشتہ داری ثابت کرنے والی دستاویز",
+      "غیر ملکی رشتہ دار کا permesso di soggiorno"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16 € کا",
+      "4 پاسپورٹ سائز تصاویر"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
+    "id": "3357355e-7f7f-8186-ad78-d8ff0d3f91d1",
+    "slug": "asilo-status-rifugiato",
+    "tipo": "پناہ (پناہ گزین کی حیثیت)",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "یہ permesso di soggiorno کیا ہے؟",
+        "content": "<p>یہ وہ اجازت نامہ ہے جو ان لوگوں کو دیا جاتا ہے جو اپنے ملک سے بھاگتے ہیں کیونکہ انہیں اپنے مذہب، سیاسی رائے، قومیت کی وجہ سے یا کسی خاص نسلی یا سماجی گروہ سے تعلق کی وجہ سے ظلم و ستم کا خطرہ ہے۔ </p>",
+        "index": 0
+      },
+      {
+        "question": "میں یہ permesso di soggiorno کیسے حاصل کروں؟",
+        "content": "<p>یہ اجازت نامہ حاصل کرنے کے لیے آپ کو:</p>\n<ul><li>بین الاقوامی تحفظ کی درخواست دیں (ہماری دیکھیں <a href=\"/2187355e7f7f814989cbc7ee16321ee8\">رہنمائی</a>)</li><li>Commissione Territoriale یا عدالت سے مثبت فیصلہ حاصل کرنا</li><li>مثبت فیصلے کے بعد، permesso di soggiorno حاصل کرنے کے لیے Questura جائیں</li></ul>",
+        "index": 1
+      },
+      {
+        "question": "یہ permesso di soggiorno کہاں سے حاصل کیا جائے؟",
+        "content": "<p>آپ کو ذاتی طور پر Questura جانا ہوگا۔</p>",
+        "index": 2
+      },
+      {
+        "question": "درخواست دینے کے لیے مجھے کون سی دستاویزات چاہیے؟",
+        "content": "<p>اجازت نامے کی درخواست کے لیے آپ کو کمیشن (یا عدالت) کا فیصلہ لانا ہوگا جس نے آپ کو پناہ گزین تسلیم کیا ہے</p>",
+        "index": 3
+      },
+      {
+        "question": "یہ کتنے عرصے تک درست ہوتا ہے؟",
+        "content": "<p>اجازت نامے کی مدت ہے<strong> 5 سال</strong> اور اسے عام طور پر خودکار طریقے سے مزید 5 سال کے لیے تجدید کیا جا سکتا ہے</p>",
+        "index": 4
+      },
+      {
+        "question": "مجھے کون سے حقوق ملتے ہیں؟ مجھے کس چیز تک رسائی ہے؟",
+        "content": "<p>اس permesso di soggiorno کے ساتھ آپ یہ کر سکتے ہیں:</p>\n<ul><li>اپنے کمیون میں رہائش حاصل کرنا</li><li>باقاعدہ طریقے سے کام کرنا (نوکری یا خود ملازمت)</li><li>قومی صحت سروس (SSN) میں اندراج کرنا اور ایک فیملی ڈاکٹر حاصل کرنا</li><li>سکول، پیشہ ورانہ کورس، یا یونیورسٹی میں داخلہ لینا</li><li>مالی اور رہائشی مدد حاصل کرنا</li><li>5 سال کی قانونی رہائش کے بعد اطالوی شہریت کی درخواست کریں (تحفظ کی درخواست دینے کی تاریخ سے شمار)</li><li>قریبی خاندانی افراد سے ملاپ کی درخواست کریں:<ul><li>بیوی/شوہر</li><li>نابالغ بچے</li><li>بالغ بچے اگر مکمل طور پر معذور ہوں</li><li>65 سال سے زیادہ عمر کے والدین یا زیر کفالت</li></ul></li></ul>\n<p>خاندانی دوبارہ اتحاد کے لیے آپ کو دوسرے غیر ملکیوں کی طرح بڑا گھر اور کم از کم تنخواہ ثابت کرنے کی ضرورت نہیں ہے۔</p>",
+        "index": 5
+      },
+      {
+        "question": "Posso viaggiare fuori dall’Italia?",
+        "content": "<p>Viaggiare liberamente in Italia, andare in altri paesi dell&#039;UE fino a 3 mesi e, con il “titolo di viaggio” (un passaporto che viene dato ai rifugiati), anche in altri paesi del mondo. </p>\n<p><strong>توجہ!</strong> آپ اپنے آبائی ملک سفر نہیں کر سکتے۔ اگر آپ ایسا کریں تو Questura آپ کا permesso di soggiorno واپس لے سکتی ہے۔</p>",
+        "index": 6
+      },
+      {
+        "question": "کیا میں یہ اجازت نامہ تبدیل کر سکتا ہوں؟",
+        "content": "<p>L&#039;unico permesso in cui ha senso convertire il permesso per asilo è il permesso di soggiorno UE per soggiornanti di lungo periodo (&quot;Carta&quot;), dopo cinque anni di residenza in Italia.</p>\n<p>سیاسی پناہ کے اجازت نامے کو خود ملازمت یا نوکری کے permesso di soggiorno میں تبدیل کرنا ممکن نہیں ہے۔</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo 16 € کا",
+      "4 پاسپورٹ سائز تصاویر",
+      "bollettino postale 30.46 €",
+      "مہمان نوازی کا اعلامیہ یا کرایہ نامہ یا رہائشی سرٹیفکیٹ"
+    ],
+    "primoMethod": "ذاتی طور پر",
+    "costBollettinoPrimo": 30.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo 16 € کا",
+      "4 پاسپورٹ سائز تصاویر",
+      "bollettino postale 30.46 €",
+      "مہمان نوازی کا اعلامیہ یا کرایہ نامہ یا رہائشی سرٹیفکیٹ",
+      "میعاد ختم ہونے والا اجازت نامہ",
+      "Commissione Territoriale یا عدالت کا فیصلہ"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 30.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null
+  },
+  {
     "id": "3357355e-7f7f-81a4-a774-ce9983b24ad8",
     "slug": "motivi-religiosi",
     "tipo": "مذہبی وجوہات",
@@ -2140,74 +2280,6 @@
     "docNotes": null
   },
   {
-    "id": "3357355e-7f7f-81e3-b28d-e28fdbbd0d81",
-    "slug": "famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria",
-    "tipo": "مہاجر کی حیثیت یا ذیلی تحفظ رکھنے والے افراد کے خاندانی افراد",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "یہ پرمٹ کیا ہے؟",
-        "content": "<p>یہ ان غیر ملکی خاندان کے افراد کے لیے permesso di soggiorno ہے جن کے رشتہ دار نے اٹلی میں پناہ گزین کا درجہ یا ذیلی تحفظ حاصل کیا ہے۔ اگر آپ کے شریک حیات، والدین یا بچے کو بین الاقوامی تحفظ حاصل ہے تو آپ ان کے ساتھ رہنے کے لیے یہ اجازت نامہ مانگ سکتے ہیں۔</p>",
-        "index": 0
-      },
-      {
-        "question": "کون درخواست دے سکتا ہے؟",
-        "content": "<p>بین الاقوامی تحفظ کے حاملین (پناہ گزین یا ذیلی تحفظ) کے غیر ملکی رشتہ دار اس کی درخواست کر سکتے ہیں:</p>\n<ul><li>شریک حیات یا سول یونین پارٹنر</li><li>غیر شادی شدہ نابالغ بچے (شریک حیات کے بھی)</li><li>زیر کفالت والدین، اگر اصل ملک میں ان کے دیگر بچے نہ ہوں</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "یہ permesso di soggiorno کیسے حاصل کیا جائے؟",
-        "content": "<p>اس کی درخواست کے ذریعے کی جاتی ہے <strong>Kit postale</strong>: آپ فارم پُر کریں، مجاز ڈاک خانے میں جمع کرائیں اور Questura میں ملاقات کی تاریخ حاصل کریں۔</p>\n<p>کون سی دستاویزات لانی ہیں جاننے کے لیے، یہ صفحہ دیکھیں <strong>میں کون سی دستاویزات لاؤں</strong></p>\n<p>➡️ <u><strong>پہلی بار اجرا کے لیے دستاویزات</strong></u></p>",
-        "index": 2
-      },
-      {
-        "question": "مجھے کون سے حقوق ملتے ہیں؟ مجھے کس چیز تک رسائی ہے؟",
-        "content": "<p>اس permesso di soggiorno کے ساتھ آپ یہ کر سکتے ہیں:</p>\n<ul><li><strong>کام کرنا</strong> (ملازمت یا خود مختار)</li><li><strong>قومی صحت سروس (SSN) میں اندراج کرنا</strong> اور فیملی ڈاکٹر رکھنا</li><li>بلدیاتی رہائشی اندراج کروائیں</li><li>سماجی اور تعلیمی خدمات تک رسائی</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "یہ اجازت نامہ کتنے عرصے تک درست ہوتا ہے؟",
-        "content": "<p>مدت ہے <strong>5 سال</strong>۔</p>",
-        "index": 4
-      },
-      {
-        "question": "جب میعاد ختم ہو تو کیا میں تجدید کر سکتا ہوں؟",
-        "content": "<p>ہاں، آپ اسے تجدید کر سکتے ہیں۔ آپ کو میعاد ختم ہونے سے پہلے تجدید کی درخواست دینی ہوگی۔ اگر آپ کے خاندان کے فرد کا بین الاقوامی تحفظ کا درجہ برقرار ہے اور خاندانی رشتہ ابھی بھی موجود ہے تو اجازت نامہ تجدید ہو جائے گا۔</p>",
-        "index": 5
-      },
-      {
-        "question": "کیا میں اسے کسی اور اجازت نامے میں تبدیل کر سکتا ہوں؟",
-        "content": "<p>اس permesso di soggiorno کے ساتھ آپ کام کر سکتے ہیں، لہذا وقت کے ساتھ آپ ملازمت یا خود مختار کام کے permesso di soggiorno کی شرائط پوری کر سکتے ہیں۔ 5 سال کی باقاعدہ رہائش کے بعد آپ طویل مدتی رہائشیوں کے لیے EU permesso di soggiorno کی درخواست بھی دے سکتے ہیں۔</p>",
-        "index": 6
-      },
-      {
-        "question": "اس کی لاگت کتنی ہے؟",
-        "content": "<p>درخواست کے اخراجات یہ ہیں:</p>\n<ul><li><strong>bollettino postale: 70,46€</strong> (الیکٹرانک permesso di soggiorno کی لاگت شامل ہے)</li><li><strong>Marca da bollo: 16€</strong></li></ul>",
-        "index": 7
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo 16 € کا",
-      "4 پاسپورٹ سائز تصاویر",
-      "رشتہ داری ثابت کرنے والی دستاویز",
-      "غیر ملکی رشتہ دار کا permesso di soggiorno"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo 16 € کا",
-      "4 پاسپورٹ سائز تصاویر"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null
-  },
-  {
     "id": "3357355e-7f7f-81e1-bd7f-f312d676b976",
     "slug": "protezione-sussidiaria",
     "tipo": "ذیلی تحفظ",
@@ -2551,78 +2623,6 @@
     ],
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null
-  },
-  {
-    "id": "3357355e-7f7f-8186-ad78-d8ff0d3f91d1",
-    "slug": "asilo-status-rifugiato",
-    "tipo": "پناہ (مہاجر کی حیثیت)",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "یہ permesso di soggiorno کیا ہے؟",
-        "content": "<p>یہ وہ اجازت نامہ ہے جو ان لوگوں کو دیا جاتا ہے جو اپنے ملک سے بھاگتے ہیں کیونکہ انہیں اپنے مذہب، سیاسی رائے، قومیت کی وجہ سے یا کسی خاص نسلی یا سماجی گروہ سے تعلق کی وجہ سے ظلم و ستم کا خطرہ ہے۔ </p>",
-        "index": 0
-      },
-      {
-        "question": "میں یہ permesso di soggiorno کیسے حاصل کروں؟",
-        "content": "<p>یہ اجازت نامہ حاصل کرنے کے لیے آپ کو:</p>\n<ul><li>بین الاقوامی تحفظ کی درخواست دیں (ہماری دیکھیں <a href=\"/2187355e7f7f814989cbc7ee16321ee8\">رہنمائی</a>)</li><li>Commissione Territoriale یا عدالت سے مثبت فیصلہ حاصل کرنا</li><li>مثبت فیصلے کے بعد، permesso di soggiorno حاصل کرنے کے لیے Questura جائیں</li></ul>",
-        "index": 1
-      },
-      {
-        "question": "یہ permesso di soggiorno کہاں سے حاصل کیا جائے؟",
-        "content": "<p>آپ کو ذاتی طور پر Questura جانا ہوگا۔</p>",
-        "index": 2
-      },
-      {
-        "question": "درخواست دینے کے لیے مجھے کون سی دستاویزات چاہیے؟",
-        "content": "<p>اجازت نامے کی درخواست کے لیے آپ کو کمیشن (یا عدالت) کا فیصلہ لانا ہوگا جس نے آپ کو پناہ گزین تسلیم کیا ہے</p>",
-        "index": 3
-      },
-      {
-        "question": "یہ کتنے عرصے تک درست ہوتا ہے؟",
-        "content": "<p>اجازت نامے کی مدت ہے<strong> 5 سال</strong> اور اسے عام طور پر خودکار طریقے سے مزید 5 سال کے لیے تجدید کیا جا سکتا ہے</p>",
-        "index": 4
-      },
-      {
-        "question": "مجھے کون سے حقوق ملتے ہیں؟ مجھے کس چیز تک رسائی ہے؟",
-        "content": "<p>اس permesso di soggiorno کے ساتھ آپ یہ کر سکتے ہیں:</p>\n<ul><li>اپنے کمیون میں رہائش حاصل کرنا</li><li>باقاعدہ طریقے سے کام کرنا (نوکری یا خود ملازمت)</li><li>قومی صحت سروس (SSN) میں اندراج کرنا اور ایک فیملی ڈاکٹر حاصل کرنا</li><li>سکول، پیشہ ورانہ کورس، یا یونیورسٹی میں داخلہ لینا</li><li>مالی اور رہائشی مدد حاصل کرنا</li><li>5 سال کی قانونی رہائش کے بعد اطالوی شہریت کی درخواست کریں (تحفظ کی درخواست دینے کی تاریخ سے شمار)</li><li>قریبی خاندانی افراد سے ملاپ کی درخواست کریں:<ul><li>بیوی/شوہر</li><li>نابالغ بچے</li><li>بالغ بچے اگر مکمل طور پر معذور ہوں</li><li>65 سال سے زیادہ عمر کے والدین یا زیر کفالت</li></ul></li></ul>\n<p>خاندانی دوبارہ اتحاد کے لیے آپ کو دوسرے غیر ملکیوں کی طرح بڑا گھر اور کم از کم تنخواہ ثابت کرنے کی ضرورت نہیں ہے۔</p>",
-        "index": 5
-      },
-      {
-        "question": "Posso viaggiare fuori dall’Italia?",
-        "content": "<p>Viaggiare liberamente in Italia, andare in altri paesi dell&#039;UE fino a 3 mesi e, con il “titolo di viaggio” (un passaporto che viene dato ai rifugiati), anche in altri paesi del mondo. </p>\n<p><strong>توجہ!</strong> آپ اپنے آبائی ملک سفر نہیں کر سکتے۔ اگر آپ ایسا کریں تو Questura آپ کا permesso di soggiorno واپس لے سکتی ہے۔</p>",
-        "index": 6
-      },
-      {
-        "question": "کیا میں یہ اجازت نامہ تبدیل کر سکتا ہوں؟",
-        "content": "<p>L&#039;unico permesso in cui ha senso convertire il permesso per asilo è il permesso di soggiorno UE per soggiornanti di lungo periodo (&quot;Carta&quot;), dopo cinque anni di residenza in Italia.</p>\n<p>سیاسی پناہ کے اجازت نامے کو خود ملازمت یا نوکری کے permesso di soggiorno میں تبدیل کرنا ممکن نہیں ہے۔</p>",
-        "index": 7
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo 16 € کا",
-      "4 پاسپورٹ سائز تصاویر",
-      "bollettino postale 30.46 €",
-      "مہمان نوازی کا اعلامیہ یا کرایہ نامہ یا رہائشی سرٹیفکیٹ"
-    ],
-    "primoMethod": "ذاتی طور پر",
-    "costBollettinoPrimo": 30.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo 16 € کا",
-      "4 پاسپورٹ سائز تصاویر",
-      "bollettino postale 30.46 €",
-      "مہمان نوازی کا اعلامیہ یا کرایہ نامہ یا رہائشی سرٹیفکیٹ",
-      "میعاد ختم ہونے والا اجازت نامہ",
-      "Commissione Territoriale یا عدالت کا فیصلہ"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 30.46,
     "costBollettinoAltRinnovo": null,
     "costMarcaBolloRinnovo": 16,
     "docNotes": null
