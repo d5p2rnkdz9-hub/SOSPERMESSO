@@ -8,6 +8,8 @@
 // permesso dai dati Notion della lingua, senza la parte tra parentesi.
 module.exports = {
   "it": {
+    "hideLinks": true,
+    "hideFinal": true,
     "badge": "41+ permessi · aggiornato 28 maggio 2026",
     "lead": "La tua guida ai permessi di soggiorno.",
     "stamp": "Facile",
@@ -134,28 +136,32 @@ module.exports = {
         "color": "yellow",
         "q": "Che documenti porto in Questura?",
         "cta": "Checklist per ogni permesso",
-        "href": "documenti-questura.html"
+        "href": "documenti-questura.html",
+        "hide": true
       },
       {
         "tag": "Pratiche",
         "color": "yellow",
         "q": "Come compilo il kit postale?",
         "cta": "Moduli passo passo",
-        "href": "kit-postale.html"
+        "href": "kit-postale.html",
+        "hide": true
       },
       {
         "tag": "Pratiche",
         "color": "yellow",
         "q": "Quanto costa il mio permesso?",
         "cta": "Bollettini e marche da bollo",
-        "href": "database.html?go=costi"
+        "href": "database.html?go=costi",
+        "hide": true
       },
       {
         "tag": "Pratiche",
         "color": "yellow",
         "q": "Il mio permesso è pronto?",
         "cta": "Controlla lo stato",
-        "href": "controlla-permesso.html"
+        "href": "controlla-permesso.html",
+        "hide": true
       }
     ],
     "legal": {

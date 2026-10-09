@@ -394,7 +394,37 @@
   }
 
   function isMobile() {
-    return window.matchMedia('(max-width: 767px)').matches;
+    return window.matchMedia('(max-width: 768px)').matches;
+  }
+
+  // ===============================================
+  // VOCE DI MENU (mobile)
+  // Su mobile il pulsante flottante è nascosto (chatbot.css): la chat si apre
+  // da una voce gialla in testa al menu. Su desktop la voce è nascosta.
+  // ===============================================
+  var opener = null; // elemento a cui restituire il focus alla chiusura
+
+  function injectMenuItem() {
+    var menu = document.getElementById('nav-menu');
+    if (!menu) return;
+    var li = document.createElement('li');
+    li.className = 'nav-item nav-item--chat';
+    li.innerHTML =
+      '<button type="button" class="nav-link nav-chat-link" aria-controls="sosp-chat-panel" aria-expanded="false">' +
+      escapeHtml(T.button || STRINGS.it.button) +
+      '</button>';
+    menu.insertBefore(li, menu.firstChild);
+    els.menuChat = li.querySelector('button');
+    els.menuChat.addEventListener('click', function () {
+      // Chiude il menu mobile (stessa logica di app.js) e apre la chat
+      var wrapper = document.querySelector('.nav-wrapper');
+      var toggle = document.getElementById('menu-toggle');
+      if (wrapper) wrapper.classList.remove('active');
+      if (toggle) toggle.textContent = '\u2630';
+      document.body.style.overflow = '';
+      opener = toggle || els.menuChat;
+      openPanel();
+    });
   }
 
   // ===============================================
@@ -422,7 +452,7 @@
   }
 
   function maybeShowTeaser() {
-    if (teaserDone() || messages.length > 0) return;
+    if (teaserDone() || messages.length > 0 || isMobile()) return;
     setTimeout(function () {
       if (els.panel.hidden && !teaserDone()) els.teaser.hidden = false;
     }, 3000);
@@ -437,6 +467,7 @@
     dismissTeaser();
     els.panel.hidden = false;
     els.fab.setAttribute('aria-expanded', 'true');
+    if (els.menuChat) els.menuChat.setAttribute('aria-expanded', 'true');
     els.root.classList.add('sosp-chat-open');
     // Scroll lock via a class on <html>: app.js has a document-level click
     // handler that resets document.body.style.overflow, so body style is
@@ -452,7 +483,11 @@
     els.fab.setAttribute('aria-expanded', 'false');
     els.root.classList.remove('sosp-chat-open');
     document.documentElement.classList.remove('sosp-chat-lock');
-    els.fab.focus();
+    if (els.menuChat) els.menuChat.setAttribute('aria-expanded', 'false');
+    // Su mobile il pulsante flottante non è visibile: il focus torna al menu
+    if (isMobile() && opener) opener.focus();
+    else els.fab.focus();
+    opener = null;
   }
 
   function resetConversation() {
@@ -617,6 +652,7 @@
   function init() {
     loadState();
     injectWidget();
+    injectMenuItem();
     updateInputState();
     maybeShowTeaser();
   }

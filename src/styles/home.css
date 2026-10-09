@@ -418,6 +418,11 @@
   gap: 22px;
 }
 
+/* Con hideFinal/hideTools l'ultima sezione chiude la pagina: aria prima del footer */
+.home-adesivo > .ha-section:last-child {
+  padding-bottom: 88px;
+}
+
 .ha-tools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

@@ -558,3 +558,42 @@ html.sosp-chat-lock body {
     display: none;
   }
 }
+
+/* ===============================================
+   MOBILE: niente pulsante flottante, la chat si apre dal menu
+   (voce .nav-item--chat iniettata da chatbot.js in testa a #nav-menu).
+   Desktop: pulsante flottante in basso a destra, voce di menu nascosta.
+   =============================================== */
+.nav-item--chat {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sosp-chat-dock {
+    display: none;
+  }
+
+  .nav-item--chat {
+    display: block;
+  }
+
+  .nav-menu .nav-chat-link {
+    width: 100%;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+    background: var(--sp-yellow);
+    color: var(--sp-ink);
+    font-family: var(--font-display);
+    font-weight: 700;
+    border: var(--border-ui) solid var(--sp-ink);
+    border-radius: 12px;
+    box-shadow: var(--sticker-sm);
+    cursor: pointer;
+  }
+
+  .nav-menu .nav-chat-link:focus-visible {
+    outline: none;
+    box-shadow: var(--sticker-sm), var(--focus-ring);
+  }
+}

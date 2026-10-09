@@ -1,6 +1,9 @@
 {%- comment -%}
   Home condivisa da tutte le 11 lingue (design system «Adesivo», approvato ott 2026).
   Testi: _data/home.js (IT fonte; le chiavi mancanti in una lingua ricadono sull'IT).
+  hideTools / hideLinks / hideFinal (per lingua, in _data/home.js) nascondono le carte Aiuto legale +
+  Dizionario, la riga «Per approfondire» e il blocco giallo finale «Non sai da dove partire?».
+  Una guida con "hide": true non viene mostrata.
   Stili: src/styles/home.css (caricato da base.liquid quando la pagina ha homePage: true).
   I link relativi (database.html, permesso-*.html, …) restano nella cartella della lingua.
 {%- endcomment -%}
@@ -100,6 +103,7 @@
       <div class="ha-guides">
         {%- assign guides = t.guides | default: ti.guides -%}
         {%- for g in guides %}
+        {%- if g.hide %}{% continue %}{% endif %}
         <a href="{{ g.href }}" class="ha-guide">
           {%- if g.tag or g.soon %}
           <span class="ha-guide-top">
@@ -115,6 +119,7 @@
     </div>
   </section>
 
+  {%- unless t.hideTools %}
   <!-- STRUMENTI: aiuto legale + dizionario -->
   <section class="ha-section ha-section--tools">
     <div class="ha-wrap">
@@ -135,15 +140,19 @@
           </span>
         </a>
       </div>
+      {%- unless t.hideLinks %}
       <div class="ha-links">
         <span class="ha-links-label">{{ t.more.label | default: ti.more.label }}</span>
         <a href="/circolari.html" class="ha-link-pill">{{ t.more.circolari | default: ti.more.circolari }}</a>
         <a href="/normativa.html" class="ha-link-pill">{{ t.more.normativa | default: ti.more.normativa }}</a>
         <a href="https://www.sospatto.it" class="ha-link-pill" target="_blank" rel="noopener">{{ t.more.patto | default: ti.more.patto }}{% if t.more.nuovo %} <span class="ha-new">{{ t.more.nuovo }}</span>{% endif %}</a>
       </div>
+      {%- endunless %}
     </div>
   </section>
+  {%- endunless %}
 
+  {%- unless t.hideFinal %}
   <!-- RIEPILOGO FINALE -->
   <section class="ha-section ha-section--final">
     <div class="ha-wrap">
@@ -165,5 +174,6 @@
       </div>
     </div>
   </section>
+  {%- endunless %}
 
 </div>
