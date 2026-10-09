@@ -106,7 +106,7 @@ module.exports = {
         "tag": "Protezione",
         "color": "protection",
         "q": "Ho diritto alla protezione internazionale?",
-        "cta": "Leggi la guida",
+        "cta": "Guida all'asilo in Italia",
         "href": "protezione-internazionale.html"
       },
       {
@@ -120,7 +120,7 @@ module.exports = {
         "tag": "Lavoro",
         "color": "work",
         "q": "Posso lavorare in Italia?",
-        "cta": "Tutti i permessi per lavoro",
+        "cta": "Guida al lavoro in Italia",
         "href": "lavorare-in-italia.html"
       },
       {
