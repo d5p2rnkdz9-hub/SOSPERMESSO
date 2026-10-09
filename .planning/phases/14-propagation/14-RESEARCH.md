@@ -260,7 +260,7 @@ Verified patterns from codebase and standard tools:
 
 set -e  # Exit on error
 
-PROJECT_ROOT="/Users/albertopasquero/Desktop/TECH/SOSpermesso/Sito_Nuovo"
+PROJECT_ROOT="/Users/albertopasquero/TECH/SOSpermesso/Sito_Nuovo"
 cd "$PROJECT_ROOT"
 
 echo "Phase 14: Propagation Script"

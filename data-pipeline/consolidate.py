@@ -28,7 +28,7 @@ import yaml
 HERE = Path(__file__).parent
 DB_PATH = HERE / "data" / "circolari.db"
 OUT_PATH = HERE / "data" / "corpus.json"
-DEFAULT_KB_ROOT = Path("~/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3").expanduser()
+DEFAULT_KB_ROOT = Path("~/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3").expanduser()
 
 SOURCE_PREFIX = {"immigrazione.biz": "biz", "permessidisoggiorno.info": "pds"}
 

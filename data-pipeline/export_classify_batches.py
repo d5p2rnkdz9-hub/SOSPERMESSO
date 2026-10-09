@@ -20,7 +20,7 @@ HERE = Path(__file__).parent
 CORPUS = HERE / "data" / "corpus.json"
 DB_PATH = HERE / "data" / "circolari.db"
 OUT_DIR = HERE / "data" / "classify"
-DEFAULT_KB_ROOT = Path("~/Desktop/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3").expanduser()
+DEFAULT_KB_ROOT = Path("~/TECH/IMMIGRAZBOT/4_Md_per_knowledge_base_v3").expanduser()
 
 EXCERPT_SCRAPED = 1000
 EXCERPT_KB = 700

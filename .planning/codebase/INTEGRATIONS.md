@@ -112,7 +112,7 @@
 **CI Pipeline:**
 - None detected
 - No GitHub Actions, GitLab CI, or similar
-- Repository tracked in git (`/Users/albertopasquero/Desktop/TECH/SOSpermesso/Sito_Nuovo/.git`)
+- Repository tracked in git (`/Users/albertopasquero/TECH/SOSpermesso/Sito_Nuovo/.git`)
 
 ---
 

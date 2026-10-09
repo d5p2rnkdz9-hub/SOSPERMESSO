@@ -339,7 +339,7 @@ Workflow:
 The translation review pipeline shares its rules, prompts, and outputs with the sibling project `app/` (Next.js decision-tree app). The canonical home is a sibling directory:
 
 ```
-~/Desktop/TECH/SOSpermesso/translations-shared/
+~/TECH/SOSpermesso/translations-shared/
 ├── glossaries/{lang}.js     ← term rules (register, badTerms, preservedTerms)
 ├── prompts/                 ← reusable AI subagent prompt templates
 │   └── ai-review-prompt.md

@@ -269,11 +269,11 @@ Things that couldn't be fully resolved:
 ## Sources
 
 ### Primary (HIGH confidence)
-- `/Users/albertopasquero/Desktop/TECH/SOSpermesso/Sito_Nuovo/src/styles/components.css` lines 744-774 - Current footer styles
-- `/Users/albertopasquero/Desktop/TECH/SOSpermesso/Sito_Nuovo/src/styles/mobile.css` lines 385-400 - Mobile footer styles
-- `/Users/albertopasquero/Desktop/TECH/SOSpermesso/Sito_Nuovo/src/styles/main.css` lines 6-101 - CSS variables including --taxi-yellow
-- `/Users/albertopasquero/Desktop/TECH/SOSpermesso/Sito_Nuovo/src/pages/index.html` lines 349-359 - Current footer HTML
-- `/Users/albertopasquero/Desktop/TECH/SOSpermesso/Sito_Nuovo/CLAUDE.md` - Project documentation confirming design system
+- `/Users/albertopasquero/TECH/SOSpermesso/Sito_Nuovo/src/styles/components.css` lines 744-774 - Current footer styles
+- `/Users/albertopasquero/TECH/SOSpermesso/Sito_Nuovo/src/styles/mobile.css` lines 385-400 - Mobile footer styles
+- `/Users/albertopasquero/TECH/SOSpermesso/Sito_Nuovo/src/styles/main.css` lines 6-101 - CSS variables including --taxi-yellow
+- `/Users/albertopasquero/TECH/SOSpermesso/Sito_Nuovo/src/pages/index.html` lines 349-359 - Current footer HTML
+- `/Users/albertopasquero/TECH/SOSpermesso/Sito_Nuovo/CLAUDE.md` - Project documentation confirming design system
 
 ### Secondary (MEDIUM confidence)
 - Phase 7 research document - Header redesign patterns and approach

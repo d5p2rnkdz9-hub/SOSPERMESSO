@@ -23,7 +23,7 @@ La versione integrale del DB (136 MB, con snapshot HTML delle pagine sorgente,
 ri-parsabile se il parsing migliora) è FUORI dal repo:
 
 ```
-~/Desktop/TECH/SOSpermesso/BACKUPS/circolari-full-20260715.db
+~/TECH/SOSpermesso/BACKUPS/circolari-full-20260715.db
 ```
 
 ## Stato dati (luglio 2026)

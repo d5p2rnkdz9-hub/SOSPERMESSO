@@ -34,7 +34,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from sources import common  # noqa: E402
 
-BACKUP_DB = Path.home() / "Desktop/TECH/SOSpermesso/BACKUPS/circolari-full-20260715.db"
+BACKUP_DB = Path.home() / "TECH/SOSpermesso/BACKUPS/circolari-full-20260715.db"
 SLIM_DB = Path(__file__).parent.parent / "data" / "circolari.db"
 SOURCE = "permessidisoggiorno.info"
 
