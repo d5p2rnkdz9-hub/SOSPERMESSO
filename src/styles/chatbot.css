@@ -23,80 +23,7 @@
   align-items: flex-start;
 }
 
-/* Proactive teaser bubble above the FAB */
-.sosp-chat-teaser {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  max-width: 280px;
-  animation: sosp-teaser-in 0.25s ease-out;
-}
-
-.sosp-chat-teaser[hidden],
-.sosp-chat-open .sosp-chat-teaser {
-  display: none;
-}
-
-.sosp-chat-teaser-text {
-  background: var(--white);
-  color: var(--black);
-  font-family: var(--font-primary);
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: start;
-  padding: 0.75rem 1rem;
-  border: var(--border-ui) solid var(--sp-ink);
-  border-radius: var(--radius-lg);
-  border-bottom-right-radius: 4px;
-  box-shadow: var(--sticker);
-  cursor: pointer;
-}
-
-[dir='rtl'] .sosp-chat-teaser-text {
-  border-bottom-right-radius: var(--radius-lg);
-  border-bottom-left-radius: 4px;
-}
-
-.sosp-chat-teaser-close {
-  flex-shrink: 0;
-  width: 26px;
-  height: 26px;
-  padding: 0;
-  background: var(--white);
-  color: var(--black);
-  font-size: 12px;
-  line-height: 1;
-  border: var(--border-chip) solid var(--sp-ink);
-  border-radius: 50%;
-  box-shadow: none;
-  cursor: pointer;
-}
-
-@keyframes sosp-teaser-in {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sosp-chat-teaser {
-    animation: none;
-  }
-}
-
-/* Scroll lock while the panel is open on mobile (class set on <html>) */
-html.sosp-chat-lock,
-html.sosp-chat-lock body {
-  overflow: hidden;
-}
-
-/* Dock = teaser + FAB. Fluttua lentamente nell'angolo in basso a destra
+/* Dock = FAB. Fluttua lentamente nell'angolo in basso a destra
    (il pannello NON è nel dock, così resta ancorato e non eredita il transform). */
 .sosp-chat-dock {
   display: flex;
@@ -514,15 +441,9 @@ html.sosp-chat-lock body {
 .sosp-chat .sosp-chat-fab,
 .sosp-chat .sosp-chat-send,
 .sosp-chat .sosp-chat-reset,
-.sosp-chat .sosp-chat-close,
-.sosp-chat .sosp-chat-teaser-text,
-.sosp-chat .sosp-chat-teaser-close {
+.sosp-chat .sosp-chat-close {
   width: auto;
   margin-bottom: 0;
-}
-
-.sosp-chat .sosp-chat-teaser-close {
-  width: 26px;
 }
 
 .sosp-chat .sosp-chat-input {
