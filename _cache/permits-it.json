@@ -1,5 +1,71 @@
 [
   {
+    "id": "3097355e-7f7f-81c2-b171-db56fd3b23e1",
+    "slug": "richiesta-asilo",
+    "tipo": "Richiesta Asilo",
+    "emoji": "🛡️",
+    "sections": [
+      {
+        "question": "Cos'è questo permesso?",
+        "content": "<p>Il permesso di soggiorno per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> (permesso giallo) è un documento dato a chi ha fatto domanda di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a> (<a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a>) in Italia e sta ancora aspettando una risposta definitiva </p>\n<p><strong>⚠️ Attenzione: </strong>questo permesso esiste solo per chi ha chiesto <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> <strong>prima del 12 giugno 2026</strong>. Se hai chiesto <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> da quella data in poi, con il Patto UE su migrazione e <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> non ricevi più un permesso di soggiorno, ma un <strong>documento nominativo</strong> che vale un anno e ti permette solo di restare in Italia durante la procedura. <a href=\"https://www.sospermesso.it/protezione-internazionale.html#patto\">Leggi la guida all&#039;asilo</a>.</p>",
+        "index": 0
+      },
+      {
+        "question": "Come richiedo il permesso?",
+        "content": "<p>Per prima cosa, devi andare all'ufficio immigrazione della <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> e chiedere <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a>: prenderanno le tue impronte digitali e dopo, ti daranno un permesso di soggiorno per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a>. Non serve il passaporto. Se dici che hai un passaporto, lo devi consegnare alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>.\n</p>\n<p>Chiunque faccia domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> ha diritto a questo permesso, che ti permette di rimanere legalmente in Italia fino alla decisione sulla tua domanda. Ci sono alcune eccezioni (continua a leggere).</p>",
+        "index": 1
+      },
+      {
+        "question": "Che diritti mi dà?",
+        "content": "<ul><li>Lavorare con regolare contratto (lavoro autonomo o subordinato): puoi firmare un contratto di lavoro dopo 60 giorni dalla data del tuo permesso con fotografia (”<a href=\"dizionario.html#attestato-nominativo\" class=\"doc-link\">attestato nominativo</a>”) che la <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> ti dà dopo  </li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Prendere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> nel Comune dove vivi</li><li>Se non hai abbastanza soldi per mantenerti, andare a vivere in un Centro di accoglienza</li></ul>\n<p>Non si può viaggiare fuori dall’Italia con questo permesso.</p>",
+        "index": 2
+      },
+      {
+        "question": "Quanto dura?",
+        "content": "<p>Dura 6 mesi. Ma anche se è scaduto (situazione molto comune), continui ad essere regolare fino alla decisione della Commissione sulla tua domanda di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a>. In molti casi potrai continuare a stare in Italia anche fino alla decisione del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>, ma non sempre (dipende anche Paese da cui vieni, da come sei entrato in Italia, e ci sono nuove leggi in arrivo che presto limiteranno ancora questo diritto.</p>",
+        "index": 3
+      },
+      {
+        "question": "Posso rinnovarlo?",
+        "content": "<p>Il permesso per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> viene rinnovato automaticamente fino a quando la <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> decide sulla tua richiesta di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a>. </p>\n<p> ⚠️ In alcuni casi se hai avuto una risposta negativa dalla Commissione e ad esempio (a) vieni da un paese considerato \"sicuro\"; (b) hai già fatto altre domande di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> in passato; (c) sei stato denunciato alla polizia per reati, il tuo permesso di soggiorno potrebbe non essere rinnovato. <strong>Se hai già avuto una prima risposta negativa e ti stai chiedendo se puoi essere espulso o essere messo in un Centro di Permanenza per i Rimpatri (”CPR”), è una buona idea chiedere subito aiuto legale specializzato.</strong></p>",
+        "index": 4
+      },
+      {
+        "question": "Posso convertirlo in un altro permesso?",
+        "content": "<p>No, questo permesso di soggiorno non può essere cambiato in altri permessi, tranne che per il permesso di soggiorno per motivi familiari.</p>\n<p><em>Se hai fatto domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> quando avevi meno di 18 anni, se hai avuto una decisione negativa finale (dalla Commissione o dal <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>) puoi convertire questo permesso in un permesso per studio, lavoro o attesa occupazione, anche se adesso hai più di 18 anni.</em></p>\n<p><strong>Se hai chiesto <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> dal 12 giugno 2026 in poi (Patto UE): </strong>il documento che ricevi <strong>non è un permesso di soggiorno</strong> e quindi <strong>non si può convertire</strong> in nessun altro permesso, nemmeno per lavoro.</p>",
+        "index": 5
+      },
+      {
+        "question": "Cosa succede se la mia domanda di protezione internazionale viene respinta?",
+        "content": "<p>Se la <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> dice no alla tua domanda, puoi fare ricorso con l'aiuto di un avvocato. Se nell'ultimo anno hai guadagnato meno di 13.600 euro, il tuo avvocato può fare il ricorso <strong>gratis</strong>.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere"
+    ],
+    "primoMethod": "personalmente",
+    "costBollettinoPrimo": null,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Attestato nominativo",
+      "Modello C3",
+      "Se hai un ricorso in tribunale stampa del fascicolo telematico in Tribunale (chiedi al tuo avvocato)"
+    ],
+    "rinnovoMethod": "personalmente",
+    "costBollettinoRinnovo": null,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": "Attenzione: alcune Questura potrebbero richiedere una dichiarazione di ospitalità, ma questo non è richiesto dalla legge!",
+    "categoria": "Protezione",
+    "rinnovoNotApplicable": false
+  },
+  {
     "id": "3097355e-7f7f-8186-96d5-f3daceac6f93",
     "slug": "motivi-religiosi",
     "tipo": "Motivi religiosi",
@@ -403,72 +469,6 @@
     "costMarcaBolloRinnovo": 16,
     "docNotes": null,
     "categoria": "Studio/Lavoro",
-    "rinnovoNotApplicable": false
-  },
-  {
-    "id": "3097355e-7f7f-81c2-b171-db56fd3b23e1",
-    "slug": "richiesta-asilo",
-    "tipo": "Richiesta Asilo",
-    "emoji": "🛡️",
-    "sections": [
-      {
-        "question": "Cos'è questo permesso?",
-        "content": "<p>Il permesso di soggiorno per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> (permesso giallo) è un documento dato a chi ha fatto domanda di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a> (<a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a>) in Italia e sta ancora aspettando una risposta definitiva </p>",
-        "index": 0
-      },
-      {
-        "question": "Come richiedo il permesso?",
-        "content": "<p>Per prima cosa, devi andare all'ufficio immigrazione della <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> e chiedere <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a>: prenderanno le tue impronte digitali e dopo, ti daranno un permesso di soggiorno per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a>. Non serve il passaporto. Se dici che hai un passaporto, lo devi consegnare alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a>.\n</p>\n<p>Chiunque faccia domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> ha diritto a questo permesso, che ti permette di rimanere legalmente in Italia fino alla decisione sulla tua domanda. Ci sono alcune eccezioni (continua a leggere).</p>",
-        "index": 1
-      },
-      {
-        "question": "Che diritti mi dà?",
-        "content": "<ul><li>Lavorare con regolare contratto (lavoro autonomo o subordinato): puoi firmare un contratto di lavoro dopo 60 giorni dalla data del tuo permesso con fotografia (”<a href=\"dizionario.html#attestato-nominativo\" class=\"doc-link\">attestato nominativo</a>”) che la <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> ti dà dopo  </li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</li><li>Prendere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> nel Comune dove vivi</li><li>Se non hai abbastanza soldi per mantenerti, andare a vivere in un Centro di accoglienza</li></ul>\n<p>Non si può viaggiare fuori dall’Italia con questo permesso.</p>",
-        "index": 2
-      },
-      {
-        "question": "Quanto dura?",
-        "content": "<p>Dura 6 mesi. Ma anche se è scaduto (situazione molto comune), continui ad essere regolare fino alla decisione della Commissione sulla tua domanda di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a>. In molti casi potrai continuare a stare in Italia anche fino alla decisione del <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>, ma non sempre (dipende anche Paese da cui vieni, da come sei entrato in Italia, e ci sono nuove leggi in arrivo che presto limiteranno ancora questo diritto.</p>",
-        "index": 3
-      },
-      {
-        "question": "Posso rinnovarlo?",
-        "content": "<p>Il permesso per richiesta <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> viene rinnovato automaticamente fino a quando la <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> decide sulla tua richiesta di <a href=\"dizionario.html#protezione-internazionale\" class=\"doc-link\">protezione internazionale</a>. </p>\n<p> ⚠️ In alcuni casi se hai avuto una risposta negativa dalla Commissione e ad esempio (a) vieni da un paese considerato \"sicuro\"; (b) hai già fatto altre domande di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> in passato; (c) sei stato denunciato alla polizia per reati, il tuo permesso di soggiorno potrebbe non essere rinnovato. <strong>Se hai già avuto una prima risposta negativa e ti stai chiedendo se puoi essere espulso o essere messo in un Centro di Permanenza per i Rimpatri (”CPR”), è una buona idea chiedere subito aiuto legale specializzato.</strong></p>",
-        "index": 4
-      },
-      {
-        "question": "Posso convertirlo in un altro permesso?",
-        "content": "<p>No, questo permesso di soggiorno non può essere cambiato in altri permessi, tranne che per il permesso di soggiorno per motivi familiari.</p>\n<p><em>Se hai fatto domanda di <a href=\"dizionario.html#asilo\" class=\"doc-link\">asilo</a> quando avevi meno di 18 anni, se hai avuto una decisione negativa finale (dalla Commissione o dal <a href=\"dizionario.html#tribunale\" class=\"doc-link\">Tribunale</a>) puoi convertire questo permesso in un permesso per studio, lavoro o attesa occupazione, anche se adesso hai più di 18 anni.</em></p>",
-        "index": 5
-      },
-      {
-        "question": "Cosa succede se la mia domanda di protezione internazionale viene respinta?",
-        "content": "<p>Se la <a href=\"dizionario.html#commissione-territoriale\" class=\"doc-link\">Commissione Territoriale</a> dice no alla tua domanda, puoi fare ricorso con l'aiuto di un avvocato. Se nel 2025 hai guadagnato meno di 13.500 Euro, il tuo avvocato può fare il ricorso <strong>gratis</strong>.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere"
-    ],
-    "primoMethod": "personalmente",
-    "costBollettinoPrimo": null,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Attestato nominativo",
-      "Modello C3",
-      "Se hai un ricorso in tribunale stampa del fascicolo telematico in Tribunale (chiedi al tuo avvocato)"
-    ],
-    "rinnovoMethod": "personalmente",
-    "costBollettinoRinnovo": null,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": "Attenzione: alcune Questura potrebbero richiedere una dichiarazione di ospitalità, ma questo non è richiesto dalla legge!",
-    "categoria": "Protezione",
     "rinnovoNotApplicable": false
   },
   {

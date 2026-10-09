@@ -117,8 +117,11 @@ function buildGuideBlock(filename) {
     return null;
   }
 
-  // Strip 11ty front matter
-  const body = raw.replace(/^---[\s\S]*?---/, '');
+  // Strip 11ty front matter and Liquid tags/outputs (icon renders etc.)
+  const body = raw
+    .replace(/^---[\s\S]*?---/, '')
+    .replace(/\{%[\s\S]*?%\}/g, '')
+    .replace(/\{\{[\s\S]*?\}\}/g, '');
 
   // Remove style/script/noscript, then extract text
   const $ = cheerio.load(body);
