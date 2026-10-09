@@ -405,3 +405,38 @@ body.index { background: var(--bg); }
 .panel-foot{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .panel-foot a{ margin-right:0; }
 .panel-home{ font-size:13px; white-space:nowrap; }
+/* sospermesso:brand begin */
+/* logo SOS Permesso in alto a sinistra (link alla home) + topbar con i font del sito */
+.topbar { padding: 6px 16px; gap: 14px; }
+.topbar .home { display: block; flex-shrink: 0; line-height: 0; border-radius: 8px; }
+.topbar .home:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.topbar-logo { display: block; height: 56px; width: auto; }
+.home-here { font-family: var(--head); font-size: 17px; font-weight: 700; color: var(--ink); }
+.topttl { font-family: var(--sans); font-size: 13px; color: var(--muted); line-height: 1.35; }
+.topttl b { color: var(--ink); }
+.actnav a { font-family: var(--sans); }
+/* la topbar ora e' alta ~69px: riallinea gli sticky (prima 41px) */
+.toc { top: 69px; max-height: calc(100vh - 69px); }
+.ext-banner { top: 69px; }
+@media (max-width: 1000px) {
+  .toc { top: 69px; max-height: none; }
+  #toc-toggle {
+    border: 2px solid var(--ink);
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-family: var(--head);
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: var(--pop-sm);
+  }
+}
+@media (max-width: 700px) {
+  .topbar { gap: 10px; }
+  .topbar-logo { height: 48px; }
+  .home-here { font-size: 15px; }
+  .topttl { font-size: 12px; }
+  .toc { top: 61px; }
+  .ext-banner { top: 61px; }
+}
+/* sospermesso:brand end */

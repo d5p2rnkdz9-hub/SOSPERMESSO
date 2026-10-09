@@ -440,10 +440,13 @@ the bundle must stay in one directory.
   `public/` keeps its old URLs because `_data/pattoUe.js` links `/public/patto-ue/*`. A 301 in
   `netlify.toml` covers the old path.
 - `public/**` is ignored as templates: the reader HTML was being run through Liquid.
-- **Refreshing a text:** replace the bundle folder from the sospatto.it project, then re-run
-  `node scripts/patch-normativa-links.js` (idempotent) — it repoints the "home" link of the four
-  Italian readers from the bundle hub to `/normativa.html`, and warns if the topbar markup
-  changed. Update `verificaData` in `_data/normativa.js`.
+- **Refreshing the texts:** run `node scripts/sync-testi-interattivi.js` (idempotent). It copies
+  the content files from `../../SOSPATTO/public/patto-interattivo/` (override with
+  `SOSPATTO_BUNDLE=…`), keeps the local `style.css`/`amend.css` (yellow/teal theme; SOS Patto's are
+  blue) and the bundle hub `index.html`, strips SOS Patto's SEO block, puts the SOS Permesso logo
+  (`IMAGES/logo-header.png`, link to `/`) top-left in every reader's topbar, points the panel's
+  "⌂" link to `/`, maintains the `sospermesso:brand` CSS block and the `?v=` cache-buster. New
+  texts → add them to `_data/normativa.js`; update `verificaData` there.
 - The texts are duplicated between sospermesso.it and sospatto.it: `/normativa.html` and the
   readers are self-canonical here. If the two sites should consolidate, canonicalize to
   sospatto.it instead.
