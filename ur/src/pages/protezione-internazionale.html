@@ -1,24 +1,72 @@
 ---
 layout: layouts/base.liquid
-title: "بین الاقوامی تحفظ کی گائیڈ"
+title: "اٹلی میں پناہ کی گائیڈ: یورپی یونین کے معاہدے سے پہلے اور بعد | SOS Permesso"
 lang: ur
+description: "اٹلی میں بین الاقوامی تحفظ کی گائیڈ: آپ پر کون سے قواعد لاگو ہوتے ہیں (12 جون 2026 سے پہلے یا بعد)، پناہ کی درخواست کیسے دی جاتی ہے، دستاویز، کام، انٹرویو، فیصلہ اور اپیل۔"
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ur/index.html" class="link-ink">ہوم پیج</a> →
-        <span>بین الاقوامی تحفظ</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">بین الاقوامی تحفظ کی گائیڈ</h1>
-        <p class="section-subtitle">اٹلی میں پناہ کی درخواست کے بارے میں وہ سب کچھ جو آپ کو جاننا ضروری ہے</p>
+        <h1 class="page-title">اٹلی میں پناہ کی گائیڈ</h1>
+        <p class="section-subtitle">بین الاقوامی تحفظ کی درخواست کیسے دی جاتی ہے، ہجرت اور پناہ سے متعلق یورپی یونین کے معاہدے سے پہلے اور بعد</p>
+        <p class="pi-updated">9 اکتوبر 2026 تک اپ ڈیٹ شدہ</p>
       </div>
     </div>
   </section>
@@ -26,143 +74,322 @@ lang: ur
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>اٹلی میں <strong>بین الاقوامی تحفظ</strong> کے بارے میں کچھ آسان معلومات!</p>
-        <p>یہ ایک لمبا اور پیچیدہ راستہ لگ سکتا ہے، لیکن ہم اسے قدم بہ قدم سمجھائیں گے۔</p>
-        <p>ہم صرف عمومی معلومات فراہم کر سکتے ہیں: <strong>ماہر قانونی مدد</strong> حاصل کرنا اہم ہے۔</p>
+      <div class="card pi-card">
+        <p>اگر آپ کو اپنے ملک میں خطرہ ہے، تو آپ اٹلی میں <strong>بین الاقوامی تحفظ</strong> (یعنی <strong>پناہ</strong>) کی درخواست دے سکتے ہیں۔</p>
+        <p><strong>12 جون 2026</strong> سے پوری یورپی یونین میں <strong>نئے قواعد</strong> لاگو ہیں: <strong>ہجرت اور پناہ سے متعلق یورپی یونین کا معاہدہ</strong> (Patto UE)۔ لیکن جن لوگوں نے اس سے پہلے پناہ کی درخواست دی تھی، ان پر عام طور پر <strong>پرانے قواعد</strong> ہی لاگو رہتے ہیں۔</p>
+        <p>اسی لیے اس گائیڈ کے <strong>دو حصے</strong> ہیں۔ سب سے پہلے یہ معلوم کریں کہ آپ پر کون سا لاگو ہوتا ہے۔</p>
+        <p>ہم آپ کو صرف عمومی معلومات دے سکتے ہیں: یہ ضروری ہے کہ آپ <strong>ماہر قانونی مدد</strong> حاصل کریں۔</p>
       </div>
 
-      <!-- STEP 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>1) درخواست دینا</h2>
-        <p>سب سے پہلا کام <strong>Questura (پولیس ڈائریکٹوریٹ) میں ذاتی طور پر اپنی درخواست دینا</strong> ہے۔</p>
-        <p>وہ آپ کے <strong>فنگر پرنٹس</strong> لیں گے اور آپ سے <strong>عمومی سوالات</strong> پوچھیں گے آپ کے، آپ کے خاندان اور آپ کے سفر کے بارے میں۔</p>
-        <p>یہ کوئی مشکل چیز نہیں ہے!</p>
-        <p>جو فارم وہ بھریں گے اسے <strong>C3</strong> کہتے ہیں۔</p>
-        <p>اگر آپ کے پاس <strong>پاسپورٹ</strong> ہے تو وہ آپ سے مانگیں گے اور <strong>طریقہ کار کی پوری مدت</strong> کے دوران اپنے پاس رکھیں گے۔</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>آپ پر کون سے قواعد لاگو ہوتے ہیں؟</h2>
+        <p>اہم وہ دن ہے جب آپ نے اطالوی حکام (Questura یعنی امیگریشن پولیس کا دفتر، سرحدی پولیس) کو <strong>پہلی بار بتایا</strong> کہ آپ پناہ کی درخواست دینا چاہتے ہیں۔ اس لمحے کو <strong>پناہ مانگنے کی خواہش کا اظہار</strong> (manifestazione della volontà) کہتے ہیں۔</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">12 جون 2026 سے پہلے</span>
+            کیا آپ نے اس تاریخ سے پہلے پناہ کی درخواست دی تھی؟ تو آپ پر <strong>پرانے قواعد</strong> لاگو ہوتے ہیں، آپ کے طریقہ کار کے آخر تک، عدالت میں بھی۔
+            <span class="pi-choice-go">معاہدے سے پہلے والے حصے پر جائیں ←</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">12 جون 2026 اور اس کے بعد</span>
+            کیا آپ نے اس تاریخ کو یا اس کے بعد پناہ کی درخواست دی؟ تو آپ پر <strong>یورپی یونین کے معاہدے کے نئے قواعد</strong> لاگو ہوتے ہیں۔
+            <span class="pi-choice-go">یورپی یونین کے معاہدے والے حصے پر جائیں ←</span>
+          </a>
+        </div>
+
+        <h3>اور اگر آپ نے پناہ پہلے مانگی تھی، لیکن Questura نے آپ کی رجسٹریشن بعد میں کی؟</h3>
+        <p>ایسا اکثر ہوتا ہے: آپ نے 12 جون سے پہلے پناہ (یا ملاقات کا وقت) مانگا تھا، لیکن Questura میں فارم (<strong>C3</strong> یا رجسٹریشن) <strong>بعد میں</strong> بھرا گیا۔</p>
+        <p>سب عدالتیں اس پر متفق نہیں ہیں۔ <strong>بہت سے جج</strong> کہتے ہیں کہ <strong>پرانے قواعد</strong> لاگو ہوتے ہیں، کیونکہ دفتر کی تاخیر آپ کا قصور نہیں ہو سکتی۔ کچھ دوسرے جج فارم کی تاریخ کو دیکھتے ہیں۔</p>
+        <p><strong>کیا کریں:</strong> اس تاریخ کے تمام ثبوت سنبھال کر رکھیں جب آپ نے پناہ مانگی تھی (بکنگ کی رسید، وکیل کی طرف سے Questura کو بھیجی گئی PEC یعنی تصدیق شدہ ای میل، اس تنظیم یا ادارے کی رسید جس سے آپ نے رابطہ کیا، مرکز کے بیانات) اور اس بارے میں کسی وکیل سے بات کریں۔</p>
+
+        <h3>کیا آپ نے 12 جون کے بعد نئی درخواست دی ہے؟</h3>
+        <p>اگر آپ کی پہلی درخواست پرانی تھی لیکن آپ نے 12 جون 2026 کے بعد <strong>ایک اور</strong> درخواست دی (<strong>دوبارہ درخواست</strong>، domanda reiterata)، تو عام طور پر نئی درخواست پر <strong>معاہدے کے قواعد</strong> لاگو ہوتے ہیں۔</p>
       </div>
 
-      <!-- STEP 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>2) عارضی اجازت نامہ حاصل کرنا</h2>
-        <p>آپ کی درخواست وصول ہونے کے بعد، آپ کو <strong>پناہ کی درخواست کا اجازت نامہ</strong> دیا جائے گا۔</p>
-        <p>یہ ایک اصلی <strong>اقامتی اجازت نامہ</strong> ہے جو آپ کی درخواست کی جانچ کے دوران آپ کو اٹلی میں رہنے کی اجازت دیتا ہے۔</p>
-        <p>اس اجازت نامے کے ساتھ آپ:</p>
-        <ul>
-          <li>کام کر سکتے ہیں 👷</li>
-          <li>پڑھائی کر سکتے ہیں 📚</li>
-          <li>سول رجسٹر میں رجسٹریشن کروا سکتے ہیں 🏠</li>
-          <li>فیملی ڈاکٹر چن سکتے ہیں 🩺</li>
-          <li>ڈرائیونگ لائسنس حاصل کر سکتے ہیں 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>آپ طریقہ کار مکمل ہونے تک اٹلی سے باہر سفر نہیں کر سکتے</strong> اور <strong>آپ اس اجازت نامے کو ورک پرمٹ میں تبدیل نہیں کر سکتے</strong>۔</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="لاگو ہونے والے قواعد" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">12/6/2026 سے پہلے کی درخواست</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">12/6/2026 سے درخواست · یورپی یونین کا معاہدہ</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">پرانے قواعد (معاہدے سے پہلے)</h2>
+        <p class="pi-panel-sub">ان کے لیے جنہوں نے 12 جون 2026 سے پہلے پناہ کی درخواست دی</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>Questura میں درخواست</h2>
+            <p>آپ نے درخواست <strong>ذاتی طور پر Questura میں</strong> (یا سرحدی پولیس کے پاس) دی۔</p>
+            <p>انہوں نے آپ کے <strong>فنگر پرنٹس</strong> لیے اور آپ سے آپ کے، آپ کے خاندان اور آپ کے سفر کے بارے میں کچھ سوالات پوچھے۔ اس فارم کو <strong>C3</strong> کہتے ہیں۔</p>
+            <p>اگر آپ کے پاس <strong>پاسپورٹ</strong> ہے، تو Questura اسے پورے طریقہ کار کے دوران اپنے پاس رکھتی ہے۔</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>پناہ کی درخواست کا اجازت نامہ</h2>
+            <p>آپ کو <a href="permesso-richiesta-asilo.html"><strong>پناہ کی درخواست کا رہائشی اجازت نامہ</strong></a> (permesso di soggiorno) ملتا ہے۔ یہ <strong>6 ماہ</strong> کے لیے ہوتا ہے اور فیصلہ آنے تک اس کی تجدید ہوتی رہتی ہے۔ شروع میں، Questura کی رسید عارضی اجازت نامے کا کام کرتی ہے۔</p>
+            <p>اس اجازت نامے کے ساتھ آپ پڑھائی کر سکتے ہیں، anagrafe (بلدیہ کا رہائشی رجسٹر) میں اندراج کروا سکتے ہیں، فیملی ڈاکٹر لے سکتے ہیں اور ڈرائیونگ لائسنس حاصل کر سکتے ہیں۔</p>
+            <p>درخواست کے <strong>60 دن</strong> بعد آپ <strong>کام</strong> کر سکتے ہیں، اگر کمیشن نے ابھی تک فیصلہ نہیں کیا۔</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div>جب تک طریقہ کار ختم نہ ہو <strong>آپ اٹلی سے باہر سفر نہیں کر سکتے</strong>، اور یہ اجازت نامہ کام کے اجازت نامے میں <strong>تبدیل نہیں ہو سکتا</strong>۔</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>کمیشن میں انٹرویو</h2>
+            <p>آپ کو <strong>Commissione Territoriale</strong> (پناہ کی درخواستوں کا فیصلہ کرنے والا علاقائی کمیشن) کے سامنے <strong>سماعت</strong> کے لیے بلایا جاتا ہے۔ یہ وہ موقع ہے جب آپ اپنی کہانی سناتے ہیں اور بتاتے ہیں کہ آپ <strong>اپنے ملک واپس کیوں نہیں جا سکتے</strong>۔</p>
+            <p>یہ پوچھ گچھ نہیں، بلکہ بات چیت ہے۔ <strong>واضح اور درست</strong> بات کرنے کی کوشش کریں اور جو دستاویزات آپ کے پاس ہیں وہ ساتھ لائیں۔</p>
+            <p>اگر آپ کسی <strong>"محفوظ" سمجھے جانے والے ملک</strong> سے آئے ہیں یا آپ کو حراست میں رکھا گیا ہے، تو طریقہ کار <strong>تیز رفتار</strong> ہو سکتا ہے: انٹرویو اور فیصلہ چند دنوں میں ہو جاتے ہیں۔ بغیر سرپرست کے نابالغ اور خاص طور پر کمزور یا حساس حالت والے (vulnerabili) افراد تیز رفتار طریقہ کار میں نہیں جاتے۔</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>فیصلہ</h2>
+            <p>فیصلہ آپ کو <strong>استقبالیہ مرکز</strong> (پناہ کے درخواست گزاروں کی رہائش کا مرکز) میں یا اس <strong>پتے</strong> پر ملتا ہے جو آپ نے Questura کو دیا تھا۔ پتے کی ہر تبدیلی کی اطلاع ہمیشہ دیں، ورنہ ہو سکتا ہے کہ فیصلہ آپ تک نہ پہنچے اور اپیل کی مدت گزر جائے۔</p>
+            <p>ممکنہ جوابات نیچے <a href="#esiti">"آپ کو کون سے جواب مل سکتے ہیں"</a> میں بیان کیے گئے ہیں۔</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>جواب منفی ہو تو اپیل</h2>
+            <p>آپ <strong>عدالت میں اپیل</strong> کر سکتے ہیں، لیکن اس کے لیے آپ کو <strong>وکیل</strong> کی ضرورت ہے۔ وقت بہت کم ہوتا ہے: وکیل سے <strong>فوراً</strong> رابطہ کریں۔</p>
+            <table class="pi-table">
+              <thead><tr><th>صورت</th><th>اپیل کی مدت</th><th>کیا آپ اٹلی میں رہ سکتے ہیں؟</th></tr></thead>
+              <tbody>
+                <tr><td data-label="صورت">عام طریقہ کار</td><td data-label="مدت">30 دن</td><td data-label="رہنا">ہاں، خود بخود</td></tr>
+                <tr><td data-label="صورت">تیز رفتار طریقہ کار یا حراست میں موجود شخص</td><td data-label="مدت">15 دن</td><td data-label="رہنا">اکثر خود بخود نہیں</td></tr>
+                <tr><td data-label="صورت">سرحدی طریقہ کار</td><td data-label="مدت">7 دن</td><td data-label="رہنا">خود بخود نہیں</td></tr>
+              </tbody>
+            </table>
+            <p>جب اپیل آپ کو خود بخود تحفظ <strong>نہیں</strong> دیتی (مثلاً اگر درخواست کو "واضح طور پر بے بنیاد" قرار دیا گیا ہو)، تو وکیل کو اپیل کے ساتھ ہی جج سے فیصلے کی <strong>معطلی</strong> کی درخواست کرنی ہوتی ہے۔</p>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>3) کمیشن کے سامنے انٹرویو</h2>
-        <p>اگلا قدم <strong>Commissione Territoriale کے سامنے سماعت</strong> ہے۔</p>
-        <p>یہ وہ لمحہ ہے جب آپ <strong>اپنی کہانی سنا سکتے ہیں</strong>، بتا سکتے ہیں کہ آپ کے ساتھ کیا ہوا اور <strong>آپ اپنے ملک کیوں واپس نہیں جا سکتے</strong>۔</p>
-        <p>وہ آپ سے بہت سے سوالات پوچھیں گے تاکہ آپ کی صورتحال اچھی طرح سمجھ سکیں۔</p>
-        <p>یہ کوئی پوچھ گچھ نہیں ہے، بلکہ ایک بات چیت ہے۔ <strong>کھلے اور سچے</strong> رہنے کی کوشش کریں۔</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">یورپی یونین کے معاہدے کے نئے قواعد</h2>
+        <p class="pi-panel-sub">ان کے لیے جنہوں نے 12 جون 2026 کو یا اس کے بعد پناہ کی درخواست دی</p>
 
-      <!-- STEP 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>4) فیصلہ</h2>
-        <p>سماعت کے بعد آپ کو <strong>کمیشن کا جواب</strong> ملے گا۔ اگر آپ کسی پناہ مرکز میں ہیں تو مرکز کا ذمہ دار آپ کو کمیشن کے فیصلے سے آگاہ کرے گا۔ ورنہ یہ اس رہائشی پتے پر بھیجا جائے گا جو آپ نے پناہ کی درخواست دیتے وقت Questura کو بتایا تھا۔</p>
-        <p>اس لیے ہمیشہ Questura کو پتے کی تبدیلی کی اطلاع دینا یاد رکھیں، ورنہ آپ کو مسائل ہو سکتے ہیں!</p>
-        <p>کمیشن کے ممکنہ <strong>مثبت</strong> فیصلے ہیں:</p>
-        <ul>
-          <li><a href="/ur/permesso-asilo-status-rifugiato.html">پناہ گزین کی حیثیت</a> (اسے "سیاسی پناہ" بھی کہتے ہیں)</li>
-          <li><a href="/ur/permesso-protezione-sussidiaria.html">ذیلی تحفظ</a></li>
-          <li><a href="/ur/permesso-protezione-speciale.html">خصوصی تحفظ</a></li>
-          <li><a href="/ur/permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">طبی علاج</a></li>
-        </ul>
-        <p>اگر کمیشن سمجھے کہ آپ ان میں سے کسی تحفظ کے مستحق نہیں ہیں، تو آپ کو <strong>منفی جواب</strong> ملے گا۔</p>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>5) رد ہونے پر اپیل</h2>
-        <p>❌ اگر نتیجہ <strong>مثبت نہیں</strong> ہے، تو آپ <strong>عدالت میں اپیل</strong> کر سکتے ہیں۔ یہ ایسا ہے جیسے <strong>دوسری رائے</strong> مانگنا۔</p>
-        <p>📌 آپ اکیلے اپیل نہیں کر سکتے: آپ کو ایک <strong>وکیل</strong> کی ضرورت ہے۔</p>
-        <p>⏰ منفی فیصلے کی اطلاع ملنے سے اپیل کے لیے آپ کے پاس بہت کم وقت ہوتا ہے، <strong>جتنی جلدی ممکن ہو</strong> وکیل سے رابطہ کریں!</p>
-        <p>💸 اگر آپ کی سالانہ آمدنی <strong>13,700 یورو</strong> سے کم ہے، تو آپ اپنے وکیل سے <strong>مفت قانونی مدد</strong> کی درخواست کر سکتے ہیں۔</p>
-        <p>⏳ یاد رکھیں: <strong>طریقہ کار میں مہینے یا سال بھی لگ سکتے ہیں</strong>۔</p>
-      </div>
-
-      <!-- PAESI SICURI -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ توجہ: "محفوظ" سمجھے جانے والے ممالک</h2>
-        <p>اگر آپ <strong>ایسے ملک سے آئے ہیں جسے اٹلی محفوظ سمجھتا ہے</strong>، تو آپ کی درخواست <strong>تیزی سے</strong> جانچی جائے گی۔</p>
-        <p>فی الحال یہ ممالک ہیں:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 البانیہ</span>
-          <span>🇩🇿 الجزائر</span>
-          <span>🇧🇩 بنگلہ دیش</span>
-          <span>🇧🇦 بوسنیا و ہرزیگووینا</span>
-          <span>🇨🇻 کیپ ورڈے</span>
-          <span>🇨🇮 ساحل عاج</span>
-          <span>🇪🇬 مصر</span>
-          <span>🇬🇲 گیمبیا</span>
-          <span>🇬🇪 جارجیا</span>
-          <span>🇬🇭 گھانا</span>
-          <span>🇽🇰 کوسوو</span>
-          <span>🇲🇰 شمالی مقدونیہ</span>
-          <span>🇲🇦 مراکش</span>
-          <span>🇲🇪 مونٹی نیگرو</span>
-          <span>🇵🇪 پیرو</span>
-          <span>🇸🇳 سینیگال</span>
-          <span>🇷🇸 سربیا</span>
-          <span>🇱🇰 سری لنکا</span>
-          <span>🇹🇳 تیونس</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>ابتدائی جانچ ("accertamenti")</h2>
+            <p>اگر آپ کسی ریسکیو کے بعد <strong>سمندر کے راستے پہنچے</strong> ہیں، درست دستاویزات کے بغیر <strong>سرحد</strong> پر پہنچے ہیں، یا غیر قانونی داخلے کے بعد اٹلی میں پائے گئے ہیں، تو پہلے آپ کی <strong>ابتدائی جانچ</strong> ہوتی ہے (انگریزی میں <em>screening</em>)۔</p>
+            <p>یہ سرحد پر زیادہ سے زیادہ <strong>7 دن</strong> اور اگر آپ پہلے سے اٹلی میں ہیں تو <strong>3 دن</strong> تک ہوتی ہے۔ اس میں شامل ہیں:</p>
+            <ul>
+              <li>ایک <strong>طبی معائنہ</strong> اور <strong>کمزوریوں</strong> (vulnerabilità) کی جانچ؛</li>
+              <li><strong>شناخت</strong> اور <strong>فنگر پرنٹس</strong>؛</li>
+              <li>ایک سکیورٹی چیک۔</li>
+            </ul>
+            <p>اگر آپ کو صحت کے مسائل ہیں، آپ نابالغ ہیں یا آپ کے ساتھ تشدد ہوا ہے، تو <strong>فوراً بتائیں</strong>۔</p>
+          </div>
         </div>
-        <p>لیکن اگر آپ کی <strong>ذاتی صورتحال</strong> میں <strong>سنگین اور خاص خطرات</strong> ہیں، تو آپ کو <strong>شروع سے ہی اچھی طرح بتانا ہوگا</strong>۔</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>یہ بتانا کہ آپ پناہ مانگنا چاہتے ہیں</h2>
+            <p>پہلا قدم حکام کو یہ بتانا ہے کہ آپ تحفظ مانگنا چاہتے ہیں۔ یہ <strong>پناہ مانگنے کی خواہش کا اظہار</strong> (manifestazione della volontà) ہے۔</p>
+            <p>فی الحال، اور کم از کم <strong>30 اپریل 2027</strong> تک، اٹلی میں یہ اظہار <strong>Questura</strong> اور <strong>سرحدی پولیس</strong> وصول کرتی ہیں۔ اس کے کچھ اور طریقے بھی ہیں:</p>
+            <ul>
+              <li><strong>وکیل کے ذریعے، PEC پر</strong> (تصدیق شدہ ای میل): وکیل Questura کو لکھتا ہے کہ آپ پناہ مانگنا چاہتے ہیں۔ یہ اکثر ایک <strong>اچھا خیال</strong> ہوتا ہے، کیونکہ اس طرح آپ کے پاس اس تاریخ کا <strong>پکا ثبوت</strong> ہوتا ہے جب آپ نے پناہ مانگی۔</li>
+              <li><strong>کسی ادارے کے ذریعے</strong>: کچھ شہروں میں یہ اظہار کسی تنظیم، کسی CAF (ٹیکس اور دستاویزات میں مدد کا مرکز)، بلدیہ کے غیر ملکیوں کے دفتر یا Questura کے بتائے ہوئے کسی اور ادارے کو کرنا ہوتا ہے۔</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>ہر شہر کا اپنا طریقہ ہے۔</strong> جانے سے پہلے کسی تنظیم، قانونی مدد کے مرکز یا وکیل سے معلوم کریں کہ <strong>آپ کے شہر</strong> میں یہ کیسے ہوتا ہے۔ <a href="aiuto-legale.html">مفت قانونی مدد تلاش کریں</a>۔</div>
+            </div>
+            <p>اس لمحے سے، اگر آپ کے پاس گزارے کے لیے پیسے نہیں ہیں، تو آپ کو <a href="#accoglienza">رہائش اور استقبال</a> کا حق ہے۔</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>رجسٹریشن اور دستاویز</h2>
+            <p>Questura کو آپ کی درخواست <strong>5 دن</strong> کے اندر <strong>رجسٹر</strong> کرنی ہوتی ہے (اگر بہت زیادہ لوگ آ جائیں تو 15 دن تک)۔ وہ آپ کا ڈیٹا لیتی ہے اور آپ کو ایک <strong>معلوماتی کتابچہ</strong> دیتی ہے۔</p>
+            <p>فی الحال اٹلی میں Questura میں رجسٹریشن <strong>درخواست کی باقاعدہ تکمیل ("formalizzazione") بھی شمار ہوتی ہے</strong>: آپ کو کوئی اور قدم نہیں اٹھانا پڑتا۔</p>
+            <p>آپ کو آپ کی تصویر والی <strong>آپ کے نام کی دستاویز</strong> (documento nominativo) ملتی ہے۔ <strong>یہ رہائشی اجازت نامہ (permesso di soggiorno) نہیں ہے</strong>: معاہدے کے تحت "پناہ کی درخواست کا permesso di soggiorno" اب موجود نہیں رہا۔ یہ دستاویز صرف یہ ثابت کرتی ہے کہ آپ طریقہ کار کے دوران <strong>اٹلی میں رہ سکتے ہیں</strong>۔ یہ <strong>ایک سال</strong> کے لیے درست ہوتی ہے اور اس کی تجدید ہو سکتی ہے۔</p>
+            <p>آپ کو اپنا <strong>رہائشی پتہ</strong> (domicilio) بتانا ہوگا، اور ساتھ ہی ایک فون نمبر یا ای میل بھی۔</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>یہ دستاویز سفری دستاویز نہیں ہے:</strong> آپ اسے دوسرے ممالک جانے کے لیے استعمال نہیں کر سکتے۔</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>کام کرنا</h2>
+            <p>درخواست کے <strong>90 دن</strong> بعد آپ <strong>کام</strong> کر سکتے ہیں، اگر کمیشن نے ابھی تک فیصلہ نہیں کیا اور تاخیر آپ کی وجہ سے نہیں ہے۔</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>آپ اسے کام کے اجازت نامے میں تبدیل نہیں کر سکتے۔</strong> پناہ کے درخواست گزار کی دستاویز رہائشی اجازت نامہ نہیں ہے، اس لیے اسے کسی دوسرے اجازت نامے میں "بدلا" نہیں جا سکتا، چاہے آپ کے پاس ملازمت کا معاہدہ ہی کیوں نہ ہو۔</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>کون سا طریقہ کار: عام، تیز رفتار یا سرحدی</h2>
+            <p><strong>Commissione Territoriale</strong> فیصلہ کرتا ہے کہ کون سا طریقہ کار استعمال ہوگا اور آپ کو اس کی اطلاع دیتا ہے۔</p>
+            <table class="pi-table">
+              <thead><tr><th>طریقہ کار</th><th>کب</th><th>فیصلے کی مدت</th></tr></thead>
+              <tbody>
+                <tr><td data-label="طریقہ کار"><strong>عام</strong></td><td data-label="کب">زیادہ تر صورتوں میں</td><td data-label="مدت">6 ماہ (بڑھائی جا سکتی ہے)</td></tr>
+                <tr><td data-label="طریقہ کار"><strong>تیز رفتار</strong></td><td data-label="کب">مثلاً: آپ کسی <a href="#paesi-sicuri">"محفوظ" ملک</a> سے آئے ہیں؛ یورپ میں آپ کے ملک کے لوگوں کی منظور شدہ درخواستیں کم ہیں (20% یا اس سے کم)؛ آپ ایسی باتیں بتاتے ہیں جن کا معاملے سے تعلق نہیں یا جو ایک دوسرے سے متضاد ہیں؛ آپ نے اپنی شناخت کے بارے میں جھوٹ بولا؛ آپ نے پناہ کی درخواست دیر سے دی</td><td data-label="مدت">3 ماہ</td></tr>
+                <tr><td data-label="طریقہ کار"><strong>سرحدی</strong></td><td data-label="کب">اگر آپ نے سرحد پر یا کشتی سے اترنے کے بعد پناہ مانگی، داخلے کی دستاویزات کے بغیر، اور آپ تیز رفتار طریقہ کار کی کسی صورت میں آتے ہیں</td><td data-label="مدت">کل 12 ہفتے، اپیل سمیت</td></tr>
+              </tbody>
+            </table>
+            <p><strong>سرحدی طریقہ کار</strong> میں آپ کو حکام کی <strong>بتائی ہوئی جگہ</strong> پر رہنا ہوتا ہے، اور بعض صورتوں میں آپ کو کسی مرکز میں <strong>حراست میں رکھا</strong> جا سکتا ہے۔</p>
+            <p><strong>بغیر سرپرست کے نابالغ</strong> صرف سکیورٹی کی وجوہات کی بنا پر سرحدی طریقہ کار میں جاتے ہیں۔ <strong>خاص طور پر کمزور یا حساس حالت والے</strong> (vulnerabili) افراد اس میں نہیں جاتے اگر انہیں وہ مدد نہ مل سکے جس کی انہیں ضرورت ہے۔</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>کمیشن میں انٹرویو</h2>
+            <p><strong>ذاتی انٹرویو</strong> لازمی ہے: یہ اپنی کہانی سنانے اور یہ بتانے کا موقع ہے کہ آپ اپنے ملک واپس کیوں نہیں جا سکتے۔</p>
+            <p>انٹرویو سے پہلے آپ کو <strong>مفت قانونی رہنمائی</strong> کا حق ہے: کوئی شخص جو آپ کو طریقہ کار سمجھاتا ہے۔ <strong>اس کی درخواست کریں</strong>۔</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>رابطے میں رہنا: یہ ایک فرض ہے</h2>
+            <p>معاہدے کے تحت آپ کی ذمہ داریاں زیادہ سخت ہیں۔ آپ کو لازماً:</p>
+            <ul>
+              <li><strong>تعاون</strong> کرنا اور اپنے پاس موجود دستاویزات جمع کروانا ہیں؛</li>
+              <li>انٹرویو اور ملاقاتوں پر <strong>حاضر ہونا</strong> ہے؛</li>
+              <li>پتے، فون یا ای میل کی ہر تبدیلی کی <strong>فوراً اطلاع</strong> دینی ہے؛</li>
+              <li><strong>اٹلی میں رہنا</strong> ہے اور کسی دوسرے یورپی ملک میں نہیں جانا۔</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>اگر آپ ایسا نہیں کرتے</strong>، تو کمیشن آپ کی درخواست کو <strong>واپس لی گئی</strong> سمجھ سکتا ہے (یعنی آپ کے کہے بغیر درخواست واپس سمجھی جاتی ہے) اور طریقہ کار بند کر سکتا ہے۔ اس فیصلے کے خلاف اپیل صرف <strong>7 دن</strong> میں کرنی ہوتی ہے۔</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>فیصلہ</h2>
+            <p>فیصلہ آپ کو <strong>استقبالیہ مرکز</strong> میں یا آخری <strong>پتے</strong> پر ملتا ہے جس کی آپ نے اطلاع دی تھی۔ ممکنہ جوابات نیچے <a href="#esiti">"آپ کو کون سے جواب مل سکتے ہیں"</a> میں بیان کیے گئے ہیں۔</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>جواب منفی ہو تو اپیل</h2>
+            <p>آپ <strong>وکیل</strong> کے ساتھ <strong>عدالت میں اپیل</strong> کر سکتے ہیں۔ معاہدے کے تحت وقت <strong>اور بھی کم</strong> ہے: جس دن آپ کو فیصلہ ملے اسی دن وکیل سے رابطہ کریں۔</p>
+            <table class="pi-table">
+              <thead><tr><th>صورت</th><th>اپیل کی مدت</th><th>کیا آپ اٹلی میں رہ سکتے ہیں؟</th></tr></thead>
+              <tbody>
+                <tr><td data-label="صورت">عام طریقہ کار</td><td data-label="مدت">30 دن</td><td data-label="رہنا">ہاں، خود بخود</td></tr>
+                <tr><td data-label="صورت">تیز رفتار طریقہ کار، ناقابلِ قبول یا واپس لی گئی درخواست</td><td data-label="مدت">7 دن</td><td data-label="رہنا">خود بخود نہیں</td></tr>
+                <tr><td data-label="صورت">سرحدی طریقہ کار</td><td data-label="مدت">5 دن</td><td data-label="رہنا">خود بخود نہیں (بغیر سرپرست کے نابالغوں کے لیے ہاں)</td></tr>
+              </tbody>
+            </table>
+            <p>جب اپیل آپ کو خود بخود تحفظ نہیں دیتی، تو وکیل کو <strong>اپیل کے ساتھ ہی</strong> جج سے اٹلی میں <strong>رہنے کی اجازت</strong> (autorizzazione a rimanere) مانگنی ہوتی ہے۔ جج تقریباً 10 دن میں فیصلہ کرتا ہے، اور جب تک وہ فیصلہ کر رہا ہو، عام طور پر آپ کو ملک سے نکالا نہیں جا سکتا۔</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">معاہدے کے قواعد کے بارے میں مزید SOS Patto پر پڑھیں (اطالوی زبان میں)</a>
+        </p>
       </div>
 
-      <!-- SITUAZIONI PARTICOLARI -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ خصوصی حالات</h2>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">ہر صورت میں جاننے والی باتیں</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>آپ کو کون سے جواب مل سکتے ہیں</h2>
+        <p>یہ پرانے قواعد اور معاہدے دونوں کے تحت لاگو ہیں۔ کمیشن آپ کو یہ دے سکتا ہے:</p>
+        <ul>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>پناہ گزین کی حیثیت</strong></a> (جسے "سیاسی پناہ" کہا جاتا ہے): <strong>5 سال</strong> کا اجازت نامہ؛</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>ذیلی تحفظ</strong></a>: <strong>5 سال</strong> کا اجازت نامہ؛</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>خصوصی تحفظ</strong></a>: <strong>2 سال</strong> کا اجازت نامہ، قابلِ تجدید، جس کے ساتھ آپ کام کر سکتے ہیں؛</li>
+          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>طبی علاج کا اجازت نامہ</strong></a>، اگر آپ شدید بیمار ہیں۔</li>
+        </ul>
+        <p>اگر کمیشن سمجھتا ہے کہ آپ ان میں سے کسی تحفظ کے حقدار نہیں ہیں، تو جواب <strong>منفی</strong> ہوتا ہے: آپ اپنے حصے میں بتائی گئی مدت کے اندر اپیل کر سکتے ہیں۔</p>
+      </div>
+
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>"محفوظ" سمجھے جانے والے ممالک</h2>
+        <p>اگر آپ کسی ایسے ملک سے آئے ہیں جسے اٹلی <strong>محفوظ</strong> سمجھتا ہے، تو آپ کی درخواست <strong>زیادہ تیزی سے</strong> جانچی جاتی ہے اور اپیل کے لیے آپ کے پاس کم وقت ہوتا ہے۔ آج اطالوی فہرست میں شامل ہیں:</p>
+        <ul class="pi-countries">
+          <li>البانیہ</li><li>الجزائر</li><li>بنگلہ دیش</li><li>بوسنیا و ہرزیگووینا</li><li>کیپ ورڈے</li>
+          <li>آئیوری کوسٹ</li><li>مصر</li><li>گیمبیا</li><li>جارجیا</li><li>گھانا</li>
+          <li>کوسوو</li><li>شمالی مقدونیہ</li><li>مراکش</li><li>مونٹی نیگرو</li><li>پیرو</li>
+          <li>سینیگال</li><li>سربیا</li><li>سری لنکا</li><li>تیونس</li>
+        </ul>
+        <p>معاہدے کے تحت (12 جون 2026 سے دی گئی درخواستیں) ایک <strong>یورپی یونین کی فہرست</strong> بھی ہے، جو یورپی یونین کے تمام ممالک میں لاگو ہوتی ہے:</p>
+        <ul class="pi-countries">
+          <li>بنگلہ دیش</li><li>کولمبیا</li><li>مصر</li><li>بھارت</li><li>کوسوو</li><li>مراکش</li><li>تیونس</li>
+        </ul>
+        <p><strong>یورپی یونین میں شامل ہونے کے امیدوار ممالک</strong> (مثلاً البانیہ، سربیا، ترکی، جارجیا) بھی محفوظ سمجھے جاتے ہیں، سوائے کچھ استثنائی صورتوں کے: مثلاً اگر اس ملک میں جنگ ہو۔</p>
+        <p>اس کے علاوہ، وہ لوگ بھی تیز رفتار طریقہ کار میں جاتے ہیں جو ایسے ملک سے آتے ہیں جس کے لوگوں کی یورپ میں منظور شدہ درخواستیں <strong>20% یا اس سے کم</strong> ہیں۔</p>
+        <p>"محفوظ" ملک سے آنے کا <strong>یہ مطلب نہیں</strong> کہ آپ کی درخواست رد کر دی جائے گی۔ اگر آپ کی ذاتی صورتحال میں <strong>سنگین اور مخصوص</strong> خطرات ہیں، تو آپ کو شروع سے ہی انہیں اچھی طرح بیان کرنا ہوگا۔</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>خاص حالات</h2>
         <p>اگر آپ:</p>
         <ul>
-          <li>نابالغ ہیں 👶</li>
-          <li>خاتون ہیں 👩🏽</li>
-          <li>معذور ہیں ♿</li>
-          <li>نفسیاتی مسائل سے دوچار ہیں 🧠</li>
-          <li>تشدد، انسانی سمگلنگ یا جسمانی تشویہ کا شکار ہیں 🚫</li>
+          <li>نابالغ ہیں، خاص طور پر اگر آپ والدین کے بغیر اٹلی میں ہیں؛</li>
+          <li>اکیلی خاتون ہیں یا حاملہ ہیں؛</li>
+          <li>معذوری یا کسی سنگین بیماری کا شکار ہیں؛</li>
+          <li>ذہنی صحت کے مسائل کا سامنا کر رہے ہیں؛</li>
+          <li>تشدد، جسمانی اذیت، انسانی اسمگلنگ یا جنسی اعضاء کو نقصان پہنچانے (ختنہ نسواں) کا شکار ہوئے ہیں؛</li>
         </ul>
-        <p>... تو آپ کی درخواست <strong>خصوصی توجہ</strong> سے جانچی جائے گی، چاہے آپ "محفوظ" ملک سے آئے ہوں۔</p>
+        <p>… تو آپ کو <strong>خصوصی ضمانتوں</strong> اور اپنی ضرورت کے مطابق رہائش اور مدد کا حق ہے، چاہے آپ کسی "محفوظ" ملک سے آئے ہوں۔ جتنی جلدی ہو سکے بتائیں: Questura میں، مرکز میں، کمیشن کو۔</p>
+        <p><strong>بغیر سرپرست کے نابالغوں</strong> کو ایک <strong>سرپرست</strong> (tutore) کا حق ہے اور انہیں سرحد سے واپس نہیں لوٹایا جا سکتا۔</p>
       </div>
 
-      <!-- DUBLINO -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 اگر آپ نے کسی اور ملک میں پناہ کی درخواست دی ہے (ڈبلن سسٹم)</h2>
-        <p>اگر آپ نے <strong>کسی اور یورپی ملک میں پناہ کی درخواست دی ہے</strong> یا وہاں <strong>آپ کے فنگر پرنٹس لیے گئے</strong> ہیں، تو ممکن ہے کہ <strong>اٹلی آپ کی درخواست</strong> کی جانچ کا ذمہ دار نہ ہو۔</p>
-        <p>ایسی صورتوں میں آپ کی <strong>درخواست دوسرے ملک کو منتقل</strong> کی جا سکتی ہے۔</p>
-        <p>👉 <strong>کیا کرنا چاہیے:</strong> اگر آپ اس صورتحال میں ہیں، تو بہت ضروری ہے کہ آپ <strong>فوری طور پر کسی وکیل یا پناہ کے قانون میں ماہر</strong> سے مدد لیں۔</p>
+      <div class="card pi-card">
+        <h2>اگر آپ نے کسی دوسرے یورپی ملک میں پناہ مانگی ہے (ڈبلن)</h2>
+        <p>اگر آپ نے <strong>پہلے ہی کسی دوسرے یورپی ملک میں پناہ مانگی ہے</strong>، یا وہاں آپ کے <strong>فنگر پرنٹس</strong> لیے گئے تھے، تو ہو سکتا ہے کہ آپ کی درخواست کی جانچ کی ذمہ داری <strong>اٹلی کی نہ ہو</strong>۔ اس صورت میں آپ کو اس ملک میں <strong>منتقل</strong> کیا جا سکتا ہے۔</p>
+        <p>30 جون 2026 تک رجسٹر ہونے والی درخواستوں پر پرانے <strong>ڈبلن ضابطے</strong> (Regolamento Dublino) کے قواعد لاگو ہوتے ہیں؛ 1 جولائی 2026 سے رجسٹر ہونے والی درخواستوں پر معاہدے کے نئے قواعد لاگو ہوتے ہیں۔</p>
+        <p><strong>کیا کریں:</strong> فوراً کسی وکیل یا تجربہ کار کارکن سے مدد لیں۔</p>
       </div>
 
-      <!-- ACCOGLIENZA -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 پناہ کے درخواست گزاروں کا پناہ کا حق</h2>
-        <p>اٹلی میں، وہ لوگ جو پناہ کی درخواست دیتے ہیں اور <strong>اپنی کفالت کے لیے کافی رقم نہیں رکھتے</strong> انہیں <strong>پناہ مرکز</strong> میں جگہ ملنے کا حق ہے۔</p>
-        <p>⏱ <strong>پناہ کا حق لاگو ہے:</strong></p>
+      <div class="card pi-card" id="accoglienza">
+        <h2>رہائش اور استقبال کا حق</h2>
+        <p>اگر آپ پناہ کی درخواست دیتے ہیں اور <strong>آپ کے پاس گزارے کے لیے کافی پیسے نہیں ہیں</strong>، تو آپ کو کسی <strong>استقبالیہ مرکز</strong> میں جگہ کا حق ہے۔</p>
         <ul>
-          <li>اس لمحے سے جب <strong>شخص پناہ کی درخواست دینے کی خواہش ظاہر کرتا ہے</strong>،</li>
-          <li><strong>طریقہ کار کے اختتام تک</strong>، یعنی جب درخواست <strong>قبول</strong> ہو جائے یا <strong>حتمی طور پر رد</strong> ہو جائے یا <strong>واپس لے لی</strong> جائے۔</li>
+          <li>یہ حق اس لمحے سے شروع ہوتا ہے جب آپ <strong>بتاتے ہیں کہ آپ پناہ مانگنا چاہتے ہیں</strong>۔</li>
+          <li>یہ کمیشن کے پورے طریقہ کار کے دوران، اپیل کی مدت ختم ہونے تک رہتا ہے، اور اگر اپیل آپ کو اٹلی میں رہنے دیتی ہے تو اپیل کے دوران بھی۔</li>
         </ul>
-        <p>⚠️ دیگر صورتوں میں بھی پناہ کا حق منسوخ ہو سکتا ہے، جیسے <strong>مرکز چھوڑنے</strong> پر یا اگر شخص کو مزید <strong>ضرورت مند نہ سمجھا جائے</strong>۔</p>
+        <p>آپ <strong>یہ حق کھو سکتے ہیں</strong> اگر آپ مرکز چھوڑ دیں، انٹرویو پر نہ جائیں یا آپ کے پاس کافی پیسے ہوں۔</p>
+        <p>معاہدے کے تحت حکام آپ کو <strong>کسی مخصوص جگہ پر رہنے</strong> کا پابند بھی کر سکتے ہیں (سرحدی طریقہ کار میں ہمیشہ)۔ اگر آپ وہاں سے چلے جائیں تو آپ رہائش کا حق کھو سکتے ہیں۔</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>آپ کی کہانی منفرد ہے۔</strong> یہ آپ کے دوستوں یا رشتہ داروں کی کہانی جیسی نہیں ہے۔ قوانین مسلسل بدلتے رہتے ہیں، اس لیے ہمیشہ تازہ ترین قانونی مدد تلاش کریں۔
-          <a href="/ur/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <strong>آپ کی کہانی منفرد ہے۔</strong> یہ آپ کے دوستوں یا رشتہ داروں کی کہانی جیسی نہیں ہے، اور یہ قواعد نئے ہیں: عدالتیں بھی ابھی ان کی تشریح کر رہی ہیں۔ اگر آپ کی آمدنی <strong>13,600 یورو سالانہ</strong> سے کم ہے، تو آپ کو <strong>مفت</strong> وکیل مل سکتا ہے (gratuito patrocinio، سرکاری خرچ پر قانونی مدد)۔
+          <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             مفت قانونی مدد تلاش کریں
           </a>
         </div>
@@ -173,20 +400,93 @@ lang: ur
 
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">آپ کے لیے مفید ہو سکتا ہے</h2>
+      <h2 class="text-center mb-lg">آپ کے لیے یہ بھی مفید ہو سکتا ہے</h2>
       <div class="grid grid-3">
-        <a href="/ur/permesso-richiesta-asilo.html" class="card card-link card-compact">
+        <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">پناہ کی درخواست کا اجازت نامہ</h3>
         </a>
-        <a href="/ur/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
+        <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">پناہ گزین کی حیثیت</h3>
         </a>
-        <a href="/ur/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
+        <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">ذیلی تحفظ</h3>
         </a>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">یہ بھی دیکھیں: تحفظ کی بنیاد پر دیگر اجازت نامے</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">انسانی اسمگلنگ کے متاثرین کے لیے اجازت نامہ</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">گھریلو تشدد کے متاثرین کے لیے اجازت نامہ</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">مزدوری میں استحصال کے متاثرین کے لیے اجازت نامہ</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">بغیر سرپرست کے نابالغوں کے لیے اجازت نامہ (MSNA)</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">انضمام کا اجازت نامہ – prosieguo amministrativo (بغیر سرپرست آنے والے نابالغوں کے لیے 18 سال کے بعد، 21 سال تک، سماجی خدمات کی مدد جاری رہنا)</a></li>
+          <li><a href="permesso-calamita-naturale.html">قدرتی آفت کی بنیاد پر اجازت نامہ</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">پناہ گزینوں اور ذیلی تحفظ رکھنے والوں کے اہلِ خانہ کے لیے اجازت نامہ</a></li>
+          <li><a href="permesso-apolidia.html">بے وطنی (apolidia) کی بنیاد پر اجازت نامہ</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>

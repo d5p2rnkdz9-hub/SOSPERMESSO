@@ -1,24 +1,73 @@
 ---
 layout: layouts/base.liquid
-title: "Руководство по международной защите"
+title: "Руководство по убежищу в Италии: до и после Пакта ЕС | SOS Permesso"
 lang: ru
+description: "Руководство по международной защите в Италии: какие правила действуют для вас (до или после 12 июня 2026 года), как подаётся заявление на убежище, документ, работа, собеседование, решение и обжалование."
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ru/index.html" class="link-ink">Главная</a> →
-        <span>Международная защита</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
+
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">Руководство по международной защите</h1>
-        <p class="section-subtitle">Все, что вам нужно знать о подаче заявления на убежище в Италии</p>
+        <h1 class="page-title">Руководство по убежищу в Италии</h1>
+        <p class="section-subtitle">Как просить международную защиту до и после Пакта ЕС о миграции и убежище</p>
+        <p class="pi-updated">Обновлено 9 октября 2026 г.</p>
       </div>
     </div>
   </section>
@@ -26,143 +75,322 @@ lang: ru
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>Вот некоторая простая информация о <strong>международной защите</strong> в Италии!</p>
-        <p>Может показаться, что это долгий и сложный путь, но мы разберем его шаг за шагом.</p>
-        <p>Мы можем дать вам только общую информацию: важно получить <strong>квалифицированную юридическую помощь</strong>.</p>
+      <div class="card pi-card">
+        <p>Если в вашей стране вам угрожает опасность, в Италии вы можете попросить <strong>международную защиту</strong> (protezione internazionale, то есть <strong>убежище</strong>).</p>
+        <p>С <strong>12 июня 2026 года</strong> во всём Европейском союзе действуют <strong>новые правила</strong>: <strong>Пакт ЕС о миграции и убежище</strong> (Patto UE). Но те, кто попросил убежище раньше, как правило, продолжают процедуру по <strong>старым правилам</strong>.</p>
+        <p>Поэтому в этом руководстве <strong>два раздела</strong>. Сначала узнайте, какой из них относится к вам.</p>
+        <p>Мы можем дать вам только общую информацию: очень важно, чтобы вы обратились за <strong>квалифицированной юридической помощью</strong>.</p>
       </div>
 
-      <!-- STEP 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>1) Подача заявления</h2>
-        <p>Первое, что нужно сделать — <strong>лично подать заявление в Квестуру (управление полиции)</strong>.</p>
-        <p>У вас возьмут <strong>отпечатки пальцев</strong> и зададут несколько <strong>общих вопросов</strong> о вашей семье и пути, который вы проделали.</p>
-        <p>Это несложно!</p>
-        <p>Заполняемая форма называется <strong>C3</strong>.</p>
-        <p>Если у вас есть <strong>паспорт</strong>, вас попросят его сдать, и он будет храниться в полиции <strong>на время рассмотрения дела</strong>.</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>Какие правила действуют для вас?</h2>
+        <p>Важен день, когда вы <strong>впервые сказали</strong> итальянским властям (Questura — полицейскому управлению, пограничной полиции), что хотите попросить убежище. Этот момент называется <strong>выражением желания</strong> просить убежище (manifestazione della volontà).</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">До 12 июня 2026 года</span>
+            Вы попросили убежище до этой даты? Для вас действуют <strong>старые правила</strong> до конца вашей процедуры, в том числе в суде.
+            <span class="pi-choice-go">Перейти к разделу «до Пакта» →</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">С 12 июня 2026 года и позже</span>
+            Вы попросили убежище начиная с этой даты? Для вас действуют <strong>новые правила Пакта ЕС</strong>.
+            <span class="pi-choice-go">Перейти к разделу «Пакт ЕС» →</span>
+          </a>
+        </div>
+
+        <h3>А если вы попросили убежище раньше, но Questura зарегистрировала вас позже?</h3>
+        <p>Так бывает часто: вы попросили убежище (или запись на приём) до 12 июня, но анкету в Questura (форму <strong>C3</strong> или регистрацию) оформили <strong>позже</strong>.</p>
+        <p>Суды не во всём согласны между собой. <strong>Многие судьи</strong> считают, что действуют <strong>старые правила</strong>, потому что задержка со стороны учреждения не может быть вашей виной. Другие же смотрят на дату анкеты.</p>
+        <p><strong>Что делать:</strong> сохраните все доказательства даты, когда вы попросили убежище (квитанцию о записи, PEC — письмо по сертифицированной электронной почте — от адвоката в Questura, квитанцию от ассоциации или организации, в которую вы обращались, справки из центра), и поговорите с адвокатом.</p>
+
+        <h3>Вы подали новое заявление после 12 июня?</h3>
+        <p>Если ваше первое заявление было подано по старым правилам, но после 12 июня 2026 года вы подали <strong>ещё одно</strong> (<strong>повторное</strong> заявление, domanda reiterata), то для нового заявления, как правило, действуют <strong>правила Пакта</strong>.</p>
       </div>
 
-      <!-- STEP 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>2) Получение временного вида на жительство</h2>
-        <p>После принятия вашего заявления вам выдадут <strong>вид на жительство в связи с просьбой об убежище</strong>.</p>
-        <p>Это настоящий <strong>вид на жительство</strong>, который позволяет вам находиться в Италии, пока рассматривается ваше заявление.</p>
-        <p>С этим видом на жительство вы можете:</p>
-        <ul>
-          <li>работать 👷</li>
-          <li>учиться 📚</li>
-          <li>зарегистрироваться в реестре населения 🏠</li>
-          <li>выбрать семейного врача 🩺</li>
-          <li>получить водительские права 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>Вы не можете выезжать за пределы Италии до завершения процедуры</strong>, и <strong>вы не можете преобразовать этот вид на жительство в рабочий</strong>.</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="Применимые правила" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">Заявление до 12.06.2026</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">Заявление с 12.06.2026 · Пакт ЕС</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">Старые правила (до Пакта)</h2>
+        <p class="pi-panel-sub">Для тех, кто попросил убежище до 12 июня 2026 года</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>Заявление в Questura</h2>
+            <p>Вы подали заявление <strong>лично в Questura</strong> (или в пограничной полиции).</p>
+            <p>У вас взяли <strong>отпечатки пальцев</strong> и задали несколько вопросов о вас, вашей семье и вашем пути. Эта анкета называется <strong>C3</strong>.</p>
+            <p>Если у вас есть <strong>паспорт</strong>, Questura хранит его на протяжении всей процедуры.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>Вид на жительство по запросу убежища</h2>
+            <p>Вы получаете <a href="permesso-richiesta-asilo.html"><strong>вид на жительство по запросу убежища</strong></a> (permesso di soggiorno per richiesta asilo). Он действует <strong>6 месяцев</strong> и продлевается до принятия решения. В начале квитанция из Questura служит временным видом на жительство.</p>
+            <p>С этим видом на жительство вы можете учиться, зарегистрироваться в реестре населения (anagrafe), иметь семейного врача (medico di base) и получить водительские права.</p>
+            <p>Вы можете <strong>работать</strong> через <strong>60 дней</strong> после подачи заявления, если Комиссия ещё не приняла решение.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Вы не можете выезжать за пределы Италии</strong>, пока процедура не закончится, и этот вид на жительство <strong>нельзя переоформить</strong> в вид на жительство для работы.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>Собеседование в Комиссии</h2>
+            <p>Вас вызывают на <strong>слушание</strong> (audizione) в <strong>Commissione Territoriale</strong> (территориальную комиссию по рассмотрению заявлений об убежище). В этот момент вы рассказываете свою историю и объясняете, почему <strong>не можете вернуться в свою страну</strong>.</p>
+            <p>Это не допрос, а разговор. Старайтесь говорить <strong>ясно и точно</strong> и принесите документы, которые у вас есть.</p>
+            <p>Если вы прибыли из <strong>страны, которая считается «безопасной»</strong>, или находитесь под стражей, процедура может быть <strong>ускоренной</strong> (procedura accelerata): собеседование и решение проходят за несколько дней. Несопровождаемые несовершеннолетние и уязвимые лица не направляются в ускоренную процедуру.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>Решение</h2>
+            <p>Решение приходит вам в <strong>центр приёма</strong> или по <strong>адресу</strong>, который вы указали в Questura. Всегда сообщайте о смене адреса, иначе вы рискуете не получить решение и пропустить срок для обжалования.</p>
+            <p>Возможные ответы описаны ниже, в разделе <a href="#esiti">«Какие ответы вы можете получить»</a>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>Обжалование, если ответ отрицательный</h2>
+            <p>Вы можете <strong>обжаловать решение в суде</strong> (ricorso), но для этого нужен <strong>адвокат</strong>. Сроки короткие: свяжитесь с ним <strong>сразу</strong>.</p>
+            <table class="pi-table">
+              <thead><tr><th>Случай</th><th>Срок для обжалования</th><th>Можете ли вы остаться в Италии?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Случай">Обычная процедура</td><td data-label="Срок">30 дней</td><td data-label="Остаться">Да, автоматически</td></tr>
+                <tr><td data-label="Случай">Ускоренная процедура или лицо под стражей</td><td data-label="Срок">15 дней</td><td data-label="Остаться">Часто не автоматически</td></tr>
+                <tr><td data-label="Случай">Пограничная процедура</td><td data-label="Срок">7 дней</td><td data-label="Остаться">Не автоматически</td></tr>
+              </tbody>
+            </table>
+            <p>Когда обжалование <strong>не</strong> защищает вас автоматически (например, если заявление признали «явно необоснованным»), адвокат должен вместе с жалобой попросить судью о <strong>приостановлении</strong> (sospensione) решения.</p>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>3) Собеседование в комиссии</h2>
-        <p>Следующий шаг — <strong>слушание в Территориальной комиссии</strong>.</p>
-        <p>Это момент, когда вы можете <strong>рассказать свою историю</strong>, объяснить, что с вами произошло и <strong>почему вы не можете вернуться в свою страну</strong>.</p>
-        <p>Вам зададут много вопросов, чтобы хорошо понять вашу ситуацию.</p>
-        <p>Это не допрос, а разговор. Старайтесь быть <strong>открытым и честным</strong>.</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">Новые правила Пакта ЕС</h2>
+        <p class="pi-panel-sub">Для тех, кто попросил убежище 12 июня 2026 года или позже</p>
 
-      <!-- STEP 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>4) Решение</h2>
-        <p>После слушания вы получите <strong>ответ Комиссии</strong>. Если вы находитесь в центре приема, решение Комиссии вам сообщит руководитель центра. В противном случае оно будет отправлено на адрес проживания, который вы указали в Квестуре при подаче заявления на убежище.</p>
-        <p>Поэтому всегда помните о необходимости сообщать в Квестуру об изменении адреса, иначе могут возникнуть проблемы!</p>
-        <p>Возможные <strong>положительные</strong> решения Комиссии:</p>
-        <ul>
-          <li><a href="/ru/permesso-asilo-status-rifugiato.html">Статус беженца</a> (также называемый «политическим убежищем»)</li>
-          <li><a href="/ru/permesso-protezione-sussidiaria.html">Субсидиарная защита</a></li>
-          <li><a href="/ru/permesso-protezione-speciale.html">Специальная защита</a></li>
-          <li><a href="/ru/permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">Медицинское лечение</a></li>
-        </ul>
-        <p>Если, по мнению Комиссии, вы не имеете права ни на один из видов защиты, вы получите <strong>отрицательный ответ</strong>.</p>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>5) Обжалование в случае отказа</h2>
-        <p>❌ Если результат <strong>не положительный</strong>, вы можете <strong>обжаловать его в суде</strong>. Это как попросить <strong>второе мнение</strong>.</p>
-        <p>📌 Вы не можете обжаловать самостоятельно: вам нужен <strong>адвокат</strong>.</p>
-        <p>⏰ У вас очень мало времени на обжалование с момента получения отрицательного решения — свяжитесь с адвокатом <strong>как можно скорее</strong>!</p>
-        <p>💸 Если вы зарабатываете менее <strong>13 700 евро</strong> в год, вы можете запросить у адвоката <strong>бесплатную юридическую помощь</strong>.</p>
-        <p>⏳ Помните: <strong>процедура может длиться месяцы и даже годы</strong>.</p>
-      </div>
-
-      <!-- PAESI SICURI -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ ВНИМАНИЕ: страны, считающиеся «безопасными»</h2>
-        <p>Если вы прибыли из страны, которую <strong>Италия считает безопасной</strong>, ваше заявление будет <strong>рассмотрено быстрее</strong>.</p>
-        <p>В настоящее время это следующие страны:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 Албания</span>
-          <span>🇩🇿 Алжир</span>
-          <span>🇧🇩 Бангладеш</span>
-          <span>🇧🇦 Босния и Герцеговина</span>
-          <span>🇨🇻 Кабо-Верде</span>
-          <span>🇨🇮 Кот-д'Ивуар</span>
-          <span>🇪🇬 Египет</span>
-          <span>🇬🇲 Гамбия</span>
-          <span>🇬🇪 Грузия</span>
-          <span>🇬🇭 Гана</span>
-          <span>🇽🇰 Косово</span>
-          <span>🇲🇰 Северная Македония</span>
-          <span>🇲🇦 Марокко</span>
-          <span>🇲🇪 Черногория</span>
-          <span>🇵🇪 Перу</span>
-          <span>🇸🇳 Сенегал</span>
-          <span>🇷🇸 Сербия</span>
-          <span>🇱🇰 Шри-Ланка</span>
-          <span>🇹🇳 Тунис</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>Первичные проверки («accertamenti»)</h2>
+            <p>Если вы <strong>прибыли морем</strong> после спасения, на <strong>границу</strong> без действительных документов или вас нашли в Италии после незаконного въезда, сначала вы проходите <strong>проверки</strong> (accertamenti, по-английски <em>screening</em>).</p>
+            <p>Они длятся не больше <strong>7 дней</strong> на границе и <strong>3 дней</strong>, если вы уже в Италии. Они включают:</p>
+            <ul>
+              <li><strong>медицинский осмотр</strong> и проверку <strong>уязвимости</strong>;</li>
+              <li><strong>установление личности</strong> и <strong>отпечатки пальцев</strong>;</li>
+              <li>проверку безопасности.</li>
+            </ul>
+            <p>Если у вас проблемы со здоровьем, вы несовершеннолетний или пережили насилие, <strong>скажите об этом сразу</strong>.</p>
+          </div>
         </div>
-        <p>Однако если в <strong>вашей личной ситуации</strong> существуют <strong>серьезные и конкретные</strong> опасности, вы должны <strong>хорошо объяснить это с самого начала</strong>.</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>Сказать, что вы хотите попросить убежище</h2>
+            <p>Первый шаг — сказать властям, что вы хотите попросить защиту. Это <strong>выражение желания</strong> просить убежище (manifestazione della volontà).</p>
+            <p>Пока что, и как минимум до <strong>30 апреля 2027 года</strong>, в Италии его принимают <strong>Questura</strong> и <strong>пограничная полиция</strong>. Есть и другие способы:</p>
+            <ul>
+              <li><strong>Через адвоката, по PEC</strong> (posta elettronica certificata — сертифицированная электронная почта): адвокат пишет в Questura, что вы хотите попросить убежище. Часто это <strong>хорошая идея</strong>, потому что так у вас есть <strong>надёжное доказательство даты</strong>, когда вы попросили убежище.</li>
+              <li><strong>Через организацию</strong>: в некоторых городах о своём желании нужно сообщить в ассоциацию, в CAF (центр помощи с документами), в отдел по делам иностранцев Comune (муниципального органа) или в другую организацию, указанную Questura.</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>В каждом городе всё устроено по-своему.</strong> Прежде чем идти, узнайте, как это работает в <strong>вашем городе</strong>, в ассоциации, в юридической консультации или у адвоката. <a href="aiuto-legale.html">Найти бесплатную юридическую помощь</a>.</div>
+            </div>
+            <p>С этого момента у вас есть право на <a href="#accoglienza">размещение в системе приёма</a>, если у вас нет денег, чтобы себя содержать.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>Регистрация и документ</h2>
+            <p>Questura должна <strong>зарегистрировать</strong> ваше заявление (registrazione) в течение <strong>5 дней</strong> (до 15, если прибывает очень много людей). Там записывают ваши данные и выдают вам <strong>информационную брошюру</strong>.</p>
+            <p>Пока что в Италии регистрация в Questura <strong>одновременно считается «официальной подачей»</strong> (formalizzazione) заявления: делать ещё один шаг не нужно.</p>
+            <p>Вы получаете <strong>именной документ</strong> (documento nominativo) с вашей фотографией. <strong>Это не вид на жительство</strong>: по Пакту «вида на жительство по запросу убежища» больше не существует. Этот документ лишь подтверждает, что вы можете <strong>оставаться в Италии</strong> во время процедуры. Он действует <strong>один год</strong> и может быть продлён.</p>
+            <p>Вы должны указать своё <strong>место проживания</strong> (domicilio), а также телефон или email.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Этот документ не является проездным документом:</strong> с ним нельзя ездить в другие страны.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>Работа</h2>
+            <p>Вы можете <strong>работать</strong> через <strong>90 дней</strong> после подачи заявления, если Комиссия ещё не приняла решение и задержка произошла не по вашей вине.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Его нельзя переоформить в вид на жительство для работы.</strong> Документ лица, просящего убежище, не является видом на жительство, поэтому его нельзя «поменять» на другой вид на жительство, даже если у вас есть трудовой договор.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>Какая процедура: обычная, ускоренная или пограничная</h2>
+            <p><strong>Commissione Territoriale</strong> решает, какую процедуру применить, и сообщает вам об этом.</p>
+            <table class="pi-table">
+              <thead><tr><th>Процедура</th><th>Когда</th><th>Сроки решения</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Процедура"><strong>Обычная</strong></td><td data-label="Когда">В большинстве случаев</td><td data-label="Сроки">6 месяцев (могут быть продлены)</td></tr>
+                <tr><td data-label="Процедура"><strong>Ускоренная</strong></td><td data-label="Когда">Например: вы прибыли из <a href="#paesi-sicuri">«безопасной» страны</a>; заявления из вашей страны в Европе одобряют редко (в 20% случаев или реже); вы рассказываете то, что не относится к делу или противоречит само себе; вы солгали о своей личности; вы попросили убежище с опозданием</td><td data-label="Сроки">3 месяца</td></tr>
+                <tr><td data-label="Процедура"><strong>Пограничная</strong></td><td data-label="Когда">Если вы попросили убежище на границе или после высадки на берег, без документов для въезда, и подпадаете под один из случаев ускоренной процедуры</td><td data-label="Сроки">12 недель в общей сложности, включая обжалование</td></tr>
+              </tbody>
+            </table>
+            <p>При <strong>пограничной процедуре</strong> (procedura di frontiera) вы должны жить в <strong>месте, указанном</strong> властями, а в некоторых случаях вас могут <strong>поместить под стражу</strong> в центр.</p>
+            <p><strong>Несопровождаемые несовершеннолетние</strong> направляются в пограничную процедуру только по соображениям безопасности. <strong>Уязвимые</strong> лица не направляются в неё, если они не могут получить необходимую им поддержку.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>Собеседование в Комиссии</h2>
+            <p><strong>Личное собеседование</strong> обязательно: это время, чтобы рассказать свою историю и объяснить, почему вы не можете вернуться в свою страну.</p>
+            <p>Перед собеседованием вы имеете право на <strong>бесплатную юридическую консультацию</strong> (orientamento legale): человек объяснит вам процедуру. <strong>Попросите о ней</strong>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>Оставаться на связи — это обязанность</h2>
+            <p>По Пакту ваши обязанности строже. Вы должны:</p>
+            <ul>
+              <li><strong>сотрудничать</strong> и сдать документы, которые у вас есть;</li>
+              <li><strong>являться</strong> на собеседование и на назначенные встречи;</li>
+              <li><strong>сразу сообщать</strong> о любой смене адреса, телефона или email;</li>
+              <li><strong>оставаться в Италии</strong> и не переезжать в другую европейскую страну.</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Если вы этого не делаете</strong>, Комиссия может посчитать ваше заявление <strong>отозванным</strong> (неявный отзыв, ritiro implicito) и закрыть процедуру. Обжаловать это решение нужно всего за <strong>7 дней</strong>.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>Решение</h2>
+            <p>Решение приходит вам в <strong>центр приёма</strong> или по последнему <strong>адресу</strong>, который вы сообщили. Возможные ответы описаны ниже, в разделе <a href="#esiti">«Какие ответы вы можете получить»</a>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>Обжалование, если ответ отрицательный</h2>
+            <p>Вы можете <strong>обжаловать решение в суде</strong> с помощью <strong>адвоката</strong>. По Пакту сроки <strong>ещё короче</strong>: свяжитесь с ним в тот же день, когда получите решение.</p>
+            <table class="pi-table">
+              <thead><tr><th>Случай</th><th>Срок для обжалования</th><th>Можете ли вы остаться в Италии?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Случай">Обычная процедура</td><td data-label="Срок">30 дней</td><td data-label="Остаться">Да, автоматически</td></tr>
+                <tr><td data-label="Случай">Ускоренная процедура, неприемлемое (inammissibile) или отозванное заявление</td><td data-label="Срок">7 дней</td><td data-label="Остаться">Не автоматически</td></tr>
+                <tr><td data-label="Случай">Пограничная процедура</td><td data-label="Срок">5 дней</td><td data-label="Остаться">Не автоматически (да для несопровождаемых несовершеннолетних)</td></tr>
+              </tbody>
+            </table>
+            <p>Когда обжалование не защищает вас автоматически, адвокат должен <strong>вместе с жалобой</strong> попросить у судьи <strong>разрешение остаться</strong> в Италии (autorizzazione a rimanere). Судья решает примерно за 10 дней, и, пока он решает, вас, как правило, нельзя выслать.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">Подробнее о правилах Пакта на SOS Patto (на итальянском)</a>
+        </p>
       </div>
 
-      <!-- SITUAZIONI PARTICOLARI -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ Особые ситуации</h2>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">Что нужно знать в любом случае</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>Какие ответы вы можете получить</h2>
+        <p>Это действует и по старым правилам, и по Пакту. Комиссия может предоставить вам:</p>
+        <ul>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>Статус беженца</strong></a> (так называемое «политическое убежище»): вид на жительство на <strong>5 лет</strong>;</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>Дополнительную защиту</strong></a> (protezione sussidiaria): вид на жительство на <strong>5 лет</strong>;</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>Специальную защиту</strong></a> (protezione speciale): вид на жительство на <strong>2 года</strong>, с возможностью продления, с которым можно работать;</li>
+          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>Вид на жительство для лечения</strong></a> (cure mediche), если вы тяжело больны.</li>
+        </ul>
+        <p>Если Комиссия считает, что вы не имеете права ни на одну из этих форм защиты, ответ будет <strong>отрицательным</strong>: вы можете обжаловать его в сроки, указанные в вашем разделе.</p>
+      </div>
+
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>Страны, считающиеся «безопасными»</h2>
+        <p>Если вы прибыли из страны, которую Италия считает <strong>безопасной</strong>, ваше заявление рассматривают <strong>быстрее</strong>, и у вас меньше времени на обжалование. Сейчас в итальянский список входят:</p>
+        <ul class="pi-countries">
+          <li>Албания</li><li>Алжир</li><li>Бангладеш</li><li>Босния и Герцеговина</li><li>Кабо-Верде</li>
+          <li>Кот-д'Ивуар</li><li>Египет</li><li>Гамбия</li><li>Грузия</li><li>Гана</li>
+          <li>Косово</li><li>Северная Македония</li><li>Марокко</li><li>Черногория</li><li>Перу</li>
+          <li>Сенегал</li><li>Сербия</li><li>Шри-Ланка</li><li>Тунис</li>
+        </ul>
+        <p>По Пакту (заявления с 12 июня 2026 года) есть также <strong>список Европейского союза</strong>, который действует во всех странах ЕС:</p>
+        <ul class="pi-countries">
+          <li>Бангладеш</li><li>Колумбия</li><li>Египет</li><li>Индия</li><li>Косово</li><li>Марокко</li><li>Тунис</li>
+        </ul>
+        <p>Безопасными считаются также <strong>страны — кандидаты на вступление в Европейский союз</strong> (например, Албания, Сербия, Турция, Грузия), за некоторыми исключениями: например, если в стране идёт война.</p>
+        <p>Кроме того, в ускоренную процедуру направляют и тех, кто прибыл из страны, заявления граждан которой в Европе одобряют <strong>в 20% случаев или реже</strong>.</p>
+        <p>То, что вы прибыли из «безопасной» страны, <strong>не означает</strong>, что вам откажут. Если в вашей личной ситуации есть <strong>серьёзные и конкретные</strong> опасности, вы должны хорошо объяснить их с самого начала.</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>Особые ситуации</h2>
         <p>Если вы:</p>
         <ul>
-          <li>несовершеннолетний 👶</li>
-          <li>женщина 👩🏽</li>
-          <li>лицо с инвалидностью ♿</li>
-          <li>у вас есть проблемы с психическим здоровьем 🧠</li>
-          <li>жертва насилия, торговли людьми или калечащих операций на половых органах 🚫</li>
+          <li>несовершеннолетний, особенно если вы находитесь в Италии без родителей;</li>
+          <li>одинокая или беременная женщина;</li>
+          <li>человек с инвалидностью или с тяжёлой болезнью;</li>
+          <li>человек с проблемами психического здоровья;</li>
+          <li>жертва насилия, пыток, торговли людьми или калечащих операций на женских половых органах;</li>
         </ul>
-        <p>... тогда ваше заявление будет рассмотрено <strong>с особым вниманием</strong>, даже если вы прибыли из «безопасной» страны.</p>
+        <p>… у вас есть право на <strong>особые гарантии</strong> и на подходящее размещение, даже если вы прибыли из «безопасной» страны. Скажите об этом как можно раньше: в Questura, в центре, в Комиссии.</p>
+        <p><strong>Несопровождаемые несовершеннолетние</strong> имеют право на <strong>опекуна</strong> (tutore), и их нельзя отправить обратно с границы.</p>
       </div>
 
-      <!-- DUBLINO -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 Если вы подавали на убежище в другой стране (Дублинское регулирование)</h2>
-        <p>Если вы <strong>уже подавали заявление на убежище в другой европейской стране</strong> или <strong>оставили там свои отпечатки пальцев</strong>, <strong>Италия может не быть ответственной</strong> за рассмотрение вашего заявления.</p>
-        <p>В этих случаях ваше заявление может быть <strong>передано в другую страну</strong>.</p>
-        <p>👉 <strong>Что делать:</strong> Если вы оказались в этой ситуации, <strong>очень важно немедленно обратиться за помощью к адвокату или специалисту по праву убежища</strong>.</p>
+      <div class="card pi-card">
+        <h2>Если вы просили убежище в другой европейской стране (Дублин)</h2>
+        <p>Если вы <strong>уже просили убежище в другой европейской стране</strong> или там у вас взяли <strong>отпечатки пальцев</strong>, возможно, рассматривать ваше заявление должна <strong>не Италия</strong>. В этом случае вас могут <strong>передать</strong> в ту страну.</p>
+        <p>Для заявлений, зарегистрированных до 30 июня 2026 года, действуют правила прежнего <strong>Дублинского регламента</strong> (Regolamento Dublino); для заявлений, зарегистрированных с 1 июля 2026 года, действуют новые правила Пакта.</p>
+        <p><strong>Что делать:</strong> сразу обратитесь за помощью к адвокату или опытному специалисту.</p>
       </div>
 
-      <!-- ACCOGLIENZA -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 Право на размещение для лиц, подавших заявление на убежище</h2>
-        <p>В Италии лица, подавшие заявление на убежище и <strong>не имеющие достаточных средств к существованию</strong>, имеют право на место в <strong>центре приема</strong>.</p>
-        <p>⏱ <strong>Право на размещение действует:</strong></p>
+      <div class="card pi-card" id="accoglienza">
+        <h2>Право на размещение в системе приёма</h2>
+        <p>Если вы просите убежище и <strong>у вас недостаточно денег, чтобы себя содержать</strong>, у вас есть право на место в <strong>центре приёма</strong> (centro di accoglienza).</p>
         <ul>
-          <li>с момента, когда лицо <strong>заявляет о желании подать заявление на убежище</strong>,</li>
-          <li>до <strong>окончания процедуры</strong>, то есть когда заявление <strong>принято</strong>, <strong>окончательно отклонено</strong> или <strong>отозвано</strong>.</li>
+          <li>Это право начинается с момента, когда вы <strong>говорите, что хотите попросить убежище</strong>.</li>
+          <li>Оно действует на протяжении всей процедуры в Комиссии, до истечения срока на обжалование, а если обжалование позволяет вам остаться — то и во время обжалования.</li>
         </ul>
-        <p>⚠️ Право на размещение может быть прекращено и в других случаях, например при <strong>самовольном уходе</strong> из центра или когда лицо <strong>более не считается находящимся в затруднительном положении</strong>.</p>
+        <p>Вы можете <strong>потерять место в системе приёма</strong>, если покинете центр, не придёте на собеседование или если у вас достаточно денег.</p>
+        <p>По Пакту власти также могут обязать вас <strong>жить в определённом месте</strong> (всегда — при пограничной процедуре). Если вы переедете, вы можете потерять место в системе приёма.</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>Ваша история уникальна.</strong> Она не такая, как у ваших друзей или родственников. Законы часто меняются, поэтому всегда обращайтесь за актуальной юридической помощью.
-          <a href="/ru/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <strong>Ваша история уникальна.</strong> Она не такая, как у ваших друзей или родственников, а эти правила новые: даже суды ещё продолжают их толковать. Если ваш доход меньше <strong>13&nbsp;600 евро в год</strong>, вы можете получить адвоката <strong>бесплатно</strong> (gratuito patrocinio — бесплатная юридическая помощь за счёт государства).
+          <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             Найти бесплатную юридическую помощь
           </a>
         </div>
@@ -173,20 +401,93 @@ lang: ru
 
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">Вам может быть интересно</h2>
+      <h2 class="text-center mb-lg">Вам также может быть интересно</h2>
       <div class="grid grid-3">
-        <a href="/ru/permesso-richiesta-asilo.html" class="card card-link card-compact">
+        <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
-          <h3 class="card-title">Разрешение по запросу убежища</h3>
+          <h3 class="card-title">Вид на жительство по запросу убежища</h3>
         </a>
-        <a href="/ru/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
+        <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">Статус беженца</h3>
         </a>
-        <a href="/ru/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
+        <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
-          <h3 class="card-title">Субсидиарная защита</h3>
+          <h3 class="card-title">Дополнительная защита</h3>
         </a>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">Смотрите также: другие виды на жительство по защите</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">Вид на жительство для жертв торговли людьми</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">Вид на жительство для жертв домашнего насилия</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">Вид на жительство для жертв трудовой эксплуатации</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">Вид на жительство для несопровождаемых несовершеннолетних (MSNA)</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">Вид на жительство для интеграции – prosieguo amministrativo (продление поддержки социальных служб после 18 лет)</a></li>
+          <li><a href="permesso-calamita-naturale.html">Вид на жительство в связи со стихийным бедствием</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">Вид на жительство для членов семьи беженцев и лиц с дополнительной защитой</a></li>
+          <li><a href="permesso-apolidia.html">Вид на жительство для лиц без гражданства</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>

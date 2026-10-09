@@ -1,24 +1,72 @@
 ---
 layout: layouts/base.liquid
-title: "国际保护指南"
+title: "意大利庇护指南：欧盟公约生效前后 | SOS Permesso"
 lang: zh
+description: "意大利国际保护指南：哪些规则适用于你（2026年6月12日之前或之后），如何申请庇护，证件、工作、面谈、决定和上诉。"
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="index.html" class="link-ink">首页</a> →
-        <span>国际保护</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">国际保护指南</h1>
-        <p class="section-subtitle">关于在意大利申请庇护，您需要了解的一切</p>
+        <h1 class="page-title">意大利庇护指南</h1>
+        <p class="section-subtitle">在欧盟移民与庇护公约生效之前和之后，如何申请国际保护</p>
+        <p class="pi-updated">更新于2026年10月9日</p>
       </div>
     </div>
   </section>
@@ -26,144 +74,323 @@ lang: zh
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>以下是关于意大利<strong>国际保护</strong>的简要信息！</p>
-        <p>这可能看起来是一段漫长而复杂的旅程，但让我们一步一步来。</p>
-        <p>我们只能提供一些基本信息：请务必寻求<strong>专业法律帮助</strong>。</p>
+      <div class="card pi-card">
+        <p>如果你在自己的国家有危险，你可以在意大利申请<strong>国际保护</strong>（也就是<strong>庇护</strong>）。</p>
+        <p>从<strong>2026年6月12日</strong>起，整个欧盟实行<strong>新规则</strong>：<strong>欧盟移民与庇护公约</strong>。不过，在此之前已经申请庇护的人，原则上继续适用<strong>旧规则</strong>。</p>
+        <p>因此，本指南分为<strong>两个部分</strong>。首先，请弄清楚哪一部分适用于你。</p>
+        <p>我们只能为你提供一般性信息：请务必寻求<strong>专业的法律帮助</strong>。</p>
       </div>
 
-      <!-- STEP 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>1) 提交申请</h2>
-        <p>您需要做的第一件事是<strong>亲自到 Questura（警察总部）提交申请</strong>。</p>
-        <p>他们会采集您的<strong>指纹</strong>，并询问一些关于您本人、家庭和旅途的<strong>基本问题</strong>。</p>
-        <p>没什么困难的！</p>
-        <p>他们填写的表格叫做 <strong>C3</strong>。</p>
-        <p>如果您有<strong>护照</strong>，他们会要求您交出，并在<strong>整个程序期间</strong>保管。</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>哪些规则适用于你？</h2>
+        <p>关键是你<strong>第一次</strong>告诉意大利当局（Questura，即警察局移民办公室，或边境警察）你想申请庇护的那一天。这一刻叫做<strong>表达申请意愿</strong>（manifestazione della volontà）。</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">2026年6月12日之前</span>
+            你在这个日期之前申请了庇护？你适用<strong>旧规则</strong>，直到你的程序结束，包括法院阶段。
+            <span class="pi-choice-go">前往“公约生效前”部分 →</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">2026年6月12日及以后</span>
+            你在这个日期当天或之后申请了庇护？你适用<strong>欧盟公约的新规则</strong>。
+            <span class="pi-choice-go">前往“欧盟公约”部分 →</span>
+          </a>
+        </div>
+
+        <h3>如果你在此之前申请了庇护，但Questura在此之后才为你登记，怎么办？</h3>
+        <p>这种情况很常见：你在6月12日之前申请了庇护（或预约），但在Questura填写表格（<strong>C3</strong>表或登记）是在这个日期<strong>之后</strong>。</p>
+        <p>各法院的看法并不一致。<strong>很多法官</strong>认为适用<strong>旧规则</strong>，因为办公室的拖延不能算是你的过错。另一些法官则以表格的日期为准。</p>
+        <p><strong>怎么做：</strong>保留所有能证明你申请庇护日期的材料（预约回执、律师发给Questura的PEC、你求助过的协会或机构开具的回执、接待中心的证明），并和律师谈一谈。</p>
+
+        <h3>你在6月12日之后提交了新的申请？</h3>
+        <p>如果你的第一次申请适用旧规则，但你在2026年6月12日之后又提交了<strong>另一份</strong>申请（<strong>再次申请</strong>），新的申请通常适用<strong>公约的规则</strong>。</p>
       </div>
 
-      <!-- STEP 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>2) 获取临时居留许可</h2>
-        <p>在收到您的申请后，您将获得一份<strong>庇护申请居留许可</strong>。</p>
-        <p>这是一份真正的<strong>居留许可</strong>，允许您在申请审核期间留在意大利。</p>
-        <p>持有此许可您可以：</p>
-        <ul>
-          <li>工作 👷</li>
-          <li>学习 📚</li>
-          <li>进行户籍登记（anagrafe） 🏠</li>
-          <li>拥有家庭医生 🩺</li>
-          <li>考取驾照 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>在程序结束之前您不能离开意大利</strong>，也不能<strong>将此许可转换为工作许可</strong>。</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="适用的规则" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">2026年6月12日之前提出的申请</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">2026年6月12日起提出的申请 · 欧盟公约</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">旧规则（公约生效前）</h2>
+        <p class="pi-panel-sub">适用于在2026年6月12日之前申请庇护的人</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>在Questura提出申请</h2>
+            <p>你已经<strong>亲自在Questura</strong>（或向边境警察）提出了申请。</p>
+            <p>他们采集了你的<strong>指纹</strong>，并问了你一些关于你本人、你的家庭和旅途的问题。这份表格叫做<strong>C3</strong>。</p>
+            <p>如果你有<strong>护照</strong>，Questura会在整个程序期间保管它。</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>庇护申请居留许可</h2>
+            <p>你会收到一份<a href="permesso-richiesta-asilo.html"><strong>庇护申请permesso di soggiorno（居留许可）</strong></a>。有效期为<strong>6个月</strong>，可以一直续签到作出决定为止。一开始，Questura给你的回执就相当于临时许可。</p>
+            <p>持有这份许可，你可以上学、办理户籍登记（anagrafe）、拥有家庭医生，以及考驾照。</p>
+            <p>提交申请<strong>60天</strong>后，如果Commissione Territoriale还没有作出决定，你就可以<strong>工作</strong>。</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div>在程序结束之前，<strong>你不能离开意大利去旅行</strong>，而且这份许可<strong>不能转换</strong>为工作许可。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>在Commissione Territoriale面谈</h2>
+            <p>你会被通知去<strong>Commissione Territoriale</strong>（地区委员会，负责审查庇护申请）参加<strong>面谈</strong>。这时你要讲述自己的经历，并解释为什么<strong>你不能回到自己的国家</strong>。</p>
+            <p>这不是审讯，而是一次谈话。尽量说得<strong>清楚、准确</strong>，并带上你拥有的文件。</p>
+            <p>如果你来自<strong>被认为“安全”的国家</strong>，或者你被拘留，程序可能是<strong>加速程序</strong>：面谈和决定都会在几天内完成。无人陪伴的未成年人和弱势人士不适用加速程序。</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>决定</h2>
+            <p>决定会送到你所在的<strong>接待中心</strong>，或者你告诉Questura的<strong>地址</strong>。每次更换地址都一定要通知，否则你可能收不到决定，并错过上诉的期限。</p>
+            <p>可能的结果在下面的<a href="#esiti">“你可能收到哪些答复”</a>中有说明。</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>如果答复是否定的：上诉</h2>
+            <p>你可以<strong>向法院上诉</strong>，但需要一位<strong>律师</strong>。期限很短：请<strong>立即</strong>联系律师。</p>
+            <table class="pi-table">
+              <thead><tr><th>情况</th><th>上诉期限</th><th>你能留在意大利吗？</th></tr></thead>
+              <tbody>
+                <tr><td data-label="情况">普通程序</td><td data-label="期限">30天</td><td data-label="能否留下">能，自动留下</td></tr>
+                <tr><td data-label="情况">加速程序或被拘留的人</td><td data-label="期限">15天</td><td data-label="能否留下">往往不能自动留下</td></tr>
+                <tr><td data-label="情况">边境程序</td><td data-label="期限">7天</td><td data-label="能否留下">不能自动留下</td></tr>
+              </tbody>
+            </table>
+            <p>当上诉<strong>不能</strong>自动保护你时（例如你的申请被认定为“明显没有根据”），律师必须在提交上诉的同时，请求法官<strong>暂停执行</strong>（sospensione）该决定。</p>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>3) Commissione Territoriale 面试</h2>
-        <p>下一步是<strong>在 Commissione Territoriale（领土委员会）的听证</strong>。</p>
-        <p>这是您可以<strong>讲述自己的故事</strong>，解释您的经历以及<strong>为什么不能返回本国</strong>的时刻。</p>
-        <p>他们会问您很多问题，以充分了解您的情况。</p>
-        <p>这不是审讯，而是一次对话。请尽量<strong>清楚和诚实</strong>。</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">欧盟公约的新规则</h2>
+        <p class="pi-panel-sub">适用于在2026年6月12日当天或之后申请庇护的人</p>
 
-      <!-- STEP 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>4) 决定</h2>
-        <p>听证结束后，您将收到 <strong>Commissione Territoriale 的回复</strong>。如果您在接待中心，中心负责人会将委员会的决定通知您。否则，您将在申请庇护时提供给 Questura 的地址收到通知。</p>
-        <p>请记住始终向 Questura 通知地址变更，否则可能会遇到问题！</p>
-        <p>委员会可能作出的<strong>正面</strong>决定有：</p>
-        <ul>
-          <li><a href="permesso-asilo-status-rifugiato.html">难民身份</a>（也称"政治庇护"）</li>
-          <li><a href="permesso-protezione-sussidiaria.html">辅助保护</a></li>
-          <li><a href="permesso-protezione-speciale.html">特别保护</a></li>
-          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">医疗治疗</a></li>
-        </ul>
-        <p>如果委员会认为您无权获得任何保护，您将收到<strong>否定回复</strong>。</p>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>5) 申请被拒后上诉</h2>
-        <p>❌ 如果结果<strong>不是正面的</strong>，<strong>您可以向法院上诉</strong>。这相当于请求<strong>第二次意见</strong>。</p>
-        <p>📌 您不能自己上诉：您需要一位<strong>律师</strong>。</p>
-        <p>⏰ 从收到否定决定起，您只有很短的时间来上诉，请<strong>尽快</strong>联系律师！</p>
-        <p>💸 如果您的年收入<strong>低于13,700欧元</strong>，您可以向律师申请<strong>免费法律援助</strong>。</p>
-        <p>⏳ 请记住：<strong>程序可能需要数月甚至数年</strong>。</p>
-      </div>
-
-      <!-- SAFE COUNTRIES -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ 注意："安全国家"</h2>
-        <p>如果您来自<strong>意大利认为安全的国家</strong>，您的申请将<strong>被更快审查</strong>。</p>
-        <p>目前这些国家包括：</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 阿尔巴尼亚</span>
-          <span>🇩🇿 阿尔及利亚</span>
-          <span>🇧🇩 孟加拉国</span>
-          <span>🇧🇦 波黑</span>
-          <span>🇨🇻 佛得角</span>
-          <span>🇨🇮 科特迪瓦</span>
-          <span>🇪🇬 埃及</span>
-          <span>🇬🇲 冈比亚</span>
-          <span>🇬🇪 格鲁吉亚</span>
-          <span>🇬🇭 加纳</span>
-          <span>🇽🇰 科索沃</span>
-          <span>🇲🇰 北马其顿</span>
-          <span>🇲🇦 摩洛哥</span>
-          <span>🇲🇪 黑山</span>
-          <span>🇵🇪 秘鲁</span>
-          <span>🇸🇳 塞内加尔</span>
-          <span>🇷🇸 塞尔维亚</span>
-          <span>🇱🇰 斯里兰卡</span>
-          <span>🇹🇳 突尼斯</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>初步检查（“accertamenti”）</h2>
+            <p>如果你是在获救后<strong>从海上抵达</strong>的，或者在<strong>边境</strong>没有有效证件，或者在非正常入境后在意大利被发现，你首先要接受<strong>初步检查</strong>（英文叫<em>screening</em>）。</p>
+            <p>在边境最多<strong>7天</strong>，如果你已经在意大利境内，则最多<strong>3天</strong>。检查包括：</p>
+            <ul>
+              <li><strong>体检</strong>以及<strong>弱势情况</strong>的检查；</li>
+              <li><strong>身份识别</strong>和<strong>采集指纹</strong>；</li>
+              <li>安全检查。</li>
+            </ul>
+            <p>如果你有健康问题、未满18岁或曾遭受暴力，<strong>请马上说出来</strong>。</p>
+          </div>
         </div>
-        <p>但是，如果<strong>在您个人的情况中</strong>存在<strong>严重且具体的</strong>危险，<strong>您必须从一开始就充分说明</strong>。</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>表示你想申请庇护</h2>
+            <p>第一步是告诉当局你想申请保护。这就是<strong>表达申请意愿</strong>（manifestazione della volontà）。</p>
+            <p>目前，至少到<strong>2027年4月30日</strong>为止，在意大利由<strong>Questura</strong>和<strong>边境警察</strong>受理。还有其他方式：</p>
+            <ul>
+              <li><strong>通过律师，用PEC</strong>（认证电子邮件）：律师写信告诉Questura你想申请庇护。这往往是个<strong>好办法</strong>，因为这样你就有了你申请庇护日期的<strong>可靠证明</strong>。</li>
+              <li><strong>通过某个机构</strong>：在一些城市，需要把申请意愿告知某个协会、CAF（税务及行政服务中心）、市政府（Comune）的外国人办公室，或者Questura指定的其他机构。</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>每个城市的做法都不一样。</strong>去之前，先向协会、法律咨询窗口或律师打听一下<strong>你所在的城市</strong>是怎么办理的。<a href="aiuto-legale.html">查找免费法律帮助</a>。</div>
+            </div>
+            <p>从这一刻起，如果你没有钱维持生活，你就有权获得<a href="#accoglienza">接待安置</a>。</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>登记和你的证件</h2>
+            <p>Questura必须在<strong>5天</strong>内<strong>登记</strong>（registrazione）你的申请（如果到达的人非常多，最多15天）。他们会记录你的信息，并给你一本<strong>信息手册</strong>。</p>
+            <p>目前在意大利，在Questura的登记<strong>同时也算作申请的“正式提交”</strong>（formalizzazione）：你不需要再办另一道手续。</p>
+            <p>你会收到一份带有你照片的<strong>记名证件</strong>（documento nominativo）。<strong>它不是permesso di soggiorno（居留许可）</strong>：根据公约，“庇护申请居留许可”已经不存在了。这份证件只证明你在程序期间可以<strong>留在意大利</strong>。有效期<strong>一年</strong>，可以续期。</p>
+            <p>你必须申报你的<strong>住所</strong>（domicilio），还要提供一个电话号码或电子邮箱。</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>这份证件不是旅行证件：</strong>你不能用它去其他国家。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>工作</h2>
+            <p>提交申请<strong>90天</strong>后，如果Commissione Territoriale还没有作出决定，而且拖延不是你造成的，你就可以<strong>工作</strong>。</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>你不能把它转换成工作许可。</strong>庇护申请人的证件不是permesso di soggiorno，所以不能“换成”其他许可，即使你有劳动合同也不行。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>哪种程序：普通、加速还是边境程序</h2>
+            <p><strong>Commissione Territoriale</strong>决定使用哪种程序，并通知你。</p>
+            <table class="pi-table">
+              <thead><tr><th>程序</th><th>适用情况</th><th>作出决定的时间</th></tr></thead>
+              <tbody>
+                <tr><td data-label="程序"><strong>普通程序</strong></td><td data-label="适用情况">大多数情况</td><td data-label="时间">6个月（可延长）</td></tr>
+                <tr><td data-label="程序"><strong>加速程序</strong></td><td data-label="适用情况">例如：你来自<a href="#paesi-sicuri">“安全”国家</a>；在欧洲，来自你国家的申请获批的很少（20%或更少）；你讲的内容与申请无关或前后矛盾；你在身份上说了谎；你很晚才申请庇护</td><td data-label="时间">3个月</td></tr>
+                <tr><td data-label="程序"><strong>边境程序</strong></td><td data-label="适用情况">如果你是在边境或登岸后申请庇护，没有入境所需的证件，并且属于加速程序的某一种情况</td><td data-label="时间">总共12周，包括上诉</td></tr>
+              </tbody>
+            </table>
+            <p>在<strong>边境程序</strong>中，你必须住在当局<strong>指定的地点</strong>，在某些情况下你可能会被<strong>拘留</strong>在某个中心。</p>
+            <p><strong>无人陪伴的未成年人</strong>只有出于安全原因才会进入边境程序。<strong>弱势人士</strong>如果无法得到他们所需的支持，就不会进入边境程序。</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>在Commissione Territoriale面谈</h2>
+            <p><strong>个人面谈</strong>是必须进行的：这是你讲述自己的经历、解释为什么不能回到自己国家的时刻。</p>
+            <p>面谈之前，你有权获得<strong>免费法律指导</strong>：会有人向你解释整个程序。<strong>请主动要求</strong>。</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>保持能被联系到：这是义务</h2>
+            <p>根据公约，你的义务更加严格。你必须：</p>
+            <ul>
+              <li><strong>配合</strong>，并交出你拥有的文件；</li>
+              <li>按时<strong>参加</strong>面谈和各种预约；</li>
+              <li>地址、电话或电子邮箱有任何变化，<strong>立即通知</strong>；</li>
+              <li><strong>留在意大利</strong>，不要去其他欧洲国家。</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>如果你不这样做</strong>，Commissione Territoriale可以将你的申请视为<strong>已撤回</strong>，并结束程序。对这个决定的上诉只有<strong>7天</strong>期限。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>决定</h2>
+            <p>决定会送到你所在的<strong>接待中心</strong>，或者你最后通知的<strong>地址</strong>。可能的结果在下面的<a href="#esiti">“你可能收到哪些答复”</a>中有说明。</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>如果答复是否定的：上诉</h2>
+            <p>你可以在<strong>律师</strong>的帮助下<strong>向法院上诉</strong>。根据公约，期限<strong>更短</strong>：请在收到决定的当天就联系律师。</p>
+            <table class="pi-table">
+              <thead><tr><th>情况</th><th>上诉期限</th><th>你能留在意大利吗？</th></tr></thead>
+              <tbody>
+                <tr><td data-label="情况">普通程序</td><td data-label="期限">30天</td><td data-label="能否留下">能，自动留下</td></tr>
+                <tr><td data-label="情况">加速程序、申请不予受理或被视为撤回</td><td data-label="期限">7天</td><td data-label="能否留下">不能自动留下</td></tr>
+                <tr><td data-label="情况">边境程序</td><td data-label="期限">5天</td><td data-label="能否留下">不能自动留下（无人陪伴的未成年人可以）</td></tr>
+              </tbody>
+            </table>
+            <p>当上诉不能自动保护你时，律师必须<strong>在提交上诉的同时</strong>，请求法官给予<strong>留在意大利的许可</strong>（autorizzazione a rimanere）。法官大约在10天内作出决定，在法官作出决定期间，原则上你不能被遣送离境。</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">在SOS Patto上进一步了解公约的规则（意大利语）</a>
+        </p>
       </div>
 
-      <!-- SPECIAL SITUATIONS -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ 特殊情况</h2>
-        <p>如果您是：</p>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">无论如何都要知道</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>你可能收到哪些答复</h2>
+        <p>无论是旧规则还是公约，都适用以下结果。Commissione Territoriale可以给予你：</p>
         <ul>
-          <li>未成年人 👶</li>
-          <li>女性 👩🏽</li>
-          <li>残障人士 ♿</li>
-          <li>有心理健康问题的人 🧠</li>
-          <li>暴力、人口贩运或女性割礼的受害者 🚫</li>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>难民身份</strong></a>（即所谓的“政治庇护”）：<strong>5年</strong>的许可；</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>辅助保护</strong></a>：<strong>5年</strong>的许可；</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>特殊保护</strong></a>：<strong>2年</strong>的许可，可以续签，持有它可以工作；</li>
+          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>医疗许可</strong></a>，如果你患有严重疾病。</li>
         </ul>
-        <p>...那么您的申请将<strong>受到特别关注的审核</strong>，即使您来自"安全"国家。</p>
+        <p>如果Commissione Territoriale认为你无权获得以上任何一种保护，答复就是<strong>否定的</strong>：你可以在你那一部分所写的期限内上诉。</p>
       </div>
 
-      <!-- DUBLIN -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 如果您在其他国家申请过庇护（都柏林条例）</h2>
-        <p>如果您已经<strong>在另一个欧洲国家申请了庇护</strong>，或在那里<strong>留下了指纹</strong>，则<strong>意大利可能不是负责审查您申请的国家</strong>。</p>
-        <p>在这种情况下，您的申请可能会被<strong>转移到另一个国家</strong>。</p>
-        <p>👉 <strong>该怎么做：</strong>如果您遇到这种情况，非常重要的是<strong>立即寻求庇护法方面的律师或法律顾问的帮助</strong>。</p>
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>被认为“安全”的国家</h2>
+        <p>如果你来自意大利认为<strong>安全</strong>的国家，你的申请会被<strong>更快地</strong>审查，你上诉的时间也更少。目前意大利的名单包括：</p>
+        <ul class="pi-countries">
+          <li>阿尔巴尼亚</li><li>阿尔及利亚</li><li>孟加拉国</li><li>波斯尼亚和黑塞哥维那</li><li>佛得角</li>
+          <li>科特迪瓦</li><li>埃及</li><li>冈比亚</li><li>格鲁吉亚</li><li>加纳</li>
+          <li>科索沃</li><li>北马其顿</li><li>摩洛哥</li><li>黑山</li><li>秘鲁</li>
+          <li>塞内加尔</li><li>塞尔维亚</li><li>斯里兰卡</li><li>突尼斯</li>
+        </ul>
+        <p>根据公约（2026年6月12日起提出的申请），还有一份<strong>欧盟名单</strong>，适用于所有欧盟国家：</p>
+        <ul class="pi-countries">
+          <li>孟加拉国</li><li>哥伦比亚</li><li>埃及</li><li>印度</li><li>科索沃</li><li>摩洛哥</li><li>突尼斯</li>
+        </ul>
+        <p><strong>申请加入欧盟的候选国</strong>（例如阿尔巴尼亚、塞尔维亚、土耳其、格鲁吉亚）也被视为安全国家，但有例外：例如该国正在发生战争。</p>
+        <p>此外，如果你来自的国家在欧洲的申请获批率<strong>为20%或更低</strong>，你也会进入加速程序。</p>
+        <p>来自“安全”国家<strong>并不意味着</strong>你的申请一定会被拒绝。如果你的个人情况中存在<strong>严重而具体</strong>的危险，你必须从一开始就把它们解释清楚。</p>
       </div>
 
-      <!-- RECEPTION -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 庇护申请人的接待权</h2>
-        <p>在意大利，申请庇护且<strong>没有足够经济能力养活自己</strong>的人有权获得<strong>接待中心</strong>的安置。</p>
-        <p>⏱ <strong>接待权适用于：</strong></p>
+      <div class="card pi-card">
+        <h2>特殊情况</h2>
+        <p>如果你是：</p>
         <ul>
-          <li>从当事人<strong>表示希望申请庇护</strong>的那一刻起，</li>
-          <li>直到<strong>程序结束</strong>，即申请被<strong>接受</strong>、<strong>最终拒绝</strong>或<strong>撤回</strong>时。</li>
+          <li>未成年人，特别是没有父母陪同在意大利的；</li>
+          <li>单身女性或孕妇；</li>
+          <li>残障人士或患有严重疾病的人；</li>
+          <li>有心理健康问题的人；</li>
+          <li>暴力、酷刑、人口贩卖或女性生殖器切割的受害者；</li>
         </ul>
-        <p>⚠️ 在其他情况下也可能失去接待权，例如<strong>离开接待中心</strong>，或当事人<strong>不再被认为缺乏经济来源</strong>。</p>
+        <p>……你有权获得<strong>特别保障</strong>和合适的接待安置，即使你来自“安全”国家。请尽早说出来：告诉Questura、接待中心和Commissione Territoriale。</p>
+        <p><strong>无人陪伴的未成年人</strong>有权获得一名<strong>监护人</strong>，并且不能在边境被拒绝入境。</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>如果你在另一个欧洲国家申请过庇护（都柏林规则）</h2>
+        <p>如果你<strong>已经在另一个欧洲国家申请过庇护</strong>，或者在那里被采集过<strong>指纹</strong>，那么负责审查你申请的国家可能<strong>不是意大利</strong>。在这种情况下，你可能会被<strong>转送</strong>到那个国家。</p>
+        <p>对于在2026年6月30日之前（含当天）登记的申请，适用旧的<strong>都柏林条例</strong>；对于从2026年7月1日起登记的申请，适用公约的新规则。</p>
+        <p><strong>怎么做：</strong>立即向律师或有经验的工作人员寻求帮助。</p>
+      </div>
+
+      <div class="card pi-card" id="accoglienza">
+        <h2>获得接待安置的权利</h2>
+        <p>如果你申请庇护，并且<strong>没有足够的钱维持生活</strong>，你有权在<strong>接待中心</strong>获得一个位置。</p>
+        <ul>
+          <li>从你<strong>表示想申请庇护</strong>的那一刻开始。</li>
+          <li>持续整个Commissione Territoriale程序，直到上诉期限届满；如果上诉允许你留下，上诉期间也继续有效。</li>
+        </ul>
+        <p>如果你离开接待中心、不去参加面谈，或者你有足够的钱，你可能会<strong>失去接待安置</strong>。</p>
+        <p>根据公约，当局还可以要求你<strong>住在指定的地点</strong>（在边境程序中总是如此）。如果你擅自离开，可能会失去接待安置。</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>您的故事是独一无二的。</strong>它与您朋友或亲属的不同。法律经常变化，因此请务必寻求最新的法律帮助。
+          <strong>你的经历是独一无二的。</strong>它和你朋友或亲戚的经历不一样，而且这些规则是新的：连法院也还在解释它们。如果你的收入<strong>每年低于13,600欧元</strong>，你可以<strong>免费</strong>请律师（gratuito patrocinio，国家法律援助）。
           <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
-            查找免费法律援助
+            查找免费法律帮助
           </a>
         </div>
       </div>
@@ -173,11 +400,11 @@ lang: zh
 
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">您可能还感兴趣</h2>
+      <h2 class="text-center mb-lg">你可能还会感兴趣</h2>
       <div class="grid grid-3">
         <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
-          <h3 class="card-title">庇护申请许可</h3>
+          <h3 class="card-title">庇护申请居留许可</h3>
         </a>
         <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
@@ -190,3 +417,76 @@ lang: zh
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">另见：其他保护类许可</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">人口贩卖受害者许可</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">家庭暴力受害者许可</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">劳动剥削受害者许可</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">无人陪伴未成年人许可（MSNA）</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">融入许可 – 行政延续（prosieguo amministrativo）</a></li>
+          <li><a href="permesso-calamita-naturale.html">自然灾害许可</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">难民和辅助保护持有者的家庭成员许可</a></li>
+          <li><a href="permesso-apolidia.html">无国籍许可</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>

@@ -1,24 +1,72 @@
 ---
 layout: layouts/base.liquid
-title: "دليل الحماية الدولية"
+title: "دليل اللجوء في إيطاليا: قبل ميثاق الاتحاد الأوروبي وبعده | SOS Permesso"
 lang: ar
+description: "دليل الحماية الدولية في إيطاليا: ما القواعد التي تنطبق عليك (قبل 12 يونيو 2026 أو بعده)، وكيف يتم طلب اللجوء، والوثيقة، والعمل، والمقابلة، والقرار، والطعن."
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/ar/index.html" class="link-ink">الصفحة الرئيسية</a> →
-        <span>الحماية الدولية</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">دليل الحماية الدولية</h1>
-        <p class="section-subtitle">كل ما تحتاج معرفته عن طلب اللجوء في إيطاليا</p>
+        <h1 class="page-title">دليل اللجوء في إيطاليا</h1>
+        <p class="section-subtitle">كيفية طلب الحماية الدولية، قبل ميثاق الاتحاد الأوروبي للهجرة واللجوء وبعده</p>
+        <p class="pi-updated">آخر تحديث: 9 أكتوبر 2026</p>
       </div>
     </div>
   </section>
@@ -26,143 +74,322 @@ lang: ar
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>إليك بعض المعلومات البسيطة عن <strong>الحماية الدولية</strong> في إيطاليا!</p>
-        <p>قد يبدو الأمر طريقا طويلا ومعقدا، لكننا سنشرحه خطوة بخطوة.</p>
-        <p>يمكننا تقديم معلومات عامة فقط: من المهم الحصول على <strong>مساعدة قانونية متخصصة</strong>.</p>
+      <div class="card pi-card">
+        <p>إذا كنت في خطر في بلدك، يمكنك أن تطلب في إيطاليا <strong>الحماية الدولية</strong> (أي <strong>اللجوء</strong>).</p>
+        <p>منذ <strong>12 يونيو 2026</strong> تُطبَّق في كل الاتحاد الأوروبي <strong>قواعد جديدة</strong>: <strong>ميثاق الاتحاد الأوروبي للهجرة واللجوء</strong>. لكن من كان قد طلب اللجوء قبل ذلك يستمر، كقاعدة عامة، وفق <strong>القواعد القديمة</strong>.</p>
+        <p>لهذا يحتوي الدليل على <strong>قسمين</strong>. قبل كل شيء، اعرف أيهما ينطبق عليك.</p>
+        <p>يمكننا أن نقدم لك معلومات عامة فقط: من المهم أن تطلب <strong>مساعدة قانونية متخصصة</strong>.</p>
       </div>
 
-      <!-- STEP 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>1) تقديم الطلب</h2>
-        <p>أول شيء يجب فعله هو <strong>تقديم طلبك شخصيا في مصلحة الشرطة المختصة بشؤون الأجانب (Questura)</strong>.</p>
-        <p>سيأخذون <strong>بصماتك</strong> ويطرحون عليك بعض <strong>الأسئلة العامة</strong> عنك وعن عائلتك والرحلة التي قمت بها.</p>
-        <p>ليس شيئا صعبا!</p>
-        <p>النموذج الذي سيملأونه يُسمى <strong>C3</strong>.</p>
-        <p>إذا كان لديك <strong>جواز سفر</strong>، سيطلبون منك تسليمه وسيحتفظون به <strong>طوال مدة الإجراء</strong>.</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>ما القواعد التي تنطبق عليك؟</h2>
+        <p>المهم هو اليوم الذي <strong>قلت فيه لأول مرة</strong> للسلطات الإيطالية (مصلحة الشرطة المختصة بشؤون الأجانب – Questura، أو شرطة الحدود) إنك تريد طلب اللجوء. تُسمّى هذه اللحظة <strong>إبداء الرغبة في طلب الحماية</strong> (manifestazione della volontà).</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">قبل 12 يونيو 2026</span>
+            هل طلبت اللجوء قبل هذا التاريخ؟ تُطبَّق عليك <strong>القواعد القديمة</strong> حتى نهاية إجراءاتك، بما في ذلك أمام المحكمة.
+            <span class="pi-choice-go">انتقل إلى قسم ما قبل الميثاق ←</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">من 12 يونيو 2026 فصاعدًا</span>
+            هل طلبت اللجوء من هذا التاريخ فصاعدًا؟ تُطبَّق عليك <strong>القواعد الجديدة لميثاق الاتحاد الأوروبي</strong>.
+            <span class="pi-choice-go">انتقل إلى قسم ميثاق الاتحاد الأوروبي ←</span>
+          </a>
+        </div>
+
+        <h3>وماذا لو طلبت اللجوء قبل ذلك، لكن مصلحة الشرطة (Questura) سجّلتك بعده؟</h3>
+        <p>هذا يحدث كثيرًا: طلبت اللجوء (أو موعدًا) قبل 12 يونيو، لكن النموذج في مصلحة الشرطة (Questura)، أي نموذج <strong>C3</strong> أو التسجيل، تمّ <strong>بعد</strong> ذلك.</p>
+        <p>المحاكم ليست كلها متفقة. <strong>كثير من القضاة</strong> يقولون إن <strong>القواعد القديمة</strong> هي التي تُطبَّق، لأن تأخر المكتب لا يمكن أن يكون خطأك. وقضاة آخرون ينظرون بدلًا من ذلك إلى تاريخ النموذج.</p>
+        <p><strong>ماذا تفعل:</strong> احتفظ بكل الأدلة على التاريخ الذي طلبت فيه اللجوء (إيصال الحجز، رسالة البريد الإلكتروني المعتمد (PEC) التي أرسلها المحامي إلى مصلحة الشرطة (Questura)، إيصال الجمعية أو الجهة التي توجّهت إليها، إفادات المركز) وتحدّث في الأمر مع محامٍ.</p>
+
+        <h3>هل قدّمت طلبًا جديدًا بعد 12 يونيو؟</h3>
+        <p>إذا كان طلبك الأول قديمًا لكنك قدّمت <strong>طلبًا آخر</strong> (<strong>طلب لاحق</strong>، أي طلب متكرر) بعد 12 يونيو 2026، فعادةً تُطبَّق على الطلب الجديد <strong>قواعد الميثاق</strong>.</p>
       </div>
 
-      <!-- STEP 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>2) الحصول على تصريح الإقامة المؤقت</h2>
-        <p>بعد استلام طلبك، سيُمنح لك <strong>تصريح إقامة لطلب اللجوء</strong>.</p>
-        <p>هذا <strong>تصريح إقامة</strong> حقيقي يسمح لك بالبقاء في إيطاليا أثناء دراسة طلبك.</p>
-        <p>بهذا التصريح يمكنك:</p>
-        <ul>
-          <li>العمل 👷</li>
-          <li>الدراسة 📚</li>
-          <li>التسجيل في السجل المدني 🏠</li>
-          <li>اختيار طبيب الأسرة 🩺</li>
-          <li>الحصول على رخصة القيادة 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>لا يمكنك السفر خارج إيطاليا حتى انتهاء الإجراء</strong> و<strong>لا يمكنك تحويل هذا التصريح إلى تصريح عمل</strong>.</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="القواعد المطبَّقة" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">طلب قبل 12/6/2026</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">طلب من 12/6/2026 · ميثاق الاتحاد الأوروبي</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">القواعد القديمة (ما قبل الميثاق)</h2>
+        <p class="pi-panel-sub">لمن طلب اللجوء قبل 12 يونيو 2026</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>الطلب في مصلحة الشرطة (Questura)</h2>
+            <p>قدّمت الطلب <strong>شخصيًا في مصلحة الشرطة (Questura)</strong> (أو لدى شرطة الحدود).</p>
+            <p>أخذوا <strong>بصماتك</strong> وطرحوا عليك بعض الأسئلة عنك وعن عائلتك وعن رحلتك. يُسمّى هذا النموذج <strong>C3</strong>.</p>
+            <p>إذا كان لديك <strong>جواز سفر</strong>، تحتفظ به مصلحة الشرطة (Questura) طوال مدة الإجراء.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>تصريح الإقامة لطلب اللجوء</h2>
+            <p>تحصل على <a href="permesso-richiesta-asilo.html"><strong>تصريح إقامة لطلب اللجوء</strong></a>. مدته <strong>6 أشهر</strong> ويُجدَّد حتى صدور القرار. في البداية، يكون إيصال مصلحة الشرطة (Questura) بمثابة تصريح مؤقت.</p>
+            <p>بهذا التصريح يمكنك الدراسة، والتسجيل في سجل السكان لدى البلدية (anagrafe)، والحصول على طبيب عام، والحصول على رخصة القيادة.</p>
+            <p>يمكنك <strong>العمل</strong> بعد <strong>60 يومًا</strong> من تقديم الطلب، إذا لم تكن اللجنة قد اتخذت قرارها بعد.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>لا يمكنك السفر خارج إيطاليا</strong> حتى انتهاء الإجراء، و<strong>لا يمكن تحويل</strong> هذا التصريح إلى تصريح إقامة للعمل.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>المقابلة أمام اللجنة</h2>
+            <p>يتم استدعاؤك إلى <strong>جلسة الاستماع</strong> أمام <strong>اللجنة الإقليمية المختصة (Commissione Territoriale)</strong>. هي اللحظة التي تروي فيها قصتك وتشرح لماذا <strong>لا يمكنك العودة إلى بلدك</strong>.</p>
+            <p>إنها ليست استجوابًا، بل حوار. حاول أن تكون <strong>واضحًا ودقيقًا</strong> واحضر الوثائق التي لديك.</p>
+            <p>إذا كنت قادمًا من <strong>بلد يُعتبر "آمنًا"</strong> أو كنت محتجزًا، فقد يكون الإجراء <strong>معجّلًا</strong>: تتم المقابلة ويصدر القرار في غضون أيام قليلة. القاصرون غير المصحوبين والأشخاص المستضعفون لا يخضعون للإجراء المعجّل.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>القرار</h2>
+            <p>يصلك القرار في <strong>مركز الاستقبال</strong> أو على <strong>العنوان</strong> الذي أعطيته لمصلحة الشرطة (Questura). أبلغ دائمًا عن أي تغيير في عنوانك، وإلا فقد لا يصلك القرار وتفوتك المهلة المحددة لتقديم الطعن.</p>
+            <p>الردود الممكنة مشروحة أدناه، في <a href="#esiti">"ما الردود التي يمكن أن تتلقاها"</a>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>الطعن إذا كان الرد سلبيًا</h2>
+            <p>يمكنك تقديم <strong>طعن أمام المحكمة</strong>، لكنك تحتاج إلى <strong>محامٍ</strong>. المهل قصيرة: تواصل معه <strong>فورًا</strong>.</p>
+            <table class="pi-table">
+              <thead><tr><th>الحالة</th><th>مهلة تقديم الطعن</th><th>هل يمكنك البقاء في إيطاليا؟</th></tr></thead>
+              <tbody>
+                <tr><td data-label="الحالة">الإجراء العادي</td><td data-label="المهلة">30 يومًا</td><td data-label="البقاء">نعم، تلقائيًا</td></tr>
+                <tr><td data-label="الحالة">الإجراء المعجّل أو الشخص المحتجز</td><td data-label="المهلة">15 يومًا</td><td data-label="البقاء">في كثير من الأحيان ليس تلقائيًا</td></tr>
+                <tr><td data-label="الحالة">الإجراء الحدودي</td><td data-label="المهلة">7 أيام</td><td data-label="البقاء">ليس تلقائيًا</td></tr>
+              </tbody>
+            </table>
+            <p>عندما <strong>لا</strong> يحميك الطعن تلقائيًا (مثلًا إذا اعتُبر الطلب "غير مؤسَّس بشكل واضح")، يجب على المحامي أن يطلب من القاضي <strong>وقف التنفيذ</strong> مع الطعن.</p>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>3) المقابلة أمام اللجنة</h2>
-        <p>الخطوة التالية هي <strong>الجلسة أمام اللجنة الإقليمية المختصة</strong>.</p>
-        <p>هذه هي اللحظة التي يمكنك فيها <strong>سرد قصتك</strong>، وشرح ما حدث لك و<strong>لماذا لا يمكنك العودة إلى بلدك</strong>.</p>
-        <p>سيطرحون عليك أسئلة كثيرة لفهم وضعك جيدا.</p>
-        <p>هذا ليس استجوابا، بل حوار. حاول أن تكون <strong>صريحا وصادقا</strong>.</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">القواعد الجديدة لميثاق الاتحاد الأوروبي</h2>
+        <p class="pi-panel-sub">لمن طلب اللجوء من 12 يونيو 2026 فصاعدًا</p>
 
-      <!-- STEP 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>4) القرار</h2>
-        <p>بعد الجلسة ستتلقى <strong>رد اللجنة</strong>. إذا كنت في مركز إيواء، سيبلغك مسؤول المركز بقرار اللجنة. وإلا سيُرسل إلى عنوان الإقامة الذي أبلغت به مصلحة الشرطة (Questura) عند تقديم طلب اللجوء.</p>
-        <p>لذلك تذكر دائما إبلاغ مصلحة الشرطة (Questura) بتغييرات العنوان، وإلا قد تواجه مشاكل!</p>
-        <p>القرارات <strong>الإيجابية</strong> المحتملة للجنة هي:</p>
-        <ul>
-          <li><a href="/ar/permesso-asilo-status-rifugiato.html">صفة اللاجئ</a> (تُسمى أيضا "اللجوء السياسي")</li>
-          <li><a href="/ar/permesso-protezione-sussidiaria.html">الحماية الفرعية</a></li>
-          <li><a href="/ar/permesso-protezione-speciale.html">الحماية الخاصة</a></li>
-          <li><a href="/ar/permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">العلاج الطبي</a></li>
-        </ul>
-        <p>إذا رأت اللجنة أنك لا تستحق أيا من هذه الحمايات، ستتلقى <strong>ردا سلبيا</strong>.</p>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>5) الطعن إذا رُفض طلبك</h2>
-        <p>❌ إذا لم تكن النتيجة <strong>إيجابية</strong>، يمكنك <strong>الطعن أمام المحكمة</strong>. هذا مثل طلب <strong>رأي ثانٍ</strong>.</p>
-        <p>📌 لا يمكنك الطعن بمفردك: تحتاج إلى <strong>محامٍ</strong>.</p>
-        <p>⏰ لديك وقت قصير جدا للطعن من لحظة إبلاغك بالقرار السلبي، تواصل مع محامٍ <strong>في أسرع وقت ممكن</strong>!</p>
-        <p>💸 إذا كان دخلك أقل من <strong>13,700 يورو</strong> سنويا، يمكنك طلب <strong>مساعدة قانونية مجانية</strong> من محاميك.</p>
-        <p>⏳ تذكر: <strong>الإجراء قد يستغرق أشهرا أو حتى سنوات</strong>.</p>
-      </div>
-
-      <!-- PAESI SICURI -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ انتبه: الدول المعتبرة "آمنة"</h2>
-        <p>إذا كنت قادما من <strong>دولة تعتبرها إيطاليا آمنة</strong>، سيتم دراسة طلبك <strong>بشكل أسرع</strong>.</p>
-        <p>حاليا هذه الدول هي:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 ألبانيا</span>
-          <span>🇩🇿 الجزائر</span>
-          <span>🇧🇩 بنغلاديش</span>
-          <span>🇧🇦 البوسنة والهرسك</span>
-          <span>🇨🇻 الرأس الأخضر</span>
-          <span>🇨🇮 ساحل العاج</span>
-          <span>🇪🇬 مصر</span>
-          <span>🇬🇲 غامبيا</span>
-          <span>🇬🇪 جورجيا</span>
-          <span>🇬🇭 غانا</span>
-          <span>🇽🇰 كوسوفو</span>
-          <span>🇲🇰 مقدونيا الشمالية</span>
-          <span>🇲🇦 المغرب</span>
-          <span>🇲🇪 الجبل الأسود</span>
-          <span>🇵🇪 بيرو</span>
-          <span>🇸🇳 السنغال</span>
-          <span>🇷🇸 صربيا</span>
-          <span>🇱🇰 سريلانكا</span>
-          <span>🇹🇳 تونس</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>الفحوصات الأولية ("accertamenti")</h2>
+            <p>إذا <strong>وصلت عن طريق البحر</strong> بعد عملية إنقاذ، أو إلى <strong>الحدود</strong> دون وثائق صالحة، أو تم العثور عليك في إيطاليا بعد دخول غير نظامي، فإنك تمر أولًا بـ<strong>الفحوصات الأولية</strong> (بالإنجليزية <em>screening</em>).</p>
+            <p>تستغرق <strong>7 أيام</strong> كحد أقصى على الحدود و<strong>3 أيام</strong> إذا كنت موجودًا بالفعل في إيطاليا. وتشمل:</p>
+            <ul>
+              <li><strong>فحصًا طبيًا</strong> وتقييمًا لـ<strong>أوضاع الاستضعاف</strong>؛</li>
+              <li><strong>تحديد الهوية</strong> و<strong>أخذ البصمات</strong>؛</li>
+              <li>فحصًا أمنيًا.</li>
+            </ul>
+            <p>إذا كانت لديك مشاكل صحية، أو كنت قاصرًا، أو تعرّضت للعنف، <strong>قل ذلك فورًا</strong>.</p>
+          </div>
         </div>
-        <p>لكن إذا كانت هناك مخاطر <strong>جدية وخاصة</strong> في <strong>وضعك الشخصي</strong>، يجب أن <strong>توضح ذلك جيدا منذ البداية</strong>.</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>أن تقول إنك تريد طلب اللجوء</h2>
+            <p>الخطوة الأولى هي أن تقول للسلطات إنك تريد طلب الحماية. هذا هو <strong>إبداء الرغبة في طلب الحماية</strong> (manifestazione della volontà).</p>
+            <p>في الوقت الحالي، وحتى <strong>30 أبريل 2027</strong> على الأقل، تتلقى إبداء الرغبة في إيطاليا <strong>مصلحة الشرطة (Questura)</strong> و<strong>شرطة الحدود</strong>. وهناك طرق أخرى أيضًا:</p>
+            <ul>
+              <li><strong>عن طريق محامٍ، عبر PEC</strong> (البريد الإلكتروني المعتمد): يكتب المحامي إلى مصلحة الشرطة (Questura) أنك تريد طلب اللجوء. غالبًا ما تكون هذه <strong>فكرة جيدة</strong>، لأنك بهذه الطريقة تحصل على <strong>دليل أكيد على التاريخ</strong> الذي طلبت فيه اللجوء.</li>
+              <li><strong>عن طريق جهة ما</strong>: في بعض المدن يجب إبلاغ الرغبة إلى جمعية، أو إلى مركز CAF (مركز المساعدة الضريبية والإدارية)، أو إلى مكتب الأجانب في البلدية، أو إلى جهة أخرى تحددها مصلحة الشرطة (Questura).</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>كل مدينة لها طريقتها الخاصة.</strong> قبل أن تذهب، اسأل عن طريقة العمل في <strong>مدينتك</strong> لدى جمعية أو مكتب استشارات قانونية أو محامٍ. <a href="aiuto-legale.html">ابحث عن مساعدة قانونية مجانية</a>.</div>
+            </div>
+            <p>من هذه اللحظة يحق لك <a href="#accoglienza">الإيواء</a>، إذا لم يكن لديك مال لإعالة نفسك.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>التسجيل والوثيقة</h2>
+            <p>يجب على مصلحة الشرطة (Questura) <strong>تسجيل</strong> طلبك خلال <strong>5 أيام</strong> (حتى 15 يومًا إذا وصل عدد كبير جدًا من الأشخاص). تأخذ بياناتك وتعطيك <strong>كتيّبًا إعلاميًا</strong>.</p>
+            <p>في الوقت الحالي، في إيطاليا، يُعتبر التسجيل في مصلحة الشرطة (Questura) <strong>أيضًا بمثابة "التقديم الرسمي"</strong> للطلب (formalizzazione): لا تحتاج إلى القيام بخطوة أخرى.</p>
+            <p>تحصل على <strong>وثيقة شخصية باسمك</strong> (documento nominativo) تحمل صورتك. <strong>هذه الوثيقة ليست تصريح إقامة</strong>: مع الميثاق لم يعد "تصريح الإقامة لطلب اللجوء" موجودًا. هذه الوثيقة تثبت فقط أنه يمكنك <strong>البقاء في إيطاليا</strong> أثناء الإجراء. مدتها <strong>سنة واحدة</strong> ويمكن تجديدها.</p>
+            <p>يجب أن تصرّح بـ<strong>محل إقامتك</strong>، وكذلك برقم هاتف أو بريد إلكتروني.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>هذه الوثيقة ليست وثيقة سفر:</strong> لا يمكنك استخدامها للذهاب إلى بلدان أخرى.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>العمل</h2>
+            <p>يمكنك <strong>العمل</strong> بعد <strong>90 يومًا</strong> من تقديم الطلب، إذا لم تكن اللجنة قد اتخذت قرارها بعد ولم يكن التأخير بسببك.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>لا يمكنك تحويلها إلى تصريح إقامة للعمل.</strong> وثيقة طالب اللجوء ليست تصريح إقامة، لذلك لا يمكن "تغييرها" إلى تصريح آخر، حتى لو كان لديك عقد عمل.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>أي إجراء: عادي أو معجّل أو حدودي</h2>
+            <p><strong>اللجنة الإقليمية المختصة (Commissione Territoriale)</strong> هي التي تقرر أي إجراء يُستخدم وتبلغك بذلك.</p>
+            <table class="pi-table">
+              <thead><tr><th>الإجراء</th><th>متى</th><th>مدة اتخاذ القرار</th></tr></thead>
+              <tbody>
+                <tr><td data-label="الإجراء"><strong>عادي</strong></td><td data-label="متى">في معظم الحالات</td><td data-label="المدة">6 أشهر (قابلة للتمديد)</td></tr>
+                <tr><td data-label="الإجراء"><strong>معجّل</strong></td><td data-label="متى">مثلًا: أنت قادم من <a href="#paesi-sicuri">بلد "آمن"</a>؛ الطلبات المقبولة في أوروبا لمواطني بلدك قليلة (20% أو أقل)؛ تروي أمورًا لا علاقة لها بالموضوع أو متناقضة؛ كذبت بشأن هويتك؛ طلبت اللجوء متأخرًا</td><td data-label="المدة">3 أشهر</td></tr>
+                <tr><td data-label="الإجراء"><strong>حدودي</strong></td><td data-label="متى">إذا طلبت اللجوء على الحدود أو بعد النزول من السفينة، دون وثائق للدخول، وكنت في إحدى حالات الإجراء المعجّل</td><td data-label="المدة">12 أسبوعًا في المجموع، بما في ذلك الطعن</td></tr>
+              </tbody>
+            </table>
+            <p>في <strong>الإجراء الحدودي</strong> يجب أن تعيش في <strong>مكان تحدده</strong> السلطات، وفي بعض الحالات يمكن <strong>احتجازك</strong> في مركز.</p>
+            <p><strong>القاصرون غير المصحوبين</strong> لا يخضعون للإجراء الحدودي إلا لأسباب أمنية. والأشخاص <strong>المستضعفون</strong> لا يخضعون له إذا لم يكن بالإمكان تقديم الدعم الذي يحتاجون إليه.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>المقابلة أمام اللجنة</h2>
+            <p><strong>المقابلة الشخصية</strong> إلزامية: هي اللحظة التي تروي فيها قصتك وتشرح لماذا لا يمكنك العودة إلى بلدك.</p>
+            <p>قبل المقابلة يحق لك الحصول على <strong>إرشاد قانوني مجاني</strong>: شخص يشرح لك الإجراء. <strong>اطلبه</strong>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>أن تبقى متاحًا للتواصل: هذا واجب عليك</h2>
+            <p>مع الميثاق أصبحت واجباتك أكثر صرامة. يجب عليك:</p>
+            <ul>
+              <li><strong>التعاون</strong> وتسليم الوثائق التي لديك؛</li>
+              <li><strong>الحضور</strong> إلى المقابلة وإلى المواعيد؛</li>
+              <li><strong>الإبلاغ فورًا</strong> عن أي تغيير في العنوان أو الهاتف أو البريد الإلكتروني؛</li>
+              <li><strong>البقاء في إيطاليا</strong> وعدم الانتقال إلى بلد أوروبي آخر.</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>إذا لم تفعل ذلك</strong>، يمكن للجنة أن تعتبر طلبك <strong>مسحوبًا</strong> (سحب ضمني) وتُغلق الإجراء. يجب تقديم الطعن ضد هذا القرار خلال <strong>7 أيام</strong> فقط.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>القرار</h2>
+            <p>يصلك القرار في <strong>مركز الاستقبال</strong> أو على آخر <strong>عنوان</strong> أبلغت عنه. الردود الممكنة مشروحة أدناه، في <a href="#esiti">"ما الردود التي يمكن أن تتلقاها"</a>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>الطعن إذا كان الرد سلبيًا</h2>
+            <p>يمكنك تقديم <strong>طعن أمام المحكمة</strong> بمساعدة <strong>محامٍ</strong>. مع الميثاق أصبحت المهل <strong>أقصر من ذي قبل</strong>: تواصل معه في اليوم نفسه الذي تتلقى فيه القرار.</p>
+            <table class="pi-table">
+              <thead><tr><th>الحالة</th><th>مهلة تقديم الطعن</th><th>هل يمكنك البقاء في إيطاليا؟</th></tr></thead>
+              <tbody>
+                <tr><td data-label="الحالة">الإجراء العادي</td><td data-label="المهلة">30 يومًا</td><td data-label="البقاء">نعم، تلقائيًا</td></tr>
+                <tr><td data-label="الحالة">الإجراء المعجّل، أو الطلب غير المقبول أو المسحوب</td><td data-label="المهلة">7 أيام</td><td data-label="البقاء">ليس تلقائيًا</td></tr>
+                <tr><td data-label="الحالة">الإجراء الحدودي</td><td data-label="المهلة">5 أيام</td><td data-label="البقاء">ليس تلقائيًا (نعم بالنسبة للقاصرين غير المصحوبين)</td></tr>
+              </tbody>
+            </table>
+            <p>عندما لا يحميك الطعن تلقائيًا، يجب على المحامي أن يطلب من القاضي، <strong>مع الطعن</strong>، <strong>الإذن بالبقاء</strong> في إيطاليا (autorizzazione a rimanere). يتخذ القاضي قراره خلال 10 أيام تقريبًا، وأثناء ذلك لا يمكن، كقاعدة عامة، إبعادك.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">اعرف المزيد عن قواعد الميثاق على موقع SOS Patto (باللغة الإيطالية)</a>
+        </p>
       </div>
 
-      <!-- SITUAZIONI PARTICOLARI -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ حالات خاصة</h2>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">ما يجب معرفته في كل الأحوال</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>ما الردود التي يمكن أن تتلقاها</h2>
+        <p>تنطبق سواء وفق القواعد القديمة أو وفق الميثاق. يمكن للجنة أن تمنحك:</p>
+        <ul>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>صفة اللاجئ</strong></a> (ما يُسمّى "اللجوء السياسي"): تصريح إقامة لمدة <strong>5 سنوات</strong>؛</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>الحماية الفرعية</strong></a>: تصريح إقامة لمدة <strong>5 سنوات</strong>؛</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>الحماية الخاصة</strong></a>: تصريح إقامة لمدة <strong>سنتين</strong>، قابل للتجديد، ويسمح لك بالعمل؛</li>
+          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>تصريح إقامة للعلاج الطبي</strong></a>، إذا كنت مريضًا بمرض خطير.</li>
+        </ul>
+        <p>إذا رأت اللجنة أنه لا يحق لك أي من أنواع الحماية هذه، يكون الرد <strong>سلبيًا</strong>: يمكنك تقديم طعن خلال المهل المذكورة في القسم الخاص بك.</p>
+      </div>
+
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>البلدان التي تُعتبر "آمنة"</h2>
+        <p>إذا كنت قادمًا من بلد تعتبره إيطاليا <strong>آمنًا</strong>، يتم فحص طلبك <strong>بسرعة أكبر</strong> ويكون لديك وقت أقل لتقديم الطعن. القائمة الإيطالية تشمل اليوم:</p>
+        <ul class="pi-countries">
+          <li>ألبانيا</li><li>الجزائر</li><li>بنغلاديش</li><li>البوسنة والهرسك</li><li>الرأس الأخضر</li>
+          <li>ساحل العاج</li><li>مصر</li><li>غامبيا</li><li>جورجيا</li><li>غانا</li>
+          <li>كوسوفو</li><li>مقدونيا الشمالية</li><li>المغرب</li><li>الجبل الأسود</li><li>بيرو</li>
+          <li>السنغال</li><li>صربيا</li><li>سريلانكا</li><li>تونس</li>
+        </ul>
+        <p>مع الميثاق (الطلبات المقدَّمة من 12 يونيو 2026) توجد أيضًا <strong>قائمة الاتحاد الأوروبي</strong>، وهي سارية في جميع دول الاتحاد الأوروبي:</p>
+        <ul class="pi-countries">
+          <li>بنغلاديش</li><li>كولومبيا</li><li>مصر</li><li>الهند</li><li>كوسوفو</li><li>المغرب</li><li>تونس</li>
+        </ul>
+        <p>تُعتبر آمنة أيضًا <strong>البلدان المرشحة للانضمام إلى الاتحاد الأوروبي</strong> (مثل ألبانيا وصربيا وتركيا وجورجيا)، مع وجود استثناءات: مثلًا إذا كانت في البلد حرب.</p>
+        <p>بالإضافة إلى ذلك، يخضع للإجراء المعجّل أيضًا من يأتي من بلد تكون نسبة الطلبات المقبولة لمواطنيه في أوروبا <strong>20% أو أقل</strong>.</p>
+        <p>أن تأتي من بلد "آمن" <strong>لا يعني</strong> أن طلبك سيُرفض. إذا كانت في وضعك الشخصي مخاطر <strong>جدية ومحددة</strong>، يجب أن تشرحها جيدًا منذ البداية.</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>حالات خاصة</h2>
         <p>إذا كنت:</p>
         <ul>
-          <li>قاصرا 👶</li>
-          <li>امرأة 👩🏽</li>
-          <li>من ذوي الإعاقة ♿</li>
-          <li>تعاني من مشاكل نفسية 🧠</li>
-          <li>ضحية للعنف أو الاتجار بالبشر أو تشويه الأعضاء التناسلية 🚫</li>
+          <li>قاصرًا، خاصةً إذا كنت في إيطاليا دون والديك؛</li>
+          <li>امرأة وحيدة أو حاملًا؛</li>
+          <li>شخصًا من ذوي الإعاقة أو مصابًا بمرض خطير؛</li>
+          <li>شخصًا يعاني من مشاكل في الصحة النفسية؛</li>
+          <li>ضحية للعنف أو التعذيب أو الاتجار بالبشر أو تشويه الأعضاء التناسلية؛</li>
         </ul>
-        <p>... فسيتم دراسة طلبك <strong>باهتمام خاص</strong>، حتى لو كنت قادما من دولة "آمنة".</p>
+        <p>… فيحق لك الحصول على <strong>ضمانات خاصة</strong> وعلى إيواء مناسب لوضعك، حتى لو كنت قادمًا من بلد "آمن". قل ذلك في أقرب وقت ممكن: لمصلحة الشرطة (Questura)، وفي المركز، وللجنة.</p>
+        <p><strong>القاصرون غير المصحوبين</strong> لهم الحق في <strong>وصيّ</strong> ولا يمكن ردّهم عند الحدود (رفض دخولهم).</p>
       </div>
 
-      <!-- DUBLINO -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 إذا قدمت طلب لجوء في دولة أخرى (نظام دبلن)</h2>
-        <p>إذا كنت قد <strong>قدمت طلب لجوء في دولة أوروبية أخرى</strong> أو <strong>أُخذت بصماتك</strong> هناك، فمن المحتمل ألا تكون <strong>إيطاليا هي المسؤولة</strong> عن دراسة طلبك.</p>
-        <p>في هذه الحالات قد يتم <strong>نقل طلبك إلى الدولة الأخرى</strong>.</p>
-        <p>👉 <strong>ما يجب فعله:</strong> إذا كنت في هذا الوضع، من المهم جدا أن <strong>تطلب فورا مساعدة محامٍ أو مختص متخصص في قانون اللجوء</strong>.</p>
+      <div class="card pi-card">
+        <h2>إذا كنت قد طلبت اللجوء في بلد أوروبي آخر (دبلن)</h2>
+        <p>إذا كنت قد <strong>طلبت اللجوء من قبل في بلد أوروبي آخر</strong>، أو أُخذت <strong>بصماتك</strong> هناك، فقد <strong>لا تكون إيطاليا</strong> هي المسؤولة عن فحص طلبك. في هذه الحالة يمكن أن يتم <strong>نقلك</strong> إلى ذلك البلد.</p>
+        <p>بالنسبة للطلبات المسجَّلة حتى 30 يونيو 2026 تُطبَّق قواعد <strong>لائحة دبلن</strong> القديمة؛ وبالنسبة للطلبات المسجَّلة ابتداءً من 1 يوليو 2026 تُطبَّق القواعد الجديدة للميثاق.</p>
+        <p><strong>ماذا تفعل:</strong> اطلب فورًا المساعدة من محامٍ أو من مختص ذي خبرة.</p>
       </div>
 
-      <!-- ACCOGLIENZA -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 حق الإيواء لطالبي اللجوء</h2>
-        <p>في إيطاليا، الأشخاص الذين يقدمون طلب لجوء و<strong>ليس لديهم ما يكفي من المال لإعالة أنفسهم</strong> لهم الحق في الحصول على مكان في <strong>مركز إيواء</strong>.</p>
-        <p>⏱ <strong>حق الإيواء ساري المفعول:</strong></p>
+      <div class="card pi-card" id="accoglienza">
+        <h2>الحق في الاستقبال والإيواء</h2>
+        <p>إذا طلبت اللجوء و<strong>لم يكن لديك ما يكفي من المال لإعالة نفسك</strong>، يحق لك الحصول على مكان في <strong>مركز استقبال</strong>.</p>
         <ul>
-          <li>من لحظة <strong>إعلان الشخص رغبته في تقديم طلب لجوء</strong>،</li>
-          <li>حتى <strong>نهاية الإجراء</strong>، أي عندما يتم <strong>قبول</strong> الطلب أو <strong>رفضه نهائيا</strong> أو <strong>سحبه</strong>.</li>
+          <li>يبدأ هذا الحق من اللحظة التي <strong>تقول فيها إنك تريد طلب اللجوء</strong>.</li>
+          <li>ويستمر طوال الإجراء أمام اللجنة، حتى انتهاء مهلة تقديم الطعن، وإذا كان الطعن يسمح لك بالبقاء، يستمر أيضًا أثناء الطعن.</li>
         </ul>
-        <p>⚠️ قد يُلغى حق الإيواء في حالات أخرى أيضا، مثل <strong>مغادرة المركز</strong> أو إذا لم يعد الشخص <strong>يُعتبر في حالة عوز</strong>.</p>
+        <p>يمكن أن <strong>تفقد حقك في الإيواء</strong> إذا غادرت المركز، أو إذا لم تحضر المقابلة، أو إذا كان لديك ما يكفي من المال.</p>
+        <p>مع الميثاق، يمكن للسلطات أيضًا أن تُلزمك بـ<strong>العيش في مكان محدد</strong> (دائمًا في الإجراء الحدودي). إذا انتقلت، يمكن أن تفقد حقك في الإيواء.</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>قصتك فريدة.</strong> ليست مثل قصة أصدقائك أو أقاربك. القوانين تتغير باستمرار، لذلك ابحث دائما عن مساعدة قانونية محدثة.
-          <a href="/ar/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <strong>قصتك فريدة.</strong> ليست مثل قصة أصدقائك أو أقاربك، وهذه القواعد جديدة: حتى المحاكم ما زالت تعمل على تفسيرها. إذا كان دخلك أقل من <strong>13,600 يورو سنويًا</strong>، يمكنك الحصول على محامٍ <strong>مجانًا</strong> (المساعدة القانونية المجانية، gratuito patrocinio).
+          <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             ابحث عن مساعدة قانونية مجانية
           </a>
         </div>
@@ -173,20 +400,93 @@ lang: ar
 
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">قد يهمك أيضا</h2>
+      <h2 class="text-center mb-lg">قد يهمك أيضًا</h2>
       <div class="grid grid-3">
-        <a href="/ar/permesso-richiesta-asilo.html" class="card card-link card-compact">
+        <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
-          <h3 class="card-title">تصريح طلب اللجوء</h3>
+          <h3 class="card-title">تصريح الإقامة لطلب اللجوء</h3>
         </a>
-        <a href="/ar/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
+        <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">صفة اللاجئ</h3>
         </a>
-        <a href="/ar/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
+        <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">الحماية الفرعية</h3>
         </a>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">انظر أيضًا: تصاريح إقامة أخرى لأسباب الحماية</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">تصريح إقامة لضحايا الاتجار بالبشر</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">تصريح إقامة لضحايا العنف الأسري</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">تصريح إقامة لضحايا الاستغلال في العمل</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">تصريح إقامة للقاصرين غير المصحوبين (MSNA)</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">تصريح إقامة للاندماج – استمرار الرعاية الإدارية (prosieguo amministrativo)</a></li>
+          <li><a href="permesso-calamita-naturale.html">تصريح إقامة بسبب كارثة طبيعية</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">تصريح إقامة لأفراد عائلات اللاجئين والمستفيدين من الحماية الفرعية</a></li>
+          <li><a href="permesso-apolidia.html">تصريح إقامة لعديمي الجنسية</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>

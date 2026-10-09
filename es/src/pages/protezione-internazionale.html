@@ -1,24 +1,72 @@
 ---
 layout: layouts/base.liquid
-title: "Guía de la Protección Internacional"
+title: "Guía sobre el asilo en Italia: antes y después del Pacto de la UE | SOS Permesso"
 lang: es
+description: "Guía de la protección internacional en Italia: qué reglas se aplican a ti (antes o después del 12 de junio de 2026), cómo funciona la solicitud de asilo, el documento, el trabajo, la entrevista, la decisión y el recurso."
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="index.html" class="link-ink">Inicio</a> →
-        <span>Protección Internacional</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">Guía de la protección internacional</h1>
-        <p class="section-subtitle">Todo lo que necesitas saber sobre la solicitud de asilo en Italia</p>
+        <h1 class="page-title">Guía sobre el asilo en Italia</h1>
+        <p class="section-subtitle">Cómo se pide la protección internacional, antes y después del Pacto de la UE sobre Migración y Asilo</p>
+        <p class="pi-updated">Actualizada al 9 de octubre de 2026</p>
       </div>
     </div>
   </section>
@@ -26,144 +74,323 @@ lang: es
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>Aquí tienes información sencilla sobre la <strong>protección internacional</strong> en Italia.</p>
-        <p>Puede parecer un camino largo y complicado, pero lo vemos paso a paso.</p>
-        <p>Solo podemos darte información general: es importante que busques <strong>ayuda legal cualificada</strong>.</p>
+      <div class="card pi-card">
+        <p>Si en tu país estás en peligro, en Italia puedes pedir la <strong>protección internacional</strong> (es decir, el <strong>asilo</strong>).</p>
+        <p>Desde el <strong>12 de junio de 2026</strong>, en toda la Unión Europea se aplican <strong>nuevas reglas</strong>: el <strong>Pacto de la UE sobre Migración y Asilo</strong>. Sin embargo, quien ya había pedido asilo antes sigue, por regla general, con las <strong>reglas anteriores</strong>.</p>
+        <p>Por eso esta guía tiene <strong>dos pestañas</strong>. Antes que nada, descubre cuál se aplica a ti.</p>
+        <p>Solo podemos darte información general: es importante que busques <strong>ayuda legal calificada</strong>.</p>
       </div>
 
-      <!-- PASO 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>1) Presentar la solicitud</h2>
-        <p>Lo primero que debes hacer es <strong>presentar tu solicitud en persona en la Questura</strong>, es decir, la oficina de policía.</p>
-        <p>Te tomarán las <strong>huellas dactilares</strong> y te harán algunas <strong>preguntas generales</strong> sobre ti, tu familia y el viaje que has hecho.</p>
-        <p>¡No es nada difícil!</p>
-        <p>El formulario que llenarán se llama <strong>C3</strong>.</p>
-        <p>Si tienes un <strong>pasaporte</strong>, te pedirán que lo entregues y lo guardarán <strong>durante toda la duración del procedimiento</strong>.</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>¿Qué reglas se aplican a ti?</h2>
+        <p>Lo que cuenta es el día en que <strong>dijiste por primera vez</strong> a las autoridades italianas (Questura, es decir, la oficina de extranjería/migraciones, o la policía de frontera) que querías pedir asilo. Este momento se llama <strong>manifestación de la voluntad</strong> (en italiano, <em>manifestazione della volontà</em>).</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">Antes del 12 de junio de 2026</span>
+            ¿Pediste asilo antes de esta fecha? Se aplican las <strong>reglas anteriores</strong>, hasta el final de tu procedimiento, también ante el tribunal.
+            <span class="pi-choice-go">Ir a la pestaña antes del Pacto →</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">Desde el 12 de junio de 2026 en adelante</span>
+            ¿Pediste asilo a partir de esta fecha? Se aplican las <strong>nuevas reglas del Pacto de la UE</strong>.
+            <span class="pi-choice-go">Ir a la pestaña Pacto de la UE →</span>
+          </a>
+        </div>
+
+        <h3>¿Y si pediste asilo antes, pero la Questura te registró después?</h3>
+        <p>Pasa a menudo: pediste asilo (o una cita) antes del 12 de junio, pero el formulario en la Questura (el <strong>C3</strong> o el registro) se hizo <strong>después</strong>.</p>
+        <p>Los tribunales no están todos de acuerdo. <strong>Muchos jueces</strong> dicen que se aplican las <strong>reglas anteriores</strong>, porque el retraso de la oficina no puede ser culpa tuya. Otros, en cambio, se fijan en la fecha del formulario.</p>
+        <p><strong>Qué hacer:</strong> guarda todas las pruebas de la fecha en que pediste asilo (comprobante de la cita, PEC del abogado a la Questura, comprobante de la asociación o de la entidad a la que acudiste, declaraciones del centro) y habla con un abogado.</p>
+
+        <h3>¿Presentaste una nueva solicitud después del 12 de junio?</h3>
+        <p>Si tu primera solicitud era anterior al 12 de junio de 2026 pero presentaste <strong>otra</strong> (solicitud <strong>posterior</strong>, en italiano <em>domanda reiterata</em>) después del 12 de junio de 2026, normalmente para la nueva solicitud se aplican las <strong>reglas del Pacto</strong>.</p>
       </div>
 
-      <!-- PASO 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>2) Recibir el permesso di soggiorno provisional</h2>
-        <p>Después de recibir tu solicitud, te darán un <strong>permesso di soggiorno por solicitud de asilo</strong>.</p>
-        <p>Es un verdadero <strong>permesso di soggiorno</strong> que te permite quedarte en Italia mientras tu solicitud está siendo examinada.</p>
-        <p>Con este permiso puedes:</p>
-        <ul>
-          <li>trabajar 👷</li>
-          <li>estudiar 📚</li>
-          <li>inscribirte en el padrón municipal (anagrafe) 🏠</li>
-          <li>tener un médico de cabecera 🩺</li>
-          <li>sacar la licencia de conducir 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>No puedes viajar fuera de Italia</strong> hasta que termine el procedimiento, y no puedes <strong>convertir este permiso en un permiso por trabajo</strong>.</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="Reglas aplicables" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">Solicitud antes del 12/6/2026</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">Solicitud desde el 12/6/2026 · Pacto de la UE</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">Reglas anteriores (antes del Pacto)</h2>
+        <p class="pi-panel-sub">Para quien pidió asilo antes del 12 de junio de 2026</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>La solicitud en la Questura</h2>
+            <p>Presentaste la solicitud <strong>en persona en la Questura</strong> (o ante la policía de frontera).</p>
+            <p>Te tomaron las <strong>huellas dactilares</strong> y te hicieron algunas preguntas sobre ti, tu familia y el viaje. El formulario se llama <strong>C3</strong>.</p>
+            <p>Si tienes <strong>pasaporte</strong>, la Questura lo guarda durante todo el procedimiento.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>El permiso por solicitud de asilo</h2>
+            <p>Recibes un <a href="permesso-richiesta-asilo.html"><strong>permiso de estadía por solicitud de asilo</strong></a>. Dura <strong>6 meses</strong> y se renueva hasta la decisión. Al principio, el comprobante de la Questura vale como permiso provisional.</p>
+            <p>Con este permiso puedes estudiar, inscribirte en el padrón municipal (anagrafe), tener un médico de cabecera y sacar la licencia de conducir.</p>
+            <p>Puedes <strong>trabajar</strong> después de <strong>60 días</strong> desde la solicitud, si la Commissione Territoriale todavía no ha decidido.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>No puedes viajar fuera de Italia</strong> hasta que termine el procedimiento, y este permiso <strong>no se puede convertir</strong> en un permiso por trabajo.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>La entrevista en la Commissione</h2>
+            <p>Te llaman para la <strong>entrevista</strong> ante la <strong>Commissione Territoriale</strong> (Comisión Territorial: el órgano que decide sobre tu solicitud). Es el momento en que cuentas tu historia y explicas por qué <strong>no puedes volver a tu país</strong>.</p>
+            <p>No es un interrogatorio, sino una conversación. Intenta ser <strong>claro y preciso</strong> y lleva los documentos que tengas.</p>
+            <p>Si vienes de un <strong>país considerado "seguro"</strong> o estás detenido (en un centro), el procedimiento puede ser <strong>acelerado</strong>: la entrevista y la decisión llegan en pocos días. Los menores no acompañados y las personas vulnerables no van a procedimiento acelerado.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>La decisión</h2>
+            <p>La decisión te llega al <strong>centro de acogida</strong> o a la <strong>dirección</strong> que diste a la Questura. Comunica siempre cada cambio de dirección; si no, corres el riesgo de no recibir la decisión y de perder el plazo para presentar el recurso.</p>
+            <p>Las posibles respuestas se explican más abajo, en <a href="#esiti">"Qué respuestas puedes recibir"</a>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>El recurso si la respuesta es negativa</h2>
+            <p>Puedes presentar un <strong>recurso ante el tribunal</strong>, pero necesitas un <strong>abogado</strong>. Los plazos son cortos: contáctalo <strong>de inmediato</strong>.</p>
+            <table class="pi-table">
+              <thead><tr><th>Caso</th><th>Plazo para el recurso</th><th>¿Puedes quedarte en Italia?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Caso">Procedimiento normal</td><td data-label="Plazo">30 días</td><td data-label="Quedarte">Sí, automáticamente</td></tr>
+                <tr><td data-label="Caso">Procedimiento acelerado o persona detenida</td><td data-label="Plazo">15 días</td><td data-label="Quedarte">A menudo no automáticamente</td></tr>
+                <tr><td data-label="Caso">Procedimiento fronterizo</td><td data-label="Plazo">7 días</td><td data-label="Quedarte">No automáticamente</td></tr>
+              </tbody>
+            </table>
+            <p>Cuando el recurso <strong>no</strong> te protege automáticamente (por ejemplo, si la solicitud fue considerada "manifiestamente infundada"), el abogado debe pedir al juez la <strong>suspensión</strong> junto con el recurso.</p>
+          </div>
         </div>
       </div>
 
-      <!-- PASO 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>3) La entrevista en la Commissione</h2>
-        <p>El siguiente paso es la <strong>entrevista en la Commissione Territoriale</strong>.</p>
-        <p>Es el momento en que puedes <strong>contar tu historia</strong>, explicar qué te pasó y por qué <strong>no puedes volver a tu país</strong>.</p>
-        <p>Te harán muchas preguntas para entender bien tu situación.</p>
-        <p>No es un interrogatorio, sino una conversación. Intenta ser <strong>claro y sincero</strong>.</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">Nuevas reglas del Pacto de la UE</h2>
+        <p class="pi-panel-sub">Para quien pidió asilo desde el 12 de junio de 2026 en adelante</p>
 
-      <!-- PASO 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>4) La decisión</h2>
-        <p>Después de la entrevista, recibirás <strong>la respuesta de la Commissione</strong>. Si estás en un centro de acogida, el responsable del centro te comunicará la decisión. Si no, la recibirás en la dirección de domicilio que comunicaste a la Questura cuando hiciste la solicitud de asilo.</p>
-        <p>Recuerda comunicar siempre a la Questura tus posibles cambios de domicilio, ¡o podrías tener problemas!</p>
-        <p>Las posibles decisiones <strong>positivas</strong> de la Commissione son:</p>
-        <ul>
-          <li><a href="permesso-asilo-status-rifugiato.html">Status di rifugiato</a> (también llamado "asilo político")</li>
-          <li><a href="permesso-protezione-sussidiaria.html">Protezione sussidiaria</a></li>
-          <li><a href="permesso-protezione-speciale.html">Protezione speciale</a></li>
-          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">Cure mediche</a></li>
-        </ul>
-        <p>Si según la Commissione no tienes derecho a ninguna de estas protecciones, recibirás una <strong>respuesta negativa</strong>.</p>
-      </div>
-
-      <!-- PASO 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>5) Recurrir si tu solicitud es rechazada</h2>
-        <p>❌ Si el resultado <strong>no es positivo</strong>, <strong>puedes recurrir ante el tribunal</strong>. Es como pedir <strong>una segunda opinión</strong>.</p>
-        <p>📌 No puedes recurrir solo: necesitas un <strong>abogado</strong>.</p>
-        <p>⏰ Desde el momento en que te comunican la decisión negativa tienes muy poco tiempo para recurrir, ¡contacta con un abogado <strong>lo antes posible</strong>!</p>
-        <p>💸 Si ganas <strong>menos de 13.700 euros al año</strong>, puedes pedir a tu abogado <strong>la asesoría legal gratuita</strong>.</p>
-        <p>⏳ Recuerda: <strong>el procedimiento puede durar meses o incluso años</strong>.</p>
-      </div>
-
-      <!-- PAÍSES SEGUROS -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ ATENCIÓN: Países considerados "seguros"</h2>
-        <p>Si vienes de un <strong>país que Italia considera seguro</strong>, tu solicitud será <strong>examinada más rápidamente</strong>.</p>
-        <p>Actualmente estos países son:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 Albania</span>
-          <span>🇩🇿 Argelia</span>
-          <span>🇧🇩 Bangladés</span>
-          <span>🇧🇦 Bosnia y Herzegovina</span>
-          <span>🇨🇻 Cabo Verde</span>
-          <span>🇨🇮 Costa de Marfil</span>
-          <span>🇪🇬 Egipto</span>
-          <span>🇬🇲 Gambia</span>
-          <span>🇬🇪 Georgia</span>
-          <span>🇬🇭 Ghana</span>
-          <span>🇽🇰 Kosovo</span>
-          <span>🇲🇰 Macedonia del Norte</span>
-          <span>🇲🇦 Marruecos</span>
-          <span>🇲🇪 Montenegro</span>
-          <span>🇵🇪 Perú</span>
-          <span>🇸🇳 Senegal</span>
-          <span>🇷🇸 Serbia</span>
-          <span>🇱🇰 Sri Lanka</span>
-          <span>🇹🇳 Túnez</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>Los primeros controles ("accertamenti")</h2>
+            <p>Si <strong>llegaste por mar</strong> después de un rescate, a la <strong>frontera</strong> sin documentos válidos, o te encuentran en Italia después de una entrada irregular, primero pasas por los <strong>controles</strong> (en italiano <em>accertamenti</em>; en el Reglamento de la UE, <em>triaje</em>; en inglés <em>screening</em>).</p>
+            <p>Duran como máximo <strong>7 días</strong> en la frontera y <strong>3 días</strong> si ya estás en Italia. Incluyen:</p>
+            <ul>
+              <li>un <strong>control médico</strong> y un control de las <strong>vulnerabilidades</strong>;</li>
+              <li>la <strong>identificación</strong> y las <strong>huellas dactilares</strong>;</li>
+              <li>un control de seguridad.</li>
+            </ul>
+            <p>Si tienes problemas de salud, eres menor de edad o sufriste violencia, <strong>dilo de inmediato</strong>.</p>
+          </div>
         </div>
-        <p>Pero si <strong>en tu situación personal</strong> hay peligros <strong>graves y específicos</strong>, <strong>debes explicarlo bien</strong> desde el principio.</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>Decir que quieres pedir asilo</h2>
+            <p>El primer paso es decir a las autoridades que quieres pedir protección. Es la <strong>manifestación de la voluntad</strong>.</p>
+            <p>Por ahora, y al menos hasta el <strong>30 de abril de 2027</strong>, en Italia la reciben la <strong>Questura</strong> y la <strong>policía de frontera</strong>. También hay otras formas:</p>
+            <ul>
+              <li><strong>Con un abogado, por PEC</strong> (correo electrónico certificado): el abogado escribe a la Questura que quieres pedir asilo. A menudo es una <strong>buena idea</strong>, porque así tienes una <strong>prueba segura de la fecha</strong> en que pediste asilo.</li>
+              <li><strong>A través de una entidad</strong>: en algunas ciudades la manifestación se comunica a una asociación, a un CAF (centro de asistencia fiscal), a la oficina de extranjeros del municipio (Comune) o a otra entidad indicada por la Questura.</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>Cada ciudad lo hace a su manera.</strong> Antes de ir, pregunta cómo funciona en <strong>tu ciudad</strong> a una asociación, a una oficina de orientación legal o a un abogado. <a href="aiuto-legale.html">Encuentra asesoría legal gratuita</a>.</div>
+            </div>
+            <p>Desde este momento tienes derecho a la <a href="#accoglienza">acogida</a>, si no tienes dinero para mantenerte.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>El registro y el documento</h2>
+            <p>La Questura debe <strong>registrar</strong> tu solicitud en un plazo de <strong>5 días</strong> (hasta 15 si llegan muchísimas personas). Toma tus datos y te da un <strong>folleto informativo</strong>.</p>
+            <p>Por ahora, en Italia, el registro en la Questura <strong>vale también como "formalización"</strong> de la solicitud: no tienes que hacer otro trámite.</p>
+            <p>Recibes un <strong>documento a tu nombre</strong> (documento nominativo) con tu foto. <strong>No es un permiso de estadía</strong>: con el Pacto, el "permiso de estadía por solicitud de asilo" ya no existe. Este documento solo demuestra que puedes <strong>quedarte en Italia</strong> durante el procedimiento. Vale <strong>un año</strong> y se puede renovar.</p>
+            <p>Debes declarar tu <strong>domicilio</strong>, y también un teléfono o un correo electrónico.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>El documento no es un documento de viaje:</strong> no puedes usarlo para ir a otros países.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>Trabajar</h2>
+            <p>Puedes <strong>trabajar</strong> después de <strong>90 días</strong> desde la solicitud, si la Commissione Territoriale todavía no ha decidido y el retraso no es culpa tuya.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>No puedes convertirlo en un permiso por trabajo.</strong> El documento de solicitante de asilo no es un permiso de estadía, así que no se puede "cambiar" por otro permiso, ni siquiera si tienes un contrato de trabajo.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>Qué procedimiento: normal, acelerado o fronterizo</h2>
+            <p>La <strong>Commissione Territoriale</strong> decide qué procedimiento usar y te lo comunica.</p>
+            <table class="pi-table">
+              <thead><tr><th>Procedimiento</th><th>Cuándo</th><th>Plazos de la decisión</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Procedimiento"><strong>Normal</strong></td><td data-label="Cuándo">En la mayoría de los casos</td><td data-label="Plazos">6 meses (prorrogables)</td></tr>
+                <tr><td data-label="Procedimiento"><strong>Acelerado</strong></td><td data-label="Cuándo">Por ejemplo: vienes de un <a href="#paesi-sicuri">país "seguro"</a>; para tu país, en Europa se aceptan pocas solicitudes (el 20% o menos); cuentas cosas que no tienen relación con tu caso o que se contradicen; mentiste sobre tu identidad; pediste asilo tarde</td><td data-label="Plazos">3 meses</td></tr>
+                <tr><td data-label="Procedimiento"><strong>Fronterizo</strong></td><td data-label="Cuándo">Si pediste asilo en la frontera o después de un desembarco, sin documentos para entrar, y estás en uno de los casos del procedimiento acelerado</td><td data-label="Plazos">12 semanas en total, recurso incluido</td></tr>
+              </tbody>
+            </table>
+            <p>En el <strong>procedimiento fronterizo</strong> debes vivir en un <strong>lugar indicado</strong> por las autoridades, y en algunos casos puedes ser <strong>detenido</strong> en un centro.</p>
+            <p>Los <strong>menores no acompañados</strong> van a procedimiento fronterizo solo por motivos de seguridad. Las personas <strong>vulnerables</strong> no van si no pueden recibir el apoyo que necesitan.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>La entrevista en la Commissione</h2>
+            <p>La <strong>entrevista personal</strong> es obligatoria: es el momento para contar tu historia y explicar por qué no puedes volver a tu país.</p>
+            <p>Antes de la entrevista tienes derecho a una <strong>orientación legal gratuita</strong>: una persona que te explica el procedimiento. <strong>Pídela</strong>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>Estar localizable: es una obligación</h2>
+            <p>Con el Pacto tus obligaciones son más estrictas. Debes:</p>
+            <ul>
+              <li><strong>colaborar</strong> y entregar los documentos que tengas;</li>
+              <li><strong>presentarte</strong> a la entrevista y a las citas;</li>
+              <li><strong>comunicar de inmediato</strong> cada cambio de dirección, teléfono o correo electrónico;</li>
+              <li><strong>quedarte en Italia</strong> y no irte a otro país europeo.</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Si no lo haces</strong>, la Commissione Territoriale puede considerar tu solicitud <strong>retirada</strong> y cerrar el procedimiento. El recurso contra esta decisión se debe presentar en solo <strong>7 días</strong>.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>La decisión</h2>
+            <p>La decisión te llega al <strong>centro de acogida</strong> o a la última <strong>dirección</strong> que comunicaste. Las posibles respuestas se explican más abajo, en <a href="#esiti">"Qué respuestas puedes recibir"</a>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>El recurso si la respuesta es negativa</h2>
+            <p>Puedes presentar un <strong>recurso ante el tribunal</strong> con un <strong>abogado</strong>. Con el Pacto los plazos son <strong>todavía más cortos</strong>: contáctalo el mismo día en que recibes la decisión.</p>
+            <table class="pi-table">
+              <thead><tr><th>Caso</th><th>Plazo para el recurso</th><th>¿Puedes quedarte en Italia?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Caso">Procedimiento normal</td><td data-label="Plazo">30 días</td><td data-label="Quedarte">Sí, automáticamente</td></tr>
+                <tr><td data-label="Caso">Procedimiento acelerado, solicitud inadmisible o retirada</td><td data-label="Plazo">7 días</td><td data-label="Quedarte">No automáticamente</td></tr>
+                <tr><td data-label="Caso">Procedimiento fronterizo</td><td data-label="Plazo">5 días</td><td data-label="Quedarte">No automáticamente (sí para los menores no acompañados)</td></tr>
+              </tbody>
+            </table>
+            <p>Cuando el recurso no te protege automáticamente, el abogado debe pedir al juez, <strong>junto con el recurso</strong>, la <strong>autorización para permanecer</strong> en Italia. El juez decide en unos 10 días y, mientras decide, por regla general no pueden expulsarte.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">Más información sobre las reglas del Pacto en SOS Patto (en italiano)</a>
+        </p>
       </div>
 
-      <!-- SITUACIONES PARTICULARES -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ Situaciones particulares</h2>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">Lo que debes saber en todos los casos</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>Qué respuestas puedes recibir</h2>
+        <p>Valen tanto con las reglas anteriores como con el Pacto. La Commissione Territoriale puede darte:</p>
+        <ul>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>Estatus de refugiado</strong></a> (el llamado "asilo político"): permiso de <strong>5 años</strong>;</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>Protección subsidiaria</strong></a>: permiso de <strong>5 años</strong>;</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>Protección especial</strong></a>: permiso de <strong>2 años</strong>, renovable, con el que puedes trabajar;</li>
+          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>Permiso por tratamiento médico</strong></a>, si estás gravemente enfermo.</li>
+        </ul>
+        <p>Si la Commissione Territoriale considera que no tienes derecho a ninguna de estas protecciones, la respuesta es <strong>negativa</strong>: puedes presentar un recurso en los plazos indicados en tu pestaña.</p>
+      </div>
+
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>Países considerados "seguros"</h2>
+        <p>Si vienes de un país que Italia considera <strong>seguro</strong>, tu solicitud se examina <strong>más rápido</strong> y tienes menos tiempo para el recurso. Hoy la lista italiana incluye:</p>
+        <ul class="pi-countries">
+          <li>Albania</li><li>Argelia</li><li>Bangladés</li><li>Bosnia y Herzegovina</li><li>Cabo Verde</li>
+          <li>Costa de Marfil</li><li>Egipto</li><li>Gambia</li><li>Georgia</li><li>Ghana</li>
+          <li>Kosovo</li><li>Macedonia del Norte</li><li>Marruecos</li><li>Montenegro</li><li>Perú</li>
+          <li>Senegal</li><li>Serbia</li><li>Sri Lanka</li><li>Túnez</li>
+        </ul>
+        <p>Con el Pacto (solicitudes desde el 12 de junio de 2026) también hay una <strong>lista de la Unión Europea</strong>, que vale en todos los países de la UE:</p>
+        <ul class="pi-countries">
+          <li>Bangladés</li><li>Colombia</li><li>Egipto</li><li>India</li><li>Kosovo</li><li>Marruecos</li><li>Túnez</li>
+        </ul>
+        <p>También se consideran seguros los <strong>países candidatos a entrar en la Unión Europea</strong> (por ejemplo Albania, Serbia, Turquía, Georgia), salvo excepciones: por ejemplo, si en el país hay una guerra.</p>
+        <p>Además, también va a procedimiento acelerado quien viene de un país para el cual, en Europa, las solicitudes aceptadas son <strong>el 20% o menos</strong>.</p>
+        <p>Venir de un país "seguro" <strong>no significa</strong> que la solicitud será rechazada. Si en tu situación personal hay peligros <strong>graves y específicos</strong>, debes explicarlos bien desde el principio.</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>Situaciones particulares</h2>
         <p>Si eres:</p>
         <ul>
-          <li>menor de edad 👶</li>
-          <li>mujer 👩🏽</li>
-          <li>persona con discapacidad ♿</li>
-          <li>persona con problemas de salud mental 🧠</li>
-          <li>víctima de violencia, trata o mutilaciones genitales 🚫</li>
+          <li>menor de edad, sobre todo si estás en Italia sin tus padres;</li>
+          <li>una mujer sola o embarazada;</li>
+          <li>una persona con discapacidad o con una enfermedad grave;</li>
+          <li>una persona con problemas de salud mental;</li>
+          <li>víctima de violencia, tortura, trata o mutilación genital;</li>
         </ul>
-        <p>... entonces tu solicitud <strong>será evaluada con especial atención</strong>, incluso si vienes de un país "seguro".</p>
+        <p>… tienes derecho a <strong>garantías especiales</strong> y a una acogida adecuada, incluso si vienes de un país "seguro". Dilo lo antes posible: en la Questura, en el centro, a la Commissione Territoriale.</p>
+        <p>Los <strong>menores no acompañados</strong> tienen derecho a un <strong>tutor</strong> y no pueden ser rechazados en la frontera.</p>
       </div>
 
-      <!-- DUBLÍN -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 Si has solicitado asilo en otro país (Reglamento de Dublín)</h2>
-        <p>Si ya has <strong>solicitado asilo en otro país europeo</strong>, o <strong>dejaste tus huellas dactilares</strong> allí, es posible que <strong>Italia no sea el país responsable</strong> de examinar tu solicitud.</p>
-        <p>En estos casos, tu solicitud puede ser <strong>transferida al otro país</strong>.</p>
-        <p>👉 <strong>Qué hacer:</strong> si te encuentras en esta situación, es muy importante <strong>pedir ayuda inmediatamente a un abogado o a un operador experto</strong> en derecho de asilo.</p>
+      <div class="card pi-card">
+        <h2>Si pediste asilo en otro país europeo (Dublín)</h2>
+        <p>Si <strong>ya pediste asilo en otro país europeo</strong>, o te tomaron las <strong>huellas dactilares</strong> allí, puede que <strong>no sea Italia</strong> el país que debe examinar tu solicitud. En ese caso podrías ser <strong>trasladado</strong> a ese país.</p>
+        <p>Para las solicitudes registradas hasta el 30 de junio de 2026 se aplican las reglas del antiguo <strong>Reglamento de Dublín</strong>; para las registradas desde el 1 de julio de 2026 se aplican las nuevas reglas del Pacto.</p>
+        <p><strong>Qué hacer:</strong> pide ayuda de inmediato a un abogado o a un asesor con experiencia.</p>
       </div>
 
-      <!-- ACOGIDA -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 Derecho a la acogida para quien solicita asilo</h2>
-        <p>En Italia, las personas que solicitan asilo y <strong>no tienen suficiente dinero para mantenerse</strong> tienen derecho a una plaza en un <strong>centro de acogida</strong>.</p>
-        <p>⏱ <strong>El derecho a la acogida vale:</strong></p>
+      <div class="card pi-card" id="accoglienza">
+        <h2>El derecho a la acogida</h2>
+        <p>Si pides asilo y <strong>no tienes suficiente dinero para mantenerte</strong>, tienes derecho a un lugar en un <strong>centro de acogida</strong>.</p>
         <ul>
-          <li>desde el momento en que la persona <strong>dice que quiere solicitar asilo</strong>,</li>
-          <li>hasta el <strong>final del procedimiento</strong>, es decir, cuando la solicitud es <strong>aceptada</strong>, <strong>rechazada definitivamente</strong> o <strong>retirada</strong>.</li>
+          <li>Empieza desde el momento en que <strong>dices que quieres pedir asilo</strong>.</li>
+          <li>Dura todo el procedimiento ante la Commissione Territoriale, hasta que vence el plazo para el recurso y, si el recurso te permite quedarte, también durante el recurso.</li>
         </ul>
-        <p>⚠️ La acogida también puede ser retirada en otros casos, por ejemplo si <strong>abandonas el centro</strong>, o si la persona <strong>ya no se considera sin medios</strong>.</p>
+        <p>Puedes <strong>perder la acogida</strong> si dejas el centro, si no vas a la entrevista o si tienes suficiente dinero.</p>
+        <p>Con el Pacto, las autoridades también pueden obligarte a <strong>vivir en un lugar determinado</strong> (siempre, en el procedimiento fronterizo). Si te vas de ese lugar, puedes perder la acogida.</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>Tu historia es única.</strong> No es igual a la de tus amigos o familiares. Las leyes cambian a menudo, así que busca siempre ayuda legal actualizada.
+          <strong>Tu historia es única.</strong> No es igual a la de tus amigos o familiares, y estas reglas son nuevas: incluso los tribunales todavía las están interpretando. Si tus ingresos son inferiores a <strong>13.600 euros al año</strong>, puedes tener un abogado <strong>gratis</strong> (gratuito patrocinio).
           <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
-            Encuentra ayuda legal gratuita
+            Encuentra asesoría legal gratuita
           </a>
         </div>
       </div>
@@ -181,12 +408,85 @@ lang: es
         </a>
         <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
-          <h3 class="card-title">Status di rifugiato</h3>
+          <h3 class="card-title">Estatus de refugiado</h3>
         </a>
         <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
-          <h3 class="card-title">Protezione sussidiaria</h3>
+          <h3 class="card-title">Protección subsidiaria</h3>
         </a>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">Ver también: otros permisos por protección</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">Permiso para víctimas de trata</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">Permiso para víctimas de violencia doméstica</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">Permiso por explotación laboral</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">Permiso para menores no acompañados (MSNA)</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">Permiso por integración – prosieguo amministrativo (continuación administrativa)</a></li>
+          <li><a href="permesso-calamita-naturale.html">Permiso por calamidad natural</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">Permiso para familiares de refugiados y de titulares de protección subsidiaria</a></li>
+          <li><a href="permesso-apolidia.html">Permiso por apatridia</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>

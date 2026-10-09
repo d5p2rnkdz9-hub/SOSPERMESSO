@@ -1,24 +1,72 @@
 ---
 layout: layouts/base.liquid
-title: "راهنمای حمایت بین‌المللی"
+title: "راهنمای پناهندگی در ایتالیا: پیش و پس از پیمان اتحادیه اروپا | SOS Permesso"
 lang: fa
+description: "راهنمای حمایت بین‌المللی در ایتالیا: کدام قوانین شامل شما می‌شود (پیش یا پس از 12 ژوئن 2026)، درخواست پناهندگی چگونه انجام می‌شود، مدرک، کار، مصاحبه، تصمیم و اعتراض."
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/fa/index.html" class="link-ink">صفحه اصلی</a> →
-        <span>حمایت بین‌المللی</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">راهنمای حمایت بین‌المللی</h1>
-        <p class="section-subtitle">همه چیزی که باید درباره درخواست پناهندگی در ایتالیا بدانید</p>
+        <h1 class="page-title">راهنمای پناهندگی در ایتالیا</h1>
+        <p class="section-subtitle">چگونه حمایت بین‌المللی درخواست می‌شود، پیش و پس از پیمان اتحادیه اروپا درباره مهاجرت و پناهندگی</p>
+        <p class="pi-updated">به‌روزشده در 9 اکتبر 2026</p>
       </div>
     </div>
   </section>
@@ -26,143 +74,322 @@ lang: fa
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>اینجا اطلاعات ساده‌ای درباره <strong>حمایت بین‌المللی</strong> در ایتالیا برای شما آماده کرده‌ایم!</p>
-        <p>شاید مسیر طولانی و پیچیده‌ای به نظر برسد، اما ما آن را قدم به قدم توضیح می‌دهیم.</p>
-        <p>ما فقط می‌توانیم اطلاعات کلی ارائه دهیم: مهم است که <strong>کمک حقوقی تخصصی</strong> دریافت کنید.</p>
+      <div class="card pi-card">
+        <p>اگر در کشور خود در خطر هستید، در ایتالیا می‌توانید <strong>حمایت بین‌المللی</strong> (یعنی <strong>پناهندگی</strong>) درخواست کنید.</p>
+        <p>از <strong>12 ژوئن 2026</strong> در کل اتحادیه اروپا <strong>قوانین جدیدی</strong> اجرا می‌شود: <strong>پیمان اتحادیه اروپا درباره مهاجرت و پناهندگی</strong>. اما کسی که پیش از این تاریخ درخواست پناهندگی داده است، معمولاً با <strong>قوانین قدیمی</strong> ادامه می‌دهد.</p>
+        <p>به همین دلیل این راهنما <strong>دو بخش</strong> دارد. قبل از هر چیز، ببینید کدام بخش مربوط به شماست.</p>
+        <p>ما فقط می‌توانیم اطلاعات کلی به شما بدهیم: مهم است که از <strong>کمک حقوقی تخصصی</strong> استفاده کنید.</p>
       </div>
 
-      <!-- STEP 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>1) ارائه درخواست</h2>
-        <p>اولین کاری که باید انجام دهید، <strong>ارائه شخصی درخواست در Questura</strong> است.</p>
-        <p><strong>اثر انگشت</strong> شما را می‌گیرند و چند <strong>سوال کلی</strong> درباره شما، خانواده‌تان و سفری که انجام داده‌اید می‌پرسند.</p>
-        <p>کار سختی نیست!</p>
-        <p>فرمی که پر می‌کنند <strong>C3</strong> نام دارد.</p>
-        <p>اگر <strong>گذرنامه</strong> دارید، از شما می‌خواهند آن را تحویل دهید و آن را <strong>در تمام مدت رسیدگی</strong> نگه می‌دارند.</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>کدام قوانین شامل شما می‌شود؟</h2>
+        <p>مهم روزی است که <strong>برای اولین بار</strong> به مقامات ایتالیا (Questura یعنی اداره پلیس مهاجرت، یا پلیس مرزی) گفتید که می‌خواهید درخواست پناهندگی بدهید. این لحظه <strong>اعلام تمایل</strong> (manifestazione della volontà) نام دارد.</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">پیش از 12 ژوئن 2026</span>
+            پیش از این تاریخ درخواست پناهندگی داده‌اید؟ <strong>قوانین قدیمی</strong> شامل شما می‌شود، تا پایان روند پرونده‌تان، حتی در دادگاه.
+            <span class="pi-choice-go">رفتن به بخش پیش از پیمان ←</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">از 12 ژوئن 2026 به بعد</span>
+            از این تاریخ به بعد درخواست پناهندگی داده‌اید؟ <strong>قوانین جدید پیمان اتحادیه اروپا</strong> شامل شما می‌شود.
+            <span class="pi-choice-go">رفتن به بخش پیمان اتحادیه اروپا ←</span>
+          </a>
+        </div>
+
+        <h3>اگر پیش از این تاریخ درخواست پناهندگی داده‌اید، اما Questura بعد از آن شما را ثبت کرده است؟</h3>
+        <p>این اتفاق زیاد می‌افتد: پیش از 12 ژوئن درخواست پناهندگی (یا درخواست وقت ملاقات) داده‌اید، اما فرم در Questura (فرم <strong>C3</strong> یا ثبت درخواست) <strong>بعد از</strong> آن تاریخ انجام شده است.</p>
+        <p>همه دادگاه‌ها در این مورد هم‌نظر نیستند. <strong>بسیاری از قضات</strong> می‌گویند که <strong>قوانین قدیمی</strong> اجرا می‌شود، چون تأخیر اداره نمی‌تواند تقصیر شما باشد. اما برخی دیگر به تاریخ فرم نگاه می‌کنند.</p>
+        <p><strong>چه باید کرد:</strong> همه مدارکی را که تاریخ درخواست پناهندگی شما را نشان می‌دهد نگه دارید (رسید نوبت‌گیری، PEC وکیل به Questura، رسید انجمن یا نهادی که به آن مراجعه کرده‌اید، گواهی‌های مرکز) و درباره آن با یک وکیل صحبت کنید.</p>
+
+        <h3>بعد از 12 ژوئن درخواست جدیدی داده‌اید؟</h3>
+        <p>اگر درخواست اول شما با قوانین قدیمی بوده اما بعد از 12 ژوئن 2026 <strong>درخواست دیگری</strong> (درخواست <strong>تکراری</strong>) داده‌اید، معمولاً برای درخواست جدید <strong>قوانین پیمان</strong> اجرا می‌شود.</p>
       </div>
 
-      <!-- STEP 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>2) دریافت مجوز اقامت موقت</h2>
-        <p>پس از ثبت درخواست، یک <strong>مجوز اقامت برای درخواست پناهندگی</strong> به شما داده می‌شود.</p>
-        <p>این یک <strong>مجوز اقامت</strong> واقعی است که به شما اجازه می‌دهد در ایتالیا بمانید تا درخواستتان بررسی شود.</p>
-        <p>با این مجوز می‌توانید:</p>
-        <ul>
-          <li>کار کنید 👷</li>
-          <li>تحصیل کنید 📚</li>
-          <li>در دفتر ثبت احوال ثبت‌نام کنید 🏠</li>
-          <li>پزشک خانواده انتخاب کنید 🩺</li>
-          <li>گواهینامه رانندگی بگیرید 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>تا پایان رسیدگی نمی‌توانید از ایتالیا خارج شوید</strong> و <strong>نمی‌توانید این مجوز را به مجوز کار تبدیل کنید</strong>.</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="قوانین قابل اجرا" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">درخواست پیش از 12/6/2026</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">درخواست از 12/6/2026 · پیمان اتحادیه اروپا</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">قوانین قدیمی (پیش از پیمان)</h2>
+        <p class="pi-panel-sub">برای کسانی که پیش از 12 ژوئن 2026 درخواست پناهندگی داده‌اند</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>درخواست در Questura</h2>
+            <p>شما درخواست را <strong>حضوری در Questura</strong> (یا نزد پلیس مرزی) ارائه کرده‌اید.</p>
+            <p>از شما <strong>اثر انگشت</strong> گرفته‌اند و چند سؤال درباره خودتان، خانواده‌تان و سفرتان پرسیده‌اند. این فرم <strong>C3</strong> نام دارد.</p>
+            <p>اگر <strong>گذرنامه</strong> دارید، Questura آن را در تمام مدت روند پرونده نگه می‌دارد.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>مجوز اقامت برای درخواست پناهندگی</h2>
+            <p>شما یک <a href="permesso-richiesta-asilo.html"><strong>permesso di soggiorno (مجوز اقامت) برای درخواست پناهندگی</strong></a> دریافت می‌کنید. اعتبار آن <strong>6 ماه</strong> است و تا زمان تصمیم‌گیری تمدید می‌شود. در ابتدا، رسید Questura به‌عنوان مجوز موقت اعتبار دارد.</p>
+            <p>با این مجوز می‌توانید تحصیل کنید، در دفتر ثبت احوال شهرداری (anagrafe) ثبت‌نام کنید، پزشک خانواده داشته باشید و گواهینامه رانندگی بگیرید.</p>
+            <p><strong>60 روز</strong> بعد از درخواست، اگر Commissione Territoriale هنوز تصمیم نگرفته باشد، می‌توانید <strong>کار کنید</strong>.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div>تا پایان روند پرونده <strong>نمی‌توانید به خارج از ایتالیا سفر کنید</strong>، و این مجوز را <strong>نمی‌توان به مجوز کار تبدیل کرد</strong>.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>مصاحبه در Commissione Territoriale</h2>
+            <p>شما را برای <strong>مصاحبه</strong> نزد <strong>Commissione Territoriale</strong> (کمیسیونی که درخواست‌های پناهندگی را بررسی می‌کند) دعوت می‌کنند. این لحظه‌ای است که داستان خود را تعریف می‌کنید و توضیح می‌دهید چرا <strong>نمی‌توانید به کشورتان بازگردید</strong>.</p>
+            <p>این یک بازجویی نیست، بلکه یک گفت‌وگو است. سعی کنید <strong>روشن و دقیق</strong> صحبت کنید و مدارکی را که دارید همراه ببرید.</p>
+            <p>اگر از <strong>کشوری که «امن» شمرده می‌شود</strong> آمده‌اید یا در بازداشت هستید، روند پرونده ممکن است <strong>تسریع‌شده</strong> باشد: مصاحبه و تصمیم در چند روز انجام می‌شود. افراد زیر سن قانونی بدون همراه و افراد آسیب‌پذیر در روند تسریع‌شده قرار نمی‌گیرند.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>تصمیم</h2>
+            <p>تصمیم به <strong>مرکز اسکان</strong> یا به <strong>آدرسی</strong> که به Questura داده‌اید فرستاده می‌شود. هر تغییر آدرس را همیشه اطلاع دهید، وگرنه ممکن است تصمیم به دستتان نرسد و مهلت اعتراض را از دست بدهید.</p>
+            <p>پاسخ‌های ممکن پایین‌تر، در <a href="#esiti">«چه پاسخ‌هایی ممکن است دریافت کنید»</a> توضیح داده شده است.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>اعتراض اگر پاسخ منفی باشد</h2>
+            <p>می‌توانید <strong>در دادگاه اعتراض کنید</strong>، اما به یک <strong>وکیل</strong> نیاز دارید. مهلت‌ها کوتاه است: <strong>فوراً</strong> با او تماس بگیرید.</p>
+            <table class="pi-table">
+              <thead><tr><th>مورد</th><th>مهلت اعتراض</th><th>آیا می‌توانید در ایتالیا بمانید؟</th></tr></thead>
+              <tbody>
+                <tr><td data-label="مورد">روند عادی</td><td data-label="مهلت">30 روز</td><td data-label="ماندن">بله، به‌طور خودکار</td></tr>
+                <tr><td data-label="مورد">روند تسریع‌شده یا فرد در بازداشت</td><td data-label="مهلت">15 روز</td><td data-label="ماندن">اغلب نه به‌طور خودکار</td></tr>
+                <tr><td data-label="مورد">روند مرزی</td><td data-label="مهلت">7 روز</td><td data-label="ماندن">نه به‌طور خودکار</td></tr>
+              </tbody>
+            </table>
+            <p>وقتی اعتراض شما را به‌طور خودکار <strong>محافظت نمی‌کند</strong> (مثلاً اگر درخواست «آشکارا بی‌اساس» شناخته شده باشد)، وکیل باید همراه با اعتراض از قاضی <strong>تعلیق</strong> (sospensione) تصمیم را درخواست کند.</p>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>3) مصاحبه در کمیسیون</h2>
-        <p>مرحله بعدی <strong>جلسه حضوری در Commissione Territoriale</strong> است.</p>
-        <p>این لحظه‌ای است که می‌توانید <strong>داستان خود را تعریف کنید</strong>، توضیح دهید چه اتفاقی برایتان افتاده و <strong>چرا نمی‌توانید به کشورتان بازگردید</strong>.</p>
-        <p>سوالات زیادی از شما می‌پرسند تا وضعیتتان را به خوبی درک کنند.</p>
-        <p>این یک بازجویی نیست، بلکه یک گفت‌وگو است. سعی کنید <strong>صادق و رک</strong> باشید.</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">قوانین جدید پیمان اتحادیه اروپا</h2>
+        <p class="pi-panel-sub">برای کسانی که از 12 ژوئن 2026 به بعد درخواست پناهندگی داده‌اند</p>
 
-      <!-- STEP 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>4) تصمیم</h2>
-        <p>بعد از جلسه، <strong>پاسخ کمیسیون</strong> را دریافت خواهید کرد. اگر در مرکز اسکان هستید، مسئول مرکز تصمیم کمیسیون را به شما اطلاع می‌دهد. در غیر این صورت، به آدرس اقامتی که هنگام ارائه درخواست پناهندگی به Questura اعلام کرده‌اید ارسال می‌شود.</p>
-        <p>پس همیشه تغییر آدرس را به Questura اطلاع دهید، وگرنه ممکن است مشکل پیدا کنید!</p>
-        <p>تصمیم‌های <strong>مثبت</strong> ممکن کمیسیون عبارتند از:</p>
-        <ul>
-          <li><a href="/fa/permesso-asilo-status-rifugiato.html">وضعیت پناهنده</a> (که به آن "پناهندگی سیاسی" هم می‌گویند)</li>
-          <li><a href="/fa/permesso-protezione-sussidiaria.html">حمایت فرعی</a></li>
-          <li><a href="/fa/permesso-protezione-speciale.html">حمایت ویژه</a></li>
-          <li><a href="/fa/permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">درمان پزشکی</a></li>
-        </ul>
-        <p>اگر کمیسیون تشخیص دهد که شما مستحق هیچ‌کدام از این حمایت‌ها نیستید، <strong>پاسخ منفی</strong> دریافت خواهید کرد.</p>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>5) اعتراض در صورت رد درخواست</h2>
-        <p>❌ اگر نتیجه <strong>مثبت</strong> نبود، می‌توانید <strong>در دادگاه اعتراض کنید</strong>. این مانند درخواست <strong>نظر دوم</strong> است.</p>
-        <p>📌 نمی‌توانید خودتان اعتراض کنید: به یک <strong>وکیل</strong> نیاز دارید.</p>
-        <p>⏰ از لحظه اطلاع از تصمیم منفی، زمان بسیار کمی برای اعتراض دارید؛ <strong>هر چه زودتر</strong> با یک وکیل تماس بگیرید!</p>
-        <p>💸 اگر درآمد سالانه شما کمتر از <strong>13,700 یورو</strong> باشد، می‌توانید از وکیلتان <strong>کمک حقوقی رایگان</strong> درخواست کنید.</p>
-        <p>⏳ به خاطر داشته باشید: <strong>رسیدگی ممکن است ماه‌ها یا حتی سال‌ها طول بکشد</strong>.</p>
-      </div>
-
-      <!-- PAESI SICURI -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ توجه: کشورهای به‌اصطلاح "امن"</h2>
-        <p>اگر از <strong>کشوری آمده‌اید که ایتالیا آن را امن می‌داند</strong>، درخواست شما <strong>سریع‌تر</strong> بررسی می‌شود.</p>
-        <p>در حال حاضر این کشورها عبارتند از:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 آلبانی</span>
-          <span>🇩🇿 الجزایر</span>
-          <span>🇧🇩 بنگلادش</span>
-          <span>🇧🇦 بوسنی و هرزگوین</span>
-          <span>🇨🇻 کیپ‌ورد</span>
-          <span>🇨🇮 ساحل عاج</span>
-          <span>🇪🇬 مصر</span>
-          <span>🇬🇲 گامبیا</span>
-          <span>🇬🇪 گرجستان</span>
-          <span>🇬🇭 غنا</span>
-          <span>🇽🇰 کوزوو</span>
-          <span>🇲🇰 مقدونیه شمالی</span>
-          <span>🇲🇦 مراکش</span>
-          <span>🇲🇪 مونته‌نگرو</span>
-          <span>🇵🇪 پرو</span>
-          <span>🇸🇳 سنگال</span>
-          <span>🇷🇸 صربستان</span>
-          <span>🇱🇰 سریلانکا</span>
-          <span>🇹🇳 تونس</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>بررسی‌های اولیه («accertamenti»)</h2>
+            <p>اگر بعد از نجات <strong>از راه دریا رسیده‌اید</strong>، یا <strong>در مرز</strong> بدون مدارک معتبر هستید، یا بعد از ورود بدون مجوز در ایتالیا پیدا شده‌اید، ابتدا از <strong>بررسی‌های اولیه</strong> (به انگلیسی <em>screening</em>) عبور می‌کنید.</p>
+            <p>این بررسی‌ها در مرز حداکثر <strong>7 روز</strong> و اگر از قبل در ایتالیا باشید <strong>3 روز</strong> طول می‌کشد. این بررسی‌ها شامل این موارد است:</p>
+            <ul>
+              <li>یک <strong>معاینه پزشکی</strong> و بررسی <strong>آسیب‌پذیری‌ها</strong>؛</li>
+              <li><strong>شناسایی</strong> و گرفتن <strong>اثر انگشت</strong>؛</li>
+              <li>یک بررسی امنیتی.</li>
+            </ul>
+            <p>اگر مشکل سلامتی دارید، زیر سن قانونی هستید یا خشونت دیده‌اید، <strong>فوراً آن را بگویید</strong>.</p>
+          </div>
         </div>
-        <p>اما اگر خطرات <strong>جدی و خاصی</strong> در <strong>وضعیت شخصی</strong> شما وجود دارد، باید <strong>از همان ابتدا آن را به‌خوبی توضیح دهید</strong>.</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>گفتن اینکه می‌خواهید درخواست پناهندگی بدهید</h2>
+            <p>اولین قدم این است که به مقامات بگویید می‌خواهید درخواست حمایت کنید. این <strong>اعلام تمایل</strong> (manifestazione della volontà) است.</p>
+            <p>فعلاً، و دست‌کم تا <strong>30 آوریل 2027</strong>، در ایتالیا <strong>Questura</strong> و <strong>پلیس مرزی</strong> آن را دریافت می‌کنند. راه‌های دیگری هم وجود دارد:</p>
+            <ul>
+              <li><strong>با یک وکیل، از طریق PEC</strong> (ایمیل رسمی تأییدشده): وکیل به Questura می‌نویسد که شما می‌خواهید درخواست پناهندگی بدهید. این اغلب <strong>فکر خوبی</strong> است، چون به این ترتیب <strong>مدرک مطمئنی از تاریخ</strong> درخواست پناهندگی خود دارید.</li>
+              <li><strong>از طریق یک نهاد</strong>: در برخی شهرها اعلام تمایل باید به یک انجمن، به یک CAF (مرکز کمک‌های اداری و مالیاتی)، به دفتر اتباع خارجی شهرداری (Comune) یا به نهاد دیگری که Questura تعیین کرده است اطلاع داده شود.</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>هر شهر به روش خودش عمل می‌کند.</strong> پیش از رفتن، از یک انجمن، یک دفتر مشاوره حقوقی یا یک وکیل بپرسید که این کار در <strong>شهر شما</strong> چگونه انجام می‌شود. <a href="aiuto-legale.html">کمک حقوقی رایگان پیدا کنید</a>.</div>
+            </div>
+            <p>از همین لحظه، اگر پولی برای گذران زندگی ندارید، حق <a href="#accoglienza">اسکان</a> دارید.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>ثبت درخواست و مدرک شما</h2>
+            <p>Questura باید ظرف <strong>5 روز</strong> درخواست شما را <strong>ثبت (registrazione) کند</strong> (اگر افراد بسیار زیادی برسند، تا 15 روز). اطلاعات شما را می‌گیرد و یک <strong>دفترچه اطلاعاتی</strong> به شما می‌دهد.</p>
+            <p>فعلاً در ایتالیا، ثبت در Questura <strong>به‌عنوان «رسمی‌سازی» (formalizzazione)</strong> درخواست هم حساب می‌شود: لازم نیست مرحله دیگری انجام دهید.</p>
+            <p>شما یک <strong>مدرک شخصی به نام خودتان</strong> (documento nominativo) با عکستان دریافت می‌کنید. <strong>این مدرک permesso di soggiorno (مجوز اقامت) نیست</strong>: با پیمان، «permesso di soggiorno برای درخواست پناهندگی» دیگر وجود ندارد. این مدرک فقط نشان می‌دهد که شما می‌توانید در طول روند پرونده <strong>در ایتالیا بمانید</strong>. اعتبار آن <strong>یک سال</strong> است و قابل تمدید است.</p>
+            <p>باید <strong>محل اقامت</strong> (domicilio) خود را اعلام کنید، و همچنین یک شماره تلفن یا یک ایمیل.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>این مدرک، مدرک سفر نیست:</strong> نمی‌توانید با آن به کشورهای دیگر بروید.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>کار کردن</h2>
+            <p><strong>90 روز</strong> بعد از درخواست، اگر Commissione Territoriale هنوز تصمیم نگرفته باشد و تأخیر تقصیر شما نباشد، می‌توانید <strong>کار کنید</strong>.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>نمی‌توانید آن را به مجوز کار تبدیل کنید.</strong> مدرک متقاضی پناهندگی permesso di soggiorno نیست، پس نمی‌توان آن را به مجوز دیگری «تغییر داد»، حتی اگر قرارداد کار داشته باشید.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>کدام روند: عادی، تسریع‌شده یا مرزی</h2>
+            <p><strong>Commissione Territoriale</strong> تصمیم می‌گیرد از کدام روند استفاده کند و آن را به شما اطلاع می‌دهد.</p>
+            <table class="pi-table">
+              <thead><tr><th>روند</th><th>چه زمانی</th><th>زمان تصمیم‌گیری</th></tr></thead>
+              <tbody>
+                <tr><td data-label="روند"><strong>عادی</strong></td><td data-label="چه زمانی">در بیشتر موارد</td><td data-label="زمان">6 ماه (قابل تمدید)</td></tr>
+                <tr><td data-label="روند"><strong>تسریع‌شده</strong></td><td data-label="چه زمانی">برای مثال: از یک <a href="#paesi-sicuri">کشور «امن»</a> آمده‌اید؛ در اروپا درخواست‌های پذیرفته‌شده از کشور شما کم است (20% یا کمتر)؛ چیزهایی تعریف می‌کنید که ربطی ندارند یا با هم تناقض دارند؛ درباره هویت خود دروغ گفته‌اید؛ دیر درخواست پناهندگی داده‌اید</td><td data-label="زمان">3 ماه</td></tr>
+                <tr><td data-label="روند"><strong>مرزی</strong></td><td data-label="چه زمانی">اگر در مرز یا بعد از پیاده شدن از قایق، بدون مدارک لازم برای ورود، درخواست پناهندگی داده‌اید و در یکی از موارد روند تسریع‌شده قرار دارید</td><td data-label="زمان">در مجموع 12 هفته، همراه با اعتراض</td></tr>
+              </tbody>
+            </table>
+            <p>در <strong>روند مرزی</strong> باید در <strong>مکانی که مقامات تعیین می‌کنند</strong> زندگی کنید، و در برخی موارد ممکن است در یک مرکز <strong>بازداشت</strong> شوید.</p>
+            <p><strong>افراد زیر سن قانونی بدون همراه</strong> فقط به دلایل امنیتی در روند مرزی قرار می‌گیرند. افراد <strong>آسیب‌پذیر</strong> اگر نتوانند حمایتی را که نیاز دارند دریافت کنند، در این روند قرار نمی‌گیرند.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>مصاحبه در Commissione Territoriale</h2>
+            <p><strong>مصاحبه شخصی</strong> اجباری است: این لحظه‌ای است که داستان خود را تعریف می‌کنید و توضیح می‌دهید چرا نمی‌توانید به کشورتان بازگردید.</p>
+            <p>پیش از مصاحبه حق دارید از <strong>راهنمایی حقوقی رایگان</strong> استفاده کنید: کسی که روند پرونده را برایتان توضیح می‌دهد. <strong>آن را درخواست کنید</strong>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>در دسترس ماندن: یک الزام است</h2>
+            <p>با پیمان، وظایف شما سخت‌گیرانه‌تر است. شما باید:</p>
+            <ul>
+              <li><strong>همکاری کنید</strong> و مدارکی را که دارید تحویل دهید؛</li>
+              <li>در مصاحبه و قرارهای ملاقات <strong>حاضر شوید</strong>؛</li>
+              <li>هر تغییر آدرس، تلفن یا ایمیل را <strong>فوراً اطلاع دهید</strong>؛</li>
+              <li><strong>در ایتالیا بمانید</strong> و به کشور اروپایی دیگری نروید.</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>اگر این کارها را نکنید</strong>، Commissione Territoriale می‌تواند درخواست شما را <strong>پس‌گرفته‌شده</strong> تلقی کند و روند پرونده را ببندد. اعتراض به این تصمیم باید فقط ظرف <strong>7 روز</strong> انجام شود.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>تصمیم</h2>
+            <p>تصمیم به <strong>مرکز اسکان</strong> یا به آخرین <strong>آدرسی</strong> که اعلام کرده‌اید فرستاده می‌شود. پاسخ‌های ممکن پایین‌تر، در <a href="#esiti">«چه پاسخ‌هایی ممکن است دریافت کنید»</a> توضیح داده شده است.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>اعتراض اگر پاسخ منفی باشد</h2>
+            <p>می‌توانید با کمک یک <strong>وکیل</strong> <strong>در دادگاه اعتراض کنید</strong>. با پیمان، مهلت‌ها <strong>باز هم کوتاه‌تر</strong> است: همان روزی که تصمیم را دریافت می‌کنید با وکیل تماس بگیرید.</p>
+            <table class="pi-table">
+              <thead><tr><th>مورد</th><th>مهلت اعتراض</th><th>آیا می‌توانید در ایتالیا بمانید؟</th></tr></thead>
+              <tbody>
+                <tr><td data-label="مورد">روند عادی</td><td data-label="مهلت">30 روز</td><td data-label="ماندن">بله، به‌طور خودکار</td></tr>
+                <tr><td data-label="مورد">روند تسریع‌شده، درخواست غیرقابل پذیرش یا پس‌گرفته‌شده</td><td data-label="مهلت">7 روز</td><td data-label="ماندن">نه به‌طور خودکار</td></tr>
+                <tr><td data-label="مورد">روند مرزی</td><td data-label="مهلت">5 روز</td><td data-label="ماندن">نه به‌طور خودکار (برای افراد زیر سن قانونی بدون همراه: بله)</td></tr>
+              </tbody>
+            </table>
+            <p>وقتی اعتراض شما را به‌طور خودکار محافظت نمی‌کند، وکیل باید <strong>همراه با اعتراض</strong> از قاضی <strong>اجازه ماندن</strong> (autorizzazione a rimanere) در ایتالیا را درخواست کند. قاضی در حدود 10 روز تصمیم می‌گیرد و تا زمانی که تصمیم بگیرد، معمولاً نمی‌توانند شما را از کشور خارج کنند.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">درباره قوانین پیمان در SOS Patto بیشتر بخوانید (به زبان ایتالیایی)</a>
+        </p>
       </div>
 
-      <!-- SITUAZIONI PARTICOLARI -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ شرایط خاص</h2>
-        <p>اگر:</p>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">در هر حال بدانید</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>چه پاسخ‌هایی ممکن است دریافت کنید</h2>
+        <p>این پاسخ‌ها هم با قوانین قدیمی و هم با پیمان یکسان است. Commissione Territoriale می‌تواند به شما بدهد:</p>
         <ul>
-          <li>زیر سن قانونی هستید 👶</li>
-          <li>زن هستید 👩🏽</li>
-          <li>دارای معلولیت هستید ♿</li>
-          <li>مشکلات روانی دارید 🧠</li>
-          <li>قربانی خشونت، قاچاق انسان یا ختنه زنان هستید 🚫</li>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>وضعیت پناهندگی</strong></a> (status di rifugiato، که به آن «پناهندگی سیاسی» هم می‌گویند): مجوز <strong>5 ساله</strong>؛</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>حمایت فرعی</strong></a> (protezione sussidiaria): مجوز <strong>5 ساله</strong>؛</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>حمایت ویژه</strong></a> (protezione speciale): مجوز <strong>2 ساله</strong>، قابل تمدید، که با آن می‌توانید کار کنید؛</li>
+          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>مجوز درمان پزشکی</strong></a>، اگر به‌شدت بیمار هستید.</li>
         </ul>
-        <p>... درخواست شما <strong>با توجه ویژه</strong> بررسی خواهد شد، حتی اگر از کشوری "امن" آمده باشید.</p>
+        <p>اگر Commissione Territoriale فکر کند که شما حق هیچ‌یک از این حمایت‌ها را ندارید، پاسخ <strong>منفی</strong> است: می‌توانید در مهلت‌هایی که در بخش مربوط به شما آمده است اعتراض کنید.</p>
       </div>
 
-      <!-- DUBLINO -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 اگر در کشور دیگری درخواست پناهندگی داده‌اید (سیستم دوبلین)</h2>
-        <p>اگر <strong>در کشور اروپایی دیگری درخواست پناهندگی داده‌اید</strong> یا <strong>اثر انگشتتان</strong> در آنجا ثبت شده، احتمالا <strong>ایتالیا مسئول</strong> بررسی درخواست شما نیست.</p>
-        <p>در این موارد ممکن است <strong>درخواست شما به کشور دیگر منتقل شود</strong>.</p>
-        <p>👉 <strong>چه باید کرد:</strong> اگر در این وضعیت هستید، بسیار مهم است که <strong>فورا از یک وکیل یا متخصص حقوق پناهندگی کمک بخواهید</strong>.</p>
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>کشورهایی که «امن» شمرده می‌شوند</h2>
+        <p>اگر از کشوری آمده‌اید که ایتالیا آن را <strong>امن</strong> می‌داند، درخواست شما <strong>سریع‌تر</strong> بررسی می‌شود و زمان کمتری برای اعتراض دارید. امروز فهرست ایتالیا شامل این کشورهاست:</p>
+        <ul class="pi-countries">
+          <li>آلبانی</li><li>الجزایر</li><li>بنگلادش</li><li>بوسنی و هرزگوین</li><li>کیپ‌ورد</li>
+          <li>ساحل عاج</li><li>مصر</li><li>گامبیا</li><li>گرجستان</li><li>غنا</li>
+          <li>کوزوو</li><li>مقدونیه شمالی</li><li>مراکش</li><li>مونته‌نگرو</li><li>پرو</li>
+          <li>سنگال</li><li>صربستان</li><li>سریلانکا</li><li>تونس</li>
+        </ul>
+        <p>با پیمان (درخواست‌های از 12 ژوئن 2026 به بعد) یک <strong>فهرست اتحادیه اروپا</strong> هم وجود دارد که در همه کشورهای اتحادیه اروپا اعتبار دارد:</p>
+        <ul class="pi-countries">
+          <li>بنگلادش</li><li>کلمبیا</li><li>مصر</li><li>هند</li><li>کوزوو</li><li>مراکش</li><li>تونس</li>
+        </ul>
+        <p><strong>کشورهای نامزد عضویت در اتحادیه اروپا</strong> (برای مثال آلبانی، صربستان، ترکیه، گرجستان) هم امن شمرده می‌شوند، مگر در موارد استثنا: برای مثال اگر در آن کشور جنگ باشد.</p>
+        <p>علاوه بر این، کسی که از کشوری می‌آید که در اروپا درخواست‌های پذیرفته‌شده از آن <strong>20% یا کمتر</strong> است نیز در روند تسریع‌شده قرار می‌گیرد.</p>
+        <p>آمدن از یک کشور «امن» <strong>به این معنا نیست</strong> که درخواست شما رد خواهد شد. اگر در وضعیت شخصی شما خطرهای <strong>جدی و مشخص</strong> وجود دارد، باید از همان ابتدا آن‌ها را به‌خوبی توضیح دهید.</p>
       </div>
 
-      <!-- ACCOGLIENZA -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 حق اسکان برای متقاضیان پناهندگی</h2>
-        <p>در ایتالیا، افرادی که درخواست پناهندگی می‌دهند و <strong>پول کافی برای تامین معاش خود ندارند</strong>، حق دریافت جا در <strong>مرکز اسکان</strong> را دارند.</p>
-        <p>⏱ <strong>حق اسکان معتبر است:</strong></p>
+      <div class="card pi-card">
+        <h2>شرایط خاص</h2>
+        <p>اگر شما:</p>
         <ul>
-          <li>از لحظه‌ای که <strong>شخص اعلام تمایل به درخواست پناهندگی</strong> می‌کند،</li>
-          <li>تا <strong>پایان رسیدگی</strong>، یعنی زمانی که درخواست <strong>پذیرفته</strong>، <strong>به طور نهایی رد</strong> یا <strong>پس گرفته</strong> شود.</li>
+          <li>زیر سن قانونی هستید، به‌ویژه اگر بدون پدر و مادر در ایتالیا هستید؛</li>
+          <li>زنی تنها یا باردار هستید؛</li>
+          <li>فردی دارای معلولیت یا بیماری شدید هستید؛</li>
+          <li>فردی با مشکلات سلامت روان هستید؛</li>
+          <li>قربانی خشونت، شکنجه، قاچاق انسان یا ختنه زنان هستید؛</li>
         </ul>
-        <p>⚠️ حق اسکان ممکن است در موارد دیگری هم لغو شود، مانند <strong>ترک مرکز</strong> یا اگر فرد دیگر <strong>نیازمند تلقی نشود</strong>.</p>
+        <p>… حق دارید از <strong>تضمین‌های ویژه</strong> و اسکان مناسب بهره‌مند شوید، حتی اگر از یک کشور «امن» آمده باشید. هر چه زودتر آن را بگویید: به Questura، در مرکز، به Commissione Territoriale.</p>
+        <p><strong>افراد زیر سن قانونی بدون همراه</strong> حق دارند یک <strong>قیم</strong> داشته باشند و نمی‌توان آن‌ها را در مرز بازگرداند.</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>اگر در کشور اروپایی دیگری درخواست پناهندگی داده‌اید (دوبلین)</h2>
+        <p>اگر <strong>قبلاً در کشور اروپایی دیگری درخواست پناهندگی داده‌اید</strong>، یا در آنجا از شما <strong>اثر انگشت</strong> گرفته‌اند، ممکن است بررسی درخواست شما <strong>بر عهده ایتالیا نباشد</strong>. در این صورت ممکن است به آن کشور <strong>منتقل شوید</strong>.</p>
+        <p>برای درخواست‌هایی که تا 30 ژوئن (ماه ششم) 2026 ثبت شده‌اند، قوانین <strong>مقررات دوبلین</strong> قدیمی اجرا می‌شود؛ برای درخواست‌هایی که از 1 ژوئیه (ماه هفتم) 2026 ثبت شده‌اند، قوانین جدید پیمان اجرا می‌شود.</p>
+        <p><strong>چه باید کرد:</strong> فوراً از یک وکیل یا یک کارشناس باتجربه کمک بخواهید.</p>
+      </div>
+
+      <div class="card pi-card" id="accoglienza">
+        <h2>حق اسکان</h2>
+        <p>اگر درخواست پناهندگی می‌دهید و <strong>پول کافی برای گذران زندگی ندارید</strong>، حق دارید در یک <strong>مرکز اسکان</strong> جا داشته باشید.</p>
+        <ul>
+          <li>این حق از لحظه‌ای شروع می‌شود که <strong>می‌گویید می‌خواهید درخواست پناهندگی بدهید</strong>.</li>
+          <li>در تمام مدت روند پرونده در Commissione Territoriale ادامه دارد، تا پایان مهلت اعتراض، و اگر اعتراض به شما اجازه ماندن بدهد، در طول اعتراض هم ادامه دارد.</li>
+        </ul>
+        <p>اگر مرکز را ترک کنید، به مصاحبه نروید یا پول کافی داشته باشید، ممکن است <strong>اسکان را از دست بدهید</strong>.</p>
+        <p>با پیمان، مقامات می‌توانند شما را موظف کنند که <strong>در مکان مشخصی زندگی کنید</strong> (در روند مرزی همیشه). اگر جابه‌جا شوید، ممکن است اسکان را از دست بدهید.</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>داستان شما منحصربه‌فرد است.</strong> مثل داستان دوستان یا خویشاوندانتان نیست. قوانین دائما تغییر می‌کنند، پس همیشه به دنبال کمک حقوقی به‌روز باشید.
-          <a href="/fa/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <strong>داستان شما منحصربه‌فرد است.</strong> مثل داستان دوستان یا خویشاوندانتان نیست، و این قوانین جدید هستند: حتی دادگاه‌ها هنوز در حال تفسیر آن‌ها هستند. اگر درآمد شما کمتر از <strong>13,600 یورو در سال</strong> باشد، می‌توانید یک وکیل <strong>رایگان</strong> داشته باشید (gratuito patrocinio، یعنی کمک حقوقی رایگان دولتی).
+          <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             کمک حقوقی رایگان پیدا کنید
           </a>
         </div>
@@ -173,20 +400,93 @@ lang: fa
 
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">شاید برایتان مفید باشد</h2>
+      <h2 class="text-center mb-lg">شاید این‌ها هم برایتان مفید باشد</h2>
       <div class="grid grid-3">
-        <a href="/fa/permesso-richiesta-asilo.html" class="card card-link card-compact">
+        <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">مجوز درخواست پناهندگی</h3>
         </a>
-        <a href="/fa/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
+        <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
-          <h3 class="card-title">وضعیت پناهنده</h3>
+          <h3 class="card-title">وضعیت پناهندگی</h3>
         </a>
-        <a href="/fa/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
+        <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">حمایت فرعی</h3>
         </a>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">همچنین ببینید: مجوزهای دیگر برای حمایت</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">مجوز برای قربانیان قاچاق انسان</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">مجوز برای قربانیان خشونت خانگی</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">مجوز برای بهره‌کشی کاری</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">مجوز برای افراد زیر سن قانونی بدون همراه (MSNA)</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">مجوز ادغام – ادامه اداری (prosieguo amministrativo)</a></li>
+          <li><a href="permesso-calamita-naturale.html">مجوز بلای طبیعی</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">مجوز برای اعضای خانواده پناهندگان و دارندگان حمایت فرعی</a></li>
+          <li><a href="permesso-apolidia.html">مجوز بی‌تابعیتی</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>

@@ -1,24 +1,72 @@
 ---
 layout: layouts/base.liquid
-title: "Uluslararası Koruma Rehberi"
+title: "İtalya'da sığınma rehberi: AB Paktı'ndan önce ve sonra | SOS Permesso"
 lang: tr
+description: "İtalya'da uluslararası koruma rehberi: sizin için hangi kurallar geçerli (12 Haziran 2026'dan önce veya sonra), sığınma başvurusu, belge, çalışma, görüşme, karar ve itiraz nasıl işler."
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/tr/index.html" class="link-ink">Ana Sayfa</a> →
-        <span>Uluslararası Koruma</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">Uluslararası koruma rehberi</h1>
-        <p class="section-subtitle">İtalya'da sığınma başvurusu hakkında bilmeniz gereken her şey</p>
+        <h1 class="page-title">İtalya'da sığınma rehberi</h1>
+        <p class="section-subtitle">AB Göç ve İltica Paktı'ndan önce ve sonra uluslararası koruma nasıl talep edilir</p>
+        <p class="pi-updated">9 Ekim 2026 itibarıyla güncellenmiştir</p>
       </div>
     </div>
   </section>
@@ -26,143 +74,322 @@ lang: tr
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>İşte İtalya'da <strong>uluslararası koruma</strong> hakkında bazı basit bilgiler!</p>
-        <p>Uzun ve karmaşık bir yol gibi görünebilir, ancak adım adım inceleyeceğiz.</p>
+      <div class="card pi-card">
+        <p>Ülkenizde tehlikedeyseniz, İtalya'da <strong>uluslararası koruma</strong> (yani <strong>sığınma</strong>) talep edebilirsiniz.</p>
+        <p><strong>12 Haziran 2026</strong> tarihinden itibaren tüm Avrupa Birliği'nde <strong>yeni kurallar</strong> geçerlidir: <strong>AB Göç ve İltica Paktı</strong>. Ancak daha önce sığınma talep etmiş olan kişiler için, kural olarak <strong>eski kurallar</strong> uygulanmaya devam eder.</p>
+        <p>Bu yüzden rehberin <strong>iki sekmesi</strong> vardır. Önce hangisinin sizin için geçerli olduğunu öğrenin.</p>
         <p>Size yalnızca genel bilgiler verebiliriz: <strong>nitelikli hukuki yardım</strong> almanız önemlidir.</p>
       </div>
 
-      <!-- STEP 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>1) Başvuruyu sunmak</h2>
-        <p>Yapmanız gereken ilk şey <strong>başvurunuzu bizzat Questura'ya (emniyet müdürlüğü) sunmaktır</strong>.</p>
-        <p><strong>Parmak izlerinizi</strong> alacaklar ve size, aileniz ve yaptığınız yolculuk hakkında bazı <strong>genel sorular</strong> soracaklar.</p>
-        <p>Zor bir şey değil!</p>
-        <p>Dolduracakları form <strong>C3</strong> olarak adlandırılır.</p>
-        <p>Eğer bir <strong>pasaportunuz</strong> varsa, teslim etmenizi isteyecekler ve <strong>prosedür süresince</strong> saklayacaklar.</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>Sizin için hangi kurallar geçerli?</h2>
+        <p>Önemli olan, İtalyan makamlarına (Questura, yani yabancılar işlerine bakan emniyet müdürlüğü, veya sınır polisi) sığınma talep etmek istediğinizi <strong>ilk kez söylediğiniz</strong> gündür. Bu ana <strong>niyet beyanı</strong> (İtalyanca <em>manifestazione della volontà</em>) denir.</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">12 Haziran 2026'dan önce</span>
+            Bu tarihten önce mi sığınma talep ettiniz? Prosedürünüzün sonuna kadar, mahkeme aşamasında da <strong>eski kurallar</strong> geçerlidir.
+            <span class="pi-choice-go">Pakt öncesi sekmesine gidin →</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">12 Haziran 2026 ve sonrası</span>
+            Bu tarihte veya sonrasında mı sığınma talep ettiniz? <strong>AB Paktı'nın yeni kuralları</strong> geçerlidir.
+            <span class="pi-choice-go">AB Paktı sekmesine gidin →</span>
+          </a>
+        </div>
+
+        <h3>Daha önce sığınma talep ettiyseniz ama Questura sizi daha sonra kaydettiyse?</h3>
+        <p>Bu sık olur: 12 Haziran'dan önce sığınma (veya randevu) talep ettiniz, ama Questura'daki form (<strong>C3</strong> veya kayıt) <strong>daha sonra</strong> yapıldı.</p>
+        <p>Mahkemeler bu konuda hemfikir değil. <strong>Birçok hâkim</strong>, Questura'nın gecikmesi sizin suçunuz olamayacağı için <strong>eski kuralların</strong> geçerli olduğunu söylüyor. Diğerleri ise formun tarihine bakıyor.</p>
+        <p><strong>Ne yapmalısınız:</strong> sığınma talep ettiğiniz tarihin tüm kanıtlarını saklayın (randevu makbuzu, avukatın Questura'ya gönderdiği PEC, başvurduğunuz derneğin veya kurumun verdiği makbuz, merkezin beyanları) ve bir avukatla konuşun.</p>
+
+        <h3>12 Haziran'dan sonra yeni bir başvuru mu yaptınız?</h3>
+        <p>İlk başvurunuz eski kurallara tabiyse ama 12 Haziran 2026'dan sonra <strong>başka bir</strong> başvuru (<strong>sonraki başvuru</strong>, İtalyanca <em>domanda reiterata</em>) yaptıysanız, yeni başvuru için genellikle <strong>Pakt kuralları</strong> geçerlidir.</p>
       </div>
 
-      <!-- STEP 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>2) Geçici oturma iznini almak</h2>
-        <p>Başvurunuz alındıktan sonra size <strong>sığınma talebi için oturma izni</strong> verilecektir.</p>
-        <p>Bu, başvurunuz incelenirken İtalya'da kalmanıza izin veren gerçek bir <strong>oturma iznidir</strong>.</p>
-        <p>Bu izinle şunları yapabilirsiniz:</p>
-        <ul>
-          <li>çalışmak 👷</li>
-          <li>okumak 📚</li>
-          <li>nüfus kütüğüne kaydolmak 🏠</li>
-          <li>aile hekiminizi belirlemek 🩺</li>
-          <li>ehliyet almak 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>Prosedür bitene kadar İtalya dışına seyahat edemezsiniz</strong> ve <strong>bu izni çalışma iznine dönüştüremezsiniz</strong>.</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="Geçerli kurallar" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">12/6/2026'dan önceki başvuru</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">12/6/2026'dan itibaren başvuru · AB Paktı</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">Eski kurallar (Pakt öncesi)</h2>
+        <p class="pi-panel-sub">12 Haziran 2026'dan önce sığınma talep edenler için</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>Questura'da başvuru</h2>
+            <p>Başvurunuzu <strong>Questura'da bizzat</strong> (veya sınır polisine) yaptınız.</p>
+            <p><strong>Parmak izleriniz</strong> alındı ve size kendiniz, aileniz ve yolculuğunuz hakkında bazı sorular soruldu. Bu formun adı <strong>C3</strong>'tür.</p>
+            <p><strong>Pasaportunuz</strong> varsa, Questura onu prosedür boyunca saklar.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>Sığınma talebi için oturma izni</h2>
+            <p><a href="permesso-richiesta-asilo.html"><strong>Sığınma talebi için oturma izni</strong></a> alırsınız. <strong>6 ay</strong> geçerlidir ve karar verilene kadar yenilenir. Başlangıçta Questura'nın verdiği makbuz geçici izin yerine geçer.</p>
+            <p>Bu izinle okuyabilir, nüfus kütüğüne (anagrafe) kaydolabilir, bir aile hekimi edinebilir ve ehliyet alabilirsiniz.</p>
+            <p>Commissione Territoriale henüz karar vermediyse, başvurudan <strong>60 gün</strong> sonra <strong>çalışabilirsiniz</strong>.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div>Prosedür bitene kadar <strong>İtalya dışına seyahat edemezsiniz</strong> ve bu izin çalışma iznine <strong>dönüştürülemez</strong>.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>Komisyondaki görüşme</h2>
+            <p><strong>Commissione Territoriale</strong> (Bölge Komisyonu: başvurunuz hakkında karar veren kurul) önündeki <strong>görüşmeye</strong> çağrılırsınız. Bu, hikâyenizi anlattığınız ve <strong>ülkenize neden dönemediğinizi</strong> açıkladığınız andır.</p>
+            <p>Bu bir sorgu değil, bir konuşmadır. <strong>Açık ve net</strong> olmaya çalışın ve elinizdeki belgeleri getirin.</p>
+            <p><strong>"Güvenli" kabul edilen bir ülkeden</strong> geliyorsanız veya gözaltında tutuluyorsanız, prosedür <strong>hızlandırılmış</strong> olabilir: görüşme ve karar birkaç gün içinde gelir. Refakatsiz çocuklar ve savunmasız durumdaki kişiler hızlandırılmış prosedüre alınmaz.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>Karar</h2>
+            <p>Karar size <strong>kabul merkezine</strong> veya Questura'ya verdiğiniz <strong>adrese</strong> gelir. Her adres değişikliğini mutlaka bildirin; aksi takdirde kararı alamayabilir ve itiraz süresini kaçırabilirsiniz.</p>
+            <p>Olası cevaplar aşağıda, <a href="#esiti">"Hangi cevapları alabilirsiniz"</a> bölümünde açıklanmıştır.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>Cevap olumsuzsa itiraz</h2>
+            <p><strong>Mahkemeye itiraz</strong> edebilirsiniz, ancak bunun için bir <strong>avukata</strong> ihtiyacınız vardır. Süreler kısadır: avukatla <strong>hemen</strong> iletişime geçin.</p>
+            <table class="pi-table">
+              <thead><tr><th>Durum</th><th>İtiraz süresi</th><th>İtalya'da kalabilir misiniz?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Durum">Normal prosedür</td><td data-label="Süre">30 gün</td><td data-label="Kalma">Evet, otomatik olarak</td></tr>
+                <tr><td data-label="Durum">Hızlandırılmış prosedür veya gözaltındaki kişi</td><td data-label="Süre">15 gün</td><td data-label="Kalma">Çoğu zaman otomatik olarak değil</td></tr>
+                <tr><td data-label="Durum">Sınır prosedürü</td><td data-label="Süre">7 gün</td><td data-label="Kalma">Otomatik olarak değil</td></tr>
+              </tbody>
+            </table>
+            <p>İtiraz sizi otomatik olarak <strong>korumadığında</strong> (örneğin başvuru "açıkça dayanaksız" bulunduysa), avukat itirazla birlikte hâkimden kararın <strong>durdurulmasını</strong> (sospensione) istemelidir.</p>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>3) Komisyondaki görüşme</h2>
-        <p>Bir sonraki adım <strong>Bölgesel Komisyondaki duruşmadır</strong>.</p>
-        <p>Bu, <strong>hikayenizi anlatabildiğiniz</strong>, başınıza gelenleri ve <strong>ülkenize neden dönemediğinizi</strong> açıklayabileceğiniz andır.</p>
-        <p>Durumunuzu iyi anlamak için size birçok soru soracaklar.</p>
-        <p>Bu bir sorgu değil, bir konuşmadır. <strong>Açık ve dürüst</strong> olmaya çalışın.</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">AB Paktı'nın yeni kuralları</h2>
+        <p class="pi-panel-sub">12 Haziran 2026 ve sonrasında sığınma talep edenler için</p>
 
-      <!-- STEP 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>4) Karar</h2>
-        <p>Duruşmadan sonra <strong>Komisyonun cevabını</strong> alacaksınız. Bir kabul merkezindeyseniz, Komisyonun kararını size merkezin sorumlusu iletecektir. Aksi takdirde, sığınma başvurusu yaparken Questura'ya bildirdiğiniz ikamet adresine gönderilecektir.</p>
-        <p>Bu nedenle adres değişikliklerinizi her zaman Questura'ya bildirmeyi unutmayın, aksi takdirde sorun yaşayabilirsiniz!</p>
-        <p>Komisyonun olası <strong>olumlu</strong> kararları şunlardır:</p>
-        <ul>
-          <li><a href="/tr/permesso-asilo-status-rifugiato.html">Mülteci statüsü</a> ("siyasi sığınma" olarak da adlandırılır)</li>
-          <li><a href="/tr/permesso-protezione-sussidiaria.html">İkincil koruma</a></li>
-          <li><a href="/tr/permesso-protezione-speciale.html">Özel koruma</a></li>
-          <li><a href="/tr/permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">Tıbbi tedavi</a></li>
-        </ul>
-        <p>Komisyona göre bu korumaların hiçbirine hakkınız yoksa, <strong>olumsuz bir cevap</strong> alacaksınız.</p>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>5) Başvurunuz reddedilirse itiraz etmek</h2>
-        <p>❌ Sonuç <strong>olumlu değilse</strong>, <strong>mahkemede itiraz edebilirsiniz</strong>. Bu, <strong>ikinci bir görüş</strong> istemek gibidir.</p>
-        <p>📌 Tek başınıza itiraz edemezsiniz: bir <strong>avukata</strong> ihtiyacınız vardır.</p>
-        <p>⏰ Olumsuz kararın size bildirildiği andan itibaren itiraz için çok az zamanınız vardır, <strong>mümkün olan en kısa sürede</strong> bir avukatla iletişime geçin!</p>
-        <p>💸 Yılda <strong>13.700 eurodan az</strong> kazanıyorsanız, avukatınızdan <strong>ücretsiz hukuki yardım</strong> talep edebilirsiniz.</p>
-        <p>⏳ Unutmayın: <strong>prosedür aylar hatta yıllar sürebilir</strong>.</p>
-      </div>
-
-      <!-- PAESI SICURI -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ DİKKAT: "Güvenli" kabul edilen ülkeler</h2>
-        <p><strong>İtalya'nın güvenli saydığı bir ülkeden</strong> geliyorsanız, başvurunuz <strong>daha hızlı incelenecektir</strong>.</p>
-        <p>Şu anda bu ülkeler şunlardır:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 Arnavutluk</span>
-          <span>🇩🇿 Cezayir</span>
-          <span>🇧🇩 Bangladeş</span>
-          <span>🇧🇦 Bosna-Hersek</span>
-          <span>🇨🇻 Yeşil Burun Adaları</span>
-          <span>🇨🇮 Fildişi Sahili</span>
-          <span>🇪🇬 Mısır</span>
-          <span>🇬🇲 Gambiya</span>
-          <span>🇬🇪 Gürcistan</span>
-          <span>🇬🇭 Gana</span>
-          <span>🇽🇰 Kosova</span>
-          <span>🇲🇰 Kuzey Makedonya</span>
-          <span>🇲🇦 Fas</span>
-          <span>🇲🇪 Karadağ</span>
-          <span>🇵🇪 Peru</span>
-          <span>🇸🇳 Senegal</span>
-          <span>🇷🇸 Sırbistan</span>
-          <span>🇱🇰 Sri Lanka</span>
-          <span>🇹🇳 Tunus</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>İlk kontroller ("accertamenti")</h2>
+            <p>Bir kurtarma operasyonundan sonra <strong>deniz yoluyla geldiyseniz</strong>, geçerli belgeleriniz olmadan <strong>sınıra</strong> geldiyseniz veya düzensiz bir girişten sonra İtalya'da bulunduysanız, önce <strong>kontrollerden</strong> (İtalyanca <em>accertamenti</em>, İngilizce <em>screening</em>, Türkçede <strong>tarama</strong> olarak da bilinir) geçersiniz.</p>
+            <p>Bu kontroller sınırda en fazla <strong>7 gün</strong>, zaten İtalya'daysanız en fazla <strong>3 gün</strong> sürer. Şunları kapsar:</p>
+            <ul>
+              <li>bir <strong>sağlık kontrolü</strong> ve <strong>savunmasızlık</strong> kontrolü;</li>
+              <li><strong>kimlik tespiti</strong> ve <strong>parmak izi</strong> alınması;</li>
+              <li>bir güvenlik kontrolü.</li>
+            </ul>
+            <p>Sağlık sorunlarınız varsa, reşit değilseniz veya şiddete maruz kaldıysanız, <strong>bunu hemen söyleyin</strong>.</p>
+          </div>
         </div>
-        <p>Ancak <strong>kişisel durumunuzda</strong> <strong>ciddi ve özel</strong> tehlikeler varsa, bunu <strong>en başından iyi açıklamalısınız</strong>.</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>Sığınma talep etmek istediğinizi söylemek</h2>
+            <p>İlk adım, makamlara koruma talep etmek istediğinizi söylemektir. Buna <strong>niyet beyanı</strong> denir.</p>
+            <p>Şimdilik ve en az <strong>30 Nisan 2027</strong> tarihine kadar, İtalya'da bu beyanı <strong>Questura</strong> ve <strong>sınır polisi</strong> alır. Başka yollar da vardır:</p>
+            <ul>
+              <li><strong>Bir avukatla, PEC yoluyla</strong> (sertifikalı e-posta): avukat Questura'ya sığınma talep etmek istediğinizi yazar. Bu çoğu zaman <strong>iyi bir fikirdir</strong>, çünkü böylece sığınma talep ettiğiniz <strong>tarihin kesin bir kanıtı</strong> olur.</li>
+              <li><strong>Bir kurum aracılığıyla</strong>: bazı şehirlerde niyet beyanı bir derneğe, bir CAF'a (vergi ve evrak işlerinde yardım eden merkez), belediyenin (Comune) yabancılar bürosuna veya Questura'nın belirlediği başka bir kuruma bildirilir.</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>Her şehrin kendi uygulaması vardır.</strong> Gitmeden önce, <strong>şehrinizde</strong> nasıl işlediğini bir derneğe, bir hukuki danışma masasına veya bir avukata sorun. <a href="aiuto-legale.html">Ücretsiz hukuki yardım bulun</a>.</div>
+            </div>
+            <p>Kendinizi geçindirecek paranız yoksa, bu andan itibaren <a href="#accoglienza">kabul (barınma) hakkınız</a> vardır.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>Kayıt ve belge</h2>
+            <p>Questura başvurunuzu <strong>5 gün</strong> içinde (çok fazla kişi gelirse 15 güne kadar) <strong>kaydetmek</strong> zorundadır. Bilgilerinizi alır ve size bir <strong>bilgilendirme broşürü</strong> verir.</p>
+            <p>Şimdilik İtalya'da Questura'daki kayıt, başvurunun <strong>"resmileştirilmesi"</strong> (formalizzazione) <strong>yerine de geçer</strong>: başka bir işlem yapmanız gerekmez.</p>
+            <p>Fotoğrafınızın bulunduğu, <strong>adınıza düzenlenmiş bir belge</strong> (documento nominativo) alırsınız. <strong>Bu bir oturma izni değildir</strong>: Pakt ile birlikte "sığınma talebi için oturma izni" artık yoktur. Bu belge yalnızca prosedür boyunca <strong>İtalya'da kalabileceğinizi</strong> gösterir. <strong>Bir yıl</strong> geçerlidir ve yenilenebilir.</p>
+            <p><strong>İkamet adresinizi</strong> (domicilio), ayrıca bir telefon numarası veya e-posta adresi bildirmeniz gerekir.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Bu belge bir seyahat belgesi değildir:</strong> başka ülkelere gitmek için kullanamazsınız.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>Çalışmak</h2>
+            <p>Commissione Territoriale henüz karar vermediyse ve gecikme sizin suçunuz değilse, başvurudan <strong>90 gün</strong> sonra <strong>çalışabilirsiniz</strong>.</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Bu belgeyi çalışma iznine dönüştüremezsiniz.</strong> Sığınma başvurucusu belgesi bir oturma izni değildir; bu yüzden bir iş sözleşmeniz olsa bile başka bir izne "çevrilemez".</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>Hangi prosedür: normal, hızlandırılmış veya sınır prosedürü</h2>
+            <p>Hangi prosedürün uygulanacağına <strong>Commissione Territoriale</strong> karar verir ve bunu size bildirir.</p>
+            <table class="pi-table">
+              <thead><tr><th>Prosedür</th><th>Ne zaman</th><th>Karar süresi</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Prosedür"><strong>Normal</strong></td><td data-label="Ne zaman">Çoğu durumda</td><td data-label="Süre">6 ay (uzatılabilir)</td></tr>
+                <tr><td data-label="Prosedür"><strong>Hızlandırılmış</strong></td><td data-label="Ne zaman">Örneğin: <a href="#paesi-sicuri">"güvenli" bir ülkeden</a> geliyorsanız; ülkeniz için Avrupa'da kabul edilen başvurular azsa (%20 veya daha az); konuyla ilgisi olmayan veya birbiriyle çelişen şeyler anlatıyorsanız; kimliğiniz hakkında yalan söylediyseniz; sığınmayı geç talep ettiyseniz</td><td data-label="Süre">3 ay</td></tr>
+                <tr><td data-label="Prosedür"><strong>Sınır prosedürü</strong></td><td data-label="Ne zaman">Sınırda veya karaya çıkıştan sonra, giriş için belgeniz olmadan sığınma talep ettiyseniz ve hızlandırılmış prosedür durumlarından birindeyseniz</td><td data-label="Süre">İtiraz dahil toplam 12 hafta</td></tr>
+              </tbody>
+            </table>
+            <p><strong>Sınır prosedüründe</strong> makamların <strong>belirlediği bir yerde</strong> yaşamanız gerekir ve bazı durumlarda bir merkezde <strong>tutulabilirsiniz</strong>.</p>
+            <p><strong>Refakatsiz çocuklar</strong> sınır prosedürüne yalnızca güvenlik nedenleriyle alınır. <strong>Savunmasız durumdaki</strong> kişiler, ihtiyaç duydukları desteği alamayacaklarsa bu prosedüre alınmaz.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>Komisyondaki görüşme</h2>
+            <p><strong>Kişisel görüşme</strong> zorunludur: hikâyenizi anlatma ve ülkenize neden dönemediğinizi açıklama anıdır.</p>
+            <p>Görüşmeden önce <strong>ücretsiz hukuki bilgilendirme</strong> hakkınız vardır: size prosedürü açıklayan bir kişi. <strong>Bunu talep edin</strong>.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>Ulaşılabilir olmak: bu bir yükümlülüktür</h2>
+            <p>Pakt ile yükümlülükleriniz daha sıkıdır. Şunları yapmalısınız:</p>
+            <ul>
+              <li><strong>iş birliği yapın</strong> ve elinizdeki belgeleri teslim edin;</li>
+              <li>görüşmeye ve randevulara <strong>gelin</strong>;</li>
+              <li>adres, telefon veya e-posta değişikliklerinin hepsini <strong>hemen bildirin</strong>;</li>
+              <li><strong>İtalya'da kalın</strong> ve başka bir Avrupa ülkesine gitmeyin.</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>Bunları yapmazsanız</strong>, Commissione Territoriale başvurunuzu <strong>geri çekilmiş</strong> sayabilir ve prosedürü kapatabilir. Bu karara karşı itiraz yalnızca <strong>7 gün</strong> içinde yapılmalıdır.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>Karar</h2>
+            <p>Karar size <strong>kabul merkezine</strong> veya bildirdiğiniz son <strong>adrese</strong> gelir. Olası cevaplar aşağıda, <a href="#esiti">"Hangi cevapları alabilirsiniz"</a> bölümünde açıklanmıştır.</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>Cevap olumsuzsa itiraz</h2>
+            <p>Bir <strong>avukatla</strong> birlikte <strong>mahkemeye itiraz</strong> edebilirsiniz. Pakt ile süreler <strong>daha da kısadır</strong>: kararı aldığınız gün avukatla iletişime geçin.</p>
+            <table class="pi-table">
+              <thead><tr><th>Durum</th><th>İtiraz süresi</th><th>İtalya'da kalabilir misiniz?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Durum">Normal prosedür</td><td data-label="Süre">30 gün</td><td data-label="Kalma">Evet, otomatik olarak</td></tr>
+                <tr><td data-label="Durum">Hızlandırılmış prosedür, kabul edilemez veya geri çekilmiş sayılan başvuru</td><td data-label="Süre">7 gün</td><td data-label="Kalma">Otomatik olarak değil</td></tr>
+                <tr><td data-label="Durum">Sınır prosedürü</td><td data-label="Süre">5 gün</td><td data-label="Kalma">Otomatik olarak değil (refakatsiz çocuklar için evet)</td></tr>
+              </tbody>
+            </table>
+            <p>İtiraz sizi otomatik olarak korumadığında, avukat <strong>itirazla birlikte</strong> hâkimden <strong>İtalya'da kalmanıza izin verilmesini</strong> (autorizzazione a rimanere) istemelidir. Hâkim yaklaşık 10 gün içinde karar verir ve karar verene kadar kural olarak sınır dışı edilemezsiniz.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">Pakt kuralları hakkında daha fazlası: SOS Patto (İtalyanca)</a>
+        </p>
       </div>
 
-      <!-- SITUAZIONI PARTICOLARI -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ Özel durumlar</h2>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">Her durumda bilmeniz gerekenler</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>Hangi cevapları alabilirsiniz</h2>
+        <p>Bunlar hem eski kurallarda hem de Pakt'ta geçerlidir. Commissione Territoriale size şunları verebilir:</p>
+        <ul>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>Mülteci statüsü</strong></a> ("siyasi sığınma" olarak da bilinir): <strong>5 yıllık</strong> izin;</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>İkincil koruma</strong></a>: <strong>5 yıllık</strong> izin;</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>Özel koruma</strong></a>: <strong>2 yıllık</strong>, yenilenebilir ve çalışmanıza izin veren izin;</li>
+          <li>Ağır hastaysanız <a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>tıbbi tedavi izni</strong></a>.</li>
+        </ul>
+        <p>Commissione Territoriale bu korumaların hiçbirine hakkınız olmadığını düşünürse, cevap <strong>olumsuz</strong> olur: sekmenizde belirtilen süreler içinde itiraz edebilirsiniz.</p>
+      </div>
+
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>"Güvenli" kabul edilen ülkeler</h2>
+        <p>İtalya'nın <strong>güvenli</strong> saydığı bir ülkeden geliyorsanız, başvurunuz <strong>daha hızlı</strong> incelenir ve itiraz için daha az zamanınız olur. Bugün İtalya'nın listesinde şu ülkeler var:</p>
+        <ul class="pi-countries">
+          <li>Arnavutluk</li><li>Cezayir</li><li>Bangladeş</li><li>Bosna-Hersek</li><li>Yeşil Burun Adaları</li>
+          <li>Fildişi Sahili</li><li>Mısır</li><li>Gambiya</li><li>Gürcistan</li><li>Gana</li>
+          <li>Kosova</li><li>Kuzey Makedonya</li><li>Fas</li><li>Karadağ</li><li>Peru</li>
+          <li>Senegal</li><li>Sırbistan</li><li>Sri Lanka</li><li>Tunus</li>
+        </ul>
+        <p>Pakt ile (12 Haziran 2026'dan itibaren yapılan başvurular) tüm AB ülkelerinde geçerli bir <strong>Avrupa Birliği listesi</strong> de vardır:</p>
+        <ul class="pi-countries">
+          <li>Bangladeş</li><li>Kolombiya</li><li>Mısır</li><li>Hindistan</li><li>Kosova</li><li>Fas</li><li>Tunus</li>
+        </ul>
+        <p><strong>Avrupa Birliği'ne aday ülkeler</strong> de (örneğin Arnavutluk, Sırbistan, Türkiye, Gürcistan) güvenli kabul edilir; ancak istisnalar vardır: örneğin ülkede savaş varsa.</p>
+        <p>Ayrıca, Avrupa'da kabul edilen başvuruların <strong>%20 veya daha az</strong> olduğu bir ülkeden gelenler de hızlandırılmış prosedüre alınır.</p>
+        <p>"Güvenli" bir ülkeden gelmek, başvurunun reddedileceği <strong>anlamına gelmez</strong>. Kişisel durumunuzda <strong>ciddi ve özel</strong> tehlikeler varsa, bunları en başından iyi açıklamalısınız.</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>Özel durumlar</h2>
         <p>Eğer:</p>
         <ul>
-          <li>reşit değilseniz 👶</li>
-          <li>kadınsanız 👩🏽</li>
-          <li>engelli iseniz ♿</li>
-          <li>ruh sağlığı sorunlarınız varsa 🧠</li>
-          <li>şiddet, insan ticareti veya genital mutilasyon mağduruysanız 🚫</li>
+          <li>reşit değilseniz, özellikle İtalya'da anne babanız olmadan bulunuyorsanız;</li>
+          <li>yalnız veya hamile bir kadınsanız;</li>
+          <li>engelliyseniz veya ağır bir hastalığınız varsa;</li>
+          <li>ruh sağlığı sorunlarınız varsa;</li>
+          <li>şiddet, işkence, insan ticareti veya kadın sünneti (genital mutilasyon) mağduruysanız;</li>
         </ul>
-        <p>... o zaman başvurunuz, "güvenli" bir ülkeden gelseniz bile, <strong>özel bir dikkatle değerlendirilecektir</strong>.</p>
+        <p>… "güvenli" bir ülkeden gelseniz bile <strong>özel güvencelere</strong> ve size uygun bir kabul ortamına hakkınız vardır. Bunu mümkün olan en kısa sürede söyleyin: Questura'da, merkezde, Commissione Territoriale'de.</p>
+        <p><strong>Refakatsiz çocukların</strong> <strong>kendilerine bir vasi atanması</strong> hakkı vardır ve sınırdan geri gönderilemezler.</p>
       </div>
 
-      <!-- DUBLINO -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 Başka bir ülkede sığınma başvurusu yaptıysanız (Dublin Tüzüğü)</h2>
-        <p><strong>Başka bir Avrupa ülkesinde zaten sığınma başvurusu yaptıysanız</strong> veya orada <strong>parmak izinizi bıraktıysanız</strong>, başvurunuzu incelemekten <strong>İtalya'nın sorumlu olmama</strong> ihtimali vardır.</p>
-        <p>Bu durumlarda başvurunuz <strong>diğer ülkeye transfer</strong> edilebilir.</p>
-        <p>👉 <strong>Ne yapmalı:</strong> Bu durumda iseniz, <strong>derhal sığınma hukuku konusunda uzman bir avukattan veya operatörden yardım istemeniz</strong> çok önemlidir.</p>
+      <div class="card pi-card">
+        <h2>Başka bir Avrupa ülkesinde sığınma talep ettiyseniz (Dublin)</h2>
+        <p><strong>Başka bir Avrupa ülkesinde zaten sığınma talep ettiyseniz</strong> veya orada <strong>parmak izleriniz</strong> alındıysa, başvurunuzu incelemesi gereken ülke <strong>İtalya olmayabilir</strong>. Bu durumda o ülkeye <strong>transfer edilebilirsiniz</strong>.</p>
+        <p>30 Haziran 2026'ya kadar kaydedilen başvurular için eski <strong>Dublin Tüzüğü</strong>'nün kuralları; 1 Temmuz 2026'dan itibaren kaydedilen başvurular için Pakt'ın yeni kuralları geçerlidir.</p>
+        <p><strong>Ne yapmalısınız:</strong> hemen bir avukattan veya deneyimli bir danışmandan yardım isteyin.</p>
       </div>
 
-      <!-- ACCOGLIENZA -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 Sığınma başvurusunda bulunanlar için barınma hakkı</h2>
-        <p>İtalya'da, sığınma başvurusunda bulunan ve <strong>geçimini sağlamak için yeterli parası olmayan</strong> kişilerin bir <strong>barınma merkezinde</strong> yer alma hakkı vardır.</p>
-        <p>⏱ <strong>Barınma hakkı geçerlidir:</strong></p>
+      <div class="card pi-card" id="accoglienza">
+        <h2>Kabul (barınma) hakkı</h2>
+        <p>Sığınma talep ediyorsanız ve <strong>kendinizi geçindirecek kadar paranız yoksa</strong>, bir <strong>kabul merkezinde</strong> yer hakkınız vardır.</p>
         <ul>
-          <li>kişinin <strong>sığınma başvurusu yapmak istediğini bildirdiği</strong> andan itibaren,</li>
-          <li><strong>prosedürün sonuna</strong> kadar, yani başvuru <strong>kabul edildiğinde</strong>, <strong>kesin olarak reddedildiğinde</strong> veya <strong>geri çekildiğinde</strong>.</li>
+          <li>Bu hak, <strong>sığınma talep etmek istediğinizi söylediğiniz</strong> andan itibaren başlar.</li>
+          <li>Komisyondaki prosedür boyunca, itiraz süresi dolana kadar devam eder; itiraz İtalya'da kalmanıza izin veriyorsa itiraz süresince de devam eder.</li>
         </ul>
-        <p>⚠️ Barınma hakkı başka durumlarda da kaldırılabilir, örneğin merkezin <strong>terk edilmesi</strong> veya kişinin <strong>artık imkansız durumda sayılmaması</strong> halinde.</p>
+        <p>Merkezden ayrılırsanız, görüşmeye gitmezseniz veya yeterli paranız varsa <strong>kabul hakkını kaybedebilirsiniz</strong>.</p>
+        <p>Pakt ile makamlar sizi <strong>belirli bir yerde yaşamaya</strong> da zorlayabilir (sınır prosedüründe her zaman). Oradan ayrılırsanız kabul hakkını kaybedebilirsiniz.</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>Hikayeniz benzersizdir.</strong> Arkadaşlarınızın veya akrabalarınızınkiyle aynı değildir. Yasalar sık sık değişir, bu nedenle her zaman güncel hukuki yardım arayın.
-          <a href="/tr/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <strong>Hikâyeniz benzersizdir.</strong> Arkadaşlarınızın veya akrabalarınızınkiyle aynı değildir ve bu kurallar yenidir: mahkemeler de onları hâlâ yorumluyor. Geliriniz <strong>yılda 13.600 eurodan</strong> azsa, <strong>ücretsiz</strong> bir avukat alabilirsiniz (gratuito patrocinio, devlet destekli adli yardım).
+          <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             Ücretsiz hukuki yardım bulun
           </a>
         </div>
@@ -175,18 +402,91 @@ lang: tr
     <div class="container">
       <h2 class="text-center mb-lg">İlginizi çekebilir</h2>
       <div class="grid grid-3">
-        <a href="/tr/permesso-richiesta-asilo.html" class="card card-link card-compact">
+        <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">Sığınma talebi izni</h3>
         </a>
-        <a href="/tr/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
+        <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">Mülteci statüsü</h3>
         </a>
-        <a href="/tr/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
+        <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">İkincil koruma</h3>
         </a>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">Ayrıca bakın: koruma amaçlı diğer izinler</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">İnsan ticareti mağdurları için izin</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">Aile içi şiddet mağdurları için izin</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">İşgücü sömürüsü mağdurları için izin</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">Refakatsiz çocuklar için izin (MSNA)</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">Entegrasyon izni – prosieguo amministrativo (idari devam)</a></li>
+          <li><a href="permesso-calamita-naturale.html">Doğal afet nedeniyle izin</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">Mültecilerin ve ikincil koruma sahiplerinin aile üyeleri için izin</a></li>
+          <li><a href="permesso-apolidia.html">Vatansızlık izni</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>

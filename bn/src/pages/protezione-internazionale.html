@@ -1,24 +1,73 @@
 ---
 layout: layouts/base.liquid
-title: "আন্তর্জাতিক সুরক্ষার গাইড"
+title: "ইতালিতে আশ্রয়ের গাইড: EU চুক্তির আগে ও পরে | SOS Permesso"
 lang: bn
+description: "ইতালিতে আন্তর্জাতিক সুরক্ষার গাইড: আপনার জন্য কোন নিয়ম প্রযোজ্য (12 জুন 2026-এর আগে নাকি পরে), আশ্রয় আবেদন কীভাবে কাজ করে, কাগজ, কাজ, সাক্ষাৎকার, সিদ্ধান্ত ও আপিল।"
 ---
 
-  <section class="section" style="padding: 1rem 0;">
-    <div class="container">
-      <div style="font-size: 0.875rem; color: var(--gray-medium);">
-        <a href="/bn/index.html" class="link-ink">হোম</a> →
-        <span>আন্তর্জাতিক সুরক্ষা (Protezione Internazionale)</span>
-      </div>
-    </div>
-  </section>
+<style>
+  .pi-updated { font-size: 0.9rem; color: var(--sp-muted); margin-top: 0.5rem; }
+  .pi-card { margin-bottom: 2rem; }
+  .pi-card h2 { margin-top: 0; }
+  .pi-card h3 { margin-top: 1.25rem; }
+
+  /* Quale regime? */
+  .pi-which { background: var(--cat-protection-tint); }
+  .pi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .pi-choice {
+    display: block; text-align: start; font: inherit; color: var(--sp-ink); cursor: pointer;
+    background: var(--sp-white); border: var(--border-ui) solid var(--sp-ink);
+    border-radius: var(--radius-lg); box-shadow: var(--sticker-sm); padding: 1rem 1.1rem;
+    text-decoration: none; transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .pi-choice:hover { transform: var(--sticker-lift); box-shadow: var(--sticker-md); color: var(--sp-ink); }
+  .pi-choice:focus-visible { outline: none; box-shadow: var(--sticker-sm), var(--focus-ring); }
+  .pi-choice-date { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem; }
+  .pi-choice-go { display: inline-block; margin-top: 0.5rem; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Schede */
+  .pi-tabs { scroll-margin-top: calc(var(--header-h, 80px) + 24px); display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin: 2.5rem 0 1.5rem; }
+  .pi-tabs .tab-badge { font-size: 0.85rem; min-height: 46px; white-space: normal; text-align: center; }
+  .pi-panel-title { text-align: center; margin-bottom: 0.25rem; }
+  .pi-panel-sub { text-align: center; color: var(--sp-muted); margin-bottom: 1.5rem; }
+  .pi-panel + .pi-panel { margin-top: 3rem; }
+  .js-tabs .pi-panel + .pi-panel { margin-top: 0; }
+
+  /* Passi */
+  .pi-step { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start; }
+  .pi-num {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; border: var(--border-chip) solid var(--sp-ink); background: var(--sp-yellow);
+    font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; box-shadow: var(--sticker-sm);
+  }
+  .pi-step h2 { font-size: 1.35rem; margin: 0.35rem 0 0.75rem; }
+
+  /* Tabelle termini */
+  .pi-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.97rem; }
+  .pi-table th, .pi-table td { text-align: start; padding: 0.6rem 0.5rem; border-bottom: 1.5px solid var(--sp-rule); vertical-align: top; }
+  .pi-table th { font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .pi-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.4rem 1rem; margin: 1rem 0; padding: 0; list-style: none; }
+
+  @media (max-width: 640px) {
+    .pi-choices { grid-template-columns: 1fr; }
+    .pi-step { grid-template-columns: 1fr; gap: 0.25rem; }
+    .pi-table, .pi-table tbody, .pi-table tr, .pi-table td { display: block; width: 100%; }
+    .pi-table thead { display: none; }
+    .pi-table tr { border-bottom: 1.5px solid var(--sp-rule); padding: 0.5rem 0; }
+    .pi-table td { border: 0; padding: 0.15rem 0; }
+    .pi-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; }
+  }
+</style>
+
 
   <section class="section bg-off-white">
     <div class="container">
       <div class="page-header text-center">
         <span class="page-icon" style="font-size: 4rem;">{% render "components/icon.liquid", name: "protezione", size: 40 %}</span>
-        <h1 class="page-title">আন্তর্জাতিক সুরক্ষার গাইড</h1>
-        <p class="section-subtitle">ইতালিতে আশ্রয় (asilo) আবেদন সম্পর্কে আপনার যা জানা দরকার</p>
+        <h1 class="page-title">ইতালিতে আশ্রয়ের গাইড</h1>
+        <p class="section-subtitle">অভিবাসন ও আশ্রয় বিষয়ক EU চুক্তির (Patto UE) আগে ও পরে কীভাবে আন্তর্জাতিক সুরক্ষা চাইতে হয়</p>
+        <p class="pi-updated">9 অক্টোবর 2026 পর্যন্ত হালনাগাদ</p>
       </div>
     </div>
   </section>
@@ -26,143 +75,322 @@ lang: bn
   <section class="section">
     <div class="container" style="max-width: 900px;">
 
-      <div class="card" style="margin-bottom: 2rem;">
-        <p>এখানে ইতালিতে <strong>আন্তর্জাতিক সুরক্ষা (protezione internazionale)</strong> সম্পর্কে কিছু সহজ তথ্য দেওয়া হলো!</p>
-        <p>এটি একটি দীর্ঘ ও জটিল পথ মনে হতে পারে, কিন্তু আমরা ধাপে ধাপে দেখব।</p>
-        <p>আমরা শুধু কিছু সাধারণ তথ্য দিতে পারি: এটি গুরুত্বপূর্ণ যে আপনি <strong>যোগ্য আইনি সহায়তা</strong> নিন।</p>
+      <div class="card pi-card">
+        <p>আপনার নিজের দেশে যদি আপনি বিপদে থাকেন, তাহলে ইতালিতে আপনি <strong>আন্তর্জাতিক সুরক্ষা (protezione internazionale)</strong>, অর্থাৎ <strong>আশ্রয় (asilo)</strong>, চাইতে পারেন।</p>
+        <p><strong>12 জুন 2026</strong> থেকে পুরো ইউরোপীয় ইউনিয়নে <strong>নতুন নিয়ম</strong> চালু হয়েছে: <strong>অভিবাসন ও আশ্রয় বিষয়ক EU চুক্তি (Patto UE)</strong>। তবে যারা এর আগেই আশ্রয় চেয়েছিলেন, তারা সাধারণত <strong>পুরনো নিয়মেই</strong> চলবেন।</p>
+        <p>এই কারণে এই গাইডে <strong>দুটি অংশ</strong> আছে। প্রথমে জেনে নিন কোনটি আপনার জন্য প্রযোজ্য।</p>
+        <p>আমরা আপনাকে শুধু সাধারণ তথ্য দিতে পারি: আপনার জন্য <strong>যোগ্য আইনি সহায়তা</strong> নেওয়া খুব গুরুত্বপূর্ণ।</p>
       </div>
 
-      <!-- STEP 1 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--taxi-yellow);">
-        <h2>১) আবেদন জমা দেওয়া</h2>
-        <p>প্রথমে আপনাকে <strong>কুয়েস্তুরায় (Questura) ব্যক্তিগতভাবে আবেদন জমা দিতে হবে</strong>, অর্থাৎ পুলিশ অফিসে।</p>
-        <p>তারা আপনার <strong>আঙুলের ছাপ</strong> নেবে এবং আপনার সম্পর্কে, আপনার পরিবার সম্পর্কে ও আপনার যাত্রা সম্পর্কে কিছু <strong>সাধারণ প্রশ্ন</strong> করবে।</p>
-        <p>এটি কঠিন কিছু না!</p>
-        <p>যে ফর্মটি পূরণ করা হবে তার নাম <strong>C3</strong>।</p>
-        <p>আপনার কাছে <strong>পাসপোর্ট</strong> থাকলে, তারা সেটি জমা নিতে বলবে এবং <strong>পুরো প্রক্রিয়া চলাকালীন</strong> রেখে দেবে।</p>
+      <!-- QUALE REGIME -->
+      <div class="card pi-card pi-which" id="quali-regole">
+        <h2>আপনার জন্য কোন নিয়ম প্রযোজ্য?</h2>
+        <p>গুরুত্বপূর্ণ হলো সেই দিনটি, যেদিন আপনি ইতালীয় কর্তৃপক্ষকে (Questura অর্থাৎ পুলিশ সদর দপ্তর, বা সীমান্ত পুলিশ) <strong>প্রথমবার বলেছিলেন</strong> যে আপনি আশ্রয় চাইতে চান। এই মুহূর্তটিকে বলা হয় <strong>আশ্রয় চাওয়ার ইচ্ছা প্রকাশ (manifestazione della volontà)</strong>।</p>
+
+        <div class="pi-choices">
+          <a class="pi-choice card-link" href="#pre-patto" data-tab="pre-patto">
+            <span class="pi-choice-date">12 জুন 2026-এর আগে</span>
+            আপনি কি এই তারিখের আগে আশ্রয় চেয়েছিলেন? তাহলে আপনার প্রক্রিয়ার শেষ পর্যন্ত, আদালতেও, <strong>পুরনো নিয়ম</strong> প্রযোজ্য।
+            <span class="pi-choice-go">চুক্তির আগের অংশে যান →</span>
+          </a>
+          <a class="pi-choice card-link" href="#patto" data-tab="patto">
+            <span class="pi-choice-date">12 জুন 2026 বা তার পরে</span>
+            আপনি কি এই তারিখ থেকে বা তার পরে আশ্রয় চেয়েছেন? তাহলে <strong>EU চুক্তির নতুন নিয়ম</strong> প্রযোজ্য।
+            <span class="pi-choice-go">EU চুক্তির অংশে যান →</span>
+          </a>
+        </div>
+
+        <h3>আর যদি আপনি আগে আশ্রয় চেয়ে থাকেন, কিন্তু Questura আপনাকে পরে নিবন্ধন করে?</h3>
+        <p>এটা প্রায়ই ঘটে: আপনি 12 জুনের আগে আশ্রয় (বা একটি অ্যাপয়েন্টমেন্ট) চেয়েছিলেন, কিন্তু Questura-তে ফর্মটি (<strong>C3</strong> বা নিবন্ধন) করা হয়েছে <strong>পরে</strong>।</p>
+        <p>এ বিষয়ে সব আদালত একমত নয়। <strong>অনেক বিচারক</strong> বলেন যে <strong>পুরনো নিয়ম</strong> প্রযোজ্য, কারণ অফিসের দেরির জন্য আপনাকে দায়ী করা যায় না। অন্যরা আবার ফর্মের তারিখ দেখেন।</p>
+        <p><strong>কী করবেন:</strong> আপনি যে তারিখে আশ্রয় চেয়েছিলেন তার সব প্রমাণ রেখে দিন (বুকিংয়ের রসিদ, আইনজীবী Questura-কে যে PEC (সার্টিফায়েড ইমেল) পাঠিয়েছেন, যে সংগঠন বা সংস্থার কাছে আপনি গিয়েছিলেন তাদের রসিদ, কেন্দ্রের লিখিত বিবৃতি) এবং একজন আইনজীবীর সাথে কথা বলুন।</p>
+
+        <h3>আপনি কি 12 জুনের পরে নতুন আবেদন করেছেন?</h3>
+        <p>যদি আপনার প্রথম আবেদন পুরনো হয়, কিন্তু 12 জুন 2026-এর পরে আপনি <strong>আরেকটি</strong> আবেদন (<strong>পুনরাবৃত্ত</strong> আবেদন, domanda reiterata) করে থাকেন, তাহলে সাধারণত নতুন আবেদনের জন্য <strong>চুক্তির নিয়ম</strong> প্রযোজ্য।</p>
       </div>
 
-      <!-- STEP 2 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-orange);">
-        <h2>২) অস্থায়ী বসবাসের অনুমতি নেওয়া</h2>
-        <p>আপনার আবেদন গ্রহণের পর, আপনাকে একটি <strong>আশ্রয় আবেদনের জন্য বসবাসের অনুমতি (permesso di soggiorno per richiesta d'asilo)</strong> দেওয়া হবে।</p>
-        <p>এটি একটি প্রকৃত <strong>বসবাসের অনুমতি</strong> যা আপনার আবেদন পরীক্ষাধীন থাকাকালীন ইতালিতে থাকার অনুমতি দেয়।</p>
-        <p>এই অনুমতি দিয়ে আপনি:</p>
-        <ul>
-          <li>কাজ করতে পারবেন 👷</li>
-          <li>পড়াশোনা করতে পারবেন 📚</li>
-          <li>পৌর নিবন্ধনে (anagrafe) নাম লেখাতে পারবেন 🏠</li>
-          <li>পারিবারিক ডাক্তার (medico di base) পেতে পারবেন 🩺</li>
-          <li>ড্রাইভিং লাইসেন্স (patente di guida) নিতে পারবেন 🚗</li>
-        </ul>
-        <div class="alert alert-warning" style="margin-top: 1rem;">
-          <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
-          <div><strong>প্রক্রিয়া শেষ না হওয়া পর্যন্ত আপনি ইতালির বাইরে যেতে পারবেন না</strong>, এবং আপনি <strong>এই অনুমতিকে কাজের অনুমতিতে রূপান্তর করতে পারবেন না</strong>।</div>
+      <!-- SCHEDE -->
+      <div class="pi-tabs" role="tablist" aria-label="প্রযোজ্য নিয়ম" hidden>
+        <button type="button" class="tab-badge" role="tab" id="tab-pre-patto" aria-controls="pre-patto" aria-selected="false">12/6/2026-এর আগে আবেদন</button>
+        <button type="button" class="tab-badge" role="tab" id="tab-patto" aria-controls="patto" aria-selected="false">12/6/2026 থেকে আবেদন · EU চুক্তি</button>
+      </div>
+
+      <!-- ===================== PRE-PATTO ===================== -->
+      <div class="pi-panel" id="pre-patto" role="tabpanel" aria-labelledby="tab-pre-patto">
+        <h2 class="pi-panel-title">পুরনো নিয়ম (চুক্তির আগে)</h2>
+        <p class="pi-panel-sub">যারা 12 জুন 2026-এর আগে আশ্রয় চেয়েছেন তাদের জন্য</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>Questura-তে আবেদন</h2>
+            <p>আপনি <strong>নিজে গিয়ে Questura-তে</strong> (বা সীমান্ত পুলিশের কাছে) আবেদন জমা দিয়েছেন।</p>
+            <p>তারা আপনার <strong>আঙুলের ছাপ</strong> নিয়েছে এবং আপনার, আপনার পরিবার ও আপনার যাত্রা সম্পর্কে কিছু প্রশ্ন করেছে। এই ফর্মটির নাম <strong>C3</strong>।</p>
+            <p>আপনার যদি <strong>পাসপোর্ট</strong> থাকে, পুরো প্রক্রিয়া চলাকালীন Questura সেটি রেখে দেয়।</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>আশ্রয় আবেদনের অনুমতি</h2>
+            <p>আপনি একটি <a href="permesso-richiesta-asilo.html"><strong>আশ্রয় আবেদনের জন্য বসবাসের অনুমতি (permesso di soggiorno per richiesta asilo)</strong></a> পান। এর মেয়াদ <strong>6 মাস</strong> এবং সিদ্ধান্ত না হওয়া পর্যন্ত এটি নবায়ন করা হয়। শুরুতে Questura-র রসিদটি অস্থায়ী অনুমতি হিসেবে গণ্য হয়।</p>
+            <p>এই অনুমতি দিয়ে আপনি পড়াশোনা করতে পারেন, পৌর নিবন্ধনে (anagrafe) নাম লেখাতে পারেন, একজন পারিবারিক ডাক্তার (medico di base) পেতে পারেন এবং ড্রাইভিং লাইসেন্স নিতে পারেন।</p>
+            <p>আবেদনের <strong>60 দিন</strong> পরে আপনি <strong>কাজ করতে</strong> পারেন, যদি কমিশন তখনও সিদ্ধান্ত না দিয়ে থাকে।</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div>প্রক্রিয়া শেষ না হওয়া পর্যন্ত <strong>আপনি ইতালির বাইরে ভ্রমণ করতে পারবেন না</strong>, এবং এই অনুমতিকে কাজের অনুমতিতে <strong>রূপান্তর করা যায় না</strong>।</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>কমিশনে সাক্ষাৎকার</h2>
+            <p>আপনাকে <strong>আঞ্চলিক কমিশনের (Commissione Territoriale)</strong> সামনে <strong>শুনানির (audizione)</strong> জন্য ডাকা হয়। এই সময় আপনি আপনার গল্প বলবেন এবং ব্যাখ্যা করবেন কেন <strong>আপনি আপনার দেশে ফিরে যেতে পারবেন না</strong>।</p>
+            <p>এটি জেরা নয়, বরং একটি কথোপকথন। <strong>স্পষ্ট ও নির্দিষ্টভাবে</strong> বলার চেষ্টা করুন এবং আপনার কাছে যে কাগজপত্র আছে তা সঙ্গে আনুন।</p>
+            <p>আপনি যদি <strong>"নিরাপদ" বলে বিবেচিত কোনো দেশ</strong> থেকে আসেন বা আপনাকে আটক রাখা হয়, তাহলে প্রক্রিয়াটি <strong>দ্রুততর (accelerata)</strong> হতে পারে: সাক্ষাৎকার ও সিদ্ধান্ত কয়েক দিনের মধ্যে হয়ে যায়। অভিভাবকহীন নাবালক এবং বিশেষ ঝুঁকিতে থাকা (vulnerabili) ব্যক্তিরা দ্রুততর প্রক্রিয়ায় যান না।</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>সিদ্ধান্ত</h2>
+            <p>সিদ্ধান্তটি আপনার কাছে পৌঁছায় <strong>আশ্রয় কেন্দ্রে (centro di accoglienza)</strong> অথবা Questura-কে আপনি যে <strong>ঠিকানা</strong> দিয়েছিলেন সেখানে। ঠিকানা বদলালে সবসময় জানিয়ে দিন, না হলে আপনি সিদ্ধান্তটি না পাওয়ার এবং আপিলের সময় হারানোর ঝুঁকিতে পড়বেন।</p>
+            <p>সম্ভাব্য উত্তরগুলো নিচে <a href="#esiti">"আপনি কী কী উত্তর পেতে পারেন"</a> অংশে ব্যাখ্যা করা আছে।</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>উত্তর নেতিবাচক হলে আপিল</h2>
+            <p>আপনি <strong>আদালতে আপিল (ricorso)</strong> করতে পারেন, কিন্তু এর জন্য আপনার একজন <strong>আইনজীবী (avvocato)</strong> দরকার। সময় খুব কম: <strong>এখনই</strong> আইনজীবীর সাথে যোগাযোগ করুন।</p>
+            <table class="pi-table">
+              <thead><tr><th>ক্ষেত্র</th><th>আপিলের সময়</th><th>আপনি কি ইতালিতে থাকতে পারবেন?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="ক্ষেত্র">সাধারণ প্রক্রিয়া</td><td data-label="সময়">30 দিন</td><td data-label="থাকা">হ্যাঁ, স্বয়ংক্রিয়ভাবে</td></tr>
+                <tr><td data-label="ক্ষেত্র">দ্রুততর প্রক্রিয়া বা আটক ব্যক্তি</td><td data-label="সময়">15 দিন</td><td data-label="থাকা">প্রায়ই স্বয়ংক্রিয়ভাবে নয়</td></tr>
+                <tr><td data-label="ক্ষেত্র">সীমান্ত প্রক্রিয়া (procedura di frontiera)</td><td data-label="সময়">7 দিন</td><td data-label="থাকা">স্বয়ংক্রিয়ভাবে নয়</td></tr>
+              </tbody>
+            </table>
+            <p>যখন আপিল আপনাকে স্বয়ংক্রিয়ভাবে সুরক্ষা <strong>দেয় না</strong> (যেমন, যদি আবেদনটিকে "স্পষ্টতই ভিত্তিহীন" (manifestamente infondata) বলে বিবেচনা করা হয়), তখন আইনজীবীকে আপিলের সাথে সাথেই বিচারকের কাছে <strong>স্থগিতাদেশ (sospensione)</strong> চাইতে হবে।</p>
+          </div>
         </div>
       </div>
 
-      <!-- STEP 3 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-purple);">
-        <h2>৩) কমিশনে সাক্ষাৎকার</h2>
-        <p>পরবর্তী ধাপ হলো <strong>আঞ্চলিক কমিশনে (Commissione Territoriale) শুনানি</strong>।</p>
-        <p>এই সময়ে আপনি <strong>আপনার গল্প বলতে পারবেন</strong>, কী হয়েছিল এবং কেন আপনি <strong>আপনার দেশে ফিরে যেতে পারছেন না</strong> তা ব্যাখ্যা করতে পারবেন।</p>
-        <p>তারা আপনার পরিস্থিতি ভালো করে বুঝতে অনেক প্রশ্ন করবে।</p>
-        <p>এটি জেরা নয়, বরং একটি কথোপকথন। <strong>স্পষ্ট ও সৎ</strong> হওয়ার চেষ্টা করুন।</p>
-      </div>
+      <!-- ===================== PATTO UE ===================== -->
+      <div class="pi-panel" id="patto" role="tabpanel" aria-labelledby="tab-patto">
+        <h2 class="pi-panel-title">EU চুক্তির নতুন নিয়ম</h2>
+        <p class="pi-panel-sub">যারা 12 জুন 2026 থেকে বা তার পরে আশ্রয় চেয়েছেন তাদের জন্য</p>
 
-      <!-- STEP 4 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>৪) সিদ্ধান্ত</h2>
-        <p>শুনানির পর, আপনি <strong>কমিশনের উত্তর</strong> পাবেন। আপনি যদি আশ্রয় কেন্দ্রে (centro di accoglienza) থাকেন, তাহলে কেন্দ্রের দায়িত্বশীল ব্যক্তি আপনাকে কমিশনের সিদ্ধান্ত জানাবেন। অন্যথায় আপনি কুয়েস্তুরায় (Questura) আশ্রয় আবেদন করার সময় যে ঠিকানা দিয়েছিলেন সেখানে পাবেন।</p>
-        <p>তাই মনে রাখবেন সবসময় কুয়েস্তুরায় আপনার ঠিকানা পরিবর্তন জানান, না হলে সমস্যা হতে পারে!</p>
-        <p>কমিশনের সম্ভাব্য <strong>ইতিবাচক</strong> সিদ্ধান্তগুলো হলো:</p>
-        <ul>
-          <li><a href="permesso-asilo-status-rifugiato.html">শরণার্থী মর্যাদা (Status di rifugiato)</a> (একে "রাজনৈতিক আশ্রয়"ও বলা হয়)</li>
-          <li><a href="permesso-protezione-sussidiaria.html">সহায়ক সুরক্ষা (Protezione sussidiaria)</a></li>
-          <li><a href="permesso-protezione-speciale.html">বিশেষ সুরক্ষা (Protezione speciale)</a></li>
-          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html">চিকিৎসা (Cure mediche)</a></li>
-        </ul>
-        <p>কমিশন যদি মনে করে আপনি এই সুরক্ষাগুলোর কোনোটির যোগ্য নন, তাহলে আপনাকে <strong>নেতিবাচক উত্তর</strong> দেওয়া হবে।</p>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-blue);">
-        <h2>৫) আবেদন প্রত্যাখ্যাত হলে আপিল করা</h2>
-        <p>❌ যদি ফলাফল <strong>ইতিবাচক না হয়</strong>, আপনি <strong>আদালতে আপিল (ricorso) করতে পারেন</strong>। এটি যেন একটি <strong>দ্বিতীয় মতামত</strong> চাওয়া।</p>
-        <p>📌 আপনি একা আপিল করতে পারবেন না: আপনার একজন <strong>আইনজীবী (avvocato)</strong> দরকার।</p>
-        <p>⏰ নেতিবাচক সিদ্ধান্ত জানানোর মুহূর্ত থেকে আপিল করার জন্য আপনার হাতে খুব কম সময় থাকে, <strong>যত তাড়াতাড়ি সম্ভব</strong> একজন আইনজীবীর সাথে যোগাযোগ করুন!</p>
-        <p>💸 যদি আপনি <strong>বছরে ১৩,৭০০ ইউরোর কম</strong> আয় করেন, আপনি আপনার আইনজীবীর কাছে <strong>বিনামূল্যে আইনি সহায়তা (assistenza legale gratuita)</strong> চাইতে পারেন।</p>
-        <p>⏳ মনে রাখুন: <strong>এই প্রক্রিয়া মাস বা বছরও লাগতে পারে</strong>।</p>
-      </div>
-
-      <!-- PAESI SICURI -->
-      <div class="card" style="margin-bottom: 2rem; background-color: #fff3cd;">
-        <h2>⚠️ সতর্কতা: "নিরাপদ" বলে বিবেচিত দেশসমূহ</h2>
-        <p>আপনি যদি এমন একটি <strong>দেশ থেকে আসেন যাকে ইতালি নিরাপদ মনে করে</strong>, তাহলে আপনার আবেদন <strong>আরও দ্রুত পরীক্ষা করা হবে</strong>।</p>
-        <p>বর্তমানে এই দেশগুলো হলো:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; margin: 1rem 0;">
-          <span>🇦🇱 আলবেনিয়া</span>
-          <span>🇩🇿 আলজেরিয়া</span>
-          <span>🇧🇩 বাংলাদেশ</span>
-          <span>🇧🇦 বসনিয়া-হার্জেগোভিনা</span>
-          <span>🇨🇻 কেপ ভার্দে</span>
-          <span>🇨🇮 আইভরি কোস্ট</span>
-          <span>🇪🇬 মিশর</span>
-          <span>🇬🇲 গাম্বিয়া</span>
-          <span>🇬🇪 জর্জিয়া</span>
-          <span>🇬🇭 ঘানা</span>
-          <span>🇽🇰 কসোভো</span>
-          <span>🇲🇰 উত্তর ম্যাসিডোনিয়া</span>
-          <span>🇲🇦 মরক্কো</span>
-          <span>🇲🇪 মন্টিনিগ্রো</span>
-          <span>🇵🇪 পেরু</span>
-          <span>🇸🇳 সেনেগাল</span>
-          <span>🇷🇸 সার্বিয়া</span>
-          <span>🇱🇰 শ্রীলঙ্কা</span>
-          <span>🇹🇳 তিউনিসিয়া</span>
+        <div class="card pi-card pi-step">
+          <span class="pi-num">1</span>
+          <div>
+            <h2>প্রাথমিক যাচাই ("accertamenti")</h2>
+            <p>আপনি যদি উদ্ধারের পর <strong>সমুদ্রপথে এসে থাকেন</strong>, বৈধ কাগজপত্র ছাড়া <strong>সীমান্তে</strong> এসে থাকেন, অথবা অনিয়মিতভাবে প্রবেশের পর ইতালিতে আপনাকে পাওয়া যায়, তাহলে প্রথমে আপনাকে <strong>যাচাইয়ের (accertamenti)</strong> মধ্য দিয়ে যেতে হবে (ইংরেজিতে <em>screening</em>)।</p>
+            <p>এটি সীমান্তে সর্বোচ্চ <strong>7 দিন</strong> এবং আপনি আগে থেকেই ইতালিতে থাকলে সর্বোচ্চ <strong>3 দিন</strong> চলে। এতে থাকে:</p>
+            <ul>
+              <li>একটি <strong>স্বাস্থ্য পরীক্ষা</strong> এবং <strong>বিশেষ ঝুঁকিতে আছেন কিনা (vulnerabilità)</strong> তার যাচাই;</li>
+              <li><strong>পরিচয় শনাক্তকরণ</strong> এবং <strong>আঙুলের ছাপ</strong>;</li>
+              <li>একটি নিরাপত্তা পরীক্ষা।</li>
+            </ul>
+            <p>আপনার যদি স্বাস্থ্য সমস্যা থাকে, আপনি নাবালক হন বা সহিংসতার শিকার হয়ে থাকেন, তাহলে <strong>সাথে সাথেই তা বলুন</strong>।</p>
+          </div>
         </div>
-        <p>তবে যদি <strong>আপনার ব্যক্তিগত পরিস্থিতিতে</strong> কোনো <strong>গুরুতর ও নির্দিষ্ট বিপদ</strong> থাকে, তাহলে <strong>শুরু থেকেই সেটি ভালোভাবে ব্যাখ্যা করুন</strong>।</p>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">2</span>
+          <div>
+            <h2>আশ্রয় চাইতে চান বলে জানানো</h2>
+            <p>প্রথম ধাপ হলো কর্তৃপক্ষকে জানানো যে আপনি সুরক্ষা চাইতে চান। এটিই <strong>আশ্রয় চাওয়ার ইচ্ছা প্রকাশ (manifestazione della volontà)</strong>।</p>
+            <p>আপাতত, এবং অন্তত <strong>30 এপ্রিল 2027</strong> পর্যন্ত, ইতালিতে এটি গ্রহণ করে <strong>Questura</strong> এবং <strong>সীমান্ত পুলিশ</strong>। এছাড়া অন্য উপায়ও আছে:</p>
+            <ul>
+              <li><strong>আইনজীবীর মাধ্যমে, PEC দিয়ে</strong> (posta elettronica certificata, অর্থাৎ সার্টিফায়েড ইমেল): আইনজীবী Questura-কে লিখে জানান যে আপনি আশ্রয় চাইতে চান। এটি প্রায়ই একটি <strong>ভালো উপায়</strong>, কারণ এতে আপনি কোন তারিখে আশ্রয় চেয়েছেন তার একটি <strong>নিশ্চিত প্রমাণ</strong> থাকে।</li>
+              <li><strong>কোনো সংস্থার মাধ্যমে</strong>: কিছু শহরে ইচ্ছা প্রকাশের বিষয়টি একটি সংগঠন, একটি CAF (কর ও প্রশাসনিক সহায়তা কেন্দ্র), পৌরসভার (Comune) বিদেশি নাগরিক অফিস বা Questura-র নির্ধারিত অন্য কোনো সংস্থাকে জানাতে হয়।</li>
+            </ul>
+            <div class="alert alert-info" style="margin: 1rem 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "questura", size: 26 %}</span>
+              <div><strong>প্রতিটি শহর নিজের মতো করে কাজ করে।</strong> যাওয়ার আগে, <strong>আপনার শহরে</strong> কীভাবে কাজ হয় তা একটি সংগঠন, আইনি সহায়তা কেন্দ্র বা আইনজীবীর কাছে জেনে নিন। <a href="aiuto-legale.html">বিনামূল্যে আইনি সহায়তা খুঁজুন</a>।</div>
+            </div>
+            <p>এই মুহূর্ত থেকে, নিজের ভরণপোষণের টাকা না থাকলে, আপনার <a href="#accoglienza">আশ্রয় কেন্দ্রে থাকার (accoglienza)</a> অধিকার আছে।</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">3</span>
+          <div>
+            <h2>নিবন্ধন ও কাগজ</h2>
+            <p>Questura-কে <strong>5 দিনের</strong> মধ্যে আপনার আবেদন <strong>নিবন্ধন (registrazione)</strong> করতে হবে (অনেক বেশি মানুষ এলে 15 দিন পর্যন্ত)। তারা আপনার তথ্য নেয় এবং আপনাকে একটি <strong>তথ্য-পুস্তিকা</strong> দেয়।</p>
+            <p>আপাতত, ইতালিতে Questura-তে নিবন্ধন <strong>আবেদনের "আনুষ্ঠানিক দাখিল" (formalizzazione) হিসেবেও গণ্য হয়</strong>: আপনাকে আর কোনো আলাদা ধাপ করতে হবে না।</p>
+            <p>আপনি আপনার ছবিসহ একটি <strong>নামযুক্ত কাগজ (documento nominativo)</strong> পান। <strong>এটি বসবাসের অনুমতি (permesso di soggiorno) নয়</strong>: চুক্তির অধীনে "আশ্রয় আবেদনের জন্য বসবাসের অনুমতি" আর নেই। এই কাগজ শুধু প্রমাণ করে যে প্রক্রিয়া চলাকালীন আপনি <strong>ইতালিতে থাকতে পারেন</strong>। এর মেয়াদ <strong>এক বছর</strong> এবং এটি নবায়ন করা যায়।</p>
+            <p>আপনাকে আপনার <strong>ঠিকানা (domicilio)</strong>, এবং একটি ফোন নম্বর বা ইমেলও জানাতে হবে।</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>এই কাগজটি ভ্রমণের কাগজ নয়:</strong> এটি দিয়ে আপনি অন্য দেশে যেতে পারবেন না।</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">4</span>
+          <div>
+            <h2>কাজ করা</h2>
+            <p>আবেদনের <strong>90 দিন</strong> পরে আপনি <strong>কাজ করতে</strong> পারেন, যদি কমিশন তখনও সিদ্ধান্ত না দিয়ে থাকে এবং দেরিটা আপনার দোষে না হয়ে থাকে।</p>
+            <div class="alert alert-warning" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>আপনি এটিকে কাজের অনুমতিতে রূপান্তর করতে পারবেন না।</strong> আশ্রয়প্রার্থীর কাগজটি বসবাসের অনুমতি নয়, তাই এটিকে অন্য কোনো অনুমতিতে "বদলানো" যায় না, এমনকি আপনার কাজের চুক্তি থাকলেও না।</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">5</span>
+          <div>
+            <h2>কোন প্রক্রিয়া: সাধারণ, দ্রুততর নাকি সীমান্ত</h2>
+            <p><strong>আঞ্চলিক কমিশন (Commissione Territoriale)</strong> ঠিক করে কোন প্রক্রিয়া ব্যবহার হবে এবং তা আপনাকে জানায়।</p>
+            <table class="pi-table">
+              <thead><tr><th>প্রক্রিয়া</th><th>কখন</th><th>সিদ্ধান্তের সময়</th></tr></thead>
+              <tbody>
+                <tr><td data-label="প্রক্রিয়া"><strong>সাধারণ</strong></td><td data-label="কখন">বেশিরভাগ ক্ষেত্রে</td><td data-label="সময়">6 মাস (বাড়ানো যায়)</td></tr>
+                <tr><td data-label="প্রক্রিয়া"><strong>দ্রুততর (accelerata)</strong></td><td data-label="কখন">উদাহরণস্বরূপ: আপনি একটি <a href="#paesi-sicuri">"নিরাপদ" দেশ</a> থেকে এসেছেন; আপনার দেশের মানুষের আবেদন ইউরোপে খুব কম গৃহীত হয় (20% বা তার কম); আপনি এমন কথা বলছেন যা অপ্রাসঙ্গিক বা পরস্পরবিরোধী; আপনি আপনার পরিচয় নিয়ে মিথ্যা বলেছেন; আপনি দেরিতে আশ্রয় চেয়েছেন</td><td data-label="সময়">3 মাস</td></tr>
+                <tr><td data-label="প্রক্রিয়া"><strong>সীমান্ত (di frontiera)</strong></td><td data-label="কখন">যদি আপনি সীমান্তে বা জাহাজ থেকে নামার পর, প্রবেশের কাগজ ছাড়া আশ্রয় চেয়ে থাকেন, এবং আপনি দ্রুততর প্রক্রিয়ার কোনো একটি ক্ষেত্রে পড়েন</td><td data-label="সময়">মোট 12 সপ্তাহ, আপিলসহ</td></tr>
+              </tbody>
+            </table>
+            <p><strong>সীমান্ত প্রক্রিয়ায় (procedura di frontiera)</strong> আপনাকে কর্তৃপক্ষের <strong>নির্ধারিত জায়গায়</strong> থাকতে হবে, এবং কিছু ক্ষেত্রে আপনাকে একটি কেন্দ্রে <strong>আটক</strong> রাখা হতে পারে।</p>
+            <p><strong>অভিভাবকহীন নাবালকরা</strong> কেবল নিরাপত্তার কারণে সীমান্ত প্রক্রিয়ায় যায়। <strong>বিশেষ ঝুঁকিতে থাকা (vulnerabili)</strong> ব্যক্তিরা এতে যান না, যদি তারা প্রয়োজনীয় সহায়তা না পেতে পারেন।</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">6</span>
+          <div>
+            <h2>কমিশনে সাক্ষাৎকার</h2>
+            <p><strong>ব্যক্তিগত সাক্ষাৎকার</strong> বাধ্যতামূলক: এটি আপনার গল্প বলার এবং কেন আপনি আপনার দেশে ফিরে যেতে পারবেন না তা ব্যাখ্যা করার সময়।</p>
+            <p>সাক্ষাৎকারের আগে আপনার <strong>বিনামূল্যে আইনি পরামর্শ (orientamento legale)</strong> পাওয়ার অধিকার আছে: একজন ব্যক্তি আপনাকে প্রক্রিয়াটি বুঝিয়ে দেবেন। <strong>এটি চেয়ে নিন</strong>।</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">7</span>
+          <div>
+            <h2>যোগাযোগযোগ্য থাকা: এটি একটি বাধ্যবাধকতা</h2>
+            <p>চুক্তির অধীনে আপনার দায়িত্ব আরও কঠোর। আপনাকে অবশ্যই:</p>
+            <ul>
+              <li><strong>সহযোগিতা</strong> করতে হবে এবং আপনার কাছে থাকা কাগজপত্র জমা দিতে হবে;</li>
+              <li>সাক্ষাৎকারে ও অ্যাপয়েন্টমেন্টে <strong>উপস্থিত</strong> হতে হবে;</li>
+              <li>ঠিকানা, ফোন বা ইমেলের যেকোনো পরিবর্তন <strong>সাথে সাথেই জানাতে</strong> হবে;</li>
+              <li><strong>ইতালিতেই থাকতে</strong> হবে এবং অন্য কোনো ইউরোপীয় দেশে চলে যাওয়া যাবে না।</li>
+            </ul>
+            <div class="alert alert-danger" style="margin: 1rem 0 0;">
+              <span class="alert-icon">{% render "components/icon.liquid", name: "attenzione", size: 26 %}</span>
+              <div><strong>আপনি যদি এগুলো না করেন</strong>, কমিশন আপনার আবেদনকে <strong>প্রত্যাহার করা হয়েছে</strong> বলে গণ্য করতে পারে (পরোক্ষ প্রত্যাহার, ritiro implicito) এবং প্রক্রিয়াটি বন্ধ করে দিতে পারে। এই সিদ্ধান্তের বিরুদ্ধে আপিল করতে হবে মাত্র <strong>7 দিনের</strong> মধ্যে।</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">8</span>
+          <div>
+            <h2>সিদ্ধান্ত</h2>
+            <p>সিদ্ধান্তটি আপনার কাছে পৌঁছায় <strong>আশ্রয় কেন্দ্রে (centro di accoglienza)</strong> অথবা আপনার জানানো সর্বশেষ <strong>ঠিকানায়</strong>। সম্ভাব্য উত্তরগুলো নিচে <a href="#esiti">"আপনি কী কী উত্তর পেতে পারেন"</a> অংশে ব্যাখ্যা করা আছে।</p>
+          </div>
+        </div>
+
+        <div class="card pi-card pi-step">
+          <span class="pi-num">9</span>
+          <div>
+            <h2>উত্তর নেতিবাচক হলে আপিল</h2>
+            <p>আপনি একজন <strong>আইনজীবীর</strong> মাধ্যমে <strong>আদালতে আপিল (ricorso)</strong> করতে পারেন। চুক্তির অধীনে সময় <strong>আরও কম</strong>: যেদিন সিদ্ধান্ত পাবেন সেদিনই আইনজীবীর সাথে যোগাযোগ করুন।</p>
+            <table class="pi-table">
+              <thead><tr><th>ক্ষেত্র</th><th>আপিলের সময়</th><th>আপনি কি ইতালিতে থাকতে পারবেন?</th></tr></thead>
+              <tbody>
+                <tr><td data-label="ক্ষেত্র">সাধারণ প্রক্রিয়া</td><td data-label="সময়">30 দিন</td><td data-label="থাকা">হ্যাঁ, স্বয়ংক্রিয়ভাবে</td></tr>
+                <tr><td data-label="ক্ষেত্র">দ্রুততর প্রক্রিয়া, অগ্রহণযোগ্য (inammissibile) বা প্রত্যাহার করা আবেদন</td><td data-label="সময়">7 দিন</td><td data-label="থাকা">স্বয়ংক্রিয়ভাবে নয়</td></tr>
+                <tr><td data-label="ক্ষেত্র">সীমান্ত প্রক্রিয়া</td><td data-label="সময়">5 দিন</td><td data-label="থাকা">স্বয়ংক্রিয়ভাবে নয় (অভিভাবকহীন নাবালকদের জন্য হ্যাঁ)</td></tr>
+              </tbody>
+            </table>
+            <p>যখন আপিল আপনাকে স্বয়ংক্রিয়ভাবে সুরক্ষা দেয় না, তখন আইনজীবীকে <strong>আপিলের সাথেই</strong> বিচারকের কাছে ইতালিতে <strong>থাকার অনুমতি (autorizzazione a rimanere)</strong> চাইতে হবে। বিচারক প্রায় 10 দিনের মধ্যে সিদ্ধান্ত নেন এবং সিদ্ধান্ত নেওয়ার সময় সাধারণত আপনাকে সরিয়ে দেওয়া যায় না।</p>
+          </div>
+        </div>
+
+        <p style="text-align: center;">
+          <a href="https://www.sospatto.it" target="_blank" rel="noopener" class="btn btn-outline">SOS Patto-তে চুক্তির নিয়ম সম্পর্কে আরও জানুন (ইতালীয় ভাষায়)</a>
+        </p>
       </div>
 
-      <!-- SITUAZIONI PARTICOLARI -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--lighthouse-red);">
-        <h2>❤️ বিশেষ পরিস্থিতি</h2>
-        <p>আপনি যদি:</p>
+      <!-- ===================== PER TUTTI ===================== -->
+      <h2 class="text-center" style="margin: 3.5rem 0 1.5rem;">সব ক্ষেত্রে যা জানা দরকার</h2>
+
+      <div class="card pi-card" id="esiti">
+        <h2>আপনি কী কী উত্তর পেতে পারেন</h2>
+        <p>এগুলো পুরনো নিয়ম ও চুক্তি, দুই ক্ষেত্রেই প্রযোজ্য। কমিশন আপনাকে দিতে পারে:</p>
         <ul>
-          <li>অপ্রাপ্তবয়স্ক 👶</li>
-          <li>মহিলা 👩🏽</li>
-          <li>প্রতিবন্ধী ♿</li>
-          <li>মানসিক স্বাস্থ্য সমস্যায় ভুগছেন 🧠</li>
-          <li>সহিংসতা, পাচার বা যৌনাঙ্গ বিকৃতির শিকার 🚫</li>
+          <li><a href="permesso-asilo-status-rifugiato.html"><strong>শরণার্থী মর্যাদা (status di rifugiato)</strong></a>, যাকে "রাজনৈতিক আশ্রয়" বলা হয়: <strong>5 বছরের</strong> অনুমতি;</li>
+          <li><a href="permesso-protezione-sussidiaria.html"><strong>সহায়ক সুরক্ষা (protezione sussidiaria)</strong></a>: <strong>5 বছরের</strong> অনুমতি;</li>
+          <li><a href="permesso-protezione-speciale.html"><strong>বিশেষ সুরক্ষা (protezione speciale)</strong></a>: <strong>2 বছরের</strong> অনুমতি, নবায়নযোগ্য, যা দিয়ে আপনি কাজ করতে পারেন;</li>
+          <li><a href="permesso-cure-mediche-per-persona-gravemente-malata-che-si-trova-gia-in-italia.html"><strong>চিকিৎসার জন্য অনুমতি (permesso per cure mediche)</strong></a>, যদি আপনি গুরুতর অসুস্থ হন।</li>
         </ul>
-        <p>… তাহলে আপনার আবেদন <strong>বিশেষ মনোযোগের সাথে মূল্যায়ন করা হবে</strong>, এমনকি আপনি "নিরাপদ" দেশ থেকে এলেও।</p>
+        <p>কমিশন যদি মনে করে যে আপনি এই সুরক্ষাগুলোর কোনোটিরই যোগ্য নন, তাহলে উত্তর হবে <strong>নেতিবাচক</strong>: আপনার অংশে উল্লেখিত সময়ের মধ্যে আপনি আপিল করতে পারেন।</p>
       </div>
 
-      <!-- DUBLINO -->
-      <div class="card" style="margin-bottom: 2rem;">
-        <h2>🌍 অন্য দেশে আশ্রয় আবেদন করে থাকলে (ডাবলিন বিধি - Regolamento Dublino)</h2>
-        <p>আপনি যদি <strong>ইতোমধ্যে অন্য একটি ইউরোপীয় দেশে আশ্রয় আবেদন করে থাকেন</strong>, অথবা সেখানে <strong>আঙুলের ছাপ দিয়ে থাকেন</strong>, তাহলে সম্ভব যে আপনার আবেদন পরীক্ষার জন্য <strong>ইতালি দায়ী নয়</strong>।</p>
-        <p>এই ক্ষেত্রে, আপনার আবেদন <strong>সেই অন্য দেশে স্থানান্তরিত</strong> হতে পারে।</p>
-        <p>👉 <strong>কী করবেন:</strong> আপনি যদি এই পরিস্থিতিতে থাকেন, তাহলে <strong>অবিলম্বে একজন আইনজীবী বা আশ্রয় আইনে বিশেষজ্ঞ কর্মীর কাছে সাহায্য চান</strong>।</p>
+      <div class="card pi-card" id="paesi-sicuri" style="background-color: var(--state-warning-tint);">
+        <h2>"নিরাপদ" বলে বিবেচিত দেশসমূহ</h2>
+        <p>আপনি যদি এমন একটি দেশ থেকে আসেন যাকে ইতালি <strong>নিরাপদ</strong> মনে করে, তাহলে আপনার আবেদন <strong>আরও দ্রুত</strong> পরীক্ষা করা হয় এবং আপিলের জন্য আপনি কম সময় পান। বর্তমানে ইতালির তালিকায় আছে:</p>
+        <ul class="pi-countries">
+          <li>আলবেনিয়া</li><li>আলজেরিয়া</li><li>বাংলাদেশ</li><li>বসনিয়া-হার্জেগোভিনা</li><li>কেপ ভার্দে</li>
+          <li>আইভরি কোস্ট</li><li>মিশর</li><li>গাম্বিয়া</li><li>জর্জিয়া</li><li>ঘানা</li>
+          <li>কসোভো</li><li>উত্তর ম্যাসিডোনিয়া</li><li>মরক্কো</li><li>মন্টিনিগ্রো</li><li>পেরু</li>
+          <li>সেনেগাল</li><li>সার্বিয়া</li><li>শ্রীলঙ্কা</li><li>তিউনিসিয়া</li>
+        </ul>
+        <p>চুক্তির অধীনে (12 জুন 2026 থেকে আবেদন) একটি <strong>ইউরোপীয় ইউনিয়নের তালিকাও</strong> আছে, যা সব EU দেশে প্রযোজ্য:</p>
+        <ul class="pi-countries">
+          <li>বাংলাদেশ</li><li>কলম্বিয়া</li><li>মিশর</li><li>ভারত</li><li>কসোভো</li><li>মরক্কো</li><li>তিউনিসিয়া</li>
+        </ul>
+        <p><strong>ইউরোপীয় ইউনিয়নে যোগদানের প্রার্থী দেশগুলোকেও</strong> (যেমন আলবেনিয়া, সার্বিয়া, তুরস্ক, জর্জিয়া) নিরাপদ বলে ধরা হয়, তবে ব্যতিক্রম আছে: যেমন, যদি সেই দেশে যুদ্ধ চলে।</p>
+        <p>এছাড়াও, যে দেশের মানুষের আবেদন ইউরোপে <strong>20% বা তার কম</strong> গৃহীত হয়, সেই দেশ থেকে আসা ব্যক্তিরাও দ্রুততর প্রক্রিয়ায় যান।</p>
+        <p>"নিরাপদ" দেশ থেকে আসার <strong>মানে এই নয়</strong> যে আবেদন প্রত্যাখ্যাত হবে। যদি আপনার ব্যক্তিগত পরিস্থিতিতে <strong>গুরুতর ও নির্দিষ্ট</strong> বিপদ থাকে, তাহলে শুরু থেকেই তা ভালোভাবে ব্যাখ্যা করতে হবে।</p>
       </div>
 
-      <!-- ACCOGLIENZA -->
-      <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-teal);">
-        <h2>🏡 আশ্রয় আবেদনকারীদের আশ্রয়ের অধিকার</h2>
-        <p>ইতালিতে, যারা আশ্রয় আবেদন করেন এবং <strong>নিজেদের ভরণপোষণের জন্য যথেষ্ট অর্থ নেই</strong>, তাদের একটি <strong>আশ্রয় কেন্দ্রে (centro di accoglienza)</strong> জায়গা পাওয়ার অধিকার আছে।</p>
-        <p>⏱ <strong>আশ্রয়ের অধিকার বৈধ থাকে:</strong></p>
+      <div class="card pi-card">
+        <h2>বিশেষ পরিস্থিতি</h2>
+        <p>আপনি যদি হন:</p>
         <ul>
-          <li>যখন থেকে ব্যক্তি <strong>আশ্রয় চাইতে চান বলে জানান</strong>,</li>
-          <li><strong>প্রক্রিয়া শেষ হওয়া পর্যন্ত</strong>, অর্থাৎ যখন আবেদন <strong>গৃহীত</strong>, <strong>চূড়ান্তভাবে প্রত্যাখ্যাত</strong>, অথবা <strong>প্রত্যাহার</strong> করা হয়।</li>
+          <li>নাবালক, বিশেষ করে যদি আপনি বাবা-মা ছাড়া ইতালিতে থাকেন;</li>
+          <li>একা থাকা বা গর্ভবতী নারী;</li>
+          <li>প্রতিবন্ধী বা গুরুতর অসুস্থ ব্যক্তি;</li>
+          <li>মানসিক স্বাস্থ্য সমস্যায় ভোগা ব্যক্তি;</li>
+          <li>সহিংসতা, নির্যাতন, মানব পাচার বা নারী যৌনাঙ্গচ্ছেদের (FGM) শিকার;</li>
         </ul>
-        <p>⚠️ অন্যান্য ক্ষেত্রেও আশ্রয় বাতিল হতে পারে, যেমন যদি <strong>কেন্দ্র ছেড়ে চলে যান</strong>, অথবা ব্যক্তিকে <strong>আর সম্পদহীন বলে বিবেচনা করা না হয়</strong>।</p>
+        <p>… তাহলে আপনার <strong>বিশেষ নিশ্চয়তা</strong> এবং উপযুক্ত আশ্রয় কেন্দ্রে থাকার অধিকার আছে, এমনকি আপনি "নিরাপদ" দেশ থেকে এলেও। যত তাড়াতাড়ি সম্ভব জানিয়ে দিন: Questura-কে, কেন্দ্রে, কমিশনকে।</p>
+        <p><strong>অভিভাবকহীন নাবালকদের</strong> একজন <strong>অভিভাবক (tutore)</strong> পাওয়ার অধিকার আছে এবং তাদের সীমান্ত থেকে ফেরত পাঠানো যায় না।</p>
+      </div>
+
+      <div class="card pi-card">
+        <h2>আপনি যদি অন্য কোনো ইউরোপীয় দেশে আশ্রয় চেয়ে থাকেন (ডাবলিন)</h2>
+        <p>আপনি যদি <strong>আগেই অন্য কোনো ইউরোপীয় দেশে আশ্রয় চেয়ে থাকেন</strong>, অথবা সেখানে আপনার <strong>আঙুলের ছাপ</strong> নেওয়া হয়ে থাকে, তাহলে হতে পারে যে আপনার আবেদন পরীক্ষা করার দায়িত্ব <strong>ইতালির নয়</strong>। এই ক্ষেত্রে আপনাকে সেই দেশে <strong>স্থানান্তর</strong> করা হতে পারে।</p>
+        <p>30 জুন 2026 পর্যন্ত নিবন্ধিত আবেদনের জন্য পুরনো <strong>ডাবলিন বিধি (Regolamento Dublino)</strong> প্রযোজ্য; 1 জুলাই 2026 থেকে নিবন্ধিত আবেদনের জন্য চুক্তির নতুন নিয়ম প্রযোজ্য।</p>
+        <p><strong>কী করবেন:</strong> সাথে সাথেই একজন আইনজীবী বা অভিজ্ঞ কর্মীর কাছে সাহায্য চান।</p>
+      </div>
+
+      <div class="card pi-card" id="accoglienza">
+        <h2>আশ্রয় কেন্দ্রে থাকার অধিকার</h2>
+        <p>আপনি যদি আশ্রয় চান এবং <strong>নিজের ভরণপোষণের জন্য যথেষ্ট টাকা না থাকে</strong>, তাহলে আপনার একটি <strong>আশ্রয় কেন্দ্রে (centro di accoglienza)</strong> জায়গা পাওয়ার অধিকার আছে।</p>
+        <ul>
+          <li>এটি শুরু হয় যখন আপনি <strong>বলেন যে আপনি আশ্রয় চাইতে চান</strong>।</li>
+          <li>এটি কমিশনের পুরো প্রক্রিয়া জুড়ে, আপিলের সময়সীমা শেষ হওয়া পর্যন্ত চলে, এবং যদি আপিল আপনাকে থাকার সুযোগ দেয়, তাহলে আপিল চলাকালীনও চলে।</li>
+        </ul>
+        <p>আপনি যদি কেন্দ্র ছেড়ে চলে যান, সাক্ষাৎকারে না যান বা আপনার যথেষ্ট টাকা থাকে, তাহলে আপনি <strong>আশ্রয় কেন্দ্রে থাকার অধিকার হারাতে</strong> পারেন।</p>
+        <p>চুক্তির অধীনে কর্তৃপক্ষ আপনাকে <strong>একটি নির্দিষ্ট জায়গায় থাকতে</strong> বাধ্যও করতে পারে (সীমান্ত প্রক্রিয়ায় সবসময়)। আপনি অন্য কোথাও চলে গেলে আশ্রয় কেন্দ্রে থাকার অধিকার হারাতে পারেন।</p>
       </div>
 
       <div class="alert alert-info">
-        <span class="alert-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+        <span class="alert-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
         <div>
-          <strong>আপনার গল্প অনন্য।</strong> এটি আপনার বন্ধু বা আত্মীয়দের মতো নয়। আইন প্রায়ই পরিবর্তন হয়, তাই সবসময় হালনাগাদ আইনি সহায়তা নিন।
-          <a href="/bn/aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
+          <strong>আপনার গল্প অনন্য।</strong> এটি আপনার বন্ধু বা আত্মীয়দের গল্পের মতো নয়, আর এই নিয়মগুলো নতুন: আদালতও এখনও এগুলোর ব্যাখ্যা করছে। আপনার আয় যদি <strong>বছরে 13,600 ইউরোর</strong> কম হয়, তাহলে আপনি <strong>বিনামূল্যে</strong> একজন আইনজীবী পেতে পারেন (সরকারি খরচে আইনি সহায়তা, gratuito patrocinio)।
+          <a href="aiuto-legale.html" class="btn btn-primary btn-sm" style="margin-left: 0; margin-top: 0.5rem;">
             বিনামূল্যে আইনি সহায়তা খুঁজুন
           </a>
         </div>
@@ -173,20 +401,93 @@ lang: bn
 
   <section class="section bg-off-white">
     <div class="container">
-      <h2 class="text-center mb-lg">আপনার আরও আগ্রহ থাকতে পারে</h2>
+      <h2 class="text-center mb-lg">এগুলোও আপনার কাজে লাগতে পারে</h2>
       <div class="grid grid-3">
-        <a href="/bn/permesso-richiesta-asilo.html" class="card card-link card-compact">
+        <a href="permesso-richiesta-asilo.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "documenti", size: 36 %}</span>
           <h3 class="card-title">আশ্রয় আবেদনের অনুমতি</h3>
         </a>
-        <a href="/bn/permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
+        <a href="permesso-asilo-status-rifugiato.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "protezione", size: 36 %}</span>
           <h3 class="card-title">শরণার্থী মর্যাদা</h3>
         </a>
-        <a href="/bn/permesso-protezione-sussidiaria.html" class="card card-link card-compact">
+        <a href="permesso-protezione-sussidiaria.html" class="card card-link card-compact">
           <span class="card-icon">{% render "components/icon.liquid", name: "info", size: 36 %}</span>
           <h3 class="card-title">সহায়ক সুরক্ষা</h3>
         </a>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="text-center mb-lg">আরও দেখুন: সুরক্ষার জন্য অন্যান্য অনুমতি</h2>
+      <div class="card">
+        <ul style="line-height: 1.85; margin: 0; padding-left: 1.25rem;">
+          <li><a href="permesso-protezione-sociale-vittime-di-tratta.html">মানব পাচারের শিকারদের জন্য অনুমতি</a></li>
+          <li><a href="permesso-protezione-sociale-vittime-di-violenza-domestica.html">পারিবারিক সহিংসতার শিকারদের জন্য অনুমতি</a></li>
+          <li><a href="permesso-sfruttamento-lavorativo.html">শ্রম শোষণের শিকারদের জন্য অনুমতি</a></li>
+          <li><a href="permesso-minore-eta-per-msna.html">অভিভাবকহীন নাবালকদের জন্য অনুমতি (MSNA)</a></li>
+          <li><a href="permesso-integrazione-prosieguo-amministrativo.html">সংহতির জন্য অনুমতি – প্রশাসনিক ধারাবাহিকতা (prosieguo amministrativo)</a></li>
+          <li><a href="permesso-calamita-naturale.html">প্রাকৃতিক দুর্যোগের জন্য অনুমতি</a></li>
+          <li><a href="permesso-famigliari-di-persone-con-status-di-rifugiato-o-protezione-sussidiaria.html">শরণার্থী ও সহায়ক সুরক্ষাপ্রাপ্তদের পরিবারের সদস্যদের জন্য অনুমতি</a></li>
+          <li><a href="permesso-apolidia.html">রাষ্ট্রহীনতার জন্য অনুমতি</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // Due schede (pre-Patto / Patto). Senza JS restano entrambe visibili una sotto l'altra.
+  (function () {
+    var tablist = document.querySelector('.pi-tabs');
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle('active', on);
+        panels[i].hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+
+    document.body.classList.add('js-tabs');
+    tablist.hidden = false;
+    var start = location.hash.slice(1) === 'pre-patto' ? 'pre-patto' : 'patto';
+    select(start);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+      });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        if (document.dir === 'rtl') d = -d;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next.getAttribute('aria-controls'), true);
+      });
+    });
+
+    document.querySelectorAll('.pi-choice').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-tab');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        tablist.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (h === 'pre-patto' || h === 'patto') select(h);
+    });
+  })();
+</script>
