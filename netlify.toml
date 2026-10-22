@@ -56,46 +56,18 @@
   force = true
 
 # ── OLD /src/pages/ URL STRUCTURE ──
-# Before flat output, pages lived at /src/pages/*.html
-[[redirects]]
-  from = "/src/pages/permesso-*.html"
-  to = "/permesso-:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/src/pages/documenti-*.html"
-  to = "/documenti-:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/src/pages/*.html"
-  to = "/:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/en/src/pages/permesso-*.html"
-  to = "/en/permesso-:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/en/src/pages/documenti-*.html"
-  to = "/en/documenti-:splat.html"
-  status = 301
-
-[[redirects]]
-  from = "/en/src/pages/*.html"
-  to = "/en/:splat.html"
-  status = 301
-
-# Also handle without .html extension
+# Before flat output, pages lived at /src/pages/*.html. Netlify only supports a
+# splat at the END of `from`, so "/src/pages/*.html" never matched and
+# "/src/pages/*" -> "/:splat.html" produced ".html.html". Keep the splat as is:
+# it already carries the extension (or none — pretty URLs resolve both).
 [[redirects]]
   from = "/src/pages/*"
-  to = "/:splat.html"
+  to = "/:splat"
   status = 301
 
 [[redirects]]
   from = "/en/src/pages/*"
-  to = "/en/:splat.html"
+  to = "/en/:splat"
   status = 301
 
 # ── NOTION PAGE ID URLS ──
@@ -156,38 +128,180 @@
   to = "/documenti-protezione-speciale-rinnovo.html"
   status = 301
 
-# ── OLD DOCUMENT PAGE SLUG REDIRECTS ──
-# Old slugs used different naming (e.g. "a-seguito-di" vs "dopo", "art-27" suffixes)
-# These are catch-alls for old doc URLs that don't match current filenames.
-# Without force=true, Netlify serves existing files first, so new doc pages work fine.
+# ── OLD DOCUMENT PAGE SLUGS ──
+# The old "/documenti-*-primo.html" catch-alls never fired (Netlify has no
+# mid-path splat): removed document pages answer 404, which is what Google expects.
+
+# ── DOUBLED LANGUAGE PREFIX ──
+# Some translated permit texts carry links already prefixed ("en/permesso-…"),
+# which resolve to /en/en/… from inside /en/.
 [[redirects]]
-  from = "/documenti-*-primo.html"
-  to = "/database.html"
+  from = "/en/en/*"
+  to = "/en/:splat"
   status = 301
 
 [[redirects]]
-  from = "/documenti-*-rinnovo.html"
-  to = "/database.html"
+  from = "/fr/fr/*"
+  to = "/fr/:splat"
   status = 301
 
 [[redirects]]
-  from = "/en/documenti-*-primo.html"
-  to = "/en/database.html"
+  from = "/es/es/*"
+  to = "/es/:splat"
   status = 301
 
 [[redirects]]
-  from = "/en/documenti-*-rinnovo.html"
-  to = "/en/database.html"
+  from = "/tr/tr/*"
+  to = "/tr/:splat"
   status = 301
 
 [[redirects]]
-  from = "/fr/documenti-*-primo.html"
-  to = "/fr/database.html"
+  from = "/bn/bn/*"
+  to = "/bn/:splat"
   status = 301
 
 [[redirects]]
-  from = "/fr/documenti-*-rinnovo.html"
-  to = "/fr/database.html"
+  from = "/ru/ru/*"
+  to = "/ru/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/ar/ar/*"
+  to = "/ar/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/ur/ur/*"
+  to = "/ur/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/fa/fa/*"
+  to = "/fa/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/zh/zh/*"
+  to = "/zh/:splat"
+  status = 301
+
+# ── DOCUMENTI IN QUESTURA: only the Italian page exists ──
+[[redirects]]
+  from = "/en/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/fr/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/es/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/tr/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/bn/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/ru/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/ar/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/ur/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/fa/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+[[redirects]]
+  from = "/zh/documenti-questura.html"
+  to = "/documenti-questura.html"
+  status = 302
+
+# ── PATTO UE READER PAGES (removed; texts now in /normativa.html) ──
+[[redirects]]
+  from = "/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/fr/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/es/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/tr/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/bn/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/ru/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/ar/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/ur/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/fa/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+[[redirects]]
+  from = "/zh/patto-ue*"
+  to = "/normativa.html"
+  status = 301
+
+# Relative EUR-Lex links on the old Patto UE pages ("legal-content/IT/…") were
+# crawled as sospermesso.it URLs. The query string is passed through.
+[[redirects]]
+  from = "/legal-content/*"
+  to = "https://eur-lex.europa.eu/legal-content/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/circolari-db.html"
+  to = "/circolari.html"
   status = 301
 
 # ── GIURISPRUDENZA E CIRCOLARI (old banca-dati URL, superseded by /circolari.html) ──
