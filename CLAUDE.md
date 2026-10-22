@@ -443,13 +443,16 @@ the bundle must stay in one directory.
 - **Refreshing the texts:** run `node scripts/sync-testi-interattivi.js` (idempotent). It copies
   the content files from `../../SOSPATTO/public/patto-interattivo/` (override with
   `SOSPATTO_BUNDLE=…`), keeps the local `style.css`/`amend.css` (yellow/teal theme; SOS Patto's are
-  blue) and the bundle hub `index.html`, strips SOS Patto's SEO block, puts the SOS Permesso logo
+  blue) and the bundle hub `index.html`, strips SOS Patto's SEO block (keeping only the
+  canonical, see below), puts the SOS Permesso logo
   (`IMAGES/logo-header.png`, link to `/`) top-left in every reader's topbar, points the panel's
   "⌂" link to `/`, maintains the `sospermesso:brand` CSS block and the `?v=` cache-buster. New
   texts → add them to `_data/normativa.js`; update `verificaData` there.
-- The texts are duplicated between sospermesso.it and sospatto.it: `/normativa.html` and the
-  readers are self-canonical here. If the two sites should consolidate, canonicalize to
-  sospatto.it instead.
+- The texts are duplicated between sospermesso.it and sospatto.it, so every reader here has
+  `<link rel="canonical">` to the same page on **sospatto.it** (`…/x/index.html` → `…/x/`):
+  Google indexes SOS Patto's copy (Search Console had flagged them as "duplicate without
+  user-selected canonical"). The sync script rebuilds it from the file path; the bundle hub
+  `index.html` and `audit.html` get none. `/normativa.html` stays self-canonical.
 
 ## Mobile Optimization
 

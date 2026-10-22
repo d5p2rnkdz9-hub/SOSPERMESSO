@@ -14,7 +14,10 @@
  *    SOS Permesso: gli style.css e amend.css già presenti (tema giallo/teal; su SOS Patto
  *    sono ritinti in blu) e la hub index.html alla radice (su SOS Patto è un redirect a
  *    /testi.html, che qui non esiste). Una cartella nuova prende lo style.css delle leggi.
- * 2. SEO: toglie il blocco «seo:begin … seo:end» (canonical e og:* puntano a sospatto.it).
+ * 2. SEO: toglie il blocco «seo:begin … seo:end» (og:* col marchio SOS Patto) e lascia
+ *    solo il canonical verso la stessa pagina su sospatto.it: i testi sono duplicati tra i
+ *    due siti e l'originale da indicizzare è quello di SOS Patto. Non per la hub index.html
+ *    (pagina di SOS Permesso) né per audit.html (che su SOS Patto non ha canonical).
  * 3. TOPBAR: il link «⌂ …» in alto a sinistra diventa il logo di SOS Permesso verso la home.
  * 4. PANNELLO a comparsa: il link in fondo diventa «⌂ SOS Permesso» verso la home.
  * 5. CSS: blocco marcato «sospermesso:brand» in ogni style.css (logo, font, sticky).
@@ -78,6 +81,14 @@ function copyBundle() {
 
 // --- 2–4. pagine -----------------------------------------------------------
 const SEO_RE = /<!-- seo:begin -->[\s\S]*?<!-- seo:end -->\n?/;
+const CANONICAL_RE = /<link rel="canonical" href="[^"]*">\n?/;
+const NO_CANONICAL = new Set(['index.html', 'audit.html']);
+
+// URL della stessa pagina su sospatto.it («cartella/index.html» → «cartella/»)
+function sospattoUrl(file) {
+  const rel = path.relative(BUNDLE, file).split(path.sep).join('/');
+  return 'https://www.sospatto.it/patto-interattivo/' + rel.replace(/(^|\/)index\.html$/, '$1');
+}
 const HOME_RE = /<a class="home" href="[^"]*"[^>]*>(?:&#8962; [^<]*|<img class="topbar-logo"[^>]*>)<\/a>/;
 const NEW_HOME = '<a class="home" href="/" aria-label="SOS Permesso — torna alla home">'
   + '<img class="topbar-logo" src="/IMAGES/logo-header.png" alt="SOS Permesso" width="317" height="160">'
@@ -87,7 +98,10 @@ const NEW_PANEL = '<a class="panel-home" href="/">&#8962; SOS Permesso</a>';
 
 function patchPage(file) {
   const text = fs.readFileSync(file, 'utf8');
-  let out = text.replace(SEO_RE, '');
+  let out = text.replace(SEO_RE, '').replace(CANONICAL_RE, '');
+  if (!NO_CANONICAL.has(path.relative(BUNDLE, file))) {
+    out = out.replace(/(<\/title>\n?)/, `$1<link rel="canonical" href="${sospattoUrl(file)}">\n`);
+  }
   const hasTopbar = HOME_RE.test(out);
   out = out.replace(HOME_RE, NEW_HOME).replace(PANEL_RE, NEW_PANEL);
   if (out !== text) fs.writeFileSync(file, out);
@@ -170,7 +184,7 @@ for (const p of [...pages, path.join(BUNDLE, 'index.html')]) {
   if (out !== text) { fs.writeFileSync(p, out); bumped++; }
 }
 
-console.log(`pagine:   ${changedPages}/${pages.length} adattate (SEO SOS Patto tolta, logo, pannello)`);
+console.log(`pagine:   ${changedPages}/${pages.length} adattate (SEO SOS Patto tolta salvo il canonical, logo, pannello)`);
 console.log(`CSS:      ${changedCss}/${cssFiles.length} style.css aggiornati; cache-buster: ${bumped} pagine`);
 const unexpected = noTopbar.filter((r) => r !== 'audit.html');
 if (unexpected.length) {
