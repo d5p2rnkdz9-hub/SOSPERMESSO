@@ -5,7 +5,7 @@ lang: it
 description: "Significato dei termini burocratici dell'immigrazione: permesso di soggiorno, Questura, kit postale, ricevuta, conversione e altri termini spiegati in modo semplice."
 extraStyles: |
   <style>
-  
+
       .dictionary-term {
         margin-bottom: 1.5rem;
         padding-bottom: 1.5rem;
@@ -33,6 +33,8 @@ extraStyles: |
         margin-bottom: 0.5rem;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 0.5rem;
       }
       .dictionary-term h3 .anchor-link {
@@ -49,9 +51,42 @@ extraStyles: |
         opacity: 1;
         color: var(--sp-ink);
       }
+      /* Pulsante "Copia link" (aggiunto dallo script: senza JS resta il "#") */
+      .dictionary-term h3 .term-share {
+        opacity: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        min-height: 36px;
+        padding: 0.3rem 0.75rem;
+        font-family: var(--font-heading);
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--sp-ink);
+        background: var(--sp-white);
+        border: 2px solid var(--sp-ink);
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+      .dictionary-term h3 .term-share:hover,
+      .dictionary-term h3 .term-share:focus-visible {
+        background: var(--sp-yellow);
+        color: var(--sp-ink);
+      }
+      .dictionary-term h3 .term-share.is-copied {
+        background: var(--state-success-tint, #DCF5E3);
+      }
+      .dictionary-term h3 .term-share svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+      }
       .dictionary-term p {
         margin: 0;
         color: var(--gray-dark);
+      }
+      .dictionary-term p + p {
+        margin-top: 0.6rem;
       }
       .dictionary-letter {
         font-size: 1.5rem;
@@ -62,7 +97,118 @@ extraStyles: |
         border-bottom: 3px solid var(--taxi-yellow);
         scroll-margin-top: 200px; /* Must match header height (~190px) */
       }
-    
+      .dictionary-letter:first-child {
+        margin-top: 0;
+      }
+
+      /* Ricerca + indice delle lettere */
+      .dict-tools {
+        margin-bottom: 1.5rem;
+      }
+      .dict-search-label {
+        display: block;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+      }
+      .dict-search-wrap {
+        position: relative;
+      }
+      .dict-search-wrap svg {
+        position: absolute;
+        left: 0.85rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+      .dict-search {
+        width: 100%;
+        min-height: 48px;
+        padding: 0.65rem 0.9rem 0.65rem 2.7rem;
+        border: 2.5px solid var(--sp-ink);
+        border-radius: var(--radius-md, 10px);
+        background: var(--sp-white);
+        font: inherit;
+        font-size: 17px; /* >=16px: evita lo zoom su iOS */
+        box-shadow: var(--sticker-sm);
+      }
+      .dict-search:focus {
+        outline: none;
+        box-shadow: var(--focus-ring);
+      }
+      .dict-count {
+        margin: 0.5rem 0 0;
+        font-size: 0.9rem;
+        color: var(--sp-muted);
+        min-height: 1.3em;
+      }
+      .dict-letters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.9rem;
+        padding: 0;
+        list-style: none;
+      }
+      .dict-letters li::before {
+        content: none;
+        display: none;
+      }
+      .dict-letters li {
+        margin: 0;
+        padding: 0;
+      }
+      #dict-letters a,
+      #dict-list .dictionary-term h3 .term-share {
+        color: var(--sp-ink);
+        text-decoration: none;
+      }
+      .dict-letters a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        min-height: 40px;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        color: var(--sp-ink);
+        text-decoration: none;
+        border: 2px solid var(--sp-ink);
+        border-radius: 8px;
+        background: var(--sp-white);
+      }
+      .dict-letters a:hover,
+      .dict-letters a:focus-visible {
+        background: var(--sp-yellow);
+      }
+      .dict-letters a.is-disabled {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+      .dict-empty {
+        padding: 1rem 0;
+      }
+      .dict-toast {
+        position: fixed;
+        left: 50%;
+        bottom: 1.5rem;
+        transform: translateX(-50%);
+        z-index: 1000;
+        padding: 0.7rem 1.1rem;
+        background: var(--sp-ink);
+        color: var(--sp-white);
+        border-radius: 999px;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-size: 0.9rem;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        pointer-events: none;
+      }
+      .dict-toast.is-visible {
+        opacity: 1;
+      }
+
   </style>
 ---
 
@@ -78,34 +224,52 @@ extraStyles: |
 
   <section class="section">
     <div class="container" style="max-width: 900px;">
-      <div class="card">
+
+      <div class="card dict-tools" role="search">
+        <label class="dict-search-label" for="dict-search">Cerca una parola</label>
+        <div class="dict-search-wrap">
+          {% render "components/icon.liquid", name: "cerca", size: 20 %}
+          <input type="search" id="dict-search" class="dict-search" placeholder="Es. Questura, ricevuta, ospitalità…" autocomplete="off" aria-describedby="dict-count">
+        </div>
+        <p class="dict-count" id="dict-count" aria-live="polite"></p>
+        <nav aria-label="Vai alla lettera">
+          <ul class="dict-letters" id="dict-letters"></ul>
+        </nav>
+      </div>
+
+      <div class="card" id="dict-list">
 
         <!-- A -->
         <div class="dictionary-letter" id="lettera-a">A</div>
 
         <div class="dictionary-term" id="accoglienza">
           <h3>Accoglienza <a href="#accoglienza" class="anchor-link">#</a></h3>
-          <p>Sistema di centri che ospitano persone che hanno fatto domanda di protezione internazionale.</p>
+          <p>Sistema di centri che ospitano persone che hanno fatto domanda di protezione internazionale. Nei centri si riceve un posto letto, il cibo e alcuni servizi (per esempio corsi di italiano e aiuto legale). Vedi anche "CAS" e "SAI".</p>
+          <p><a href="protezione-internazionale.html#accoglienza">Come funziona l'accoglienza per chi chiede asilo</a></p>
         </div>
 
         <div class="dictionary-term" id="a-carico">
           <h3>A carico <a href="#a-carico" class="anchor-link">#</a></h3>
           <p>Persona che dipende economicamente da qualcun altro. Per esempio, un figlio che non lavora è "a carico" dei genitori perché loro pagano per il suo cibo, vestiti e altre spese.</p>
+          <p>Nel ricongiungimento familiare, per far venire in Italia i genitori o i figli maggiorenni bisogna di solito dimostrare che sono a carico (insieme ad altre condizioni). <a href="ricongiungimento-familiare.html">Leggi la guida al ricongiungimento</a>.</p>
         </div>
 
         <div class="dictionary-term" id="affidamento">
           <h3>Affidamento <a href="#affidamento" class="anchor-link">#</a></h3>
           <p>Quando un minore (bambino o ragazzo sotto i 18 anni) viene dato alle cure di una persona, una famiglia o un'istituzione che non sono i suoi genitori naturali.</p>
+          <p>Il minore straniero affidato a un parente può avere un permesso di soggiorno per motivi familiari. <a href="permesso-affidamento-a-familiari-entro-il-quarto-grado.html">Vedi il permesso per affidamento</a>.</p>
         </div>
 
         <div class="dictionary-term" id="asilo">
           <h3>Asilo <a href="#asilo" class="anchor-link">#</a></h3>
-          <p>Tipo di protezione internazionale per chi non può tornare nel nel proprio paese perché ci sarebbe un rischio di essere perseguitato (ad esempio essere ucciso, torturato, gravemente discriminato). Vedi anche "Rifugiato".</p>
+          <p>Tipo di protezione internazionale per chi non può tornare nel proprio paese perché ci sarebbe un rischio di essere perseguitato (ad esempio essere ucciso, torturato, gravemente discriminato). Vedi anche "Rifugiato".</p>
+          <p><a href="protezione-internazionale.html">Leggi la guida all'asilo</a> · <a href="permesso-asilo-status-rifugiato.html">Permesso per asilo</a></p>
         </div>
 
         <div class="dictionary-term" id="asl">
           <h3>ASL <a href="#asl" class="anchor-link">#</a></h3>
-          <p>Azienda Sanitaria Locale. Ufficio che gestisce i servizi medici e sanitari in una zona. Qui puoi iscriverti al Servizio Sanitario Nazionale e scegliere il medico di base.</p>
+          <p>Azienda Sanitaria Locale. Ufficio che gestisce i servizi medici e sanitari in una zona. Qui puoi iscriverti al Servizio Sanitario Nazionale e scegliere il medico di base. Vedi anche "Tessera sanitaria".</p>
+          <p>Anche chi non ha il permesso di soggiorno ha diritto alle cure urgenti ed essenziali: all'ASL può chiedere il tesserino STP (Straniero Temporaneamente Presente).</p>
         </div>
 
         <div class="dictionary-term" id="attestato-nominativo">
@@ -125,12 +289,16 @@ extraStyles: |
 
         <div class="dictionary-term" id="carichi-pendenti">
           <h3>Carichi pendenti <a href="#carichi-pendenti" class="anchor-link">#</a></h3>
-          <p>Certificato che dice se ci sono processi penali contro una persona, che non sono ancora finiti con una sentenza definitiva.</p>
+          <p>Certificato che dice se ci sono processi penali contro una persona, che non sono ancora finiti con una sentenza definitiva. Si chiede alla Procura della Repubblica. Vedi anche "Casellario giudiziale".</p>
         </div>
 
         <div class="dictionary-term" id="carta-di-soggiorno">
           <h3>Carta di soggiorno <a href="#carta-di-soggiorno" class="anchor-link">#</a></h3>
-          <p>Termine ambiguo che può indicare due permessi di soggiorno diversi: Permesso di soggiorno per soggiornanti di lungo periodo oppure Carta di soggiorno familiare cittadino UE.</p>
+          <p>Termine ambiguo che può indicare due permessi di soggiorno diversi:</p>
+          <ul style="margin: 0.4rem 0 0; color: var(--gray-dark);">
+            <li><a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html">Permesso UE per soggiornanti di lungo periodo</a> (il permesso a tempo indeterminato, per chi vive in Italia da almeno 5 anni)</li>
+            <li><a href="permesso-carta-di-soggiorno-per-familiari-di-cittadini-ue.html">Carta di soggiorno per familiari di cittadini UE</a></li>
+          </ul>
         </div>
 
         <div class="dictionary-term" id="cas">
@@ -140,27 +308,31 @@ extraStyles: |
 
         <div class="dictionary-term" id="casellario-giudiziale">
           <h3>Casellario giudiziale <a href="#casellario-giudiziale" class="anchor-link">#</a></h3>
-          <p>Registro che contiene informazioni su condanne penali di una persona. Si chiede alla Procura.</p>
+          <p>Registro che contiene informazioni su condanne penali di una persona. Il certificato si chiede all'ufficio del casellario della Procura della Repubblica. Vedi anche "Carichi pendenti".</p>
         </div>
 
         <div class="dictionary-term" id="cessione-di-fabbricato">
           <h3>Cessione di fabbricato <a href="#cessione-di-fabbricato" class="anchor-link">#</a></h3>
-          <p>Documento che fai quando affitti casa o una stanza a qualcuno dietro pagamento. Devi presentarlo alla Polizia locale entro 48 ore.</p>
+          <p>Documento che fai quando affitti casa o una stanza a qualcuno dietro pagamento. Devi presentarlo alla Polizia entro 48 ore. Se invece ospiti qualcuno gratis, serve la "Dichiarazione di ospitalità".</p>
+          <p><a href="kit-postale.html#cessione-fabbricato">Scarica il modulo di cessione di fabbricato</a></p>
         </div>
 
         <div class="dictionary-term" id="coesione-familiare">
           <h3>Coesione familiare <a href="#coesione-familiare" class="anchor-link">#</a></h3>
-          <p>Processo che permette a chi è già in Italia di ottenere un permesso di soggiorno per stare con un familiare che vive già legalmente in Italia.</p>
+          <p>Processo che permette a chi è già in Italia di ottenere un permesso di soggiorno per stare con un familiare che vive già legalmente in Italia. A differenza del ricongiungimento, non serve il nulla osta e non si deve tornare nel paese d'origine.</p>
+          <p><a href="permesso-famiglia-senza-nullaosta-per-ricongiungimento-coesione-familiare.html">Vedi il permesso per coesione familiare</a></p>
         </div>
 
         <div class="dictionary-term" id="codice-fiscale">
           <h3>Codice Fiscale <a href="#codice-fiscale" class="anchor-link">#</a></h3>
           <p>Codice personale, unico per ogni persona, che serve per essere riconosciuti in Italia e per fare cose come lavorare, andare dal medico o firmare documenti ufficiali.</p>
+          <p>Si chiede gratis all'Agenzia delle Entrate. Spesso viene dato direttamente dalla Questura (per esempio a chi chiede asilo) o dallo Sportello Unico per l'Immigrazione.</p>
         </div>
 
         <div class="dictionary-term" id="commissione-territoriale">
           <h3>Commissione Territoriale <a href="#commissione-territoriale" class="anchor-link">#</a></h3>
-          <p>Organizzazione del Governo italiano che decide chi può avere lo status di rifugiato, la protezione sussidiaria, la protezione speciale o un permesso per cure mediche.</p>
+          <p>Organizzazione del Governo italiano che decide chi può avere lo status di rifugiato, la protezione sussidiaria, la protezione speciale o un permesso per cure mediche. Prima di decidere, la Commissione fa un colloquio con la persona che ha chiesto asilo (audizione).</p>
+          <p>Se la decisione è negativa si può fare ricorso al Tribunale, entro termini molto brevi. <a href="protezione-internazionale.html#esiti">Quali decisioni può prendere</a> · <a href="aiuto-legale.html">Trova un aiuto legale</a></p>
         </div>
 
         <div class="dictionary-term" id="coniuge">
@@ -171,6 +343,7 @@ extraStyles: |
         <div class="dictionary-term" id="conversione">
           <h3>Conversione <a href="#conversione" class="anchor-link">#</a></h3>
           <p>Cambiare un permesso di soggiorno in un altro (per esempio, da permesso di soggiorno per studio a permesso di soggiorno per lavoro), senza dover tornare nel paese d'origine.</p>
+          <p>Non tutti i permessi si possono convertire: lo trovi scritto nella pagina di ogni permesso. <a href="database.html">Vedi tutti i permessi</a></p>
         </div>
 
         <div class="dictionary-term" id="copia-conforme">
@@ -183,22 +356,26 @@ extraStyles: |
 
         <div class="dictionary-term" id="decreto-di-espulsione">
           <h3>Decreto di espulsione <a href="#decreto-di-espulsione" class="anchor-link">#</a></h3>
-          <p>Decisione della Prefettura che dice che devi andare via dall'Italia. Insieme all'espulsione può anche essere dato un Divieto di rimpatrio.</p>
+          <p>Decisione della Prefettura che dice che devi andare via dall'Italia. Insieme all'espulsione c'è anche un divieto di rientrare in Italia (e negli altri paesi Schengen) per alcuni anni.</p>
+          <p>Contro l'espulsione si può fare ricorso al Giudice di pace, di solito entro 30 giorni: rivolgiti subito a un avvocato. <a href="aiuto-legale.html">Trova un aiuto legale</a></p>
         </div>
 
         <div class="dictionary-term" id="dichiarazione-di-ospitalita">
           <h3>Dichiarazione di ospitalità <a href="#dichiarazione-di-ospitalita" class="anchor-link">#</a></h3>
-          <p>Documento firmato dalla persona dove dichiara che ti ospita gratuitamente nella sua casa in Italia. Va portato alla polizia entro 48 ore.</p>
+          <p>Documento firmato dalla persona che ti ospita gratuitamente nella sua casa in Italia. La fa chi ospita, non chi è ospitato: va portata alla Polizia (Commissariato o Questura) entro 48 ore dall'arrivo. Nei Comuni dove non c'è un ufficio di Polizia si porta al Comune.</p>
+          <p>Spesso viene usata anche per dimostrare dove abiti quando chiedi o rinnovi il permesso di soggiorno. Se invece paghi un affitto, serve la "Cessione di fabbricato".</p>
+          <p><a href="kit-postale.html#ospitalita">Scarica il modulo di dichiarazione di ospitalità</a></p>
         </div>
 
         <div class="dictionary-term" id="diniego">
           <h3>Diniego <a href="#diniego" class="anchor-link">#</a></h3>
           <p>Decisione negativa. Quando la tua richiesta viene rifiutata dalle autorità.</p>
+          <p>Contro un diniego quasi sempre si può fare ricorso, ma i termini sono brevi (a volte pochi giorni): leggi bene la data sul documento e chiedi subito aiuto. <a href="aiuto-legale.html">Trova un aiuto legale</a></p>
         </div>
 
         <div class="dictionary-term" id="domicilio">
           <h3>Domicilio <a href="#domicilio" class="anchor-link">#</a></h3>
-          <p>Indirizzo dove vivi, anche temporaneamente.</p>
+          <p>Indirizzo dove vivi, anche temporaneamente. Non è la stessa cosa della residenza: vedi "Residenza".</p>
         </div>
 
         <!-- E -->
@@ -223,6 +400,7 @@ extraStyles: |
         <div class="dictionary-term" id="idoneita-alloggiativa">
           <h3>Idoneità alloggiativa <a href="#idoneita-alloggiativa" class="anchor-link">#</a></h3>
           <p>Certificato che dimostra che una casa è adatta per essere abitata (ha abbastanza spazio, è sicura, ha i servizi necessari). Si deve chiedere al Comune dove la casa si trova.</p>
+          <p>Serve per esempio per il <a href="ricongiungimento-familiare.html">ricongiungimento familiare</a> e per il <a href="permesso-ue-per-soggiornanti-di-lungo-periodo-carta-di-soggiorno.html">permesso UE per soggiornanti di lungo periodo</a>.</p>
         </div>
 
         <!-- K -->
@@ -230,7 +408,8 @@ extraStyles: |
 
         <div class="dictionary-term" id="kit-postale">
           <h3>Kit postale <a href="#kit-postale" class="anchor-link">#</a></h3>
-          <p>Pacchetto di moduli che si prende all'ufficio postale per chiedere o rinnovare alcuni tipi di permesso di soggiorno.</p>
+          <p>Pacchetto di moduli che si prende gratis all'ufficio postale per chiedere o rinnovare alcuni tipi di permesso di soggiorno. Si consegna compilato agli sportelli "Amico" delle Poste, che ti danno la ricevuta.</p>
+          <p><a href="kit-postale.html">Come funziona il kit postale e quali moduli servono</a></p>
         </div>
 
         <!-- M -->
@@ -238,7 +417,7 @@ extraStyles: |
 
         <div class="dictionary-term" id="marca-da-bollo">
           <h3>Marca da bollo <a href="#marca-da-bollo" class="anchor-link">#</a></h3>
-          <p>Francobollo fiscale che si compra in tabaccheria e si attacca su documenti ufficiali come richieste alla Questura. Costa 16 euro (valore più comune) e serve a pagare una tassa allo Stato.</p>
+          <p>Francobollo fiscale che si compra in tabaccheria e si attacca su documenti ufficiali come richieste alla Questura. Costa 16 euro (valore più comune) e serve a pagare una tassa allo Stato. Nella pagina di ogni permesso trovi quante marche servono.</p>
         </div>
 
         <div class="dictionary-term" id="minore">
@@ -248,7 +427,8 @@ extraStyles: |
 
         <div class="dictionary-term" id="minore-straniero-non-accompagnato">
           <h3>Minore straniero non accompagnato <a href="#minore-straniero-non-accompagnato" class="anchor-link">#</a></h3>
-          <p>Persona sotto i 18 anni che si trova in Italia senza genitori o altri adulti legalmente responsabili per lei.</p>
+          <p>Persona sotto i 18 anni che si trova in Italia senza genitori o altri adulti legalmente responsabili per lei. Si usa spesso la sigla MSNA. Non può essere espulso e ha diritto a un permesso di soggiorno e a un tutore.</p>
+          <p><a href="permesso-minore-eta-per-msna.html">Vedi il permesso per minore età</a></p>
         </div>
 
         <!-- N -->
@@ -256,7 +436,8 @@ extraStyles: |
 
         <div class="dictionary-term" id="nulla-osta">
           <h3>Nulla osta <a href="#nulla-osta" class="anchor-link">#</a></h3>
-          <p>Permesso ufficiale necessario per fare qualcosa. Per esempio, il "nulla osta al ricongiungimento familiare" è il semaforo verde della Prefettura per far venire i tuoi familiari in Italia.</p>
+          <p>Permesso ufficiale necessario per fare qualcosa. Per esempio, il "nulla osta al ricongiungimento familiare" è il semaforo verde della Prefettura per far venire i tuoi familiari in Italia. Anche per entrare in Italia a lavorare con il decreto flussi serve un nulla osta.</p>
+          <p><a href="ricongiungimento-familiare.html">Ricongiungimento familiare</a> · <a href="decreto-flussi.html">Decreto flussi</a></p>
         </div>
 
         <!-- P -->
@@ -264,22 +445,25 @@ extraStyles: |
 
         <div class="dictionary-term" id="permesso-di-soggiorno">
           <h3>Permesso di soggiorno <a href="#permesso-di-soggiorno" class="anchor-link">#</a></h3>
-          <p>Documento che ti dà il diritto di vivere in Italia legalmente per un certo periodo di tempo.</p>
+          <p>Documento che ti dà il diritto di vivere in Italia legalmente per un certo periodo di tempo. Chi entra in Italia con un visto deve chiederlo entro 8 giorni lavorativi dall'arrivo.</p>
+          <p><a href="database.html">Vedi tutti i permessi</a> · <a href="controlla-permesso.html">Controlla se il tuo permesso è pronto</a></p>
         </div>
 
         <div class="dictionary-term" id="prefettura">
           <h3>Prefettura <a href="#prefettura" class="anchor-link">#</a></h3>
-          <p>Ufficio dello Stato italiano presente in ogni provincia. Si occupa di ordine pubblico, sicurezza e alcune pratiche per stranieri come la cittadinanza e il ricongiungimento familiare.</p>
+          <p>Ufficio dello Stato italiano presente in ogni provincia. Si occupa di ordine pubblico, sicurezza e alcune pratiche per stranieri come la cittadinanza e il ricongiungimento familiare. Vedi anche "Sportello Unico".</p>
         </div>
 
         <div class="dictionary-term" id="protezione-internazionale">
           <h3>Protezione internazionale <a href="#protezione-internazionale" class="anchor-link">#</a></h3>
-          <p>Protezione data dall'Italia a persone che non possono tornare nel loro paese perché sarebbero in pericolo. Include Asilo e Protezione sussidiaria.</p>
+          <p>Protezione data dall'Italia a persone che non possono tornare nel loro paese perché sarebbero in pericolo. Comprende lo <a href="permesso-asilo-status-rifugiato.html">status di rifugiato</a> (asilo) e la <a href="permesso-protezione-sussidiaria.html">protezione sussidiaria</a>.</p>
+          <p><a href="protezione-internazionale.html">Leggi la guida alla protezione internazionale</a></p>
         </div>
 
         <div class="dictionary-term" id="prosieguo-amministrativo">
           <h3>Prosieguo amministrativo <a href="#prosieguo-amministrativo" class="anchor-link">#</a></h3>
-          <p>Possibilità per un ragazzo straniero arrivato da minore in Italia di rimanere con supporto anche dopo aver compiuto 18 anni.</p>
+          <p>Possibilità per un ragazzo straniero arrivato da minore in Italia di rimanere con supporto anche dopo aver compiuto 18 anni. Lo decide il Tribunale per i minorenni e può durare al massimo fino a 21 anni.</p>
+          <p><a href="permesso-integrazione-prosieguo-amministrativo.html">Vedi il permesso per prosieguo amministrativo</a></p>
         </div>
 
         <!-- Q -->
@@ -288,6 +472,7 @@ extraStyles: |
         <div class="dictionary-term" id="questura">
           <h3>Questura <a href="#questura" class="anchor-link">#</a></h3>
           <p>Ufficio della Polizia di Stato presente in ogni capoluogo di provincia. È il posto dove si chiede, si ritira e si rinnova il permesso di soggiorno. Ha uno sportello chiamato "Ufficio Immigrazione".</p>
+          <p><a href="documenti-questura.html">Quali documenti portare in Questura</a></p>
         </div>
 
         <!-- R -->
@@ -295,27 +480,31 @@ extraStyles: |
 
         <div class="dictionary-term" id="residenza">
           <h3>Residenza <a href="#residenza" class="anchor-link">#</a></h3>
-          <p>Indirizzo dove vivi stabilmente e sei registrato all'anagrafe del Comune.</p>
+          <p>Indirizzo dove vivi stabilmente e sei registrato all'anagrafe del Comune. Serve per esempio per avere la carta d'identità e per molti servizi del Comune. Vedi anche "Domicilio".</p>
+          <p><a href="kit-postale.html#residenza">Scarica il modulo per chiedere la residenza</a></p>
         </div>
 
         <div class="dictionary-term" id="ricevuta">
           <h3>Ricevuta <a href="#ricevuta" class="anchor-link">#</a></h3>
-          <p>Documento che prova che hai fatto una richiesta o un pagamento. La ricevuta della Questura (cedolino) dimostra che hai chiesto il permesso di soggiorno e ti permette di stare in Italia mentre aspetti.</p>
+          <p>Documento che prova che hai fatto una richiesta o un pagamento. La ricevuta della Questura (cedolino) o delle Poste dimostra che hai chiesto il permesso di soggiorno e ti permette di stare in Italia mentre aspetti. Conservala e tienila con il passaporto.</p>
+          <p><a href="controlla-permesso.html">Controlla a che punto è il tuo permesso</a></p>
         </div>
 
         <div class="dictionary-term" id="ricongiungimento-familiare">
           <h3>Ricongiungimento familiare <a href="#ricongiungimento-familiare" class="anchor-link">#</a></h3>
-          <p>Procedura che permette a una persona straniera che vive già in Italia con un permesso di soggiorno valido di portare in Italia alcuni membri della propria famiglia.</p>
+          <p>Procedura che permette a una persona straniera che vive già in Italia con un permesso di soggiorno valido di portare in Italia alcuni membri della propria famiglia. Servono un reddito minimo e una casa adatta (vedi "Idoneità alloggiativa").</p>
+          <p><a href="ricongiungimento-familiare.html">Leggi la guida al ricongiungimento familiare</a></p>
         </div>
 
         <div class="dictionary-term" id="rifugiato">
           <h3>Rifugiato <a href="#rifugiato" class="anchor-link">#</a></h3>
-          <p>Persona che scappa dal proprio paese perché perseguitata e che quindi in Italia può avere lo status di rifugiato.</p>
+          <p>Persona che scappa dal proprio paese perché perseguitata e che quindi in Italia può avere lo status di rifugiato. Vedi anche "Status di rifugiato".</p>
         </div>
 
         <div class="dictionary-term" id="rinnovo">
           <h3>Rinnovo <a href="#rinnovo" class="anchor-link">#</a></h3>
-          <p>Processo per estendere la validità del tuo permesso di soggiorno prima che scada.</p>
+          <p>Processo per estendere la validità del tuo permesso di soggiorno prima che scada. La legge dice di chiederlo almeno 60 giorni prima della scadenza. Se sei in ritardo, chiedilo comunque il prima possibile.</p>
+          <p>Nella pagina di ogni permesso trovi la lista dei documenti per il rinnovo. <a href="database.html">Vedi tutti i permessi</a></p>
         </div>
 
         <!-- S -->
@@ -334,11 +523,13 @@ extraStyles: |
         <div class="dictionary-term" id="sportello-unico">
           <h3>Sportello Unico <a href="#sportello-unico" class="anchor-link">#</a></h3>
           <p>Sportello Unico per l'Immigrazione (SUI). Ufficio della Prefettura che gestisce le pratiche di lavoro per stranieri (nulla osta, contratto di soggiorno) e il ricongiungimento familiare.</p>
+          <p><a href="decreto-flussi.html">Decreto flussi</a> · <a href="ricongiungimento-familiare.html">Ricongiungimento familiare</a></p>
         </div>
 
         <div class="dictionary-term" id="status-di-rifugiato">
           <h3>Status di rifugiato <a href="#status-di-rifugiato" class="anchor-link">#</a></h3>
-          <p>Decisione della Commissione o del Tribunale che riconosce una persona come rifugiato. Con lo status di rifugiato si può chiedere il permesso di soggiorno per asilo.</p>
+          <p>Decisione della Commissione o del Tribunale che riconosce una persona come rifugiato. Con lo status di rifugiato si può chiedere il permesso di soggiorno per asilo, che dura 5 anni.</p>
+          <p><a href="permesso-asilo-status-rifugiato.html">Vedi il permesso per asilo</a></p>
         </div>
 
         <!-- T -->
@@ -356,12 +547,12 @@ extraStyles: |
 
         <div class="dictionary-term" id="tessera-sanitaria">
           <h3>Tessera sanitaria <a href="#tessera-sanitaria" class="anchor-link">#</a></h3>
-          <p>Tessera plastificata che ti permette di usare il Servizio Sanitario Nazionale (medico di base, pronto soccorso, medicine). Si richiede all'ASL dopo aver ottenuto il permesso di soggiorno e la residenza.</p>
+          <p>Tessera plastificata che ti permette di usare il Servizio Sanitario Nazionale (medico di base, pronto soccorso, medicine). Si ottiene dopo l'iscrizione al Servizio Sanitario Nazionale all'ASL, con il permesso di soggiorno (o la ricevuta della richiesta) e il codice fiscale. Vedi anche "ASL".</p>
         </div>
 
         <div class="dictionary-term" id="tutore">
           <h3>Tutore <a href="#tutore" class="anchor-link">#</a></h3>
-          <p>Persona scelta dal giudice che aiuta e si prende cura di un ragazzo che ha meno di 18 anni quando i genitori non possono farlo.</p>
+          <p>Persona scelta dal giudice che aiuta e si prende cura di un ragazzo che ha meno di 18 anni quando i genitori non possono farlo. Per i minori stranieri non accompagnati spesso è un "tutore volontario", nominato dal Tribunale per i minorenni.</p>
         </div>
 
         <!-- U -->
@@ -374,7 +565,7 @@ extraStyles: |
 
         <div class="dictionary-term" id="unione-civile">
           <h3>Unione civile <a href="#unione-civile" class="anchor-link">#</a></h3>
-          <p>Matrimonio tra persone dello stesso sesso in Italia.</p>
+          <p>Unione tra due persone dello stesso sesso riconosciuta dalla legge italiana. Dà diritti molto simili a quelli del matrimonio, anche per il permesso di soggiorno e il ricongiungimento familiare.</p>
         </div>
 
         <!-- V -->
@@ -383,12 +574,18 @@ extraStyles: |
         <div class="dictionary-term" id="visto">
           <h3>Visto <a href="#visto" class="anchor-link">#</a></h3>
           <p>Autorizzazione per entrare in Italia che si chiede all'Ambasciata o Consolato italiano nel proprio paese prima di partire. Esistono diversi tipi: visto per turismo, studio, lavoro, ricongiungimento familiare.</p>
+          <p>Il visto non è un permesso di soggiorno: se resti in Italia per più di 3 mesi, entro 8 giorni lavorativi dall'arrivo devi chiedere il permesso di soggiorno.</p>
         </div>
 
         <div class="dictionary-term" id="vincolo-di-parentela">
           <h3>Vincolo di parentela <a href="#vincolo-di-parentela" class="anchor-link">#</a></h3>
           <p>Relazione di famiglia tra due persone (genitori-figli, fratelli, nonni-nipoti, zii-nipoti).</p>
         </div>
+
+        <p class="dict-empty" id="dict-empty" hidden>
+          Nessuna parola trovata. Manca una parola che vorresti capire?
+          <a href="https://app.sospermesso.it/it/contattaci" target="_blank">Scrivici</a>.
+        </p>
 
       </div>
 
@@ -404,6 +601,8 @@ extraStyles: |
 
     </div>
   </section>
+
+  <div class="dict-toast" id="dict-toast" role="status" aria-live="polite"></div>
 
   <section class="section bg-off-white">
     <div class="container">
@@ -424,3 +623,151 @@ extraStyles: |
       </div>
     </div>
   </section>
+
+  <script>
+  (function () {
+    var list = document.getElementById('dict-list');
+    var input = document.getElementById('dict-search');
+    var count = document.getElementById('dict-count');
+    var empty = document.getElementById('dict-empty');
+    var lettersNav = document.getElementById('dict-letters');
+    var toast = document.getElementById('dict-toast');
+    if (!list || !input) return;
+
+    var LINK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>';
+
+    function norm(s) {
+      return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    }
+
+    var letters = Array.prototype.slice.call(list.querySelectorAll('.dictionary-letter'));
+    var groups = letters.map(function (letterEl) {
+      var terms = [];
+      var el = letterEl.nextElementSibling;
+      while (el && !el.classList.contains('dictionary-letter')) {
+        if (el.classList.contains('dictionary-term')) terms.push(el);
+        el = el.nextElementSibling;
+      }
+      return { letter: letterEl, terms: terms };
+    });
+
+    var allTerms = [];
+    groups.forEach(function (g) {
+      g.terms.forEach(function (t) {
+        var h3 = t.querySelector('h3');
+        var a = h3.querySelector('.anchor-link');
+        var name = h3.firstChild.textContent.trim();
+        t._name = norm(name);
+        t._text = norm(t.textContent);
+        allTerms.push(t);
+
+        // "#" → pulsante "Copia link" sempre visibile (anche su mobile)
+        if (a) {
+          a.classList.add('term-share');
+          a.innerHTML = LINK_ICON + '<span>Copia link</span>';
+          a.setAttribute('aria-label', 'Copia il link a «' + name + '»');
+          a.addEventListener('click', function (e) {
+            e.preventDefault();
+            shareTerm(t.id, name, a);
+          });
+        }
+      });
+
+      var li = document.createElement('li');
+      var link = document.createElement('a');
+      link.href = '#' + g.letter.id;
+      link.textContent = g.letter.textContent.trim();
+      li.appendChild(link);
+      lettersNav.appendChild(li);
+      g.nav = link;
+    });
+
+    function termUrl(id) {
+      return location.origin + location.pathname + '#' + id;
+    }
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('is-visible');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(function () { toast.classList.remove('is-visible'); }, 2200);
+    }
+
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+      return new Promise(function (resolve, reject) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy') ? resolve() : reject(); } catch (err) { reject(err); }
+        document.body.removeChild(ta);
+      });
+    }
+
+    function shareTerm(id, name, btn) {
+      var url = termUrl(id);
+      history.replaceState(null, '', '#' + id);
+      // Su telefono apre il menu di condivisione (WhatsApp, SMS…); altrove copia il link
+      var touch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+      if (touch && navigator.share) {
+        navigator.share({ title: name + ' — Dizionario SOS Permesso', url: url }).catch(function () {});
+        return;
+      }
+      copyText(url).then(function () {
+        btn.classList.add('is-copied');
+        btn.querySelector('span').textContent = 'Link copiato!';
+        showToast('Link a «' + name + '» copiato');
+        setTimeout(function () {
+          btn.classList.remove('is-copied');
+          btn.querySelector('span').textContent = 'Copia link';
+        }, 2000);
+      }, function () {
+        window.prompt('Copia questo link:', url);
+      });
+    }
+
+    function filter() {
+      var q = norm(input.value.trim());
+      var shown = 0;
+      groups.forEach(function (g) {
+        var groupShown = 0;
+        g.terms.forEach(function (t) {
+          var match = !q || t._name.indexOf(q) !== -1 || t._text.indexOf(q) !== -1;
+          t.hidden = !match;
+          if (match) groupShown++;
+        });
+        g.letter.hidden = groupShown === 0;
+        g.nav.classList.toggle('is-disabled', groupShown === 0);
+        if (groupShown === 0) g.nav.setAttribute('aria-disabled', 'true');
+        else g.nav.removeAttribute('aria-disabled');
+        shown += groupShown;
+      });
+      empty.hidden = shown !== 0;
+      count.textContent = q
+        ? (shown === 1 ? '1 parola trovata' : shown + ' parole trovate')
+        : '';
+    }
+
+    input.addEventListener('input', filter);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { input.value = ''; filter(); }
+      if (e.key === 'Enter') {
+        var first = allTerms.filter(function (t) { return !t.hidden; })[0];
+        if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    // ?q=parola precompila la ricerca
+    var params = new URLSearchParams(location.search);
+    if (params.get('q')) {
+      input.value = params.get('q');
+    }
+    filter();
+  })();
+  </script>
