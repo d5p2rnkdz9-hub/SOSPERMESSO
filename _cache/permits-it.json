@@ -1,5 +1,232 @@
 [
   {
+    "id": "3097355e-7f7f-81e6-bcaa-cb349e6c1413",
+    "slug": "studio-conversione-da-altro-permesso",
+    "tipo": "Studio (conversione da altro permesso)",
+    "emoji": "📖",
+    "sections": [
+      {
+        "question": "Che cos'è questo permesso?",
+        "content": "<p>Il permesso di soggiorno per motivi di studio viene dato a persone straniere che vogliono frequentare in Italia un corso di studio, universitario o di formazione che dura più di 3 mesi.</p>",
+        "index": 0
+      },
+      {
+        "question": "Come richiedo il permesso?",
+        "content": "<p>Il permesso di soggiorno per motivi di studio si richiede tramite <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a> allegando i documenti richiesti. </p>",
+        "index": 1
+      },
+      {
+        "question": "Quanto dura questo permesso?",
+        "content": "<p>Questo permesso può durare dai sei mesi fino a un anno. Puoi rinnovarlo fino a coprire tutto il periodo del tuo corso di studi.</p>",
+        "index": 2
+      },
+      {
+        "question": "Che diritti mi da / a cosa ho accesso?",
+        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Viaggiare nei paesi dell&#039;area Schengen per meno di tre mesi con il tuo passaporto</li><li>Lavorare con regolare contratto (lavoro subordinato) per massimo 1040 ore in un anno</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) pagando una quota di almeno 700 euro all&#039;anno, oppure avere un&#039;assicurazione sanitaria privata.</li><li>Chiedere il <a href=\"permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html\">ricongiungimento familiare</a>, ma solo se hai abbastanza soldi e una casa adatta secondo la legge</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Posso chiedere questo permesso se sono già in Italia?",
+        "content": "<p>Sì, puoi chiederlo se vivi già in Italia e vuoi iniziare o continuare un percorso di studio.</p>\n<p>Per vedere se il tuo permesso di soggiorno può essere convertito in permesso di soggiorno per studio, fai il nostro test</p>",
+        "index": 4
+      },
+      {
+        "question": "Posso rinnovarlo?",
+        "content": "<p>Devi chiedere il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> prima che il permesso scada (o entro 60 giorni), usando il <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a>. Devi aggiungere i documenti che mostrano che sei ancora iscritto al corso universitario o di formazione.</p>\n<p>Se studi all&#039;università, puoi rinnovare il permesso fino a tre anni oltre la durata normale del corso di laurea. Puoi anche rinnovarlo per fare una specializzazione o un dottorato di ricerca.</p>\n<p><strong>Quando finisci gli studi:</strong> se hai ottenuto <strong>in Italia</strong> una laurea o un altro titolo universitario, puoi convertire il permesso in <a href=\"permesso-attesa-occupazione.html\">attesa occupazione</a> o in lavoro. Se non hai questo titolo, puoi chiedere solo la <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in permesso per lavoro, con il <strong><a href=\"dizionario.html#nulla-osta\" class=\"doc-link\">nulla osta</a></strong>.</p>",
+        "index": 5
+      },
+      {
+        "question": "Cosa succede se non passo abbastanza esami?",
+        "content": "<p>Per rinnovare il permesso devi aver superato:</p>\n<ul><li>Almeno un esame nel primo anno universitario</li><li>Almeno due esami negli altri anni</li><li>Non puoi iscriverti oltre il terzo anno fuori corso</li></ul>\n<p>Se hai gravi problemi di salute documentati o altre cause di forza maggiore, puoi rinnovare il permesso anche se hai superato un solo esame dopo il primo anno.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 70.46 €",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Permesso precedente",
+      "Documento di iscrizione ed esami sostenuti",
+      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 70.46 €",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "permesso precedente",
+      "Documento di iscrizione ed esami sostenuti",
+      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)",
+      "polizza assicurativa copertura sanitaria o iscrizione al Servizio Sanitario",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 70.46,
+    "costBollettinoAltRinnovo": null,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null,
+    "categoria": "Studio/Lavoro",
+    "rinnovoNotApplicable": false
+  },
+  {
+    "id": "3097355e-7f7f-81c3-bc78-c8d850be806e",
+    "slug": "studio-dopo-ingresso-con-visto",
+    "tipo": "Studio (dopo ingresso con visto)",
+    "emoji": "📖",
+    "sections": [
+      {
+        "question": "Che cos'è questo permesso?",
+        "content": "<p>Il permesso di soggiorno per motivi di studio viene dato a persone straniere che vogliono frequentare in Italia un corso di studio, universitario o di formazione che dura più di 3 mesi.</p>",
+        "index": 0
+      },
+      {
+        "question": "Come richiedo il permesso?",
+        "content": "<p>Il permesso di soggiorno per motivi di studio si richiede tramite <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a> allegando i documenti richiesti. </p>",
+        "index": 1
+      },
+      {
+        "question": "Quanto dura questo permesso?",
+        "content": "<p>Questo permesso può durare dai sei mesi fino a un anno. Puoi rinnovarlo fino a coprire tutto il periodo del tuo corso di studi.</p>",
+        "index": 2
+      },
+      {
+        "question": "Che diritti mi da / a cosa ho accesso?",
+        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Viaggiare nei paesi dell&#039;area Schengen per meno di tre mesi con il tuo passaporto</li><li>Lavorare con regolare contratto (lavoro subordinato) per massimo 1040 ore in un anno</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) pagando una quota di almeno 700 euro all&#039;anno, oppure avere un&#039;assicurazione sanitaria privata.</li><li>Chiedere il <a href=\"permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html\">ricongiungimento familiare</a>, ma solo se hai abbastanza soldi e una casa adatta secondo la legge</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Posso chiedere questo permesso se sono già in Italia?",
+        "content": "<p>Sì, puoi chiederlo se vivi già in Italia e vuoi iniziare o continuare un percorso di studio.</p>\n<p>Per vedere se il tuo permesso di soggiorno può essere convertito in permesso di soggiorno per studio, fai il nostro test</p>",
+        "index": 4
+      },
+      {
+        "question": "Posso rinnovarlo?",
+        "content": "<p>Devi chiedere il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> prima che il permesso scada (o entro 60 giorni), usando il <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a>. Devi aggiungere i documenti che mostrano che sei ancora iscritto al corso universitario o di formazione.</p>\n<p>Se studi all&#039;università, puoi rinnovare il permesso fino a tre anni oltre la durata normale del corso di laurea. Puoi anche rinnovarlo per fare una specializzazione o un dottorato di ricerca.</p>\n<p><strong>Quando finisci gli studi:</strong> se hai ottenuto <strong>in Italia</strong> una laurea o un altro titolo universitario, puoi convertire il permesso in <a href=\"permesso-attesa-occupazione.html\">attesa occupazione</a> o in lavoro. Se non hai questo titolo, puoi chiedere solo la <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in permesso per lavoro, con il <strong><a href=\"dizionario.html#nulla-osta\" class=\"doc-link\">nulla osta</a></strong>.</p>",
+        "index": 5
+      },
+      {
+        "question": "Cosa succede se non passo abbastanza esami?",
+        "content": "<p>Per rinnovare il permesso devi aver superato:</p>\n<ul><li>Almeno un esame nel primo anno universitario</li><li>Almeno due esami negli altri anni</li><li>Non puoi iscriverti oltre il terzo anno fuori corso</li></ul>\n<p>Se hai gravi problemi di salute documentati o altre cause di forza maggiore, puoi rinnovare il permesso anche se hai superato un solo esame dopo il primo anno.</p>",
+        "index": 6
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 70.46 €",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "certificato di ammissione al corso di studi vidimato dall'Ambasciata italiana all'estero",
+      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)",
+      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)",
+      "Copia del passaporto (non scaduto)",
+      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
+      "Permesso in scadenza",
+      "Certificato di iscrizione all'anno accademico in corso",
+      "Certificato esami sostenuti"
+    ],
+    "rinnovoMethod": "KIT",
+    "costBollettinoRinnovo": 70.46,
+    "costBollettinoAltRinnovo": 80.46,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": null,
+    "categoria": "Studio/Lavoro",
+    "rinnovoNotApplicable": false
+  },
+  {
+    "id": "3097355e-7f7f-8103-b69b-d07f6f7955d3",
+    "slug": "attesa-occupazione",
+    "tipo": "Attesa occupazione",
+    "emoji": "🔍",
+    "sections": [
+      {
+        "question": "Che cos'è questo permesso?",
+        "content": "<p>Il permesso di soggiorno per attesa occupazione ti permette di rimanere in Italia anche se non hai o non hai più un contratto di lavoro. Generalmente viene dato </p>\n<ul><li>a lavoratori stranieri che <strong>hanno perso il lavoro</strong> e stanno cercando un nuovo impiego</li><li>a minori stranieri non accompagnati che hanno raggiunto i 18 anni senza avere un lavoro stabile</li><li>a <strong>studenti stranieri</strong> che hanno ottenuto <strong>in Italia</strong> una laurea o un altro titolo universitario (master, dottorato, specializzazione) e non hanno ancora trovato un lavoro</li></ul>",
+        "index": 0
+      },
+      {
+        "question": "Come richiedo il permesso di soggiorno per attesa occupazione?",
+        "content": "<p>Puoi chiedere questo permesso se sei in una di queste tre situazioni:</p>\n<ul><li><strong>Hai un permesso di soggiorno per lavoro autonomo o subordinato</strong> ma non lo puoi rinnovare perché hai perso il lavoro (licenziamento o dimissioni) o la tua attività autonoma è finita</li><li><strong>Hai un permesso per studio</strong> e hai ottenuto <strong>in Italia</strong> una laurea o un altro titolo universitario (laurea, master, dottorato, specializzazione), ma non hai ancora trovato lavoro</li><li><strong>Hai un permesso per <a href=\"dizionario.html#minore\" class=\"doc-link\">minore</a> età</strong> e vuoi ancora un po’ di tempo per trovare un lavoro</li></ul>\n<p>⚠️ <em>Attenzione: se hai un permesso per studio ma </em><em><strong>non</strong></em><em> hai un titolo universitario ottenuto in Italia, non puoi chiedere l’attesa occupazione. Puoi chiedere solo la <a href=\"dizionario.html#conversione\" class=\"doc-link\">conversione</a> in permesso per lavoro, con il </em><em><strong><a href=\"dizionario.html#nulla-osta\" class=\"doc-link\">nulla osta</a></strong></em><em>.</em></p>\n<p>⚠️ <em>Attenzione: se non hai mai avuto un altro permesso di soggiorno, non puoi chiedere un permesso per attesa occupazione in Italia. Per capirci: non puoi venire in Italia senza <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> o con un <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> turistico, e poi cercare lavoro con un permesso per attesa occupazione.</em></p>",
+        "index": 1
+      },
+      {
+        "question": "👉 Come si chiede questo permesso?",
+        "content": "<ul><li>Se il tuo permesso sta per scadere: manda la domanda con il <strong><a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a></strong> prima della scadenza</li><li>Se il tuo permesso è già scaduto: vai direttamente in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> e chiedi un appuntamento</li></ul>",
+        "index": 2
+      },
+      {
+        "question": "Cosa devi fare prima di chiedere il permesso?",
+        "content": "<p><strong>1. Iscriviti al Centro per l&#039;Impiego</strong></p>\n<ul><li>Vai al Centro per l&#039;Impiego più vicino</li><li>Dichiarati disponibile a lavorare (anche in un lavoro diverso da quello che facevi prima)</li><li>Ti daranno un <strong>certificato di iscrizione</strong> come persona che cerca lavoro</li></ul>\n<p><strong>Per iscriverti al Centro per l&#039;Impiego sono necessari</strong></p>\n<ul><li><a href=\"dizionario.html#codice-fiscale\" class=\"doc-link\">Codice fiscale</a></li><li>Permesso di soggiorno valido (o scaduto ma con una <a href=\"dizionario.html#ricevuta\" class=\"doc-link\">ricevuta</a> di <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a>)</li><li>Documento di identità valido</li></ul>",
+        "index": 3
+      },
+      {
+        "question": "Quanto costa?",
+        "content": "<p>Il costo totale è <strong>116,46€</strong>:</p>\n<ul><li>30,46€ per il permesso elettronico</li><li>30€ per spedire il <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a></li><li>40€ per il rilascio del permesso</li><li>16€ per la <a href=\"dizionario.html#marca-da-bollo\" class=\"doc-link\">marca da bollo</a></li></ul>",
+        "index": 4
+      },
+      {
+        "question": "Quanto dura questo permesso?",
+        "content": "<p>Il permesso dura di solito<strong> 1 anno e secondo le Questure NON può essere rinnovato.</strong></p>",
+        "index": 5
+      },
+      {
+        "question": "✅ Che diritti mi dà? A cosa ho accesso?",
+        "content": "<p>Con questo permesso puoi:</p>\n<ul><li><strong>Lavorare</strong> (lavoro autonomo o subordinato)</li><li><strong>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</strong></li><li>Chiedere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> </li></ul>",
+        "index": 6
+      },
+      {
+        "question": "Cosa succede quando scade?",
+        "content": "<p><strong>Se trovi un lavoro:</strong> puoi cambiare il permesso in permesso per lavoro (autonomo o subordinato), con <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a></p>\n<p><strong>Se non trovi lavoro: </strong>prima della scadenza, chiedi un aiuto legale qualificato</p>",
+        "index": 7
+      }
+    ],
+    "isPlaceholder": false,
+    "primoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 70.46 €",
+      "Copia del passaporto (non scaduto)",
+      "Iscrizione al centro per l'impiego"
+    ],
+    "primoMethod": "KIT",
+    "costBollettinoPrimo": 70.46,
+    "costBollettinoAltPrimo": null,
+    "costMarcaBolloPrimo": 16,
+    "rinnovoDocuments": [
+      "Marca da bollo da 16 €",
+      "4 fototessere",
+      "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)",
+      "Copia del passaporto (non scaduto)",
+      "Iscrizione al centro per l'impiego"
+    ],
+    "rinnovoMethod": "n/a",
+    "costBollettinoRinnovo": 70.46,
+    "costBollettinoAltRinnovo": 80.46,
+    "costMarcaBolloRinnovo": 16,
+    "docNotes": "Nota: se hai un permesso per studio e stai chiedendo questo permesso, devi anche portare il certificato del titolo universitario ottenuto in Italia (laurea, master, dottorato, specializzazione) \nNota: se hai un altro tipo di permesso, ad esempio per motivi di famiglia, puoi provare a chiedere questo permesso per attesa occupazione ma devi portare una prova che hai lavorato recentemente (ad es. ultime buste paga)\n\nNOTA aggiuntiva sul rinnovo: difficile ottenerlo, in casi eccezionali si può ma serve provare particolare vulnerabilità (relazione dei Servizi)",
+    "categoria": "Studio/Lavoro",
+    "rinnovoNotApplicable": false
+  },
+  {
     "id": "3097355e-7f7f-81c2-b171-db56fd3b23e1",
     "slug": "richiesta-asilo",
     "tipo": "Richiesta Asilo",
@@ -708,84 +935,6 @@
     "rinnovoNotApplicable": false
   },
   {
-    "id": "3097355e-7f7f-81e6-bcaa-cb349e6c1413",
-    "slug": "studio-conversione-da-altro-permesso",
-    "tipo": "Studio (conversione da altro permesso)",
-    "emoji": "📖",
-    "sections": [
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>Il permesso di soggiorno per motivi di studio viene dato a persone straniere che vogliono frequentare in Italia un corso di studio, universitario o di formazione che dura più di 3 mesi.</p>",
-        "index": 0
-      },
-      {
-        "question": "Come richiedo il permesso?",
-        "content": "<p>Il permesso di soggiorno per motivi di studio si richiede tramite <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a> allegando i documenti richiesti. </p>",
-        "index": 1
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<p>Questo permesso può durare dai sei mesi fino a un anno. Puoi rinnovarlo fino a coprire tutto il periodo del tuo corso di studi.</p>",
-        "index": 2
-      },
-      {
-        "question": "Che diritti mi da / a cosa ho accesso?",
-        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Viaggiare nei paesi dell&#039;area Schengen per meno di tre mesi con il tuo passaporto</li><li>Lavorare con regolare contratto (lavoro subordinato) per massimo 1040 ore in un anno</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) pagando una quota di almeno 700 euro all&#039;anno, oppure avere un&#039;assicurazione sanitaria privata.</li><li>Chiedere il <a href=\"permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html\">ricongiungimento familiare</a>, ma solo se hai abbastanza soldi e una casa adatta secondo la legge</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Posso chiedere questo permesso se sono già in Italia?",
-        "content": "<p>Sì, puoi chiederlo se vivi già in Italia e vuoi iniziare o continuare un percorso di studio.</p>\n<p>Per vedere se il tuo permesso di soggiorno può essere convertito in permesso di soggiorno per studio, fai il nostro test</p>",
-        "index": 4
-      },
-      {
-        "question": "Posso rinnovarlo?",
-        "content": "<p>Devi chiedere il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> prima che il permesso scada (o entro 60 giorni), usando il <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a>. Devi aggiungere i documenti che mostrano che sei ancora iscritto al corso universitario o di formazione.</p>\n<p>Se studi all&#039;università, puoi rinnovare il permesso fino a tre anni oltre la durata normale del corso di laurea. Puoi anche rinnovarlo per fare una specializzazione o un dottorato di ricerca.</p>",
-        "index": 5
-      },
-      {
-        "question": "Cosa succede se non passo abbastanza esami?",
-        "content": "<p>Per rinnovare il permesso devi aver superato:</p>\n<ul><li>Almeno un esame nel primo anno universitario</li><li>Almeno due esami negli altri anni</li><li>Non puoi iscriverti oltre il terzo anno fuori corso</li></ul>\n<p>Se hai gravi problemi di salute documentati o altre cause di forza maggiore, puoi rinnovare il permesso anche se hai superato un solo esame dopo il primo anno.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 70.46 €",
-      "Copia del passaporto (non scaduto)",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
-      "Permesso precedente",
-      "Documento di iscrizione ed esami sostenuti",
-      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)",
-      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": 70.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 70.46 €",
-      "Copia del passaporto (non scaduto)",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
-      "permesso precedente",
-      "Documento di iscrizione ed esami sostenuti",
-      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)",
-      "polizza assicurativa copertura sanitaria o iscrizione al Servizio Sanitario",
-      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 70.46,
-    "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null,
-    "categoria": "Studio/Lavoro",
-    "rinnovoNotApplicable": false
-  },
-  {
     "id": "3097355e-7f7f-81be-9edd-fd27b7298f8d",
     "slug": "minore-eta-per-msna",
     "tipo": "Minore età (per MSNA)",
@@ -1057,80 +1206,6 @@
     "costMarcaBolloRinnovo": null,
     "docNotes": null,
     "categoria": "Motivi Familiari",
-    "rinnovoNotApplicable": false
-  },
-  {
-    "id": "3097355e-7f7f-8103-b69b-d07f6f7955d3",
-    "slug": "attesa-occupazione",
-    "tipo": "Attesa occupazione",
-    "emoji": "🔍",
-    "sections": [
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>Il permesso di soggiorno per attesa occupazione ti permette di rimanere in Italia anche se non hai o non hai più un contratto di lavoro. Generalmente viene dato </p>\n<ul><li>a lavoratori stranieri che <strong>hanno perso il lavoro</strong> e stanno cercando un nuovo impiego</li><li>a minori stranieri non accompagnati che hanno raggiunto i 18 anni senza avere un lavoro stabile</li><li>a <strong>studenti stranieri</strong> che si sono laureati in Italia e non hanno ancora trovato un lavoro</li></ul>",
-        "index": 0
-      },
-      {
-        "question": "Come richiedo il permesso di soggiorno per attesa occupazione?",
-        "content": "<p>Puoi chiedere questo permesso se sei in una di queste tre situazioni:</p>\n<ul><li><strong>Hai un permesso di soggiorno per lavoro autonomo o subordinato</strong> ma non lo puoi rinnovare perché hai perso il lavoro (licenziamento o dimissioni) o la tua attività autonoma è finita</li><li><strong>Hai un permesso per studio</strong> e ti sei laureato in Italia (laurea, master, dottorato) ma non hai ancora trovato lavoro. In questi casi è consigliabile convertire prima in attesa occupazione e poi in lavoro. E’ più difficile passare direttamente dal permesso per studio a un permesso per lavoro</li><li><strong>Hai un permesso per <a href=\"dizionario.html#minore\" class=\"doc-link\">minore</a> età</strong> e vuoi ancora un po’ di tempo per trovare un lavoro</li></ul>\n<p>⚠️ <em>Attenzione: se non hai mai avuto un altro permesso di soggiorno, non puoi chiedere un permesso per attesa occupazione in Italia. Per capirci: non puoi venire in Italia senza <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> o con un <a href=\"dizionario.html#visto\" class=\"doc-link\">visto</a> turistico, e poi cercare lavoro con un permesso per attesa occupazione.</em></p>",
-        "index": 1
-      },
-      {
-        "question": "👉 Come si chiede questo permesso?",
-        "content": "<ul><li>Se il tuo permesso sta per scadere: manda la domanda con il <strong><a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a></strong> prima della scadenza</li><li>Se il tuo permesso è già scaduto: vai direttamente in <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> e chiedi un appuntamento</li></ul>",
-        "index": 2
-      },
-      {
-        "question": "Cosa devi fare prima di chiedere il permesso?",
-        "content": "<p><strong>1. Iscriviti al Centro per l&#039;Impiego</strong></p>\n<ul><li>Vai al Centro per l&#039;Impiego più vicino</li><li>Dichiarati disponibile a lavorare (anche in un lavoro diverso da quello che facevi prima)</li><li>Ti daranno un <strong>certificato di iscrizione</strong> come persona che cerca lavoro</li></ul>\n<p><strong>Per iscriverti al Centro per l&#039;Impiego sono necessari</strong></p>\n<ul><li><a href=\"dizionario.html#codice-fiscale\" class=\"doc-link\">Codice fiscale</a></li><li>Permesso di soggiorno valido (o scaduto ma con una <a href=\"dizionario.html#ricevuta\" class=\"doc-link\">ricevuta</a> di <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a>)</li><li>Documento di identità valido</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Quanto costa?",
-        "content": "<p>Il costo totale è <strong>116,46€</strong>:</p>\n<ul><li>30,46€ per il permesso elettronico</li><li>30€ per spedire il <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a></li><li>40€ per il rilascio del permesso</li><li>16€ per la <a href=\"dizionario.html#marca-da-bollo\" class=\"doc-link\">marca da bollo</a></li></ul>",
-        "index": 4
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<p>Il permesso dura di solito<strong> 1 anno e secondo le Questure NON può essere rinnovato.</strong></p>",
-        "index": 5
-      },
-      {
-        "question": "✅ Che diritti mi dà? A cosa ho accesso?",
-        "content": "<p>Con questo permesso puoi:</p>\n<ul><li><strong>Lavorare</strong> (lavoro autonomo o subordinato)</li><li><strong>Iscriverti al Servizio Sanitario Nazionale (SSN) e avere un medico di base</strong></li><li>Chiedere la <a href=\"dizionario.html#residenza\" class=\"doc-link\">residenza</a> </li></ul>",
-        "index": 6
-      },
-      {
-        "question": "Cosa succede quando scade?",
-        "content": "<p><strong>Se trovi un lavoro:</strong> puoi cambiare il permesso in permesso per lavoro (autonomo o subordinato), con <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a></p>\n<p><strong>Se non trovi lavoro: </strong>prima della scadenza, chiedi un aiuto legale qualificato</p>",
-        "index": 7
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 70.46 €",
-      "Copia del passaporto (non scaduto)",
-      "Iscrizione al centro per l'impiego"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": 70.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)",
-      "Copia del passaporto (non scaduto)",
-      "Iscrizione al centro per l'impiego"
-    ],
-    "rinnovoMethod": "n/a",
-    "costBollettinoRinnovo": 70.46,
-    "costBollettinoAltRinnovo": 80.46,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": "Nota: se hai un permesso per studio e stai chiedendo questo permesso, devi anche portare il certificato di conclusione del percorso di studi \nNota: se hai un altro tipo di permesso, ad esempio per motivi di famiglia, puoi provare a chiedere questo permesso per attesa occupazione ma devi portare una prova che hai lavorato recentemente (ad es. ultime buste paga)\n\nNOTA aggiuntiva sul rinnovo: difficile ottenerlo, in casi eccezionali si può ma serve provare particolare vulnerabilità (relazione dei Servizi)",
-    "categoria": "Studio/Lavoro",
     "rinnovoNotApplicable": false
   },
   {
@@ -2122,81 +2197,6 @@
     "rinnovoMethod": "KIT",
     "costBollettinoRinnovo": 80.46,
     "costBollettinoAltRinnovo": null,
-    "costMarcaBolloRinnovo": 16,
-    "docNotes": null,
-    "categoria": "Studio/Lavoro",
-    "rinnovoNotApplicable": false
-  },
-  {
-    "id": "3097355e-7f7f-81c3-bc78-c8d850be806e",
-    "slug": "studio-dopo-ingresso-con-visto",
-    "tipo": "Studio (dopo ingresso con visto)",
-    "emoji": "📖",
-    "sections": [
-      {
-        "question": "Che cos'è questo permesso?",
-        "content": "<p>Il permesso di soggiorno per motivi di studio viene dato a persone straniere che vogliono frequentare in Italia un corso di studio, universitario o di formazione che dura più di 3 mesi.</p>",
-        "index": 0
-      },
-      {
-        "question": "Come richiedo il permesso?",
-        "content": "<p>Il permesso di soggiorno per motivi di studio si richiede tramite <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a> allegando i documenti richiesti. </p>",
-        "index": 1
-      },
-      {
-        "question": "Quanto dura questo permesso?",
-        "content": "<p>Questo permesso può durare dai sei mesi fino a un anno. Puoi rinnovarlo fino a coprire tutto il periodo del tuo corso di studi.</p>",
-        "index": 2
-      },
-      {
-        "question": "Che diritti mi da / a cosa ho accesso?",
-        "content": "<p>Con questo permesso puoi:</p>\n<ul><li>Viaggiare nei paesi dell&#039;area Schengen per meno di tre mesi con il tuo passaporto</li><li>Lavorare con regolare contratto (lavoro subordinato) per massimo 1040 ore in un anno</li><li>Iscriverti al Servizio Sanitario Nazionale (SSN) pagando una quota di almeno 700 euro all&#039;anno, oppure avere un&#039;assicurazione sanitaria privata.</li><li>Chiedere il <a href=\"permesso-famiglia-dopo-ingresso-con-visto-per-ricongiungimento-familiare.html\">ricongiungimento familiare</a>, ma solo se hai abbastanza soldi e una casa adatta secondo la legge</li></ul>",
-        "index": 3
-      },
-      {
-        "question": "Posso chiedere questo permesso se sono già in Italia?",
-        "content": "<p>Sì, puoi chiederlo se vivi già in Italia e vuoi iniziare o continuare un percorso di studio.</p>\n<p>Per vedere se il tuo permesso di soggiorno può essere convertito in permesso di soggiorno per studio, fai il nostro test</p>",
-        "index": 4
-      },
-      {
-        "question": "Posso rinnovarlo?",
-        "content": "<p>Devi chiedere il <a href=\"dizionario.html#rinnovo\" class=\"doc-link\">rinnovo</a> alla <a href=\"dizionario.html#questura\" class=\"doc-link\">Questura</a> prima che il permesso scada (o entro 60 giorni), usando il <a href=\"dizionario.html#kit-postale\" class=\"doc-link\">kit postale</a>. Devi aggiungere i documenti che mostrano che sei ancora iscritto al corso universitario o di formazione.</p>\n<p>Se studi all&#039;università, puoi rinnovare il permesso fino a tre anni oltre la durata normale del corso di laurea. Puoi anche rinnovarlo per fare una specializzazione o un dottorato di ricerca.</p>",
-        "index": 5
-      },
-      {
-        "question": "Cosa succede se non passo abbastanza esami?",
-        "content": "<p>Per rinnovare il permesso devi aver superato:</p>\n<ul><li>Almeno un esame nel primo anno universitario</li><li>Almeno due esami negli altri anni</li><li>Non puoi iscriverti oltre il terzo anno fuori corso</li></ul>\n<p>Se hai gravi problemi di salute documentati o altre cause di forza maggiore, puoi rinnovare il permesso anche se hai superato un solo esame dopo il primo anno.</p>",
-        "index": 6
-      }
-    ],
-    "isPlaceholder": false,
-    "primoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 70.46 €",
-      "Copia del passaporto (non scaduto)",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
-      "certificato di ammissione al corso di studi vidimato dall'Ambasciata italiana all'estero",
-      "Garanzia economica (estratto conto bancario o borsa di studio o dichiarazione di familiari che ti mantengono)",
-      "Polizza assicurativa copertura sanitaria o iscrizione volontaria a SSN"
-    ],
-    "primoMethod": "KIT",
-    "costBollettinoPrimo": 70.46,
-    "costBollettinoAltPrimo": null,
-    "costMarcaBolloPrimo": 16,
-    "rinnovoDocuments": [
-      "Marca da bollo da 16 €",
-      "4 fototessere",
-      "Bollettino postale da 70.46 o 80.46 (dipende dalla durata del permesso)",
-      "Copia del passaporto (non scaduto)",
-      "Dichiarazione di ospitalità o contratto di affitto o certificato di residenza",
-      "Permesso in scadenza",
-      "Certificato di iscrizione all'anno accademico in corso",
-      "Certificato esami sostenuti"
-    ],
-    "rinnovoMethod": "KIT",
-    "costBollettinoRinnovo": 70.46,
-    "costBollettinoAltRinnovo": 80.46,
     "costMarcaBolloRinnovo": 16,
     "docNotes": null,
     "categoria": "Studio/Lavoro",
