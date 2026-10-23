@@ -29,8 +29,9 @@ const JSON_HEADERS = { "Content-Type": "application/json; charset=utf-8" };
 
 // The persona/instructions and the KB are module-level constants: the system
 // prompt must be byte-identical across requests or the Anthropic prompt cache
-// (cache_control below) never gets a hit. Per-request context (current page)
-// goes into the LAST user message instead — see buildApiMessages().
+// never gets a hit. Per-request context (current page) goes into the LAST user
+// message instead — see buildApiMessages(). Caching is currently OFF (see the
+// system param below); keep the prompt stable so it can be switched back on.
 const PERSONA_INSTRUCTIONS = `Sei l'assistente di SOS Permesso (https://www.sospermesso.it), un sito informativo gratuito sui permessi di soggiorno in Italia, pensato per persone straniere.
 
 REGOLE FONDAMENTALI:
@@ -197,11 +198,14 @@ export default async (req, context) => {
     // system-prompt cache survives that toggle.
     thinking: { type: "disabled" },
     output_config: { effort: "low" },
+    // Prompt caching disabled (Oct 2026): traffic is ~1 question every 30 min,
+    // so the 5-min cache always expired before the next request and every call
+    // paid the 1.25x cache-write premium with zero reads. Re-evaluate if traffic
+    // grows: ≥3 questions/hour → add cache_control { type: "ephemeral", ttl: "1h" }.
     system: [
       {
         type: "text",
         text: SYSTEM_PROMPT,
-        cache_control: { type: "ephemeral" },
       },
     ],
     messages: buildApiMessages(payload.messages, payload.page),
