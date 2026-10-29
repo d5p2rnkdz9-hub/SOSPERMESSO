@@ -20,6 +20,7 @@
  *    (pagina di SOS Permesso) né per audit.html (che su SOS Patto non ha canonical).
  * 3. TOPBAR: il link «⌂ …» in alto a sinistra diventa il logo di SOS Permesso verso la home.
  * 4. PANNELLO a comparsa: il link in fondo diventa «⌂ SOS Permesso» verso la home.
+ *    FAVICON: le icone di SOS Permesso (nero con SOS giallo) in ogni pagina, hub compresa.
  * 5. CSS: blocco marcato «sospermesso:brand» in ogni style.css (logo, font, sticky).
  * 6. CACHE-BUSTER: ?v=<hash del CSS> nel link allo style.css di ogni pagina.
  *
@@ -95,10 +96,20 @@ const NEW_HOME = '<a class="home" href="/" aria-label="SOS Permesso — torna al
   + '</a>';
 const PANEL_RE = /<a class="panel-home" href="[^"]*">&#8962; [^<]*<\/a>/;
 const NEW_PANEL = '<a class="panel-home" href="/">&#8962; SOS Permesso</a>';
+// stesse icone (e stesso ?v=) di _includes/layouts/base.liquid: senza, il browser
+// ripiega su /favicon.ico e può mostrare un'icona vecchia dalla cache
+const ICON_RE = /<link rel="(?:shortcut )?icon"[^>]*>\n?|<link rel="apple-touch-icon"[^>]*>\n?/g;
+const ICONS = '<link rel="icon" type="image/png" sizes="32x32" href="/IMAGES/favicon-32x32.png?v=3">\n'
+  + '<link rel="icon" type="image/png" sizes="16x16" href="/IMAGES/favicon-16x16.png?v=3">\n'
+  + '<link rel="apple-touch-icon" sizes="180x180" href="/IMAGES/apple-touch-icon.png?v=3">\n';
+
+function patchIcons(html) {
+  return html.replace(ICON_RE, '').replace(/(<\/title>\n?)/, `$1${ICONS}`);
+}
 
 function patchPage(file) {
   const text = fs.readFileSync(file, 'utf8');
-  let out = text.replace(SEO_RE, '').replace(CANONICAL_RE, '');
+  let out = patchIcons(text.replace(SEO_RE, '').replace(CANONICAL_RE, ''));
   if (!NO_CANONICAL.has(path.relative(BUNDLE, file))) {
     out = out.replace(/(<\/title>\n?)/, `$1<link rel="canonical" href="${sospattoUrl(file)}">\n`);
   }
@@ -172,6 +183,11 @@ for (const p of pages) {
   if (!r.hasTopbar) noTopbar.push(path.relative(BUNDLE, p));
 }
 const changedCss = cssFiles.filter(patchCss).length;
+
+// favicon anche nella hub index.html (esclusa dalle altre modifiche)
+const hub = path.join(BUNDLE, 'index.html');
+const hubText = fs.readFileSync(hub, 'utf8');
+if (patchIcons(hubText) !== hubText) fs.writeFileSync(hub, patchIcons(hubText));
 
 // --- 6. cache-buster (anche la hub) ------------------------------------------
 let bumped = 0;
