@@ -76,7 +76,9 @@
             {% render "components/icon.liquid", name: cicon, size: 30 %}
             <span>{{ t.cats[ck] | default: ti.cats[ck] }}</span>
           </a>
-          <ul class="ha-cat-list">
+          {%- comment -%} I permessi in catItems sono una selezione: l'etichetta lo dice e l'ultima voce porta al database filtrato {%- endcomment %}
+          <p class="ha-eyebrow ha-cat-eyebrow" id="ha-cat-pop-{{ ck }}">{{ t.catPopular | default: ti.catPopular }}</p>
+          <ul class="ha-cat-list" aria-labelledby="ha-cat-pop-{{ ck }}">
             {%- for item in ti.catItems[ck] -%}
               {%- assign slug = item[0] -%}
               {%- if lang == "it" -%}
@@ -89,6 +91,7 @@
             <li><a href="permesso-{{ slug }}.html">{% render "components/icon.liquid", name: "chevron", size: 16, stroke: 3 %}<span>{{ label }}</span></a></li>
               {%- endif -%}
             {%- endfor %}
+            <li class="ha-cat-more"><a href="database.html?cat={{ dbcat }}"><span>{{ t.catMore | default: ti.catMore }}</span> <span class="ha-arrow" aria-hidden="true">→</span></a></li>
           </ul>
         </div>
         {%- endfor %}

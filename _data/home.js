@@ -2,7 +2,8 @@
 // Struttura condivisa: _includes/components/home.liquid, stili in src/styles/home.css.
 // IT è la fonte. Le altre lingue riusano le frasi già tradotte della vecchia home;
 // le chiavi nuove (findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta di
-// kit postale e controlla permesso) sono una BOZZA da far rivedere a madrelingua (_bozza).
+// kit postale e controlla permesso, catPopular/catMore delle schede categoria) sono una
+// BOZZA da far rivedere a madrelingua (_bozza).
 // Una chiave mancante ricade sull'italiano nel template.
 // catItems: [slug, etichetta breve]; nelle altre lingue l'etichetta è il nome del
 // permesso dai dati Notion della lingua, senza la parte tra parentesi.
@@ -29,6 +30,8 @@ module.exports = {
       "health": "Cure mediche",
       "family": "Motivi familiari"
     },
+    "catPopular": "I più richiesti",
+    "catMore": "Altri permessi",
     "catItems": {
       "work": [
         [
@@ -285,7 +288,9 @@ module.exports = {
     },
     "findTitle": "Find your permit",
     "guidesTitle": "Step-by-step guides",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "Most requested",
+    "catMore": "More permits",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "fr": {
     "badge": "41+ Permis · Mis à jour le 9 octobre 2026",
@@ -384,7 +389,9 @@ module.exports = {
     },
     "findTitle": "Trouvez votre permis",
     "guidesTitle": "Guides pas à pas",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "Les plus demandés",
+    "catMore": "Autres permis",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "es": {
     "badge": "41+ Permisos · Actualizado el 9 de octubre de 2026",
@@ -483,7 +490,9 @@ module.exports = {
     },
     "findTitle": "Encuentra tu permiso",
     "guidesTitle": "Guías paso a paso",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "Los más solicitados",
+    "catMore": "Otros permisos",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "tr": {
     "badge": "41+ İzin · 9 Ekim 2026 itibarıyla güncel",
@@ -582,7 +591,9 @@ module.exports = {
     },
     "findTitle": "İzninizi bulun",
     "guidesTitle": "Adım adım rehberler",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "En çok başvurulanlar",
+    "catMore": "Diğer izinler",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ru": {
     "badge": "41+ Разрешений · Обновлено 9 октября 2026",
@@ -681,7 +692,9 @@ module.exports = {
     },
     "findTitle": "Найдите своё разрешение",
     "guidesTitle": "Пошаговые руководства",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "Самые востребованные",
+    "catMore": "Другие разрешения",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "bn": {
     "badge": "৪১+ অনুমতি · ৯ অক্টোবর ২০২৬ আপডেটেড",
@@ -780,7 +793,9 @@ module.exports = {
     },
     "findTitle": "আপনার অনুমতি খুঁজুন",
     "guidesTitle": "ধাপে ধাপে গাইড",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "সবচেয়ে বেশি চাওয়া",
+    "catMore": "অন্যান্য অনুমতি",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ar": {
     "badge": "41+ تصريح · محدّث في 9 أكتوبر 2026",
@@ -879,7 +894,9 @@ module.exports = {
     },
     "findTitle": "ابحث عن تصريحك",
     "guidesTitle": "أدلة خطوة بخطوة",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "الأكثر طلبًا",
+    "catMore": "تصاريح أخرى",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ur": {
     "badge": "41+ اجازت نامے · 9 اکتوبر 2026 تک تازہ کاری",
@@ -978,7 +995,9 @@ module.exports = {
     },
     "findTitle": "اپنا اجازت نامہ تلاش کریں",
     "guidesTitle": "مرحلہ وار رہنمائی",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "سب سے زیادہ مانگے جانے والے",
+    "catMore": "دیگر اجازت نامے",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "fa": {
     "badge": "+41 مجوز · به‌روزرسانی ۹ اکتبر ۲۰۲۶",
@@ -1077,7 +1096,9 @@ module.exports = {
     },
     "findTitle": "مجوز خود را پیدا کنید",
     "guidesTitle": "راهنماهای گام‌به‌گام",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "پرتقاضاترین‌ها",
+    "catMore": "مجوزهای دیگر",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "zh": {
     "badge": "41+ 种许可 · 2026年10月9日更新",
@@ -1176,6 +1197,8 @@ module.exports = {
     },
     "findTitle": "查找您的居留许可",
     "guidesTitle": "分步指南",
-    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche» e cta kit/controlla: BOZZA (ott 2026) da far rivedere a madrelingua."
+    "catPopular": "最常申请",
+    "catMore": "其他居留许可",
+    "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   }
 };

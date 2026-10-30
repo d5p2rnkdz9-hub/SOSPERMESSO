@@ -282,10 +282,20 @@
   text-underline-offset: 4px;
 }
 
+/* «I più richiesti»: le voci della scheda sono una selezione */
+.ha-cat-eyebrow {
+  margin: 0;
+  padding: 16px 20px 0;
+  color: var(--sp-muted);
+}
+
 .ha-cat-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
-  padding: 12px 14px 16px;
+  padding: 6px 14px 14px;
 }
 
 .ha-cat-list li {
@@ -316,6 +326,25 @@
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
+}
+
+/* «Altri permessi →»: ultima voce, in fondo alla scheda (allineata tra schede della stessa riga) */
+.ha-cat-list .ha-cat-more {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.ha-cat-list .ha-cat-more a {
+  border-top: 2px solid color-mix(in srgb, var(--sp-ink) 18%, transparent);
+  border-radius: 0;
+  padding-top: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.ha-cat-list .ha-cat-more a:hover .ha-arrow {
+  text-decoration: none;
 }
 
 .ha-cat--work { background: var(--cat-work-tint); }
@@ -644,6 +673,11 @@
 [dir="rtl"] .ha-cat-list .icon {
   display: inline-block;
   transform: scaleX(-1);
+}
+
+/* Arabo, urdu, farsi: mai letter-spacing (spezza le legature), vedi rtl.css */
+[dir="rtl"] .ha-eyebrow {
+  letter-spacing: normal;
 }
 
 @media (prefers-reduced-motion: reduce) {
