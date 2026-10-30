@@ -1,23 +1,25 @@
 module.exports = {
   it: {
+    // Barra IT tutta a tasti semplici (nessuna tendina oltre alla lingua).
+    // "Info" è stato tolto dalla barra: i suoi item (protezione,
+    // ricongiungimento, lavoro, aiuto legale, dizionario) sono raggiungibili
+    // dalla home; l'elenco dei permessi ha il tasto "Database".
     dropdowns: [
       {
+        label: "Database",
+        href: "/database.html",
+        cta: "outline",
+        items: []
+      },
+      {
         // Testi coordinati interattivi (bundle in public/patto-interattivo)
-        // + circolari e prassi amministrativa. Solo IT: contenuto italiano
-        // non tradotto. "Info" è stato tolto dalla barra: i suoi altri item
-        // (permessi, protezione, ricongiungimento, lavoro, aiuto legale,
-        // dizionario) sono ora raggiungibili dalla home e dalla barra stessa
-        // (Patto UE, Aiuto legale gratis in home, Dizionario in home).
+        // + circolari e prassi amministrativa: tutto raccolto in
+        // /normativa.html, quindi niente tendina. Solo IT: contenuto
+        // italiano non tradotto.
         label: "Leggi e circolari",
         href: "/normativa.html",
         cta: "outline",
-        items: [
-          { label: "Testo unico immigrazione (D.Lgs. 286/98)", href: "/normativa.html#dlgs-286-1998", badge: "NUOVO" },
-          { label: "Procedure di protezione internazionale (D.Lgs. 25/2008)", href: "/normativa.html#dlgs-25-2008" },
-          { label: "Accoglienza (D.Lgs. 142/2015)", href: "/normativa.html#dlgs-142-2015" },
-          { label: "Qualifiche (D.Lgs. 251/2007)", href: "/normativa.html#dlgs-251-2007" },
-          { label: "Circolari e prassi amministrativa", href: "/circolari.html" }
-        ]
+        items: []
       },
       {
         label: "Patto UE",

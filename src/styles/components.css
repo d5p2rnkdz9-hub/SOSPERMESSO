@@ -1288,6 +1288,9 @@ a.card:focus-visible {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .nav-cta { padding: 0.5rem 0.85rem; }
+  /* Il gap stretto (0.15rem) è meno dell'ombra: tra due tasti affiancati
+     l'ombra toccava il bordo del vicino. Riporta lo stacco a 0.5rem. */
+  .nav-item--cta + .nav-item--cta { margin-inline-start: 0.35rem; }
 }
 
 @media (min-width: 769px) and (max-width: 950px) {

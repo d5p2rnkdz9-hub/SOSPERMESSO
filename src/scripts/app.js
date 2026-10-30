@@ -24,9 +24,10 @@ const navMenu = document.getElementById('nav-menu');
 const navWrapper = navMenu?.parentElement;
 
 // Mobile navigation mapping - on mobile, these should scroll to sections
-// instead of going to separate pages (except Collabora which stays external)
+// instead of going to separate pages (except Collabora which stays external).
+// Niente 'Database' qui: la home non ha più #database e il tasto "Database"
+// del menu IT deve aprire /database.html anche su mobile.
 const mobileNavMapping = {
-  'Database': '#database',
   'Guide': '#guide',
   'Test': '#test'
   // Collabora stays as an external link to the in-house app
