@@ -6,15 +6,17 @@ langSwitchPath: /database.html
 description: "I testi coordinati e interattivi delle norme italiane sull'immigrazione dopo il d.l. 100/2026 (Testo unico immigrazione, procedure, accoglienza e qualifiche) e le circolari e la prassi amministrativa sui permessi di soggiorno."
 extraStyles: |
   <style>
-    .norm-head { max-width: 780px; }
-    .norm-head h1,
-    .norm-head h2 {
+    .section.norm-page { padding: 2.5rem 0 3rem; }
+    .norm-head { max-width: 780px; margin-bottom: 2.25rem; }
+    .norm-head h1 {
       font-family: var(--font-heading);
       font-size: 2.1rem;
       font-weight: 800;
       margin: 0 0 0.75rem;
     }
-    .norm-head p { color: var(--gray-dark); line-height: 1.6; margin: 0 0 1rem; }
+    .norm-head p,
+    .norm-col-head p { color: var(--gray-dark); line-height: 1.6; margin: 0 0 1rem; }
+    .norm-head p { margin: 0; }
     .norm-verifica {
       display: inline-block;
       background: var(--taxi-yellow-light);
@@ -27,19 +29,65 @@ extraStyles: |
     .norm-ins { color: #C1121F; font-weight: 700; }
     .norm-del { text-decoration: line-through; }
 
-    .norm-grid {
+    /* Due sezioni pari grado: affiancate su desktop */
+    .norm-cols {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
     }
+    .norm-col { min-width: 0; }
+    .norm-col-head { margin-bottom: 1.5rem; }
+    .norm-col-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .norm-col-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      background: var(--sp-yellow);
+      border: var(--border-chip) solid var(--sp-ink);
+      border-radius: 50%;
+      box-shadow: var(--sticker-sm);
+    }
+    .norm-col h2 {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin: 0;
+    }
+    .norm-list-label {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--sp-muted);
+      margin: 0 0 0.75rem;
+    }
+    .norm-list {
+      display: grid;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
     .norm-card {
       display: flex;
       flex-direction: column;
+      height: 100%;
       background: var(--white);
       border: 2.5px solid var(--black);
       border-radius: 16px;
       box-shadow: var(--sticker);
-      padding: 1.3rem 1.4rem;
+      padding: 1.1rem 1.3rem;
       text-decoration: none;
       color: var(--black);
       transition: transform 0.12s ease, box-shadow 0.12s ease;
@@ -65,7 +113,17 @@ extraStyles: |
       text-transform: uppercase;
       margin-bottom: 0.7rem;
     }
-    .norm-card h2 {
+    .norm-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem 0.6rem;
+      font-size: 0.8rem;
+      color: var(--sp-muted);
+      margin-bottom: 0.6rem;
+    }
+    .norm-meta .norm-tag { margin-bottom: 0; }
+    .norm-card h3 {
       font-family: var(--font-heading);
       font-size: 1.05rem;
       font-weight: 800;
@@ -82,10 +140,69 @@ extraStyles: |
       margin-bottom: 0.9rem;
     }
     .norm-go { font-weight: 700; margin-top: auto; }
+    .norm-all { margin-top: 1.5rem; }
+    .norm-all .btn { width: 100%; white-space: normal; text-align: center; }
 
+    /* Selettore Leggi | Circolari: solo mobile e solo con JS (.norm-tabs) */
+    .norm-switch-bar { display: none; }
+    .norm-switch {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      background: var(--sp-white);
+      border: var(--border-ui) solid var(--sp-ink);
+      border-radius: var(--radius-pill);
+      box-shadow: var(--sticker);
+    }
+    .norm-switch [role="tab"] {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      min-height: 46px;
+      margin: 0;
+      padding: 0.4rem 0.75rem;
+      background: transparent;
+      border: 0;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--sp-ink);
+      cursor: pointer;
+    }
+    .norm-switch [aria-selected="true"] {
+      background: var(--sp-yellow);
+      box-shadow: inset 0 0 0 2px var(--sp-ink);
+    }
+    .norm-switch [role="tab"]:focus-visible {
+      outline: none;
+      box-shadow: var(--focus-ring);
+    }
+
+    @media (max-width: 768px) {
+      /* mobile-fix.css dà overflow-x: hidden alle .section, che blocca lo sticky del selettore:
+         clip taglia lo stesso l'eccedenza orizzontale senza creare un contenitore di scroll */
+      .section.norm-page { padding-top: 1.75rem; overflow: visible; overflow-x: clip; }
+      .norm-head { margin-bottom: 1.25rem; }
+      .norm-cols { grid-template-columns: 1fr; gap: 3rem; }
+      .norm-tabs .norm-switch-bar {
+        display: block;
+        position: sticky;
+        top: var(--norm-sticky-top, 60px);
+        z-index: 50;
+        background: var(--sp-paper);
+        padding: 0.5rem 0 0.75rem;
+        margin-bottom: 1rem;
+      }
+      .norm-tabs .norm-col:not(.is-active) { display: none; }
+      .norm-tabs .norm-col,
+      .norm-tabs .norm-card[id] { scroll-margin-top: var(--norm-scroll-top, 140px); }
+    }
     @media (max-width: 480px) {
-      .norm-head h1,
-      .norm-head h2 { font-size: 1.6rem; }
+      .norm-head h1 { font-size: 1.6rem; }
+      .norm-col h2 { font-size: 1.45rem; }
     }
   </style>
 ---
@@ -95,64 +212,183 @@ extraStyles: |
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
-    { "@type": "ListItem", "position": 2, "name": "Leggi italiane", "item": "{{ site.url }}/normativa.html" }
+    { "@type": "ListItem", "position": 2, "name": "Leggi e circolari", "item": "{{ site.url }}/normativa.html" }
   ]
 }
 </script>
 
-<section class="section bg-off-white" style="padding: 2.5rem 0 2rem;">
-  <div class="container">
+<section class="section norm-page">
+  <div class="container" id="norm-app">
     <div class="norm-head">
-      <h1>Leggi italiane</h1>
+      <h1>Leggi e circolari</h1>
       <p>
-        Le norme italiane sull'immigrazione nella versione coordinata con il
-        <strong>{{ normativa.decreto.label }}</strong> ({{ normativa.decreto.nota }}), il decreto che
-        adegua l'ordinamento italiano al Patto UE su migrazione e asilo. Nei testi coordinati le
-        parti <span class="norm-ins">inserite o sostituite</span> e quelle
-        <span class="norm-del">soppresse</span> sono evidenziate articolo per articolo.
+        Le leggi italiane sull'immigrazione aggiornate al Patto UE e le circolari con cui
+        ministeri, INPS e altri enti spiegano come applicarle ai permessi di soggiorno.
       </p>
-      <span class="norm-verifica">Testi verificati su Normattiva — {{ normativa.verificaData }}</span>
+    </div>
+
+    <div class="norm-switch-bar">
+      <div class="norm-switch" role="tablist" aria-label="Scegli cosa consultare">
+        <button type="button" role="tab" id="tab-leggi" aria-controls="leggi" aria-selected="true">
+          {% render "components/icon.liquid", name: "aiuto-legale", size: 20 %}Leggi
+        </button>
+        <button type="button" role="tab" id="tab-circolari" aria-controls="circolari" aria-selected="false" tabindex="-1">
+          {% render "components/icon.liquid", name: "documenti", size: 20 %}Circolari
+        </button>
+      </div>
+    </div>
+
+    <div class="norm-cols">
+      <section class="norm-col" id="leggi" aria-labelledby="leggi-title">
+        <div class="norm-col-head">
+          <div class="norm-col-title">
+            <span class="norm-col-icon">{% render "components/icon.liquid", name: "aiuto-legale", size: 26 %}</span>
+            <h2 id="leggi-title">Leggi</h2>
+          </div>
+          <p>
+            Le norme italiane sull'immigrazione nella versione coordinata con il
+            <strong>{{ normativa.decreto.label }}</strong> ({{ normativa.decreto.nota }}), il decreto che
+            adegua l'ordinamento italiano al Patto UE su migrazione e asilo. Le parti
+            <span class="norm-ins">inserite o sostituite</span> e quelle
+            <span class="norm-del">soppresse</span> sono evidenziate articolo per articolo.
+          </p>
+          <span class="norm-verifica">Testi verificati su Normattiva — {{ normativa.verificaData }}</span>
+        </div>
+
+        <p class="norm-list-label">Testi coordinati e interattivi</p>
+        <ul class="norm-list">
+          {%- for t in normativa.testi %}
+          <li>
+            <a id="{{ t.slug }}" href="/patto-interattivo/{{ t.slug }}/" class="norm-card{% if t.evidenza %} norm-card--evidenza{% endif %}">
+              <span class="norm-tag">{{ t.titolo }}</span>
+              <h3>{{ t.sotto }}</h3>
+              <span class="norm-coord">{{ t.coord }}</span>
+              <span class="norm-go">Consulta il testo interattivo →</span>
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+      </section>
+
+      <section class="norm-col" id="circolari" aria-labelledby="circolari-title">
+        <div class="norm-col-head">
+          <div class="norm-col-title">
+            <span class="norm-col-icon">{% render "components/icon.liquid", name: "documenti", size: 26 %}</span>
+            <h2 id="circolari-title">Circolari</h2>
+          </div>
+          <p>
+            Circolari ministeriali e altra prassi amministrativa in materia di permessi di soggiorno,
+            con <strong>testo integrale</strong>, ricerca per parole chiave e filtri per ente, anno e
+            permesso.
+          </p>
+          <a href="/circolari.html" class="btn btn-primary">Consulta tutte le {{ circolariDb.size }} circolari →</a>
+        </div>
+
+        <p class="norm-list-label">Le più recenti</p>
+        <ul class="norm-list">
+          {%- for c in circolariDb limit: 8 %}
+          {%- assign estremi = c.titolo | split: ": " | first | split: " — " | last %}
+          <li>
+            <a href="/{{ c.slug }}.html" class="norm-card">
+              <span class="norm-meta">
+                {%- if c.ente %}<span class="norm-tag">{{ c.ente }}</span>{% endif -%}
+                <span>{{ estremi }}</span>
+              </span>
+              <h3>{{ c.oggetto | default: c.titolo }}</h3>
+              <span class="norm-go">Leggi il testo integrale →</span>
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+        <div class="norm-all">
+          <a href="/circolari.html" class="btn btn-outline">Tutte le {{ circolariDb.size }} circolari, con ricerca e filtri →</a>
+        </div>
+      </section>
     </div>
   </div>
 </section>
 
-<section class="section" style="padding: 2.5rem 0;">
-  <div class="container">
-    <div class="norm-grid">
-      {%- for t in normativa.testi %}
-      <a id="{{ t.slug }}" href="/patto-interattivo/{{ t.slug }}/" class="norm-card{% if t.evidenza %} norm-card--evidenza{% endif %}">
-        <span class="norm-tag">{{ t.titolo }}</span>
-        <h2>{{ t.sotto }}</h2>
-        <span class="norm-coord">{{ t.coord }}</span>
-        <span class="norm-go">Consulta il testo interattivo →</span>
-      </a>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
+<script>
+  // Selettore Leggi | Circolari (solo ≤768px). Senza JS le due sezioni restano una sotto l'altra;
+  // su desktop sono affiancate e il selettore è nascosto via CSS.
+  (function () {
+    var app = document.getElementById('norm-app');
+    var bar = app.querySelector('.norm-switch-bar');
+    var tabs = Array.prototype.slice.call(app.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+    var header = document.querySelector('.header');
+    var mq = window.matchMedia('(max-width: 768px)');
 
-<section class="section bg-off-white" style="padding: 2.5rem 0 2rem;">
-  <div class="container">
-    <div class="norm-head">
-      <h2>Circolari e prassi amministrative</h2>
-      <p>
-        {{ circolariDb.size }} circolari e atti amministrativi in materia di permessi di soggiorno,
-        con testo integrale, ricerca full-text e filtri per ente, anno e permesso.
-      </p>
-      <span class="norm-verifica">{{ circolariDb.size }} circolari raccolte</span>
-    </div>
-  </div>
-</section>
+    function select(id, focus) {
+      tabs.forEach(function (t, i) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        panels[i].classList.toggle('is-active', on);
+        if (on && focus) t.focus();
+      });
+    }
 
-<section class="section" style="padding: 2.5rem 0;">
-  <div class="container">
-    <div class="norm-grid">
-      <a href="/circolari.html" class="norm-card">
-        <span class="norm-tag">Circolari</span>
-        <h2>Circolari e prassi amministrativa</h2>
-        <span class="norm-coord">Testo integrale, ricerca full-text e filtri per ente, anno e permesso</span>
-        <span class="norm-go">Consulta le circolari →</span>
-      </a>
-    </div>
-  </div>
-</section>
+    // Pannello che contiene l'ancora (#circolari, #leggi o una legge come #dlgs-25-2008)
+    function target() {
+      var el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      for (var i = 0; el && i < panels.length; i++) {
+        if (panels[i].contains(el)) return { panel: panels[i], el: el };
+      }
+      return null;
+    }
+
+    // Ruoli da schede solo su mobile; su desktop le sezioni restano regioni con il loro h2
+    function layout() {
+      panels.forEach(function (p, i) {
+        if (mq.matches) {
+          p.setAttribute('role', 'tabpanel');
+          p.setAttribute('aria-labelledby', tabs[i].id);
+        } else {
+          p.removeAttribute('role');
+          p.setAttribute('aria-labelledby', p.querySelector('h2').id);
+        }
+      });
+      // Le ancore finiscono sotto header + selettore (sticky); lo scroll-padding di mobile.css si somma
+      var top = header ? header.getBoundingClientRect().height : 60;
+      var pad = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      app.style.setProperty('--norm-sticky-top', top + 'px');
+      app.style.setProperty('--norm-scroll-top', (top + bar.offsetHeight + 16 - pad) + 'px');
+    }
+
+    app.classList.add('norm-tabs');
+    var hit = target();
+    select(hit ? hit.panel.id : 'leggi');
+    layout();
+    if (mq.addEventListener) mq.addEventListener('change', layout); else mq.addListener(layout);
+    window.addEventListener('resize', layout);
+
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('aria-controls');
+        select(id);
+        history.replaceState(null, '', '#' + id);
+        // Se si era già scesi nella lista, si riparte dall'inizio della sezione scelta
+        var gap = panels[i].getBoundingClientRect().top - bar.getBoundingClientRect().bottom;
+        if (gap < 0) window.scrollBy(0, gap - 8);
+      });
+      t.addEventListener('keydown', function (e) {
+        var n = tabs.length;
+        var j = e.key === 'ArrowRight' ? (i + 1) % n : e.key === 'ArrowLeft' ? (i - 1 + n) % n
+          : e.key === 'Home' ? 0 : e.key === 'End' ? n - 1 : -1;
+        if (j < 0) return;
+        e.preventDefault();
+        select(tabs[j].getAttribute('aria-controls'), true);
+        history.replaceState(null, '', '#' + tabs[j].getAttribute('aria-controls'));
+      });
+    });
+
+    // Link interni alla pagina (es. #dlgs-25-2008 mentre è aperta la scheda Circolari)
+    window.addEventListener('hashchange', function () {
+      var h = target();
+      if (!h) return;
+      select(h.panel.id);
+      h.el.scrollIntoView();
+    });
+  })();
+</script>
