@@ -164,7 +164,7 @@
       enteSel.appendChild(o);
     });
 
-    bind('circ-f-q', 'q');
+    var qEl = bind('circ-f-q', 'q');
     bind('circ-f-ente', 'ente');
     var permSel = bind('circ-f-permesso', 'permesso');
     bind('circ-f-anno', 'anno');
@@ -205,6 +205,17 @@
       if (permitNames[slug]) {
         permSel.value = slug;
         state.permesso = slug;
+      }
+    }
+
+    // testo di ricerca da URL (?q=…), usato dalla ricerca nel menu del sito
+    var mq = window.location.search.match(/[?&]q=([^&]*)/);
+    if (mq) {
+      var q = '';
+      try { q = decodeURIComponent(mq[1].replace(/\+/g, ' ')).trim(); } catch (e) { /* URL malformato */ }
+      if (q) {
+        qEl.value = q;
+        state.q = q;
       }
     }
 

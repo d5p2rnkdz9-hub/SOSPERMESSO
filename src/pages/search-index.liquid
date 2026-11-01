@@ -1,0 +1,8 @@
+---
+pagination:
+  data: searchIndex
+  size: 1
+  alias: idx
+permalink: "{{ idx.permalink }}"
+eleventyExcludeFromCollections: true
+---{{ idx.items | jsonify }}

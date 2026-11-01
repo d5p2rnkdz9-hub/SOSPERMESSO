@@ -1,5 +1,9 @@
+// `search`: testi della ricerca nel menu (nav.liquid + src/scripts/search.js).
+// {n} = numero di risultati, {q} = testo cercato. La voce `circolari` esiste
+// solo in IT (le circolari sono in italiano). Fuori dall'IT è una BOZZA (_bozza).
 module.exports = {
   it: {
+    search: {"placeholder": "Cerca…", "label": "Cerca nel sito", "none": "Nessun risultato", "count": "{n} risultati", "types": {"permesso": "Permesso", "guida": "Guida", "dizionario": "Dizionario", "normativa": "Legge"}, "circolari": "Cerca «{q}» nelle circolari"},
     // Barra IT tutta a tasti semplici (nessuna tendina oltre alla lingua).
     // "Info" è stato tolto dalla barra: i suoi item (protezione,
     // ricongiungimento, lavoro, aiuto legale, dizionario) sono raggiungibili
@@ -40,6 +44,7 @@ module.exports = {
     ]
   },
   en: {
+    search: {"placeholder": "Search…", "label": "Search the site", "none": "No results", "count": "{n} results", "types": {"permesso": "Permit", "guida": "Guide", "dizionario": "Dictionary", "normativa": "Law"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "Info",
@@ -62,6 +67,7 @@ module.exports = {
     ]
   },
   fr: {
+    search: {"placeholder": "Rechercher…", "label": "Rechercher sur le site", "none": "Aucun résultat", "count": "{n} résultats", "types": {"permesso": "Permis", "guida": "Guide", "dizionario": "Dictionnaire", "normativa": "Loi"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "Info",
@@ -84,6 +90,7 @@ module.exports = {
     ]
   },
   es: {
+    search: {"placeholder": "Buscar…", "label": "Buscar en el sitio", "none": "Sin resultados", "count": "{n} resultados", "types": {"permesso": "Permiso", "guida": "Guía", "dizionario": "Diccionario", "normativa": "Ley"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "Info",
@@ -106,6 +113,7 @@ module.exports = {
     ]
   },
   tr: {
+    search: {"placeholder": "Ara…", "label": "Sitede ara", "none": "Sonuç bulunamadı", "count": "{n} sonuç", "types": {"permesso": "İzin", "guida": "Rehber", "dizionario": "Sözlük", "normativa": "Kanun"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "Bilgi",
@@ -128,6 +136,7 @@ module.exports = {
     ]
   },
   ru: {
+    search: {"placeholder": "Поиск…", "label": "Поиск по сайту", "none": "Ничего не найдено", "count": "Результатов: {n}", "types": {"permesso": "Разрешение", "guida": "Руководство", "dizionario": "Словарь", "normativa": "Закон"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "Инфо",
@@ -150,6 +159,7 @@ module.exports = {
     ]
   },
   bn: {
+    search: {"placeholder": "খুঁজুন…", "label": "সাইটে খুঁজুন", "none": "কোনো ফলাফল নেই", "count": "{n}টি ফলাফল", "types": {"permesso": "অনুমতি", "guida": "নির্দেশিকা", "dizionario": "অভিধান", "normativa": "আইন"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "তথ্য",
@@ -172,6 +182,7 @@ module.exports = {
     ]
   },
   ar: {
+    search: {"placeholder": "ابحث…", "label": "ابحث في الموقع", "none": "لا توجد نتائج", "count": "عدد النتائج: {n}", "types": {"permesso": "تصريح", "guida": "دليل", "dizionario": "قاموس", "normativa": "قانون"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "معلومات",
@@ -194,6 +205,7 @@ module.exports = {
     ]
   },
   ur: {
+    search: {"placeholder": "تلاش کریں…", "label": "سائٹ میں تلاش کریں", "none": "کوئی نتیجہ نہیں ملا", "count": "{n} نتائج", "types": {"permesso": "اجازت نامہ", "guida": "رہنمائی", "dizionario": "لغت", "normativa": "قانون"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "معلومات",
@@ -216,6 +228,7 @@ module.exports = {
     ]
   },
   fa: {
+    search: {"placeholder": "جستجو…", "label": "جستجو در سایت", "none": "نتیجه‌ای پیدا نشد", "count": "{n} نتیجه", "types": {"permesso": "مجوز", "guida": "راهنما", "dizionario": "واژه‌نامه", "normativa": "قانون"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "اطلاعات",
@@ -238,6 +251,7 @@ module.exports = {
     ]
   },
   zh: {
+    search: {"placeholder": "搜索…", "label": "搜索本站", "none": "没有结果", "count": "{n} 个结果", "types": {"permesso": "居留许可", "guida": "指南", "dizionario": "词典", "normativa": "法律"}, "_bozza": "Traduzione BOZZA (nov 2026) da far rivedere a madrelingua."},
     dropdowns: [
       {
         label: "信息",

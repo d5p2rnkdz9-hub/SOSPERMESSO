@@ -20,6 +20,23 @@
     </li>
     {% endif %}
     {% endfor %}
+    <!-- Ricerca nel sito (src/scripts/search.js): subito prima della lingua su
+         desktop, in testa al menu su mobile. Sotto 1200px resta solo la lente.
+         --tight: barra con più di due voci (IT), campo stretto che si allarga al focus. -->
+    {%- assign searchText = navData.search | default: nav.it.search -%}
+    {%- assign searchLang = lang | default: "it" -%}
+    {%- if searchLang == "it" -%}{%- assign searchIndexUrl = "/search-index.json" -%}{%- else -%}{%- assign searchIndexUrl = "/" | append: searchLang | append: "/search-index.json" -%}{%- endif %}
+    <li class="nav-item nav-search{% if navData.dropdowns.size > 2 %} nav-search--tight{% endif %}" data-search-index="{{ searchIndexUrl | url }}?v={{ site.assetVersion }}" data-search-text="{{ searchText | jsonify | escape }}"{% if searchLang == "it" %} data-search-circolari="{{ '/circolari.html' | url }}"{% endif %}>
+      <form class="nav-search__form" role="search" action="{{ searchIndexUrl | replace: 'search-index.json', 'database.html' | url }}">
+        <button type="button" class="nav-search__toggle" aria-expanded="false" aria-controls="nav-search-box" aria-label="{{ searchText.label }}">{% render "components/icon.liquid", name: "cerca", size: 20 %}</button>
+        <div class="nav-search__box" id="nav-search-box">
+          <span class="nav-search__icon">{% render "components/icon.liquid", name: "cerca", size: 20 %}</span>
+          <input class="nav-search__input" id="nav-search-input" type="search" name="q" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="nav-search-list" aria-label="{{ searchText.label }}" placeholder="{{ searchText.placeholder }}" autocomplete="off" spellcheck="false" enterkeyhint="search">
+          <ul class="nav-search__list" id="nav-search-list" role="listbox" aria-label="{{ searchText.label }}" hidden></ul>
+          <p class="nav-search__status" aria-live="polite"></p>
+        </div>
+      </form>
+    </li>
     <!-- Language Switcher as last nav item -->
     {%- assign urlPrefix = page.url | slice: 0, 4 -%}
     {%- if urlPrefix == "/en/" -%}
