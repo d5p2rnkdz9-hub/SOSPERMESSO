@@ -22,8 +22,10 @@
   {%- when "zh" -%}{%- assign plist = permitsZh -%}
   {%- else -%}{%- assign plist = permits -%}
 {%- endcase -%}
-{%- assign appNo = "https://app.sospermesso.it" -%}
-{%- assign appHave = "https://app.sospermesso.it/it/tree/rinnovo-conversione" -%}
+{%- comment -%} Sempre con la lingua nel percorso: senza, l'app sceglie la lingua del browser (es. inglese da /bn/) {%- endcomment -%}
+{%- assign appLang = lang | default: "it" -%}
+{%- assign appNo = "https://app.sospermesso.it/" | append: appLang -%}
+{%- assign appHave = "https://app.sospermesso.it/" | append: appLang | append: "/tree/rinnovo-conversione" -%}
 
 <div class="home-adesivo">
 

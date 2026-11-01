@@ -59,7 +59,7 @@ module.exports = {
       },
       {
         label: "Contact us",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/en/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -82,7 +82,7 @@ module.exports = {
       },
       {
         label: "Nous contacter",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/fr/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -105,7 +105,7 @@ module.exports = {
       },
       {
         label: "Contáctanos",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/es/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -128,7 +128,7 @@ module.exports = {
       },
       {
         label: "Bize ulaşın",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/tr/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -151,7 +151,7 @@ module.exports = {
       },
       {
         label: "Связаться с нами",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/ru/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -174,7 +174,7 @@ module.exports = {
       },
       {
         label: "যোগাযোগ করুন",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/bn/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -197,7 +197,7 @@ module.exports = {
       },
       {
         label: "اتصل بنا",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/ar/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -220,7 +220,7 @@ module.exports = {
       },
       {
         label: "ہم سے رابطہ کریں",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/ur/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -243,7 +243,7 @@ module.exports = {
       },
       {
         label: "تماس با ما",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/fa/contattaci",
         external: true,
         cta: "outline",
         items: []
@@ -266,7 +266,7 @@ module.exports = {
       },
       {
         label: "联系我们",
-        href: "https://app.sospermesso.it/it/contattaci",
+        href: "https://app.sospermesso.it/zh/contattaci",
         external: true,
         cta: "outline",
         items: []
