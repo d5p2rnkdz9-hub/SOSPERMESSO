@@ -216,11 +216,12 @@ eleventyExcludeFromCollections: true
           {% for s in proScheda.sentenze %}
           <div class="pro-sentenza">
             <p class="pro-sentenza-head"><strong>{{ s.corte }}, {{ s.estremi }}</strong><span>{{ s.data }}</span></p>
-            <p class="pro-sentenza-massima">{{ s.massima | slice: 0, 140 }}{% if s.massima.size > 140 %}<span class="pro-blur" aria-hidden="true">{{ s.massima | slice: 140, 400 }}</span>{% endif %}</p>
-            <button type="button" class="pro-lock-btn" disabled title="Disponibile con l'abbonamento PRO (in arrivo)">Massima integrale e rilevanza operativa — PRO</button>
+            {%- comment -%} Only the teaser is published: the full massima is premium and served by the app (app/src/app/api/pro/sentenze). {%- endcomment -%}
+            <p class="pro-sentenza-massima">{{ s.massima | slice: 0, 140 }}{% if s.massima.size > 140 %}<span class="pro-blur" aria-hidden="true"> Il testo completo della massima e la sua rilevanza operativa sono riservati agli utenti registrati.</span>{% endif %}</p>
           </div>
           {% endfor %}
         </div>
+        <a class="pro-lock-btn" href="https://app.sospermesso.it/it/accedi">Registrati gratis nell'app per leggere massime integrali e rilevanza operativa</a>
         {% endif %}
 
         {% if proScheda.circolari.size > 0 %}

@@ -258,11 +258,21 @@ html[data-mode="pro"] .pro-only-inline {
   padding: 0.25rem 0.7rem;
   font-size: 0.75rem;
   font-weight: 700;
-  color: rgba(26, 26, 26, 0.55);
-  background: transparent;
-  border: 1px solid rgba(26, 26, 26, 0.3);
+  color: var(--sp-ink);
+  background: var(--sp-yellow);
+  border: var(--border-ui) solid var(--sp-ink);
   border-radius: 6px;
-  cursor: not-allowed;
+  box-shadow: var(--sticker-sm);
+  text-decoration: none;
+}
+
+.pro-lock-btn:hover {
+  transform: var(--sticker-lift);
+  box-shadow: var(--sticker-sm-hover);
+}
+
+.pro-lock-btn:focus-visible {
+  box-shadow: var(--focus-ring);
 }
 
 .pro-disclaimer {
