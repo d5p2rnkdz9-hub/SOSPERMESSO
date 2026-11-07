@@ -9,6 +9,15 @@
 // permesso dai dati Notion della lingua, senza la parte tra parentesi.
 module.exports = {
   "it": {
+    "countdown": {
+      "eyebrow": "Chiude la precompilazione · Decreto flussi",
+      "title": "7 dicembre 2026, ore 20",
+      "days": "giorni",
+      "hours": "ore",
+      "minutes": "minuti",
+      "seconds": "secondi",
+      "link": "Guida alla precompilazione su SOS Flussi →"
+    },
     "hideLinks": true,
     "hideFinal": true,
     "badge": "41+ permessi · aggiornato al 9 ottobre 2026",
@@ -192,6 +201,15 @@ module.exports = {
     }
   },
   "en": {
+    "countdown": {
+      "eyebrow": "Pre-filling closes · Decreto flussi",
+      "title": "7 December 2026, 8 pm",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "link": "Pre-filling guide on SOS Flussi →"
+    },
     "badge": "41+ Permits · Updated 9 October 2026",
     "lead": "Your Guide to Residence Permits.",
     "stamp": "Easy",
@@ -293,6 +311,15 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "fr": {
+    "countdown": {
+      "eyebrow": "Fin du pré-remplissage · Decreto flussi",
+      "title": "7 décembre 2026, 20 h",
+      "days": "jours",
+      "hours": "heures",
+      "minutes": "minutes",
+      "seconds": "secondes",
+      "link": "Guide du pré-remplissage sur SOS Flussi →"
+    },
     "badge": "41+ Permis · Mis à jour le 9 octobre 2026",
     "lead": "Votre Guide aux Permis de Séjour.",
     "stamp": "Facile",
@@ -394,6 +421,15 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "es": {
+    "countdown": {
+      "eyebrow": "Cierra la precompilación · Decreto flussi",
+      "title": "7 de diciembre de 2026, 20:00",
+      "days": "días",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos",
+      "link": "Guía de la precompilación en SOS Flussi →"
+    },
     "badge": "41+ Permisos · Actualizado el 9 de octubre de 2026",
     "lead": "Tu Guía a los Permisos de Residencia.",
     "stamp": "Fácil",
@@ -697,6 +733,15 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "bn": {
+    "countdown": {
+      "eyebrow": "প্রি-ফিলিং বন্ধ হবে · Decreto flussi",
+      "title": "৭ ডিসেম্বর ২০২৬, রাত ৮টা",
+      "days": "দিন",
+      "hours": "ঘণ্টা",
+      "minutes": "মিনিট",
+      "seconds": "সেকেন্ড",
+      "link": "SOS Flussi-তে প্রি-ফিলিং গাইড →"
+    },
     "badge": "৪১+ অনুমতি · ৯ অক্টোবর ২০২৬ আপডেটেড",
     "lead": "বসবাসের অনুমতির আপনার গাইড।",
     "stamp": "সহজ",
@@ -798,6 +843,15 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ar": {
+    "countdown": {
+      "eyebrow": "تُغلق التعبئة المسبقة · Decreto flussi",
+      "title": "7 ديسمبر 2026، الساعة 20:00",
+      "days": "أيام",
+      "hours": "ساعات",
+      "minutes": "دقائق",
+      "seconds": "ثوانٍ",
+      "link": "دليل التعبئة المسبقة على SOS Flussi ←"
+    },
     "badge": "41+ تصريح · محدّث في 9 أكتوبر 2026",
     "lead": "دليلك الشامل لتصاريح الإقامة.",
     "stamp": "سهل الاستخدام",

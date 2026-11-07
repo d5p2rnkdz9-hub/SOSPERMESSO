@@ -148,6 +148,89 @@
   scroll-margin-top: 140px;
 }
 
+/* Conto alla rovescia (sotto i due test; sparisce da solo alla scadenza) */
+.ha-countdown {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 22px;
+  max-width: 640px;
+  margin-top: 28px;
+  padding: 16px 20px;
+  background: var(--sp-ink);
+  color: var(--sp-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--sticker-md);
+}
+
+.ha-countdown[hidden] {
+  display: none;
+}
+
+.ha-countdown-what {
+  flex: 1 1 200px;
+  margin: 0;
+}
+
+.ha-countdown-what .ha-eyebrow {
+  display: block;
+  color: var(--sp-yellow);
+}
+
+.ha-countdown-what strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.ha-countdown-units {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ha-countdown-units li {
+  min-width: 58px;
+  padding: 5px 6px 7px;
+  background: var(--sp-yellow);
+  color: var(--sp-ink);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.ha-countdown-units b {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.ha-countdown-units span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.home-adesivo a.ha-countdown-link {
+  flex-basis: 100%;
+  color: var(--sp-white);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--sp-yellow);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .ha-countdown-units { flex: 1 1 100%; }
+  .ha-countdown-units li { flex: 1; min-width: 0; }
+  .ha-countdown-units b { font-size: 22px; }
+}
+
 /* TestCard */
 .ha-testcard {
   display: flex;
@@ -188,9 +271,9 @@
 }
 
 .ha-hero-art {
-  flex: 1 1 340px;
+  flex: 1 1 510px;
   min-width: 0;
-  max-width: 480px;
+  max-width: 720px;
   background: var(--sp-white);
   border: var(--border-print) solid var(--sp-ink);
   border-radius: var(--radius-xl);
@@ -634,7 +717,7 @@
   }
 
   .ha-hero-art {
-    max-width: 340px;
+    max-width: 510px;
     margin: 0 auto;
   }
 

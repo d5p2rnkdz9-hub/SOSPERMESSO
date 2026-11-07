@@ -47,10 +47,45 @@
             <span class="ha-testcard-q">{{ t.test.haveQ | default: ti.test.haveQ }} <span class="ha-arrow" aria-hidden="true">→</span></span>
           </a>
         </div>
+        {%- comment -%} Conto alla rovescia: solo nelle lingue con t.countdown (_data/home.js); nascosto dal JS dopo data-fino {%- endcomment -%}
+        {%- if t.countdown -%}
+        {%- assign cd = t.countdown -%}
+        <div class="ha-countdown" id="ha-countdown" data-fino="2026-12-07T20:00:00+01:00" hidden>
+          <p class="ha-countdown-what"><span class="ha-eyebrow">{{ cd.eyebrow }}</span><strong>{{ cd.title }}</strong></p>
+          <ul class="ha-countdown-units" role="timer" aria-live="off">
+            <li><b data-unita="g">–</b><span>{{ cd.days }}</span></li>
+            <li><b data-unita="h">–</b><span>{{ cd.hours }}</span></li>
+            <li><b data-unita="m">–</b><span>{{ cd.minutes }}</span></li>
+            <li><b data-unita="s">–</b><span>{{ cd.seconds }}</span></li>
+          </ul>
+          <a href="https://sosflussi.it/precompilazione/" class="ha-countdown-link">{{ cd.link }}</a>
+        </div>
+        <script>
+          (function () {
+            var box = document.getElementById('ha-countdown');
+            var fino = new Date(box.getAttribute('data-fino')).getTime();
+            var cifre = {};
+            box.querySelectorAll('[data-unita]').forEach(function (b) { cifre[b.getAttribute('data-unita')] = b; });
+            function due(n) { return (n < 10 ? '0' : '') + n; }
+            var timer = setInterval(tick, 1000);
+            function tick() {
+              var resto = fino - Date.now();
+              if (resto <= 0) { box.hidden = true; clearInterval(timer); return; }
+              var sec = Math.floor(resto / 1000);
+              cifre.g.textContent = Math.floor(sec / 86400);
+              cifre.h.textContent = due(Math.floor(sec / 3600) % 24);
+              cifre.m.textContent = due(Math.floor(sec / 60) % 60);
+              cifre.s.textContent = due(sec % 60);
+              box.hidden = false;
+            }
+            tick();
+          })();
+        </script>
+        {%- endif %}
       </div>
       <div class="ha-hero-art">
         <picture>
-          <source srcset="/IMAGES/hero-illustration-520.webp 520w, /IMAGES/hero-illustration-1040.webp 1040w" sizes="(max-width: 768px) 300px, 480px" type="image/webp">
+          <source srcset="/IMAGES/hero-illustration-520.webp 520w, /IMAGES/hero-illustration-1040.webp 1040w" sizes="(max-width: 768px) 100vw, 720px" type="image/webp">
           <img src="/IMAGES/hero-illustration-1200.png" alt="{{ t.heroAlt | default: ti.heroAlt }}" width="1200" height="800" fetchpriority="high" decoding="async">
         </picture>
       </div>
