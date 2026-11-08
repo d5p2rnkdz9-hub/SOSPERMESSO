@@ -20,7 +20,7 @@ module.exports = {
     },
     "hideLinks": true,
     "hideFinal": true,
-    "badge": "41+ permessi · aggiornato al 9 ottobre 2026",
+    "badge": "41+ permessi · aggiornato all'8 novembre 2026",
     "lead": "La tua guida ai permessi di soggiorno.",
     "stamp": "Facile",
     "sub": "Completa e aggiornata. Rispondi a poche domande e scopri cosa puoi fare.",
@@ -210,7 +210,7 @@ module.exports = {
       "seconds": "seconds",
       "link": "Pre-filling guide on SOS Flussi →"
     },
-    "badge": "41+ Permits · Updated 9 October 2026",
+    "badge": "41+ Permits · Updated 8 November 2026",
     "lead": "Your Guide to Residence Permits.",
     "stamp": "Easy",
     "sub": "Complete. Up to date. Answer a few questions and find out what you can do.",
@@ -320,7 +320,7 @@ module.exports = {
       "seconds": "secondes",
       "link": "Guide du pré-remplissage sur SOS Flussi →"
     },
-    "badge": "41+ Permis · Mis à jour le 9 octobre 2026",
+    "badge": "41+ Permis · Mis à jour le 8 novembre 2026",
     "lead": "Votre Guide aux Permis de Séjour.",
     "stamp": "Facile",
     "sub": "Complet. À jour. Réponds à quelques questions et découvre ce que tu peux faire.",
@@ -430,7 +430,7 @@ module.exports = {
       "seconds": "segundos",
       "link": "Guía de la precompilación en SOS Flussi →"
     },
-    "badge": "41+ Permisos · Actualizado el 9 de octubre de 2026",
+    "badge": "41+ Permisos · Actualizado el 8 de noviembre de 2026",
     "lead": "Tu Guía a los Permisos de Residencia.",
     "stamp": "Fácil",
     "sub": "Completa. Actualizada. Responde a pocas preguntas y descubre qué puedes hacer.",
@@ -531,7 +531,7 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "tr": {
-    "badge": "41+ İzin · 9 Ekim 2026 itibarıyla güncel",
+    "badge": "41+ İzin · 8 Kasım 2026 itibarıyla güncel",
     "lead": "Oturma İzinleri Rehberiniz.",
     "stamp": "Kolay",
     "sub": "Kapsamlı. Güncel. Birkaç soruya cevap ver, ne yapabileceğini öğren.",
@@ -632,7 +632,7 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ru": {
-    "badge": "41+ Разрешений · Обновлено 9 октября 2026",
+    "badge": "41+ Разрешений · Обновлено 8 ноября 2026",
     "lead": "Ваш Гид по Видам на Жительство.",
     "stamp": "Просто",
     "sub": "Полно. Актуально. Ответьте на несколько вопросов и узнайте, что вы можете сделать.",
@@ -742,7 +742,7 @@ module.exports = {
       "seconds": "সেকেন্ড",
       "link": "SOS Flussi-তে প্রি-ফিলিং গাইড →"
     },
-    "badge": "৪১+ অনুমতি · ৯ অক্টোবর ২০২৬ আপডেটেড",
+    "badge": "৪১+ অনুমতি · ৮ নভেম্বর ২০২৬ আপডেটেড",
     "lead": "বসবাসের অনুমতির আপনার গাইড।",
     "stamp": "সহজ",
     "sub": "সম্পূর্ণ। আপডেটেড। কয়েকটি প্রশ্নের উত্তর দিন এবং জানুন আপনি কী করতে পারেন।",
@@ -852,7 +852,7 @@ module.exports = {
       "seconds": "ثوانٍ",
       "link": "دليل التعبئة المسبقة على SOS Flussi ←"
     },
-    "badge": "41+ تصريح · محدّث في 9 أكتوبر 2026",
+    "badge": "41+ تصريح · محدّث في 8 نوفمبر 2026",
     "lead": "دليلك الشامل لتصاريح الإقامة.",
     "stamp": "سهل الاستخدام",
     "sub": "شامل ومحدّث. أجب عن بعض الأسئلة واكتشف ما يمكنك فعله.",
@@ -953,7 +953,7 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "ur": {
-    "badge": "41+ اجازت نامے · 9 اکتوبر 2026 تک تازہ کاری",
+    "badge": "41+ اجازت نامے · 8 نومبر 2026 تک تازہ کاری",
     "lead": "اقامتی اجازت ناموں کی رہنمائی۔",
     "stamp": "آسان",
     "sub": "مکمل۔ تازہ ترین۔ چند سوالات کے جواب دیں اور جانیں کہ آپ کیا کر سکتے ہیں۔",
@@ -1054,7 +1054,7 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "fa": {
-    "badge": "+41 مجوز · به‌روزرسانی ۹ اکتبر ۲۰۲۶",
+    "badge": "+41 مجوز · به‌روزرسانی ۸ نوامبر ۲۰۲۶",
     "lead": "راهنمای مجوزهای اقامت.",
     "stamp": "آسان",
     "sub": "جامع. به‌روز. به چند سؤال پاسخ دهید و بدانید چه کاری می‌توانید انجام دهید.",
@@ -1155,7 +1155,7 @@ module.exports = {
     "_bozza": "Traduzioni di findTitle, guidesTitle, final.title, more.*, chip «Pratiche», cta kit/controlla, catPopular e catMore: BOZZA (ott 2026) da far rivedere a madrelingua."
   },
   "zh": {
-    "badge": "41+ 种许可 · 2026年10月9日更新",
+    "badge": "41+ 种许可 · 2026年11月8日更新",
     "lead": "您的居留许可指南。",
     "stamp": "简单",
     "sub": "全面。最新。 回答几个问题，了解你能做什么。",

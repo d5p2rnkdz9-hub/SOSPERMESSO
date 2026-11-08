@@ -148,19 +148,19 @@
   scroll-margin-top: 140px;
 }
 
-/* Conto alla rovescia (sotto i due test; sparisce da solo alla scadenza) */
+/* Conto alla rovescia: striscia a tutta larghezza sotto testo e illustrazione (stesso formato di SOS Flussi);
+   sparisce da solo alla scadenza */
 .ha-countdown {
+  flex: 1 1 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 14px 22px;
-  max-width: 640px;
-  margin-top: 28px;
-  padding: 16px 20px;
+  gap: 16px 28px;
+  padding: 18px 24px;
   background: var(--sp-ink);
   color: var(--sp-white);
   border-radius: var(--radius-lg);
-  box-shadow: var(--sticker-md);
+  box-shadow: calc(5px * var(--sx, 1)) 5px 0 var(--cat-protection);
 }
 
 .ha-countdown[hidden] {
@@ -168,20 +168,22 @@
 }
 
 .ha-countdown-what {
-  flex: 1 1 200px;
+  flex: 1 1 220px;
   margin: 0;
 }
 
 .ha-countdown-what .ha-eyebrow {
   display: block;
   color: var(--sp-yellow);
+  font-size: 13px;
+  letter-spacing: 0.05em;
 }
 
 .ha-countdown-what strong {
   display: block;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.2;
 }
 
@@ -194,8 +196,8 @@
 }
 
 .ha-countdown-units li {
-  min-width: 58px;
-  padding: 5px 6px 7px;
+  min-width: 64px;
+  padding: 6px 8px 8px;
   background: var(--sp-yellow);
   color: var(--sp-ink);
   border-radius: var(--radius-md);
@@ -206,29 +208,30 @@
   display: block;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 26px;
+  font-size: 30px;
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
 }
 
 .ha-countdown-units span {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .home-adesivo a.ha-countdown-link {
-  flex-basis: 100%;
   color: var(--sp-white);
   font-weight: 700;
+  white-space: nowrap;
   text-decoration: underline;
   text-decoration-color: var(--sp-yellow);
   text-underline-offset: 3px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .ha-countdown-units { flex: 1 1 100%; }
   .ha-countdown-units li { flex: 1; min-width: 0; }
-  .ha-countdown-units b { font-size: 22px; }
+  .ha-countdown-units b { font-size: 24px; }
+  .home-adesivo a.ha-countdown-link { white-space: normal; }
 }
 
 /* TestCard */
@@ -271,9 +274,9 @@
 }
 
 .ha-hero-art {
-  flex: 1 1 510px;
+  flex: 1 1 515px;
   min-width: 0;
-  max-width: 720px;
+  max-width: 515px;
   background: var(--sp-white);
   border: var(--border-print) solid var(--sp-ink);
   border-radius: var(--radius-xl);

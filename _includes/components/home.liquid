@@ -47,7 +47,14 @@
             <span class="ha-testcard-q">{{ t.test.haveQ | default: ti.test.haveQ }} <span class="ha-arrow" aria-hidden="true">→</span></span>
           </a>
         </div>
-        {%- comment -%} Conto alla rovescia: solo nelle lingue con t.countdown (_data/home.js); nascosto dal JS dopo data-fino {%- endcomment -%}
+      </div>
+      <div class="ha-hero-art">
+        <picture>
+          <source srcset="/IMAGES/hero-illustration-520.webp 520w, /IMAGES/hero-illustration-1040.webp 1040w" sizes="(max-width: 768px) 100vw, 515px" type="image/webp">
+          <img src="/IMAGES/hero-illustration-1200.png" alt="{{ t.heroAlt | default: ti.heroAlt }}" width="1200" height="800" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+        {%- comment -%} Conto alla rovescia: solo nelle lingue con t.countdown (_data/home.js), a tutta larghezza sotto testo e illustrazione come su SOS Flussi; nascosto dal JS dopo data-fino {%- endcomment -%}
         {%- if t.countdown -%}
         {%- assign cd = t.countdown -%}
         <div class="ha-countdown" id="ha-countdown" data-fino="2026-12-07T20:00:00+01:00" hidden>
@@ -82,13 +89,6 @@
           })();
         </script>
         {%- endif %}
-      </div>
-      <div class="ha-hero-art">
-        <picture>
-          <source srcset="/IMAGES/hero-illustration-520.webp 520w, /IMAGES/hero-illustration-1040.webp 1040w" sizes="(max-width: 768px) 100vw, 720px" type="image/webp">
-          <img src="/IMAGES/hero-illustration-1200.png" alt="{{ t.heroAlt | default: ti.heroAlt }}" width="1200" height="800" fetchpriority="high" decoding="async">
-        </picture>
-      </div>
     </div>
   </section>
 
