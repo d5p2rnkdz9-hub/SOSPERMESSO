@@ -12,7 +12,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { getStore } from "@netlify/blobs";
 import { KB_TEXT } from "./chat-kb.mjs";
 
-const MODEL = "claude-sonnet-5";
+const MODEL = "claude-sonnet-5-5";
 const MAX_OUTPUT_TOKENS = 1024;
 
 const MAX_MESSAGES = 20; // 10 user turns
@@ -196,7 +196,7 @@ export default async (req, context) => {
     // Closed-book Q&A over the KB: thinking off + low effort keeps latency and
     // cost down. If answers feel shallow, switch to { type: "adaptive" } — the
     // system-prompt cache survives that toggle.
-    thinking: { type: "disabled" },
+    thinking: { type: "between_tools" }, // Sonnet 5.5: "disabled" is rejected; this means no thinking before answering
     output_config: { effort: "low" },
     // Prompt caching disabled (Oct 2026): traffic is ~1 question every 30 min,
     // so the 5-min cache always expired before the next request and every call
